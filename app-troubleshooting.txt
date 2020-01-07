@@ -1,0 +1,31 @@
+When I had problems running jekyll on command line after installing jekyll using gem install jekyll bundler:
+	Updated ruby version in .ruby-version
+	Ran bundle install
+	Then prefixed all jekyll commands with bundle exec - eg bundle exec jekyll -v and bundle exec jekyll build
+	
+Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
+
+Deploying ruby using heroku: https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up
+
+Creating a site with Jekyll: https://jekyllrb.com/tutorials/home/
+
+Jekyll installation for windows: https://jekyllrb.com/docs/installation/windows/
+	
+Installing Linux for Windows: https://docs.microsoft.com/en-gb/windows/wsl/install-win10?redirectedfrom=MSDN
+
+Error: favicon.ico not found: https://github.com/mmistakes/minimal-mistakes/issues/389
+
+Viewing heroku logs: 
+	Runtime logs via Command line 
+		use heroku logs -a clare-wiki
+		(Might have to login first using heroku login then ctrl + C)
+		https://devcenter.heroku.com/articles/logging
+	Build logs Via web UI
+		Click pipeline, then clare-wiki, then Activity, View build logs under a build
+		
+Migrate Evernote notes as plain text or markdown: http://www.markwk.com/migrate-evernote-plaintext.html
+
+clare-wiki in Heroku: 
+	Site: https://clare-wiki.herokuapp.com/
+	Pipeline: https://dashboard.heroku.com/pipelines/0b691a3f-9d32-49f8-a1f5-1210aa13f0aa
+	
