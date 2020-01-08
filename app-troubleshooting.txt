@@ -1,4 +1,4 @@
-When I had problems running jekyll on command line after installing jekyll using gem install jekyll bundler:
+When I had problems running jekyll on command line (GitBash, Windows) after installing jekyll using gem install jekyll bundler:
 	Updated ruby version in .ruby-version
 	Ran bundle install
 	Then prefixed all jekyll commands with bundle exec - eg bundle exec jekyll -v and bundle exec jekyll build
@@ -10,8 +10,47 @@ Deploying ruby using heroku: https://devcenter.heroku.com/articles/getting-start
 Creating a site with Jekyll: https://jekyllrb.com/tutorials/home/
 
 Jekyll installation for windows: https://jekyllrb.com/docs/installation/windows/
-	
-Installing Linux for Windows: https://docs.microsoft.com/en-gb/windows/wsl/install-win10?redirectedfrom=MSDN
+	First I installed the Windows subsystem for linux: https://docs.microsoft.com/en-gb/windows/wsl/install-win10
+	Then I basically ran all the following commands (see below for some of the explanation):
+		sudo apt update && sudo apt upgrade
+		sudo apt-get update -y && sudo apt-get upgrade -y
+		sudo apt-get install libgdbm-dev
+		sudo apt-get install libpng-dev
+		sudo apt-add-repository ppa:brightbox/ruby-ng
+		sudo apt-get update
+		sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf
+		sudo chown -R claresudbery /var/lib/gems/2.5.0/
+		sudo chown -R claresudbery /usr/local/bin
+			(!! Those sudo chown commands are to get round the permissions errors you get otherwise when you run the next command (gem update))
+		gem update
+		gem install jekyll bundler
+		
+	https://docs.microsoft.com/en-gb/windows/wsl/install-win10?redirectedfrom=MSDN
+	When I followed the jekyll instructions, I got the following errors when I ran sudo gem update (immediately after sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf):
+		ERROR:  Error installing dbm: ERROR: Failed to build gem native extension. checking for -lgdbm... no
+		ERROR:  Error installing gdbm: ERROR: Failed to build gem native extension. checking for gdbm_open() in -lgdbm... no
+		ERROR:  Error installing zlib: ERROR: Failed to build gem native extension.
+			checking for deflateReset() in -lz... no
+			checking for deflateReset() in -llibz... no
+			checking for deflateReset() in -lzlib1... no
+			checking for deflateReset() in -lzlib... no
+			checking for deflateReset() in -lzdll... no
+			checking for deflateReset() in -lzlibwapi... no
+		They were all followed by the following:
+			extconf.rb failed
+			Could not create Makefile due to some reason, probably lack of necessary libraries and/or headers.  
+			Check the mkmf.log file for more details.  You may need configuration options.
+		The mkmf.log files were available here: 
+			/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/dbm-1.1.0/mkmf.log
+			/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/gdbm-2.1.0/mkmf.log
+			/var/lib/gems/2.5.0/extensions/x86_64-linux/2.5.0/zlib-1.1.0/mkmf.log
+		I found this article for a similar problem: https://github.com/zendesk/zendesk_apps_tools/issues/245
+			Based on that and a bit of deduction / experimentation, I ran these lines:
+				sudo apt-get install libgdbm-dev
+				sudo apt-get install libpng-dev
+			Then I ran sudo gem update again and all was good.
+				
+		
 
 Error: favicon.ico not found: https://github.com/mmistakes/minimal-mistakes/issues/389
 
