@@ -24,7 +24,15 @@ Jekyll installation for windows: https://jekyllrb.com/docs/installation/windows/
 			(!! Those sudo chown commands are to get round the permissions errors you get otherwise when you run the next command (gem update))
 		gem update
 		gem install jekyll bundler
-		
+	Then I got permission errors when trying to run bundle exec jekyll serve
+		Errors:
+			bundler: failed to load command: jekyll (/usr/local/bin/jekyll)
+			Errno::EPERM: Operation not permitted @ apply2files - /mnt/c/development/clare-wiki-jekyll/_site/README.md
+		Tried doing this:
+			sudo umount /mnt/c
+			sudo mount -t drvfs C: /mnt/c -o metadata
+			From here: https://stackoverflow.com/questions/46610256/chmod-wsl-bash-doesnt-work
+			Via here: https://stackoverflow.com/questions/57243299/jekyll-operation-not-permitted-apply2files
 	https://docs.microsoft.com/en-gb/windows/wsl/install-win10?redirectedfrom=MSDN
 	When I followed the jekyll instructions, I got the following errors when I ran sudo gem update (immediately after sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf):
 		ERROR:  Error installing dbm: ERROR: Failed to build gem native extension. checking for -lgdbm... no
