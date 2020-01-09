@@ -14,4 +14,13 @@ layout: null
      "categories" : "{{ page.categories }}",
      "content": "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
    }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
+   ,
+   {% assign sortedpostlist = site.posts | sort_natural: 'url' %}{% for post in sortedpostlist %}
+   {
+    "url"    : "{{ post.url }}",
+    "title"  : "{{ post.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html'}}",
+    "categories" : "{{ post.categories }}",
+    "content": "{{ post.content | strip_html | strip_newlines | remove_chars | escape }}"
+   }{% unless forloop.last %},{% endunless %}
+   {% endfor %}
 ]
