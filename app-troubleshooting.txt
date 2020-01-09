@@ -1,13 +1,45 @@
+Ably's use of Jekyll deployed on Heroku: 
+	https://www.ably.io/blog/hacking-github-to-build-your-own-wiki
+	https://github.com/ably/wiki-site
+
+Useful Jekyll Stuff:
+	Simple Jekyll Search: https://github.com/christian-fei/Simple-Jekyll-Search
+	Listing posts by category: https://github.com/shigeya/jekyll-category-archive-plugin
+	Programatically retrieve list of pages instead of hard coding navigation links: https://jekyllrb.com/tutorials/navigation/
+
 When I had problems running jekyll on command line (GitBash, Windows) after installing jekyll using gem install jekyll bundler:
 	Updated ruby version in .ruby-version
 	Ran bundle install
 	Then prefixed all jekyll commands with bundle exec - eg bundle exec jekyll -v and bundle exec jekyll build
 	
 Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
+	In Ubuntu 16: 
+		I followed the instructions for getting ruby-install and chruby to get latest Ruby version	
+			prob not necessary though, as I forgot I'd alrteady installed Ruby.
+			and it took ages!
+		I got an error saying "chruby: command not found" when I ran the command chruby ruby
+			I fixed this by adding these two lines to ~/.bashrc: 
+			source /usr/local/share/chruby/chruby.sh
+			source /usr/local/share/chruby/auto.sh
+		Then I installed Heroku CLI: curl https://cli-assets.heroku.com/install.sh | sh
+			(that's because I got an error when I used the snapd command: https://superuser.com/questions/1391219/setting-up-heroku-cli-in-wsl)
+			After that you have to qualify heroku commands like this: /usr/local/bin/heroku create
+			But then I added heroku to my path and didn't need to do that any more: export PATH=$PATH:/usr/local/bin/heroku
+		When I ran the bundle command to instaltl rake, I had to add some permissions:
+			sudo chown -R claresudbery:claresudbery /home/claresudbery/.bundle
+	
+To get up and running on a Mac:
+	clone the repo containing the jekyll site (currently clare-wiki-jekyll)
+	install git 
+	install ruby and jekyll and heroku stuff: https://blog.heroku.com/jekyll-on-heroku
+		NB: Change those instructions slightly:
+		Instead of ruby-install ruby, use ruby-install to install the same Ruby version as specified in Gemfile, like this: ruby-install ruby 2.6.5
 
 Deploying ruby using heroku: https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up
 
 Creating a site with Jekyll: https://jekyllrb.com/tutorials/home/
+
+Keeping a file in git without tracking changes: https://stackoverflow.com/questions/9794931/keep-file-in-a-git-repo-but-dont-track-changes
 
 Jekyll installation for windows: https://jekyllrb.com/docs/installation/windows/
 	First I installed the Windows subsystem for linux: https://docs.microsoft.com/en-gb/windows/wsl/install-win10
@@ -31,8 +63,11 @@ Jekyll installation for windows: https://jekyllrb.com/docs/installation/windows/
 		Tried doing this:
 			sudo umount /mnt/c
 			sudo mount -t drvfs C: /mnt/c -o metadata
+			Had to restart machine first though because of errors about drive being in use.			
 			From here: https://stackoverflow.com/questions/46610256/chmod-wsl-bash-doesnt-work
 			Via here: https://stackoverflow.com/questions/57243299/jekyll-operation-not-permitted-apply2files
+	Then localhost simply not accessible from browser
+		Someone with similar problem here: https://github.com/microsoft/WSL/issues/2471
 	https://docs.microsoft.com/en-gb/windows/wsl/install-win10?redirectedfrom=MSDN
 	When I followed the jekyll instructions, I got the following errors when I ran sudo gem update (immediately after sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf):
 		ERROR:  Error installing dbm: ERROR: Failed to build gem native extension. checking for -lgdbm... no
@@ -57,8 +92,6 @@ Jekyll installation for windows: https://jekyllrb.com/docs/installation/windows/
 				sudo apt-get install libgdbm-dev
 				sudo apt-get install libpng-dev
 			Then I ran sudo gem update again and all was good.
-				
-		
 
 Error: favicon.ico not found: https://github.com/mmistakes/minimal-mistakes/issues/389
 
@@ -73,6 +106,7 @@ Viewing heroku logs:
 Migrate Evernote notes as plain text or markdown: http://www.markwk.com/migrate-evernote-plaintext.html
 
 clare-wiki in Heroku: 
-	Site: https://clare-wiki.herokuapp.com/
+	Ably Site: https://clare-wiki.herokuapp.com/
+	Vanilla Jekyll site: https://clare-wiki-jekyll.herokuapp.com/
 	Pipeline: https://dashboard.heroku.com/pipelines/0b691a3f-9d32-49f8-a1f5-1210aa13f0aa
 	
