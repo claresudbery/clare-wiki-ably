@@ -19,3 +19,8 @@ redcarpet:
 # to override the default setting.
 exclude:
   - vendor
+
+# Allow links to other sections in the same doc
+# Referenced here: https://stackoverflow.com/questions/4629675/jekyll-markdown-internal-links
+kramdown:
+  auto_ids: true

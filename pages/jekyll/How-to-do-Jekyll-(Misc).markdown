@@ -1,7 +1,7 @@
 ---
 layout: post
-permalink: /:categories/:title
-categories: jekyll howto
+categories: jekyll
+permalink: /pages/jekyll/How-to-do-Jekyll-(Misc)
 ---
 
 ## Draft Posts
@@ -39,6 +39,8 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 You can access vars in permalinks, eg **permalink: /:categories** will mean that the permalink mimics the categories - so if the categories for this post are **jekyll update**, then the permalink will be **/jekyll/update**.
 
 Other vars available are :year, :month, :day, :title. You can also add your own cutom extension at the end, eg **permalink: /:categories/:title.html**.
+
+!! See [Permalinks not working unless you do them in a certain way](#permalinks-not-working-unless-you-do-them-in-a-certain-way) below.
 
 ## Changing _config.yml
 
@@ -92,3 +94,38 @@ See _layouts folder in clare-wiki-ably ([copied from Ably](https://github.com/ab
 You can also nest layouts. You can do this by putting some front matter at the top of a layout html file. The front matter will look exactly the same as it does in a markdown file. This front matter can specify a layout component that refers to yet another layout html file. For further explanation see [this tutorial video](https://www.youtube.com/watch?v=bDQsGdCWv4I&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=12), from about 5:20.
 
 You'll notice various variables and for loops and stuff being used in minima files and files created by Ably. There's nore explanation of things like loops and variables in the later [tutorial videos on the Jekyll site](https://jekyllrb.com/tutorials/video-walkthroughs/).
+
+## Permalinks not working unless you do them in a certain way
+
+The use of permalinks in this site as edited by Ably will not work (as of [commit 2530d9f](https://github.com/claresudbery/clare-wiki-ably/commit/2530d9f19269651df8645aa8f80de3701ec2d694)).
+
+The reason for this is the code in _layouts/default.html, which relies on the url to do two things:
+* List site content under the search box
+* Display the title of the page, both in the site content list and on the page itself.  
+
+It's assuming that the url will contain "pages/", so if you don't include that in your permalink it'll make everything go weird. Even if you do include it in your permalink, if your permalink doesn't end with a sensible page title then things will still go screwy.
+
+Also for some reason the **:categories** variable isn't working for permalinks in this site.
+
+So, as long as you include "pages/" in your permalink, don't use the categories variable and make sure it ends with a sensible title, then everything will be fine! Prob best to just rely on the default code and try not to move files around - or at least know that if you do, it'll result in broken links.
+
+## Links to other pages on the site
+
+For instance, if you want to [link to the Jekyll How-to page on file locations](/pages/jekyll/How-to-do-Jekyll-(File-Locations).html).
+
+## Links to other sections of the same doc
+
+First you have to do the following in _config.yml:
+
+{% highlight yml %}
+kramdown:
+  auto_ids: true
+{% endhighlight %}
+
+Then you can link to a section [like this](#draft-posts).
+
+In the raw markdown that looks like this:
+
+{% highlight markdown %}
+Then you can link to a section [like this](#draft-posts).
+{% endhighlight %}
