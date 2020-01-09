@@ -1,5 +1,19 @@
 <footer class="site-footer h-card">
-  <div class="wrapper">
-    <a class="u-email" href="/auth/logout">Logout</a>
-  </div>
-</footer>
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper"> 
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+
+      <div class="footer-col one-half">
+        {%- include social.html -%}
+        <div>
+          <a class="u-email" href="/auth/logout">Logout</a>
+        </div>
+      </div>
+    </div>
+
+  </div></footer>
