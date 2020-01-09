@@ -126,9 +126,6 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2019.3)
-      tzinfo (>= 1.0.0)
-    wdm (0.1.1)
     yell (2.2.0)
 
 PLATFORMS
@@ -146,7 +143,6 @@ DEPENDENCIES
   sinatra (~> 2.0.2)
   thin (~> 1.7)
   tzinfo-data
-  wdm (~> 0.1.0)
 
 RUBY VERSION
    ruby 2.6.5p114
