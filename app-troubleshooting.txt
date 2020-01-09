@@ -21,9 +21,12 @@ Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
 			I fixed this by adding these two lines to ~/.bashrc: 
 			source /usr/local/share/chruby/chruby.sh
 			source /usr/local/share/chruby/auto.sh
-		I got an error "Your Ruby version is 2.6.3, but your Gemfile specified 2.6.5" on MacOS
+		MacOS Catalina has the wrong version of Ruby, so I ran ruby-install ruby 2.6.5				
+			... but I still got an error "Your Ruby version is 2.6.3, but your Gemfile specified 2.6.5" on MacOS
 			So I ran gem install bundler and then bundle install, and that fixed it.
 			I also did some other stuff previously, but I'm pretty sure none of it made any difference:
+				Added stuff to ~/.bash_profile and .ruby-version as per https://github.com/postmodern/chruby
+				which ruby
 				chruby_use /Users/clarey/.rubies/ruby-2.6.5/
 		Then I installed Heroku CLI: curl https://cli-assets.heroku.com/install.sh | sh
 			(that's because I got an error when I used the snapd command: https://superuser.com/questions/1391219/setting-up-heroku-cli-in-wsl)
