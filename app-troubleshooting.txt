@@ -21,6 +21,10 @@ Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
 			I fixed this by adding these two lines to ~/.bashrc: 
 			source /usr/local/share/chruby/chruby.sh
 			source /usr/local/share/chruby/auto.sh
+		I got an error "Your Ruby version is 2.6.3, but your Gemfile specified 2.6.5" on MacOS
+			So I ran gem install bundler and then bundle install, and that fixed it.
+			I also did some other stuff previously, but I'm pretty sure none of it made any difference:
+				chruby_use /Users/clarey/.rubies/ruby-2.6.5/
 		Then I installed Heroku CLI: curl https://cli-assets.heroku.com/install.sh | sh
 			(that's because I got an error when I used the snapd command: https://superuser.com/questions/1391219/setting-up-heroku-cli-in-wsl)
 			After that you have to qualify heroku commands like this: /usr/local/bin/heroku create
@@ -108,5 +112,8 @@ Migrate Evernote notes as plain text or markdown: http://www.markwk.com/migrate-
 clare-wiki in Heroku: 
 	Ably Site: https://clare-wiki.herokuapp.com/
 	Vanilla Jekyll site: https://clare-wiki-jekyll.herokuapp.com/
+		I got an error on deploy at one point:
+		"Your Ruby version is 2.5.1, but your Gemfile specified 2.6.5"
+		It turned out this was because I had checked in Gemfile with the new Ruby version, but hadn't checked Gemfile.lock
 	Pipeline: https://dashboard.heroku.com/pipelines/0b691a3f-9d32-49f8-a1f5-1210aa13f0aa
 	
