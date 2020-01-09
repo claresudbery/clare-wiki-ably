@@ -1,6 +1,6 @@
 title: Everything Clare Knows (copied from Ably)
 description: >- # this means to ignore newlines until "baseurl:"
-  A wiki spite hosting ALL OF CLARE'S NOTES. Be afraid. Be very afraid.  
+  A wiki site hosting ALL OF CLARE'S NOTES. Be afraid. Be very afraid.  
   Or if you like you can just be excited! Clare is.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://clare-wiki.herokuapp.com/" # the base hostname & protocol for your site, e.g. http://example.com
