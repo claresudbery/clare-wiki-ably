@@ -10,7 +10,7 @@
       <input type="text" id="search-input" placeholder="search..." onkeyup="showSearchResults()" />
     </div>
     <ul id="results-container">
-   </ul>
+    </ul>
     <ul id="index">
       {% assign sortedlist = site.html_pages | sort_natural: 'url' %}
       {% for page in sortedlist %}
@@ -39,7 +39,7 @@
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
       json: '{{ site.baseurl }}/search.json',
-      searchResultTemplate: '<li><a href={url}>{title}({categories})</a></li>',
+      searchResultTemplate: '<li><a href={url}>{title}</a></li>',
       noResultsText: 'No results found.',
       fuzzy: false,
       limit: 100,
