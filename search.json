@@ -5,11 +5,13 @@ layout: null
    {
      "url"    : "{{ page.url }}",
      "title"  : "Home",
+     "categories" : "",
      "content": "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
    }{% unless forloop.last %},{% endunless %} {% elsif page.url contains "pages/" %}
    {
    	 "url"    : "{{ page.url }}",
      "title"  : "{{ page.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html'}}",
+     "categories" : "{{ page.categories }}",
      "content": "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}"
    }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
 ]
