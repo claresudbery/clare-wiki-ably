@@ -1,7 +1,8 @@
 ---
 layout: post
 date:   2020-01-09 +0000
-categories: BigIndex
+categories: organising BigIndex
+permalink: /pages/organising/BigIndex/Big-Index-To-Do
 ---
 
 - Contact Ably 

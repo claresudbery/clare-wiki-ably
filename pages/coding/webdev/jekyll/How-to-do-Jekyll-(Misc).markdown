@@ -1,7 +1,7 @@
 ---
-layout: post
-categories: jekyll
-permalink: /pages/jekyll/How-to-do-Jekyll-(Misc)
+layout: page
+categories: coding webdev jekyll 
+permalink: /pages/coding/webdev/jekyll/How-to-do-Jekyll-(Misc)
 ---
 
 ## Draft Posts
@@ -111,7 +111,14 @@ So, as long as you include "pages/" in your permalink, don't use the categories 
 
 ## Links to other pages on the site
 
-For instance, if you want to [link to the Jekyll How-to page on file locations](/pages/jekyll/How-to-do-Jekyll-(File-Locations).html).
+For instance, if you want to [link to the Jekyll How-to page on file locations](/pages/coding/webdev/jekyll/How-to-do-Jekyll-(File-Locations)).
+
+Other pages on Jekyll stuff:  
+
+- [Jekyll How-to page on front matter](/pages/coding/webdev/jekyll/How-to-do-Jekyll-(Front-Matter))
+- [Jekyll How-to page on misc stuff](/pages/coding/webdev/jekyll/How-to-do-Jekyll-(Misc))
+- [Jekyll Troubleshooting](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting)
+- [Simple Jekyll Search plugin](/pages/coding/webdev/jekyll/Simple-Jekyll-Search)
 
 ## Links to other sections of the same doc
 

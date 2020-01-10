@@ -1,6 +1,7 @@
 ---
-layout: post
-categories: jekyll howto
+layout: page
+categories: coding webdev jekyll 
+permalink: /pages/coding/webdev/jekyll/How-to-do-Jekyll-(Front-Matter)
 ---
 
 ## Configuration
