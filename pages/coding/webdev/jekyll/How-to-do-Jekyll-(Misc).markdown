@@ -154,4 +154,4 @@ I also made another amendment to add a heading to each toc: [commit ebb8600](htt
 
 ## Category archive
 
-I didn't manage to get this working. There are build errors related to the plugin when you run jekyll serve locally, that will probably contain the key for how to fix it. See [commit 8f43b44](https://github.com/claresudbery/clare-wiki-ably/commit/8f43b44) for when I added the plugin.
+I didn't manage to get this working. I was using [category archive](https://github.com/shigeya/jekyll-category-archive-plugin). There are build errors related to the plugin when you run jekyll serve locally, that will probably contain the key for how to fix it. See [commit 8f43b44](https://github.com/claresudbery/clare-wiki-ably/commit/8f43b44) for when I added the plugin.

@@ -29,6 +29,6 @@ kramdown:
 plugins:
   - jekyll-sitemap
 
-# Category archive plugin
-category_archive:
-  - layout: category_archive
+# Category archive plugin (see https://github.com/shigeya/jekyll-category-archive-plugin)
+#category_archive:
+#  - layout: category_archive
