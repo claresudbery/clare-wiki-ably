@@ -1,11 +1,11 @@
-<!-- Start by building content to be displayed on the page -->
+{% comment %} Start by building content to be displayed on the page {% endcomment %}
 {% assign all_content = site.html_pages | concat: site.posts %}
 {% assign sortedlist = all_content | sort_natural: 'url' %}
 {% assign num_content_items = 0 %}
 {% capture my_content_list %}{% endcapture %}
 
 {% for sortedpage in sortedlist %}
-  {% if sortedpage.location == page.location and sortedpage.url != page.url %}
+  {% if sortedpage.location contains page.location and sortedpage.url != page.url %}
     {% assign num_content_items = num_content_items | plus: 1 %}
     {% capture my_content_list %}{{ my_content_list }}
       <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
@@ -17,7 +17,7 @@
     {% capture content_list_heading %}<h3>Pages:</h3>{% endcapture %}
 {% endunless %}
 
-<!-- This is the actual content displayed on the page -->
+{% comment %} This is the actual content displayed on the page {% endcomment %}
 {% include subfolders.html %}
 
 {{ content_list_heading }}

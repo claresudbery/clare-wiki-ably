@@ -2,7 +2,7 @@
 layout: post
 date:   2020-01-09 +0000
 categories: organising BigIndex
-location: "pages/organising/BigIndex/"
+location: "pages/organising/BigIndex/leaf"
 permalink: /pages/organising/BigIndex/Big-Index-To-Do
 ---
 

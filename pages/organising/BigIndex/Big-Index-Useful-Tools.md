@@ -1,7 +1,7 @@
 ---
 layout: page
 categories: organising BigIndex
-location: "pages/organising/BigIndex/"
+location: "pages/organising/BigIndex/leaf"
 permalink: /pages/organising/BigIndex/Big-Index-Useful-Tools
 ---
 

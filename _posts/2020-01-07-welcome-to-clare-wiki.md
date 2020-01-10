@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Everything Clare Knows!"
-location: posts/
+location: posts/leaf
 date:   2020-01-07 23:17:36 +0000
 permalink: /posts/Welcome-to-Everything-Clare-Knows
 ---

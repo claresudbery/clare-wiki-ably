@@ -1,6 +1,6 @@
 ---
 layout: page
-location: "pages/organising/"
+location: "pages/organising/leaf"
 permalink: /pages/organising/Dummy-Organising-Content
 ---
 
