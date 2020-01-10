@@ -16,3 +16,4 @@ permalink: /pages/organising/BigIndex/Big-Index-To-Do
 	- [more on collections](https://jekyllrb.com/docs/collections/)
 	- Collections [tutorial?](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB)
 - [sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [category archive](https://github.com/shigeya/jekyll-category-archive-plugin)

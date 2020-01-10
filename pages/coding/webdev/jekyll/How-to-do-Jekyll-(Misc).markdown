@@ -5,6 +5,14 @@ location: "coding/webdev/jekyll"
 permalink: /pages/coding/webdev/jekyll/How-to-do-Jekyll-(Misc)
 ---
 
+## Liquid templating laguage
+
+All the stuff you see surrounded by squigglybracket-percent tags as shown below is the [liquid templating language](https://shopify.github.io/liquid/). Docs are quite good.
+
+{% highlight html %}
+  {% assign myvar = 10 %}
+{% endhighlight %}
+
 ## Draft Posts
 
 * Draft posts go in the _drafts folder, but apart from that they work the same as posts.  
@@ -143,3 +151,7 @@ Then you can link to a section [like this](#draft-posts).
 I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357f).
 
 I also made another amendment to add a heading to each toc: [commit ebb8600](https://github.com/claresudbery/clare-wiki-ably/commit/ebb8600).
+
+## Category archive
+
+I didn't manage to get this working. There are build errors related to the plugin when you run jekyll serve locally, that will probably contain the key for how to fix it. See [commit 8f43b44](https://github.com/claresudbery/clare-wiki-ably/commit/8f43b44) for when I added the plugin.
