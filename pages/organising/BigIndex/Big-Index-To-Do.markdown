@@ -6,9 +6,11 @@ location: "organising/BigIndex"
 permalink: /pages/organising/BigIndex/Big-Index-To-Do
 ---
 
+
 - Create Big Index
-- Create private companion repos
+- Create private companion repos (clare-tech)
 - Convert word docs to markdown?
+- Text docs like Reinstalling Windows
 - Import from evernote
 - [Use collections to create folder indices?](https://github.com/jekyll/jekyll-help/issues/182)
 	- [more on collections](https://jekyllrb.com/docs/collections/)

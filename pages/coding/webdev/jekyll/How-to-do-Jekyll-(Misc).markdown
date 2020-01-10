@@ -137,3 +137,9 @@ In the raw markdown that looks like this:
 {% highlight markdown %}
 Then you can link to a section [like this](#draft-posts).
 {% endhighlight %}
+
+## Table of Contents
+
+I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357fad32574975735ae795481f0a01e5b6919).
+
+I also made another amendment to add a heading to each toc: [commit ebb8600](https://github.com/claresudbery/clare-wiki-ably/commit/ebb8600f871f3741585fcd1edcd72105d7aa6b50).
