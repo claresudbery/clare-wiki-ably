@@ -146,5 +146,15 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 	* It turned out this was because I had checked in Gemfile with the new Ruby version, but hadn't checked Gemfile.lock
 * Pipeline: https://dashboard.heroku.com/pipelines/0b691a3f-9d32-49f8-a1f5-1210aa13f0aa
 	
+## Downloading individual files from GitHub
+
+* You'll find you often get told to download individual files from GitHub when using plugins etc. 
+* But GitHub doesn't easily allow that via its UI.
+* Click on the file in GitHub UI, then click Raw, then copy the url
+* Now use this command on command line in root of your project (this one was going to _plugins folder, you might need to tweak):
+
+{% highlight bash %}
+	curl -L https://raw.githubusercontent.com/shigeya/jekyll-category-archive-plugin/master/_plugins/category_archive_plugin.rb > _plugins/category_archive_plugin.rb
+{% endhighlight %}
 
 
