@@ -5,9 +5,7 @@ categories: organising BigIndex
 permalink: /pages/organising/BigIndex/Big-Index-To-Do
 ---
 
-- Contact Ably 
-- dokuwiki?
-- Jekyll tutorials 
-- Convert word doc to markdown?
-- Experiment locally with Ably wiki
+- Create Big Index
+- Create private companion repos
+- Convert word docs to markdown?
 - Import from evernote
