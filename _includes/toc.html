@@ -79,7 +79,7 @@
         {% endfor %}
 
         {% unless include.item_class == blank %}
-            {% capture listItemClass %}{{ include.item_class | replace: '%level%', headerLevel }}{% endcapture %}
+            {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}}{% endcapture %}
         {% endunless %}
 
         {% assign num_items = num_items | plus: 1 %}
