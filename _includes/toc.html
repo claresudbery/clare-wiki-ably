@@ -36,6 +36,8 @@
 
     {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
 
+    {% assign num_items = 0 %}
+
     {% for node in nodes %}
         {% if node == "" %}
             {% continue %}
@@ -79,10 +81,15 @@
             {% capture listItemClass %}{{ include.item_class | replace: '%level%', headerLevel }}{% endcapture %}
         {% endunless %}
 
+        {% assign num_items = num_items | plus: 1 %}
         {% capture heading_body %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
         {% capture my_toc %}{{ my_toc }}
 {{ space }}{{ listModifier }} {{ listItemClass }} [{{ heading_body | replace: "|", "\|" }}]({% if include.baseurl %}{{ include.baseurl }}{% endif %}#{{ html_id }}){% if include.anchor_class %}{:.{{ include.anchor_class }}}{% endif %}{% endcapture %}
     {% endfor %}
+
+    {% unless num_items == 0 %}
+        {% capture toc_heading %}<h3>Contents of this page:</h3>{% endcapture toc_heading %}
+    {% endunless %}
 
     {% if include.class %}
         {% capture my_toc %}{:.{{ include.class }}}
@@ -93,4 +100,4 @@
         {% capture my_toc %}{: #{{ include.id }}}
 {{ my_toc | lstrip }}{% endcapture %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}{{ my_toc | markdownify | strip }}
+{% endcapture %}{% assign tocWorkspace = '' %}{{ toc_heading }}{{ my_toc | markdownify | strip }}
