@@ -35,9 +35,7 @@
     {% assign firstHeader = true %}
 
     {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
-    
-    {% unless nodes.size == 0 %}
-    <h3>Contents of this page:</h3>
+
     {% for node in nodes %}
         {% if node == "" %}
             {% continue %}
@@ -78,7 +76,7 @@
         {% endfor %}
 
         {% unless include.item_class == blank %}
-            {% capture listItemClass %}{{ include.item_class | replace: '%level%', headerLevel }}{% endcapture %}
+            {% capture listItemClass %}{:.{{ include.item_class | replace: '%level%', headerLevel }}}{% endcapture %}
         {% endunless %}
 
         {% capture heading_body %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
@@ -90,7 +88,6 @@
         {% capture my_toc %}{:.{{ include.class }}}
 {{ my_toc | lstrip }}{% endcapture %}
     {% endif %}
-    {% endunless %}
 
     {% if include.id %}
         {% capture my_toc %}{: #{{ include.id }}}
