@@ -1,5 +1,6 @@
 <!-- Start by building content to be displayed on the page -->
-{% assign sortedlist = site.html_pages | sort_natural: 'url' %}
+{% assign all_content = site.html_pages | concat: site.posts %}
+{% assign sortedlist = all_content | sort_natural: 'url' %}
 {% assign num_content_items = 0 %}
 {% capture my_content_list %}{% endcapture %}
 
