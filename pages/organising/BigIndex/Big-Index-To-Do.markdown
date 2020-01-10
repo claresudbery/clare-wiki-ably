@@ -15,3 +15,4 @@ permalink: /pages/organising/BigIndex/Big-Index-To-Do
 - [Use collections to create folder indices?](https://github.com/jekyll/jekyll-help/issues/182)
 	- [more on collections](https://jekyllrb.com/docs/collections/)
 	- Collections [tutorial?](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB)
+- [sitemap](https://github.com/jekyll/jekyll-sitemap)
