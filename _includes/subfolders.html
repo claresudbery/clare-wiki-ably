@@ -8,14 +8,12 @@
 {% assign next_level = folderdepth | plus: 1 %}
 {% for sortedpage in sortedlist %}
   {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
-
   {% if sortedpage.location contains page.location and subfolderdepth == next_level and sortedpage.folderlist == true and sortedpage.url != page.url %}
     {% assign num_folder_items = num_folder_items | plus: 1 %}
     {% capture my_folder_list %}{{ my_folder_list }}
       <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
     {% endcapture %}
   {% endif %}
-
 {% endfor %}  
 
 {% unless num_folder_items == 0 %}
@@ -24,7 +22,6 @@
 
 {% comment %} This is the actual content displayed on the page {% endcomment %}
 {{ folder_list_heading }}
-
 <ul id="subfolders">
   {{ my_folder_list }}  
 </ul>
