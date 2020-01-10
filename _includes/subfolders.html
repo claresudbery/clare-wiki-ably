@@ -5,9 +5,9 @@
 {% capture my_folder_list %}{% endcapture %}
 
 {% assign folderdepth = page.location | split: "/" | size %}
+{% assign next_level = folderdepth | plus: 1 %}
 {% for sortedpage in sortedlist %}
   {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
-  {% assign next_level = folderdepth | plus: 1 %}
 
   {% if sortedpage.location contains page.location and subfolderdepth == next_level and sortedpage.folderlist == true and sortedpage.url != page.url %}
     {% assign num_folder_items = num_folder_items | plus: 1 %}

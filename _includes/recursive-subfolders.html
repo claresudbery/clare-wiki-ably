@@ -1,18 +1,16 @@
 {% assign all_content = site.html_pages | concat: site.posts %}
 {% assign sortedlist = all_content | sort_natural: 'url' %}
 
-{% assign folderdepth = include.parentlocation | split: "/" | size %}
-{% for sortedpage in sortedlist %}
-  {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
-  {% assign next_level = folderdepth | plus: 1 %}
+  {% for sortedpage in sortedlist %}
+    {% assign folderdepth = include.parentlocation | split: "/" | size %}
+    {% assign next_level = folderdepth | plus: 1 %}
+    {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
 
-  {% if sortedpage.location contains page.location and subfolderdepth == next_level and sortedpage.folderlist == true and sortedpage.url != page.url %}
-    <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
-  {% else %}
-    {% if subfolderdepth > next_level %}
-      <!-- RECURSION!! -->
-      {% include recursive-subfolders.html parentlocation=sortedpage.location %}
+    {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
+      <ul>
+        <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
+        {% include recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url %}
+      </ul>
     {% endif %}
-  {% endif %}
 
-{% endfor %}
+  {% endfor %}
