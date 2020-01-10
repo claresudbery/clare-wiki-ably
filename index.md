@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-(For the full site map, go [here](/pages/A-site-map).)
+(For the full site map, go [here](/pages/A-Site-Map).)
 
 I write notes constantly, but up to now I haven't come up with a consistent way of making those notres sharable and discoverable.
 
