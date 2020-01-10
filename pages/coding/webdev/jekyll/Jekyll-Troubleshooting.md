@@ -73,7 +73,7 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 		* I fixed this by adding these two lines to ~/.bashrc: 
 		* ```source /usr/local/share/chruby/chruby.sh```
 		* ```source /usr/local/share/chruby/auto.sh```
-	* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#Ruby-Version-Stuff)
+	* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
 	* Then I installed Heroku CLI: ```curl https://cli-assets.heroku.com/install.sh | sh```
 		* (that's because I got an error when I used the ```snapd``` command: https://superuser.com/questions/1391219/setting-up-heroku-cli-in-wsl)
 		* After that you have to qualify heroku commands like this: ```/usr/local/bin/heroku create```
@@ -87,7 +87,7 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 * install ruby and jekyll and heroku stuff: https://blog.heroku.com/jekyll-on-heroku
 	* NB: Change those instructions slightly:
 	* Instead of ```ruby-install ruby```, use ```ruby-install``` to install the same Ruby version as specified in Gemfile, like this: ```ruby-install ruby 2.6.5```
-* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#Ruby-Version-Stuff)
+* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
 
 ## Keeping a file in git without tracking changes
 * Here: https://stackoverflow.com/questions/9794931/keep-file-in-a-git-repo-but-dont-track-changes
