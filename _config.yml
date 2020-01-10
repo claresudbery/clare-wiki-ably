@@ -24,3 +24,7 @@ exclude:
 # Referenced here: https://stackoverflow.com/questions/4629675/jekyll-markdown-internal-links
 kramdown:
   auto_ids: true
+
+# Plugins
+plugins:
+  - jekyll-sitemap
