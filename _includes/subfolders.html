@@ -1,4 +1,4 @@
-<!-- Start by building content to be displayed on the page -->
+{% comment %} Start by building content to be displayed on the page {% endcomment %}
 {% assign all_content = site.html_pages | concat: site.posts %}
 {% assign sortedlist = all_content | sort_natural: 'url' %}
 {% assign num_folder_items = 0 %}
@@ -22,7 +22,7 @@
   {% capture folder_list_heading %}<h3>Subfolders:</h3>{% endcapture %}
 {% endunless %}
 
-<!-- This is the actual content displayed on the page -->
+{% comment %} This is the actual content displayed on the page {% endcomment %}
 {{ folder_list_heading }}
 
 <ul id="subfolders">

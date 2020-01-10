@@ -1,4 +1,4 @@
-<!-- Start by building content to be displayed on the page -->
+{% comment %} Start by building content to be displayed on the page {% endcomment %}
 {% capture tocWorkspace %}
     {% comment %}
         Version 1.0.8
@@ -103,5 +103,5 @@
     {% endif %}
 {% endcapture %}{% assign tocWorkspace = '' %}
 
-<!-- This is the actual content displayed on the page -->
+{% comment %} This is the actual content displayed on the page {% endcomment %}
 {{ toc_heading }}{{ my_toc | markdownify | strip }}
