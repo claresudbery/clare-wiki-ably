@@ -65,6 +65,7 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 * If it happens again, fix Gemfile.lock by running the **bundle** command in Ubuntu and then pushing the resulting Gemfile.lock up to the server.		
 	
 ## Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
+* Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/coding/webdev/jekyll/Jekyll-Notes.md) (accessible to Clare only).
 * In Ubuntu 16: 
 	* I followed the instructions for getting ruby-install and chruby to get latest Ruby version	
 		* prob not necessary though, as I forgot I'd alrteady installed Ruby.
@@ -154,6 +155,7 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 	* https://devcenter.heroku.com/articles/logging
 * Build logs Via web UI
 	* Click pipeline, then clare-wiki, then Activity, View build logs under a build
+* Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/coding/webdev/jekyll/Jekyll-Notes.md) (accessible to Clare only).
 
 ## Downloading individual files from GitHub
 
@@ -165,5 +167,6 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 {% highlight bash %}
 	curl -L https://raw.githubusercontent.com/shigeya/jekyll-category-archive-plugin/master/_plugins/category_archive_plugin.rb > _plugins/category_archive_plugin.rb
 {% endhighlight %}
+
 
 
