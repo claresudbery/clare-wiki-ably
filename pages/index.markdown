@@ -2,6 +2,6 @@
 layout: page
 folderlist: true
 location: "pages/"
-permalink: /pages
+permalink: /Pages
 ---
 
