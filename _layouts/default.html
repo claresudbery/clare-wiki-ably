@@ -27,6 +27,9 @@
     <div class="wrapper">
       <h1>{{ page.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</h1>
       <br>
+      {% if page.url != "/" %}
+        {% include toc.html html=content sanitize=true h_min=2 %}
+      {% endif %}
       {{ content }}
     </div>
   </main>
