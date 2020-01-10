@@ -8,7 +8,7 @@
 {% assign next_level = folderdepth | plus: 1 %}
 {% for sortedpage in sortedlist %}
   {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
-  {% if sortedpage.location contains page.location and subfolderdepth == next_level and sortedpage.url != page.url %}
+  {% if sortedpage.location contains page.location and subfolderdepth == next_level and sortedpage.folderlist != true and sortedpage.url != page.url %}
     {% assign num_content_items = num_content_items | plus: 1 %}
     {% capture my_content_list %}{{ my_content_list }}
       <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
