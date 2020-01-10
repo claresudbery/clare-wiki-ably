@@ -28,3 +28,7 @@ kramdown:
 # Plugins
 plugins:
   - jekyll-sitemap
+
+# Category archive plugin
+category_archive:
+  - layout: category_archive
