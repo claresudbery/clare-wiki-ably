@@ -155,3 +155,15 @@ I also made another amendment to add a heading to each toc: [commit ebb8600](htt
 ## Category archive
 
 I didn't manage to get this working. I was using [category archive](https://github.com/shigeya/jekyll-category-archive-plugin). There are build errors related to the plugin when you run jekyll serve locally, that will probably contain the key for how to fix it. See [commit 8f43b44](https://github.com/claresudbery/clare-wiki-ably/commit/8f43b44) for when I added the plugin.
+
+## Sitemap
+
+I've used the [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) plugin to create sitemap.xml.
+
+But I've also written my own _includes/sitemap.html component to traverse the folder structure and build a sitemap. Note that it doesn't actually traverse the folder structure: What it actually does is use the location variable in the front matter. Each file uses location to record its location in the folder structure. The same structure is also mirrored in each file's permalink (hmm, I should probably try to automate that - it's currently manual).
+
+Note that each folder contains an index.md which has folderlist set to true in the front matter, and I've created two more includes - folder-contents.html and subfolders.html - which use that value to build lists of subfolders and files in the relevant folder.
+
+If a file isn't a folderlist, its location has an extra element - "leaf" - appended to the end. This allows the sitemap recursive functionality to line everything up nicely in the sitemap tree. This is implemented in recursive-subfolders.html.
+
+!! I don't think this is going to scale well! I couldn't find any decent mapping or filtering functionality for collections in Liquid, which has meant I've had to scatter for loops all over the bloody place. If the site grows a lot this could have a big impact on the build performance - I'll have to keep an eye on that. The answer is probably to build a decent Ruby plugin instead of writing the functionality in liquid. Sadly those for loops are also in folder-contents.html and subfolders.html so it really is pretty awful. But I'm tired now and I want to eat my tea. :/
