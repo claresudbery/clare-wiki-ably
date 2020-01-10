@@ -2,7 +2,7 @@
 layout: page
 folderlist: false
 location: "pages/"
-permalink: /Pages
+permalink: /pages/A-Site-Map
 ---
 
 {% include sitemap.html %}

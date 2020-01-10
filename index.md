@@ -4,6 +4,8 @@ title: Home
 permalink: /
 ---
 
+(For the full site map, go [here](/pages/A-site-map).)
+
 I write notes constantly, but up to now I haven't come up with a consistent way of making those notres sharable and discoverable.
 
 The hope is that any notes I write that don't have security implications can come straight here, where they'll be easily organised and discoverable for my own use, but also sharable when relevant.
