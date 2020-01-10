@@ -1,3 +1,4 @@
+<!-- Start by building content to be displayed on the page -->
 {% capture tocWorkspace %}
     {% comment %}
         Version 1.0.8
@@ -100,4 +101,7 @@
         {% capture my_toc %}{: #{{ include.id }}}
 {{ my_toc | lstrip }}{% endcapture %}
     {% endif %}
-{% endcapture %}{% assign tocWorkspace = '' %}{{ toc_heading }}{{ my_toc | markdownify | strip }}
+{% endcapture %}{% assign tocWorkspace = '' %}
+
+<!-- This is the actual content displayed on the page -->
+{{ toc_heading }}{{ my_toc | markdownify | strip }}
