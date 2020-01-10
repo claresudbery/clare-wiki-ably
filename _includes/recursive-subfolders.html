@@ -1,16 +1,33 @@
 {% assign all_content = site.html_pages | concat: site.posts %}
 {% assign sortedlist = all_content | sort_natural: 'url' %}
 
-  {% for sortedpage in sortedlist %}
-    {% assign folderdepth = include.parentlocation | split: "/" | size %}
-    {% assign next_level = folderdepth | plus: 1 %}
-    {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
+<!-- First we find out whether there are any subfolders at this level -->
+{% assign num_items = 0 %}
+{% assign folderdepth = include.parentlocation | split: "/" | size %}
+{% assign next_level = folderdepth | plus: 1 %}
+{% for sortedpage in sortedlist %}
+  {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
+  {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
+    {% assign num_items = num_items | plus: 1 %}
+  {% endif %}
+{% endfor %}
 
-    {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
-      <ul>
+<!-- Now if we know there are some subfolders, we can build up the bullet list. -->
+{% unless num_items == 0 %}
+  <ul>      
+    {% for sortedpage in sortedlist %}
+      <!-- recursion means we have to keep reassigning folderpath and next_level -->
+      {% assign folderdepth = include.parentlocation | split: "/" | size %}
+      {% assign next_level = folderdepth | plus: 1 %}
+      {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
+
+      {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
         <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
-        {% include recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url %}
-      </ul>
-    {% endif %}
+        {% if sortedpage.folderlist == true %}
+          {% include recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url %}
+        {% endif %}
+      {% endif %}
 
-  {% endfor %}
+    {% endfor %}
+  </ul>
+{% endunless %}
