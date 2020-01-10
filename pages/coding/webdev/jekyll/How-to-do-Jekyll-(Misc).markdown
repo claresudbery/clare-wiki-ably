@@ -98,7 +98,7 @@ You'll notice various variables and for loops and stuff being used in minima fil
 
 ## Permalinks not working unless you do them in a certain way
 
-The use of permalinks in this site as edited by Ably will not work (as of [commit 2530d9f](https://github.com/claresudbery/clare-wiki-ably/commit/2530d9f19269651df8645aa8f80de3701ec2d694)).
+The use of permalinks in this site as edited by Ably will not work (as of [commit 2530d9f](https://github.com/claresudbery/clare-wiki-ably/commit/2530d9f)).
 
 The reason for this is the code in _layouts/default.html, which relies on the url to do two things:
 * List site content under the search box
@@ -140,6 +140,6 @@ Then you can link to a section [like this](#draft-posts).
 
 ## Table of Contents
 
-I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357fad32574975735ae795481f0a01e5b6919).
+I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357f).
 
-I also made another amendment to add a heading to each toc: [commit ebb8600](https://github.com/claresudbery/clare-wiki-ably/commit/ebb8600f871f3741585fcd1edcd72105d7aa6b50).
+I also made another amendment to add a heading to each toc: [commit ebb8600](https://github.com/claresudbery/clare-wiki-ably/commit/ebb8600).
