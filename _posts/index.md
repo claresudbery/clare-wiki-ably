@@ -1,7 +1,7 @@
 ---
 layout: page
 folderlist: true
-location: "pages/"
-permalink: /Pages
+location: posts/
+permalink: /Posts
 ---
 
