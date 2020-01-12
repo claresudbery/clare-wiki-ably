@@ -1,6 +1,6 @@
 ---
 layout: page
 folderlist: true
-location: "pages/coding/"
-permalink: /pages/Coding
+location: "pages/coding/tools-and-other"
+permalink: /pages/coding/Tools-And-Other-Useful-Stuff
 ---

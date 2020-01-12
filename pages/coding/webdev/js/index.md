@@ -1,7 +1,7 @@
 ---
 layout: page
 folderlist: true
-location: "pages/coding/webdev/"
-permalink: /pages/coding/Web-Development
+location: "pages/coding/webdev/js"
+permalink: /pages/coding/webdev/Javascript
 ---
 

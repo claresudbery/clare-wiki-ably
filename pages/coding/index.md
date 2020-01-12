@@ -6,12 +6,6 @@ location: "pages/coding/"
 permalink: /pages/Coding
 ---
 
-## Places I have checked:
-- Windows (home laptop) - whole hard disk (22/10/18)
-- MacBook (work laptop, old laptop but not new one, which might have extra NHS Digital stuff on it): dev folder (22/10/18)
-- GitHub (22/10/18)
-- External hard disk (22/10/18)
-
 ## Types:
 - Quick_ - separate list
 - API_ - separate list
@@ -34,23 +28,25 @@ permalink: /pages/Coding
         - Command line
         - Cloud deployment
     - Tools and other useful stuff
+- Thinking
+    - Data Engineering
 - Organising
 - Writing
 
 ## Master List:
 - (leaf) Windows console app
     - Labels: Quick_, .Net  
-\t- My GitHub (ConsoleCatchall, TestDrivenNovel, Design-Patterns, TrainRoutes, CodeReviews)
+    - My GitHub (ConsoleCatchall, TestDrivenNovel, Design-Patterns, TrainRoutes, CodeReviews)
     - InSimpleTerms: https://insimpleterms.blog/2018/10/31/converting-a-net-standard-console-app-into-a-net-core-console-app/
 - (leaf) NancyFX
     - Labels: Quick_, API_, Tools
-    - My GitHub (joi-energy-stage3-csharp, NancyPlayground, RabbitMQNancy, CurrencyAPI)
+    - My GitHub (jesc, NancyPlayground, RabbitMQNancy, CurrencyAPI)
 - (leaf) Asp.Net Core
     - Labels: Quick_, .Net
     - My GitHub (HelloAWS)
 - (folder) .Net Core
     - Labels: Quick_, .Net
-    - My GitHub (joi-energy-stage3-csharp, TimeTravelHack and TimeTravelHackPOC (Hack Mcr 2018))
+    - My GitHub (jesc, TimeTravelHack and TimeTravelHackPOC (Hack Mcr 2018))
     - InSimpleTerms: Check the C# label (there are quite a few blog posts, but they're pretty much copies of what's in the word doc beow)
     - My notes: 
         - DotNetCoreMVC.docx 
@@ -67,9 +63,9 @@ permalink: /pages/Coding
         - This was cloned from elsewhere. When I tried to create a new repo for it I just got a ton of security warnings because all the dependencies were out of date, so I got rid of it.
         - I originally got it from http://intljusticemission.github.io/react-big-calendar/examples/index.html
         - It was used by another project - MenopauseTracker, I think.
-    - My GitHub (sonar)
-    - My GitHub (signposts-pipelines)
-    - My GitHub (visualise-with-templating)  
+    - My GitHub (samba/son)
+    - My GitHub (samba/sig)
+    - My GitHub (samba/vis)  
 - (leaf) React Native
     - Labels: Web development-Javascript, (mobile)  
     - My GitHub (ReactJsTutorial)
@@ -85,12 +81,12 @@ permalink: /pages/Coding
 - (folder) Java
     - Labels: (Web development), Languages, Back_end_
     - My GitHub (2Wheeler-Ingester-London-Summer-2018)
-    - My GitHub (CDG\cdg-backend)
-    - My GitHub (joi-energy-java)
+    - My GitHub (cadogan/backend)
+    - My GitHub (jej)
 - (folder) C#
     - Labels: (.Net), Languages, Back_end_
-    - My GitHub (joi-energy-stage3-csharp, joi-energy-official-dotnet, ConsoleCatchall, TestDrivenNovel, Design-Patterns, SquareFill,  TrainRoutes, TopGame, ClaresPancakes, ElevatorKata01, TimeTravelHack, CurrencySDK, CoduranceBankKata)
-    - My GitHub: stockport-iag (Stockport Council) 
+    - My GitHub (jesc, jeod, ConsoleCatchall, TestDrivenNovel, Design-Patterns, SquareFill,  TrainRoutes, TopGame, ClaresPancakes, ElevatorKata01, TimeTravelHack, CurrencySDK, CoduranceBankKata)
+    - My GitHub: samba/iag 
 - (leaf) Swift / XCode
     - Labels: Mobile
     - My GitHub (SquareFillXCode, ios-app-experiments(?))
@@ -99,7 +95,7 @@ permalink: /pages/Coding
     - My GitHub (SquareFill, SquareFillXamarin, ios-app-experiments(?),  https://github.com/Menopaws/menopaws)
 - (leaf) Clojure 
     - Labels: functional
-    - My GitHub (clojure-playground, clojure-stuff, sonar, signposts-pipelines, visualise-with-templating)
+    - My GitHub (clojure-playground, clojure-stuff, samba/son, samba/sig, samba/vis)
 - (leaf) ASP.Net 
     - Labels: (Web development (root)), .Net  
     - My GitHub (Async-experiments)
@@ -114,7 +110,7 @@ permalink: /pages/Coding
         - DotNetCoreMVC.docx in Google Drive / Clients / SMBC / Workshops / DotNetCore
 - (leaf) Ember JS
     - Labels: Web development-Javascript  
-    - My GitHub: CDG (cdg-frontend, bella-italia, cafe-rouge)
+    - My GitHub: cadogan 
     - Chrome bookmarks: Useful | Coding | Ember
 - (leaf) Python
     - Labels: Languages, (command line)
@@ -130,6 +126,9 @@ permalink: /pages/Coding
     - Scala Build Tool (SBT): https://www.scala-sbt.org/
     - Databricks (Chrome bookmarks:Thoughtworks/Archived Projects/Data Engineering/Databricks)
     - Dropbox / IT Training / functional programming
+    - my data engineering notes
+- Data Engineering
+    - my data engineering notes
 - (leaf) Lots of Javascript stuff
     - Labels: Web development-Javascript
     - External hard disk has stuff from Havas Lynx and Touch4 in F:\2014_OldHardDisk\Git
@@ -151,13 +150,13 @@ permalink: /pages/Coding
     - Chrome Bookmarks:
         - Useful | Hackathons | Hack Mcr 2018 | AWS for Hack 18
         - Thoughtworks | Archived Projects | Data Engineering | AWS for DE
-        - Getting in: claresudbery gmail, AWS
 - (folder) Infrastructure
     - Labels: Coding
-    - Useful Notes: Etsy.docx
+    - Useful Notes: Eritrea.docx
     - Various InSimpleTerms posts
-    - My GitHub (CDG/infra, Infra-Scripts)
+    - My GitHub (cadogan/infra, Infra-Scripts)
     - Dropbox: IT Training / Infrastructure Stuff (this has also been copied to my GitHub Infra-Scripts repo)
+    - my data engineering notes
 - (Folder) Progressive webapp
     - Labels: Web development
     - Presentation: https://docs.google.com/presentation/d/1KUp0CJr0Jp82ZHKXaCsfyrtO8Xr_HTatIqFAV7h4KSs/edit#slide=id.g3cdc6d0626_0_5

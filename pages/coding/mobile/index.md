@@ -1,6 +1,6 @@
 ---
 layout: page
 folderlist: true
-location: "pages/coding/"
-permalink: /pages/Coding
+location: "pages/coding/mobile"
+permalink: /pages/coding/Mobile
 ---

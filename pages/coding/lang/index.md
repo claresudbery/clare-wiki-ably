@@ -1,6 +1,6 @@
 ---
 layout: page
 folderlist: true
-location: "pages/coding/languages"
+location: "pages/coding/lang"
 permalink: /pages/coding/Languages
 ---

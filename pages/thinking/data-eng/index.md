@@ -2,7 +2,7 @@
 layout: page
 folderlist: true
 sitelist: true
-location: "pages/organising/"
-permalink: /pages/Organising
+location: "pages/think/data-eng"
+permalink: /pages/think/Data-Engineering
 ---
 
