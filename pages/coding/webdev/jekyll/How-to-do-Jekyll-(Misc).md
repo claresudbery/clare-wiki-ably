@@ -168,6 +168,8 @@ If a file isn't a folderlist, its location has an extra element - "leaf" - appen
 
 !! I don't think this is going to scale well! I couldn't find any decent mapping or filtering functionality for collections in Liquid, which has meant I've had to scatter for loops all over the bloody place. If the site grows a lot this could have a big impact on the build performance - I'll have to keep an eye on that. The answer is probably to build a decent Ruby plugin instead of writing the functionality in liquid. Sadly those for loops are also in folder-contents.html and subfolders.html so it really is pretty awful. But I'm tired now and I want to eat my tea. :/
 
+I'm now wondering whether this might be a better recursive site map: https://thinkshout.com/blog/2014/12/creating-dynamic-menus-in-jekyll/?
+
 ## Collections
 
 - [Use collections to create folder indices?](https://github.com/jekyll/jekyll-help/issues/182)
