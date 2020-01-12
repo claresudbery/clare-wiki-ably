@@ -1,9 +1,8 @@
 ---
 layout: page
 folderlist: true
-sitelist: true
-location: "pages/coding/"
-permalink: /pages/Coding
+location: "pages/coding/languages"
+permalink: /pages/coding/Languages
 ---
 
 ## Places I have checked:
