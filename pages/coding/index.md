@@ -6,3 +6,152 @@ location: "pages/coding/"
 permalink: /pages/Coding
 ---
 
+## Places I have checked:
+- Windows (home laptop) - whole hard disk (22/10/18)
+- MacBook (work laptop, old laptop but not new one, which might have extra NHS Digital stuff on it): dev folder (22/10/18)
+- GitHub (22/10/18)
+- External hard disk (22/10/18)
+
+## Types:
+- Quick
+- Command line
+- API
+- Web front end
+- Web front + back
+- Back end
+- Desktop front end
+- Mobile
+- Functional
+- Javascript
+- Hardware
+- Cloud deployment
+- Infra
+- IoT (Internet of things - robots etc)
+
+
+## Master List:
+- Windows console app
+    - Labels: Quick, Command line  
+\t- My GitHub (ConsoleCatchall, TestDrivenNovel, Design-Patterns, TrainRoutes, CodeReviews)
+    - InSimpleTerms: https://insimpleterms.blog/2018/10/31/converting-a-net-standard-console-app-into-a-net-core-console-app/
+- NancyFX
+    - Labels: Quick, API
+    - My GitHub (joi-energy-stage3-csharp, NancyPlayground, RabbitMQNancy, CurrencyAPI)
+- Asp.Net Core
+    - Labels: Quick, Web front end
+    - My GitHub (HelloAWS)
+- .Net Core
+    - Labels: Quick, Web front + back
+    - My GitHub (joi-energy-stage3-csharp, TimeTravelHack and TimeTravelHackPOC (Hack Mcr 2018))
+    - InSimpleTerms: Check the C# label (there are quite a few blog posts, but they're pretty much copies of what's in the word doc beow)
+    - My notes: 
+        - DotNetCoreMVC.docx 
+        - DotNetCoreMVC.pptx 
+        - in Google Drive / Clients / SMBC / Workshops / DotNetCore
+- WinForms
+    - Labels: Back end, Desktop front end
+    - My GitHub (TopGame)
+- React
+    - Labels: Web front end,  Javascript  
+    - My GitHub (getting-started-with-tdd-in-react)
+    - My GitHub (MenopauseTracker-javascript)
+    - react-big-calendar
+        - This was cloned from elsewhere. When I tried to create a new repo for it I just got a ton of security warnings because all the dependencies were out of date, so I got rid of it.
+        - I originally got it from http://intljusticemission.github.io/react-big-calendar/examples/index.html
+        - It was used by another project - MenopauseTracker, I think.
+    - My GitHub (sonar)
+    - My GitHub (signposts-pipelines)
+    - My GitHub (visualise-with-templating)  
+- React Native
+    - Labels: Web front end,  Javascript  
+    - My GitHub (ReactJsTutorial)
+    - My GitHub (JavaScriptJeopardyRn)
+- ReactiveX
+    - Labels: Back end
+    - My GitHub (ReactiveXTutorial)
+- CSS Animation
+    - Labels: Web front end
+    - My GitHub (Css-Art)
+- Java
+    - Labels: Back end
+    - My GitHub (2Wheeler-Ingester-London-Summer-2018)
+    - My GitHub (CDG\cdg-backend)
+    - My GitHub (joi-energy-java)
+- C#
+    - Labels: Back end
+    - My GitHub (joi-energy-stage3-csharp, joi-energy-official-dotnet, ConsoleCatchall, TestDrivenNovel, Design-Patterns, SquareFill,  TrainRoutes, TopGame, ClaresPancakes, ElevatorKata01, TimeTravelHack, CurrencySDK, CoduranceBankKata)
+    - My GitHub: stockport-iag (Stockport Council) 
+- Swift / XCode
+    - Labels: Mobile
+    - My GitHub (SquareFillXCode, ios-app-experiments(?))
+- Xamarin
+    - Labels: Mobile
+    - My GitHub (SquareFill, SquareFillXamarin, ios-app-experiments(?),  https://github.com/Menopaws/menopaws)
+- Clojure 
+    - Labels: Command line, functional
+    - My GitHub (clojure-playground, clojure-stuff, sonar, signposts-pipelines, visualise-with-templating)
+- Visual Studio ASP.Net WebApp
+    - Labels: Web front end,  Javascript  
+    - My GitHub (Async-experiments)
+- MVC4
+    - Labels: Web front + back,  Javascript  
+    - My GitHub (Async-experiments)
+- WebAPI
+    - Labels: API, back end
+    - My GitHub (Async-experiments, TimeTravelHack and TimeTravelHackPOC (Hack Mcr 2018))
+    - InSimpleTerms: Check the C# label (there are quite a few blog posts, but they're pretty much copies of what's in the word doc below)
+    - My notes: 
+        - DotNetCoreMVC.docx in Google Drive / Clients / SMBC / Workshops / DotNetCore
+- Ember JS
+    - Labels: Web front end,  Javascript  
+    - My GitHub: CDG (cdg-frontend, bella-italia, cafe-rouge)
+    - Chrome bookmarks: Useful | Coding | Ember
+- Python
+    - Labels: Command line, Back end
+    - My GitHub (Infra-Scripts, standards-translation, data-engineering)
+- Node js
+     - Labels: Javascript, Back end
+- Pure html
+    - Labels: Quick, Web front end
+    - My GitHub (TimeTravelHack, TimeTravelHackPOC (Hack Mcr 2018), codefirstgirls-bootstrap-exercise)
+- Scala
+    - Labels: Functional, back end
+    - My GitHub (data-engineering, scala-test-001)
+    - Scala Build Tool (SBT): https://www.scala-sbt.org/
+    - Databricks (Chrome bookmarks:Thoughtworks/Archived Projects/Data Engineering/Databricks)
+    - Dropbox / IT Training / functional programming
+- Lots of Javascript stuff
+    - Labels: Javascript, web front end
+    - External hard disk has stuff from Havas Lynx and Touch4 in F:\2014_OldHardDisk\Git
+- Puck.js IoT button
+    - Quick, Javascript, Web front end, hardware
+    - Useful Notes: Puck.js
+    - My GitHub: TimeTravelHack and TimeTravelHackPOC (Hack Mcr 2018)
+    - In TimeTravelPOC there is a puckjs folder which contains various snippets of useful code examples
+    - Evernote: Hackathons (Hack Mcr 18)
+- Vue.js
+    - Labels: Quick, Javascript, Web front end
+    - Useful notes: Vue.js
+    - My GitHub: TimeTravelHack and TimeTravelHackPOC (Hack Mcr 2018)
+- AWS
+    - Labels: Cloud deployment, Infra
+    - Useful Notes: AWS
+    - Hack Mcr 2018: Notes on trying to get https working: https://docs.google.com/document/d/1aGdf7gzUBp5jby-GbN-bdMQcNzpAMOVH0XgytXr_yEU/edit
+    - Evernote: Hackathons (Hack Mcr 18)
+    - Chrome Bookmarks:
+        - Useful | Hackathons | Hack Mcr 2018 | AWS for Hack 18
+        - Thoughtworks | Archived Projects | Data Engineering | AWS for DE
+        - Getting in: claresudbery gmail, AWS
+- Infrastructure
+    - Labels: Cloud deployment, Infra
+    - Useful Notes: Etsy.docx
+    - Various InSimpleTerms posts
+    - My GitHub (CDG/infra, Infra-Scripts)
+    - Dropbox: IT Training / Infrastructure Stuff (this has also been copied to my GitHub Infra-Scripts repo)
+- Progressive webapp
+    - Labels: Web front + back
+    - Presentation: https://docs.google.com/presentation/d/1KUp0CJr0Jp82ZHKXaCsfyrtO8Xr_HTatIqFAV7h4KSs/edit#slide=id.g3cdc6d0626_0_5
+- Internet of things - robots etc
+    - Labels: IoT
+    - My GitHub: mBot (Oscar's robot?)
+    - Dropbox / IT Training / IoT
