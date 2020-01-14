@@ -1,6 +1,6 @@
 ---
 layout: page
 folderlist: true
-location: "pages/coding/languages/func"
-permalink: /pages/coding/languages/Functional-Languages
+location: "pages/coding/lang/func"
+permalink: /pages/coding/lang/Functional-Languages
 ---
