@@ -27,7 +27,7 @@
         {% endif %}
         {% if sortedpage.folderlist == true %}
           {% assign new_parentdepth = sortedpage.location | split: "/" | size %}
-          {% include recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url parentdepth=new_parentdepth %}
+          {% include leafless-recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url parentdepth=new_parentdepth %}
         {% endif %}
       {% endif %}
 
