@@ -20,14 +20,15 @@
       {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
 
       {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
-        {% assign dont_show_link = include.leafless and !sortedpage.folderlist %}
+        {% assign dont_show_link = (include.leafless and !sortedpage.folderlist) %}
         {% if dont_show_link == false %}  
           <li>HELLO 3</li>li>      
           <li><a href="{{ sortedpage.url }}">leafless: {{include.leafless}}, folderlist: {{sortedpage.folderlist}}, {{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
         {% endif %}
         {% if sortedpage.folderlist == true %}
           {% assign new_parentdepth = sortedpage.location | split: "/" | size %}
-          {% include leafless-recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url parentdepth=new_parentdepth leafless=include.leafless %}
+          {% assign new_leafless = include.leafless %}
+          {% include leafless-recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url parentdepth=new_parentdepth leafless=new_leafless %}
         {% endif %}
       {% endif %}
 
