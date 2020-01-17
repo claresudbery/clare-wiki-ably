@@ -22,7 +22,7 @@
       {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
         {% assign dont_show_link = (include.leafless == true and sortedpage.folderlist == false) %}
         {% if dont_show_link == false %}        
-          <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
+          <li><a href="{{ sortedpage.url }}">leafless: {{include.leafless}}, folderlist: {{sortedpage.folderlist}}, {{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
         {% endif %}
         {% if sortedpage.folderlist == true %}
           {% assign new_parentdepth = sortedpage.location | split: "/" | size %}
