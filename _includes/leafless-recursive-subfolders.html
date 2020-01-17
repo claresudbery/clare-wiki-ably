@@ -20,11 +20,8 @@
       {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
 
       {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
-        {% assign show_link = true %}
-        {% if include.leafless == true and sortedpage.folderlist == false %}
-          {% assign show_link = false %}
-        {% endif %}
-        {% if show_link == true %}        
+        {% assign dont_show_link = (include.leafless == true and sortedpage.folderlist == false) %}
+        {% if dont_show_link == false %}        
           <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
         {% endif %}
         {% if sortedpage.folderlist == true %}
