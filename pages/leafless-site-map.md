@@ -6,6 +6,4 @@ location: "pages/"
 permalink: /pages/Leafless-Site-Map
 ---
 
-HELLO 1
-
 {% include leafless-sitemap.html %}
