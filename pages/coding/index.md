@@ -8,6 +8,7 @@ permalink: /pages/Coding
 
 # Types:
 - Quick_ - separate list
+    - [Windows console apps](/pages/coding/dotnet/Windows-Console-Apps)
 - API_ - separate list
 - Back_end_ - separate list
 - Hardware + IoT - separate list
@@ -398,6 +399,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [cadogan (PRIVATE)](https://github.com/claresudbery/cadogan) 
 
+## Other Resources
+
 - Chrome bookmarks: Useful | Coding | Ember
 
 ## (leaf) Python
@@ -432,6 +435,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Docs and Blog Posts
 
 - The [Jekyll section](/pages/coding/webdev/Jekyll) on this site.
+- Some [useful notes about basic markdown rules and capabilities](https://github.com/claresudbery/RefactoringExamples/tree/master/github-markdown/example%20markdown).
 
 ## (leaf) HTML
 - Labels: Quick_, Web development
@@ -446,7 +450,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [codefirst-girls-01](https://github.com/claresudbery/codefirst-girls-01)
 
 ## (folder) Scala
-- Labels: Languages-Functional, Back_end_
+- Labels: Languages-Functional(/pages/coding/lang/Functional-Languages), Back_end_
 
 ## GitHub Repos 
 
@@ -457,12 +461,22 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [scala-test-001 (PRIVATE)](https://github.com/claresudbery/scala-test-001)
     - Can't quite remember what this is! Presumably me playing with Scala.
 
+## Other resources
+
 - Scala Build Tool (SBT): https://www.scala-sbt.org/
 - Databricks (Chrome bookmarks:Thoughtworks/Archived Projects/Data Engineering/Databricks)
 - Dropbox / IT Training / functional programming
+
+## Docs and Blog Posts
+
 - my data engineering notes
 
 ## Data Engineering
+
+- Labels: thinking/data-eng
+
+## Docs and Blog Posts
+
 - my data engineering notes
 
 ## (leaf) Lots of Javascript stuff
