@@ -20,10 +20,14 @@
       {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
 
       {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
-        {% assign dont_show_link = (!sortedpage.folderlist and include.leafless) %}
+        {% if include.leafless and sortedpage.folderlist == false %}
+          {% assign dont_show_link = true %}
+        {% else %}
+          {% assign dont_show_link = false %}
+        {% endif %}
+
         leafless: {{include.leafless}}, folderlist: {{sortedpage.folderlist}}, dont_show_link: {{dont_show_link}}
-        {% if dont_show_link == false %}  
-          <li>HELLO 3</li>li>      
+        {% if dont_show_link == false %} 
           <li><a href="{{ sortedpage.url }}">leafless: {{include.leafless}}, folderlist: {{sortedpage.folderlist}}, {{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
         {% endif %}
         {% if sortedpage.folderlist == true %}
