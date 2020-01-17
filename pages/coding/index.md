@@ -186,7 +186,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
-- [codefirst-girls-01](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
+- [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
 ## (folder) Javascript
 - Labels: (Languages)
@@ -195,7 +195,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
-- [codefirst-girls-01](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
+- [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
 ## (folder) Java
 - Labels: (Web development), Languages, Back_end_
@@ -443,7 +443,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [TimeTravelHack (Hack Mcr 2018)](https://github.com/claresudbery/TimeTravelHack.git) 
 - [TimeTravelHackPOC (Hack Mcr 2018) (PRIVATE)](https://github.com/claresudbery/TimeTravelHackPOC.git)
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
-- [codefirst-girls-01](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
+- [codefirst-girls-01](https://github.com/claresudbery/codefirst-girls-01)
 
 ## (folder) Scala
 - Labels: Languages-Functional, Back_end_
