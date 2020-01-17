@@ -18,12 +18,19 @@
     {% comment %} recursion means we have to keep reassigning folderpath and next_level {% endcomment %}
       {% assign next_level = include.parentdepth | plus: 1 %}
       {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
-
       {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
-        <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
+        {% if include.leafless and sortedpage.folderlist != true %}
+          {% assign dont_show_link = true %}
+        {% else %}
+          {% assign dont_show_link = false %}
+        {% endif %}
+        {% if dont_show_link == false %} 
+          <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
+        {% endif %}
         {% if sortedpage.folderlist == true %}
           {% assign new_parentdepth = sortedpage.location | split: "/" | size %}
-          {% include recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url parentdepth=new_parentdepth %}
+          {% assign new_leafless = include.leafless %}
+          {% include leafless-recursive-subfolders.html parentlocation=sortedpage.location parenturl=sortedpage.url parentdepth=new_parentdepth leafless=new_leafless %}
         {% endif %}
       {% endif %}
 
