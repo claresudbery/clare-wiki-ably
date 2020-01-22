@@ -3,8 +3,16 @@ layout: page
 folderlist: false
 categories: organising 
 location: "pages/organising/tips/tech/leaf"
-permalink: /pages/organising/tips/tech/Macs
+permalink: /pages/organising/tips/tech/Apples-Macs-and-iOS
 ---
+
+# iOS
+
+## Misc
+
+- [Text manipulation in iOS 13](https://ios.gadgethacks.com/how-to/ios-13-changes-way-you-navigate-edit-text-heres-place-cursor-make-selections-perform-edits-more-0203292/) (moving cursor around, selecting and highlighting text etc)
+
+# Macs
 
 ## Mission Control
 
