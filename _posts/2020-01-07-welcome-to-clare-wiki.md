@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Everything Clare Knows!"
-location: posts/leaf
 date:   2020-01-07 23:17:36 +0000
+location: posts/leaf
 permalink: /posts/Welcome-to-Everything-Clare-Knows
 ---
 I can do posts as well as pages, and the way things are currently set up they get displayed quite differently. I can't decide whether that's worth anything!

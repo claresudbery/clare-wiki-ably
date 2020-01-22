@@ -8,6 +8,7 @@ permalink: /pages/Coding
 
 # Types:
 - Quick_ - separate list
+    - [Windows console apps](/pages/coding/dotnet/Windows-Console-Apps)
 - API_ - separate list
 - Back_end_ - separate list
 - Hardware + IoT - separate list
@@ -34,24 +35,6 @@ permalink: /pages/Coding
 - Writing
 
 # Master List:
-
-## (leaf) Windows console app
-- Labels: Quick_, .Net  
-
-## GitHub Repos
-
-Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
-
-- [ConsoleCatchall (PRIVATE)](https://github.com/claresudbery/ConsoleCatchall)
-- [NumberToLCD_Kata (PRIVATE)](https://github.com/claresudbery/NumberToLCD_Kata)
-- [Reconciliate](https://github.com/claresudbery/Reconciliate)
-- [TestDrivenNovel](https://github.com/claresudbery/TestDrivenNovel)
-- [Design-Patterns](https://github.com/claresudbery/Design-Patterns)
-- [TrainRoutes (PRIVATE)](https://github.com/claresudbery/TrainRoutes)
-- [CodeReviews (PRIVATE)](https://github.com/claresudbery/CodeReviews)
-
-## Docs and Blog Posts
-- InSimpleTerms: https://insimpleterms.blog/2018/10/31/converting-a-net-standard-console-app-into-a-net-core-console-app/
 
 ## (leaf) Git
     _ Labels: Tools
@@ -186,7 +169,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
-- [codefirst-girls-01](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
+- [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
 ## (folder) Javascript
 - Labels: (Languages)
@@ -195,7 +178,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
-- [codefirst-girls-01](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
+- [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
 ## (folder) Java
 - Labels: (Web development), Languages, Back_end_
@@ -398,6 +381,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [cadogan (PRIVATE)](https://github.com/claresudbery/cadogan) 
 
+## Other Resources
+
 - Chrome bookmarks: Useful | Coding | Ember
 
 ## (leaf) Python
@@ -432,6 +417,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Docs and Blog Posts
 
 - The [Jekyll section](/pages/coding/webdev/Jekyll) on this site.
+- Some [useful notes about basic markdown rules and capabilities](https://github.com/claresudbery/RefactoringExamples/tree/master/github-markdown/example%20markdown).
 
 ## (leaf) HTML
 - Labels: Quick_, Web development
@@ -443,10 +429,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [TimeTravelHack (Hack Mcr 2018)](https://github.com/claresudbery/TimeTravelHack.git) 
 - [TimeTravelHackPOC (Hack Mcr 2018) (PRIVATE)](https://github.com/claresudbery/TimeTravelHackPOC.git)
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
-- [codefirst-girls-01](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
+- [codefirst-girls-01](https://github.com/claresudbery/codefirst-girls-01)
 
 ## (folder) Scala
-- Labels: Languages-Functional, Back_end_
+- Labels: Languages-Functional(/pages/coding/lang/Functional-Languages), Back_end_
 
 ## GitHub Repos 
 
@@ -457,12 +443,22 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [scala-test-001 (PRIVATE)](https://github.com/claresudbery/scala-test-001)
     - Can't quite remember what this is! Presumably me playing with Scala.
 
+## Other resources
+
 - Scala Build Tool (SBT): https://www.scala-sbt.org/
 - Databricks (Chrome bookmarks:Thoughtworks/Archived Projects/Data Engineering/Databricks)
 - Dropbox / IT Training / functional programming
+
+## Docs and Blog Posts
+
 - my data engineering notes
 
 ## Data Engineering
+
+- Labels: thinking/data-eng
+
+## Docs and Blog Posts
+
 - my data engineering notes
 
 ## (leaf) Lots of Javascript stuff

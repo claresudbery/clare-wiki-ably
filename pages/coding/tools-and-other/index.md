@@ -2,5 +2,5 @@
 layout: page
 folderlist: true
 location: "pages/coding/tools-and-other"
-permalink: /pages/coding/Tools-And-Other-Useful-Stuff
+permalink: /pages/coding/Tools-and-Other-Useful-Stuff
 ---
