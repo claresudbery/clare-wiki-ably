@@ -6,11 +6,11 @@ location: "pages/organising/tips/tech/leaf"
 permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 ---
 
-# iOS
+## iOS
 
-## Text manipulation in iOS 13
+### Text manipulation in iOS 13
 
-- [Text manipulation in iOS 13](https://ios.gadgethacks.com/how-to/ios-13-changes-way-you-navigate-edit-text-heres-place-cursor-make-selections-perform-edits-more-0203292/) (moving cursor around, selecting and highlighting text etc)
+- Long explanation of all the things (moving cursor around, selecting and highlighting text etc): [Text manipulation in iOS 13](https://ios.gadgethacks.com/how-to/ios-13-changes-way-you-navigate-edit-text-heres-place-cursor-make-selections-perform-edits-more-0203292/) 
     - Short summary of what worked best for me:
         - Select a word: double-tap
         - Select all: tap then tap again
@@ -42,15 +42,15 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
         - Tap with 3 fingers to bring up a menu with Undo on the far left and Redo on the far right
 
 
-# Macs
+## Macs
 
-## Mission Control
+### Mission Control
 
 For some reason my brain confuses this with Activity Monitor (the equivalent of Windows Task Manager).
 
 Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all running apps and spaces.
 
-## Finding / quitting running apps 
+### Finding / quitting running apps 
 
 - [Detailed stuff here](http://osxdaily.com/2013/05/17/see-all-running-apps-mac-os-x/)
 - Options:
@@ -66,7 +66,7 @@ Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all ru
         - but `ps aux` gives you more and therefore more useful
         - pipe to `more` to see pages of output one at a time: `ps aux | more`
 
-## Useful Keyboard Shortcuts
+### Useful Keyboard Shortcuts
 
 - Log out: Cmd + Ctrl + Q
 - Sleep / wake:
