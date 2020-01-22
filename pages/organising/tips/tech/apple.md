@@ -3,7 +3,7 @@ layout: page
 folderlist: false
 categories: organising 
 location: "pages/organising/tips/tech/leaf"
-permalink: /pages/organising/tips/tech/Apples-Macs-and-iOS
+permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 ---
 
 # iOS
