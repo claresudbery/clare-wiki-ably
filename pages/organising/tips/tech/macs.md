@@ -1,9 +1,9 @@
 ---
 layout: page
-folderlist: true
-categories: organising BigIndex
-location: "pages/organising/tips/leaf"
-permalink: /pages/organising/tips/Macs
+folderlist: false
+categories: organising 
+location: "pages/organising/tips/tech/leaf"
+permalink: /pages/organising/tips/tech/Macs
 ---
 
 ## Mission Control
