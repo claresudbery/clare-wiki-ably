@@ -11,7 +11,7 @@ permalink: /pages/organising/tips/non-tech/BBC-Music
 Some things I have learnt about this:
 
 1. You have to press Play in the BBC Sounds app, even if you don't want to hear the music.
-    - (I never do, because I'm always listening already on Sonos, and I'm only using the app to find out what's currently playing). But if you don't click Play it won't show you what's currently playing.
+    - (I rarely do want to actually hear it, because I'm generally listening already on Sonos, and I'm only using the app to find out what's currently playing). But if you don't click Play it won't show you what's currently playing.
 2. I don't think the app shows you previous tracks - only what's currently playing.
 3. But you get better results from the website using this link (which I now have pinned on my phone home screen): http://bbc.co.uk/6music
     - Watch out for capitalisation! If you type 6Music and not 6music into your browser, you'll get nowhere. That confused me for a while.
