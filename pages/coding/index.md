@@ -422,6 +422,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Suggested markdown editor for Mac: [Byword](https://thesweetsetup.com/apps/favorite-markdown-writing-app-mac/)
 - [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
 - [command line tool to generate toc](https://github.com/ekalinin/github-markdown-toc)
+- [python tool to generate toc](https://gist.github.com/live-wire/fdcd9adaf4738fcabb0af47a28b7b279)
 
 ## (leaf) HTML
 - Labels: Quick_, Web development

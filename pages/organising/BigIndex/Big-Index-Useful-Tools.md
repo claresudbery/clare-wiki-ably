@@ -30,3 +30,4 @@ Clare-specific notes available [here](https://github.com/claresudbery/clare-tech
 - [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
 - [jekyll-toc](https://github.com/allejo/jekyll-toc/)
 - [command line tool](https://github.com/ekalinin/github-markdown-toc)
+- [python tool](https://gist.github.com/live-wire/fdcd9adaf4738fcabb0af47a28b7b279)
