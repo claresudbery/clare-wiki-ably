@@ -14,6 +14,7 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 
 Short summary of what worked best for me:
 
+- Move cursor: Tap, then drag the cursor to where you want it to be
 - Select a word: double-tap
 - Select all: tap then tap again
 - Select a chunk of text: long-press then slide
