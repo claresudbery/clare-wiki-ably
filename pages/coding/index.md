@@ -418,6 +418,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - The [Jekyll section](/pages/coding/webdev/Jekyll) on this site.
 - Some [useful notes about basic markdown rules and capabilities](https://github.com/claresudbery/RefactoringExamples/tree/master/github-markdown/example%20markdown).
+- Suggested markdown editors for iOS: [iAWriter and Working Copy](https://thesweetsetup.com/apps/our-favorite-markdown-writing-app-for-the-iphone/)
+- Suggested markdown editor for Mac: [Byword](https://thesweetsetup.com/apps/favorite-markdown-writing-app-mac/)
+- [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
+- [command line tool to generate toc](https://github.com/ekalinin/github-markdown-toc)
 
 ## (leaf) HTML
 - Labels: Quick_, Web development

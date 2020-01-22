@@ -17,3 +17,16 @@ Clare-specific notes available [here](https://github.com/claresudbery/clare-tech
 		
 ## Migrate Evernote notes as plain text or markdown
 * Here: http://www.markwk.com/migrate-evernote-plaintext.html
+
+## Suggested markdown editors 
+
+- for iOS: [iAWriter and Working Copy](https://thesweetsetup.com/apps/our-favorite-markdown-writing-app-for-the-iphone/)
+- For Mac / Windows: 
+    - Visual Studio Code
+    - Byword (Mac only?)
+
+## Generating Table of Contents (TOC)
+
+- [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
+- [jekyll-toc](https://github.com/allejo/jekyll-toc/)
+- [command line tool](https://github.com/ekalinin/github-markdown-toc)
