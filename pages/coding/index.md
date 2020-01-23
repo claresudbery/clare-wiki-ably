@@ -515,7 +515,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Labels: Coding
 
 ## Docs and Blog Posts
-- Useful Notes: Eritrea.docx
+- Useful Notes: [My Drive/Useful/Eritrea](https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit)
 - Various InSimpleTerms posts
 
 ## GitHub Repos 
