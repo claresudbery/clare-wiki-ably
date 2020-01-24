@@ -34,7 +34,7 @@ I also made another amendment to add a heading to each toc: [commit ebb8600](htt
 Other possible tools:
 
 - [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
-- [command line tool](https://github.com/ekalinin/github-markdown-toc)
+- [command line tool (gh-md-toc)](https://github.com/ekalinin/github-markdown-toc)
 - [python tool](https://gist.github.com/live-wire/fdcd9adaf4738fcabb0af47a28b7b279)
     - "Use toc.py which is a tiny python script which generates a table-of-contents for your markdown.
     - Usage:
