@@ -27,8 +27,13 @@ Clare-specific notes available [here](https://github.com/claresudbery/clare-tech
 
 ## Generating Table of Contents (TOC)
 
+I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357f).
+
+I also made another amendment to add a heading to each toc: [commit ebb8600](https://github.com/claresudbery/clare-wiki-ably/commit/ebb8600).
+
+Other possible tools:
+
 - [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
-- [jekyll-toc](https://github.com/allejo/jekyll-toc/)
 - [command line tool](https://github.com/ekalinin/github-markdown-toc)
 - [python tool](https://gist.github.com/live-wire/fdcd9adaf4738fcabb0af47a28b7b279)
     - "Use toc.py which is a tiny python script which generates a table-of-contents for your markdown.

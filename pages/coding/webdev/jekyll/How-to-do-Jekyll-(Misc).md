@@ -148,9 +148,7 @@ Then you can link to a section [like this](#draft-posts).
 
 ## Table of Contents
 
-I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357f).
-
-I also made another amendment to add a heading to each toc: [commit ebb8600](https://github.com/claresudbery/clare-wiki-ably/commit/ebb8600).
+See [BigIndex Useful Tools](pages/organising/BigIndex/Big-Index-Useful-Tools#generating-table-of-contents-toc)
 
 ## Category archive
 

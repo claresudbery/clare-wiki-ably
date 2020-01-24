@@ -420,13 +420,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Some [useful notes about basic markdown rules and capabilities](https://github.com/claresudbery/RefactoringExamples/tree/master/github-markdown/example%20markdown).
 - Suggested markdown editors for iOS: [iAWriter and Working Copy](https://thesweetsetup.com/apps/our-favorite-markdown-writing-app-for-the-iphone/)
 - Suggested markdown editor for Mac: [Byword](https://thesweetsetup.com/apps/favorite-markdown-writing-app-mac/)
-- [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
-- [command line tool to generate toc](https://github.com/ekalinin/github-markdown-toc)
-- [python tool to generate toc](https://gist.github.com/live-wire/fdcd9adaf4738fcabb0af47a28b7b279)
-    - "Use toc.py which is a tiny python script which generates a table-of-contents for your markdown.
-    - Usage:
-    - In your Markdown file add <toc> where you want the table of contents to be placed.
-    - `$python toc.py README.md` (Use your markdown filename instead of README.md)
+- [Table of contents (toc) tools](pages/organising/BigIndex/Big-Index-Useful-Tools#generating-table-of-contents-toc)
 
 ## (leaf) HTML
 - Labels: Quick_, Web development
