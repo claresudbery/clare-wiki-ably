@@ -148,7 +148,7 @@ Then you can link to a section [like this](#draft-posts).
 
 ## Table of Contents
 
-See [BigIndex Useful Tools](pages/organising/BigIndex/Big-Index-Useful-Tools#generating-table-of-contents-toc)
+See [BigIndex Useful Tools](/pages/organising/BigIndex/Big-Index-Useful-Tools#generating-table-of-contents-toc)
 
 ## Category archive
 
