@@ -1,7 +1,7 @@
 ---
 layout: page
 folderlist: true
-location: "pages/think/tools"
+location: "pages/think/tools/"
 permalink: /pages/think/Tools
 ---
 

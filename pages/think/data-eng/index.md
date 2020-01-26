@@ -1,8 +1,7 @@
 ---
 layout: page
 folderlist: true
-sitelist: true
-location: "pages/think/data-eng"
+location: "pages/think/data-eng/"
 permalink: /pages/think/Data-Engineering
 ---
 
