@@ -1,7 +1,7 @@
 ---
 layout: page
 folderlist: false
-location: "pages/leaf"
+location: "pages"
 permalink: /pages/Leafless-Site-Map
 ---
 
