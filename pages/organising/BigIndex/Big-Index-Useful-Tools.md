@@ -63,5 +63,6 @@ sed -i '/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d};}' ./notes/Scrat
 - I fixed a problem with multiple files where if any file without the toc markers was found, the whole script terminated and subsequent files were not processed.
 - I stopped it from creating two new files for every file processed (one containing the original content and one containing just the toc)
 - I made it work in Windows (where line endings were preventing it from working)
+- I added a heading at the top of each table of contents.
 
 My version of the script can be found [here](/resources/gh-md-toc).
