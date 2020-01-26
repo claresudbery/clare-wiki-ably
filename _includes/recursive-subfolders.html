@@ -1,3 +1,4 @@
+{% strip %}
 {% assign all_content = site.html_pages | concat: site.posts %}
 {% assign sortedlist = all_content | sort_natural: 'url' %}
 {% comment %} First we find out whether there are any subfolders at this level {% endcomment %}
@@ -38,3 +39,4 @@
     {% endfor %}
   </ul>
 {% endunless %}
+{% endstrip %}

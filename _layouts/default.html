@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
-
+{% strip %}
 {%- include head.html -%}
 
 <body>
@@ -48,7 +48,7 @@
   </main>
 
   {%- include footer.html -%}
-
+  {% endstrip %}
 
   <script>
     window.simpleJekyllSearch = new SimpleJekyllSearch({

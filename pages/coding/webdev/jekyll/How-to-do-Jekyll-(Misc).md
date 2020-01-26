@@ -173,3 +173,22 @@ I'm now wondering whether this might be a better recursive site map: https://thi
 - [Use collections to create folder indices?](https://github.com/jekyll/jekyll-help/issues/182)
 	- [more on collections](https://jekyllrb.com/docs/collections/)
 	- Collections [tutorial?](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB)
+
+## Jekyll Plugins
+
+There are 3 ways of installing plugins (from [here](https://jekyllrb.com/docs/plugins/installation/)):
+
+1. Stick a *.rb file in your _plugins folder
+2. Add the name of a gem to the plugins array in `_config.yml`
+3. Put in a jekyll_plugins bundler group in your `Gemfile`
+
+!! After adding the plugin, you have to restart the Jekyll server, otherwise you'll get an error because it can't find the new plugin.
+
+## Get rid of unwanted blank lines / whitespace in your html created by liquid
+
+I've used the `strip` plugin from here that I found via [this Stack Overflow page](https://stackoverflow.com/questions/17754312/how-to-suppress-blank-line-in-jekyll).
+You can see where I've used it in `_includes/recursive-subfolders.html` and `_layouts/default.html`.
+
+!! After adding the plugin, you have to restart the Jekyll server, otherwise you'll get an error because it can't find the new plugin.
+
+For installing plugins see [here](#jekyll-plugins).
