@@ -1,6 +1,8 @@
 {% strip %}
+
 {% assign all_content = site.html_pages | concat: site.posts %}
 {% assign sortedlist = all_content | sort_natural: 'url' %}
+
 {% comment %} First we find out whether there are any subfolders at this level {% endcomment %}
 {% assign num_items = 0 %}
 {% assign next_level = include.parentdepth | plus: 1 %}
@@ -14,6 +16,7 @@
     {% endif %}    
   {% endif %}
 {% endfor %}
+
 {% comment %} Now if we know there are some subfolders, we can build up the bullet list. {% endcomment %}
 {% unless num_items == 0 %}
   <ul>      
@@ -21,15 +24,18 @@
     {% comment %} recursion means we have to keep reassigning folderpath and next_level {% endcomment %}
       {% assign next_level = include.parentdepth | plus: 1 %}
       {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
+
       {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
         {% if include.leafless and sortedpage.folderlist != true %}
           {% assign dont_show_link = true %}
         {% else %}
           {% assign dont_show_link = false %}
         {% endif %}
+
         {% if dont_show_link == false %} 
           <li><a href="{{ sortedpage.url }}">{{ sortedpage.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</a></li>
         {% endif %}
+
         {% if sortedpage.folderlist == true %}
           {% assign new_parentdepth = sortedpage.location | split: "/" | size %}
           {% assign new_leafless = include.leafless %}
@@ -39,4 +45,5 @@
     {% endfor %}
   </ul>
 {% endunless %}
+
 {% endstrip %}
