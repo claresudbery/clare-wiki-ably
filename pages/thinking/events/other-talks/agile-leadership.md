@@ -3,7 +3,7 @@ layout: post
 title:  "Agile leadership meetup, Made Tech London 13/1/20"
 date:   2020-01-13 +0000
 folderlist: false
-location: "pages/think/events/other-talks"
+location: "pages/think/events/other-talks/leaf"
 permalink: /pages/think/events/other-talks/2020-01-13-agile-leadership
 ---
 
