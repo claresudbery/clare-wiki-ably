@@ -7,7 +7,11 @@
 {% for sortedpage in sortedlist %}
   {% assign subfolderdepth = sortedpage.location | split: "/" | size %}
   {% if sortedpage.location contains include.parentlocation and subfolderdepth == next_level and sortedpage.url != include.parenturl %}
-    {% assign num_items = num_items | plus: 1 %}
+    {% if include.leafless and sortedpage.folderlist != true %}
+      {% assign dont_increment_num_items = true %}
+    {% else %}
+      {% assign num_items = num_items | plus: 1 %}
+    {% endif %}    
   {% endif %}
 {% endfor %}
 
