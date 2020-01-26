@@ -1,7 +1,6 @@
 ---
 layout: page
-folderlist: true
-location: "pages/think/tools"
+location: "pages/think/tools/leaf"
 permalink: /pages/think/tools/Resources
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: page
-folderlist: false
 location: "pages/think/events/wshops/leaf"
 permalink: /pages/think/events/wshops/Energisers
 ---

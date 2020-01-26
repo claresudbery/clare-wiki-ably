@@ -1,6 +1,5 @@
 ---
 layout: page
-folderlist: false
 location: "pages/coding/dotnet/leaf"
 permalink: /pages/coding/dotnet/Windows-Console-Apps
 ---

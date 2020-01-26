@@ -1,6 +1,5 @@
 ---
 layout: page
-folderlist: false
 location: "pages/think/events/talks/leaf"
 permalink: /pages/think/events/talks/useful-talk-tips
 ---

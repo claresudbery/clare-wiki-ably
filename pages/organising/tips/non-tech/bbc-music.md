@@ -1,6 +1,5 @@
 ---
 layout: page
-folderlist: false
 categories: organising 
 location: "pages/organising/tips/non-tech/leaf"
 permalink: /pages/organising/tips/non-tech/BBC-Music

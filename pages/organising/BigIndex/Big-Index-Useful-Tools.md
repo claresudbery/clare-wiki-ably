@@ -1,8 +1,8 @@
 ---
 layout: page
 categories: organising BigIndex
-location: "pages/organising/BigIndex/leaf"
-permalink: /pages/organising/BigIndex/Big-Index-Useful-Tools
+location: "pages/organising/bigindex/leaf"
+permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 ---
 
 ## Pandoc
