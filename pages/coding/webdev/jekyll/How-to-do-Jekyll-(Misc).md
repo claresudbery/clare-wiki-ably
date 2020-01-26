@@ -78,7 +78,7 @@ You can also specify a type - if you specify type of "posts" then it will apply 
 
 ## Themes
 
-The default theme is minima. This is defined in _config.yml. To find different themes, go to rubygems.org and search for "jekyll-theme". Once you have the name of the theme you want, add it to **Gemfile** under the line specifying **gem "minima"** and then run **bundle install** to install the new theme gem. Then you can update the setting in _config.yml and restart your Jekyll server. But when you restart, use **bundle exec jekyll serve**. You might notice when you refresh the page in the browser that you get some blank pages. This can happen if you're using layouts in your pages that are not supported in your new theme. When you're choosing your theme, check the folders on its home page to see what html files it has - it will have an html file for each supported layout. 
+The default theme is [minima](https://github.com/jekyll/minima). This is defined in _config.yml. To find different themes, go to rubygems.org and search for "jekyll-theme". Once you have the name of the theme you want, add it to **Gemfile** under the line specifying **gem "minima"** and then run **bundle install** to install the new theme gem. Then you can update the setting in _config.yml and restart your Jekyll server. But when you restart, use **bundle exec jekyll serve**. You might notice when you refresh the page in the browser that you get some blank pages. This can happen if you're using layouts in your pages that are not supported in your new theme. When you're choosing your theme, check the folders on its home page to see what html files it has - it will have an html file for each supported layout. 
 
 ## Layouts
 
@@ -98,11 +98,11 @@ See _layouts folder in clare-wiki-ably ([copied from Ably](https://github.com/ab
 
 ### More Complex Layouts
 
-!! It's really useful to go and look at the source code for whichever theme you're using, because then you can copy and tweak it. For instance if you go and have a look at minima, you can find all the includes and layouts and then create your own tweaked versions. To do this, just copy the same folder structure and nakming convention. For instance, you can copy the _layouts/default.html and _includes/footer.html files from minima ([available here](https://github.com/jekyll/minima)) and then alter them to do what you want.
+!! It's really useful to go and look at the source code for whichever theme you're using, because then you can copy and tweak it. For instance if you go and have a look at [minima](https://github.com/jekyll/minima), you can find all the includes and layouts and then create your own tweaked versions. To do this, just copy the same folder structure and nakming convention. For instance, you can copy the _layouts/default.html and _includes/footer.html files from minima ([available here](https://github.com/jekyll/minima)) and then alter them to do what you want.
 
 You can also nest layouts. You can do this by putting some front matter at the top of a layout html file. The front matter will look exactly the same as it does in a markdown file. This front matter can specify a layout component that refers to yet another layout html file. For further explanation see [this tutorial video](https://www.youtube.com/watch?v=bDQsGdCWv4I&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&index=12), from about 5:20.
 
-You'll notice various variables and for loops and stuff being used in minima files and files created by Ably. There's nore explanation of things like loops and variables in the later [tutorial videos on the Jekyll site](https://jekyllrb.com/tutorials/video-walkthroughs/).
+You'll notice various variables and for loops and stuff being used in [minima](https://github.com/jekyll/minima) files and files created by Ably. There's nore explanation of things like loops and variables in the later [tutorial videos on the Jekyll site](https://jekyllrb.com/tutorials/video-walkthroughs/).
 
 ## Permalinks not working unless you do them in a certain way
 
