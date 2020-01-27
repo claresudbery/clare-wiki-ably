@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/dotnet/leaf
+location: "/pages/coding/dotnet/leaf"
 permalink: /pages/coding/dotnet/Asp-Net-Core
 ---
 
