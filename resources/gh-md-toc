@@ -95,7 +95,7 @@ gh_toc(){
     local gh_src=$1
 				
 	# remove previous table of contents, by deleting everything between <!--ts--> and <!--te-->
-	sed -i '/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d};}' $gh_src
+	sed -i "" "/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d;};}" "$gh_src"
 	
     local gh_src_copy=$1
     local gh_ttl_docs=$2
