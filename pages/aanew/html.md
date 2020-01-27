@@ -1,5 +1,6 @@
 ---
 layout: page
+categories: webdev
 location: "/pages/coding/webdev/leaf"
 permalink: /pages/coding/webdev/html
 ---
