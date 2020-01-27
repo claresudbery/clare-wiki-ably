@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/infra/leaf
+location: pages/coding/infra/leaf
 permalink: /pages/coding/infra/Infrastructure-Resources
 ---
 

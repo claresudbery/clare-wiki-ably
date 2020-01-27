@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/webdev/css/leaf
+location: pages/coding/webdev/css/leaf
 permalink: /pages/coding/webdev/css/CSS-Animation
 ---
 

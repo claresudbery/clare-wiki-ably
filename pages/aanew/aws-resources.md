@@ -1,6 +1,6 @@
 ---
 layout: page
-location: "/pages/coding/infra/cloud/aws/leaf"
+location: "pages/coding/infra/cloud/aws/leaf"
 permalink: /pages/coding/infra/cloud/aws/AWS-Resources
 ---
 

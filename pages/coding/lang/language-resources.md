@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/lang/leaf
+location: pages/coding/lang/leaf
 permalink: /pages/coding/lang/Language-Resources
 ---
 

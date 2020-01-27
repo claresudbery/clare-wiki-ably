@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/hardware/leaf
+location: pages/coding/hardware/leaf
 permalink: /pages/coding/hardware/Puck-js-IoT-Button
 ---
 

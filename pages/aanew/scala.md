@@ -1,6 +1,6 @@
 ---
 layout: page
-location: "/pages/coding/lang/func/leaf"
+location: "pages/coding/lang/func/leaf"
 permalink: /pages/coding/lang/func/Scala
 ---
 

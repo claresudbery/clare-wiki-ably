@@ -1,6 +1,6 @@
 ---
 layout: page
-location: "/pages/coding/webdev/leaf"
+location: "pages/coding/webdev/leaf"
 permalink: /pages/coding/webdev/Progressive-WebApps
 ---
 
