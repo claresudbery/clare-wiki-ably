@@ -37,7 +37,7 @@ permalink: /pages/Coding
 # Master List:
 
 ## (leaf) Git
-    _ Labels: Tools
+- permalink: /pages/coding/tools/Git
 
 ## GitHub Repos 
 
@@ -46,7 +46,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Git-Playground](https://github.com/claresudbery/Git-Playground)
 
 ## (leaf) Linq
-    _ Labels: Tools
+- permalink: /pages/coding/tools/Linq
 
 ## GitHub Repos 
 
@@ -55,7 +55,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [linq-exercises](https://github.com/claresudbery/linq-exercises)
 
 ## (leaf) NancyFX
-    - Labels: Quick_, API_, Tools
+- Labels: Quick_, API_, Tools
+- permalink: /pages/coding/tools/NancyFX
 
 ## GitHub Repos 
 
@@ -68,6 +69,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## (leaf) Asp.Net Core
 - Labels: Quick_, .Net
+- permalink: /pages/coding/dotnet/Asp-Net-Core
 
 ## GitHub Repos 
 
@@ -75,8 +77,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [HelloAWS](https://github.com/claresudbery/HelloAWS)
 
-## (folder) .Net Core
+## (resources leaf) .Net Core
 - Labels: Quick_, .Net
+- permalink: /pages/coding/dotnet/DotNet-Core-Resources
 
 ## GitHub Repos 
 
@@ -98,7 +101,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - in Google Drive / Clients / SMBC / Workshops / DotNetCore
 
 ## (leaf) WinForms
-- Labels: .Net
+- permalink: /pages/coding/dotnet/WinForms
 
 ## GitHub Repos 
 
@@ -106,7 +109,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [TopGame](https://github.com/claresudbery/TopGame)
 
-## (folder) Jekyll
+## (resources leaf) Jekyll
+
+- permalink: /pages/coding/webdev/jekyll/Jekyll-Resources
 
 ## GitHub Repos 
 
@@ -119,8 +124,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Articles on this site re what I've learnt about Jekyll](/pages/coding/webdev/Jekyll)
 
-## (folder) React
-- Labels: Web development-Javascript  
+## (resources leaf) React
+- permalink: /pages/coding/webdev/js/React-Resources
 
 ## GitHub Repos 
 
@@ -134,8 +139,19 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Samba (PRIVATE)](https://github.com/claresudbery/samba)
     - See sub-folders son**, sig** and vis**
 
+## Docs and Blog Posts
+
+- [ReactiveX](/pages/coding/tools/ReactiveX)
+
+## (resources leaf) Mobile
+- permalink: /pages/coding/mobile/Mobile-Resources
+
+## Docs and Blog Posts
+
+- [React Native](/pages/coding/webdev/js/React-Native)
+
 ## (leaf) React Native
-- Labels: Web development-Javascript, (mobile)
+- permalink: /pages/coding/webdev/js/React-Native
   
 ## GitHub Repos 
 
@@ -146,6 +162,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## (leaf) ReactiveX
 - Labels: Back_end_, Tools, (React)
+- permalink: /pages/coding/tools/ReactiveX
 
 ## GitHub Repos 
 
@@ -154,7 +171,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [ReactiveXTutorial](https://github.com/claresudbery/ReactiveXTutorial)
 
 ## (leaf) CSS Animation
-- Labels: Web development-CSS
+- permalink: /pages/coding/webdev/css/CSS-Animation
 
 ## GitHub Repos 
 
@@ -162,8 +179,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Css-Art](https://github.com/claresudbery/Css-Art)
 
-## (folder) Css
-- Labels: Web development-CSS
+## (resources leaf) Css
+- permalink: /pages/coding/webdev/css/CSS-Resources
 
 ## GitHub Repos 
 
@@ -171,8 +188,18 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
-## (folder) Javascript
-- Labels: (Languages)
+## (resources leaf) Languages
+- permalink: /pages/coding/lang/Languages-Resources
+
+## Docs and Blog Posts
+
+- [Javascript](/pages/coding/webdev/js/Javascript-Resources)
+- [Markdown](/pages/coding/webdev/Markdown)
+- [All the other languages](/pages/coding/Languages)
+- [Puck.js IoT Button](/pages/coding/hardware/Puck-js-IoT-Button)
+
+## (resources leaf) Javascript
+- permalink: /pages/coding/webdev/js/Javascript-Resources
 
 ## GitHub Repos 
 
@@ -180,8 +207,26 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
-## (folder) Java
+## General Javascript Stuff
+
+- External hard disk has stuff from previous projects in F:\2014_OldHardDisk\Git
+
+## Docs and Blog Posts
+
+- [MVC4](/pages/coding/dotnet/MVC4)
+
+## (resources leaf) Web Development
+- permalink: /pages/coding/webdev/Web-Development-Resources
+
+## Docs and Blog Posts
+
+- [Java](/pages/coding/lang/oo/Java-Resources)
+- [ASP.Net](/pages/coding/dotnet/ASP-Dot-Net)
+- [MVC4](/pages/coding/dotnet/MVC4)
+
+## (resources leaf) Java
 - Labels: (Web development), Languages, Back_end_
+- permalink: /pages/coding/lang/oo/Java-Resources
 
 ## GitHub Repos 
 
@@ -192,8 +237,16 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - See sub-folder contaiing backend code
 - [interview-codebase-java (PRIVATE)](https://github.com/claresudbery/interview-codebase-java)
 
-## (folder) C#
+## (resources leaf) Dot Net
+- permalink: /pages/coding/dotnet/DotNet-Resources
+
+## Docs and Blog Posts
+
+- [C# Stuff](/pages/coding/lang/oo/C-Sharp-Resources)
+
+## (resources leaf) C#
 - Labels: (.Net), Languages, Back_end_
+- permalink: /pages/coding/lang/oo/C-Sharp-Resources
 
 ## GitHub Repos 
 
@@ -220,11 +273,19 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [FizzBuzzKata](https://github.com/claresudbery/FizzBuzzKata)
 - [SimpleCardGameKata](https://github.com/claresudbery/SimpleCardGameKata)
 
-## (leaf) Swift / XCode
-- Labels: Mobile
+## (resources leaf) Coding Tools
+- permalink: /pages/coding/tools/Other-Coding-Tools
+
+## Docs and Blog Posts
+
+- [Refactoring](/pages/think/code-princ/Refactoring)
+- [Hexagonal Architecture](/pages/think/code-princ/Hexagonal-Architecture)
+- [TDD](/pages/think/code-princ/TDD)
+- [Katas](/pages/think/code-princ/Katas)
+- [Recursion](/pages/think/code-princ/Recursion)
 
 ## (leaf) Refactoring
-- Labels: Thinking/Coding-Principles (Coding)
+- permalink: /pages/think/code-princ/Refactoring
 
 ## GitHub Repos
 
@@ -236,7 +297,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - The original markdown for my series of refactoring articles that are being published on Martin Fowler's site. 
 
 ## (leaf) Hexagonal Architecture
-- Labels: Thinking/Coding-Principles (Coding)
+- permalink: /pages/think/code-princ/Hexagonal-Architecture
 
 ## GitHub Repos
 
@@ -250,7 +311,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - (TO DO) My blog post on Hexagonal Architecture was originally posted on the LateRooms blog and no longer exists. But I have the original doc and am planning to put it up on my Medium site.
 
 ## (leaf) TDD
-- Labels: Thinking/Coding-Principles (Coding)
+- permalink: /pages/think/code-princ/TDD
 
 ## GitHub Repos
 
@@ -266,7 +327,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - (not published yet - needs filling in) [My refactoring articles on Martin Fowler's site](TO DO)
 
 ## (leaf) Katas
-- Labels: Thinking/Coding-Principles (Coding)
+- permalink: /pages/think/code-princ/Katas
 
 ## GitHub Repos
 
@@ -289,7 +350,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Made Tech recruitment exercise
 
 ## (leaf) Recursion
-- Labels: Thinking/Coding-Principles (Coding)
+- permalink: /pages/think/code-princ/Recursion
 
 ## GitHub Repos
 
@@ -303,17 +364,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - The repo for this website wot you are looking at right now: [clare-wiki-ably](https://github.com/claresudbery/clare-wiki-ably)
     - Originally I wrote a sitemap component that used recursion. I was planning to replace it, but it's definitely [here in this commit](https://github.com/claresudbery/clare-wiki-ably/blob/357e2c0a95ffa00712e6c22760bef324c40776c1/_includes/recursive-subfolders.html).
 
-
-## GitHub Repos
-
-Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
-
-- [SquareFillXCode (PRIVATE)](https://github.com/claresudbery/SquareFillXCode)
-- [ios-app-experiments (PRIVATE)](https://github.com/claresudbery/ios-app-experiments)
-    - Can't quite remember what this is, but seems to be me learning about making iOS games?
-
 ## (leaf) Xamarin
-- Labels: Mobile
+- permalink: /pages/coding/mobile/Xamarin
 
 ## GitHub Repos 
 
@@ -327,7 +379,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Menopaws](https://github.com/Menopaws/menopaws)
 
 ## (leaf) Clojure 
-- Labels: functional
+- permalink: /pages/coding/lang/func/Clojure
 
 ## GitHub Repos 
 
@@ -339,7 +391,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - See sub-folders for son**, sig** and vis**
 
 ## (leaf) ASP.Net 
-- Labels: (Web development (root)), .Net  
+- permalink: /pages/coding/dotnet/ASP-Dot-Net 
 
 ## GitHub Repos 
 
@@ -348,7 +400,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Async-experiments](https://github.com/claresudbery/Async-experiments)
 
 ## (leaf) MVC4
-- Labels: (Web development (root)),  .Net, Javascript  
+- permalink: /pages/coding/dotnet/MVC4
 
 ## GitHub Repos 
 
@@ -358,6 +410,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## (leaf) WebAPI
 - Labels: API_, .Net
+- permalink: /pages/coding/dotnet/WebAPI
 
 ## GitHub Repos 
 
@@ -373,7 +426,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - DotNetCoreMVC.docx in Google Drive / Clients / SMBC / Workshops / DotNetCore
 
 ## (leaf) Ember JS
-- Labels: Web development-Javascript  
+- permalink: /pages/coding/webdev/js/Ember-JS 
 
 ## GitHub Repos 
 
@@ -385,8 +438,15 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - Chrome bookmarks: Useful | Coding | Ember
 
+## (resources leaf) Command Line
+- permalink: /pages/coding/infra/cmd/Command-Line-Resources
+
+## Docs and Blog Posts
+
+- [Python](/pages/coding/lang/oo/Python)
+
 ## (leaf) Python
-- Labels: Languages, (command line)
+- permalink: /pages/coding/lang/oo/Python
 
 ## GitHub Repos 
 
@@ -402,8 +462,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## (leaf) Node js
 - Labels: Javascript, Back_end_
+- permalink: /pages/coding/webdev/js/Node-JS
 
 ## (leaf) Markdown
+
+- permalink: /pages/coding/webdev/Markdown
 
 ## GitHub Repos
 
@@ -424,6 +487,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## (leaf) HTML
 - Labels: Quick_, Web development
+- permalink: /pages/coding/webdev/html
 
 ## GitHub Repos
 
@@ -434,8 +498,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 - [codefirst-girls-01](https://github.com/claresudbery/codefirst-girls-01)
 
-## (folder) Scala
-- Labels: Languages-Functional(/pages/coding/lang/Functional-Languages), Back_end_
+## (resources leaf) Scala
+- Labels: Languages-Functional, Back_end_
+- permalink: /pages/coding/lang/func/scala/Scala-Resources
 
 ## GitHub Repos 
 
@@ -456,20 +521,17 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - my data engineering notes
 
-## Data Engineering
+## (resources leaf) Data Engineering
 
-- Labels: thinking/data-eng
+- permalink: /pages/think/data-eng/Data-Engineering-Resources
 
 ## Docs and Blog Posts
 
 - my data engineering notes
 
-## (leaf) Lots of Javascript stuff
-- Labels: Web development-Javascript
-- External hard disk has stuff from Havas Lynx and Touch4 in F:\2014_OldHardDisk\Git
-
 ## (leaf) Puck.js IoT button
 - Quick_, (Web development-Javascript), hardware
+- permalink: /pages/coding/hardware/Puck-js-IoT-Button
 
 ## GitHub Repos
 
@@ -485,6 +547,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## (leaf) Vue.js
 - Labels: Quick_, Web development-Javascript
+- permalink: /pages/coding/webdev/js/Vue-js
 
 ## GitHub Repos
 
@@ -496,21 +559,23 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Docs and Blog Posts
 - Useful notes: Vue.js
 
-## (folder) AWS
-- Labels: Cloud deployment
-- Useful Notes: AWS
+## (resources leaf) AWS
+- permalink: /pages/coding/infra/cloud/aws/AWS-Resources
+
+## Docs and Blog Posts
 - Hack Mcr 2018: Notes on trying to get https working: https://docs.google.com/document/d/1aGdf7gzUBp5jby-GbN-bdMQcNzpAMOVH0XgytXr_yEU/edit
 - Evernote: Hackathons (Hack Mcr 18)
 - Chrome Bookmarks:
     - Useful | Hackathons | Hack Mcr 2018 | AWS for Hack 18
     - Thoughtworks | Archived Projects | Data Engineering | AWS for DE
+- Useful Notes Doc: AWS section
 
-## (folder) Infrastructure
-- Labels: Coding
+## (resources leaf) Infrastructure
+- permalink: /pages/coding/infra/Infrastructure-Resources
 
 ## Docs and Blog Posts
-- Useful Notes: [My Drive/Useful/Eritrea](https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit)
-- Various InSimpleTerms posts
+- Separate Useful Notes Doc: [My Drive/Useful/Eritrea](https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit)
+- [Various InSimpleTerms posts](https://insimpleterms.blog/category/infrastructure)
 
 ## GitHub Repos 
 
@@ -529,17 +594,29 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Dropbox: IT Training / Infrastructure Stuff (this has also been copied to my GitHub Root-Scripts repo)
 - my data engineering notes
 
-## (Folder) Progressive webapp
-- Labels: Web development
+## (leaf) Progressive webapp
+- permalink: /pages/coding/webdev/Progressive-WebApps
+
+## Docs and Blog Posts
 - Presentation: https://docs.google.com/presentation/d/1KUp0CJr0Jp82ZHKXaCsfyrtO8Xr_HTatIqFAV7h4KSs/edit#slide=id.g3cdc6d0626_0_5
 
-## (Folder) Internet of things - robots etc
-- Labels: hardware + IoT
+## (resources leaf) Internet of things - robots etc
+- permalink: /pages/coding/hardware/IoT-And-Robot-Resources
 
 ## GitHub Repos: 
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [mBot (Oscar's robot?)](https://github.com/claresudbery/mBot)
-
 - Dropbox / IT Training / IoT
+
+## (leaf) Swift / XCode
+- permalink: /pages/coding/mobile/Swift-and-XCode
+
+## GitHub Repos
+
+Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
+
+- [SquareFillXCode (PRIVATE)](https://github.com/claresudbery/SquareFillXCode)
+- [ios-app-experiments (PRIVATE)](https://github.com/claresudbery/ios-app-experiments)
+    - Can't quite remember what this is, but seems to be me learning about making iOS games?
