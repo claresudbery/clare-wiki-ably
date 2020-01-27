@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/dotnet/leaf
+location: "/pages/coding/dotnet/leaf"
 permalink: /pages/coding/dotnet/DotNet-Core-Resources
 ---
 

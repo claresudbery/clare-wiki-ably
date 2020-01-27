@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/think/data-eng/leaf
+location: "/pages/think/data-eng/leaf"
 permalink: /pages/think/data-eng/Data-Engineering-Resources
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/tools/leaf
+location: "/pages/coding/tools/leaf"
 permalink: /pages/coding/tools/Git
 ---
 

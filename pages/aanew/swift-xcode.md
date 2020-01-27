@@ -1,6 +1,6 @@
 ---
 layout: page
-location: /pages/coding/mobile/leaf
+location: "/pages/coding/mobile/leaf"
 permalink: /pages/coding/mobile/Swift-and-XCode
 ---
 
