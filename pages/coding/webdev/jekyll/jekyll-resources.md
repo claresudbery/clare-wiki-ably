@@ -1,6 +1,7 @@
 ---
 layout: page
-location: /pages/coding/webdev/jekyll/leaf
+categories: coding webdev jekyll 
+location: "/pages/coding/webdev/jekyll/leaf"
 permalink: /pages/coding/webdev/jekyll/Jekyll-Resources
 ---
 
