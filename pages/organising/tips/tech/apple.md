@@ -81,3 +81,5 @@ Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all ru
 - Restart:
     - hold power button for 1.5 secs
     - force restart: `Cmd (splat) + Ctrl + Power` button
+- Show hidden files in Finder: `Cmd + Shift + Dot`
+    - You might also have to run these lines in the terminal (from [here](https://apple.stackexchange.com/questions/280736/folder-displaying-in-terminal-but-not-finder)): `defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder`
