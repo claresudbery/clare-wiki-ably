@@ -1,10 +1,8 @@
 ---
 layout: page
-location: pages/coding/webdev/leaf
-permalink: /pages/coding/webdev/Web-Development-Resources
+location: "pages/coding/lang/oo/leaf"
+permalink: /pages/coding/lang/oo/Ruby
 ---
-
-([Main Web Development directory is here](/pages/coding/Web-Development))
 
 ## GitHub Repos 
 
@@ -15,12 +13,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [https://github.com/claresudbery/clare-wiki-jekyll](https://github.com/claresudbery/Infra-Scripts)
     - Skeleton Jekyll site which I created before I started using the Ably template (Jekyll is built in Ruby).
 
-## Elsewhere on this site
+## Other Links
 
-- [Java](/pages/coding/lang/oo/Java)
-- [ASP.Net](/pages/coding/dotnet/ASP-Dot-Net)
-- [ASP.Net](/pages/coding/dotnet/ASP-Dot-Net)
-- [MVC4](/pages/coding/dotnet/MVC4)
-- [WebAPI](/pages/coding/dotnet/WebAPI)
-- Various other web stuff in the [Dot Net section](/pages/coding/Dot-Net)
+- Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
+
+## Using Rspec for Testing
+
+- [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
 

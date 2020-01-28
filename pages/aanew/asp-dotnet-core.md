@@ -1,7 +1,7 @@
 ---
 layout: page
 location: "pages/coding/dotnet/leaf"
-permalink: /pages/coding/dotnet/Asp-Net-Core
+permalink: /pages/coding/dotnet/Asp-DotNet-Core
 ---
 
 ## GitHub Repos 
