@@ -73,7 +73,7 @@ Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all ru
 ### Specify location of screenshots
 
 - [Here](https://plusbryan.com/how-to-automatically-save-screenshots-to-google-drive)
-- This:
+- This in Terminal:
 ```
 defaults write com.apple.screencapture location [insert location here]
 killall SystemUIServer
