@@ -70,6 +70,15 @@ Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all ru
         - but `ps aux` gives you more and therefore more useful
         - pipe to `more` to see pages of output one at a time: `ps aux | more`
 
+### Specify location of screenshots
+
+- [Here](https://plusbryan.com/how-to-automatically-save-screenshots-to-google-drive)
+- This:
+```
+defaults write com.apple.screencapture location [insert location here]
+killall SystemUIServer
+```
+
 ### Useful Keyboard Shortcuts
 
 - Log out: Cmd + Ctrl + Q
