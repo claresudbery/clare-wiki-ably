@@ -64,5 +64,6 @@ sed -i '/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d};}' ./notes/Scrat
 - I stopped it from creating two new files for every file processed (one containing the original content and one containing just the toc)
 - I made it work in Windows (where line endings were preventing it from working)
 - I added a heading at the top of each table of contents.
+- I stopped adding a footer with date/time at the end of every toc - this was causing my files to appear updated (in source control) every time I ran the script, even when the toc hadn't actually been updated.
 
 My version of the script can be found [here](/resources/gh-md-toc).
