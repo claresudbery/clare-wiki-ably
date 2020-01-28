@@ -168,5 +168,6 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 	curl -L https://raw.githubusercontent.com/shigeya/jekyll-category-archive-plugin/master/_plugins/category_archive_plugin.rb > _plugins/category_archive_plugin.rb
 {% endhighlight %}
 
+## OmniAuth vulnerability
 
-
+- Before doing any auth stuff, check whether there is still a vulnerability in OmniAuth (see [alert here](https://github.com/claresudbery/clare-wiki-ably/network/alert/Gemfile.lock/omniauth/open) or check the front page of the `clare-wiki-ably` repo in GitHub - the alerts show up there (but NOT in notifications)
