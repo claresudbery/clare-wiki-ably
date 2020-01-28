@@ -94,8 +94,12 @@ gh_is_url() {
 gh_toc(){
     local gh_src=$1
 				
-	# remove previous table of contents, by deleting everything between <!--ts--> and <!--te-->
+    # remove previous table of contents, by deleting everything between <!--ts--> and <!--te-->
+    if [[ "`uname`" == "Darwin" ]]; then
 	sed -i "" "/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d;};}" "$gh_src"
+    else
+	sed -i "/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d}}" "$gh_src"
+    fi
 	
     local gh_src_copy=$1
     local gh_ttl_docs=$2
@@ -167,7 +171,7 @@ gh_toc(){
 				# create toc file
 				echo -e "\n${toc_header}\n" > "$toc_path"
 				echo "${toc}" >> "${toc_path}"
-				echo -e "\n${toc_footer}\n" >> "$toc_path"
+				# echo -e "\n${toc_footer}\n" >> "$toc_path"
 				# insert toc file
 				if [[ "`uname`" == "Darwin" ]]; then
 					sed -i "" "/${ts}/r ${toc_path}" "$gh_src"
