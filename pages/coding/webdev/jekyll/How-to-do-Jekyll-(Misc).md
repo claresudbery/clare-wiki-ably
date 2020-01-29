@@ -5,13 +5,15 @@ location: "pages/coding/webdev/jekyll/leaf"
 permalink: /pages/coding/webdev/jekyll/How-to-do-Jekyll-(Misc)
 ---
 
-## Liquid templating laguage
+## Liquid templating language
 
-All the stuff you see surrounded by squigglybracket-percent tags as shown below is the [liquid templating language](https://shopify.github.io/liquid/). Docs are quite good.
+All the stuff you see surrounded by squigglybracket-percent tags as shown below is the [liquid templating language](https://shopify.github.io/liquid/). The docs are quite good.
 
+```
 {% highlight html %}
   {% assign myvar = 10 %}
 {% endhighlight %}
+```
 
 ## Draft Posts
 
