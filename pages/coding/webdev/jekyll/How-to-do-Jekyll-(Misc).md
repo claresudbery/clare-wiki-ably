@@ -7,12 +7,13 @@ permalink: /pages/coding/webdev/jekyll/How-to-do-Jekyll-(Misc)
 
 ## Liquid templating language
 
-All the stuff you see surrounded by squigglybracket-percent tags as shown below is the [liquid templating language](https://shopify.github.io/liquid/). The docs are quite good.
+All the stuff you see surrounded by squiggly-bracket-percent tags (see note) as shown below is the [liquid templating language](https://shopify.github.io/liquid/). The docs are quite good.
+I can't put squigglybracket-percent tags even in a code section, because Jekyll attempts to interpret and render them. So replace square brackets [] in the snippet below with {} (I can never remember what they're called, so in my head they will forever be 'squiggly brackets').
 
 ```
-{% highlight html %}
-  {% assign myvar = 10 %}
-{% endhighlight %}
+[% highlight html %]
+  [% assign myvar = 10 %]
+[% endhighlight %]
 ```
 
 ## Draft Posts
