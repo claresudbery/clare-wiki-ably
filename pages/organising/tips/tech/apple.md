@@ -92,3 +92,19 @@ killall SystemUIServer
     - force restart: `Cmd (splat) + Ctrl + Power` button
 - Show hidden files in Finder: `Cmd + Shift + Dot`
     - You might also have to run these lines in the terminal (from [here](https://apple.stackexchange.com/questions/280736/folder-displaying-in-terminal-but-not-finder)): `defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder`
+- [System preferences](#system-preferences-top-tips)
+
+### Problems with headphones
+
+- Problem: Output goes to headphones in some contexts but built-in speakers in others.
+    - Sometimes it's even going to a second screen!
+    - Solution: 
+        - System Preferences | Sound
+        - Check the checkbox 
+
+### System Preferences - Top Tips
+
+- Keyboard shortcuts 
+    - Hack: Alt/Option + F2 to open display pane, then Cmd + L to gt back to main preferences
+- When you're in a sub-dialog, don't close it to get out of it! Use the back button (top left) instead, then you can get back to other dialogs
+- Use the search input (top right)
