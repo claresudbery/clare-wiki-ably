@@ -13,3 +13,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [samba (PRIVATE)](https://github.com/claresudbery/samba)
     - See sub-folders for son**, sig** and vis**
 
+## Docs and Blog Posts
+
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/clojure) (Clojure category)

@@ -14,6 +14,10 @@ permalink: /pages/coding/tools/Other-Coding-Tools
 - [Katas](/pages/think/code-princ/Katas)
 - [Recursion](/pages/think/code-princ/Recursion)
 
+## Docs and Blog Posts
+
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/programming-tools-languages) (Programming Tools & Languages category)
+
 ## Quicktype.io
 
 [Here](https://app.quicktype.io/). 

@@ -3,6 +3,12 @@ layout: page
 location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/Networking-Commands
 ---
+
+## Docs and Blog Posts
+
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/networking) (Networking category)
+- [A Simple explanation of the CIDR IP address scheme](https://insimpleterms.blog/a-simple-explanation-of-the-cidr-ip-address-scheme)
+
 ## Misc Terminal Stuff
 
   - Cmd: **dig \[IP or domain name\]** - tells you what that IP / domain

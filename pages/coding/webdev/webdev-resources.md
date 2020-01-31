@@ -24,6 +24,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [WebAPI](/pages/coding/dotnet/WebAPI)
 - Various other web stuff in the [Dot Net section](/pages/coding/Dot-Net)
 
+## Docs and Blog Posts
+
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/web-front-end-css-html-rest-etc) (category: "Web Front End (CSS, HTML, REST etc)")
+
 ## Front end and UI Resources
 
 - [Good UI design](https://refactoringui.com/)

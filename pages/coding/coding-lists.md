@@ -8,6 +8,7 @@ permalink: /pages/coding/Coding-Lists
 - [Practising coding skills with cyber-dojo](https://cyber-dojo.org)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/coding-skills) (Coding Skills category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/code) (Code category)
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/programming-tools-languages) (Programming Tools & Languages category)
 
 ## Choices of Technology When Building Software
 

@@ -29,3 +29,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [FizzBuzzKata](https://github.com/claresudbery/FizzBuzzKata)
 - [SimpleCardGameKata](https://github.com/claresudbery/SimpleCardGameKata)
 
+## Docs and Blog Posts
+
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/c) (C# category)
