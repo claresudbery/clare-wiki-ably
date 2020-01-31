@@ -5,6 +5,23 @@ location: "pages/organising/bigindex/leaf"
 permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 ---
 
+## Other technologies considered for BigIndex
+
+- Boostnote (quite limited and not cross platform)
+- Alex's clare-bot (needed quite a lot of work and only worked in Slack)
+- [dokuwiki](#dokuwiki)
+- [Simple Note](https://blog.danhhz.com/simplenote-934cb2a5e50b), the one Joe Ray found for me 
+- [Bear](https://bear.app/) - shown to me by Phil from TW but only works on Mac / iOS
+- [Notion](https://www.notion.so)
+  - "I've been exploring [Notion](https://www.notion.so) for the last few months and found it to be excellent at most of the things you're looking for. But the advanced features of databases with custom views, functions, etc are what I'm really enjoying the most."
+  - "If you want a good idea of what you can do with it - Here's a good [YouTube video that turned me onto it](https://youtu.be/m9S5I3pWz94)."
+
+### Dokuwiki
+
+- [Set up an Apache web server in AWS](https://docs.aws.amazon.com/efs/latest/ug/wt2-apache-web-server.html)
+- [Configure an Apache web server](https://opensource.com/article/18/2/how-configure-apache-web-server)
+- [Install dokuwiki](https://www.dokuwiki.org/install)
+
 ## Pandoc
 
 * Converting a word doc: 
@@ -79,3 +96,14 @@ Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/maste
 - [wiki-folder](/resources/wiki-folder) - creates a new wiki folder plus index.md
 - [wiki-page](/resources/wiki-page) - creates a new wiki page
 - [wiki-page-insert](/resources/wiki-page-insert) - Inserts wiki front matter into a pre-existing markdown file
+
+## Scripts Used for RefactoringExamples
+
+- See [RefactoringExamples repo](https://github.com/claresudbery/RefactoringExamples/blob/master/github-markdown/notes/code-changes.md) (private only, I'm afraid).
+
+## Copying data from a Google Drive to other storage
+
+- Put everything in one folder
+- Right-click that folder and choose Download
+- It will download a zipped copy of your folder
+- AND it will convert all Google docs and sheets into Word docs and Excel sheets

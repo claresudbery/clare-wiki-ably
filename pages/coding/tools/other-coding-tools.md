@@ -14,3 +14,9 @@ permalink: /pages/coding/tools/Other-Coding-Tools
 - [Katas](/pages/think/code-princ/Katas)
 - [Recursion](/pages/think/code-princ/Recursion)
 
+## Quicktype.io
+
+[Here](https://app.quicktype.io/). 
+
+It takes a sample wodge of JSON and builds types and a parser for you in multiple languages. [An example](https://app.quicktype.io?share=Fhw0WAtIXxBfL3oharhT).
+

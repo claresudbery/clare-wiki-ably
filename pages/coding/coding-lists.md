@@ -3,8 +3,13 @@ layout: page
 location: "pages/coding/leaf"
 permalink: /pages/coding/Coding-Lists
 ---
+## General Coding Skills
 
-## Things you can use to build stuff quickly
+- [Practising coding skills with cyber-dojo](https://cyber-dojo.org)
+
+## Choices of Technology When Building Software
+
+### Things you can use to build stuff quickly
 
 - [Windows console apps](/pages/coding/dotnet/Windows-Console-Apps)
 - [NancyFX](/pages/coding/tools/NancyFX)
@@ -14,12 +19,12 @@ permalink: /pages/coding/Coding-Lists
 - [Vue.js](/pages/coding/webdev/js/Vue-js)
 - [Jekyll](/pages/coding/webdev/Jekyll/)
 
-## API Stuff
+### API Stuff
 
 - [NancyFX](/pages/coding/tools/NancyFX)
 - [WebAPI](/pages/coding/dotnet/WebAPI)
 
-## Back End Stuff
+### Back End Stuff
 
 - [ReactiveX](/pages/coding/tools/ReactiveX)
 - [Java](/pages/coding/lang/oo/Java)

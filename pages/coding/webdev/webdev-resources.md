@@ -24,3 +24,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [WebAPI](/pages/coding/dotnet/WebAPI)
 - Various other web stuff in the [Dot Net section](/pages/coding/Dot-Net)
 
+## Front end and UI Resources
+
+- [Good UI design](https://refactoringui.com/)
+  - ...they also have a YouTube channel - this is a good vid:  https://www.youtube.com/watch?v=ZJj7uNdzPpM
