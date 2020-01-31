@@ -24,6 +24,7 @@ Clare-specific notes available [here](https://github.com/claresudbery/clare-tech
 - For Mac / Windows: 
     - Visual Studio Code
     - Byword (Mac only?)
+    - Visual Studio [MarkdownEditor Extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 ## Generating Table of Contents (TOC)
 

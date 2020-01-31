@@ -62,3 +62,6 @@ _site
 .jekyll-metadata
 vendor
 
+# Visual Studio
+/.vs
+
