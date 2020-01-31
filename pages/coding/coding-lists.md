@@ -6,6 +6,8 @@ permalink: /pages/coding/Coding-Lists
 ## General Coding Skills
 
 - [Practising coding skills with cyber-dojo](https://cyber-dojo.org)
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/coding-skills) (Coding Skills category)
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/code) (Code category)
 
 ## Choices of Technology When Building Software
 

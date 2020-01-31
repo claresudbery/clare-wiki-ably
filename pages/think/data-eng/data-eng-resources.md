@@ -8,5 +8,4 @@ permalink: /pages/think/data-eng/Data-Engineering-Resources
 
 ## Docs and Blog Posts
 
-- my data engineering notes
-
+- [My InSimpleTerms blog](https://insimpleterms.blog/category/data) (Data category)

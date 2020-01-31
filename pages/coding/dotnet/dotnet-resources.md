@@ -16,17 +16,9 @@ permalink: /pages/coding/dotnet/DotNet-Resources
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/agile) (Agile category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/c) (C# category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/clojure) (Clojure category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/code) (Code category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/coding-skills) (Coding Skills category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/data) (Data category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/events) (Events category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/excel) (Excel category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/flippant) (Flippant category)
+- 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/functional-programming) (Functional Programming category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/gender) (Gender category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/greek) (Greek category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/infrastructure) (Infrastructure category)
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/languages) (Languages category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/life) (Life category)
   - shoelaces, procrastination, making people feel stupid, maths, india, writers' block, sexism, tax, prestuds
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/machine-learning) (Machine Learning category)
@@ -41,7 +33,6 @@ permalink: /pages/coding/dotnet/DotNet-Resources
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/teaching) (Teaching category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/technical-leadership) (Technical Leadership category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/web-front-end-css-html-rest-etc) (category: "Web Front End (CSS, HTML, REST etc)")
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/women-in-tech) (Women in Tech category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/writing) (Writing category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/xp) (XP category)
 

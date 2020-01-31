@@ -4,7 +4,7 @@ categories: organising BigIndex
 location: "pages/organising/bigindex/leaf"
 permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 ---
-
+ 
 ## Other technologies considered for BigIndex
 
 - Boostnote (quite limited and not cross platform)
