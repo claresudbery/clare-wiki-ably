@@ -10,7 +10,7 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 - Boostnote (quite limited and not cross platform)
 - Alex's clare-bot (needed quite a lot of work and only worked in Slack)
 - [dokuwiki](#dokuwiki)
-- [Simple Note](https://blog.danhhz.com/simplenote-934cb2a5e50b), the one Joe Ray found for me 
+- [Simple Note](https://blog.danhhz.com/simplenote-934cb2a5e50b), the one Joe Ray found for me
 - [Bear](https://bear.app/) - shown to me by Phil from TW but only works on Mac / iOS
 - [Notion](https://www.notion.so)
   - "I've been exploring [Notion](https://www.notion.so) for the last few months and found it to be excellent at most of the things you're looking for. But the advanced features of databases with custom views, functions, etc are what I'm really enjoying the most."

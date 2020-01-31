@@ -27,4 +27,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Front end and UI Resources
 
 - [Good UI design](https://refactoringui.com/)
-  - ...they also have a YouTube channel - this is a good vid:  https://www.youtube.com/watch?v=ZJj7uNdzPpM
+  - ...they also have a YouTube channel - this is a good vid: https://www.youtube.com/watch?v=ZJj7uNdzPpM
