@@ -13,3 +13,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [RefactoringExamples (PRIVATE)](https://github.com/claresudbery/RefactoringExamples)
     - The original markdown for my series of refactoring articles that are being published on Martin Fowler's site. 
 
+## Docs and Blog Posts
+
+- [My notes from Martin Fowler's Refactoring Seminar](https://insimpleterms.blog/martin-fowler-webinar-new-refactoring-book)
+
