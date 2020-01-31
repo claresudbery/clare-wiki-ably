@@ -13,4 +13,5 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Other Resources
 
 - Chrome bookmarks: Useful | Coding | Ember
+- [Why is PhantomJS disconnecting? - Testing - Ember.JS](https://discuss.emberjs.com/t/why-is-phantomjs-disconnecting/9636/8)
 

@@ -20,3 +20,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [MVC4](/pages/coding/dotnet/MVC4)
 
+## Javascript in Chrome Bookmarks
+
+Enter Number in input: Put this js into the url field in a Chrome bookmark:
+
+```
+(javascript:(function(){var firstInput = $('form').find('input[type=text],input[type=password],input[type=radio],input[type=checkbox],textarea,select').filter(':visible:first'); if (firstInput != null) { firstInput.val('99999');}})()))
+```

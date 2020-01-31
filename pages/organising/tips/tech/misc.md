@@ -11,6 +11,10 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
 ## Chrome
 
+## Refresh your cache
+
+- [Refresh your cache - When hitting F5 just isn't enough!](http://refreshyourcache.com/en/cache/)
+
 ### Searching Bookmarks and History
 
 - Add Bookmarks and History as separate "search engines"
@@ -57,3 +61,4 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
   - NB: In google sheets you have to be in the formula input for it to
     work.
+

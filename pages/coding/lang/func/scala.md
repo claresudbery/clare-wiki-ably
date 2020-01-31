@@ -16,6 +16,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Other resources
 
 - Scala Build Tool (SBT): https://www.scala-sbt.org/
+- [IntelliJ IDEA Tutorial | Coursera](https://www.coursera.org/learn/progfun1/supplement/VuJFf/intellij-idea-tutorial)
+- [Introduction | Scala Documentation](https://docs.scala-lang.org/tour/tour-of-scala.html)
+- [A Scala Tutorial for Java Programmers | Scala Documentation](https://docs.scala-lang.org/tutorials/scala-for-java-programmers.html)
+- [ScalaFiddle](https://scalafiddle.io/)
+- [Coursera: Scala: Tools Setup for Mac OS X](https://www.coursera.org/learn/progfun1/lecture/UzicG/tools-setup-for-mac-os-x)
+- [ScalaTest: Matchers](http://www.scalatest.org/user_guide/using_matchers)
+- [ScalaTest: GivenWhenThen and FeatureSpec](http://www.scalatest.org/getting_started_with_feature_spec)
 - Dropbox / IT Training / functional programming
 
 ## Databricks

@@ -16,6 +16,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [data-engineering (PRIVATE)](https://github.com/claresudbery/data-engineering.git)
     - Stuff learnt / played with during TW data engineering course.
 
+## Useful Links
+
+- [Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/)
+
 ## Misc
 
   - Type python at command line to write python live

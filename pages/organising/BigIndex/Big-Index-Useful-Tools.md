@@ -112,7 +112,7 @@ Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/maste
 
 I used this tool: [Bookmarker](https://github.com/lubien/bookmarker)
 
-Installing Bookmarker in Ubuntu in WSL: 
+### Installing Bookmarker in Ubuntu in WSL: 
 
 ```
 wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
@@ -123,8 +123,17 @@ mix escript.install github lubien/bookmarker
 export PATH=$PATH:/home/claresudbery/.mix/escripts
 ```
 
-Running Bookmarker:
+### Running Bookmarker 
+
+- Note that the input it expects is your current Chrome bookmarks file, which is in an entirely different format to any exported html bookmarks files).  
+- In Windows you'll find it somewhere like here: C:\Users\CLARE\AppData\Local\Google\Chrome\User Data\Default\Bookmarks.  
+- If you have separate Chrome profiles, their bookmarks will be somewhere like `C:\Users\CLARE\AppData\Local\Google\Chrome\User Data\Profile 2`.  
+- `Bookmarks` is the file - it has no file extension - it's not a folder. 
+- I've stored bookmarks files [here](https://github.com/claresudbery/clare-tech/tree/master/resources).
+- Run the command below.
+- !! It didn't actually work when I tried it - I got an error "** (KeyError) key :sort not found in: %{"children" => [etc]"
+  - See GitHub issue [here](https://github.com/lubien/bookmarker/issues/23).
 
 ```
-
+bookmarker -o "./resources/bookmarks.md" --file "./resources/bookmarks"
 ```
