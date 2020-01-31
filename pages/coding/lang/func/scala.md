@@ -24,7 +24,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Databricks Home](https://community.cloud.databricks.com/?o=7541492558286540)
 - [Databricks Getting Started - Documentation](https://docs.databricks.com/user-guide/getting-started.html)
-- [Quickstart — Databricks Documentation](https://docs.databricks.com/getting-started/quick-start.html#quick-start)
+- [Quickstart - Databricks Documentation](https://docs.databricks.com/getting-started/quick-start.html#quick-start)
 - [Databricks Setup](https://docs.google.com/document/d/1rTlIf6nJO7TwN0BSDeZZvRBILkdK3biL4BbUW16QWNg/edit#heading=h.wymthvf8zvzv)
 - [Databricks Magic Commands](https://docs.databricks.com/user-guide/dbfs-databricks-file-system.html)
 - [First Scala Notebook - Databricks Community Edition](https://community.cloud.databricks.com/?o=7541492558286540#notebook/3567362889834837/command/3567362889834838)
