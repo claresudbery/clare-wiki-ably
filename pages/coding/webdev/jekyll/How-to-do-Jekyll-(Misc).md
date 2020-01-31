@@ -5,6 +5,10 @@ location: "pages/coding/webdev/jekyll/leaf"
 permalink: /pages/coding/webdev/jekyll/How-to-do-Jekyll-(Misc)
 ---
 
+## Useful Tools
+
+I've documented a bunch of useful tools [here](/pages/organising/bigindex/Big-Index-Useful-Tools).
+
 ## Liquid templating language
 
 All the stuff you see surrounded by squiggly-bracket-percent tags (see note) as shown below is the [liquid templating language](https://shopify.github.io/liquid/). The docs are quite good.

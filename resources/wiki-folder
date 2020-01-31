@@ -1,0 +1,23 @@
+#!/bin/bash
+
+wiki_path=$1
+wiki_folder=$2
+wiki_title=$3
+new_folder="$wiki_path/$wiki_folder"
+new_file="$new_folder/index.md"
+new_permalink="/$wiki_path/$wiki_title"
+
+echo "new folder: $new_folder"
+echo "new file: $new_file"
+echo "new permalink: $new_permalink"
+
+mkdir "$new_folder"
+touch "$new_file"
+
+echo "---" >> "$new_file" 
+echo "layout: page" >> "$new_file" 
+echo "folderlist: true" >> "$new_file" 
+echo "location: $new_folder/" >> "$new_file" 
+echo "permalink: $new_permalink" >> "$new_file" 
+echo "---" >> "$new_file" 
+

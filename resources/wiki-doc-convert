@@ -1,0 +1,9 @@
+#!/bin/bash
+
+wiki_path=$1
+wiki_file=$2
+wiki_title=$3
+
+pandoc -t gfm --extract-media . -o "/c/development/clare-wiki-ably/$wiki_path/$wiki_file.md" "/C/development/wiki-pages/$wiki_file.docx"
+
+wiki-page-insert $wiki_path $wiki_file $wiki_title

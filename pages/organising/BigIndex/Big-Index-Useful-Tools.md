@@ -68,3 +68,14 @@ sed -i '/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d};}' ./notes/Scrat
 - I stopped adding a footer with date/time at the end of every toc - this was causing my files to appear updated (in source control) every time I ran the script, even when the toc hadn't actually been updated.
 
 My version of the script can be found [here](/resources/gh-md-toc).
+
+## Scripts for creating markdown files
+
+I've created the following scripts to help me create markdown files and folders quickly for this site.
+Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/master/organising/BigIndex/Big-Index-Useful-Commands.md).
+
+- [wiki-doc-convert](/resources/wiki-doc-convert)- converts Words docs to Wiki markdown
+  - ! Assumes your Word docs are in a hard-coded location in the script, and also places the md files into a hard-coded location
+- [wiki-folder](/resources/wiki-folder) - creates a new wiki folder plus index.md
+- [wiki-page](/resources/wiki-page) - creates a new wiki page
+- [wiki-page-insert](/resources/wiki-page-insert) - Inserts wiki front matter into a pre-existing markdown file

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+wiki_path=$1
+wiki_file=$2
+wiki_title=$3
+new_file="$wiki_path/$wiki_file.md"
+new_permalink="/$wiki_path/$wiki_title"
+
+echo "new file: $new_file"
+echo "new permalink: $new_permalink"
+
+touch "$new_file"
+
+echo "---" >> "$new_file" 
+echo "layout: page" >> "$new_file" 
+echo "location: $wiki_path/leaf" >> "$new_file" 
+echo "permalink: $new_permalink" >> "$new_file" 
+echo "---" >> "$new_file" 
+

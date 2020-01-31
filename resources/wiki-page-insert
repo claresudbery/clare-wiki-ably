@@ -1,0 +1,15 @@
+#!/bin/bash
+
+wiki_path=$1
+wiki_file=$2
+wiki_title=$3
+new_file="$wiki_path/$wiki_file.md"
+new_permalink="/$wiki_path/$wiki_title"
+
+echo "new permalink: $new_permalink"
+
+printf '%s\n%s\n' "---" "$(cat $new_file)" >$new_file
+printf '%s\n%s\n' "permalink: $new_permalink" "$(cat $new_file)" >$new_file
+printf '%s\n%s\n' "location: $wiki_path/leaf" "$(cat $new_file)" >$new_file
+printf '%s\n%s\n' "layout: page" "$(cat $new_file)" >$new_file
+printf '%s\n%s\n' "---" "$(cat $new_file)" >$new_file
