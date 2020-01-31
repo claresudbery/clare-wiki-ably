@@ -7,4 +7,4 @@ permalink: /pages/coding/data/Airflow
 ## Useful Links
 
 - [Airflow - local DAGs](http://localhost:8080/admin/)
-- [Airflow Quick Start — Installation](http://airflow.apache.org/start.html)
+- [Airflow Quick Start - Installation](http://airflow.apache.org/start.html)

@@ -12,7 +12,7 @@ permalink: /pages/think/data-eng/Data-Engineering-Resources
 
 ## Background Reading
 
-- [What do you mean by “Event-Driven”?](https://martinfowler.com/articles/201701-event-driven.html)
+- [What do you mean by 'Event-Driven'?](https://martinfowler.com/articles/201701-event-driven.html)
 - [NoSQL Guide](https://www.martinfowler.com/nosql.html)
 - [NoSQL Databases: An Overview | ThoughtWorks](https://www.thoughtworks.com/insights/blog/nosql-databases-overview)
 - [nosql-intro-public](https://www.martinfowler.com/articles/nosql-intro-original.pdf)
