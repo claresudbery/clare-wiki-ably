@@ -9,7 +9,8 @@ permalink: /pages/coding/Coding-Lists
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/coding-skills) (Coding Skills category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/code) (Code category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/programming-tools-languages) (Programming Tools & Languages category)
-
+- [Hack Manchester 2018 - Best in Show](https://medium.com/a-woman-in-technology/hack-manchester-2018-best-in-show-ca6ef65fb49c) (my Medium blog post)
+ 
 ## Choices of Technology When Building Software
 
 ### Things you can use to build stuff quickly

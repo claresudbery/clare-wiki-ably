@@ -12,5 +12,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [TimeTravelHackPOC (Hack Mcr 2018) (PRIVATE)](https://github.com/claresudbery/TimeTravelHackPOC.git)
 
 ## Docs and Blog Posts
+- [Hack Manchester 2018 - Best in Show](https://medium.com/a-woman-in-technology/hack-manchester-2018-best-in-show-ca6ef65fb49c) (my Medium blog post)
 - Useful notes: Vue.js
 

@@ -11,3 +11,4 @@ permalink: /pages/think/teach/Teaching-Resources
 ## Docs and Blog Posts
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/teaching) (Teaching category)
+- [How Learning and Teaching Shape Us](https://medium.com/a-woman-in-technology/how-learning-and-teaching-shape-us-3e6333b8c7ba) (my Medium blog post)
