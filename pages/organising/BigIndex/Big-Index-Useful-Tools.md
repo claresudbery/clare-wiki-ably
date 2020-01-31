@@ -107,3 +107,24 @@ Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/maste
 - Right-click that folder and choose Download
 - It will download a zipped copy of your folder
 - AND it will convert all Google docs and sheets into Word docs and Excel sheets
+
+## Converting Chrome bookmarks to markdown
+
+I used this tool: [Bookmarker](https://github.com/lubien/bookmarker)
+
+Installing Bookmarker in Ubuntu in WSL: 
+
+```
+wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+sudo apt-get update
+sudo apt-get install esl-erlang
+sudo apt-get install elixir
+mix escript.install github lubien/bookmarker
+export PATH=$PATH:/home/claresudbery/.mix/escripts
+```
+
+Running Bookmarker:
+
+```
+
+```
