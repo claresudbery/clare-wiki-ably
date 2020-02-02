@@ -160,10 +160,11 @@ Example output: **wiki-page pages/coding/lang/oo cpp C-Plus-Plus**
 
 **Inserting new content**
 
-`=CONCATENATE("echo '' >> '",C2,"/",G2,".md';","echo '' >> '",C2,"/",G2,".md';","echo '- [",I2,"](",K2,")' >> '",C2,"/",G2,".md'")`
+`=CONCATENATE("echo '' >> '",C2,"/",G2,".md';","echo '' >> '",C2,"/",G2,".md';","echo '- ",IF(IFERROR(FIND("http",K2)=1,0),CONCATENATE("[",I2,"](",K2,")"),CONCATENATE(I2,": ",K2)),"' >> '",C2,"/",G2,".md'")`
 
-Example output: 
+Two example outputs: 
 
 ```
 echo '' >> 'pages/coding/coding-lists.md';echo '' >> 'pages/coding/coding-lists.md';echo '- [Time Travel Hack Folder](https://drive.google.com/drive/folders/1II9WhAYOOyiKbbnzhx_MxTqtvX56OR8n)' >> 'pages/coding/coding-lists.md'
+echo '' >> 'pages/coding/tools/linq.md';echo '' >> 'pages/coding/tools/linq.md';echo '- Linq stuff.txt: Dropbox\IT Training\.Net and C#\Linq stuff.txt' >> 'pages/coding/tools/linq.md'
 ```
