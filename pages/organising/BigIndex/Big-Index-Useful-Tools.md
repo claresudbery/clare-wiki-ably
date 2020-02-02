@@ -137,3 +137,29 @@ export PATH=$PATH:/home/claresudbery/.mix/escripts
 ```
 bookmarker -o "./resources/bookmarks.md" --file "./resources/bookmarks"
 ```
+
+## Inserting new reference data from a spreadsheet
+
+I have a [spreadsheet]() (only available to me) which contains a list of references I want to add as content. It uses the formulas listed below to convert spreadsheet data into an insertion script, creating new pages and folders where necessary.
+
+It's a semi manual process (I have to [sort the spreadsheet appropriately](/pages/coding/data/Google-Sheets#sorting) and then copy from spreadsheet columns into scripts), but it's v useful.
+
+The spreadsheet formulas are explained in my Google Sheets section [here](/pages/coding/data/Google-Sheets#string-manipulation).
+
+**Creating new folders**
+
+`=IF(E2="Yes","",CONCATENATE(IF(B2="wiki","wiki-folder ","tech-folder "),LEFT(C2,LEN(C2)-FIND("/",REVERSE(C2)))," ",RIGHT(C2,FIND("/",REVERSE(C2))-1)," ",D2))`
+
+Example output: **wiki-folder pages/coding/infra testing Testing**
+
+**Creating new pages**
+
+`=IF(H31="Yes","",CONCATENATE(IF(B31="wiki","wiki-page ","tech-page "),C31," ",G31," ",F31))`
+
+Example output: **wiki-page pages/coding/lang/oo cpp C-Plus-Plus**
+
+**Inserting new content**
+
+`=CONCATENATE("echo '' >> '",C2,"/",G2,".md';echo '- [",I2,"](",K2,")' >> '",C2,"/",G2,".md'")`
+
+Example output: `echo '' >> **pages/coding/coding-lists.md';echo '- [Time Travel Hack Folder](https://drive.google.com/drive/folders/1II9WhAYOOyiKbbnzhx_MxTqtvX56OR8n)' >> 'pages/coding/coding-lists.md'**
