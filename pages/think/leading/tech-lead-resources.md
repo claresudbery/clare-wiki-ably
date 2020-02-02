@@ -6,7 +6,8 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 
 ## Docs and Blog Posts
 
-- [My InSimpleTerms blog](https://insimpleterms.blog/category/technical-leadership) (Technical Leadership category)
+- [The Tech Lead's New Project Checklist](https://insimpleterms.blog/the-tech-leads-new-project-checklist)
+- [Other posts on My InSimpleTerms blog](https://insimpleterms.blog/category/technical-leadership) (Technical Leadership category)
 
 ## Misc
 
