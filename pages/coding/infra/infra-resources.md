@@ -23,7 +23,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [ReconciliationConfig (PRIVATE)](https://github.com/claresudbery/ReconciliationConfig) 
     - contains scripts used to fiddle with [Reconciliate](https://github.com/claresudbery/Reconciliate).
 
-## Docs and Blog Posts
-- Dropbox: IT Training / Infrastructure Stuff (this has also been copied to my GitHub Root-Scripts repo)
-- my data engineering notes
+## Misc
 
+- [infrastructure tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=d3b5efea-dd5a-4d3b-94c9-77a1b3f43b35&query=tag%1FInfrastructure%1FtagGuid%3A38bcc5ac-be79-4b3a-bbb0-9d21f8d2e98d%1Eview%3AVIEW%2FALL_NOTES&)

@@ -10,3 +10,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [linq-exercises](https://github.com/claresudbery/linq-exercises)
 
+## Misc
+
+- [Various bits of Linq stuff](https://docs.google.com/document/d/1fKGun6mKFSHOmctprtYxDML6cE7SwzoW/edit)

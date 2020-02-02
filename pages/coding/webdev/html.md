@@ -16,3 +16,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 - [codefirst-girls-01](https://github.com/claresudbery/codefirst-girls-01)
 
+## Misc
+
+- HTML5 ASP.NET Sample App: Dropbox\IT Training\Web Stuff\HTML5 ASP.NET Sample App
+- [HTML validator](https://validator.w3.org/nu/#textarea)

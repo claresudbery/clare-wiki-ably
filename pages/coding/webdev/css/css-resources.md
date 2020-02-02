@@ -12,3 +12,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
+## Misc
+
+- [CSS validator](http://jigsaw.w3.org/css-validator/validator?text=%25scc)

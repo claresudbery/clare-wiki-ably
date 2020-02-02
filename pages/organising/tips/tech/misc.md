@@ -8,7 +8,10 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 ## See also
 
 - [Big-Index-Useful-Tools](/pages/organising/bigindex/Big-Index-Useful-Tools)
-
+- [Tech_tips tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7ae17d68-c956-43fd-841f-a3daba3b85ef&query=tag%1FTech_tips%1FtagGuid%3A08037cff-5a39-2ec3-a52c-2eb07865f253%1Eview%3AVIEW%2FALL_NOTES&)
+- [Useful tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7ae17d68-c956-43fd-841f-a3daba3b85ef&query=tag%1FUseful%1FtagGuid%3A445d553a-0d3d-80ce-5f4e-641a12368bae%1Eview%3AVIEW%2FALL_NOTES&)
+- [shortcuts tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=ba3426a1-35e2-47d5-888d-445432271c8c&query=tag%1Fshortcuts%1FtagGuid%3A830603fb-b0ba-403f-9177-3e3ae2b8a9a0%1Eview%3AVIEW%2FALL_NOTES&)
+ 
 ## Chrome
 
 ## Refresh your cache

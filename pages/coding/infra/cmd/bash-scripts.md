@@ -5,18 +5,18 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 ---
 ## Misc
 
-  - if statement - the spaces matter\! **if \[\[ $NumDifferences \!= 0
+- Sample bash script: Dropbox\IT Training\Misc\sample.bashrc
+
+- if statement - the spaces matter\! **if \[\[ $NumDifferences \!= 0
     \]\]; then ... fi**
 
-  - Bash scripts:
+- Bash scripts:
 
-<!-- end list -->
-
-  - **set -x** - also works on the command line - outputs every command
+- **set -x** - also works on the command line - outputs every command
     that’s run to the command shell - include nested commands - useful
     for debugging (output all)
     
-      - **set -e** - stops running on any error (also works on the
+  - **set -e** - stops running on any error (also works on the
         command line)
 
 ## Bash variables
@@ -80,3 +80,4 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
       - will be converted to
     
       - **git mv clare/thing.txt clare/thing.txt.erb**
+

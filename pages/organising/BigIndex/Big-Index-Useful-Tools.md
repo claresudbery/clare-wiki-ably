@@ -160,11 +160,11 @@ Example output: **wiki-page pages/coding/lang/oo cpp C-Plus-Plus**
 
 **Inserting new content**
 
-`=CONCATENATE("echo '' >> '",C2,"/",G2,".md';","echo '' >> '",C2,"/",G2,".md';","echo '- ",IF(IFERROR(FIND("http",K2)=1,0),CONCATENATE("[",I2,"](",K2,")"),CONCATENATE(I2,": ",K2)),"' >> '",C2,"/",G2,".md'")`
+`=CONCATENATE("new-ref ",C53,"/",G53,".md ","'- ",IF(IFERROR(FIND("http",L53)=1,0),CONCATENATE("[",I53,"](",L53,")"),CONCATENATE(I53,": ",L53)),"'")`
 
 Two example outputs: 
 
 ```
-echo '' >> 'pages/coding/coding-lists.md';echo '' >> 'pages/coding/coding-lists.md';echo '- [Time Travel Hack Folder](https://drive.google.com/drive/folders/1II9WhAYOOyiKbbnzhx_MxTqtvX56OR8n)' >> 'pages/coding/coding-lists.md'
-echo '' >> 'pages/coding/tools/linq.md';echo '' >> 'pages/coding/tools/linq.md';echo '- Linq stuff.txt: Dropbox\IT Training\.Net and C#\Linq stuff.txt' >> 'pages/coding/tools/linq.md'
+new-ref pages/coding/lang/oo/csharp.md '- [C# string concatenation](https://docs.google.com/document/d/1uibHxv2kiuS5kgQxJHKEY1ET9LeSK-2V/edit)'
+new-ref pages/coding/webdev/js/javascript-resources.md '- Ext JS stuff: Dropbox\IT Training\JS Stuff\SampleExtJSApp.zip'
 ```

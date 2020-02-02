@@ -13,3 +13,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [RabbitMQNancy](https://github.com/claresudbery/RabbitMQNancy)
 - [CurrencyAPI (PRIVATE)](https://github.com/claresudbery/CurrencyAPI)
 
+## Misc
+
+- [Nancy Notes](https://docs.google.com/document/d/1fZOzwT-IPg_HmGydGH3Rty5bDwZUm1on/edit)

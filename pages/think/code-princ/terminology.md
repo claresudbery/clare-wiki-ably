@@ -4,6 +4,10 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Useful-Terminology
 ---
 
+## Misc
+
+- [Notes on coding principles for interview prep](https://docs.google.com/document/d/1eIWoB0SP1fD08U-tOAc-SLbmF_59K4cC/edit)
+
 ## Symbolic links
 
   - They can be checked into source control
@@ -23,4 +27,3 @@ permalink: /pages/think/code-princ/Useful-Terminology
 - [Idempotence - Wikipedia](https://en.wikipedia.org/wiki/Idempotence)
 - [What is Idempotency?](https://www.restapitutorial.com/lessons/idempotency.html)
 - [Benefits of Pure Functions: Idempotent and Nullipotent | agiledeveloper](http://blog.agiledeveloper.com/2015/12/benefits-of-pure-functions-idempotent.html)
-

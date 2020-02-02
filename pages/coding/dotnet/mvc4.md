@@ -10,3 +10,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Async-experiments](https://github.com/claresudbery/Async-experiments)
 
+## Misc
+
+- Sample input mask in MVC: Dropbox\IT Training\Web Stuff\MVC Stuff\InputMask wi Data Attributes\InputMask.cs
+- Nico code: Dropbox\IT Training\Web Stuff\MVC Stuff\NICE ReturnOnInvestment
+- HiddenFor sample code (controller / view): Dropbox\IT Training\Web Stuff\MVC Stuff\TwoWayHiddenFor.cs

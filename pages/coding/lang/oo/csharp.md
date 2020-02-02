@@ -28,7 +28,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - See the two natching website subfolders
 - [FizzBuzzKata](https://github.com/claresudbery/FizzBuzzKata)
 - [SimpleCardGameKata](https://github.com/claresudbery/SimpleCardGameKata)
+- MVC version of TopGame: Dropbox\IT Training\Web Stuff\TopGameForMVC
 
 ## Docs and Blog Posts
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/c) (C# category)
+- [C# string concatenation](https://docs.google.com/document/d/1uibHxv2kiuS5kgQxJHKEY1ET9LeSK-2V/edit)

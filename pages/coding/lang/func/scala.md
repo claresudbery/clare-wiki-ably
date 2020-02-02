@@ -24,6 +24,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [ScalaTest: Matchers](http://www.scalatest.org/user_guide/using_matchers)
 - [ScalaTest: GivenWhenThen and FeatureSpec](http://www.scalatest.org/getting_started_with_feature_spec)
 - Dropbox / IT Training / functional programming
+- [Scala notes from data-eng course](https://docs.google.com/document/d/1XUef5B8huYIXSM5IyBy1xHVkKzNnxtOQ/edit)
 
 ## Databricks
 
@@ -48,5 +49,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Docs and Blog Posts
 
-- my data engineering notes
 

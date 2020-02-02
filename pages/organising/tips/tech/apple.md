@@ -93,7 +93,8 @@ killall SystemUIServer
 - Show hidden files in Finder: `Cmd + Shift + Dot`
     - You might also have to run these lines in the terminal (from [here](https://apple.stackexchange.com/questions/280736/folder-displaying-in-terminal-but-not-finder)): `defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder`
 - [System preferences](#system-preferences-top-tips)
-
+- [shortcuts tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=ba3426a1-35e2-47d5-888d-445432271c8c&query=tag%1Fshortcuts%1FtagGuid%3A830603fb-b0ba-403f-9177-3e3ae2b8a9a0%1Eview%3AVIEW%2FALL_NOTES&)
+ 
 ### Problems with headphones
 
 - Problem: Output goes to headphones in some contexts but built-in speakers in others.
@@ -108,3 +109,4 @@ killall SystemUIServer
     - Hack: Alt/Option + F2 to open display pane, then Cmd + L to gt back to main preferences
 - When you're in a sub-dialog, don't close it to get out of it! Use the back button (top left) instead, then you can get back to other dialogs
 - Use the search input (top right)
+

@@ -19,3 +19,6 @@ My InSimpleTerms Blog
   - [No Really, No Stereotypes](https://medium.com/a-woman-in-technology/no-really-no-stereotypes-35b842056ac4) (my Medium blog post)
   - [Clever Women*, Come Join Technology](https://medium.com/a-woman-in-technology/clever-women-come-join-me-773cf7fc8dc8) (my Medium blog post)
 
+## Misc
+
+- [Women_In_Tech tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=dbccb66e-f286-40ac-a13e-93848ca66909&query=tag%1FWomen_In_Tech%1FtagGuid%3A9144cebd-cf8c-4914-8969-595589defe15%1Eview%3AVIEW%2FALL_NOTES&)

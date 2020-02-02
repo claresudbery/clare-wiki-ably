@@ -15,12 +15,20 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## General Javascript Stuff
 
 - External hard disk has stuff from previous projects in F:\2014_OldHardDisk\Git
+- msFill - HTML javascript thing?: Dropbox\IT Training\JS Stuff\canvasfill.html
+- Javascript examples from Helix: Dropbox\IT Training\JS Stuff\Javascript examples.js
+- JS Dictionary: Learnt at WebApps?: Dropbox\IT Training\JS Stuff\JSDictionary
+- JS stuff from Weeble: Dropbox\IT Training\JS Stuff\MvcApplication1.zip
+- JS tests from Helix: Dropbox\IT Training\JS Stuff\Sample Code\JS Tests
+- Ext JS stuff: Dropbox\IT Training\JS Stuff\SampleExtJSApp.zip
+- More sample javascript from Helix: Dropbox\IT Training\JS Stuff\SampleJavaScript.js
+- Helix general JS stuff: Helix folder in contracting folder in ClareWorking email
 
 ## Elsewhere on this site
 
 - [MVC4](/pages/coding/dotnet/MVC4)
 
-## Javascript in Chrome Bookmarks
+## Use Javascript in Chrome Bookmarks
 
 Enter Number in input: Put this js into the url field in a Chrome bookmark:
 
