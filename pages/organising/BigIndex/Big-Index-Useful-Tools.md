@@ -160,6 +160,10 @@ Example output: **wiki-page pages/coding/lang/oo cpp C-Plus-Plus**
 
 **Inserting new content**
 
-`=CONCATENATE("echo '' >> '",C2,"/",G2,".md';echo '- [",I2,"](",K2,")' >> '",C2,"/",G2,".md'")`
+`=CONCATENATE("echo '' >> '",C2,"/",G2,".md';","echo '' >> '",C2,"/",G2,".md';","echo '- [",I2,"](",K2,")' >> '",C2,"/",G2,".md'")`
 
-Example output: `echo '' >> **pages/coding/coding-lists.md';echo '- [Time Travel Hack Folder](https://drive.google.com/drive/folders/1II9WhAYOOyiKbbnzhx_MxTqtvX56OR8n)' >> 'pages/coding/coding-lists.md'**
+Example output: 
+
+```
+echo '' >> 'pages/coding/coding-lists.md';echo '' >> 'pages/coding/coding-lists.md';echo '- [Time Travel Hack Folder](https://drive.google.com/drive/folders/1II9WhAYOOyiKbbnzhx_MxTqtvX56OR8n)' >> 'pages/coding/coding-lists.md'
+```
