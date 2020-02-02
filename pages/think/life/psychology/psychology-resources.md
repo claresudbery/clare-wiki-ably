@@ -4,6 +4,10 @@ location: pages/think/life/psychology/leaf
 permalink: /pages/think/life/psychology/Psychology-Resources
 ---
 
+## Empathy
+
+- At the moment this is just here as a search term so I can find this page...
+
 ## Docs and Blog Posts
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/psychology) (Psychology category)
