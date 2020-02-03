@@ -13,7 +13,7 @@ permalink: /pages/think/events/wshops/Energisers
     2. Split into two teams
     3. Each team has 30 secs to agree whether they're going for rock paper or scissors
     4. Facilitator shouts "GO"
-    5. Play best of 3 or 5 to see which team wins
+    5. Play for the best of 3 or 5 to see which team wins
     6. [More info here](https://www.funretrospectives.com/human-rock-paper-scissors/)
 - Write down something nobody knows about you, then we have to guess which one is who.
 - "1,2 ... 3,1" (see below)
