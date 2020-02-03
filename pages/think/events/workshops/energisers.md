@@ -1,7 +1,7 @@
 ---
 layout: page
-location: "pages/think/events/wshops/leaf"
-permalink: /pages/think/events/wshops/Energisers
+location: "pages/think/events/workshops/leaf"
+permalink: /pages/think/events/workshops/Energisers
 ---
 
 ## Simple icebreakers

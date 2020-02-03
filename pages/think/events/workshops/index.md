@@ -1,7 +1,7 @@
 ---
 layout: page
 folderlist: true
-location: "pages/think/events/wshops"
+location: "pages/think/events/workshops"
 permalink: /pages/think/events/Workshops
 ---
 
