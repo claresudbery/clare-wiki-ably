@@ -8,7 +8,9 @@ permalink: /pages/think/events/workshops/Retros
 
 ### Tito's Trello approach for remote collaboration
 
-- Two columns in a shared Trello board, which everyone accesses individually on laptops: "Top successes" and "Something I wish I was getting"
+- In a shared Trello board, which everyone accesses individually on laptops, two columns: 
+    - "Top successes" 
+    - "Something I wish I was getting"
 - Everyone is allowed to add 2 cards (no more) to each column - this number can be tweaked according to number of participants
 - People should add their faces to their own cards
     - (top tip! hover over a card and press spacebar to add your face)
