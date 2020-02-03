@@ -8,6 +8,13 @@ permalink: /pages/think/events/wshops/Energisers
 
 - stand back to back, one describes a picture, the other draws it. 
 - Draw a picture of your worst fear. 
+- Human rock paper scissors: 
+    1. Whole group agrees on physicla poses to represent rock, paper and scissors
+    2. Split into two teams
+    3. Each team has 30 secs to agree whether they're going for rock paper or scissors
+    4. Facilitator shouts "GO"
+    5. Play best of 3 or 5 to see which team wins
+    6. [More info here](https://www.funretrospectives.com/human-rock-paper-scissors/)
 - Write down something nobody knows about you, then we have to guess which one is who.
 - "1,2 ... 3,1" (see below)
 
