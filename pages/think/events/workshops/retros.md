@@ -6,7 +6,7 @@ permalink: /pages/think/events/workshops/Retros
 
 ## Approaches
 
-### Tito's Trello approach for remote sharing
+### Tito's Trello approach for remote collaboration
 
 - Two columns in a shared Trello board, which everyone accesses individually on laptops: "Top successes" and "Something I wish I was getting"
 - Everyone is allowed to add 2 cards (no more) to each column - this number can be tweaked according to number of participants
@@ -21,5 +21,5 @@ permalink: /pages/think/events/workshops/Retros
     - Alternate between successes and wish list items
     - Start at the top (ie those with most votes)
     - Keep going until you are out of time
-    - You can set a gtime limit for each card if you like.
+    - You can set a time limit for each card if you like
 
