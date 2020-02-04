@@ -24,6 +24,7 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 
 ## Pandoc
 
+* [Installing Pandoc](https://pandoc.org/installing.html)
 * Converting a word doc: 
 
 {% highlight bash %}
