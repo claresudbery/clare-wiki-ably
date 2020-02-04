@@ -24,7 +24,12 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 
 ## Pandoc
 
+* [Pandoc](https://pandoc.org/)
 * [Installing Pandoc](https://pandoc.org/installing.html)
+* Questions:
+    * Can I break a large Word doc down into multiple smaller markdown docs?
+    * Can I get rid of the unnecessary blank lines?
+    * Can I append the resulting markdown to an existing markdown file, instead of creating a new file?
 * Converting a word doc: 
 
 {% highlight bash %}
