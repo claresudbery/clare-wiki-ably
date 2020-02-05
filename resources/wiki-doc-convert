@@ -1,9 +1,19 @@
 #!/bin/bash
 
-wiki_path=$1
+md_path=$1
 wiki_file=$2
-wiki_title=$3
+docx_path=$3
+docx_file_and_path="$docx_path$wiki_file.docx"
 
-pandoc -t gfm --extract-media . -o "/c/development/clare-wiki-ably/$wiki_path/$wiki_file.md" "/C/development/wiki-pages/$wiki_file.docx"
+echo "docx_file_and_path: $docx_file_and_path"
+echo "converted markdown (might be temp): $md_path"
 
-wiki-page-insert $wiki_path $wiki_file $wiki_title
+# Do the conversion from Word to Git-flavoured Markdown
+pandoc -t gfm --extract-media . -o "$md_path" "$docx_file_and_path" 
+
+# For some reason pandoc inserts blank lines between every bullet point. Remove them again.
+if [[ "`uname`" == "Darwin" ]]; then
+    sed -i '' '/^[[:space:]]*$/d' $md_path
+else
+    sed -i '/^[[:space:]]*$/d' $md_path
+fi
