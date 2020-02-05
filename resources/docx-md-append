@@ -1,0 +1,17 @@
+#!/bin/bash
+
+wiki_path=$1
+wiki_file=$2
+docx_path=$3
+docx_file=$4
+
+md_tempfile_path=$wiki_path/$wiki_file-temp.md
+md_final_path=$wiki_path/$wiki_file.md
+
+echo "final md file: $md_final_path"
+
+wiki-doc-convert "$md_tempfile_path" $docx_file "$docx_path"
+
+cat "$md_tempfile_path" >> "$md_final_path"
+
+rm "$md_tempfile_path"
