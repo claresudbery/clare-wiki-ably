@@ -21,22 +21,6 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 - [Set up an Apache web server in AWS](https://docs.aws.amazon.com/efs/latest/ug/wt2-apache-web-server.html)
 - [Configure an Apache web server](https://opensource.com/article/18/2/how-configure-apache-web-server)
 - [Install dokuwiki](https://www.dokuwiki.org/install)
-
-## Pandoc
-
-* [Pandoc](https://pandoc.org/)
-* [Installing Pandoc](https://pandoc.org/installing.html)
-* Questions:
-    * Can I break a large Word doc down into multiple smaller markdown docs?
-    * Can I get rid of the unnecessary blank lines?
-    * Can I append the resulting markdown to an existing markdown file, instead of creating a new file?
-* Converting a word doc: 
-
-{% highlight bash %}
-pandoc -t gfm --extract-media . -o "/C/Users/CLARE/mydoc.md" "/C/Users/CLARE/mydoc.docx"
-{% endhighlight %}
-
-Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/organising/BigIndex/Big-Index-Useful-Commands.md) (accessible to Clare only).
 		
 ## Migrate Evernote notes as plain text or markdown
 * Here: http://www.markwk.com/migrate-evernote-plaintext.html
@@ -92,13 +76,55 @@ sed -i '/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d};}' ./notes/Scrat
 
 My version of the script can be found [here](/resources/gh-md-toc).
 
+## Pandoc
+
+* [Pandoc](https://pandoc.org/)
+* [Installing Pandoc](https://pandoc.org/installing.html)
+* Issues:
+    * Unnecessary blank lines are created between bullet points
+        * I solved this in [wiki-doc-convert](/resources/wiki-doc-convert) using the sed command `sed -i '/^[[:space:]]*$/d' $md_path`, but there is also a `lua` solution - [see below]|(#lua-solution-to-pandoc-inserting-blank-lines-between-bullet-points)
+    * Can I append the resulting markdown to an existing markdown file, instead of creating a new file?
+* Converting a word doc: 
+
+{% highlight bash %}
+pandoc -t gfm --extract-media . -o "/C/Users/CLARE/mydoc.md" "/C/Users/CLARE/mydoc.docx"
+{% endhighlight %}
+
+Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/organising/BigIndex/Big-Index-Useful-Commands.md) (accessible to Clare only).
+
+### Lua solution to pandoc inserting blank lines between bullet points
+
+From John Macfarlane in the pandoc-discuss Google group:
+
+You could use a `lua` filter; it would have to replace
+list items that consist of a single Para element with
+list items that consist of a single Plain element.
+
+This filter will do it:
+
+```
+
+paraToPlain = {
+    Para = function(el)
+      return pandoc.Plain(el.content)
+    end
+}
+
+function BulletList(el)
+  return pandoc.walk_block(el, paraToPlain)
+end
+
+```
+
+Save that as `tightenLists.lua` and use `--lua-filter tightenLists.lua` on your command line.
+
 ## Scripts for creating markdown files (and converting from Word to markdown)
 
 I've created the following scripts to help me create markdown files and folders quickly for this site.
 Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/master/organising/BigIndex/Big-Index-Useful-Commands.md).
 
-- [wiki-doc-convert](/resources/wiki-doc-convert) - converts Words docs to Wiki markdown
-- [docx-md-append](/resources/docx-md-append) - converts Word docs to Wiki markdown then appends the resulting markdown to a specified md file
+- [wiki-doc-convert](/resources/wiki-doc-convert) - converts Words docs to Wiki markdown (uses pandoc)
+- [docx-md-append](/resources/docx-md-append) - converts Word docs to Wiki markdown (using pandoc) then appends the resulting markdown to a specified md file
 - [wiki-folder](/resources/wiki-folder) - creates a new wiki folder plus index.md
 - [wiki-page](/resources/wiki-page) - creates a new wiki page
 - [wiki-page-insert](/resources/wiki-page-insert) - Inserts wiki front matter into a pre-existing markdown file
