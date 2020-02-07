@@ -27,3 +27,7 @@ permalink: /pages/think/code-princ/Useful-Terminology
 - [Idempotence - Wikipedia](https://en.wikipedia.org/wiki/Idempotence)
 - [What is Idempotency?](https://www.restapitutorial.com/lessons/idempotency.html)
 - [Benefits of Pure Functions: Idempotent and Nullipotent | agiledeveloper](http://blog.agiledeveloper.com/2015/12/benefits-of-pure-functions-idempotent.html)
+
+## Leading Indicators and Lagging Indicators
+
+- Leading indicators are better than lagging indicators, for instance in recruitment, number going through the pipeline is more useful than number recruited, because you won't know the second one until the end of the quarter 
