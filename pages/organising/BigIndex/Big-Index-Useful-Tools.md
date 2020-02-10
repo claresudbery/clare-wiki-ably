@@ -74,7 +74,7 @@ sed -i '/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d};}' ./notes/Scrat
 - I added a heading at the top of each table of contents.
 - I stopped adding a footer with date/time at the end of every toc - this was causing my files to appear updated (in source control) every time I ran the script, even when the toc hadn't actually been updated.
 
-My version of the script can be found [here](/resources/gh-md-toc).
+My version of the script can be found [here](/resources/scripts/gh-md-toc).
 
 ## Pandoc
 
@@ -82,7 +82,7 @@ My version of the script can be found [here](/resources/gh-md-toc).
 * [Installing Pandoc](https://pandoc.org/installing.html)
 * Issues:
     * Unnecessary blank lines are created between bullet points
-        * I solved this in [wiki-doc-convert](/resources/wiki-doc-convert) using the sed command `sed -i '/^[[:space:]]*$/d' $md_path`, but there is also a `lua` solution - [see below]|(#lua-solution-to-pandoc-inserting-blank-lines-between-bullet-points)
+        * I solved this in [wiki-doc-convert](/resources/scripts/wiki-doc-convert) using the sed command `sed -i '/^[[:space:]]*$/d' $md_path`, but there is also a `lua` solution - [see below]|(#lua-solution-to-pandoc-inserting-blank-lines-between-bullet-points)
     * Can I append the resulting markdown to an existing markdown file, instead of creating a new file?
 * Converting a word doc: 
 
@@ -123,11 +123,11 @@ Save that as `tightenLists.lua` and use `--lua-filter tightenLists.lua` on your 
 I've created the following scripts to help me create markdown files and folders quickly for this site.
 Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/master/organising/BigIndex/Big-Index-Useful-Commands.md).
 
-- [wiki-doc-convert](/resources/wiki-doc-convert) - converts Words docs to Wiki markdown (uses pandoc)
-- [docx-md-append](/resources/docx-md-append) - converts Word docs to Wiki markdown (using pandoc) then appends the resulting markdown to a specified md file
-- [wiki-folder](/resources/wiki-folder) - creates a new wiki folder plus index.md
-- [wiki-page](/resources/wiki-page) - creates a new wiki page
-- [wiki-page-insert](/resources/wiki-page-insert) - Inserts wiki front matter into a pre-existing markdown file
+- [wiki-doc-convert](/resources/scripts/wiki-doc-convert) - converts Words docs to Wiki markdown (uses pandoc)
+- [docx-md-append](/resources/scripts/docx-md-append) - converts Word docs to Wiki markdown (using pandoc) then appends the resulting markdown to a specified md file
+- [wiki-folder](/resources/scripts/wiki-folder) - creates a new wiki folder plus index.md
+- [wiki-page](/resources/scripts/wiki-page) - creates a new wiki page
+- [wiki-page-insert](/resources/scripts/wiki-page-insert) - Inserts wiki front matter into a pre-existing markdown file
 
 ## Scripts Used for RefactoringExamples
 
