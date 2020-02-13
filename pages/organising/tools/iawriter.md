@@ -35,3 +35,14 @@ permalink: /pages/organising/tools/iAWriter
   - Click Browse
   - Favourite folders are visible here
 
+### Browsing
+
+- From inside any file:
+  - Click the blue Back button plus text, top left
+  - Click Library (top left)
+  - Click Open
+  - Click Browse
+  - To browse everything:
+    - Click Working Copy
+  - ...otherwise use Favourites
+

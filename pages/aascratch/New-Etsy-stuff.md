@@ -1,134 +1,15 @@
 ---
 layout: page
 location: pages/aanew/leaf
-permalink: /pages/aanew/New-Etsy-Stuff
+permalink: /pages/aanew/New-Acme-Stuff
 ---
-## Too few shards
-  - (See also ES | Templates)
-  - Happens when template deleted but not replaced
-      - This is because when template changes are deployed the old one
-        is deleted before the new one is deployed, so if there are any
-        errors you just get no template
-      - Template lives on logdbmaster
-  - There should be 300 shards on logdbmaster, not 5
-      - 5 is the default which is how you know there is no template,
-        because our template specifies 300
-  - You will see an awful lot of colourful dots in the “thread pool -
-    bulk queued” graph in Grafana
-  - To see num shards,
-      - run diagnostics tool
-          - Command to run from the elastictool folder:
-            **bin/elastictool -H logdbmaster.xxx.com**
-      - Check the value for “Pri” (Pri stands for primary shards)
-      - You might also see strange things happening on fielddata, eg
-        fielddata ending up on logdbarchive - this will also be because
-        there is missing config which would have been in the template -
-        it means there are shards on logdbarchive hosts, which is NOT
-        where they should be
-  - To look at the current template on logdbmaster
-      - This: **ssh logdbmaster.xxx.com**
-      - This: **cd template/logstash**
-          - (I’m not sure what your starting path should be though)
-      - If that folder is empty, the template is missing
-  - Deploy template: **curl -s -XPUT
-    http://localhost:9200/\_template/logstash?pretty -d
-    @logstash-template.json**
-      - That way you can see what the error is when it tries to deploy
-        the template
-  - If it’s a mapping error
-      - in partials/logstash\_logdb\_mappings, you’ll find mappings for
-        every log type
-      - Different log types have to have consistent mappings
-  - If you correct the error and redeploy the template:
-      - You will have to delete the current index
-      - This is because the new template is only picked up when index
-        rolls over
-      - It needs to be done, because not enough shards = slow searches
-        (too much load on not enough shards) and inability to ingest
-        enough new data
-      - If it’s the end of the day just wait til the following day, but
-        if it’s the beginning of the day you won’t lose much data
-          - You DO lose data though
-## Problems with ES, eg “Non-OK shard states”
-  - See also Finding logs on nodes
-  - Restart ES on the host: **sudo systemctl restart elasticsearch**
-  - Check shard state: **curl -XGET -n
-    'logs.xxx.com:9200/\_cat/shards?h=index,shard,prirep,state,unassigned.reason,node'
-    -s | grep -v START | sort | less**
-      - Shows you list of shards in the cluster, for each one shows you
-        the index, the shard number, the state of the shard and why it’s
-        in that state
-  - Find out what the master is: **curl logs.xxx.com:9200/\_cat/master**
-      - See “ES API” in this doc for more info
-  - Look at logs on an ES host: **less
-    /var/log/elasticsearch/elasticsearch.log**
-  - Look at config on an ES host: **ls /etc/**
-  - Check disk space: **df -h** or **du**
-      - \! The first column in the results is partitions, NOT folders
-      - Eg sda4 is the fourth partition of the first (“a”) SATA hard
-        drive
-  - Check cpu usage: **htop**
-## Kubernetes
-### Clusters and namespaces
-  - Each GCP project has one or more clusters. Each cluster has one or
-    more namespace.
-      - Typically (for Etsy, I don’t know about elsewhere) there will be
-        separate projects for dev and prod, each with their own cluster.
-  - Our kubernetes dev cluster is the **syseng dev** cluster - used
-    across the department
-      - Visible in the **etsy-syseng-gke-dev** project in GCP Console
-          - Here:
-            <https://console.cloud.google.com/kubernetes/list?project=etsy-syseng-gke-dev>
-      - There’s a separate cluster for prod, in the separate
-        **etsy-syseng-gke-prod** GCP project
-  - Select **Kubernetes Engine** on the left in GCP Console
-      - It’s a 6-node cluster
-      - Each node has 30Gb of RAM, and 7.91 CPUs (?)
-      - What’s the definition of a CPU? It’s woolly - something like one
-        hyperthreaded CPU thingy
-  - To deploy to a different namespace or cluster, just change namespace
-    / cluster and then apply your manifest(s)
-  - We have our own namespace within the cluster: **obsv-tools**
-      - You can use kubectl to specify which namespace you will be
-        working in (see Changing namespace below), but be aware that
-        this is still within one cluster. If you want to switch clusters
-        you have to set your config up - see Kube Config below.
-      - There’s a quota (for memory and CPU) on the namespace which
-        doesn’t kill anything but stops you from running things
-      - The quota determines how much of the cluster we are able to use
-      - To see the pods in our namespace, run **kubectl get po** or use
-        **k9s**
-      - The grafana-backup pods were made by kat and david as a
-        replacement for a similar job that was running on someone’s VM
-      - We also have a couple of pods currently running for the Kafster
-        stuff (replacement for Logster in GCP via kafka streams)
-        (apierrormetrics and graphiteshipper?)
-  - If you want to see what namespaces are available in a cluster:
-    **kubectl get namespace**
-  - If you want to see what clusters are available:
-      - I haven’t found a way to do it on command line, but if you want
-        to see which clusters YOU have configured in your Kube config,
-        you can do **kubectl config get-contexts**
-      - Each GCP project has its own clusters
-          - So for instance etsy-syseng-gke-dev project has just one
-            syseng cluster
-      - So one way to see clusters is via GCP UI - select a project,
-        then Kubernetes Engine on the left, then select clusters
-  - If you want to access multiple clusters from the command line:
-      - See Kube Config section below
-## Git stuff
-### Use ssh to access repos
-  - This to add your SSH private key to the ssh-agent and store your
-    passphrase in the keychain: **ssh-add -K \~/.ssh/id\_rsa**
-      - \! The -K option is only for Mac: It only works on local machine
-        and not VM (because that’s Linux and not Mac), so remove it for
-        VM
+  
+
+
 ## Vim
 ### Misc
-  - Vim cheat sheet –
-    <http://hamwaves.com/vim.tutorial/images/vim.en.png>
-  - Great online “Vim Adventures” game you can use to learn Vim:
-    <https://vim-adventures.com/>
+  - [Vim cheat sheet](http://hamwaves.com/vim.tutorial/images/vim.en.png)
+  - Great [online “Vim Adventures” game](https://vim-adventures.com/) you can use to learn Vim:
   - If you make changes to \~/.vimrc and want to reload:
       - Type **:so $MYVIMRC**
       - ...but actually you can just type **$MY** and then tab to
@@ -230,6 +111,7 @@ permalink: /pages/aanew/New-Etsy-Stuff
       - **v** is visual mode
       - **iw** is inner word
       - **p** is put
+
 ### Navigating files, lines, blocks
   - Navigate lines:
       - Go to end of line: $ or A (which also puts you in insert mode)
@@ -303,12 +185,13 @@ permalink: /pages/aanew/New-Etsy-Stuff
             **c**, like this: **3ca{**
           - (There are others too, like **caw** and **ciw** for words -
             in Vim Adventures type **:help aw** and **:help iw**)
+
 ## Terminal commands
 ### Installing scripts
   - Copy script into \~/scripts folder
   - Edit PATH env var to include scripts folder
       - Put something like this into something like \~/.bashrc or
-        \~/.zshrc: **export PATH=$PATH:/Users/csudbery/scripts**
+        \~/.zshrc: **export PATH=$PATH:/Users/your-user-name/scripts**
       - (see section on env vars below for more details)
   - If you include this line at the top of your script, it means you
     don’t have to use the “sh” command when you run the script on the
@@ -318,13 +201,14 @@ permalink: /pages/aanew/New-Etsy-Stuff
   - Don’t give your script an extension, just add to path and it will
     become a command
       - (see section on bash scripts)
+
 ### Watch command
   - Use “watch” to make a command happen every 2 seconds
   - Use -n interval to tell it how often
   - Like this: **watch 'curl -s
-    csudbery:\[password\]@soxelk.etsycorp.com:9200/\_cat/recovery | grep
+    csudbery:\[password\]@xxx.Acmecorp.com:9200/\_cat/recovery | grep
     -v done'**
-      - Or like this: **watch curl "http://10.253.8.64"**
+      - Or like this: **watch curl "http://10.266.8.66"**
       - Notice the first example needed quotes because it wasn’t just a
         simple command + argument, but the second works fine as it is.
       - That first example is doing the following: Curl the SoxElk
@@ -336,6 +220,7 @@ permalink: /pages/aanew/New-Etsy-Stuff
   - You can also get it to show you differences between each execution
     by adding a -d switch, like this: **watch -d ‘curl \[rest of
     command\]’**
+
 ## Bash Scripts
 ### Misc
   - if statement - the spaces matter\! **if \[\[ $NumDifferences \!= 0

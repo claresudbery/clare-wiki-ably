@@ -112,8 +112,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - This to add your SSH private key to the ssh-agent and store your
         passphrase in the keychain: **ssh-add -K \~/.ssh/id\_rsa**
         
-          - \! The -K option only works on local machine and not VM
-            (because that’s Linux and not Mac), so remove it for VM
+          - \! The -K option is only for Mac: It only works on local machine
+        and not VM (because that’s Linux and not Mac), so remove it for
+        VM
     
       - Add the key to GitHub:
         

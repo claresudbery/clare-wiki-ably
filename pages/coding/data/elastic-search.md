@@ -185,9 +185,75 @@ permalink: /pages/coding/data/Elastic-Search
             | jq '.nodes\[\].tasks\[\].running\_time\_in\_nanos' | awk
             '{print "minutes:", $1/6e+10, "nanoseconds:", $1}'**
 
+## Too few shards
+  - (See also [Templates](#templates))
+  - Happens when template deleted but not replaced
+      - This is because when template changes are deployed the old one
+        is deleted before the new one is deployed, so if there are any
+        errors you just get no template
+  - There should be 300 shards on our log master, not 5
+      - 5 is the default which is how you know there is no template,
+        because our template specifies 300
+  - You will see an awful lot of colourful dots in the “thread pool -
+    bulk queued” graph in Grafana
+  - To see num shards,
+      - run diagnostics tool
+          - Command to run from the elastictool folder:
+            **bin/elastictool -H logyyy.xxx.com**
+      - Check the value for “Pri” (Pri stands for primary shards)
+      - You might also see strange things happening on fielddata, eg
+        fielddata ending up on logdbarchive - this will also be because
+        there is missing config which would have been in the template -
+        it means there are shards on logdbarchive hosts, which is NOT
+        where they should be
+  - To look at the current template on log master
+      - This: **ssh logyyy.xxx.com**
+      - This: **cd template/logstash**
+          - (I’m not sure what your starting path should be though)
+      - If that folder is empty, the template is missing
+  - Deploy template: **curl -s -XPUT
+    http://localhost:9200/\_template/logstash?pretty -d
+    @logstash-template.json**
+      - That way you can see what the error is when it tries to deploy
+        the template
+  - If it’s a mapping error
+      - in partials/logstash\_logdb\_mappings, you’ll find mappings for
+        every log type
+      - Different log types have to have consistent mappings
+  - If you correct the error and redeploy the template:
+      - You will have to delete the current index
+      - This is because the new template is only picked up when index
+        rolls over
+      - It needs to be done, because not enough shards = slow searches
+        (too much load on not enough shards) and inability to ingest
+        enough new data
+      - If it’s the end of the day just wait til the following day, but
+        if it’s the beginning of the day you won’t lose much data
+          - You DO lose data though
+          
+## Problems with ES, eg “Non-OK shard states”
+  - See also Finding logs on nodes
+  - Restart ES on the host: **sudo systemctl restart elasticsearch**
+  - Check shard state: **curl -XGET -n
+    'logs.xxx.com:9200/\_cat/shards?h=index,shard,prirep,state,unassigned.reason,node'
+    -s | grep -v START | sort | less**
+      - Shows you list of shards in the cluster, for each one shows you
+        the index, the shard number, the state of the shard and why it’s
+        in that state
+  - Find out what the master is: **curl logs.xxx.com:9200/\_cat/master**
+      - See “ES API” in this doc for more info
+  - Look at logs on an ES host: **less
+    /var/log/elasticsearch/elasticsearch.log**
+  - Look at config on an ES host: **ls /etc/**
+  - Check disk space: **df -h** or **du**
+      - \! The first column in the results is partitions, NOT folders
+      - Eg sda4 is the fourth partition of the first (“a”) SATA hard
+        drive
+  - Check cpu usage: **htop**
+
 ## Templates
 
-  - (See also “too few shards”)
+  - (See also [“too few shards”](#too-few-shards))
 
   - The template defines how many shards you get amongst other things
 
@@ -233,8 +299,7 @@ permalink: /pages/coding/data/Elastic-Search
         the error above.
     
       - ES has measures in place to prevent using too much memory –
-        hence you get a circuit breaker exception if there are too few
-        shards.
+        hence you get a circuit breaker exception if there are [“too few shards”](#too-few-shards).
     
       - (See section on circuit breakers under Troubleshooting)
 

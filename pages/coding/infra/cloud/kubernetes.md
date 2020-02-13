@@ -9,40 +9,77 @@ permalink: /pages/coding/infra/cloud/Kubernetes
 
 ## Clusters and namespaces 
 
+  - Each GCP project has one or more clusters. Each cluster has one or
+    more namespaces.
+      - Typically (for Acme, I don’t know about elsewhere) there will be
+        separate projects for dev and prod, each with their own cluster.
   - Select **Kubernetes Engine** on the left in GCP Console
-
-  - Each node has XGb of RAM, and X CPUs (?)
-    
+  - Each cluster has a certain number of nodes
+      - Each node has XGb of RAM, and X CPUs
       - What’s the definition of a CPU? It’s woolly - something like one
         hyperthreaded CPU thingy
-
+  - To deploy to a different namespace or cluster, just change namespace
+    / cluster and then apply your manifest(s)
   - We have our own namespace within the cluster
-    
+      - You can use **kubectl** to specify which namespace you will be
+        working in (see Changing namespace below), but be aware that
+        this is still within one cluster. If you want to switch clusters
+        you have to set your config up - see [Kube Config section below](#kube-config-adding-clusters).
       - There’s a quota (for memory and CPU) on the namespace which
         doesn’t kill anything but stops you from running things
-    
       - The quota determines how much of the cluster we are able to use
-    
       - To see the pods in our namespace, run **kubectl get po** or use
-        **k9s**
+        **k9s**      
+  - If you want to see what namespaces are available in a cluster:
+    **kubectl get namespace**
+  - If you want to see what clusters are available:
+      - I haven’t found a way to do it on command line, but if you want
+        to see which clusters YOU have configured in your Kube config,
+        you can do **kubectl config get-contexts**
+      - Each GCP project has its own clusters
+          - So for instance Acme-syseng-gke-dev project has just one
+            cluster
+      - So one way to see clusters is via GCP UI - select a project,
+        then Kubernetes Engine on the left, then select clusters
+  - If you want to access multiple clusters from the command line:
+      - See [Kube Config section below](#kube-config-adding-clusters)
+      
+
+## Kube Config / Adding Clusters
+  - Use your config to do things like access multiple clusters from the
+    command line
+  - If you want to see what you have set up in your config:
+      - Cmd: **kubectl config view**
+  - [Kube Config docs](https://kubernetes.io/docs/reference/kubectl/cheatsheet/#kubectl-context-and-configuration)
+  - Access multiple clusters from the command line:
+      - To add a cluster to your Kube config:
+          - This: **gcloud beta container clusters get-credentials
+            syseng --region us-central1 --project Acme-xxxx**
+      - Beware there are two commands that look v similar but are not
+        the same:
+          - This changes the current context: **kubectl config set
+            current-context
+            gke\_Acme-xxxx\_us-central1\_yyyy**
+          - This changes the current *namespace* in what has already
+            been set as the current context: **kubectl config
+            set-context --current --namespace=your-namespace**
+      - To see what clusters you have configured and what namespace
+        they’re set to: **kubectl config get-contexts**
+      - More info:
+          - [Kube config / multiple clusters](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
 
 ## Changing namespace
 
   - Naked **kubectl** commands are all in default namespace
-
   - You can specify namespace: **kubectl get po --namespace obsv-tools**
-
   - When we did the long command containing **get-credentials** (see
     below or elsewhere in this section), that downloaded a file for us
     called **kube.cfg** - and one of the things it contains is our
     current namespace
-
   - We never edit that file directly but we do it using **kubectl** -
     but it’s not pretty, and we want to do it all the time
-
   - So instead, use the Krew package manager (see below) to get the
     **change-ns** plugin for **kubectl**
-
   - Once that’s installed you can change namespace more easily:
     **kubectl change-ns obsv-tools**
 
@@ -50,56 +87,41 @@ permalink: /pages/coding/infra/cloud/Kubernetes
 
   - At the centre of Kubernetes you have containers, they are deployed
     as pods
-    
       - In fact one pod can contain several containers - for instance
         burrow contains burrow and burrow-exporter.
-
   - You can deploy a pod and it will start, but if it stops nothing will
     restart it. And there will only be one instance.
-    
       - You can have a manifest with **kind: Pod** at the top, and
         that’s what you’ll get if you do this.
-    
       - Instead, make your manifest be **kind: Deployment** and use the
         replicas value to specify how many replicas you want. Just by
         making it a Deployment you ensure it will be replaced if it
         dies.
-    
       - Deployments:
         [<span class="underline">https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/\#deploymentspec-v1-apps</span>](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/#deploymentspec-v1-apps)
-    
       - That’s the difference between manifest and deployment: A
         deployment is a particular kind of manifest, and not all
         manifests are deployments
-    
       - a manifest is any description of a Kubernetes resource
-    
       - Note that you can have several manifests in one yaml file - for
         instance burrow.yaml currently contains manifests of the
         following kinds: Deployment, Service, ConfigMap, Ingress.
-
   - Because we often want more than one copy and we want them to stay
     alive, we need a replica set
-    
       - A replica set will keep a certain number of replicas alive all
         the time
-    
       - You can see replica sets with **kubectl get rs**, and you’ll see
         there that there are several replica sets for burrow - I think
         you get a new replica set every time you delete / restart
-    
       - In the deployment manifest you see **replicas: 1** and this
         means we’re saying we will only ever only have one instance at a
         time.
-    
       - The deployment manifest also contains constraints for things
         like CPU and memory. If these conditions are broken, Kube will
         restart the pod.
-
   - Because we want to update our application, we have a deployment (a
     particular type of manifest) - which decides how we’re going to roll
     out our changes
-    
       - There is a 1-\* relationship between Deployment and ReplicaSet.
         Each time you change the Deployment it creates a new ReplicaSet.
         If for example the Deployment is doing a rolling update, it will
@@ -107,13 +129,10 @@ permalink: /pages/coding/infra/cloud/Kubernetes
         ramp down the instances in the old ReplicaSet. If the new
         instances failed to start correctly - it would ramp them back up
         in the old ReplicaSet.
-
   - The default is to do a rolling update - create new replica set, set
     the desired state to 1, bring up the new one, downgrade the previous
     one
-
   - All this can be controlled in detail as much as you like
-
   - Basic compute model for long running services
 
 ## Connecting to a cluster
