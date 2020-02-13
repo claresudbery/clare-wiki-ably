@@ -8,6 +8,7 @@ permalink: /pages/organising/tools/iAWriter
 
 ### clare-tech:
 
+- do a git pull
 - use search function, or...
 - mt:
   - Click the blue Back button plus text, top left
@@ -24,6 +25,7 @@ permalink: /pages/organising/tools/iAWriter
 
 ### clare-wiki:
 
+- do a git pull
 - use search function, or...
 - check leafless site map
 - Click the blue Back button plus text, top left
