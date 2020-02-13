@@ -28,10 +28,12 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 ## Suggested markdown editors 
 
 - for iOS: [iAWriter and Working Copy](https://thesweetsetup.com/apps/our-favorite-markdown-writing-app-for-the-iphone/)
+    - See also notes on how to use iAWriter
 - For Mac / Windows: 
     - Visual Studio Code
     - Byword (Mac only?)
     - Visual Studio [MarkdownEditor Extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
+
 
 ## Generating Table of Contents (TOC)
 
