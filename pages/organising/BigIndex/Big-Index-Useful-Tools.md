@@ -34,7 +34,6 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
     - Byword (Mac only?)
     - Visual Studio [MarkdownEditor Extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
-
 ## Generating Table of Contents (TOC)
 
 I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357f).
