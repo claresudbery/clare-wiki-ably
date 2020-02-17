@@ -3,9 +3,6 @@ layout: page
 location: pages/aanew/leaf
 permalink: /pages/aanew/New-Acme-Stuff
 ---
-  
-
-
 ## Vim
 ### Misc
   - [Vim cheat sheet](http://hamwaves.com/vim.tutorial/images/vim.en.png)
@@ -111,7 +108,7 @@ permalink: /pages/aanew/New-Acme-Stuff
       - **v** is visual mode
       - **iw** is inner word
       - **p** is put
-
+      
 ### Navigating files, lines, blocks
   - Navigate lines:
       - Go to end of line: $ or A (which also puts you in insert mode)
@@ -187,6 +184,7 @@ permalink: /pages/aanew/New-Acme-Stuff
             in Vim Adventures type **:help aw** and **:help iw**)
 
 ## Terminal commands
+
 ### Installing scripts
   - Copy script into \~/scripts folder
   - Edit PATH env var to include scripts folder
@@ -201,7 +199,7 @@ permalink: /pages/aanew/New-Acme-Stuff
   - Don’t give your script an extension, just add to path and it will
     become a command
       - (see section on bash scripts)
-
+      
 ### Watch command
   - Use “watch” to make a command happen every 2 seconds
   - Use -n interval to tell it how often
