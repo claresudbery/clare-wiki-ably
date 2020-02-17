@@ -9,11 +9,6 @@ echo "docx_file_and_path: $docx_file_and_path"
 echo "converted markdown (might be temp): $md_path"
 
 # Do the conversion from Word to Git-flavoured Markdown
-pandoc -t gfm --extract-media . -o "$md_path" "$docx_file_and_path" 
+# NB: The lua script removes the annoying blank lines that get inserted between every bullet point.
+pandoc -t gfm --extract-media . --lua-filter ~/scripts/tightenLists.lua -o "$md_path" "$docx_file_and_path" 
 
-# For some reason pandoc inserts blank lines between every bullet point. Remove them again.
-if [[ "`uname`" == "Darwin" ]]; then
-    sed -i '' '/^[[:space:]]*$/d' $md_path
-else
-    sed -i '/^[[:space:]]*$/d' $md_path
-fi

@@ -83,7 +83,8 @@ My version of the script can be found [here](/resources/scripts/gh-md-toc).
 * [Installing Pandoc](https://pandoc.org/installing.html)
 * Issues:
     * Unnecessary blank lines are created between bullet points
-        * I solved this in [wiki-doc-convert](/resources/scripts/wiki-doc-convert) using the sed command `sed -i '/^[[:space:]]*$/d' $md_path`, but there is also a `lua` solution - [see below](#lua-solution-to-pandoc-inserting-blank-lines-between-bullet-points)
+        * I orignally solved this in [wiki-doc-convert](/resources/scripts/wiki-doc-convert) using the sed command `sed -i '/^[[:space:]]*$/d' $md_path`, but that didn't work because Jekyll couldn't parse sub headings with no proper line break (or something). I dunno but anyway all the sub headings got lost when Jekyll rendered the markdown. I
+        * Instead I used a `lua` solution, also in [wiki-doc-convert](/resources/scripts/wiki-doc-convert) - [see below](#lua-solution-to-pandoc-inserting-blank-lines-between-bullet-points)
     * Can I append the resulting markdown to an existing markdown file, instead of creating a new file?
 * Converting a word doc: 
 
