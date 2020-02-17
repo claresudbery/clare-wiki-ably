@@ -246,11 +246,19 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
           - For .xz: **unxz**
 
 ## Installing scripts
-
   - Copy script into \~/scripts folder
-
-  - Edit PATH env var to include scripts folder (see section on env vars
-    below)
+  - Edit PATH env var to include scripts folder
+      - Put something like this into something like \~/.bashrc or
+        \~/.zshrc: **export PATH=$PATH:/Users/your-user-name/scripts**
+      - (see section on env vars below for more details)
+  - If you include this line at the top of your script, it means you
+    don’t have to use the “sh” command when you run the script on the
+    command line:
+      - This: **\#\!/bin/bash**
+      - You also have to do this: **chmod +x /path/to/script**
+  - Don’t give your script an extension, just add to path and it will
+    become a command
+      - (see section on bash scripts)
 
 ## Env vars
 
@@ -1199,15 +1207,20 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
     > at once.
 
 ## Watch command
-
   - Use “watch” to make a command happen every 2 seconds
-
   - Use -n interval to tell it how often
-
-  - Like this: **watch ‘curl -s pkoch:
-    \[password\]@thingelk.acmecorp.com:9200/\_cat/recovery | grep -v
-    done’**
-
+  - Like this: **watch 'curl -s
+    csudbery:\[password\]@xxx.Acmecorp.com:9200/\_cat/recovery | grep
+    -v done'**
+      - Or like this: **watch curl "http://10.266.8.66"**
+      - Notice the first example needed quotes because it wasn’t just a
+        simple command + argument, but the second works fine as it is.
+      - That first example is doing the following: Curl the SoxElk
+        endpoint using creds because it’s extra locked down. Pipe the
+        result to grep, where you are EXCLUDING entries marked done (-v
+        means exclude). Keep curling every 2 seconds and watch the
+        results - that way you can see the number of not-done-yet
+        recovery items gradually subside.
   - You can also get it to show you differences between each execution
     by adding a -d switch, like this: **watch -d ‘curl \[rest of
     command\]’**

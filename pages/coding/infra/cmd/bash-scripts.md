@@ -6,18 +6,24 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 ## Misc
 
 - Sample bash script: Dropbox\IT Training\Misc\sample.bashrc
-
 - if statement - the spaces matter\! **if \[\[ $NumDifferences \!= 0
     \]\]; then ... fi**
-
 - Bash scripts:
-
-- **set -x** - also works on the command line - outputs every command
+  - **set -x** - also works on the command line - outputs every command
     that’s run to the command shell - include nested commands - useful
     for debugging (output all)
-    
-  - **set -e** - stops running on any error (also works on the
+      - **set -e** - stops running on any error (also works on the
         command line)
+  - If you include this line at the top of your script, it means you
+    don’t have to use the “sh” command when you run the script on the
+    command line:
+      - This: **\#\!/bin/bash**
+      - You also have to do this: **chmod +x /path/to/script**
+  - You don’t have to give your script an extension
+      - So for instance if you just call it winpath instead of
+        winpath.sh, and you have it in your path, then you can run it as
+        a **winpath** command from anywhere.
+      - This is preferable to adding functions to your bashrc file.
 
 ## Bash variables
 
