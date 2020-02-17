@@ -14,3 +14,6 @@ permalink: /pages/think/maths/Maths-Resources
 ## Misc
 
 - [Dividing a piece of paper or string into three](https://docs.google.com/document/d/1qwGHcUhO97n-YaOb3PnE-gY7OYWDGy2M/edit)
+- The problem about what proportion a triangle is of a trapezium:
+  - [The solution I posted on Twitter](https://twitter.com/ClareSudbery/status/1207661614285148161?s=20)
+  - More notes after some more stuff was explained to me to make it simpler: hmmm, those diagrams may have got lost.
