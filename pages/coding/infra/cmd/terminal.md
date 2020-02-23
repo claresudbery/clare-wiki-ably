@@ -1038,66 +1038,6 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
       - Pipe to **csvlook** to get a nice easy-to-read tabulated format
         for csv data
 
-## Stuff for disk space
-
-  - (see also “Disk Space” in the troubleshooting section, which might
-    have additional stuff)
-
-  - Check disk space: **df -h**
-    
-      - \! The first column is partitions, NOT folders
-    
-      - Eg sda4 is the fourth partition of the first (“a”) SATA hard
-        drive
-
-  - \!\! Don’t use **ls - lah** to check folder sizes, as it only gives
-    file sizes - doesn’t recurse into folders
-
-  - Check the space occupied by every directory in current folder
-    
-      - **du -h -d1 .**
-    
-      - If that doesn’t work, try **du -h --max-depth=1 .**
-    
-      - (**.** denotes current directory)
-    
-      - (**d1** denotes depth of 1, so it doesn’t recurse all
-        sub-directories)
-
-  - cmd: **sudo ncdu -x /var/log** for a nice ncurses interface for
-    navigating the drive by size
-    
-      - Don’t run this on the root\! It will take forever\!
-    
-      - the -x flag just says “don’t look at other devices”. Sometimes
-        you want it sometimes you don’t\!
-    
-      - (I’m not sure if the forward slash was part of the command)
-    
-      - Once the results are up, use the arrow keys and Enter to drill
-        down into folders. Use the ../ at the top of each list to
-        navigate back up the tree.
-
-  - Check the space occupied by a particular directory:
-    
-      - **du -sh \[path to directory\]**
-
-  - List files in size order (**S**), reverse order(**r**) so biggest
-    ones come last:
-    
-      - **ls -lahSr**
-
-  - Compress a file into a \*.gz: **tar -czvf file.tar.gz \[path to
-    directory or file\]**
-    
-      - List the contents of a tar file: **tar -ztvf file.tar.gz**
-    
-      - Extract a tar file to a folder: **tar -xzvf file.tar.gz -C
-        /folder-name/**
-
-  - Find out which directories are mounted on whicclosedh disks:
-    **mount**
-
 ## Jq json format check and pretty-print json formatter
 
   - To check that your json is well formatted
@@ -1224,3 +1164,127 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
   - You can also get it to show you differences between each execution
     by adding a -d switch, like this: **watch -d ‘curl \[rest of
     command\]’**
+
+## Disk Space Issues
+
+  - Check disk space: **df -h**
+      - Lists disks in human readable format (with readable numbers)
+      - Lets you know if any disks are full
+      - \! The first column is partitions, NOT folders
+      - Eg sda4 is the fourth partition of the first (“a”) SATA hard
+        drive
+  - Check the space occupied by every directory in current folder
+      - This: **sudo** **du -h -d1 /var/log**
+      - If that doesn’t work, try **du -h --max-depth=1 .**
+      - (**.** denotes current directory)
+      - (**d1** denotes depth of 1, so it doesn’t recurse all
+        sub-directories)
+  - cmd: **sudo ncdu -x /var/log** for a nice ncurses interface for
+    navigating the drive by size
+      - Don’t run this on the root - it will take forever\!
+      - The **-x** flag just says “don’t look at other devices”.
+        Sometimes you want it sometimes you don’t
+      - Once the results are up, use the arrow keys and Enter to drill
+        down into folders. Use the ../ at the top of each list to
+        navigate back up the tree.
+  - \!\! Don’t use **ls - lah** to check folder sizes, as it only gives
+    the size of the actual folder - doesn’t recurse into content.
+  - Check the space occupied by a particular directory:
+      - **du -sh \[path to directory\]**
+  - List files in size order (**S**), reverse order(**r**) so biggest
+    ones come last:
+      - **Cmd: ls -lahSr**
+  - Find all the files that are a particular type and are above a
+    particular size and over a particular age and not in a particular
+    folder
+      - This: **find . -size +50G -ctime +90 -iname '\*.gz' -not -path
+        "./pathtofolder/\*" -exec ls -lsh {} \\;**
+  - Find which files are growing the fastest
+      - Follow the instructions here (note that you might need to do
+        **sudo su** to become root user first):
+        <https://aarvik.dk/how-to-find-growing-files-on-linux/index.html>
+      - Or run this command that Tera built: **find /data/syslog/current
+        -mtime -1 -type f -not -name '\*.gz' -not -path
+        '/data/syslog/current/hosts/\*' -exec ls -l "{}" ";" | sort -k 5
+        -n**
+      - Or run this command of Alex’s that finds files that still have
+        handles open: **lsof -nP +L1**
+          - When they ran it when we ran out of disk space on one host,
+            it only showed files that had been deleted - I don’t know if
+            that was the context we were in or whether that’s baked into
+            the command
+          - On one host, we realised these not-actually-deleted files
+            (because handles still open) were losing us disk space, and
+            the solution was to restart syslog: **systemctl restart
+            syslog** - that freed up the file handles and freed up the
+            disk space occupied by those files.
+  - Find file/directory usage: **find / -xdev -printf '%h\\n' | sort |
+    uniq -c | sort -k 1 -n**
+  - Find most open files per process: **lsof | perl -lane
+    '$x{"$F\[0\]:$F\[1\]"}++;END { print "$x{$\_}\\t$\_" for sort
+    {$x{$a}\<=\>$x{$b}} keys %x}'**
+  - Increase disk space by compressing files:
+      - Ideally aim to have same zipped format as what is already there
+      - For a \*.xz result: **xz -9 -T 0 \[file-name\]**
+          - (-T 0 means use as many threads as there are gcu cores)
+          - \-9 is how much compression - 9 is theh ighest value - will
+            give smallest result but take longest
+      - For a \*.gz result: **tar -czvf file.tar.gz \[path to directory
+        or file\]**
+          - List the contents of a tar file: **tar -ztvf file.tar.gz**
+          - Extract a tar file to a folder: **tar -xzvf file.tar.gz -C
+            /folder-name/**
+  - Find out which directories are mounted on which disks: **mount**
+  - Look for big log files
+      - Look for those which haven’t been updated for a while - they’re
+        safer to compress or get rid of
+      - \!\! Watch out for **lastlog** files \!\!
+          - They are in a “sparse file” (sparsefile) format, which means
+            that the **ls** command will give you false results for file
+            size
+          - To get the correct file size, add the --size flag to the
+            **ls** command: **ls -lh --size lastlog**
+              - This will have the effect of giving the correct file
+                size at the start of the result (although it will still
+                have the erroneous giant size towards the end of the
+                line)
+          - More here: <http://www.noah.org/wiki/Lastlog_is_gigantic>
+  - Don’t just check the data disk/folder - it may well be at 98% but
+    that can be normal in some circs
+      - A knife command to truncate logs on all logstash hosts
+          - Like this: **knife ssh role:Logstash “sudo bash -c ‘\>
+            /var/log/logstash/logstash.log’” -P -C 3**
+      - Alex’s command for saving space without worrying:
+          - Cmd: **for FILE in \`find /var/log/problemfolder\* -not
+            -iname "\*.xz" -not -iname "\*.gz" -not -iname "\*.log"
+            -type f\`; do echo $FILE; truncate -s \`xz -T 0 -c $FILE |
+            dd of=$FILE conv=notrunc 2\>&1 | sed -n '$ s/ .\*$// p'\`
+            $FILE; mv -f $FILE $FILE.xz; done**
+          - Alex’s decription for what it does:
+          - Step one
+          - **\`find /var/log/problemfolder\* -not -iname "\*.xz" -not
+            -iname "\*.gz" -not -iname "\*.log" -type f\`** = list all
+            the files within /var/log/problemfolder1 and
+            /var/log/problemfolder2 that don’t end in “.xz” .gz or
+            “.log”
+          - Okay so I don’t remember how the truncate/notrunc thing
+            works together any more
+          - and rather than try to re-figure it out exactly, I can say
+            that the basic idea for that part is this:
+          - \- read the file into stdin and compress it as a stream of
+            data out to stdout (\`xz\`)
+          - \- calculate the size of this new compressed data and shove
+            it back into the \*same file\* we read from.
+          - \- truncate the file to the new calculated length
+          - \- Rename the file to filename.xz ’cause we pushed it back
+            into the same file and that’s just called
+            \`problemfolder.log.1\` or something. We need to mv it to
+            \`problemfolder.log.1.xz\`
+  - Are deleted files being held onto?
+      - **rsyslogd** might hold deleted log files ... On one occasion we
+        restarted it and we went down to 29G ... but we also had
+        **syslog-ng** holding some files
+      - The command used to find them: **sudo lsof |grep syslog-ng|grep
+        delete**
+      - **lsof** : “list open files” - all open files and the processes
+        that opened them
