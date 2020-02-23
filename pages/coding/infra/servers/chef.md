@@ -363,6 +363,8 @@ permalink: /pages/coding/infra/servers/Chef
     
       - This: **knife ssh --concurrency 3 'fqdn:thingelk\*.ab2.acme.com'
         'df -h /' -P**
+
+      - This ssh-es into all specified hosts, runs a **df** command on the root to see percentage disk usage, with the **-P** command to enter password automatically, and concurrency of 3 so it can do 3 hosts at a time.
     
       - Note that --concurrency is equivalent to -C (double hyphen, not
         single)
