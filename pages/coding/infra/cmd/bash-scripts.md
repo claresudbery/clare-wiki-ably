@@ -24,6 +24,7 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
         winpath.sh, and you have it in your path, then you can run it as
         a **winpath** command from anywhere.
       - This is preferable to adding functions to your bashrc file.
+      - If you want to run your script from anywhere on your system, see [Installing scripts](/pages/coding/infra/cmd/Misc-Terminal-Commands#installing-scripts)
 
 ## Bash variables
 
