@@ -17,8 +17,6 @@ permalink: /pages/coding/infra/servers/Chef
       - Terraform is an infrastructure definition tool whereas Chef
         (etc) are configuration management tools
 
-  - Has its own repo
-
   - Maintains files and config across all nodes managed by chef
 
   - So for instance if you want config files across all hosts, it’s
