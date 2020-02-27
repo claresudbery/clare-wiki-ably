@@ -95,3 +95,14 @@ permalink: /pages/think/writing/Floccinaucinihilipilification
   - The end.
 
   - (I never did get to one of those Blackburn raves)
+
+## Room smells of cloves
+
+Me in 9-yr-old's room: "It smells of cloves in here."  
+Son: "Yes."  
+Me: "But why does it smell of cloves?"  
+Son: "Because there are cloves in here."  
+Me: "Why are there cloves in here?"  
+Son: "They're everywhere. I'm wearing them."  
+Me: "Huh? Why are you wearing cloves?  
+Oh, hang on..."  
