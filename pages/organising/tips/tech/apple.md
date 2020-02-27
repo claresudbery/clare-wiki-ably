@@ -125,3 +125,10 @@ killall SystemUIServer
 * Use Cmd+Shift+h to see Home folder
 * Use Cmd+Up-arrow to go one level up from where you currently are
 * Drag Home folder into favourites
+
+### Customise touchbar so it has a sleep key on it (or any other keys)
+
+* System Preferences
+* Keyboard
+* Customise Control Strip
+* Drag what you want into the touchbar

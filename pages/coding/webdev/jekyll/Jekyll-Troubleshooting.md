@@ -8,6 +8,65 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 ## Ably's use of Jekyll deployed on Heroku: 
 * https://www.ably.io/blog/hacking-github-to-build-your-own-wiki
 * https://github.com/ably/wiki-site
+	
+## To get up and running on a Mac:
+
+* I've now captured the installation in a Mac installation script
+    * You can find it [here](https://github.com/claresudbery/Root-Scripts/blob/master/installing-new-mac)
+    * Scroll down a bit to the set of commands headed "Install Ruby and Jekyll and everything needed to support the Jekyll wiki site"
+    * It's basically these commands (some of which might be redundant / overkill, I'm not sure):
+
+```
+# Install ruby-install
+brew install ruby-install
+
+# Install chruby 
+brew install chruby
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+# Install ruby
+ruby-install ruby 2.6.5
+
+# Make the Ruby version stick at ruby 2.6.5
+chruby ruby-2.6.5
+
+# Install bundler
+gem install bundler
+bundle install
+
+# Install jekyll
+gem install bundler jekyll
+
+# Install heroku CLI (needs sudo pw)
+curl https://cli-assets.heroku.com/install.sh | sh
+```
+
+* Here are my original notes:
+    * clone the repo containing the jekyll site (currently clare-wiki-jekyll)
+    * install git 
+    * install ruby and jekyll and heroku stuff: https://blog.heroku.com/jekyll-on-heroku
+     	* NB: Change those instructions slightly:
+        * Instead of ```ruby-install ruby```, use ```ruby-install``` to install the same Ruby version as specified in Gemfile, like this: ```ruby-install ruby 2.6.5```
+    * MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
+	
+## Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
+* Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/coding/webdev/jekyll/Jekyll-Notes.md) (accessible to Clare only).
+* In Ubuntu 16: 
+	* I followed the instructions for getting ruby-install and chruby to get latest Ruby version	
+		* prob not necessary though, as I forgot I'd alrteady installed Ruby.
+		* and it took ages!
+	* I got an error saying "chruby: command not found" when I ran the command chruby ruby
+		* I fixed this by adding these two lines to ~/.bashrc: 
+		* ```source /usr/local/share/chruby/chruby.sh```
+		* ```source /usr/local/share/chruby/auto.sh```
+	* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
+	* Then I installed Heroku CLI: ```curl https://cli-assets.heroku.com/install.sh | sh```
+		* (that's because I got an error when I used the ```snapd``` command: https://superuser.com/questions/1391219/setting-up-heroku-cli-in-wsl)
+		* After that you have to qualify heroku commands like this: ```/usr/local/bin/heroku create```
+		* But then I added heroku to my path and didn't need to do that any more: ```export PATH=$PATH:/usr/local/bin/heroku```
+	* When I ran the ```bundle``` command to install rake, I had to add some permissions:
+		* ```sudo chown -R claresudbery:claresudbery /home/claresudbery/.bundle```
 
 ## Deploying ruby using heroku
 * Here: https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up
@@ -37,9 +96,10 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 		* Cmd: **chruby_use /Users/clarey/.rubies/ruby-2.6.5/**
 
 ### Ruby version problems when deploying with Heroku
-	* I got an error on heroku deploy at one point:
-	* "Your Ruby version is 2.5.1, but your Gemfile specified 2.6.5"
-	* It turned out this was because I had checked in Gemfile with the new Ruby version, but hadn't checked in Gemfile.lock
+
+* I got an error on heroku deploy at one point:
+* "Your Ruby version is 2.5.1, but your Gemfile specified 2.6.5"
+* It turned out this was because I had checked in Gemfile with the new Ruby version, but hadn't checked in Gemfile.lock
 
 ### Using ruby-install with a specific Ruby version
 
@@ -63,32 +123,6 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 * The solution is to remove all the lines in Gemfile.lock that contain the ming thing. 
 * Otherwise Heroku complains about Gemfile.lock having been created by Windows, and somehow the dependencies get mucked up on the server.
 * If it happens again, fix Gemfile.lock by running the **bundle** command in Ubuntu and then pushing the resulting Gemfile.lock up to the server.		
-	
-## Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
-* Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/coding/webdev/jekyll/Jekyll-Notes.md) (accessible to Clare only).
-* In Ubuntu 16: 
-	* I followed the instructions for getting ruby-install and chruby to get latest Ruby version	
-		* prob not necessary though, as I forgot I'd alrteady installed Ruby.
-		* and it took ages!
-	* I got an error saying "chruby: command not found" when I ran the command chruby ruby
-		* I fixed this by adding these two lines to ~/.bashrc: 
-		* ```source /usr/local/share/chruby/chruby.sh```
-		* ```source /usr/local/share/chruby/auto.sh```
-	* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
-	* Then I installed Heroku CLI: ```curl https://cli-assets.heroku.com/install.sh | sh```
-		* (that's because I got an error when I used the ```snapd``` command: https://superuser.com/questions/1391219/setting-up-heroku-cli-in-wsl)
-		* After that you have to qualify heroku commands like this: ```/usr/local/bin/heroku create```
-		* But then I added heroku to my path and didn't need to do that any more: ```export PATH=$PATH:/usr/local/bin/heroku```
-	* When I ran the ```bundle``` command to install rake, I had to add some permissions:
-		* ```sudo chown -R claresudbery:claresudbery /home/claresudbery/.bundle```
-	
-## To get up and running on a Mac:
-* clone the repo containing the jekyll site (currently clare-wiki-jekyll)
-* install git 
-* install ruby and jekyll and heroku stuff: https://blog.heroku.com/jekyll-on-heroku
-	* NB: Change those instructions slightly:
-	* Instead of ```ruby-install ruby```, use ```ruby-install``` to install the same Ruby version as specified in Gemfile, like this: ```ruby-install ruby 2.6.5```
-* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
 
 ## Keeping a file in git without tracking changes
 * Here: https://stackoverflow.com/questions/9794931/keep-file-in-a-git-repo-but-dont-track-changes
