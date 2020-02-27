@@ -90,7 +90,11 @@ killall SystemUIServer
 - Restart:
     - hold power button for 1.5 secs
     - force restart: `Cmd (splat) + Ctrl + Power` button
-- Show hidden files in Finder: `Cmd + Shift + Dot`
+- In Finder:
+  - see Home folder: Cmd+Shift+h
+  - Go one level up from where you currently are: Cmd+up-arrow
+  - Go to a folder you know the path for: Cmd+Shift+G
+  - Show hidden files : `Cmd + Shift + Dot`
     - You might also have to run these lines in the terminal (from [here](https://apple.stackexchange.com/questions/280736/folder-displaying-in-terminal-but-not-finder)): `defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder`
 - [System preferences](#system-preferences-top-tips)
 - [shortcuts tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=ba3426a1-35e2-47d5-888d-445432271c8c&query=tag%1Fshortcuts%1FtagGuid%3A830603fb-b0ba-403f-9177-3e3ae2b8a9a0%1Eview%3AVIEW%2FALL_NOTES&)
@@ -113,3 +117,11 @@ killall SystemUIServer
 ### Setting up a new Mac Using Brew
 
 - [Brew: Mac Bulk App Installer For a New Mac OS Install using HomeBrew](https://www.switchingtomac.com/tutorials/how-to-make-a-bulk-app-installer-for-a-new-mac-os-install-using-homebrew/)
+- I have a script (only accessible to me) here
+
+### Customise Finder to have home folder in favourites
+
+* Open Finder
+* Use Cmd+Shift+h to see Home folder
+* Use Cmd+Up-arrow to go one level up from where you currently are
+* Drag Home folder into favourites
