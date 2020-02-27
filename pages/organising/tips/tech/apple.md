@@ -110,6 +110,6 @@ killall SystemUIServer
 - When you're in a sub-dialog, don't close it to get out of it! Use the back button (top left) instead, then you can get back to other dialogs
 - Use the search input (top right)
 
-### Setting up a new Mac
+### Setting up a new Mac Using Brew
 
 - [Brew: Mac Bulk App Installer For a New Mac OS Install using HomeBrew](https://www.switchingtomac.com/tutorials/how-to-make-a-bulk-app-installer-for-a-new-mac-os-install-using-homebrew/)
