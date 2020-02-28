@@ -72,8 +72,12 @@ Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all ru
 
 ### Specify location of screenshots
 
-- [Here](https://plusbryan.com/how-to-automatically-save-screenshots-to-google-drive)
-- This in Terminal:
+- [Here for instructions on sending them to Google Drive](https://plusbryan.com/how-to-automatically-save-screenshots-to-google-drive)
+    - !NB! Your Google Drive location might be different
+    - To get its path, right-click Google Stream | My Drive in Finder, and choose Services | New iTerm tab here
+    - Then use type **pwd** and hit Enter
+    - (Note it probably contains a space, which will mean you need quotes around it for the Terminal command below)
+- This in Terminal (see above for Google Drive path):
 ```
 defaults write com.apple.screencapture location [insert location here]
 killall SystemUIServer
