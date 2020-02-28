@@ -119,7 +119,7 @@ Or I could have just copied the whole thing to a VM and stuck it in the cloud - 
 
 - The script is [here](/resources/scripts/installing-new-mac).
 - You have to install brew and cask manually first - I couldn't get it to work in a script (dunno why) - see [below](#install-brew).
-- !! In the middle of the script when it first tries to do a git clone, before saying yes to connect to github host, follow instructions on screen to add ssh key to GitHub account.
+- The script requires some user input - keep an eye on it.
 - Get the script
     - Put it in home folder
     - It's [here](/resources/scripts/installing-new-mac) 
