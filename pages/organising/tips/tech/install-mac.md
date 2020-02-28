@@ -48,7 +48,6 @@ I've created a [brew script for some of it](#automating-the-installation) but sa
 ## Stuff I have put in a script
 * To run the brew script, see [Automating the installation](#automating-the-installation) below.
     * !! You have to install brew and cask first before running script - notes are [below](#automating-the-installation)
-    * ! You also need to add an ssh key in the middle of the script - see notes [below](#automating-the-installation)
     * Once you're done, see [Stuff that would have to be done after script has run](#stuff-that-would-have-to-be-done-after-script-has-run) below.
 
 ## Stuff that would have to be done after script has run
