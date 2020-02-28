@@ -209,7 +209,15 @@ curl https://cli-assets.heroku.com/install.sh | sh
 echo "--------------------------------------------------------------------"
 echo "-- Setting up bashrc -----------------------------------------------"
 echo "--------------------------------------------------------------------"
-# cp ~/scripts/useful-aliases.txt ~/.bashrc
+cat ~/scripts/useful-aliases.txt >> ~/.bashrc
+# -----
+# In .bashrc, replace windows home folder with mac home folder
+# In Vim: :%s@/c/users/your-username@/Users/your-username@gci
+gsed -i "s@/c/users/your-username@/Users/your-username@gI" ~/.bashrc
+# -----
+# In .bashrc, replace windows dev folder with mac dev folder
+# In vim: :%s@/c/development@/Users/your-username/development@gci
+gsed -i "s@/c/development@/Users/your-username/development@gI" ~/.bashrc
 # -----
 # Load the new .bashrc yet
 source ~/.bashrc
