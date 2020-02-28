@@ -124,9 +124,6 @@ Or I could have just copied the whole thing to a VM and stuck it in the cloud - 
     - It's [here](/resources/scripts/installing-new-mac) 
     - Make the script runnable: **chmod a+x installing-new-mac**
     - Run the script: **installing-new-mac**
-- You might need to install **brew** and **cask** on your system. 
-    - I'm not sure about this though - I've put these actions in [the script](/resources/scripts/installing-new-mac)
-    - so hopefully you don't have to do them manually.
 
 ### Install brew:
 ```
