@@ -126,6 +126,7 @@ Or I could have just copied the whole thing to a VM and stuck it in the cloud - 
     - Run the script: **installing-new-mac**
 
 ### Install brew:
+
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -133,6 +134,7 @@ Or I could have just copied the whole thing to a VM and stuck it in the cloud - 
 ### Install cask:
 !! Might not be needed!
 When I ran this script I got lots of git permission errors for this step which I couldn't resolve, but in the end it seemed I didn't need to do this anyway - because cask had already been installed with brew?
+
 ```
 brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
