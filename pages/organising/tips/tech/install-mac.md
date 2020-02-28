@@ -35,6 +35,7 @@ I've created a [brew script for some of it](#automating-the-installation) but sa
     * Sync Contacts
     * Sync Calendars
     * Sync Notes
+* Set up Meraki: go here https://m.meraki.com/mdm/ - and enter network id [get this from your system admin]
 * Enable FileVault (this should have already happened when you installed the OS)
     * Encrypt disk (should have come for free when you enabled fileVault) 
     * (basically System Prefs - Security and Privacy - FileVault - unlock the padlock - Turn FileVault on) (but maybe you have to then wait in that dialog, with the padlock unlocked, while encryption happens, otherwise it seems to pause until you return?)
