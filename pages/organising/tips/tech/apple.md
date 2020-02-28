@@ -121,7 +121,9 @@ killall SystemUIServer
 ### Setting up a new Mac Using Brew
 
 - [Brew: Mac Bulk App Installer For a New Mac OS Install using HomeBrew](https://www.switchingtomac.com/tutorials/how-to-make-a-bulk-app-installer-for-a-new-mac-os-install-using-homebrew/)
-- I have a script (only accessible to me) [here](https://github.com/claresudbery/Root-Scripts/blob/master/installing-new-mac)
+- I made a brew script
+    - Public notes [here](/pages/organising/tips/tech/Installing-A-New-Mac)
+    - Clare notes [here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/reinstalling-new-mac.md)
 
 ### Customise Finder to have home folder in favourites
 

@@ -1,0 +1,283 @@
+#!/bin/bash
+
+# The following sections have been commented out for you to edit with your details and then uncomment:
+# set up git user details
+# Clone your scripts repo into a new scripts folder 
+# Copy scripts/useful-aliases.txt into a new ~/.bashrc
+# Clone your fave GitHub repos.
+
+# Uncomment this line to output all commands to command line
+# (Useful for debugging)
+# set -x
+
+# Uncomment this line to stop running on any error
+# (Useful for debugging)
+# set -e
+
+echo "You need to Install brew and cask first!"
+echo "try running this on the command line:"
+echo "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
+echo "That will probably be enough, but if not, try these two commands as well:"
+echo "brew tap caskroom/cask"
+echo "brew install caskroom/cask/brew-cask"
+echo "If you get errors about git permissions and/or git repos not existing, you can probably just not bother with those commands."
+
+# Install Chrome
+echo "--------------------------------------------------------------------"
+echo "-- Installing Chrome -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install google-chrome
+
+# install zsh
+echo "--------------------------------------------------------------------"
+echo "-- Installing zsh -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew install zsh
+
+# Install iterm2 (https://iterm2.com/)
+echo "--------------------------------------------------------------------"
+echo "-- Installing iterm2 -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install iterm2
+
+# Create development folder
+echo "--------------------------------------------------------------------"
+echo "-- Adding dev folder -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+cd ~
+mkdir development
+
+# ----------------------
+# Install oh-my-zsh
+echo "--------------------------------------------------------------------"
+echo "-- Installing oh-my-zsh -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+# Disable update prompt so you can update silently 
+# (This should have the effect of uncommenting the line **DISABLE_UPDATE_PROMPT=true** in .zshrc)
+# (There are two versions, to cater for true being enclosed - or not - in quotes)
+sed -i '' '/DISABLE_UPDATE_PROMPT=\"true\"/s/^# //g' ~/.zshrc
+sed -i '' '/DISABLE_UPDATE_PROMPT=true/s/^# //g' ~/.zshrc
+# Upgrade oh-my-zsh 
+upgrade_oh_my_zsh
+# ----------------------
+
+
+# Install curl (needed for toc-md-all)
+echo "--------------------------------------------------------------------"
+echo "-- Installing curl -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew install curl
+
+
+
+# ---------------------------------
+# ---------------------------------
+# Actions that require user input:
+# ---------------------------------
+# ---------------------------------
+
+# Make Chrome the default browser (user input needed)
+echo "--------------------------------------------------------------------"
+echo "-- Make Chrome default -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+open -a "Google Chrome" --args --make-default-browser
+
+#------------------
+# Add ssh key for GitHub (requires user input)
+echo "--------------------------------------------------------------------"
+echo "-- Github ssh key -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+echo "These are the ssh keys you have on your system:"
+ls -l ~/.ssh
+echo "These are the keys loaded into the ssh agent:"
+ssh-add -l
+ssh-keygen -t rsa -b 4096 -C "your-email"
+eval "$(ssh-agent -s)"
+echo "-------------------"
+echo "Add the following to your hosts file:"
+echo "Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa"
+echo "-------------------"
+ssh-add -K ~/.ssh/id_rsa
+echo "-------------------"
+echo "--------------------------------------------------------------------"
+echo "-- Now add the new ssh key to your GitHub account."
+echo "-- Go to GitHub - Top right - user icon - Settings - SSH and GPG keys --"
+echo "-- and add your new ssh key - which you can grab by opening a new ---"
+echo "-- window and running pbcopy < ~/.ssh/id_rsa.pub (or whatever name you gave it) --"
+echo "--------------------------------------------------------------------"
+read -n1 -r -p "Press space to continue (after you've added the ssh key to your GitHub account)..." key
+#------------------
+
+# Install comand-line dev tools (eg Git)
+# (I suspect this will have been done autmoatically when you installed brew)
+# (so will probably have no effect)
+echo "--------------------------------------------------------------------"
+echo "-- Installing dev tools -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+echo "user input needed - select Install in popup"
+xcode-select --install
+
+# set up git user details
+# edit and uncomment 
+echo "--------------------------------------------------------------------"
+echo "-- Set up git user -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+echo "setting up git user details"
+echo "If this doesn't work, open a separate Terminal tab and do it manually:"
+echo "git config --global --edit then follow instructions on screen"
+# git config --global user.name "Your name here"
+# git config --global user.email "your email here"
+
+# Clone your scripts repo into a new scripts folder 
+# (if you have one, reference it here)
+# (if you don't have one, I recommend creating one!)
+echo "--------------------------------------------------------------------"
+echo "-- Clone root-scripts -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+# git clone [insert repo ref here] ~/scripts
+
+# Add scripts folder to path 
+echo "--------------------------------------------------------------------"
+echo "-- Add scripts to path -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+export PATH=$PATH:~/scripts
+
+# Install gnu-sed
+echo "--------------------------------------------------------------------"
+echo "-- Installing gnu-sed -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew install gnu-sed
+
+
+# ----------------------
+# !! Don't set up .bashrc yet, because it will error until you have the chruby stuff installed!
+# ----------------------
+
+
+# Clone your fave GitHub repos.
+echo "--------------------------------------------------------------------"
+echo "-- Cloning repos -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+cd ~/development
+# git clone [your repo ref]
+
+
+# ----------------------
+# Install Ruby and Jekyll and everything needed to support the Jekyll wiki site
+echo "--------------------------------------------------------------------"
+echo "-- Setting up Ruby and Jekyll -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+# ------
+# Get into the wiki folder
+cd ~/development/clare-wiki-ably
+# ------
+# Install ruby-install
+brew install ruby-install
+# ------
+# Install ruby
+ruby-install ruby 2.6.5
+# ------
+# Install chruby 
+brew install chruby
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+# ------
+# Make the Ruby version stick at ruby 2.6.5
+chruby ruby-2.6.5
+# ------
+# Install bundler
+gem install bundler
+bundle install
+# ------
+# Install jekyll
+gem install bundler jekyll
+# ------
+# Install heroku CLI (needs sudo pw)
+curl https://cli-assets.heroku.com/install.sh | sh
+# ----------------------
+
+
+# ----------------------
+# Set up bashrc
+# -----
+# Copy scripts/useful-aliases.txt into a new ~/.bashrc
+# (again I recommend having something like this)
+echo "--------------------------------------------------------------------"
+echo "-- Setting up bashrc -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+# cp ~/scripts/useful-aliases.txt ~/.bashrc
+# -----
+# Load the new .bashrc yet
+source ~/.bashrc
+# -----
+# Add source ~/.bashrc into ~/.zshrc
+sed -i '' '1i\
+source ~/.bashrc
+' ~/.zshrc
+# ----------------------
+
+
+# Install Visual Studio Code (needs GitHub un and pw - might not work if you have 2fh in GitHub?)
+echo "--------------------------------------------------------------------"
+echo "-- Installing VSCode -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+echo "Installing Visual Studio Code (needs GitHub un and pw - might not work if you have 2fh in GitHub?)"
+echo "If this fails, just go to website and download: https://code.visualstudio.com/docs/?dv=osx"
+echo "If it won't let you open it afterwards, find it in Finder, right-click, choose Open, then hold Control while clicking Open"
+brew cask install visual-studio-code 
+
+# Install Slack
+echo "--------------------------------------------------------------------"
+echo "-- Installing Slack -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install slack
+
+# Install sourcetree (https://www.sourcetreeapp.com/)
+echo "--------------------------------------------------------------------"
+echo "-- Installing SourceTree -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install sourcetree
+
+# Install Dropbox
+echo "--------------------------------------------------------------------"
+echo "-- Installing Dropbox -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install dropbox
+
+# Install OneDrive
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo "Installing OneDrive"
+echo "When it asks for pw, it wants laptop pw not OneDrive pw"
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+brew cask install onedrive
+
+# Install Google Drive FileStream
+echo "--------------------------------------------------------------------"
+echo "-- Installing Filestream -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install google-drive-file-stream
+
+# Install Visual Studio Code Insiders
+echo "--------------------------------------------------------------------"
+echo "-- Installing VSCode Insiders -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install homebrew/cask-versions/visual-studio-code-insiders
+
+# Install Spotify
+echo "--------------------------------------------------------------------"
+echo "-- Installing Spotify -----------------------------------------------"
+echo "--------------------------------------------------------------------"
+brew cask install spotify
+
+# Set screenshots to go to a folder in your Google Drive
+echo "--------------------------------------------------------------------"
+echo "-- configuring screenshots folder ----------------------------------"
+echo "--------------------------------------------------------------------"
+defaults write com.apple.screencapture location "/Volumes/GoogleDrive/My Drive/Screenshots"
+killall SystemUIServer 
