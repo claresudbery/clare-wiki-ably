@@ -12,6 +12,8 @@ I've created a [brew script for some of it](#automating-the-installation) but sa
 
 ## Stuff to do manually as soon as I open my new laptop:
 
+(I've recorded every step here and elsewhere in case I ever get this configured in something more powerful than a bash script.)
+
 * Change user password
 * If it's already been set up with a user name that you don't like:
     * Change user name to **Your name** and home folder name to **yourname**
@@ -52,6 +54,8 @@ I've created a [brew script for some of it](#automating-the-installation) but sa
     * Once you're done, see [Stuff that would have to be done after script has run](#stuff-that-would-have-to-be-done-after-script-has-run) below.
 
 ## Stuff that would have to be done after script has run
+
+(I've recorded every step here and elsewhere in case I ever get this configured in something more powerful than a bash script.)
 
 * Start iTerm2
     * Then restart iTerm2 (this will ask you if you want to install updates automatically - say yes)
