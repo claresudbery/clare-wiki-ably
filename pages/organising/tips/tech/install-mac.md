@@ -125,10 +125,10 @@ Or I could have just copied the whole thing to a VM and stuck it in the cloud - 
 - You have to install brew and cask manually first - I couldn't get it to work in a script (dunno why) - see [below](#install-brew).
 - The script requires some user input - keep an eye on it.
 - Get the script
-    - Put it in home folder
-    - It's [here](/resources/scripts/installing-new-mac) 
+    - Put it in home folder 
+    - Edit it to your tastes / with your details
     - Make the script runnable: **chmod a+x installing-new-mac**
-    - Run the script: **installing-new-mac**
+    - Run the script: **sh installing-new-mac**
 
 ### Install brew:
 
@@ -144,9 +144,3 @@ When I ran this script I got lots of git permission errors for this step which I
 brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
 ```
-
-
-## Creating the script
-
-- I've put it [here](/resources/scripts/installing-new-mac).
- 
