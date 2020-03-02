@@ -1147,15 +1147,16 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
     > at once.
 
 ## Watch command
-  - Use “watch” to make a command happen every 2 seconds
-  - Use -n interval to tell it how often
+  - Use “watch” to make a command happen every n seconds
+    - By default it will be every 2 seconds
+    - ... or use -n interval to tell it how often: **watch -n 3 curl "http://10.266.8.66"**
   - Like this: **watch 'curl -s
     csudbery:\[password\]@xxx.Acmecorp.com:9200/\_cat/recovery | grep
     -v done'**
       - Or like this: **watch curl "http://10.266.8.66"**
       - Notice the first example needed quotes because it wasn’t just a
         simple command + argument, but the second works fine as it is.
-      - That first example is doing the following: Curl the SoxElk
+      - That first example is doing the following: Curl the specified
         endpoint using creds because it’s extra locked down. Pipe the
         result to grep, where you are EXCLUDING entries marked done (-v
         means exclude). Keep curling every 2 seconds and watch the
