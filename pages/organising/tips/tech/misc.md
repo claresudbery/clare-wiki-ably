@@ -14,7 +14,7 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
  
 ## Chrome
 
-## Refresh your cache
+### Refresh your cache
 
 - [Refresh your cache - When hitting F5 just isn't enough!](http://refreshyourcache.com/en/cache/)
 
@@ -31,6 +31,11 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
     - On Mac: Cmd(splat) + L
     - Then enter the keyword (configured abnove - I'm using b for bookmarks and h for history) and hit Tab
     - Note that on Mac Catalina I'm finding that any search term you enter directly will get crappy results, so I just enter a random character and then tab inyo the actual search text box
+
+## Gmail
+
+- Add bullet list: Cmd + Shift + 8
+- [Other gmail shortcuts](https://blog.hubspot.com/sales/gmail-keyboard-shortcuts)
 
 ## Slack
 
