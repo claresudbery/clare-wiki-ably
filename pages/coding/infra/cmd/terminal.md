@@ -258,7 +258,7 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
       - You also have to do this: **chmod +x /path/to/script**
   - Don’t give your script an extension, just add to path and it will
     become a command
-      - (see section on bash scripts)
+      - (see [section on bash scripts](/pages/coding/infra/cmd/Bash-Scripts#misc))
 
 ## Env vars
 

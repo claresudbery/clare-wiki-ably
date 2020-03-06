@@ -54,11 +54,29 @@ Other possible tools:
 
 I didn't need this on the Jekyll site, but I did need it in my GitHub markdown site.
 
+My version of the script can be found [here](/resources/scripts/gh-md-toc).
+
+For the tool to work, you need to place the following text at the top of your markdown:
+
+```
+<!--ts-->
+<!--te-->
+```
+
 I use the following call on the command line to run the toc script on all markdown files in all subfolders from your current location:
 
 ```
 find . -name "*.md" -exec gh-md-toc --insert {} ";"
 ```
+
+I have the following aliases set up in `~/.bashrc` (via `~/.zshrc`) for adding toc to an individual file or to all md files in current folder and sub-folders:
+
+```
+alias toc-md-all='find . -name "*.md" -exec gh-md-toc --insert {} ";"'
+alias toc-md='gh-md-toc --insert'
+```
+
+!! The drawback of this script is that it's slow, because it needs an internet connection to call out to an API. This is inefficient and could definitely be improved upon... which is on my to-do list...
 
 I got this tool from [here](https://github.com/ekalinin/github-markdown-toc), but I made a few changes:
 
