@@ -39,16 +39,20 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
 ## Slack
 
-### Misc
+### Useful Slack shortcuts
 
-  - Cmd k \[channel name\] to open new channel – eg Cmd + k +
-    nagiosdeploy
-
-  - Cmd + Shift + \\ - emoji reactions to someone’s post
-
-  - :\[emoji name\] – emojis embedded in posts
-
-  - \`\[code\]\` (ie text encased by back ticks) - code
+- [More here](https://slack.com/intl/en-gb/help/articles/201374536-Slack-keyboard-shortcuts#mac-1)
+- Cmd k \[channel name or person name\] to open new channel or direct conversation – eg `Cmd + k +
+    nagiosdeploy`
+  - Ctrl + K on Windows
+- Cmd + Shift + \\ - emoji reactions to someone’s post
+- :\[emoji name\] – emojis embedded in posts
+- \`\[code\]\` (ie text encased by back ticks) - code
+- Cmd + [ - go back to last channel / DM visited
+- Cmd + ] - go forward again
+  - On Windows: Alt + <- or ->
+- Cmd + Shift + T: Open the threads view
+- Cmd + Shift + M: Show "activity" / mentions - ie times when you've been @ed (also accessed via @ symbol top right)
 
 ### Searching slack
 
