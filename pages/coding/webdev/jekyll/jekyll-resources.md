@@ -13,6 +13,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - The repo for this website: [clare-wiki-ably](https://github.com/claresudbery/clare-wiki-ably)
 - The repo I created when I was experimenting with creating a vanilla Jekyll site: [clare-wiki-jekyll](https://github.com/claresudbery/clare-wiki-jekyll)
+- The [original Ably repo](https://github.com/ably/wiki-site) I used as a template when I was getting started.
 
 ## Docs and Blog Posts
 

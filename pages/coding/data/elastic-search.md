@@ -197,7 +197,7 @@ permalink: /pages/coding/data/Elastic-Search
   - You will see an awful lot of colourful dots in the “thread pool -
     bulk queued” graph in Grafana
   - To see num shards,
-      - run diagnostics tool
+      - run [diagnostics tool](https://github.com/claresudbery/Infra-Scripts/tree/master/observability-toolbox/elastictool)
           - Command to run from the elastictool folder:
             **bin/elastictool -H logyyy.xxx.com**
       - Check the value for “Pri” (Pri stands for primary shards)
