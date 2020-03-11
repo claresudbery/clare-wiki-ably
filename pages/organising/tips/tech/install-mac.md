@@ -4,7 +4,7 @@ location: pages/organising/tips/tech/leaf
 permalink: /pages/organising/tips/tech/Installing-A-New-Mac
 ---
 
-This is a slightly abbreviated version for public consumption - the full [Clare version is here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/reinstalling-new-mac.md).
+This is a slightly abbreviated version for public consumption - the full [Clare version is here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/reinstalling-new-mac.md) (only accessible to Clare).
 
 Note that this was created purely for me. I'm not suggesting these are sensible defaults for anyone else.
 
@@ -67,7 +67,7 @@ I've created a [brew script for some of it](#automating-the-installation) but sa
 * Set Chrome up
     * Pin Chrome to Dock
     * Sync Chrome with Made Tech gmail account (pw needed)
-    * Sync Chrome with claresudbery gmail account (pw needed)
+    * Sync Chrome with personal gmail account (pw needed)
 * Set Slack up
     * Start the Slack app and you'll be redirected to the browser
     * Add Slack to Login (so it starts every time you start laptop):
