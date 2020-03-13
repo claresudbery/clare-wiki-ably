@@ -13,3 +13,4 @@ permalink: /pages/think/life/Health
   - [LRB article shared by Kat Arney](https://www.lrb.co.uk/the-paper/v42/n05/rupert-beale/short-cuts)
   - [Virus expert interviewed by C4 news](https://youtu.be/dcJDpV-igjs)
   - [US article on why the virus is genuinely worrying and why you should stay at home](https://blogs.scientificamerican.com/observations/preparing-for-coronavirus-to-strike-the-u-s/)
+  - [Running a remote inception due to COVID-19](/pages/think/events/workshops/Remote-Inception)
