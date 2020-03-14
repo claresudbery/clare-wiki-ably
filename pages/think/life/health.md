@@ -18,3 +18,4 @@ permalink: /pages/think/life/Health
   - [Running a remote inception due to COVID-19](/pages/think/events/workshops/Remote-Inception)
   - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
   - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+  - [Symptoms](https://twitter.com/daniel_kraft/status/1236716506890682369?s=21)
