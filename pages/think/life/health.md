@@ -17,4 +17,4 @@ permalink: /pages/think/life/Health
   - Interesting article [here](https://www.statnews.com/2020/02/04/two-scenarios-if-new-coronavirus-isnt-contained/) about what impact warmer weather might have, about immunity, and about what might happen if the virus becomes endemic (hangs around everywhere indefinitely) and seasonal
   - [Running a remote inception due to COVID-19](/pages/think/events/workshops/Remote-Inception)
   - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
-  - [global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+  - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
