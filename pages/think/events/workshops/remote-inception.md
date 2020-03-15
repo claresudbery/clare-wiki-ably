@@ -25,3 +25,5 @@ More things to do:
 	- You can also do this on an individual basis with "coffee and cake" sessions - which can be randomly generated pairings.
 
 ## Don'ts
+
+- Don't assume you'll have connectivity. Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
