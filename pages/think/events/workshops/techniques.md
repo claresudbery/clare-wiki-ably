@@ -21,4 +21,5 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 - User journey / story mapping
 - Elevator pitch
 - Trade-off sliders 
-
+- CRC cards
+	- blank CRC cards 
