@@ -19,4 +19,9 @@ Here is what we sent out to participants the week before the inception started:
 - If you haven't used Zoom before then before 10am Monday, please click on the Zoom link in the invite. This will cause Zoom to download on your machine and hopefully give you a chance to troubleshoot any problems (not that we expect any).
 - Please dial in prompt at 10am Monday (or even a few minutes before).
 
+More things to do:
+
+- Create deliberate opportunities for water-cooler moments, ie have group sessions purely designed for chat.
+	- You can also do this on an individual basis with "coffee and cake" sessions - which can be randomly generated pairings.
+
 ## Don'ts
