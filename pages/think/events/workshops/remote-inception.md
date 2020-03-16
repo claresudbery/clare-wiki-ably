@@ -27,6 +27,9 @@ More things to do:
 	- we are assuming everyone has best intentions
 - Do a short exercise at the start of the first day where everyone practises using the tools you are expecting them to use.
 - If you have a large number of participants, use smaller breakout rooms for most activities (Zoom allows you to do this - I don't know about other tools). This will increase engagement and lessen the chance of people zoning out.
+- Try to have expert users using all the browsers and operating systems your participants are like to be using - eg Chrome on Windows, Safari on Mac OS
+- Experiment with your tooling (eg adding post-its to boards, creating breakout rooms) before starting
+- Try to get everyone signed up to accounts (eg Miro) as early as poss. Share guidance on how to do this.
 
 ## Don'ts
 
