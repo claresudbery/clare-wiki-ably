@@ -23,7 +23,27 @@ More things to do:
 
 - Create deliberate opportunities for water-cooler moments, ie have group sessions purely designed for chat.
 	- You can also do this on an individual basis with "coffee and cake" sessions - which can be randomly generated pairings.
+- Start with an intro where you set expectations 
+	- we are assuming everyone has best intentions
+- Do a short exercise at the start of the first day where everyone practises using the tools you are expecting them to use.
+- If you have a large number of participants, use smaller breakout rooms for most activities (Zoom allows you to do this - I don't know about other tools). This will increase engagement and lessen the chance of people zoning out.
 
 ## Don'ts
 
 - Don't assume you'll have connectivity. Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
+
+## Tools we are using
+
+- Miro
+	- Collaborate on diagrams
+	- Have separate "radiators" eg a parking lot area to make notes on things you don't have time to dicuss now
+	- Remote post-it exercises
+- Zoom 
+	- Host meetings
+	- Create smaller breakout rooms for smaller discussions
+	- Share screens
+	- See all participants
+	- Mute mics
+	- Share video of yourself (or not)
+	- Use a thumbs-up icon to indicate understanding / agreement (instead of having to unmute/mute again)
+- Google hangouts (backup in case there are any Zoom outages because of increased load due to COVID-19)
