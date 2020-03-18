@@ -37,11 +37,7 @@ More things to do:
 
 ## Tools we are using
 
-- Miro
-	- Collaborate on diagrams
-	- Have separate "radiators" eg a parking lot area to make notes on things you don't have time to dicuss now
-	- Remote post-it exercises
-- Zoom 
+- **Zoom** 
 	- Host meetings
 	- Create smaller breakout rooms for smaller discussions
 	- Share screens
@@ -49,4 +45,12 @@ More things to do:
 	- Mute mics
 	- Share video of yourself (or not)
 	- Use a thumbs-up icon to indicate understanding / agreement (instead of having to unmute/mute again)
-- Google hangouts (backup in case there are any Zoom outages because of increased load due to COVID-19)
+- **Google hangouts** (backup in case there are any Zoom outages because of increased load due to COVID-19)
+- **Miro**
+	- Collaborate on diagrams
+	- Have separate "radiators" eg a parking lot area to make notes on things you don't have time to dicuss now
+	- Remote post-it exercises
+
+This gives you a good idea of the kind of thing we have been able to create collaboratively using Miro:
+
+![Miro diagrams](resources/images/remote-inception-01.PNG)
