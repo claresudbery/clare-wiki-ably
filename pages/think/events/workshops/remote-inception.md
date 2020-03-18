@@ -10,7 +10,7 @@ In March 2020, due to a desire to restrict meetings and travel to slow the sprea
 
 Here I'm recording some notes about what we are doing.
 
-## Dos
+## Do
 
 Here is what we sent out to participants the week before the inception started:
 
@@ -31,7 +31,7 @@ More things to do:
 - Experiment with your tooling (eg adding post-its to boards, creating breakout rooms) before starting
 - Try to get everyone signed up to accounts (eg Miro) as early as poss. Share guidance on how to do this.
 
-## Don'ts
+## Don't
 
 - Don't assume you'll have connectivity. Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
 
