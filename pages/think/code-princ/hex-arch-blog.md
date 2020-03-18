@@ -10,7 +10,7 @@ What you'll get here is a description of a Currency service which I helped to wr
 
 So, what is hexagonal architecture? Here is a diagram:
 
-![Diagram of ports and adapters](resources/images/HexagonalArchitecture-ports-and-adapters.png)
+![Diagram of ports and adapters](/resources/images/HexagonalArchitecture-ports-and-adapters.png)
 
 * **yellow**:	core logic
 * **light red**:	primary ports
