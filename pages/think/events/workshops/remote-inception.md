@@ -53,4 +53,4 @@ More things to do:
 
 This gives you a good idea of the kind of thing we have been able to create collaboratively using Miro:
 
-![Miro diagrams](resources/images/remote-inception-01.PNG)
+![Miro diagrams](/resources/images/remote-inception-01.PNG)

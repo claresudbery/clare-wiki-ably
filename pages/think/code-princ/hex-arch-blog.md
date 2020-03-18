@@ -4,12 +4,7 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Hexagonal-Architecture-Blog-Post
 ---
 
-(!!! NB: ALL IMAGES ARE SAVED IN SAME FOLDER AS THIS DOC (currently Dropbox\Writing - Current\Blog posts\LateRooms Blog Posts))
-by @ClareSudbery)
-
 Even though I helped create a piece of software which supposedly implemented hexagonal architecture, it wasn't until I'd written this blog post that I really felt I *got* it. Indeed, as a way of really cementing and confirming your knowledge on a subject, I’d highly recommend presenting what you think you know for the benefit of an audience that’s new to the topic.
-
-!! NB !! This has now been copied into clare-wiki, and is being worked on there in md format.
 
 What you'll get here is a description of a Currency service which I helped to write at LateRooms.Com (RIP), along with a discussion of how it exemplifies hexagonal architecture. But I'll also explain where it falls short. And, just for fun, you'll get some pancakes: Dan Portella (@dmportella) and I created a ClaresPancakes solution, which was designed as a purer example of hexagonal architecture.
 
@@ -54,7 +49,7 @@ The SDK is published internally as a NuGet package, and contains all the logic. 
 
 Here is an overview of the shape of the Currency.SDK solution:
 
-![Currency.SDK](resources/images/HexagonalArchitecture-solution-overview.jpg)
+![Currency.SDK](/resources/images/HexagonalArchitecture-solution-overview.jpg)
 
 #### Currency.SDK - Primary Ports
 
@@ -116,7 +111,7 @@ There is a purer hexagonal example in the [Clare's Pancakes git repo](https://gi
 
 Hopefully the project structure, once you have some understanding of how hexagonal architecture is supposed to work, is reasonably self-evident. It looks like this:
 
-![Clare's Pancakes](resources/images/HexagonalArchitecture-Primary-and-Secondary-Adapters-in-VS.jpg)
+![Clare's Pancakes](/resources/images/HexagonalArchitecture-Primary-and-Secondary-Adapters-in-VS.jpg)
 
 #### Clare's Pancakes - Primary Ports
 
