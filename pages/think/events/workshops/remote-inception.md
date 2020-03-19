@@ -33,6 +33,8 @@ More things to do:
 - Try to get everyone signed up to accounts (eg Miro) as early as poss. Share guidance on how to do this.
 - Share a timetable at the start of each day and be rigid about sticking to the timetable. Rather than allow a session to over-run, either park things for a later date or continue the activity in the next session. This is particularly important when working remotely, because it's a lot of screen time.
 - Keep separate online spaces (we used "spaces" in Miro) readily available for things like parking lot and glossary, and make sure everyone is able to easily access them.
+- Have regular breaks and short sessions. This stuff is more tiring than you think, particularly with COVID-19 creating a constant background level of anxiety. If you try to hang onto people for too long you will just lose their focus. We have four 45 minute sessions per day with 15-minute breaks between and over an hour for lunch. In addition to that we have a 15-minute standup, a 15-minute retro, a 15-minute watercooler session and a couple of other short ad hoc sessions. This generally takes us from 10:00 to about 16:30.
+- We have started having "coffee" from 9am until we start at 9:45 or 10:00. This is an attempt to compensate for the fact that we are not having lunch together or going out for food / drinks together at the end of the day, as we would if we were gathered together physically.
 
 ### General Workshop Tips
 
@@ -99,7 +101,7 @@ This gives you a good idea of the kind of thing we have been able to create coll
 - Download the app.
 - You can have several "spaces" (aka boards), and you can navigate these either by scrolling around in the main window or by clicking the space icon bottom left (use the arrows to expand the menu first).
 - You can easily draw lines between objects. Select an object and use the blue dots that appear in the middle of each side. See above for a zoomed-out view of the kind of diagrams we have created.
-- You can draw diagrams together, by adding objects other than postits and drawing connecting lines between them.
+- You can draw diagrams together, by adding objects other than postits and drawing connecting lines between them (see the image above to see a zoomed-out view of what we have created).
 - You can zoom out (using the scroll wheel or +/- buttons bottom right), so that you can see all boards at once.
 - You can watch where all your participants are and help them to find the right board, by zooming out and watching them.
 - You don't *have* to watch what everyone else is doing. If you're finding it distracting, use the arrow with two horizontal lines, top right, to toggle that functionality on and off.
