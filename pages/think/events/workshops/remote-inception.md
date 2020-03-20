@@ -62,6 +62,7 @@ More things to do:
 	- Get them to turn off all background software and apps.
 	- Get them to close down other browser tabs. For instance anecdotally, google docs can use up bandwidth as they sync.
 	- Get them to log out and then log back in again, or even restart their computer.
+	- Get them to check whether they've left a connection open to a VPN.
 - If there are sound issues:
 	- Encourage people to get hold of a headset with mic. This can get rid of echoes, for instance.
 	- Make sure people have their mics at about chin level - not too close to their mouth but not too far away.
