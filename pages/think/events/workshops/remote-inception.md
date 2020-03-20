@@ -8,7 +8,7 @@ permalink: /pages/think/events/workshops/Remote-Inception
 
 ## Overview
 
-In March 2020, due to a desire to restrict meetings and travel to slow the spread of [COVID-19](/pages/think/life/Health/https://clare-wiki.herokuapp.com/pages/think/life/Health#covid-19-coronavirus-sars-cov-2) (commonly referred to as coronavirus), we at [Made Tech](https://www.madetech.com/) and [Difrent](https://difrent.co.uk) are running a two-week inception entirely remotely, with our client [Skills for Care](https://www.skillsforcare.org.uk/).
+In March 2020, due to a desire to restrict meetings and travel to slow the spread of [COVID-19](/pages/think/life/Health/https://clare-wiki.herokuapp.com/pages/think/life/Health#covid-19-coronavirus-sars-cov-2) (commonly referred to as coronavirus), we at [Made Tech](https://www.madetech.com/) and [Difrent](https://difrent.co.uk) are running a totally-remote two-week inception (a series of workshops designed to spin work up with a new client), with our client [Skills for Care](https://www.skillsforcare.org.uk/).
 
 Here I'm recording some notes about what we are doing.
 
