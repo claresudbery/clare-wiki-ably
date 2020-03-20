@@ -8,6 +8,10 @@ permalink: /pages/think/life/Health
 
 ### Staying sane during the COVID-19 crisis
 
+#### Meg John and Justin: Podcast and Resources on Stress and Coronavirus
+
+- [The wonderful Meg John and Justin](https://megjohnandjustin.com/you/stress-and-coronavirus/)
+
 #### Unfuck your brain
 
 (Disclaimer - this is an hour long and I haven't got round to listening to it yet.)
