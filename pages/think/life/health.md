@@ -18,6 +18,10 @@ permalink: /pages/think/life/Health
 
 - [Coping with pandemic panic](https://unfuckyourbrain.com/pandemic-panic/) - free session from Kara Loewentheil ("Harvard law school grad, feminist rockstar, and master coach").
 
+#### Control what you can, accept what you can't
+
+![controlling covid-19](/resources/images/covid-19-can-control.PNG)
+
 #### APPLE technique to deal with anxiety
 
 AnxietyUK suggests practising the "Apple" technique to deal with anxiety and worries.
