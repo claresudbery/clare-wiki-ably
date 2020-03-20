@@ -44,6 +44,34 @@ Your locus of control is now - that's where you order the paint / brushes and ot
 
 Try to pay attention to the positive things you have achieved each day, and give yourself some acknowledgement for those things. And be kind to yourself when circumstances make it hard to follow any kind of plan.
 
+#### Don't Worry
+
+One of my favourite poems, by [Julia Darling](https://s3-eu-west-1.amazonaws.com/clare-test-001/BoobPencil/julia-darling.html), one of my favourite poets:
+
+**Don’t Worry**
+
+about the food you haven’t bought,  
+if your daughter caught that train,  
+the bill that came, the twinge  
+in your right leg. Don’t fuss.  
+The washing on the line  
+will dry again. It’s not your fault  
+So what if you lied?  
+Don’t be ashamed.  
+
+And don’t worry that you promised.  
+It doesn’t matter about those promises. Let them go.  
+Just tell her you don’t like her if you don’t.  
+You needn’t see the doctor with bad breath.  
+Behave badly. Lie on the floor.  
+Throw a tantrum if you’re bored.  
+Be late. Be sordid. Eat six pies.  
+Or trick them by being euphoric.  
+
+Above your head a flock of geese  
+are flying South. Beneath your feet  
+worms aren’t worrying.
+
 ### Some info and links
 
 NB: This collection is already a couple of weeks old. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
