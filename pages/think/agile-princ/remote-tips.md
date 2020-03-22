@@ -3,6 +3,8 @@ layout: page
 location: pages/think/agile-princ/leaf
 permalink: /pages/think/agile-princ/Remote-Working-Tools-And-Tips
 ---
+This was originally put together as an internal doc by my @ThoughtWorks colleagues (thank you), but I've removed all the ThoughtWorks-specific stuff to make it useful for a wider audience.
+
 **Note:** many of the tools on this list operate on a free/freemium
 model. Where your organisation doesn’t have an official relationship with the
 vendor, you should be wary of storing any information that could be
