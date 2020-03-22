@@ -14,9 +14,11 @@ permalink: /pages/think/life/Health
 
 #### Unfuck your brain
 
-(Disclaimer - this is an hour long and I haven't got round to listening to it yet.)
-
 - [Coping with pandemic panic](https://unfuckyourbrain.com/pandemic-panic/) - free session from Kara Loewentheil ("Harvard law school grad, feminist rockstar, and master coach").
+
+I found this really helpful, but it's worth saying that Kara Loewentheil's style doesn't work for everyone. In a nutshell, she's saying that you can't control what's happening in the world, but you can control how you react to it. Death and sickness have always been present and have always been things that could affect both ourselves and our loved ones. It's never been helpful to worry and obsess over those things, but because right now everybody IS worrying and obsessing over it, there is an unstated pressure to join in. Resist that pressure. Do everything you need to do to keep yourself and your loved ones safe, but take those actions out of love instead of out of anxiety.
+
+If you don't find that Kara's style works for you, don't feel bad! Turn it off and try one of the things below instead. 
 
 #### Control what you can, accept what you can't
 
