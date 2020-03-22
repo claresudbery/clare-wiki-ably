@@ -92,3 +92,6 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
   - [Symptoms](https://twitter.com/daniel_kraft/status/1236716506890682369?s=21)
   - Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
+  - [WHO app with regularly updated information](https@//www.whatsapp.com/coronavirus/who)
+    - Type in 'hi' to begin the menu.
+    - Has updates on every aspect of the virus - numbers if you want them, how to protect yourself and others, symptoms etc etc etc
