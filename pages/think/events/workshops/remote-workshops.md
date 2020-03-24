@@ -1,10 +1,10 @@
 ---
 layout: page
 location: pages/think/events/workshops/leaf
-permalink: /pages/think/events/workshops/Remote-Inception
+permalink: /pages/think/events/workshops/Remote-Workshops
 ---
 
-# (aka Remote Workshops)
+# (aka Remote Inception)
 
 ## Overview
 
