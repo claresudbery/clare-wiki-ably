@@ -28,10 +28,10 @@ If you don't find that Kara's style works for you, don't feel bad! Turn it off a
 
 AnxietyUK suggests practising the "Apple" technique to deal with anxiety and worries.
 
-- **Acknowledge**: Notice and acknowledge the anxiety as it comes to mind.
+- **Acknowledge**: Notice and acknowledge the anxious thoughts as they comes to mind.
 - **Pause**: Don't react as you normally do. Don't react at all. Pause and breathe.
 - **Pull back**: Tell yourself this is just the worry talking, and any apparent need to know exactly what will happen next is not helpful and not necessary. It is only a thought or feeling. Don't believe everything you think. Thoughts are not statements or facts.
-- **Let go**: Let go of the thought or feeling. It will pass. You don't have to respond to them. You might imagine them floating away in a bubble or cloud.
+- **Let go**: Let go of the thought or feeling. It will pass. You don't have to respond to it. You might imagine it floating away in a bubble or cloud.
 - **Explore**: Explore the present moment, because right now, in this moment, all is well. Notice your breathing and the sensations of your breathing. Notice the ground beneath you. Look around and notice what you see, what you hear, what you can touch, what you can smell. Right now. Then shift your focus of attention to something else - on what you need to do, on what you were doing before you noticed the worry, or do something else - mindfully with your full attention.
   
 #### ODAAT - One Day at a Time
