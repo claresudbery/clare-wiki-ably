@@ -19,7 +19,7 @@ Here I'm recording some notes about what we are doing.
 Here is what we sent out to participants the week before the inception started:
 
 - Please dial in individually. That is to say, don't be in the same room as any other participant. This will significantly improve the experience for everyone who is working from home.
-- Please, if at all possible, use a headset with dedicated microphone. This too will improve the experience for all participants. If you can't get one in time for Monday, it's still worth getting one in time for subsequent days.
+- Please, if at all possible, use a headset with dedicated microphone. This too will improve the experience for all participants (further explanation [here](#headsets-with-microphones)). If you can't get one in time for Monday, it's still worth getting one in time for subsequent days.
 - If you haven't used Zoom before then before 10am Monday, please click on the Zoom link in the invite. This will cause Zoom to download on your machine and hopefully give you a chance to troubleshoot any problems (not that we expect any).
 - Please dial in prompt at 10am Monday (or even a few minutes before).
 - Try to set up a workspace where you will have two screens. This will make it much easier for you to switch between our two main tools, which will be Miro and Zoom.
@@ -28,7 +28,7 @@ More things to do:
 
 - Create deliberate opportunities for water-cooler moments, ie have group sessions purely designed for chat.
 	- You can also do this on an individual basis with "coffee and cake" sessions - which can be randomly generated pairings.
-- Do a short exercise at the start of the first day where everyone practises using the tools you are expecting them to use. Make sure that every participant is able to achieve every simple task (eg muting a mic, showing a thumbs-up, adding a post-it to a board, drawing lines between post-its, moving between different boards)
+- Do a short exercise at the start of the first day where everyone practises using the tools you are expecting them to use. Make sure that every participant is able to achieve every simple task (eg muting a microphone, showing a thumbs-up, adding a post-it to a board, drawing lines between post-its, moving between different boards)
 - If you have a large number of participants (more than 5), use smaller breakout rooms for most activities (Zoom allows you to do this - I don't know about other tools). This will increase engagement and lessen the chance of people zoning out.
 - Try to have expert users who are using all the browsers and operating systems your participants are likely to be using - eg Chrome on Windows, Safari on Mac OS - so that they can help to troubleshoot any problems.
 - Experiment with your tooling (eg adding post-its to boards, creating breakout rooms) before starting.
@@ -37,6 +37,12 @@ More things to do:
 - Keep separate online spaces (we used "spaces" in Miro) readily available for things like parking lot and glossary, and make sure everyone is able to easily access them.
 - Have regular breaks and short sessions. This stuff is more tiring than you think, particularly with COVID-19 creating a constant background level of anxiety. If you try to hang onto people for too long you will just lose their focus. We have four 45 minute sessions per day with 15-minute breaks between and over an hour for lunch. In addition to that we have a 15-minute standup, a 15-minute retro, a 15-minute watercooler session and a couple of other short ad hoc sessions. This generally takes us from 10:00 to about 16:30.
 - We have started having "coffee" from 9am until we start at 9:45 or 10:00. This is an attempt to compensate for the fact that we are not having lunch together or going out for food / drinks together at the end of the day, as we would if we were gathered together physically.
+
+### Headsets with Microphones
+
+It can make a big difference to ALL participants if every user has a headset with a microphone.
+
+The reason this is so important is that otherwise, participants are getting audio via their laptop speakers. This can feed back into their laptop microphone and cause echoes. It can also mean that all users hear notification beeps and other noises coming from participants' laptop speakers.
 
 ### General Workshop Tips
 
@@ -66,11 +72,11 @@ More things to do:
 	- Get them to log out and then log back in again, or even restart their computer.
 	- Get them to check whether they've left a connection open to a VPN.
 - If there are sound issues:
-	- Encourage people to get hold of a headset with mic. This can get rid of echoes, for instance.
+	- Encourage people to get hold of a headset with microphone (explanation [here](#headsets-with-microphones)). 
 	- Make sure people have their mics at about chin level - not too close to their mouth but not too far away.
-	- Encourage everyone but the main speaker to mute their mic.
+	- Encourage everyone but the main speaker to mute their microphone.
 	- Encourage people to find a quiet space with no background noise.
-	- Encourage each participant to be on their own in a room instead of in the same room as co-workers. If this isn't possible then a decent headset with mic will make a BIG difference.
+	- Encourage each participant to be on their own in a room instead of in the same room as co-workers. If this isn't possible then a decent headset with microphone will make a BIG difference (explanation [here](#headsets-with-microphones)).
 	- Get them to log out and then log back in again, or even restart their computer.
 	- If sound is cutting out, take the same actions listed above for connectivity issues.
 
