@@ -65,6 +65,10 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
     
       - ...but the hash symbol gets inserted for you if you forget it.
 
+### Other Slack Stuff
+
+- See [here](https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit) (Clare only) (try searching for **?learn**)
+
 ## Emoticons in the browser
 
   - Google docs / Google products only?
