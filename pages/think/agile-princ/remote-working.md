@@ -16,6 +16,7 @@ permalink: /pages/think/agile-princ/Remote-Working
 Since many kids are/will be home from school,  sharing an awesome list of ideas from a parent who homeschools.
 
 Online resources:
+
 - BrainPop
 - Curiosity Stream
 - Tynker
@@ -28,6 +29,7 @@ Online resources:
 - Discovery Education
 
 YouTube Channels:
+
 - Crash Course Kids
 - Science Channel
 - SciShow Kids
