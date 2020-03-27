@@ -1,12 +1,8 @@
-<!--ts-->
-
-# Table of Contents
-
-   * [User First Ways of Working (Delivery):](#user-first-ways-of-working-delivery)
-      * [Principles:](#principles)
-      * [Cadence / Rhythm:](#cadence--rhythm)
-      * [Ceremonies:](#ceremonies)
-<!--te-->
+---
+layout: page
+location: pages/think/agile-princ/leaf
+permalink: /pages/think/agile-princ/Agile-Ways-Of-Working
+---
 
 ## User First Ways of Working (Delivery):
 
