@@ -24,6 +24,10 @@ If you don't find that Kara's style works for you, don't feel bad! Turn it off a
 
 ![controlling covid-19](/resources/images/covid-19-can-control.PNG)
 
+#### Don't put pressure on yourself to become super-productive
+
+- Some good points are made about this in [this article here](https://www.independent.co.uk/voices/coronavirus-confinement-covid-19-quarantine-rules-streaming-a9410166.html)
+
 #### APPLE technique to deal with anxiety
 
 AnxietyUK suggests practising the "Apple" technique to deal with anxiety and worries.
