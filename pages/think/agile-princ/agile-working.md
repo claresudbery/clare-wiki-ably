@@ -35,13 +35,12 @@ permalink: /pages/think/agile-princ/Agile-Ways-Of-Working
 - **Daily**:
   - Standups to walk the board and discuss the previous and upcoming days’ work. Use the board as an anchor, focusing on user stories rather than individuals
 - **Fortnightly**: 
-  - Retrospectives
-  - Planning meetings: Introduce upcoming work to the team and do some estimation
+  - **Retrospectives**
+  - **Planning meetings**: Introduce upcoming work to the team and do some estimation
 - **Ad hoc**:
-  - problem hypothesis: creates a user column in Trello
-  - Backlog refinement: Three amigos get together to agree that user stories (already written) are “Ready” and can go into the Ready column. Prioritisation also happens at this point.
-  - Kick-off: Three amigos get together to discuss a new piece of work with developer(s), just in time
-  - Desk check (some people call this sign-off but I don’t like the bureaucratic implications - I feel like there’s another better title than check-in, but my mind has gone blank)
+  - **Backlog refinement**: Three amigos get together to agree that user stories (already written) are “Ready” and can go into the Ready column. Prioritisation also happens at this point.
+  - **Kick-off**: Three amigos get together to discuss a new piece of work with developer(s), just in time
+  - **Desk check** (some people call this sign-off but I don’t like the bureaucratic implications - I feel like there’s another better title than check-in, but my mind has gone blank)
 
 ### Extra:
  
