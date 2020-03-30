@@ -10,7 +10,8 @@ permalink: /pages/think/life/Health
 
 #### Meg John and Justin: Podcast and Resources on Stress and Coronavirus
 
-- [The wonderful Meg John and Justin](https://megjohnandjustin.com/you/stress-and-coronavirus/)
+- [The wonderful Meg-John and Justin on stress](https://megjohnandjustin.com/you/stress-and-coronavirus/)
+- [...and on love](https://megjohnandjustin.com/relationships/love-in-the-time-of-covid-19-2/)
 
 #### Unfuck your brain
 
