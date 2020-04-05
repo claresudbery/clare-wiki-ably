@@ -88,6 +88,7 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - It's different to ordinary 'flu in many ways, and will have a more significant impact (see articles / links below).
 - Useful links / articles:
   - (I make no claims for the accuracy about anything presented in any of these links)
+  - [animated video of what happens inside your body](https://www.youtube.com/watch?v=BtN-goy9VOY)
   - [LRB article shared by Kat Arney](https://www.lrb.co.uk/the-paper/v42/n05/rupert-beale/short-cuts)
   - [Virus expert interviewed by C4 news](https://youtu.be/dcJDpV-igjs)
   - [US article on why the virus is genuinely worrying and why you should stay at home](https://blogs.scientificamerican.com/observations/preparing-for-coronavirus-to-strike-the-u-s/)
