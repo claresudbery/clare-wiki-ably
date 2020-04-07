@@ -12,3 +12,4 @@ permalink: /pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL
     - It's not recommended to have Windows Insider on your main machine
     - Instead, create a VM and run Windows Insider there - [follow the instructions here](https://www.windowscentral.com/how-create-virtual-machine-using-hyper-v-test-windows-10-insider-builds).
         - Note that if you can't get to Hyper-V Manager from the Start menu, go to Windows Administrative Tools and you'll find it in there.
+        - Once you're in Hyper-V Manager, you have to select the desktop under Hyper-V Manager in the tree on the left before the relevant parts of the Action menu will appear.
