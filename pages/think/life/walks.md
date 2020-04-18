@@ -21,3 +21,8 @@ permalink: /pages/think/life/Walks-And-Beauty-Spots
 - East Lancs Railway
 - Peel Tower and The Shoulder of Mutton, Ramsbottom
 - Ribblehead Viaduct
+
+### Rest of the UK
+
+- [Devil's Pulpit, Stirling, Scotland](https://www.atlasobscura.com/places/devils-pulpit) - featured on BBC TV series "The Next", where it was called Calderwood Falls. Apparently it's hard to reach though!
+![Devil's Pulpit](/resources/images/devils-pulpit-waterfall.jpg)
