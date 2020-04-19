@@ -4,6 +4,20 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/Health
 ---
 
+## Yoga
+
+- [Hip openers](https://youtu.be/FhcZuQRC-mI), for people who spend all day sitting at a desk
+  - Wide-legged child, same as child but with knees apart, hips sitting on heels
+    - or lie on back, holding knees apart and pulling up to chest
+  - Low lunge, knee over ankle, back knee on ground
+    - or half happy baby lying on back
+  - Lizard, like low lunge but with foot on outer edge of hand
+    - you can roll the front leg outwards if you like - make sure to flex at ankle and rotate hip, knee and ankle all in same direction
+  - Pigeon lunge on the ground
+    - or the gentler alternative, lying on your back and doing eye of the needle
+  - Warrior 2 pose (front foot facing forward, back foot parallel to back of mat, head facing over front foot, arms out, gaze wide, front hip knee and ankle aligned, squeeze into the mid line)
+
+
 ## COVID-19 / coronavirus / Sars-CoV-2
 
 ### Staying sane during the COVID-19 crisis
