@@ -16,6 +16,7 @@ permalink: /pages/think/life/Health
   - Pigeon lunge on the ground
     - or the gentler alternative, lying on your back and doing eye of the needle
   - Warrior 2 pose (front foot facing forward, back foot parallel to back of mat, head facing over front foot, arms out, gaze wide, front hip knee and ankle aligned, squeeze into the mid line)
+  ![hip yoga](/resources/images/hip-yoga.jpeg)
 
 
 ## COVID-19 / coronavirus / Sars-CoV-2
