@@ -37,6 +37,12 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 - Add bullet list: Cmd + Shift + 8
 - [Other gmail shortcuts](https://blog.hubspot.com/sales/gmail-keyboard-shortcuts)
 
+## Hangouts
+
+- To avoid playing whackamole with the infuriating toolbar at the bottom...
+  - To mute/unmute yourself: Cmd + D (Ctrl + D in Windows)
+  - To toggle video: Cmd + E (Ctrl + E in Windows)
+
 ## Slack
 
 ### Useful Slack shortcuts

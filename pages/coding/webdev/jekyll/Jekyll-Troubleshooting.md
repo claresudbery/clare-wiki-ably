@@ -129,7 +129,7 @@ curl https://cli-assets.heroku.com/install.sh | sh
 
 ## Jekyll installation for windows
 * Here: https://jekyllrb.com/docs/installation/windows/
-* First I installed the Windows subsystem for linux: https://docs.microsoft.com/en-gb/windows/wsl/install-win10
+* First I [installed the Windows subsystem for linux (WSL)](/pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL)
 * Then I basically ran all the following commands (see below for some of the explanation):
 	* sudo apt update && sudo apt upgrade
 	* sudo apt-get update -y && sudo apt-get upgrade -y
