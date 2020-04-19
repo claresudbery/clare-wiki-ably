@@ -14,7 +14,7 @@ permalink: /pages/coding/infra/Infrastructure-Resources
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
-- [cadogan/infra (PRIVATE)](https://github.com/claresudbery/cadogan)
+- [cadogan/infra (PRIVATE)](https://github.com/claresudbery/Cadogan/tree/master/infra)
     - See infra sub-folder
 - [Root-Scripts (PRIVATE)](https://github.com/claresudbery/Root-Scripts)
     - My own root scripts, installed on all machines I use.
