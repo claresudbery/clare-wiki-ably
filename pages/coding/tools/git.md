@@ -6,7 +6,7 @@ permalink: /pages/coding/tools/Git
 
 ## Git Misc
 
-- [ohshitgit.com](https://ohshitgit.com/) - A lovely little site by the wonderful Katie Sylor-Miller, designed to get you out of those horrible git messes you might get yourself in, using simple language.
+- [ohshitgit.com](https://ohshitgit.com/) - A lovely little site by the wonderful [Katie Sylor-Miller](https://twitter.com/ksylor), designed to get you out of those horrible git messes you might get yourself in, using simple language.
 
 ## GitHub Repos 
 
