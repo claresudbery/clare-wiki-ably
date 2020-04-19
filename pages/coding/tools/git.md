@@ -4,6 +4,10 @@ location: "pages/coding/tools/leaf"
 permalink: /pages/coding/tools/Git
 ---
 
+## Git Misc
+
+- [ohshitgit.com](https://ohshitgit.com/) - A lovely little site by the wonderful Katie Sylor-Miller, designed to get you out of those horrible git messes you might get yourself in, using simple language.
+
 ## GitHub Repos 
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
