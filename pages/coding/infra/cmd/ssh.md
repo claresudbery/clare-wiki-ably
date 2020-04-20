@@ -1,0 +1,73 @@
+---
+layout: page
+location: pages/coding/infra/cmd/leaf
+permalink: /pages/coding/infra/cmd/SSH-Access
+---
+## SSH Access to Servers (Mac and Windows)
+
+  - \!\! Remember your backend code might be running in a docker
+    container, so you won’t see the code directly on the instance – you
+    have to look into the docker container
+      - To see running docker instances: **sudo docker ps -a**
+  - To ssh direct into instance, you can use a pem file
+  - To copy files, see “Copying Files From an SSH-ed Instance” below
+  - Ssh access: These are the commands to run on command line:
+      - \!\! It’s not the same on Windows – see below
+      - This: ssh -i "your-pem-file.pem"
+        [<span class="underline">ubuntu@\[ip address
+        here\]</span>](mailto:ubuntu@54.229.230.165)
+      - Your pem file has to be in same path - or specify exact path
+      - To find the url: Go to EC2 instance, select in EC2, bottom right
+        see public IPv4 and domain IPv4 - one is just numbers, one is
+        longer with letters, either one of those will do
+      - Note that each url must be prefixed by user name
+          - For instances which are spawned by EBS, the user is likely
+            to be ec2-user
+      - To ssh out again, type **logout**
+  - \!\!On Windows, use Putty.
+      - Comprehensive instructions for setting this up here:
+        [<span class="underline">https://linuxacademy.com/howtoguides/posts/show/topic/17385-use-putty-to-access-ec2-linux-instances-via-ssh-from-windows</span>](https://linuxacademy.com/howtoguides/posts/show/topic/17385-use-putty-to-access-ec2-linux-instances-via-ssh-from-windows)
+      - Once you’re set up, this is how you ssh in:
+          - Start the PuTTY utility
+          - Enter host name,
+              - eg
+                [<span class="underline">ubuntu@</span>](mailto:ubuntu@34.251.102.228)\[ip
+                address\]
+          - Expand the SSH section on the left and click Auth
+          - Browse for ppk file
+          - Click Open
+          - To ssh out again, type **logout**
+          - For more on how to use PuTTY, see PuTTY section below
+
+## Copying Files From an SSH-ed Instance
+
+  - To copy files, use SCP command or PSCP on Windows with Putty
+    installed (see above)
+      - SCP on a Mac:
+          - scp -i "\[path to file\]"
+            [<span class="underline">ubuntu@\[ip
+            address\]:/home/ubuntu</span>](about:blank)
+          - \!\! Note that you might only have permission to copy into
+            home folder
+          - That command (^) copies files from local machine to ssh-ed
+            machine
+          - To do it the other way around, just swap source and target
+      - PSCP in Windows with PuTTY:
+          - Copying files from the ssh-ed machine to the outside world:
+              - First create a saved host config:
+                  - In PuTTY, set up a host config
+                  - Then instead of clicking Open, select Sessions (top
+                    left)
+                  - Enter a name under Saved Sessions
+                  - Click Save
+                  - Now if you want that host config again, you can just
+                    click Load
+              - Now in a command prompt: **pscp
+                ec2-user@SavedHost:/folder/myfile.txt C:\\Temp**
+                  - **SavedHost** is your saved PuTTY host config.
+                  - **In this case ec2-user is the user you are using to
+                    log in to the remote server**
+                  - This will copy the file from the remote SSH-ed host
+                    to your local machine.
+              - More here:
+                [<span class="underline">https://it.cornell.edu/managed-servers/transfer-files-using-putty</span>](https://it.cornell.edu/managed-servers/transfer-files-using-putty)

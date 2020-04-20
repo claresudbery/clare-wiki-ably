@@ -90,3 +90,9 @@ permalink: /pages/coding/infra/cloud/Docker
     whole bunch of entries under the credHelpers key which indicate that
     the gcloud tool should be used to obtain the required token (for the
     various gcr.io registry names)
+## Get into a docker container from outside and run commands
+
+  - To get into a docker container from outside:
+      - This: **sudo docker ps**
+      - Then this (fill in id): **sudo docker exec –it \[id\]
+        /bin/bash**
