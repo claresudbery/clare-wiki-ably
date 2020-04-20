@@ -25,3 +25,7 @@ permalink: /pages/think/events/workshops/Retros
     - Keep going until you are out of time
     - You can set a time limit for each card if you like
 
+## Storyboard Retro
+
+- Outcome of a "storyboard" retro format (PRIVATE): `2018-02-09_Retro-storyboard.JPG` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
+- The way this worked was that people in groups drew pictures representing what their desired future would look like at the end of the next sprint, and then played them back to the wider group.

@@ -17,8 +17,8 @@ permalink: /pages/coding/tools/Spring-Boot
   - Appender tells whether logs go to file or console or whatever
   - maxHistory=5 means 5 days
   - max file size is 5Mb – if a file fills up, then an index is appended
-    and a new file created (eg cdg.log for current and
-    cdg.2017-12-01.1.log for filled up log), and the previous file is
+    and a new file created (eg mything.log for current and
+    mything.2017-12-01.1.log for filled up log), and the previous file is
     renamed with the date stamp of the date the file filled up
   - default log location is same location as jar file
 
@@ -28,7 +28,7 @@ permalink: /pages/coding/tools/Spring-Boot
     src/main/resources/Application.yml
   - How are settings from application.yml used?
       - See VendorProperties
-        (cdg-backend\\src\\main\\java\\com\\cdg\\backend\\config\\VendorProperties.java)
+        (myproject-backend\\src\\main\\java\\com\\myproject\\backend\\config\\VendorProperties.java)
       - This class gets injected into most other classes using
         SpringBoot’s default dependency injection.
       - For instance, you’ll see private var browserCacheTime in

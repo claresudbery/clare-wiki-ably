@@ -19,7 +19,7 @@ permalink: /pages/coding/tools/Gradle
           - First method:
               - Top right, click the dropdown next to the green Play
                 button
-              - If you already have cdg-backend \[bootRun\], select that
+              - If you already have myproject-backend \[bootRun\], select that
                 then click the green debug icon to the right
               - Otherwise: Select Edit Configurations
               - Select Defaults | Gradle on the left

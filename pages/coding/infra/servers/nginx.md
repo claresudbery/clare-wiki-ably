@@ -247,3 +247,13 @@ permalink: /pages/coding/infra/servers/Nginx
           - (basically you set up the listeners on the load balancer to
             configure both port 80 and 443 to send traffic to each
             instance through port 80)
+
+
+## Detailed Nginx Diagram
+
+- Cadogan Nginx Diagram (PRIVATE): `Nginx Diagram.JPG` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
+
+
+## Simpler Nginx Diagram
+
+- Cadogan Nginx Diagram (simpler) (PRIVATE): `Nginx Diagram simpler.jpg` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj

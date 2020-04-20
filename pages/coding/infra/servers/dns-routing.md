@@ -1,7 +1,7 @@
 ---
 layout: page
 location: pages/coding/infra/servers/leaf
-permalink: /pages/coding/infra/servers/DNS
+permalink: /pages/coding/infra/servers/DNS-And-Routing
 ---
 ## Diagrams
 
@@ -57,3 +57,18 @@ permalink: /pages/coding/infra/servers/DNS
     points documents.example.com to docs.example.com. When someone
     visits documents.example.com they will see the exact same content
     as docs.example.com.
+
+
+## Simple DNS Diagram
+
+- Cadogan Simple DNS Diagram (PRIVATE) `Simple DNS Diagram.jpg` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
+
+
+## Detailed DNS Diagram
+
+- Cadogan DNS diagram - More Detail (PRIVATE): `More Detail.jpg` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
+
+
+## F5 and DNS
+
+- More on DNS stuff under F5 load balancer: /pages/coding/infra/cloud/F5-Load-Balancer
