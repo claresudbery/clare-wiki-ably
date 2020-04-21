@@ -6,7 +6,10 @@ permalink: /pages/think/life/Health
 
 ## Yoga
 
-- [Hip openers](https://youtu.be/FhcZuQRC-mI), for people who spend all day sitting at a desk
+### Hip Openers
+
+- [Yoga video of suggested hip openers](https://youtu.be/FhcZuQRC-mI), for people who spend all day sitting at a desk
+- Here's my attempt to describe them in words I'll understand (so I don't have to watch a video every time):
   - Wide-legged child, same as child but with knees apart, hips sitting on heels
     - or lie on back, holding knees apart and pulling up to chest
   - Low lunge, knee over ankle, back knee on ground
