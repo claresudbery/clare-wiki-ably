@@ -7,6 +7,7 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 ## Docs and Blog Posts
 
 - [The Tech Lead's New Project Checklist](https://insimpleterms.blog/the-tech-leads-new-project-checklist)
+- [Criteria to Apply to Third Party Vendors when considering build vs buy](https://insimpleterms.blog/criteria-to-apply-to-third-party-vendors)
 - [Other posts on My InSimpleTerms blog](https://insimpleterms.blog/category/technical-leadership) (Technical Leadership category)
 
 ## Misc
