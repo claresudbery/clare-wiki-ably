@@ -8,7 +8,9 @@ permalink: /pages/think/life/Health
 
 ### Hip Openers
 
-- [Yoga video of suggested hip openers](https://youtu.be/FhcZuQRC-mI), for people who spend all day sitting at a desk
+I've had problems with my hips for a while, almost certainly because I spend so much time sitting at a desk. But lockdown is worse, because I'm moving around even less than normal.
+
+- [Yoga video of suggested hip openers](https://youtu.be/FhcZuQRC-mI), for people who spend all day sitting down.
 - Here's my attempt to describe them in words I'll understand (so I don't have to watch a video every time):
   - Wide-legged child, same as child but with knees apart, hips sitting on heels
     - or lie on back, holding knees apart and pulling up to chest
