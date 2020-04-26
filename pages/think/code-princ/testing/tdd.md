@@ -1,7 +1,7 @@
 ---
 layout: page
-location: pages/think/code-princ/leaf
-permalink: /pages/think/code-princ/TDD
+location: pages/think/code-princ/testing/leaf
+permalink: /pages/think/code-princ/testing/TDD
 ---
 
 ## GitHub Repos
