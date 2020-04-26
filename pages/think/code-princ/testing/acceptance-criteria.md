@@ -31,7 +31,7 @@ Then we will provide the admin team with a spreadsheet containing product ID and
 And they will update the product ID
 And finally users will see a product ID that has been updated to replace the 'X' with the correct prefix
 
-I didn't feel entirely happy with this, so I asked our experienced Business Analyst for advice, and this is what he said: 
+I didn't feel entirely happy with this, so I asked our experienced Business Analyst [Joe McGrath](https://joemc.gr/) for advice, and this is what he said: 
 
 - "I’d try to isolate the system under test, which I think is a script/process that will run against the database.
 - Focus on the task at hand - fixing the data, rather than describing what users will see.
