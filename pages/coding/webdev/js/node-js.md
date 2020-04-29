@@ -19,7 +19,7 @@ permalink: /pages/coding/webdev/js/Node-JS
 
 `node --inspect program.js`
 
-where `program.js` is your entry point - in one project I worked for it was `server.js`.
+where `program.js` is your entry point - in one project I worked for it was `server.js` (didn't actually need the `.js` - could just put `server`).
 
 - Use Cmd + Shift + P to bring up the Visual studio code command palette and type in "toggle auto attach". If you're already debugging, you can turn auto attach on and off via the orange status bar at the bottom.
 
