@@ -95,6 +95,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         address\]</span>](mailto:csudbery@etsy.com)**
     
       - This to start the ssh-agent: **eval "$(ssh-agent -s)"**
+
+      - If you've copied a key from elsewhere and you're on OSX or Linux and you get the error "Unprotected private key file":
+      ```
+      sudo chmod 600 ~/.ssh/id_rsa
+      sudo chmod 600 ~/.ssh/id_rsa.pub
+      ```
     
       - This to edit your ssh config file to automatically load keys
         into the ssh-agent and store passphrases in your keychain: **vim
