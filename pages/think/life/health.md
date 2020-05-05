@@ -33,15 +33,9 @@ I've had problems with my hips for a while, almost certainly because I spend so 
 - [The wonderful Meg-John and Justin on stress](https://megjohnandjustin.com/you/stress-and-coronavirus/)
 - [...and on love](https://megjohnandjustin.com/relationships/love-in-the-time-of-covid-19-2/)
 
-#### new
+#### Resilience 
 
-Add links to my covid page: 
-
-https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share
-
-https://www.theukdomain.uk/resilience-during-coronavirus/
-
-And coping strategies link (not sure thread) from forum 
+[Resilience during coronavirus](https://www.theukdomain.uk/resilience-during-coronavirus/)
 
 #### Unfuck your brain
 
@@ -125,6 +119,7 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - Interesting article [here](https://www.statnews.com/2020/02/04/two-scenarios-if-new-coronavirus-isnt-contained/) about what impact warmer weather might have, about immunity, and about what might happen if the virus becomes endemic (hangs around everywhere indefinitely) and seasonal
   - [Running remote workshops due to COVID-19](/pages/think/events/workshops/Remote-Inception)
   - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
+  - [Longform article about why coronavirus is so confusing](https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share)
   - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
       - [World map of cases and deaths](https://www.theguardian.com/world/2020/apr/07/coronavirus-world-map-which-countries-have-the-most-cases-and-deaths)
       - [Confirmed cases in your area](https://www.theguardian.com/world/2020/apr/07/coronavirus-uk-how-many-confirmed-cases-are-in-your-area-covid-19-map)
