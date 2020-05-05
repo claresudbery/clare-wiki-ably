@@ -33,6 +33,16 @@ I've had problems with my hips for a while, almost certainly because I spend so 
 - [The wonderful Meg-John and Justin on stress](https://megjohnandjustin.com/you/stress-and-coronavirus/)
 - [...and on love](https://megjohnandjustin.com/relationships/love-in-the-time-of-covid-19-2/)
 
+#### new
+
+Add links to my covid page: 
+
+https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share
+
+https://www.theukdomain.uk/resilience-during-coronavirus/
+
+And coping strategies link (not sure thread) from forum 
+
 #### Unfuck your brain
 
 - [Coping with pandemic panic](https://unfuckyourbrain.com/pandemic-panic/) - free session from Kara Loewentheil ("Harvard law school grad, feminist rockstar, and master coach").
