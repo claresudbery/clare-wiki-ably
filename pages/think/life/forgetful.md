@@ -13,3 +13,7 @@ There are certain questions that I often find myself asking, but someow never re
 It's a great tit. 
 - My recording [here](https://twitter.com/ClareSudbery/status/1244883811818713089?s=20)
 - [On Youtube](https://www.youtube.com/watch?v=fiH2VsH73g0)
+
+## What's that funny article about javascript frameworks and libraries?
+
+It's [this one](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) by [@jjperezaguinaga](https://twitter.com/jjperezaguinaga).

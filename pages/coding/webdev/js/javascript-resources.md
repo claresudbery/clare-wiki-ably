@@ -23,6 +23,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Ext JS stuff: Dropbox\IT Training\JS Stuff\SampleExtJSApp.zip
 - More sample javascript from Helix: Dropbox\IT Training\JS Stuff\SampleJavaScript.js
 - Helix general JS stuff: Helix folder in contracting folder in ClareWorking email
+- [That funny article about javascript frameworks and libraries](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) 
 
 ## Elsewhere on this site
 
