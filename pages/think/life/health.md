@@ -120,6 +120,7 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - [Running remote workshops due to COVID-19](/pages/think/events/workshops/Remote-Inception)
   - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
   - [Longform article about why coronavirus is so confusing](https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share)
+  - [Really useful article](https://www.erinbromage.com/post/the-risks-know-them-avoid-them) about how the virus spreads. Aimed at Americans, but once you get past the intro there's tons of detailed info about what you should be worried about.
   - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
       - [World map of cases and deaths](https://www.theguardian.com/world/2020/apr/07/coronavirus-world-map-which-countries-have-the-most-cases-and-deaths)
       - [Confirmed cases in your area](https://www.theguardian.com/world/2020/apr/07/coronavirus-uk-how-many-confirmed-cases-are-in-your-area-covid-19-map)
