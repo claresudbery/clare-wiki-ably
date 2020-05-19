@@ -4,7 +4,7 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/Walks-And-Beauty-Spots
 ---
 
-## Walks / Beauty Spots / Good Places to Visit
+## Walks / Cycle Rides / Beauty Spots / Good Places to Visit
 
 ### Manchester and surrounding area
 
@@ -12,6 +12,8 @@ permalink: /pages/think/life/Walks-And-Beauty-Spots
 - Reddish Vale, Reddish
     - in quick cycling distance of Levenshulme
     - contains a viaduct, woodland walks, river, paddling spots, cycle paths, community garden, community petting farm
+    - you can get in one end from Reddish, and the other end from the mill by Portwood motorway roundabout in Stockport
+    - there's a lovely cycle track that joins both ends through the forest
 - Goyt Valley, Cheshire
 - Winter Hill, Bolton
 - Daisy Nook, Oldham
@@ -21,6 +23,11 @@ permalink: /pages/think/life/Walks-And-Beauty-Spots
 - East Lancs Railway
 - Peel Tower and The Shoulder of Mutton, Ramsbottom
 - Ribblehead Viaduct
+- Werneth Low (forest + water + visitors centre - near Marple)
+- Clayton Vale (river plus forest plus beautiful walks and cycle track - one end is adjacent to Phillips Park near Etihad stadium, the other end is on the way to Oldham)
+- Phillips Park (near Etihad stadium, there's a nice route there along the canal)
+- Cycle track that goes from Debdale reservoir to the canal - really green and leafy and surprisingly long (and from the canal you can cycle along the canal to Phillips Park and Clayton Vale - the towpath is pretty bumpy in places though)
+
 
 ### Rest of the UK
 
