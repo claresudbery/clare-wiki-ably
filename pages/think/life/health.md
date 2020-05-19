@@ -107,18 +107,15 @@ worms aren’t worrying.
 
 NB: This collection is already a couple of weeks old. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 
-- It is *a* coronavirus, not *the* coronavirus. There are versions of the common cold that are also coronaviruses. 
-  - This strain is called COVID-19
-  - It's different to ordinary 'flu in many ways, and will have a more significant impact (see articles / links below).
+- Zoom fatigue:
+  - [National Geographic article about Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)
+  - [Suggestions for countering Zoom fatigue](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
+  - [The 5 levels of remote work and why you're probably at level 2](https://medium.com/swlh/the-five-levels-of-remote-work-and-why-youre-probably-at-level-2-ccaf05a25b9c)
 - Useful links / articles:
   - (I make no claims for the accuracy about anything presented in any of these links)
   - [animated video of what happens inside your body](https://www.youtube.com/watch?v=BtN-goy9VOY)
-  - [LRB article shared by Kat Arney](https://www.lrb.co.uk/the-paper/v42/n05/rupert-beale/short-cuts)
-  - [Virus expert interviewed by C4 news](https://youtu.be/dcJDpV-igjs)
-  - [US article on why the virus is genuinely worrying and why you should stay at home](https://blogs.scientificamerican.com/observations/preparing-for-coronavirus-to-strike-the-u-s/)
   - Interesting article [here](https://www.statnews.com/2020/02/04/two-scenarios-if-new-coronavirus-isnt-contained/) about what impact warmer weather might have, about immunity, and about what might happen if the virus becomes endemic (hangs around everywhere indefinitely) and seasonal
   - [Running remote workshops due to COVID-19](/pages/think/events/workshops/Remote-Inception)
-  - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
   - [Longform article about why coronavirus is so confusing](https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share)
   - [Really useful article](https://www.erinbromage.com/post/the-risks-know-them-avoid-them) about how the virus spreads. Aimed at Americans, but once you get past the intro there's tons of detailed info about what you should be worried about.
   - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
@@ -128,4 +125,16 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - A [WHO app](https@//www.whatsapp.com/coronavirus/who) with regularly updated information:
       * Type in 'hi' to begin the menu.
       * Has updates on every aspect of the virus - numbers if you want them, how to protect yourself and others, symptoms etc etc etc
+
+### Older covid stuff you probably already know
+
+- It is *a* coronavirus, not *the* coronavirus. There are versions of the common cold that are also coronaviruses. 
+  - This strain is called COVID-19
+  - It's different to ordinary 'flu in many ways, and will have a more significant impact (see articles / links below).
+- Useful links / articles:
+  - (I make no claims for the accuracy about anything presented in any of these links)
+  - [An early article about some of the science](https://www.lrb.co.uk/the-paper/v42/n05/rupert-beale/short-cuts)
+  - [Virus expert interviewed by C4 news](https://youtu.be/dcJDpV-igjs)
+  - [US article on why the virus is genuinely worrying and why you should stay at home](https://blogs.scientificamerican.com/observations/preparing-for-coronavirus-to-strike-the-u-s/)
+  - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
   - Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
