@@ -13,6 +13,7 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 ## Types of workshop
 
 - Five whys
+- Futurespective
 - Value stream mapping
 - Empathy mapping
 - Stakeholder empathy mapping
