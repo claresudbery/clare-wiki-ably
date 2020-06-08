@@ -116,6 +116,7 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
 - Useful links / articles:
   - (I make no claims for the accuracy about anything presented in any of these links)
   - [animated video of what happens inside your body](https://www.youtube.com/watch?v=BtN-goy9VOY)
+  - [Explanation of why dividing by population size is not a simple exercise](https://twitter.com/ct_bergstrom/status/1249930293928030209?s=21)
   - Interesting article [here](https://www.statnews.com/2020/02/04/two-scenarios-if-new-coronavirus-isnt-contained/) about what impact warmer weather might have, about immunity, and about what might happen if the virus becomes endemic (hangs around everywhere indefinitely) and seasonal
   - [Running remote workshops due to COVID-19](/pages/think/events/workshops/Remote-Inception)
   - [Longform article about why coronavirus is so confusing](https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share)
