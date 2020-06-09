@@ -23,7 +23,7 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 - Elevator pitch
 - Trade-off sliders 
 - CRC cards
-	- blank CRC cards 
+	- blank ("naked") CRC cards 
 - Value proposition map / value proposition design
 	- [Real example here](https://github.com/claresudbery/clare-tech/blob/master/resources/images/value-proposition-map.png) (Clare only) 
 	- [Blank example here](value-proposition-map-blank.jpeg)
