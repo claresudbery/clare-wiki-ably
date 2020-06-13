@@ -139,6 +139,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - Calling javascript code from Ruby:
         [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
 
+      - Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
+
 ## Symbols
 
   - Symbols are things that look like this **:symbol**
@@ -159,7 +161,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - A variable that has a string as its value will be mutable, but a
     symbol is immutable, and stored in a single place in memory
 
-## Using Rspec for Testing
 
-- [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
+
+
 
