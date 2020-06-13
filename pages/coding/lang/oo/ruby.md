@@ -16,6 +16,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Other Links
 
 - Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
+- [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff)
 
 ## Tutorials
 
