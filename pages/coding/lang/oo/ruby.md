@@ -17,6 +17,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
 
+## Tutorials
+
+- [TDD and OOP and Ruby from Sandi Metz](https://www.sandimetz.com/99bottles/sample)
+- [Learn TDD in Ruby](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
+- [Getting started wiuth Ruby on Rails](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
+
 ## Miscellaenous
 
   - Symbols do hold strings of characters, they are just immutable

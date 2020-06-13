@@ -19,6 +19,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Useful Links
 
 - [Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/)
+- [Using spacy.io to do AI, NLP, deep learning with Python](/pages/coding/data/Machine-Learning#Spacy.io)
 
 ## Misc
 
