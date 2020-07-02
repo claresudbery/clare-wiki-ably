@@ -79,3 +79,8 @@ permalink: /pages/coding/infra/cmd/SSH-Access
 - You can configure the user name (eg ec2-user) so you don't have to type it in every time - on the left, Connection | Data and then **Auto-login username**. Don't forget to go back to Session (left) and click Save.
 - When you make changes to a config, you have to go back to Session (top left) and click Save for those changes to stick.
 - You can use **SSH tunnel** (on the left - Connection | SSH | Tunnels) to attach a port to an SSH configuration and forward from that port to your server via SSH (you have to manually open the session first for it to work).
+
+## Copying files between a remote AWS SSM instance and your local machine
+
+- SSM - AWS Systems Manager Session Manager.
+- [Details here](https://www.tripwire.com/state-of-security/security-data-protection/cloud/aws-session-manager-enhanced-ssh-scp-capability/)
