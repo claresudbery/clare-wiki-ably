@@ -10,12 +10,14 @@ For the equivalent of gitbash aliases - where you create short keywords that you
 
 - If you don't already have it, create the following folder: `C:\Users\[your-user-name]\Documents\WindowsPowerShell`
 - Ditto the following file: `C:\Users\[your-user-name]\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
-- In that file, add a function for each alias. So for instance, if you want an alias that takes you to a particular folder: 
+- In that file, add a function for each alias. So for instance, if you want an alias that takes you to a particular folder:  
+
 ```bash
 function myfolder { cd C:/development/parent-folder/myfolder }
 ```
 - Open up Powershell in admin mode (`Windows key + X, A` or right-click on it in Windows start menu and choose **Run as administrator**)
-- Run the following two commands in Powershell:
+- Run the following two commands in Powershell:  
+
 ```
 set-executionpolicy remotesigned
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
