@@ -20,6 +20,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/)
 - [Using spacy.io to do AI, NLP, deep learning with Python](/pages/coding/data/Machine-Learning#Spacy.io)
+- [Python Software Foundation](https://www.python.org/psf/)
+- [Python wiki](https://wiki.python.org/moin/CompLangPython)
+
 
 ## Misc
 
