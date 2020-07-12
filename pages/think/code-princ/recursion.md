@@ -20,3 +20,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Other Recursion Examples
 
 - The [Subset Sum problem](https://www.geeksforgeeks.org/subset-sum-problem-dp-25/) is NP-Complete, and there are more scalable solutions available than recursion - but it's interesting (I [used recursion myself initially](https://github.com/claresudbery/Reconciliate/blob/5f778e5631b64afd7f6154edd0db3f296421777d/Console/Reconciliation/Matchers/MultipleAmountMatcher.cs#L71), but it so very did NOT scale)
+
+## Writing on Recursion
+
+- I've written [a blog post here](http://insimpleterms.blog/recursion-recursive-functions) attempting to explain recursion to people who are new to the concept.
