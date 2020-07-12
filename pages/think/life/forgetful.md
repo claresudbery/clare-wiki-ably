@@ -17,3 +17,7 @@ It's a great tit.
 ## What's that funny article about javascript frameworks and libraries?
 
 It's [this one](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) by [@jjperezaguinaga](https://twitter.com/jjperezaguinaga).
+
+## What's that band from Dublin called?
+
+Fontaines DC
