@@ -110,6 +110,7 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
 - Zoom fatigue:
   - [National Geographic article about Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)
   - [Suggestions for countering Zoom fatigue](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
+  - [Why Zoom calls are exhausting](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
 - Remote working at scale:
   - [remote work at scale](https://beau.blog/2020/03/remote-work-at-scale/)
   - [The 5 levels of remote work and why you're probably at level 2](https://medium.com/swlh/the-five-levels-of-remote-work-and-why-youre-probably-at-level-2-ccaf05a25b9c)

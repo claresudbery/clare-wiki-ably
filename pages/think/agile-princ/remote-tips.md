@@ -251,3 +251,8 @@ This blog has a collection of cool ideas for the remote meeting fatigue
 breakers ie icebreakers, energisers.
 
 [https://blog.mural.co/online-warm-ups-energizers](https://blog.mural.co/online-warm-ups-energizers)
+
+## Articles
+
+- [The Five Levels of Remote Work — and why you’re probably at Level 2](https://medium.com/swlh/the-five-levels-of-remote-work-and-why-youre-probably-at-level-2-ccaf05a25b9c)
+- [Why Zoom calls are exhausting](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
