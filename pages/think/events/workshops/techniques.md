@@ -19,7 +19,9 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 - Stakeholder empathy mapping
 - Event storming
 - Service mapping
+- [Wardley mapping](https://en.wikipedia.org/wiki/Wardley_map)
 - User journey / story mapping
+- [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework)
 - Elevator pitch
 - Trade-off sliders 
 - CRC cards
