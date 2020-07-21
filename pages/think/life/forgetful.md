@@ -21,3 +21,12 @@ It's [this one](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-
 ## What's that band from Dublin called?
 
 Fontaines DC
+
+## Where is our cyberdojo?
+
+Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSalPairing Cyberdojo coderdojo
+
+## Exploit of a mom / SQL Mom / Little Bobby Drop Tables (xkcd comic)
+
+![SQL Mom](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+From [here](https://xkcd.com/327/)
