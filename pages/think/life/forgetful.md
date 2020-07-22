@@ -30,3 +30,13 @@ Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSa
 
 ![SQL Mom](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
 From [here](https://xkcd.com/327/)
+
+## What do dock leaves look like?
+
+They sometimes have green/brown flowers that grow straight up vertically on stalks 
+
+/Dock1.jpeg
+
+/Dock2.jpeg
+
+/Dock3.jpeg
