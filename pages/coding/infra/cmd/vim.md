@@ -108,6 +108,9 @@ permalink: /pages/coding/infra/cmd/Vim
       - **v** is visual mode
       - **iw** is inner word
       - **p** is put
+  - Equivalent of "save as":
+    - `:w filename` will save the file contents into `filename`
+    - !! DANGER !! This is *not* the same as Save As in most contexts, because you are still at this point in your original file. Any edits you make after this will be made to the original file, not to the new copy.
 
 ## Vertical columns of text (like alt click)
 
