@@ -25,6 +25,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - TDD techniques: http://codemanship.co.uk/parlezuml/blog/?postid=987
 - [Summary of the "Is TDD dead?" controversy started at RailsConf by David Heinemeier Hansson](https://pythontesting.net/agile/is-tdd-dead/)
 - [Martin Fowler's write-up of the debate about Is TDD Dead between himself, Kent Beck and David Heinemeier Hansson](https://martinfowler.com/articles/is-tdd-dead/)
+- [Kent Beck's sarcastic (but instructive) "TDD is dead" Facebook post](https://www.facebook.com/notes/kent-beck/rip-tdd/750840194948847)
 - Twitter thread:https://twitter.com/mattwynne/status/1285239134232158215?s=21
 - Another twitter thread:  https://twitter.com/mikehadlow/status/1263819765900095491?s=21
     - In response to that thread: "Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this: news.ycombinator.com/item?id=3033446"
