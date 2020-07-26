@@ -15,7 +15,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Docs And Blog Posts
 
-- (not published yet - needs filling in) [My refactoring articles on Martin Fowler's site](TO DO)
+- [My refactoring article(s) on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/tdd) (TDD category)
 
 ### Recommended reads before Webinar panel on ["Why hasn't TDD taken over the world yet?"](https://cucumber.io/resources/webinars/tdd-roundtable-series/)
