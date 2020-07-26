@@ -40,3 +40,7 @@ They sometimes have green/brown flowers that grow straight up vertically on stal
 /Dock2.jpeg
 
 /Dock3.jpeg
+
+## What's that term that gets used in relation to TDD and which people often remark on the lack of, when interviewing candidates and pairing with them?
+
+Answer: [Sliming](https://clare-wiki.herokuapp.com/pages/think/code-princ/testing/TDD#sliming) (verb: to slime).
