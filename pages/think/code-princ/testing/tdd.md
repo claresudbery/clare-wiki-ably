@@ -18,6 +18,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [My refactoring article(s) on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
 - [My InSimpleTerms blog - TDD category](https://insimpleterms.blog/category/tdd) (TDD category)
 - [The concept of self-testing code](https://martinfowler.com/bliki/SelfTestingCode.html)
+- [Different styles of TDD and when we should use them - talk by Sandro Mancuso](https://youtu.be/KyFVA4Spcgg)
 
 ### Recommended reads before Webinar panel on ["Why hasn't TDD taken over the world yet?"](https://cucumber.io/resources/webinars/tdd-roundtable-series/)
 
