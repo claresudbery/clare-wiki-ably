@@ -32,3 +32,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Misc
 
 - [TDD tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=65ff390c-ddb3-45f6-9de5-762606dfc826&query=tag%1FTDD%1FtagGuid%3Ad39ee366-abf9-4984-9ac7-f41d93f6460a%1Eview%3AVIEW%2FALL_NOTES&)
+
+## Tips and Terms
+
+### Sliming
+
+[Sliming](https://www.destroyallsoftware.com/screencasts/catalog/when-to-generalize-in-tdd#:~:text=When%20a%20TDDed%20test%20fails,in%20the%20%22right%22%20way.) is the technique where you make yourcode do something trivial and hard-coded just to make your test pass - it's unlikely this will end up being production code. [Nice description here from Denise Yu](http://deniseyu.github.io/leveling-up-tdd/) (scroll down a bit) 
