@@ -26,9 +26,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Summary of the "Is TDD dead?" controversy started at RailsConf by David Heinemeier Hansson](https://pythontesting.net/agile/is-tdd-dead/)
 - [Martin Fowler's write-up of the debate about Is TDD Dead between himself, Kent Beck and David Heinemeier Hansson](https://martinfowler.com/articles/is-tdd-dead/)
 - [Kent Beck's sarcastic (but instructive) "TDD is dead" Facebook post](https://www.facebook.com/notes/kent-beck/rip-tdd/750840194948847)
-- Twitter thread:https://twitter.com/mattwynne/status/1285239134232158215?s=21
-- Another twitter thread:  https://twitter.com/mikehadlow/status/1263819765900095491?s=21
-    - In response to that thread: "Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this: news.ycombinator.com/item?id=3033446"
+- [Twitter thread started by Matt Wynne as input into our webinar, encouraging people to ask questions about TDD](https://twitter.com/mattwynne/status/1285239134232158215?s=21)
+- Twitter thread by Mike Hadlow: ["I was a hard-core TDD evangelist. Now I realise it was all a mistake..."](https://twitter.com/mikehadlow/status/1263819765900095491?s=21)
+    - Response to that thread (not sure who from, sadly I lost the original tweet): "[Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this](https://news.ycombinator.com/item?id=3033446)"
 
 ## Misc
 
