@@ -17,12 +17,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [My refactoring article(s) on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
 - [My InSimpleTerms blog - TDD category](https://insimpleterms.blog/category/tdd) (TDD category)
+- [The concept of self-testing code](https://martinfowler.com/bliki/SelfTestingCode.html)
 
 ### Recommended reads before Webinar panel on ["Why hasn't TDD taken over the world yet?"](https://cucumber.io/resources/webinars/tdd-roundtable-series/)
 
 - [research paper on TDD from Petr Jasek of Aalborg University, Denmark](https://t.co/lQoS3ilFA8?amp=1)
 - TDD techniques: http://codemanship.co.uk/parlezuml/blog/?postid=987
-- https://pythontesting.net/agile/is-tdd-dead/
+- [Summary of the "Is TDD dead?" controversy started at RailsConf by David Heinemeier Hansson](https://pythontesting.net/agile/is-tdd-dead/)
+- [Martin Fowler's write-up of the debate about Is TDD Dead between himself, Kent Beck and David Heinemeier Hansson](https://martinfowler.com/articles/is-tdd-dead/)
 - Twitter thread:https://twitter.com/mattwynne/status/1285239134232158215?s=21
 - Another twitter thread:  https://twitter.com/mikehadlow/status/1263819765900095491?s=21
     - In response to that thread: "Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this: news.ycombinator.com/item?id=3033446"
