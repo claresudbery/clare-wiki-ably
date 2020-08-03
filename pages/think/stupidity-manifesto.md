@@ -24,3 +24,7 @@ This came from my talk "Let's Stop Making Each Other Feel Stupid". You can see a
 - Prioritise clarity over jargon 
 - Remember this is not idealism, it’s pragmatism
 - LET’S STOP MAKING EACH OTHER FEEL STUPID.
+
+![Stupidity-Manifesto-Part-1.png](/resources/images/Stupidity-Manifesto-Part-1.png)
+![Stupidity-Manifesto-Part-2.png](/resources/images/Stupidity-Manifesto-Part-2.png)
+![Stupidity-Manifesto-Part-2.png](/resources/images/Stop-Stupid.png)

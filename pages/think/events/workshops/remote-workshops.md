@@ -105,6 +105,7 @@ This gives you a good idea of the kind of thing we have been able to create coll
 
 ![Miro diagrams](/resources/images/remote-inception-01.PNG)
 
+
 ### Miro Tips
 
 - Download the app.
