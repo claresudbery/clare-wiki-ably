@@ -3,6 +3,7 @@ layout: page
 location: pages/coding/infra/security/leaf
 permalink: /pages/coding/infra/security/OAuth
 ---
+
 ## Historic Notes
 
   - These notes were originally written 2018
@@ -21,8 +22,7 @@ permalink: /pages/coding/infra/security/OAuth
       - This: **dev**
       - This: **cd cadogan/spring-security-oauth/samples/oauth2/tonr**
       - This: **mvn tomcat7:run**
-      - Then Visit http://localhost:8080/tonr2 in a browser and go to
-        the sparklr tab
+      - Then visit http://localhost:8080/tonr2 in a browser and go to the sparklr tab
       - More here:
         [<span class="underline">https://github.com/spring-projects/spring-security-oauth/tree/master/samples</span>](https://github.com/spring-projects/spring-security-oauth/tree/master/samples)
   - How to get things working with Gradle:
@@ -56,3 +56,6 @@ permalink: /pages/coding/infra/security/OAuth
         [<span class="underline">https://docs.spring.io/spring-security/oauth/apidocs/org/springframework/security/oauth2/client/test/BeforeOAuth2Context.html</span>](https://docs.spring.io/spring-security/oauth/apidocs/org/springframework/security/oauth2/client/test/BeforeOAuth2Context.html)
       - Documentation here:
         [<span class="underline">https://docs.spring.io/spring-security/oauth/apidocs/org/springframework/security/oauth2/client/test/BeforeOAuth2Context.html</span>](https://docs.spring.io/spring-security/oauth/apidocs/org/springframework/security/oauth2/client/test/BeforeOAuth2Context.html)
+
+
+
