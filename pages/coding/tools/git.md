@@ -139,3 +139,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         
           - Click New SSH key (top right) and give it an appropriate
             name
+
+## GitHub "A personal access token has been added to your account"
+
+* You'll receive an email titled "A personal access token has been added to your account"
+* This happens when Git for Windows credential helper acquires a personal access token on your behalf 
+* It should have happened at the same time as you saw a popup that asked for your GitHub username and password
+* If you visit https://github.com/settings/tokens you will probably see the same request probably being made repeatedly by the same device Id
+* If the above two things are not the casae, then you should worry.
+* More here: https://stackoverflow.com/questions/55615542/why-did-github-add-a-personal-access-token-even-if-i-didnt-generate-a-new-one
