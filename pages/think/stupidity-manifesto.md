@@ -4,7 +4,7 @@ location: pages/think/leaf
 permalink: /pages/think/The-Stupidity-Manifesto
 ---
 
-This came from my talk "Let's Stop Making Each Other Feel Stupid". You can see a video of the talk [here](https://www.youtube.com/watch?v=DSn47NA0rVg&t=5s).
+This "Stupidity Manifesto" came from my talk "Let's Stop Making Each Other Feel Stupid". You can see a video of the talk [here](https://www.youtube.com/watch?v=DSn47NA0rVg&t=5s).
 
 ## LET’S STOP MAKING PEOPLE FEEL STUPID. INSTEAD, LET’S…
 
