@@ -216,7 +216,7 @@ jekyll 3.7.4 | Error:  Liquid error (C:/development/clare-wiki-ably/_includes/to
 
 ### The problem
 
-It turned out this was caused by a particular line of text in a markdown file (pages\coding\infra\security\oauth.md). I found it by using the equivalent of Saff squeeze (same concept as binary search algorithm, I think?) to identify the commit that caused the problem (it was commit 77698c8 on 20/4/20, "New content from Cadogan notes"). I then used the same technique to narrow down the problematic line of text. I used "View | Show symbol | Show all characters" in Notepad++ to ty and see what the problem was and there was nothing visible. 
+It turned out this was caused by a particular line of text in a markdown file (pages\coding\infra\security\oauth.md). I found it by using the equivalent of Saff squeeze (same concept as binary search algorithm) to identify the commit that caused the problem (it was commit 77698c8 on 20/4/20, "New content from Cadogan notes"). I then used the same technique to narrow down the problematic line of text. I used "View | Show symbol | Show all characters" in Notepad++ to ty and see what the problem was and there was nothing visible. 
 
 ### The fix
 

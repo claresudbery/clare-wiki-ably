@@ -12,3 +12,4 @@ permalink: /pages/coding/data/SQL
 - [SQL query syntax notes](https://docs.google.com/document/d/1o5ecuhB5OGtzR-Un938LyWUg-SRN41w8/edit)
 - [SQL notes](https://docs.google.com/document/d/12mjiQz3qj15DwMwPOGtJi_EhM91otbK9/edit)
 - [Tons of really useful SQL examples](https://docs.google.com/document/d/1SHupcfODAGE49dLMshmofwUKbeR_bwWh/edit)
+- [PostgreSQL and PSQL](/pages/coding/data/PostgreSQL-and-PSQL)
