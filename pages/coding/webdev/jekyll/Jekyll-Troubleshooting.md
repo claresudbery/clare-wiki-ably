@@ -222,3 +222,12 @@ It turned out this was caused by a particular line of text in a markdown file (p
 
 I tried running dos2unix on that file, but it didn't work. Then agian, I ran it in GitBash. Should I have run it in Linux?
 Anyway, in the end I fixed it by manually typing out the same words again, removing the original text. So it's a bit of a mystery!
+
+## Error on jekyll serve: "warn_for_outdated_bundler_version"
+
+Full error:
+```
+C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.15.3/lib/bundler/lockfile_parser.rb:108:in `warn_for_outdated_bundler_version': You must use Bundler 2 or greater with this lockfile. (Bundler::LockfileError)
+```
+
+I ran `bundle install` and that told me to run `gem install bundler`, which worked.
