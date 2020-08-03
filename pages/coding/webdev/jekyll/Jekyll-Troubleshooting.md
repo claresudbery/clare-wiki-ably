@@ -205,3 +205,20 @@ curl https://cli-assets.heroku.com/install.sh | sh
 ## OmniAuth vulnerability
 
 - Before doing any auth stuff, check whether there is still a vulnerability in OmniAuth (see [alert here](https://github.com/claresudbery/clare-wiki-ably/network/alert/Gemfile.lock/omniauth/open) or check the front page of the `clare-wiki-ably` repo in GitHub - the alerts show up there (but NOT in notifications)
+
+## Error on jekyll serve: "invalid byte sequence in UTF-8 included in /_layouts/default.html"
+
+The full error:
+```
+Liquid Exception: Liquid error (C:/development/clare-wiki-ably/_includes/toc.html line 35): invalid byte sequence in UTF-8 included in /_layouts/default.html
+jekyll 3.7.4 | Error:  Liquid error (C:/development/clare-wiki-ably/_includes/toc.html line 35): invalid byte sequence in UTF-8 included
+```
+
+### The problem
+
+It turned out this was caused by a particular line of text in a markdown file (pages\coding\infra\security\oauth.md). I found it by using the equivalent of Saff squeeze (same concept as binary search algorithm, I think?) to identify the commit that caused the problem (it was commit 77698c8 on 20/4/20, "New content from Cadogan notes"). I then used the same technique to narrow down the problematic line of text. I used "View | Show symbol | Show all characters" in Notepad++ to ty and see what the problem was and there was nothing visible. 
+
+### The fix
+
+I tried running dos2unix on that file, but it didn't work. Then agian, I ran it in GitBash. Should I have run it in Linux?
+Anyway, in the end I fixed it by manually typing out the same words again, removing the original text. So it's a bit of a mystery!
