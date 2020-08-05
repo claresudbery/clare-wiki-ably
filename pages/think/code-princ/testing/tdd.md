@@ -12,6 +12,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Reconciliate](https://github.com/claresudbery/Reconciliate)
 - [getting-started-with-tdd-in-react](https://github.com/claresudbery/getting-started-with-tdd-in-react)
 - [BowlingGameKata-TDD-as-if-you-meant-it-](https://github.com/claresudbery/BowlingGameKata-TDD-as-if-you-meant-it-)
+- [Jon Acker's TDD katas](https://github.com/jon-acker/coding-katas)
 
 ## Docs And Blog Posts
 
