@@ -36,6 +36,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - Andy Longshaw: [Reflections on brittle tests and mocking](https://blogs.blueskyline.com/2020/07/30/this-cant-possibly-be-right/)
 
+## Ideas / Approaches
+
+- Steve Freeman: "Early XP trainings used to include a week-long “pure” project to really get the flow."
+- TDD techniques: http://codemanship.co.uk/parlezuml/blog/?postid=987
+- Steve Tooke: "All this talk of TDD, how it makes you face your design, how test doubles make things brittle, when to use mocks, when not to use mocks. Reminds me to share @sandimetz' Magic Tricks of Testing: [youtube](https://www.youtube.com/watch?v=URSWYvyc42M) / [slide deck](https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf) 
+
 ## Misc
 
 - [TDD tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=65ff390c-ddb3-45f6-9de5-762606dfc826&query=tag%1FTDD%1FtagGuid%3Ad39ee366-abf9-4984-9ac7-f41d93f6460a%1Eview%3AVIEW%2FALL_NOTES&)
