@@ -32,6 +32,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Twitter thread by Mike Hadlow: ["I was a hard-core TDD evangelist. Now I realise it was all a mistake..."](https://twitter.com/mikehadlow/status/1263819765900095491?s=21)
     - Response to that thread (not sure who from, sadly I lost the original tweet): "[Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this](https://news.ycombinator.com/item?id=3033446)"
 
+## Mocks and TDD
+
+- Andy Longshaw: [Reflections on brittle tests and mocking](https://blogs.blueskyline.com/2020/07/30/this-cant-possibly-be-right/)
+
 ## Misc
 
 - [TDD tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=65ff390c-ddb3-45f6-9de5-762606dfc826&query=tag%1FTDD%1FtagGuid%3Ad39ee366-abf9-4984-9ac7-f41d93f6460a%1Eview%3AVIEW%2FALL_NOTES&)
