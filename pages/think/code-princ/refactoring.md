@@ -18,6 +18,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - My [refactoring article on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
 - [My notes from Martin Fowler's Refactoring Seminar](http://insimpleterms.blog/martin-fowler-webinar-new-refactoring-book)
 - [MF's Refactoring book - web copy (InformIT)](https://memberservices.informit.com/my_account/index.aspx?partner=53&_ga=2.102882948.507915267.1547471980-1562501179.1547471980)
+- [Dave Farley's youtube series on refactoring](https://www.youtube.com/watch?v=p-oWHEfXEVs)
 
 ## Misc
 
