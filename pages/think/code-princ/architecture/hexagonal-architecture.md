@@ -1,7 +1,7 @@
 ---
 layout: page
-location: pages/think/code-princ/leaf
-permalink: /pages/think/code-princ/Hexagonal-Architecture
+location: pages/think/code-princ/architecture/leaf
+permalink: /pages/think/code-princ/architecture/Hexagonal-Architecture
 ---
 
 ## GitHub Repos
