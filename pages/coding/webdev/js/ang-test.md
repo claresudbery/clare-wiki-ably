@@ -30,8 +30,10 @@ permalink: /pages/coding/webdev/js/Angular-Testing
 - Some examples of [testing input validation here](https://timdeschryver.dev/blog/good-testing-practices-with-angular-testing-library#invalid-controls)
 
 ```js
-// getByText throws an error if it can't find what it's looking for, so you don't need an expect statement.
-// If we don't want Angular Testing Library to throw an error we can use the queryBy and queryAllBy queries instead (see cheatsheet above). 
+// getByText throws an error if it can't find what it's looking for, 
+// so you don't need an expect statement.
+// If we don't want Angular Testing Library to throw an error we can 
+// use the queryBy and queryAllBy queries instead (see cheatsheet above, and example below). 
 const component = await render(...);
 component.getByText('Cancel');
 //
@@ -40,6 +42,7 @@ const component = await render(...);
 const cancel = component.getByText('Cancel');
 cancel.click();
 //
+// Use queryBy instead of getBy if you want to test for absence.
 expect(component.queryByText('Cancel')).toBeNull();
 //
 // modal dialog:
@@ -47,10 +50,12 @@ const dialog = await within(document.body).findByRole('dialog');
 const cancel = within(dialog).getByText('Cancel');
 cancel.click();
 //
+// test Ids and inner html
 const component = await render(...);
 const link = component.getByTestId("add-thingy-info");
 expect(link.innerHTML).toContain("Add thingy information");
 //
+// click a button
 const component = await render(...);
 component.click(component.getByText('Cancel'));
 //
@@ -61,7 +66,7 @@ nmdsIdInput.nodeValue = '';
 component.type(nmdsIdInput, 'new text');
 //
 // Clicking, typing and selecting
-There's a lot of info on this in the article linked to above
+// There's a lot of info on this in the article linked to above
 //
 // not sure this ever worked:
 await within(document.body).getByText('Save and continue').click();
