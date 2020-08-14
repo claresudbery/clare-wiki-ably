@@ -19,3 +19,6 @@ permalink: /pages/think/code-princ/architecture/Architecture-Principles
     - [Here](https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/)
 - Route management 
 	- Do your urls make sense? Will they help your users to navigate your site, and will they help you with things like Google Analytics?
+- Performance 
+	- Page load speed 
+	- Above the fold / below the fold 
