@@ -17,3 +17,5 @@ permalink: /pages/think/code-princ/architecture/Architecture-Principles
 - Client-Side Rendering (CSR) vs Server-Side Rendering (SSR)
     - [Here](https://medium.com/@addyosmani/progressive-web-apps-with-react-js-part-4-site-is-progressively-enhanced-b5ad7cf7a447)
     - [Here](https://www.freecodecamp.org/news/what-exactly-is-client-side-rendering-and-hows-it-different-from-server-side-rendering-bd5c786b340d/)
+- Route management 
+	- Do your urls make sense? Will they help your users to navigate your site, and will they help you with things like Google Analytics?
