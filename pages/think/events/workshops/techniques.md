@@ -4,6 +4,7 @@ location: pages/think/events/workshops/leaf
 permalink: /pages/think/events/workshops/Workshop-Techniques
 ---
 
+See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Consulting Principles](/pages/think/agile-princ/Consulting-Principles).
 
 ## Misc
 
@@ -29,6 +30,8 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 - [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework)
 - Elevator pitch
 - Trade-off sliders 
+- Hypothesis Workshops - see [notes below](#hypothesis-workshops)
+- Inverse Conway Manoeuvre - see [notes below](#inverse-conway-manoeuvre)
 - CRC cards
 	- blank ("naked") CRC cards 
 - Value proposition map / value proposition design
@@ -63,3 +66,42 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 - Storyboarding
 	- [Real example in this repo](/resources/images/storyboarding.png)
 	- Fold paper to create 8 panels, then use them to create a ocmic strip that describes a blue-sky imagined new or improved user journey.
+
+## Hypothesis workshops
+
+Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
+
+- in the context of replacing legacy - the point is that you are revisiting the things your system already does, and asking how probable is it that users will even need some of that stuff 
+- The whole team should be involved
+- What is the point of the thing that you are building
+- Put goals on the right - ideally 1 - no more than three - if more split into separate workshops
+- put features on the left
+- write postits between left and right that will lead from the thing on the left to the thing on the right - see image 
+- add numbers saying how likely it is that this will happen - see image
+- add colours to show priority - see image. 
+- you have to take risks and this enables you to visualise / understand the risk of investment vs return
+- in the context of replacing legacy - the point is that you are revisiting the things your system already does, and asking how probable is it that users will even need some of that stuff 
+- every event assumes that every event to the left of it is true 
+- you can then prioritise what to focus on based on how likely it is that all the events will happen that you need in order to reach your goal
+	- for instance, MHCLG energy certificates, finding a certificate provider, it's unlikely people won't find one by just using google, 
+	- so there's little point putting tons of effort into improving or reimplementing this legacy product
+- then your hypothesis is that nobody will use this product so don't implement it
+	- or it's highly likely that you'll reach your goal by improving / reimplementing this thing, therefore go for it	
+
+![hypothesis-workshops.png](/resources/images/hypothesis-workshops.png)
+![hypothesis-workshops-2.png](/resources/images/hypothesis-workshops-2.png)
+![hypothesis-workshops-3.png](/resources/images/hypothesis-workshops-3.png)
+
+## Inverse Conway Manoeuvre 
+
+Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
+
+- Your software systems / components will likely match your org structure
+- Don't fight conway's law - don't reoganise your products in a way that won't match your teans
+- the new structure becomes an emergent pattern of your architecture
+- but don't expect it to work like magic
+- you need strong leaders to manage the fact that there will be a temp velocity slowdown and a bit of chaos
+
+![inverse-conway-manoeuvre.png](/resources/images/inverse-conway-manoeuvre.png)
+![inverse-conway-manoeuvre-2.png](/resources/images/inverse-conway-manoeuvre-2.png)
+

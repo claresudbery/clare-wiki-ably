@@ -4,6 +4,8 @@ location: pages/think/agile-princ/leaf
 permalink: /pages/think/agile-princ/Agile-Techniques
 ---
 
+See also [Workshop Techniques](/pages/think/events/workshops/Workshop-Techniques).
+
 ## Lean Value Tree
 
 - [slide deck introducing the idea and comparing to Impact Mapping](https://www.slideshare.net/steve236/lean-value-tree-overview-82783795)
