@@ -18,4 +18,4 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 
 ### Radical Candor, by Kim Scott
 
-- Good [quote about the command and control leadership style](https://twitter.com/claresudbery/status/1294572041937592321?s=21) 
+- Good [quote about the command and control leadership style](https://twitter.com/claresudbery/status/1294572041937592321?s=21) (this twitter thread will also contain other quotes and concepts from the book) 

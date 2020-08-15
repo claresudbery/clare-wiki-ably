@@ -44,3 +44,8 @@ They sometimes have green/brown flowers that grow straight up vertically on stal
 ## What's that term that gets used in relation to TDD and which people often remark on the lack of, when interviewing candidates and pairing with them?
 
 Answer: [Sliming](https://clare-wiki.herokuapp.com/pages/think/code-princ/testing/TDD#sliming) (verb: to slime).
+
+## What's the name of the US city famous for Mardi Gras, that was tragically affected by Hurricane Katrina?
+
+It's New Orleans.
+This won't make much sense to anyone else, but because it has a three-letter prefix to its name, I routinely get it confused with Los Angeles and Las Vegas, even though they have very little else in common.
