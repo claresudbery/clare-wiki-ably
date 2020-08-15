@@ -4,6 +4,8 @@ location: pages/think/agile-princ/leaf
 permalink: /pages/think/agile-princ/Consulting-Principles
 ---
 
+See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Workshop Techniques](/pages/think/events/workshops/Workshop-Techniques).
+
 ## Platforms are Products
 
 Notes from Tito's Made Tech talk August 2020 (see also screenshots below):

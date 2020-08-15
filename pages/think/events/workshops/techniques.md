@@ -15,7 +15,7 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Cons
 
 - Think big by starting small. What's the tiniest thing I could do today to make a difference?
 
-## Types of workshop
+## All types of workshop
 
 - Five whys
 - Futurespective
@@ -67,7 +67,9 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Cons
 	- [Real example in this repo](/resources/images/storyboarding.png)
 	- Fold paper to create 8 panels, then use them to create a ocmic strip that describes a blue-sky imagined new or improved user journey.
 
-## Hypothesis workshops
+## Specific types of workshop in more detail
+
+### Hypothesis workshops
 
 Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
 
@@ -92,7 +94,7 @@ Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
 ![hypothesis-workshops-2.png](/resources/images/hypothesis-workshops-2.png)
 ![hypothesis-workshops-3.png](/resources/images/hypothesis-workshops-3.png)
 
-## Inverse Conway Manoeuvre 
+### Inverse Conway Manoeuvre 
 
 Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
 

@@ -4,7 +4,7 @@ location: pages/think/agile-princ/leaf
 permalink: /pages/think/agile-princ/Agile-Techniques
 ---
 
-See also [Workshop Techniques](/pages/think/events/workshops/Workshop-Techniques).
+See also [Workshop Techniques](/pages/think/events/workshops/Workshop-Techniques) and [Consulting Principles](/pages/think/agile-princ/Consulting-Principles).
 
 ## Lean Value Tree
 
