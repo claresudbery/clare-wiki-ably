@@ -44,7 +44,7 @@ permalink: /pages/think/code-princ/testing/TDD
 - "Moving from katas to real world problems, its important to know that you don't have to write the tests in programming languages. It could be in the domain language - or @emilybache's TDD with diagrams." @thebddadvocate
     - "Approval testing is the term to google to learn more about how you could use sketches to do TDD" @emilybache
 - "You can try ignoring the refactor step for a while and measure the difference. Using code complexity metrics etc." @thejonanshow
-- On the idea that it's hard to convince stakeholders of the benefits of TDD because they think it will slow us down: "So, we are asking permission from management to think carefully? It makes my heart sink." @keithb_b
+- On the idea that it's hard to convince stakeholders of the benefits of TDD because they think it will slow us down: "So, we are asking permission from management to think carefully? It makes my heart sink." @keithb_b [Go slow to go fast](https://www.agilemastery.online/2020-08-01/go-slow-to-go-fast.php).
 
 ## Misc
 
