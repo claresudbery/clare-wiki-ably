@@ -6,8 +6,7 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 
 ## Docs and Blog Posts
 
-- [The Tech Lead's New Project Checklist](https://insimpleterms.blog/the-tech-leads-new-project-checklist)
-	- (see also Building Relationships - currently below)
+- [The Tech Lead's New Project Checklist](/pages/think/leading/Tech-Lead-New-Project-Checklist)
 - [Criteria to Apply to Third Party Vendors when considering build vs buy](https://insimpleterms.blog/criteria-to-apply-to-third-party-vendors)
 - [Other posts on My InSimpleTerms blog](https://insimpleterms.blog/category/technical-leadership) (Technical Leadership category)
 
@@ -21,10 +20,3 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 
 - Good [quote about the command and control leadership style](https://twitter.com/claresudbery/status/1294572041937592321?s=21) (this twitter thread will also contain other quotes and concepts from the book) 
 
-## Building new relationships 
-
-Be explicit about the following:
-
-- Bringing your whole self to work 
-- "No blame" and psychological safety 
-- The value of the workshop 
