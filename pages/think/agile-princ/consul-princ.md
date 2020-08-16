@@ -8,7 +8,7 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Work
 
 ## Platforms are Products
 
-Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
+Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020 (see also screenshots below):
 
 - if one team has no interface with user, turn them into platform as product where other teams are their users
 - give them physical boxes and pens and ask them to decorate them as though it was a product 
@@ -19,7 +19,7 @@ Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
 
 ## Think Big, Start Small
 
-Notes from Tito's Made Tech talk August 2020: 
+Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020: 
 
 - people have a tendency to plan massive overhauls
 - this can mean you have a giant budget

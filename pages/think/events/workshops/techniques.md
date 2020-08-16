@@ -71,7 +71,7 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Cons
 
 ### Hypothesis workshops
 
-Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
+Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020 (see also screenshots below):
 
 - in the context of replacing legacy - the point is that you are revisiting the things your system already does, and asking how probable is it that users will even need some of that stuff 
 - The whole team should be involved
@@ -96,7 +96,7 @@ Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
 
 ### Inverse Conway Manoeuvre 
 
-Notes from Tito's Made Tech talk August 2020 (see also screenshots below):
+Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020 (see also screenshots below):
 
 - Your software systems / components will likely match your org structure
 - Don't fight conway's law - don't reoganise your products in a way that won't match your teans
