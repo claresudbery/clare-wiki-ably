@@ -12,4 +12,5 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Misc
 
-- [Various bits of Linq stuff](https://docs.google.com/document/d/1fKGun6mKFSHOmctprtYxDML6cE7SwzoW/edit)
+- [Various bits of Linq stuff](https://docs.google.com/document/d/1CDeVGqEj2pnVYTqSwxnjkfNbxT08qDhW6nVCwR05OwU/edit)
+

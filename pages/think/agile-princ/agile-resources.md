@@ -15,3 +15,4 @@ permalink: /pages/think/agile-princ/Agile-Resources
 - [Consultancy tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=e6eddff2-dc9e-45af-b649-eba0b3e53b2f&query=tag%1FConsultancy%1FtagGuid%3A1f5c3a55-6c76-4093-952d-9629968e5f16%1Eview%3AVIEW%2FALL_NOTES&)
 - [Kanban Intro](https://drive.google.com/open?id=182XoEaZ-85TdiLGeKzJeezuY5M9WmvTF)
 - [GDS (Government Digital Services) - Agile Ways of Working](https://www.gov.uk/service-manual/agile-delivery) (discovery, alpha, beta etc)
+- [Slides about flow](https://docs.google.com/presentation/d/1pza_bUGmABPnjk1HgLr8svKToaL4Sw38rGCqLBSmR8w/edit#slide=id.p1) (only accessible to clare) (Flow is the idea of getting pieces of work flowing smoothly through your processes)
