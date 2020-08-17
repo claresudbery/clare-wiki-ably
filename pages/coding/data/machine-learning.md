@@ -24,3 +24,4 @@ permalink: /pages/coding/data/Machine-Learning
 ## Spacy.io
 
 - [spacy.io](https://spacy.io/) is a tool you can use for AI / NLP / deep learning
+- [Brilliant.org](https://brilliant.org/) has great courses on maths, machine learning and many other things.
