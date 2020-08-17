@@ -10,6 +10,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [2Wheeler-Ingester-London-Summer-2018 (PRIVATE)](https://github.com/claresudbery/2Wheeler-Ingester-London-Summer-2018)
 - [cadogan/backend (PRIVATE)](https://github.com/claresudbery/cadogan)
-    - See sub-folder contaiing backend code
+    - See sub-folder containing backend code
 - [interview-codebase-java (PRIVATE)](https://github.com/claresudbery/interview-codebase-java)
 
