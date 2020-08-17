@@ -752,6 +752,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### git rebase
 
+  - Notes on how I used rebase when editing the Reconciliate refactor-branch commits during the writing on my Martin Fowler refactoring article are [here](https://github.com/claresudbery/RefactoringExamples/blob/master/github-markdown/notes/code-changes.md) (accessible to Clare only)
   - This is where you take a branch and define it is having started at a
     different point – ie you change the point which is its base
   - For instance:
@@ -770,9 +771,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         the merge, you will just see one continuous line)
   - More here:
     <https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase>
-
-<!-- end list -->
-
   - This is a good thing to do before merging a branch with master
   - It’s a way of merging master into your branch but with your commits
     as the most recent commits, played on top of the head of master,
@@ -787,7 +785,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
           - (This takes all the master commits, applies them to your
             branch, then applies your branch commits at the head)
       - **git checkout master**
-    <!-- end list -->
       - **git pull –rebase**
       - **git merge \[your branch name\]**
 
