@@ -4,6 +4,8 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/Walks-And-Beauty-Spots
 ---
 
+See also [Places to Visit](/pages/think/life/Places-To-Visit)
+
 ## Walks / Cycle Rides / Beauty Spots / Good Places to Visit
 
 ### Manchester and surrounding area
@@ -28,6 +30,19 @@ permalink: /pages/think/life/Walks-And-Beauty-Spots
 - Clayton Vale (river plus forest plus beautiful walks and cycle track - one end is adjacent to Phillips Park near Etihad stadium, the other end is on the way to Oldham)
 - Phillips Park (near Etihad stadium, there's a nice route there along the canal)
 - Cycle track that goes from Debdale reservoir to the canal - really green and leafy and surprisingly long (and from the canal you can cycle along the canal to Phillips Park and Clayton Vale - the towpath is pretty bumpy in places though)
+
+### Peak District
+
+- Ashbourne
+- Thorpe
+- Nine Ladies stone circle, Stanton Moor
+- Bakewell
+- Matlock Bath
+- Lathkilldale
+- Ashford in the Water
+- Dovedale
+- Tissington
+- Shining Cliff
 
 
 ### Rest of the UK
