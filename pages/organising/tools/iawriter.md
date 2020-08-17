@@ -31,7 +31,7 @@ permalink: /pages/organising/tools/iAWriter
 - Click the blue Back button plus text, top left
 - Click library
 - you can browse root folders, or
-- use aascratch
+- use [aa-wiki-scratch.md](/pages/aanew/Wiki-Scratch), in the aascratch folder.
 
 ## Ways of Finding Files
 

@@ -127,6 +127,13 @@ curl https://cli-assets.heroku.com/install.sh | sh
 ## Keeping a file in git without tracking changes
 * Here: https://stackoverflow.com/questions/9794931/keep-file-in-a-git-repo-but-dont-track-changes
 
+## Issue with site layout caused when you push Gemfile.lock changes
+
+- Issue: The search box appears top left instead of top right
+- Cause: Every time you run `jekyll serve` (`js`) in GitBash, extra windows stuff gets added to `Gemfile.lock` which is fine locally but doesn't work remotely.
+- Solution: Revert any pushed changes to `Gemfile.lock`
+- Prevention: Never push changes to `Gemfile.lock`. I have a shortcut alias set up - just run `discard Gemfile.lock` on command line before changes are staged.
+
 ## Jekyll installation for windows
 * Here: https://jekyllrb.com/docs/installation/windows/
 * First I [installed the Windows subsystem for linux (WSL)](/pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL)

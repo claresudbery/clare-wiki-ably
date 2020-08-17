@@ -27,6 +27,7 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - Ribblehead Viaduct
 - Werneth Low (forest + water + visitors centre - near Marple)
 - Chadkirk Chapel - near Marple. Cafe, walled garden, beautiful walks from there to canal, river and surrounding countryside.
+- Peak Forest Canal - goes from Chadkirk Chapel to Marple. You can get up to it by following the path up through the woods behind Chadkirk Chapel.
 - Clayton Vale (river plus forest plus beautiful walks and cycle track - one end is adjacent to Phillips Park near Etihad stadium, the other end is on the way to Oldham)
 - Phillips Park (near Etihad stadium, there's a nice route there along the canal)
 - Cycle track that goes from Debdale reservoir to the canal - really green and leafy and surprisingly long (and from the canal you can cycle along the canal to Phillips Park and Clayton Vale - the towpath is pretty bumpy in places though)
