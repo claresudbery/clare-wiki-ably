@@ -49,3 +49,7 @@ Answer: [Sliming](https://clare-wiki.herokuapp.com/pages/think/code-princ/testin
 
 It's New Orleans.
 This won't make much sense to anyone else, but because it has a three-letter prefix to its name, I routinely get it confused with Los Angeles and Las Vegas, even though they have very little else in common.
+
+## What does taxonomy mean?
+
+Classification.
