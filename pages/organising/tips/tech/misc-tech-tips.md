@@ -71,6 +71,11 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
     
       - ...but the hash symbol gets inserted for you if you forget it.
 
+### Scheduling Slack Messages
+
+- I seem to have installed [this](https://slackscheduler.com/blogs/slack-scheduler-blog/how-to-send-a-slack-message-at-a-specific-time), but I think it's a free trial that only lasts 7 days?
+- [This](https://slack.com/intl/en-gb/slack-tips/schedule-messages-in-the-future) looks worth looking at.
+
 ### Other Slack Stuff
 
 - See [here](https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit) (Clare only) (try searching for **?learn**)
