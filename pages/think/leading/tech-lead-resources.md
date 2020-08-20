@@ -20,3 +20,8 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 
 - Good [quote about the command and control leadership style](https://twitter.com/claresudbery/status/1294572041937592321?s=21) (this twitter thread will also contain other quotes and concepts from the book) 
 
+## The Principal Engineer Role
+
+- [Being an Individual Contributor => Principal Engineer](https://medium.com/@SkyscannerEng/finding-the-steps-on-the-individual-contributor-ladder-8ec60e11fb46), by @NickyWrightson
+- [Being a Principal Engineer at SkyScanner](https://medium.com/@SkyscannerEng/being-a-principal-engineer-at-skyscanner-1830dfa17d30), by @NickyWrightson
+- [Being a Principal Engineer](https://blog.dbsmasher.com/2019/01/28/on-being-a-principal-engineer.html), by Sylvia Botros (@dbsmasher)
