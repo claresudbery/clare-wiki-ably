@@ -44,6 +44,8 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - Dovedale
 - Tissington
 - Shining Cliff
+- Monsaldale
+- Edale / Mam Tor / Castleton 
 
 
 ### Rest of the UK
