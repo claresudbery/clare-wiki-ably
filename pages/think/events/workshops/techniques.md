@@ -27,8 +27,10 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Cons
 - Service mapping
 - Wardley mapping:	
 	- [Wikipedia](https://en.wikipedia.org/wiki/Wardley_map)
+	- [List of Wardley resources](https://wardley-maps-community.github.io/awesome-wardley-maps/)
 	- [Summary blog post](https://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html)
 	- [19 blog posts ("chapters") by Simon Wardley on Medium](https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec)
+	- [Simon Wardley on Twitter](https://twitter.com/swardley/status/1273932178720796673?s=20)
 	- [Wardleypedia](http://wardleypedia.org/mediawiki/index.php/Wardleypedia)
 - User journey / story mapping
 - [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework)
