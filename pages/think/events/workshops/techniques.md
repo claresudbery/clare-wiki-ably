@@ -25,7 +25,11 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Cons
 - Stakeholder empathy mapping
 - Event storming
 - Service mapping
-- [Wardley mapping](https://en.wikipedia.org/wiki/Wardley_map)
+- Wardley mapping:	
+	- [Wikipedia](https://en.wikipedia.org/wiki/Wardley_map)
+	- [Summary blog post](https://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html)
+	- [19 blog posts ("chapters") by Simon Wardley on Medium](https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec)
+	- [Wardleypedia](http://wardleypedia.org/mediawiki/index.php/Wardleypedia)
 - User journey / story mapping
 - [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework)
 - Elevator pitch
