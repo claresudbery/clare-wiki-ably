@@ -9,6 +9,10 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
     Command Line book:
     [<span class="underline">https://www.datascienceatthecommandline.com/</span>](https://www.datascienceatthecommandline.com/)
 
+## Hosts file
+
+See [notes here](/pages/coding/infra/servers/Networking#hosts-file)
+
 ## Pbpaste
 
   - Like alt click in text editors – if you wanted to select a column of

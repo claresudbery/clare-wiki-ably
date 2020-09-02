@@ -11,6 +11,7 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
 
 ## Misc Terminal Stuff
 
+  - Hosts file - see [notes here](/pages/coding/infra/servers/Networking#hosts-file)
   - Cmd: **dig \[IP or domain name\]** - tells you what that IP / domain
     name is pointing at
     
