@@ -58,6 +58,16 @@ permalink: /pages/think/code-princ/testing/TDD
 - "[http://cyber-dojo.org](http://cyber-dojo.org) is a great place to practice TDD." - @sebrose
 - "Code retreat started by @coreyhaines is another fun way to learn." @thejonanshow
 
+### NCrunch
+
+- File not found:
+    - If a test fails because a file was not found, it may be that you need to include a test file in your NCrunch settings:
+    - In Visual Studio: 
+        - Extensions | NCrunch | Configuration
+        - In the top pane, double-click the shared settings for your project
+        - In the bottom pane, set "Additional files to include" in the General section.
+    - If you're using approval tests (as used by Gilded Rose), the first time you run the test it will create a "received" file (eg `ApprovalTest.ThirtyDays.received.txt`). Create a copy of this with the suffix `.approved.txt` instead of `.received.txt`, and the file not found error should go away.
+
 ## GitHub Repos
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
@@ -67,3 +77,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [getting-started-with-tdd-in-react](https://github.com/claresudbery/getting-started-with-tdd-in-react)
 - [BowlingGameKata-TDD-as-if-you-meant-it-](https://github.com/claresudbery/BowlingGameKata-TDD-as-if-you-meant-it-)
 - [Jon Acker's TDD katas](https://github.com/jon-acker/coding-katas)
+
