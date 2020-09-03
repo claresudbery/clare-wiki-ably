@@ -7,6 +7,7 @@ permalink: /pages/coding/infra/security/Digital-Security-Resources
 ## Docs and Blog Posts
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/security) (Security category)
+- [My notes from James Stewart's Learn Tech talk about security](/pages/coding/infra/security/Security-in-the-Public-Sector)
 
 
 ## Misc

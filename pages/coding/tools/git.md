@@ -1068,6 +1068,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - To list tags: Just type git tag (with optional -l or --list):
   - To create an annotated tag: **git tag -a v1.4 -m "my version 1.4"**
   - To create a lightweight tag: **git tag v1.4-lw**
+  - !! NB: Tags are not automatically pushed when you push branches.
+    - To push a tag to the remote origin: **git push origin [tag name]**
+      - eg **git push origin v1.0**
+    - To push all tags: **git push origin --tags**
 
 ### git stash
 
