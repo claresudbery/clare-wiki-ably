@@ -1,0 +1,24 @@
+---
+layout: page
+location: pages/think/leading/leaf
+permalink: /pages/think/leading/Reading-Lists
+---
+
+Note that a lot of recommended reads will be scattered around in relevant topic pages and won't be listed here.
+
+## Daily Reads (Blogs etc)
+
+### Blogs and Sites
+
+- Internal tech channels used by your colleagues (for me at the time of writing, that's Slack) 
+- [The Morning Brew](blog.cwa.me.uk) - useful aggregator of .Net stuff
+- [Ayende.com](https://ayende.com/blog/) - blog by the CEO of Hibernating Rhinos, who develop RavenDB
+- [Scott Hanselman's blog](hanselman.com/blog/)
+
+### Podcasts
+
+- [Troubleshooring Agile](conversationaltransformation.com/troubleshooting-agile-podcast/) - a weekly problem-solving session hosted by Douglas and Jeffrey on software delivery and team productivity.
+
+## Reading List
+
+See Trello (Clare SfC Trello) for now.
