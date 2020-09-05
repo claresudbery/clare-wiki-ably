@@ -13,7 +13,7 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 
 ### Use energisers 
 
-Use [energisers](/pages/think/events/workshops/Energisers-And-Warmups) to warm people up and get them intreracting with each other
+Use [energisers](/pages/think/events/workshops/Energisers-and-Warmups) to warm people up and get them intreracting with each other
 
 ### Get your learners in the zone
 
