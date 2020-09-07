@@ -19,7 +19,7 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 
 ### Podcasts
 
-- [Troubleshooting Agile](conversationaltransformation.com/troubleshooting-agile-podcast/) - a weekly problem-solving session hosted by Douglas and Jeffrey on software delivery and team productivity.
+- [Troubleshooting Agile](https://conversationaltransformation.com/troubleshooting-agile-podcast/) - a weekly problem-solving session hosted by Douglas and Jeffrey on software delivery and team productivity.
 
 ## Reading List
 
