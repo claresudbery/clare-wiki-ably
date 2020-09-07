@@ -16,6 +16,10 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 - [The Morning Brew](http://blog.cwa.me.uk) - useful aggregator of .Net stuff
 - [Ayende.com](https://ayende.com/blog/) - blog by the CEO of Hibernating Rhinos, who develop RavenDB
 - [Scott Hanselman's blog](https://hanselman.com/blog/)
+- Daily email digests:
+    - @patkua's [levelup](http://levelup.patkua.com)
+    - @orenellenbogen's [softwareleadweekly](https://softwareleadweekly.com)
+    - @garethr's [devopsweekly](http://devopsweekly.com)
 
 ### Podcasts
 
