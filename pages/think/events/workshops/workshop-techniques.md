@@ -9,6 +9,8 @@ permalink: /pages/think/events/workshops/Workshop-Techniques
 
 - [workshops tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7247fd4c-5a5c-4678-a41b-aa72740b1df4&query=tag%1Fworkshops%1FtagGuid%3Af516d459-b182-4e38-85c0-15ad61fe373f%1Eview%3AVIEW%2FALL_NOTES&)
 - I'm also planning a lot of teaching / training content in the [Teaching](/pages/think/Teaching) section of this site.
+- [Guide to virtual workshops](https://www.aaron-powell.com/posts/2020-07-30-a-guide-to-virtual-workshops/)
+- See also [Remote Workshops](/pages/think/events/workshops/Remote-Workshops))
 
 ## Useful Workshop Tips
 
