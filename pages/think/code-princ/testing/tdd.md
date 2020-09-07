@@ -66,7 +66,7 @@ permalink: /pages/think/code-princ/testing/TDD
         - Extensions | NCrunch | Configuration
         - In the top pane, double-click the shared settings for your project
         - In the bottom pane, set "Additional files to include" in the General section.
-    - If you're using approval tests (as used by Gilded Rose), the first time you run the test it will create a "received" file (eg `ApprovalTest.ThirtyDays.received.txt`). Create a copy of this with the suffix `.approved.txt` instead of `.received.txt`, and the file not found error should go away.
+    - If you're using approval tests (as used by [Gilded Rose](/pages/think/code-princ/Refactoring#gilded-rose)), the first time you run the test it will create a "received" file (eg `ApprovalTest.ThirtyDays.received.txt`). Create a copy of this with the suffix `.approved.txt` instead of `.received.txt`, and the file not found error should go away.
 
 ## GitHub Repos
 
