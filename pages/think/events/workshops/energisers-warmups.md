@@ -48,7 +48,14 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 ## Spirit Animals 
 
 - Everybody draw an animal or if in Miro, choose an avatar for your animal using Icon Picker (three dots at the bottom of the tool bar on the right). Write / add a post-it next to it something like "Hello, I'm Clare and my spirit animal is a hedgehog". Take it in turns to explain why you picked your animal, then pick the next person to also explain their animal
-    - Potential gotcha: It's hard to work out whether everybpdy has gone yet.
+    - Potential gotchas: 
+        - It's hard to work out whether everybody has gone yet. One way to fix this is for the facilitator to simply call out people one by one, for instance based on the list of attendees.
+        - If these are people who have only just met and you only ask people to describe their spirit animal and why they chose it, you still don't know very much about each individual. You might want to ask people to do a quick self-intro as well, eg what they do for a living.
+    - Alternatives:
+        - A nice addition is to split people into pairs / small groups after they have created their avatar. They tell each other abnout their avatar and then you come back into the main group and everyone introduces somebody *else*, rather than introducing 
+        themselves.
+            - If you do this and these are people who have not met each other before, ask people to also do a brief personal intro - eg describe what they do for a living - so people get a little more context on each other.
+
 
 ## Balloons and Names
 
