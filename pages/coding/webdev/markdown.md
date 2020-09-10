@@ -17,9 +17,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - The [Jekyll section](/pages/coding/webdev/Jekyll) on this site.
 - Some [useful notes about basic markdown rules and capabilities](https://github.com/claresudbery/RefactoringExamples/tree/master/github-markdown/example%20markdown).
-- Suggested markdown editors for iOS: [iAWriter and Working Copy](https://thesweetsetup.com/apps/our-favorite-markdown-writing-app-for-the-iphone/)
-- Suggested markdown editor for Mac: [Byword](https://thesweetsetup.com/apps/favorite-markdown-writing-app-mac/)
-- Another Mac markdown editor to try: [Uranusjr](https://macdown.uranusjr.com/)
+- Suggested markdown editors for iOS (these are the ones I use): [iAWriter and Working Copy](https://thesweetsetup.com/apps/our-favorite-markdown-writing-app-for-the-iphone/)
+- Suggested markdown editor for Mac (I use this a little but mostly I use VS Code): [Byword](https://thesweetsetup.com/apps/favorite-markdown-writing-app-mac/)
+- Another Mac markdown editor to try (I can't remember whether I ever actually tried this): [Uranusjr](https://macdown.uranusjr.com/)
 - [Table of contents (toc) tools](/pages/organising/BigIndex/Big-Index-Useful-Tools#generating-table-of-contents-toc)
 - This site is built on markdown, and I've used various tools for that, which I've documented [here](/pages/organising/bigindex/Big-Index-Useful-Tools):
 - RefactoringExamples: I created various useful scripts when I did the first markdown version of my [Martin Fowler refactoring article](/pages/think/code-princ/Refactoring). They're all documented in my [RefactoringExamples repo](https://github.com/claresudbery/RefactoringExamples/blob/master/github-markdown/notes/code-changes.md) (private only, I'm afraid).
