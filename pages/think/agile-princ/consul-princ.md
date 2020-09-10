@@ -21,6 +21,7 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 
 Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020: 
 
+- Think big by starting small. What's the tiniest thing I could do today to make a difference?
 - people have a tendency to plan massive overhauls
 - this can mean you have a giant budget
 - but don't start with the giant goal

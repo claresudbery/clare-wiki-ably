@@ -95,7 +95,7 @@ ssh-add -l
 ssh-keygen -t rsa -b 4096 -C "your-email"
 eval "$(ssh-agent -s)"
 echo "-------------------"
-echo "Add the following to your hosts file:"
+echo "Add the following to your hosts file (sudo vim /private/etc/hosts):"
 echo "Host *
   AddKeysToAgent yes
   UseKeychain yes

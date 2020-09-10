@@ -7,6 +7,7 @@ permalink: /pages/think/teach/Teaching-Resources
 ## Misc
 
 - High school teaching resources: External hard disk: 2014-04-01_Backup\_201105_ClaresStuff_backup\_Teaching
+- There's also a lot of useful teaching content in the [Workshops](pages/think/events/Workshops) section of this site.
 
 ## Docs and Blog Posts
 

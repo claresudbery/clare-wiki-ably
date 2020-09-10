@@ -1,7 +1,7 @@
 ---
 layout: page
 location: pages/think/events/workshops/leaf
-permalink: /pages/think/events/workshops/Workshop-Techniques
+permalink: /pages/think/events/workshops/Workshop-Types
 ---
 
 See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Consulting Principles](/pages/think/agile-princ/Consulting-Principles).
@@ -11,21 +11,23 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Cons
 - [workshops tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7247fd4c-5a5c-4678-a41b-aa72740b1df4&query=tag%1Fworkshops%1FtagGuid%3Af516d459-b182-4e38-85c0-15ad61fe373f%1Eview%3AVIEW%2FALL_NOTES&)
 - [Running a remote inception / remote workshops](/pages/think/events/workshops/Remote-Inception)
 
-## Principles
-
-- Think big by starting small. What's the tiniest thing I could do today to make a difference?
-
 ## All types of workshop
 
 - Five whys
 - Futurespective
-- Value stream mapping
+- [Value Stream Mapping](https://kanbanize.com/lean-management/value-waste/value-stream-mapping/)
 - Lean Value Tree
 - Empathy mapping
 - Stakeholder empathy mapping
 - Event storming
 - Service mapping
-- [Wardley mapping](https://en.wikipedia.org/wiki/Wardley_map)
+- Wardley mapping:	
+	- [Wikipedia](https://en.wikipedia.org/wiki/Wardley_map)
+	- [List of Wardley resources](https://wardley-maps-community.github.io/awesome-wardley-maps/)
+	- [Summary blog post](https://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html)
+	- [19 blog posts ("chapters") by Simon Wardley on Medium](https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec)
+	- [Simon Wardley on Twitter](https://twitter.com/swardley/status/1273932178720796673?s=20)
+	- [Wardleypedia](http://wardleypedia.org/mediawiki/index.php/Wardleypedia)
 - User journey / story mapping
 - [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework)
 - Elevator pitch

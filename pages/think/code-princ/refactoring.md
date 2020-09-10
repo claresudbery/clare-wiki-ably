@@ -29,7 +29,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - Also see individual dedicated sections below for each code base listed here (I'm still building that list, so it may not be complete).
 - Mark Kirschtein's [ferry booking example](github.com/Kirschstein/legacy-ferry-booking-system)
-- Gilded Rose - described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
+- Gilded Rose - see [below](#gilded-rose)
 - [JBrains' Trivia](https://github.com/jbrains/trivia) - Mark Kirschtein uses this at legacy coding retreats. It's also been translated into many different languages.
 - Mark Kirschtein says: "Another approach is to take a well known problem, checkout, potterkata etc and do it badly, that way you don't need to explain the domain."
 - Emily Bache has several refactoring katas, recommended by many people:
@@ -44,7 +44,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### Gilded Rose
 
-- [Here](https://github.com/emilybache/GildedRose-Refactoring-Kata)
+- Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
+- My C# attempt is [here](https://github.com/claresudbery/gilded-rose-kata).
 - NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
 - It's all about stock having a sell by date and quality degrading with age.
 - It has been translated into many different languages by Emily.
