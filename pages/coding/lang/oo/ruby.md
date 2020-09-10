@@ -26,6 +26,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Miscellaenous
 
+  - [Ruby cheatsheet](https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md)
   - Symbols do hold strings of characters, they are just immutable
     
       - This means that when you reference a symbol in string
