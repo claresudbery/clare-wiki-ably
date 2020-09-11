@@ -53,3 +53,9 @@ This won't make much sense to anyone else, but because it has a three-letter pre
 ## What does taxonomy mean?
 
 Classification.
+
+## Who's that woman that has that website with that funny thing about appearing smart in meetings?
+
+
+Sarah Cooper: [10 tricks for appearing smart during meetings](https://thecooperreview.com/10-tricks-to-appear-smart-during-meetings/).
+She also created the excellent 

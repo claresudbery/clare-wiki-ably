@@ -54,7 +54,7 @@ permalink: /pages/think/code-princ/testing/TDD
 
 ### Sliming
 
-- [Sliming](https://www.destroyallsoftware.com/screencasts/catalog/when-to-generalize-in-tdd#:~:text=When%20a%20TDDed%20test%20fails,in%20the%20%22right%22%20way.) is the technique where you make yourcode do something trivial and hard-coded just to make your test pass - it's unlikely this will end up being production code. [Nice description here from Denise Yu](http://deniseyu.github.io/leveling-up-tdd/) (scroll down a bit) 
+- [Sliming](https://www.destroyallsoftware.com/screencasts/catalog/when-to-generalize-in-tdd#:~:text=When%20a%20TDDed%20test%20fails,in%20the%20%22right%22%20way.) is the technique where you make your code do something trivial and hard-coded just to make your test pass - it's unlikely this will end up being production code. [Nice description here from Denise Yu](http://deniseyu.github.io/leveling-up-tdd/) (scroll down a bit) 
 - "[http://cyber-dojo.org](http://cyber-dojo.org) is a great place to practice TDD." - @sebrose
 - "Code retreat started by @coreyhaines is another fun way to learn." @thejonanshow
 
