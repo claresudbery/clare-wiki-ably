@@ -17,6 +17,7 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 - Write down something nobody knows about you, then we have to guess which one is who.
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
 - If still stuck for ideas, just google "icebreakers"
+- Use https://really.boring.website/ to play a game
 
 ## Human rock paper scissors
 
