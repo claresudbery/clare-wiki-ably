@@ -18,6 +18,7 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
 - If still stuck for ideas, just google "icebreakers"
 - Use https://really.boring.website/ to play a game
+- Aplit into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
 
 ## Human rock paper scissors
 

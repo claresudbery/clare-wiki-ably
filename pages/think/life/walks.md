@@ -31,6 +31,7 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - Clayton Vale (river plus forest plus beautiful walks and cycle track - one end is adjacent to Phillips Park near Etihad stadium, the other end is on the way to Oldham)
 - Phillips Park (near Etihad stadium, there's a nice route there along the canal)
 - Cycle track that goes from Debdale reservoir to the canal - really green and leafy and surprisingly long (and from the canal you can cycle along the canal to Phillips Park and Clayton Vale - the towpath is pretty bumpy in places though)
+- Path along the edge of Debdale reservoir, then keep going and it goes along a whole other stretch of water - eventually if you turn left at the end you get to the very end of the Fallowfield Loop cycle track, beyond Wright Robbie.
 
 ### Peak District
 
