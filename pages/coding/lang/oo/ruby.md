@@ -38,8 +38,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - A variable that has a string as its value will be mutable, but a
     symbol is immutable, and stored in a single place in memory
 
-  - IRB is the standard Ruby repl
-
   - Python also has a repl
 
   - Return values in Ruby functions are the last thing that was assigned
@@ -54,7 +52,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - The **puts** statement is how you can output to console - useful for
     quick-and-dirty debug logging.
 
-  - IRB is the standard Ruby repl (run **irb** on command line)
+  - IRB is the standard Ruby repl (run `irb` on command line, then type `exit` to leave)
 
   - Python also has a repl
 
