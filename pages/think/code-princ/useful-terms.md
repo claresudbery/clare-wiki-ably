@@ -33,3 +33,17 @@ Problems often occur when one thread does a "check-then-act" (e.g. "check" if th
 ## State Machine
 
 A state machine (aka Finite State Machine, or FSM) is any object that behaves differently based on its history and current inputs. It can be in exactly one of a finite number of states at any given time. The FSM can change from one state to another in response to some inputs; the change from one state to another is called a transition.
+
+## Command Query Separation (CQS)
+
+Every method should either be a command that performs an action, or a query that returns data to the caller, but not both.
+
+In other words, *asking a question should not change the answer*. More formally, methods should return a value only if they are referentially transparent and hence possess no side effects.
+
+Command–query separation (CQS) is a principle of imperative computer programming. It was devised by Bertrand Meyer as part of his pioneering work on the Eiffel programming language.
+
+## Pure and Impure Functions
+
+An impure function is a function that mutates variables/state/data outside of its lexical scope, thus deeming it “impure”.
+
+Pure functions don’t modify external variables/state/data outside of the scope, and return the same output given the same input. They are deterministic.
