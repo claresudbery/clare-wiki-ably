@@ -119,6 +119,8 @@ A lot of people hate it. Then again... a trainer I knew, during a powercut, got 
 
 ## Useful Workshop Techniques
 
+Many other brilliant ideas for how to collaborate and brainstorm effectively are available [here at Liberating Structures](http://www.liberatingstructures.com/).
+
 ### Distributed learning
 
 Split people into groups and get each group to research answers to questions within a particular subject area. Then each group comes back and presents what they've learnt to the wider session. Each group learns more on their individual topic, all groups learn via the presentations at the end. 
@@ -133,3 +135,7 @@ Split people into groups and get each group to research answers to questions wit
 ### Scenarios
 
 "What would you do in this scenario?" - group work.
+
+### 1-2-4-All
+
+Read all about it [here](http://www.liberatingstructures.com/1-1-2-4-all/).
