@@ -23,6 +23,11 @@ I've had problems with my hips for a while, almost certainly because I spend so 
   - Warrior 2 pose (front foot facing forward, back foot parallel to back of mat, head facing over front foot, arms out, gaze wide, front hip knee and ankle aligned, squeeze into the mid line)
   ![hip yoga](/resources/images/hip-yoga.jpeg)
 
+## Mental Health
+
+See also [Staying sane during the COVID-19 crisis](http://127.0.0.1:4000/pages/think/life/Health#staying-sane-during-the-covid-19-crisis) below.
+
+- Great article by Olvier Burkeman, ["Eight secrets to a fairly fulfilled life"](https://www.theguardian.com/lifeandstyle/2020/sep/04/oliver-burkemans-last-column-the-eight-secrets-to-a-fairly-fulfilled-life)
 
 ## COVID-19 / coronavirus / Sars-CoV-2
 
@@ -142,3 +147,4 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - [US article on why the virus is genuinely worrying and why you should stay at home](https://blogs.scientificamerican.com/observations/preparing-for-coronavirus-to-strike-the-u-s/)
   - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
   - Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
+
