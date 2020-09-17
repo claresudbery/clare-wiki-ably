@@ -26,6 +26,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Miscellaenous
 
+  - [Ruby cheatsheet](https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md)
   - Symbols do hold strings of characters, they are just immutable
     
       - This means that when you reference a symbol in string
@@ -36,8 +37,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
   - A variable that has a string as its value will be mutable, but a
     symbol is immutable, and stored in a single place in memory
-
-  - IRB is the standard Ruby repl
 
   - Python also has a repl
 
@@ -53,7 +52,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - The **puts** statement is how you can output to console - useful for
     quick-and-dirty debug logging.
 
-  - IRB is the standard Ruby repl (run **irb** on command line)
+  - IRB is the standard Ruby repl (run `irb` on command line, then type `exit` to leave)
 
   - Python also has a repl
 
@@ -72,6 +71,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     
       - Otherwise just run the script with the script name, and pipe
         straight to something else
+  
+  - Boolean methods should be suffixed with a question mark. [More here](https://medium.com/@sologoubalex/boolean-methods-in-ruby-94a2e907e5ea). However this is a convention and is not enfirced. It's possible to write a function suffixed with a question mark that doesn't return a bool. In fact it's really used to indicate that the function is asking a question - the answer might not be a bool in practice. [More here](https://stackoverflow.com/questions/23209391/are-there-any-exceptions-to-ruby-convention-of-boolean-methods-having-a-question).
+
+  - Methods that end in `!` indicate that the method will modify the object it's called on. Ruby calls these "dangerous methods" because they change state that someone else might have a reference to.
 
   - Require, gems, loading file:
     [<span class="underline">https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0</span>](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)

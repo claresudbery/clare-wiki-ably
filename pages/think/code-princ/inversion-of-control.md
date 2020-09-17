@@ -3,6 +3,7 @@ layout: page
 location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Inversion-Of-Control
 ---
+
 #### Inversion Of Control
 
   - In traditional procedural programming, the custom-built code calls
@@ -20,3 +21,6 @@ permalink: /pages/think/code-princ/Inversion-Of-Control
         implementations: one is NHibernate, one is stored procs. The
         implementation has CONTROL over how it does things – it is not
         up to the caller to decide.
+  - Dependency injection is a way of using IoC. 
+    - There is an example of dependency injection in my [solution to the Train routes kata](https://github.com/claresudbery/TrainRoutes).
+    - Another example is the [FileLoader class in Reconciliate](https://github.com/claresudbery/Reconciliate/blob/153362ba0516ad540c8c92080e10fe52df1ac025/Console/Reconciliation/Loaders/FileLoader.cs), which has IInputOutput and IClock interfaces passed into its constructor.
