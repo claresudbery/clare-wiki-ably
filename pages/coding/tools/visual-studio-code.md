@@ -19,3 +19,7 @@ permalink: /pages/coding/tools/Visual-Studio-Code
     open?)
 
   - Cmd + shift + o - search for a symbol
+
+  - Select vertical column of text: 
+    - Place the cursor where you want it
+    - hold down Shift + Alt , then click and drag with the mouse
