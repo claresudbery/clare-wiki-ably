@@ -96,6 +96,17 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         install Bundler: **sudo gem install bundler**
         
           - \!\! The password it wants is your laptop password
+  
+  - [Static methods and the `self` keyword](https://airbrake.io/blog/ruby/self-ruby-overview)
+
+## Hashes
+
+- when hashes have string keys, [those strings are frozen](https://tenderlovemaking.com/2015/02/11/weird-stuff-with-hashes.html)
+- Ruby [documentation on hashes](https://docs.ruby-lang.org/en/2.0.0/Hash.html) (it's pretty good documentation)
+
+## Frozen values
+
+- [Frozen strings](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html#:~:text=The%20term%20'frozen'%20is%20Ruby's,an%20exception%20will%20be%20raised.)
 
 ## Arrays
 
@@ -143,7 +154,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - Calling javascript code from Ruby:
         [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
 
-      - Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
+### Rspec
+
+- Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
+
+- [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
+
+- [Rspec style guide](https://rspec.rubystyle.guide/)
 
 ## Symbols
 
