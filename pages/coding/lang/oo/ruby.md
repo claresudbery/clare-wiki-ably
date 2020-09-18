@@ -38,26 +38,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - A variable that has a string as its value will be mutable, but a
     symbol is immutable, and stored in a single place in memory
 
-  - Python also has a repl
-
   - Return values in Ruby functions are the last thing that was assigned
     - the **return** statement is often not used
-
-  - The **puts** statement is how you can output to console - useful for
-    quick-and-dirty debug logging.
-
-  - Return values in Ruby functions are the last thing that was assigned
-    - the **return** statement is often not used
-
-  - The **puts** statement is how you can output to console - useful for
-    quick-and-dirty debug logging.
 
   - IRB is the standard Ruby repl (run `irb` on command line, then type `exit` to leave)
-
-  - Python also has a repl
-
-  - Return values in Ruby functions are the last thing that was assigned
-    - the **return** statement is often not used
 
   - The **puts** statement is how you can output to console - useful for
     quick-and-dirty debug logging.
@@ -82,22 +66,20 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - If you get the error “cannot load such file” you need to check
         your load path by running **irb** on command line and then
         typing **$LOAD\_PATH**
-    
-      - You might have to do some kind of bundle install or vendor
-        install or both
-
-  - Calling javascript code from Ruby:
-    [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
 
   - If you get “cannot load such file -- bundler/setup (LoadError)” then
-    you might need to run **bundle install**
+    you might need to run **bundle install** or vendor install or both
     
       - If you get “command not found: bundle” then you might need to
         install Bundler: **sudo gem install bundler**
         
           - \!\! The password it wants is your laptop password
+
+  - Calling javascript code from Ruby:
+    [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
   
   - [Static methods and the `self` keyword](https://airbrake.io/blog/ruby/self-ruby-overview)
+  - Debugging Ruby [with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/)
 
 ## Hashes
 
