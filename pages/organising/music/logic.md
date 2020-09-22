@@ -1,4 +1,3 @@
----
 layout: page
 location: pages/organising/music/leaf
 permalink: /pages/organising/music/Logic
@@ -13,22 +12,24 @@ permalink: /pages/organising/music/Logic
 
 ### Adding a new track 
 
-- Main view - plus button top left to add new track 
-- Audio is to record new stuff using mic
-- Drummer is clever drummer AI
-- Software instrument is for sequencing
+- Main view - click the plus button, top left, to add new track 
+- `Software instrument` is for sequencing
+- `Audio` is to record new stuff using mic
+- `Drummer` is clever drummer AI
 
 ### Sequencing notes
 
-- New track | Software instrument is what you want
+- Track | New Software instrument track is what you want
 - Click Synthesizer bottom left to get you off sythesizer
 - Most reliable instruments are in legacy | Logic
 - It's very hit and miss
 - good guitar: Legacy | Logic | World | Mexican Guitarron
-- Select your track in main view, then click dropdown in top menu bar and select pencil tool instead of pointer tool
+- Select your track in main view, then click the dropdown in top menu bar and select pencil tool instead of pointer tool
 - Then click in the main grid to create a new section for that track. You can drag it at the edge to make it bigger.
+    - Double-click it to open the piano roll if it's not already open (or click the scissor icon, top left).
 - To copy/paste to repeat it, use alt click and drag in main grid
-- In the piano roll view, you can switch to pointer view and select multiple notes to drag them around in the grid
+- To add notes, in the piano roll view, switch to pencil tool, then use command + click to add notes.
+- In the piano roll view, you can switch to pointer tool and select multiple notes to drag them around in the grid
 - If you lose your piano roll, just double-click the section in the main grid to get it back again.
 - To repeat a section, in the main view you can drag from the top right corner of the section and it will create repeating blocks
 - You can also switch to pointer view in the main grid, select a bunch of stuff across tracks and then use alt drag to copy it elsewhere in the grid
@@ -36,6 +37,7 @@ permalink: /pages/organising/music/Logic
 - To change instrument: Select a track in left panel, then library can be used to change instrument
 - Repeat playback:
     - If you want to listen to one section repeatedly, drag the sections at the top of the main view, they will highlight in orange, then click the recycle button, top left main window.
+- If you accidentally zoom in or out either horizontally or vertically (easily done iwth the wrong key combinations), you can fix it with the sliders top right in the piano roll.
 
 ### Drum tracks without sequencing individual notes:
 
@@ -59,6 +61,28 @@ permalink: /pages/organising/music/Logic
     - There's a purple metronome icon at the top for a click track, and click the numbers to the left of the icon get a count in.
 - Use the main vertical line indicator to show whereabouts in the track it will start recording.
 - See [separate page](/pages/organising/music/Recording#recording-vocals-guitar-using-our-pa) on how to record vocals using our PA setup
+
+### Working with samples
+
+**Snipping / Copying / pasting:**
+
+- You can copy a chunk from the middle of a sample by holding down command then clicking and dragging. Then use Cmd+C and Cmd+V to paste elsewhere.
+- Markers should be useful for this, but although I worked out how to add them where you want them, I couldn't work out how to use them for editing usefulness. But anyway, you can add markers by... 
+    - moving the playhead thumb to where you want it,
+    - showing the global area (I think that's what it's called) by clicking the little blue arrow underneathe the blue waveform symbol,
+    - right-clicking the area and ticking Marker
+    - clicking the + symbo;l to the right of the word Marker
+    - The markers then appear above the tracks
+    - You can also view / edit them via View | Show List Editors and clicking MArker at the top.
+
+**Using samples as your basic building blocks**
+
+I really struggled at first with getting them to snap to grid, and I'm sure there are better ways of doing it, but I found the following helpful:
+
+- Work out (via trial and error) what your tempo is, and change it at the top of the screen so that each bar is the same size as your sample building block.
+- When you double-click on your sample track to get your sample editor, then select "track", you can select Snap to Bar or Snap to Samples, both of which are useful in different circumstances. You can fiddle around with other Snap setitngs here too.
+
+
 
 ### Distortion / FX
 
