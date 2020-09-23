@@ -58,4 +58,7 @@ Classification.
 
 
 Sarah Cooper: [10 tricks for appearing smart during meetings](https://thecooperreview.com/10-tricks-to-appear-smart-during-meetings/).
-She also created the excellent 
+
+## What's that popular front end / end to end testing framework?
+
+[Cypress](https://www.cypress.io/how-it-works/).
