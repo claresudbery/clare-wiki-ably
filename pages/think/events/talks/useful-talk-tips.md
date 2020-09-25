@@ -1,7 +1,7 @@
 ---
 layout: page
 location: "pages/think/events/talks/leaf"
-permalink: /pages/think/events/talks/useful-talk-tips
+permalink: /pages/think/events/talks/Useful-Talk-Tips
 ---
 
 ## Docs and Blog Posts
