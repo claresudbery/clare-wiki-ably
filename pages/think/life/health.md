@@ -29,6 +29,8 @@ See also [Staying sane during the COVID-19 crisis](http://127.0.0.1:4000/pages/t
 
 - Great article by Olvier Burkeman, ["Eight secrets to a fairly fulfilled life"](https://www.theguardian.com/lifeandstyle/2020/sep/04/oliver-burkemans-last-column-the-eight-secrets-to-a-fairly-fulfilled-life)
 
+- The [ugh field](https://medium.com/@robertwiblin/ugh-fields-or-why-you-can-t-even-bear-to-think-about-that-task-5941837dac62) (not the ugh response as I previously thought)
+
 ## COVID-19 / coronavirus / Sars-CoV-2
 
 ### Staying sane during the COVID-19 crisis
