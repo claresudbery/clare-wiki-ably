@@ -82,6 +82,14 @@ The reason this is so important is that otherwise, participants are getting audi
 	- Get them to log out and then log back in again, or even restart their computer.
 	- If sound is cutting out, take the same actions listed above for connectivity issues.
 
+## Tools others have recommended
+
+- [Qiqochat - for interactive and participatory online events](https://qiqochat.com/about)
+- [BigBlueButton - open source web conferencing](https://bigbluebutton.org/) - has breakout rooms
+- [Have a party in a spreadsheet!](https://onezero.medium.com/party-in-a-shared-google-doc-d576c565706e)
+- [HopIn](https://hopin.to/) - allows for multiple different channels
+- [Online Town](https://theonline.town/) - where you [move an avatar around and see/hear people in the distance](https://mashable.com/article/online-town-video-chat-for-groups/?europe=true)
+
 ## Tools we are using
 
 (See below for Zoom tips and Miro tips)
