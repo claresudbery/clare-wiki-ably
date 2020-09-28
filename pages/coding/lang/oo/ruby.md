@@ -197,7 +197,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - you can use `gets` and `puts` [like this](https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_02/user_input.html) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb))
 - or you can use `$stdin`
-- both `gets` and `$stdin` can be used to pipe input directly from other sources (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb))
+- both `gets` and `$stdin` can be used to pipe input directly from other sources (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb)) (more [here](http://zetcode.com/lang/rubytutorial/io/#:~:text=The%20%24stdin%20is%20a%20global,read%20input%20from%20the%20console.&text=In%20the%20above%20code%2C%20we,read%20input%20from%20the%20console.&text=The%20read%20method%20reads%20data,the%20end%20of%20the%20file.))
 - or you can create a CLI and pass data in via command line parameters [like this](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb))
 - be aware that sometimes your input is requested before your output is output - you fix that by using `$stdout.sync = true` (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb)) (more [here](https://stackoverflow.com/questions/61333685/ruby-issue-my-gets-function-executes-before-my-puts-statement).)
 
