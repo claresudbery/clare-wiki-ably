@@ -23,3 +23,10 @@ permalink: /pages/coding/tools/Visual-Studio-Code
   - Select vertical column of text: 
     - Place the cursor where you want it
     - hold down Shift + Alt , then click and drag with the mouse
+
+## Debugging
+
+- If you want to debug code in VS Code, you need a `launch.json` file. 
+- Click the Play button over on the left, and you'll see text saying something like "To customize Run and Debug create a launch.json file". If you click the link, it will create one for you.
+- You might then want to add new configurations for new languages (eg Ruby) - to do that, click the link under "Show all automatic debug configurations"  and then click "Add configuration".
+- If you're configuring debugging for Ruby, there are some extra instructions [here, under the link to Debugging Ruby with breakpoints](http://127.0.0.1:4000/pages/coding/lang/oo/Ruby#tutorials-and-guides) 

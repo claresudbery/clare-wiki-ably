@@ -22,9 +22,31 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Learn TDD in Ruby](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Getting started with Ruby on Rails](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
-- Debugging Ruby [with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/)
+- [Writing a command-line application in Ruby](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby)
 - Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
 - [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff) - my notes (written frequently in a state of confusion - quite chaotic)
+
+## Debugging
+
+
+- Debugging Ruby [with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/)
+  - !! Note that when it says to add a launch.json and "open the debugging tab", you need to [follow the instructions here](/pages/coding/tools/Visual-Studio-Code#debugging) (I suspect the UI has changed a little since that article was written)
+  - Then when you are told to add a configuration, you need to select Ruby and then select `Listen for rdebug-ide`. This will have the effect of adding a new entry into the `"configurations"` section of your `launch.json` that looks something like this: 
+
+```
+      {
+          "name": "Listen for rdebug-ide",
+          "type": "Ruby",
+          "request": "attach",
+          "remoteHost": "127.0.0.1",
+          "remotePort": "1234",
+          "remoteWorkspaceRoot": "${workspaceRoot}"
+      } 
+```
+
+  - Note that you can do the same for Rspec by selecting Add configuration and adding in configs for `"RSpec - active spec file only"` and `"RSpec - all"`
+  - Also note that if you get any errors, you might have to restart the debug server with `rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 26162 /path/to/file.rb`
+  - Argh, I'm now getting an `ECONNREFUSED` error - so this ain't working for me yet.
 
 ## Gems, packaging, versioning
 
@@ -155,6 +177,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - A variable that has a string as its value will be mutable, but a
   symbol is immutable, and stored in a single place in memory
 
+## Questions
 
+- If RSpec is a Gem, why is it never required in your spec files? How do they get the code they need? And what does the `--` mean in front of `require spec_helper` in the `.rspec` file?
 
 
