@@ -29,8 +29,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Debugging
 
+### Debugging on command line
 
-- Debugging Ruby [with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/)
+- [Pry and various other tools described briefly here](https://stackify.com/ruby-debugger-using-visual-studio-code/) 
+
+### Debugging in VS Code using Ruby extension and ruby-debug-ide
+
+- [Another article on the same thing](https://stackify.com/ruby-debugger-using-visual-studio-code/) (scroll down to where it talks about VS Code)
+- Original article here Debugging Ruby [with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/)
   - !! Note that when it says to add a launch.json and "open the debugging tab", you need to [follow the instructions here](/pages/coding/tools/Visual-Studio-Code#debugging) (I suspect the UI has changed a little since that article was written)
   - Then when you are told to add a configuration, you need to select Ruby and then select `Listen for rdebug-ide`. This will have the effect of adding a new entry into the `"configurations"` section of your `launch.json` that looks something like this: 
 
@@ -47,7 +53,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
   - Note that you can do the same for Rspec by selecting Add configuration and adding in configs for `"RSpec - active spec file only"` and `"RSpec - all"`
   - Also note that if you get any errors, you might have to restart the debug server with `rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 26162 /path/to/file.rb`
-  - Argh, I'm now getting an `ECONNREFUSED` error - so this ain't working for me yet.
+  - I got an `ECONNREFUSED` error on Windows but I think this was either because I hadn't restarted all instances of VS Code or because I was passing the wrong file name to the `rdebug-ide` command
+  - I also had another problem that I started debugging and it seemed like ith hung, but this was because I was running code that was asking for command line input, which I wasn't providing.
+  - I haven't managed to work out how to pass command line arguments to code that you're debugging.
+
+### Debugging in VS Code using ruby-debug extension
+
+- [Article here](https://blog.rmcd.io/blog/debugging-ruby-locally)
+- I didn't get this working on Windows or Mac, but didn't spend so long in Mac
 
 ## Gems, packaging, versioning
 
