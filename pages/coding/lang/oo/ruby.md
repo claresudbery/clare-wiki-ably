@@ -23,6 +23,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Getting started with Ruby on Rails](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
 - [Writing a command-line application in Ruby](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby)
+  - More detailed [documentation for `OptionParser`](https://ruby-doc.org/stdlib-2.6.3/libdoc/optparse/rdoc/OptionParser.html#class-OptionParser-label-Minimal+example)
 - Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
 - [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff) - my notes (written frequently in a state of confusion - quite chaotic)
 
