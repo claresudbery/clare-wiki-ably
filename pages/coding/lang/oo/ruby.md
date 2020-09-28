@@ -26,7 +26,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
 - [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff) - my notes (written frequently in a state of confusion - quite chaotic)
 
-### Gems, packaging, versioning
+## Gems, packaging, versioning
 
 - [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
 - Require, gems, loading files: 
@@ -47,26 +47,21 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Testing
 
-  - Useful links I found:
-    
-      - Overview:
-        [<span class="underline">https://en.wikibooks.org/wiki/Ruby\_Programming/Unit\_testing</span>](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
-    
-      - Running a single test:
-        [<span class="underline">https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221</span>](https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221)
-        
-          - I didn’t manage to get this working, but that was probably
-            something to do with how my ruby gems were installed -
-            something to do with bundles and vendor and stuff
-    
-      - Mocking in Ruby:
-        [<span class="underline">https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest</span>](https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest)
-        
-          - Mocking stuff that is in a module instead of a class:
-            [<span class="underline">https://github.com/btakita/rr/issues/98</span>](https://github.com/btakita/rr/issues/98)
-    
-      - Calling javascript code from Ruby:
-        [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
+- Overview of unit testing:
+  [<span class="underline">https://en.wikibooks.org/wiki/Ruby\_Programming/Unit\_testing</span>](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
+
+- Running a single test:
+  [<span class="underline">https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221</span>](https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221)
+  
+    - I didn’t manage to get this working, but that was probably
+      something to do with how my ruby gems were installed -
+      something to do with bundles and vendor and stuff
+
+- Mocking in Ruby:
+  [<span class="underline">https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest</span>](https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest)
+  
+    - Mocking stuff that is in a module instead of a class:
+      [<span class="underline">https://github.com/btakita/rr/issues/98</span>](https://github.com/btakita/rr/issues/98)
 
 ### Rspec
 
@@ -108,6 +103,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Static methods and the `self` keyword](https://airbrake.io/blog/ruby/self-ruby-overview)
 
 - Frozen values: [Frozen strings](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html#:~:text=The%20term%20'frozen'%20is%20Ruby's,an%20exception%20will%20be%20raised.)
+
+- Calling javascript code from Ruby:
+  [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
 
 ### Collections
 
