@@ -56,6 +56,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - I got an `ECONNREFUSED` error on Windows but I think this was either because I hadn't restarted all instances of VS Code or because I was passing the wrong file name to the `rdebug-ide` command
   - I also had another problem that I started debugging and it seemed like ith hung, but this was because I was running code that was asking for command line input, which I wasn't providing.
   - I haven't managed to work out how to pass command line arguments to code that you're debugging.
+- Other useful links:
+  - [VS Code Debugging]()
 
 ### Debugging in VS Code using ruby-debug extension
 
@@ -190,6 +192,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - A variable that has a string as its value will be mutable, but a
   symbol is immutable, and stored in a single place in memory
+
+### Command Line Input
+
+- you can use `gets` and `puts` [like this](https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_02/user_input.html) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb))
+- or you can use `$stdin`
+- both `gets` and `$stdin` can be used to pipe input directly from other sources (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb))
+- or you can create a CLI and pass data in via command line parameters [like this](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb))
+- be aware that sometimes your input is requested before your output is output - you fix that by using `$stdout.sync = true` (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb)) (more [here](https://stackoverflow.com/questions/61333685/ruby-issue-my-gets-function-executes-before-my-puts-statement).)
 
 ## Questions
 
