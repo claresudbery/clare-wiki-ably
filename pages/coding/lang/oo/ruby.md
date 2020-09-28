@@ -13,7 +13,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [https://github.com/claresudbery/clare-wiki-jekyll](https://github.com/claresudbery/Infra-Scripts)
     - Skeleton Jekyll site which I created before I started using the Ably template (Jekyll is built in Ruby).
 - [Bowling kata](https://github.com/claresudbery/bowling-kata-ruby) - bowling kata implemented in Ruby
+- [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - [tic-tac-toe kata](https://github.com/claresudbery/tic-tac-toe-kata) - tic-tac-toe kata implemented in Ruby
+- [wordwrap kata](https://github.com/claresudbery/wordwrap-kata-ruby) - wordwrap kata implemented in Ruby
+- [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app)
+- [Sample gov uk front end rails app from Csaba](https://github.com/C-gyorfi/govuk-front-end-rails-app)
 
 ## Tutorials and Guides
 
@@ -22,6 +26,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Learn TDD in Ruby](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Getting started with Ruby on Rails](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
+- [Your first Sinatra app](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
 - [Writing a command-line application in Ruby](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby)
   - More detailed [documentation for `OptionParser`](https://ruby-doc.org/stdlib-2.6.3/libdoc/optparse/rdoc/OptionParser.html#class-OptionParser-label-Minimal+example)
 - Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
@@ -67,6 +72,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Gems, packaging, versioning
 
 - [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
+- [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - Require, gems, loading files: 
   [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
 - [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff) - my notes (written frequently in a state of confusion - quite chaotic)
@@ -100,6 +106,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   
     - Mocking stuff that is in a module instead of a class:
       [<span class="underline">https://github.com/btakita/rr/issues/98</span>](https://github.com/btakita/rr/issues/98)
+
+- [Rspec stubs](https://www.tutorialspoint.com/rspec/rspec_stubs.htm#:~:text=In%20RSpec%2C%20a%20stub%20is,doesn't%20even%20exist%20yet.&text=In%20our%20example%2C%20the%20allow,to%20test%20the%20ClassRoom%20class.) 
 
 ### Rspec
 
@@ -196,9 +204,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### Command Line Input
 
 - you can use `gets` and `puts` [like this](https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_02/user_input.html) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb))
-- or you can use `$stdin`
+- or you can use `$stdin` - see [article here](https://www.honeybadger.io/blog/writing-command-line-apps-in-ruby/)
 - both `gets` and `$stdin` can be used to pipe input directly from other sources (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb)) (more [here](http://zetcode.com/lang/rubytutorial/io/#:~:text=The%20%24stdin%20is%20a%20global,read%20input%20from%20the%20console.&text=In%20the%20above%20code%2C%20we,read%20input%20from%20the%20console.&text=The%20read%20method%20reads%20data,the%20end%20of%20the%20file.))
-- or you can create a CLI and pass data in via command line parameters [like this](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb))
+- or you can create a CLI and pass data in via command line parameters [like this using `OptionParser`](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb)) (More detailed [documentation for `OptionParser`](https://ruby-doc.org/stdlib-2.6.3/libdoc/optparse/rdoc/OptionParser.html#class-OptionParser-label-Minimal+example))
 - be aware that sometimes your input is requested before your output is output - you fix that by using `$stdout.sync = true` (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb)) (more [here](https://stackoverflow.com/questions/61333685/ruby-issue-my-gets-function-executes-before-my-puts-statement).)
 
 ## Questions
