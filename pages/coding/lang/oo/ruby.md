@@ -16,12 +16,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - [tic-tac-toe kata](https://github.com/claresudbery/tic-tac-toe-kata) - tic-tac-toe kata implemented in Ruby
 - [wordwrap kata](https://github.com/claresudbery/wordwrap-kata-ruby) - wordwrap kata implemented in Ruby
-- [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app)
 - [Sample gov uk front end rails app from Csaba](https://github.com/C-gyorfi/govuk-front-end-rails-app)
+- See [Sinatra](#sinatra) below for various Sinatra repos.
 
 ## Tutorials and Guides
 
 - [Ruby cheatsheet](https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md)
+- [Learn Enough Ruby to be Dangerous](https://www.learnenough.com/course/ruby/hello_world?start_course=true)
 - [TDD and OOP and Ruby from Sandi Metz](https://www.sandimetz.com/99bottles/sample)
 - [Learn TDD in Ruby](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Getting started with Ruby on Rails](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
@@ -31,6 +32,17 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - More detailed [documentation for `OptionParser`](https://ruby-doc.org/stdlib-2.6.3/libdoc/optparse/rdoc/OptionParser.html#class-OptionParser-label-Minimal+example)
 - Tons of Ruby-related stuff in the [Jekyll Troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
 - [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff) - my notes (written frequently in a state of confusion - quite chaotic)
+
+## Sinatra
+
+- [Your first Sinatra app](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
+- [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app)
+- [This commit](https://github.com/claresudbery/tic-tac-toe-kata/tree/a83d917993009f065caba0a3f74b7a2fb6a0d254) on the tic tac toe repo is a simple hello world Sinatra app.
+- [Very simple Sinatra testing guide](http://sinatrarb.com/testing.html) - less friction than the one below.
+- [Sample Sinatra app from rubymonsters/testing-for-beginners](https://github.com/rubymonsters/testing-for-beginners/tree/main/code/sinatra)
+  - For a tutorial that uses this repo to demo testing, see [here](http://testing-for-beginners.rubymonstas.org/rack_test/sinatra.html).
+  - I got a bundler version error when I tried to run it using `rackup -I .` - notes [here](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#bundler-version-error) on how I fixed it.
+- [Handy Sinatra documentation](http://sinatrarb.com/intro.html)
 
 ## Debugging
 
@@ -117,6 +129,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Rspec style guide](https://rspec.rubystyle.guide/)
 
+- [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
+
 ## Language Features
 
 ### Misc Language Stuff
@@ -147,6 +161,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
 
 - [Static methods and the `self` keyword](https://airbrake.io/blog/ruby/self-ruby-overview)
+
+- **yield keyword**: `yield` is a keyword in Ruby that calls a block that was given to a method. Whenever you pass a block to a method (such as each, collect, select, and so on) this method can then call the block by using the keyword yield. So, in a `Sinatra` layout template, <%= yield %> marks the place where the other template (the one that is being wrapped) is supposed to be inserted. Example [here](https://github.com/claresudbery/sinatra-skeleton-app/blob/bb21e6dfa271f135b620876b9a21344edf7a6eab/monstas.rb#L31).
 
 - Frozen values: [Frozen strings](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html#:~:text=The%20term%20'frozen'%20is%20Ruby's,an%20exception%20will%20be%20raised.)
 

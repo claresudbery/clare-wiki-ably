@@ -104,6 +104,14 @@ curl https://cli-assets.heroku.com/install.sh | sh
 ### Using ruby-install with a specific Ruby version
 
 * Instead of **ruby-install ruby**, you can use **ruby-install** to install the same Ruby version as specified in Gemfile, like this: **ruby-install ruby 2.6.5**
+
+### Bundler version error
+
+- When trying to run [testing-for-beginners](https://github.com/rubymonsters/testing-for-beginners) via `rackup`: "Could not find gem 'bundler (~> 1.1)', which is required by gem 'middleman-core (= 3.3.7)', in any of the sources."
+- Solution:
+	- `gem install bundler -v 1.15`
+	- `bundle _1.15_ install`
+	- `gem install middleman`
 	
 ## Favicon Stuff
 
