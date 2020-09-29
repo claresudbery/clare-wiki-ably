@@ -121,6 +121,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Rspec stubs](https://www.tutorialspoint.com/rspec/rspec_stubs.htm#:~:text=In%20RSpec%2C%20a%20stub%20is,doesn't%20even%20exist%20yet.&text=In%20our%20example%2C%20the%20allow,to%20test%20the%20ClassRoom%20class.) 
 
+- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers)
+
 ### Rspec
 
 - Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
