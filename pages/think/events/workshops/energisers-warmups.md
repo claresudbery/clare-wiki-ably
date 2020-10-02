@@ -18,7 +18,8 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
 - If still stuck for ideas, just google "icebreakers"
 - Use https://really.boring.website/ to play a game
-- Aplit into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
+- Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
+- In groups of 3, design a superhero. You get to choose one super power reach and combine them into one hero. Draw a collaborative picture of the result.
 
 ## Human rock paper scissors
 

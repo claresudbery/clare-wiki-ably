@@ -4,6 +4,8 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/Fun-Games
 ---
 
+See also [energisers](/pages/think/events/workshops/energisers-warmups.md).
+
 ## Daft Games
 
 - Everything from Taskmaster (see book). For instance...
