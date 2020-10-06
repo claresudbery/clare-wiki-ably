@@ -52,15 +52,39 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### Debugging in VS Code using Ruby extension and ruby-debug-ide
 
-- [Another article on the same thing](https://stackify.com/ruby-debugger-using-visual-studio-code/) (scroll down to where it talks about VS Code)
-- Original article here Debugging Ruby [with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/)
-  - I currently have this working in my [bowling-kata-ruby repo](https://github.com/claresudbery/bowling-kata-ruby): 
-    - Checkout [this commit](https://github.com/claresudbery/bowling-kata-ruby/commit/91d4c5c7021a95c07c7247950d9f55c0f85cdf8b) 
-    - Run `rdebug-ide src/bowling_cli.rb` on the command line
-    - Click the Play button with a bug icon over on the left in VS Code
-    - Select "Listen for rdebug-ide" in the dropdown top left
-    - Set a breakpoint, for instance in `bowling_cli.rb`
-    - Click the green run triangle next to the dropdown top left
+#### Step by step guide to get started
+
+- First, on the command line:
+- `sudo gem install debase`
+- `gem install ruby-debug-ide`
+- Now, in the same folder:
+- `rdebug-ide app.rb` (If necessary, replace `app.rb` with the appropriate path and file name to start up the code you want to debug).
+- Open up VS Code.
+- Click the Play button with a bug icon over on the left, then click "Create a launch.son file" (if you don't already have one):
+![Run Debug button](/resources/images/VS-code-run-debug.png)
+- When it asks you to Select Environment, select Ruby.
+- Select "Listen for rdebug-ide".
+- Set a breakpoint in one of your files, eg in your default '/' route in app.rb for a Sinatra web app.
+- Click the green run triangle next to the dropdown top left.
+- If what you're running is a webapp, visit the app in the browser (eg http://localhost:4567 for a Sinatra app where you put your breakpoint in the '/' route).
+- You should now hit your breakpoint.
+
+#### Once you're up and running - an example
+
+- I currently have this working in my [bowling-kata-ruby repo](https://github.com/claresudbery/bowling-kata-ruby): 
+  - Checkout [this commit](https://github.com/claresudbery/bowling-kata-ruby/commit/91d4c5c7021a95c07c7247950d9f55c0f85cdf8b) 
+  - Run `rdebug-ide src/bowling_cli.rb` on the command line
+  - Select "Listen for rdebug-ide" in the dropdown top left
+  - Set a breakpoint, for instance in `bowling_cli.rb`
+  - Click the green run triangle next to the dropdown top left
+
+#### Debugging rspec tests
+
+- If you want to debug Rspec tests, follow the guide above, then when click the Run Debug button, select Add configuration from the dropdown and add configs for `"RSpec - active spec file only"` and `"RSpec - all"`
+
+#### More info
+
+- Original article here: [Debugging Ruby with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/) (scroll down to where it talks about VS Code)
   - !! Note that when it says to add a launch.json and "open the debugging tab", you need to [follow the instructions here](/pages/coding/tools/Visual-Studio-Code#debugging) (I suspect the UI has changed a little since that article was written)
   - Then when you are told to add a configuration, you need to select Ruby and then select `Listen for rdebug-ide`. This will have the effect of adding a new entry into the `"configurations"` section of your `launch.json` that looks something like this: 
 
@@ -78,10 +102,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - Note that you can do the same for Rspec by selecting Add configuration and adding in configs for `"RSpec - active spec file only"` and `"RSpec - all"`
   - Also note that if you get any errors, you might have to restart the debug server with `rdebug-ide --host 0.0.0.0 --port 1234 --dispatcher-port 26162 /path/to/file.rb`
   - I got an `ECONNREFUSED` error on Windows but I think this was either because I hadn't restarted all instances of VS Code or because I was passing the wrong file name to the `rdebug-ide` command
-  - I also had another problem that I started debugging and it seemed like ith hung, but this was because I was running code that was asking for command line input, which I wasn't providing.
+  - I also had another problem that I started debugging and it seemed like it hung, but this was because I was running code that was asking for command line input, which I wasn't providing.
   - I haven't managed to work out how to pass command line arguments to code that you're debugging.
-- Other useful links:
-  - [VS Code Debugging]()
 
 ### Debugging in VS Code using ruby-debug extension
 
