@@ -54,6 +54,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Another article on the same thing](https://stackify.com/ruby-debugger-using-visual-studio-code/) (scroll down to where it talks about VS Code)
 - Original article here Debugging Ruby [with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/)
+  - I currently have this working in my [bowling-kata-ruby repo](https://github.com/claresudbery/bowling-kata-ruby): 
+    - Checkout [this commit](https://github.com/claresudbery/bowling-kata-ruby/commit/91d4c5c7021a95c07c7247950d9f55c0f85cdf8b) 
+    - Run `rdebug-ide src/bowling_cli.rb` on the command line
+    - Click the Play button with a bug icon over on the left in VS Code
+    - Select "Listen for rdebug-ide" in the dropdown top left
+    - Set a breakpoint, for instance in `bowling_cli.rb`
+    - Click the green run triangle next to the dropdown top left
   - !! Note that when it says to add a launch.json and "open the debugging tab", you need to [follow the instructions here](/pages/coding/tools/Visual-Studio-Code#debugging) (I suspect the UI has changed a little since that article was written)
   - Then when you are told to add a configuration, you need to select Ruby and then select `Listen for rdebug-ide`. This will have the effect of adding a new entry into the `"configurations"` section of your `launch.json` that looks something like this: 
 
