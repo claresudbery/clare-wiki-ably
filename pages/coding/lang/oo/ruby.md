@@ -132,35 +132,27 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Testing
 
-- Overview of unit testing:
+- For Rspec [see below](#rspec)
+- Overview of unit testing using Test::Unit:
   [<span class="underline">https://en.wikibooks.org/wiki/Ruby\_Programming/Unit\_testing</span>](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
-
-- Running a single test:
-  [<span class="underline">https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221</span>](https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221)
-  
+- Running a single test in Rails:
+  [<span class="underline">https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221</span>](https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221)  
     - I didn’t manage to get this working, but that was probably
       something to do with how my ruby gems were installed -
       something to do with bundles and vendor and stuff
-
-- Mocking in Ruby:
-  [<span class="underline">https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest</span>](https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest)
-  
-    - Mocking stuff that is in a module instead of a class:
+- Mocking in Ruby using Minitest:
+  [<span class="underline">https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest</span>](https://semaphoreci.com/community/tutorials/mocking-in-ruby-with-minitest)  
+- Mocking stuff that is in a module instead of a class, using RR:
       [<span class="underline">https://github.com/btakita/rr/issues/98</span>](https://github.com/btakita/rr/issues/98)
-
-- [Rspec stubs](https://www.tutorialspoint.com/rspec/rspec_stubs.htm#:~:text=In%20RSpec%2C%20a%20stub%20is,doesn't%20even%20exist%20yet.&text=In%20our%20example%2C%20the%20allow,to%20test%20the%20ClassRoom%20class.) 
-
-- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers)
 
 ### Rspec
 
 - Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
-
 - [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
-
 - [Rspec style guide](https://rspec.rubystyle.guide/)
-
 - [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
+- [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
+- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers)
 
 ## Language Features
 
@@ -255,6 +247,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - both `gets` and `$stdin` can be used to pipe input directly from other sources (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb)) (more [here](http://zetcode.com/lang/rubytutorial/io/#:~:text=The%20%24stdin%20is%20a%20global,read%20input%20from%20the%20console.&text=In%20the%20above%20code%2C%20we,read%20input%20from%20the%20console.&text=The%20read%20method%20reads%20data,the%20end%20of%20the%20file.))
 - or you can create a CLI and pass data in via command line parameters [like this using `OptionParser`](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb)) (More detailed [documentation for `OptionParser`](https://ruby-doc.org/stdlib-2.6.3/libdoc/optparse/rdoc/OptionParser.html#class-OptionParser-label-Minimal+example))
 - be aware that sometimes your input is requested before your output is output - you fix that by using `$stdout.sync = true` (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb)) (more [here](https://stackoverflow.com/questions/61333685/ruby-issue-my-gets-function-executes-before-my-puts-statement).)
+
+### Inheritance
+
+- [great article here](http://rubylearning.com/satishtalim/ruby_inheritance.html) on inheritance in Ruby - includes an explanation of why instance variables are not defined by classes and are therefore also not inherited by subclasses. 
 
 ## Questions
 
