@@ -22,11 +22,79 @@ permalink: /pages/think/code-princ/testing/TDD
 - Twitter thread by Mike Hadlow: ["I was a hard-core TDD evangelist. Now I realise it was all a mistake..."](https://twitter.com/mikehadlow/status/1263819765900095491?s=21)
     - Response to that thread (not sure who from, sadly I lost the original tweet): "[Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this](https://news.ycombinator.com/item?id=3033446)"
 
-## Mocking
+## Mocks and Mocking 
 
+### Mocking Terminology (Doubles, Mocks, Stubs, Fakes, Dummies and Spies)
 
+My notes here were originally taken from [this article](http://blog.8thlight.com/uncle-bob/2014/05/14/TheLittleMocker.html).
 
-### Doubles, Mocks, Stubs, Fakes and Spies
+#### Test Doubles
+
+- Overall term for different kinds of mocking objects, eg
+    - Dummy
+    - Stub
+    - Spy
+    - Mock
+    - Fake
+
+#### Dummy / Dummies
+
+- You pass this into something when you don’t care how it’s used
+- Like *when you must pass an argument, but you know the argument will
+never be used.*
+
+#### Stubs
+
+- A replacement for functionality you don’t want to call and you don’t
+want to test
+- Eg an authoriser that just returns true
+
+#### Spy / Spies
+
+- An object that records when it is called and what arguments are
+passed to it
+- \! Be careful. It can make your tests fragile / brittle.
+    - *The more you spy, the tighter you couple your tests to the
+    implementation of your system.*
+    - *This is because your test is expecting certain functions to be
+    called with certain arguments, so your tests will be broken by a
+    refactor*
+
+#### Mocks
+
+- Mocks are always spies
+- Mocks know what they are testing
+- You move the assertion from the test, into the verify method of the
+mock
+- *What the mock is testing is* **behaviour**
+- *The mock is not so interested in the return values of functions.
+It's more interested in what function were called, with what
+arguments, when, and how often.*
+- *Moving the assertion in this way does create more coupling, but it
+makes it a lot easier to write a mocking tool*
+- [Famous paper by Martin Fowler that explains it well](http://martinfowler.com/articles/mocksArentStubs.html)
+
+#### Fakes, aka simulators
+
+- Like a stub, but contains behaviour
+- For instance, a user called Bob who is always authorised
+    - He doesn’t exist really
+    - But he will get us past code we are not interested in
+- “A Fake has business behavior. You can drive a fake to behave in
+different ways by giving it different data
+- A fake is the only kind of test double that has real business
+behaviour
+- But it can get very complicated – you can end up writing tests to
+test the fakes
+- They’re best avoided if possible”
+
+#### Auto-mocking
+
+- Available from RhinoMocks, StructureMap, Moq, and many others.
+- Will build instances for you, injecting mock dependencies, so when
+your class has a lot of dependencies you don’t have to manually
+construct a mock for each dependency passed in
+- [Nice description here](https://lostechies.com/joshuaflanagan/2009/02/04/auto-mocking-explained/)
 
 ### Mocks and TDD
 
@@ -84,4 +152,3 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [getting-started-with-tdd-in-react](https://github.com/claresudbery/getting-started-with-tdd-in-react)
 - [BowlingGameKata-TDD-as-if-you-meant-it-](https://github.com/claresudbery/BowlingGameKata-TDD-as-if-you-meant-it-)
 - [Jon Acker's TDD katas](https://github.com/jon-acker/coding-katas)
-
