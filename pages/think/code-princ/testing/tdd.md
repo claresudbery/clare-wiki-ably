@@ -11,7 +11,7 @@ permalink: /pages/think/code-princ/testing/TDD
 - [My refactoring article(s) on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
 - [My InSimpleTerms blog - TDD category](https://insimpleterms.blog/category/tdd) (TDD category)
 
-### Recommended reads before Webinar panel on ["Why hasn't TDD taken over the world yet?"](https://cucumber.io/resources/webinars/tdd-roundtable-series/)
+### Recommended reads on the topic ["Why hasn't TDD taken over the world yet?"](https://cucumber.io/resources/webinars/tdd-roundtable-series/)
 
 - [research paper on TDD from Petr Jasek of Aalborg University, Denmark](https://t.co/lQoS3ilFA8?amp=1)
 - TDD techniques: http://codemanship.co.uk/parlezuml/blog/?postid=987
