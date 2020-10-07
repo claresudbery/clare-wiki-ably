@@ -108,7 +108,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### Debugging in VS Code using ruby-debug extension
 
 - [Article here](https://blog.rmcd.io/blog/debugging-ruby-locally)
-- I didn't get this working on Windows or Mac, but didn't spend so long in Mac
+- I didn't get this working on Windows or Mac, but didn't spend so long on Mac.
 
 ## Gems, packaging, versioning
 
