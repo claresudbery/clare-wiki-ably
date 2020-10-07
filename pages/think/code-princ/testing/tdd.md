@@ -22,7 +22,13 @@ permalink: /pages/think/code-princ/testing/TDD
 - Twitter thread by Mike Hadlow: ["I was a hard-core TDD evangelist. Now I realise it was all a mistake..."](https://twitter.com/mikehadlow/status/1263819765900095491?s=21)
     - Response to that thread (not sure who from, sadly I lost the original tweet): "[Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this](https://news.ycombinator.com/item?id=3033446)"
 
-## Mocks and TDD
+## Mocking
+
+
+
+### Doubles, Mocks, Stubs, Fakes and Spies
+
+### Mocks and TDD
 
 - Andy Longshaw: [Reflections on brittle tests and mocking](https://blogs.blueskyline.com/2020/07/30/this-cant-possibly-be-right/)
 - "When we came up with mocks, they weren't a TDD technique. They were a way to use TDD when designing the protocols between state machines. ... We designed mock frameworks to be a brutal early warning sign that our design was going off the rails." @natpryce
