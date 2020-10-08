@@ -42,6 +42,7 @@ My notes here were originally taken from [this article](http://blog.8thlight.com
 - You pass this into something when you don’t care how it’s used
 - Like *when you must pass an argument, but you know the argument will
 never be used.*
+- The difference between a dummy and a stub is that the stub will actually get used by the code you pass it to, whereas the dummy won't.
 
 #### Stubs
 
