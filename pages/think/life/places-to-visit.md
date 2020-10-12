@@ -14,3 +14,7 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots)
 ## Things to do with kids
 
 - Donkey sanctuary off the cycle track near Debdale reservoir.
+
+## General things to do
+
+- [Drive-in cinema at Event City](https://parknpartymcr.co.uk/drive-in-cinema-manchester/)
