@@ -4,6 +4,10 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Katas
 ---
 
+## Tools
+
+- [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
+
 ## GitHub Repos
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
@@ -23,4 +27,5 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - I think this was the recruitment test when I joined NICE as a contractor.
 - [NumberToLCD_Kata (PRIVATE)](https://github.com/claresudbery/NumberToLCD_Kata)
     - Made Tech recruitment exercise
+- Lots of Ruby katas are linked to [on my Ruby page](http://127.0.0.1:4000/pages/coding/lang/oo/Ruby#github-repos)
 

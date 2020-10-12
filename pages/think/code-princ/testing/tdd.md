@@ -125,6 +125,7 @@ construct a mock for each dependency passed in
 ## Misc
 
 - [TDD tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=65ff390c-ddb3-45f6-9de5-762606dfc826&query=tag%1FTDD%1FtagGuid%3Ad39ee366-abf9-4984-9ac7-f41d93f6460a%1Eview%3AVIEW%2FALL_NOTES&)
+- [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
 
 ## Tips and Terms and Tools
 
