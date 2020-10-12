@@ -8,6 +8,12 @@ permalink: /pages/think/code-princ/Katas
 
 - [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
 
+## Kata definitions
+
+- [Made Tech Learn Tech katas](https://learn.madetech.com/katas/)
+    - (includes Bowling, Mumbling, Number to LCD, Roman numerals, Snake, Tennis, Tennis Refactoring, Turnstile, Wordwrap, Test Framework, Video Store and Mars Rover)
+- [Made Tech Learn Tech Sparring Exercises](https://learn.madetech.com/sparring/) (overview, then Tic Tac Toe and Payroll exercises)
+
 ## GitHub Repos
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.

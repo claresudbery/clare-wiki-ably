@@ -226,6 +226,8 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
 
 - when hashes have string keys, [those strings are frozen](https://tenderlovemaking.com/2015/02/11/weird-stuff-with-hashes.html)
 - Ruby [documentation on hashes](https://docs.ruby-lang.org/en/2.0.0/Hash.html) (it's pretty good documentation)
+- [Using an array as a key in your hash](https://softwareengineering.stackexchange.com/questions/197982/why-would-you-want-to-use-an-array-or-hash-as-hash-key-in-ruby)
+  - we thought about creating an example in our wordwrap academy kata, but instead we used a [nested hash as a key](https://github.com/madetech/academy_2020_mob/commit/2a4d40ea0401d01a8b88d57f202289138ff9fa63)
 
 #### Arrays
 
