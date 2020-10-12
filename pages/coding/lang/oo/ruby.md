@@ -16,6 +16,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - [tic-tac-toe kata](https://github.com/claresudbery/tic-tac-toe-kata) - tic-tac-toe kata implemented in Ruby
 - [wordwrap kata](https://github.com/claresudbery/wordwrap-kata-ruby) - wordwrap kata implemented in Ruby
+- [Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby)
+- [Academy mob code base](https://github.com/madetech/academy_2020_mob)
 - [Sample gov uk front end rails app from Csaba](https://github.com/C-gyorfi/govuk-front-end-rails-app)
 - See [Sinatra](#sinatra) below for various Sinatra repos.
 
@@ -153,6 +155,32 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
 - [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
 - Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers)
+
+#### Test cases in rspec
+
+You can handle test cases in rspec in the way shown below - and there are more examples [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/23b24cf36e2e1be443f1d35bc9e40443564cf814/spec/wordwrap_spec.rb). Below we use a `hash` to map inputs ("rolls") to outputs "scores", and then use an `each` statement to loop through the list of elements in the hash.
+
+```
+expected_scores_with_a_strike_in_the_tenth_frame = {
+        "44 44 44 44 44 44 44 44 44 X 32" => (9*8) + (10+3+2),
+        "44 44 44 44 44 44 44 44 44 X X-" => (9*8) + (10+10+0),
+        "44 44 44 44 44 44 44 44 44 X -X" => (9*8) + (10+0+10),
+        "44 44 44 44 44 44 44 44 44 X XX" => (9*8) + (10+10+10),
+        "44 44 44 44 44 44 44 44 44 X 46" => (9*8) + (10+4+6),
+        "44 44 44 44 44 44 44 44 44 X 6-" => (9*8) + (10+6+0),
+        "44 44 44 44 44 44 44 44 44 X -3" => (9*8) + (10+0+3),
+        "44 44 44 44 44 44 44 44 44 X --" => (9*8) + (10+0+0),
+        "44 44 44 44 44 44 44 44 44 X 2-" => (9*8) + (10+2+0),
+        "44 44 44 44 44 44 44 44 44 X -5" => (9*8) + (10+0+5)
+    }
+
+    expected_scores_with_a_strike_in_the_tenth_frame.each do |rolls, score|
+        it "adds the final two rolls to the score twice, when a strike is rolled in the final frame: '#{rolls}'" do
+            bowling = Bowling.new            
+            expect(bowling.score(rolls)).to eq(score)
+        end
+    end
+```
 
 ## Language Features
 
