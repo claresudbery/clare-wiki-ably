@@ -224,6 +224,20 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
 
 #### Hashes
 
+- Also known as *associative arrays*.
+- Some examples of hashes:
+```
+my_hash = Hash.new
+my_hash["one"] = "First element"
+my_hash2 = {}
+my_hash2[:one] = "First element"
+my_hash3 = { "first_name" => "Pippi", "last_name" => "Longstocking" }
+my_hash4 = { :first_name => "Pippi", :last_name => "Longstocking" }
+# this is equivalent to the above:
+my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
+```
+- `:name` is a **symbol** (see [below](#symbols))
+- The `=>` operator is called a "hashrocket".
 - when hashes have string keys, [those strings are frozen](https://tenderlovemaking.com/2015/02/11/weird-stuff-with-hashes.html)
 - Ruby [documentation on hashes](https://docs.ruby-lang.org/en/2.0.0/Hash.html) (it's pretty good documentation)
 - [Using an array as a key in your hash](https://softwareengineering.stackexchange.com/questions/197982/why-would-you-want-to-use-an-array-or-hash-as-hash-key-in-ruby)
@@ -249,6 +263,9 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
   instead, you can do this:
     - This: **query="fqdn:"+ARGV\[2\]**
   - See below for how to do string interpolation with symbols
+
+- **Single-quoted strings**
+  - Single-quoted strings are literal strings. You can't do interpolation with them but you can include special characters without having to escape them - so they can be useful for that. [More here](https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html).
 
 ### Symbols
 
@@ -281,6 +298,21 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
 ### Inheritance
 
 - [great article here](http://rubylearning.com/satishtalim/ruby_inheritance.html) on inheritance in Ruby - includes an explanation of why instance variables are not defined by classes and are therefore also not inherited by subclasses. 
+
+### Division and other Maths
+
+- By default, the `/` operator does integer division - so 2/3 = 0
+  - If you want floating point division, add `.0` to one of your integers: `2/3.0`
+- To get "to the power of", use `**` instead of `^`
+  - `2**3 = 8`
+- More complex Maths operations are available via the [`Math` module](https://ruby-doc.org/core-2.5.0/Math.html)
+  - `Math.log10(10)` means "10 to the power *what* equals 10?" and the answer is "1".
+  - `Maths.log(10)` is used for `ln` or the natural logarithm (log to the base e) 
+  - `Math::E` is used for `e`
+  - `Math::PI` is `pi` and is an example of a module constant
+  - Also available:
+    - `Math.sqrt(4)` (answer = 2)
+    - `Math.cos(2*Math::PI)` (answer = 1)
 
 ## Questions
 
