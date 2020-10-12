@@ -245,27 +245,29 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
 
 #### Arrays
 
-- Negative indices:
-  
-    - To get last array element, use negative index: \[-1\]
-  
+- Negative indices:  
+    - To get last array element, use negative index: \[-1\]  
     - The second-to-last element has index -2, and so on.
+- Square brackets are `built-in constructors`, but you can also use the `new` keyword if you want: `a = Array.new` is equivalent to `a = []`
+- Adding elements to arrays can be done in two ways:
+  - `a[0] = "A"`
+  - `a << "A"`
 
 ### Strings
 
 - **gsub**: Find and replace
 - [Frozen strings](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html#:~:text=The%20term%20'frozen'%20is%20Ruby's,an%20exception%20will%20be%20raised.)
-
 - **String interpolation**. Do it like this: **"search/\#{type}”,** where **type** is a variable
   - !! It only works in double quotes!
   - In fact it's not recommended to use ' in ruby. Use " instead.
   - It doesn’t seem to work in a Ruby script run via knife exec -
   instead, you can do this:
     - This: **query="fqdn:"+ARGV\[2\]**
-  - See below for how to do string interpolation with symbols
-
+  - See [below](#symbols) for how to do string interpolation with symbols
 - **Single-quoted strings**
   - Single-quoted strings are literal strings. You can't do interpolation with them but you can include special characters without having to escape them - so they can be useful for that. [More here](https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html).
+- `?h` is the same as `"h"`
+- Double and single quotes are `built-in constructors`, but you can also use the `new` keyword if you want: `s = String.new("A man, a plan, a canal—Panama!")`
 
 ### Symbols
 
@@ -286,6 +288,41 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
 
 - A variable that has a string as its value will be mutable, but a
   symbol is immutable, and stored in a single place in memory
+
+### Dates and Times
+
+- `Time` is a built-in class
+  - you have to use `require 'time'`
+- `now = Time.new` will give you the current time
+  - `now = Time.now` is equivalent
+- or you can initialise: `moon_landing = Time.new(1969, 7, 20, 20, 17, 40)` (= 1969-07-20 20:17:40)
+- By default, Time uses the local time zone, but this introduces weird location-dependence to the operations, so it's a good practice to use UTC instead: `moon_landing = Time.utc(1969, 7, 20, 20, 17, 40)`
+- Other useful `Time` methods:
+  - `now.year` (= 2020)
+  - `now.month` (= 12)
+  - `now.day` (= 31)
+  - `now.hour` (= 19)
+  - `now = Time.now.utc` ()
+  - `now.wday` (= 0 for Sunday)
+  - `Date::DAYNAMES[Time.now.wday]` (= SUNDAY)
+    - you have to use `require 'date'` 
+  - `Date.parse("10/10/2010")`
+  - `Date.parse("September 3")`
+    - More on date parsing [here](https://www.rubyguides.com/2015/12/ruby-time/)
+
+
+### Functions
+
+- Functions are not attached to objects
+
+### Methods
+
+- Methods are functions attached to objects
+- This notation - `String#include?` indicates a method called `include?` which is a `String` instance method.
+
+### Methods and functions
+
+- You don't need brackets when passing arguments to methods and functions (they're optional) - you can use spaces instead.
 
 ### Command Line Input
 
