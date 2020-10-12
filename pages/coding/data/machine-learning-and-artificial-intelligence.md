@@ -1,7 +1,7 @@
 ---
 layout: page
 location: pages/coding/data/leaf
-permalink: /pages/coding/data/Machine-Learning
+permalink: /pages/coding/data/Machine-Learning-And-Artificial-Intelligence
 ---
 
 ## Tags
