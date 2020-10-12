@@ -20,10 +20,14 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
     - @patkua's [levelup](http://levelup.patkua.com)
     - @orenellenbogen's [softwareleadweekly](https://softwareleadweekly.com)
     - @garethr's [devopsweekly](http://devopsweekly.com)
+- There are a few good documentary style videos (VueJS, Elixir, GraphQL etc) on [honeypot.io](https://cult.honeypot.io/originals)
 
 ### Podcasts
 
 - [Troubleshooting Agile](https://conversationaltransformation.com/troubleshooting-agile-podcast/) - a weekly problem-solving session hosted by Douglas and Jeffrey on software delivery and team productivity.
+- [dev/to](https://dev.to/pod)
+- [fullstackradio](https://fullstackradio.com)
+- [egghead.io](https://egghead.io/podcasts)
 - List of podcasts recommended by [@surlydev](https://twitter.com/surlydev) (also available as an opml file [here](/resources/recommended_podcasts.opml)):
 	- [.NET Bytes](https://www.dotnetbytes.fm/rss.xml)
 	- [.NET Rocks!](http://feeds.feedburner.com/netRocksFullMp3Downloads)

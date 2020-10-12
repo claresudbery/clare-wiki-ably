@@ -23,6 +23,12 @@ I've had problems with my hips for a while, almost certainly because I spend so 
   - Warrior 2 pose (front foot facing forward, back foot parallel to back of mat, head facing over front foot, arms out, gaze wide, front hip knee and ankle aligned, squeeze into the mid line)
   ![hip yoga](/resources/images/hip-yoga.jpeg)
 
+## Muscle Cramps
+
+- Things to try
+  - Eat more salt!
+  - Eat more potassium
+
 ## Mental Health
 
 See also [Staying sane during the COVID-19 crisis](http://127.0.0.1:4000/pages/think/life/Health#staying-sane-during-the-covid-19-crisis) below.

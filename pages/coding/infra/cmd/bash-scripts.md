@@ -25,12 +25,15 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
         a **winpath** command from anywhere.
       - This is preferable to adding functions to your bashrc file.
       - If you want to run your script from anywhere on your system, see [Installing scripts](/pages/coding/infra/cmd/Misc-Terminal-Commands#installing-scripts)
+- There are more useful Bash links in my Chrome bookmarks: Useful - Coding Languages and Tech - Bash Scripts
 
 ## Bash variables
 
   - Lack of spaces is important when assigning to variables\!
     
       - Like this: **File=$1**
+      - You get a "command not found" error when you have spaces between the variable declaration and the = sign. [More on that here](https://stackoverflow.com/questions/1714603/shell-script-variables-command-not-found).
+      - [Using variables](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-5.html)
 
   - From find-changed-chef-nagios-nodes.sh (in observability-toolbox):
     

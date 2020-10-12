@@ -487,6 +487,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### git init
 
   - Initialises an empty repository
+  - To create a new git repo from command line : `git init` and then `git add .` (including the dot)
 
 ### git status
 
