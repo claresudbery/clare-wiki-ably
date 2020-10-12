@@ -310,7 +310,6 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
   - `Date.parse("September 3")`
     - More on date parsing [here](https://www.rubyguides.com/2015/12/ruby-time/)
 
-
 ### Functions
 
 - Functions are not attached to objects
