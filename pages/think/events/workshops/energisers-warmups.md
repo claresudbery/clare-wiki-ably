@@ -21,6 +21,15 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 - Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
 - In groups of 3, design a superhero. You get to choose one super power reach and combine them into one hero. Draw a collaborative picture of the result.
 
+## The Dictionary Game
+
+- Prep: You need to find some unusual words, so you need goog googling skills or a big dictionary.
+- Split into groups of three.
+- Each group is given an unusual word, plus its definition.
+- Between them they have to come up with two false definitions of the word and decide who will read out each of the 3 definitions (false mixed with true).
+- Back in the main group, each sub group presents the true definition plus the false definitions, and everybody else has to vote on each of the definitions. Finally for each group the true definition is revealed.
+- This will take some time so you might want to save some of the words-plus-definitions for later in the day.
+
 ## Human rock paper scissors
 
 1. Whole group agrees on physical poses to represent rock, paper and scissors
