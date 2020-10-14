@@ -198,7 +198,7 @@ expect{@mars_rover_app.start}.to output(a_string_ending_with(MarsRoverApp::BAD_I
 
 Note that you can use matchers such as `a_string_ending_with`, `a_string_starting_with`, and `a_string_including` so that you are only checking a subset of the output rather than everything that has been sent to `stdout`. [More matchers listed here](https://gist.github.com/JunichiIto/f603d3fbfcf99b914f86).
 
-Examples in [this file here](https://github.com/madetech/academy_2020_mob/blob/3fb53826252525a52550fdbdb40337da211870e2/mars-rover/spec/marsroverapp_spec.rb).
+More examples of `stdin` and `stdout` testing in [this file here](https://github.com/madetech/academy_2020_mob/blob/3fb53826252525a52550fdbdb40337da211870e2/mars-rover/spec/marsroverapp_spec.rb).
 
 ## Language Features
 
