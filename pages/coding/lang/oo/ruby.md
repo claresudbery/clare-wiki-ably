@@ -182,6 +182,24 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
     end
 ```
 
+#### Testing command-line inputs and outputs (stdin, stdout, stderr)
+
+You can stub command-line inputs using standard rspec stubbing functionality and the fact that `gets` and `puts` are functions inherited from `Object` by all classes. Note that you can also mimic several repeated inputs by giving a comma-separated list:
+
+```ruby
+allow(@communicator).to receive(:gets).and_return(INITIAL_INPUT, "f", "r", "f", "f", "l", "b", "") 
+```
+
+You can test whether what you expected got sent to `stdout` or `stderr` using the `to output` functionality:
+
+```ruby
+expect{@mars_rover_app.start}.to output(a_string_ending_with(MarsRoverApp::BAD_INPUT_ERROR)).to_stdout
+```
+
+Note that you can use matchers such as `a_string_ending_with`, `a_string_starting_with`, and `a_string_including` so that you are only checking a subset of the output rather than everything that has been sent to `stdout`. [More matchers listed here](https://gist.github.com/JunichiIto/f603d3fbfcf99b914f86).
+
+Examples in [this file here](https://github.com/madetech/academy_2020_mob/blob/3fb53826252525a52550fdbdb40337da211870e2/mars-rover/spec/marsroverapp_spec.rb).
+
 ## Language Features
 
 ### Misc Language Stuff
@@ -219,6 +237,8 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
 
 - Calling javascript code from Ruby:
   [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
+
+- **Calling an API or a url** - I have notes on this in Clare MT Trello - need transferring to here.
 
 ### Collections
 
