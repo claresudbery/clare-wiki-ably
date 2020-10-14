@@ -3,6 +3,12 @@ layout: page
 location: pages/think/agile-princ/leaf
 permalink: /pages/think/agile-princ/Remote-Working-Tools-And-Tips
 ---
+
+## Elsewhere
+
+I have other pages in this wiki that follow similar themes and also contain useful content: [Remote Workshops](/pages/think/events/workshops/Remote-Workshops), and [Remote Working](/pages/think/agile-princ/Remote-Working).
+
+## Intro
 This was originally put together as an internal doc by my @ThoughtWorks colleagues (thank you), but I've removed all the ThoughtWorks-specific stuff to make it useful for a wider audience.
 
 **Note:** many of the tools on this list operate on a free/freemium
@@ -51,6 +57,10 @@ tools you don’t have licenses for:
 
   - You should be able to collaborate on text-based diagrams -
     PlantUML, graphviz, and similar - using code-sharing tools.
+
+## Tools
+
+See [here](/pages/think/events/workshops/Remote-Workshops#tools-others-have-recommended).
 
 ## A/V
 

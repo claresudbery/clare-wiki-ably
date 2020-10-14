@@ -6,6 +6,10 @@ permalink: /pages/think/events/workshops/Remote-Workshops
 
 # (aka Remote Inception)
 
+## Elsewhere
+
+I have other pages in this wiki that follow similar themes and also contain useful content: [Remote Working](/pages/think/agile-princ/Remote-Working), and [Remote Working Tools and Tips](/pages/think/agile-princ/Remote-Working-Tools-And-Tips).
+
 ## Overview
 
 (See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques))
@@ -84,9 +88,12 @@ The reason this is so important is that otherwise, participants are getting audi
 
 ## Tools others have recommended
 
+- [Wonder Me](https://www.wonder.me/) - allows you to move an avatar around in a physical space, as well as using video and audio. I have no experience of setting this up but it was used for [GovCampNorth 2020](https://govcampnorth.co.uk/) if you want to know more.
+- [Discord](https://discord.com/) - Looks a lot like Slack, but you can create "rooms" for video meetings, which means you can move around between rooms in the same way you can move around between channels. I have no experience of setting this up but it was used for [Manchester BarCamp 2020](https://www.barcampmanchester.co.uk/) if you want to know more.
 - [Qiqochat - for interactive and participatory online events](https://qiqochat.com/about)
 - [BigBlueButton - open source web conferencing](https://bigbluebutton.org/) - has breakout rooms
 - [Have a party in a spreadsheet!](https://onezero.medium.com/party-in-a-shared-google-doc-d576c565706e)
+	- We took this idea one step further and had a party in [Miro](https://miro.com/app/dashboard/) - allowing our guests to create their own "rooms" (visible frames) and use their imaginations to find new ways to communicate and move their avatars around. We deliberately had no audio or video aailable, so people had to find new ways to interact. It was mayhem but a lot of fun.
 - [HopIn](https://hopin.to/) - allows for multiple different channels
 - [Online Town](https://theonline.town/) - where you [move an avatar around and see/hear people in the distance](https://mashable.com/article/online-town-video-chat-for-groups/?europe=true)
 
@@ -94,7 +101,7 @@ The reason this is so important is that otherwise, participants are getting audi
 
 (See below for Zoom tips and Miro tips)
 
-- **Zoom** 
+- [Zoom](https://zoom.us/)
 	- Host meetings
 	- Create smaller breakout rooms for smaller discussions
 	- Share screens
@@ -102,7 +109,7 @@ The reason this is so important is that otherwise, participants are getting audi
 	- Mute mics
 	- Share a video link to yourself (or not)
 	- Use a thumbs-up icon to indicate understanding / agreement (instead of having to unmute/mute again)
-- **Miro**
+- [Miro](https://miro.com/app/dashboard/)
 	- Collaborate on diagrams
 	- Have separate "radiators" eg a parking lot area to make notes on things you don't have time to dicuss now
 	- Remote post-it exercises
