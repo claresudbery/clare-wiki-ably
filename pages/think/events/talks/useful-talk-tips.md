@@ -8,7 +8,11 @@ permalink: /pages/think/events/talks/Useful-Talk-Tips
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/presenting) (Presenting category)
 
-## asking for feedback 
+## Effective use of different presentation tools
+
+[See separate page](/pages/think/events/talks/Presentation-Tools).
+
+## Asking for feedback after a talk
 
 What thing did I do that was most helpful to you?
 What thing could I have done to help you more?
