@@ -90,4 +90,6 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 
 ## Reading List
 
-See Trello (Clare SfC Trello) for now.
+See Trello (Clare MT Trello) for more (for now).
+
+- [You're About to Make a Terrible Mistake: How Biases Distort Decision-Making and What You Can Do to Fight Them](https://www.amazon.com/Youre-About-Make-Terrible-Mistake/dp/0316494984)

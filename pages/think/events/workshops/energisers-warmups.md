@@ -21,6 +21,10 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 - Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
 - In groups of 3, design a superhero. You get to choose one super power reach and combine them into one hero. Draw a collaborative picture of the result.
 
+## Links to Games Elsewhere
+
+- [Play14](https://play14.org/) has a lot of games listed [here](https://play14.org/games/), and some remote-friendly games [here](trello.com/b/wAp7ZnnX/remote-friendly-games)
+
 ## The Dictionary Game
 
 - Prep: You need to find some unusual words, so you need goog googling skills or a big dictionary.
@@ -80,3 +84,8 @@ The kids were given five minutes to find the balloon with their name on it, but 
 Then the teacher told them to take the balloon closest to them and give it to the person whose name was on it. In less than two minutes, everyone was holding their own balloon.
 
 The teacher said to the children, “These balloons are like happiness. We won't find it when we're only searching for our own. But if we care about someone else's happiness...it will ultimately help us find our own.”"
+
+## Drama Games
+
+- Some of these [games designed for drama classes](https://theatrenerds.com/10-theatre-games-perfect-drama-class/) can work well as energisers.
+- There are some more drama games [listed here](dramaresource.com/drama-games/) - this list is a bit more generically play-focused, rather than specifically focused on acting skills.

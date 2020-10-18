@@ -83,10 +83,13 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
 ## Emoticons in the browser
 
-  - Google docs / Google products only?
+- Google docs / Google products only?
+- Ctrl + cmd + space to embed emojis
+- NB: In google sheets you have to be in the formula input for it to
+  work.
 
-  - Ctrl + cmd + space to embed emojis
+## Trello
 
-  - NB: In google sheets you have to be in the formula input for it to
-    work.
-
+- To add voting functionality to Trello, click the menu top right, then select powerups and search for the Voting powerup to add it.
+- Once it's added you can vote on Trello cards by hovering over and pressing on the keyboard, or opening up the card and finding the Vote button on the right.
+- You can then order cards in a column by how many votes they have, by clicking the three dots at the top right of the column and selecting "Sort by..." then "votes".
