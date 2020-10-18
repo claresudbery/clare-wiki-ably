@@ -238,7 +238,15 @@ More examples of `stdin` and `stdout` testing in [this file here](https://github
 - Calling javascript code from Ruby:
   [<span class="underline">https://github.com/sstephenson/execjs</span>](https://github.com/sstephenson/execjs)
 
-- **Calling an API or a url** - I have notes on this in Clare MT Trello - need transferring to here.
+- **Calling an API or a url** - notes summarised from [here](learn.co/lessons/sinatra-using-apis)
+  - You'll need to require `json` and `net/http`. The `Net::HTTP` Ruby library will give you some methods to help you send an HTTP request and the `JSON` library will help you to parse any JSON data that comes back
+  - Use the following code to make a request to an API and parse the JSON that is returned. Note that `endpoint` will contain the url of the API, as a string:  
+
+```ruby
+uri = URI.parse(URI.encode(endpoint))
+api_response = Net::HTTP.get(uri)
+JSON.parse(api_response)
+```
 
 ### Collections
 

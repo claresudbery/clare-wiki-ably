@@ -102,6 +102,7 @@ The reason this is so important is that otherwise, participants are getting audi
 ![Hopin](/resources/images/hopin.png)
 - You can host Lean Coffee sessions using [Lean Coffee Table](https://www.leancoffeetable.com/TaskBoard/View/41ef2077-5dbc-449b-be48-a39700ca5f4f?guest=true). You have to pay, but there is a free trial available. Trello is also a good tool for Lean Coffee (top tip: USe the Voting powerup), but it only really works internally to orgs. This is because some employers won't allow their employees to access Trello, and also you will often find that bits of functionality are only available to people in the same org. 
 - [Online Town](https://theonline.town/) - where you [move an avatar around and see/hear people in the distance](https://mashable.com/article/online-town-video-chat-for-groups/?europe=true)
+- [Excalidraw](excalidraw.com) - good free online diagramming / drawing tool
 
 ## Tools we are using
 
