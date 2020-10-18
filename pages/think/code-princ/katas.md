@@ -34,4 +34,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [NumberToLCD_Kata (PRIVATE)](https://github.com/claresudbery/NumberToLCD_Kata)
     - Made Tech recruitment exercise
 - Lots of Ruby katas are linked to [on my Ruby page](http://127.0.0.1:4000/pages/coding/lang/oo/Ruby#github-repos)
+- [tic-tac-toe kata in Ruby](https://github.com/claresudbery/tic-tac-toe-kata)
+    - Also, [this is a nice implementation of the tic-tac-toe kata](https://github.com/Richard-Pentecost/tic_tac_toe) from our Made Tech academy engineers Richard and Claire, pairing together - note that it has a good example of using TDD to code the minimax game-playing AI algorithm
 

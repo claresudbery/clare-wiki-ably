@@ -57,6 +57,10 @@ The reason this is so important is that otherwise, participants are getting audi
 	- if you don't believe you can contribute value to the session, or you need to take a call or do something else, it is fine to leave politely. If you are attending, please try to be present and contributing.
 - Be flexible. Be prepared to switch the timetable around to fit the needs of the room and accommodate any new activities that arise from what happens.
 - Have a retro at the end of every day to discuss how things have gone and allow people to safely express any worries or problems. Be prepared to change things on the basis of feedback.
+- For retros, start with a safety check. If you have a very low score or a high number of lowish scores, abandon the retro and hold a discussion about safety instead. Encourage people to talk to you privately about any safety concerns they have.
+	- To do an anonymous safety check online, you can use a simple Google form. To create a google form you just need a Google (gmail) account, then go to your google drive and right-click | Create form.
+	- Here is a sample format:
+	![retro safety check](/resources/images/retro-safety-check.png)
 - "Walk the wall" in a "standup" session at the start of every day, where you review what was achieved the previous day.
 - Keep a separate board (eg a "space" in Miro) for a "parking lot" where you make a note of topics that have arisen but were outside the scope of the current activity.
 - Stay focused. Agree early on what is in scope and what is not. If people start drifting into side conversations call time out, add an item to the parking lot and pull the attention back to the matter at hand.
@@ -94,7 +98,9 @@ The reason this is so important is that otherwise, participants are getting audi
 - [BigBlueButton - open source web conferencing](https://bigbluebutton.org/) - has breakout rooms
 - [Have a party in a spreadsheet!](https://onezero.medium.com/party-in-a-shared-google-doc-d576c565706e)
 	- We took this idea one step further and had a party in [Miro](https://miro.com/app/dashboard/) - allowing our guests to create their own "rooms" (visible frames) and use their imaginations to find new ways to communicate and move their avatars around. We deliberately had no audio or video aailable, so people had to find new ways to interact. It was mayhem but a lot of fun.
-- [HopIn](https://hopin.to/) - allows for multiple different channels
+- [HopIn](https://hopin.to/) - allows for multiple different channels, can be used to host your entire event - with different rooms that users can hop between, and chats for each room. I saw this used well for [GovCampNorth 2020](https://govcampnorth.co.uk/). Here's an idea of what's available:
+![Hopin](/resources/images/hopin.png)
+- You can host Lean Coffee sessions using [Lean Coffee Table](https://www.leancoffeetable.com/TaskBoard/View/41ef2077-5dbc-449b-be48-a39700ca5f4f?guest=true). You have to pay, but there is a free trial available. Trello is also a good tool for Lean Coffee (top tip: USe the Voting powerup), but it only really works internally to orgs. This is because some employers won't allow their employees to access Trello, and also you will often find that bits of functionality are only available to people in the same org. 
 - [Online Town](https://theonline.town/) - where you [move an avatar around and see/hear people in the distance](https://mashable.com/article/online-town-video-chat-for-groups/?europe=true)
 
 ## Tools we are using
