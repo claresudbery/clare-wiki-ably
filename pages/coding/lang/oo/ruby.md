@@ -19,6 +19,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby)
 - [Academy mob code base](https://github.com/madetech/academy_2020_mob)
 - [Sample gov uk front end rails app from Csaba](https://github.com/C-gyorfi/govuk-front-end-rails-app)
+- [Learn Enough Ruby](https://github.com/claresudbery/learn_enough_ruby) - My code following along with examples in the book.
 - See [Sinatra](#sinatra) below for various Sinatra repos.
 
 ## Tutorials and Guides
@@ -207,7 +208,10 @@ More examples of `stdin` and `stdout` testing in [this file here](https://github
 - Return values in Ruby functions are the last thing that was assigned
   - the **return** statement is often not used
 
-- IRB is the standard Ruby repl (run `irb` on command line, then type `exit` to leave)
+- IRB is the standard Ruby repl (run `irb` on command line)
+  - Enter `exit` to leave)
+  - Enter `load './myfile.rb'` to load a Ruby file called `myfile.rb` in the current folder (`./`)
+    - To reload, just enter `load './myfile.rb'` again.
 
 - The **puts** statement is how you can output to console - useful for
   quick-and-dirty debug logging.
@@ -231,8 +235,6 @@ More examples of `stdin` and `stdout` testing in [this file here](https://github
 
 - [Static methods and the `self` keyword](https://airbrake.io/blog/ruby/self-ruby-overview)
 
-- **yield keyword**: `yield` is a keyword in Ruby that calls a block that was given to a method. Whenever you pass a block to a method (such as each, collect, select, and so on) this method can then call the block by using the keyword yield. So, in a `Sinatra` layout template, <%= yield %> marks the place where the other template (the one that is being wrapped) is supposed to be inserted. Example [here](https://github.com/claresudbery/sinatra-skeleton-app/blob/bb21e6dfa271f135b620876b9a21344edf7a6eab/monstas.rb#L31).
-
 - Frozen values: [Frozen strings](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html#:~:text=The%20term%20'frozen'%20is%20Ruby's,an%20exception%20will%20be%20raised.)
 
 - Calling javascript code from Ruby:
@@ -248,12 +250,80 @@ api_response = Net::HTTP.get(uri)
 JSON.parse(api_response)
 ```
 
+### Blocks / anonymous functions, and the yield keyword
+
+- **Blocks** of code, aka `anonymous` or `unnamed functions`
+  - `{ |i| puts 2**i }` is equivalent to `do |i| puts 2**i end`
+  - ie `do` and `end` take the place of the opening and closing braces in defining a block of code.
+  - Therefore `(1..5).each { |i| puts 2**i }` is equivalent to    
+  
+```ruby
+(1..5).each do |i|
+   puts 2**i
+end
+```
+  - What we're seeing in this example is that `each` is a method that takes a `block` of code as a parameter.
+  - What's not quite so obvious is that in this case, the block of code is an anonymous function that *takes a parameter*. The parameter is named `i` and is indicated by surrounding it with pipes: `|i|`
+  - See `yield` below for more on blocks, and blocks that take parameters.  
+
+- **yield keyword**: `yield` is a keyword in Ruby that calls a block that was given to a method. 
+  - Whenever you pass a block to a method (such as `each`, `collect`, `select`, and so on) this method can then call the block by using the keyword yield. 
+  - So, in a `Sinatra` layout template, <%= yield %> marks the place where the other template (the one that is being wrapped) is supposed to be inserted. Example [here](https://github.com/claresudbery/sinatra-skeleton-app/blob/bb21e6dfa271f135b620876b9a21344edf7a6eab/monstas.rb#L31).
+  - Every Ruby method can take a `block` as a parameter
+    - We can invoke that block using the `yield` keyword. 
+      - The block won't get evaluated until the `yield` keyword appears.
+    - So, in the following example, although we don't explicitly declare that the `sandwich` function takes a `block` as a parameter, we see that it *can* because of its use of the `yield` keyword. First we define the `sandwich` function and then we call it and pass a `do .. end` block to it. The output is also shown.  
+
+```ruby
+# blocks.rb
+def sandwich
+    puts "top bread"
+    yield
+    puts "bottom bread"
+end
+
+sandwich do
+    puts "mutton, lettuce, and tomato"
+end
+```
+![ruby yield](/resources/images/ruby_yield.png)
+
+- So what about yielding a block with a parameter? Remember we can define a block with a param like this:
+
+```ruby
+do |markup|
+  puts markup
+end
+```
+
+- The code above defines a block that takes a parameter called `markup`, then just outputs that markup to the command line.
+- So let's define a function that can take that block of code as a parameter and then call it using `yield`:
+
+```ruby
+def tag(tagname, text)
+  html = "<#{tagname}>#{text}</#{tagname}>"
+  yield html
+end
+```
+
+- The above code takes a tagname and text and uses string interpolation to turn it into a chunk of html. Then the statement `yield html` is saying "Call the block of code that has been passed in, and pass `html` to it as an argument."
+- So finally we can call the `tag` function and pass in our original block of code so that the `tag` function can * call* our original block:
+
+```ruby
+tag("p", "Lorem ipsum dolor sit amet") do |markup|
+  puts markup
+end
+```
+
+- The result of the above call to `tag` will be the following being output to the command line: 
+  - gcam "`<p>Lorem ipsum dolor sit amet</p>`
+
 ### Collections
 
 #### Hashes
 
 - Also known as *associative arrays*.
-- Some examples of hashes:
+- Some examples of hashes:  
 ```
 my_hash = Hash.new
 my_hash["one"] = "First element"
