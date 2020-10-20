@@ -250,6 +250,32 @@ api_response = Net::HTTP.get(uri)
 JSON.parse(api_response)
 ```
 
+- **HEREDOC**
+  - You can use `HEREDOC` for multi-line string literals, instead of concatenating individual lines.
+  - Instead of this...
+
+```ruby
+            populated_grid = 
+            "-------------\n" +
+            "|     | 360 |\n" +
+            "|     | ^^^ |\n" +
+            "|     | TST |\n" +
+            "-------------\n"
+```
+
+  - ... you can do this:
+
+```ruby
+            populated_grid = 
+            <<~HEREDOC
+            -------------
+            |     | 360 |
+            |     | ^^^ |
+            |     | TST |
+            -------------
+            HEREDOC
+```
+
 ### Blocks / anonymous functions, and the yield keyword
 
 - **Blocks** of code, aka `anonymous` or `unnamed functions`
