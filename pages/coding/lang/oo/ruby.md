@@ -156,7 +156,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Rspec style guide](https://rspec.rubystyle.guide/)
 - [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
 - [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
-- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers)
+- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers). DON'T FORGET TO ADD the following to `spec_helper.rb`:
+
+```ruby
+require "rspec-html-matchers"
+
+RSpec.configure do |config|
+  config.include RSpecHtmlMatchers
+```
 
 #### Test cases in rspec
 
