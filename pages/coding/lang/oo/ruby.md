@@ -39,8 +39,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Sinatra
 
 - [Your first Sinatra app](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
-- [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app)
-- [This commit](https://github.com/claresudbery/tic-tac-toe-kata/tree/a83d917993009f065caba0a3f74b7a2fb6a0d254) on the tic tac toe repo is a simple hello world Sinatra app.
+- [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app) created using [this tutorial]
+(http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
+- [This commit](https://github.com/claresudbery/tic-tac-toe-kata/tree/a83d917993009f065caba0a3f74b7a2fb6a0d254) on the tic tac toe repo is a much simpler hello world Sinatra app, with just one `/` root route and no data storage.
 - [Very simple Sinatra testing guide](http://sinatrarb.com/testing.html) - less friction than the one below.
 - [Sample Sinatra app from rubymonsters/testing-for-beginners](https://github.com/rubymonsters/testing-for-beginners/tree/main/code/sinatra)
   - For a tutorial that uses this repo to demo testing, see [here](http://testing-for-beginners.rubymonstas.org/rack_test/sinatra.html).
