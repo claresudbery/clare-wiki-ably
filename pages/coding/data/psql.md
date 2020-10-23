@@ -39,6 +39,74 @@ documentation)](https://www.postgresql.org/docs/9.2/app-psql.html).
 You can output query results to a file by running the following command:
 `\o out.txt`. After that all query output will go to your file.
 
+## AWS databases
+
+### Access AWS databases via command line
+
+  - Use [ssm to connect to the server](/pages/coding/data/AWS-And-SSM)
+  - Once connected to the server
+      - Run `sudo su postgres -c "psql -d \[database name\]"` to get a
+        psql prompt for a specific database
+      - Use `sudo su postgres -c psql -d \[database name\] -f
+        your-script.sql` to run a script on a specific database
+      - To get a script (or any other file) uploaded to an EC2 instance
+        and you don’t have ssh enabled:
+          - Upload files to a bucket either via AWS console or using aws
+            `s3 cp filename s3://bucketname`
+              - To upload all files from a folder: `aws s3 cp /your/path s3://bucket-name --recursive`
+          - [SSM into](/pages/coding/data/AWS-And-SSM)
+            the instance and download your files from the AWS bucket to
+            the instance, using `aws s3 cp s3://bucketname/yourfile /yourfolder`
+              - If you need to install `aws-cli` on an EC2 instance
+                remember to do it as root user.
+      - More on psql above in this doc, or [here
+        (cheatsheet)](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546) and [here
+        (simple
+        guide)](http://postgresguide.com/utilities/psql.html) and [here
+        (full docs)](https://www.postgresql.org/docs/9.2/app-psql.html)
+
+### Access AWS databases using pgAdmin
+
+  - First [start a session via ssm](/pages/coding/data/AWS-And-SSM
+  - In pgAdmin, right-click on Servers (top left) and choose Create |
+    Server
+  - Give it whatever name you like
+  - On the Connection tab, fill in the following:
+      - **Host**: \[ip address of db server\] 
+      - **Port**: 5432
+      - **Maintenance database**: database-name
+      - **User name**: \[your db user name\] (follow instructions
+        [here](#create-yourself-a-database-user)
+        if needed)
+      - **Password**: \[your db password\] (follow instructions
+        [here](#create-yourself-a-database-user)
+        if needed)
+  - On the SSL tab:
+      - load up your client certificate (xxx.crt), client certificate
+        key (xxx.key) and root certificate (xxx.crt).
+      - Set SSL Compression to Yes
+  - Click Save
+
+### Create yourself a database user 
+
+  - Start a session to access the remote server
+      - On command line:
+          - `aws ssm start-session --target '\[EC2 instance id\]' `
+          - Don't forget the quotes around instance id - the resulting
+            error if you forget is non-obvious
+      - ... or via AWS management console:
+          - Use the Systems Manager service
+          - Select Session Manager on left
+          - Click Start Session, top right
+          - Select the correct instance and click Start Session
+      - Create yourself a database user:
+          - `sudo su ec2-user`
+          - `sudo su postgres -c "psql -d database-name"`
+          - `create user \[yourname\] with password '\[your password\]';`
+          - `GRANT ALL PRIVILEGES ON DATABASE database-name TO
+            \[yourname\];`
+          - `grant "Role\_Name" to \[yourname\];`
+
 ## Databases hosted in GovPaaS
 
 See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Foundry).
@@ -101,74 +169,6 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
   - Run `cf conduit database-name` - where `database-name` is the database
     you're connecting to
       - You'll need to install conduit: `cf install-plugin conduit`
-
-## AWS databases (dev and staging)
-
-### Access AWS databases via command line
-
-  - Use [ssm to connect to the server](/pages/coding/data/AWS-And-SSM)
-  - Once connected to the server
-      - Run `sudo su postgres -c "psql -d \[database name\]"` to get a
-        psql prompt for a specific database
-      - Use `sudo su postgres -c psql -d \[database name\] -f
-        your-script.sql` to run a script on a specific database
-      - To get a script (or any other file) uploaded to an EC2 instance
-        and you don’t have ssh enabled:
-          - Upload files to a bucket either via AWS console or using aws
-            `s3 cp filename s3://bucketname`
-              - To upload all files from a folder: `aws s3 cp /your/path s3://bucket-name --recursive`
-          - [SSM into](/pages/coding/data/AWS-And-SSM)
-            the instance and download your files from the AWS bucket to
-            the instance, using `aws s3 cp s3://bucketname/yourfile /yourfolder`
-              - If you need to install `aws-cli` on an EC2 instance
-                remember to do it as root user.
-      - More on psql above in this doc, or [here
-        (cheatsheet)](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546) and [here
-        (simple
-        guide)](http://postgresguide.com/utilities/psql.html) and [here
-        (full docs)](https://www.postgresql.org/docs/9.2/app-psql.html)
-
-### Access AWS databases using pgAdmin
-
-  - First [start a session via ssm](/pages/coding/data/AWS-And-SSM
-  - In pgAdmin, right-click on Servers (top left) and choose Create |
-    Server
-  - Give it whatever name you like
-  - On the Connection tab, fill in the following:
-      - **Host**: \[ip address of db server\] 
-      - **Port**: 5432
-      - **Maintenance database**: database-name
-      - **User name**: \[your db user name\] (follow instructions
-        [here](#create-yourself-a-database-user)
-        if needed)
-      - **Password**: \[your db password\] (follow instructions
-        [here](#create-yourself-a-database-user)
-        if needed)
-  - On the SSL tab:
-      - load up your client certificate (xxx.crt), client certificate
-        key (xxx.key) and root certificate (xxx.crt).
-      - Set SSL Compression to Yes
-  - Click Save
-
-## Create yourself a database user 
-
-  - Start a session to access the remote server
-      - On command line:
-          - `aws ssm start-session --target '\[EC2 instance id\]' `
-          - Don't forget the quotes around instance id - the resulting
-            error if you forget is non-obvious
-      - ... or via AWS management console:
-          - Use the Systems Manager service
-          - Select Session Manager on left
-          - Click Start Session, top right
-          - Select the correct instance and click Start Session
-      - Create yourself a database user:
-          - `sudo su ec2-user`
-          - `sudo su postgres -c "psql -d database-name"`
-          - `create user \[yourname\] with password '\[your password\]';`
-          - `GRANT ALL PRIVILEGES ON DATABASE database-name TO
-            \[yourname\];`
-          - `grant "Role\_Name" to \[yourname\];`
 
 ## Backing up and Restoring Individual Tables
 
