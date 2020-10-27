@@ -14,6 +14,9 @@ permalink: /pages/think/code-princ/Katas
     - (includes Bowling, Mumbling, Number to LCD, Roman numerals, Snake, Tennis, Tennis Refactoring, Turnstile, Wordwrap, Test Framework, Video Store and Mars Rover)
 - [Made Tech Learn Tech Sparring Exercises](https://learn.madetech.com/sparring/) (overview, then Tic Tac Toe (aka Noughts and Crosses) and Payroll exercises)
     - [Minimax algorithm](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d) (useful for [tic-tac-toe kata](https://learn.madetech.com/sparring/tic-tac-toe/))
+    - My Ruby implementation of Minimax (currently incomplete):
+        - [Code](https://github.com/claresudbery/tic-tac-toe-kata)
+        - [Deployed app](https://tic-tac-toe-kata.herokuapp.com/tictactoe)
 
 ## GitHub Repos
 
