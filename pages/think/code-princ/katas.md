@@ -13,10 +13,11 @@ permalink: /pages/think/code-princ/Katas
 - [Made Tech Learn Tech katas](https://learn.madetech.com/katas/)
     - (includes Bowling, Mumbling, Number to LCD, Roman numerals, Snake, Tennis, Tennis Refactoring, Turnstile, Wordwrap, Test Framework, Video Store and Mars Rover)
 - [Made Tech Learn Tech Sparring Exercises](https://learn.madetech.com/sparring/) (overview, then Tic Tac Toe (aka Noughts and Crosses) and Payroll exercises)
-    - [Minimax algorithm](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d) (useful for [tic-tac-toe kata](https://learn.madetech.com/sparring/tic-tac-toe/))
-    - My Ruby implementation of Minimax (currently incomplete):
-        - [Code](https://github.com/claresudbery/tic-tac-toe-kata)
-        - [Deployed app](https://tic-tac-toe-kata.herokuapp.com/tictactoe)
+    - **Minimax algorithm**:
+        - To get an unbeatable AI for [the tic-tac-toe kata](https://learn.madetech.com/sparring/tic-tac-toe/), people generally use the [Minimax algorithm](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d).
+        - TDDing minimax can be tricky. I ended up drawing a lot of diagrams. My notes and diagrams are [here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/notes.md).
+        - The tests for my TDDed minimax implementation are [here](https://github.com/claresudbery/tic-tac-toe-kata/blob/2bb3a41110a2f52996fdfe159088b99f9aea5c99/spec/intelligence_spec.rb), and the code is [here](https://github.com/claresudbery/tic-tac-toe-kata/blob/2bb3a41110a2f52996fdfe159088b99f9aea5c99/lib/intelligence.rb).
+        - My version of the game is [deployed here](https://tic-tac-toe-kata.herokuapp.com/tictactoe) (the UI is terrible, I was mostly focused on TDDing minimax).
 
 ## GitHub Repos
 
