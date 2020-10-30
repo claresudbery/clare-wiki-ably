@@ -40,6 +40,10 @@ permalink: /pages/organising/music/Logic
     - If you want to listen to one section repeatedly, drag the sections at the top of the main view, they will highlight in orange, then click the recycle button, top left main window.
 - If you accidentally zoom in or out either horizontally or vertically (easily done iwth the wrong key combinations), you can fix it with the sliders top right in the piano roll.
 
+### Playing back
+
+There's this v annoying thing where if you move the playback marker (yellow vertical line - can be placed and dragged around just under the bar numbers at the top) and hit Play, although it will start playing there, when it stops it will go back to somewhere else entirely. The "somewhere else" seems to generally be at the beginning of whatever "cycle range" you have defined. To change this, click in the bar numbers and drag the beginning and the end of the resulting yellow strip - this will define the start and end of the default playback region.
+
 ### Drum tracks without sequencing individual notes:
 
 - Create new track, select Drummer - it's an AI that will automate a drum sequence in the style you want
@@ -83,8 +87,6 @@ I really struggled at first with getting them to snap to grid, and I'm sure ther
 - Work out (via trial and error) what your tempo is, and change it at the top of the screen so that each bar is the same size as your sample building block.
 - When you double-click on your sample track to get your sample editor, then select "track", you can select Snap to Bar or Snap to Samples, both of which are useful in different circumstances. You can fiddle around with other Snap setitngs here too.
 
-
-
 ### Distortion / FX
 
 - You can distort a whole track by clicking in the region view to the left of the main view, then select a plugin in the Audio FX section on the left. 
@@ -99,3 +101,23 @@ I really struggled at first with getting them to snap to grid, and I'm sure ther
     - drag regions around in the graph to change bass
     - There is a purple dot, a green dot and a yellow dot (and some other colours too) that you can click and drag around to change things.
     - Or you can click a dot, then it will create a region that you can expand or contract. Then drag the dot around to warp it.
+
+## Printing / Saving a Score / Sheet Music (pdf)
+
+- Double-click on a track to get it visible in the bottom half of the screen
+- Click on Score to see the score / sheet music
+- Scroll up to the top of the score and double-click the background (black strip at top) to get all tracks on one score
+    - So far I haven't found a way of just selecting two tracks (eg right and left hand piano) to get them on one score
+    - Instead, I saved a version of the project with just two tracks, then double-clicked the background to get them both on one score (but there must be a better way)
+- File | Print to send to printer or save as PDF
+    - If printing, click Show Details to select two-sided and other settings
+    - If saving as pdf, click the down arrow next to PDF (bottom left) and select Save as PDF.
+
+## Exporting / coverting to an audio file (wav, mp3)
+
+- You can save individual tracks using File | Export | All tracks as audio files 
+- If you want to save all tracks combined as one audio file:
+    - First make sure you have all the tracks you care about selected in the main window (you can omit tracks you don't want)
+    - Also make sure you have a loop cycle range defined (click the bar numbers at the top, and drag to create a yellow section that covers all the bars you want to export)
+    - Now select File | Bounce | Project or Section
+    - ! Make sure you pay attention to where the file is saved to! It might not default to where you think.
