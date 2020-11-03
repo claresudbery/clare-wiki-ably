@@ -56,6 +56,12 @@ Examples:
 ![mondrian squares](/resources/images/mondrian_squares.png)
 
 My experiments:
-- `Math.cos(2*t*((i%2)%25(x*y)))`
-- `Math.sin(10*t*((i%2F256)%25(x*y)))`
-- `[1,%200,%20-1][i%3]-Math.sin(2*t)`
+- [`Math.cos(2*t*((i%2)%25(x*y)))`](https://tixy.land/?code=Math.cos(2*t*((i%2)%25(x*y))))
+- [`Math.sin(10*t*((i%2F256)%25(x*y)))`](https://tixy.land/?code=Math.sin(10*t*((i%2F256)%25(x*y))))
+- [`[1,%200,%20-1][i%3]-Math.sin(2*t)`](https://tixy.land/?code=[1,%200,%20-1][i%3]-Math.sin(2*t))
+- [`((Math.sin(x+y)))*Math.sin(t)`](https://tixy.land/?code=((Math.sin(x+y)))*Math.sin(t))
+- [`(x*Math.cos(10*t)>0)?-1:0`](https://tixy.land/?code=(x*Math.cos(10*t)>0)?-1:0) (flashing light v1)
+- [`(x*Math.cos(10*t)>0)?-1:1`](https://tixy.land/?code=(x*Math.cos(10*t)>0)?-1:1) (flashing light v2)
+- [`(x*y*Math.cos(5*t)>8)?-1:1`](https://tixy.land/?code=(x*y*Math.cos(5*t)>8)?-1:1) (encroaching circle)
+- [`(x*y*Math.cos(5*t)>30)?-1:1`](https://tixy.land/?code=(x*y*Math.cos(5*t)>30)?-1:1)
+- [`(x*y*Math.cos(5*t)%3E8)?-1:1`](https://tixy.land/?code=(x*y*Math.cos(5*t)%3E8)?-1:1)
