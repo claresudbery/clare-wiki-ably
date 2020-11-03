@@ -18,4 +18,4 @@ See also [energisers](/pages/think/events/workshops/energisers-warmups.md).
 
 ## Coding Games
 
-- Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy.land)
+- Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)

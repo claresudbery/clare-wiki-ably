@@ -1,7 +1,7 @@
 ---
 layout: page
 location: pages/coding/webdev/js/leaf
-permalink: /pages/coding/webdev/js/tixy.land
+permalink: /pages/coding/webdev/js/tixy-land
 ---
 
 ![mondrian squares](/resources/images/mondrian_squares.png)
@@ -56,6 +56,7 @@ Examples:
 ![mondrian squares](/resources/images/mondrian_squares.png)
 
 My experiments:
+
 - [`Math.cos(2*t*((i%2)%25(x*y)))`](https://tixy.land/?code=Math.cos(2*t*((i%2)%25(x*y))))
 - [`Math.sin(10*t*((i%2F256)%25(x*y)))`](https://tixy.land/?code=Math.sin(10*t*((i%2F256)%25(x*y))))
 - [`[1,%200,%20-1][i%3]-Math.sin(2*t)`](https://tixy.land/?code=[1,%200,%20-1][i%3]-Math.sin(2*t))
