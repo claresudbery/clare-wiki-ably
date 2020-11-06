@@ -14,5 +14,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Docs and Blog Posts
 
 - (TO DO) My blog post on Hexagonal Architecture was originally posted on the LateRooms blog and no longer exists. But I have the original doc and am in the process of making it available again [here](/pages/think/code-princ/architecture/Hexagonal-Architecture-Blog-Post).
-- Hexagonal architecture is also referred to as "clean" architecture. [More here](https://drive.google.com/file/d/1eNRRkTVf3OSDtGHGQZpnzUwJTxKeg-Zb/view) (I also have this downloaded in OneDrive/IT Training/Current) and [here](https://github.com/madetech/clean-architecture).
+- Hexagonal architecture is also referred to as "clean" architecture. 
+    - [Video by Craig Bass demoing ATDD and clean architecture in C# (48 mins long)](https://drive.google.com/file/d/1eNRRkTVf3OSDtGHGQZpnzUwJTxKeg-Zb/view) (I also have this downloaded in OneDrive/IT Training/Current) 
+    - [GitHub documentation by Craig Bass about clean architecture](https://github.com/madetech/clean-architecture)
+    - [Ian Cooper Clean Architecture Video](https://www.youtube.com/watch?v=SxJPQ5qXisw) (53 mins long)
+    - [Clean Architecture Online Tutorial](https://pusher.com/tutorials/clean-architecture-introduction)
 
