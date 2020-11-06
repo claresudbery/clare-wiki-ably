@@ -18,5 +18,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - [Video by Craig Bass demoing ATDD and clean architecture in C# (48 mins long)](https://drive.google.com/file/d/1eNRRkTVf3OSDtGHGQZpnzUwJTxKeg-Zb/view) (I also have this downloaded in OneDrive/IT Training/Current) 
     - [GitHub documentation by Craig Bass about clean architecture](https://github.com/madetech/clean-architecture)
     - [Ian Cooper Clean Architecture Video](https://www.youtube.com/watch?v=SxJPQ5qXisw) (53 mins long)
+        - See also [my notes on this video](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture)
     - [Clean Architecture Online Tutorial](https://pusher.com/tutorials/clean-architecture-introduction)
+    - [blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 

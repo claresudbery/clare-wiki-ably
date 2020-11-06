@@ -4,6 +4,8 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Useful-Terms
 ---
 
+See also [Coding Principles](pages/think/Coding-Principles).
+
 ## Primitive Obsession
 
 "Primitive Obsession is when the code relies too much on primitive data types (like integers and strings). It means that a primitive value controls the logic in a class and this value is not type safe. Therefore, primitive obsession is when you have a bad practice of using primitive types to represent an object in a domain."
@@ -47,3 +49,7 @@ Command–query separation (CQS) is a principle of imperative computer programmi
 An impure function is a function that mutates variables/state/data outside of its lexical scope, thus deeming it “impure”.
 
 Pure functions don’t modify external variables/state/data outside of the scope, and return the same output given the same input. They are deterministic.
+
+## Cohesion
+
+"Things that change together live together, and things that don't change together are apart." - [Ian Cooper, The Clean Architecture, DevTernity](https://www.youtube.com/watch?v=SxJPQ5qXisw).

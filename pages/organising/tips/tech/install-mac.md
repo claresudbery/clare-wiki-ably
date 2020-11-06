@@ -10,6 +10,14 @@ Note that this was created purely for me. I'm not suggesting these are sensible 
 
 I've created a [brew script for some of it](#automating-the-installation) but sadly a lot of it is still manual.
 
+## See also
+
+See also the following resources from others who have done similar but with more sophistication:
+
+- [Chezmoi](https://github.com/twpayne/chezmoi), for managing personal configuration files (dotfiles, like ~/.bashrc) across multiple machines
+- [Mac Dev Anxible Playbook](https://github.com/geerlingguy/mac-dev-playbook)
+- My Made Tech colleague Will Gibson's [idempotent laptop brew script](https://github.com/WillGibson/laptop-setup)
+
 ## Stuff to do manually as soon as I open my new laptop:
 
 (I've recorded every step here and elsewhere in case I ever get this configured in something more powerful than a bash script.)
