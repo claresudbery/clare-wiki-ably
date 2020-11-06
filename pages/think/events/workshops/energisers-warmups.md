@@ -4,6 +4,10 @@ location: "pages/think/events/workshops/leaf"
 permalink: /pages/think/events/workshops/Energisers-and-Warmups
 ---
 
+## See also
+
+See also: [Fun games](/pages/think/life/Fun-Games).
+
 ## General tips
 
 - Make it relevant if you can

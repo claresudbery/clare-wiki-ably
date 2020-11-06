@@ -15,6 +15,7 @@ See also [energisers](/pages/think/events/workshops/energisers-warmups.md).
 
 - [Really Boring Website](https://really.boring.website/) - you have to think of things beginning with a particular letter, then you vote for each other's answers.
 - [QuizBreaker - Virtual Team Building Game for Remote Teams](https://www.quizbreaker.com/)
+- **The Wikipedia game**: One person chooses a wikipedia page, eg "Harry Potter". Somebody else then chooses an entirely unrelated wikipedia page - eg "Scissors". It is then the job of the entire group to try and get from the first page to the second one ONLY by clicking links in the page content. Yu can't click on links anywhere else on the page, you can't use the search function, you can't use the back button, you can't even search the words on the page itself (you have to scan with your eyes). First person to land on the second page wins, and has to choose the next page that everyone must try and reach.
 
 ## Coding Games
 
