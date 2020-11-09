@@ -93,6 +93,7 @@ Three layers:
 
 ## Boundaries, Controllers and Entities
 
+- aka BCE, by Ivar Jacobson from his book [Object Oriented Software Engineering: A Use-Case Driven Approach](https://www.ivarjacobson.com/publications/books/object-oriented-software-engineering-1992)
 - Boundary object - a lot like an adapter (hexag architecture)
     - is on the outside
     - interfaces with an external actor
@@ -184,3 +185,9 @@ I want to separate my concerns, stop having to think about my framework or my in
     - Each handler implements a `HandleAsync` method, which is effectively an `Execute` method
     - (He's using the `Brighter` command dispatcher / processor - this is an [open source project he contributes to](https://github.com/BrighterCommand/Brighter), I think)
     - You'll see that attributes are added to the `HandleAsync` method that allow you to parcel out orthogonal concerns like logging and circuit breaker operations (see `AddGreetingCommandHandlerAsync.cs`)
+
+## Questions and Answers
+
+- Question: If use cases are the same as ports, what about secondary ports? These are the interfaces to things like database implementations, and they are implemented externally, NOT internally. So how are they use cases?
+    - Answer: Aha. These are the use case *output ports*, and this is where dependency inversion comes in. Because the flow of dependency must flow inwards, the use case knows only about an interface (*use case output port*), and knows nothing about how it is implemented. The entities implement the interfaces in the use case (port) layer, and then just return outputs which are handled by the output ports
+        - But surely the entities do actually call methods on those output ports... which means the inner circle (entities) is dependent on an outer circle (ports)?
