@@ -7,9 +7,16 @@ permalink: /pages/coding/infra/cloud/Docker
 ## Links
 
 - [Made Tech Docker Guide](https://learn.madetech.com/guides/11-Docker/)
-* [Docker Hub](https://hub.docker.com/) for Docker images
-* [Dockerfile Docs](https://docs.docker.com/engine/reference/builder/) 
-* [Docker Compose Docs](https://docs.docker.com/compose/compose-file/)
+- [Docker Hub](https://hub.docker.com/) for Docker images
+- [Dockerfile Docs](https://docs.docker.com/engine/reference/builder/) 
+* [Docker commands](https://docs.docker.com/engine/reference/run/)
+* [Summary of common Docker commands](https://www.edureka.co/blog/docker-commands/)
+- [Docker Compose Docs](https://docs.docker.com/compose/compose-file/)
+- [Dockerising a Sinatra app](https://www.codewithjason.com/dockerize-sinatra-application/)
+  - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above tutorial. It's deployed on Heroku [here](https://sinatra-docker.herokuapp.com/).
+  - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
+- [Dockerising a .Net app](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)
+- [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 
 ## Misc
 

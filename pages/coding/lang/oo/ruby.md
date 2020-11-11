@@ -47,6 +47,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - For a tutorial that uses this repo to demo testing, see [here](http://testing-for-beginners.rubymonstas.org/rack_test/sinatra.html).
   - I got a bundler version error when I tried to run it using `rackup -I .` - notes [here](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#bundler-version-error) on how I fixed it.
 - [Handy Sinatra documentation](http://sinatrarb.com/intro.html)
+- [Dockerising a Sinatra app](https://www.codewithjason.com/dockerize-sinatra-application/)
+  - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
+  - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above two tutorials. It's deployed on Heroku [here](https://sinatra-docker.herokuapp.com/).
+  - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
 
 ## Debugging
 
