@@ -16,10 +16,14 @@ permalink: /pages/coding/infra/cloud/Docker
   - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above tutorial. It's deployed on Heroku [here](https://sinatra-docker.herokuapp.com/).
   - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
 - [Dockerising a .Net app](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)
+  - [dotnet docker hub](https://hub.docker.com/_/microsoft-dotnet)
   - [Deploying an ASP.Net dockerised app to Heroku](https://medium.com/@vnqmai.hcmue/deploy-asp-net-core-to-heroku-for-free-using-docker-bd6d6fc161ae)
   - My heroku-deployed dockerised ASP.Net app:
     - [source code](https://github.com/claresudbery/dotnet-docker-clare) (check readme for notes on things I had to do to get it working)
     - [deployed app](https://dotnet-docker-clare.herokuapp.com/)
+  - I also have a heroku-deployed dockerised .Net Core web API:
+    - [source code](https://github.com/claresudbery/webapi-docker) (check readme)
+    - [deployed API](https://webapi-docker.herokuapp.com/shiny)
 - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 
 ## Misc
