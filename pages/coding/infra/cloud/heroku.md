@@ -22,3 +22,7 @@ permalink: /pages/coding/infra/cloud/Heroku
 - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for an example of a Dockerised Sinatra app, deployed via Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
 - See [my Docker page](/pages/coding/infra/cloud/Docker) for more Docker stuff.
+- [Deploying an ASP.Net dockerised app to Heroku](https://medium.com/@vnqmai.hcmue/deploy-asp-net-core-to-heroku-for-free-using-docker-bd6d6fc161ae)
+    - My heroku-deployed dockerised ASP.Net app:
+    - [source code](https://github.com/claresudbery/dotnet-docker-clare) (check readme for notes on things I had to do to get it working)
+    - [deployed app](https://dotnet-docker-clare.herokuapp.com/)
