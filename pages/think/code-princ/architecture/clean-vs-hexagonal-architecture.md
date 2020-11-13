@@ -8,6 +8,8 @@ permalink: /pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture
 
 These notes are based on [Ian Cooper's Clean Architecture Video](https://www.youtube.com/watch?v=SxJPQ5qXisw).
 
+I have more notes on clean architecture [here](/pages/think/code-princ/architecture/Clean-Architecture) and [here](/pages/think/code-princ/architecture/Hexagonal-Architecture#docs-and-blog-posts).
+
 ## Layers
 
 - Typically described as 3 layers but can actually be as many as you want. 
