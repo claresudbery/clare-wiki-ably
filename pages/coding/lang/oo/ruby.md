@@ -306,6 +306,8 @@ end
 
 - **yield keyword**: `yield` is a keyword in Ruby that calls a block that was given to a method. 
   - Whenever you pass a block to a method (such as `each`, `collect`, `select`, and so on) this method can then call the block by using the keyword yield. 
+  - There are a couple of examples of its usage in my Mars Rover app code base, including [this one](https://github.com/claresudbery/mars-rover-kata-ruby/blob/bc07ff1a93e9fcae32281277e503c101c3cf21d3/webapp.rb#L37). 
+    - I did previously have a [nested yield here](https://github.com/claresudbery/mars-rover-kata-ruby/blob/9cdc6c3b24d3e15c95389d071cce52fbf27bbe36/webapp.rb#L36) (the `handle_exceptions` method uses `yield` to forward a block to `AppHelper.handle_mars_rover_exceptions`, which also uses `yield`), but I [refactored it out here](https://github.com/claresudbery/mars-rover-kata-ruby/commit/52baf271c2ed2859fe596861dbb0abaddd50461b) because it represented unnecessary complexity. 
   - So, in a `Sinatra` layout template, <%= yield %> marks the place where the other template (the one that is being wrapped) is supposed to be inserted. Example [here](https://github.com/claresudbery/sinatra-skeleton-app/blob/bb21e6dfa271f135b620876b9a21344edf7a6eab/monstas.rb#L31).
   - Every Ruby method can take a `block` as a parameter
     - We can invoke that block using the `yield` keyword. 
