@@ -46,6 +46,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
 - My C# attempt is [here](https://github.com/claresudbery/gilded-rose-kata).
+    - My notes on the approach I used are [here](https://github.com/claresudbery/clare-tech/blob/ea4cce0c797d2055e19577f546aad5118238eab9/made-tech/mt-org/demand-events/refactoring-workshop.md#gilded-rose) (currently available only to me).
 - NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
 - It's all about stock having a sell by date and quality degrading with age.
 - It has been translated into many different languages by Emily.

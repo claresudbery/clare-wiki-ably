@@ -108,7 +108,7 @@ Hopefully the project structure, once you have some understanding of how hexagon
 
 There is just one primary port, which represents the contract provided by a pancake maker (**IPancakeMaker**). It currently has just one method: **GiveMePancakes**.
 
-Note that the **Pancake** model is also defined here, as it is needs to be surfaced to primary users.
+Note that the **Pancake** model is also defined here, as it needs to be surfaced to primary users. This is a Plain Old Data object (POD), or Data Transfer Object (DTO). It should have no functionality. If it contained business logic then it would be a domain entity and it would sit in the Pancakes.Domain project. If that logic needed to be exposed to outer layers then it would have its own primary port via its own class interface. Note that often the data needed for inputs is quite different to the data needed for outputs, even on the same entity - and this is therefore handled in separate data objects - often via the request / response pattern.
 
 ### Clare's Pancakes - Primary Adapters
 
