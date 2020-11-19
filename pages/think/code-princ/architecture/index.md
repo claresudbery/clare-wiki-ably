@@ -1,6 +1,6 @@
 ---
 layout: page
 folderlist: true
-location: pages/think/architecture/
-permalink: /pages/think/Architecture
+location: pages/think/code-princ/architecture/
+permalink: /pages/think/code-princ/Architecture
 ---
