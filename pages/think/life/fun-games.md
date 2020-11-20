@@ -4,7 +4,7 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/Fun-Games
 ---
 
-See also [energisers](/pages/think/events/workshops/energisers-warmups.md).
+See also [energisers](/pages/think/events/workshops/Energisers-and-Warmups).
 
 ## Daft Games
 
