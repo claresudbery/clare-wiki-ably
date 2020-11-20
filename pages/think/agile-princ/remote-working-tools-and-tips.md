@@ -164,7 +164,7 @@ with just putting a small microphone quite close to your mouth”
     reduces typing lag. I found it much faster than typing on an IDE
     shared via Slack or Zoom.
 
-  #### Pair Stairs
+#### Pair Stairs
 
   - Use Pair Stairs to keep track of who has paired with who. In the below example, we were working remotely across three geographical areas, and we wanted to encourage people to pair across areas - so we used the colour coding for that (I've changed the names to protect privacy):
 
