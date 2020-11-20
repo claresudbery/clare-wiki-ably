@@ -164,6 +164,12 @@ with just putting a small microphone quite close to your mouth”
     reduces typing lag. I found it much faster than typing on an IDE
     shared via Slack or Zoom.
 
+  #### Pair Stairs
+
+  - Use Pair Stairs to keep track of who has paired with who. In the below example, we were working remotely across three geographical areas, and we wanted to encourage people to pair across areas - so we used the colour coding for that (I've changed the names to protect privacy):
+
+  ![Pair Stairs](/resources/images/pair-stairs.png)
+
 ### Dealing with problems
 
   - Be aware that people will just put up with remote communication
@@ -212,7 +218,7 @@ with just putting a small microphone quite close to your mouth”
     half an hour during their week to set up a remote meeting with
     each other and just shoot the breeze (chat). Ideally with actual
     coffee and cake\! You can set up a spreadsheet in the same way as
-    Pair Stairs:
+    [Pair Stairs](#pair-stairs):
     
       - ![Pair stairs](/resources/images/pair-stairs-cake.png) 
 
