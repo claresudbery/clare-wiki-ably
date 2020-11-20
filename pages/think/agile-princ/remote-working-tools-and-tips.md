@@ -166,7 +166,10 @@ with just putting a small microphone quite close to your mouth”
 
 #### Pair Stairs
 
-  - Use Pair Stairs to keep track of who has paired with who. In the below example, we were working remotely across three geographical areas, and we wanted to encourage people to pair across areas - so we used the colour coding for that (I've changed the names to protect privacy):
+  - Use Pair Stairs (in the example below we used a spreadsheet) to keep track of who has paired with who. 
+  - In the below example, we were working remotely across three geographical areas, and we wanted to encourage people to pair across areas - so we used the colour coding for that (I've changed the names to protect privacy). 
+  - The numbers represent the number of times each pair of people has worked together.
+  - The aim is to have each person work with every other possibility an even number of times, to get maximum cross-pollenation.
 
   ![Pair Stairs](/resources/images/pair-stairs.png)
 
