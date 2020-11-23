@@ -24,6 +24,10 @@ permalink: /pages/coding/tools/Other-Coding-Tools
 
 It takes a sample wodge of JSON and builds types and a parser for you in multiple languages. [An example](https://app.quicktype.io?share=Fhw0WAtIXxBfL3oharhT).
 
+## Postman
+
+- See saved Cadogan Postman collections linked to from [here](https://github.com/claresudbery/clare-tech/blob/master/notes/clients/cadogan/useful-links.md) (accessible to Clare only)
+
 ## Misc
 
 - Sample RegEx: Dropbox\IT Training\Misc\SampleRegEx.txt
