@@ -23,3 +23,6 @@ To configure it to do cool stuff with categories and tags, you can add a categor
 
 See [commit 048c7b6 in clare-wiki-ably](https://github.com/claresudbery/clare-wiki-ably/commit/048c7b6f110b3225a107cafc76702bbe8fc8219e) for an example of where I started playing with this (then I abandoned it because I didn't have the time to make it work properly).
 
+## Troubleshooting
+
+Sometimes if you're not finding search results, if yuou empty cache and hard reload that'll fix it (F12 for Chrome dev tools, then right-click in the refresh icon to the left of the url).
