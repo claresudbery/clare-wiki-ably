@@ -268,6 +268,10 @@ permalink: /pages/coding/infra/servers/Chef
       - When writing Chef scripts, you need pychef installed: **sudo
         pip3 install pychef**
 
+## Useful Scripts
+
+- There are various scripts in [my (private) infra-scripts repo](https://github.com/claresudbery/Infra-Scripts), for instance `find-changed-chef-nagios-nodes.sh` and other chef scripts, all in the [cheftools folder](https://github.com/claresudbery/Infra-Scripts/tree/master/observability-toolbox/cheftools).
+
 ## Other Knife Commands
 
   - See separate section in this doc for **knife ssh**

@@ -152,7 +152,7 @@ permalink: /pages/coding/infra/cmd/Vim
       - Go to end of line: **$** or **A** (which also puts you in insert mode)
       - Go to start of line: **0**
       - [Remap Ctrl+a and Ctrl+e to take you to start / end of line while
-        in Insert mode](https://coderwall.com/p/fd_bea/vim-jump-to-end-of-line-while-in-insert-mode)
+        in Insert mode](https://coderwall.com/p/fd_bea/vim-jump-to-end-of-line-while-in-insert-mode) using the `inoremap` command.
   - Navigate file:
       - Go to top of file: **gg**
       - Go to end of file: **shift + g**

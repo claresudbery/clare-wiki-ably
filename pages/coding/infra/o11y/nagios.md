@@ -132,6 +132,8 @@ permalink: /pages/coding/infra/o11y/Nagios
         instance if you want to find all the services attached to a
         particular host?
 
+  - type `pynag list --examples` to see some sample `pynag` queries.
+
   - It’s possible to use pynag to query Nagios and get a list of all
     alerts
 
