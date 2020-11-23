@@ -221,3 +221,7 @@ permalink: /pages/coding/infra/cloud/Terraform
     kind of smoke test, checking end points etc, doing things like
     defining readiness: assert it should be listening on a port, and if
     it is then it is ready.
+
+## Recommended Project Structure
+
+- The way you structure your Terraform project can make a big difference. [Here is a discussion of this subject from Eritrea](https://docs.google.com/document/d/1MMiZdRuwGLd35OQ3hE4qFwtMWzFu_fFSVQ_wqti6hSo/edit#heading=h.gjdgxs) (available only to Clare) (note this does not contain our proposed solution - it's an initial internal discussion of the problem with some solutions).

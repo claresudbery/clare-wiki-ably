@@ -204,4 +204,42 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - (See above for intro to components)
       - Examples:
           - templates/components/Offer-page.hbs
-              - Used by offer route (routes/offer.js)
+              - Used by offer route (routes/offer.js)  
+
+## Running Tests
+
+  - Run subset of tests: On the command line: **ember test -f “Unit |
+    Service | offer”**
+      - “Unit | Service | Offers” is the name of an individual suite of
+        tests – you can copy this from the top of any test file
+      - If you want to run an individual test, add a colon and then the
+        individual test name: **ember test -f “Unit | Service | offer:
+        should call backend contentful service and get offer extra
+        info”**
+  - Run all tests except end\_to\_end\_tests: **ember test -f
+    “\!end\_to\_end\_tests”**
+      - (the reason for excluding end\_to\_end\_tests might be that they
+        require mocks to be running locally for them to work)
+      - **\!\! It seems to prefer single quotes on the Mac and double
+        quotes on Windows**
+      - **If you get an ‘event not found’ error, try switching your
+        quotes.**
+  - If a test fails, the name of the failing test will be shown on the
+    command line.
+
+### Configuring Tests from Command Line
+
+  - package.json – scripts section
+      - to run any of these, syntax on command line is **npm run
+        \[script name\]**
+
+### Integration tests
+
+  - (sample [code base is here](https://github.com/claresudbery/Cadogan)
+    – available to Clare only)
+  - These use Ember-qunit, which renders Ember components
+  - So basically we’re testing that the correct things are rendered –
+    so, the component is doing what it should with data passed in, and
+    based on Ember templates
+  - Handlebars and components are tested in integration tests created by
+    ember

@@ -7,6 +7,7 @@ permalink: /pages/coding/infra/o11y/Graphite-and-Grafana
 
   - See Eritrea:
     <https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit>
+  - See also my diagrams `Graphite-Clare-busy.png` and `Graphite-Clare-simpler.png` in [my Google Drive folder](https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj).
 
 ## Grafana 
 

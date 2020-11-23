@@ -77,4 +77,17 @@ permalink: /pages/coding/tools/Gradle
                 being converted into different java classes
   - Main entry point to code
       - BackEndApplication.java
-      - Then you go straight to controllers
+      - Then you go straight to controllers  
+
+## Running tests
+
+  - ([Sample code base for Clare
+    only](https://github.com/claresudbery/Cadogan))
+  - There are two sets of tests in the backend: unit tests and
+    integration tests.
+  - This means that there are two separate commands to run on the
+    command line:
+      - This: **./gradlew test**
+      - …and this: **./gradlew integTest**
+  - All tests are in the src / test folder
+  - See the readme for other gradle commands
