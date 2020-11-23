@@ -7,6 +7,10 @@ permalink: /pages/coding/infra/cloud/Heroku
 ## GitHub Repos
 
 - This [tic-tac-toe Ruby kata](https://github.com/claresudbery/tic-tac-toe-kata) is built in Sinatra and deployed to Heroku [here](https://tic-tac-toe-kata.herokuapp.com/tictactoe).
+- This clare-wiki site (this one!) is also deployed via Heroku.
+- I also have a few simple dockerised sites deployed via Heroku:
+    - [webapi-docker](https://github.com/claresudbery/webapi-docker)
+    - [dotnet-docker-clare](https://github.com/claresudbery/dotnet-docker-clare)
 
 ## Misc Heroku Stuff
 

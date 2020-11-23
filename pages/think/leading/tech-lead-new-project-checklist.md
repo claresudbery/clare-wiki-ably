@@ -8,6 +8,13 @@ permalink: /pages/think/leading/Tech-Lead-New-Project-Checklist
 
 The original list is [here](https://insimpleterms.blog/the-tech-leads-new-project-checklist). I'm starting to add to it. For now there are just the [Building New Relationships](#building-new-relationships) and [Potential Pitfalls](#potential-pitfalls) sections below.
 
+## Extra Tech Checks
+
+- Do a performance audit asap - can performance be improved? How?
+- Do a resources audit - is money being spent on unnecessary products and services? Can savings be made?
+- Look for quick wins - eg improving performance, making savings on services. Tis is the kind of thing that can really benefit from fresh eyes and allows you to make a quick positive impact and therefore cement trust and good relationships, if handled right
+    - Do NOT assign blame in this process. You are there to help, not to make other people look bad - particularly if those people are still working in the same organisation, or are closely connected.
+
 ## Building new relationships 
 
 Be explicit about the following:
