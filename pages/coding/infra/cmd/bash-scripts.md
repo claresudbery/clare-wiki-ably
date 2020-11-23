@@ -5,6 +5,7 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 ---
 ## Misc
 
+- There are lots of scripts in my [infra-scripts repo](https://github.com/claresudbery/Infra-Scripts) (only available to Clare).
 - Sample bash script: Dropbox\IT Training\Misc\sample.bashrc
 - if statement - the spaces matter\! **if \[\[ $NumDifferences \!= 0
     \]\]; then ... fi**

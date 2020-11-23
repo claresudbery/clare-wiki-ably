@@ -800,3 +800,7 @@ permalink: /pages/coding/data/Elastic-Search
 
   - Troubleshooting: if things stall, is it because Chef not running on
     that machine?
+
+## Script to find missing shards
+
+- [Here](https://github.com/claresudbery/Infra-Scripts/blob/master/observability-toolbox/missing_shards.py) (Clare only).

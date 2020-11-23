@@ -1046,6 +1046,8 @@ See [notes here](/pages/coding/infra/servers/Networking#hosts-file)
 
   - To check that your json is well formatted
 
+  - it's pretty powerful - has its own syntax. [Here is an example](https://github.com/claresudbery/Infra-Scripts/blob/master/observability-toolbox/jq-aggs) using `jq` to query some json.
+
   - Cmd: **jq ‘.’ \[file\]**
     
       - The “.” argument means start at the root node of the json

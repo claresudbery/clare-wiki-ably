@@ -23,10 +23,9 @@ permalink: /pages/coding/infra/o11y/Other-Observability-Tools
 ## Kafka
 
   - Message queue / bus
-
-  - Pub-sub model
-
+  - Pub-sub model  
   - Various data sources publish to it, consumers reading that data
+  - [This doc](https://docs.google.com/document/d/1BKEKz1indvtF2TSAGN88nHbEtKtvbehYwaqhWxseVV0/edit) (private to Clare) documents how Kafka was part of the logging solution at Eritrea.
 
 ## FileBeat / Lumberjack
 
