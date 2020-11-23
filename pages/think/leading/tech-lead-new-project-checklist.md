@@ -1,7 +1,7 @@
 ---
 layout: page
 location: pages/think/leading/leaf
-permalink: /pages/think/leading/The-Tech-Lead-New-Project-Checklist
+permalink: /pages/think/leading/Tech-Lead-New-Project-Checklist
 ---
 
 ## The Tech Lead's New Project Checklist
