@@ -17,3 +17,7 @@ The following were all used by Cadogan. I don't think my notes are worth copying
 - Selz - for an online shop selling merchandise
 - Wufoo - for online forms
 - Google maps
+- Food delivery:
+    - JustEat
+    - Deliveroo
+    - UberEats
