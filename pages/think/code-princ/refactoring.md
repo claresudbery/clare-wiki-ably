@@ -12,10 +12,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - From workshop done with Mark Kirschstein at LateRooms.
 - [RefactoringExamples (PRIVATE)](https://github.com/claresudbery/RefactoringExamples)
     - The original markdown for my [refactoring article on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html). 
+- @emilybache's excellent [Gilded Rose code base](https://github.com/emilybache/GildedRose-Refactoring-Kata) - great refactoring exercise and contains code in a LOT of different languages.
+    - My [C# branch of gilded rose](https://github.com/claresudbery/gilded-rose-kata/tree/csharp-test-start) with unit tests for use in exercises
+
 
 ## Docs and Blog Posts
 
 - My [refactoring article on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
+    - [Live coding video](https://www.twitch.tv/videos/817383613) of myself doing a walkthrough of some of the refactoring mentioned in the article.
 - [My notes from Martin Fowler's Refactoring Seminar](http://insimpleterms.blog/martin-fowler-webinar-new-refactoring-book)
 - [MF's Refactoring book - web copy (InformIT)](https://memberservices.informit.com/my_account/index.aspx?partner=53&_ga=2.102882948.507915267.1547471980-1562501179.1547471980)
 - [Martin Fowler refactorings catalog](https://refactoring.com/catalog/)
