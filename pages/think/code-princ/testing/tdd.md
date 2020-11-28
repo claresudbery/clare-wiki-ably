@@ -137,6 +137,10 @@ construct a mock for each dependency passed in
 
 ### NCrunch
 
+- If all tests are running after every change:
+    - Change the NCrunch config so InstrumentationMode is set to Optimised
+    - This is possible via Extensions | NCrunch | Configuration within Viksual Studio, but it didn't seem to take effect until I manually edited `[solution name].v3.ncrunchsolution` to include the line `<InstrumentationMode>Optimised</InstrumentationMode>` in the settings section.
+    - I confess I'm quite confused about this though - it definitely seemed to have an impact when I did this on the `live-demo-2020-11-27` branch of the `Reconciliate` code base (see [this commit](https://github.com/claresudbery/Reconciliate/commit/bfaf525)), but the most up to date version of the `master` branch does not have this line in the config file... and it definitely doesn't run all the tests on every change. [shrug]
 - File not found:
     - If a test fails because a file was not found, it may be that you need to include a test file in your NCrunch settings:
     - In Visual Studio: 
