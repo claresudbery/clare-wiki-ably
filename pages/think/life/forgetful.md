@@ -62,3 +62,7 @@ Sarah Cooper: [10 tricks for appearing smart during meetings](https://thecooperr
 ## What's that popular front end / end to end testing framework?
 
 [Cypress](https://www.cypress.io/how-it-works/).
+
+## When was Maisie born?
+
+24/12/20
