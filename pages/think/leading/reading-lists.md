@@ -25,6 +25,9 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 ### Podcasts
 
 - [Troubleshooting Agile](https://conversationaltransformation.com/troubleshooting-agile-podcast/) - a weekly problem-solving session hosted by Douglas and Jeffrey on software delivery and team productivity.
+- [GreaterThanCode](https://www.greaterthancode.com/) - - Jessica Kerr (@Jessitron) is one of the hosts
+- [The Making Of](https://www.thefemalelead.com/podcast-1) from [The Female Lead](https://www.thefemalelead.com/) 
+- [hanselminutes](https://www.hanselminutes.com/)
 - [dev/to](https://dev.to/pod)
 - [fullstackradio](https://fullstackradio.com)
 - [egghead.io](https://egghead.io/podcasts)
