@@ -66,3 +66,7 @@ Sarah Cooper: [10 tricks for appearing smart during meetings](https://thecooperr
 ## When was Maisie born?
 
 24/12/20
+
+## What's that thing that isn't endoscopy or colonoscopy?
+
+Sigmoidoscopy (like a colonoscopy but camera only looks at only the lower part of the colon.
