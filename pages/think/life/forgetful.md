@@ -70,3 +70,7 @@ Sarah Cooper: [10 tricks for appearing smart during meetings](https://thecooperr
 ## What's that thing that isn't endoscopy or colonoscopy?
 
 Sigmoidoscopy (like a colonoscopy but camera only looks at only the lower part of the colon.
+
+## Where's that lost thing I can't find?
+
+Try inhere, or [finding-things.md in clare-tech](https://github.com/claresudbery/clare-tech/blob/master/organising/private/finding-things.md)
