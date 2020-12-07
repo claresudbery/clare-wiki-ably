@@ -10,6 +10,8 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots)
 
 - The Oracle, Liverpool
     - secret speakeasy cocktail bar, they do close-up magic at your table. Recommended by George T from MT.
+- Universal Exports, Chicago
+    - secret speakeasy where you have to go through a labyrinth to get into the bar!
 
 ## Things to do with kids
 

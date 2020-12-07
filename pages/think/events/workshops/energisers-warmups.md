@@ -24,6 +24,7 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 - Use https://really.boring.website/ to play a game
 - Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
 - In groups of 3, design a superhero. You get to choose one super power reach and combine them into one hero. Draw a collaborative picture of the result.
+- Say three surprising things about yourself, then everybody asks you lots of questions to find out which one's false.
 
 ## Links to Games Elsewhere
 

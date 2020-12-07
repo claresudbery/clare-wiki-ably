@@ -28,6 +28,7 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 - [GreaterThanCode](https://www.greaterthancode.com/) - - Jessica Kerr (@Jessitron) is one of the hosts
 - [The Making Of](https://www.thefemalelead.com/podcast-1) from [The Female Lead](https://www.thefemalelead.com/) 
 - [hanselminutes](https://www.hanselminutes.com/)
+- [Remote working - moving from an oral to a written culture](https://www.cherryleaf.com/2020/05/podcast-88-will-myddelton-on-moving-from-an-oral-to-a-written-culture/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-88-will-myddelton-on-moving-from-an-oral-to-a-written-culture)
 - [dev/to](https://dev.to/pod)
 - [fullstackradio](https://fullstackradio.com)
 - [egghead.io](https://egghead.io/podcasts)
