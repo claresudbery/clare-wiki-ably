@@ -4,11 +4,16 @@ location: pages/think/life/women-in-tech/leaf
 permalink: /pages/think/life/women-in-tech/Women-in-Tech-Resources
 ---
 
+## Lists
+
+- See OneDrive/TW-Stuff/Organising/Notes (only available to Clare, but all the publicly-facing info is now moved to the [public spreadsheet](https://docs.google.com/spreadsheets/d/1rUVdL8GbVa32JWuIW3UbFi2gKzQwY7TDLlaqkVzzWos/edit?usp=sharing) anyway)
+- List of non-male speakers [here](https://docs.google.com/spreadsheets/d/1rUVdL8GbVa32JWuIW3UbFi2gKzQwY7TDLlaqkVzzWos/edit?usp=sharing)
+
 ## Docs and Blog Posts
 
-My InSimpleTerms Blog
+- My InSimpleTerms Blog  
   - [Gender category](https://insimpleterms.blog/category/gender)
-  - [Women in Tech category](https://insimpleterms.blog/category/women-in-tech)
+  - [Women in Tech category](https://insimpleterms.blog/category/women-in-tech)  
 - My Medium Blog (A Woman in Technology)
   - [Hack Manchester 2018 - Best in Show](https://medium.com/a-woman-in-technology/hack-manchester-2018-best-in-show-ca6ef65fb49c) (my Medium blog post)
   - [Being Bold for Change: Don't Worry About it, Just Do it](https://medium.com/a-woman-in-technology/being-bold-for-change-part-1-dont-worry-about-it-just-do-it-59a76bdcd070) (my Medium blog post)
