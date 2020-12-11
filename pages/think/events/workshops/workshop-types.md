@@ -4,7 +4,7 @@ location: pages/think/events/workshops/leaf
 permalink: /pages/think/events/workshops/Workshop-Types
 ---
 
-See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Consulting Principles](/pages/think/agile-princ/Consulting-Principles).
+See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques) and [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Consulting Principles](/pages/think/agile-princ/Consulting-Principles).
 
 ## Misc
 
@@ -68,6 +68,8 @@ See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Cons
 - Storyboarding
 	- [Real example in this repo](/resources/images/storyboarding.png)
 	- Fold paper to create 8 panels, then use them to create a ocmic strip that describes a blue-sky imagined new or improved user journey.
+- Action Learning
+	- see [dedicated Action Learning page](/pages/think/events/workshops/Action-Learning).
 
 ## Specific types of workshop in more detail
 
