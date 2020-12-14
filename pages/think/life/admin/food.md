@@ -13,3 +13,17 @@ permalink: /pages/think/life/admin/Food
 ## Bicarb vs baking powder vs baking soda
 
 Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not the same but will do if that is all you have. Neither are the same as borax.
+
+## High Fibre Foods
+
+- Beans
+- Broccoli
+- Berries
+- Avocados
+- Popcorn
+- Whole grains (inc oats)
+- Apples
+- Dried fruits
+- Potatoes
+- Nuts
+
