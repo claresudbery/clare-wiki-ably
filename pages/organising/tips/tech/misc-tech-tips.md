@@ -35,6 +35,7 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 ## Gmail / Google Calendar
 
 - Add bullet list: Cmd + Shift + 8
+  - Indent a sub item: Ctrl + ] to indent right, Ctrl + [ to indent left
 - [Other gmail shortcuts](https://blog.hubspot.com/sales/gmail-keyboard-shortcuts)
 - [Stop receiving notifications when people respond to invitations, etc](https://xfanatical.com/blog/how-to-turn-off-the-rsvp-responses-from-google-calendar/#:~:text=In%20the%20left%20panel%20%3E%20Settings,select%20None%20for%20this%20entry.) - note that this is set in the settings for each individual calendar, NOT in teh general Google Calendar settings - that's why it's so hard to find!
 
@@ -93,3 +94,4 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 - To add voting functionality to Trello, click the menu top right, then select powerups and search for the Voting powerup to add it.
 - Once it's added you can vote on Trello cards by hovering over and pressing on the keyboard, or opening up the card and finding the Vote button on the right.
 - You can then order cards in a column by how many votes they have, by clicking the three dots at the top right of the column and selecting "Sort by..." then "votes".
+
