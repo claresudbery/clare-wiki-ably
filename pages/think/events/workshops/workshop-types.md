@@ -70,6 +70,8 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 	- Fold paper to create 8 panels, then use them to create a ocmic strip that describes a blue-sky imagined new or improved user journey.
 - Action Learning
 	- see [dedicated Action Learning page](/pages/think/events/workshops/Action-Learning).
+- Lots of consultancy examples
+	- (available to Clare only): Until I've processed them, just need to look in this folder and trawl through the presentations: OneDrive\TW-Stuff\Clients\Pitches 
 
 ## Specific types of workshop in more detail
 
