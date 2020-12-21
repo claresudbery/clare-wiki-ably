@@ -16,3 +16,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Docs and Blog Posts
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/clojure) (Clojure category)
+
+## Guides
+
+- [Clojurescript Quick Start Guide](https://clojurescript.org/guides/quick-start)

@@ -804,3 +804,7 @@ permalink: /pages/coding/data/Elastic-Search
 ## Script to find missing shards
 
 - [Here](https://github.com/claresudbery/Infra-Scripts/blob/master/observability-toolbox/missing_shards.py) (Clare only).
+
+## Useful Queries
+
+- [Useful ElasticSearch Queries (from Samba) (available to Clare only)](https://docs.google.com/document/d/1CDjGin_uAAGl-0dCqQ0-3IzruRLEWk5b2MFPK2YHaXo/edit)

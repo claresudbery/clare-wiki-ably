@@ -26,6 +26,14 @@ Use [energisers](/pages/think/events/workshops/Energisers-and-Warmups) to warm p
 - Discuss what you're going to be doing and why
 - Be excited and positive
 
+## Establish ground rules and agenda
+
+Examples from a "Measures of Success" workshop:
+
+![Measures of success workshop agenda](/resources/images/MeasuresOfSuccess-Workshop-Agenda.jpg)
+![Ground rules](/resources/images/MeasuresOfSuccess-Workshop-GroundRules.jpg)
+![Workshop rules](/resources/images/workshop-rules.png)
+
 ### Under promise and over deliver
 
 ### Avoid fidgeting

@@ -111,3 +111,22 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 ![inverse-conway-manoeuvre.png](/resources/images/inverse-conway-manoeuvre.png)
 ![inverse-conway-manoeuvre-2.png](/resources/images/inverse-conway-manoeuvre-2.png)
 
+### Measures of Success
+
+![Measures of success workshop agenda](/resources/images/MeasuresOfSuccess-Workshop-Agenda.jpg)
+
+### Role Definition
+
+- Claire W ran one of these for me and a resident tech lead at Samba. The outcome postits are available (to Clare only) at OneDrive\TW-Stuff\Clients\[Samba]]\ClaireW-TechLeadPics-small
+- The structure included the following:
+	- **Does/Doesn't**: Use post-its to define what is and isn't part of the role
+	- Value/Effort quadrants: Use quadrants to prioritise the does/doesn't
+	- Looking forward (this was done when looking at a role that was already being done, so may not all be needed at the start of a role):
+		- Identify key deliverables / objectives and vote on them to decide a priority
+		- Identify what support and resources you are already receiving
+		- Identify what support and resources you are NOT receiving but do need
+		- Identify what support and resources you are currently receiving but do NOT need
+	- As you go, identify Actions (and as ever, use a parking lot for things you don't have time to address now)
+
+
+
