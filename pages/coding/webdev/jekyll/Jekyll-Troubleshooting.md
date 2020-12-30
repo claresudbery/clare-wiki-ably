@@ -246,3 +246,21 @@ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.15.3/lib/bundler/
 ```
 
 I ran `bundle install` and that told me to run `gem install bundler`, which worked.
+
+## Bundler version problems when deploying with Travis
+
+- Getting the following error in Travis: "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
+/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
+- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
+- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the mingw thing kept messing with the formatting of the site.
+	
+```bash
+gem install bundler
+gem install bundler -v '2.1.4'
+# updated Ruby version to 2.7.2 in .ruby-version
+bundle install
+gem install nokogiri
+gem install nokogiri --platform=ruby
+bundle update
+gem update --system
+```
