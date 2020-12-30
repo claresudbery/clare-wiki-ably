@@ -130,5 +130,9 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 		- Identify what support and resources you are currently receiving but do NOT need
 	- As you go, identify Actions (and as ever, use a parking lot for things you don't have time to address now)
 
+## Meetups
 
+### Office Hours
+
+- [This is a great article](https://ideolalia.com/essays/the-office-hours-meetup.html) suggesting the idea of an "office hours" meetup. The description of a dysfunctional meetup is unfair to most meetups I've ever attended, because they allow time for discussion after each talk and they often use a workshop style rather than a lecture format. But still I like the office-hours idea. For those that haven't come across the concept (I hadn't before I worked with a US-based company), it seems to be something commonly used in US universities, where lecturers will make themselves available at certain times of the day for students to knock on their door and get some one-to-one time.
 
