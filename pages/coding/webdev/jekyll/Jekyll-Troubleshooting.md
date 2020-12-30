@@ -139,8 +139,11 @@ curl https://cli-assets.heroku.com/install.sh | sh
 
 - Issue: The search box appears top left instead of top right
 - Cause: Every time you run `jekyll serve` (`js`) in GitBash, extra windows stuff gets added to `Gemfile.lock` which is fine locally but doesn't work remotely.
+	- The *stuff* in question is a lot of new `mingw` versions of various gems, like this: `eventmachine (1.2.7-x64-mingw32)`. Also a new `x64-mingw32` entry is added in the `PLATFORMS` section at the bottom.
 - Solution: Revert any pushed changes to `Gemfile.lock`
 - Prevention: Never push changes to `Gemfile.lock`. I have a shortcut alias set up - just run `discard Gemfile.lock` on command line before changes are staged.
+- Note that in the end, due to other problems, I stopped pushing `Gemfile.lock` altogether. But sadly this did mean the formatting problem returned. At the time of writing I haven't fixed this yet.
+	- I'm guessing the problem is that some gem has been updated in a way that changes how layouts work (could well be an accessibility thing - screen readers work better if sidebars are on the left instead of the right). I probably just need to change some css / html somewhere.
 
 ## Jekyll installation for windows
 * Here: https://jekyllrb.com/docs/installation/windows/
@@ -253,8 +256,14 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 /home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
 - In the end when I looked more closely at the errors in Travis I realised it was in a Travis Ruby 2.5.1 directory which seemed to come from the fact that I had rvm version 2.5.1 specified in .travis.yml.
 	- I spent bloody ages trying to work out what the latest version of rvm is, or what version I should have in .travis.yml... until I finally realised that it's not referring to the version of rvm, it's referring to the version of RUBY that rvm should use. So I changed the `rvm` section of `.travis.yml` to match `.ruby-version`.
-- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
-- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the mingw thing kept messing with the formatting of the site.
+	- This led me down another set of rabbit holes. See commits [484dbf2](https://github.com/claresudbery/clare-wiki-ably/commit/484dbf2) to [b128805](https://github.com/claresudbery/clare-wiki-ably/commit/b128805), to see the various things I tried.
+	- Then I got the following error in Travis: "`bundle exec rake` - rake aborted! Don't know how to build task 'default'", so I added lines to my `Rakefile` as recommended by [this article](https://coderwall.com/p/sdxxaa/travis-ci-don-t-know-how-to-build-task-default).
+		- This was the final action that fixed everything!
+		- ...well, sort of. Sadly it meant that [this formatting problem](#issue-with-site-layout-caused-when-you-push-gemfile-lock-changes) returned.
+
+- These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml`:
+	- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
+	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the mingw thing kept messing with the formatting of the site.
 	
 ```bash
 gem install bundler
