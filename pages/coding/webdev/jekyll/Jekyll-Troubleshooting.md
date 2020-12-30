@@ -251,6 +251,8 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 
 - Getting the following error in Travis: "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
 /home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
+- In the end when I looked more closely at the errors in Travis I realised it was in a Travis Ruby 2.5.1 directory which seemed to come from the fact that I had rvm version 2.5.1 specified in .travis.yml.
+	- I spent bloody ages trying to work out what the latest version of rvm is, or what version I should have in .travis.yml... until I finally realised that it's not referring to the version of rvm, it's referring to the version of RUBY that rvm should use. So I changed the `rvm` section of `.travis.yml` to match `.ruby-version`.
 - Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
 - Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the mingw thing kept messing with the formatting of the site.
 	
