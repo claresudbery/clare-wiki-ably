@@ -74,7 +74,8 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 - Give all players a chance to maximise the person talking before they start.
 - You can choose a category - eg film titles - although film titles are surprisingly easy to guess (it's funnier if it's harder, because then you get more hilarious bad guesses - for instance when my son guessed "military bag of raw meat" instead of "middle-aged man on roller skates").
     - My favourite thing to use is the cards from a Cards Against Humanity set (use the white cards - the phrases that are used to fill in the blanks).
-    - You can download a [free version as a pdf here](https://cards-against-humanity.en.softonic.com/#), under a Creative Commons Attribution-NonCommercial-ShareAlike license (CC BY-NC-SA).
+    - I've created a [little web app](https://cah-answer-generator.herokuapp.com/) that randomly generates Cards Against Humanity phrases for you to use.
+    - You can also download a [free version as a pdf here](https://cards-against-humanity.en.softonic.com/#), under a Creative Commons Attribution-NonCommercial-ShareAlike license (CC BY-NC-SA).
     - It is acceptable for the current player (the mimer) to "pass" on any phrase and move onto the next.
 
 ### Drawing on the top of your head
