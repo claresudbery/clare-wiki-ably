@@ -27,3 +27,9 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 - Potatoes
 - Nuts
 
+## Xmas recipes
+
+- [Cheesy leeks](https://www.bbc.co.uk/food/recipes/cheesy_leeks_46292)
+- [Marzipan](https://www.daringgourmet.com/how-to-make-marzipan-almond-paste/)
+- [Bread sauce](https://www.bbcgoodfood.com/recipes/bread-sauce-0)
+
