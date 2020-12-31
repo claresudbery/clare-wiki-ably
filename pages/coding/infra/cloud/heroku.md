@@ -10,6 +10,7 @@ permalink: /pages/coding/infra/cloud/Heroku
     - I documented the Heroku / Travis deployment steps [in the readme here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/README.md#deploying-to-heroku-via-travis).
 - This clare-wiki site (this one!) is also deployed via Heroku.
 - My [Cards Against Humanity answer generator](https://github.com/claresudbery/cah-answer-generator) is also deployed via Travis to Heroku.
+- My [Ruby version of the Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby) is also deployed via Travis to Heroku.
 - I also have a few simple dockerised sites deployed via Heroku:
     - [webapi-docker](https://github.com/claresudbery/webapi-docker)
     - [dotnet-docker-clare](https://github.com/claresudbery/dotnet-docker-clare)

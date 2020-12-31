@@ -12,4 +12,5 @@ permalink: /pages/coding/infra/cloud/Travis
 - This clare-wiki site (this one!) is also deployed via Travis to Heroku.
     - The Travis config is visible [here](https://github.com/claresudbery/clare-wiki-ably/blob/master/.travis.yml).
 - My [Cards Against Humanity answer generator](https://github.com/claresudbery/cah-answer-generator) is also deployed via Travis to Heroku.
+- My [Ruby version of the Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby) is also deployed via Travis to Heroku.
 
