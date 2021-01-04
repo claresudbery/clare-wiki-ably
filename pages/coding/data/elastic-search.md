@@ -15,6 +15,7 @@ permalink: /pages/coding/data/Elastic-Search
     
       - **Eritrea:**
         <https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit>
+  - My [“useful notes” for the Samba project](https://github.com/claresudbery/samba/blob/master/signposts-misc-files/useful-single-view-notes.md) (accessible to Clare only) contain some Elastic Search stuff
 
 ## Disable ELK on a server
 

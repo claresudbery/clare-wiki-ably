@@ -20,3 +20,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [ReactiveX](/pages/coding/tools/ReactiveX)
 
+## Reagent
+
+- Reagent is a library – a Clojurescript wrapper around react js. See [Clojure notes](/pages/coding/lang/func/Clojure#reagent)
