@@ -42,18 +42,34 @@ permalink: /pages/coding/infra/cloud/Docker
 
 ## Docker commands
 
-  - Show all containers: **docker ps**
-
-  - Look at the config for a container: **docker inspect \[container
-    name\]**
-
-  - Start, stop etc: **docker start, docker stop**
-
-  - Remove a container: **docker rm**
-
-  - See volumes: **docker volume ls**
-
-  - Remove a volume: **docker volume rm**
+- Show all containers: `docker ps`
+- Look at the config for a container: `docker inspect [container  name]`
+- Start, stop etc: `docker start`, `docker stop`
+- Remove a container: `docker rm`
+- See volumes: `docker volume ls`
+- Remove a volume: `docker volume rm`
+- This:	`docker images` - shows you all current images
+- This:	`docker logs [image name]` – shows you the output from the container
+- This:	`docker run help`
+  -	To get syntax of a command
+- This:	`docker run –help`
+  -	gives you documentation on the docker run command
+  -	!! The way this is listed is slightly confusing
+    -	for instance, it says “-d, --detach” and then there are a ton of other commands prefixed with –
+    -	the other commands are unrelated!
+   -	What it’s actually telling you is that “-d” is a shortcut for “--detach”. Everything that comes after that is just switches beginning with d that do not have shortcuts
+- This:	`docker-machine ssh`
+  -	Get yourself inside the docker-machine, which is run on a VirtualBox VM running Linux
+    -	In fact you can run up VirtualBox manager and you will see the sonar docker machine listed in there
+    -	This is useful because you can do things like increase the amount of RAM available
+    -	You need about 4Gb RAM here!
+  -	Otherwise you’re outside the machine
+- This:	`docker tag 72bdc47a77cf demo:latest`
+  -	Tags an image
+  -	the id is the image id, then ‘demo’ will be the repository and ‘latest’ will be the tag
+-	To run a container but mapping port 80 to port 3000:
+  -	`docker run -d -p 80:3000 demo:latest`
+  -	This means you can now just go to localhost in the browser
 
 ## Docker tags
 
