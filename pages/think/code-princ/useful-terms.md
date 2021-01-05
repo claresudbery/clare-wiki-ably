@@ -4,7 +4,7 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Useful-Terms
 ---
 
-See also [Coding Principles](pages/think/Coding-Principles).
+See also [Coding Principles](/pages/think/Coding-Principles).
 
 ## Primitive Obsession
 
