@@ -33,6 +33,12 @@ permalink: /pages/organising/podcasts/Audacity
 - Ctrl + B
     - You can label either sections or points in time, depending on whether you've selected a selection or not
     - Labels will appear in their own separate track
+- To remove a label: 
+    - click in the label text
+    - Home
+    - Shift + end
+    - Delete
+    - Delete again
 
 ### Zooming in and out
 
