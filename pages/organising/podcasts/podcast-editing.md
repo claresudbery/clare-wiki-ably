@@ -4,8 +4,6 @@ location: pages/organising/podcasts/leaf
 permalink: /pages/organising/podcasts/Podcast-Editing
 ---
 
-## Editing Software
+## Editing tools
 
-### Audacity
-
-- [Tutorial for using Audacity to edit podcasts](https://podcasts.ceu.edu/how-edit-your-podcast-audacity-step-step-guide)
+- [My notes on Audacity](/pages/organising/podcasts/Audacity)
