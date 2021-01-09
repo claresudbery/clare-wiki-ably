@@ -80,6 +80,7 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 
 ### Drawing on the top of your head
 
+- (Not obviously an online game but can easily be done when people are remote)
 - Get everyone to find paper, pen and something light to lean on (eg a book)
 - They place the paper on top of their head
 - Without lookng, they draw a series of things one by one, as per your instructions:
@@ -100,7 +101,14 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
     - Present is under tree: 2
     - Fire in fireplace: 1
 
+### Ageimals
 
+- Find a photo of an animal whose age you can verify
+- Give everyone four possible answers as to what their age might be
+- Use a poll for the guesses
+- Publish answers after a suitable interval
+- (This is a good one for Slack channels)
+- I have a (private) spreadsheet here with animal photos plus options + right answers [here](https://docs.google.com/spreadsheets/d/1oTQAMuKt2kxLbLG6Ue9qr7CZukd6wT5ovxFhHuEtaPA/edit#gid=0)
 
 ## Coding Games
 
