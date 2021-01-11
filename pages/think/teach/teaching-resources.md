@@ -14,6 +14,8 @@ permalink: /pages/think/teach/Teaching-Resources
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/teaching) (Teaching category)
 - [How Learning and Teaching Shape Us](https://medium.com/a-woman-in-technology/how-learning-and-teaching-shape-us-3e6333b8c7ba) (my Medium blog post)
+- [Teaching New Tricks](https://www.dotnetrocks.com/?show=1621) - my interview on the Dot Net Rocks podcast about teaching experienced developers
+- [Teaching New Tricks - How to enhance the skills of experienced developers](https://www.youtube.com/watch?v=Ue4dOfTRofg&feature=youtu.be) - my talk at Lead Dev London 2018 about teaching experienced developers
 
 ## Training Programmes
 

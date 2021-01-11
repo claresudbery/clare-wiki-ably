@@ -25,6 +25,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Martin Fowler refactorings catalog](https://refactoring.com/catalog/)
 - [Learn Tech refactoring guide](https://learn.madetech.com/guides/05-Refactoring/)
 - [Dave Farley's youtube series on refactoring](https://www.youtube.com/watch?v=p-oWHEfXEVs)
+- My interview with Robby Russell - ["Refactoring Should Be Part of Your Daily Work"](https://maintainable.fm/episodes/clare-sudbery-refactoring-should-be-part-of-your-daily-work) - on the Maintainable podcast
 
 ## Misc
 
