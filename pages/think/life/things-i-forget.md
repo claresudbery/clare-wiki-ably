@@ -74,3 +74,15 @@ Sigmoidoscopy (like a colonoscopy but camera only looks at only the lower part o
 ## Where's that lost thing I can't find?
 
 Try inhere, or [finding-things.md in clare-tech](https://github.com/claresudbery/clare-tech/blob/master/organising/private/finding-things.md)
+
+## What's the name of that Japanese plastic instrument that works a little like a theramin?
+
+Otamatone.
+
+[Brilliant otamatone version of Africa](https://www.youtube.com/watch?v=9w5ZHMwIzvY&feature=youtu.be).
+
+[Great otamatone version of September](https://www.youtube.com/watch?v=-FwAQ7BxZQ4&feature=youtu.be).
+
+[Pumped up Kicks!](https://www.youtube.com/watch?v=guSESFWNrOY)
+
+Oh dear, I'd better stop or I'll be here all day.
