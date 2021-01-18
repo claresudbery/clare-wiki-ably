@@ -60,7 +60,8 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 
 #### Resilience 
 
-[Resilience during coronavirus](https://www.theukdomain.uk/resilience-during-coronavirus/)
+- [Resilience during coronavirus](https://www.theukdomain.uk/resilience-during-coronavirus/)
+- [Some thoughts on handling negative thoughts / "chatter"](https://www.theguardian.com/science/2021/jan/16/inner-voice-self-criticism-psychologist-ethan-kross-chatter-voice-head)
 
 #### Unfuck your brain
 
