@@ -8,6 +8,10 @@ See also [energisers](/pages/think/events/workshops/Energisers-and-Warmups).
 
 There is a proven therapeutic benefit to laughing together with other people. It's also a great way to build team relationships, and playing silly games is a great way of providing opportunities to laugh together.
 
+## Getting to know each other
+
+See [energisers](/pages/think/events/workshops/Energisers-and-Warmups#getting-to-know-each-other).
+
 ## Daft Games
 
 ### Taskmaster

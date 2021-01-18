@@ -49,6 +49,10 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 
 ### Staying sane during the COVID-19 crisis
 
+#### Positive stuff
+
+- @andrewdotdobson and his colleagues at Publicis Poke have made [a webapp with a button you can press](https://pressforpositivity.publicispoke.com/) for good positive stuff to cheer you up and distract you. Announced [here on Twitter](https://twitter.com/andrewdotdobson/status/1348612537345052682?s=21).
+
 #### Meg John and Justin: Podcast and Resources on Stress and Coronavirus
 
 - [The wonderful Meg-John and Justin on stress](https://megjohnandjustin.com/you/stress-and-coronavirus/)
@@ -125,6 +129,8 @@ are flying South. Beneath your feet
 worms aren’t worrying.
 
 ### Some info and links
+
+- [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
 
 NB: This collection is already a couple of weeks old. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 

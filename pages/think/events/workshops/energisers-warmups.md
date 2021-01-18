@@ -14,17 +14,22 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 - Think about what zone / frame of mind you want people to be in
 - Gauge the room. Some groups love wacky icebreakers, some are completely turned off by them
 
+## Getting to know each other
+
+- Write down something nobody knows about you, then we have to guess which one is who.
+    - In person this goes on folded pieces of paper. Remotely you can use a spreadsheet and just agree to not pay attention to who's writing what. The more people, the less likely people will register who wrote what.
+- Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
+- Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
+- In groups of 3, design a superhero. You get to choose one super power each and combine them into one hero. Draw a collaborative picture of the result.
+- Say three surprising things about yourself, then everybody asks you lots of questions to find out which one's false.
+- Get everyone to paste a baby pic of themselves into a spreadsheet (give them a few days to get this part done).
+    - Then everyone has to guess who's who.
+
 ## Simple icebreakers
 
 - stand back to back, one describes a picture, the other draws it. 
-- Draw a picture of your worst fear. 
-- Write down something nobody knows about you, then we have to guess which one is who.
-- Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
 - If still stuck for ideas, just google "icebreakers"
 - Use https://really.boring.website/ to play a game
-- Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
-- In groups of 3, design a superhero. You get to choose one super power reach and combine them into one hero. Draw a collaborative picture of the result.
-- Say three surprising things about yourself, then everybody asks you lots of questions to find out which one's false.
 
 ## Links to Games Elsewhere
 
