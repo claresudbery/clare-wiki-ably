@@ -12,7 +12,7 @@ permalink: /pages/coding/infra/o11y/Kibana
         
           - 
   - On-prem Livelk:
-    [<span class="underline">https://logs.acmecorp.com</span>](https://logs.etsycorp.com)
+    [<span class="underline">https://logs.acmecorp.com</span>](https://logs.acmecorp.com)
     
       - This query gets you all documents with a field called type that
         has a value of logstash\_server\_log:

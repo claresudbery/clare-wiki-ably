@@ -107,8 +107,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     [<span class="underline">https://realpython.com/python-mock-library/</span>](https://realpython.com/python-mock-library/)
 
   - I did a TON of mocking and stuff in the SnapshotHandler script,
-    which is here:
-    [<span class="underline">https://github.acmecorp.com/Observability/observability-toolbox/tree/OBSERVE-2182/closedindices/es\_indices\_snapshot</span>](https://github.etsycorp.com/Observability/observability-toolbox/tree/OBSERVE-2182/closedindices/es_indices_snapshot)
+    which is [here (accessible to Clare only)](github.com/claresudbery/Infra-Scripts/tree/master/observability-toolbox/closedindices/es_indices_snapshot).
 
   - Useful links on mocking and stuff:
     

@@ -316,7 +316,7 @@ permalink: /pages/coding/data/Elastic-Search
         index for today.
         
           - Curl the ES API, do a delete request (**curl -XDELETE
-            [<span class="underline">http://logdbmaster.acmecorp.com:9200/logstash-2019.01.16</span>](http://logdbmaster.etsycorp.com:9200/logstash-2019.01.16)**)
+            [<span class="underline">http://yourdomain.acmecorp.com:9200/whatever-2019.01.16</span>](http://yourdomain.acmecorp.com:9200/whatever-2019.01.16)**)
     
       - …which means losing data.
 
@@ -588,7 +588,7 @@ permalink: /pages/coding/data/Elastic-Search
     
       - That assign\_shards script is in observability-tools (cloned to
         my laptop and VM):
-        [<span class="underline">https://github.acmecorp.com/Observability/observability-toolbox.git</span>](https://github.etsycorp.com/Observability/observability-toolbox.git)
+        [<span class="underline">https://github.acmecorp.com/Observability/observability-toolbox.git</span>](https://github.acmecorp.com/Observability/observability-toolbox.git)
 
 ## Indices
 

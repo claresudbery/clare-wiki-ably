@@ -112,10 +112,10 @@ permalink: /pages/coding/infra/cloud/Docker
 
   - Google GCR uses the rest of the path to locate the image within the
     project. So burrow is at
-    [<span class="underline">https://console.cloud.google.com/gcr/images/acme-gcr-dev/GLOBAL/burrow?project=acme-gcr-dev\&gcrImageListsize=30</span>](https://console.cloud.google.com/gcr/images/etsy-gcr-dev/GLOBAL/burrow?project=etsy-gcr-dev&gcrImageListsize=30).
+    [<span class="underline">https://console.cloud.google.com/gcr/images/yourid/GLOBAL/burrow?project=yourid\&gcrImageListsize=30</span>](https://console.cloud.google.com/gcr/images/yourid/GLOBAL/burrow?project=yourid&gcrImageListsize=30).
     The path could have multiple components - so here’s the burrow
     produced by \#coreplatform
-    [<span class="underline">https://console.cloud.google.com/gcr/images/acme-gcr-dev/GLOBAL/cdc/burrow?project=acme-gcr-dev\&gcrImageListsize=30</span>](https://console.cloud.google.com/gcr/images/etsy-gcr-dev/GLOBAL/cdc/burrow?project=etsy-gcr-dev&gcrImageListsize=30)
+    [<span class="underline">https://console.cloud.google.com/gcr/images/yourid/GLOBAL/cdc/burrow?project=yourid\&gcrImageListsize=30</span>](https://console.cloud.google.com/gcr/images/yourid/GLOBAL/cdc/burrow?project=yourid&gcrImageListsize=30)
 
   - Which you can see is the in cdc folder.
 

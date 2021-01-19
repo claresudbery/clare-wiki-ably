@@ -92,7 +92,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     
       - This to create a new ssh public-private key pair: **ssh-keygen
         -C [<span class="underline">\[email
-        address\]</span>](mailto:csudbery@etsy.com)**
+        address\]</span>](mailto:csudbery@acme.com)**
     
       - This to start the ssh-agent: **eval "$(ssh-agent -s)"**
 
@@ -259,9 +259,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### Running a git command in a different folder
 
   - In gitBash (for the **git status** command):
-      - **git –C /c/smbc/dts/dts-frontend status**
+      - **git –C /c/your/folder/frontend status**
   - In powershell (for the **git status** command):
-      - **git –C c:/smbc/dts/dts-frontend status**
+      - **git –C c:/your/folder/frontend status**
 
 ### Setting up Git Command shortcuts (git alias)
 
