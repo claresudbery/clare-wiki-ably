@@ -25,8 +25,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Resources
 - [Amazon EC2 Instance Comparison](https://ec2instances.info/)
 - [EMR Clusters – AWS Console](https://eu-west-2.console.aws.amazon.com/elasticmapreduce/home?region=eu-west-2#cluster-details:j-1J6GSG7M4SIBI)
 
-
-
 ## AWS Infrastructure Diagram
 
 - Cadogan AWS Infrastructure Diagram (PRIVATE): `AWS Infrastructure Diagram.jpg` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj

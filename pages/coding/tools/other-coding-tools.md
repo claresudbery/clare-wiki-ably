@@ -32,3 +32,7 @@ It takes a sample wodge of JSON and builds types and a parser for you in multipl
 
 - Sample RegEx: Dropbox\IT Training\Misc\SampleRegEx.txt
 - [Useful tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7ae17d68-c956-43fd-841f-a3daba3b85ef&query=tag%1FUseful%1FtagGuid%3A445d553a-0d3d-80ce-5f4e-641a12368bae%1Eview%3AVIEW%2FALL_NOTES&)
+
+## Snap CI
+
+This is no longer available, but if for some reason you want notes there are some available (to Clare only) in GitHub [here](https://github.com/claresudbery/samba), in `wiki-set-up-guide.txt` in the web-app sub-folder - and possibly in some other files in the same folder.

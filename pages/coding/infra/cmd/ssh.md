@@ -84,3 +84,21 @@ permalink: /pages/coding/infra/cmd/SSH-Access
 
 - SSM - AWS Systems Manager Session Manager.
 - [Details here](https://www.tripwire.com/state-of-security/security-data-protection/cloud/aws-session-manager-enhanced-ssh-scp-capability/)
+
+## Using ssh to access GitLab
+
+First make sure you have a GitHub account. If you don't have one already, you can sign up (it's free): https://github.com/ 
+
+Then you will need to create an SSH key and add it to both GitHub and GitLab. The following instructions tell how to create / add an SSH key to GitHub: https://help.github.com/articles/generating-an-ssh-key/. 
+
+Then you can add your key to GitLab: 
+
+* Go to GitLab: https://git.stockport.gov.uk/
+
+* Go to Profile Settings (picture of a person, bottom right)
+
+* Select SSH Key at the top
+
+* In a command prompt (or GitBash, Powershell or equivalent) run this command: **clip < ~/.ssh/id_rsa.pub**
+
+* This will put the SSH key in your clipboard. Now you can paste it into the large "Key" text box, enter a Title and then click Add Key.

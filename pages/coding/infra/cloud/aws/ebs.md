@@ -19,6 +19,17 @@ permalink: /pages/coding/infra/cloud/aws/Elastic-Beanstalk-EBS
     just mean it has terminated an instance because traffic has lowered
     – so probably not anything to worry about
 
+## Check Instances
+
+To see running instances and generally see how things are going:
+
+* Services | Elastic Beanstalk
+* Select your project at the top, then environment from the dropdown
+* For running instances, click Monitoring (left) and see HealthyHostCount (bottom right)
+* For Events, select Events on the left
+* To configure number of instances:
+  * Configuration | Scaling
+
 ## Scaling Triggers
 
   - To check load: EBS – applications – \[project\] – \[env\] -

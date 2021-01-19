@@ -573,9 +573,16 @@ See [notes here](/pages/coding/infra/servers/Networking#hosts-file)
       - For instance, **jq .\[\].target | sort** would become **jq
         ".\[\].target" | sort**
 
-  - **Creating aliases in Bash:**
-    
-      - Put them in \~/.bashrc or \~/.zshrc (depending on your shell),
+  - **Creating aliases in Bash:**    
+    - Run these commands in Git Bash:
+      - **touch ~/.bashrc**
+      - **vim ~/.bashrc**
+    - This will put you in a VIM editor – see [VIM instructions](/pages/coding/infra/cmd/Vim#what-to-do-if-you-get-stuck-in-a-vim-editor)
+    - Add the alias definition: 
+      - **alias cdw='cd /your/path'**
+    - Load up the newly-added alias: **source ~/.bashrc**
+    - Check it’s there: type **alias**
+    - Put aliases in \~/.bashrc or \~/.zshrc (depending on your shell),
         then put references to \~/.bashrc or \~/.zshrc in \~/.profile
         and/or \~/.bash\_profile, like this:
         

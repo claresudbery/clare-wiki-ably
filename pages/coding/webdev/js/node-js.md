@@ -60,10 +60,38 @@ Whenever you add a new config to launch.json, you get a new item in the dropdown
 
 * Therefore you want to type `acme`, NOT `127.0.0.1`
 
-* This is because there is a node proxy running because we ran `make start-proxy` which uses `index.js` to analyse the http host header
+* This is because there is a node proxy running because we ran `make start-proxy` which uses `index.js` to analyse the http host header (see the makefile to see where the `start-proxy` command is configured).
 
-* Index.js example here (accessible to Clare only): https://github.com/claresudbery/samba/blob/master/iag-webapp/proxy/index.js
+  * `start-proxy` listens to your browser, checks the url, and sends it to the correct proxy (healthystockport or stockportgov) based on the url.
+
+* Index.js example [here (accessible to Clare only)](https://github.com/claresudbery/samba), in the `proxy` sub-folder of the web-app project folder.
+
+  * If you look at Index.js (in the proxy folder in webapp code), it says listen on port 5555 and then sets up the correct business Id based on that.
+
+  * It then routes requests to port 5000.
+
+* Makefile example [here (accessible to Clare only)](https://github.com/claresudbery/samba), in the web-app project folder.
 
 * It then extracts the business Id (Eg “acme”) from the host header
 
 * Be aware that the node proxy will not come into the equation unless you have added your url AND PORT NUMBER into the proxy exceptions in your browser settings
+
+### Troubleshooting proxy settings
+
+If you get a “connection refused” error when trying to visit your app in the browser:
+
+* Change your proxy settings in Firefox:
+
+  * Go to Settings | Options | Advanced | Network 
+  * Click the Settings button in the “Connection” section
+  * Make sure "Manual proxy configuration" is selected
+  * Set the http proxy and port. To find the values you need, do this:
+  * 1. Search for Network Proxy Settings in Windows
+  * 2. Under Manual Proxy Setup, you will see an IP address and port number – these are the ones you want
+  * Check the checkbox "Use this proxy server for all protocols"
+  * Add whatever is needed to your list of exceptions (The “No Proxy for” box)
+
+* Change your NO_PROXY environment variable (Windows | System Environment variables)
+  * It should contain the same list as in your "No Proxy for" setting (see above)
+
+* Check your hosts file

@@ -136,3 +136,21 @@ permalink: /pages/coding/infra/cloud/Docker
       - This: **sudo docker ps**
       - Then this (fill in id): **sudo docker exec –it \[id\]
         /bin/bash**
+
+## Run docker containers in Windows Parallel on a Mac
+
+(This may be out of date.)
+
+You may need to enable Nested Virtualization.
+
+You only need to do this if you are running Windows Parallels on a Mac. You will have to enable nested virtualization if you want to run docker containers (because they use VirtualBox). To do this:
+
+* Shut down your Windows Parallels machine 
+* Go to Parallels. Now from the very top menu, choose Actions | Configure | Hardware | CPU & Memory | Advanced Settings | Enable nested virtualization
+* Now start up Windows again.
+* *Troubleshooting*: If you see this error when you run commands like docker-machine create: “This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory”
+  * You need to either enable VT-X/AMD-v in the bios as per the error message,
+  * Or if you are running Windows Parallels on a Mac, you need to enable nested virtualization in Windows Parallels:
+  * Shut down your Windows Parallels machine 
+  * Go to Parallels. Now from the very top menu, choose Actions | Configure | Hardware | CPU & Memory | Advanced Settings | Enable nested virtualization
+  * Now start up Windows again.

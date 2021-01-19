@@ -4,6 +4,38 @@ location: "pages/coding/tools/leaf"
 permalink: /pages/coding/tools/Git
 ---
 
+## Git Quick Start
+
+* Check status: type **git status**
+ 
+* To fetch code: **git pull --rebase**
+
+  * NB – that is two dashes before “rebase”!! (this gets the latest version and makes all changes appear in a straight line)
+
+* To get all the latest files: **git checkout**
+
+* To get one particular file: **git checkout folder/file.cs**
+
+* To see all changes file by file:  **gitk**
+
+* To add all latest changes: **git add .**
+
+  * **git add –p**
+
+  * ... will show you each chunk of changes one at a time, so you can accept them one by one – “y” to accept, “n” to reject)
+
+* To save the changes ready to be pushed to the server and merged: **git commit –m "Write something here to describe your changes"**
+
+* To push code to server: 
+
+  * **git pull --rebase**
+
+  * **git push**
+
+  * !! At this point you might have to resolve any merge problems
+
+  * !! Make sure your tests are still passing before you push to server 
+
 ## Git Misc
 
 - [ohshitgit.com](https://ohshitgit.com/) - A lovely little site by the wonderful [Katie Sylor-Miller](https://twitter.com/ksylor), designed to get you out of those horrible git messes you might get yourself in, using simple language.
@@ -248,9 +280,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### Staging bits of files or individual files:
 
-  - Like this: git add –i
+- Like this: `git add –i`
   - More here:
-    <https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging>
+  <https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging>
+- **git add –p**
+  - ... will show you each chunk of changes one at a time, so you can accept them one by one – “y” to accept, “n” to reject)
 
 ### GitHub searching
 
@@ -513,7 +547,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - To add all new files:
       - This: **git add .**
   - To add all changes bit by bit:
-      - This: git add –p
+      - This: `git add –p`
       - lets you choose portions of a file to add to the next commit.
         This will present you with a chunk of changes and prompt you for
         a command:
@@ -524,6 +558,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
           - q to exit.
       - \!\! actually the above commands are not all always available.
         It will tell you which ones you can have.
+  - To stage bits of files or individual files:
+    - Like this: `git add –i`
+    - More [here](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging).
 
 ### git remote add
 
@@ -1113,6 +1150,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - You don’t have to apply the stash to the branch it was
         originally saved on
 
+### gitk
+
+* To see all changes file by file: **gitk**
+
 ## Git Playground
 
 ### These notes
@@ -1211,3 +1252,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - Every time you checkout, your HEAD files will be updated
     (C:\\\_git\\git-playground\\.git\\logs\\HEAD and
     C:\\\_git\\git-playground\\.git\\HEAD)
+
+## Git hooks
+
+- You can use git hooks for instance to prevent you from uploading sensitive data to GitHub.
+- We did this at Samba - there's some very brief info (available to Clare only) in GitHub [here](https://github.com/claresudbery/samba), in `wiki-set-up-guide.txt` in the web-app sub-folder.
+
+## API keys
+
+- There are some brief setup instructions (available to Clare only) in GitHub [here](https://github.com/claresudbery/samba), in `wiki-set-up-guide.txt` in the web-app sub-folder.
