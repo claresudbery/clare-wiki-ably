@@ -4,6 +4,21 @@ location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/Vim
 ---
 
+## What to do if you get stuck in a VIM editor
+
+These instructions are based on what you see when you run `git commit` without giving a commit message.
+
+Quick Guide:
+
+- Type `i` to get into insert mode	(no need for colon)
+  - (if it’s worked, you’ll see “-- INSERT --” at bottom of screen
+- Type your commit message
+- Click Esc
+- Type `:wq`
+  - This means Quit and save
+  - (`w` means write, and `q` means quit)
+- Hit Enter
+
 ## Misc
   - [Vim cheat sheet](http://hamwaves.com/vim.tutorial/images/vim.en.png)
   - Great [online “Vim Adventures” game](https://vim-adventures.com/) you can use to learn Vim:

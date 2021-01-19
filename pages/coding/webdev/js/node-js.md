@@ -52,3 +52,18 @@ Whenever you add a new config to launch.json, you get a new item in the dropdown
         }
 ```
 
+## Node, proxies and IP addresses
+
+* When you add an entry to the hosts file, you change the TCP request to convert a name into an ip address (eg this in your hosts file: “127.0.0.1 acme” … means that “acme” is converted to the IP address)
+
+* But the thing you type into the browser is the thing that ends up in the host header on the http request (regardless of what’s in the hosts file)
+
+* Therefore you want to type `acme`, NOT `127.0.0.1`
+
+* This is because there is a node proxy running because we ran `make start-proxy` which uses `index.js` to analyse the http host header
+
+* Index.js example here (accessible to Clare only): https://github.com/claresudbery/samba/blob/master/iag-webapp/proxy/index.js
+
+* It then extracts the business Id (Eg “acme”) from the host header
+
+* Be aware that the node proxy will not come into the equation unless you have added your url AND PORT NUMBER into the proxy exceptions in your browser settings

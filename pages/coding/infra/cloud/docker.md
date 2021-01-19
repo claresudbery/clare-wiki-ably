@@ -46,6 +46,7 @@ permalink: /pages/coding/infra/cloud/Docker
 - Look at the config for a container: `docker inspect [container  name]`
 - Start, stop etc: `docker start`, `docker stop`
 - Remove a container: `docker rm`
+- Exit a Docker Container: **Ctrl + C**
 - See volumes: `docker volume ls`
 - Remove a volume: `docker volume rm`
 - This:	`docker images` - shows you all current images
