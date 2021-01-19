@@ -172,3 +172,9 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
         
           - The “mask” refers to bit multiplication, which is a whole
             other topic.
+
+## To check whether something is listening on a particular port (and make the connection)
+
+•	`telnet localhost 5000`
+•	If you get an error (in Windows), you might need to enable Telnet client – do this in “turn Windows features on or off”
+•	To exit telnet, do Ctrl+J
