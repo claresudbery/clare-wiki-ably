@@ -130,6 +130,44 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 		- Identify what support and resources you are currently receiving but do NOT need
 	- As you go, identify Actions (and as ever, use a parking lot for things you don't have time to address now)
 
+### Writing the Minister's Speech
+
+These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) at UK GovCamp21.
+
+- Miro: https://miro.com/app/board/o9J_lXiMgRk=/
+- Comes from Amazon's "Write the future press release" exercise
+- Imagine what the future press release (or in this case, the minister's speech) will look like if you succeed in your aims
+- Four aims	
+	- What were we trying to achieve (state your goal)
+	- Who was it for
+	- Set an audacious and clear goal
+	- How did we set out to achieve it together - outline the principles that led to success
+
+### Dragon Mapping
+
+These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) at UK GovCamp21.
+
+- assumptions can become opinion, which is hard to counter
+- assumptions can be countrered with facts, but opinions are harder
+- it's a way of laying everything out without being directly confrontational
+- based on assumptions mapping, impact mapping, the opportunity solution tree and the five whys
+	- they are all good, but hard to use with stakeholders because they can't be explained in 5 mins
+- miro board: https://miro.com/app/board/o9J_lXiMgRk=/
+- step 1: list your goals
+- step 2: Answer the question "for this to happen, what must be true?"
+	- step 3: keep going, drilling down in tree-like fashion
+- step 4: Label everything as either fact or assumption
+- eg I want to sell cookies
+	- what must be true? 
+		- people like my cookies
+		- people can visit me
+		- people can pay
+		- these are all assumptions - they are the dragons. Find some way to highlight them.
+- step 5: 
+	- talk about how you can test / prove your assumptions - prioritise these for experiment
+	- your strategy should be built on the absolute minimum of dragons
+	- or your short term roadmap might be built on killing dragons - ie proving your assumptions
+
 ## Meetups
 
 ### Office Hours

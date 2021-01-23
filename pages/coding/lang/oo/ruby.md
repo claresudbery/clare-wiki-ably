@@ -52,6 +52,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
   - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above two tutorials. It's deployed on Heroku [here](https://sinatra-docker.herokuapp.com/).
   - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
+  - Views are held in *.erb template files (same is true of Rails) - `erb` stands for embedded ruby
 
 ## Debugging
 
