@@ -260,10 +260,9 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 	- Then I got the following error in Travis: "`bundle exec rake` - rake aborted! Don't know how to build task 'default'", so I added lines to my `Rakefile` as recommended by [this article](https://coderwall.com/p/sdxxaa/travis-ci-don-t-know-how-to-build-task-default).
 		- This was the final action that fixed everything!
 		- ...well, sort of. Sadly it meant that [this formatting problem](#issue-with-site-layout-caused-when-you-push-gemfile-lock-changes) returned.
-
-- These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml`:
+- These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml` (see explanation above):
 	- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
-	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the mingw thing kept messing with the formatting of the site.
+	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the `mingw` thing kept messing with the formatting of the site.
 	
 ```bash
 gem install bundler
@@ -275,3 +274,19 @@ gem install nokogiri --platform=ruby
 bundle update
 gem update --system
 ```
+
+### Problems related to the above
+
+- At some point after the above I started getting deploymemnt errors because there was no `Gemfile.lock` being pushed to source control
+- Relevant commits in reverse order:
+	- febe432 Fix rake error in Travis deploy - `Rakefile`
+	- b128805 fixing new deploy errors after losing Gemfile.lock - `.travis.yml` and `script/dummy` (commented out the script-related settings)
+	- 5e9da04 Stop pushing Gemfile.lock to Travis - `.gitignore` and removing `Gemfile.lock.hidden`
+	- 61e3b3a Go back to Ruby 2.7.2 and stop pushing Gemfile.lock - `.travis.yml` and adding `Gemfile.lock.hidden` (changed rvm setting from 2.7 to 2.7.2)
+	- 9d43814 Still trying to fix ruby version - `.travis.yml` (changed rvm setting from 2.7.2 to 2.7)
+	- 30e0f19 Change rvm setting to match Ruby version in ruby-version - `.travis.yml` (changed rvm setting from 2.6 to 2.7.2)
+	- 484dbf2 Try updating rvm version - `.travis.yml` (changed rvm setting from 2.5.1 to 2.6)
+	- 1e42796 Fixing and documenting the Travis deployment error problem - `Gemfile.lock` and  `Gemfile`
+	- 96d475a Updated gems to try fix Travis deployment error - `Gemfile.lock` and  `Gemfile` and `.ruby-version`
+	- e4bb0ba Fix bad gemfile.lock - `Gemfile.lock`
+
