@@ -277,7 +277,21 @@ gem update --system
 
 ### Problems related to the above
 
-- At some point after the above I started getting deploymemnt errors because there was no `Gemfile.lock` being pushed to source control
+- At some point after the above I started getting deployment errors because there was no `Gemfile.lock` being pushed to source control.
+	- When I committed Gemfile.lock I got internal server errors on every page of the site except the home page.
+	- So I undid all the changes I'd previously made, apart from the change to the rvm section of `.travis.yml` (see notes above).
+	- Basically what I did was go back to commit e4bb0ba, take copies of the following files and then recommit them at the tip of master - apart from I fixed the rvm section in `.travis.yml` to match `.ruby-version`:
+		- (these files are all at C:\Temp\wiki-safe\2020-01-26-deployment):
+		- `.gitignore`
+		- `.ruby-version`
+		- `.travis.yml`
+		- `Gemfile`
+		- `Gemfile.lock`
+		- `Rakefile`
+	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
+		- Maybe something to do with the version of nokogiri?
+		- In commit 96d475a I updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
+		- There is an outstanding dependabot branch from 27/11/20 trying to ubmp the nokogiri version from 1.10.4 to 1.10.8
 - Relevant commits in reverse order:
 	- febe432 Fix rake error in Travis deploy - `Rakefile`
 	- b128805 fixing new deploy errors after losing Gemfile.lock - `.travis.yml` and `script/dummy` (commented out the script-related settings)
@@ -289,4 +303,5 @@ gem update --system
 	- 1e42796 Fixing and documenting the Travis deployment error problem - `Gemfile.lock` and  `Gemfile`
 	- 96d475a Updated gems to try fix Travis deployment error - `Gemfile.lock` and  `Gemfile` and `.ruby-version`
 	- e4bb0ba Fix bad gemfile.lock - `Gemfile.lock`
+- 
 
