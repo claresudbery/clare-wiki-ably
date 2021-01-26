@@ -64,6 +64,3 @@ vendor
 
 # Visual Studio
 /.vs
-
-# Stop pushing Gemfile.lock to Travis
-Gemfile.lock

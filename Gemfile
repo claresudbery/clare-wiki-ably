@@ -4,7 +4,7 @@ ruby File.read(File.expand_path("../.ruby-version", __FILE__)).strip
 
 gem "jekyll", "~> 3.7.4"
 
-gem "nokogiri", ">= 1.10.10"
+gem "nokogiri", ">= 1.10.4"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
@@ -26,10 +26,6 @@ gem "redcarpet", "~> 3.4"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # none
-end
-
-group :test do
-  gem 'rspec-html-matchers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
