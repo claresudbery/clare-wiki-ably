@@ -63,6 +63,19 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 - [Resilience during coronavirus](https://www.theukdomain.uk/resilience-during-coronavirus/)
 - [Some thoughts on handling negative thoughts / "chatter"](https://www.theguardian.com/science/2021/jan/16/inner-voice-self-criticism-psychologist-ethan-kross-chatter-voice-head)
 
+#### Countering burnout
+
+- [This](https://brenebrown.com/podcast/brene-with-emily-and-amelia-nagoski-on-burnout-and-how-to-complete-the-stress-cycle/) is a really interesting podcast about burnout, talking about how when you are in a position of stress you need to "complete the stress cycle" to allow your body to process the after-effects. If you don't then you get stuck in a neverending stress tunnel and that's when burnout happens. It's [Brene Brown interviewing Emily and Amelia Nagoski about their book Burnout](https://brenebrown.com/podcast/brene-with-emily-and-amelia-nagoski-on-burnout-and-how-to-complete-the-stress-cycle/).  
+- [Here is an article](https://www.penguin.co.uk/articles/2019/mar/complete-stress-cycle-emotional-exhaustion-burnout/) describing the things you can do to complete the stress cycle.
+- Here's the list of things you can do to help your body recover from stress ([more detail here](https://www.penguin.co.uk/articles/2019/mar/complete-stress-cycle-emotional-exhaustion-burnout/)):
+  - **Physical activity** (anything at all, just get moving)
+  - **Slow deep breathing**
+  - **Positive social interaction** - can be as simple as complimenting somebody on their hair
+  - **Laughter** - proper belly laughs with someone else, or even just reminiscing about times you laughed together
+  - **Affection** - they recommend a daily 20-second hug or a 6-second hug! It has to last long enough to dissipate your stress.
+  - **Crying** - where you focus on the sensation of crying and try not to perpetuate it by dwelling on the thing you're crying about
+  - **Creative expression** - which can be as simple as imagining a little story where you fly over the top of a stressful thing - but doesn't have to be directly related to the source of stress.
+
 #### Unfuck your brain
 
 - [Coping with pandemic panic](https://unfuckyourbrain.com/pandemic-panic/) - free session from Kara Loewentheil ("Harvard law school grad, feminist rockstar, and master coach").
