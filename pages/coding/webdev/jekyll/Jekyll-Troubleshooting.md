@@ -288,6 +288,7 @@ gem update --system
 		- `Gemfile`
 		- `Gemfile.lock`
 		- `Rakefile`
+		- then after that I also reinstated the change that had removed the script sections from `.travis.yml`, because that looked like it might be causing errors in Travis.
 	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
 		- Maybe something to do with the version of nokogiri?
 		- In commit 96d475a I updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
