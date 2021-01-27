@@ -72,7 +72,7 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
   - **Slow deep breathing**
   - **Positive social interaction** - can be as simple as complimenting somebody on their hair
   - **Laughter** - proper belly laughs with someone else, or even just reminiscing about times you laughed together
-  - **Affection** - they recommend a daily 20-second hug or a 6-second hug! It has to last long enough to dissipate your stress.
+  - **Affection** - they recommend a daily 20-second hug or a 6-second kiss! It has to last long enough to dissipate your stress.
   - **Crying** - where you focus on the sensation of crying and try not to perpetuate it by dwelling on the thing you're crying about
   - **Creative expression** - which can be as simple as imagining a little story where you fly over the top of a stressful thing - but doesn't have to be directly related to the source of stress.
 
