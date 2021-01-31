@@ -52,6 +52,7 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 #### Positive stuff
 
 - @andrewdotdobson and his colleagues at Publicis Poke have made [a webapp with a button you can press](https://pressforpositivity.publicispoke.com/) for good positive stuff to cheer you up and distract you. Announced [here on Twitter](https://twitter.com/andrewdotdobson/status/1348612537345052682?s=21).
+- [Some more nice stuff here](/pages/think/life/Nice-Stuff)
 
 #### Meg John and Justin: Podcast and Resources on Stress and Coronavirus
 
