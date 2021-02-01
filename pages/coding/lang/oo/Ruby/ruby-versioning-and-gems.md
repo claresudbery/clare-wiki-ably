@@ -22,9 +22,11 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 
 ## Bundler
 
-## Errors you might see
+## Errors / problems you might see
 
 ### "Your XXX version is a.b.c, but your Gemfile specified d.e.f"
+
+(See also [Conflicting Ruby versions](#conflicting-ruby-versions) below.)
 
 - **Example**: 
     - `Your Ruby version is 2.6.3, but your Gemfile specified 2.6.5`
@@ -49,6 +51,32 @@ So today I have put aside a whole day to dive in and get to grips once and for a
     - What's all that `chruby` stuff?
     - Why does Heroku need `Gemfile.lock` as well as `Gemfile`?
 
+### Conflicting Ruby versions
+
+- **Example**:
+    - I got various errors about Ruby versions when I first set this site up.
+- **Solutions**:
+    - I originally fixed the project at Ruby version 2.6.5 by adding a `.ruby-version` file and referring to it in `Gemfile`. But then my system version of Ruby got updated to 2.7.2 (probably because of academny-related Ruby stuff) and things got screwy again. Currently I can't run `jekyll serve` because I get the error "Your Ruby version is 2.7.2, but your Gemfile specified 2.6.5".
+- **Questions**   
+    - How can I stop this problem from recurring every time I update Ruby?
+    - How can I keep Ruby up to date and avoid security weaknesses dur to not keeping Ruby and other dependencies up to date?
+- **Experiments**:
+    - Use `.ruby-version` to update the version of Ruby being used by this site.
+    - Go back to Ruby version 2.6.5 system-wide. Check my other Ruby projects (academy stuff) aren't broken by this.
+    - Find a way of having more than one version of Ruby installed - so that this project can be fixed at a different version.
+    - Once I have the Ruby version sorted, run `jekyll serve` to try and understand what all the `mingw` stuff is about. Or just use a previously-committed `Gemfile.lock` that contains the `mingw` stuff.
+    - Update the Ruby version and then try to fix the formatting issue where the search box moves from right to left.
+
+### `warn_for_outdated_bundler_version': You must use Bundler 2 or greater with this lockfile.
+
+- **Explanation**:
+    - Presumably this comes from the "BUNDLED WITH" section at the bottom of `Gemfile.lock` (see questions below).
+- **Solution**:
+    - `gem install bundler` 
+- **Questions**:
+    - Presumably you could also be more specific and run something like `gem install bundler -v 2.0`?
+    - What's the difference between having a version specified in `Gemfile` and having it specified in `Gemfile.lock`? The lock file tends to have a lot more version specifications than `Gemfile`, and Heroku complains if it doesn't have a lock file checked in.
+    - There's no reference to bundler in `Gemfile`, but it does say "BUNDLED WITH" and a version number at the bottom of `Gemfile.lock`. Presumably this is where the error comes from?
 
 ### "Could not find gem 'YYY (~> a.b)', which is required by gem 'ZZZ (= c.d.e)', in any of the sources."
 
@@ -57,6 +85,36 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 - **Explanation**: 
     - It can't find a particular version (`~> 1.1`) of a particular gem (`bundler`), because another gem (`middleman-core`, currently at version `3.3.7)`) has specified that it is dependent on the missing gem.
 - **Solution**:
+    - Install the correct version of `bundler` and then reinstall `middleman`:
+        - Cmd: `gem install bundler -v 1.15`
+        - Cmd: `bundle _1.15_ install`
+        - Cmd: `gem install middleman`
+- **Questions**:
+    - Those actions above are just what I did before things started working again - doesn't mean they were the correct or best solution. So...
+        - Did I really need to reinstall `middleman`?
+        - What's the difference between the first and second lines?
+
+### "can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
+
+- **Example**:
+    - "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in activate_bin_path' /home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:infind_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
+- **Explanation**:
+    - This happened to me when deploying on Travis. If you look closely, you'll see it was in a Travis Ruby 2.5.1 directory. This seemed to come from the fact that I had `rvm` version `2.5.1` specified in `.travis.yml`.
+- **Solution**:
+    - I changed the `rvm` section of `.travis.yml` to match `.ruby-version`.
+        - Something that confused me is that this section is not specifying the version of `rvm`, it's specifying the version of `Ruby`.
+
+### Jekyll adds Windows-related dependencies to Gemfile
+
+- **Example**: 
+    - Running `jekyll serve` on my Windows machine (for this website) results in Windows-related dependencies being added to your `Gemfile.lock` (gems like `eventmachine (1.2.7-x64-mingw32)` are added, and a new `x64-mingw32` entry is added in the `PLATFORMS` section at the bottom), which then causes Heroku to complain that your `Gemfile.lock` was created by Windows.
+- **Explanation**:
+    - Maybe `jekyll serve` picks up on local platform settings and installs the relevant gems?
+- **Solutions**:
+    - My main workaround is that I either manually remove all those `mingw32` entries or I just don't check in the altered version of `Gemfile.lock`.
+    - Instead, could fix `Gemfile.lock` by running the bundle command in Ubuntu and then pushing the resulting `Gemfile.lock` up to the server?
+- **Questions**:
+    - What's actually happening here? And is there a better solution?
 
 ## Things you might do to fix a problem
 
@@ -86,6 +144,17 @@ So today I have put aside a whole day to dive in and get to grips once and for a
     - Presumably you need `bundler` installed?
     - Can you have a functioning `Gemfile` without having `bundler` installed?
     - What does it mean to say that gems are installed?
+
+### gem update
+
+- **Example**:
+    - `gem update`
+    - (Note that [in Linux on Windows](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#jekyll-installation-for-windows), I first had to run `sudo chown -R claresudbery /var/lib/gems/2.5.0/` to avoid permissions errors)
+- **Explanation**:
+    - ???
+- **Questions**:
+    - Is this the equivalent of `bundle install` if you don't have `bundler` installed?
+    - I used this command [on Linux in Windows](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#jekyll-installation-for-windows). Is that relevant?
 
 ### gem install XXX
 
@@ -149,6 +218,8 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 - **Questions**:
     - Does this mean that different projects can use different versions of Ruby?
     - What's the difference between the two examples above?
+    - What are the other tools that can be used to manage Ruby versions - eg `rvm`?
+    - How come Travis appears to rely on `rvm` (hence the section in `.travis.yml` used to specify your Ruby version) even though I'm not? Presumably this is because Travis is using `rvm` locally on its own servers?
 
 ### Use ruby-install to specify a Ruby version
 
@@ -160,6 +231,7 @@ So today I have put aside a whole day to dive in and get to grips once and for a
     - Note that you might not have `brew` installed on your system. 
         - If you're in Windows, I think you have to use a dedicated installer.
         - If you're on a Mac or Linux, I think `yarn` is one of the alternatives to `brew`?
+        - If you're on Linux, the equivalent to `brew install` is often (always?) `sudo apt-get install`
         - Fwiw personally I like using `brew` when I'm on a Mac - it allows me to have a `brew` script which I can use to set up a new Mac with all my preferred software.
 - **Questions**:
     - If you don't specify a version, will you get the latest stable release?

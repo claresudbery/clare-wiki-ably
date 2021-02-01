@@ -142,8 +142,9 @@ curl https://cli-assets.heroku.com/install.sh | sh
 	- The *stuff* in question is a lot of new `mingw` versions of various gems, like this: `eventmachine (1.2.7-x64-mingw32)`. Also a new `x64-mingw32` entry is added in the `PLATFORMS` section at the bottom.
 - Solution: Revert any pushed changes to `Gemfile.lock`
 - Prevention: Never push changes to `Gemfile.lock`. I have a shortcut alias set up - just run `discard Gemfile.lock` on command line before changes are staged.
-- Note that in the end, due to other problems, I stopped pushing `Gemfile.lock` altogether. But sadly this did mean the formatting problem returned. At the time of writing I haven't fixed this yet.
-	- I'm guessing the problem is that some gem has been updated in a way that changes how layouts work (could well be an accessibility thing - screen readers work better if sidebars are on the left instead of the right). I probably just need to change some css / html somewhere.
+- Note that in the end, due to other problems, I stopped pushing `Gemfile.lock` altogether. But sadly this did mean the formatting problem returned. 
+	- I'm guessing the problem is that some gem has been updated in a way that changes how layouts work (could well be an accessibility thing - screen readers work better if sidebars are on the left instead of the right). I probably just need to change some css / html somewhere?
+	- In the end, because I was getting errors due to not puishing `Gemfile.lock`, I unwound some of the other changes I'd made [(details here)](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#problems-related-to-the-above), and went back to the previous `Gemfile.lock`, which fixed the formatting again.
 
 ## Jekyll installation for windows
 * Here: https://jekyllrb.com/docs/installation/windows/
@@ -173,8 +174,8 @@ curl https://cli-assets.heroku.com/install.sh | sh
 		* Via here: https://stackoverflow.com/questions/57243299/jekyll-operation-not-permitted-apply2files
 * Then localhost simply not accessible from browser
 	* Someone with similar problem here: https://github.com/microsoft/WSL/issues/2471
-	* I gave up in the end. I now run ```jekyll serve``` from GitBash, but do everything else in Ubuntu.
-	* Sadly this does mean that ```Gemfile.lock``` keeps getting Windows-related stuff added to it, that breaks things if I push it up to Heroku.
+	* I gave up in the end. I now do everything in `GitBash` instead.
+	* Sadly this does mean that ```Gemfile.lock``` keeps getting Windows-related stuff added to it whenever I run run ```jekyll serve```, and this breaks things if I push it up to Heroku.
 * https://docs.microsoft.com/en-gb/windows/wsl/install-win10?redirectedfrom=MSDN
 * When I followed the jekyll instructions, I got the following errors when I ran sudo gem update (immediately after sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf):
 	* ERROR:  Error installing dbm: ERROR: Failed to build gem native extension. checking for -lgdbm... no
@@ -234,11 +235,11 @@ jekyll 3.7.4 | Error:  Liquid error (C:/development/clare-wiki-ably/_includes/to
 
 ### The problem
 
-It turned out this was caused by a particular line of text in a markdown file (pages\coding\infra\security\oauth.md). I found it by using the equivalent of Saff squeeze (same concept as binary search algorithm) to identify the commit that caused the problem (it was commit 77698c8 on 20/4/20, "New content from Cadogan notes"). I then used the same technique to narrow down the problematic line of text. I used "View | Show symbol | Show all characters" in Notepad++ to ty and see what the problem was and there was nothing visible. 
+It turned out this was caused by a particular line of text in a markdown file (pages\coding\infra\security\oauth.md). I found it by using the equivalent of Saff squeeze (same concept as binary search algorithm) to identify the commit that caused the problem (it was commit 77698c8 on 20/4/20, "New content from Cadogan notes"). I then used the same technique to narrow down the problematic line of text. I used "View | Show symbol | Show all characters" in Notepad++ to try and see what the problem was and there was nothing visible. 
 
 ### The fix
 
-I tried running dos2unix on that file, but it didn't work. Then agian, I ran it in GitBash. Should I have run it in Linux?
+I tried running dos2unix on that file, but it didn't work. Then again, I ran it in GitBash. Should I have run it in Linux?
 Anyway, in the end I fixed it by manually typing out the same words again, removing the original text. So it's a bit of a mystery!
 
 ## Error on jekyll serve: "warn_for_outdated_bundler_version"
@@ -292,7 +293,7 @@ gem update --system
 	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
 		- Maybe something to do with the version of nokogiri?
 		- In commit 96d475a I updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
-		- There is an outstanding dependabot branch from 27/11/20 trying to ubmp the nokogiri version from 1.10.4 to 1.10.8
+		- There is an outstanding dependabot branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8
 - Relevant commits in reverse order:
 	- febe432 Fix rake error in Travis deploy - `Rakefile`
 	- b128805 fixing new deploy errors after losing Gemfile.lock - `.travis.yml` and `script/dummy` (commented out the script-related settings)
