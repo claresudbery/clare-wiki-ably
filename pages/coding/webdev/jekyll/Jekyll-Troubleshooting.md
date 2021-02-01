@@ -81,6 +81,10 @@ curl https://cli-assets.heroku.com/install.sh | sh
 
 ## Ruby Version Stuff
 
+### Clearer guidance for particular errors and problems
+
+There's now a [whole separate page for this](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems), which hopefully has clearer advice for how to fix specific versioning problems, but I'm preserving these notes for historical reasons.
+
 ### When I had problems running jekyll on command line (GitBash, Windows) after installing jekyll using gem install jekyll bundler
 * Updated ruby version in .ruby-version
 * Ran **bundle install**
@@ -112,6 +116,70 @@ curl https://cli-assets.heroku.com/install.sh | sh
 	- `gem install bundler -v 1.15`
 	- `bundle _1.15_ install`
 	- `gem install middleman`
+
+### Error on jekyll serve: "warn_for_outdated_bundler_version"
+
+Full error:
+```
+C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.15.3/lib/bundler/lockfile_parser.rb:108:in `warn_for_outdated_bundler_version': You must use Bundler 2 or greater with this lockfile. (Bundler::LockfileError)
+```
+
+I ran `bundle install` and that told me to run `gem install bundler`, which worked.
+
+### Bundler version problems when deploying with Travis
+
+- Getting the following error in Travis: "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
+/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
+- In the end when I looked more closely at the errors in Travis I realised it was in a Travis Ruby 2.5.1 directory which seemed to come from the fact that I had rvm version 2.5.1 specified in .travis.yml.
+	- I spent bloody ages trying to work out what the latest version of rvm is, or what version I should have in .travis.yml... until I finally realised that it's not referring to the version of rvm, it's referring to the version of RUBY that rvm should use. So I changed the `rvm` section of `.travis.yml` to match `.ruby-version`.
+	- This led me down another set of rabbit holes. See commits [484dbf2](https://github.com/claresudbery/clare-wiki-ably/commit/484dbf2) to [b128805](https://github.com/claresudbery/clare-wiki-ably/commit/b128805), to see the various things I tried.
+	- Then I got the following error in Travis: "`bundle exec rake` - rake aborted! Don't know how to build task 'default'", so I added lines to my `Rakefile` as recommended by [this article](https://coderwall.com/p/sdxxaa/travis-ci-don-t-know-how-to-build-task-default).
+		- This was the final action that fixed everything!
+		- ...well, sort of. Sadly it meant that [this formatting problem](#issue-with-site-layout-caused-when-you-push-gemfile-lock-changes) returned.
+- These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml` (see explanation above):
+	- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
+	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the `mingw` thing kept messing with the formatting of the site (to see an example of a `Gemfile.lock` containing `mingw` references, see [Gemfile-with-mingw.lock](https://github.com/claresudbery/clare-wiki-ably/blob/master/Gemfile-with-mingw.lock)).
+	
+```bash
+gem install bundler
+gem install bundler -v '2.1.4'
+# updated Ruby version to 2.7.2 in .ruby-version
+bundle install
+gem install nokogiri
+gem install nokogiri --platform=ruby
+bundle update
+gem update --system
+```
+
+#### Problems related to the above
+
+- At some point after the above I started getting deployment errors because there was no `Gemfile.lock` being pushed to source control.
+	- When I committed Gemfile.lock I got internal server errors on every page of the site except the home page.
+	- So I undid all the changes I'd previously made, apart from the change to the rvm section of `.travis.yml` (see notes above).
+	- Basically what I did was go back to commit e4bb0ba, take copies of the following files and then recommit them at the tip of master - apart from I fixed the rvm section in `.travis.yml` to match `.ruby-version`:
+		- (these files are all at C:\Temp\wiki-safe\2020-01-26-deployment):
+		- `.gitignore`
+		- `.ruby-version`
+		- `.travis.yml`
+		- `Gemfile`
+		- `Gemfile.lock`
+		- `Rakefile`
+		- then after that I also reinstated the change that had removed the script sections from `.travis.yml`, because that looked like it might be causing errors in Travis.
+	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
+		- Maybe something to do with the version of nokogiri?
+		- In commit 96d475a I updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
+		- There is an outstanding dependabot branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8
+- Relevant commits in reverse order:
+	- febe432 Fix rake error in Travis deploy - `Rakefile`
+	- b128805 fixing new deploy errors after losing Gemfile.lock - `.travis.yml` and `script/dummy` (commented out the script-related settings)
+	- 5e9da04 Stop pushing Gemfile.lock to Travis - `.gitignore` and removing `Gemfile.lock.hidden`
+	- 61e3b3a Go back to Ruby 2.7.2 and stop pushing Gemfile.lock - `.travis.yml` and adding `Gemfile.lock.hidden` (changed rvm setting from 2.7 to 2.7.2)
+	- 9d43814 Still trying to fix ruby version - `.travis.yml` (changed rvm setting from 2.7.2 to 2.7)
+	- 30e0f19 Change rvm setting to match Ruby version in ruby-version - `.travis.yml` (changed rvm setting from 2.6 to 2.7.2)
+	- 484dbf2 Try updating rvm version - `.travis.yml` (changed rvm setting from 2.5.1 to 2.6)
+	- 1e42796 Fixing and documenting the Travis deployment error problem - `Gemfile.lock` and  `Gemfile`
+	- 96d475a Updated gems to try fix Travis deployment error - `Gemfile.lock` and  `Gemfile` and `.ruby-version`
+	- e4bb0ba Fix bad gemfile.lock - `Gemfile.lock`
 	
 ## Favicon Stuff
 
@@ -244,69 +312,3 @@ It turned out this was caused by a particular line of text in a markdown file (p
 
 I tried running dos2unix on that file, but it didn't work. Then again, I ran it in GitBash. Should I have run it in Linux?
 Anyway, in the end I fixed it by manually typing out the same words again, removing the original text. So it's a bit of a mystery!
-
-## Error on jekyll serve: "warn_for_outdated_bundler_version"
-
-Full error:
-```
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.15.3/lib/bundler/lockfile_parser.rb:108:in `warn_for_outdated_bundler_version': You must use Bundler 2 or greater with this lockfile. (Bundler::LockfileError)
-```
-
-I ran `bundle install` and that told me to run `gem install bundler`, which worked.
-
-## Bundler version problems when deploying with Travis
-
-- Getting the following error in Travis: "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
-/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
-- In the end when I looked more closely at the errors in Travis I realised it was in a Travis Ruby 2.5.1 directory which seemed to come from the fact that I had rvm version 2.5.1 specified in .travis.yml.
-	- I spent bloody ages trying to work out what the latest version of rvm is, or what version I should have in .travis.yml... until I finally realised that it's not referring to the version of rvm, it's referring to the version of RUBY that rvm should use. So I changed the `rvm` section of `.travis.yml` to match `.ruby-version`.
-	- This led me down another set of rabbit holes. See commits [484dbf2](https://github.com/claresudbery/clare-wiki-ably/commit/484dbf2) to [b128805](https://github.com/claresudbery/clare-wiki-ably/commit/b128805), to see the various things I tried.
-	- Then I got the following error in Travis: "`bundle exec rake` - rake aborted! Don't know how to build task 'default'", so I added lines to my `Rakefile` as recommended by [this article](https://coderwall.com/p/sdxxaa/travis-ci-don-t-know-how-to-build-task-default).
-		- This was the final action that fixed everything!
-		- ...well, sort of. Sadly it meant that [this formatting problem](#issue-with-site-layout-caused-when-you-push-gemfile-lock-changes) returned.
-- These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml` (see explanation above):
-	- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
-	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the `mingw` thing kept messing with the formatting of the site (to see an example of a `Gemfile.lock` containing `mingw` references, see [Gemfile-with-mingw.lock](https://github.com/claresudbery/clare-wiki-ably/blob/master/Gemfile-with-mingw.lock)).
-	
-```bash
-gem install bundler
-gem install bundler -v '2.1.4'
-# updated Ruby version to 2.7.2 in .ruby-version
-bundle install
-gem install nokogiri
-gem install nokogiri --platform=ruby
-bundle update
-gem update --system
-```
-
-### Problems related to the above
-
-- At some point after the above I started getting deployment errors because there was no `Gemfile.lock` being pushed to source control.
-	- When I committed Gemfile.lock I got internal server errors on every page of the site except the home page.
-	- So I undid all the changes I'd previously made, apart from the change to the rvm section of `.travis.yml` (see notes above).
-	- Basically what I did was go back to commit e4bb0ba, take copies of the following files and then recommit them at the tip of master - apart from I fixed the rvm section in `.travis.yml` to match `.ruby-version`:
-		- (these files are all at C:\Temp\wiki-safe\2020-01-26-deployment):
-		- `.gitignore`
-		- `.ruby-version`
-		- `.travis.yml`
-		- `Gemfile`
-		- `Gemfile.lock`
-		- `Rakefile`
-		- then after that I also reinstated the change that had removed the script sections from `.travis.yml`, because that looked like it might be causing errors in Travis.
-	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
-		- Maybe something to do with the version of nokogiri?
-		- In commit 96d475a I updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
-		- There is an outstanding dependabot branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8
-- Relevant commits in reverse order:
-	- febe432 Fix rake error in Travis deploy - `Rakefile`
-	- b128805 fixing new deploy errors after losing Gemfile.lock - `.travis.yml` and `script/dummy` (commented out the script-related settings)
-	- 5e9da04 Stop pushing Gemfile.lock to Travis - `.gitignore` and removing `Gemfile.lock.hidden`
-	- 61e3b3a Go back to Ruby 2.7.2 and stop pushing Gemfile.lock - `.travis.yml` and adding `Gemfile.lock.hidden` (changed rvm setting from 2.7 to 2.7.2)
-	- 9d43814 Still trying to fix ruby version - `.travis.yml` (changed rvm setting from 2.7.2 to 2.7)
-	- 30e0f19 Change rvm setting to match Ruby version in ruby-version - `.travis.yml` (changed rvm setting from 2.6 to 2.7.2)
-	- 484dbf2 Try updating rvm version - `.travis.yml` (changed rvm setting from 2.5.1 to 2.6)
-	- 1e42796 Fixing and documenting the Travis deployment error problem - `Gemfile.lock` and  `Gemfile`
-	- 96d475a Updated gems to try fix Travis deployment error - `Gemfile.lock` and  `Gemfile` and `.ruby-version`
-	- e4bb0ba Fix bad gemfile.lock - `Gemfile.lock`
-- 
-

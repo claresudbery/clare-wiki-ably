@@ -14,7 +14,7 @@ Ruby is a great language in many ways, but the one thing that mars the experienc
 
 I can't decide whether I should be proud or ashamed of the fact that for a long time, my reaction to these errors was to google them and then blindly follow the advice I found until things were working again. Proud, because I was focused and pragmatic - I had a goal in mind and didn't want to be distracted by the rabbithole of researching exactly what was going on. Ashamed, because I was doing the equivalent of hitting it with a hammer until it worked - rather than getting a proper understanding and therefore the ability to find long term solutions and be confident that I wouldn't find myself back in the same situation at some unpredictable point in the future.
 
-If you look at my [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting), you'll see that I was simply recording error messages and solutions, with not much idea of what was actually going on or which actions were the ones that actually fixed my problems, and not much understanding of *why* things got fixed when they did.
+If you look at my [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff), you'll see that I was simply recording error messages and solutions, with not much idea of what was actually going on or which actions were the ones that actually fixed my problems, and not much understanding of *why* things got fixed when they did.
 
 So today I have put aside a whole day to dive in and get to grips once and for all with what the hell is going on with my `Gemfile`.
 
@@ -284,9 +284,18 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - Is this so that everything you run will only use gems that have been installed using bundler?
     - Does it mean you make sure you only use the gem versions specified locally for that project?
     - Does it only work for command line operations?
-    - Does it only work when the things you are running on the command kine are themsleves gems?
+    - Does it only work when the things you are running on the command kine are themsleves gems?- If you get the error 
+    
+### "cannot load such file" 
+
+- You need to check your load path by running **irb** on command line and then typing **$LOAD\_PATH**
+- If you get “cannot load such file -- bundler/setup (LoadError)” then you might need to run **bundle install** or vendor install or both
+- If you get “command not found: bundle” then you might need to install Bundler: **sudo gem install bundler**
+    - !! The password it wants is your laptop password
 
 ### Use chruby to manage your Ruby versions
+
+- See also [Different versions of Ruby](#different-versions-of-ruby) in this doc.
 
 - **Example**:
     - Add stuff to `~/.bash_profile` and `.ruby-version` as per https://github.com/postmodern/chruby
@@ -305,6 +314,8 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - How come Travis appears to rely on `rvm` (hence the section in `.travis.yml` used to specify your Ruby version) even though I'm not? Presumably this is because Travis is using `rvm` locally on its own servers?
 
 ### Use ruby-install to specify a Ruby version
+
+- See also [Different versions of Ruby](#different-versions-of-ruby) in this doc.
 
 - **Example**:
     - Cmd: `brew install ruby-install`
@@ -328,12 +339,26 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - Answer the question of whether gems are installed locally or globally by default, and whether there's any concept of local or global without the use of bundler (I think there might be a local/global thing, because when you look at `$LOAD_PATH`, you see some gems listed in a `local` folder?)
 - Read / Add more documentation on [how bundler works](https://bundler.io/rationale.html)
     - Does bundler somehow install gems only local to the project of the `Gemfile`? How does that work?
+- Read this article [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
 - Fix clare-wiki problems 
     - update Ruby version 
     - Update gems 
     - Update nokogiri and anything else specified by dependabot 
+        - See the change I made to `Gemfile` on 30th Dec, commit 96d475a. 
+        - See also [notes in jekyll troubleshooting.md](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#bundler-version-problems-when-deploying-with-travis) 
+        - See also the dependabot branch relating to nokogiri version, from 27/11/20.
     - Find out what's going on with deployment failures
 - Fix problems with martin fowler
+    - I made a change to `class-too-large.xml` which I didn't push to the remote repo because I wasn't able to test it locally.
+        - There's a backup in Dropbox at Desktop\Current\refactoring
+        - If you run `work` and then `rs` you get the following error: "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/bundler-1.17.3/lib/bundler/spec_set.rb:91:in `block in materialize': Could not find ffi-1.11.2-x64-mingw32 in any of the sources (Bundler::GemNotFound)"
+        - I'm pretty sure this is because it's trying to use Ruby 2.7.0 (check out the folder in the path in the error message), and maybe the last time I ran it I was on Ruby 2.6.5?
+            - I tried running everything in Linux (Ubuntu - not 16.04) instead, because that way I could use `chruby` to switch Ruby versions
+            - I got as far as installing the required version of Ruby, but then when I tried to run `bundle install` I got the error "/usr/lib/ruby/2.5.0/rubygems.rb:284:in `find_spec_for_exe': Could not find 'bundler' (1.17.3) required by your /mnt/c/development/sudbery-mfcom/Gemfile.lock. (Gem::GemNotFoundException)"
+            - When I tried to install the correct version of bundler using `gem install bundler -v 1.17.3`, I got the error "Unable to require openssl, install OpenSSL and rebuild ruby (preferred) or use non-HTTPS sources" (I found [this on stackoverflow](https://stackoverflow.com/questions/37336573/unable-to-require-openssl-install-openssl-and-rebuild-ruby-preferred-or-use-n), but didn't have time to investigate further).
+            - When I tried `bundle _1.17.3_ install`, I just got the same error as before ("Could not find 'bundler' (1.17.3)")
+            - I tried pulling latest changes from remote but that didn't help either.
+    - Once I get this working I need to test it locally before pushing it to the remote.
 - Answer unanswered questions in this doc
 - Update to [WSL 2 on my machine](https://docs.microsoft.com/en-gb/windows/wsl/install-win10)
 

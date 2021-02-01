@@ -127,23 +127,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Gems, packaging, versioning
 
+- [My separate page on gems, versions and packaging](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems)
 - [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - Require, gems, loading files: 
   [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
-- [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff) - my notes (written frequently in a state of confusion - quite chaotic)
- 
-- If you get the error “cannot load such file” you need to check
-  your load path by running **irb** on command line and then
-  typing **$LOAD\_PATH**
-
-  - If you get “cannot load such file -- bundler/setup (LoadError)” then
-    you might need to run **bundle install** or vendor install or both
-    
-      - If you get “command not found: bundle” then you might need to
-        install Bundler: **sudo gem install bundler**
-        
-          - \!\! The password it wants is your laptop password
 
 ## Testing
 
