@@ -251,6 +251,7 @@ Quick Guide:
         line    
       - If you want it to ask you for confirmation on every replacement,
         add **c** as well: **:%s/foo/bar/gc**    
+      - If you want to escape any characters, use backslash (`\`)
       - More here:
         [<span class="underline">https://vim.fandom.com/wiki/Search\_and\_replace</span>](https://vim.fandom.com/wiki/Search_and_replace)    
       - And here:

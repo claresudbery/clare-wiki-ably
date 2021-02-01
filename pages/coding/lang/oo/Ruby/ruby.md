@@ -228,6 +228,7 @@ More examples of `stdin` and `stdout` testing in [this file here](https://github
   - the **return** statement is often not used
 
 - IRB is the standard Ruby repl (run `irb` on command line)
+  - If you run it using `irb -rpp`, you'll get pretty-printing (passing `-r` to `irb` will automatically require a library when irb is loaded - in this case the `pretty_print` library).
   - Enter `exit` to leave)
   - Enter `load './myfile.rb'` to load a Ruby file called `myfile.rb` in the current folder (`./`)
     - To reload, just enter `load './myfile.rb'` again.
