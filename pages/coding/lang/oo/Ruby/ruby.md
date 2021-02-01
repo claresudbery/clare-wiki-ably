@@ -54,6 +54,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
   - Views are held in *.erb template files (same is true of Rails) - `erb` stands for embedded ruby
 
+## Deployment with Heroku
+
+- [Deploying ruby using heroku](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#deploying-ruby-using-heroku)
+- [Ruby version problems when deploying with Heroku](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-problems-when-deploying-with-heroku)
+
 ## Debugging
 
 ### Debugging on command line

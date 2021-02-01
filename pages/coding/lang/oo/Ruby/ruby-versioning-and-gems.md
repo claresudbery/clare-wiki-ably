@@ -79,6 +79,8 @@ So today I have put aside a whole day to dive in and get to grips once and for a
     - `bundle install`
 - **Explanation**:
     - This installs all the gems specified in your `Gemfile`
+- **Gotchas**:
+    - Note that in Ubuntu 16 on Windows (using WSL), when I ran the `bundle` command to install rake, I had to add some permissions: `sudo chown -R claresudbery:claresudbery /home/claresudbery/.bundle`
 - **Questions**:
     - Locally or globally?
     - Presumably you need `bundler` installed?

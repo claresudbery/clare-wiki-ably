@@ -19,6 +19,7 @@ permalink: /pages/coding/infra/cloud/Heroku
 
 - There are some heroku-related notes in the [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
 - HackMcr with Laurent - One True Path: Dropbox\IT Training\Hackathons\HackManchester\2015
+- There are lots of heroku-related notes on [my Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting).
 
 ## Troubleshooting
 

@@ -127,8 +127,8 @@ curl https://cli-assets.heroku.com/install.sh | sh
 * See screenshots: Local-layout.PNG and Remote-layout.PNG
 * Html and search js are identical (see files in same folder)
 * But _site/assets/main.css are slightly different. See local-main.css and remote-main.css
-* It turns out this happened because of the Windows ming stuff that finds its way into Gemfile.lock if you run **jekyll serve** from GitBash.
-* The solution is to remove all the lines in Gemfile.lock that contain the ming thing. 
+* It turns out this happened because of the Windows `mingw` stuff that finds its way into Gemfile.lock if you run **jekyll serve** from GitBash.
+* The solution is to remove all the lines in Gemfile.lock that contain the `mingw` thing. 
 * Otherwise Heroku complains about Gemfile.lock having been created by Windows, and somehow the dependencies get mucked up on the server.
 * If it happens again, fix Gemfile.lock by running the **bundle** command in Ubuntu and then pushing the resulting Gemfile.lock up to the server.		
 
