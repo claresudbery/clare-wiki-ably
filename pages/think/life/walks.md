@@ -34,6 +34,7 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - Path along the edge of Debdale reservoir, then keep going and it goes along a whole other stretch of water - eventually if you turn left at the end you get to the very end of the Fallowfield Loop cycle track, beyond Wright Robbie.
 - Tobacco Hills, near Liverpool (recommended by S Leighton)
 - Heysham, Morecambe Bay - cliff walk and ruined chapels (recommended by S Leighton)
+- [Beaumont Park](https://www.tripadvisor.co.uk/Attraction_Review-g190748-d7029653-Reviews-Beaumont_Park-Huddersfield_West_Yorkshire_England.html?m=19905), Huddersfield - gothic victorian overgrown park
 
 ### Peak District
 
