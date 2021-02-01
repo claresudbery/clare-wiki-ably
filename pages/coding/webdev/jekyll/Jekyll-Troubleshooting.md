@@ -128,9 +128,9 @@ curl https://cli-assets.heroku.com/install.sh | sh
 * Html and search js are identical (see files in same folder)
 * But _site/assets/main.css are slightly different. See local-main.css and remote-main.css
 * It turns out this happened because of the Windows `mingw` stuff that finds its way into Gemfile.lock if you run **jekyll serve** from GitBash.
-* The solution is to remove all the lines in Gemfile.lock that contain the `mingw` thing. 
+* The solution is to remove all the lines in Gemfile.lock that contain the `mingw` thing (the easiest way to do this is to revert to your previous version of `Gemfile.lock`). Then stop using GitBash to run `jekyll serve` (originally I had a problem running `jekyll serve` from Ubuntu (not Ubuntu 16.04 on my machine - just because that's not the one I'm keeping up to date with `~/.bashrc` etc), but that's no longer the case).
 * Otherwise Heroku complains about Gemfile.lock having been created by Windows, and somehow the dependencies get mucked up on the server.
-* If it happens again, fix Gemfile.lock by running the **bundle** command in Ubuntu and then pushing the resulting Gemfile.lock up to the server.		
+* I tried fixing Gemfile.lock by running the **bundle** command in Ubuntu (which is equivalent to **bundle install**) , but this didn't seem to work - the `mingw` entries remained.		
 
 ## Keeping a file in git without tracking changes
 * Here: https://stackoverflow.com/questions/9794931/keep-file-in-a-git-repo-but-dont-track-changes
@@ -139,7 +139,7 @@ curl https://cli-assets.heroku.com/install.sh | sh
 
 - Issue: The search box appears top left instead of top right
 - Cause: Every time you run `jekyll serve` (`js`) in GitBash, extra windows stuff gets added to `Gemfile.lock` which is fine locally but doesn't work remotely.
-	- The *stuff* in question is a lot of new `mingw` versions of various gems, like this: `eventmachine (1.2.7-x64-mingw32)`. Also a new `x64-mingw32` entry is added in the `PLATFORMS` section at the bottom.
+	- The *stuff* in question is a lot of new `mingw` versions of various gems, like this: `eventmachine (1.2.7-x64-mingw32)`. Also a new `x64-mingw32` entry is added in the `PLATFORMS` section at the bottom (mingw = MinGW = Minimal Gnu for Windows) (to see an example of a `Gemfile.lock` containing `mingw` references, see [Gemfile-with-mingw.lock](https://github.com/claresudbery/clare-wiki-ably/blob/master/Gemfile-with-mingw.lock)).
 - Solution: Revert any pushed changes to `Gemfile.lock`
 - Prevention: Never push changes to `Gemfile.lock`. I have a shortcut alias set up - just run `discard Gemfile.lock` on command line before changes are staged.
 - Note that in the end, due to other problems, I stopped pushing `Gemfile.lock` altogether. But sadly this did mean the formatting problem returned. 
@@ -174,7 +174,10 @@ curl https://cli-assets.heroku.com/install.sh | sh
 		* Via here: https://stackoverflow.com/questions/57243299/jekyll-operation-not-permitted-apply2files
 * Then localhost simply not accessible from browser
 	* Someone with similar problem here: https://github.com/microsoft/WSL/issues/2471
-	* I gave up in the end. I now do everything in `GitBash` instead.
+	* I gave up in the end and started doing everything in `GitBash` instead for a while.
+		* Then I realised that it's harder to manage Ruby versions in GitBash
+		* Also Travis and Heroku are deploying on Linux, so it makes sense to also use Linux as mny development environment.
+		* Luckily when I tried again in Jan 2021 (using Ubuntu installed on my Windows laptop - NOT Ubuntu 16.04 (just because Ubuntu is the one I keep up to date and has everything in `~/.bashrc`)), it had started working.
 	* Sadly this does mean that ```Gemfile.lock``` keeps getting Windows-related stuff added to it whenever I run run ```jekyll serve```, and this breaks things if I push it up to Heroku.
 * https://docs.microsoft.com/en-gb/windows/wsl/install-win10?redirectedfrom=MSDN
 * When I followed the jekyll instructions, I got the following errors when I ran sudo gem update (immediately after sudo apt-get install ruby2.5 ruby2.5-dev build-essential dh-autoreconf):
@@ -263,7 +266,7 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 		- ...well, sort of. Sadly it meant that [this formatting problem](#issue-with-site-layout-caused-when-you-push-gemfile-lock-changes) returned.
 - These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml` (see explanation above):
 	- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
-	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the `mingw` thing kept messing with the formatting of the site.
+	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the `mingw` thing kept messing with the formatting of the site (to see an example of a `Gemfile.lock` containing `mingw` references, see [Gemfile-with-mingw.lock](https://github.com/claresudbery/clare-wiki-ably/blob/master/Gemfile-with-mingw.lock)).
 	
 ```bash
 gem install bundler

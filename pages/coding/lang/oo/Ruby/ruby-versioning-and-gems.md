@@ -4,6 +4,10 @@ location: pages/coding/lang/oo/ruby/leaf
 permalink: /pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems
 ---
 
+## Important
+
+- Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date)
+
 ## Intro
 
 Ruby is a great language in many ways, but the one thing that mars the experience of working with Ruby is the fact that you'll often find yourself having to halt development work while you fix confusing `Gemfile` errors such as "Your Ruby version is 2.6.3, but your Gemfile specified 2.6.5" or ."Could not find gem 'bundler (~> 1.1)', which is required by gem 'middleman-core (= 3.3.7)', in any of the sources." 
@@ -16,11 +20,64 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 
 ## Useful resources
 
+- [Bundler documentation]()
 - [Learn Tech guide on gem packaging](https://learn.madetech.com/guides/06-Gem-Packaging/) (from Made Tech)
 - [Internal Made Tech workshop on Ruby versioning, bundling and managing gems](https://docs.google.com/presentation/d/1sYbNtN6Frbu-cucQL8hxPlgV-eaLqPwU9FMNhNE1YEc/edit#slide=id.ga070ffb2eb_0_138) (courtesy of George Schena)
 - [Brief bundler tutorial from Learn Enough Ruby on Rails](https://www.learnenough.com/ruby-on-rails-6th-edition-tutorial/beginning#sec-bundler) (Learn Enough subscription might be needed, but at the time of writing (Jan 2021) this content was free).
 
+## Overview of Ruby versioning problems
+
+There are two possible sources of version woes when working Ruby:
+1. Problems with versions of the gems (aka packages) your Ruby project is using.
+2. Problems with the version of Ruby your project is using.
+These can sometimes be related - eg your project may depend on a particular gem that itself is dependent on a particular version of Ruby.
+Generally though, the two areas are handled by different means:
+1. You can simply have gems manually installed on your system, using `gem` commands. But most Ruby projects use [`bundler`](#bundler) to manage gem versions. This leads to the use of a file called `Gemfile`, which will itself specify your Ruby version (in different ways depending on [which Ruby version management system you're using](#different-versions-of-ruby)).
+2. There are [various different tools available](#different-versions-of-ruby) to manage differing versions of Ruby between projects.
+
+## What gems are
+
+You can use the `gem` command to use the [`RubyGems` software](https://guides.rubygems.org/) to find and install gems on your system. First you have to have `RubyGems` installed, but Ruby 1.9 and newer ships with `RubyGems` built-in. Every time you install a gem using `gem install`, it will download the gem from rubygems.org and install it on your system. It will also download and install any dependencies that the original gem relies on, and so on for any dependencies of dependencies.
+
+A gem is a Ruby software package. Each gem contains a packaged Ruby application or library.
+
+## Different versions of Ruby
+
+### Staying up to date
+
+- NB: You should aim to always keep your Ruby version at the most stable version (in Jan 2021 this is 3.0.0). 
+    - To find the latest stable version, go [here](https://www.ruby-lang.org/en/downloads/). 
+- For advice on how to keep ALL your dependencies (ie gems as well as Ruby itself) up to date, see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process. GitHub's dependabot will also help with this.
+
+### Mac (OSX) and Linux
+
+The three main Ruby version management systems for Mac OSX and Linux (including WSL on Windows, but NOT [vanilla Windows via GitBash](#windows)) are:
+
+- [chruby](https://github.com/postmodern/chruby)
+    - This is what I'm currently using, via my Ubuntu system on Windows (NOT Ubuntu 16.04 (just because Ubuntu is the one I keep up to date and has everything in `~/.bashrc`))
+    - To list Ruby versions currently installed, just enter `chruby` at the command prompt.
+    - To switch to a new version of Ruby do the following:
+        - If the new version not already installed:
+            - Cmd: `ruby-install ruby 2.6.5` 
+            - Restart your shell by typing `exit` and then restarting.
+        - Then run cmd `chruby ruby-2.6.5` to switch to the new version. You can also put this command into your `~/.bashrc` to effectively make that version your default, but remember to edit it when you upgrade Ruby!
+- [rvm](https://rvm.io/)
+- [rbenv](https://github.com/rbenv/rbenv)
+
+[Here is a brief discussion / comparison of all three](https://stackoverflow.com/questions/22153521/what-are-the-differences-between-rbenv-rvm-and-chruby).
+
+No matter which system you use, the file `.ruby-version` can be used to specify your Ruby version. This is then referred to in `Gemfile` like this: `ruby File.read(File.expand_path("../.ruby-version", __FILE__)).strip`
+
+### Windows
+
+If you're coding Ruby in Windows, you'll be using RubyInstaller. [More here](stackify.com/install-ruby-on-windows-everything-you-need-to-get-going/). But that doesn't seem to allow you to switch between Ruby versions.
+
+The solution is to either use WSL or WSL2 to run a Linux subsystem on your Windows machine, or use something like [pik](https://hibbard.eu/how-to-manage-multiple-versions-of-ruby-on-windows/) or [URU](https://myrailslearnings.wordpress.com/2018/09/28/switching-between-ruby-versions-on-windows/), which are separate Ruby version managers for Windows.
+
 ## Bundler
+
+- NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date).
+
 
 ## Errors / problems you might see
 
@@ -60,6 +117,10 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 - **Questions**   
     - How can I stop this problem from recurring every time I update Ruby?
     - How can I keep Ruby up to date and avoid security weaknesses dur to not keeping Ruby and other dependencies up to date?
+    - Are the following all equivalent alternatives to `.ruby-version`?
+        - `chruby`
+        - `rvm`
+        - `rbenv`
 - **Experiments**:
     - Use `.ruby-version` to update the version of Ruby being used by this site.
     - Go back to Ruby version 2.6.5 system-wide. Check my other Ruby projects (academy stuff) aren't broken by this.
@@ -146,6 +207,16 @@ So today I have put aside a whole day to dive in and get to grips once and for a
     - Presumably you need `bundler` installed?
     - Can you have a functioning `Gemfile` without having `bundler` installed?
     - What does it mean to say that gems are installed?
+
+### bundle update
+
+- **Example**:
+    - `bundle update`
+- **Explanation**:
+    - Sometimes when you run `bundle install`, you get a message saying you need to run bundle update first. In this case you should… run `bundle update` first! 
+- **Questions**:
+    - What does `bundle update` do?
+    - Why does it sometimes need running before bundle install?
 
 ### gem update
 
@@ -241,7 +312,16 @@ So today I have put aside a whole day to dive in and get to grips once and for a
     - Can you have old versions of Ruby hanging around on your system? 
         - I think there will be folders somewhere in your operating system that have particular versions in their names?
 
+## To do
 
-
-
+- Read / Add more documentation on how gems work
+- Read / Add more documentation on how bundler works
+- Fix clare-wiki problems 
+    - update Ruby version 
+    - Update gems 
+    - Update nokogiri and anything else specified by dependabot 
+    - Find out what's going on with deployment failures
+- Fix problems with martin fowler
+- Answer unanswered questions in this doc
+- Update to [WSL 2 on my machine](https://docs.microsoft.com/en-gb/windows/wsl/install-win10)
 
