@@ -35,11 +35,15 @@ Generally though, the two areas are handled by different means:
 1. You can simply have gems manually installed on your system, using `gem` commands. But most Ruby projects use [`bundler`](#bundler) to manage gem versions. This leads to the use of a file called `Gemfile`, which will itself specify your Ruby version (in different ways depending on [which Ruby version management system you're using](#different-versions-of-ruby)).
 2. There are [various different tools available](#different-versions-of-ruby) to manage differing versions of Ruby between projects.
 
-## What gems are
+## What gems are / how gems work
 
 You can use the `gem` command to use the [`RubyGems` software](https://guides.rubygems.org/) to find and install gems on your system. First you have to have `RubyGems` installed, but Ruby 1.9 and newer ships with `RubyGems` built-in. Every time you install a gem using `gem install`, it will download the gem from rubygems.org and install it on your system. It will also download and install any dependencies that the original gem relies on, and so on for any dependencies of dependencies.
 
 A gem is a Ruby software package. Each gem contains a packaged Ruby application or library.
+
+You can install gems using the `gem install` command, and there are lots of other useful `gem` commands (eg `gem list` to see what's installed - more [here](https://guides.rubygems.org/rubygems-basics/)) but this on its own does not allow you to control which gems are used by which projects. That's where [bundler](#bundler) comes in.
+
+[More on gems here](https://guides.rubygems.org/rubygems-basics/)
 
 ## Different versions of Ruby
 
@@ -61,6 +65,7 @@ The three main Ruby version management systems for Mac OSX and Linux (including 
             - Cmd: `ruby-install ruby 2.6.5` 
             - Restart your shell by typing `exit` and then restarting.
         - Then run cmd `chruby ruby-2.6.5` to switch to the new version. You can also put this command into your `~/.bashrc` to effectively make that version your default, but remember to edit it when you upgrade Ruby!
+    - More on chruby [here](https://daqo.medium.com/using-chruby-as-the-default-ruby-version-manager-c11346e3cc) and [here](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/managing-ruby-versions#:~:text=Managing%20Ruby%20Versions&text=Note%3A%20This%20lesson%20goes%20into,should%20use%20Ruby%20Version%20Manager.)
 - [rvm](https://rvm.io/)
 - [rbenv](https://github.com/rbenv/rbenv)
 
@@ -76,8 +81,13 @@ The solution is to either use WSL or WSL2 to run a Linux subsystem on your Windo
 
 ## Bundler
 
-- NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date).
+NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date).
 
+- [bundler] is itself a gem, which has to be installed like other gems (`gem install bundler`).
+- Once you have it installed, you can use `Gemfile` to specify your dependencies and (if you want) make broad (or specific) specifications about their versions. 
+    - Then when you run `bundle install`, bundler will install everything specified in your Gemfile AND all the dependencies of those gems, and their dependencies... all the way up the dependency tree. 
+    - Once it's done, it creates `Gemfile.lock` which lists the exact version currently installed for every gem and every dependency.
+    - You should check `Gemfile.lock` into source control so that you know exactly what versions of gems you are using for each commit. The exception to this is when you're building a library - in which case you only commit `Gemfile`. The reason for this is that your library could end up being just one link in a dependency chain, and other versions may be required of upstream or downstream dependencies (I think).
 
 ## Errors / problems you might see
 
@@ -314,8 +324,10 @@ The solution is to either use WSL or WSL2 to run a Linux subsystem on your Windo
 
 ## To do
 
-- Read / Add more documentation on how gems work
-- Read / Add more documentation on how bundler works
+- Read / Add more documentation on [how gems work](https://guides.rubygems.org/rubygems-basics/)
+    - Answer the question of whether gems are installed locally or globally by default, and whether there's any concept of local or global without the use of bundler (I think there might be a local/global thing, because when you look at `$LOAD_PATH`, you see some gems listed in a `local` folder?)
+- Read / Add more documentation on [how bundler works](https://bundler.io/rationale.html)
+    - Does bundler somehow install gems only local to the project of the `Gemfile`? How does that work?
 - Fix clare-wiki problems 
     - update Ruby version 
     - Update gems 
