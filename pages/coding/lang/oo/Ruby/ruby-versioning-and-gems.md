@@ -18,7 +18,7 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 
 - [Learn Tech guide on gem packaging](https://learn.madetech.com/guides/06-Gem-Packaging/) (from Made Tech)
 - [Internal Made Tech workshop on Ruby versioning, bundling and managing gems](https://docs.google.com/presentation/d/1sYbNtN6Frbu-cucQL8hxPlgV-eaLqPwU9FMNhNE1YEc/edit#slide=id.ga070ffb2eb_0_138) (courtesy of George Schena)
-- [Brief bundler tutorial from Learn Enough Ruby on Rails](https://www.learnenough.com/ruby-on-rails-6th-edition-tutorial/beginning#sec-the_hello_application) (Learn Enough subscription might be needed, but at the time of writing (Jan 2021) this content was free).
+- [Brief bundler tutorial from Learn Enough Ruby on Rails](https://www.learnenough.com/ruby-on-rails-6th-edition-tutorial/beginning#sec-bundler) (Learn Enough subscription might be needed, but at the time of writing (Jan 2021) this content was free).
 
 ## Bundler
 
@@ -84,6 +84,8 @@ So today I have put aside a whole day to dive in and get to grips once and for a
     - `Could not find gem 'bundler (~> 1.1)', which is required by gem 'middleman-core (= 3.3.7)', in any of the sources.`
 - **Explanation**: 
     - It can't find a particular version (`~> 1.1`) of a particular gem (`bundler`), because another gem (`middleman-core`, currently at version `3.3.7)`) has specified that it is dependent on the missing gem.
+    - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
+    - `>= 1.1` would mean version `1.1` or later, including `1.2`, `1.3` and even `7.2`.
 - **Solution**:
     - Install the correct version of `bundler` and then reinstall `middleman`:
         - Cmd: `gem install bundler -v 1.15`
