@@ -1,7 +1,7 @@
 ---
 layout: page
-location: "pages/coding/lang/oo/leaf"
-permalink: /pages/coding/lang/oo/Ruby
+location: "pages/coding/lang/oo/ruby/leaf"
+permalink: /pages/coding/lang/oo/ruby/Ruby
 ---
 
 ## GitHub Repos 
