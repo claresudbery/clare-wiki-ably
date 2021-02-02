@@ -188,6 +188,13 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - Instead, could fix `Gemfile.lock` by running the bundle command in Ubuntu and then pushing the resulting `Gemfile.lock` up to the server?
 - **Questions**:
     - What's actually happening here? And is there a better solution?
+    
+### "cannot load such file" 
+
+- You need to check your load path by running **irb** on command line and then typing **$LOAD\_PATH**
+- If you get “cannot load such file -- bundler/setup (LoadError)” then you might need to run **bundle install** or vendor install or both
+- If you get “command not found: bundle” then you might need to install Bundler: **sudo gem install bundler**
+    - !! The password it wants is your laptop password
 
 ## Things you might do to fix a problem
 
@@ -285,13 +292,6 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - Does it mean you make sure you only use the gem versions specified locally for that project?
     - Does it only work for command line operations?
     - Does it only work when the things you are running on the command kine are themsleves gems?- If you get the error 
-    
-### "cannot load such file" 
-
-- You need to check your load path by running **irb** on command line and then typing **$LOAD\_PATH**
-- If you get “cannot load such file -- bundler/setup (LoadError)” then you might need to run **bundle install** or vendor install or both
-- If you get “command not found: bundle” then you might need to install Bundler: **sudo gem install bundler**
-    - !! The password it wants is your laptop password
 
 ### Use chruby to manage your Ruby versions
 
