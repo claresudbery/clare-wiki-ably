@@ -148,13 +148,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Mocking stuff that is in a module instead of a class, using RR:
       [<span class="underline">https://github.com/btakita/rr/issues/98</span>](https://github.com/btakita/rr/issues/98)
 
-### Rspec
+### Front end testing
 
-- Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
-- [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
-- [Rspec style guide](https://rspec.rubystyle.guide/)
-- [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
-- [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
+- Examples of front end testing using Rack::Test with Sinatra:
+  - [In cah-answer-generator](https://github.com/claresudbery/cah-answer-generator/blob/main/spec/cahanswers_spec.rb)
+  - [In mars-rover-kata-ruby](https://github.com/claresudbery/mars-rover-kata-ruby/blob/main/spec/webapp_spec.rb)
+  - [In tic-tac-toe-kata](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/spec/tictactoe_spec.rb)
 - Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers). DON'T FORGET TO ADD the following to `spec_helper.rb`:
 
 ```ruby
@@ -163,6 +162,15 @@ require "rspec-html-matchers"
 RSpec.configure do |config|
   config.include RSpecHtmlMatchers
 ```
+
+### Rspec
+
+- Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
+- [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
+- [Rspec style guide](https://rspec.rubystyle.guide/)
+- [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
+- [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
+- See [Front end testing](front-end-testing) for how to do front end testing with Rspec.
 
 #### Test cases in rspec
 
