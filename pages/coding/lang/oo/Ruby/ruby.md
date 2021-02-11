@@ -154,13 +154,19 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - [In cah-answer-generator](https://github.com/claresudbery/cah-answer-generator/blob/main/spec/cahanswers_spec.rb)
   - [In mars-rover-kata-ruby](https://github.com/claresudbery/mars-rover-kata-ruby/blob/main/spec/webapp_spec.rb)
   - [In tic-tac-toe-kata](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/spec/tictactoe_spec.rb)
-- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers). DON'T FORGET TO ADD the following to `spec_helper.rb`:
+- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers). DON'T FORGET TO ADD the following to `spec_helper.rb` and `Gemfile`:
 
+**In `spec_helper.rb`:**  
 ```ruby
 require "rspec-html-matchers"
 
 RSpec.configure do |config|
   config.include RSpecHtmlMatchers
+```
+
+**In `Gemfile`:**  
+```ruby
+gem "rspec-html-matchers"
 ```
 
 ### Rspec
@@ -169,6 +175,9 @@ RSpec.configure do |config|
 - [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Rspec style guide](https://rspec.rubystyle.guide/)
 - [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
+- Rspec syntax:
+  - [built-in matchers](https://relishapp.com/rspec/rspec-expectations/v/3-10/docs/built-in-matchers) (like `to eq` and `not_to eq`)
+  - [Other matchers](https://gist.github.com/JunichiIto/f603d3fbfcf99b914f86) (like `a_string_ending_with`, `a_string_starting_with`, and `a_string_including`)
 - [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
 - See [Front end testing](front-end-testing) for how to do front end testing with Rspec.
 
@@ -220,6 +229,7 @@ More examples of `stdin` and `stdout` testing in [this file here](https://github
 
 ### Misc Language Stuff
 
+- [General Ruby docs](https://docs.ruby-lang.org/en/2.0.0/index.html) (they're pretty good, once you've searched for what you're interested in).
 - Return values in Ruby functions are the last thing that was assigned
   - the **return** statement is often not used
 

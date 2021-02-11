@@ -6,15 +6,15 @@ permalink: /pages/think/events/workshops/Action-Learning
 
 ## Notes from Ludovine's Made Tech showcase
 
-From Ludovine's Made Tech showcase talk about her experiences with Action Learning (see book "You're Not Listening").
+From Ludivine's Made Tech showcase talk about her experiences with Action Learning (see book "You're Not Listening").
 
 - Get together in groups of 4-8
 - Use listening and asking questions to help people solve their own problems
-- Start by biudding on what you will discuss
+- Start by bidding on what you will discuss
 - People propose a problem they're each trying to solve
 - Structure:
     - Intro
-    - Open questionining
+    - Open questioning
     - (Optional) asking the group for advice if the individual chooses to do so
     - Reflection and actions
 - Anyone can present a challenge they're facing
