@@ -86,3 +86,13 @@ Otamatone.
 [Pumped up Kicks!](https://www.youtube.com/watch?v=guSESFWNrOY)
 
 Oh dear, I'd better stop or I'll be here all day.
+
+## What was that giant slide called?
+
+It was a very big, straight, undulating slide with several parallel lanes (so not a helmet smelter).
+
+It was at Prestatyn in the 1970s. I always think it was called the Ummagumma, which seems to be some kind of childhood confusion related to Pink Floyd's album (which my dad owned) and the word "Undulator" (although that's not what the slide was called - but it did undulate).
+
+Anyway, it was called the Astroglide.
+
+It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) in Coasterpedia. Here's a picture of an equivalent slide at Margate: https://images.app.goo.gl/cqXNeYh2x8ziwau77
