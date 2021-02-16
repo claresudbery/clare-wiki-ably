@@ -33,3 +33,7 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 - [Marzipan](https://www.daringgourmet.com/how-to-make-marzipan-almond-paste/)
 - [Bread sauce](https://www.bbcgoodfood.com/recipes/bread-sauce-0)
 
+## Other recipes
+
+- [Grapefruit guacamole](thekitchn.com/recipe-grapefruit-guacamole-recipes-from-the-kitchn-202807) (add ginger and lime?)
+

@@ -185,3 +185,11 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
   - Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
 
+## Running and knees
+
+- [Advice on protecting your knees while running](https://www.runandbecome.com/running-training-advice/running-technique-help-avoid-knee-injury)
+  - NB: Cadence is the number of times your foot hits the ground per minute. According to [the above article](https://www.runandbecome.com/running-training-advice/running-technique-help-avoid-knee-injury), you should aim for the same cadence (around 180) whether you are running fast or slow - so you just increase your stride length to get a higher speed.
+  - If you have a slow cadence it's easy to overstride and heel-strike (land on the heel of your foot instead of in the middle of your foot), which is bad for your knees.
+- [Exercises to strengthen the knees](https://www.nhs.uk/live-well/exercise/knee-exercises-for-runners/)
+- [More advice on knees and running](https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/)
+- [couch to 5k](https://www.nhs.uk/live-well/exercise/couch-to-5k-week-by-week/)

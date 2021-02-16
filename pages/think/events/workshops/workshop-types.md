@@ -14,6 +14,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 ## All types of workshop
 
 - Five whys
+	- [Miro created at XP Manchester](https://miro.com/app/board/o9J_lVcMmxU=/) in an attempt to use the Five Whys technique to determine why XP isn't more widely adopted.
 - Futurespective
 - [Value Stream Mapping](https://kanbanize.com/lean-management/value-waste/value-stream-mapping/)
 - Lean Value Tree

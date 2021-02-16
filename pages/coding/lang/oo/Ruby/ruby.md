@@ -53,6 +53,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above two tutorials. It's deployed on Heroku [here](https://sinatra-docker.herokuapp.com/).
   - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
   - Views are held in *.erb template files (same is true of Rails) - `erb` stands for embedded ruby
+- Have a look at [the Shotgun gem](https://github.com/rtomayko/shotgun) if you don't want to have to restart your server every time you make a change.
 
 ## Deployment with Heroku
 

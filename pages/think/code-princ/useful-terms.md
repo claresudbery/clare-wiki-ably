@@ -105,4 +105,5 @@ Pure functions don’t modify external variables/state/data outside of the scope
     - Continuous Integration
     - TDD (Test Driven Development)
     - Incremental Design
-- [More info here](https://www.agilealliance.org/glossary/xp)
+- [More info here at agilealliance.org](https://www.agilealliance.org/glossary/xp)
+    - [and here (extremeprogramming.org, Don Wells' site)](http://www.extremeprogramming.org/rules.html)
