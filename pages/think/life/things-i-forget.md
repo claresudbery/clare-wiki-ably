@@ -95,4 +95,6 @@ It was at Prestatyn in the 1970s. I always think it was called the Ummagumma, wh
 
 Anyway, it was called the Astroglide.
 
-It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) in Coasterpedia. Here's a picture of an equivalent slide at Margate: https://images.app.goo.gl/cqXNeYh2x8ziwau77
+It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) in Coasterpedia. Here's a picture of an equivalent slide at Margate: 
+
+![astroglide-at-margate](/resources/images/astroglide.png)
