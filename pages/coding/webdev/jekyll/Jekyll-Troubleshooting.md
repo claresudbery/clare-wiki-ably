@@ -188,7 +188,7 @@ gem update --system
 - Dependabot identifies critical dependency updates and creates pull requests suggesting you update your dependencies.
 	- If you don't merge the pull requests, they are not merged into your code base.
 	- The PRs create new branches and automatically trigger Travis deploys. This is why you sometimes get failed builds that mention dependabot - it's because Travis is trying to build the PR branch.
-	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build?
+	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build? Or it just keeps re-running them at regular intervals?
 	- Sometimes the PRs are closed automatically - for instance if you run a bundle update yourself and your dependencies are updated, so dependabot detects that the PR is no longer needed. Or because you make changes to your `Gemfile` so that the dependency that dependabot is trying to update is no longer even a dependency of your project.
 	
 ## Favicon Stuff
