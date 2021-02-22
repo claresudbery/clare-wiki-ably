@@ -248,10 +248,11 @@ require 'bundler/setup'
     
 ### "cannot load such file" 
 
-- You need to check your load path by running **irb** on command line and then typing **$LOAD\_PATH**
-- If you get “cannot load such file -- bundler/setup (LoadError)” then you might need to run **bundle install** or vendor install or both
-- If you get “command not found: bundle” then you might need to install Bundler: **sudo gem install bundler**
-    - !! The password it wants is your laptop password
+- You might need to run `bundle install`
+    - If that doesn't work, it might mean that you have not added the specified gem to your `Gemfile`.
+    - For instance if you get "cannot load such file -- rspec/core/rake_task", then try adding `gem 'rspec'` to your `Gemfile`.
+- If you get “command not found: bundle” then you might need to install Bundler: `sudo gem install bundler`
+   - !! The password it wants is your laptop password
 
 ## Things you might do to fix a problem
 
