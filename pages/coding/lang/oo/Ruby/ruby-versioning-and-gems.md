@@ -90,6 +90,8 @@ The solution is to either use WSL or WSL2 to run a Linux subsystem on your Windo
 - Your `$LOAD_PATH` Ruby environment variable (only accessible to Ruby) holds the paths that Ruby searches when looking for gems (eg when executing `load` and `require` commands).
     - You can see all your Ruby environment variables by running `gem environment` on the command line.
     - NB When `rubygems.rb` is loaded, it replaces the default `require` with a new version that also searches installed gems as well as searching `$LOAD_PATH` - and updates `$LOAD_PATH` on the fly to add the directory/ies specified by the installed gem.
+        - Actually I'm not sure it does update `$LOAD_PATH` any more. When I tested this with `irb` by running `puts $LOAD_PATH.grep(/json/)` and then `require('json')` and then `puts $LOAD_PATH.grep(/json/)` again, I didn't get the effect described in [this article](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0).
+        - `rubygems.rb` gets loaded when you run `irb`. It also gets loaded when you run any `Ruby` program, as long as you are using Ruby v1.9 or later. Otherwise you have to specifically add it into your app using `require 'rubygems'`
     - Be aware that if you're building your own gem, there's a lot of good practice to make sure you don't cause problems with `$LOAD_PATH` [More on this here](https://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/).
     - Gems are installed by running the `gem install` command  
         - You can see where they are installed by running `gem environment` and checking the setting for `INSTALLATION DIRECTORY`. 
@@ -97,8 +99,8 @@ The solution is to either use WSL or WSL2 to run a Linux subsystem on your Windo
         - If you use `bundler` and have a `Gemfile` instead of using `gem install`, then when you run `bundle install` it does the same as `gem install`, and makes sure the specified version is installed. You could replicate this by manually running `gem install` for all the relevant gems and their versions (but probably wouldn't want to).
             - Installing a specific version of a gem means that its directories are added to $LOAD_PATH and its activation is recorded. You can't simultaneously activate two versions of the same gem.            
     - Questions:
-        - Is this change to `$LOAD_PATH` temporary or permanent?
-        - I know `rubygems.rb` gets loaded when you run `irb`. Does it also get loaded when you run any `Ruby` program?
+        - Is the change to `$LOAD_PATH` made by `Rubygems require` temporary or permanent?
+            - See above. I suspect it's not even true any more, but I'm pretty sure that when it was it was only temporary.
         - If you can't simultaneously activate two versions of the same gem, does this mean you can't simultaneously have two Ruby programs running that use different versions of the same gem?
             - I think the answer to that is yes - if you use a `bundle exec` command for each programme, then it just means `bundler` will load the correct version when starting the relevant piece of software. Once it's running, the correct version is loaded into memory and everything continues happily?
 - When you use `require` to load a file, it will update the $LOADED_FEATURES  Ruby environment variable.
@@ -119,16 +121,30 @@ puts $LOADED_FEATURES
 
 NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date).
 
+- Run `bundle init` to create a brand new `Gemfile`.
 - [bundler](https://bundler.io) is itself a gem, which has to be installed like other gems (`gem install bundler`).
 - `bundler` is a gem package manager.
-    - Interestingly `RubyGems` is also a package manager - the default one you're using if you don't have a `Gemfile` (and are therefore not using `bundler`).
-    - Most people use `bundler` though.
+    - Interestingly `RubyGems` is also a package manager - the default one you're using if you don't have a `Gemfile` (and are therefore not using `bundler`), and you have Ruby v1.9 or higher... or you have `require 'rubygems'` in your project.
+    - Most people use `bundler` though (which itself uses `rubygems`).
 - Once you have it installed, you can use `Gemfile` to specify your dependencies and (if you want) make broad (or specific) specifications about their versions. 
     - Then when you run `bundle install`, bundler will install everything specified in your Gemfile AND all the dependencies of those gems, and their dependencies... all the way up the dependency tree. 
     - Once it's done, it creates `Gemfile.lock` which lists the exact version currently installed for every gem and every dependency.
     - You should check `Gemfile.lock` into source control so that you know exactly what versions of gems you are using for each commit. The exception to this is when you're building a library - in which case you only commit `Gemfile`. The reason for this is that your library could end up being just one link in a dependency chain, and other versions may be required of upstream or downstream dependencies (I think).
 - If you use `bundler` and have a `Gemfile` instead of using `gem install`, then when you run `bundle install` it does the same as `gem install`, and makes sure the specified version is installed. You could replicate this by manually running `gem install` for all the relevant gems and their versions (but probably wouldn't want to).
 - Putting `bundle exec` before a command, e.g. `bundle exec rspec`, ensures that `require` will load the version of a gem specified in your `Gemfile.lock` as opposed to the most recent version.
+- If you're using `bundler`, then you should add these two lines to the first file your application loads:
+
+```
+require 'rubygems'
+require 'bundler/setup'
+```
+
+- (If you're using Ruby 1.9 or later then you don't actually need the first line)
+- What `bundler/setup` does is alter your `$LOAD_PATH` so that *only* the gems in your `Gemfile` are put into `$LOAD_PATH`. 
+    - This is useful because if you had installed a gem on your machine using `gem install`, and then required it in your code, but hadn't added it to your `Gemfile`, then anybody else downloading your code would get errors. This way you will also get the same errors, and that will remind you to add the gem to your `Gemfile`.
+    - [More here](brianstorti.com/understanding-bundler-setup-process/) and [here](https://bundler.io/rationale.html).
+- You can use `Bundler.require(:default)` as shorthand to `require` everything in your `Gemfile`.
+- Bundler will not update dependencies of dependencies if it means the resulting gem will be a version incompatible with another gem that also depends on it.
 
 ## Errors / problems you might see
 
@@ -272,6 +288,9 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - `bundle update`
 - **Explanation**:
     - Sometimes when you run `bundle install`, you get a message saying you need to run bundle update first. In this case you should… run `bundle update` first! 
+    - But be aware that `bundle update` will ignore `Gemfile.lock` and update ALL dependencies, which can have unexpected results. 
+        - A less aggressive approach is to run `bundle update` on a specific package, like this: `bundle update rack-cache`. Then only that package and its dependencies will be updated.
+        - However, `bundler` will not update the dependency of an updated gem if it means the resulting dependency will be a version incompatible with another gem that also depends on it.
 - **Questions**:
     - What does `bundle update` do?
     - Why does it sometimes need running before bundle install?
