@@ -104,7 +104,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redcarpet (3.4.0)
+    redcarpet (3.5.1)
     rouge (3.14.0)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
@@ -154,7 +154,7 @@ DEPENDENCIES
   nokogiri (>= 1.10.4)
   omniauth-auth0 (~> 2.0)
   rake (~> 12.3)
-  redcarpet (~> 3.4)
+  redcarpet (~> 3.5)
   rspec
   sinatra (~> 2.0.2)
   thin (~> 1.7)
