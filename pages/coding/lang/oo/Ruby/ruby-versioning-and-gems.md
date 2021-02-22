@@ -24,14 +24,18 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 - [Learn Tech guide on gem packaging](https://learn.madetech.com/guides/06-Gem-Packaging/) (from Made Tech)
 - [Internal Made Tech workshop on Ruby versioning, bundling and managing gems](https://docs.google.com/presentation/d/1sYbNtN6Frbu-cucQL8hxPlgV-eaLqPwU9FMNhNE1YEc/edit#slide=id.ga070ffb2eb_0_138) (courtesy of George Schena)
 - [Brief bundler tutorial from Learn Enough Ruby on Rails](https://www.learnenough.com/ruby-on-rails-6th-edition-tutorial/beginning#sec-bundler) (Learn Enough subscription might be needed, but at the time of writing (Jan 2021) this content was free).
+- Article - [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
 
-## Overview of Ruby versioning problems
+## Overview of versioning problems that can happen with Ruby projects
 
-There are two possible sources of version woes when working Ruby:
-1. Problems with versions of the gems (aka packages) your Ruby project is using.
-2. Problems with the version of Ruby your project is using.
+There are two possible sources of version woes when working Ruby:  
+
+1. Problems with versions of the gems (aka packages) your Ruby project is using.  
+2. Problems with the version of Ruby your project is using.  
+
 These can sometimes be related - eg your project may depend on a particular gem that itself is dependent on a particular version of Ruby.
-Generally though, the two areas are handled by different means:
+Generally though, the two areas are handled by different means:  
+
 1. You can simply have gems manually installed on your system, using `gem` commands. But most Ruby projects use [`bundler`](#bundler) to manage gem versions. This leads to the use of a file called `Gemfile`, which will itself specify your Ruby version (in different ways depending on [which Ruby version management system you're using](#different-versions-of-ruby)).
 2. There are [various different tools available](#different-versions-of-ruby) to manage differing versions of Ruby between projects.
 
@@ -39,7 +43,7 @@ Generally though, the two areas are handled by different means:
 
 You can use the `gem` command to use the [`RubyGems` software](https://guides.rubygems.org/) to find and install gems on your system. First you have to have `RubyGems` installed, but Ruby 1.9 and newer ships with `RubyGems` built-in. Every time you install a gem using `gem install`, it will download the gem from rubygems.org and install it on your system. It will also download and install any dependencies that the original gem relies on, and so on for any dependencies of dependencies.
 
-A gem is a Ruby software package. Each gem contains a packaged Ruby application or library.
+A gem is a Ruby software package. Each gem contains a packaged Ruby application or library. More concretely, it’s a zip file containing a bunch of ruby files and/or dynamic library files that can be imported by your code, along with some metadata.
 
 You can install gems using the `gem install` command, and there are lots of other useful `gem` commands (eg `gem list` to see what's installed - more [here](https://guides.rubygems.org/rubygems-basics/)) but this on its own does not allow you to control which gems are used by which projects. That's where [bundler](#bundler) comes in.
 
@@ -79,15 +83,52 @@ If you're coding Ruby in Windows, you'll be using RubyInstaller. [More here](sta
 
 The solution is to either use WSL or WSL2 to run a Linux subsystem on your Windows machine, or use something like [pik](https://hibbard.eu/how-to-manage-multiple-versions-of-ruby-on-windows/) or [URU](https://myrailslearnings.wordpress.com/2018/09/28/switching-between-ruby-versions-on-windows/), which are separate Ruby version managers for Windows.
 
+## Basic package management from RubyGems
+
+- Even without `bundler` you get some package management - via `rubygems.rb`.
+    - The basic `gem` command is defined by `RubyGems`
+- Your `$LOAD_PATH` Ruby environment variable (only accessible to Ruby) holds the paths that Ruby searches when looking for gems (eg when executing `load` and `require` commands).
+    - You can see all your Ruby environment variables by running `gem environment` on the command line.
+    - NB When `rubygems.rb` is loaded, it replaces the default `require` with a new version that also searches installed gems as well as searching `$LOAD_PATH` - and updates `$LOAD_PATH` on the fly to add the directory/ies specified by the installed gem.
+    - Be aware that if you're building your own gem, there's a lot of good practice to make sure you don't cause problems with `$LOAD_PATH` [More on this here](https://weblog.rubyonrails.org/2009/9/1/gem-packaging-best-practices/).
+    - Gems are installed by running the `gem install` command  
+        - You can see where they are installed by running `gem environment` and checking the setting for `INSTALLATION DIRECTORY`. 
+        - Installing a gem means downloading its code from rubygems.org (if you have that configured as your gem source - you can check that via `gem environment`) and compiling any C code into dlls.
+        - If you use `bundler` and have a `Gemfile` instead of using `gem install`, then when you run `bundle install` it does the same as `gem install`, and makes sure the specified version is installed. You could replicate this by manually running `gem install` for all the relevant gems and their versions (but probably wouldn't want to).
+            - Installing a specific version of a gem means that its directories are added to $LOAD_PATH and its activation is recorded. You can't simultaneously activate two versions of the same gem.            
+    - Questions:
+        - Is this change to `$LOAD_PATH` temporary or permanent?
+        - I know `rubygems.rb` gets loaded when you run `irb`. Does it also get loaded when you run any `Ruby` program?
+        - If you can't simultaneously activate two versions of the same gem, does this mean you can't simultaneously have two Ruby programs running that use different versions of the same gem?
+            - I think the answer to that is yes - if you use a `bundle exec` command for each programme, then it just means `bundler` will load the correct version when starting the relevant piece of software. Once it's running, the correct version is loaded into memory and everything continues happily?
+- When you use `require` to load a file, it will update the $LOADED_FEATURES  Ruby environment variable.
+    - It will also execute all the code in required gem - which might involve requiring other gems, and will mean that various methods (and maybe some global variables) get defined.
+- The difference with `require` (as opposed to `load`) is that it will not load the same code twice (it will return `false` instead).
+    - Also, you can use `require_relative` to search in the same location as the file containing the `require` command (instead of searching `$LOAD_PATH`).
+- You can test this via `irb` with the following series of commands (create a file `foo.rb` in the current directory):  
+
+```
+irb
+require(`./foo.rb`)
+puts $LOADED_FEATURES
+```
+
+- You might have to hunt through the long list of output, but `foo.rb` will be in there somewhere (quite likely at the end, in fact).
+
 ## Bundler
 
 NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date).
 
-- [bundler] is itself a gem, which has to be installed like other gems (`gem install bundler`).
+- [bundler](https://bundler.io) is itself a gem, which has to be installed like other gems (`gem install bundler`).
+- `bundler` is a gem package manager.
+    - Interestingly `RubyGems` is also a package manager - the default one you're using if you don't have a `Gemfile` (and are therefore not using `bundler`).
+    - Most people use `bundler` though.
 - Once you have it installed, you can use `Gemfile` to specify your dependencies and (if you want) make broad (or specific) specifications about their versions. 
     - Then when you run `bundle install`, bundler will install everything specified in your Gemfile AND all the dependencies of those gems, and their dependencies... all the way up the dependency tree. 
     - Once it's done, it creates `Gemfile.lock` which lists the exact version currently installed for every gem and every dependency.
     - You should check `Gemfile.lock` into source control so that you know exactly what versions of gems you are using for each commit. The exception to this is when you're building a library - in which case you only commit `Gemfile`. The reason for this is that your library could end up being just one link in a dependency chain, and other versions may be required of upstream or downstream dependencies (I think).
+- If you use `bundler` and have a `Gemfile` instead of using `gem install`, then when you run `bundle install` it does the same as `gem install`, and makes sure the specified version is installed. You could replicate this by manually running `gem install` for all the relevant gems and their versions (but probably wouldn't want to).
+- Putting `bundle exec` before a command, e.g. `bundle exec rspec`, ensures that `require` will load the version of a gem specified in your `Gemfile.lock` as opposed to the most recent version.
 
 ## Errors / problems you might see
 
@@ -207,7 +248,7 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - `bundler` is a gem package manager
 - **Questions**:
     - Presumably `bundler` is itself a gem?
-    - How does it know abhout versions of gems? Does it rely on `Gemfile`?
+    - How does it know about versions of gems? Does it rely on `Gemfile`?
     - Will `Gemfile` work if you don't have `bundler` installed, or is `Gemfile` proprietary to `bundler`?
     - Can you manage gems using other systems, or do you *have* to have `bundler`?
 
