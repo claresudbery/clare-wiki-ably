@@ -169,6 +169,8 @@ gem update --system
 		- Maybe something to do with the version of nokogiri?
 		- In commit 96d475a I updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
 		- There is an outstanding dependabot branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8
+	- At some point the formatting problem got fixed again, and I'm really not sure when / how.
+		- But this Travis error came back again - "`bundle exec rake` - rake aborted! Don't know how to build task 'default'" - so I made the same change to `Rakefile` detailed above. Then I got the error "cannot load such file -- rspec/core/rake_task", so I added `rspec` to `Gemfile`, ran `bundle install` and checked in the new `Gemfile.lock` (commit efbd13a). This seemed to fix the problem.
 - Relevant commits in reverse order:
 	- febe432 Fix rake error in Travis deploy - `Rakefile`
 	- b128805 fixing new deploy errors after losing Gemfile.lock - `.travis.yml` and `script/dummy` (commented out the script-related settings)
@@ -180,6 +182,14 @@ gem update --system
 	- 1e42796 Fixing and documenting the Travis deployment error problem - `Gemfile.lock` and  `Gemfile`
 	- 96d475a Updated gems to try fix Travis deployment error - `Gemfile.lock` and  `Gemfile` and `.ruby-version`
 	- e4bb0ba Fix bad gemfile.lock - `Gemfile.lock`
+
+## Dependabot issues
+
+- Dependabot identifies critical dependency updates and creates pull requests suggesting you update your dependencies.
+	- If you don't merge the pull requests, they are not merged into your code base.
+	- The PRs create new branches and automatically trigger Travis deploys. This is why you sometimes get failed builds that mention dependabot - it's because Travis is trying to build the PR branch.
+	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build?
+	- Sometimes the PRs are closed automatically - for instance if you run a bundle update yourself and your dependencies are updated, so dependabot detects that the PR is no longer needed. Or because you make changes to your `Gemfile` so that the dependency that dependabot is trying to update is no longer even a dependency of your project.
 	
 ## Favicon Stuff
 
