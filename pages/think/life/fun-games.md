@@ -114,6 +114,19 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 - (This is a good one for Slack channels)
 - I have a (private) spreadsheet here with animal photos plus options + right answers [here](https://docs.google.com/spreadsheets/d/1oTQAMuKt2kxLbLG6Ue9qr7CZukd6wT5ovxFhHuEtaPA/edit#gid=0)
 
+### Long words that can be divided phonetically into three
+
+- (I read about this in Hank Green's novel, [A Beautifully Foolish Endeavour](https://www.goodreads.com/book/show/49003616-a-beautifully-foolish-endeavor))
+- eg "Dictionary" = "dick, shun, airy"
+- Pick a long word that can be divided phonetically into three smaller words, and describe them like this:
+    - "At first I am an idiot, then I ostracise, and finally I'm light and free." - The first person to guess the word wins.
+
+### 20 Questions and variants
+
+- One person thinks of a thing or person
+- Everyone else asks them questions that can only have the answer Yes or No.
+- Traditionally you only got 20 questions, but we tend to just keep playing until you find out what the person / thing is.
+
 ### A remote Zoom party
 
 We had a zoom birthday party, but made it a bit unusual by having a series of calls throughout the day, with no call lasting longer than half an hour, all optional... but on each call we set our guests a Taskmaster-style challenge, and they had to present the results on the next call. They got scores for their efforts and there was a winner at the end of the day. 

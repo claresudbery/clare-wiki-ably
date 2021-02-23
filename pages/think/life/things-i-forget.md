@@ -98,3 +98,8 @@ Anyway, it was called the Astroglide.
 It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) in Coasterpedia. Here's a picture of an equivalent slide at Margate: 
 
 ![astroglide-at-margate](/resources/images/astroglide.png)
+
+## What are those really creepy American dolls called?
+
+- The ones that stand in the corner and have no faces.
+- It seems they're sometimes called time out dolls and sometimes called corner dolls. [More here](https://twitter.com/1baronjennyson/status/1304465623444058113?).s=21

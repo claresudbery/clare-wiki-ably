@@ -16,7 +16,6 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - Five whys
 	- [Miro created at XP Manchester](https://miro.com/app/board/o9J_lVcMmxU=/) in an attempt to use the Five Whys technique to determine why XP isn't more widely adopted.
 - Futurespective
-- [Value Stream Mapping](https://kanbanize.com/lean-management/value-waste/value-stream-mapping/)
 - Lean Value Tree
 - Empathy mapping
 - Stakeholder empathy mapping
@@ -37,6 +36,26 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - Inverse Conway Manoeuvre - see [notes below](#inverse-conway-manoeuvre)
 - CRC cards
 	- blank ("naked") CRC cards 
+- [Value Stream Mapping](https://kanbanize.com/lean-management/value-waste/value-stream-mapping/)
+	- Good podcast about this [from Codurance here](https://www.codurance.com/publications/podcasts/2019-11-18-value-stram-mapping)
+	- you need a lot of horizonal width but not a lot of height
+		- so, a long wall and a long whiteboard or long roll of paper
+	- Typically you will end up with something that looks like castellations on a castle wall
+	- You're starting on the left with conception and finishing on the right with the point at which value is released to your users
+	- You mark all events in your process
+	- You note how long things sit still while waiting for things to happen
+	- You note points at which value is added
+	- The process allows you to identify 
+		- cycle time (how long it takes to process one item (or one sprint?)), 
+		- lead time (how long it takes from concept to delivery of value), 
+		- wait time (how long things sit waiting), 
+			- If you add cycle time plus wait time you will get lead time. 
+		- queue size (how many things sit waiting), 
+		- waste (eg when things go backwards instead of forwards because they are sent back by QAs for bug fixing), 
+		- bottlenecks (places where everything slows down while they go through a slow process - eg if you only have one QA). 
+			- You are only as fast as your slowest bottleneck. 
+	- Kanban boards are useful for visualising queues. 
+	- The theory of constraints talks about things like bottlenecks and how they prevent you from releasing value effectively.
 - Value proposition map / value proposition design
 	- [Real example here](https://github.com/claresudbery/clare-tech/blob/master/resources/images/value-proposition-map.png) (Clare only) 
 	- [Blank example here](value-proposition-map-blank.jpeg)
