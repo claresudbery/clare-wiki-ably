@@ -114,6 +114,33 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 - (This is a good one for Slack channels)
 - I have a (private) spreadsheet here with animal photos plus options + right answers [here](https://docs.google.com/spreadsheets/d/1oTQAMuKt2kxLbLG6Ue9qr7CZukd6wT5ovxFhHuEtaPA/edit#gid=0)
 
+### A remote Zoom party
+
+We had a zoom birthday party, but made it a bit unusual by having a series of calls throughout the day, with no call lasting longer than half an hour, all optional... but on each call we set our guests a Taskmaster-style challenge, and they had to present the results on the next call. They got scores for their efforts and there was a winner at the end of the day. 
+
+The 5 challenges were:  
+
+1. We asked guests in advance to (optionally) send something delightful or ridiculous that costs nothing, anonymously, in an envelope marked "Birthday party." Then on the first call we opened all the envelopes and tried to guess who they were from.
+2. Make the unlikeliest thing wear an item of your clothing.
+3. Make yourself something delicious to eat or drink.
+4. Make the most passive-aggressive ransom note.
+5. Either: Choreograph a dance to a mobile ring tone, or write a limerick about the birthday person.
+
+A sample passive-aggressive ransom note and limerick that resulted from the party:
+
+```
+A radical daughter of York  
+Was a geek but she wasn't a dork.  
+Her magical spreadsheets,  
+And possibly bedsheets,  
+Were only surpassed by her talk.  
+```
+
+![ransom-note](/resources/images/ransom-note.jpg)
+
+The full description of the party [is here](https://github.com/claresudbery/clare-tech/blob/master/organising/events/zoom-birthday.md) (accessible to Clare only)
+
+
 ## Coding Games
 
 - Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)
