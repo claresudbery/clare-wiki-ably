@@ -11,3 +11,4 @@ permalink: /pages/think/life/Nice-Stuff
     - [more of the same quadruplets](https://www.youtube.com/watch?v=zZH0sNsaAz4)
 - [goat under cooker](https://www.facebook.com/watch/?v=255153025785280)
 - [donkeys in kitchen](https://twitter.com/oldhamvending/status/1325468674564698112?s=20)
+- [Ray Charles singing Oh Happy Day](https://www.youtube.com/watch?v=wv5n_eCGkvM)

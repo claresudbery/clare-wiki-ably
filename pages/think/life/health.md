@@ -60,6 +60,7 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 - [Virtual cheese tasting](https://www.thecourtyarddairy.co.uk/shop/category/buy-cheese/virtual-cheese-tastings/)
 - [Virtual live comedy](http://www.redimpcomedy.com/)
 - [Make your own burgers from Burger & Beyond](https://burgerandbeyondshop.co.uk/diy-kits/)
+- [Generic nice stuff](/pages/think/life/Nice-Stuff)
 
 #### Positive stuff
 
