@@ -14,6 +14,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 ## All types of workshop
 
 - Five whys
+	- aka root cause analysis
 	- [Miro created at XP Manchester](https://miro.com/app/board/o9J_lVcMmxU=/) in an attempt to use the Five Whys technique to determine why XP isn't more widely adopted.
 - Futurespective
 - Lean Value Tree
@@ -36,26 +37,6 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - Inverse Conway Manoeuvre - see [notes below](#inverse-conway-manoeuvre)
 - CRC cards
 	- blank ("naked") CRC cards 
-- [Value Stream Mapping](https://kanbanize.com/lean-management/value-waste/value-stream-mapping/)
-	- Good podcast about this [from Codurance here](https://www.codurance.com/publications/podcasts/2019-11-18-value-stram-mapping)
-	- you need a lot of horizonal width but not a lot of height
-		- so, a long wall and a long whiteboard or long roll of paper
-	- Typically you will end up with something that looks like castellations on a castle wall
-	- You're starting on the left with conception and finishing on the right with the point at which value is released to your users
-	- You mark all events in your process
-	- You note how long things sit still while waiting for things to happen
-	- You note points at which value is added
-	- The process allows you to identify 
-		- cycle time (how long it takes to process one item (or one sprint?)), 
-		- lead time (how long it takes from concept to delivery of value), 
-		- wait time (how long things sit waiting), 
-			- If you add cycle time plus wait time you will get lead time. 
-		- queue size (how many things sit waiting), 
-		- waste (eg when things go backwards instead of forwards because they are sent back by QAs for bug fixing), 
-		- bottlenecks (places where everything slows down while they go through a slow process - eg if you only have one QA). 
-			- You are only as fast as your slowest bottleneck. 
-	- Kanban boards are useful for visualising queues. 
-	- The theory of constraints talks about things like bottlenecks and how they prevent you from releasing value effectively.
 - Value proposition map / value proposition design
 	- [Real example here](https://github.com/claresudbery/clare-tech/blob/master/resources/images/value-proposition-map.png) (Clare only) 
 	- [Blank example here](value-proposition-map-blank.jpeg)
@@ -94,6 +75,40 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 	- (available to Clare only): Until I've processed them, just need to look in this folder and trawl through the presentations: OneDrive\TW-Stuff\Clients\Pitches 
 
 ## Specific types of workshop in more detail
+### Value Stream Mapping
+
+- [Value Stream Mapping](https://kanbanize.com/lean-management/value-waste/value-stream-mapping/)
+- Good podcast about this [from Codurance here](https://www.codurance.com/publications/podcasts/2019-11-18-value-stram-mapping)
+- you need a lot of horizonal width but not a lot of height
+	- so, a long wall and a long whiteboard or long roll of paper
+- Typically you will end up with something that looks like castellations on a castle wall
+- You're starting on the left with conception and finishing on the right with the point at which value is released to your users
+- You mark all events in your process
+	- Basically map the stages in your workflow, particularly those with handovers
+- You note how long things sit still while waiting for things to happen
+- You note points at which value is added
+- The process allows you to identify 
+	- cycle time (how long it takes to process one item (or one sprint?)), 
+	- lead time (how long it takes from concept to delivery of value), 
+	- wait time (how long things sit waiting), 
+		- If you add cycle time plus wait time you will get lead time. 
+	- queue size (how many things sit waiting), 
+	- waste (eg when things go backwards instead of forwards because they are sent back by QAs for bug fixing), 
+	- bottlenecks (places where everything slows down while they go through a slow process - eg if you only have one QA). 
+		- You are only as fast as your slowest bottleneck. 
+- Kanban boards are useful for visualising queues. 
+- The theory of constraints talks about things like bottlenecks and how they prevent you from releasing value effectively.
+- The goal is to create Flow by optimising the system. The map has no value on its own except as a tool.
+- Start with information flow on the top. How does demand come in, who is in charge of that 
+- Sometimes it's helpful to start at the end because people find it easier to agree on the end than the start 
+	- even if you don't, when you're done run through it again from the end 
+	- Going from the end helps people to see it as pull based rather than push based 
+- Get everyone involved 
+- Explain what you're doing before you start 
+- Often the first session results in working out what data points you don't have, then going away and adding in some monitoring so that you can come back with the data you need to compete the exercise 
+- Don't solutionise until the end, than work on the bottleneck 
+	- There will only be one bottle neck (there may be several places where things slow down, but whichever is the slowest becomes the bottleneck)
+	- At this point you can do root cause analysis / five whys to identify the cause of the bottleneck
 
 ### Hypothesis workshops
 
@@ -170,7 +185,7 @@ These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) 
 - assumptions can become opinion, which is hard to counter
 - assumptions can be countrered with facts, but opinions are harder
 - it's a way of laying everything out without being directly confrontational
-- based on assumptions mapping, impact mapping, the opportunity solution tree and the five whys
+- based on assumptions mapping, impact mapping, the opportunity solution tree and the five whys (root cause analysis)
 	- they are all good, but hard to use with stakeholders because they can't be explained in 5 mins
 - miro board: https://miro.com/app/board/o9J_lXiMgRk=/
 - step 1: list your goals
