@@ -180,7 +180,7 @@ gem "rspec-html-matchers"
   - [built-in matchers](https://relishapp.com/rspec/rspec-expectations/v/3-10/docs/built-in-matchers) (like `to eq` and `not_to eq`)
   - [Other matchers](https://gist.github.com/JunichiIto/f603d3fbfcf99b914f86) (like `a_string_ending_with`, `a_string_starting_with`, and `a_string_including`)
 - [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
-- See [Front end testing](front-end-testing) for how to do front end testing with Rspec.
+- See [Front end testing](#front-end-testing) for how to do front end testing with Rspec.
 
 #### Test cases in rspec
 
