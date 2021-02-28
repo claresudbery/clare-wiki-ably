@@ -13,3 +13,7 @@ permalink: /pages/think/life/Nice-Stuff
 - [donkeys in kitchen](https://twitter.com/oldhamvending/status/1325468674564698112?s=20)
 - [Ray Charles singing Oh Happy Day](https://www.youtube.com/watch?v=wv5n_eCGkvM)
 - [Toddler running a hurdles race](https://twitter.com/FillWerrell/status/1358558415447093251?s=20)
+
+## (Private Clare Nice Stuff)
+
+- [Private Clare Nice Stuff](https://github.com/claresudbery/clare-tech/blob/master/organising/private/nice-stuff.md)
