@@ -97,3 +97,10 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 See Trello (Clare MT Trello) for more (for now).
 
 - [You're About to Make a Terrible Mistake: How Biases Distort Decision-Making and What You Can Do to Fight Them](https://www.amazon.com/Youre-About-Make-Terrible-Mistake/dp/0316494984)
+
+## See also
+
+- Clare MT Trello (Clare only)
+- Alternate Mondays Trello (Clare only)
+- Goodreads.com - I have a "Want to read" list and a "want to listen" list
+- Clare-tech (Clare only)

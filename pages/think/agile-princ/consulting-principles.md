@@ -32,3 +32,27 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 - small posoitive effects compound, they aren't linear
 - don't underestimate the effect of experiencing victory
 - maintain the big vision while experiencing the small victories towards that big goal.
+
+## Keep teams small
+
+### Team Topologies
+
+My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightning talk at XP Manchester about the book [Team Topologies, by Matthew Skelton and Manuel Pais](https://teamtopologies.com/resources):
+
+- Talking about the problem many companies have, of having large numbers of small independent teams who then aren't coordinated or joined up enough
+- An idea: Instead of having a WIP limit, have a dependency limit 
+- The more external dependencies your team has in progress at any one time, the more you will grind to a halt
+- Team Topologies by Matthew Skelton and Manuel Pais
+	- Neil has made his own notes: https://www.notion.so/Useful-ideas-from-Team-Topologies-b3b83296015c4051978bdededb941957
+	- It's a book, and website, and GitHub repos, and training
+	- teamtopologies.com/resources 
+	- GitHub.com/teamtopologies
+		- Also https://itrevolution.com/book/accelerate/
+		- and https://www.goodreads.com/book/show/93892.Rapid_Development
+	- The Stream Aligned Team can partner up with the Enabling Team 
+	- Use Conway's Law
+	- Platform as product:
+		- There's a great 4-hour course by Manuel Pais about platform as product
+		- Don't mandate the use of your platform - let people make choices - and that will focus you on maing your platform genuinely useful
+	- Don't have more than 7-9 people on a team
+		 - you don't have to have all the expertise within the team - some can be external to the team.

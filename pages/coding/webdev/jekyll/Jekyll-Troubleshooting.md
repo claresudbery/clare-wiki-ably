@@ -126,8 +126,27 @@ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.15.3/lib/bundler/
 
 I ran `bundle install` and that told me to run `gem install bundler`, which worked.
 
+### Summary of early 2021 versioning problems
+
+- In December 2020 I was having Travis deployment problems
+- I hit everything with lots of hammers, including running `bundle update` and upgrading Ruby - which meant that everything got upgraded
+- This only partially worked
+- In Feb 2021 I saw more problems
+- Then I realised the original Travis error was caused purely because the Ruby version specified by the `rvm` section of `.travis.yml` didn't match `.ruby-version`
+- So I undid all the upgrade stuff and just fixed that `rvm` section 
+- This left a few more lingering problems, which I fixed by 
+	- altering `Rakefile` to put back the `rspec` section I'd added earlier
+	- adding `rspec` to `Gemfile` (in commit 22918d7), running `bundle install` and checking in the new `Gemfile.lock` (commit efbd13a). This seemed to fix the problem.
+- However this put me back to a situation where all the dependencies are pretty out of date, and [dependabot](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#how-dependabot-works) is shouting at me.
+- Then I learnt a lot more about Ruby versioning and gems, and created [this page here](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems).
+- Finally at the beginning of March 2021, I set about trying to get all dependencies up to date.
+	- See [this section](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#staying-up-to-date) for notes on that.
+- Full details are in the two sections below.
+
 ### Bundler version problems when deploying with Travis
 
+- (see [above for summary](#summary-of-early-2021-versioning-problems))
+- On or around 30/12/20, starting at around commit e4bb0ba: 
 - Getting the following error in Travis: "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
 /home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
 - In the end when I looked more closely at the errors in Travis I realised it was in a Travis Ruby 2.5.1 directory which seemed to come from the fact that I had rvm version 2.5.1 specified in .travis.yml.
@@ -136,6 +155,7 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 	- Then I got the following error in Travis: "`bundle exec rake` - rake aborted! Don't know how to build task 'default'", so I added lines to my `Rakefile` as recommended by [this article](https://coderwall.com/p/sdxxaa/travis-ci-don-t-know-how-to-build-task-default).
 		- This was the final action that fixed everything!
 		- ...well, sort of. Sadly it meant that [this formatting problem](#issue-with-site-layout-caused-when-you-push-gemfile-lock-changes) returned.
+		- Also I'm pretty sure it was at this point that I started getting a million warnings on the command line whenever I ran jekyll serve.
 - These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml` (see explanation above):
 	- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
 	- Tried the below steps (not sure they were in that order though). Note that I went beyond just looking at bundler versions because I thought everything might have got out of sync because I kept overwriting `Gemfile.lock` because the `mingw` thing kept messing with the formatting of the site (to see an example of a `Gemfile.lock` containing `mingw` references, see [Gemfile-with-mingw.lock](https://github.com/claresudbery/clare-wiki-ably/blob/master/Gemfile-with-mingw.lock)).
@@ -153,10 +173,12 @@ gem update --system
 
 #### Problems related to the above
 
+- (see [above for summary](#summary-of-early-2021-versioning-problems))
+- On or around 26/2/21:
 - At some point after the above I started getting deployment errors because there was no `Gemfile.lock` being pushed to source control.
 	- When I committed Gemfile.lock I got internal server errors on every page of the site except the home page.
 	- So I undid all the changes I'd previously made, apart from the change to the rvm section of `.travis.yml` (see notes above).
-	- Basically what I did was go back to commit e4bb0ba, take copies of the following files and then recommit them at the tip of master - apart from I fixed the rvm section in `.travis.yml` to match `.ruby-version`:
+	- Basically what I did (starting at commit 1be449b) was go back to commit e4bb0ba, take copies of the following files and then recommit them at the tip of master - apart from I fixed the rvm section in `.travis.yml` to match `.ruby-version`:
 		- (these files are all at C:\Temp\wiki-safe\2020-01-26-deployment):
 		- `.gitignore`
 		- `.ruby-version`
@@ -167,9 +189,15 @@ gem update --system
 		- then after that I also reinstated the change that had removed the script sections from `.travis.yml`, because that looked like it might be causing errors in Travis.
 	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
 		- Maybe something to do with the version of nokogiri?
-		- In commit 96d475a I updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
-		- There is an outstanding dependabot branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8
-- Relevant commits in reverse order:
+		- Previously (on 30/12/20) in commit 96d475a, I had updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
+		- There was a [dependabot](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#how-dependabot-works) branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8, but this got closed when I made the changes on 30/12/20, because I'd updated versions of everything.
+		- Then on 26/1/21, presumably because I'd reversed the previous updates, dependabot opened a new PR to bump nokogiri from 1.10.10 to 1.11.0
+	- At some point the formatting problem got fixed again, and I'm really not sure when / how.
+		- I discovered this on 22/2/21
+		- But this Travis error came back again - "`bundle exec rake` - rake aborted! Don't know how to build task 'default'" 
+			- so I made the same change to `Rakefile` detailed above (I made the new change in commit 8587665). 
+			- Then I got the error "cannot load such file -- rspec/core/rake_task", so I added `rspec` to `Gemfile` (in commit 22918d7), ran `bundle install` and checked in the new `Gemfile.lock` (commit efbd13a). This seemed to fix the problem.
+- Relevant commits from the original changes on 30/12/20 - listed in reverse order to identify exactly what was changed:
 	- febe432 Fix rake error in Travis deploy - `Rakefile`
 	- b128805 fixing new deploy errors after losing Gemfile.lock - `.travis.yml` and `script/dummy` (commented out the script-related settings)
 	- 5e9da04 Stop pushing Gemfile.lock to Travis - `.gitignore` and removing `Gemfile.lock.hidden`

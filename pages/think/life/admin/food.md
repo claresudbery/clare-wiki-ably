@@ -35,5 +35,13 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 
 ## Other recipes
 
-- [Grapefruit guacamole](thekitchn.com/recipe-grapefruit-guacamole-recipes-from-the-kitchn-202807) (add ginger and lime?)
+- [Grapefruit guacamole](https://www.thekitchn.com/recipe-grapefruit-guacamole-recipes-from-the-kitchn-202807) 
+    - My notes on that recipe:
+        - Mash the avocado in the bowl first before adding the rest - then just chuck all ingredients on top
+        - Add about 4 cubic inches of fresh root ginger
+        - Don't bother with the onion. But if you do, quarter of a cup is approx quarter of a normal onion-sized onion.
+        - Add a couple of splashes of lime juice
+        - Add three shakes of tabasco
+        - For salt quantity, 6 grinds from a salt grinder works well.
+
 

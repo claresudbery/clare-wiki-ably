@@ -31,3 +31,15 @@ permalink: /pages/think/life/psychology/Psychology-Resources
 - [Interview with me on this topic](https://www.solutionsiq.com/resource/agile-amped-podcast/lets-stop-making-people-feel-stupid/)
 - [Notes from the first time I did this talk](https://insimpleterms.blog/lets-stop-making-people-feel-stupid-2)
 - [Call to action](https://insimpleterms.blog/lets-stop-making-people-feel-stupid)
+
+## Coaching
+
+- Useful overall site [here](https://new.coachingnetwork.org.uk/)
+- List of courses [here](http://www.coachingnetwork.org.uk/information-portal/TrainingAndAccreditation/Default.asp)
+    - ([this one](http://www.coachingnetwork.org.uk/information-portal/TrainingAndAccreditation/Default.asp?t=detail&cid=ALL&oid=59) looks interesting)
+- Some advice on choosing coaching courses [here](http://www.cognitivebehaviouralcoachingworks.com/which-is-the-best-coach-training-course/) and [here](https://positivepsychology.com/coaching-courses/) and [here](https://www.personneltoday.com/hr/the-qualification-game-what-coaching-qualifications-are-really-worth/).
+- Basic principles:
+    - Affiliation with a university is desirable
+    - Some level of professional accreditation is also good
+    - Speak to graduates of the course you choose
+    - Join a professional body before you even start, and pick the brains of the people in online forums
