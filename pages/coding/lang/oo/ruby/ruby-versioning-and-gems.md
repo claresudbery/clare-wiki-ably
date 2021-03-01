@@ -57,8 +57,9 @@ You can install gems using the `gem install` command, and there are lots of othe
 - For advice on how to keep ALL your dependencies (ie gems as well as Ruby itself) up to date, see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process. GitHub's dependabot will also help with this.
 - ...or follow this simple approach:
     - 1. Make sure all dependabot PRs are acted on ([instructions here](#updating-from-dependabot-branches))
-    - 2. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](#acting-on-security-recommendations-with-bundle-audit))
-    - 3. Make sure your main technologies are up to date (for this site, that's Ruby and Jekyll)
+    - 2. Make sure dependabot security alerts are also acted upon (not the same as PRs) (they happen when PRs are not possible - see [how dependabot works](#how-dependabot-works)) ([instructions here](#acting-on-dependabot-alerts))
+    - 3. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](#acting-on-security-recommendations-with-bundle-audit))
+    - 4. Make sure your main technologies are up to date (for this site, that's Ruby and Jekyll)
 
 ### Acting on security recommendations with bundle audit
 
@@ -68,7 +69,7 @@ You can install gems using the `gem install` command, and there are lots of othe
 - Act on recommendations ONE AT A TIME, with a separate commit for each one and testing as you go.
     - eg if `rack` is listed as a vulnerability, run `bundle update rack`
     - or if you are advised to remove a gem altogether:
-        - Search the code for all references
+        - Search the code for all references (and remove them)
         - Then remove the gem from `Gemfile`
         - See commits bcdd478 and ccac302 for an example
 
@@ -91,12 +92,24 @@ You can install gems using the `gem install` command, and there are lots of othe
         - IMPORTANT: Test the deployed site too!
         - DON'T FORGET: If you merged the PR at GitHub.com, you won't have the updated main branch locally until you run `git pull` (or `git pull --rebase`)
 
+### Acting on dependabot alerts
+
+- See also [How dependabot works](#how-dependabot-works)
+- Dependabot alerts live on the main front page in GitHub
+- or visit Security | Dependabot alerts
+- They require a little more attention - see details in GitHub
+- You may have to remove a gem altogether:
+    - Search the code for all references (and remove them)
+    - Then remove the gem from `Gemfile`
+    - See commits bcdd478 and ccac302 for an example
+
 ### How dependabot works
 
 - See also [Updating from dependabot branches](#updating-from-dependabot-branches)
 - Dependabot is a free service offered by GitHub - you can enable it there
 - !! It does NOT necessarily catch all critical security updates. It's worth using [bundle-audit](https://github.com/rubysec/bundler-audit) as well 
     - `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
+    - although be aware that dependabot creates security alerts as a separate process to its main PRs - see below
 - Dependabot identifies dependency updates and creates pull requests suggesting you update your dependencies.
 	- If you don't merge the pull requests, they are not merged into your code base.
 	- The PRs create new branches and automatically trigger Travis deploys (or whatever CI integration you're using). This is why you sometimes get failed builds that mention dependabot - it's because Travis is trying to build the PR branch.
@@ -106,6 +119,11 @@ You can install gems using the `gem install` command, and there are lots of othe
         - If you click Details on the right, it will take you through to Travis
 	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build? Or it just keeps re-running them at regular intervals?
 	- Sometimes the PRs are closed automatically - for instance if you run a bundle update yourself and your dependencies are updated, so dependabot detects that the PR is no longer needed. Or because you make changes to your `Gemfile` so that the dependency that dependabot is trying to update is no longer even a dependency of your project.
+- ALERTS:
+    - As well as PRs, there are also dependabot alerts
+    - These happen when PRs can't be created - for instance because conflicting dependencies prevent an update to a non-vulnerable version
+    - These will live on the main front page in GitHub
+    - or visit Security | Dependabot alerts
 
 ## Different versions of Ruby
 
@@ -470,15 +488,11 @@ require 'bundler/setup'
 ## To do
 
 - Answer the questions in this doc
-- Fix clare-wiki problems 
+- Update clare-wiki 
+    - Fix kramdown vulnerability by [upgrading Jekyll](https://jekyllrb.com/docs/upgrading/3-to-4/)
     - update Ruby version 
     - Update gems 
-    - Update nokogiri and anything else specified by dependabot 
-        - See the change I made to `Gemfile` on 30th Dec, commit 96d475a. 
-        - See also [notes in jekyll troubleshooting.md](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#bundler-version-problems-when-deploying-with-travis) 
-        - See also the dependabot branch relating to nokogiri version, from 27/11/20.
     - see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process.
-    - Find out what's going on with deployment failures
 - Fix problems with martin fowler
     - I made a change to `class-too-large.xml` which I didn't push to the remote repo because I wasn't able to test it locally.
         - There's a backup in Dropbox at Desktop\Current\refactoring
