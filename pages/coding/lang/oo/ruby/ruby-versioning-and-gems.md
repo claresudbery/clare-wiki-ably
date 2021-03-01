@@ -231,7 +231,7 @@ require 'bundler/setup'
     - This can be very useful if you're trying to update one gem and keep getting errors about other related gems relying on different versions of each other - just update them all at once.
 - Update one gem (and its dependencies): `bundle update gem-name`
     - To update it to a particular version, specify the version in `Gemfile` and then run `bundle install`
-    - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
+    - `~> 1.2.1` means version `1.2.1` or later, but only if it's prefixed `1.2`. So `1.2.5` would be installed, but `1.3` would not.
         - Like this: `gem "redcarpet", "~> 3.4"`
     - `>= 1.1` would mean version `1.1` or later, including `1.2`, `1.3` and even `7.2`.
         - Like this: `gem "redcarpet", ">= 3.4"`
