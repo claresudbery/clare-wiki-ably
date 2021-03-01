@@ -132,7 +132,11 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - You should check `Gemfile.lock` into source control so that you know exactly what versions of gems you are using for each commit. The exception to this is when you're building a library - in which case you only commit `Gemfile`. The reason for this is that your library could end up being just one link in a dependency chain, and other versions may be required of upstream or downstream dependencies (I think).
 - In your Gemfile, this is the notation used to express version preferences:
     - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
+        - Like this: `gem "redcarpet", "~> 3.4"`
     - `>= 1.1` would mean version `1.1` or later, including `1.2`, `1.3` and even `7.2`.
+        - Like this: `gem "redcarpet", ">= 3.4"`
+    - `1.1` specifies an exact version (not recommended)
+        - Like this: `gem "redcarpet", "3.4"`
 - If you use `bundler` and have a `Gemfile` instead of using `gem install`, then when you run `bundle install` it does the same as `gem install`, and makes sure the specified version is installed. You could replicate this by manually running `gem install` for all the relevant gems and their versions (but probably wouldn't want to).
 - Putting `bundle exec` before a command, e.g. `bundle exec rspec`, ensures that `require` will load the version of a gem specified in your `Gemfile.lock` as opposed to the most recent version.
 - If you're using `bundler`, then you should add these two lines to the first file your application loads:
@@ -148,6 +152,20 @@ require 'bundler/setup'
     - [More here](brianstorti.com/understanding-bundler-setup-process/) and [here](https://bundler.io/rationale.html).
 - You can use `Bundler.require(:default)` as shorthand to `require` everything in your `Gemfile`.
 - Bundler will not update dependencies of dependencies if it means the resulting gem will be a version incompatible with another gem that also depends on it.
+
+### Useful Bundler commands
+
+- Update all gems: `bundle update` (exercise caution though)
+- Update one gem (and its dependencies): `bundle update gem-name`
+    - To update it to a particular version, specify the version in `Gemfile` and then run `bundle install`
+    - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
+        - Like this: `gem "redcarpet", "~> 3.4"`
+    - `>= 1.1` would mean version `1.1` or later, including `1.2`, `1.3` and even `7.2`.
+        - Like this: `gem "redcarpet", ">= 3.4"`
+    - `1.1` specifies an exact version (not recommended)
+        - Like this: `gem "redcarpet", "3.4"`
+- Find out which gems are outdated: `bundle outdated`
+- Find out which gems have security vulnerabilities: Use [bundle-audit](https://github.com/rubysec/bundler-audit): `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
 
 ## Errors / problems you might see
 
