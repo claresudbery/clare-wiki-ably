@@ -226,6 +226,7 @@ require 'bundler/setup'
 ### Useful Bundler commands
 
 - Update all gems: `bundle update` (exercise caution though)
+    - The [documentation on bundle update](https://bundler.io/man/bundle-update.1.html) is quite good but you have to read it thoroughly and carefully!
 - Update multiple gems: `bundle update gem1 gem2 gem3`
     - This can be very useful if you're trying to update one gem and keep getting errors about other related gems relying on different versions of each other - just update them all at once.
 - Update one gem (and its dependencies): `bundle update gem-name`
