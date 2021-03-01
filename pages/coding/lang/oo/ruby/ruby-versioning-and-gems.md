@@ -66,7 +66,11 @@ You can install gems using the `gem install` command, and there are lots of othe
     - `gem install bundle-audit` (or add to `Gemfile`) 
 - Run `bundle-audit` on command line
 - Act on recommendations ONE AT A TIME, with a separate commit for each one and testing as you go.
-    - eg if `omniauth` is listed as a vulnerability, run `bundle update omniauth`
+    - eg if `rack` is listed as a vulnerability, run `bundle update rack`
+    - or if you are advised to remove a gem altogether:
+        - Search the code for all references
+        - Then remove the gem from `Gemfile`
+        - See commits bcdd478 and ccac302 for an example
 
 ### Updating from dependabot branches
 
