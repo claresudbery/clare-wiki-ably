@@ -1,7 +1,7 @@
 ---
 layout: page
-location: "pages/coding/lang/oo/leaf"
-permalink: /pages/coding/lang/oo/Ruby
+location: "pages/coding/lang/oo/ruby/leaf"
+permalink: /pages/coding/lang/oo/ruby/Ruby
 ---
 
 ## GitHub Repos 
@@ -53,6 +53,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above two tutorials. It's deployed on Heroku [here](https://sinatra-docker.herokuapp.com/).
   - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
   - Views are held in *.erb template files (same is true of Rails) - `erb` stands for embedded ruby
+- Have a look at [the Shotgun gem](https://github.com/rtomayko/shotgun) if you don't want to have to restart your server every time you make a change.
+
+## Deployment with Heroku
+
+- [Deploying ruby using heroku](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#deploying-ruby-using-heroku)
+- [Ruby version problems when deploying with Heroku](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-problems-when-deploying-with-heroku)
 
 ## Debugging
 
@@ -122,23 +128,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Gems, packaging, versioning
 
+- [My separate page on gems, versions and packaging](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems)
 - [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - Require, gems, loading files: 
   [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
-- [Ruby version stuff](https://clare-wiki.herokuapp.com/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-stuff) - my notes (written frequently in a state of confusion - quite chaotic)
- 
-- If you get the error “cannot load such file” you need to check
-  your load path by running **irb** on command line and then
-  typing **$LOAD\_PATH**
-
-  - If you get “cannot load such file -- bundler/setup (LoadError)” then
-    you might need to run **bundle install** or vendor install or both
-    
-      - If you get “command not found: bundle” then you might need to
-        install Bundler: **sudo gem install bundler**
-        
-          - \!\! The password it wants is your laptop password
 
 ## Testing
 
@@ -155,21 +149,40 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Mocking stuff that is in a module instead of a class, using RR:
       [<span class="underline">https://github.com/btakita/rr/issues/98</span>](https://github.com/btakita/rr/issues/98)
 
-### Rspec
+### Front end testing
 
-- Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
-- [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
-- [Rspec style guide](https://rspec.rubystyle.guide/)
-- [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
-- [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
-- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers). DON'T FORGET TO ADD the following to `spec_helper.rb`:
+- [Helpful guide on using `Rack::Test`](http://sinatrarb.com/testing.html) to test what is returned by your routes.
+  - Note that this allows you to interrogate the dom, but it doesn't automatically give you the capacity to test user interactions - eg button clicks. For that you will need something like [Capybara](http://testing-for-beginners.rubymonstas.org/headless/capybara.html) or [Cypress](https://www.toolsqa.com/cypress/what-is-cypress/).
+- Examples of front end testing using Rack::Test with Sinatra:
+  - [In cah-answer-generator](https://github.com/claresudbery/cah-answer-generator/blob/main/spec/cahanswers_spec.rb)
+  - [In mars-rover-kata-ruby](https://github.com/claresudbery/mars-rover-kata-ruby/blob/main/spec/webapp_spec.rb)
+  - [In tic-tac-toe-kata](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/spec/tictactoe_spec.rb)
+- Using rspec to do front end testing on html and css (has loads of useful examples in the readme): [rspec-html-matchers](https://github.com/kucaahbe/rspec-html-matchers). DON'T FORGET TO ADD the following to `spec_helper.rb` and `Gemfile`:
 
+**In `spec_helper.rb`:**  
 ```ruby
 require "rspec-html-matchers"
 
 RSpec.configure do |config|
   config.include RSpecHtmlMatchers
 ```
+
+**In `Gemfile`:**  
+```ruby
+gem "rspec-html-matchers"
+```
+
+### Rspec
+
+- Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
+- [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
+- [Rspec style guide](https://rspec.rubystyle.guide/)
+- [All the different types of rspec expect statements](https://relishapp.com/rspec/rspec-expectations/v/3-8/docs/built-in-matchers/include-matcher)
+- Rspec syntax:
+  - [built-in matchers](https://relishapp.com/rspec/rspec-expectations/v/3-10/docs/built-in-matchers) (like `to eq` and `not_to eq`)
+  - [Other matchers](https://gist.github.com/JunichiIto/f603d3fbfcf99b914f86) (like `a_string_ending_with`, `a_string_starting_with`, and `a_string_including`)
+- [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
+- See [Front end testing](#front-end-testing) for how to do front end testing with Rspec.
 
 #### Test cases in rspec
 
@@ -219,10 +232,12 @@ More examples of `stdin` and `stdout` testing in [this file here](https://github
 
 ### Misc Language Stuff
 
+- [General Ruby docs](https://docs.ruby-lang.org/en/2.0.0/index.html) (they're pretty good, once you've searched for what you're interested in).
 - Return values in Ruby functions are the last thing that was assigned
   - the **return** statement is often not used
 
 - IRB is the standard Ruby repl (run `irb` on command line)
+  - If you run it using `irb -rpp`, you'll get pretty-printing (passing `-r` to `irb` will automatically require a library when irb is loaded - in this case the `pretty_print` library).
   - Enter `exit` to leave)
   - Enter `load './myfile.rb'` to load a Ruby file called `myfile.rb` in the current folder (`./`)
     - To reload, just enter `load './myfile.rb'` again.
@@ -494,4 +509,12 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
 
 - If RSpec is a Gem, why is it never required in your spec files? How do they get the code they need? And what does the `--` mean in front of `require spec_helper` in the `.rspec` file?
 
+## Monkey patching
 
+"It's simply the dynamic replacement of attributes at runtime.
+
+For instance, consider a class that has a method get_data. This method does an external lookup (on a database or web API, for example), and various other methods in the class call it. However, in a unit test, you don't want to depend on the external data source - so you dynamically replace the get_data method with a stub that returns some fixed data."
+
+From [here](https://stackoverflow.com/questions/5626193/what-is-monkey-patching).
+
+Caution: "In our experience, having monkey-patched gems is usually one of the hardest things to deal with. We have to spend hours updating monkey-patched gems to make them compatible with newer Rails APIs. So please keep that in mind before monkey patching Rails core libraries or gems that depend on specific Rails versions." From [here](https://www.fastruby.io/blog/rails/upgrades/how-to-stay-up-to-date.html).
