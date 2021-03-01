@@ -1,6 +1,6 @@
 require 'rubygems'
+require 'bundler/setup'
 require 'sinatra'
-require 'omniauth-auth0'
 require 'dotenv/load'
 
 #### Sinatra App ####
