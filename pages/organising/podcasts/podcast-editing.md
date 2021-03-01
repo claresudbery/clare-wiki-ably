@@ -10,6 +10,8 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 
 ## Interview editing steps
 
+### Create a transcript
+
 - Start with a recording that has both voices on at once
     - You get this by default with a Zoom recording
     - in [Squadcast](https://app.squadcast.fm/sessions), they're separate by default, but you can get both voices in one recording like this:
@@ -18,11 +20,9 @@ permalink: /pages/organising/podcasts/Podcast-Editing
         - Click Mix Recordings
 - Upload the mixed recording to [Temi](https://www.temi.com/) (use the big button on the home page)
     - Create a transcript
-- Load the mixed recording into [Audacity](https://www.audacityteam.org/) 
-    - Or you can load individual interviewees and line them up so the timing is right
-    - (I have Audacity installed on my Windows laptop)   
-    - Use File | Import | Audio
-        - You can use the Quick Access section (top left) to access favourite folders (instead of having to drill down through entire directory structure)
+
+### Create first pass of section headings
+
 - First get a feel for the broad outline
     - SKIM the transcript
     - Quickly insert headings broadly describing each section - these will have descriptive titles rather than the T001, etc you'll be using later.
@@ -32,6 +32,9 @@ permalink: /pages/organising/podcasts/Podcast-Editing
         - This way you won't waste ages listening to those sections in detail - you can just ignore them from the start
         - You can use Ctrl + Alt + S in Word to strikethrough the sections you want to lose.
         - It's also worth suffixing headings with y, n and m for Yes, No and Maybe to indicate whether sections will be kept or not.
+
+### Make a note of timestamps
+
 - Now start inserting timestamped labels in Audacity and Word
     - Have Audacity and the transcript open side by side
     - Do two passes:
@@ -41,7 +44,7 @@ permalink: /pages/organising/podcasts/Podcast-Editing
             - When you number the labels, leave gaps because you will be adding more granular labels later
             - For instance, T10, T20 etc (use your judgement re how big the gaps should be - leave bigger gaps than you think you'll need)
         - On the second, add more granular timestamps, but only in the sections you're keeping 
-    - Whenever you reach a point that may mark the start or end of a clip, give it a label (mostly I give them labels like T002, T003, apart from obvious milestones like T001start - which I add text to)
+    - Whenever you reach a point that may mark the start or end of a clip, give it a label (I just give them labels like T002, T003)
         - In Audacity:
             - Use Ctrl + mouse wheel to zoom in/out - but only one scroll click at a time! Otherwise it goes haywire.
             - click X to pause the recording there (means it will resume at the same point, which it wouldn't if you used spacebar)
@@ -67,6 +70,9 @@ permalink: /pages/organising/podcasts/Podcast-Editing
                 - This is my custom shortcut for strikethrough in Microsoft Word - you can create your own [following these instructions](https://word.tips.net/T000418_Strikethrough_Shortcut_Key.html)
             - Ctrl + Shift + N to undo the heading style (goes back to "normal")
 - Make sure you create one last label which marks the end of the recording.
+
+### Use timestamps to calculate rough episode length(s)
+
 - When you're done, transfer timestamps to a spreadsheet to get an idea of length:
     - In Word:
         - Click View | Outline

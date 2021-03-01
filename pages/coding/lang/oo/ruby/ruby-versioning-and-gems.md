@@ -49,13 +49,48 @@ You can install gems using the `gem install` command, and there are lots of othe
 
 [More on gems here](https://guides.rubygems.org/rubygems-basics/)
 
-## Different versions of Ruby
+## Staying up to date
 
-### Staying up to date
-
+- See also [Different versions of Ruby](#different-versions-of-ruby)
 - NB: You should aim to always keep your Ruby version at the most stable version (in Jan 2021 this is 3.0.0). 
     - To find the latest stable version, go [here](https://www.ruby-lang.org/en/downloads/). 
 - For advice on how to keep ALL your dependencies (ie gems as well as Ruby itself) up to date, see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process. GitHub's dependabot will also help with this.
+
+### How dependabot works
+
+- See also [Updating from dependabot branches](#updating-from-dependabot-branches)
+- Dependabot is a free service offered by GitHub - you can enable it there
+- !! It does NOT necessarily catch all critical security updates. It's worth using [bundle-audit](https://github.com/rubysec/bundler-audit) as well 
+    - `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
+- Dependabot identifies dependency updates and creates pull requests suggesting you update your dependencies.
+	- If you don't merge the pull requests, they are not merged into your code base.
+	- The PRs create new branches and automatically trigger Travis deploys (or whatever CI integration you're using). This is why you sometimes get failed builds that mention dependabot - it's because Travis is trying to build the PR branch.
+    - It will actually trigger TWO Travis builds I think - one for what would happen if you built the dependabot branch as-is ("branch"), and one for if you built the branch merged into the main branch ("pull request")
+        - If you click through to the PR in GitHub, you'll see something like "all checks have passed"
+        - Then you can click "Show all checks" and you'll see see two Travis builds - one for "branch" and one for "pull request"
+        - If you click Details on the right, it will take you through to Travis
+	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build? Or it just keeps re-running them at regular intervals?
+	- Sometimes the PRs are closed automatically - for instance if you run a bundle update yourself and your dependencies are updated, so dependabot detects that the PR is no longer needed. Or because you make changes to your `Gemfile` so that the dependency that dependabot is trying to update is no longer even a dependency of your project.
+
+### Updating from dependabot branches
+
+- See also [How dependabot works](#how-dependabot-works)
+- Actions you can take:
+    - If dependabot branches are failing in Travis:
+        - Check / Google error messages in Travis
+		- Switch locally to the dependabot branch 
+			- eg `git checkout dependabot/bundler/activesupport-5.2.4.4` 
+		- Make any changes designed to fix deployment errors 
+			- eg see commit 15802e3
+			- this was when I'd fixed some deployment problems in the main branch but they weren't in the dependabot branch, so I copied them to the dependabot branch for experimentation
+		- Push the branch to the remote, and check the build log in Travis to see if it's fixed the problems
+        - IMPORTANT: Test locally. Does the site still work?
+		- If all is fine, merge the dependabot branch (in GitHub.com, visit Pull Requests at the top of the repo)
+			- If GitHub says there are merge conflicts:
+				- Merge the main branch into the dependabot branch locally (`git merge main` or `git merge master`) and fix conflicts there before merging
+        - IMPORTANT: Test the deployed site too!
+
+## Different versions of Ruby
 
 ### Mac (OSX) and Linux
 
@@ -130,6 +165,13 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - Then when you run `bundle install`, bundler will install everything specified in your Gemfile AND all the dependencies of those gems, and their dependencies... all the way up the dependency tree. 
     - Once it's done, it creates `Gemfile.lock` which lists the exact version currently installed for every gem and every dependency.
     - You should check `Gemfile.lock` into source control so that you know exactly what versions of gems you are using for each commit. The exception to this is when you're building a library - in which case you only commit `Gemfile`. The reason for this is that your library could end up being just one link in a dependency chain, and other versions may be required of upstream or downstream dependencies (I think).
+- In your Gemfile, this is the notation used to express version preferences:
+    - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
+        - Like this: `gem "redcarpet", "~> 3.4"`
+    - `>= 1.1` would mean version `1.1` or later, including `1.2`, `1.3` and even `7.2`.
+        - Like this: `gem "redcarpet", ">= 3.4"`
+    - `1.1` specifies an exact version (not recommended)
+        - Like this: `gem "redcarpet", "3.4"`
 - If you use `bundler` and have a `Gemfile` instead of using `gem install`, then when you run `bundle install` it does the same as `gem install`, and makes sure the specified version is installed. You could replicate this by manually running `gem install` for all the relevant gems and their versions (but probably wouldn't want to).
 - Putting `bundle exec` before a command, e.g. `bundle exec rspec`, ensures that `require` will load the version of a gem specified in your `Gemfile.lock` as opposed to the most recent version.
 - If you're using `bundler`, then you should add these two lines to the first file your application loads:
@@ -145,6 +187,20 @@ require 'bundler/setup'
     - [More here](brianstorti.com/understanding-bundler-setup-process/) and [here](https://bundler.io/rationale.html).
 - You can use `Bundler.require(:default)` as shorthand to `require` everything in your `Gemfile`.
 - Bundler will not update dependencies of dependencies if it means the resulting gem will be a version incompatible with another gem that also depends on it.
+
+### Useful Bundler commands
+
+- Update all gems: `bundle update` (exercise caution though)
+- Update one gem (and its dependencies): `bundle update gem-name`
+    - To update it to a particular version, specify the version in `Gemfile` and then run `bundle install`
+    - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
+        - Like this: `gem "redcarpet", "~> 3.4"`
+    - `>= 1.1` would mean version `1.1` or later, including `1.2`, `1.3` and even `7.2`.
+        - Like this: `gem "redcarpet", ">= 3.4"`
+    - `1.1` specifies an exact version (not recommended)
+        - Like this: `gem "redcarpet", "3.4"`
+- Find out which gems are outdated: `bundle outdated`
+- Find out which gems have security vulnerabilities: Use [bundle-audit](https://github.com/rubysec/bundler-audit): `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
 
 ## Errors / problems you might see
 
@@ -396,11 +452,7 @@ require 'bundler/setup'
 
 ## To do
 
-- Read / Add more documentation on [how gems work](https://guides.rubygems.org/rubygems-basics/)
-    - Answer the question of whether gems are installed locally or globally by default, and whether there's any concept of local or global without the use of bundler (I think there might be a local/global thing, because when you look at `$LOAD_PATH`, you see some gems listed in a `local` folder?)
-- Read / Add more documentation on [how bundler works](https://bundler.io/rationale.html)
-    - Does bundler somehow install gems only local to the project of the `Gemfile`? How does that work?
-- Read this article [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
+- Answer the questions in this doc
 - Fix clare-wiki problems 
     - update Ruby version 
     - Update gems 
@@ -408,6 +460,7 @@ require 'bundler/setup'
         - See the change I made to `Gemfile` on 30th Dec, commit 96d475a. 
         - See also [notes in jekyll troubleshooting.md](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#bundler-version-problems-when-deploying-with-travis) 
         - See also the dependabot branch relating to nokogiri version, from 27/11/20.
+    - see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process.
     - Find out what's going on with deployment failures
 - Fix problems with martin fowler
     - I made a change to `class-too-large.xml` which I didn't push to the remote repo because I wasn't able to test it locally.

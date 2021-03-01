@@ -37,6 +37,11 @@ See also [Staying sane during the COVID-19 crisis](http://127.0.0.1:4000/pages/t
 
 - The [ugh field](https://medium.com/@robertwiblin/ugh-fields-or-why-you-can-t-even-bear-to-think-about-that-task-5941837dac62) - how to get better at doing those tasks you keep putting off (not the ugh response as I previously thought).
 
+- Random bits of pop-psychology advice that may or may not be useful:
+    - "Beth" from GCHQ ([via Anne-Marie Imafidon's podcast](https://podcasts.apple.com/gb/podcast/beth-gchq-spying-security-and-sausage-rolls/id1454224152?i=1000431014174)) suggests that if you can, try to replace anger and anxiety with curiosity. What's happening here? Why?
+    - Quote from Hank Green's novel [An Absolutely Remarkable Thing](https://www.goodreads.com/book/show/24233708-an-absolutely-remarkable-thing): "When we care for each other, we are always in a place that matters."
+
+
 ## Eating disorders
 
 Apparently a great book for parents of people with eating disorders is the book [Anorexia and other eating disorders, by Eva Musby](https://anorexiafamily.com/eva-musby-parent-help-anorexic-child-recover/?v=79cba1185463). It contains scripts of what parents should say (because it's very hard to get that right, and horribly easy to get it wrong. Simply commanding or begging or wheedling for your child to change their eating habits is unlikely to have the desired effect).   
@@ -48,6 +53,14 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 ## COVID-19 / coronavirus / Sars-CoV-2
 
 ### Staying sane during the COVID-19 crisis
+
+#### Nice things to do during lockdown
+
+- [Virtual live tours](https://www.virtualtrips.io/)
+- [Virtual cheese tasting](https://www.thecourtyarddairy.co.uk/shop/category/buy-cheese/virtual-cheese-tastings/)
+- [Virtual live comedy](http://www.redimpcomedy.com/)
+- [Make your own burgers from Burger & Beyond](https://burgerandbeyondshop.co.uk/diy-kits/)
+- [Generic nice stuff](/pages/think/life/Nice-Stuff)
 
 #### Positive stuff
 
@@ -146,8 +159,9 @@ worms aren’t worrying.
 ### Some info and links
 
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
+- [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
 
-NB: This collection is already a couple of weeks old. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
+NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 
 - Zoom fatigue:
   - [National Geographic article about Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)

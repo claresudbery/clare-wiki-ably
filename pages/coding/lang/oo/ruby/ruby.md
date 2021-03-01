@@ -151,6 +151,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### Front end testing
 
+- [Helpful guide on using `Rack::Test`](http://sinatrarb.com/testing.html) to test what is returned by your routes.
+  - Note that this allows you to interrogate the dom, but it doesn't automatically give you the capacity to test user interactions - eg button clicks. For that you will need something like [Capybara](http://testing-for-beginners.rubymonstas.org/headless/capybara.html) or [Cypress](https://www.toolsqa.com/cypress/what-is-cypress/).
 - Examples of front end testing using Rack::Test with Sinatra:
   - [In cah-answer-generator](https://github.com/claresudbery/cah-answer-generator/blob/main/spec/cahanswers_spec.rb)
   - [In mars-rover-kata-ruby](https://github.com/claresudbery/mars-rover-kata-ruby/blob/main/spec/webapp_spec.rb)
@@ -180,7 +182,7 @@ gem "rspec-html-matchers"
   - [built-in matchers](https://relishapp.com/rspec/rspec-expectations/v/3-10/docs/built-in-matchers) (like `to eq` and `not_to eq`)
   - [Other matchers](https://gist.github.com/JunichiIto/f603d3fbfcf99b914f86) (like `a_string_ending_with`, `a_string_starting_with`, and `a_string_including`)
 - [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
-- See [Front end testing](front-end-testing) for how to do front end testing with Rspec.
+- See [Front end testing](#front-end-testing) for how to do front end testing with Rspec.
 
 #### Test cases in rspec
 
@@ -507,4 +509,12 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
 
 - If RSpec is a Gem, why is it never required in your spec files? How do they get the code they need? And what does the `--` mean in front of `require spec_helper` in the `.rspec` file?
 
+## Monkey patching
 
+"It's simply the dynamic replacement of attributes at runtime.
+
+For instance, consider a class that has a method get_data. This method does an external lookup (on a database or web API, for example), and various other methods in the class call it. However, in a unit test, you don't want to depend on the external data source - so you dynamically replace the get_data method with a stub that returns some fixed data."
+
+From [here](https://stackoverflow.com/questions/5626193/what-is-monkey-patching).
+
+Caution: "In our experience, having monkey-patched gems is usually one of the hardest things to deal with. We have to spend hours updating monkey-patched gems to make them compatible with newer Rails APIs. So please keep that in mind before monkey patching Rails core libraries or gems that depend on specific Rails versions." From [here](https://www.fastruby.io/blog/rails/upgrades/how-to-stay-up-to-date.html).
