@@ -55,22 +55,18 @@ You can install gems using the `gem install` command, and there are lots of othe
 - NB: You should aim to always keep your Ruby version at the most stable version (in Jan 2021 this is 3.0.0). 
     - To find the latest stable version, go [here](https://www.ruby-lang.org/en/downloads/). 
 - For advice on how to keep ALL your dependencies (ie gems as well as Ruby itself) up to date, see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process. GitHub's dependabot will also help with this.
+- ...or follow this simple approach:
+    - 1. Make sure all dependabot PRs are acted on ([instructions here](#updating-from-dependabot-branches))
+    - 2. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](#acting-on-security-recommendations-with-bundle-audit))
+    - 3. Make sure your main technologies are up to date (for this site, that's Ruby and Jekyll)
 
-### How dependabot works
+### Acting on security recommendations with bundle audit
 
-- See also [Updating from dependabot branches](#updating-from-dependabot-branches)
-- Dependabot is a free service offered by GitHub - you can enable it there
-- !! It does NOT necessarily catch all critical security updates. It's worth using [bundle-audit](https://github.com/rubysec/bundler-audit) as well 
-    - `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
-- Dependabot identifies dependency updates and creates pull requests suggesting you update your dependencies.
-	- If you don't merge the pull requests, they are not merged into your code base.
-	- The PRs create new branches and automatically trigger Travis deploys (or whatever CI integration you're using). This is why you sometimes get failed builds that mention dependabot - it's because Travis is trying to build the PR branch.
-    - It will actually trigger TWO Travis builds I think - one for what would happen if you built the dependabot branch as-is ("branch"), and one for if you built the branch merged into the main branch ("pull request")
-        - If you click through to the PR in GitHub, you'll see something like "all checks have passed"
-        - Then you can click "Show all checks" and you'll see see two Travis builds - one for "branch" and one for "pull request"
-        - If you click Details on the right, it will take you through to Travis
-	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build? Or it just keeps re-running them at regular intervals?
-	- Sometimes the PRs are closed automatically - for instance if you run a bundle update yourself and your dependencies are updated, so dependabot detects that the PR is no longer needed. Or because you make changes to your `Gemfile` so that the dependency that dependabot is trying to update is no longer even a dependency of your project.
+- Install [bundle-audit](https://github.com/rubysec/bundler-audit) (if not done already)
+    - `gem install bundle-audit` (or add to `Gemfile`) 
+- Run `bundle-audit` on command line
+- Act on recommendations ONE AT A TIME, with a separate commit for each one and testing as you go.
+    - eg if `omniauth` is listed as a vulnerability, run `bundle update omniauth`
 
 ### Updating from dependabot branches
 
@@ -89,6 +85,23 @@ You can install gems using the `gem install` command, and there are lots of othe
 			- If GitHub says there are merge conflicts:
 				- Merge the main branch into the dependabot branch locally (`git merge main` or `git merge master`) and fix conflicts there before merging
         - IMPORTANT: Test the deployed site too!
+        - DON'T FORGET: If you merged the PR at GitHub.com, you won't have the updated main branch locally until you run `git pull` (or `git pull --rebase`)
+
+### How dependabot works
+
+- See also [Updating from dependabot branches](#updating-from-dependabot-branches)
+- Dependabot is a free service offered by GitHub - you can enable it there
+- !! It does NOT necessarily catch all critical security updates. It's worth using [bundle-audit](https://github.com/rubysec/bundler-audit) as well 
+    - `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
+- Dependabot identifies dependency updates and creates pull requests suggesting you update your dependencies.
+	- If you don't merge the pull requests, they are not merged into your code base.
+	- The PRs create new branches and automatically trigger Travis deploys (or whatever CI integration you're using). This is why you sometimes get failed builds that mention dependabot - it's because Travis is trying to build the PR branch.
+    - It will actually trigger TWO Travis builds I think - one for what would happen if you built the dependabot branch as-is ("branch"), and one for if you built the branch merged into the main branch ("pull request")
+        - If you click through to the PR in GitHub, you'll see something like "all checks have passed"
+        - Then you can click "Show all checks" and you'll see see two Travis builds - one for "branch" and one for "pull request"
+        - If you click Details on the right, it will take you through to Travis
+	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build? Or it just keeps re-running them at regular intervals?
+	- Sometimes the PRs are closed automatically - for instance if you run a bundle update yourself and your dependencies are updated, so dependabot detects that the PR is no longer needed. Or because you make changes to your `Gemfile` so that the dependency that dependabot is trying to update is no longer even a dependency of your project.
 
 ## Different versions of Ruby
 
