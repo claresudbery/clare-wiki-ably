@@ -130,6 +130,9 @@ NB: Try to avoid versioning problems by keeping Ruby and all your gems up to dat
     - Then when you run `bundle install`, bundler will install everything specified in your Gemfile AND all the dependencies of those gems, and their dependencies... all the way up the dependency tree. 
     - Once it's done, it creates `Gemfile.lock` which lists the exact version currently installed for every gem and every dependency.
     - You should check `Gemfile.lock` into source control so that you know exactly what versions of gems you are using for each commit. The exception to this is when you're building a library - in which case you only commit `Gemfile`. The reason for this is that your library could end up being just one link in a dependency chain, and other versions may be required of upstream or downstream dependencies (I think).
+- In your Gemfile, this is the notation used to express version preferences:
+    - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
+    - `>= 1.1` would mean version `1.1` or later, including `1.2`, `1.3` and even `7.2`.
 - If you use `bundler` and have a `Gemfile` instead of using `gem install`, then when you run `bundle install` it does the same as `gem install`, and makes sure the specified version is installed. You could replicate this by manually running `gem install` for all the relevant gems and their versions (but probably wouldn't want to).
 - Putting `bundle exec` before a command, e.g. `bundle exec rspec`, ensures that `require` will load the version of a gem specified in your `Gemfile.lock` as opposed to the most recent version.
 - If you're using `bundler`, then you should add these two lines to the first file your application loads:
@@ -396,11 +399,7 @@ require 'bundler/setup'
 
 ## To do
 
-- Read / Add more documentation on [how gems work](https://guides.rubygems.org/rubygems-basics/)
-    - Answer the question of whether gems are installed locally or globally by default, and whether there's any concept of local or global without the use of bundler (I think there might be a local/global thing, because when you look at `$LOAD_PATH`, you see some gems listed in a `local` folder?)
-- Read / Add more documentation on [how bundler works](https://bundler.io/rationale.html)
-    - Does bundler somehow install gems only local to the project of the `Gemfile`? How does that work?
-- Read this article [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
+- Answer the questions in this doc
 - Fix clare-wiki problems 
     - update Ruby version 
     - Update gems 
@@ -408,6 +407,7 @@ require 'bundler/setup'
         - See the change I made to `Gemfile` on 30th Dec, commit 96d475a. 
         - See also [notes in jekyll troubleshooting.md](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#bundler-version-problems-when-deploying-with-travis) 
         - See also the dependabot branch relating to nokogiri version, from 27/11/20.
+    - see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process.
     - Find out what's going on with deployment failures
 - Fix problems with martin fowler
     - I made a change to `class-too-large.xml` which I didn't push to the remote repo because I wasn't able to test it locally.
