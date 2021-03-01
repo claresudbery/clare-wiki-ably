@@ -83,10 +83,12 @@ You can install gems using the `gem install` command, and there are lots of othe
 		- Make any changes designed to fix deployment errors 
 			- eg see commit 15802e3
 			- this was when I'd fixed some deployment problems in the main branch but they weren't in the dependabot branch, so I copied them to the dependabot branch for experimentation
-		- Push the code to the remote, and check the build log in Travis to see if it's fixed the problems
+		- Push the branch to the remote, and check the build log in Travis to see if it's fixed the problems
+        - IMPORTANT: Test locally. Does the site still work?
 		- If all is fine, merge the dependabot branch (in GitHub.com, visit Pull Requests at the top of the repo)
 			- If GitHub says there are merge conflicts:
 				- Merge the main branch into the dependabot branch locally (`git merge main` or `git merge master`) and fix conflicts there before merging
+        - IMPORTANT: Test the deployed site too!
 
 ## Different versions of Ruby
 
