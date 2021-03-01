@@ -14,6 +14,13 @@ It's a great tit.
 - My recording [here](https://twitter.com/ClareSudbery/status/1244883811818713089?s=20)
 - [On Youtube](https://www.youtube.com/watch?v=fiH2VsH73g0)
 
+## What's that bird I took a video of in our front garden?
+
+- It's called a goldcrest
+- It makes a call that sounds like a little baby chick - just a tiny little "peep!"
+- [More info here](http://www.garden-birds.co.uk/birds/goldcrest.html)
+- [My video here](https://vimeo.com/517474751)
+
 ## What's that funny article about javascript frameworks and libraries?
 
 It's [this one](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) by [@jjperezaguinaga](https://twitter.com/jjperezaguinaga).
