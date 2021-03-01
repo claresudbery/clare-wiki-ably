@@ -226,6 +226,8 @@ require 'bundler/setup'
 ### Useful Bundler commands
 
 - Update all gems: `bundle update` (exercise caution though)
+- Update multiple gems: `bundle update gem1 gem2 gem3`
+    - This can be very useful if you're trying to update one gem and keep getting errors about other related gems relying on different versions of each other - just update them all at once.
 - Update one gem (and its dependencies): `bundle update gem-name`
     - To update it to a particular version, specify the version in `Gemfile` and then run `bundle install`
     - `~> 1.1` means version `1.1` or later, but only if it's prefixed `1.1`. So `1.1.5` would be installed, but `1.2` would not.
@@ -493,6 +495,7 @@ require 'bundler/setup'
     - update Ruby version 
     - Update gems 
     - see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process.
+        - try getting bummr working?
 - Fix problems with martin fowler
     - I made a change to `class-too-large.xml` which I didn't push to the remote repo because I wasn't able to test it locally.
         - There's a backup in Dropbox at Desktop\Current\refactoring
