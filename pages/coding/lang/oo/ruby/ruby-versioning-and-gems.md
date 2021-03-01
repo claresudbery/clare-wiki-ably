@@ -491,8 +491,8 @@ require 'bundler/setup'
 ## To do
 
 - Answer the questions in this doc
+- Update the academy gems presentation with any extra useful stuff I've learnt and documented here
 - Update clare-wiki 
-    - Fix kramdown vulnerability by [upgrading Jekyll](https://jekyllrb.com/docs/upgrading/3-to-4/)
     - update Ruby version 
     - Update gems 
     - see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process.
