@@ -14,6 +14,13 @@ It's a great tit.
 - My recording [here](https://twitter.com/ClareSudbery/status/1244883811818713089?s=20)
 - [On Youtube](https://www.youtube.com/watch?v=fiH2VsH73g0)
 
+## What's that bird I took a video of in our front garden?
+
+- It's called a goldcrest
+- It makes a call that sounds like a little baby chick - just a tiny little "peep!"
+- [More info here](http://www.garden-birds.co.uk/birds/goldcrest.html)
+- [My video here](https://vimeo.com/517474751)
+
 ## What's that funny article about javascript frameworks and libraries?
 
 It's [this one](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) by [@jjperezaguinaga](https://twitter.com/jjperezaguinaga).
@@ -86,3 +93,20 @@ Otamatone.
 [Pumped up Kicks!](https://www.youtube.com/watch?v=guSESFWNrOY)
 
 Oh dear, I'd better stop or I'll be here all day.
+
+## What was that giant slide called?
+
+It was a very big, straight, undulating slide with several parallel lanes (so not a helmet smelter).
+
+It was at Prestatyn in the 1970s. I always think it was called the Ummagumma, which seems to be some kind of childhood confusion related to Pink Floyd's album (which my dad owned) and the word "Undulator" (although that's not what the slide was called - but it did undulate).
+
+Anyway, it was called the Astroglide.
+
+It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) in Coasterpedia. Here's a picture of an equivalent slide at Margate: 
+
+![astroglide-at-margate](/resources/images/astroglide.png)
+
+## What are those really creepy American dolls called?
+
+- The ones that stand in the corner and have no faces.
+- It seems they're sometimes called time out dolls and sometimes called corner dolls. [More here](https://twitter.com/1baronjennyson/status/1304465623444058113?).s=21

@@ -21,6 +21,7 @@ permalink: /pages/think/code-princ/testing/TDD
 - [Twitter thread started by Matt Wynne as input into our webinar, encouraging people to ask questions about TDD](https://twitter.com/mattwynne/status/1285239134232158215?s=21)
 - Twitter thread by Mike Hadlow: ["I was a hard-core TDD evangelist. Now I realise it was all a mistake..."](https://twitter.com/mikehadlow/status/1263819765900095491?s=21)
     - Response to that thread (not sure who from, sadly I lost the original tweet): "[Comparing Peter Norvig and Ron Jeffries trying to write a sudoku solver is my favourite illustration of this](https://news.ycombinator.com/item?id=3033446)"
+- [Miro created at XP Manchester](https://miro.com/app/board/o9J_lVcMmxU=/) in an attempt to use the Five Whys technique to determine why XP isn't more widely adopted.
 
 ## Mocks and Mocking 
 

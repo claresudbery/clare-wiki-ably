@@ -101,6 +101,15 @@ Sadly by necessity some of my repos are private. Those that are private are clea
             work for me (maybe because I didn’t call **git submodule
             sync**?) but should probably be using ssh (see below).
 
+## Troubleshooting GitHub access
+
+- If you get an error like this: "ERROR: Permission to repo/reponame.git denied to claresudbery.
+fatal: Could not read from remote repository. Please make sure you have the correct access rights
+and the repository exists."
+  - It might be that you need to set up ssh access (see [below](#use-ssh-to-access-repos-instead-of-https))
+  - It might be that you're using ssh access instead of https (or vice versa) - check the remote origin url configured in `.git/config`
+  - It might be that someone has added you as a collaborator but you have ***forgotten to accept the invite***. Check your email!!
+
 ## Use ssh to Access Repos (instead of https)
 
   - Ssh stuff:

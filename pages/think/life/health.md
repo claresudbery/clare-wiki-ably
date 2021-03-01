@@ -37,6 +37,11 @@ See also [Staying sane during the COVID-19 crisis](http://127.0.0.1:4000/pages/t
 
 - The [ugh field](https://medium.com/@robertwiblin/ugh-fields-or-why-you-can-t-even-bear-to-think-about-that-task-5941837dac62) - how to get better at doing those tasks you keep putting off (not the ugh response as I previously thought).
 
+- Random bits of pop-psychology advice that may or may not be useful:
+    - "Beth" from GCHQ ([via Anne-Marie Imafidon's podcast](https://podcasts.apple.com/gb/podcast/beth-gchq-spying-security-and-sausage-rolls/id1454224152?i=1000431014174)) suggests that if you can, try to replace anger and anxiety with curiosity. What's happening here? Why?
+    - Quote from Hank Green's novel [An Absolutely Remarkable Thing](https://www.goodreads.com/book/show/24233708-an-absolutely-remarkable-thing): "When we care for each other, we are always in a place that matters."
+
+
 ## Eating disorders
 
 Apparently a great book for parents of people with eating disorders is the book [Anorexia and other eating disorders, by Eva Musby](https://anorexiafamily.com/eva-musby-parent-help-anorexic-child-recover/?v=79cba1185463). It contains scripts of what parents should say (because it's very hard to get that right, and horribly easy to get it wrong. Simply commanding or begging or wheedling for your child to change their eating habits is unlikely to have the desired effect).   
@@ -49,9 +54,18 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 
 ### Staying sane during the COVID-19 crisis
 
+#### Nice things to do during lockdown
+
+- [Virtual live tours](https://www.virtualtrips.io/)
+- [Virtual cheese tasting](https://www.thecourtyarddairy.co.uk/shop/category/buy-cheese/virtual-cheese-tastings/)
+- [Virtual live comedy](http://www.redimpcomedy.com/)
+- [Make your own burgers from Burger & Beyond](https://burgerandbeyondshop.co.uk/diy-kits/)
+- [Generic nice stuff](/pages/think/life/Nice-Stuff)
+
 #### Positive stuff
 
 - @andrewdotdobson and his colleagues at Publicis Poke have made [a webapp with a button you can press](https://pressforpositivity.publicispoke.com/) for good positive stuff to cheer you up and distract you. Announced [here on Twitter](https://twitter.com/andrewdotdobson/status/1348612537345052682?s=21).
+- [Some more nice stuff here](/pages/think/life/Nice-Stuff)
 
 #### Meg John and Justin: Podcast and Resources on Stress and Coronavirus
 
@@ -72,7 +86,7 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
   - **Slow deep breathing**
   - **Positive social interaction** - can be as simple as complimenting somebody on their hair
   - **Laughter** - proper belly laughs with someone else, or even just reminiscing about times you laughed together
-  - **Affection** - they recommend a daily 20-second hug or a 6-second hug! It has to last long enough to dissipate your stress.
+  - **Affection** - they recommend a daily 20-second hug or a 6-second kiss! It has to last long enough to dissipate your stress.
   - **Crying** - where you focus on the sensation of crying and try not to perpetuate it by dwelling on the thing you're crying about
   - **Creative expression** - which can be as simple as imagining a little story where you fly over the top of a stressful thing - but doesn't have to be directly related to the source of stress.
 
@@ -145,8 +159,9 @@ worms aren’t worrying.
 ### Some info and links
 
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
+- [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
 
-NB: This collection is already a couple of weeks old. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
+NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 
 - Zoom fatigue:
   - [National Geographic article about Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)
@@ -184,3 +199,11 @@ NB: This collection is already a couple of weeks old. Do you really need to foll
   - [Twitter thread about long term immunity and the UK government's strategy](https://twitter.com/iandonald_psych/status/1238518371651649538?s=20). Warning! It's Twitter so take it with a pinch of salt, but there's some interesting food for thought.
   - Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
 
+## Running and knees
+
+- [Advice on protecting your knees while running](https://www.runandbecome.com/running-training-advice/running-technique-help-avoid-knee-injury)
+  - NB: Cadence is the number of times your foot hits the ground per minute. According to [the above article](https://www.runandbecome.com/running-training-advice/running-technique-help-avoid-knee-injury), you should aim for the same cadence (around 180) whether you are running fast or slow - so you just increase your stride length to get a higher speed.
+  - If you have a slow cadence it's easy to overstride and heel-strike (land on the heel of your foot instead of in the middle of your foot), which is bad for your knees.
+- [Exercises to strengthen the knees](https://www.nhs.uk/live-well/exercise/knee-exercises-for-runners/)
+- [More advice on knees and running](https://www.nhs.uk/live-well/exercise/knee-pain-and-other-running-injuries/)
+- [couch to 5k](https://www.nhs.uk/live-well/exercise/couch-to-5k-week-by-week/)

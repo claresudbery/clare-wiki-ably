@@ -3,6 +3,10 @@ layout: page
 location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/SSH-Access
 ---
+## Setting up ssh keys on your machine
+
+- Everything you need is [here on the Git page](/pages/coding/tools/Git#use-ssh-to-access-repos-instead-of-https).
+
 ## SSH Access to Servers (Mac and Windows)
 
   - \!\! Remember your backend code might be running in a docker
