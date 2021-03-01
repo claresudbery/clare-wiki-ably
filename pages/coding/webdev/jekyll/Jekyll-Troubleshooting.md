@@ -68,6 +68,10 @@ curl https://cli-assets.heroku.com/install.sh | sh
 	* When I ran the ```bundle``` command to install rake, I had to add some permissions:
 		* ```sudo chown -R claresudbery:claresudbery /home/claresudbery/.bundle```
 
+## If you get server errors after deployment
+
+- run `heroku logs --tail --app clare-wiki` on the command line to see keroku server logs
+
 ## Deploying ruby using heroku
 * Here: https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up
 
