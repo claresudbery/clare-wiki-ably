@@ -137,7 +137,7 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 - This left a few more lingering problems, which I fixed by 
 	- altering `Rakefile` to put back the `rspec` section I'd added earlier
 	- adding `rspec` to `Gemfile` (in commit 22918d7), running `bundle install` and checking in the new `Gemfile.lock` (commit efbd13a). This seemed to fix the problem.
-- However this put me back to a situation where all the dependencies are pretty out of date, and dependabot is shouting at me.
+- However this put me back to a situation where all the dependencies are pretty out of date, and [dependabot](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#how-dependabot-works) is shouting at me.
 - Then I learnt a lot more about Ruby versioning and gems, and created [this page here](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems).
 - Finally at the beginning of March 2021, I set about trying to get all dependencies up to date.
 	- See [this section](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#staying-up-to-date) for notes on that.
@@ -190,7 +190,7 @@ gem update --system
 	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
 		- Maybe something to do with the version of nokogiri?
 		- Previously (on 30/12/20) in commit 96d475a, I had updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
-		- There was a dependabot branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8, but this got closed when I made the changes on 30/12/20, because I'd updated versions of everything.
+		- There was a [dependabot](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#how-dependabot-works) branch from 27/11/20 trying to bump the nokogiri version from 1.10.4 to 1.10.8, but this got closed when I made the changes on 30/12/20, because I'd updated versions of everything.
 		- Then on 26/1/21, presumably because I'd reversed the previous updates, dependabot opened a new PR to bump nokogiri from 1.10.10 to 1.11.0
 	- At some point the formatting problem got fixed again, and I'm really not sure when / how.
 		- I discovered this on 22/2/21
@@ -208,14 +208,6 @@ gem update --system
 	- 1e42796 Fixing and documenting the Travis deployment error problem - `Gemfile.lock` and  `Gemfile`
 	- 96d475a Updated gems to try fix Travis deployment error - `Gemfile.lock` and  `Gemfile` and `.ruby-version`
 	- e4bb0ba Fix bad gemfile.lock - `Gemfile.lock`
-
-## Dependabot issues
-
-- Dependabot identifies critical dependency updates and creates pull requests suggesting you update your dependencies.
-	- If you don't merge the pull requests, they are not merged into your code base.
-	- The PRs create new branches and automatically trigger Travis deploys. This is why you sometimes get failed builds that mention dependabot - it's because Travis is trying to build the PR branch.
-	- I think maybe every time you push new changes, the PR branch is automatically updated and Travis runs another build? Or it just keeps re-running them at regular intervals?
-	- Sometimes the PRs are closed automatically - for instance if you run a bundle update yourself and your dependencies are updated, so dependabot detects that the PR is no longer needed. Or because you make changes to your `Gemfile` so that the dependency that dependabot is trying to update is no longer even a dependency of your project.
 	
 ## Favicon Stuff
 
