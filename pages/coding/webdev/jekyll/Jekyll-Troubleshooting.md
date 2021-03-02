@@ -350,7 +350,8 @@ Anyway, in the end I fixed it by manually typing out the same words again, remov
 - I upgraded to Jekyll 4.2.0 on 1/3/21
 - This was fine in Travis - everything was building fine.
 - But I got heroku build errors (which confused me - I thought all the building happened in Travis) and deployments failed.
+	- It's also confusing because everything was working fine locally - it's only in Heroku that it fails.
 	- This was the main error: `Markdown processor: "redcarpet" is not a valid Markdown processor. Available processors are: kramdown`
 	- It turns out redcarpet is not supported in Jekyll 4 (but it was in Jekyll 3). This is not well documented.
 	- I found [this article](https://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/) and followed its advice for moving from redcarpet to kramdown
-	- See commit 
+	- See commit a3717f6
