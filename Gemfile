@@ -20,7 +20,7 @@ gem "thin", "~> 1.7"
 
 gem "dotenv", "~> 2.2"
 
-gem "redcarpet", "~> 3.5"
+gem "kramdown", "~> 2.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

@@ -8,11 +8,12 @@ twitter_username: claresudbery
 github_username:  claresudbery
 
 # Build settings
-markdown: redcarpet
 theme: minima
-
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "highlight", "with_toc_data"]
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

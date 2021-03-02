@@ -344,3 +344,13 @@ It turned out this was caused by a particular line of text in a markdown file (p
 
 I tried running dos2unix on that file, but it didn't work. Then again, I ran it in GitBash. Should I have run it in Linux?
 Anyway, in the end I fixed it by manually typing out the same words again, removing the original text. So it's a bit of a mystery!
+
+## Switching from redcarpet to kramdown
+
+- I upgraded to Jekyll 4.2.0 on 1/3/21
+- This was fine in Travis - everything was building fine.
+- But I got heroku build errors (which confused me - I thought all the building happened in Travis) and deployments failed.
+	- This was the main error: `Markdown processor: "redcarpet" is not a valid Markdown processor. Available processors are: kramdown`
+	- It turns out redcarpet is not supported in Jekyll 4 (but it was in Jekyll 3). This is not well documented.
+	- I found [this article](https://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/) and followed its advice for moving from redcarpet to kramdown
+	- See commit 
