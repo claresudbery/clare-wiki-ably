@@ -364,3 +364,4 @@ Anyway, in the end I fixed it by manually typing out the same words again, remov
 	- It turns out redcarpet is not supported in Jekyll 4 (but it was in Jekyll 3). This is not well documented.
 	- I found [this article](https://idratherbewriting.com/2016/02/21/bug-with-kramdown-and-rouge-with-github-pages/) and followed its advice for moving from redcarpet to kramdown
 	- See commit a3717f6
+- See also [this GitHub issue](https://github.com/claresudbery/clare-wiki-ably/issues/1) where I had a convo with the person who wrote the toc element I'm using, and they recommended replacing `redcarpet` with `kramdown` to fix a toc formatting issue (which actually I'd already fixed by editing `toc.html` - see commits 34b357f, 8f89162, 175a4df and [my toc notes](/pages/organising/bigindex/Big-Index-Useful-Tools#generating-table-of-contents-toc))

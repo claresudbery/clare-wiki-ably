@@ -58,8 +58,9 @@ You can install gems using the `gem install` command, and there are lots of othe
 - ...or follow this simple approach (there are [some notes here](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#problems-related-to-the-above) re when I did this on 1/3/21 - see commits cd73da4 to d9548ea):
     - 1. Make sure all dependabot PRs are acted on ([instructions here](#updating-from-dependabot-branches))
     - 2. Make sure dependabot security alerts are also acted upon (not the same as PRs) (they happen when PRs are not possible - see [how dependabot works](#how-dependabot-works)) ([instructions here](#acting-on-dependabot-alerts))
-    - 3. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](#acting-on-security-recommendations-with-bundle-audit))
+    - 3. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](#acting-on-security-recommendations-with-bundle-audit))    
     - 4. Make sure your main technologies are up to date (for this site, that's Ruby and Jekyll)
+    - 5. Run `bundle outdated` at regular intervals and then run `bundle update [gem-name]` one at a time on each of the outdated gems, with a separate commit for each gem (fixing any related deprecation warnings in the same commit) ([more detail here](https://thoughtbot.com/blog/keep-your-gems-up-to-date))
 
 ### Acting on security recommendations with bundle audit
 
@@ -501,6 +502,7 @@ require 'bundler/setup'
 - Update clare-wiki 
     - update Ruby version 
     - Update gems 
+        - one at a time (see article below) - run `bundle outdated` and then `bundle update gem-name` on each of the outdated gems.
     - see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process.
         - try getting bummr working?
 - Fix problems with martin fowler
