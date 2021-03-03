@@ -55,7 +55,7 @@ You can install gems using the `gem install` command, and there are lots of othe
 - NB: You should aim to always keep your Ruby version at the most stable version (in Jan 2021 this is 3.0.0). 
     - To find the latest stable version, go [here](https://www.ruby-lang.org/en/downloads/). 
 - For advice on how to keep ALL your dependencies (ie gems as well as Ruby itself) up to date, see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process. GitHub's dependabot will also help with this.
-- ...or follow this simple approach:
+- ...or follow this simple approach (there are [some notes here](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#problems-related-to-the-above) re when I did this on 1/3/21 - see commits cd73da4 to d9548ea):
     - 1. Make sure all dependabot PRs are acted on ([instructions here](#updating-from-dependabot-branches))
     - 2. Make sure dependabot security alerts are also acted upon (not the same as PRs) (they happen when PRs are not possible - see [how dependabot works](#how-dependabot-works)) ([instructions here](#acting-on-dependabot-alerts))
     - 3. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](#acting-on-security-recommendations-with-bundle-audit))
@@ -222,11 +222,17 @@ require 'bundler/setup'
     - [More here](brianstorti.com/understanding-bundler-setup-process/) and [here](https://bundler.io/rationale.html).
 - You can use `Bundler.require(:default)` as shorthand to `require` everything in your `Gemfile`.
 - Bundler will not update dependencies of dependencies if it means the resulting gem will be a version incompatible with another gem that also depends on it.
+- Question:
+    - Why didn't `bundler/setup` work in `server.rb` when I removed omniauth but left the require statement in server.rb?
+    - In commit ccac302 I made the relevant changes to server.rb, because in the previous commit I'd removed `omniauth` from `Gemfile`, and everything went fine locally... but when I deployed to `hroku` I got server errors saying there was a `require` statement for `ominauth` but no gem.
+    - I assumed this was because I hadn't done the `bundler/setup` thing, but when I experimented locally by adding `bundler/setup` but leaving the `require` ijn place, everything still worked fine locally - when I would have expected to see the same error I saw in `heroku`.
+    - The original place I learnt about `bundler/setup` was [here](brianstorti.com/understanding-bundler-setup-process/)
 
 ### Useful Bundler commands
 
 - Update all gems: `bundle update` (exercise caution though)
     - The [documentation on bundle update](https://bundler.io/man/bundle-update.1.html) is quite good but you have to read it thoroughly and carefully!
+    - `bundle update` won't update beyond `Gemfile` versions, and you can use `major` and `minor` to specify version details (see [documentation](https://bundler.io/man/bundle-update.1.html)), or you can change versions in `Gemfile` and run `bundle install`. If you don't run `bundle update` and just run `bundle install` a second time after having already run it once, you won't get newer versions of gems even if they exist - it will just use whatever is in `Gemfile.lock` and won't update anything. `bundle update` with no qualifiers will update everything, but won't go beyond the versions specified in `Gemfile`.
 - Update multiple gems: `bundle update gem1 gem2 gem3`
     - This can be very useful if you're trying to update one gem and keep getting errors about other related gems relying on different versions of each other - just update them all at once.
 - Update one gem (and its dependencies): `bundle update gem-name`

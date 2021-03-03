@@ -191,6 +191,14 @@ gem update --system
 		- `Gemfile.lock`
 		- `Rakefile`
 		- then after that I also reinstated the change that had removed the script sections from `.travis.yml`, because that looked like it might be causing errors in Travis.
+	- The above changes meant that my previous `bundle update` was undone, so a lot of gems went back to old versions again.
+		- This wasn't ideal - dependabot certainly didn't like it.
+		- So on 1/3/21, I updated a bunch of gems.
+		- To see everything I did, see commits cd73da4 to d9548ea
+		- I started by merging the dependabot branches
+		- Then I ran [`bundle-audit`](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#acting-on-security-recommendations-with-bundle-audit) and acted on its recommendations
+		- Then I upgraded jekyll (which I couldn't do without simultaneously upgrading minima and html-proofer - I worked out I needed to update versions in `Gemfile` and also run `bundle update jekyll minima html-proofer` after getting a lot of errors about conflicting dependencies centering on those three gems)
+		- Finally I replaced `redcarpet` with `kramdown`, after getting server errors in `heroku` and realising that the newer version of `Jekyll` didn't support `redcarpet` - [see notes here](#switching-from-redcarpet-to-kramdown)
 	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
 		- Maybe something to do with the version of nokogiri?
 		- Previously (on 30/12/20) in commit 96d475a, I had updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above
@@ -223,6 +231,7 @@ gem update --system
 * Here: https://github.com/mmistakes/minimal-mistakes/issues/389
 	
 ## Css/layout not the same locally as remote
+
 * Stored relevant files in C:\Users\CLARE\Downloads\images\BigIndex
 * See screenshots: Local-layout.PNG and Remote-layout.PNG
 * Html and search js are identical (see files in same folder)
