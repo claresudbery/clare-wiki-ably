@@ -33,9 +33,10 @@ Fontaines DC
 
 Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSalPairing Cyberdojo coderdojo
 
-## Exploit of a mom / SQL Mom / Little Bobby Drop Tables (xkcd comic)
+## Exploit of a mom / SQL Mom / Little Bobby Tables / Drop Table (xkcd comic)
 
-![SQL Mom](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+![SQL Mom / Little Bobby Tables](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)  
+
 From [here](https://xkcd.com/327/)
 
 ## What do dock leaves look like?
