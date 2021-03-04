@@ -30,6 +30,7 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 - stand back to back, one describes a picture, the other draws it. 
 - If still stuck for ideas, just google "icebreakers"
 - Use https://really.boring.website/ to play a game
+- Use costumes! Or just hats. A lot easier when everyone is remote.
 
 ## Links to Games Elsewhere
 
