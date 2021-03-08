@@ -19,3 +19,7 @@ permalink: /pages/think/life/Nice-Stuff
 - [donkeys in kitchen](https://twitter.com/oldhamvending/status/1325468674564698112?s=20)
 - [Ray Charles singing Oh Happy Day](https://www.youtube.com/watch?v=wv5n_eCGkvM)
 - [Toddler running a hurdles race](https://twitter.com/FillWerrell/status/1358558415447093251?s=20)
+
+## Jokes
+
+- [Giant Twitter thread](https://twitter.com/Ciara87C/status/1368206672280293378?s=20) full of word play cartoons

@@ -43,5 +43,15 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
         - Add a couple of splashes of lime juice
         - Add three shakes of tabasco
         - For salt quantity, 6 grinds from a salt grinder works well.
+    - My own recipe:
+        - 1 avocado, mashed
+        - cubic inch raw ginger, finely diced
+        - 1 fresh tomato, finely diced
+        - 1 grapefruit, finely diced
+        - 3 shakes tabasco
+        - salt
+        - ground cumin
+        - big sploosh cream
+        - lots of fresh coriander, finely chopped
 
 
