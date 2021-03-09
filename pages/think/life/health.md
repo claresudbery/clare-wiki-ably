@@ -164,6 +164,8 @@ worms aren’t worrying.
 
 **TOTAL GUESSWORK:**
 
+([Here's the link to the actual spreadsheet](https://docs.google.com/spreadsheets/d/1tK3uEDVEPcSqef8kcwVgJSiQQtM-hU0dF4NkEchxTZo/edit?usp=sharing)).  
+
 ![vaccination guessing](/resources/images/vaccination-guessing.png)
 
 NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
