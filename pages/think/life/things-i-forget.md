@@ -39,6 +39,22 @@ Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSa
 
 From [here](https://xkcd.com/327/)
 
+## Is it worth the time? (xkcd comic)
+
+xkcd comic talking about the value of automating vs the time it takes
+
+![Is it worth the time?](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
+    
+From [here](https://xkcd.com/1205/)
+
+## The lucky 10,000 (xkcd comic)
+
+You're one of today's lucky ten thousand! The diet coke and mentos thing.
+
+![lucky ten thousand](https://imgs.xkcd.com/comics/ten_thousand.png)
+    
+From [here](https://xkcd.com/1053/)
+
 ## What do dock leaves look like?
 
 They sometimes have green/brown flowers that grow straight up vertically on stalks 

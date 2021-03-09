@@ -162,6 +162,10 @@ worms aren’t worrying.
 - [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
 - [Link to book your own vaccination](https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/) (once they reach your group)
 
+**TOTAL GUESSWORK:**
+
+![vaccination guessing](/resources/images/vaccination-guessing.png)
+
 NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 
 - Zoom fatigue:
