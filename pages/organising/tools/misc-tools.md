@@ -35,3 +35,11 @@ permalink: /pages/organising/tools/Miscellaneous-Tools
 
 ![Makowka avatar](/resources/images/MAKOWKA-AVATAR.png)
 
+## YouTube timestamp
+
+To add a time stamp to a YouTube video, add `?t=43` tp the end of the url.
+
+The time is in seconds, so if you want to go more than 60 seconds in, just calculate the total num of seconds. For instance 1:30 would be `?t=90`
+
+Like this: https://youtu.be/imNlIoeCjao?t=43
+

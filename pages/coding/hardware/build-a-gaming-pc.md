@@ -19,3 +19,7 @@ permalink: /pages/coding/hardware/Build-a-Gaming-PC
 - That logical increments site is cool and the builds seem reasonable. I second Steve's recommendation that the modest tier would be easily capable of a great experience in the listed titles at 1080p. Decent upgrade path too.
 - checklist for when it won't start: https://forums.tomshardware.com/threads/no-post-system-wont-boot-and-no-video-output-troubleshooting-checklist.1285536/
 - Monitor: You need FreeSync for an AMD graphics card (eg Radeon) and G-Sync for an Nvidia card.
+
+## Build your own Minecraft server
+
+See [this article]()
