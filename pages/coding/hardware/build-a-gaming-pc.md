@@ -22,4 +22,4 @@ permalink: /pages/coding/hardware/Build-a-Gaming-PC
 
 ## Build your own Minecraft server
 
-See [this article]()
+See [this article](Minecraft server: https://uk.godaddy.com/blog/how-to-make-a-minecraft-server/)

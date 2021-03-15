@@ -21,7 +21,7 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
 - Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
 - In groups of 3, design a superhero. You get to choose one super power each and combine them into one hero. Draw a collaborative picture of the result.
-- Say three surprising things about yourself, then everybody asks you lots of questions to find out which one's false.
+- Say three surprising things about yourself (two true, one false), then everybody asks you questions to find out more, then everyone has to guess which one's false.
 - Get everyone to paste a baby pic of themselves into a spreadsheet (give them a few days to get this part done).
     - Then everyone has to guess who's who.
 

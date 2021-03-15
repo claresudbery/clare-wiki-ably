@@ -15,6 +15,12 @@ The original list is [here](https://insimpleterms.blog/the-tech-leads-new-projec
 - Look for quick wins / low hanging fruit - eg improving performance, making savings on services. Tis is the kind of thing that can really benefit from fresh eyes and allows you to make a quick positive impact and therefore cement trust and good relationships, if handled right
     - Do NOT assign blame in this process. You are there to help, not to make other people look bad - particularly if those people are still working in the same organisation, or are closely connected.
 
+## Processes
+
+- Be very clear about agile processes, team hygiene, roles and responsibilities. Be explicit. Negotiate. Get buy-in. Enoucrage people to have input in definiing their own roles and responsobilities, and the whole team should have input into team processes.
+- Be very clear about deadlines, estimation and forecasting. If the end of a sprint is seen as a deadline, WHY? What is gained by that? Do you want to be rushing and panicking at the end of every sprint? If not, what can be to done to mitigate against that?
+- Talk about the trade-offs between estimating and forecasting, and about the fact that an estimate is just a guess to be validated using end-of-sprint data so you can plan the next sprint more effectively. Estimates are not promises, they are just planning tools.
+
 ## Building new relationships 
 
 Be explicit about the following:
@@ -29,4 +35,4 @@ Be explicit about the following:
 
 ## Potential Pitfalls
 
-Remember to find out what outputs or outcomes you are being measured by. It doesn't matter how well you think you are doing if you're being measured by something you either didn't know about or don't agree with.
+- Remember to find out what outputs or outcomes you are being measured by. It doesn't matter how well you think you are doing if you're being measured by something you either didn't know about or don't agree with.
