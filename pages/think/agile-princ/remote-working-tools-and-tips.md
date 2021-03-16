@@ -34,10 +34,12 @@ tools you don’t have licenses for:
   - [Storiesonboard.com](http://storiesonboard.com)
     for user story boards and release planning. Not sure how secure it is. For fee product.
 
-  - ~~[Miro (used to be realtimeboard)](https://miro.com/)
+  - [Miro (used to be realtimeboard)](https://miro.com/)
     — “we've enjoyed realtimeboard because it's rather more free-form,
     easier to do things like scribble circles around groups of
     stickies and similar.”  
+
+  - [Google Jamboard](https://jamboard.google.com/u/0/) - like a quicker / lower-friction version of Miro (also fewer features)
 
   - [Mural](https://mural.co/) — “We're
     moving away from Real Time Board due to some security concerns - and we're using Mural.ly instead - license needed”
