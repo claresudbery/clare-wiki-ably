@@ -52,6 +52,17 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 
 ## COVID-19 / coronavirus / Sars-CoV-2
 
+### Vaccination
+
+- [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
+- [Link to book your own vaccination](https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/) (once they reach your group)
+
+**TOTAL GUESSWORK:**
+
+([Here's the link to the actual spreadsheet](https://docs.google.com/spreadsheets/d/1tK3uEDVEPcSqef8kcwVgJSiQQtM-hU0dF4NkEchxTZo/edit?usp=sharing)).  
+
+![vaccination guessing](/resources/images/vaccination-guessing.png)
+
 ### Staying sane during the COVID-19 crisis
 
 #### Nice things to do during lockdown
@@ -158,15 +169,8 @@ worms aren’t worrying.
 
 ### Some info and links
 
+- [Vaccination info](#vaccination)
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
-- [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
-- [Link to book your own vaccination](https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/) (once they reach your group)
-
-**TOTAL GUESSWORK:**
-
-([Here's the link to the actual spreadsheet](https://docs.google.com/spreadsheets/d/1tK3uEDVEPcSqef8kcwVgJSiQQtM-hU0dF4NkEchxTZo/edit?usp=sharing)).  
-
-![vaccination guessing](/resources/images/vaccination-guessing.png)
 
 NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 

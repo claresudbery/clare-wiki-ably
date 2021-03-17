@@ -33,3 +33,6 @@ plugins:
 # Category archive plugin (see https://github.com/shigeya/jekyll-category-archive-plugin)
 #category_archive:
 #  - layout: category_archive
+
+# Google Analytics
+google_analytics: G-H36N4ZH37H
