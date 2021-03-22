@@ -19,6 +19,7 @@ permalink: /pages/think/life/Nice-Stuff
 - [donkeys in kitchen](https://twitter.com/oldhamvending/status/1325468674564698112?s=20)
 - [Ray Charles singing Oh Happy Day](https://www.youtube.com/watch?v=wv5n_eCGkvM)
 - [Toddler running a hurdles race](https://twitter.com/FillWerrell/status/1358558415447093251?s=20)
+    - [The doctored version of the toddler video](https://1drv.ms/u/s!Ai_8rS1F4L_uiJpM0t3F26onxyE4rg?e=2orNCa) - use it in your retros and ask people to identify which toddler they are!
 - My son Felix and his fellow circus students in a [film made during lockdown at their parents' houses](https://www.youtube.com/watch?v=QElwaOYX2Hs)
 
 ## Jokes
