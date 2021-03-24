@@ -20,3 +20,5 @@ permalink: /pages/think/code-princ/Metrics
 - "Focusing on only these metrics ... empower\[s\] organizations by having objective measures of determining if the changes they’re making have an actual impact"
     - The Accelerate book was very much focused on DevOps (infrastructure and deployment) and these metrics help you to focus on how good your infrastructure and deployment pipelines are.
     - [More here](https://stelligent.com/2018/12/21/measuring-devops-success-with-four-key-metrics/#:~:text=In%20the%20book%20Accelerate%20by,Lead%20time%20for%20changes&text=Time%20to%20restore%20service,Change%20failure%20rate)
+
+

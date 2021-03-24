@@ -56,3 +56,7 @@ My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightnin
 		- Don't mandate the use of your platform - let people make choices - and that will focus you on maing your platform genuinely useful
 	- Don't have more than 7-9 people on a team
 		 - you don't have to have all the expertise within the team - some can be external to the team.
+
+## Shift-Left 
+
+"Shift left" means to move things from the right hand side of your kanban (or other) board to the left - ie bring them higher up in the process / do them earlier.

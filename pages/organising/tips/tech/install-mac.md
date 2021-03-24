@@ -6,7 +6,7 @@ permalink: /pages/organising/tips/tech/Installing-A-New-Mac
 
 This is a slightly abbreviated version for public consumption - the full [Clare version is here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/reinstalling-new-mac.md) (only accessible to Clare).
 
-Note that this was created purely for me. I'm not suggesting these are sensible defaults for anyone else.
+Note that this was created purely for me. I'm not suggesting these are sensible defaults for anyone else setting up a new Mac / Macbook.
 
 I've created a [brew script for some of it](#automating-the-installation) but sadly a lot of it is still manual.
 
