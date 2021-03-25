@@ -9,6 +9,7 @@ permalink: /pages/coding/webdev/tools/Contentful
     were all specific to a particular website (Cadogan). The full
     original notes are at OneDrive\\TW\\…\\Cadogan\\TechInfo\\Tech Info
     - Shared\\Documentation + Notes\\Contentful.docx.
+  - As well as Cadogan, Samba also used Contentful. More info [here](https://github.com/claresudbery/clare-tech/blob/master/notes/clients/samba/useful-samba-links.md).
   - Contentful url:
     [<span class="underline">https://app.contentful.com/</span>](https://app.contentful.com/)
   - Contentful is divided into spaces

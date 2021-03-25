@@ -52,3 +52,13 @@ Like this: https://youtu.be/imNlIoeCjao?t=43
   - If you want to access something deleted, do it asap
   - Don't delete things! Use the tick button instead, to log things done.
 
+## Drawing tools
+
+- Free tools:
+  - [Google drawings](https://docs.google.com/drawings)
+  - [Draw.io](https://app.diagrams.net/) (not the same as Google drawings but integrates with Google drive)
+- Paid:
+  - [Miro](https://www.miro.com) (free if someone else hosts?)
+  - [Jamboard](https://jamboard.google.com/) (not actually a drawing tool - postits only)
+
+

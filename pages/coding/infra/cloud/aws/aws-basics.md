@@ -31,13 +31,4 @@ General navigation:
 
 ## AWS Logging using Cloudwatch
 
-To see logs:
-
-* Click Services, top left 
-* Select Cloudwatch (in the “Management Tools” group)
-* Click Logs (LHS)
-* Select the environment you want
-* To see more columns (eg ingestion time), click the cog icon, top right
-* Most recent logs are at the bottom by default
-* To change the time period, see the options top right
-
+- See [Cloudwatch page](/pages/coding/infra/cloud/aws/Cloudwatch#aws-logging-using-cloudwatch).

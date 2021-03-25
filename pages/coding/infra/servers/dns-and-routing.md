@@ -5,7 +5,7 @@ permalink: /pages/coding/infra/servers/DNS-And-Routing
 ---
 ## Diagrams
 
-  - See elsewhere in this doc for useful diagrams from Cadogan
+  - See below for links to useful diagrams from Cadogan
 
 ## DNS Records
 
@@ -61,12 +61,12 @@ permalink: /pages/coding/infra/servers/DNS-And-Routing
 
 ## Simple DNS Diagram
 
-- Cadogan Simple DNS Diagram (PRIVATE) `Simple DNS Diagram.jpg` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
+- Cadogan Simple DNS Diagram (PRIVATE) `Simple DNS Diagram.jpg` [here](https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj)
 
 
 ## Detailed DNS Diagram
 
-- Cadogan DNS diagram - More Detail (PRIVATE): `More Detail.jpg` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
+- Cadogan DNS diagram - More Detail (PRIVATE): `More Detail.jpg` [here](https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj)
 
 
 ## F5 and DNS

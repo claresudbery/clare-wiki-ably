@@ -210,6 +210,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Reagent
 
+  - minimalist React with Clojure
   - Reagent is a library – a Clojurescript wrapper around react js
       - define a state, eg {:name “Clare”}
       - define a template, eg \[:p (:name state)\]
