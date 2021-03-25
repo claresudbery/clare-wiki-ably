@@ -27,23 +27,24 @@
       {% endfor %}
     </ul>
   </div>
+  <main>
+    <div class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1>{{ page.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</h1>
+        <br>      
+        <!-- Table of contents -->
+        {% if page.url != "/" %}
+          {% include toc.html html=content sanitize=true h_min=2 %}
+        {% endif %}
 
-  <main class="page-content" aria-label="Content">
-    <div class="wrapper">
-      <h1>{{ page.url | replace: '/', ' ' | split:' ' | last | replace: '-', ' '  | remove: '.html' }}</h1>
-      <br>      
-      <!-- Table of contents -->
-      {% if page.url != "/" %}
-        {% include toc.html html=content sanitize=true h_min=2 %}
-      {% endif %}
+        <!-- List of folder contents, if this is the list page for the folder. -->
+        {% if page.folderlist == true %}
+          {%- include folder-contents.html -%}
+        {% endif %}
 
-      <!-- List of folder contents, if this is the list page for the folder. -->
-      {% if page.folderlist == true %}
-        {%- include folder-contents.html -%}
-      {% endif %}
-
-      <!-- Actual content -->
-      {{ content }}
+        <!-- Actual content -->
+        {{ content }}
+      </div>
     </div>
   </main>
 
