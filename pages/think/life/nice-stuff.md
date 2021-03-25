@@ -21,6 +21,9 @@ permalink: /pages/think/life/Nice-Stuff
 - [Toddler running a hurdles race](https://twitter.com/FillWerrell/status/1358558415447093251?s=20)
     - [The doctored version of the toddler video](https://1drv.ms/u/s!Ai_8rS1F4L_uiJpM0t3F26onxyE4rg?e=2orNCa) - use it in your retros and ask people to identify which toddler they are!
 - My son Felix and his fellow circus students in a [film made during lockdown at their parents' houses](https://www.youtube.com/watch?v=QElwaOYX2Hs)
+- [Cute baby otter](https://youtu.be/Yl6zZEHBHwE)
+    - [More cute baby animals](https://www.youtube.com/watch?v=z8_PAuaQ9SE)
+    - (Oh no. I've fallen down the "cute baby animals on YouTube" rabbit hole...)
 
 ## Jokes
 
