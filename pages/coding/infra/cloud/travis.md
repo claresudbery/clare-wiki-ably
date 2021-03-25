@@ -14,3 +14,8 @@ permalink: /pages/coding/infra/cloud/Travis
 - My [Cards Against Humanity answer generator](https://github.com/claresudbery/cah-answer-generator) is also deployed via Travis to Heroku.
 - My [Ruby version of the Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby) is also deployed via Travis to Heroku.
 
+## Jekyll and Travis
+
+- See [this article](https://ajaykarwal.com/deploying-jekyll-using-travis-ci) on deploying a Jekyll site using Travis.
+- Also see my [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) for some other Travis-related stuff.
+
