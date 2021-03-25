@@ -43,3 +43,12 @@ The time is in seconds, so if you want to go more than 60 seconds in, just calcu
 
 Like this: https://youtu.be/imNlIoeCjao?t=43
 
+## Due app
+
+### Accessing deleted items
+
+- To access deleted items in Due, go to settings | backup and email a backup to yourself. But do it quickly! Depending how often you use the app you might have less than 24 hours of backups.
+- Top tips:
+  - If you want to access something deleted, do it asap
+  - Don't delete things! Use the tick button instead, to log things done.
+
