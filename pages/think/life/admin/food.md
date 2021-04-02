@@ -35,6 +35,8 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 
 ## Other recipes
 
+### Grapefruit guacamole
+
 - [Grapefruit guacamole](https://www.thekitchn.com/recipe-grapefruit-guacamole-recipes-from-the-kitchn-202807) 
     - My notes on that recipe:
         - Mash the avocado in the bowl first before adding the rest - then just chuck all ingredients on top
@@ -54,4 +56,6 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
         - big sploosh cream
         - lots of fresh coriander, finely chopped
 
+### That baked feta and tomato thing
 
+[Feta dish](https://www.delish.com/uk/cooking/recipes/a35426947/baked-feta-pasta-tiktok/)
