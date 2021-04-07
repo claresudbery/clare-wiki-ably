@@ -65,6 +65,10 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 - [Virtual cheese tasting](https://www.thecourtyarddairy.co.uk/shop/category/buy-cheese/virtual-cheese-tastings/)
 - [Virtual live comedy](http://www.redimpcomedy.com/)
 - [Make your own burgers from Burger & Beyond](https://burgerandbeyondshop.co.uk/diy-kits/)
+- [Three online immersive escape rooms from Swamp Motel](https://swampmotel.co.uk/):
+  - [Plymouth Point](https://www.plymouthpoint.co.uk/swampmotel)
+  - [The Mermaid's Tongue](https://www.themermaidstongue.com/)
+  - [The Kindling Hour](https://www.thekindlinghour.com/)
 - [Generic nice stuff](/pages/think/life/Nice-Stuff)
 
 #### Positive stuff

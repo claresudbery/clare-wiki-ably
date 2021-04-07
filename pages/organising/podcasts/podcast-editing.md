@@ -90,3 +90,23 @@ permalink: /pages/organising/podcasts/Podcast-Editing
             - Min: `=SUMIF(C2:C300, "=y", D2:D300)`
             - Max: `=SUMIF(C2:C300, "=m", D2:D300)+[cell containing min total]`
             - (you'll have to format those cells as times too - Format | Number | Time)
+
+### Audacity: Pull snippets / audiograms / teasers out into a new track
+
+In Audacity...
+
+- Highlight the relevant section manually, or use start and end times:
+    - Note start and end time
+    - Place your cursor in the source track
+    - Select "Start and end of selection" from the dropdown at the bottom
+    - Enter start and end time
+    - Press play to check it worked
+- Use Ctrl + D to copy the selection out into a new track
+- Do NOT use Effect | Truncate Silence to move the snippet back tp the start of its new track
+    - Instead, just zoom in and highlight the empty section before the snippet... and use Ctrl + X to delete it.
+- Press Solo on the new snippet track
+- File | Export | Export as mp3
+
+
+
+

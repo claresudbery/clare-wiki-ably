@@ -61,4 +61,6 @@ Like this: https://youtu.be/imNlIoeCjao?t=43
   - [Miro](https://www.miro.com) (free if someone else hosts?)
   - [Jamboard](https://jamboard.google.com/) (not actually a drawing tool - postits only)
 
+## "Like airdrop, but for everything"
 
+Share files between any two devices: https://snapdrop.net/
