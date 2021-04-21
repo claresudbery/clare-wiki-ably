@@ -19,7 +19,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Docs and Blog Posts
 
 - My [refactoring article on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
-    - [Live coding video](https://www.twitch.tv/videos/817383613) of myself doing a walkthrough on Twitch of some of the refactoring mentioned in the article.
+    - [Live coding video](https://www.youtube.com/watch?v=72BbIsmKrLI&t=1s) of myself doing a walkthrough on Twitch of some of the refactoring mentioned in the article.
 - [My notes from Martin Fowler's Refactoring Seminar](http://insimpleterms.blog/martin-fowler-webinar-new-refactoring-book)
 - [MF's Refactoring book - web copy (InformIT)](https://memberservices.informit.com/my_account/index.aspx?partner=53&_ga=2.102882948.507915267.1547471980-1562501179.1547471980)
 - [Martin Fowler refactorings catalog](https://refactoring.com/catalog/)
