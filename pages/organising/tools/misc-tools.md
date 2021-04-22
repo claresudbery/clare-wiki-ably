@@ -65,6 +65,23 @@ Like this: https://youtu.be/imNlIoeCjao?t=43
 
 Share files between any two devices: https://snapdrop.net/
 
-## Dux Soup
+## Phantom Buster
 
-LinkedIn marketing tool. See marketing.md in clare-tech (Accessible to Clare only).
+[Phantom Buster](https://phantombuster.com/automations/linkedin/9227/linkedin-message-sender) is another tool you can also to send linkedin messages - similar to [Dux Soup](#dux-soup).
+
+## Dux Soup 
+
+Dux soup is a LinkedIn marketing tool
+
+Some simple info that might help if you're finding Dux Soup confusing:
+
+- It's a browser extension - nothing to do with LinkedIn itself
+  - It automates LikedIn interactions by clicking through LinkedIn links on your behalf
+- Whenever Dux soup visits a profile on your behalf, it stores data from that profile and can tag that stored data with a configured tag which you can later use to search with (see Dux Soup Options | Actions)
+- Use Dux Soup Options | Actions to define what will happen whenever a profile is visited - including sending personal messages
+- Use the "scan profile" functionality to scan headline info (basically just name and profile id) from LinkedIn search results
+- Use the "download data" functionality to download scanned data - or more detailed data from visited profiles - in csv form
+- Use the "revisit data" functionality to upload your own edited csvs and visit all the profiles in the csv (potentially also messaging each person)
+- Visit the "skipping" and "throttling" sections in Dux soup options to define whether profiles are revisited and also how many profiles you visit per day. Thie is important - if you get it wrong you might get banned from LinkedIn!!
+
+See marketing.md in clare-tech for more detailed notes (Accessible to Clare only).
