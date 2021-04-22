@@ -19,6 +19,10 @@ permalink: /pages/organising/podcasts/Audacity
 
 ## Useful actions
 
+### Actions useful for podcast editing
+
+- See [the podcast editing page](/pages/organising/podcasts/Podcast-Editing).
+
 ### Time Shift tool
 
 - Allows you to move clips around - will remove space between clips
