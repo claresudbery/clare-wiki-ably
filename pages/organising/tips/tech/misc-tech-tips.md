@@ -102,3 +102,9 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 - **Copying / pasting cards between boards**: Simply hover over a card and use Ctrl + C / Cmd + C, then go to the destination board and use Ctrl + V / Cmd + V.
 - **Adding your name to a card**: Hover over it and press the spacebar (doesn't work if the new card bit at the bottom has focus).
 
+### File Explorer breaks / changes appearance after Windows 10 update.
+
+This fixed my problem:
+
+"I also had a problem with the changed appearance of File explorer.  Turned out the navigation pane had disappeared.   Select View option, select the down arrow at Navigation pane (top left), in the drop down menu tick the box beside Navigation pane.  It's back to the way I like it." From here: https://answers.microsoft.com/en-us/windows/forum/all/file-explorer-changed-appearance-after-update/3306555e-05f6-438c-87de-66ed2b0cae2c
+
