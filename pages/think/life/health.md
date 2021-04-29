@@ -219,6 +219,8 @@ NB: This collection is months old now. Do you really need to follow these links?
 
 ## Sleep
 
+This section can be shared using this url: [https://tinyurl.com/sleep-clare-notes](https://tinyurl.com/sleep-clare-notes).
+
 I highly recommend [Why we Sleep by Matthew Walker](https://www.waterstones.com/book/why-we-sleep/matthew-walker/9780141983769). Full of very useful science and facts about how sleep works, how important it is and how to get more of it.
 
 The book contains a handy list of things you can do to improve your sleep - see the image below. The list is reprinted in the book and was originally published [here](https://magazine.medlineplus.gov/pdf/MLP_Summer2012web.pdf) (follow the link then scroll down to page 20).
