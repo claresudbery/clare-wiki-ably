@@ -31,6 +31,8 @@ tools you don’t have licenses for:
 
   - [Ideaboardz](http://ideaboardz.com/)
 
+  - [EasyRetro](https://easyretro.io/)
+
   - [Storiesonboard.com](http://storiesonboard.com)
     for user story boards and release planning. Not sure how secure it is. For fee product.
 

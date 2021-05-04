@@ -85,3 +85,22 @@ Some simple info that might help if you're finding Dux Soup confusing:
 - Visit the "skipping" and "throttling" sections in Dux soup options to define whether profiles are revisited and also how many profiles you visit per day. Thie is important - if you get it wrong you might get banned from LinkedIn!!
 
 See marketing.md in clare-tech for more detailed notes (Accessible to Clare only).
+
+## Hubspot
+
+(url stored in chrome bookmarks, under MT Docs | podcast | marketing)
+
+- utm url tracker:
+  - Menu (top left) | Reports | analytics tools 
+  - bottom of screen: Tracking Url builder
+  - Create tracking url (fill in fields)
+
+- Uploading files:
+  - Menu | marketing | files
+  - Upload files (top right) - select a file
+  - After uploading: middle of screen: All types | documents
+  - Check checkbox next to file
+  - Click Move at the top - move into podcast-transcripts folder
+  - To get url of uploaded file:
+    - Hover over a file and click on Details
+    - Click on Copy URL under the url
