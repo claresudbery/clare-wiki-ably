@@ -91,14 +91,14 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 (url stored in chrome bookmarks, under MT Docs | podcast | marketing)
 
 - utm url tracker:
-  - Menu (top left) | Reports | analytics tools 
+  - Menu (top left) or top strip -> Reports -> analytics tools 
   - bottom of screen: Tracking Url builder
   - Create tracking url (fill in fields)
 
 - Uploading files:
-  - Menu | marketing | files
+  - Menu / top strip -> marketing -> files
   - Upload files (top right) - select a file
-  - After uploading: middle of screen: All types | documents
+  - After uploading: middle of screen: All types -> documents
   - Check checkbox next to file
   - Click Move at the top - move into podcast-transcripts folder
   - To get url of uploaded file:
