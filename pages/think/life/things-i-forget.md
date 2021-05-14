@@ -127,3 +127,7 @@ It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) i
 
 - The ones that stand in the corner and have no faces.
 - It seems they're sometimes called time out dolls and sometimes called corner dolls. [More here](https://twitter.com/1baronjennyson/status/1304465623444058113?).s=21
+
+## Where are all my good photos / pictures / images for talks / presentations?
+
+See TW-Stuff-Organising-Images-Workshops

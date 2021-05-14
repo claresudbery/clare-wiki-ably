@@ -104,3 +104,27 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
   - To get url of uploaded file:
     - Hover over a file and click on Details
     - Click on Copy URL under the url
+
+  ## Google sites
+
+- Here: https://sites.google.com/
+- To edit a page:
+  - Go to Pages on the right, epxnad Home and select your page
+- To link to your page from the home page:
+    - Select Home, at the top of the tree on the right under Pages    
+    - ... or 
+        - Go to Sites home (icon top left)
+        - Go to Made Tech Knowledge site (Under recent sites at the bottom)
+    - You'll see a top-level link to "PR, Blog and podcast"
+- To create a sub-page:
+    - click dots on one page in page browser on right
+    - or drag a page in page browser and move it to be nested under another page
+- To link to one page from another:
+    - type the name of the page in a link section, and it will get foudn for you
+- To base a page on the template:
+    - Click the dots next to the template in page tree on right
+    - Select duplicate
+    - Your new page is now prob at the bottom of the tree
+    - You can drag to move it around
+- To get name of page to match title
+    - Click the three dots in the page browser on the right, and select properties
