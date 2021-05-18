@@ -8,10 +8,10 @@ permalink: /pages/coding/data/Google-Sheets
 
 - To sort by single column:
   - Select the column
-  - Select Data | Sort sheet by column
+  - Select Data => Sort sheet by column
 - To sort by multiple columns:
   - Select ALL columns unless you want only some columns to be sorted (see explanation below)
-  - Select Data | Sort the range
+  - Select Data => Sort the range
   - You can now select the cols you want to sort by and the order you want them sorted in
 - Why you select all columns: 
   - If you don't, only the cols you select will be sorted, and the others will remain unsorted

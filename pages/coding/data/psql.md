@@ -180,11 +180,11 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
         note of how many rows there are so you can check later results
   - If you want to have the backed-up table sit side by side with the
     original for any reason:
-      - Right-click | Scripts | CREATE Script
+      - Right-click => Scripts => CREATE Script
           - Keep a separate copy of this script in its original form so
             you can track any changes you make, if you have any plans to
             drop the original table
-      - Right-click | Properties | give your table a new name (eg
+      - Right-click => Properties => give your table a new name (eg
         tablename-backup)
       - Edit the CREATE script:
           - Give any constraints or indexes new names (because it won’t
@@ -192,14 +192,14 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
       - Run the CREATE script
       - Check all the constraints and indexes in the CREATE script are
         visible in pgadmin:
-          - Right-click | Properties | Constraints - check all tabs
+          - Right-click => Properties => Constraints - check all tabs
           - If you can't see what you're looking for in Properties (eg
             indexes), do right-click | Scripts | CREATE Script instead,
             and compare with original
           - If not, add manually like this (more complex example below):
           - ALTER TABLE table-name ADD CONSTRAINT constraint-name UNIQUE
             (columnid);
-      - Tables | Right-click | Refresh (to see your newly-created table)
+      - Tables => Right-click => Refresh (to see your newly-created table)
       - Select new table | right-click | Restore using the backup you
         created at the start
       - Check it worked\! Right-click | Count Rows to see there is
@@ -219,7 +219,7 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
     so that it's restored to its former glory:
   - Ideally you’ll just restore the rows using a backup you created
     earlier:
-      - right-click | Restore
+      - right-click => Restore
       - select backup file
       - On the Restore options tab:
           - Select No to Only data (if you can)
@@ -252,8 +252,8 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
       - Now you can go to the referencing table(s) and remove the
         references (storing a copy first):
           - Find the relevant table
-          - Right-click | Scripts | CREATE Script (keep a copy of this)
-          - Right-click | Properties | Constraints | Foreign Key
+          - Right-click => Scripts => CREATE Script (keep a copy of this)
+          - Right-click => Properties => Constraints => Foreign Key
           - Make a note of the name of the constraint
           - Delete the constraint
           - Go back and have another go at doing the Restore with Only
@@ -275,11 +275,11 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
 I found this quite tricky. This is what worked in the end:
 
   - If you want to keep a backup before overwriting with a restore:
-      - Rename your existing table (Right-click | Properties in pgAdmin)
-      - Create an empty copy (pgAdmin: right-click | Scripts | CREATE
+      - Rename your existing table (Right-click => Properties in pgAdmin)
+      - Create an empty copy (pgAdmin: right-click => Scripts => CREATE
         Script, then run the resulting script)
   - If you’re happy to just replace the old data with the new data:
-      - in pgAdmin: right-click | Truncate | Truncate
+      - in pgAdmin: right-click => Truncate => Truncate
   - Log onto the database: `cf login`
   - Backup the table: `cf conduit database-name -- pg_dump -t schema."table-name" > table-name-backup.dmp`
       - This creates a SQL script that relies on the COPY command.

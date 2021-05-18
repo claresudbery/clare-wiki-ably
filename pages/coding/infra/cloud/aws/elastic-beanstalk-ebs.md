@@ -23,12 +23,12 @@ permalink: /pages/coding/infra/cloud/aws/Elastic-Beanstalk-EBS
 
 To see running instances and generally see how things are going:
 
-* Services | Elastic Beanstalk
+* Services => Elastic Beanstalk
 * Select your project at the top, then environment from the dropdown
 * For running instances, click Monitoring (left) and see HealthyHostCount (bottom right)
 * For Events, select Events on the left
 * To configure number of instances:
-  * Configuration | Scaling
+  * Configuration => Scaling
 
 ## Scaling Triggers
 
@@ -97,7 +97,7 @@ To see running instances and generally see how things are going:
 
   - The AMI is the thing that AWS uses to create an operating system for
     each instance – a bit like a docker image
-  - EBS: If you go to an application, then Configuration | Instances |
+  - EBS: If you go to an application, then Configuration => Instances =>
     Custom AMI Id
       - – where are the custom AMIs set up? You don’t need to care\! The
         important thing is when you’re looking at an app, look at top

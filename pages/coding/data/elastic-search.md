@@ -489,13 +489,13 @@ permalink: /pages/coding/data/Elastic-Search
             
               - **. as $in**
             
-              - **| if type == "object" then**
+              - **`| if type == "object" then`**
             
               - **reduce keys\[\] as $key**
             
-              - **( {}; . + { ($key): ($in\[$key\] | walk(f)) } ) | f**
+              - **`( {}; . + { ($key): ($in\[$key\] | walk(f)) } ) | f`**
             
-              - **elif type == "array" then map( walk(f) ) | f**
+              - **`elif type == "array" then map( walk(f) ) | f`**
             
               - **else f**
             
