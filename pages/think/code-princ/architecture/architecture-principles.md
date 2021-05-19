@@ -22,3 +22,7 @@ permalink: /pages/think/code-princ/architecture/Architecture-Principles
 - Performance 
 	- Page load speed 
 	- Above the fold / below the fold 
+
+## Feature Toggles / Feature Toggling
+
+- There is an example of this in [Samba](https://github.com/claresudbery/samba) - see the `Feature Toggles` section in the [Useful Notes doc](https://github.com/claresudbery/samba/blob/master/Useful-Notes.docx) (accessible to clare only)

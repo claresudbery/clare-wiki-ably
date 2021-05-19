@@ -25,24 +25,35 @@ To see running instances and generally see how things are going:
 
 * Services => Elastic Beanstalk
 * Select your project at the top, then environment from the dropdown
+*	For a list of recent events, see Dashboard. This is the default view.
 * For running instances, click Monitoring (left) and see HealthyHostCount (bottom right)
 * For Events, select Events on the left
+  *	! Be aware that this is not the only source for events
+  *	You can also look at Cloudwatch | Alarms:
+    *	If you want to correlate events with auto-scaling:
+    *	Cloudwatch: Alarms on the LHS – select the sub-menu of red alarms
+    * Click on the row which contains the id you're interested in (select the checkbox)
+    *	Now check the History tab in the lower half of the screen
 * To configure number of instances:
   * Configuration => Scaling
 
 ## Scaling Triggers
 
-  - To check load: EBS – applications – \[project\] – \[env\] -
-    dashboard
-      - Config for this is set up in load balancer : Scaling trigger =
-        Network Out
-      - Json response from network ie response to browser in response to
-        browser requests
-      - Max is 600000 (or whatever) Mb in 5 minutes – if this is
-        exceeded, new server is spun up
-      - Go to EBS and select Monitoring on the left, then you can see
-        from the graphs how many mb are coming back from network in
-        responses
+- To check load: EBS – applications – \[project\] – \[env\] -
+  dashboard
+    - Config for this is set up in load balancer : Scaling trigger =
+      Network Out
+    - Json response from network ie response to browser in response to
+      browser requests
+    - Max is 600000 (or whatever) Mb in 5 minutes – if this is
+      exceeded, new server is spun up
+    - Go to EBS and select Monitoring on the left, then you can see
+      from the graphs how many mb are coming back from network in
+      responses
+-	Auto-scaling rescues us if an instance goes down, but it’s slow
+  -	It might be that if you have 3 availability zones then effectively you have 3 instances
+  -	Might not be though – basically several params are interacting with one another
+
 
 ## Events & Deployment
 
@@ -106,3 +117,8 @@ To see running instances and generally see how things are going:
 ## CloudWatch Alarms
 
 - See [Cloudwatch page](/pages/coding/infra/cloud/aws/Cloudwatch#cloudwatch-alarms).
+
+## Environment Events
+
+*	Understanding Environment Events – elastic beanstalk
+  *	Docs – elastic beanstalk - Understanding Environment Events - http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/events.html
