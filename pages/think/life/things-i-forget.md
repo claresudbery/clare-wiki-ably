@@ -131,3 +131,8 @@ It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) i
 ## Where are all my good photos / pictures / images for talks / presentations?
 
 See TW-Stuff-Organising-Images-Workshops
+
+## Where is the video for How I Got Over by Mahalia Jackson?
+
+- SmoothChords Video is in iphone photos (select Videos)
+- The Mahalia recording the video is based on is [this one](https://www.youtube.com/watch?v=r_xXdU4L2Qw)

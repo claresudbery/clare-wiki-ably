@@ -116,3 +116,9 @@ This fixed my problem:
 
 - Cmd + 0 will fix that.
 
+# How to make greyscale / grayscale / monochrome / b+w / black and white pics with transparent background
+
+- Clare only (google slides): https://docs.google.com/presentation/d/1ffla3m_wi5fDOOnttjP6tDx1UiszsmIs9fqekUEbOsM/edit#slide=id.p
+  - Right-click -> replace image
+  - Right-click -> Format -> Re-colour -> Light 4
+  - File -> download -> png, current slide (NOT JPG - you lose the transparency if you do that)

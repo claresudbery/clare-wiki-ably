@@ -128,3 +128,10 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
     - You can drag to move it around
 - To get name of page to match title
     - Click the three dots in the page browser on the right, and select properties
+
+# How to make Zoom record individual voices locally
+
+- Settings => Recording => Local Recording => Record a separate audio file for each participant who speaks
+- Then to find the recording afterwards:
+  - On the same computer you had the meeting on:
+  - Login to Zoom, and go to https://zoom.us/recording/local
