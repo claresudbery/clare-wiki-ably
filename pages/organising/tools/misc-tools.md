@@ -93,7 +93,7 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 - utm url tracker:
   - Menu (top left) or top strip -> Reports -> analytics tools 
   - bottom of screen: Tracking Url builder
-  - Create tracking url (fill in fields)
+  - Top right: Create tracking url (fill in fields)
 
 - Uploading files:
   - Menu / top strip -> marketing -> files
