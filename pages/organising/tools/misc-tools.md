@@ -88,24 +88,27 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 
 ## Hubspot
 
-(url stored in chrome bookmarks, under MT Docs | podcast | marketing)
+(url stored in chrome bookmarks, under MT Docs => podcast => marketing)
 
-- utm url tracker:
-  - Menu (top left) or top strip -> Reports -> analytics tools 
-  - bottom of screen: Tracking Url builder
-  - Top right: Create tracking url (fill in fields)
+### Hubspot utm url tracker
 
-- Uploading files:
-  - Menu / top strip -> marketing -> files
-  - Upload files (top right) - select a file
-  - After uploading: middle of screen: All types -> documents
-  - Check checkbox next to file
-  - Click Move at the top - move into podcast-transcripts folder
-  - To get url of uploaded file:
-    - Hover over a file and click on Details
-    - Click on Copy URL under the url
+- Menu (top left) or top strip -> Reports -> analytics tools 
+- bottom of screen: Tracking Url builder
+- Top right: Create tracking url (fill in fields)
 
-  ## Google sites
+### Uploading files to Hubspot
+
+- Menu / top strip -> marketing -> files
+- Upload files (top right) - select a file
+- After uploading: middle of screen: All types -> documents
+- Check checkbox next to file
+- Click Move at the top - move into podcast-transcripts folder
+- To get url of uploaded file:
+  - Search for its name
+  - Hover over the file and click on Details
+  - Click on Copy URL under the url
+
+## Google sites
 
 - Here: https://sites.google.com/
 - To edit a page:
