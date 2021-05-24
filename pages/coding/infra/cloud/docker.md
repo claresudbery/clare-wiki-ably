@@ -59,6 +59,7 @@ permalink: /pages/coding/infra/cloud/Docker
     -	for instance, it says “-d, --detach” and then there are a ton of other commands prefixed with –
     -	the other commands are unrelated!
    -	What it’s actually telling you is that “-d” is a shortcut for “--detach”. Everything that comes after that is just switches beginning with d that do not have shortcuts
+- This: `docker-machine ls` - see what's running
 - This:	`docker-machine ssh`
   -	Get yourself inside the docker-machine, which is run on a VirtualBox VM running Linux
     -	In fact you can run up VirtualBox manager and you will see the sonar docker machine listed in there

@@ -15,3 +15,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Misc
 
 - [CSS validator](http://jigsaw.w3.org/css-validator/validator?text=%25scc)
+- Styleguide example: Search for "style guide" in [Samba Useful Notes](https://github.com/claresudbery/samba/blob/master/Useful-Notes.docx) (accessible to clare only)
