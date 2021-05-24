@@ -95,6 +95,20 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 - Menu (top left) or top strip -> Reports -> analytics tools 
 - bottom of screen: Tracking Url builder
 - Top right: Create tracking url (fill in fields)
+  - For MTB podcast - links to episodes:
+    - UTM campaign = Digital Service Delivery
+    - Source = Organic Social
+    - UTM source = Twitter or whatever
+    - UTM medium = social
+    - UTM term = Making_Tech_Better_EpisodeXxx
+    - UTM content = [your name]
+  - For MTB podcast - links to transcripts:
+    - UTM campaign = Digital Service Delivery
+    - Source = Other Campaigns
+    - UTM source = Made Tech Website
+    - UTM medium = Making Tech Better
+    - UTM term = Episode Xxx
+    - UTM content = Transcript
 
 ### Uploading files to Hubspot
 
