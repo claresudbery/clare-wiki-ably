@@ -26,3 +26,17 @@ I have various things that I do:
 - I have a Trello board with ideas for new talks
 - I have a spreadsheet listing events I have submitted to and am considering submitting to, with info like whether they pay travel and expenses, when the submission deadline is, etc
 - What I don't have is anything indexed by talk title - my folder structure effectively indexes by event - but that's fine because I tend to tweak each talk for each event so it means I have a snapshot of what the talk looked like when I delivered it for that event. Also I can just scan / search my web page listing talks.
+
+## Quick tips for writing and delivering a talk
+
+- Tell a story - think about beginning, middle and end. Take the audience on a journey.
+- Tell small stories to illustrate points.
+- Make it personal if you can. Include your own experiences and how things make you feel.
+- Don't write it out as a script unless you are supremely confident at your script reading / performing skills. You're much more likely to get good results if you write out simple bullet points, then use them as prompts and allow the actual words to come out naturally on the day.
+- Make eye contact with the audience (if you can).
+    - If you can't (likely because remote), encourage them to use chat / Q&AS functions to interact with you and give you feedback, then make sure you've arranged your screen so you can see them.
+- Talk about what you know
+- Talk about what you're enthusiastic about
+- Don't worry about whether anyone else has spoken on this topic before or whether others know more than you. You're there to tell YOUR story, and there's plenty audience to go round.
+- If you can remember what it felt like when you didn't know what you know now, that will help you to imagine what your audience feels like.
+    - It will also help to remind you that nobody knows everything and there will always be audiences out there who don't yet know what you know.
