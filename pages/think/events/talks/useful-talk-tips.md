@@ -27,12 +27,16 @@ I have various things that I do:
 - I have a spreadsheet listing events I have submitted to and am considering submitting to, with info like whether they pay travel and expenses, when the submission deadline is, etc
 - What I don't have is anything indexed by talk title - my folder structure effectively indexes by event - but that's fine because I tend to tweak each talk for each event so it means I have a snapshot of what the talk looked like when I delivered it for that event. Also I can just scan / search my web page listing talks.
 
-## Quick tips for writing and delivering a talk
+## Quick tips for writing and delivering a talk / public speaking
 
 - Tell a story - think about beginning, middle and end. Take the audience on a journey.
 - Tell small stories to illustrate points.
 - Make it personal if you can. Include your own experiences and how things make you feel.
-- Don't write it out as a script unless you are supremely confident at your script reading / performing skills. You're much more likely to get good results if you write out simple bullet points, then use them as prompts and allow the actual words to come out naturally on the day.
+- Don't write it out as a script unless you are supremely confident at your script reading / performing skills. 
+    - You're much more likely to get good results if you write out simple bullet points, then use them as prompts and allow the actual words to come out naturally on the day. 
+        - This will make it sound much more relaxed and less stilted.
+    - Bullet points are a really simple way to create talk notes that allow you to see the outline of the talk at a glance and check its shape while you're writing it.
+    - Keep the bullet points really short and simple.
 - Make eye contact with the audience (if you can).
     - If you can't (likely because remote), encourage them to use chat / Q&AS functions to interact with you and give you feedback, then make sure you've arranged your screen so you can see them.
 - Talk about what you know
