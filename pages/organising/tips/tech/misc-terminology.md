@@ -11,3 +11,13 @@ permalink: /pages/organising/tips/tech/Misc-Terminology
 ## Slugs
 
 - mywebsite.co.uk/find-your-collection-day – “find-your-collection-day” is a slug
+
+## Debounce
+
+- Wait some milliseconds before sending (eg) ajax search requests (while typing)
+
+## Declarative vs Imperative
+
+- Declarative: Declare an intent without specifying implementation detail. Eg Linq
+- Imperative: Say HOW it will be done. Eg detailed for loops?
+

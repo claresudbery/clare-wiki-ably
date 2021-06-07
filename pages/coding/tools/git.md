@@ -18,6 +18,8 @@ permalink: /pages/coding/tools/Git
 
 * To see all changes file by file:  **gitk**
 
+*	Pretty tramline view: **git hia**
+
 * To add all latest changes: **git add .**
 
   * **git add –p**

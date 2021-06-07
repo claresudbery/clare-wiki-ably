@@ -40,3 +40,21 @@ Enter Number in input: Put this js into the url field in a Chrome bookmark:
 ```
 (javascript:(function(){var firstInput = $('form').find('input[type=text],input[type=password],input[type=radio],input[type=checkbox],textarea,select').filter(':visible:first'); if (firstInput != null) { firstInput.val('99999');}})()))
 ```
+## js optimisation
+
+  - See \`jsoptimise.build.js\` in Samba (although when I searched for
+    it, it wasn’t there…)
+  - To optimise automatically:
+      - cmd: \`gulp watch\` from the following path:
+        \`C:\\samba\\dts\\dts-frontend\\src\\dts\_frontend\`
+      - or Task Runner Explorer - double-click watch
+      - BUT none of this should be necessary because of bindings: See
+        the top line in \`gulpfile.js \`
+          - Like this: /// \<binding BeforeBuild='css, min:js'
+            Clean='clean' ProjectOpened='watch' /\>
+          - To see bindings, just click Bindings tab in Task Runner
+            Explorer
+  - gulpfile.js:
+      - \`paths\` command means you can create aliases then refer to
+        them later
+      - You can add new gulp commands

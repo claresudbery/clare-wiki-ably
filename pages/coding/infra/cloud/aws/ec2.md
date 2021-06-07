@@ -49,3 +49,7 @@ permalink: /pages/coding/infra/cloud/aws/EC2
     load – new instances get spun up in response to load
   - They remain in terminated state for a while so you can look at them,
     but then after a while they disappear
+
+## High availability
+
+- Separate instances are in different geographical areas.

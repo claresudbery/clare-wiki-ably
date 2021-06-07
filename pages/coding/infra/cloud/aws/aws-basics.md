@@ -4,7 +4,11 @@ location: pages/coding/infra/cloud/aws/leaf
 permalink: /pages/coding/infra/cloud/aws/AWS-Basics
 ---
 
-## AWS-Start
+## AWS Misc
+
+-	Status.aws.amazon.com for list of statuses
+
+## AWS Getting Started
 
 Setting yourself up on first use:
 
@@ -20,7 +24,7 @@ Setting yourself up on first use:
   * Install Google Authenticator on your phone, and scan the VR code
   * After setting this up, sign out and sign in again
 
-## AWS-Navigation
+## AWS Navigation
 
 General navigation:
 

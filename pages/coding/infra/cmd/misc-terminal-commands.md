@@ -13,6 +13,10 @@ permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
 
 See [notes here](/pages/coding/infra/servers/Networking#hosts-file)
 
+## Networking commands
+
+See [here](/pages/coding/infra/cmd/Networking-Commands)
+
 ## Pbpaste
 
   - Like alt click in text editors – if you wanted to select a column of

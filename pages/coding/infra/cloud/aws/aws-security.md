@@ -59,3 +59,18 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Security
     you’ve selected an instance) – same as for CodeCommit
   - But will only work if ssh is enabled on the inbound route in
     security groups
+## Setting yourself up on first use
+
+  - Select EU (Ireland) from top right
+  - First time in, set up multi factor authentication
+      - Click Services, top left
+      - Select IAM (in the group headed Security, Identity and
+        Compliance)
+      - Select Users on the left
+      - Click on your name
+      - Select Security Credentials
+      - Click the pencil icon next to Assigned MFA Device
+      - Select “virtual” if you want to use an authenticator app on your
+        phone
+      - Install Google Authenticator on your phone, and scan the VR code
+      - After setting this up, sign out and sign in again

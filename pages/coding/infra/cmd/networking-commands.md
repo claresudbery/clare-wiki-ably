@@ -11,6 +11,7 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
 
 ## Misc Terminal Stuff
 
+  - See also [Misc Terminal Commands](/pages/coding/infra/cmd/Misc-Terminal-Commands)
   - Hosts file - see [notes here](/pages/coding/infra/servers/Networking#hosts-file)
   - Cmd: **dig \[IP or domain name\]** - tells you what that IP / domain
     name is pointing at
@@ -178,3 +179,7 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
 •	`telnet localhost 5000`
 •	If you get an error (in Windows), you might need to enable Telnet client – do this in “turn Windows features on or off”
 •	To exit telnet, do Ctrl+J
+
+## DNS stuff
+
+- See [here](/pages/coding/infra/servers/DNS-And-Routing#useful-dns-commands)

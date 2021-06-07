@@ -58,3 +58,16 @@ permalink: /pages/coding/infra/security/SSL
           - Select an environment in EBS
           - Select Configuration on the left
           - Load Balancing: click the cog, then check SSL certificate ID
+
+## An example of an https issue
+
+- At Samba,	iShare (just the maps part?) was hosted on an http url, not https
+  -	iShare was owned by a third party
+-	It would have been possible to change it to https, but that would affect other clients
+-	So instead, we used a reverse proxy to change all incoming https requests into http requests
+  -	A Reverse proxy is one which proxies inbound requests, rather than outbound requests
+	- A reverse proxy is closer to the server, whereas a proxy is closer to the client. They still need to intercept both the request and the response.
+-	There were some pieces of javascript which came from iShare which we hosted on our pages
+  -	These contained links going back into iShare 
+  -	These links were also http, not https
+  -	This means that we got errors about mixed content

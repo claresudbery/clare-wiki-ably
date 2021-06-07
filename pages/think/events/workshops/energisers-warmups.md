@@ -100,3 +100,41 @@ The teacher said to the children, “These balloons are like happiness. We won't
 
 - Some of these [games designed for drama classes](https://theatrenerds.com/10-theatre-games-perfect-drama-class/) can work well as energisers.
 - There are some more drama games [listed here](dramaresource.com/drama-games/) - this list is a bit more generically play-focused, rather than specifically focused on acting skills.
+## Retro Games
+
+  - Count to 3 repeatedly (1,2,3,1,2,3) but do it by taking it in turns
+    between the leader and everybody else. So:
+      - Leader says 1
+      - Everybody says 2 (in unison)
+      - Leader says 3
+      - Everybody says 1
+      - But every now and then the leader will throw a spanner in the
+        works by saying a number out of sequence
+      - When this happens everyone must follow the leader’s number. Like
+        this:
+          - Leader says 1
+          - Everybody says 2 (in unison)
+          - Leader says 1
+          - Everybody says 2
+      - Now introduce a new rule: Whenever the group says 1 they also
+        have to clap their hands
+      - Now another rule (introduce rules one at a time, with a practice
+        round each time): Whenever the group says 2, they also have to
+        cross their forearms and point diagonally upwards
+      - Now another rule: Whenever the group says 3, they also have to
+        do jazz hands
+      - Now another rule: No words from the group, just actions. So the
+        leader says words (and does no actions), but the group has to do
+        actions only
+  - Everybody does stamp, stamp, click, click, in the same 4/4 rhythm
+      - At the same time everybody recites in unison the following 3
+        bars: my name is x, I come from (also begins with X), my
+        favourite food is (begins with X)
+      - …except not X but the first letter of the person’s name
+      - The only bit not in unison is the thing beginning with X (or
+        whatever letter)
+      - take it in turns 
+  - I went to the market and I bought ...
+      - take it in turns
+      - each person has to repeat all the previous items
+      - each item should begin with next letter in alphabet

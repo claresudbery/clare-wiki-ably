@@ -152,3 +152,7 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 - Then to find the recording afterwards:
   - On the same computer you had the meeting on:
   - Login to Zoom, and go to https://zoom.us/recording/local
+
+## Redis 
+
+- In memory key value store, at Samba was not in application 

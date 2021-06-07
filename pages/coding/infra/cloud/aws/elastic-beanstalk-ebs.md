@@ -122,3 +122,58 @@ To see running instances and generally see how things are going:
 
 *	Understanding Environment Events – elastic beanstalk
   *	Docs – elastic beanstalk - Understanding Environment Events - http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/events.html
+
+## ELB = Load balancer
+
+Don't confuse EBS (Elastic Beanstalk) with ELB (Elastic Load Balancer)!
+
+## Elastic beanstalk hooks
+
+-	ELB (EBS?) has its own internal file structure which mirrors the sequence of actions which happen on spinning up a running instance
+-	You can place shell scripts in an appropriate folder to make them be executed at the appropriate time
+  -	Eg hooks/restartappserver/pre
+-	See .ebextensions folder in dts-frontend ([Samba](https://github.com/claresudbery/samba))
+  -	Files in here contain examples of configured shell scripts
+## Changing deployment configs (this example is from samba)
+
+  - Beanstalk.json (in [Samba](https://github.com/claresudbery/samba))
+  - Example: search for rollingupdate in DTS
+  - Example of “feature flagging” or setting things for individual
+    environments: DTS: BeanstalkInstanceType being set to “t2.small” in
+    some environments.
+      - This setting is actually in the yaml and then referred to in
+        beanstalk.json
+  - To access via front end instead:
+      - Elastic Beanstalk | Configuration
+      - For rolling updates: select Update and Deployments
+  - When you make changes to things like instance type, it completely
+    kills the machine and restarts it. If you have rolling updates
+    enabled, this seems to have the effect (because of a bug) of
+    deploying with the previously-released version of the software.
+      - To fix this, you need to do this:
+      - Elastic Beanstalk: Go to dashboard for your environment
+      - Click Upload and Deploy (button, top middle)
+      - Click the Application Versions link in the section labelled “ To
+        deploy a previous version, go to the [Application Versions
+        page](https://eu-west-1.console.aws.amazon.com/elasticbeanstalk/home?region=eu-west-1#/application/versions?applicationName=iag).”
+      - Select the version you want and click Deploy
+      - Go back to the pipeline (Snap CI) and redeploy
+
+## Finding Names of Load Balancers 
+
+  - Go to the EC2 service
+  - For load balancers:
+      - Click on Load Balancing on the left
+      - Select a particular load balancer, then select the Tags tab
+      - You can then correlate this with the load balancer names you see
+        in Cloudwatch | Metrics
+      - To find the direct hash url, look at the Description tab – “DNS
+        name”
+
+## Logs
+
+  - To see logs:
+  - Go to elastic beanstalk
+  - Click the desired environment.
+  - Click logs
+  - Click request logs either last 100 or entire logs as a zip file.

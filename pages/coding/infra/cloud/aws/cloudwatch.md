@@ -115,3 +115,30 @@ To see logs:
         Groups on the left
       - AutoScaling group names are reasonably easy to parse because
         they include environment Ids - as do the alarms
+## Useful debugging tools in Cloudwatch
+
+  - Logs
+  - Alarms | History
+  - Metrics
+  - View individual alarms (see below)
+
+## Viewing Individual Alarms
+
+  - Go here:
+  - Cloudwatch
+  - Alarms (LHS)
+  - Find the healthy host count one (“HealthyHostCount \< 1 for 1
+    minute”) for ryfzuqamvb
+      - It will either be in Red (“ALARM”) or green (“OK”) (or maybe
+        “insufficient”?)
+  - Select / click
+  - Click the graph on the Details tab
+  - Select “1w” at the top
+  - …or Cloudwatch | Metrics – All Metrics, select ELB, then “Per LB” or
+    “Per LB, per A-Z”
+      - (to find out which LB you are looking at, go to EC2 and select
+        load balancers on the left, then select a particular load
+        balancer and view tags to get a cross reference)
+      - To see healthy host count, see notes above
+      - …or you can go to Elastic Beanstalk | Monitoring and fiddle
+        about with the date range
