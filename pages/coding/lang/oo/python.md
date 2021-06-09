@@ -22,34 +22,20 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Python Software Foundation](https://www.python.org/psf/)
 - [Python wiki](https://wiki.python.org/moin/) and its [language page](https://wiki.python.org/moin/CompLangPython)
 - For learning Python:
-  - [Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/)
-  
+  - [Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/)  
   - [w3schools](https://www.w3schools.com/python/default.asp)
-
-  - [Head First Python (book by Paul Barry)](https://www.amazon.co.uk/Head-First-Python-Paul-Barry/dp/1491919531)
-  
-  - [Python koans](https://github.com/gregmalcolm/python_koans) (they form an interactive tutorial for learning the Python programming language by making tests pass)
-  
-  - [Dive Into Python](https://diveintopython3.net)
-  
-  - [Python Challenge](http://pythonchallenge.com)
-  
+  - [Head First Python (book by Paul Barry)](https://www.amazon.co.uk/Head-First-Python-Paul-Barry/dp/1491919531)  
+  - [Python koans](https://github.com/gregmalcolm/python_koans) (they form an interactive tutorial for learning the Python programming language by making tests pass)  
+  - [Dive Into Python](https://diveintopython3.net)  
+  - [Python Challenge](http://pythonchallenge.com)  
   - [https://python-course.eu](https://python-course.eu)
-
   - [The GeeksforGeeks Python site](https://www.geeksforgeeks.org/python-programming-language/)
-
-  - [Python.org itself](https://www.python.org/about/gettingstarted/)
-  
+  - [Python.org itself](https://www.python.org/about/gettingstarted/)  
   - [Learn python the hard way](https://www.amazon.co.uk/Learn-Python-Hard-Way-Introduction/dp/0321884914)
-
-  - [The hitchhiker guide to python](https://docs.python-guide.org/)"
-
+  - [The hitchhiker guide to python](https://docs.python-guide.org/)
   - [The Python software foundation](https://www.python.org/psf/)
-
   - [JetBrains academy](https://tinyurl.com/jetbrains-python) ("I completed a lot of books/courses when learning Python and JetBrains academy was the best by miles. Although it's marketed at absolute beginners, it's really easy to navigate through the comp sci basics to get to the more useful bits for people who are already familiar with other languages")
-
   - "If money were no object I would buy a raspberry pi400 and work through the "build games in python" tutorial material that comes with it. For books the O'reilly options are always solid. ... I also own "Automate the Boring stuff with Python" which is good and "Python Playground" and people do rate other No Starch Press coding books. ... Online the tutorials at CodeAcademy and RealPython and learnpython all get positive noises but I can't personally comment there."
-
 
 ## Misc
 
