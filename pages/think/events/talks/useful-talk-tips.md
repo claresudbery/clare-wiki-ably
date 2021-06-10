@@ -83,7 +83,7 @@ Try not to be defensive
 - Make eye contact with the audience (if you can)
     - Keep doing repeated sweeps of the audience
         - If you're terrified, you might find it easier in the first instance (while you build your confidence) to plant a friend in the audience, instruct them to smile and nod at you encouragingly throughout the talk, and only make eye contact with them while you gain your confidence. But once you get past that, try to look at other people too
-    - If you can't make eye contact (likely because remote), encourage them to use chat / Q&AS functions to interact with you and give you feedback, then make sure you've arranged your screen so you can see them
+    - If you can't make eye contact (likely because remote), encourage them to use chat / Q&A functions to interact with you and give you feedback, then make sure you've arranged your screen so you can see them
     - Arrange your screen so you can see chat / Q&A / audience and also your notes, and make sure you're looking direct into the camera instead of off to one side (if you have multiple screens)
         - If you're using Powerpoint, you can click the Display Settings button at the top of the screen (while presenting) and select "Swap Presenter view and slide show", to make sure that your notes are on the screen that has your webcam attached - so that you can be looking straight ahead (which will make the audience feel like you're making eye contact), instead of off to one side
         - There are [tips here](/pages/think/events/talks/Presentation-Tools#google-slides---remote-presenting) on arranging your screen with Google Slides 
