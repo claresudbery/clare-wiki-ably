@@ -136,3 +136,7 @@ See TW-Stuff-Organising-Images-Workshops
 
 - SmoothChords Video is in iphone photos (select Videos)
 - The Mahalia recording the video is based on is [this one](https://www.youtube.com/watch?v=r_xXdU4L2Qw)
+
+## What's that thing called in my shoulder where it feels like it dislocates very briefly and then pops back in again?
+
+Joint subluxation.

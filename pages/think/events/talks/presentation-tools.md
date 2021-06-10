@@ -4,6 +4,10 @@ location: pages/think/events/talks/leaf
 permalink: /pages/think/events/talks/Presentation-Tools
 ---
 
+## Projecting slides on a Mac
+
+See my [InSimpleTerms blog post](https://insimpleterms.blog/category/presenting).
+
 ## Google Slides - Remote Presenting
 
 To get a good experience while remote-presenting a talk using Google Slides:

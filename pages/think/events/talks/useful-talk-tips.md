@@ -4,9 +4,10 @@ location: "pages/think/events/talks/leaf"
 permalink: /pages/think/events/talks/Useful-Talk-Tips
 ---
 
-## Docs and Blog Posts
+## Docs and Blog Posts amd Talks
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/presenting) (Presenting category)
+- There is a video available of me doing a whole talk on this topic. It's not currently publicly available but I'm happy to share it if you contact me (you can DM or @ me on Twitter).
 
 ## Effective use of different presentation tools
 
@@ -29,6 +30,7 @@ I have various things that I do:
 
 ## Quick tips for writing and delivering a talk / public speaking
 
+- There is a video available of me doing a whole talk on this topic. It's not currently publicly available but I'm happy to share it if you contact me (you can DM or @ me on Twitter).
 - Tell a story - think about beginning, middle and end. Take the audience on a journey.
 - Tell small stories to illustrate points.
 - Make it personal if you can. Include your own experiences and how things make you feel.
