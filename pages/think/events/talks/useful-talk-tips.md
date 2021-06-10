@@ -139,10 +139,10 @@ Try not to be defensive
     - This will help you to structure your talk and decide what to include and what to leave out
 - Talk about what you know
 - Talk about what you're enthusiastic about
+- If you can remember what it felt like when you didn't know what you know now, that will help you to imagine what your audience feels like and what content they need
 - Don't worry about whether anyone else has spoken on this topic before or whether others know more than you. You're there to tell YOUR story, and there's plenty audience to go round
     - Remember there was a time when you didn't know what you know now
     - There are ALWAYS people who don't know what you know yet. Those people will benefit from your material
-- If you can remember what it felt like when you didn't know what you know now, that will help you to imagine what your audience feels like and what content they need
 - The title does not have to tell the audience what you will talk about! The title can create curiosity
     - The same goes for the blurb / description
     - You will almost certainly be writing the blurb yourself
