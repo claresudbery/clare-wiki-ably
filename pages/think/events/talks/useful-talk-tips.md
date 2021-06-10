@@ -113,7 +113,8 @@ Try not to be defensive
 - Don't worry if you miss stuff out. Nobody will ever know!
     - If they really need it, they will ask you questions
 - Practise in advance
-    - Time it (you will oprobably find it takes longer than you think and you need to remove some content)
+    - Time it
+        - You will probably find it takes longer than you think and you need to remove some content
     - Practise with a friendly audience
 - Be prepared to cut sections short if you run out of time
     - It's fine. They don't know what they never saw
