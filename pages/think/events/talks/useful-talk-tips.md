@@ -4,7 +4,7 @@ location: "pages/think/events/talks/leaf"
 permalink: /pages/think/events/talks/Useful-Talk-Tips
 ---
 
-## Docs and Blog Posts amd Talks
+## Docs and Blog Posts and Talks
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/presenting) (Presenting category)
 - There is a video available of me doing a whole talk on this topic. It's not currently publicly available but I'm happy to share it if you contact me (you can DM or @ me on Twitter).
