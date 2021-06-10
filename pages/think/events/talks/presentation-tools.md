@@ -8,11 +8,15 @@ permalink: /pages/think/events/talks/Presentation-Tools
 
 See my [InSimpleTerms blog post](https://insimpleterms.blog/category/presenting).
 
+## Powerpoint - remote presenting
+
+If you're using Powerpoint, you can click the Display Settings button at the top of the screen (while presenting) and select "Swap Presenter view and slide show", to make sure that your notes are on the screen that has your webcam attached - so that you can be looking straight ahead (which will make the audience feel like you're making eye contact), instead of off to one side.
+
 ## Google Slides - Remote Presenting
 
 To get a good experience while remote-presenting a talk using Google Slides:
 
-1. In the slides: View | Present (Ctrl + F5)
+1. In the slides: View => Present (Ctrl + F5)
 2. Hover near the bottom of your screen so the toolbar becomes visible. Click notes. This will bring up a second screen containing your notes and a preview of the next slide.
 3. Move the notes window onto the screen that has your webcam, so that you can look at the audience and look at your notes simultaneously.
 4. Move the window that contains your video-meeting software (eg Zoom, Google Meet, whatever) onto the same screen as your slide notes. Click the Gallery view or equivalent - so that you can see the audience. If that's not possible, make the chat or Q&A section visible. The best bet is to have both audience AND chat visible at once. 
