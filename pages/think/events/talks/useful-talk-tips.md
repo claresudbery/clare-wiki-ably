@@ -96,9 +96,10 @@ Try not to be defensive
     - If you are terrified, you *might* find that a script helps to calm you down. If you are only doing small presentations to your colleagues and your first priority is to get yourself up there without collapsing from terror, then a script might help with that. But once you have built up some confidence and are more relaxed, I would encourage you to try and ditch the script
 - Write VERY simple notes, in bullet point format
     - You can write them on cards (one card per slide) or use the notes section of your presentation software
-    - If you create cards as a backup, you don’t have to rely on being able to see a laptop screen
+    - Cards mean you don’t have to rely on being able to see a laptop screen
         - …and you have backup if technology fails
         - For this reason it’s also worth printing out a copy of your slides
+        - (Clearly I wrote this note before lockdown, LOL - but fingers crossed there WILL come a day when we can deliver talks in person again)
     - Bullet points are a really simple way to create talk notes that allow you to see the outline of the talk at a glance and check its shape while you're writing it
     - Keep the bullet points really short and simple
     - Give yourself room to improvise and add colour beyond your bullet points  
