@@ -31,18 +31,139 @@ I have various things that I do:
 ## Quick tips for writing and delivering a talk / public speaking
 
 - There is a video available of me doing a whole talk on this topic. It's not currently publicly available but I'm happy to share it if you contact me (you can DM or @ me on Twitter).
+
+Quick tips:
+
+### Confidence: Things you might worry about but actually there's no need
+
+- The audience are your friends, they do not wish you harm
+    - If they do, that’s their problem not yours
+    - But it’s VERY VERY UNLIKELY
+- Hostile audiences are very rare (it’s not something I’ve ever encountered to any significant degree, and I’ve done a LOT of talks). But if you do encounter them:
+    - It isn’t personal
+    - Disassociate yourself – their aggression is directed towards what they believe you represent, not you personally
+    - Stay calm
+    - Deep breaths, lower your shoulders, speak slowly
+    - Don’t enter into arguments with individuals – just state facts
+Try not to be defensive
+- If people ask questions you don’t know the answers to, it’s fine to be honest
+    - “Not my area of expertise”
+    - “I’d have to look that up”
+    - “Maybe there is somebody else in the room who can answer that?”
+- Trust yourself - you know your own material.
+- If you can remember what it felt like when you didn't know what you know now, that will help to remind you that nobody knows everything and there will always be audiences out there who don't yet know what you know.
+- THE AUDIENCE ARE YOUR FRIENDS.
+- If somebody dominates the discussion / asks too many questions
+    - Tell them you’ll take it offline
+    - “We probably haven’t time to go into that in depth – catch up with me later”
+    - “There’s somebody at the back there who’s been waiting to ask a question”
+- Ideally you're doing this because you want to.
+    - If you really really hate the idea, maybe you don't have to?
+    - I don't subscribe to the idea that it's a necessary part of being an  industry professional.
+
+### Connecting with the audience
+
 - Tell a story - think about beginning, middle and end. Take the audience on a journey.
 - Tell small stories to illustrate points.
-- Make it personal if you can. Include your own experiences and how things make you feel.
-- Don't write it out as a script unless you are supremely confident at your script reading / performing skills. 
-    - You're much more likely to get good results if you write out simple bullet points, then use them as prompts and allow the actual words to come out naturally on the day. 
+- Make it personal if you can. Include your own experiences and how things make you feel. Be honest.
+    - Try to connect with the audience. Engage with them.
+    - Relax. Use humour.
+    - Be intimate and friendly
+- Be honest but confident
+    - Be honest about any shortcomings, but don’t apologise (unless it really is appropriate). 
+    - Be confident in your honesty.
+- Encourage interaction
+    - Think of ways to enliven things 
+    - ask questions 
+    - throw sweets to people who answer
+    - ask for contributions from the floor
+    - ask people to pair up and discuss something for a minute or so
+- Make eye contact with the audience (if you can).
+    - Keep doing repeated sweeps of the audience
+        - If you're terrified, you might find it easier in the first instance (while you build your confidence) to plant a friend in the audience, instruct them to smile and nod at you encouragingly throughout the talk, and only make eye contact with them while you gain your confidence. But once you get past that, try to look at other people too.
+    - If you can't make eye contact (likely because remote), encourage them to use chat / Q&AS functions to interact with you and give you feedback, then make sure you've arranged your screen so you can see them.
+
+### Delivery
+
+- Don't write it out as a script unless you are supremely confident at your script reading / performing skills, or if you're totally terrified and it helps to calm you (see below). 
+    - You're much more likely to get good results if you write out simple bullet points (see below), then use them as prompts and allow the actual words to come out naturally on the day. 
         - This will make it sound much more relaxed and less stilted.
+    - If you are terrified, you *might* find that a script helps to calm you down. If you are only doing small presentations to your colleagues and your first priority is to get yourself up there without collapsing from terror, then a script might help with that. But once you have built up some confidence and are more relaxed, I would encourage you to try and ditch the script.
+- Write VERY simple notes, in bullet point format
+    - You can write them on cards (one card per slide) or use the notes section of your presentation software
+    - If you create cards as a backup, you don’t have to rely on being able to see a laptop screen
+        - …and you have backup if technology fails
+        - For this reason it’s also worth printing out a copy of your slides
     - Bullet points are a really simple way to create talk notes that allow you to see the outline of the talk at a glance and check its shape while you're writing it.
     - Keep the bullet points really short and simple.
-- Make eye contact with the audience (if you can).
-    - If you can't (likely because remote), encourage them to use chat / Q&AS functions to interact with you and give you feedback, then make sure you've arranged your screen so you can see them.
+    - Give yourself room to improvise and add colour beyond your bullet points  
+        - This will really bring your talk alive
+        - It also gives you space to make the talk longer or shorter according to how much time you have
+        - The less you prescribe the content, the more room you have to ad lib / respond to the circumstances on the day
+        - It also means you spend less time on prep!
+- Keep an eye on the clock, and be prepared to remove stuff / add colour if necessary.
+- Speak slowly. 
+- If you find yourself getting anxious, drop your shoulders, take a deep breath, and talk slowly.
+- Don't worry if you miss stuff out. Nobody will ever know!
+    - If they really need it, they will ask you questions.
+- Practise in advance
+    - Time it (you will oprobably find it takes longer than you think and you need to remove some content)
+    - Practise with a friendly audience
+- Be prepared to cut sections short if you run out of time
+    - It's fine. They don't know what they never saw.
+- Encourage questions and discussion
+    - Leave room for it at the end
+    - Repeat questions so that everyone can hear
+        - This is really important! It's very rare that everyone in the room can hear what questions are being asked, and it's SO frustrating for the audience to hear an answer without knowing what the question was.
+        - Also if the talk is being recorded, the question is probably not audible on the recording.
+
+### Talk content
+
+- What are you trying to communicate? What is your message, in 10 words? 
+    - This will help you to structure your talk and decide what to include and what to leave out
 - Talk about what you know
 - Talk about what you're enthusiastic about
-- Don't worry about whether anyone else has spoken on this topic before or whether others know more than you. You're there to tell YOUR story, and there's plenty audience to go round.
-- If you can remember what it felt like when you didn't know what you know now, that will help you to imagine what your audience feels like.
-    - It will also help to remind you that nobody knows everything and there will always be audiences out there who don't yet know what you know.
+- Don't worry about whether anyone else has spoken on this topic before or whether others know more than you. You're there to tell YOUR story, and there's plenty audience to go round. 
+    - Remember there was a time when you didn't know what you know now.
+    - There are ALWAYS people who don't know what you know yet. Those people will benefit from your material.
+- If you can remember what it felt like when you didn't know what you know now, that will help you to imagine what your audience feels like and what content they need.
+- The title does not have to tell the audience what you will talk about! The title can create curiosity. 
+    - The same goes for the blurb / description.
+    - You will almost certainly be writing the blurb yourself. 
+        - Don’t expect the event organisers to do it for you!
+        - Often conference organisers will use your abstract / conference submission as the talk description in the conference programme.
+- Know your audience
+    - Either tailor the content to them, or specify in advance / make clear what audience this content is for.
+- Less is more
+    - Keep it simple
+    - Not too many slides
+    - Don’t over-fill your slides with detail.
+        - Minimal words on slides
+        - Images are better than words
+        - Keep diagrams v simple
+        - Make sure graphs have well labeled axes
+        - Otherwise, your audience are so busy trying to read / understand your slides, they're not able to listen to YOU.
+    - No need to waste hours carefully crafting your slides
+        - It can be very time consuming and is not necessary!
+        - YOU DON'T ACTUALLY NEED SLIDES.
+            - If you are short on time and you know what you want to say, just make some notes and talk direct to the audience
+            - I often do this when I don't have time to prepare slides.
+                - Or if I want a more intimate effect, and want people to really focus on what I'm saying.
+    - Don’t over-fill your talk with content – leave room for breathing and silence.
+        - Otherwise you will overwhelm your audience - they won't keep up, their attention will drift.
+    - Your talk is almost certainly too long.
+    - You are not teaching a course. there's a limit to how much information you can effectively inject into people's heads during one talk. You can't expect them to walk away knowing everytjing there is to know, so don't even try.
+    - Leave them excited to find out more.
+
+
+### Talk structure
+
+- First 45 seconds: Frame problem in an innovative way, to grab attention of audience. 
+- Have five main points, and don’t go beyond five... the optimum is three points! 
+    - They can be broad categories though.
+    - I confess I often break this rule! It doesn't seem to do me much harm. :o)
+- Tell them what you’re going to say, then say it, then tell them what you’ve said.
+- How will you end the talk? 
+    - End it on a high 
+    - Principle of recency: People remember first what they hear last. Reiterate the most important points.
+
