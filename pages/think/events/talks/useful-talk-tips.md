@@ -39,8 +39,8 @@ Quick tips:
 ### Connecting with the audience
 
 - Tell a story - think about beginning, middle and end. Take the audience on a journey
-    - Stories have conflict and resolution
-        - Start with a problem (illustrated with personal colour), end with a solution
+    - Good stories have conflict, turning points and resolution
+        - Start with a problem (illustrated with personal colour), then get to a solution via at least one "aha" moment 
 - Tell small stories to illustrate individual points
 - Make it personal if you can. Include your own experience and how things make you feel. Be honest
     - Try to connect with the audience. Engage with them
