@@ -33,6 +33,16 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 - [Marzipan](https://www.daringgourmet.com/how-to-make-marzipan-almond-paste/)
 - [Bread sauce](https://www.bbcgoodfood.com/recipes/bread-sauce-0)
 
+## Snacks
+
+### Pork scratchings / crackling
+
+- My original faves: [The Real Pork Crackling Company](https://www.therealporkcracklingcompany.com/) 
+    - I just had the bizarre experience of being able to get five for a pound [at poundshop.com](https://www.poundshop.com/the-real-pork-crackling-co-crispy-crackling-5-pack.html)! 
+- The ones I ordered in bulk for a bit (preferred their chilli flavour): [AwfullyPosh / British Snack Co.](https://www.britishsnackco.com/store/product/chilli-garlic-pork-crackling/)
+- Hairy bar snacks [top picks](https://hairybarsnacks.com/the-best-pork-scratchings/)
+    - I ordered a variety pack of [Mr Trotters Great British Pork Crackling](http://mrtrotters.com/shop/index.php?route=product/product&product_id=63)
+
 ## Other recipes
 
 ### Grapefruit guacamole
@@ -71,3 +81,4 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
     * ham (optional)
     * rice or fried plantain
 * [Recipe here](https://honest-food.net/ghana-red-red-recipe/) 
+

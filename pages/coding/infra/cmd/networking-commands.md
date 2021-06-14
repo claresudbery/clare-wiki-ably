@@ -9,6 +9,10 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/networking) (Networking category)
 - [A Simple explanation of the CIDR IP address scheme](https://insimpleterms.blog/a-simple-explanation-of-the-cidr-ip-address-scheme)
 
+## Test your internet speed
+
+* [Here](https://www.speedtest.net/)
+
 ## Misc Terminal Stuff
 
   - See also [Misc Terminal Commands](/pages/coding/infra/cmd/Misc-Terminal-Commands)

@@ -8,6 +8,10 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 
 - [My notes on Audacity](/pages/organising/podcasts/Audacity)
 
+## Recording
+
+* See [here]()
+
 ## Interview editing steps
 
 ### Create a transcript

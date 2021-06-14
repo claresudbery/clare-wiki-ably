@@ -140,3 +140,13 @@ See TW-Stuff-Organising-Images-Workshops
 ## What's that thing called in my shoulder where it feels like it dislocates very briefly and then pops back in again?
 
 Joint subluxation.
+
+## Where did I write down the story of the great slate robbery 1965?
+
+Writing-Current\Other Stuff\Diaries\Random Memories
+
+## What are the bats at Whincop?
+
+Geoff had a bat survey done, and I *thought* he told me they were hirondelle bats, but that doesn't seem to be a thing according to Google (although there seems to be a French term "hirondelle de nuit" which translates as "night swallow" and means bat??). Maybe I misheard him or he misremembered?
+
+The owls there now (2021) are tawny owls, aka screech owls.
