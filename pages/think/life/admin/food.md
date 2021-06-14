@@ -59,3 +59,15 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 ### That baked feta and tomato thing
 
 [Feta dish](https://www.delish.com/uk/cooking/recipes/a35426947/baked-feta-pasta-tiktok/)
+
+### Ghanaian red-red
+
+* Main ingredients: 
+    * Red cowpea (or black eyes peas)
+    * red palm oil
+    * tomatoes
+    * pork
+    * chilli
+    * ham (optional)
+    * rice or fried plantain
+* [Recipe here](https://honest-food.net/ghana-red-red-recipe/) 
