@@ -115,6 +115,10 @@ If you don't find that Kara's style works for you, don't feel bad! Turn it off a
 
 - Some good points are made about this in [this article here](https://www.independent.co.uk/voices/coronavirus-confinement-covid-19-quarantine-rules-streaming-a9410166.html)
 
+#### My experience of anxiety
+
+- Some advice based on [my experience of crippling anxiety attacks](https://s3-eu-west-1.amazonaws.com/clare-test-001/BoobPencil/how-to-stop-anxiety-attacks.html)
+
 #### APPLE technique to deal with anxiety
 
 AnxietyUK suggests practising the "Apple" technique to deal with anxiety and worries.
