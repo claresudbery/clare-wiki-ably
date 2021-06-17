@@ -11,6 +11,9 @@ permalink: /pages/think/agile-princ/Agile-Resources
 
 ## Useful Links
 
+- [Agile 101](https://www.agilealliance.org/agile101/)
+- [Introductory Agile resources from the Agile Alliance](https://www.agilealliance.org/agile-essentials)
+- [Introductory Agile resources from Mountain Goat](https://www.mountaingoatsoftware.com/agile)
 - [Agile tag in Clare's private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=90c6c237-18b8-4efc-bce7-91921df16482&query=tag%1FAgile%1FtagGuid%3A8cb5616d-a8a4-4fa5-9f8d-0948cc99f3fd%1Eview%3AVIEW%2FALL_NOTES&)
 - [Consultancy tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=e6eddff2-dc9e-45af-b649-eba0b3e53b2f&query=tag%1FConsultancy%1FtagGuid%3A1f5c3a55-6c76-4093-952d-9629968e5f16%1Eview%3AVIEW%2FALL_NOTES&)
 - [Kanban Intro](https://drive.google.com/open?id=182XoEaZ-85TdiLGeKzJeezuY5M9WmvTF)
