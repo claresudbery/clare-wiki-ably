@@ -6,7 +6,7 @@ permalink: /pages/think/code-princ/XP
 
 ## Elsewhere on This Site
 
-- [TDD](/pages/think/code-princ/TDD)
+- [TDD](/pages/think/code-princ/testing/TDD)
 - [Pairing](/pages/think/code-princ/Pairing)
 
 ## Docs and Blog Posts

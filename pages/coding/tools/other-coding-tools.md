@@ -10,7 +10,7 @@ permalink: /pages/coding/tools/Other-Coding-Tools
 
 - [Refactoring](/pages/think/code-princ/Refactoring)
 - [Hexagonal Architecture](/pages/think/code-princ/Hexagonal-Architecture)
-- [TDD](/pages/think/code-princ/TDD)
+- [TDD](/pages/think/code-princ/testing/TDD)
 - [Katas](/pages/think/code-princ/Katas)
 - [Recursion](/pages/think/code-princ/Recursion)
 
