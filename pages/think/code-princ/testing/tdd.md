@@ -31,7 +31,23 @@ But Dan North's view is that writing unit tests is not really "testing".
 
 There are some hints at the detail of this on [this Twitter conversation](https://twitter.com/bendre/status/1047585835514773505?s=21). That conversation brings up the idea of talking about "examples" instead of tests. You can read more about that [here](https://cucumber.io/blog/bdd/example-mapping-introduction/).
 
-Dan North also did a lightning talk on this topic at NDC London 2019, and here are my notes
+Dan North also did a lightning talk on this topic at NDC London 2019, and here are my notes from that:
+
+- Kent and ward wanted Incremental 
+- Soul of testing stolen by TDD
+- Not really test driven 
+- Is really automated checking
+- Increasing confidence fur stakeholders through evidence 
+- Need to be ingenious 
+- Need to be pragmatic 
+- Make some serious trade offs
+- How confident is confident enough 
+- Customers don't even know the systems they're running 
+- Want everything delivered all at once 
+- TDD allows us to move at a measured pacw, quickly and easily do stuff 
+- TDD had the wrong name 
+- Testing is another set of skills 
+- Naming things is really hard 
 
 ## Mocks and Mocking 
 
