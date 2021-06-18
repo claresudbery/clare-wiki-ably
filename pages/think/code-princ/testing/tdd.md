@@ -27,7 +27,7 @@ permalink: /pages/think/code-princ/testing/TDD
 
 Frustratingly I've lost the original conversation because it happened on Google hangouts on an account I no longer have access to (my TW account).
 
-But Dan North's view is that writing unit tests is not really "testing".
+But [Dan North](https://dannorth.net/)'s view is that writing unit tests is not really "testing".
 
 There are some hints at the detail of this on [this Twitter conversation](https://twitter.com/bendre/status/1047585835514773505?s=21). That conversation brings up the idea of talking about "examples" instead of tests. You can read more about that [here](https://cucumber.io/blog/bdd/example-mapping-introduction/).
 
