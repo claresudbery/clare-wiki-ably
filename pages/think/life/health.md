@@ -41,6 +41,8 @@ See also [Staying sane during the COVID-19 crisis](http://127.0.0.1:4000/pages/t
     - "Beth" from GCHQ ([via Anne-Marie Imafidon's podcast](https://podcasts.apple.com/gb/podcast/beth-gchq-spying-security-and-sausage-rolls/id1454224152?i=1000431014174)) suggests that if you can, try to replace anger and anxiety with curiosity. What's happening here? Why?
     - Quote from Hank Green's novel [An Absolutely Remarkable Thing](https://www.goodreads.com/book/show/24233708-an-absolutely-remarkable-thing): "When we care for each other, we are always in a place that matters."
 
+- The [ring theory](https://www.psychologytoday.com/gb/blog/promoting-hope-preventing-suicide/201705/ring-theory-helps-us-bring-comfort-in) of how to give support to people at the centre of a crisis and ask support from outer rings when you need support to help you support others.
+
 
 ## Eating disorders
 
@@ -263,3 +265,16 @@ Personally, I follow the following advice and it has made a MASSIVE difference t
   - [HRT and breast cancer](https://www.menopausedoctor.co.uk/menopause/hrt-and-breast-cancer
 - [My tweet about it all](https://twitter.com/claresudbery/status/1390996217019211776?s=21)
 - [Guardian article](https://www.theguardian.com/society/2021/may/09/mission-menopause-my-hormones-went-off-a-cliff-and-im-not-going-to-be-ashamed) by Kate Muir about her experience of menopause
+
+## Food and inflammation
+
+Zoe podcast on inflammation after eating: https://youtu.be/ol6wTjj7Y18
+
+## Hayfever
+
+Top tips for hayfever sufferers (courtesy of Jane / Digger):
+
+- Put a sheet over your entire bed in the morning after getting up and carefully remove it before you get into bed. Pollen settles throughout the day (but especially in the evening) so it will settle on the sheet and not the bedclothes that you sleep in / on. 
+- A bit of vaseline around the nose will catch a lot of pollen so it doesn't go up your nostrils
+- Wearing glasses / sunglasses can reduce pollen getting into your eyes
+- Try and keep bedroom windows and doors closed (if it's hot then keep curtains closed too to keep the room cool) during the day, open them at night.

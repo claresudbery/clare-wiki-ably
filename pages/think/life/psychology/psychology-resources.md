@@ -43,3 +43,7 @@ permalink: /pages/think/life/psychology/Psychology-Resources
     - Some level of professional accreditation is also good
     - Speak to graduates of the course you choose
     - Join a professional body before you even start, and pick the brains of the people in online forums
+
+## The Ring Theory
+
+- The [ring theory](https://www.psychologytoday.com/gb/blog/promoting-hope-preventing-suicide/201705/ring-theory-helps-us-bring-comfort-in) of how to give support to people at the centre of a crisis and ask support from outer rings when you need support to help you support others.

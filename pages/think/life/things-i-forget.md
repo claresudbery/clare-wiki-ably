@@ -150,3 +150,12 @@ Writing-Current\Other Stuff\Diaries\Random Memories
 Geoff had a bat survey done, and I *thought* he told me they were hirondelle bats, but that doesn't seem to be a thing according to Google (although there seems to be a French term "hirondelle de nuit" which translates as "night swallow" and means bat??). Maybe I misheard him or he misremembered?
 
 The owls there now (2021) are tawny owls, aka screech owls.
+
+## What's that Douglas Adams train station biscuit story?
+
+See [here](https://theoldvillage.wordpress.com/2004/01/28/douglas-adams-shares-a-true-story/). It's very funny.
+
+## What's the difference between "acute" and "chronic" in medical terminology?
+
+- Acute is short-lived
+- Chronic is long-term
