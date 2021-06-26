@@ -6,7 +6,7 @@ permalink: /pages/coding/webdev/Different-Webapp-Stacks
 
 ## Possible Stacks
 
-I asked Twitter the following question: "If you wanted to build and deploy a very simple web app using TDD and automated unit tests as part of the deployment pipeline, an inexperienced coder, what language / platform / deployment pipeline would you use? We're looking for low friction, quick results, low learning curve."
+I asked Twitter [the following question](https://twitter.com/ClareSudbery/status/1403060911657701378?s=20): "If you wanted to build and deploy a very simple web app using TDD and automated unit tests as part of the deployment pipeline, an inexperienced coder, what language / platform / deployment pipeline would you use? We're looking for low friction, quick results, low learning curve."
 
 Below started out as a summary of the answers I got. I expected it will probably get added to over time.
 
@@ -98,7 +98,7 @@ Below started out as a summary of the answers I got. I expected it will probably
 
 @coderbyheart (Markus Tacker)
 
-An example app: https://github.com/coderbyheart/tdd-web-app
+[An example app](https://github.com/coderbyheart/tdd-web-app)
 
 ("It has tests for plain JS libraries and React components. Tests are run using GitHub actions. On success, deployed to Netlify. PRs are tested and deployed to preview URLs.")
 
@@ -168,9 +168,7 @@ An example app: https://github.com/coderbyheart/tdd-web-app
 
 "Fast compilation, no need to start the server to test the routes, tiny language, ok VS Code support"
 
-Getting started:
-
-gobyexample.com
+[Getting started](gobyexample.com)
 
 "and more, the readmes in the ecosystem are good"
 
