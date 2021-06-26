@@ -40,8 +40,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Sinatra
 
 - [Your first Sinatra app](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
-- [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app) created using [this tutorial]
-(http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
+- [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app) created using [this tutorial](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
 - [This commit](https://github.com/claresudbery/tic-tac-toe-kata/tree/a83d917993009f065caba0a3f74b7a2fb6a0d254) on the tic tac toe repo is a much simpler hello world Sinatra app, with just one `/` root route and no data storage.
 - [Very simple Sinatra testing guide](http://sinatrarb.com/testing.html) - less friction than the one below.
 - [Sample Sinatra app from rubymonsters/testing-for-beginners](https://github.com/rubymonsters/testing-for-beginners/tree/main/code/sinatra)
@@ -54,6 +53,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
   - Views are held in *.erb template files (same is true of Rails) - `erb` stands for embedded ruby
 - Have a look at [the Shotgun gem](https://github.com/rtomayko/shotgun) if you don't want to have to restart your server every time you make a change.
+- More examples of sinatra apps I have created:  
+  - [cah-answer-generator](https://github.com/claresudbery/cah-answer-generator)
+  - [mars-rover-kata-ruby](https://github.com/claresudbery/mars-rover-kata-ruby)
 
 ## Deployment with Heroku
 

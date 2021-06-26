@@ -10,91 +10,51 @@ I asked Twitter [the following question](https://twitter.com/ClareSudbery/status
 
 Below started out as a summary of the answers I got. I expected it will probably get added to over time.
 
+I'm splitting them by language because that seemed a reasonable way of looking at it.
+
+## Javascript
+
 ### Heroku / Node.js / React / Jest
 
 @worldofchris (Chris Young)
 
-**Deployment / pipeline**: Heroku
-
-**Backend**: Node.js
-
-**Unit tests**: Jest
-
-**Front end**: React
-
-**Front end tests**: Jest
+- **Deployment / pipeline**: Heroku
+- **Backend**: Node.js
+- **Unit tests**: Jest
+- **Front end**: React
+- **Front end tests**: Jest
 
 ### Heroku + Git / Node.js
 
 @thinkfoo (Dave Hounslow)
 
-**Deployment / pipeline**: Heroku + Git
+- **Deployment / pipeline**: Heroku + Git
+- **Backend**: Node.js
+- **Unit tests**: ?
+- **Front end**: ?
+- **Front end tests**: ?
 
-**Backend**: Node.js
-
-**Unit tests**: ?
-
-**Front end**: ?
-
-**Front end tests**: ?
-
-### Rails / Python/Flask / Pytest / Ruby / rspec
-
-@worldofchris (Chris Young)
-
-**Deployment / pipeline**: Rails
-
-**Backend**: Python / Flask
-
-**Unit tests**: Pytest
-
-**Front end**: Ruby
-
-**Front end tests**: rspec
-
-### Heroku / Python/Flask / Pytest
-
-@nimphal (Nevelina A)
-
-**Deployment / pipeline**: Heroku
-
-**Backend**: Python / Flask
-
-**Unit tests**: Pytest
-
-**Front end**: ?
-
-**Front end tests**: ?
-
-### Github actions + Heroku / Node + express / Jest / Create-react-app
+### Github actions + Heroku / Node.js + Express / Jest / Create-react-app
 
 @jocrossick
 
 [create-react-app - getting-started](https://create-react-app.dev/docs/getting-started/)
 
-**Deployment / pipeline**: Github actions + Heroku
-
-**Backend**: Node + express
-
-**Unit tests**: Jest
-
-**Front end**: Create-react-app 
-
-**Front end tests**: Create-react-app
+- **Deployment / pipeline**: Github actions + Heroku
+- **Backend**: Node.js + Express
+- **Unit tests**: Jest
+- **Front end**: Create-react-app 
+- **Front end tests**: Create-react-app
 
 ### Github actions + Netlify / Create-react-app
 
-@fidgetfive
+@fidgetfive (Matt)
 
-**Deployment / pipeline**: Github actions + Netlify
-
-**Backend**: ?
-
-**Unit tests**: ?
-
-**Front end**: Create-react-app 
-
-**Front end tests**: Create-react-app
+- **Deployment / pipeline**: Github actions + Netlify
+- **Backend**: ?
+- **Unit tests**: ?
+- **Front end**: Create-react-app 
+- **Front end tests**: Create-react-app
 
 ### Github actions + Netlify / React
 
@@ -104,90 +64,101 @@ Below started out as a summary of the answers I got. I expected it will probably
 
 ("It has tests for plain JS libraries and React components. Tests are run using GitHub actions. On success, deployed to Netlify. PRs are tested and deployed to preview URLs.")
 
-**Deployment / pipeline**: Github actions + Netlify
+- **Deployment / pipeline**: Github actions + Netlify
+- **Backend**: ?
+- **Unit tests**: ?
+- **Front end**: React 
+- **Front end tests**: ?
 
-**Backend**: ?
+### Docker / Node.js + Express / Static pages / Cypress
 
-**Unit tests**: ?
+@DinoRoar2 (John Nicholas)
 
-**Front end**: React 
+- **Deployment / pipeline**: Docker
+- **Backend**: Node.js + Express
+- **Unit tests**: ?
+- **Front end**: Static pages, very simple routing 
+- **Front end tests**: Cypress, or just architect it so you can fire a load of - rest calls and not have to worry about setup/teardown. Like why - If you know - you want e2e tests - do people design so that they have to reset the dB - between tests? How is that a good tradeoff? What are the alternatives this - wins against? You end up with something way simpler imo. Esp if your tests - leave v easy to recognise data.
+- **Data store**: json
 
-**Front end tests**: ?
+### Simple http server / Node.js + Express / Http / Cypress
 
-### Github actions + Netlify / Create-react-app
+@LewisDaleUK
 
-@DinoRoar2
+- **Deployment / pipeline**: Simple http server
+- **Backend**: Node.js + Express
+- **Unit tests**: ?
+- **Front end**: Http
+- **Front end tests**: Cypress
 
-**Deployment / pipeline**: Express + Docker
+## Python 
 
-**Backend**: ?
+### Python/Flask / Pytest / Ruby + Rails / rspec
 
-**Unit tests**: ?
+@worldofchris (Chris Young)
 
-**Front end**: Static pages, very simple routing 
+- **Deployment / pipeline**: ?
+- **Backend**: Python / Flask
+- **Unit tests**: Pytest
+- **Front end**: Ruby + Rails
+- **Front end tests**: rspec
 
-**Front end tests**: Cypress, or just architect it so you can fire a load of rest calls and not have to worry about setup/teardown. Like why - If you know you want e2e tests - do people design so that they have to reset the dB between tests? How is that a good tradeoff? What are the alternatives this wins against? You end up with something way simpler imo. Esp if your tests leave v easy to recognise data.
+### Heroku / Python/Flask / Pytest
 
-**Data store**: json
+@nimphal (Nevelina A)
+
+- **Deployment / pipeline**: Heroku
+- **Backend**: Python / Flask
+- **Unit tests**: Pytest
+- **Front end**: ?
+- **Front end tests**: ?
+
+## Ruby
+
+### Python + Ruby + Rails
+
+- See [Python/Flask / Pytest / Ruby + Rails / rspec](#pythonflask--pytest--ruby--rails--rspec)
 
 ### Github actions + Heroku  / Ruby / Sinatra / rspec
 
-@adomas_s
+@adomas_s (Adomas Sliužinskas)
 
-**Deployment / pipeline**: Github actions + Heroku
+- **Deployment / pipeline**: Github actions + Heroku
+- **Backend**: Ruby
+- **Unit tests**: rspec
+- **Front end**: Ruby + Sinatra
+- **Front end tests**: rspec
 
-**Backend**: Ruby
-
-**Unit tests**: rspec
-
-**Front end**: Ruby
-
-**Front end tests**: rspec
+## Kotlin
 
 ### http4k
 
 @natpryce
 
-"the “server-as-a-function“ model makes testing a breeze."
+- "http4k. The “server-as-a-function“ model makes testing a breeze."
+- From [http4k.org](https://www.http4k.org/blog/meet_http4k): "http4k is an HTTP toolkit written in Kotlin that enables the serving and consuming of HTTP services in a functional and consistent way. ... Written in pure, functional Kotlin, with zero dependencies. http4k is simple. Like, really simple. No static API magic, no annotations, no reflection."
 
-### Simple http server
-
-@LewisDaleUK
-
-**Deployment / pipeline**: ?
-
-**Backend**: Express
-
-**Unit tests**: ?
-
-**Front end**: Http
-
-**Front end tests**: Cypress
+## Go
 
 ### Go + gin
 
-@dmlled
+@dmlled (DLed)
 
-"Fast compilation, no need to start the server to test the routes, tiny language, ok VS Code support"
+- "Go + gin. Fast compilation, no need to start the server to test the routes, tiny language, ok VS Code support"
+- [Getting started](gobyexample.com)
+- "and more, the readmes in the ecosystem are good"
+- Some useful links:
+    - [The gin web framework](https://github.com/gin-gonic/gin)
+    - [Testify - Go testing framework](https://github.com/stretchr/testify)
+    - [Cobra - Useful library for creating Go CLI applications](https://github.com/spf13/cobra)
 
-[Getting started](gobyexample.com)
-
-"and more, the readmes in the ecosystem are good"
-
-https://github.com/gin-gonic/gin
-https://github.com/stretchr/testify
-https://github.com/spf13/cobra
-
-### Go
+### Go + TDD
 
 @quii (Chris James)
 
-"Simple language, testing built in. Standard library has absolutely everything you need to build production ready web servers.
-
-[I wrote a thing about TDD with it](https://quii.gitbook.io/learn-go-with-tests/)
-
-[This chapter in particular I hope would help](https://quii.gitbook.io/learn-go-with-tests/build-an-application/http-server)
-
-Coming from writing scala for 5 years it did few backward in terms of syntax but the ecosystem around it makes you incredibly productive."
+- "Go. Simple language, testing built in. Standard library has absolutely everything you need to build production ready web servers.
+- Coming from writing scala for 5 years it did few backward in terms of syntax but the ecosystem around it makes you incredibly productive."
+- [I wrote a thing about TDD with it](https://quii.gitbook.io/learn-go-with-tests/)
+- [This chapter in particular I hope would help](https://quii.gitbook.io/learn-go-with-tests/build-an-application/http-server)
 
 
