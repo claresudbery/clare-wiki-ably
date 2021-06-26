@@ -107,3 +107,8 @@ Pure functions don’t modify external variables/state/data outside of the scope
     - Incremental Design
 - [More info here at agilealliance.org](https://www.agilealliance.org/glossary/xp)
     - [and here (extremeprogramming.org, Don Wells' site)](http://www.extremeprogramming.org/rules.html)
+
+## Service Design
+
+- [The marbles post](https://thinkpurpose.com/that-marbles-post/)
+- Book: [Good Services by Lou Downe](https://good.services/)
