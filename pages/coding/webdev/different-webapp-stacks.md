@@ -123,6 +123,8 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 
 @adomas_s (Adomas Sliužinskas)
 
+This is what I've used to create a lot of simple webapps. [Examples are listed here](/pages/coding/lang/oo/ruby/Ruby#sinatra).
+
 - **Deployment / pipeline**: Github actions + Heroku
 - **Backend**: Ruby
 - **Unit tests**: rspec
