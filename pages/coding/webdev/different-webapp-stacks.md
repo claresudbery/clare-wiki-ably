@@ -70,6 +70,8 @@ Below started out as a summary of the answers I got. I expected it will probably
 
 @jocrossick
 
+[create-react-app - getting-started](https://create-react-app.dev/docs/getting-started/)
+
 **Deployment / pipeline**: Github actions + Heroku
 
 **Backend**: Node + express
