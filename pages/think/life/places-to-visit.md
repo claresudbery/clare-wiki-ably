@@ -20,3 +20,9 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots)
 ## General things to do
 
 - [Drive-in cinema at Event City](https://parknpartymcr.co.uk/drive-in-cinema-manchester/)
+
+## Hotels / Cottages
+
+- [Magpie Cottages & Spa](https://www.magpiecottages.co.uk/) in the Goyt valley - just a short walk along the river from Chadkirk Chapel near Marple (we found it on a walk with dogs from Chadkirk Chapel).
+- [Duke of Edinburgh Hotel](https://www.dukeofedinburghhotel.co.uk/), Barrow in Furness - owned by the [Lancaster brewery company](https://www.lancasterbrewery.co.uk/beer-and-cider) - the people who brew Lancaster Red, Lancaster Black etc
+- [Last drop Inn](https://www.lastdropvillage.co.uk/bedrooms-suites), Bolton
