@@ -40,7 +40,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - I had node v 13 which didn't work (`The engine "node" is incompatible with this module. Expected version "^10 or ^12 or >=14". Got "13.10.1"`) so I upgraded node, but it took a bit of doing to get it right.
     - See [troubleshooting notes on my node page](/pages/coding/webdev/js/Node-JS#upgrading-node---troubleshooting).
 
-#### Troubleshooting node vs npm
+#### Troubleshooting yarn vs npm
 
 - I was experimenting with developing the same [project](https://github.com/claresudbery/create-react-app-playground) on two [different](https://github.com/claresudbery/create-react-app-playground-win) machines (a Windows machine and a Macbook, as it happens, but that wasn't actually relevant to this problem) and I came up against a conflict between `npm` and `yarn`.
     - On my macbook I had `yarn` installed. This was apparently detected by `create-react-app` and the project was built to work with `yarn`. When I pulled the code onto my Windows machine - where I *didn't* have `yarn` installed - I couldn't run the code because `yarn start` didn't work (it was configured to run using `npm start` instead).
