@@ -40,6 +40,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - I had node v 13 which didn't work (`The engine "node" is incompatible with this module. Expected version "^10 or ^12 or >=14". Got "13.10.1"`) so I upgraded node, but it took a bit of doing to get it right.
     - See [troubleshooting notes on my node page](/pages/coding/webdev/js/Node-JS#upgrading-node---troubleshooting).
 
+#### Troubleshooting getting started with a project not created on your machine
+
+- If you're getting errors about `create-script` not existing, this probably means you don't have a `node_modules` folder yet.
+- This means you haven't installed your packages yet.
+- If your project is using `yarn` (there'll be a `yarn.lock` file in the root folder), you need to run the `yarn` command.
+- If your project is using `npm` (there won't be a `yarn.lock` file in the root folder, but there will be `packages-lock.json`), you need to run the `npm install` command.
+
 #### Troubleshooting yarn vs npm
 
 - I was experimenting with developing the same [project](https://github.com/claresudbery/create-react-app-playground) on two [different](https://github.com/claresudbery/create-react-app-playground-win) machines (a Windows machine and a Macbook, as it happens, but that wasn't actually relevant to this problem) and I came up against a conflict between `npm` and `yarn`.

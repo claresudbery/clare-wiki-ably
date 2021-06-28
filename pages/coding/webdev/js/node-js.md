@@ -12,6 +12,8 @@ permalink: /pages/coding/webdev/js/Node-JS
 
 - `Yarn` and `npm` are both package managers - `npm` was specifically created for node. `Yarn` was [created by Facebook engineers](https://engineering.fb.com/2016/10/11/web/yarn-a-new-package-manager-for-javascript/), and is described as simply "javascript package management" but I think maybe it was also created specifically for node?
 - `create-react-app` will create a different project structure depending on whether you have `yarn` installed or not ([more info here](/pages/coding/webdev/js/React#troubleshooting-node-vs-npm)).
+- If you have `yarn` installed, you don't *have* to use `yarn`. You can still install and run projects that use `npm` rather than `yarn`.
+- If a project is set up to use `yarn`, you won't be able to use it with `npm`. You'll have to install `yarn` (but that's quick and easy, so shouldn't be a problem).
 
 ### Migrating from npm to yarn
 
