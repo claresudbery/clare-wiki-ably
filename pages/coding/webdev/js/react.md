@@ -26,20 +26,20 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## create-react-app
 
-### Intro
+### create-react-app - Intro
 
 - As recommended [here](/pages/coding/webdev/Different-Webapp-Stacks)
 - Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
 - [create-react-app - getting-started](https://create-react-app.dev/docs/getting-started/)
 - My [sample repo]()
 
-### Troubleshooting getting started
+### create-react-app - Troubleshooting getting started
 
 - I had node v 13 which didn't work ("The engine "node" is incompatible with this module. Expected version "^10 || ^12 || >=14". Got "13.10.1"") so I upgraded
     - [Node upgrade details here](https://phoenixnap.com/kb/update-node-js-version)
         - I used the [MacOS Installer](https://nodejs.org/en/download/current/)
 
-### Scratch
+### create-react-app - Scratch
 
 ```
 create-react-app-playground
