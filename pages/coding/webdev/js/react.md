@@ -31,7 +31,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - As recommended [here](/pages/coding/webdev/Different-Webapp-Stacks)
 - Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
 - [create-react-app - getting-started](https://create-react-app.dev/docs/getting-started/)
-- My [sample repo]()
+- My [sample repo](https://github.com/claresudbery/create-react-app-playground)
 
 ### create-react-app - Troubleshooting getting started
 
