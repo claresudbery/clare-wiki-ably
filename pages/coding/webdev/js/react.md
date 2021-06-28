@@ -45,7 +45,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - I was experimenting with developing the same [project](https://github.com/claresudbery/create-react-app-playground) on two [different](https://github.com/claresudbery/create-react-app-playground-win) machines (a Windows machine and a Macbook, as it happens, but that wasn't actually relevant to this problem) and I came up against a conflict between `npm` and `yarn`.
     - On my macbook I had `yarn` installed. This was apparently detected by `create-react-app` and the project was built to work with `yarn`. When I pulled the code onto my Windows machine - where I *didn't* have `yarn` installed - I couldn't run the code because `yarn start` didn't work (it was configured to run using `npm start` instead).
     - The solution was to install `yarn` on my Windows machine (where I was running the project in GitBash) using `npm install -g yarn`, and then migrate the project from `npm` to `yarn`. Full instructions [here](/pages/coding/webdev/js/Node-JS#migrating-from-npm-to-yarn).
-    - You can see the resulting commit [here]().
+        - You can see the resulting commit [here](https://github.com/claresudbery/create-react-app-playground-win/commit/356597f7e6ec58a75e96cb20c398b09e3edcb1ee).
     - See [package management notes on my node page for further info on yarn and npm](/pages/coding/webdev/js/Node-JS#package-management---npm-vs-yarn).
 
 ### create-react-app - Scratchpad

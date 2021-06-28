@@ -640,6 +640,10 @@ and the repository exists."
       - Or if you just want to edit the prevous commit message:
           - **git commit --amend**
           - This will bring up a text editor
+      - Or if you want to change a commit message that's further back in time:
+          - use interactive rebase - [details here](https://www.educative.io/edpresso/how-to-change-a-git-commit-message-after-a-push)
+      - Or if you want to change a commit message that's already been pushed to the server
+          - Use the appropriate technique from above, then use `git push --force` to force the change up to the server.
 
 ### git rm
 
