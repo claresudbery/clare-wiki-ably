@@ -21,7 +21,7 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Deployment / pipeline**: Heroku
 - **Backend**: Node.js
 - **Unit tests**: Jest
-- **Front end**: React
+- **Front end**: React ([my React notes])](/pages/coding/webdev/js/React))
 - **Front end tests**: Jest
 
 ### Heroku + Git / Node.js
@@ -34,7 +34,7 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end**: ?
 - **Front end tests**: ?
 
-### Github actions + Heroku / Node.js + Express / Jest / Create-react-app
+### Github actions + Heroku / Node.js + Express / Jest / React + Create-react-app
 
 @jocrossick
 
@@ -43,17 +43,17 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Deployment / pipeline**: Github actions + Heroku
 - **Backend**: Node.js + Express
 - **Unit tests**: Jest
-- **Front end**: Create-react-app 
-- **Front end tests**: Create-react-app
+- **Front end**: React via create-react-app ([my `create-react-app` notes])](/pages/coding/webdev/js/React#create-react-app))
+- **Front end tests**: create-react-app
 
-### Github actions + Netlify / Create-react-app
+### Github actions + Netlify / React + Create-react-app
 
 @fidgetfive (Matt)
 
 - **Deployment / pipeline**: Github actions + Netlify
 - **Backend**: ?
 - **Unit tests**: ?
-- **Front end**: Create-react-app 
+- **Front end**: React via create-react-app ([my `create-react-app` notes])](/pages/coding/webdev/js/React#create-react-app)) 
 - **Front end tests**: Create-react-app
 
 ### Github actions + Netlify / React
@@ -67,7 +67,7 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Deployment / pipeline**: Github actions + Netlify
 - **Backend**: ?
 - **Unit tests**: ?
-- **Front end**: React 
+- **Front end**: React ([my React notes])](/pages/coding/webdev/js/React))
 - **Front end tests**: ?
 
 ### Docker / Node.js + Express / Static pages / Cypress
