@@ -12,6 +12,23 @@ permalink: /pages/coding/webdev/js/Node-JS
 
 Good explanation [here](https://flaviocopes.com/update-npm-dependencies/).
 
+## Upgrading node - Troubleshooting
+
+- If you try to upgrade node, you might find yourself in a situation where despite the upgrade apparently being successful, you are still seeing the wrong version when you run `node -v` or `node --version` on the command line. This happened to me, and it turned out to be all about `nvm`. Here are my notes:
+    - [Node upgrade details here](https://phoenixnap.com/kb/update-node-js-version)
+        - I first used the [MacOS Installer](https://nodejs.org/en/download/current/), but it didn't work:
+            - It said it had installed, but when I followed it up with `node --version` in Terminal, it was still saying I was on `13.10.1`. 
+            - This remained true after restarting iTerm and then restarting my macbook
+        - So then I tried installing via `n` (as recommended on [this page](https://phoenixnap.com/kb/update-node-js-version))
+            - ...using these commands:
+            - `npm cache clean -f`
+            - `npm install -g n`
+            - `sudo n stable`
+        - ...but I still got `13.10.1` when I ran `node -v`. But then I noticed the feedback from the previous `sudo n stable` command:
+            - `installed : v14.17.1 to /usr/local/bin/node`
+            - `active : v13.10.1 at /Users/[username]/.nvm/versions/node/v13.10.1/bin/node`
+        - It turns out I had `nvm` installed on my system (node version manager), which had the active version set to `13.10.1`. The solution was to use `nvm` to change versions, like this: `nvm install 14.17.1`
+
 ## Node Js and WSL
 
 - You'll need [WSL 2](/pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL), which you're [better off running in a VM](https://www.windowscentral.com/how-create-virtual-machine-using-hyper-v-test-windows-10-insider-builds) as long as it's still part of the Insider programme.
