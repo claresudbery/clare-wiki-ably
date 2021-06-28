@@ -8,6 +8,24 @@ permalink: /pages/coding/webdev/js/Node-JS
 
 - [Top 10 VS Code extensions for Node js](https://developer.okta.com/blog/2019/05/08/top-vs-code-extensions-for-nodejs-developers)
 
+## Package management - npm vs yarn
+
+- `Yarn` and `npm` are both package managers - `npm` was specifically created for node. `Yarn` was [created by Facebook engineers](https://engineering.fb.com/2016/10/11/web/yarn-a-new-package-manager-for-javascript/), and is described as simply "javascript package management" but I think maybe it was also created specifically for node?
+- `create-react-app` will create a different project structure depending on whether you have `yarn` installed or not ([more info here](/pages/coding/webdev/js/React#troubleshooting-node-vs-npm)).
+
+### Migrating from npm to yarn
+
+- If you want to move a project from `npm` to `yarn`, do the following:
+  - Install `yarn`: `npm install -g yarn`
+  - Delete the `node_modules` folder
+  - Delete `package-lock.json` (`npm`'s lock file)
+  - Run `yarn` on the command line in the root folder of the project 
+    - This is the equivalent of running `npm install`
+    - It will create a new `node_modules` folder, which will have the same structure on all machines (not necessarily so with `npm`)
+    - It will also create a new `yarn.lock` file
+    - Edit your `readme.md` to explain that new users need to run `yarn` now instead of `npm install`
+  - [More info here](https://maziar.io/blog/how-to-migrate-from-npm-to-yarn/)
+
 ## Updating npm dependencies
 
 Good explanation [here](https://flaviocopes.com/update-npm-dependencies/).
