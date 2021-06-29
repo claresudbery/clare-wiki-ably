@@ -146,6 +146,14 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 - To get name of page to match title
     - Click the three dots in the page browser on the right, and select properties
 
+## Google Docs - Linking to sub-sections
+
+- You can link to sections in the same doc by using 
+  - highlight => right-click => Link => Headings and bookmarks (at the bottom). 
+- But if you want to link from one doc to another...
+  - Insert => Bookmark
+  - Then click the blue bookmark and right-click where it says Link, and choose "copy link address".
+
 ## How to make Zoom record individual voices locally
 
 - Settings => Recording => Local Recording => Record a separate audio file for each participant who speaks
