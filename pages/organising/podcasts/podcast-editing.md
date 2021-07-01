@@ -99,6 +99,7 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 
 In Audacity...
 
+- Use File => Import to load your wav or mp3 file into Audacity.
 - Top tip before you start: Hold the Ctrl key down and use the scroll wheel on your mouse to zoom in on the waveform
     - But it's slow to react, so don't scroll quickly like you normally would
     - Instead, scroll ve-ery slowly - just one notch at a time - and wait for it to react after each notch
