@@ -106,10 +106,10 @@ In Audacity...
     - Enter start and end time
     - Press play to check it worked
 - Use Ctrl + D to copy the selection out into a new track
-- Do NOT use Effect | Truncate Silence to move the snippet back to the start of its new track
+- Do NOT use Effect => Truncate Silence to move the snippet back to the start of its new track
     - Instead, just zoom in and highlight the empty section before the snippet... and use Ctrl + X to delete it.
 - Press Solo on the new snippet track
-- File | Export | Export as mp3
+- File => Export => Export as mp3
 
 
 
