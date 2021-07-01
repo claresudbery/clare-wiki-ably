@@ -69,7 +69,7 @@ permalink: /pages/organising/podcasts/Podcast-Editing
             - Add a space, and "y" for keep (= yes) or "m" if you're not sure (= maybe), or "no" for don't keep (= no) (followed by strikethrough)
             - It should look like this (the formatting matters for the spreadsheet later on): `T020 00:03:21 y`
             - Ctrl + Alt + 3 to highlight the label using heading 3 (makes it easier to find later)
-                - !! Watch out though! Somehow all my text ended up being in Heading mode, even though it looked "normal" - and I have no idea how it happened. It seemed to happen after I was using Outline mode. I think maybe it happened because I started editing when I was still in Outline mode? Anyway, keep an eye out for this. The quickest way to check whether it's happened is View | Navigation pane and check that all your label headings are appearing separately.
+                - !! Watch out though! Somehow all my text ended up being in Heading mode, even though it looked "normal" - and I have no idea how it happened. It seemed to happen after I was using Outline mode. I think maybe it happened because I started editing when I was still in Outline mode? Anyway, keep an eye out for this. The quickest way to check whether it's happened is View => Navigation pane and check that all your label headings are appearing separately.
             - Ctrl + Alt + S to strikethrough passages you want cut from the recording
                 - This is my custom shortcut for strikethrough in Microsoft Word - you can create your own [following these instructions](https://word.tips.net/T000418_Strikethrough_Shortcut_Key.html)
             - Ctrl + Shift + N to undo the heading style (goes back to "normal")
@@ -79,21 +79,21 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 
 - When you're done, transfer timestamps to a spreadsheet to get an idea of length:
     - In Word:
-        - Click View | Outline
+        - Click View => Outline
         - Make sure that "all levels" is selected from the "Show level" dropdown
         - Use Ctrl + Alt + Shift + S to bring up styles dialog
         - Click the dropdown next to Heading 3 and choose "Select All XX Instance(s)"
         - Ctrl + C to copy them all into clipboard
     - In Excel or Google sheets:
         - Have headings Label, Timestamp, Include? and duration
-        - Format the duration column as a time (select col, Format | Number | Time)
+        - Format the duration column as a time (select col, Format => Number => Time)
         - Paste clipboard
-        - Data | Split text to columns | choose Space
+        - Data => Split text to columns => choose Space
         - Now in the fourth column ("duration"), use the formula `=B3-B2` in the top non-heading cell, then drag down into all cells in this column (except the last, which should mark the end of the recording)
         - Now create min and max time totals (wherever you like), with the following formulas:
             - Min: `=SUMIF(C2:C300, "=y", D2:D300)`
             - Max: `=SUMIF(C2:C300, "=m", D2:D300)+[cell containing min total]`
-            - (you'll have to format those cells as times too - Format | Number | Time)
+            - (you'll have to format those cells as times too - Format => Number => Time)
 
 ### Audacity: Pull snippets / audiograms / teasers out into a new track
 
