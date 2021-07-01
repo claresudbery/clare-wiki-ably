@@ -16,6 +16,6 @@ permalink: /pages/organising/podcasts/Podcast-Recording
 
 ### Soundcheck
 
-* Watch this space...
+* [Soundcheck notes here](https://docs.google.com/document/d/1QIuZcnRbg5ZhmvASEk_csm54o4sundsC94VDD_OZnMw/edit?usp=sharing)
 
 

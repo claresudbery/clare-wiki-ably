@@ -10,7 +10,7 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 
 ## Recording
 
-* See [here]()
+* See [here](/pages/organising/podcasts/Podcast-Recording)
 
 ## Interview editing steps
 
@@ -99,12 +99,26 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 
 In Audacity...
 
+- Top tip before you start: Hold the Ctrl key down and use the scroll wheel on your mouse to zoom in on the waveform
+    - But it's slow to react, so don't scroll quickly like you normally would
+    - Instead, scroll ve-ery slowly - just one notch at a time - and wait for it to react after each notch
+    - There are a few other useful Audacity tips [here](/pages/organising/podcasts/Audacity)
 - Highlight the relevant section manually, or use start and end times:
     - Note start and end time
     - Place your cursor in the source track
     - Select "Start and end of selection" from the dropdown at the bottom
     - Enter start and end time
-    - Press play to check it worked
+        - I do it like this:
+        - Place cursor at the start of the snippet
+        - Use Ctrl + B to add a bookmark at that point (labelled something like "B start")
+        - Place cursor at the end of the snippet
+        - Use Ctrl + B to add another bookmark at that point (labelled something like "B end")
+        - Make a note of the time stamp (you can see it at the bottom, under "Start and end of selection")
+        - Use Alt + left to move back to the previous bookmark
+        - Now the timestamp of the first bookmark will be in both boxes under "Start and end of selection"
+        - Edit the numbers in the second box (the end of the selection) to match the timestamp you just made a note of 
+        - Now the selection will match the two bookmarks (it will be highlighted in white)
+    - Press play (spacebar) to check it worked
 - Use Ctrl + D to copy the selection out into a new track
 - Do NOT use Effect => Truncate Silence to move the snippet back to the start of its new track
     - Instead, just zoom in and highlight the empty section before the snippet... and use Ctrl + X to delete it.
