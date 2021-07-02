@@ -81,7 +81,41 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
 ### Other Slack Stuff
 
-- See [here](https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit) (Clare only) (try searching for **?learn**)
+- Common:
+  - Cmd: ?command --help - Will give you the options for whatever command is
+  - Cmd: ?++ @person - Give thing (ie person) a karma point
+  - Cmd: ?m++ @person1 @person2 @person3 Give a point to multiple people
+  - Cmd: ?pipe randcase 3 @alex | m++ - effectively give Alex three pluses -   - see section on pipe below
+  - Cmd: ?pluses @ClareSuds Find out how many pluses Clare has
+  - Cmd: ?pluspref donate From now on, instead of giving brand new karma points,   - when you use ?++ you will be donating one of YOUR points instead.
+    - Cmd: ?learn thing otherthing - learn that when ?thing is entered, the response   - should be otherthing.
+  - Note that new commands just get added to a list, which is randomly selected   - from when you use the command
+  - If you use ?learn on a user name, you need to include the @, like this: ?learn   - @user-name
+  - If you want to check the results, in Eritrea it’s ?@user-name, but in   - giftcrabs it’s gimme @user-name
+  - Commands I have added:
+    - Cmd ?celebrate tons of appropriate emojis
+  - Cmd: ?list thing - will tell you what responses have been programmed to thing
+  - Cmd: ?list thing -1 just shows you the most recently added thing
+  - Cmd: ?whois @ClareSuds - gives you a whole load of useful info about the   - specified user.
+  - Cmd: ?weather - gives you the weather
+  - Cmd: ?help weather - gives you any help that exists about the specified irccat   - command (note - there might not be any help configured)
+  - Cmd: ?ask - Pulls first result from yahoo answers
+  - Cmd: ?dig [service url]
+  - Cmd: ?spongecase some text - spongecases the text - but will be posted to the   - main channel, so if you’re in a thread you won’t see it!
+  - Cmd: ?emojispell some text - spells the text using emojis
+  - Cmd ?summon at_least_one_keyword: Gives you an image result or link for   - at_least_one_keyword
+  - Cmd ?jira OBSERVE-2222 will show link to Jira ticket
+  - Cmd ?jiracreate 
+    - Cmd ?jiracomment PROJ-123 The comment to add to the ticket
+  - ?gif at_least_one_keyword
+    - Gives you a gif result for at_least_one_keyword
+  - ?list thing1 
+    - Gives you a link to the list of things associated with thing1
+  - Cmd ?celebrate-with-pandas - put there by me for celebrations!
+  - Pipe command: ?pipe randcase 3 @alexkarp | m++
+    - Output: “Pluses are falling like rain! akarPiNskI (200), akarpInsKI (201),   - akarPiNSkI (202).”
+    - It takes the user name akarpinski, does random casing on it three times, then   - takes the output and pipes it to m++, which is multi-plussing - ie give pluses   - to multiple users. The numbers in brackets are the numbers of pluses that alex   - has after each operation.
+    - (More on pipes here: https://docs.google.com/document/d/  - 1T3ZP3GHCO4vWm1jA441ymIllgLJhuy37oNs8Sa_YWpw/edit)
 
 ## Emoticons in the browser
 
