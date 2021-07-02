@@ -117,10 +117,11 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
     - It takes the user name akarpinski, does random casing on it three times, then   - takes the output and pipes it to m++, which is multi-plussing - ie give pluses   - to multiple users. The numbers in brackets are the numbers of pluses that alex   - has after each operation.
     - (More on pipes here: https://docs.google.com/document/d/  - 1T3ZP3GHCO4vWm1jA441ymIllgLJhuy37oNs8Sa_YWpw/edit)
 
-## Emoticons in the browser
+## Emoticons in the browser (including Google meet chat windows)
 
 - Google docs / Google products only?
 - Ctrl + cmd + space to embed emojis
+  - Windows key + `;` on Windows
 - NB: In google sheets you have to be in the formula input for it to
   work.
 
