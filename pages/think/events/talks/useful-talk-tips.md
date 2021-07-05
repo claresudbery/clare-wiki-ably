@@ -7,7 +7,8 @@ permalink: /pages/think/events/talks/Useful-Talk-Tips
 ## Docs and Blog Posts and Talks
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/presenting) (Presenting category)
-- There is a video available of me doing a whole talk on this topic. It's not currently publicly available but I'm happy to share it if you contact me (you can DM or @ me on Twitter).
+- There is a video available of me doing a whole talk on this topic. 
+    - Sadly I can't share it because it was an internal workshop at Made Tech and contains video footage of workshop participants whose permission I don't have for sharing.
     - (Note for Clare: It's currently in MT google drive / for sharing and also in OneDrive / for sharing)
 
 ## Effective use of different presentation tools
