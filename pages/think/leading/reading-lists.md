@@ -97,6 +97,7 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 See Trello (Clare MT Trello) for more (for now).
 
 - [You're About to Make a Terrible Mistake: How Biases Distort Decision-Making and What You Can Do to Fight Them](https://www.amazon.com/Youre-About-Make-Terrible-Mistake/dp/0316494984)
+- [The Nature of software Development by Ron Jeffries](https://pragprog.com/titles/rjnsd/the-nature-of-software-development/) - "this is one of my favourite books at the moment and it's helped so much with these conversations" [about things like not being in a rush when developing software] (comment made by my colleague in a Slack thread)
 
 ## See also
 

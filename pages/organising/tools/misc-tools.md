@@ -164,3 +164,7 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 ## Redis 
 
 - In memory key value store, at Samba was not in application 
+
+## Finding birth + death certificates
+
+- [Free public service](https://www.freebmd.org.uk/cgi/search.pl)

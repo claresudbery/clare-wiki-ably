@@ -28,6 +28,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Some useful stuff about the spread function, currying, and javascript fundamentals are [here](https://www.the-blue-pages.net/board/index.php?/topic/39979-ducks-tiresome-thread-of-web-questions/page/2/#comments) (accessible to Clare only)
 - Use [jsfiddle code playground](https://jsfiddle.net/) to write test Javascript in the browser.
 - Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)
+- [wtfjs](https://wtfjs.com/) - a place where people post examples of Javascript behaving weirdly. "JavaScript is a language we love despite it giving us so much to hate. This is a collection of those very special irregularities, inconsistencies and just plain painfully unintuitive moments for the language of the web."
+- Chris Young(@WorldOfChris)'s city-building Bezier project - [the tests behind it](https://github.com/peckhamdata/bc-map/blob/master/test/city_builder.test.js)
 
 ## Elsewhere on this site
 

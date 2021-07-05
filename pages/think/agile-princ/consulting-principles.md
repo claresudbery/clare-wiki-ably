@@ -33,9 +33,9 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 - don't underestimate the effect of experiencing victory
 - maintain the big vision while experiencing the small victories towards that big goal.
 
-## Keep teams small
+## Effective teams
 
-### Team Topologies
+### Team Topologies - keep teams small
 
 My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightning talk at XP Manchester about the book [Team Topologies, by Matthew Skelton and Manuel Pais](https://teamtopologies.com/resources):
 
@@ -57,6 +57,20 @@ My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightnin
 	- Don't have more than 7-9 people on a team
 		 - you don't have to have all the expertise within the team - some can be external to the team.
 
+### Allow cross-pollenation between teams
+
+- ["Stirring the pot" Twitter thread on this topic](https://twitter.com/ClareSudbery/status/1404359377566511106?s=20) arising from Kevlin Henney's interview on Making Tech Better
+
 ## Shift-Left 
 
 "Shift left" means to move things from the right hand side of your kanban (or other) board to the left - ie bring them higher up in the process / do them earlier.
+
+## Systems thinking
+
+- Jessica Kerr and Kent Beck's [Systems Thinking workshops](https://systemsthinking.dev/workshop/)
+- [Esther Derby on Systems Thinking](https://www.estherderby.com/shifting-the-pattern-a-systems-approach-to-change/)
+- John Seddon on systems thinking
+	- John Seddon's book, ['Systems thinking in the public sector'](https://www.amazon.co.uk/Systems-Thinking-Public-Sector-Manifesto/dp/0955008182)
+	- His talk: [Systems thinking and the Vanguard method](https://www.youtube.com/watch?v=sb4IkJozvMk)
+	- His [patreon / podcast](https://www.patreon.com/vanguardconsulting)
+	- His [twitter](https://twitter.com/vanguardmethod)

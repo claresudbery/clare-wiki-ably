@@ -16,6 +16,7 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots)
 ## Things to do with kids
 
 - Donkey sanctuary off the cycle track near Debdale reservoir.
+- [Looney Tunes graffiti walk in Manchester](https://www.warnerbros.co.uk/news/articles/2021/06/09/looney-tunes-unleashed-manchester) - part of the 2021 Manchester International Festival (I think?)
 
 ## General things to do
 

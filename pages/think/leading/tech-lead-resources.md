@@ -9,6 +9,7 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 - [The Tech Lead's New Project Checklist](/pages/think/leading/Tech-Lead-New-Project-Checklist)
 - [Criteria to Apply to Third Party Vendors when considering build vs buy](https://insimpleterms.blog/criteria-to-apply-to-third-party-vendors)
 - [Other posts on My InSimpleTerms blog](https://insimpleterms.blog/category/technical-leadership) (Technical Leadership category)
+- [Becoming an engineering director](https://leaddev.com/professional-development/becoming-engineering-director)
 
 ## Misc
 
