@@ -167,4 +167,5 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 
 ## Finding birth + death certificates
 
-- [Free public service](https://www.freebmd.org.uk/cgi/search.pl)
+- [Free public service to find death certificates](https://www.freebmd.org.uk/cgi/search.pl)
+  - Or you can [search the GRO index](https://www.gro.gov.uk/gro/content/certificates/indexes_search.asp) - which actually seems to be more accurate (my great-grandmother's age at death was listed inaccurately on the other site) - and then order copies directly from GRO.
