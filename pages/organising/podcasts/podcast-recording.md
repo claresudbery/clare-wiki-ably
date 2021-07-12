@@ -12,7 +12,7 @@ permalink: /pages/organising/podcasts/Podcast-Recording
 
 ### Your guest
 
-* Aske them to [test their internet speed](https://www.speedtest.net/)
+* Ask them to [test their internet speed](https://www.speedtest.net/)
 
 ### Soundcheck
 

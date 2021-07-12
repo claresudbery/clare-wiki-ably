@@ -17,6 +17,8 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 - Claire W ran a tech lead role definition workshop for me and a resident tech lead at Samba. The outcome postits are available (to Clare only) at OneDrive\TW-Stuff\Clients\[Samba]]\ClaireW-TechLeadPics-small
 - See [section on skills matrices](/pages/think/teach/Teaching-Resources#skills-matrices) for an example of a skills matrix for tech leads
 - A great idea for how to track all the good things you're doing, ready for progress reviews and promotion requests - [the brag document](https://jvns.ca/blog/brag-documents/)
+- Thoughts on [building a team / line management](/pages/think/leading/Line-Management)
+- See also [The Tech Lead's New Project Checklist](/pages/think/leading/Tech-Lead-New-Project-Checklist), because I've added a bunch of stuff onto the end
 
 ## Books
 
@@ -29,3 +31,4 @@ permalink: /pages/think/leading/Technical-Leadership-Resources
 - [Being an Individual Contributor => Principal Engineer](https://medium.com/@SkyscannerEng/finding-the-steps-on-the-individual-contributor-ladder-8ec60e11fb46), by @NickyWrightson
 - [Being a Principal Engineer at SkyScanner](https://medium.com/@SkyscannerEng/being-a-principal-engineer-at-skyscanner-1830dfa17d30), by @NickyWrightson
 - [Being a Principal Engineer](https://blog.dbsmasher.com/2019/01/28/on-being-a-principal-engineer.html), by Sylvia Botros (@dbsmasher)
+- See also - my AO.com notes

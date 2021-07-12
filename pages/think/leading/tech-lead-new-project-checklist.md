@@ -36,3 +36,7 @@ Be explicit about the following:
 ## Potential Pitfalls
 
 - Remember to find out what outputs or outcomes you are being measured by. It doesn't matter how well you think you are doing if you're being measured by something you either didn't know about or don't agree with.
+
+## Outcomes and Stories
+
+- When you finish, what is the story you will tell? What journey do you want to be proud to have trodden (eg we increased num releases to x per day or increased users by x)?
