@@ -33,7 +33,7 @@ Examples will make this a bit more concrete:
  
 * The **domain** is the actual logic of your application. You want to be able to implement this independently of either UI or third party services.
 * A **primary port** is a contract (aka interface) you share with the world. This is the behaviour you agree to provide, independent of implementation.
-* A **primary adapter** will use the behaviour available on a primary port (again, regardless of implementation detail), and serve it up to the world. For instance, this could be a controller which takes in user input from a UI and serves it up to your user interface.
+* A **primary adapter** will use the behaviour available on a primary port (again, regardless of implementation detail), and serve it up to the world. For instance, this could be a controller which pulls useful data from your domain and serves it up to your user interface.
 * A **secondary port** will also be an interface or contract. But this time, it is the contract you're expecting to be fulfilled by a third party, for instance a database.
 * A **secondary adapter** will be an implementation of a secondary port. For instance, this may be a data access implementation which uses SQL.
 * !! Note that whereas **secondary adapters** are implementations of interfaces, **primary adapters** are *clients* of interfaces. The implementation of the primary ports will happen within the domain.
