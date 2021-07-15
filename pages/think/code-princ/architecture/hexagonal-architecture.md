@@ -19,7 +19,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - [GitHub documentation by Craig Bass about clean architecture](https://github.com/madetech/clean-architecture)
     - [Ian Cooper Clean Architecture Video](https://www.youtube.com/watch?v=SxJPQ5qXisw) (53 mins long)
         - See also [my notes on this video](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture)
-        - This talk basically compares clean architecture with hexagonal architecture. My notes on that comparison are [here](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture)
+        - This talk basically compares clean architecture with hexagonal architecture and other related architectures. My notes on that comparison are [here](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture)
     - [my notes on clean architecture](/pages/think/code-princ/architecture/Clean-Architecture)
     - [blog post](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 

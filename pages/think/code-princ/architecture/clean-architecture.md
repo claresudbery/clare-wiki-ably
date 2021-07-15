@@ -9,7 +9,7 @@ permalink: /pages/think/code-princ/architecture/Clean-Architecture
 ## Links
 
 - There are several clean architecture links [here on my hexagonal architecture page](/pages/think/code-princ/architecture/Hexagonal-Architecture#docs-and-blog-posts)
-- Ian Cooper does [a talk on clean architecture](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture) where he basically compares clean architecture with hexagonal architecture. My notes on that comparison are [here](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture)
+- Ian Cooper does [a talk on clean architecture](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture) where he basically compares clean architecture with hexagonal architecture and other related architectures. My notes on that comparison are [here](/pages/think/code-princ/architecture/Clean-vs-Hexagonal-Architecture)
 - See notes from Craig Bass [here](https://trello.com/c/lOxBnGxF/315-plan-the-session-on-clean-architecture-for-fri-6th-nov) (accessible to Clare only)
 
 ## Terminology

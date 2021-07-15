@@ -10,7 +10,17 @@ These notes are based on [Ian Cooper's Clean Architecture Video](https://www.you
 
 I have more notes on clean architecture [here](/pages/think/code-princ/architecture/Clean-Architecture) and [here](/pages/think/code-princ/architecture/Hexagonal-Architecture#docs-and-blog-posts).
 
-## Layers
+Ian looks at the following precursors to clean architecture, all of which are described below:
+- Layered Architectures
+- Ports and Adapters / Hexagonal architecture (Alistair Cockburn)
+- Onion architecture (Jeffrey Palermo)
+    - I didn't make any notes on onion architecture - not sure Ian Cooper covered this in any detail?
+- Boundaries, Controllers and Entities (Ivar Jacobson)
+
+Clean architecture is a synthesis of all the above - described first by Bob Martin but with acknowledgement to all the above precursors.
+
+
+## Layered Architectures
 
 - Typically described as 3 layers but can actually be as many as you want. 
 - The typical three layers:
@@ -21,32 +31,35 @@ I have more notes on clean architecture [here](/pages/think/code-princ/architect
     - Nothing at a lower layer may depend on a higher layer
     - Avoid circular dependencies
 - Why layers? 
-    - So that I can abstract away complexity. Having a data layer / respository pattern is not just about being to swap in a new database implementation - it's also so that I don't have to reason about how data access works when I'm thinking about domain logic. I want to be able to FIT IT IN MY HEAD. So I only have to think about one layer at a time.
+    - So that I can abstract away complexity. Having a data layer / repository pattern is not just about being able to swap in a new database implementation - it's also so that I don't have to reason about how data access works when I'm thinking about domain logic. I want to be able to FIT IT IN MY HEAD. So I only have to think about one layer at a time.
     - But also if I want, I can substitute a different implementation. This doesn't have to mean swapping SQL for Mongo - it could just be moving from NHibernate to Dapper, or changing some UI branding. Or switch payment providers.
     - You can defer decisions about implementation until the last responsible moment (eg using stubs and mocks)
     - You can minimise dependencies between layers
         - Low coupling and high cohesion: "Things that change together live together, and things that don't change together are apart." - [Ian Cooper, The Clean Architecture, DevTernity](https://www.youtube.com/watch?v=SxJPQ5qXisw).
+
+### Domain layer split into service layer / entity layer
+
+- This is a way of splitting the domain layer. 
+- Often the domain layer / business layer is split into two layers:
+    - A service layer and an entity layer
     - Distinguish between two types of business logic
-        - domain logic
-        - application / workflow logic
+        - domain logic (entity layer)
+        - application / workflow logic (service layer)
+- Two ways of doing this, domain facade and operation script. You might mix and match them in different areas of your solution:
 
-## Service layer / Entity layer
-
-This is a way of splitting the domain layer. Two ways of doing this, domain facade and operation script. You might mix and match them in different areas of your solution:
-
-### Domain facade
+#### Domain facade
 
 - **Service layer** 
     - is a thin layer - or set of thin facades - containing application logic. No domain logic.
-    - These facades are imnplemented by classes which are purely implementing application logic.
+    - These facades are implemented by classes which are purely implementing application logic.
     - The service layer sits over the Domain Model
     - Coordinates access to the domain objects
 - **Domain model** 
     - The Domain Model is where all the domain logic is implemented.
     - Contains domain entities, each of which has both state and behaviour (rules) dependent on that state
-    - (This came from Ian Cooper, and when he says state I think he really means data?)
+    - (This came from Ian Cooper, and when he says state I think he effectively means data about the system? (see below))
 
-### Operation Script
+#### Operation Script
 
 This happens in some kind of crud-based service where we don't have much of a domain, and all we're really doing is storing, retrieving, updating data.
 
@@ -57,23 +70,26 @@ This happens in some kind of crud-based service where we don't have much of a do
 - **Domain objects**
     - domain objects mainly dumb objects holding state
 
-## Ports and adaptors (hexagonal architecture)
+## Ports and adaptors (hexagonal architecture) (Alistair Cockburn)
+
+![Diagram of ports and adapters](/resources/images/HexagonalArchitecture-ports-and-adapters.png)
 
 It's basically layered architecture with a slightly different set of rules.
 
 Three layers:
 
-- Application
+- Application / Domain (the yellow bit in the middle)
     - contains the rules of the application. aka domain layer / domain model.
     - this is where the business entities live.
     - these objects are completely divorced from IO concerns
-    - in TDD, you don't even have to mock out your IO objects (?)
-- Adapters
+    - when doing TDD, you don't even have to mock out your IO objects because they are not referred to in this core.
+- Adapters (the blue bits on the outside)
     - deal with the outside world
     - input and output
     - store data from the system
     - get data into the system
-- Ports
+    - can represent either incoming (primary) or outgoing (secondary) messages / data
+- Ports (the red bits - interfaces between the outside and the inside (domain) of your system)
     - How the adapter layer uses / communicates with domain
     - The ports are where you plug in the adapters
     - One port might be used by a number of adapters
@@ -81,6 +97,7 @@ Three layers:
     - Test can replace UI - just plug into the port and drive the application
     - The ports layer is handling both incoming (primary) and outgoing (secondary) conversations
     - This is where you represent the use case - it's a use case boundary
+        - By use case, we mean example of how the domain models might be used
 
 ### Comparing hexagonal with the original layers
 
@@ -93,7 +110,7 @@ Three layers:
     - The port layer creates an interface to represent a thing from the layer it can't reach, ie the adapter layer
     - Then at runtime, dependency injection substitutes in an instance of the thing you want to access
 
-## Boundaries, Controllers and Entities
+## Boundaries, Controllers and Entities 
 
 - aka BCE, by Ivar Jacobson from his book [Object Oriented Software Engineering: A Use-Case Driven Approach](https://www.ivarjacobson.com/publications/books/object-oriented-software-engineering-1992)
 - Boundary object - a lot like an adapter (hexag architecture)
