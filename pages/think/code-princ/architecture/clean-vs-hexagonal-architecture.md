@@ -110,7 +110,7 @@ Three layers:
     - The port layer creates an interface to represent a thing from the layer it can't reach, ie the adapter layer
     - Then at runtime, dependency injection substitutes in an instance of the thing you want to access
 
-## Boundaries, Controllers and Entities 
+## Boundaries, Controllers and Entities (Ivar Jacobson)
 
 - aka BCE, by Ivar Jacobson from his book [Object Oriented Software Engineering: A Use-Case Driven Approach](https://www.ivarjacobson.com/publications/books/object-oriented-software-engineering-1992)
 - Boundary object - a lot like an adapter (hexag architecture)
