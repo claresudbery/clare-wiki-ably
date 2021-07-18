@@ -12,6 +12,7 @@ aka "Mob Programming"
 - Emmersion do a lot of mobbing, and encourage people to sign up as guest mobbers [here](https://bit.ly/emmersion-guest-mobber)
 
 ## The Driver-Navigator Technique for Large Mobs
+(Note for Clare - this is linked to from elsewhere so don't change this title!) 
 
 - Once you get beyond five or six people, mobs can become ineffective:
     - Only the really confident people will take part
