@@ -112,3 +112,16 @@ Pure functions don’t modify external variables/state/data outside of the scope
 
 - [The marbles post](https://thinkpurpose.com/that-marbles-post/)
 - Book: [Good Services by Lou Downe](https://good.services/)
+
+## YAGNI
+
+- You Ain't Gonna Need It.
+- Be wary of over-designing and over-optimising.
+
+## DRY
+
+- Don't Repeat Yourself.
+- Part of the Single Responsibility Principle (SRP) which is the S of [SOLID](/pages/think/code-princ/SOLID).
+- But be aware that too much obsession with DRY can lead to tightly coupled code which is hard to read. Balance is important, as in all things.
+	- More on that [here](https://overreacted.io/the-wet-codebase/).
+	- There's an interesting twitter convo about it [here](https://twitter.com/dixie3flatline/status/1416199317258334219?s=21) (although ironically it repeats itself quite a lot).
