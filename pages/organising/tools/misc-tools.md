@@ -122,7 +122,9 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
   - Hover over the file and click on Details
   - Click on Copy URL under the url
 
-## Google sites
+## Google suite
+
+### Google sites
 
 - Here: https://sites.google.com/
 - To edit a page:
@@ -146,13 +148,17 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 - To get name of page to match title
     - Click the three dots in the page browser on the right, and select properties
 
-## Google Docs - Linking to sub-sections
+### Google Docs - Linking to sub-sections
 
 - You can link to sections in the same doc by using 
   - highlight => right-click => Link => Headings and bookmarks (at the bottom). 
 - But if you want to link from one doc to another...
   - Insert => Bookmark
   - Then click the blue bookmark and right-click where it says Link, and choose "copy link address".
+
+### Google sheets on iphone
+
+- To see other sheets / tabs, get out of editing mode (click the green tick top left), and then they will appear at the bottom of the screen. 
 
 ## How to make Zoom record individual voices locally
 
