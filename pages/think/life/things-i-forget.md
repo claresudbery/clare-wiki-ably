@@ -159,3 +159,7 @@ See [here](https://theoldvillage.wordpress.com/2004/01/28/douglas-adams-shares-a
 
 - Acute is short-lived
 - Chronic is long-term
+
+## What are those small red spots called that look a bit like red freckles?
+
+Campbell De Morgan spots

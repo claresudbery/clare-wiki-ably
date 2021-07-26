@@ -131,6 +131,16 @@ This is what I've used to create a lot of simple webapps. [Examples are listed h
 - **Front end**: Ruby + Sinatra
 - **Front end tests**: rspec
 
+### Django + Python
+
+Django is the ruby on Rails of Python. Has great documentation (better than Rails according to the person I spoke to), and does database migrations automatically.
+
+- **Deployment / pipeline**: ?
+- **Backend**: Python
+- **Unit tests**: ?
+- **Front end**: Django
+- **Front end tests**: ?
+
 ## Kotlin
 
 ### http4k
