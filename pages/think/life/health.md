@@ -62,6 +62,10 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 
 - [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
 - [Link to book your own vaccination](https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/) (once they reach your group)
+- Problems with covishield (Indian vaccine batch) preventing travel to France and other countries
+  - Original [article describing the problem](https://www.google.co.uk/amp/s/inews.co.uk/inews-lifestyle/travel/astrazeneca-batch-number-check-how-covid-vaccine-numbers-made-india-uk-eu-travel-1083092/amphttps://www.google.co.uk/amp/s/inews.co.uk/inews-lifestyle/travel/astrazeneca-batch-number-check-how-covid-vaccine-numbers-made-india-uk-eu-travel-1083092/amp)
+  - Article [about people being turned away from Manchester airport](https://www.manchestereveningnews.co.uk/news/local-news/couple-sent-home-manchester-airport-21046601#ICID=Android_MENNewsApp_AppSharehttps://www.manchestereveningnews.co.uk/news/local-news/couple-sent-home-manchester-airport-21046601#ICID=Android_MENNewsApp_AppShare)
+  - Article saying [it's now resolved for France](https://www.schengenvisainfo.com/news/france-now-recognises-covishield-vaccine-as-proof-of-vaccination/)
 
 ### Staying sane during the COVID-19 crisis
 
