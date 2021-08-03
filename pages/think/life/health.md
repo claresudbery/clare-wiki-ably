@@ -54,6 +54,10 @@ I heard about both of these because they were recommended by Caitlin Moran [on t
 
 ## COVID-19 / coronavirus / Sars-CoV-2
 
+### Updated symptom list
+
+[Updated symptom advice](https://covid.joinzoe.com/post/new-top-5-covid-symptoms)
+
 ### Vaccination
 
 - [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
