@@ -124,6 +124,12 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 
 ## Google suite
 
+### Use keyboard to accept auto-correct suggestions
+
+- Place cursor in mis-spelt word
+- Press tab to highlight the correction
+- Press Enter
+
 ### Google sites
 
 - Here: https://sites.google.com/
