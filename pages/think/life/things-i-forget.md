@@ -163,3 +163,11 @@ See [here](https://theoldvillage.wordpress.com/2004/01/28/douglas-adams-shares-a
 ## What are those small red spots called that look a bit like red freckles?
 
 Campbell De Morgan spots
+
+## What are the five rules of life?
+
+- Use your goat
+- Be firm but fair
+- The way to a woman's stomach is through her stomach
+- Just because you understand it doesn't mean you have to like it
+- Never fall in love with a straight woman
