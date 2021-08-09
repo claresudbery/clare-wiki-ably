@@ -19,11 +19,11 @@ See [energisers](/pages/think/events/workshops/Energisers-and-Warmups#getting-to
 Everything from Taskmaster (see book). For instance...
 - Standing on a bridge and popping up every 30 seconds for 30 seconds. When you're ducked down, somebody down below the bridge has to try and approach the bridge. Bit like What time is it Mr Wolf. Every time you pop up and bob down, blow a horn or make some kind of loud noise.
 
-### Picture consequences
+### Picture consequences / Telephone pictionary
 
 This is one of my favourite party games. It always makes me laugh a lot.
 
-It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Drawful works better remotely, but Picture Consequences works better in person.
+It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Drawful works better remotely, but Picture Consequences works better in person. Another online version of this game is [BrokenPicturePhone](brokenpicturephone.com).
 
 - You need at least 5 people. More than 10 is probably getting a bit excessive.
 - Everybody gets a piece of A4 paper
@@ -168,3 +168,7 @@ Use an app such as Reverse Play or [Say it Backwards](https://apps.apple.com/tm/
 4. Record yourself saying it backwards
 5. Reverse the recording
 6. See if people can tell what you're saying
+
+## Pass the parcel for adults
+
+Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-pages.net/board/index.php?/topic/40129-ideas-for-darespass-the-parcel-not-for-kids/) (accessible to Clare only)

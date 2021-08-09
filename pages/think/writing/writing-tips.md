@@ -12,3 +12,7 @@ Writing a good novel: your idea that you had should probably be in the middle, n
 
 I know I've given this advice several times, so I must have written it up in more detail somewhere, but [this is the only version I could find online](https://twitter.com/ClareSudbery/status/1092903239111069697?s=20).  
 (Note to self: write it up in more detail and put it in here.)
+
+## Do you really want to write a book?
+
+[Neal Ford gives criteria on how to decide if a book should be written](https://podcasts.apple.com/gb/podcast/meme-wrangling-rough-edges-software-neal-ford-on-tech/id1557131237?i=1000523901189) (Starts a bit before 8:00)

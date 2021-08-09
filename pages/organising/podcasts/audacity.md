@@ -74,3 +74,8 @@ permalink: /pages/organising/podcasts/Audacity
     - !! Watch out! The "Audio position" box doesn't do what you think - even though it seems editable, it's actually for display only
         - If you want to change your position, use "Start and end of selection"
         - If you just want to go to a particular point, set Start and End to the same point or use Start and Length and set length to 0
+
+### Using copy/paste when naming files in Audacity on Macbook
+
+- For some reason I can't use Cmd+C and Cmd+V when naming files in the Export and Save dialogs on the Macbook, but there is a simple workaround: Use right-click | Copy and then right-click | Paste.
+- I found others complaining about this on the internet, bit the right-click solution was the only suggestion that worked for me.

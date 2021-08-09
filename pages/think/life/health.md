@@ -287,8 +287,14 @@ Top tips for hayfever sufferers (courtesy of Jane / Digger):
 - Wearing glasses / sunglasses can reduce pollen getting into your eyes
 - Try and keep bedroom windows and doors closed (if it's hot then keep curtains closed too to keep the room cool) during the day, open them at night.
 
-## ADHD
+## Neurodiversity
+
+### ADHD
 
 - Advice from an ADHD friend if you want to understand ADHD better:
   - [Watch this](https://www.understood.org/articles/en/adhd-explained-a-28-minute-primer)
   - [...then read this](https://blackgirllostkeys.com/adhd/ultimate-adhd-guide)
+
+### Autism
+
+- See [separate page](/pages/think/life/Autism)
