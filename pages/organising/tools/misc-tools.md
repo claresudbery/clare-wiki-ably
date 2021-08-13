@@ -166,6 +166,11 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 
 - To see other sheets / tabs, get out of editing mode (click the green tick top left), and then they will appear at the bottom of the screen. 
 
+### Google trends
+
+- Find out what people are searching for!
+  - [Here](https://trends.google.com/trends)
+
 ## How to make Zoom record individual voices locally
 
 - Settings => Recording => Local Recording => Record a separate audio file for each participant who speaks
