@@ -3,7 +3,7 @@ layout: page
 location: pages/coding/tools/leaf
 permalink: /pages/coding/tools/Visual-Studio-Code
 ---
-## Misc
+## Visual Studio Code - Misc
 
   - Keyboard shortcut cheat sheet:
     [<span class="underline">http://donovanbrown.com/post/visual-studio-code-keyboard-shortcut-cheat-sheet</span>](http://donovanbrown.com/post/visual-studio-code-keyboard-shortcut-cheat-sheet)
