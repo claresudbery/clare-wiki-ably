@@ -4,6 +4,8 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/To-Do-List-Advice
 ---
 
+## To do / to-do list advice
+
 1. Does it really need to be done?
 2. Can it be delegated?
 3. Can it be done now?
