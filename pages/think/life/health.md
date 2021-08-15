@@ -181,8 +181,12 @@ worms aren’t worrying.
 
 ### Some info and links
 
-- [Vaccination info](#vaccination)
+- [Vaccination info](#vaccination) (including booking yourself in for vaccination, and stuff about the covishield A-Z Indian vaccine)
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
+- [How to order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
+- Order a [vaccination certificate for travelling](https://www.nhs.uk/conditions/coronavirus-covid-19/covid-pass/get-your-covid-pass-letter/)
+  - Note that you can also download a pdf from the NHS app (not the covid app) - see link below.
+- [Download a digital vaccination certificate / covid pass](https://www.gov.uk/guidance/nhs-covid-pass#how-to-access-the-nhs-covid-pass) (note: It's in the general NHS app, not the Covid app)
 
 NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 
