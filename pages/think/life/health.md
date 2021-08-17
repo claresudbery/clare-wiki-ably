@@ -182,6 +182,7 @@ worms aren’t worrying.
 ### Some info and links
 
 - [Vaccination info](#vaccination) (including booking yourself in for vaccination, and stuff about the covishield A-Z Indian vaccine)
+- [How to travel abroad](https://www.gov.uk/guidance/travel-abroad-from-england-during-coronavirus-covid-19#before-you-travel-abroad)
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
 - [How to order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
 - Order a [vaccination certificate for travelling](https://www.nhs.uk/conditions/coronavirus-covid-19/covid-pass/get-your-covid-pass-letter/)
