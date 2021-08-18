@@ -186,3 +186,17 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 
 - [Free public service to find death certificates](https://www.freebmd.org.uk/cgi/search.pl)
   - Or you can [search the GRO index](https://www.gro.gov.uk/gro/content/certificates/indexes_search.asp) - which actually seems to be more accurate (my great-grandmother's age at death was listed inaccurately on the other site) - and then order copies directly from GRO.
+
+## Letterboxd - adding notes to films
+
+- I've already created a custom list "want to watch" under my profile
+- To see existing notes:
+  - Claresudbery | Lists
+  - Select the list
+  - click "List view" (icon wi horizontal lines, top right) to see notes
+- To add a new film with note / add a note:
+  - It varies per platform
+  - The important thing is to look for the edit icon
+  - On desktop you only see the edit icon (little pencil) BEFORE you click through to the list itself
+  - On mobile you see it by clicking through to the list and THEN clicking the three dots top right and selecting edit - but you have to do this while looking at the whole list, not when looking at an individual film (then click Edit entries, then select the film you want to edit from the list that comes up)
+  - I suspect maybe you can't add a note while adding a film - you have to go back and add the note afterwards?
