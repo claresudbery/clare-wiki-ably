@@ -182,12 +182,21 @@ worms aren’t worrying.
 ### Some info and links
 
 - [Vaccination info](#vaccination) (including booking yourself in for vaccination, and stuff about the covishield A-Z Indian vaccine)
-- [How to travel abroad](https://www.gov.uk/guidance/travel-abroad-from-england-during-coronavirus-covid-19#before-you-travel-abroad)
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
 - [How to order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
 - Order a [vaccination certificate for travelling](https://www.nhs.uk/conditions/coronavirus-covid-19/covid-pass/get-your-covid-pass-letter/)
   - Note that you can also download a pdf from the NHS app (not the covid app) - see link below.
 - [Download a digital vaccination certificate / covid pass](https://www.gov.uk/guidance/nhs-covid-pass#how-to-access-the-nhs-covid-pass) (note: It's in the general NHS app, not the Covid app)
+- Foreign travel:
+  - On 19/8/21, France was on the amber list
+    - This means you need a covid pass to travel there
+    - You need to wear a mask on public transport
+    - You need to do a covid test on day 2 after your return to England
+    - Before travel, use the links below to check status is still amber and rules for travel are still the same.
+  - [How to travel abroad](https://www.gov.uk/guidance/travel-abroad-from-england-during-coronavirus-covid-19#before-you-travel-abroad)
+  - [Instructions for travelling to France](https://www.gov.uk/foreign-travel-advice/france/coronavirus)
+  - [List of red, green and amber countries](https://www.gov.uk/guidance/red-amber-and-green-list-rules-for-entering-england) (just search for the name of the country you're interested in)
+  - [Order a Day 2 test kit](https://www.find-travel-test-provider.service.gov.uk/test-type/green) for use after arrival in England from an amber list country
 
 NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
 
