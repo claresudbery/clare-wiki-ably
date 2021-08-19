@@ -171,3 +171,7 @@ Campbell De Morgan spots
 - The way to a woman's stomach is through her stomach
 - Just because you understand it doesn't mean you have to like it
 - Never fall in love with a straight woman
+
+## What's that story about somebody stoned in an art gallery with the president of Ireland?
+
+[It's this](https://twitter.com/shockproofbeats/status/992006545473966082?s=21) (not an art gallery but I can see why my brain visualised it as such).
