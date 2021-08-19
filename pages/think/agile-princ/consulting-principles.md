@@ -53,7 +53,7 @@ My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightnin
 	- Use Conway's Law
 	- Platform as product:
 		- There's a great 4-hour course by Manuel Pais about platform as product
-		- Don't mandate the use of your platform - let people make choices - and that will focus you on maing your platform genuinely useful
+		- Don't mandate the use of your platform - let people make choices - and that will focus you on making your platform genuinely useful
 	- Don't have more than 7-9 people on a team
 		 - you don't have to have all the expertise within the team - some can be external to the team.
 
