@@ -43,12 +43,12 @@ My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightnin
 - An idea: Instead of having a WIP limit, have a dependency limit 
 - The more external dependencies your team has in progress at any one time, the more you will grind to a halt
 - Team Topologies by Matthew Skelton and Manuel Pais
-	- Neil has made his own notes: https://www.notion.so/Useful-ideas-from-Team-Topologies-b3b83296015c4051978bdededb941957
+	- Neil has made [his own notes](https://www.notion.so/Useful-ideas-from-Team-Topologies-b3b83296015c4051978bdededb941957)
 	- It's a book, and website, and GitHub repos, and training
-	- teamtopologies.com/resources 
-	- GitHub.com/teamtopologies
-		- Also https://itrevolution.com/book/accelerate/
-		- and https://www.goodreads.com/book/show/93892.Rapid_Development
+	- The [website](https://teamtopologies.com/)
+	- Various [useful resources](https://github.com/teamtopologies) referred to in the book
+		- Also the [Accelerate book](https://itrevolution.com/book/accelerate/) is useful
+		- and the [Rapid Development book](https://www.goodreads.com/book/show/93892.Rapid_Development)
 	- The Stream Aligned Team can partner up with the Enabling Team 
 	- Use Conway's Law
 	- Platform as product:
