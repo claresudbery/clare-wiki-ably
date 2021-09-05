@@ -183,7 +183,8 @@ worms aren’t worrying.
 
 - [Vaccination info](#vaccination) (including booking yourself in for vaccination, and stuff about the covishield A-Z Indian vaccine)
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
-- [How to order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
+- [Order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
+- Book [drive-in or home-delivered PCR test](https://www.gov.uk/get-coronavirus-test)
 - Order a [vaccination certificate for travelling](https://www.nhs.uk/conditions/coronavirus-covid-19/covid-pass/get-your-covid-pass-letter/)
   - Note that you can also download a pdf from the NHS app (not the covid app) - see link below.
 - [Download a digital vaccination certificate / covid pass](https://www.gov.uk/guidance/nhs-covid-pass#how-to-access-the-nhs-covid-pass) (note: It's in the general NHS app, not the Covid app)
