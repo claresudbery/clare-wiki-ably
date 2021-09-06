@@ -196,6 +196,13 @@ worms aren’t worrying.
     - Before travel, use the links below to check status is still amber and rules for travel are still the same.
   - [How to travel abroad](https://www.gov.uk/guidance/travel-abroad-from-england-during-coronavirus-covid-19#before-you-travel-abroad)
   - [Instructions for travelling to France](https://www.gov.uk/foreign-travel-advice/france/coronavirus)
+    - What I needed to travel to France on 7/9/21:
+    1. A covid pass.
+    2. A sworn statement for the French govt.
+    3. Proof of destination and accommodation for the French authorities.
+    4. Fill in a [passenger location form](https://www.gov.uk/provide-journey-contact-details-before-travel-uk) for UK govt <= 48 hours before returning to UK.
+    5. Do a PCR test in France before leaving (still haven't quite managed to work out how I make that happen according to the rules, but the conference organisers say I can do it at the conference venue, so fingers crossed that's all correct).
+    6. Do another "2 day" PCR test in England after arriving (this has to be ordered in advance).
   - [List of red, green and amber countries](https://www.gov.uk/guidance/red-amber-and-green-list-rules-for-entering-england) (search for the name of the country you're interested in, then scroll up to see which list it's in)
   - Info on [whether you need a new passport due to Brexit](https://check-passport-for-travel-to-europe.homeoffice.gov.uk/) (basically if it's less than 10 years old and has at least six months before it expires, even if it was issued before Brexit, it's probably fine).
   - [Order a Day 2 test kit](https://www.find-travel-test-provider.service.gov.uk/test-type/green) for use after arrival in England from an amber list country
