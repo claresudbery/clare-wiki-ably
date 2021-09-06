@@ -197,6 +197,7 @@ worms aren’t worrying.
   - [How to travel abroad](https://www.gov.uk/guidance/travel-abroad-from-england-during-coronavirus-covid-19#before-you-travel-abroad)
   - [Instructions for travelling to France](https://www.gov.uk/foreign-travel-advice/france/coronavirus)
   - [List of red, green and amber countries](https://www.gov.uk/guidance/red-amber-and-green-list-rules-for-entering-england) (search for the name of the country you're interested in, then scroll up to see which list it's in)
+  - Info on [whether you need a new passport due to Brexit](https://check-passport-for-travel-to-europe.homeoffice.gov.uk/) (basically if it's less than 10 years old and has at least six months before it expires, even if it was issued before Brexit, it's probably fine).
   - [Order a Day 2 test kit](https://www.find-travel-test-provider.service.gov.uk/test-type/green) for use after arrival in England from an amber list country
 
 NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
