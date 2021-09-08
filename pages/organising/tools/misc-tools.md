@@ -200,3 +200,8 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
   - On desktop you only see the edit icon (little pencil) BEFORE you click through to the list itself
   - On mobile you see it by clicking through to the list and THEN clicking the three dots top right and selecting edit - but you have to do this while looking at the whole list, not when looking at an individual film (then click Edit entries, then select the film you want to edit from the list that comes up)
   - I suspect maybe you can't add a note while adding a film - you have to go back and add the note afterwards?
+
+  ## Mentimeter
+
+  - Useful for quizzes, surveys, Q&A, audience participation, interactive presentations
+  - [menti.com](https://www.menti.com/)
