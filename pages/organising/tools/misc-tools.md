@@ -88,7 +88,7 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 
 ## Hubspot
 
-(url stored in chrome bookmarks, under MT Docs => podcast => marketing)
+(for Clare, the url is stored in chrome bookmarks, under MT Docs => podcast => marketing - this won't work for anyone else unless you've also stored the url here, sorry!)
 
 ### Uploading files to Hubspot
 
@@ -121,6 +121,11 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
     - UTM medium = Making Tech Better
     - UTM term = Episode Xxx
     - UTM content = Transcript
+- To fetch the now-created url:
+  - The url you just created will probably now be listed at the top of the page, but if not use "Search tracking urls" at the top to find it.
+  - Hover over the row
+  - Click "Copy short url" to get the shortened version
+  - Click "Actions" to get access to the long tracking url and also to the original url.
 
 ## Google suite
 
