@@ -319,6 +319,6 @@ Top tips for hayfever sufferers (courtesy of Jane / Digger):
   - [Watch this](https://www.understood.org/articles/en/adhd-explained-a-28-minute-primer)
   - [...then read this](https://blackgirllostkeys.com/adhd/ultimate-adhd-guide)
 
-### Autism
+### Autism and ADHD
 
-- See [separate page](/pages/think/life/Autism)
+- See [separate page](/pages/think/life/Autism-And-ADHD)
