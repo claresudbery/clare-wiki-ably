@@ -175,3 +175,7 @@ Campbell De Morgan spots
 ## What's that story about somebody stoned in an art gallery with the president of Ireland?
 
 [It's this](https://twitter.com/shockproofbeats/status/992006545473966082?s=21) (not an art gallery but I can see why my brain visualised it as such).
+
+## what do those punctuating guitar chords in Baxter Drury's Miami remind me of?
+
+- Money, by Pink Floyd
