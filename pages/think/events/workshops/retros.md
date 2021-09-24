@@ -29,3 +29,53 @@ permalink: /pages/think/events/workshops/Retros
 
 - Outcome of a "storyboard" retro format (PRIVATE): `2018-02-09_Retro-storyboard.JPG` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
 - The way this worked was that people in groups drew pictures representing what their desired future would look like at the end of the next sprint, and then played them back to the wider group.
+
+## Retrospectives Antipatterns
+
+From [Retrospectives Antipatterns, by Aino Corry](https://metadeveloper.com/retrospective-antipatterns/).
+
+### Five Phases of a Retrospective
+
+1. Set the stage
+    - Create an atmosphere of trust
+    - Make sure everyone's voice is heard
+    - Look at previous experiments / commitments / outcomes
+    - Define a theme    
+2. Gather data
+    - what happened in the previous period?
+    - how are things going?
+3. Generate insights
+    - Look behind the gathered data to find the stories and the causes behind them
+    - Can be free discussion or cause analysis
+4. Decide what to do
+    - What experiments can be carried out to make improvements?
+5. Close the retrospective
+    - who's responsible for following up on experiments?
+    - summarise what's happened
+    - evaluate the retro - a retro on a retro!
+
+### Wheel of fortune
+
+- Problem:
+    - Jump to conclusions
+    - Solve symptoms instead of problems
+    - Use Start Stop Continue and act according to the labels on the columns
+    - But this often just describes symtpoms of bigger problems
+- solution:
+    - don't just go from symptoms to solutions
+    - look at causes behind problems
+    - make sure you have a generate insights phase:
+        - Fishbone
+            - cause-analysis
+            - also called Ishikawa diagram analysis
+            - the problem is the head of the fish  
+            - the bones / ribs are themes - eg People, Process, Economy, Technology
+            - ask for post-its to represent the different types of cause. Maybe they'll cluster in a particular area
+        - 5 Hows
+            - (How instead of why, because why encourages people to find a single cause and do blaming)
+            - basically root-cause analysis
+            - keep asking "how did this happen?"
+            - each answer forms the basis of the next question - as in, how did THAT happen?
+            - there is probably more than one root cause, so you might want to repeat the exercise, asking a different sequence of questions each time
+        - Ask for the story behind the postit, to learn what led to the problem
+

@@ -4,7 +4,7 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/Places-To-Visit
 ---
 
-See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots)
+See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots), and [Places to Stay](/pages/think/life/Places-To-Stay)
 
 ## Bars
 

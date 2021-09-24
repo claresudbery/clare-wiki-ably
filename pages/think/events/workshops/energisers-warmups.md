@@ -16,8 +16,14 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 
 ## Getting to know each other
 
+(Each bullet point represents a different activity! This is not all one activity.)
+
 - Write down something nobody knows about you, then we have to guess which one is who.
-    - In person this goes on folded pieces of paper. Remotely you can use a spreadsheet and just agree to not pay attention to who's writing what. The more people, the less likely people will register who wrote what.
+    - In person:
+      - this goes on folded pieces of paper. 
+    - Remotely:
+      - Get people to add cards to a Trello board or similar
+      - Or you can use a spreadsheet and just agree to not pay attention to who's writing what. The more people, the less likely people will register who wrote what.
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
 - Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
 - In groups of 3, design a superhero. You get to choose one super power each and combine them into one hero. Draw a collaborative picture of the result.
