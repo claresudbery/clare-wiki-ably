@@ -35,6 +35,7 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - Tobacco Hills, near Liverpool (recommended by S Leighton)
 - Heysham, Morecambe Bay - cliff walk and ruined chapels (recommended by S Leighton)
 - [Beaumont Park](https://www.tripadvisor.co.uk/Attraction_Review-g190748-d7029653-Reviews-Beaumont_Park-Huddersfield_West_Yorkshire_England.html?m=19905), Huddersfield - gothic victorian overgrown park
+- Pickmere lake in Cheshire - gentle wild swimming (recommended by Doug)
 
 ### Peak District
 

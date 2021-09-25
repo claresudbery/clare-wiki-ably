@@ -179,3 +179,13 @@ Campbell De Morgan spots
 ## what do those punctuating guitar chords in Baxter Drury's Miami remind me of?
 
 - Money, by Pink Floyd
+
+## Who was that guy who reckoned he was some kind of secret service agent who worked with aliens?
+
+[The cult leader](https://narratively.com/hes-murderer-intergalactic-alibi-shes-love/amp/) who persuaded two teenage boys to help him murder someone by telling them he knew aliens and was planning to take over an area of California and destroy the golden gate bridge (?) in the process. His wife married him while he was in prison and is convinced that one day they will set up home somewhere and have a landing pad for all the aliens to visit in their ships...
+
+## What's that track that's sampled by Massive Attack in Safe From Harm?
+
+Stratus by Billy Cobham.
+I love it because it has a particular kind of live energy that makes me wish I could be there on stage with them:
+

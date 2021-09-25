@@ -201,7 +201,21 @@ worms aren’t worrying.
     2. A sworn statement for the French govt.
     3. Proof of destination and accommodation for the French authorities.
     4. Fill in a [passenger location form](https://www.gov.uk/provide-journey-contact-details-before-travel-uk) for UK govt <= 48 hours before returning to UK.
+      - You should register with this service before you leave the UK.
+      - You'll need: 
+        - Login details 
+        - Passport details: number, issuing authority, expiry date
+        - mobile phone number 
+        - arrival details: date and time
     5. Do a PCR test in France before leaving (still haven't quite managed to work out how I make that happen according to the rules, but the conference organisers say I can do it at the conference venue, so fingers crossed that's all correct).
+      - This was the official info about that test. Note that neither I nor the nurse could find any info on the test packaging that talked about % specificity, so we couldn't verify this but the test was an LFT I think (the results are within 20 minutes and the French call it "antigenique") and the certificate I received as a result was from "Assistance Publique Hopitaux de Paris" and was accepted by the airline:
+        - The test must meet performance standards of ≥97% specificity, ≥80% sensitivity at viral loads above 100,000 copies/ml. 
+        - This could include tests such as:
+          - a PCR test
+          - a LAMP test
+        - an antigen test, such as an LFD (lateral flow device) test
+        - You must check with your test provider that the test meets the standards. You may not be able to travel if it does not.
+        - You will need to find a private test provider to take a test.
     6. Do another "2 day" PCR test in England after arriving (this has to be ordered in advance).
     7. Wear a "surgical mask" at the airport and on the plane.
   - [List of red, green and amber countries](https://www.gov.uk/guidance/red-amber-and-green-list-rules-for-entering-england) (search for the name of the country you're interested in, then scroll up to see which list it's in)
