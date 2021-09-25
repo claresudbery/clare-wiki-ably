@@ -74,3 +74,7 @@ My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightnin
 	- His talk: [Systems thinking and the Vanguard method](https://www.youtube.com/watch?v=sb4IkJozvMk)
 	- His [patreon / podcast](https://www.patreon.com/vanguardconsulting)
 	- His [twitter](https://twitter.com/vanguardmethod)
+
+## Handling people disagreeing
+
+["Based on that experience, is there anything you do differently or any other considerations that would have led to a different result?"](https://twitter.com/kevlinhenney/status/1404886083326943233?s=21)
