@@ -79,3 +79,14 @@ From [Retrospectives Antipatterns, by Aino Corry](https://metadeveloper.com/retr
             - there is probably more than one root cause, so you might want to repeat the exercise, asking a different sequence of questions each time
         - Ask for the story behind the postit, to learn what led to the problem
 
+### Dialling up the good
+
+- Don't slip over the "what went well" section of the retro!
+- Liz Keogh had some good ideas for how to "dial up the good" in [her podcast interview with Randy Silver](https://www.mindtheproduct.com/estimating-complexity-liz-keogh-on-the-product-experience/):
+    - When you note things that are going well in retros, you should have actions resulting!
+    - For instance:
+    - Amplify what's already working well:
+        - Have a team charter 
+        - Ways of working wiki page for onboarding 
+        - Do a brown bag or find other ways to share with other teams
+

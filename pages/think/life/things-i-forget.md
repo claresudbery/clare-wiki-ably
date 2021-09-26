@@ -187,5 +187,9 @@ Campbell De Morgan spots
 ## What's that track that's sampled by Massive Attack in Safe From Harm?
 
 Stratus by Billy Cobham.
-I love it because it has a particular kind of live energy that makes me wish I could be there on stage with them:
+I love it because it has a particular kind of live energy that makes me wish I could be there on stage with them.
+
+## What are those cute but rare animals from Australia?
+
+[Quokkas](https://twitter.com/claresudbery/status/1433502475227746310?s=21).
 
