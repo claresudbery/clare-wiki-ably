@@ -73,6 +73,8 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 	- see [dedicated Action Learning page](/pages/think/events/workshops/Action-Learning).
 - Lots of consultancy examples
 	- (available to Clare only): Until I've processed them, just need to look in this folder and trawl through the presentations: OneDrive\TW-Stuff\Clients\Pitches 
+- Leadership style
+	- based on Kylie Yearsley's workshop at AOTB21. [See below](#leadership-style).
 
 ## Specific types of workshop in more detail
 ### Value Stream Mapping
@@ -202,6 +204,34 @@ These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) 
 	- talk about how you can test / prove your assumptions - prioritise these for experiment
 	- your strategy should be built on the absolute minimum of dragons
 	- or your short term roadmap might be built on killing dragons - ie proving your assumptions
+
+### Leadership Style
+
+- This is based on the workshop run by Kylie yearsley at Agile on the Beach 2021
+- in teams (need at least two teams): 
+- start with a list of leaders from fiction, film, real world. Don't have to be "good." One leader per postit, in a vertical line. 
+- then in a horizontal line from each leader, their leadership attributes 
+	- one attribute per postit. 
+- number the leaders. 
+- remove the leaders. 
+- switch the teams around (so each team is looking at another team's postits) 
+- now write the names of team members in a horizontal line to create headings off to one side of original postits 
+- individual introspective exercise: 
+	- in a vertical line coming down from your name, write a score out of 10 next to each set of leadership attributes. 
+	- For instance, you might see "strength" and "determination" for one of the leaders (whose name has been removed). 
+	- Give yourself one score out of 10 for that combined pair of attributes. 
+- now as a team, write S for scrum master or P for product owner on each of the individual attributes. 
+	- Each attribute may now have S, or P, or S+P or nothing. 
+	- now see which row has the highest number of Ss, and which has the highest number of Ps. 
+		- Mark these in some way. 
+- now the facilitator replaces the original leader names (this is why they were numbered). 
+	- which leaders are going to be your scrum master and product owner? 
+		- (This is just to get a laugh) 
+	- which leaders do you personally have your highest scores against? 
+	- Are you happy with that? 
+	- Would you like to change your leadership style to emphasise other attributes? 
+	- how many female leaders are there overall, out of the total number of leaders? 
+		- (This is just an interesting statistic).
 
 ## Meetups
 

@@ -207,8 +207,13 @@ worms aren’t worrying.
         - Passport details: number, issuing authority, expiry date
         - mobile phone number 
         - arrival details: date and time
+        - Day 2 test booking reference number
+      - The passenger locator form, even if you've told it you live in the UK, will still ask when you are planning to leave the UK. I just choose a random date two years in the future!
+      - When you complete passenger locator form before returning to UK, it will email the completed form to you. 
+        - !! Download or print it ASAP so you have it to show officials!!
     5. Do a PCR test in France before leaving (still haven't quite managed to work out how I make that happen according to the rules, but the conference organisers say I can do it at the conference venue, so fingers crossed that's all correct).
-      - This was the official info about that test. Note that neither I nor the nurse could find any info on the test packaging that talked about % specificity, so we couldn't verify this but the test was an LFT I think (the results are within 20 minutes and the French call it "antigenique") and the certificate I received as a result was from "Assistance Publique Hopitaux de Paris" and was accepted by the airline:
+      - When they send you your pass sanitaire covid result, it's a good idea to download / print it ASAP so you have it available for officials.
+      - Below is the official info about this test. Note that neither I nor the nurse could find any info on the test packaging that talked about % specificity, so we couldn't verify this but the test was an LFT I think (the results are within 20 minutes and the French call it "antigenique") and the certificate I received as a result was from "Assistance Publique Hopitaux de Paris" and was accepted by the airline:
         - The test must meet performance standards of ≥97% specificity, ≥80% sensitivity at viral loads above 100,000 copies/ml. 
         - This could include tests such as:
           - a PCR test
@@ -217,7 +222,9 @@ worms aren’t worrying.
         - You must check with your test provider that the test meets the standards. You may not be able to travel if it does not.
         - You will need to find a private test provider to take a test.
     6. Do another "2 day" PCR test in England after arriving (this has to be ordered in advance).
+      - You need proof of having ordered this day 2 test - there's a booking reference number which you have to enter into the passenger locator form.
     7. Wear a "surgical mask" at the airport and on the plane.
+      - This seems to mean the blue papery kind, and if you don't have one they will give you one (and ask you to replace your non-surgical mask with it).
   - [List of red, green and amber countries](https://www.gov.uk/guidance/red-amber-and-green-list-rules-for-entering-england) (search for the name of the country you're interested in, then scroll up to see which list it's in)
   - Info on [whether you need a new passport due to Brexit](https://check-passport-for-travel-to-europe.homeoffice.gov.uk/) (basically if it's less than 10 years old and has at least six months before it expires, even if it was issued before Brexit, it's probably fine).
   - [Order a Day 2 test kit](https://www.find-travel-test-provider.service.gov.uk/test-type/green) for use after arrival in England from an amber list country
@@ -336,3 +343,7 @@ Top tips for hayfever sufferers (courtesy of Jane / Digger):
 ### Autism and ADHD
 
 - See [separate page](/pages/think/life/Autism-And-ADHD)
+
+## Degenerative Disc Disease (DDD)
+
+- [More here](https://www.spine-health.com/conditions/degenerative-disc-disease/what-degenerative-disc-disease)
