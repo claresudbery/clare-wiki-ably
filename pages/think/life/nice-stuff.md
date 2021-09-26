@@ -7,8 +7,8 @@ permalink: /pages/think/life/Nice-Stuff
 ## Misc Nice Stuff
 
 - [Private Clare Nice Stuff](https://github.com/claresudbery/clare-tech/blob/master/organising/private/nice-stuff.md)
-- [Nice things to do during lockdown](/pages/think/life/health/Health#nice-things-to-do-during-lockdown)
-- [positive stuff during lockdown](/pages/think/life/health/Health#positive-stuff)
+- [Nice things to do during lockdown](/pages/think/life/health-stuff/Health-Stuff#nice-things-to-do-during-lockdown)
+- [positive stuff during lockdown](/pages/think/life/health-stuff/Health-Stuff#positive-stuff)
 
 ## Videos to make you happy
 

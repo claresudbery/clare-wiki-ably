@@ -1,7 +1,7 @@
 ---
 layout: page
-location: pages/think/life/health/leaf
-permalink: /pages/think/life/health/Health
+location: pages/think/life/health-stuff/leaf
+permalink: /pages/think/life/health-stuff/Health-Stuff
 ---
 
 ## Yoga
