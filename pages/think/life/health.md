@@ -31,7 +31,7 @@ I've had problems with my hips for a while, almost certainly because I spend so 
 
 ## Mental Health
 
-See also [Staying sane during the COVID-19 crisis](http://127.0.0.1:4000/pages/think/life/Health#staying-sane-during-the-covid-19-crisis) below.
+See also [Staying sane during the COVID-19 crisis](#staying-sane-during-the-covid-19-crisis) below.
 
 - Great article by Olvier Burkeman, ["Eight secrets to a fairly fulfilled life"](https://www.theguardian.com/lifeandstyle/2020/sep/04/oliver-burkemans-last-column-the-eight-secrets-to-a-fairly-fulfilled-life)
 
