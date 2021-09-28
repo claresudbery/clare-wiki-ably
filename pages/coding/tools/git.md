@@ -112,10 +112,27 @@ and the repository exists."
   - It might be that you're using ssh access instead of https (or vice versa) - check the remote origin url configured in `.git/config`
   - It might be that someone has added you as a collaborator but you have ***forgotten to accept the invite***. Check your email!!
 
+## Use Personal Access Token to access repos
+
+- If you get the error "Support for password authentication was removed on August 13, 2021. Please use a personal access token instead." (possibly in an email)
+- Follow the link to regenerate personal access token (I think I was sent this in an email)
+- Windows:
+  - The next time you do a git push on windows, it'll open a git dialog
+  - The first dialog wnts your actual GitHub password
+  - The second one - "OpenSSH" - wants your GitHub username but when it asks for a password it wants the personal access token.
+  - After that Windows will store it for you and you won't need it again.
+- Mac:
+  - The next time you do a git push, use the PAT (access token) instead of password and (on my setup at any rate) it will get saved for you.
+- [More here](https://stackoverflow.com/a/51505417).
+
 ## Use ssh to Access Repos (instead of https)
+
+  - Are you sure you want ssh, and not [personal access token](#use-personal-access-token-to-access-repos)?
 
   - Ssh stuff:
     [<span class="underline">https://help.github.com/en/articles/connecting-to-github-with-ssh</span>](https://help.github.com/en/articles/connecting-to-github-with-ssh)
+
+  - Note that I now have two scripts in my scripts repo - `add-ssh-key-mac` and `add-ssh-key-win` that help with this.
 
   - This is what I did to get ssh up and running in the Chef repo - I
     did this twice, for both VM and local laptop:
@@ -152,15 +169,15 @@ and the repository exists."
           - Now add these lines (note the indentation should be a single
             space):
         
-          - Host \*
+          - `Host \*`
         
-          - IgnoreUnknown AddKeysToAgent,UseKeychain
+          - `IgnoreUnknown AddKeysToAgent,UseKeychain`
         
-          - AddKeysToAgent yes
+          - `AddKeysToAgent yes`
         
-          - UseKeychain yes
+          - `UseKeychain yes`
         
-          - IdentityFile \~/.ssh/id\_rsa
+          - `IdentityFile \~/.ssh/id\_rsa`
     
       - This to add your SSH private key to the ssh-agent and store your
         passphrase in the keychain: `ssh-add -K \~/.ssh/id\_rsa`
