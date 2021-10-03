@@ -88,7 +88,9 @@ See marketing.md in clare-tech for more detailed notes (Accessible to Clare only
 
 ## Hubspot
 
-(url stored in chrome bookmarks, under MT Docs => podcast => marketing)
+(for Clare, the url is stored in chrome bookmarks, under MT Docs => podcast =>
+marketing - this won't work for anyone else unless you've also stored the url he
+re, sorry!)
 
 ### Uploading files to Hubspot
 
