@@ -32,7 +32,57 @@ timeflux -d test.yaml
 
 ### What timeflux is
 
-- 
+- BCI = Brain Computer Interface
+    - interact with physical world using your mind only
+    - eg 
+        - control a wheelchair
+        - or select letters to write words if you are locked in
+        - post-stroke rehabilitation therapy (recover use of limbs)
+        - detect vigilance level (eg too tired to drive), do relaxation
+        - have fun, eg fly a drone with your mind
+    - better signal by planting electrodes into skull
+- Pierre Clisson
+- Timeflux 
+    - open-source Python framework for building BCIs
+    - for acquisition and real-time processing of brain signals
+    - EEG stimulus presentation
+    - can also be used for 
+        - data and event acquisition from multiple sources
+        - bio-feedback
+- Online / offline
+    - "Online" = live brain data
+    - "Offline" = post-processing of brain data
+- Closed loop
+    - signal acquisition
+    - signal processins
+    - feature extraction
+        - divide signal into small chunks and extract meaningful info
+    - pattern recognition
+    - interface with brain
+    - back to beginning again
+- EEG
+    - electroencephalogram
+    - basically a series of small electrical measurements
+        - so, a time series (a series of data points indexed in time order)
+    - recording of brain electrical activity using electrodes placed on scalp
+    - neurons record electrical energy of the cells they are connectded with
+    - if many neurons are aligned and activated at same time, then electrical field becomes loud enough to record eletrical signal
+- Brainwaves
+    - this is how EEGs are interprted
+    - brainwaves are oscillations in a particular frequency range
+    - can be interpreted in frequency domain (neural oscillations) or time domain (event- related potentials (ERPs))
+- Hardware
+    - electrode cap
+        - wet electrodes, state of the art needs gel injected, state of the art, can get messy
+        - dry electrodes, not so good a signal but OK for some purposes
+            - 3D-printed, 
+            - Consumer EEGs, eg Muse (£200-£300) Neurosity
+        - Coming soon: Neurogate.io
+            - affordable
+            - research-grade
+    - amplifier
+        - you can get quite good open source DIY EEG systems, eg the HAck (?) EEG, or Open BCI
+
 
 ### Other workshop notes
 
@@ -74,6 +124,13 @@ timeflux -d test.yaml
 - If you look at the classification node in the yaml and you know anything about psychic node (?) it will look familiar 
 - Alpha / beta / delta / theta - do they all exist simultaneously or are they created by combining one another?
 
+### Conda
+
+- `conda create`
+- `conda activate` - starts up an instance of the conda environment
+- `exit` - leave the env
+
 ## Questions
 
 - What does `conda activate` do?
+    - starts up an instance of the conda environment
