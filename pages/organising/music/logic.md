@@ -26,7 +26,9 @@ permalink: /pages/organising/music/Logic
 - It's very hit and miss
 - good guitar: Legacy | Logic | World | Mexican Guitarron
 - Select your track in main view, then click the dropdown in top menu bar and select pencil tool instead of pointer tool
-- Then click in the main grid to create a new section for that track. You can drag it at the edge to make it bigger.
+- Then click in the main grid to create a new section for that track. 
+    - You can drag it at the edge to make it bigger.
+        - ! If you find it's repeating it instead of making it bigger, this is because you're clicing the pale green section at the top instead of the dark green section at the bottom. Basically, where you click before yuou drag changes the effect the drag has.
     - Double-click it to open the piano roll if it's not already open (or click the scissor icon, top left).
 - To copy/paste to repeat it, use alt click and drag in main grid
 - To add notes, in the piano roll view, switch to pencil tool, then use command + click to add notes.

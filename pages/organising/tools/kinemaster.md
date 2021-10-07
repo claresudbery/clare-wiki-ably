@@ -14,6 +14,7 @@ permalink: /pages/organising/tools/Kinemaster
 - Now click Audio on the right hand side
 - Go to "internal" to find the music you added
 - select it and hit the + button and then the tick
+    - !! Don't forget to hit the + button!
 - you can drag the resulting audio track to left or right
 - you can also use the Trim/split option to do limited cutting, but it seems like after you've done this once, you can't do it again?
 - To delete an audio track, select it under the video and then click the bin icon on the left.

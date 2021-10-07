@@ -6,6 +6,8 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 ## Misc
 
 - There are lots of scripts in my [infra-scripts repo](https://github.com/claresudbery/Infra-Scripts) (only available to Clare).
+  - Note that this also contains a file called `useful-aliases.txt` - if I want the most up to date versions of these functions (eg `wp`), I need to copy its contents into `~/.bashrc`.
+  - But they were all written for Windows, so you'll need to do a search and replace on file paths for both Clare home and the development directory.
 - Sample bash script: Dropbox\IT Training\Misc\sample.bashrc
 - if statement - the spaces matter\! **if \[\[ $NumDifferences \!= 0
     \]\]; then ... fi**

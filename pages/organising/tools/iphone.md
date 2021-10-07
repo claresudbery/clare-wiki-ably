@@ -19,6 +19,7 @@ permalink: /pages/organising/tools/iPhone
     - (Warning - the scrolling doesn't work well - there will be more apps in the list than you think)
     - Scroll down to the bottom
     - Click Add file (bottom right) and select your file
+    - (if you're copying from phone to laptop, select file first and then click Save)
 - To add to actual itunes 
     - I DON'T RECOMMEND THIS. WAY TOO SLOW AND COMPLICATED.
     - Edit => Preferences => Import Settings => Import usiong mp3 encoder (+ select desired quality) 
