@@ -57,3 +57,36 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 # When it tells you to check Devices & Simulators window
 
 - Go to Windows => Devices and Simulators
+
+# Swift Keyboard Navigation
+
+- Find references:
+    - Splat + click ("Command-click") on the name of the method, and select "Callers" from the resulting menu.
+- Go to definition: Ctrl + Splat + J
+- Go back: Ctrl + Splat + left arrow
+- Find text in file:
+    - Splat + F to open find input at top of screen
+    - Splat + G to find next 
+- Find call hierarchy: Ctrl + Shift + Splat + H
+- Find symbol in project: Ctrl + Shift + Splat + F
+- Build: Splat + B
+- Run all tests: Splat + U
+
+# New classes
+
+- Each new class will have "targets" specified, which define the scope that class will be available in.
+    - You get a dialog that allows you to specify this if you do right-click new file from the file organiser (in the panel on the left if yuou click the file icon)
+    - Otherwise right-click the file in the file organiser and choose "Show file inspector" which will appear on the right.
+
+# Questions
+
+- Why am I getting the error "Type of expression is ambiguous without more context" when I try to include the following line of code in my test?
+    - In `testSquareCyclesRainbowColourWhenCelebrating`, in `SquareViewTests.swift`
+    - I had this: ` Asserter.AreEqual(actual: square.Colour, expected: SquareFillColour.Orange);`
+    - I had to replace it with `Asserter.AreEqual(actual: square.Colour == SquareFillColour.Orange, expected: true);`
+- How do you animate?
+    - For instance, flashing colours when someone completes a level.
+- How come when I created a new class WinDetector, I couldn't test it?
+    - I got an error saying WinDetector not in scope, even though I checked the checkbox re putting the test project as a target
+    - See commented out lines at the bottom of ShapeControllerTests
+- Surely I made notes on all this stuff before? What did I do with them??
