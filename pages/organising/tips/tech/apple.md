@@ -69,6 +69,12 @@ Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all ru
         - defaults to only displaying terminal processes active under the current user
         - but `ps aux` gives you more and therefore more useful
         - pipe to `more` to see pages of output one at a time: `ps aux | more`
+- [See below](#diagnosing-a-constantly-spinning-fan) for what to do if fan keeps going off
+
+### Diagnosing a constantly-spinning fan
+
+- Start with [Activity Monitor](#finding--quitting-running-apps)
+- Useful article with more tips [here](https://mackeeper.com/blog/fix-macbook-pro-fan-noise-loud/)
 
 ### Specify location of screenshots
 
