@@ -75,12 +75,14 @@ Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all ru
 
 - Start with [Activity Monitor](#finding--quitting-running-apps)
 - Useful article with more tips [here](https://mackeeper.com/blog/fix-macbook-pro-fan-noise-loud/)
+    - When it says hold down D and then select a language, it just means the d key on your keyboard, not specifically upper case D.
+    - When it says select a language, after you have done that just wait. No need to click on either of the buttons below ("shut down" and "restart").
 
 ### Specify location of screenshots
 
 - [Here for instructions on sending them to Google Drive](https://plusbryan.com/how-to-automatically-save-screenshots-to-google-drive)
     - !NB! Your Google Drive location might be different
-    - To get its path, right-click Google Stream | My Drive in Finder, and choose Services | New iTerm tab here
+    - To get its path, right-click Google Stream => My Drive in Finder, and choose Services => New iTerm tab here
     - Then use type **pwd** and hit Enter
     - (Note it probably contains a space, which will mean you need quotes around it for the Terminal command below)
 - This in Terminal (see above for Google Drive path):
