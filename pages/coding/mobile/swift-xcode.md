@@ -54,11 +54,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - select project target on left
     - there will be errors with things you can click to re-enter password - probably in two places
 
-# When it tells you to check Devices & Simulators window
+## When it tells you to check Devices & Simulators window
 
 - Go to Windows => Devices and Simulators
 
-# Swift Keyboard Navigation
+## Swift Keyboard Navigation
 
 - Find references:
     - Splat + click ("Command-click") on the name of the method, and select "Callers" from the resulting menu.
@@ -72,13 +72,19 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Build: Splat + B
 - Run all tests: Splat + U
 
-# New classes
+## New classes
 
 - Each new class will have "targets" specified, which define the scope that class will be available in.
     - You get a dialog that allows you to specify this if you do right-click new file from the file organiser (in the panel on the left if yuou click the file icon)
     - Otherwise right-click the file in the file organiser and choose "Show file inspector" which will appear on the right.
 
-# Questions
+## Parameterised tests / multiple test cases in Swift / XCTest
+
+- I used [this article](https://briancoyner.github.io/articles/2015-11-28-swift-parameterized-xctestcase/) in combination with the [documentation on defaultTestSuite](https://developer.apple.com/documentation/xctest/xctestcase/1496289-defaulttestsuite), which has now changed from a func to a var
+    - Note that it's not made clear in the article, but all methods shown are designed to go in the same class
+    - My implementation of this is visible [here](https://github.com/claresudbery/SquareFillXCode/blob/48f4235b477854ee1f8b5efc487389e95713cb48/SquareFillXCodeTests/SquareFillColourTests.swift) (accessible to Clare only) - it's easier to follow with a real example
+
+## Questions
 
 - Why am I getting the error "Type of expression is ambiguous without more context" when I try to include the following line of code in my test?
     - In `testSquareCyclesRainbowColourWhenCelebrating`, in `SquareViewTests.swift`
