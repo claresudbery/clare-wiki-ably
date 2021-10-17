@@ -52,7 +52,7 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - If it tells you to check Devices & Simulators window
         - Go to Windows => Devices and Simulators
     - be patient! After many restarts and stop / starts you'll often find it wioll suddenly magically work just when you were about to give up.
-    - see other ideas in this doc
+    - see other ideas in this section
 
 ### First time
 
@@ -65,7 +65,7 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - Product => Destination => select your phone under iOS device
 - Now choose Product => Run
 - troubleshooting
-    - some ideas are listed under "subsequent times"
+    - some ideas are listed elsewhere in this phone deployment section
 - If you get errors about unsupported iOS version:
     - In Terminal: `cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport`
     - Look for the folder representing the highest version below your actual iOS version
@@ -80,7 +80,7 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - More [here](https://stackoverflow.com/questions/67863355/xcode-12-4-unsupported-os-version-after-iphone-ios-update-14-7)
         - including detailed instructions of what to close and what to open and in what order
 
-## Fixing problems with developer licence / signing certificate apple ID after you reset keychain password
+### Fixing problems with developer licence / signing certificate apple ID after you reset keychain password
 
 - fix Apple account
     - XCode menu => Preferences => Accounts
@@ -91,9 +91,51 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - select project target on left
     - there will be errors with things you can click to re-enter password - probably in two places
 
-## When it tells you to check Devices & Simulators window
+### When it tells you to check Devices & Simulators window
 
 - Go to Windows => Devices and Simulators
+
+## Deploying to Apple
+
+These are my notes from my [SquareFill app](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only), so might be quite specific to me.
+
+1)   ! The first thing you need to do is increment the build number:  
+	- 1a) select the top level in the files / folders view  
+	- 1b) Go to the “General” tab – it’s at the top  
+2) (optional) Editing the app bundle: https://developer.apple.com/account/ios/identifier/bundle/edit   
+3) (generally useful) App Store Connect: https://appstoreconnect.apple.com   
+4) Product | Archive  
+	- 4a)    Enter a description on the right, then if all is good go to 5) below.  
+	- 4b)   !! The Archive option may be disabled. To fix:  
+		- 4bi)    Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. If all is good now, go to 5) below.  
+		- 4bii)    Otherwise try all the steps listed here: https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic  
+			- 4bii-a)    Basically it boils down to:   
+				- 4bii-a1)    Select your targets one at a time (see below for selecting targets), and for each one, uncheck "Automatically manage signing".  
+				- 4bii-a2)    Now for each target, go to Build Settings tab, scroill down to Signing, set Code Signing Identity to iOS Developer at the top level  
+				- 4bii-a3)    Now do Xcode → Product → Clean. Close your project in Xcode and reopen it again.  
+				- 4bii-a4)    After this go to the general tab of each of your targets and check "Automatically manage signing" and under team drop down select your developer account  
+				- 4bii-a5)    Now it will let you archive / upload to app store  
+			- 4bii-b)    Notes:   
+				- 4bii-b1)    When it says “Go to your app” it means select the top level in the files / folders view (click the rectangle, top left).   
+				- 4bii-b2)    When it gets to the bit “uncheck "Automatically manage Signing" in both the targets under your project”…   
+				- 4bii-b3)    …the way you select targets is:  
+					- 4bii-b3a)    1) select the top level in the files / folders view  
+					- 4bii-b3b)    2) at the left hand of the top, to the left of the “General” tab, is the name of your top-level project and all the code projects underneath (So for SquareFill I get three: SquareFillXCode, SquareFillXCodeTests and SquareFillXCodeUITests – these are all defined as targets)   
+5) After you have deployed, add testing notes in App store Connect (see below).  
+	!! If you get an error "[name] has one iOS Distribution certificate but its private key is not installed.", do the following:  
+		- i) xcode -> product -> archives -> Click manage certificate  
+		- ii) Click the + button to add an iOS distribution.  
+After you have deployed, add testing notes in App store Connect:  
+	- 5a)    Go here: https://appstoreconnect.apple.com/   
+	- 5b)    Click My Apps  
+	- 5c)    Select your app  
+	- 5d)    Select TestFlight at the top  
+	- 5e)    Click the icon for your build (you may have to expand to see)  
+	- 5f)    Select the Test Details tab  
+		- 5fi)    Enter testing / build notes here  
+	- 5g)    ! If your build isn’t visible yet, select the Activity tab to see progress
+
+
 
 ## Swift Keyboard Navigation
 
