@@ -4,6 +4,10 @@ location: "pages/coding/mobile/leaf"
 permalink: /pages/coding/mobile/Swift-and-XCode
 ---
 
+## iOS Development
+
+See [separate page](/pages/coding/mobile/iOS-Development) - there may be other iOS XCode stuff in there too.
+
 ## GitHub Repos
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
@@ -11,6 +15,19 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [SquareFillXCode (PRIVATE)](https://github.com/claresudbery/SquareFillXCode)
 - [ios-app-experiments (PRIVATE)](https://github.com/claresudbery/ios-app-experiments)
     - Can't quite remember what this is, but seems to be me learning about making iOS games?
+		
+## To rename a UI component
+
+Easiest thing is to delete the property in the view controller, then set up a new connection:  
+Open storyboard (click in project explorer)  
+Open editing assitant (interlocking circles icon, top right)  
+Ctrl-drag the ui component into the view controller  
+Now delete the outlet:  
+while storyboard is open, click the right-facing arrow, top right, to see connections inspector. find the original outlet and click the cross to delete it.  
+
+## Add a border to just one side of a shape 
+
+[Details here](http://stackoverflow.com/questions/17355280/how-to-add-a-border-just-on-the-top-side-of-a-uiview)
 
 ## Converting from Swift 3.0 to Swift 5.0
 

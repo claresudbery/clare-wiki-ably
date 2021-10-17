@@ -4,6 +4,10 @@ location: pages/coding/mobile/leaf
 permalink: /pages/coding/mobile/iOS-Development
 ---
 
+## Swift & XCode
+
+See [separate page](/pages/coding/mobile/iOS-Development) - there is bound to be other iOS development stuff in there too.
+
 ## Creating icons
 
 - [SquareFillXCode](https://github.com/claresudbery/SquareFillXCode) (accessibile to Clare only) has icons for all contexts in SquareFillXCode\Assets.xcassets\
