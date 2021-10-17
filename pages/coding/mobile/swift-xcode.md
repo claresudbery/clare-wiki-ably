@@ -22,13 +22,33 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ## Deploying to your phone
 
+### Subsequent times
+
+- Plug your phone in to laptop using lightning cable
+- Select your phone as deployment target
+    - Product => Destination => select your phone under iOS device
+    - Product => Run
+- If any problems 
+    - unlock the iphone
+    - try restarting everything (XCode, your phone, your laptop) 
+    - try using a different lightning cable - it seems really sensitive to this - try to use a brand new one
+    - If it tells you to check Devices & Simulators window
+        - Go to Windows => Devices and Simulators
+    - be patient! After many restarts and stop / starts you'll often find it wioll suddenly magically work just when you were about to give up.
+    - see other ideas in this doc
+
+### First time
+
 - Add your apple ID:
     - XCode menu => Preferences => Accounts
     - Click the + button bottom left
     - Add your Apple ID
-- Plug your phone to laptop in using lightining cable
+- Plug your phone in to laptop using lightning cable
 - Select your phone as deployment target
     - Product => Destination => select your phone under iOS device
+- Now choose Product => Run
+- troubleshooting
+    - some ideas are listed under "subsequent times"
 - If you get errors about unsupported iOS version:
     - In Terminal: `cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport`
     - Look for the folder representing the highest version below your actual iOS version
