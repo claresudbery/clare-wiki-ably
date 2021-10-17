@@ -101,42 +101,66 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
 
 These are my notes from my [SquareFill app](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only), so might be quite specific to me.
 
-- 1)   ! The first thing you need to do is increment the build number:  
-	- 1a) select the top level in the files / folders view  
-	- 1b) Go to the “General” tab – it’s at the top  
+- 1)   ! The first thing you need to do is increment the version / build number:  
+	- select the top level in the files / folders view  
+	- Go to the “General” tab – build and version numbers can be edited at the top
+        - (Settings will save automatically when you build)  
 - 2) (optional) [Edit the app bundle](https://developer.apple.com/account/ios/identifier/bundle/edit)   
 - 3) (generally useful) [App Store Connect](https://appstoreconnect.apple.com)  
 - 4) Product => Archive  
-	- 4a)    Enter a description on the right, then if all is good go to 5) below.  
-	- 4b)   !! The Archive option may be disabled. To fix:  
-		- 4bi)    Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. If all is good now, go to 5) below.  
-		- 4bii)    Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
-			- 4bii-a)    Basically it boils down to:   
-				- 4bii-a1)    Select your targets one at a time (see below for selecting targets), and for each one, uncheck "Automatically manage signing".  
-				- 4bii-a2)    Now for each target, go to Build Settings tab, scroill down to Signing, set Code Signing Identity to iOS Developer at the top level  
-				- 4bii-a3)    Now do Xcode → Product → Clean. Close your project in Xcode and reopen it again.  
-				- 4bii-a4)    After this go to the general tab of each of your targets and check "Automatically manage signing" and under team drop down select your developer account  
-				- 4bii-a5)    Now it will let you archive / upload to app store  
-			- 4bii-b)    Notes:   
-				- 4bii-b1)    When it says “Go to your app” it means select the top level in the files / folders view (click the rectangle, top left).   
-				- 4bii-b2)    When it gets to the bit “uncheck "Automatically manage Signing" in both the targets under your project”…   
-				- 4bii-b3)    …the way you select targets is:  
-					- 4bii-b3a)    1) select the top level in the files / folders view  
-					- 4bii-b3b)    2) at the left hand of the top, to the left of the “General” tab, is the name of your top-level project and all the code projects underneath (So for SquareFill I get three: SquareFillXCode, SquareFillXCodeTests and SquareFillXCodeUITests – these are all defined as targets)   
+	- Wait a minute for the archive to happen
+    - Enter a description on the right, then if all is good go to 5) below.  
+        - Note that I've been copying description from here to readme.md, but that means focus moves away from the Archive window. To get back to it, don't click Product => Archive again, or it will create another archive. Instead, select Window => Organizer
+	- !! The Archive option may be disabled. To fix:  
+		- Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. If all is good now, 
+            - Click Distribute App
+                - This might take a while
+                - !! Watch out! There are a couple more dialogs that need your input after you click Distribute App, and they take a while to load so you might miss them and wonder why your build doesn't appear in App Store Connect.
+                - It might create a new signing certificate for you. You should export this and store it somewhere like a password manager.
+                - When it asks for permission to access your keychain, use your laptop password (stored in 1password). It will ask several times in a row - to avoid this, click Always Allow.
+                - The final confirmation will be an Upload button, and this bit might take a little while.
+            - Go to 5) below.  
+		- Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
+			- Basically it boils down to:   
+				- Select your targets one at a time (see below for selecting targets), and for each one, uncheck "Automatically manage signing".  
+				- Now for each target, go to Build Settings tab, scroill down to Signing, set Code Signing Identity to iOS Developer at the top level  
+				- Now do Xcode → Product → Clean. Close your project in Xcode and reopen it again.  
+				- After this go to the general tab of each of your targets and check "Automatically manage signing" and under team drop down select your developer account  
+				- Now it will let you archive / upload to app store  
+			- Notes:   
+				- When it says “Go to your app” it means select the top level in the files / folders view (click the rectangle, top left).   
+				-  When it gets to the bit “uncheck "Automatically manage Signing" in both the targets under your project”…   
+				- …the way you select targets is:  
+					- select the top level in the files / folders view  
+					- at the left hand of the top, to the left of the “General” tab, is the name of your top-level project and all the code projects underneath (So for SquareFill I get three: SquareFillXCode, SquareFillXCodeTests and SquareFillXCodeUITests – these are all defined as targets)   
 - 5) After you have deployed, add testing notes in App store Connect (see below).  
     - !! If you get an error "[name] has one iOS Distribution certificate but its private key is not installed.", do the following:  
-        - i) xcode -> product -> archives -> Click manage certificate  
-		- ii) Click the + button to add an iOS distribution.  
+        - xcode -> product -> archives -> Click manage certificate  
+		- Click the + button to add an iOS distribution.  
     - After you have deployed, add testing notes in App store Connect:  
-        - 5a)    Go [here (AppStoreConnect)](https://appstoreconnect.apple.com/)  
-        - 5b)    Click My Apps  
-        - 5c)    Select your app  
-        - 5d)    Select TestFlight at the top  
-        - 5e)    Click the icon for your build (you may have to expand to see)  
-        - 5f)    Select the Test Details tab  
-            - 5fi)    Enter testing / build notes here  
-        - 5g)    ! If your build isn’t visible yet, select the Activity tab to see progress
+        - Go [here (AppStoreConnect)](https://appstoreconnect.apple.com/)  
+        - Click My Apps  
+        - Select your app 
+            - Under App Store you can upload screenshots for different size displays
+            - If you get file size wrong it will tell you what it should be
+            - I think basically if you take a full screenshot on a device with the correct screen size, you will end up with the correct thing
+            - Select a screen size and click Choose file at the bottom to upload a screenshot for that screen size
+            - iPhone 8 Plus is 5.5"
+            - You can also upload videos but you have to get the frame rate right. I uploaded a video I'd made on my phone using Control Center => Screen Recording, and it said the frame rate was wrong.
+                - [Some info on that here](https://stackoverflow.com/questions/26300925/cannot-upload-video-to-itunesconnect-the-frame-rate-of-your-app-video-preview-i)
+        - Select TestFlight at the top  
+        - Click the icon for your build (you may have to expand to see) 
+            - ! If your build isn’t visible yet, this might be because you didn't complete the Archive process - see above
+            - Once it's uploaded, it then spends a while "processing" - you just have to wait.
+        - Select the Test Details tab  
+            - Enter testing / build notes here  
 
+## Data persistence
+
+- There are many different types of data persistence
+    - [This article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) has a good description of all the different wys you can store data _locally on a device_.
+    - I used the CoreData approach for user high scores in [SquareFill](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only).
+    - ! The above article talks about creating a data model but doesn't say how. That's [explained here](https://developer.apple.com/documentation/coredata/creating_a_core_data_model) (basically create a new file and select Data Model as the type).
 ## Swift Keyboard Navigation
 
 - Find references:
@@ -151,7 +175,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - Build: Splat + B
 - Run all tests: Splat + U
 
-## New classes
+## New classes and their targets
 
 - Each new class will have "targets" specified, which define the scope that class will be available in.
     - You get a dialog that allows you to specify this if you do right-click new file from the file organiser (in the panel on the left if yuou click the file icon)
