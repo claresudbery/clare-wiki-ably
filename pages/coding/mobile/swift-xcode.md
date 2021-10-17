@@ -107,19 +107,19 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - (Settings will save automatically when you build)  
 - 2) (optional) [Edit the app bundle](https://developer.apple.com/account/ios/identifier/bundle/edit)   
 - 3) (generally useful) [App Store Connect](https://appstoreconnect.apple.com)  
-- 4) Product => Archive  
+- 4) Product => Archive 
+	- !! The Archive option may be disabled. To fix:  
+        - Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. 
 	- Wait a minute for the archive to happen
     - Enter a description on the right, then if all is good go to 5) below.  
-        - Note that I've been copying description from here to readme.md, but that means focus moves away from the Archive window. To get back to it, don't click Product => Archive again, or it will create another archive. Instead, select Window => Organizer
-	- !! The Archive option may be disabled. To fix:  
-		- Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. If all is good now, 
-            - Click Distribute App
-                - This might take a while
-                - !! Watch out! There are a couple more dialogs that need your input after you click Distribute App, and they take a while to load so you might miss them and wonder why your build doesn't appear in App Store Connect.
-                - It might create a new signing certificate for you. You should export this and store it somewhere like a password manager.
-                - When it asks for permission to access your keychain, use your laptop password (stored in 1password). It will ask several times in a row - to avoid this, click Always Allow.
-                - The final confirmation will be an Upload button, and this bit might take a little while.
-            - Go to 5) below.  
+        - Note that I've been copying description from here to readme.md, but that means focus moves away from the Archive window. To get back to it, don't click Product => Archive again, or it will create another archive. Instead, select Window => Organizer 
+    - Click Distribute App
+        - This might take a while
+        - !! Watch out! There are a couple more dialogs that need your input after you click Distribute App, and they take a while to load so you might miss them and wonder why your build doesn't appear in App Store Connect.
+        - It might create a new signing certificate for you. You should export this and store it somewhere like a password manager.
+        - When it asks for permission to access your keychain, use your laptop password (stored in 1password). It will ask several times in a row - to avoid this, click Always Allow.
+        - The final confirmation will be an Upload button, and this bit might take a little while.
+    - Go to 5) below.  
 		- Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
 			- Basically it boils down to:   
 				- Select your targets one at a time (see below for selecting targets), and for each one, uncheck "Automatically manage signing".  
@@ -154,6 +154,10 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
             - Once it's uploaded, it then spends a while "processing" - you just have to wait.
         - Select the Test Details tab  
             - Enter testing / build notes here  
+            - Also add testers here. 
+                - It's not obvious but when you click a + button to add testers to your App Store Connect Users group, if you read the text there is a link hiding in the text to [Add Users And Groups](https://appstoreconnect.apple.com/access/users).
+                - I think maybe first they have to accept the invite and then you can add them to the list of testers?
+                - The data you enter under "what to test" doesn't get emailed to testers. But if they open the TestFlight app on their device and click on the app icon, it says "What to test" and if they click on "more" they'll see the text you entered.
 
 ## Data persistence
 
