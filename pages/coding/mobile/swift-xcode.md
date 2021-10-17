@@ -37,9 +37,11 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - Used the migration tool (Edit... Convert... To Current Swift syntax) to convert from Swift 4.0 to Swift 5.0.
 - I documented the full process vis a question in Stack Overflow [here](https://stackoverflow.com/questions/69354121/how-do-i-migrate-from-swift-3-using-xcode-12-4/69354203#69354203).
 
-## Deploying to your phone
+## DEPLOYMENT
 
-### Subsequent times
+### Deploying to your phone
+
+#### Subsequent times
 
 - Plug your phone in to laptop using lightning cable
 - Select your phone as deployment target
@@ -54,7 +56,7 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - be patient! After many restarts and stop / starts you'll often find it wioll suddenly magically work just when you were about to give up.
     - see other ideas in this section
 
-### First time
+#### First time
 
 - Add your apple ID:
     - XCode menu => Preferences => Accounts
@@ -80,7 +82,7 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - More [here](https://stackoverflow.com/questions/67863355/xcode-12-4-unsupported-os-version-after-iphone-ios-update-14-7)
         - including detailed instructions of what to close and what to open and in what order
 
-### Fixing problems with developer licence / signing certificate apple ID after you reset keychain password
+#### Fixing problems with developer licence / signing certificate apple ID after you reset keychain password
 
 - fix Apple account
     - XCode menu => Preferences => Accounts
@@ -91,11 +93,11 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - select project target on left
     - there will be errors with things you can click to re-enter password - probably in two places
 
-### When it tells you to check Devices & Simulators window
+#### When it tells you to check Devices & Simulators window
 
 - Go to Windows => Devices and Simulators
 
-## Deploying to Apple
+### Deploying to Apple
 
 These are my notes from my [SquareFill app](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only), so might be quite specific to me.
 
@@ -134,8 +136,6 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - 5f)    Select the Test Details tab  
             - 5fi)    Enter testing / build notes here  
         - 5g)    ! If your build isn’t visible yet, select the Activity tab to see progress
-
-
 
 ## Swift Keyboard Navigation
 
