@@ -104,13 +104,13 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - 1)   ! The first thing you need to do is increment the build number:  
 	- 1a) select the top level in the files / folders view  
 	- 1b) Go to the “General” tab – it’s at the top  
-- 2) (optional) Editing the app bundle: https://developer.apple.com/account/ios/identifier/bundle/edit   
-- 3) (generally useful) App Store Connect: https://appstoreconnect.apple.com   
+- 2) (optional) [Edit the app bundle](https://developer.apple.com/account/ios/identifier/bundle/edit)   
+- 3) (generally useful) [App Store Connect](https://appstoreconnect.apple.com)  
 - 4) Product => Archive  
 	- 4a)    Enter a description on the right, then if all is good go to 5) below.  
 	- 4b)   !! The Archive option may be disabled. To fix:  
 		- 4bi)    Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. If all is good now, go to 5) below.  
-		- 4bii)    Otherwise try all the steps listed here: https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic  
+		- 4bii)    Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
 			- 4bii-a)    Basically it boils down to:   
 				- 4bii-a1)    Select your targets one at a time (see below for selecting targets), and for each one, uncheck "Automatically manage signing".  
 				- 4bii-a2)    Now for each target, go to Build Settings tab, scroill down to Signing, set Code Signing Identity to iOS Developer at the top level  
@@ -128,7 +128,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - i) xcode -> product -> archives -> Click manage certificate  
 		- ii) Click the + button to add an iOS distribution.  
     - After you have deployed, add testing notes in App store Connect:  
-        - 5a)    Go here: https://appstoreconnect.apple.com/   
+        - 5a)    Go [here (AppStoreConnect)](https://appstoreconnect.apple.com/)  
         - 5b)    Click My Apps  
         - 5c)    Select your app  
         - 5d)    Select TestFlight at the top  
