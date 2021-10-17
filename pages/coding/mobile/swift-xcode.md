@@ -99,12 +99,12 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
 
 These are my notes from my [SquareFill app](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only), so might be quite specific to me.
 
-1)   ! The first thing you need to do is increment the build number:  
+- 1)   ! The first thing you need to do is increment the build number:  
 	- 1a) select the top level in the files / folders view  
 	- 1b) Go to the “General” tab – it’s at the top  
-2) (optional) Editing the app bundle: https://developer.apple.com/account/ios/identifier/bundle/edit   
-3) (generally useful) App Store Connect: https://appstoreconnect.apple.com   
-4) Product | Archive  
+- 2) (optional) Editing the app bundle: https://developer.apple.com/account/ios/identifier/bundle/edit   
+- 3) (generally useful) App Store Connect: https://appstoreconnect.apple.com   
+- 4) Product | Archive  
 	- 4a)    Enter a description on the right, then if all is good go to 5) below.  
 	- 4b)   !! The Archive option may be disabled. To fix:  
 		- 4bi)    Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. If all is good now, go to 5) below.  
@@ -121,19 +121,19 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 				- 4bii-b3)    …the way you select targets is:  
 					- 4bii-b3a)    1) select the top level in the files / folders view  
 					- 4bii-b3b)    2) at the left hand of the top, to the left of the “General” tab, is the name of your top-level project and all the code projects underneath (So for SquareFill I get three: SquareFillXCode, SquareFillXCodeTests and SquareFillXCodeUITests – these are all defined as targets)   
-5) After you have deployed, add testing notes in App store Connect (see below).  
-	!! If you get an error "[name] has one iOS Distribution certificate but its private key is not installed.", do the following:  
-		- i) xcode -> product -> archives -> Click manage certificate  
+- 5) After you have deployed, add testing notes in App store Connect (see below).  
+    - !! If you get an error "[name] has one iOS Distribution certificate but its private key is not installed.", do the following:  
+        - i) xcode -> product -> archives -> Click manage certificate  
 		- ii) Click the + button to add an iOS distribution.  
-After you have deployed, add testing notes in App store Connect:  
-	- 5a)    Go here: https://appstoreconnect.apple.com/   
-	- 5b)    Click My Apps  
-	- 5c)    Select your app  
-	- 5d)    Select TestFlight at the top  
-	- 5e)    Click the icon for your build (you may have to expand to see)  
-	- 5f)    Select the Test Details tab  
-		- 5fi)    Enter testing / build notes here  
-	- 5g)    ! If your build isn’t visible yet, select the Activity tab to see progress
+    - After you have deployed, add testing notes in App store Connect:  
+        - 5a)    Go here: https://appstoreconnect.apple.com/   
+        - 5b)    Click My Apps  
+        - 5c)    Select your app  
+        - 5d)    Select TestFlight at the top  
+        - 5e)    Click the icon for your build (you may have to expand to see)  
+        - 5f)    Select the Test Details tab  
+            - 5fi)    Enter testing / build notes here  
+        - 5g)    ! If your build isn’t visible yet, select the Activity tab to see progress
 
 
 
