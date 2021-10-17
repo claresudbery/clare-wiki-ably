@@ -156,7 +156,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
             - Enter testing / build notes here  
             - Also add testers here. 
                 - It's not obvious but when you click a + button to add testers to your App Store Connect Users group, if you read the text there is a link hiding in the text to [Add Users And Groups](https://appstoreconnect.apple.com/access/users).
-                - I think maybe first they have to accept the invite and then you can add them to the list of testers?
+                - First they have to accept the first invite and _then_ you can add them to the list of testers for your app.
                 - The data you enter under "what to test" doesn't get emailed to testers. But if they open the TestFlight app on their device and click on the app icon, it says "What to test" and if they click on "more" they'll see the text you entered.
 
 ## Data persistence
