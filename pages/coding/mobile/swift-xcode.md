@@ -104,7 +104,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 	- 1b) Go to the “General” tab – it’s at the top  
 - 2) (optional) Editing the app bundle: https://developer.apple.com/account/ios/identifier/bundle/edit   
 - 3) (generally useful) App Store Connect: https://appstoreconnect.apple.com   
-- 4) Product | Archive  
+- 4) Product => Archive  
 	- 4a)    Enter a description on the right, then if all is good go to 5) below.  
 	- 4b)   !! The Archive option may be disabled. To fix:  
 		- 4bi)    Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. If all is good now, go to 5) below.  
