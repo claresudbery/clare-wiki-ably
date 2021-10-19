@@ -182,9 +182,14 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 ## New classes and their targets
 
 - Each new class will have "targets" specified, which define the scope that class will be available in.
-    - You get a dialog that allows you to specify this if you do right-click new file from the file organiser (in the panel on the left if yuou click the file icon)
+    - You get a dialog that allows you to specify this if you do right-click new file from the file organiser (in the panel on the left if you click the file icon)
     - Otherwise right-click the file in the file organiser and choose "Show file inspector" which will appear on the right.
-
+- ! Sometimes you might get an error saying a class is not in scope, even though you've checked the checkbox re putting the correct project as a target
+    - This seems to be something to do with the target settings (right-click the file in the file organiser and choose "Show file inspector" which will appear on the right)
+        - What I did was change Location to "Relative to project" instead of "relative to group".
+        - This seemed to fix the problem, but weirdly when I subsequently changed the setting back to "relative to group", the code still compiled and ran.
+        - Then later I discovered the failure in question only happened when building / running the tests. The class in question was accessed in viewDidLoad in ViewController (but not in tests), but when I changed it to add the test project as a target, the error went away. Maybe because the ViewController was somehow accessed by test code?
+        
 ## Parameterised tests / multiple test cases in Swift / XCTest
 
 - I used [this article](https://briancoyner.github.io/articles/2015-11-28-swift-parameterized-xctestcase/) in combination with the [documentation on defaultTestSuite](https://developer.apple.com/documentation/xctest/xctestcase/1496289-defaulttestsuite), which has now changed from a func to a var
@@ -200,6 +205,5 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - How do you animate?
     - For instance, flashing colours when someone completes a level.
 - How come when I created a new class WinDetector, I couldn't test it?
-    - I got an error saying WinDetector not in scope, even though I checked the checkbox re putting the test project as a target
     - See commented out lines at the bottom of ShapeControllerTests
 - Surely I made notes on all this stuff before? What did I do with them??
