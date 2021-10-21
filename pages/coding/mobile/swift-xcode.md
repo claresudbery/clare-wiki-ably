@@ -167,10 +167,22 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - ! The above article talks about creating a data model but doesn't say how. That's [explained here](https://developer.apple.com/documentation/coredata/creating_a_core_data_model) (basically create a new file and select Data Model as the type).
     - It also talks about using the DataModel tool. This is the page that opens up automatically immediately after you create a new data model (you can get back to it by double-clicking on your data model in the file view).
         - Use the + button bottom left to add a new entity - this is the equivalent of a data table
+            - ! Be aware that after you have named your entity, the code will behave as though you had created a new class with that name
+            - and actually it has, and if you use Ctrl + Cmd + J you'll be able to see the definition
+            - but you can't see the class file in your code base. This is because it gets created dynamically every time you build.
+            - similarly there will be an Extension class which contains all the data attributes - you can see this by doing Ctrl + Cmd + J on an attribute in the code
         - Double-click the entity on the left to rename it
         - Initially all you have to worry about is adding adding attributes - these will be the fields on your table. Use the + button in the Atribute section to add attributes.
     - It also talks about creating a CoreDataManager class.
-        - This won't work without this extra line at the top of the file containing the CoreDataManager class: `import CoreData`
+        - ! This won't work without this extra line at the top of the file containing the CoreDataManager class: `import CoreData`
+        - Also it has a couple of errors in it
+            - It uses a different context (mainContext) for the load code than it uses in the Save code (backgroundContext())
+                - I found this caused my saved objects never to actually persist
+            - Also the load method doesn't have a return value outside the try...catch
+                - You'll need a return line that creates a blank object
+                - ! It's very important that you pass the context into your blank object
+                - If you don't, you'll get the "Unrecognized selector sent to instance" error - which is really hard to debug!
+                - You can see the finally-working SquareFill code I wrote for this [here](https://github.com/claresudbery/SquareFillXCode/blob/1205c0b2a6265145f556bfa76858254ba5fa89ca/SquareFillXCode/Utils/GameStateGateway.swift) (accessible to Clare only)
         - An alternative is to do the extra stuff in your AppDelegate file [described here](https://programmingwithswift.com/add-core-data-to-existing-ios-project/)
 
 ## Swift Keyboard Navigation
