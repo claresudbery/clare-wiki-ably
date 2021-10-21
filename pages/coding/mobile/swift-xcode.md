@@ -184,6 +184,8 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
                 - If you don't, you'll get the "Unrecognized selector sent to instance" error - which is really hard to debug!
                 - You can see the finally-working SquareFill code I wrote for this [here](https://github.com/claresudbery/SquareFillXCode/blob/1205c0b2a6265145f556bfa76858254ba5fa89ca/SquareFillXCode/Utils/GameStateGateway.swift) (accessible to Clare only)
         - An alternative is to do the extra stuff in your AppDelegate file [described here](https://programmingwithswift.com/add-core-data-to-existing-ios-project/)
+- Unit testing CoreData
+    - [This looks interesting](https://www.raywenderlich.com/11349416-unit-testing-core-data-in-ios), but is too complex to get up and running quickly
 
 ## Swift Keyboard Navigation
 
