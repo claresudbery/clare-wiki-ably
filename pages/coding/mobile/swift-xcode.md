@@ -165,6 +165,14 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - [This article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) has a good description of all the different wys you can store data _locally on a device_.
     - I used the CoreData approach for user high scores in [SquareFill](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only).
     - ! The above article talks about creating a data model but doesn't say how. That's [explained here](https://developer.apple.com/documentation/coredata/creating_a_core_data_model) (basically create a new file and select Data Model as the type).
+    - It also talks about using the DataModel tool. This is the page that opens up automatically immediately after you create a new data model (you can get back to it by double-clicking on your data model in the file view).
+        - Use the + button bottom left to add a new entity - this is the equivalent of a data table
+        - Double-click the entity on the left to rename it
+        - Initially all you have to worry about is adding adding attributes - these will be the fields on your table. Use the + button in the Atribute section to add attributes.
+    - It also talks about creating a CoreDataManager class.
+        - This won't work without this extra line at the top of the file containing the CoreDataManager class: `import CoreData`
+        - An alternative is to do the extra stuff in your AppDelegate file [described here](https://programmingwithswift.com/add-core-data-to-existing-ios-project/)
+
 ## Swift Keyboard Navigation
 
 - Find references:
