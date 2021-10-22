@@ -186,6 +186,9 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - An alternative is to do the extra stuff in your AppDelegate file [described here](https://programmingwithswift.com/add-core-data-to-existing-ios-project/)
 - Unit testing CoreData
     - [This looks interesting](https://www.raywenderlich.com/11349416-unit-testing-core-data-in-ios), but is too complex to get up and running quickly
+- Using more complex data structures with CoreData
+    - I think [this is the simplest example](https://www.hackingwithswift.com/books/ios-swiftui/one-to-many-relationships-with-core-data-swiftui-and-fetchrequest)
+    - There's also [this one](https://medium.com/@ldhough2000/swift-5-and-core-data-with-transformable-f1d766629029)
 
 ## Swift Keyboard Navigation
 
