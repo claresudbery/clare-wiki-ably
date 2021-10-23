@@ -72,6 +72,7 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - In Terminal: `cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport`
     - Look for the folder representing the highest version below your actual iOS version
     - duplicate that into a version representing actual iOS version
+        - like this: `sudo cp -r 14.4 14.7`
         - to find your iOS version:
         - on your phone go to Settings => General => Software Version
         - only one decimal point needed - eg if phone is 14.7.1 then folder can be named `14.7`
@@ -163,16 +164,23 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 
 - There are many different types of data persistence
     - [This article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) has a good description of all the different wys you can store data _locally on a device_.
-    - I used the CoreData approach for user high scores in [SquareFill](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only).
-    - ! The above article talks about creating a data model but doesn't say how. That's [explained here](https://developer.apple.com/documentation/coredata/creating_a_core_data_model) (basically create a new file and select Data Model as the type).
-    - It also talks about using the DataModel tool. This is the page that opens up automatically immediately after you create a new data model (you can get back to it by double-clicking on your data model in the file view).
+
+### CoreData
+
+- I used the CoreData approach for saving game state in [SquareFill](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only).
+- ! [This useful-ish article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) helps you get started
+    - It talks about creating a data model but doesn't say how. 
+        - That's [explained here](https://developer.apple.com/documentation/coredata/creating_a_core_data_model) (basically create a new file and select Data Model as the type).
+    - It also talks about using the DataModel tool. 
+        - This is the page that opens up automatically immediately after you create a new data model 
+        - you can get back to it by double-clicking on your data model in the file view.
         - Use the + button bottom left to add a new entity - this is the equivalent of a data table
             - ! Be aware that after you have named your entity, the code will behave as though you had created a new class with that name
             - and actually it has, and if you use Ctrl + Cmd + J you'll be able to see the definition
             - but you can't see the class file in your code base. This is because it gets created dynamically every time you build.
             - similarly there will be an Extension class which contains all the data attributes - you can see this by doing Ctrl + Cmd + J on an attribute in the code
         - Double-click the entity on the left to rename it
-        - Initially all you have to worry about is adding adding attributes - these will be the fields on your table. Use the + button in the Atribute section to add attributes.
+        - Initially all you have to worry about is adding attributes - these will be the fields on your table. Use the + button in the Atribute section to add attributes.
     - It also talks about creating a CoreDataManager class.
         - ! This won't work without this extra line at the top of the file containing the CoreDataManager class: `import CoreData`
         - Also it has a couple of errors in it
@@ -184,11 +192,30 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
                 - If you don't, you'll get the "Unrecognized selector sent to instance" error - which is really hard to debug!
                 - You can see the finally-working SquareFill code I wrote for this [here](https://github.com/claresudbery/SquareFillXCode/blob/1205c0b2a6265145f556bfa76858254ba5fa89ca/SquareFillXCode/Utils/GameStateGateway.swift) (accessible to Clare only)
         - An alternative is to do the extra stuff in your AppDelegate file [described here](https://programmingwithswift.com/add-core-data-to-existing-ios-project/)
+- Create / edit / delete CoreData entities
+    - Good [simple article here](https://www.advancedswift.com/core-data-objects/)
+- Fetching CoreData entities
+    - Good [article here](https://www.advancedswift.com/fetch-requests-core-data-swift/#filter-fetch-request-with-predicate)
 - Unit testing CoreData
     - [This looks interesting](https://www.raywenderlich.com/11349416-unit-testing-core-data-in-ios), but is too complex to get up and running quickly
 - Using more complex data structures with CoreData
     - I think [this is the simplest example](https://www.hackingwithswift.com/books/ios-swiftui/one-to-many-relationships-with-core-data-swiftui-and-fetchrequest)
     - There's also [this one](https://medium.com/@ldhough2000/swift-5-and-core-data-with-transformable-f1d766629029)
+    - To see the extra properties on attributes, relationships etc:
+        - Select the thing you're interested in 
+        - Look over to the right hand panel
+        - You might have to click some of the icons at the top of the right hand panel to find what you want
+    - I got this working in my GridGateway class. My code there will probably end up in GameStateGateway, but you can see an intermediate working version in [this commit](). 
+
+
+### Restoring app state using built-in functionality
+
+- I tried doing this via ViewController using [this article as a guide](https://developer.apple.com/documentation/uikit/uiscenedelegate/restoring_your_app_s_state), and you can see my attempt in [this commit]() (accessible to Clare only), but it didn't work - the relevant code never got fired.
+    - Actually that article's pretty hopeless - the article contradicts itself, contradicts the code base, and mixes up two different methods of doing things so it's really hard to tell which is which - both in article and in sample code base
+    - and then you find the disclaimer that says in some circumstances it will get overwritten...
+    - ...and you realise you're still going to have all the same problems of it not supporting complex types...
+    - ... I decided I may as well continue with my efforts to solve this using CoreData
+    - ...which I seem to have got working pretty well (see notes above).
 
 ## Swift Keyboard Navigation
 
