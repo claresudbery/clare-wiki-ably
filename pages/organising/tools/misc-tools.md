@@ -47,7 +47,7 @@ Like this: https://youtu.be/imNlIoeCjao?t=43
 
 ### Accessing deleted items
 
-- To access deleted items in Due, go to settings | backup and email a backup to yourself. But do it quickly! Depending how often you use the app you might have less than 24 hours of backups.
+- To access deleted items in Due, go to settings => backup and email a backup to yourself. But do it quickly! Depending how often you use the app you might have less than 24 hours of backups.
 - Top tips:
   - If you want to access something deleted, do it asap
   - Don't delete things! Use the tick button instead, to log things done.
@@ -77,8 +77,8 @@ Some simple info that might help if you're finding Dux Soup confusing:
 
 - It's a browser extension - nothing to do with LinkedIn itself
   - It automates LikedIn interactions by clicking through LinkedIn links on your behalf
-- Whenever Dux soup visits a profile on your behalf, it stores data from that profile and can tag that stored data with a configured tag which you can later use to search with (see Dux Soup Options | Actions)
-- Use Dux Soup Options | Actions to define what will happen whenever a profile is visited - including sending personal messages
+- Whenever Dux soup visits a profile on your behalf, it stores data from that profile and can tag that stored data with a configured tag which you can later use to search with (see Dux Soup Options => Actions)
+- Use Dux Soup Options => Actions to define what will happen whenever a profile is visited - including sending personal messages
 - Use the "scan profile" functionality to scan headline info (basically just name and profile id) from LinkedIn search results
 - Use the "download data" functionality to download scanned data - or more detailed data from visited profiles - in csv form
 - Use the "revisit data" functionality to upload your own edited csvs and visit all the profiles in the csv (potentially also messaging each person)
@@ -123,6 +123,11 @@ re, sorry!)
     - UTM medium = Making Tech Better
     - UTM term = Episode Xxx
     - UTM content = Transcript
+- To fetch the now-created url:
+  - The url you just created will probably now be listed at the top of the page, but if not, use "Search tracking urls" at the top to find it.
+  - Hover over the row
+  - Click "Copy short url" to get the shortened version
+  - Click "Actions" to get access to the long tracking url and also to the original url.
 
 ## Google suite
 
