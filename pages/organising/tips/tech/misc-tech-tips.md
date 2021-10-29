@@ -144,14 +144,6 @@ This fixed my problem:
 
 "I also had a problem with the changed appearance of File explorer.  Turned out the navigation pane had disappeared.   Select View option, select the down arrow at Navigation pane (top left), in the drop down menu tick the box beside Navigation pane.  It's back to the way I like it." From here: https://answers.microsoft.com/en-us/windows/forum/all/file-explorer-changed-appearance-after-update/3306555e-05f6-438c-87de-66ed2b0cae2c
 
-## Show desktop on MacBook
-
-- What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it.
-
-## If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
-
-- Cmd + 0 will fix that.
-
 ## How to make greyscale / grayscale / monochrome / b+w / black and white pics with transparent background
 
 - Clare only (google slides): https://docs.google.com/presentation/d/1ffla3m_wi5fDOOnttjP6tDx1UiszsmIs9fqekUEbOsM/edit#slide=id.p

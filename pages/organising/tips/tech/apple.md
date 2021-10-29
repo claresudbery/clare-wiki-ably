@@ -146,3 +146,11 @@ killall SystemUIServer
 * Keyboard
 * Customise Control Strip
 * Drag what you want into the touchbar
+
+## Show desktop on MacBook
+
+- What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it.
+
+## If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
+
+- Cmd + 0 will fix that.
