@@ -7,6 +7,7 @@ permalink: /pages/think/code-princ/Katas
 ## Tools
 
 - [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
+    - If you follow [this link](https://cyber-dojo.org/creator/choose_problem) you’ll see a list of katas on the left and then when you select one it describes the kata
 
 ## Kata definitions
 
@@ -18,6 +19,8 @@ permalink: /pages/think/code-princ/Katas
         - TDDing minimax can be tricky. I ended up drawing a lot of diagrams. My notes and diagrams are [here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/notes.md).
         - The tests for my TDDed minimax implementation are [here](https://github.com/claresudbery/tic-tac-toe-kata/blob/2bb3a41110a2f52996fdfe159088b99f9aea5c99/spec/intelligence_spec.rb), and the code is [here](https://github.com/claresudbery/tic-tac-toe-kata/blob/2bb3a41110a2f52996fdfe159088b99f9aea5c99/lib/intelligence.rb).
         - My version of the game is [deployed here](https://tic-tac-toe-kata.herokuapp.com/tictactoe) (the UI is terrible, I was mostly focused on TDDing minimax).
+- Cyber Dojo (see above): If you follow [this link](https://cyber-dojo.org/creator/choose_problem) you’ll see a list of katas on the left and then when you select one it describes the kata
+- There are six good refactoring katas pinned to the top of [Emily Bache’s github account](https://github.com/emilybache)
 
 ## GitHub Repos
 
