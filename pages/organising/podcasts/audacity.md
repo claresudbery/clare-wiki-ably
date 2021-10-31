@@ -79,3 +79,13 @@ permalink: /pages/organising/podcasts/Audacity
 
 - For some reason I can't use Cmd+C and Cmd+V when naming files in the Export and Save dialogs on the Macbook, but there is a simple workaround: Use right-click | Copy and then right-click | Paste.
 - I found others complaining about this on the internet, bit the right-click solution was the only suggestion that worked for me.
+
+## Other Audacity Tips
+
+### Removing pops
+
+- Zoom in (Ctrl + scroll - SLOWLY)
+- Highlight the pop (you'll see it stand out)
+- Effect => Graphic EQ (or "Equalisation" on other versions of Audacity)
+    - Manage => Factory Presets => 100Hz rumble
+    - You might have to repeat the same effect several times - you can do this with Ctrl + R

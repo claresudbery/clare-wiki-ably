@@ -30,3 +30,30 @@ permalink: /pages/organising/tools/Kinemaster
     - There may be times when you would prefer to keep your layers in place. This is what the Pin tool does. To use the Pin tool, tap a layer to select it. Then tap the Pin tool. You can change the length of pinned media in the Primary Timeline without changing its location.
     - [Pin tool documentation](https://community.kinemaster.com/2020/05/19/the-pin-tool/)
     - Please see [this video tutorial on using the pin tool](https://www.youtube.com/watch?v=eif5JH6HCF4&ab_channel=MasteringKinemaster)
+
+## To add a cover image
+
+- Place the cursor at the start of the video
+- Click Media (top right)
+- Click Photo (left)
+    - select an image (I took a screenshot while playing the finished video, and used this)
+- Add a label for the title
+    - Select the new clip
+    - Click Layer (top right)
+    - Click text
+    - Click tick
+    - Resize it / position it where you want it
+    - Select the label
+    - Scroll down a bit (top right) and select Background
+    - Turn on "enable"
+    - Click the shaded square on the left and choose a colour
+    - Use the slider at the bottom to set opacity
+- Change the new clip's length in the video
+    - By default it's pretty long (4.5 seconds)
+    - I changed it to 00:00.143
+    - Move the cursor to just left of the start of the original video (I had it at 00:04.357)
+    - Select the new clip
+    - Click Trim/Split (top right)
+    - Click Trim to left of playhead
+- Change the length of the new label
+    - Use same technique you used to change length of image
