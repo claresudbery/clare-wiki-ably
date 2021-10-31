@@ -6,18 +6,101 @@ permalink: /pages/think/life/health-stuff/Covid
 
 Aka COVID-19 / coronavirus / Sars-CoV-2
 
-## Updated symptom list
+## Useful info and links
+
+### Updated symptom list
 
 [Updated symptom advice](https://covid.joinzoe.com/post/new-top-5-covid-symptoms)
 
-## Vaccination
+### Vaccination
 
+- [Vaccination info](#vaccination) (including booking yourself in for vaccination, and stuff about the covishield A-Z Indian vaccine)
 - [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
 - [Link to book your own vaccination](https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/) (once they reach your group)
+- Link [to register 13-yr-old for vaccine](https://childcv19immunisationconsent.mft.nhs.uk)
 - Problems with covishield (Indian vaccine batch) preventing travel to France and other countries
   - Original [article describing the problem](https://www.google.co.uk/amp/s/inews.co.uk/inews-lifestyle/travel/astrazeneca-batch-number-check-how-covid-vaccine-numbers-made-india-uk-eu-travel-1083092/amphttps://www.google.co.uk/amp/s/inews.co.uk/inews-lifestyle/travel/astrazeneca-batch-number-check-how-covid-vaccine-numbers-made-india-uk-eu-travel-1083092/amp)
   - Article [about people being turned away from Manchester airport](https://www.manchestereveningnews.co.uk/news/local-news/couple-sent-home-manchester-airport-21046601#ICID=Android_MENNewsApp_AppSharehttps://www.manchestereveningnews.co.uk/news/local-news/couple-sent-home-manchester-airport-21046601#ICID=Android_MENNewsApp_AppShare)
   - Article saying [it's now resolved for France](https://www.schengenvisainfo.com/news/france-now-recognises-covishield-vaccine-as-proof-of-vaccination/)
+
+### Testing
+
+- [Order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
+- Book [drive-in or home-delivered PCR test](https://www.gov.uk/get-coronavirus-test)
+
+### Travel
+- Order a [vaccination certificate for travelling](https://www.nhs.uk/conditions/coronavirus-covid-19/covid-pass/get-your-covid-pass-letter/)
+  - Note that you can also download a pdf from the NHS app (not the covid app) - see link below.
+- [Download a digital vaccination certificate / covid pass](https://www.gov.uk/guidance/nhs-covid-pass#how-to-access-the-nhs-covid-pass) (note: It's in the general NHS app, not the Covid app)
+- Foreign travel:
+  - On 19/8/21, France was on the amber list
+    - This means you need a covid pass to travel there
+    - You need to wear a mask on public transport
+    - You need to do a covid test on day 2 after your return to England
+    - Before travel, use the links below to check status is still amber and rules for travel are still the same.
+  - [How to travel abroad](https://www.gov.uk/guidance/travel-abroad-from-england-during-coronavirus-covid-19#before-you-travel-abroad)
+  - [Instructions for travelling to France](https://www.gov.uk/foreign-travel-advice/france/coronavirus)
+    - What I needed to travel to France on 7/9/21:
+    1. A covid pass.
+    2. A sworn statement for the French govt.
+    3. Proof of destination and accommodation for the French authorities.
+    4. Fill in a [passenger location form](https://www.gov.uk/provide-journey-contact-details-before-travel-uk) for UK govt <= 48 hours before returning to UK.
+      - You should register with this service before you leave the UK.
+      - You'll need: 
+        - Login details 
+        - Passport details: number, issuing authority, expiry date
+        - mobile phone number 
+        - arrival details: date and time
+        - Day 2 test booking reference number
+      - The passenger locator form, even if you've told it you live in the UK, will still ask when you are planning to leave the UK. I just choose a random date two years in the future!
+      - When you complete passenger locator form before returning to UK, it will email the completed form to you. 
+        - !! Download or print it ASAP so you have it to show officials!!
+    5. Do a PCR test in France before leaving (still haven't quite managed to work out how I make that happen according to the rules, but the conference organisers say I can do it at the conference venue, so fingers crossed that's all correct).
+      - When they send you your pass sanitaire covid result, it's a good idea to download / print it ASAP so you have it available for officials.
+      - Below is the official info about this test. Note that neither I nor the nurse could find any info on the test packaging that talked about % specificity, so we couldn't verify this but the test was an LFT I think (the results are within 20 minutes and the French call it "antigenique") and the certificate I received as a result was from "Assistance Publique Hopitaux de Paris" and was accepted by the airline:
+        - The test must meet performance standards of ≥97% specificity, ≥80% sensitivity at viral loads above 100,000 copies/ml. 
+        - This could include tests such as:
+          - a PCR test
+          - a LAMP test
+        - an antigen test, such as an LFD (lateral flow device) test
+        - You must check with your test provider that the test meets the standards. You may not be able to travel if it does not.
+        - You will need to find a private test provider to take a test.
+    6. Do another "2 day" PCR test in England after arriving (this has to be ordered in advance).
+      - You need proof of having ordered this day 2 test - there's a booking reference number which you have to enter into the passenger locator form.
+    7. Wear a "surgical mask" at the airport and on the plane.
+      - This seems to mean the blue papery kind, and if you don't have one they will give you one (and ask you to replace your non-surgical mask with it).
+  - [List of red, green and amber countries](https://www.gov.uk/guidance/red-amber-and-green-list-rules-for-entering-england) (search for the name of the country you're interested in, then scroll up to see which list it's in)
+  - Info on [whether you need a new passport due to Brexit](https://check-passport-for-travel-to-europe.homeoffice.gov.uk/) (basically if it's less than 10 years old and has at least six months before it expires, even if it was issued before Brexit, it's probably fine).
+  - [Order a Day 2 test kit](https://www.find-travel-test-provider.service.gov.uk/test-type/green) for use after arrival in England from an amber list country
+
+### Other useful info and links
+
+- [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
+- Zoom fatigue:
+  - [National Geographic article about Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)
+  - [Suggestions for countering Zoom fatigue](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
+  - [Why Zoom calls are exhausting](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
+- Remote working at scale:
+  - [remote work at scale](https://beau.blog/2020/03/remote-work-at-scale/)
+  - [The 5 levels of remote work and why you're probably at level 2](https://medium.com/swlh/the-five-levels-of-remote-work-and-why-youre-probably-at-level-2-ccaf05a25b9c)
+
+NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
+
+- Useful links / articles:
+  - (I make no claims for the accuracy about anything presented in any of these links)
+  - [animated video of what happens inside your body](https://www.youtube.com/watch?v=BtN-goy9VOY)
+  - [Explanation of why dividing by population size is not a simple exercise](https://twitter.com/ct_bergstrom/status/1249930293928030209?s=21)
+  - Interesting article [here](https://www.statnews.com/2020/02/04/two-scenarios-if-new-coronavirus-isnt-contained/) about what impact warmer weather might have, about immunity, and about what might happen if the virus becomes endemic (hangs around everywhere indefinitely) and seasonal
+  - [Running remote workshops due to COVID-19](/pages/think/events/workshops/Remote-Inception)
+  - [Longform article about why coronavirus is so confusing](https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share)
+  - [Really useful article](https://www.erinbromage.com/post/the-risks-know-them-avoid-them) about how the virus spreads. Aimed at Americans, but once you get past the intro there's tons of detailed info about what you should be worried about.
+  - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+      - [World map of cases and deaths](https://www.theguardian.com/world/2020/apr/07/coronavirus-world-map-which-countries-have-the-most-cases-and-deaths)
+      - [Confirmed cases in your area](https://www.theguardian.com/world/2020/apr/07/coronavirus-uk-how-many-confirmed-cases-are-in-your-area-covid-19-map)
+  - [Symptoms](https://twitter.com/daniel_kraft/status/1236716506890682369?s=21)
+  - A [WHO app](https@//www.whatsapp.com/coronavirus/who) with regularly updated information:
+      * Type in 'hi' to begin the menu.
+      * Has updates on every aspect of the virus - numbers if you want them, how to protect yourself and others, symptoms etc etc etc
 
 ## Staying sane during the COVID-19 crisis
 
@@ -130,81 +213,6 @@ Or trick them by being euphoric.
 Above your head a flock of geese  
 are flying South. Beneath your feet  
 worms aren’t worrying.
-
-## Some info and links
-
-- [Vaccination info](#vaccination) (including booking yourself in for vaccination, and stuff about the covishield A-Z Indian vaccine)
-- [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
-- [Order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
-- Book [drive-in or home-delivered PCR test](https://www.gov.uk/get-coronavirus-test)
-- Order a [vaccination certificate for travelling](https://www.nhs.uk/conditions/coronavirus-covid-19/covid-pass/get-your-covid-pass-letter/)
-  - Note that you can also download a pdf from the NHS app (not the covid app) - see link below.
-- [Download a digital vaccination certificate / covid pass](https://www.gov.uk/guidance/nhs-covid-pass#how-to-access-the-nhs-covid-pass) (note: It's in the general NHS app, not the Covid app)
-- Foreign travel:
-  - On 19/8/21, France was on the amber list
-    - This means you need a covid pass to travel there
-    - You need to wear a mask on public transport
-    - You need to do a covid test on day 2 after your return to England
-    - Before travel, use the links below to check status is still amber and rules for travel are still the same.
-  - [How to travel abroad](https://www.gov.uk/guidance/travel-abroad-from-england-during-coronavirus-covid-19#before-you-travel-abroad)
-  - [Instructions for travelling to France](https://www.gov.uk/foreign-travel-advice/france/coronavirus)
-    - What I needed to travel to France on 7/9/21:
-    1. A covid pass.
-    2. A sworn statement for the French govt.
-    3. Proof of destination and accommodation for the French authorities.
-    4. Fill in a [passenger location form](https://www.gov.uk/provide-journey-contact-details-before-travel-uk) for UK govt <= 48 hours before returning to UK.
-      - You should register with this service before you leave the UK.
-      - You'll need: 
-        - Login details 
-        - Passport details: number, issuing authority, expiry date
-        - mobile phone number 
-        - arrival details: date and time
-        - Day 2 test booking reference number
-      - The passenger locator form, even if you've told it you live in the UK, will still ask when you are planning to leave the UK. I just choose a random date two years in the future!
-      - When you complete passenger locator form before returning to UK, it will email the completed form to you. 
-        - !! Download or print it ASAP so you have it to show officials!!
-    5. Do a PCR test in France before leaving (still haven't quite managed to work out how I make that happen according to the rules, but the conference organisers say I can do it at the conference venue, so fingers crossed that's all correct).
-      - When they send you your pass sanitaire covid result, it's a good idea to download / print it ASAP so you have it available for officials.
-      - Below is the official info about this test. Note that neither I nor the nurse could find any info on the test packaging that talked about % specificity, so we couldn't verify this but the test was an LFT I think (the results are within 20 minutes and the French call it "antigenique") and the certificate I received as a result was from "Assistance Publique Hopitaux de Paris" and was accepted by the airline:
-        - The test must meet performance standards of ≥97% specificity, ≥80% sensitivity at viral loads above 100,000 copies/ml. 
-        - This could include tests such as:
-          - a PCR test
-          - a LAMP test
-        - an antigen test, such as an LFD (lateral flow device) test
-        - You must check with your test provider that the test meets the standards. You may not be able to travel if it does not.
-        - You will need to find a private test provider to take a test.
-    6. Do another "2 day" PCR test in England after arriving (this has to be ordered in advance).
-      - You need proof of having ordered this day 2 test - there's a booking reference number which you have to enter into the passenger locator form.
-    7. Wear a "surgical mask" at the airport and on the plane.
-      - This seems to mean the blue papery kind, and if you don't have one they will give you one (and ask you to replace your non-surgical mask with it).
-  - [List of red, green and amber countries](https://www.gov.uk/guidance/red-amber-and-green-list-rules-for-entering-england) (search for the name of the country you're interested in, then scroll up to see which list it's in)
-  - Info on [whether you need a new passport due to Brexit](https://check-passport-for-travel-to-europe.homeoffice.gov.uk/) (basically if it's less than 10 years old and has at least six months before it expires, even if it was issued before Brexit, it's probably fine).
-  - [Order a Day 2 test kit](https://www.find-travel-test-provider.service.gov.uk/test-type/green) for use after arrival in England from an amber list country
-
-NB: This collection is months old now. Do you really need to follow these links? Maybe you'd be better off finding something more calming to look at.
-
-- Zoom fatigue:
-  - [National Geographic article about Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)
-  - [Suggestions for countering Zoom fatigue](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
-  - [Why Zoom calls are exhausting](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)
-- Remote working at scale:
-  - [remote work at scale](https://beau.blog/2020/03/remote-work-at-scale/)
-  - [The 5 levels of remote work and why you're probably at level 2](https://medium.com/swlh/the-five-levels-of-remote-work-and-why-youre-probably-at-level-2-ccaf05a25b9c)
-- Useful links / articles:
-  - (I make no claims for the accuracy about anything presented in any of these links)
-  - [animated video of what happens inside your body](https://www.youtube.com/watch?v=BtN-goy9VOY)
-  - [Explanation of why dividing by population size is not a simple exercise](https://twitter.com/ct_bergstrom/status/1249930293928030209?s=21)
-  - Interesting article [here](https://www.statnews.com/2020/02/04/two-scenarios-if-new-coronavirus-isnt-contained/) about what impact warmer weather might have, about immunity, and about what might happen if the virus becomes endemic (hangs around everywhere indefinitely) and seasonal
-  - [Running remote workshops due to COVID-19](/pages/think/events/workshops/Remote-Inception)
-  - [Longform article about why coronavirus is so confusing](https://www.theatlantic.com/health/archive/2020/04/pandemic-confusing-uncertainty/610819/?utm_source=twitter&utm_medium=social&utm_campaign=share)
-  - [Really useful article](https://www.erinbromage.com/post/the-risks-know-them-avoid-them) about how the virus spreads. Aimed at Americans, but once you get past the intro there's tons of detailed info about what you should be worried about.
-  - [Global COVID-19 data](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
-      - [World map of cases and deaths](https://www.theguardian.com/world/2020/apr/07/coronavirus-world-map-which-countries-have-the-most-cases-and-deaths)
-      - [Confirmed cases in your area](https://www.theguardian.com/world/2020/apr/07/coronavirus-uk-how-many-confirmed-cases-are-in-your-area-covid-19-map)
-  - [Symptoms](https://twitter.com/daniel_kraft/status/1236716506890682369?s=21)
-  - A [WHO app](https@//www.whatsapp.com/coronavirus/who) with regularly updated information:
-      * Type in 'hi' to begin the menu.
-      * Has updates on every aspect of the virus - numbers if you want them, how to protect yourself and others, symptoms etc etc etc
 
 ## Older covid stuff you probably already know
 
