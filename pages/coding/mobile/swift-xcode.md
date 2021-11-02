@@ -164,6 +164,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 
 - There are many different types of data persistence
     - [This article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) has a good description of all the different wys you can store data _locally on a device_.
+    - See sections below for more detail.
 
 ### CoreData
 
@@ -197,6 +198,12 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - Fetching CoreData entities
     - Good [article here](https://www.advancedswift.com/fetch-requests-core-data-swift/#filter-fetch-request-with-predicate)
 - Unit testing CoreData
+    - [this is helpful](https://www.donnywals.com/setting-up-a-core-data-store-for-unit-tests/)
+        - [also this](https://medium.com/tiendeo-tech/ios-how-to-unit-test-core-data-eb4a754f2603)
+            - this is the one I used but I think that first one might be better
+    - I got this working in SquareFill [here](https://github.com/claresudbery/SquareFillXCode/blob/ca2f6bfd6210e129b424c7ba360e12c4a990afa0/SquareFillXCodeTests/GameStateGatewayTests.swift#L43) (accessible to Clare only)
+        - Note that it didn't work when I used background context - I used viewContext instead
+        - Also the name for your container will be the name of the whole data model - eg mine is called "SquareFill". I got confused because XCode calls the whole thing a data model, whereas I am calling the individual classes (that represent tables) models.
     - [This looks interesting](https://www.raywenderlich.com/11349416-unit-testing-core-data-in-ios), but is too complex to get up and running quickly
 - Using more complex data structures with CoreData
     - I think [this is the simplest example](https://www.hackingwithswift.com/books/ios-swiftui/one-to-many-relationships-with-core-data-swiftui-and-fetchrequest)
