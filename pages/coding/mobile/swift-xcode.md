@@ -228,8 +228,12 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - Splat + G to find next 
 - Find call hierarchy: Ctrl + Shift + Splat + H
 - Find symbol in project: Ctrl + Shift + Splat + F
-- Build: Splat + B
+- Build: 
+    - build project code only: Splat + B
+    - build project AND test code: Shift + Splat + U
+    - (see the Project => Build For menu)
 - Run all tests: Splat + U
+
 
 ## New classes and their targets
 
