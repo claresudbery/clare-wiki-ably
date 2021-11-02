@@ -50,8 +50,11 @@ permalink: /pages/organising/tools/Kinemaster
     - Use the slider at the bottom to set opacity
 - Change the new clip's length in the video
     - By default it's pretty long (4.5 seconds)
-    - I changed it to 00:00.143
-    - Move the cursor to just left of the start of the original video (I had it at 00:04.357)
+    - I changed it to a length of 00:00.177
+        - Note that the first time I did this (on my Delta Dawn video), the length I used was 00:00.143, and this worked fine. 
+        - But the next time, I used the same length (for Big Dipper) and it didn't get used as the thumbnail. In iPhone photos app it used another clip from the beginning of the main vid. And when I clicked play it seemed to show that for a second at start of playing. 
+        - So I changed it to 00:00.177
+    - Move the cursor to just left of the start of the original video (I had it at 00:04.323)
     - Select the new clip
     - Click Trim/Split (top right)
     - Click Trim to left of playhead
