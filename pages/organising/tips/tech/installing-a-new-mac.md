@@ -23,24 +23,45 @@ See also the following resources from others who have done similar but with more
 (I've recorded every step here and elsewhere in case I ever get this configured in something more powerful than a bash script.)
 
 * Change user password
+    * System Preferences => Users & Groups => Change Password
 * If it's already been set up with a user name that you don't like:
     * Change user name to **Your name** and home folder name to **yourname**
         * Home folder name is important to me because my scripts will break if I don't use that folder name
         * Instructions here: https://support.apple.com/en-us/HT201548 
     * You have to create a separate admin account to do this!
+* Give it your fingerprint (System Preferences => Touch ID)
 * Connect to Wifi (pw needed)
+* Download / Install 1password app on laptop (pw needed), 
+    * Use Safari for now - Chrome will be installed by the script (below)
+    * Sign in via the website - account details are in 1Password (via another device), under Account
+    * Then download the app in the app store (or just start with this?)
+        * If you get errors, try quitting Safari
+        * Also try installing [in safe mode](https://support.apple.com/en-gb/guide/mac-help/mh21245/mac)
+    * to make it work in browser - add all your accounts (eg home and work) 
+        * actually I'm not sure about this - you might have to have separate logins for separate google accounts?
+        * Anyway it will prompt you to add multiple accounts in the desktop app
+    * (if you get problems in the browser, you might have to remove the extension (Settings => More Tools => Extensions
+        * ...and then add it again - https://1password.com/downloads/mac/#browsers)
+    * Note that you won't have to add the Chrome extension 
+        * because Chrome gets installed by the script
+        * and later on you'll sync your profiles in Chrome and they'll pick up the 1Password extension automatically
+* Set up 1password to use fingerprint
+    * Main 1password menu => Preferences => Security => Unlock using touch ID
 * Set up Apple ID (pw needed)
+    * Go to system preferences and click the Sign in button, top right
 * Use iCloud
     * Sync iCloud Drive
     * Sync Photos with iCloud
     * Sync Contacts with iCloud
     * Sync Calendars with iCloud
-    * Sync Contacts with iCloud
     * Sync Notes with iCloud
     * Sync Find My Mac with iCloud
     * Sync Home with iCloud
 * Let Calendar use my location
 * Add your own Google account and turn on (pw needed)
+    * This might partially happen as a result of setting up Apple ID, but you still need to do the following:
+    * System Preferences => Internet Accounts 
+    * Select Google on the left
     * Sync Mail
     * Sync Contacts
     * Sync Calendars
@@ -51,10 +72,6 @@ See also the following resources from others who have done similar but with more
     * (basically System Prefs - Security and Privacy - FileVault - unlock the padlock - Turn FileVault on) (but maybe you have to then wait in that dialog, with the padlock unlocked, while encryption happens, otherwise it seems to pause until you return?)
 * Amend security preferences to allow Avast system extension to be loaded
 * Install any OS updates - might need to agree terms and conditions for OS upgrade?
-* Download / Install 1password app on laptop (pw needed), 
-    * to make it work in browser - add all your accounts (eg home and work) 
-    * (if you get problems in the browser, you might have to remove the extension (Settings | More Tools | Extensions
-        * ...and then add it again - https://1password.com/downloads/mac/#browsers)
 
 ## Stuff I have put in a script
 * To run the brew script, see [Automating the installation](#automating-the-installation) below.

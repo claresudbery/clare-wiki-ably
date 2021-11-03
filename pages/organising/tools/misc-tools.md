@@ -94,6 +94,8 @@ re, sorry!)
 
 ### Uploading files to Hubspot
 
+- We use this to upload our full polished podcast transcripts
+  - We get these from our transcriber - we can't proceed with this step until we have received the final transcript from the transcriber
 - Menu / top strip -> marketing -> files
 - Upload files (top right) - select a file
 - After uploading: middle of screen: All types -> documents

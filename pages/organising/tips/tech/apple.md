@@ -133,7 +133,7 @@ killall SystemUIServer
     - Public notes [here](/pages/organising/tips/tech/Installing-A-New-Mac)
     - Clare notes [here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/reinstalling-new-mac.md)
 
-### Customise Finder to have home folder in favourites
+### Customise Finder to have home folder (and other folders) in favourites
 
 * Open Finder
 * Use Cmd+Shift+h to see Home folder
