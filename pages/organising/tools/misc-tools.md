@@ -108,6 +108,7 @@ re, sorry!)
 
 ### Hubspot utm url tracker
 
+- (for the podcast, these notes are now in Gina's Handover Doc)
 - Menu (top left) or top strip -> Reports -> analytics tools 
 - bottom of screen: Tracking Url builder
 - Top right: Create tracking url (fill in fields)
@@ -215,3 +216,7 @@ re, sorry!)
   - Useful for quizzes, surveys, Q&A, audience participation, interactive presentations
   - [menti.com](https://www.menti.com/)
 gov
+
+## Random red panda
+
+![ageimals_red_panda.jpeg](/resources/images/ageimals_red_panda.jpeg)
