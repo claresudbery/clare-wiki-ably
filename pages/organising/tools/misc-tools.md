@@ -172,6 +172,18 @@ re, sorry!)
   - Insert => Bookmark
   - Then click the blue bookmark and right-click where it says Link, and choose "copy link address".
 
+### Emoticons / emojis in docs
+
+- Ctrl + cmd + space to embed emojis
+  - Windows key + `;` on Windows
+- NB: In google sheets you have to be in the formula input for it to
+  work.
+
+### Strikethrough in docs
+
+- Alt + Shift + 5
+- (In Word it's Ctrl + Alt + S)
+
 ### Google sheets on iphone
 
 - To see other sheets / tabs, get out of editing mode (click the green tick top left), and then they will appear at the bottom of the screen. 

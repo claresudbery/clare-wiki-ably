@@ -34,7 +34,7 @@ permalink: /pages/organising/podcasts/Podcast-Editing
     - Keyboard shortcut in Word to create heading 2 is Ctrl + Alt + 2
     - Think about which sections you want to cut
         - This way you won't waste ages listening to those sections in detail - you can just ignore them from the start
-        - You can use Ctrl + Alt + S in Word to strikethrough the sections you want to lose.
+        - You can use Ctrl + Alt + S in Word to strikethrough the sections you want to lose (In Google docs, it's Alt + Shift + 5).
         - It's also worth suffixing headings with y, n and m for Yes, No and Maybe to indicate whether sections will be kept or not.
 
 ### Make a note of timestamps

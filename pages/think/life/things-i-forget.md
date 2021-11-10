@@ -193,3 +193,11 @@ I love it because it has a particular kind of live energy that makes me wish I c
 
 [Quokkas](https://twitter.com/claresudbery/status/1433502475227746310?s=21).
 
+## What's Laura's dog called?
+
+Hartford.
+
+## What's that hight street bank sign that always made me think of swearing?
+
+Ing Direct.
+
