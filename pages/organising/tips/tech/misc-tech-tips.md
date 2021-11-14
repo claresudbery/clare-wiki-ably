@@ -150,3 +150,10 @@ This fixed my problem:
   - Right-click -> replace image
   - Right-click -> Format options -> Re-colour -> Light 4 (or experiment to find out what works best)
   - File -> download -> png, current slide (NOT JPG - you lose the transparency if you do that)
+
+## How to turn off Thunderbird badge notifications in system tray on Windows
+
+- Three lines top right
+- Preferences => General
+- Scroll down to the bottom => Click Config Editor, bottom right
+- Search for badge, and change mail.biff.show_badge to `false`.
