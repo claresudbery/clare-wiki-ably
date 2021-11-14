@@ -154,3 +154,11 @@ killall SystemUIServer
 ## If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
 
 - Cmd + 0 will fix that.
+
+## Erase device / erase laptop
+
+- Via Find my Iphone, you can erase any device (including MacBook). It will get erased the next time it connects to the internet, and you'll get a notification. 
+- Note for Clare: 
+    - I erased a faulty work laptop on 13/11/21 (after it had been replaced with a new one). 
+    - In the process, I found another two laptops listed (old work laptops?) (annoyingly I couldn't tell the difference between them), so I erased them too.
+        - I guess this means that at some random point in the future I may get a notification that one of these devices has been connected to the internet... and be confused by it. So this is a note for my future self!

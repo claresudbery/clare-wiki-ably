@@ -37,7 +37,7 @@ permalink: /pages/organising/tools/Kinemaster
 - Click Media (top right)
 - Click Photo (left)
     - select an image (I took a screenshot while playing the finished video, and used this)
-- Add a label for the title
+- Add a label for the title:
     - Select the new clip
     - Click Layer (top right)
     - Click text
