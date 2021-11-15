@@ -120,7 +120,9 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - This might take a while
         - !! Watch out! There are a couple more dialogs that need your input after you click Distribute App, and they take a while to load so you might miss them and wonder why your build doesn't appear in App Store Connect.
         - It might create a new signing certificate for you. You should export this and store it somewhere like a password manager.
-        - When it asks for permission to access your keychain, use your laptop password (stored in 1password). It will ask several times in a row - to avoid this, click Always Allow.
+        - When it asks for permission to access your keychain, use your laptop password (stored in 1password). It will ask several times in a row 
+            - Don't worry! It will stop eventually! It was a lot of times (ten?) and it made me think I'd got my password wrong, but actually it was just doing it several times.
+            - To avoid this happening again in future, click Always Allow.
         - The final confirmation will be an Upload button, and this bit might take a little while.
     - Go to 5) below.  
 		- Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
