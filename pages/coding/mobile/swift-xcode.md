@@ -237,6 +237,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - Splat + G to find next 
 - Find call hierarchy: Ctrl + Shift + Splat + H
 - Find symbol in project: Ctrl + Shift + Splat + F
+- Find class or file: Cmd + Shift + O
 - Build: 
     - build project code only: Splat + B
     - build project AND test code: Shift + Splat + U
