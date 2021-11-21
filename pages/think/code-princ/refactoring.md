@@ -40,8 +40,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [JBrains' Trivia](https://github.com/jbrains/trivia) - Mark Kirschtein uses this at legacy coding retreats. It's also been translated into many different languages.
 - Mark Kirschtein says: "Another approach is to take a well known problem, checkout, potterkata etc and do it badly, that way you don't need to explain the domain."
 - Emily Bache has several refactoring katas, recommended by many people:
-    - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata) - Jeremy Cook (@JCook21) says if Parrot example too simplistic then Tennis kata might work well.
-    - [Parrot Refactoring Kata](https://github.com/emilybache/Parrot-Refactoring-Kata) - described by Jeremy Cook (@JCook21) as "The very simplest example that I know"
+    - [Parrot Refactoring Kata](https://github.com/emilybache/Parrot-Refactoring-Kata) 
+        - described by Jeremy Cook (@JCook21) as "The very simplest example that I know"
+        - more notes [here](#parrot)
+    - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)  
+        - Jeremy Cook (@JCook21) says if [Parrot example](#parrot) too simplistic then Tennis kata might work well.
     - [Theatrical Players Refactoring Kata](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
     - [Supermarket Receipt Refactoring Kata](https://github.com/emilybache/SupermarketReceipt-Refactoring-Kata)
     - Gilded Rose - see above
@@ -75,7 +78,15 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Here](github.com/emilybache/Parrot-Refactoring-Kata)
 - NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
 - Described by Jeremy Cook as "the most simple".
-- It's pretty odd (IMHO).
+- I thought it was pretty odd until I finally spotted the Monty Python reference.
+    - Here are my notes from that realisation:
+    - Frustrating in that it doesn't explain what it's about. Maybe that's the point?
+    - But anyway as far as I can work out, the code is trying to return the speed of different types of parrot
+        - But what does "nailed" mean and why is `voltage` a parameter??
+        - Ohhhh, it's a reference to the Monty Python dead parrot sketch!
+        - In a workshop should probably start by showing this sketch??
+        - In the sketch, the cutsomer brings in the "Norwegian blue" parrot they've brought from the shops and complains that it's dead - and is only upright because it's been nailed to its perch
+        - I couldn't find any references to voltage on a quick google
 - Each Parrot is initialised with a type (eg "African"), a voltage, a number of coconuts and a boolean for "Nailed".
 - You can then call GetSpeed to find the speed of the parrot.
 - The tests have cases which describe the expected speed for only a small subset of combinations of the four factors. What happens in other circs is not specified.

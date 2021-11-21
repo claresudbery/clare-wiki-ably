@@ -232,3 +232,11 @@ gov
 ## Random red panda
 
 ![ageimals_red_panda.jpeg](/resources/images/ageimals_red_panda.jpeg)
+
+## Video Editing Tools
+
+- Kinemaster (good on mobile)
+- Inshot (good on mobile)
+- Youtube (free if you have gmail account)
+- Shotcut (free on windows desktop)
+
