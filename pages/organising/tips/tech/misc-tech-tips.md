@@ -81,6 +81,8 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
 ### Other Slack Stuff
 
+- To quote a Slack message:
+  - Copy the text you want to quote, paste it into a new message... but prefix it with `>`
 - Common:
   - Cmd: ?command --help - Will give you the options for whatever command is
   - Cmd: ?++ @person - Give thing (ie person) a karma point
