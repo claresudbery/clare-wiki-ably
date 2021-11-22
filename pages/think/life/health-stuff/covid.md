@@ -14,7 +14,6 @@ Aka COVID-19 / coronavirus / Sars-CoV-2
 
 ### Vaccination
 
-- [Vaccination info](#vaccination) (including booking yourself in for vaccination, and stuff about the covishield A-Z Indian vaccine)
 - [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
 - [Link to book your own vaccination](https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/) (once they reach your group)
 - Link [to register 13-yr-old for vaccine](https://childcv19immunisationconsent.mft.nhs.uk)
