@@ -203,7 +203,9 @@ const withdraw = amount => {
 
 ## Example #7
 
-```
+```csharp
+    var return_str = some_operation / 2; 
+    return return_str;
 ```
 
 ## Example #8
