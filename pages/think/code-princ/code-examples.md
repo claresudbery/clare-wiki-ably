@@ -188,7 +188,15 @@ const withdraw = amount => {
 ## Example #6
 
 ```python  
-# The maketrans() method returns a mapping table that can be used with the translate() method to replace specified characters. Maketrans has 3 parameter values: x, y and z. In the x parameter we mention the characters that we want to change with the ones mentioned in y. So O will become 0 and Q will also become 0 and so on. The characters are the visually equivalent ones so if we change all the characters from plate1 to the specified characters and do the same for the characters in plate2, we can check if they are the same and return true or false. The z parameter in maketrans is optional and is describing which character we want removed from the string which is the extra spaces so that 'A A A' -> 'AAA'.
+# The maketrans() method returns a mapping table that can be used with the translate() 
+# method to replace specified characters. Maketrans has 3 parameter values: x, y and z. 
+# In the x parameter we mention the characters that we want to change with the ones 
+# mentioned in y. So O will become 0 and Q will also become 0 and so on. The characters 
+# are the visually equivalent ones so if we change all the characters from plate1 to the 
+# specified characters and do the same for the characters in plate2, we can check if they 
+# are the same and return true or false. The z parameter in maketrans is optional and is 
+# describing which character we want removed from the string which is the extra spaces so 
+# that 'A A A' -> 'AAA'.
     tr = str.maketrans('OQITZSB', '0011258', ' ')
     return plate1.translate(tr) == plate2.translate(tr)
 ```
