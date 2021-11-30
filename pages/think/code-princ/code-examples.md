@@ -210,8 +210,7 @@ const withdraw = amount => {
 
 ## Example #8
 
-```
-```
+![code example 8](/resources/images/code-example-8.png)
 
 ## Example #9
 
