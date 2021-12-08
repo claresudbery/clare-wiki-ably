@@ -157,7 +157,7 @@ killall SystemUIServer
 
 ## Erase device / erase laptop
 
-- Via Find my Iphone, you can erase any device (including MacBook). It will get erased the next time it connects to the internet, and you'll get a notification. 
+- Via Find my Iphone (available via icloud in the browser, as well as the app on devices), you can erase any device (including MacBook). It will get erased the next time it connects to the internet, and you'll get a notification. 
 - Note for Clare: 
     - I erased a faulty work laptop on 13/11/21 (after it had been replaced with a new one). 
     - In the process, I found another two laptops listed (old work laptops?) (annoyingly I couldn't tell the difference between them), so I erased them too.
