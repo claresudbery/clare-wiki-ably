@@ -147,15 +147,18 @@ killall SystemUIServer
 * Customise Control Strip
 * Drag what you want into the touchbar
 
-## Show desktop on MacBook
+### Show desktop on MacBook
 
-- What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it.
+- What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it. It's a toggle, so you can press again to retore things to how they were.
+- System Preferences => Mission Control => Show Desktop - select "Right Option"
 
-## If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
+### If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
 
 - Cmd + 0 will fix that.
 
-## Erase device / erase laptop
+## Both iOS and Macs
+
+### Erase device / erase laptop
 
 - Via Find my Iphone (available via icloud in the browser, as well as the app on devices), you can erase any device (including MacBook). It will get erased the next time it connects to the internet, and you'll get a notification. 
 - Note for Clare: 
