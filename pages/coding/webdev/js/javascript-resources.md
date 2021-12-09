@@ -24,12 +24,15 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - More sample javascript from Helix: Dropbox\IT Training\JS Stuff\SampleJavaScript.js
 - Helix general JS stuff: Helix folder in contracting folder in ClareWorking email
 - [That funny article about javascript frameworks and libraries](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) 
-- [Quickly create sandboxes for react/vue/angular etc](https://twitter.com/CompuIves/status/1291020566221205511) - eg Type http://react.new in the address bar of your browser, and it will open @codesandbox with a new React project.
 - Some useful stuff about the spread function, currying, and javascript fundamentals are [here](https://www.the-blue-pages.net/board/index.php?/topic/39979-ducks-tiresome-thread-of-web-questions/page/2/#comments) (accessible to Clare only)
+- Chris Young(@WorldOfChris)'s city-building Bezier project - [the tests behind it](https://github.com/peckhamdata/bc-map/blob/master/test/city_builder.test.js)
+
+## Tools for practising with javascript
+
 - Use [jsfiddle code playground](https://jsfiddle.net/) to write test Javascript in the browser.
+- [Quickly create sandboxes for react/vue/angular etc](https://twitter.com/CompuIves/status/1291020566221205511) - eg Type http://react.new in the address bar of your browser, and it will open @codesandbox with a new React project.
 - Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)
 - [wtfjs](https://wtfjs.com/) - a place where people post examples of Javascript behaving weirdly. "JavaScript is a language we love despite it giving us so much to hate. This is a collection of those very special irregularities, inconsistencies and just plain painfully unintuitive moments for the language of the web."
-- Chris Young(@WorldOfChris)'s city-building Bezier project - [the tests behind it](https://github.com/peckhamdata/bc-map/blob/master/test/city_builder.test.js)
 
 ## Elsewhere on this site
 
