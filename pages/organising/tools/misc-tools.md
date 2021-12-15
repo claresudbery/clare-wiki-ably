@@ -172,6 +172,20 @@ re, sorry!)
   - Insert => Bookmark
   - Then click the blue bookmark and right-click where it says Link, and choose "copy link address".
 
+### Google meet - breakout rooms
+
+- You can set up breakout rooms in advance of a meeting, as long as participants are on the invite list - just go into the meeting and set it up. Then you can close mtg down but it will be remembered
+- If you set someone up as a co-host, that means they can also assign breakout rooms
+
+### Google meet - co-hosts
+
+- If you set someone up as a co-host, that means they can also assign breakout rooms
+- Here's how to do it:
+  - Go into the actual meeting using the link for the relevant day
+  - Click "host controls" bottom right (it's a little padlock icon)
+  - Click "host management"
+  - Under People, click the three dots next to the person you want to set up as a co-host
+
 ### Emoticons / emojis in docs
 
 - Ctrl + cmd + space to embed emojis

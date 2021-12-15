@@ -158,6 +158,13 @@ killall SystemUIServer
 
 ## Both iOS and Macs
 
+### Find lost device
+
+- If it's in the house but you don't know where, you can get it to make a sound
+    - For some reason this is only available via Find my iPhone on icloud.com - it doesn't work in the Find My app
+    - You can also do this for your fanily's devices, but only if they are added to your family via Settings => iCloud account => Family sharing, and they accept the invite
+        - Accepting the invite can be awkward - you might have to resend the invite
+
 ### Erase device / erase laptop
 
 - Via Find my Iphone (available via icloud in the browser, as well as the app on devices), you can erase any device (including MacBook). It will get erased the next time it connects to the internet, and you'll get a notification. 
