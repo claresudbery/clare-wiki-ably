@@ -23,6 +23,8 @@ permalink: /pages/think/life/admin/Plumbing
 
 ## Installing a new kitchen mixer tap
 
+### How to attach the pipes
+
 When the pipes look like this...
 
 ![isolation-valve.jpeg](/resources/images/isolation-valve.jpeg)
@@ -38,3 +40,28 @@ When the pipes look like this...
     - "the key lesson with them is to not over-tighten when you're doing it back up."
     - "it's an isolator valve with compression joints on the ends. Depending on how your new tap fits it might need that same copper pipe into it or it might have flexi pipes that just screw onto the top of the isolator valve, no olives or other bits needed. "
     - "Also a top tip - If you are installing a tap from Grohe, Germans use valves that are based on metric rather than imperial measurements and are ever so slightly differently sized from standard UK plumbing so you need an adaptor. Fine for going into compression joints, not fine for screwing onto things like isolator valves."
+
+### How to get the right water pressure
+
+Here's the question I posted on a [plumbing forum](https://www.diydoctor.org.uk/forums/plumbing-forum.html):
+
+Hi 
+
+I bought a simple kitchen mixer tap from Amazon, plumbed it in no problem. It works... but the water pressure is lower than it used to be. It now takes ages to fill the kettle. We are finding ourselves filling the kettle from the bathroom tap because we get impatient waiting for the kitchen tap! It used to have high water pressure with the previous tap, and all the other taps in the house have high water pressure.
+
+I thought maybe the problem was due to the fact that the flexible metal hose attachment which joins onto our internal copper piping is a narrower diameter than the copper piping. So I bought another one, and the manufacturers assured me it contained standard fittings which should work with standard UK plumbing and give decent water pressure... but when it arrived it had the same fittings as the existing one - so I didn't bother trying to install it, I just sent it back.
+
+The problem is, I don't know if I'm right that the problem is caused by the width of the pipe. Can you give me advice on how I tell whether I am buying the right product or not to get decent water pressure?
+
+Here is the product I sent back because it seemed like the pipe was too narrow: https://www.victorianplumbing.co.uk/modern-mono-kitchen-tap-with-pull-out-rinser-chrome
+
+Here is the product we currently have installed: https://smile.amazon.co.uk/gp/product/B0793N2D1T/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+Attached is a photo of the fittings below our sink - you can see the flexible pipes that come with the tap in the top half, and the original copper pipes in the bottom half.
+
+Hoping someone can help!
+
+Cheers
+Clare.
+
+![plumbing under sink](/resources/images/plumbing-under-sink.jpeg)

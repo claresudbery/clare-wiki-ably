@@ -113,3 +113,7 @@ Son: "They're everywhere. I'm wearing them."
 Me: "Huh? Why are you wearing cloves?"  
 
 Me again: "Oh, hang on..."  
+
+## The late night not-poetry
+
+Subliminal mistresses eating plums with their mouths
