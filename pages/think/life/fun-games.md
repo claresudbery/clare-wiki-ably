@@ -172,3 +172,8 @@ Use an app such as Reverse Play or [Say it Backwards](https://apps.apple.com/tm/
 ## Pass the parcel for adults
 
 Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-pages.net/board/index.php?/topic/40129-ideas-for-darespass-the-parcel-not-for-kids/) (accessible to Clare only)
+
+## Games that can be done a bit at a time (eg for wooden advent calendar)
+
+- a new word each day, can be combined to form the title of a sing
+- a new letter each day, can be combined to form some word or title or something

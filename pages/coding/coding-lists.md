@@ -23,6 +23,7 @@ permalink: /pages/coding/Coding-Lists
 - [Codecademy](https://www.codecademy.com/)
 - [Free Code Camp](https://www.freecodecamp.org/)
 - [Cyber-dojo](https://cyber-dojo.org)
+- [code wars](https://www.codewars.com/)
 
 ## Choices of Technology When Building Software
 
