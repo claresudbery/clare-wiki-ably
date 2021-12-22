@@ -45,18 +45,19 @@ When the pipes look like this...
 
 The things that make a difference are:
 
-- your water pressure
-    - good water pressure is 15 litres per minute or more
-    - measure your water pressure by pouring water into a jug from your tap for exactly 6 seconds
+- 1. Your water pressure
+    - Good water pressure is 15 litres per minute or more
+    - Measure your water pressure by pouring water into a jug from your tap for exactly 6 seconds
     - Multiply the amount of water collected by 10 to get litres per minute
     - You will need a jug which can hold at least 2 litres
-    - If using a 1-litre jug, only do it for 3 secdons and then multiply by 20
+    - If using a 1-litre jug, only do it for 3 seconds and then multiply by 20
     - 10 litres per minute is 1 bar
-- the flow rate coming from the tap
+- 2. The flow rate coming from the tap
     - decent sites ([this one is the best I could find](https://www.savemoneycutcarbon.com/)) will advertise the flow rate, ideally according to your water pressure. If this info is not published, prob best not to buy the tap!
     - A good flow rate is 11 lpm (litres per minute) or more. Anything less than this will probably be frustratingly slow - particularly when doing things like filling kettles or running baths.
-    - this will be determined by things like the bore (diameter) of the feed pipe that connects from your pipes to your pipe
+    - This will be determined by things like the bore (diameter) of the feed pipe that connects from your pipes to your pipe
 
+Note: It seems v hard to get decent water pressure from cheap taps. I ended up spending £150 on a replacement tap (which seems like a lot to me) because the cheaper ones were either low pressure or didn't advertise flow rate, which meant I had to assume they would be low.
 
 Here's the original question I posted on a [plumbing forum](https://www.diydoctor.org.uk/forums/plumbing-forum.html):
 
