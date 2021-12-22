@@ -159,3 +159,9 @@ This fixed my problem:
 - Preferences => General
 - Scroll down to the bottom => Click Config Editor, bottom right
 - Search for badge, and change mail.biff.show_badge to `false`.
+
+## Keyboards that work well with windows
+
+- Kensington
+- Microsoft Surface
+- Microsoft Designer

@@ -41,9 +41,24 @@ When the pipes look like this...
     - "it's an isolator valve with compression joints on the ends. Depending on how your new tap fits it might need that same copper pipe into it or it might have flexi pipes that just screw onto the top of the isolator valve, no olives or other bits needed. "
     - "Also a top tip - If you are installing a tap from Grohe, Germans use valves that are based on metric rather than imperial measurements and are ever so slightly differently sized from standard UK plumbing so you need an adaptor. Fine for going into compression joints, not fine for screwing onto things like isolator valves."
 
-### How to get the right water pressure
+### How to get good water pressure from a tap
 
-Here's the question I posted on a [plumbing forum](https://www.diydoctor.org.uk/forums/plumbing-forum.html):
+The things that make a difference are:
+
+- your water pressure
+    - good water pressure is 15 litres per minute or more
+    - measure your water pressure by pouring water into a jug from your tap for exactly 6 seconds
+    - Multiply the amount of water collected by 10 to get litres per minute
+    - You will need a jug which can hold at least 2 litres
+    - If using a 1-litre jug, only do it for 3 secdons and then multiply by 20
+    - 10 litres per minute is 1 bar
+- the flow rate coming from the tap
+    - decent sites ([this one is the best I could find](https://www.savemoneycutcarbon.com/)) will advertise the flow rate, ideally according to your water pressure. If this info is not published, prob best not to buy the tap!
+    - A good flow rate is 11 lpm (litres per minute) or more. Anything less than this will probably be frustratingly slow - particularly when doing things like filling kettles or running baths.
+    - this will be determined by things like the bore (diameter) of the feed pipe that connects from your pipes to your pipe
+
+
+Here's the original question I posted on a [plumbing forum](https://www.diydoctor.org.uk/forums/plumbing-forum.html):
 
 Hi 
 
