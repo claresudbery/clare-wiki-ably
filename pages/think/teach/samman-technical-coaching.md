@@ -4,7 +4,7 @@ location: pages/think/teach/leaf
 permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 ---
 
-(Samman Technical Coaching - A Summary)
+(Technical Agile Coaching With the Samman Method, by Emily Bache - A Summary)
 
 (See also [clare-tech page](https://github.com/claresudbery/clare-tech/tree/master/organising/private/career/samman-technical-coaching.md)) (accessible to Clare only)
 
@@ -24,7 +24,7 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 	- Code with your teams daily on their BAU as a mob, using driver-navigator
 	- Use timers
 	- Use whiteboards to sketch out ideas
-	- Daily learning hour (see Good Ideas)
+	- Daily learning hour (see [Good Ideas](#daily-learning-hour))
 	- TDD
 	- Refactoring
 - More about Samman
@@ -48,9 +48,7 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 	- Mocks, sounds and fakes (never finished)
 - Acknowledgements
 	- Llewellyn falco cos based on his ideas
-	- Presumably she means approval testing?
-	- Ah, she started out by pair-coaching with him.
-	- Turns out he's Maaret Pyhajarvi's ex and they had a messy dispute around copyright on a lean pub book about mobbing.
+	- Emily started out by pair-coaching with him.
 
 ## The purpose of Samman
 
@@ -247,4 +245,20 @@ Coaching behaviours in an ensemble
 	- White boarding
 	- Live coding to demonstrate
 
+## Good Ideas
 
+### Daily Learning Hour
+
+- One hour per day
+- Starts with a warmup (see below)
+- Then
+    - coding exercises in pairs
+- Finally:
+    - Discussion re what was learnt while coding
+    - Homework to try the exercise again alone
+
+### Warmups
+
+- Golden Rule of TDD: Ask people to call out, What are the five most important things about TDD?
+    - Generate some discussion and use this to tease out the golden rule, which is "don't create any production code without a failing test that requires it".
+    - This is a good one to do before a paired TDD exercise (eg try to apply the golden rule), to illustrate the rule in action.
