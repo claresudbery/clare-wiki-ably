@@ -8,14 +8,16 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 
 (See also [clare-tech page](https://github.com/claresudbery/clare-tech/tree/master/organising/private/career/samman-technical-coaching.md)) (accessible to Clare only)
 
-## Foreword, Kent beck
+## Preface
+
+### Foreword, Kent beck
 
 - Software Dev = learning, where running programs = proof of learning.
 - Learning with an experienced guide reduces fear of the unfamiliar and so speeds learning.
 - Learning should be episodic. Digest after learning.
 - Samman = small cost, low risk, high potential payoff.
 
-## Intro
+### Intro
 
 - Two examples introduced - using tests to fix buggy private functions, and using tests to design new code. No solutions described yet.
 - Learning hour: starts with a warmup, then a coding activity.
@@ -50,11 +52,11 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 	- Llewellyn falco cos based on his ideas
 	- Emily started out by pair-coaching with him.
 
-## The purpose of Samman
+### The purpose of Samman
 
 Aim for improved dev practices:
 
-### Dev techniques
+#### Dev techniques
 
 - Better unit tests
 	- Suite of automated tests to go with code
@@ -69,12 +71,14 @@ Aim for improved dev practices:
 - Refactoring and migrating
 	- Should be safe
 	- Add regression tests without taking big risks
-- Incremental and iterative development
-	- WIKI
-	- Increments are vertical slices, whereas iteration is building gradually one advance at a time, even when that advance doesn't result in a full new increment? And each iteration gets feedback and is used to improve on the previous iteration? I think the idea is that increments are fine as long as you use iteration to build each increment gradually and refine the process as you go. Otherwise you will try to perfect each increment before getting feedback from the users.
-	- Ref: https://www.zentao.pm/agile-knowledge-share/Scrum-what-%23039%3Bs-the-difference-between-incremental-and-iterative-development-845.mhtml
 
-### Levelling up whole team together
+##### Incremental and iterative development
+
+- WIKI
+- Increments are vertical slices, whereas iteration is building gradually one advance at a time, even when that advance doesn't result in a full new increment? And each iteration gets feedback and is used to improve on the previous iteration? I think the idea is that increments are fine as long as you use iteration to build each increment gradually and refine the process as you go. Otherwise you will try to perfect each increment before getting feedback from the users.
+- [Reference on diff between incremental and iterative](https://www.zentao.pm/agile-knowledge-share/Scrum-what-%23039%3Bs-the-difference-between-incremental-and-iterative-development-845.mhtml)
+
+#### Levelling up whole team together
 
 - Build consensus about how this team wants to work
 - Expected outcomes
@@ -86,29 +90,33 @@ Aim for improved dev practices:
 	- Build skills and habits
 	- Anchor ways of working
 	- Finally:
-	- Changes in attitude
-	- Increases in skill
-	- Improved code quality
-	- More productive teams
-- Measuring outcomes
-	- WIKI Beware Goodhart's Law!
+		- Changes in attitude
+		- Increases in skill
+		- Improved code quality
+		- More productive teams
+
+##### Measuring outcomes
+
+- Attitudes
+- Simple survey
+- Enthusiasm for techniques
+- Improved code quality
+- Increased number of test cases
+- More frequent integration
+- Longer term:
+- Meeting deadlines more frequently
+- Fewer bugs
+- Fewer despairing calls to rewrite whole system from scratch
+- Increased productivity!
+	- ...but this v hard to measure
+- See Rethinking Productivity in Software Engineering - compendium of essays from 2019
+- My suggestion: recruitment and retention?
+- WIKI Beware Goodhart's Law:
 	- Anything you measure and start to use as a target can be gamed
 	- Some measurements are more susceptible to that than others
 	- Back numbers by qualitative measures, eg talk to people and find whether they really think things are improving
-	- Attitudes
-	- Simple survey
-	- Enthusiasm for techniques
-	- Improved code quality
-	- Increased number of test cases
-	- More frequent integration
-	- Longer term:
-	- Meeting deadlines more frequently
-	- Fewer bugs
-	- Fewer despairing calls to rewrite whole system from scratch
-	- Increased productivity!
-	- ...but this v hard to measure
-	- See Rethinking Productivity in Software Engineering - compendium of essays from 2019
-	- My suggestion: recruitment and retention?
+
+## Part 1: Ensemble Working
 
 ### Ensemble Primer
 
@@ -139,6 +147,9 @@ Aim for improved dev practices:
 	- Ensure regular role rotation
 	- Help ensemble to reflect and improve
 - !! If you have an idea, eg you see a refactoring which could aid readability, wait until tests are green before politely suggesting it.
+
+### The Ensemble Gives you Superpowers
+
 - People from other teams can visit occasionally and use this as a way to understand what this team is doing
 - Things a coach might be able to contribute:
 	- Writing more or better unit tests
@@ -150,7 +161,9 @@ Aim for improved dev practices:
 	- Improving code quality
 - Working with a well functioning ensemble gives you the superpowers to do everything above - but you might first need to put some work in to get them functioning effectively as an ensemble.
 - Sal used a technique with the Cucumber mob where they would always have a shared mindmap of their planned approach, where they would tick bits off as they went along
-Coaching behaviours in an ensemble
+
+### Coaching behaviours in an ensemble
+
 - Split into the following behaviours:
 	- Teach
 	- Mentor
@@ -160,7 +173,7 @@ Coaching behaviours in an ensemble
 	- Take short breaks
 	- Retrospect
 	- Breathing space between and during sessions
-- The first four of those are outlined in the Coaching Competency Framework (http://www.agilecoachinginstitute.com/wp-content/uploads/2011/08/Agile-Coaching-Competencies-whitepaper-part-one.pdf)
+- The first four of those are outlined in the [Coaching Competency Framework](http://www.agilecoachinginstitute.com/wp-content/uploads/2011/08/Agile-Coaching-Competencies-whitepaper-part-one.pdf)
 - Teach:
 	- Look out for teachable moments
 	- Eg they need a particular technique they haven't used before
@@ -215,7 +228,13 @@ Coaching behaviours in an ensemble
 	- Take a picture of all retro postits
 	- Make sure you have time to rest before your next activity
 
-## A Samman Career
+### Kindness, consideration and respect
+
+
+
+## Part 3: Samman Coaching Engagements
+
+### A Samman Career
 
 - Pair coaching
 	- A good way to learn
