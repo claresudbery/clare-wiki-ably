@@ -144,7 +144,7 @@ re, sorry!)
 
 - Here: https://sites.google.com/
 - To edit a page:
-  - Go to Pages on the right, epxnad Home and select your page
+  - Go to Pages on the right, expankd Home and select your page
 - To link to your page from the home page:
     - Select Home, at the top of the tree on the right under Pages    
     - ... or 
@@ -156,13 +156,19 @@ re, sorry!)
     - or drag a page in page browser and move it to be nested under another page
 - To link to one page from another:
     - type the name of the page in a link section, and it will get foudn for you
-- To base a page on the template:
-    - Click the dots next to the template in page tree on right
+- To base a page on another one:
+    - Click the dots next to the page in page tree on right
     - Select duplicate
     - Your new page is now prob at the bottom of the tree
     - You can drag to move it around
 - To get name of page to match title
     - Click the three dots in the page browser on the right, and select properties
+- To add a row of link sections, like on the podcast page
+    - In the browser on the right, select Insert
+    - Select one of the layouts
+    - Each section will now have an image. If you don't want this, click each of the images until the delete icon appears
+    - To add titles and links, just start typing and then use the popup to turn text into a heading or a link
+    - Now each row can be duplicated using the buttons on the left
 
 ### Google Docs - Linking to sub-sections
 

@@ -141,6 +141,10 @@ Aim for improved dev practices:
 	- Use whiteboards or online docs
 	- Pause ensemble roles
 	- Have a bias to action - aim to get back to coding soon ish
+- Start with a working agreement
+	- The first ensemble session will be spent hashing out all this stuff - allow extra time for that or even just devote the session to it.
+	- Be explicit about the problem of people being distracted by phones, messages, browsers etc. Talk about how you can get people to stay present and focus on what's happening in each session.
+	- Treat everyone with kindness, consideration and respect.	
 - Inexperienced teams will need a facilitator
 	- This role is independent from other roles
 	- Remind the team of the working agreements
@@ -230,7 +234,154 @@ Aim for improved dev practices:
 
 ### Kindness, consideration and respect
 
+- Honour the legacy coder:
+	- Woody Zuill: Treat everyone with kindness, consideration and respect
+	- Assume previous coders did their best. Resist the temptation to judge. Even if they're not present, others will worry that the same might happen to them one day.
+	- Woody again: "Honor the coder and their code. The constraints they endured are not mine to know."
+- Yes, and:	
+	- In the ensemble:
+		- Refactor but do not rewrite. 
+		- Don't delete or undo. Say "yes, and".
+- Take time out
+	- When things get heated and poeple can't uphold the working agreement
+	- Break up for 15 minutes. Walk round the block.
+	- Ask people to return when they feel calm.
+	- Some may take longer to return than others
+	- Arrange 121s or bring in scrum master (or equiv) if necessary
+- Typists: Listen, don't think
+	- Design needs to be spoken by navigator before implemented by typist
+		- => primary mechanism for spreading knowledge & enabling collective ownership
+	- If typist disagrees with navigator suggestion they should still implement it, so the idea is visible and can be debated. Also the typist's criticisms shgould be saved until they are out of that role
+- Be an ally for the quieter peops
+	- "I think X has a good idea we should listen to"
+- Help people to pay attention
+	- Peopel will get distracted by phones and laptops
+	- It's hard to draw attention to without making them feel unsafe or reprimanded like a child
+	- Instead you can speed up the rotation or ask them to look something up - "since you have your laptop out" - to gently recapture their attention
+- Call out bad behaviour that can't wait for a retro
+	- Nip it in the bud. "We don't do that here" is a good phrase. Even if they claim it's a joke: "That may be so, but we don't do that here."
 
+### Stories Illustrating Coaching Situations
+
+- When people are stuck, keep asking questions until they get unstuck
+- When a navigator is stuck, encourage other ensemble members to provide suggestions, rather than providing them yourself
+- Sometimes you might want to suggest someone who is clear on direction take over from a navigator who is stuck
+	- and then swap the original navigator back in again afterwards
+	- Watch out for the impact this has on the original navigator
+- Encourage experiments
+	- To settle an argument, try out different options and compare their impacts
+	- This shows them their ideas matter
+	- This is better than just telling them which is the best option
+	- Be pre-disposed to action
+- Help the ensemble to discover scenarios when considering test cases
+	- Ask pointed questions such as "How will we know when..."
+	- Make sure scenarios are recorded (nominate a scribe / archivist)
+- Navigator expresses instructions in increasing amounts of detail
+	- Intention => Location => Details
+	- Start by describing intention
+	- If typist struggles to understand what needs to be done, give them a location (eg line number or which tab)
+	- If they need more, give even more details (eg what to type)
+- Reminders for intentions and tests
+	- Navigator says "write an if statement"
+		- Coach says "What are we trying to achieve?"
+	- Navigator says "Let's handle this case"
+		- Coach says "Do we have a failing test for that?"
+- Reminders for shortcuts
+	- Typist is typing laboriously
+	- Coach: "Is there a shortcut for that?"
+	- Typist doesn't know
+	- Coach: "How do we search for appropriate shortcuts?"
+	- You can ask them to undo their typing and do it again with the shortcut, to help the learning stick
+	- Quickly other ensemble members will learn them and start prompting each other
+- WIKI Consume-First Design
+	- Encourage ensemble members to use the Consume First design method. This is where you start writing new code in the place where it will be consumed, rather than with the declaration
+		- so a new method starts in the calling method (`if newMethod(arg) == true`).
+		- That way, if a timer goes off before a new navigator takes over, they are more likely to be able to follow the thread of what's happening
+		- The caller method will often be a test case.
+- Check for regular feedback
+	- Feedback as in test failures or build errors.
+	- It's easy to find yourself writing code, for instance while setting up a test, that has a lot of potential compilation errors. 
+		- Then a lot of work will be needed to get it compiling, and all that time you won't know how much progress you've made.
+	- Instead, encourage each new line of code to get to a point of successful compilation before moving onto the next thing
+	- (see example in book)
+- Encourage regular commits
+	- Remind them if they haven't committed since the last small step was completed
+	- Use the to-do list which is being maintained by the archivist - each commit message can describe the last small to-do item which was completed.
+		- Some ensemble timers have a feature where you can keep a list of goals
+- The expert is not the typist
+	- If only one team member knows how to acocmplish a particular task, they should not be the typist
+	- You can switch typists if you find yourself in this situation
+	- They need to be the navigator, so that they can clearly describe how the task is accomplished.
+- The expert is not in the room
+	- Sometimes nobody in the team klnows how to do something, and they need to call in outside expertise
+	- They may be worried that the person in question is busy, but the quicker you ask them to temporarily join the mob and help, the quicker you'll get moving
+		- Also they're more likely to oblige if they know a whole team is waiting
+	- If it happens a lot, speak to a manager about getting the person in question to join more permanently
+
+### Retrospectives
+
+- Basics:
+	- Each ensemble session lasts two hours, culminating in a retro approx 15 mins long
+		- Reflect on it
+		- Process it
+		- Learn from it
+	- Don't just plunge into more work without reflecting on how to improve
+	- Short frequent retros = small outcomes and learnings
+		- Act promptly
+		- Many small learnings = a lot
+		- Longer less frequent retros = bigger problems, not acted upon
+	- Mix it up and keep it fresh
+- Tips (WIKI)
+	- Count to 20 in your head after last person stops writing, before calling a halt
+	- When physical, don't get participants to stick stickies on wall. Instead:
+		- Collect them as a pile
+		- Read each one out before sticking up
+		- Do grouping as you go
+		- Ask for clarification if needed
+		- You can get participants to do their own, one at a time, rather than the facilitator doing it
+			- If anyone doesn't have any notes, they can go last and see if they're inspired to think of anything while the others are going
+		- Put larger discussions to one side
+		- Don't disagree
+		- Acknowledge / compliment good contributions
+	- You can use a separate learning hour to practice the skills required for a successful retro (see later section)
+		- it takes time for a team to build the skills required for good retros
+	- Liked / learned / lacked is a good format
+	- Dial up the good
+		- You ideally want each ensemble session to be better than the last
+		- everybody share something that was good and htink about how you can do more of that
+		- this can be a separate exercise
+- Do your own private retro 
+	- make notes on what went well and what could be improved
+	- also note what happened
+		- so you can pick up where you left off
+		- so you can report back to the people who hired you
+		- so you can record progress over longer period of time
+		- so you can keep track of areas of the code that need further work
+- Keep going
+	- even if things are going well, keep having retros
+	- you want the team to maintain the skill of observing what's going on
+
+### Remote ensembles
+
+- General tips:
+	- Arrange things so everyone can see faces as well as code
+		- You can use a separate device (eg a tablet) for faces and for code
+	- Avoid lag from key presses and mouse movements
+		- It's best if typist is typing on their own local machine
+	- Be more strict about only the navigator talking, so people don't talk over one another because lag
+		- Use "raise hand" functionality 
+	- Have more / longer breaks
+	- Use an ensemble branch
+		- just for small WIP commits, so you can easily swap typist
+		- but this can be avoided if you're using liveshare
+	- Make sure you still have design discussions
+		- You can use a simple drawing tool like Paint, where the typist follows instructions
+		- Or something like Miro (higher bandwidth / more lag?)
+		- Or a simple shared doc
+
+## Part 2: Learning Hours
+
+****** THIS IS WHERE I'M UP TO ******
 
 ## Part 3: Samman Coaching Engagements
 
