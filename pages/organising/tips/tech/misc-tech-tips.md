@@ -165,3 +165,7 @@ This fixed my problem:
 - Kensington
 - Microsoft Surface
 - Microsoft Designer
+
+## Avoiding an automatic update to Windows 11
+
+[This article is good](https://allthings.how/how-to-stop-windows-11-update-from-installing-on-your-windows-10-pc/amp/) for all the different ways you can evade the auto-install - basically you can fiddle about with the registry so that you continue to get updates vut don't get windows 11, or you can pause updates. ...although it turns out I have nothing to worry about because my PC doesn't meet the min requirements needed for win 11.
