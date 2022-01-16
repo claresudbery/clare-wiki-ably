@@ -177,3 +177,8 @@ Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-page
 
 - a new word each day, can be combined to form the title of a sing
 - a new letter each day, can be combined to form some word or title or something
+
+## Wordle backwards
+
+Guess the guesses when looking at someone else's already-played [Wordle game](https://www.powerlanguage.co.uk/wordle/)
+
