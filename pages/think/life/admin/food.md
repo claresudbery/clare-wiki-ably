@@ -84,3 +84,7 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
     * rice or fried plantain
 * [Recipe here](https://honest-food.net/ghana-red-red-recipe/) 
 
+### Cocktails
+
+* [Sugar free margarita](https://www.wholesomeyum.com/recipes/best-skinny-margarita-recipe-sugar-free-low-carb-paleo/)
+
