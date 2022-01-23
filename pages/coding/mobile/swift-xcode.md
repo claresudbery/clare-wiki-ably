@@ -125,7 +125,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
             - To avoid this happening again in future, click Always Allow.
         - The final confirmation will be an Upload button, and this bit might take a little while.
         - ! If you get an error saying you need to go to your developer account and sign the latest PLA, go to App Store Connect in the browser and you should find a banner there with a link to sign into your developer account and accpet the new agreement.
-        - If you get an "invlid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. See [ios dev page](/pages/coding/mobile/iOS-Development).
+        - If you get an "invalid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. See [ios dev page](/pages/coding/mobile/iOS-Development).
     - Go to 5) below.  
 		- Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
 			- Basically it boils down to:   
