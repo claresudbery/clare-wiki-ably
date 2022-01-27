@@ -46,6 +46,34 @@ It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Draw
     - Take it in turns to read out the three sentences on your paper and laugh at the results.
     - Pass the papers around so that everyone can see the hilarious drawings.
 
+
+## Coding Games
+
+- Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)
+
+## The backward recording game
+
+Use an app such as Reverse Play or [Say it Backwards](https://apps.apple.com/tm/app/say-it-backwards-app-lite/id1066924497) to...
+1. record yourself saying a phrase (eg a film title - or you could use CAH if you're sure you won't offend or upset anyone - downloadable [here](https://cards-against-humanity.en.softonic.com/#))
+2. play it backwards
+3. learn to say it backwards
+4. Record yourself saying it backwards
+5. Reverse the recording
+6. See if people can tell what you're saying
+
+## Pass the parcel for adults
+
+Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-pages.net/board/index.php?/topic/40129-ideas-for-darespass-the-parcel-not-for-kids/) (accessible to Clare only)
+
+## Games that can be done a bit at a time (eg for wooden advent calendar)
+
+- a new word each day, can be combined to form the title of a sing
+- a new letter each day, can be combined to form some word or title or something
+
+## Wordle backwards
+
+Guess the guesses when looking at someone else's already-played [Wordle game](https://www.powerlanguage.co.uk/wordle/)
+
 ## Remote Games
 
 ### Jackbox.tv
@@ -53,18 +81,6 @@ It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Draw
 There are many different games available [at jackbox](https://www.jackboxgames.com/how-to-play/). We particularly enjoyed: 
 - Drawful (People draw pictures and then try to guess the descriptions - see [Picture Consequences](#picture-consequences) above, which is similar)
 - Fibbage (People are asked to invent definitions and then guess the correct ones)
-
-### Online board games
-
-![Online board games 01](/resources/images/Online-board-games-01.png)
-![Online board games 02](/resources/images/Online-board-games-02.png)
-![Online board games 03](/resources/images/Online-board-games-03.png)
-![Online board games 04](/resources/images/Online-board-games-04.png)
-![Online board games 05](/resources/images/Online-board-games-05.png)
-![Online board games 06](/resources/images/Online-board-games-06.png)
-![Online board games 07](/resources/images/Online-board-games-07.png)
-![Online board games 08](/resources/images/Online-board-games-08.png)
-![Online board games 09](/resources/images/Online-board-games-09.png)
 
 ### Skribbl.io
 
@@ -170,31 +186,14 @@ Were only surpassed by her talk.
 
 The full description of the party [is here](https://github.com/claresudbery/clare-tech/blob/master/organising/events/zoom-birthday.md) (accessible to Clare only)
 
+### Online board games
 
-## Coding Games
-
-- Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)
-
-## The backward recording game
-
-Use an app such as Reverse Play or [Say it Backwards](https://apps.apple.com/tm/app/say-it-backwards-app-lite/id1066924497) to...
-1. record yourself saying a phrase (eg a film title - or you could use CAH if you're sure you won't offend or upset anyone - downloadable [here](https://cards-against-humanity.en.softonic.com/#))
-2. play it backwards
-3. learn to say it backwards
-4. Record yourself saying it backwards
-5. Reverse the recording
-6. See if people can tell what you're saying
-
-## Pass the parcel for adults
-
-Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-pages.net/board/index.php?/topic/40129-ideas-for-darespass-the-parcel-not-for-kids/) (accessible to Clare only)
-
-## Games that can be done a bit at a time (eg for wooden advent calendar)
-
-- a new word each day, can be combined to form the title of a sing
-- a new letter each day, can be combined to form some word or title or something
-
-## Wordle backwards
-
-Guess the guesses when looking at someone else's already-played [Wordle game](https://www.powerlanguage.co.uk/wordle/)
-
+![Online board games 01](/resources/images/Online-board-games-01.png)
+![Online board games 02](/resources/images/Online-board-games-02.png)
+![Online board games 03](/resources/images/Online-board-games-03.png)
+![Online board games 04](/resources/images/Online-board-games-04.png)
+![Online board games 05](/resources/images/Online-board-games-05.png)
+![Online board games 06](/resources/images/Online-board-games-06.png)
+![Online board games 07](/resources/images/Online-board-games-07.png)
+![Online board games 08](/resources/images/Online-board-games-08.png)
+![Online board games 09](/resources/images/Online-board-games-09.png)
