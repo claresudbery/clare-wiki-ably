@@ -56,7 +56,15 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 
 ### Online board games
 
-![Online board games](/resources/images/Online-Board-Games.pdf)
+![Online board games 01](/resources/images/Online-board-games-01.png)
+![Online board games 02](/resources/images/Online-board-games-02.png)
+![Online board games 03](/resources/images/Online-board-games-03.png)
+![Online board games 04](/resources/images/Online-board-games-04.png)
+![Online board games 05](/resources/images/Online-board-games-05.png)
+![Online board games 06](/resources/images/Online-board-games-06.png)
+![Online board games 07](/resources/images/Online-board-games-07.png)
+![Online board games 08](/resources/images/Online-board-games-08.png)
+![Online board games 09](/resources/images/Online-board-games-09.png)
 
 ### Skribbl.io
 
