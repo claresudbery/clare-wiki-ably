@@ -7,6 +7,9 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 ## Editing tools
 
 - [My notes on Audacity](/pages/organising/podcasts/Audacity)
+- Other useful tools:
+    - [Temi](#create-a-transcript)
+    - [Descript](/pages/organising/podcasts/Audacity)
 
 ## Recording
 

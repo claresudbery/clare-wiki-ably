@@ -23,6 +23,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [My notes from Martin Fowler's Refactoring Seminar](http://insimpleterms.blog/martin-fowler-webinar-new-refactoring-book)
 - [MF's Refactoring book - web copy (InformIT)](https://memberservices.informit.com/my_account/index.aspx?partner=53&_ga=2.102882948.507915267.1547471980-1562501179.1547471980)
 - [Martin Fowler refactorings catalog](https://refactoring.com/catalog/)
+- [Geepaw Hill on refactoring](https://www.geepawhill.org/category/refactoring/)
 - [Learn Tech refactoring guide](https://learn.madetech.com/guides/05-Refactoring/)
 - [Dave Farley's youtube series on refactoring](https://www.youtube.com/watch?v=p-oWHEfXEVs)
 - My interview with Robby Russell - ["Refactoring Should Be Part of Your Daily Work"](https://maintainable.fm/episodes/clare-sudbery-refactoring-should-be-part-of-your-daily-work) - on the Maintainable podcast
