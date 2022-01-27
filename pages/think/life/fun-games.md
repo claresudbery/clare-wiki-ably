@@ -54,6 +54,10 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 - Drawful (People draw pictures and then try to guess the descriptions - see [Picture Consequences](#picture-consequences) above, which is similar)
 - Fibbage (People are asked to invent definitions and then guess the correct ones)
 
+### Skribbl.io
+
+[Like Pictionary](https://skribbl.io/)
+
 ### Really Boring Website
 
 [Really Boring Website](https://really.boring.website/) - you have to think of things beginning with a particular letter, then you vote for each other's answers.
