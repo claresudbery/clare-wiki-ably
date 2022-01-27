@@ -16,7 +16,7 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 
 ## Getting to know each other
 
-(Each bullet point represents a different activity! This is not all one activity.)
+(Each bullet point represents a different activity! This is not all one activity. The ones in more detail are listed below this initial section)
 
 - Write down something nobody knows about you, then we have to guess which one is who.
     - In person:
@@ -26,10 +26,32 @@ See also: [Fun games](/pages/think/life/Fun-Games).
       - Or you can use a spreadsheet and just agree to not pay attention to who's writing what. The more people, the less likely people will register who wrote what.
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
 - Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
-- In groups of 3, design a superhero. You get to choose one super power each and combine them into one hero. Draw a collaborative picture of the result.
+- [Composite superheroes](#composite-superheroes)
 - Say three surprising things about yourself (two true, one false), then everybody asks you questions to find out more, then everyone has to guess which one's false.
 - Get everyone to paste a baby pic of themselves into a spreadsheet (give them a few days to get this part done).
     - Then everyone has to guess who's who.
+
+### Composite superheroes
+
+- In groups of 3, design a superhero. You get to choose one super power each and combine them into one hero. Draw a collaborative picture of the result.
+
+1. 1 minute: 
+    - Choose a superpower you would like to have
+    - and a backup!
+2. In groups of 3, 5 minutes:
+    - SPLIT INTO GROUPS
+    - Go to Miro or whichever tool you'll use
+    - Introduce yourselves to each other
+    - Create a drawing of your superhero. 
+    - It will have three or four superpowers! 
+    - Explore Miro (or whatever tool you're using)!
+    - Be imaginative - use colour if possible
+    - Delegate different jobs - eg googling for good images
+3. Look at the results:
+    - Zoom out so they're all visible
+    - Google "random number generator" 
+        - Enter min and max depending on how many groups
+    - Pick two numbers randomly, and focus on the results
 
 ## Simple icebreakers
 
