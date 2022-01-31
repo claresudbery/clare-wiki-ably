@@ -381,6 +381,8 @@ Aim for improved dev practices:
 
 ## Part 2: Learning Hours
 
+[Learning hours](https://www.sammancoaching.org/learning_hours/)
+
 ****** THIS IS WHERE I'M UP TO ******
 
 ## Part 3: Samman Coaching Engagements
