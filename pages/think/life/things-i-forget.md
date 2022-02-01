@@ -55,6 +55,18 @@ You're one of today's lucky ten thousand! The diet coke and mentos thing.
     
 From [here](https://xkcd.com/1053/)
 
+## The sudo!! xkcd comic
+
+![Sudo make me a sandwich](https://imgs.xkcd.com/comics/sandwich.png)
+    
+From [here](https://xkcd.com/149/)
+
+I can't find the xkcd original for this next one, which is my favourite... so maybe this was someone else's edit of xkcd? I found it [here](https://www.reddit.com/r/xkcd/comments/53ysu8/how_the_pros_do_it/).
+
+![sudo!!](/resources/images/Sudo-make-sandwich.png)
+
+Incidentally that reddit page led me [here](https://github.com/nvbn/thefuck), which looks like fun.
+
 ## What do dock leaves look like?
 
 They sometimes have green/brown flowers that grow straight up vertically on stalks 
