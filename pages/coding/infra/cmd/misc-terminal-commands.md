@@ -577,28 +577,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - For instance, **jq .\[\].target | sort** would become **jq
         ".\[\].target" | sort**
 
-  - **Creating aliases in Bash:**    
-    - Run these commands in Git Bash:
-      - **touch ~/.bashrc**
-      - **vim ~/.bashrc**
-    - This will put you in a VIM editor – see [VIM instructions](/pages/coding/infra/cmd/Vim#what-to-do-if-you-get-stuck-in-a-vim-editor)
-    - Add the alias definition: 
-      - **alias cdw='cd /your/path'**
-    - Load up the newly-added alias: **source ~/.bashrc**
-    - Check it’s there: type **alias**
-    - Put aliases in \~/.bashrc or \~/.zshrc (depending on your shell),
-        then put references to \~/.bashrc or \~/.zshrc in \~/.profile
-        and/or \~/.bash\_profile, like this:
-        
-          - **. \~/.bash\_profile**
-        
-          - **. \~/.bashrc**
-        
-          - **. \~/.zshrc**
-    
-      - More info:
-        [<span class="underline">https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc</span>](https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc)
-
   - Use the bang to access previous commands
     
       - Type **\!\!** to substitute your previous command
@@ -621,6 +599,32 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - Also **\!$** is your previous arguments
         
           - So after **mkdir new/folder**, you can just type **cd \!$**
+
+
+
+### Creating aliases in Bash
+
+- Run these commands in Git Bash:
+  - **touch ~/.bashrc**
+  - **vim ~/.bashrc**
+- This will put you in a VIM editor – see [VIM instructions](/pages/coding/infra/cmd/Vim#what-to-do-if-you-get-stuck-in-a-vim-editor)
+- Add the alias definition: 
+  - **alias cdw='cd /your/path'**
+- Load up the newly-added alias: **source ~/.bashrc**
+- Check it’s there: type **alias**
+- Put aliases in \~/.bashrc or \~/.zshrc (depending on your shell),
+    then put references to \~/.bashrc or \~/.zshrc in \~/.profile
+    and/or \~/.bash\_profile, like this:
+    
+      - **. \~/.bash\_profile**
+    
+      - **. \~/.bashrc**
+    
+      - **. \~/.zshrc**
+
+  - More info:
+    [<span class="underline">https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc</span>](https://serverfault.com/questions/261802/what-are-the-functional-differences-between-profile-bash-profile-and-bashrc)
+
 
 ## Other Terminal / Unix commands
 
