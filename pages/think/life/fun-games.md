@@ -160,6 +160,11 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 - Everyone else asks them questions that can only have the answer Yes or No.
 - Traditionally you only got 20 questions, but we tend to just keep playing until you find out what the person / thing is.
 
+### A party in a spreadsheet
+
+- [Have a party in a spreadsheet!](https://onezero.medium.com/party-in-a-shared-google-doc-d576c565706e)
+	- We took this idea one step further and had a party in [Miro](https://miro.com/app/dashboard/) - allowing our guests to create their own "rooms" (visible frames) and use their imaginations to find new ways to communicate and move their avatars around. We deliberately had no audio or video aailable, so people had to find new ways to interact. It was mayhem but a lot of fun.
+
 ### A remote Zoom party
 
 We had a zoom birthday party, but made it a bit unusual by having a series of calls throughout the day, with no call lasting longer than half an hour, all optional... but on each call we set our guests a Taskmaster-style challenge, and they had to present the results on the next call. They got scores for their efforts and there was a winner at the end of the day. 
