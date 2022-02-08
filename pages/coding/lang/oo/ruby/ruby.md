@@ -13,6 +13,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [https://github.com/claresudbery/clare-wiki-jekyll](https://github.com/claresudbery/Infra-Scripts)
     - Skeleton Jekyll site which I created before I started using the Ably template (Jekyll is built in Ruby).
 - [Bowling kata](https://github.com/claresudbery/bowling-kata-ruby) - bowling kata implemented in Ruby
+  - Note that the bowling kata can sometimes be a bit opaque (because if you don't play the game, the scoring is quite complex), but I've updated the [readme on the Made Tech site](https://learn.madetech.com/katas/bowling/) to have a simpler explanation (in case that gets lost, I've also added it to the readme in [my repo](https://github.com/claresudbery/bowling-kata-ruby))
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - [tic-tac-toe kata](https://github.com/claresudbery/tic-tac-toe-kata) - tic-tac-toe kata implemented in Ruby
 - [wordwrap kata](https://github.com/claresudbery/wordwrap-kata-ruby) - wordwrap kata implemented in Ruby
