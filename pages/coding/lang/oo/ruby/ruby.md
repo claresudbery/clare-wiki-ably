@@ -10,19 +10,42 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [https://github.com/claresudbery/clare-wiki-ably](https://github.com/claresudbery/clare-wiki-ably)
     - The code for this site, which is built in Jekyll, which is built in Ruby.
-- [https://github.com/claresudbery/clare-wiki-jekyll](https://github.com/claresudbery/Infra-Scripts)
+- [https://github.com/claresudbery/clare-wiki-jekyll](https://github.com/claresudbery/clare-wiki-jekyll)
     - Skeleton Jekyll site which I created before I started using the Ably template (Jekyll is built in Ruby).
+- [Academy mob code base](https://github.com/madetech/academy_2020_mob)
+- My [Cards Against Humanity answer generator](https://github.com/claresudbery/cah-answer-generator) was written in Sinatra and Ruby.
+- [Sample gov uk front end rails app from Csaba](https://github.com/C-gyorfi/govuk-front-end-rails-app)
+- [Learn Enough Ruby](https://github.com/claresudbery/learn_enough_ruby) - My code following along with examples in the book.
+- See [Sinatra](#sinatra) below for various Sinatra repos.
+
+### Ruby katas
+
+See [below](#quick-start-kata-guide) for a quick start guide if writing a kata from scratch
+
 - [Bowling kata](https://github.com/claresudbery/bowling-kata-ruby) - bowling kata implemented in Ruby
   - Note that the bowling kata can sometimes be a bit opaque (because if you don't play the game, the scoring is quite complex), but I've updated the [readme on the Made Tech site](https://learn.madetech.com/katas/bowling/) to have a simpler explanation (in case that gets lost, I've also added it to the readme in [my repo](https://github.com/claresudbery/bowling-kata-ruby))
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - [tic-tac-toe kata](https://github.com/claresudbery/tic-tac-toe-kata) - tic-tac-toe kata implemented in Ruby
 - [wordwrap kata](https://github.com/claresudbery/wordwrap-kata-ruby) - wordwrap kata implemented in Ruby
 - [Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby)
-- [Academy mob code base](https://github.com/madetech/academy_2020_mob)
-- My [Cards Against Humanity answer generator](https://github.com/claresudbery/cah-answer-generator) was written in Sinatra and Ruby.
-- [Sample gov uk front end rails app from Csaba](https://github.com/C-gyorfi/govuk-front-end-rails-app)
-- [Learn Enough Ruby](https://github.com/claresudbery/learn_enough_ruby) - My code following along with examples in the book.
-- See [Sinatra](#sinatra) below for various Sinatra repos.
+
+### Quick start Ruby kata guide
+
+- Create dedicated folder
+- Create git repo
+- Check you have ruby installed - `which ruby`
+- `bundle init`
+- `bundle add rspec`
+  - Or just add `gem 'rspec'` to end of gemfile
+  - And then `bundle install –path ‘vendor/bundle’`
+- Create a spec folder and a spec file, eg `fizzbuzz_spec.rb`
+- Now `bundle exec rspec`
+- Create something like `fizzbuzz.rb` to contain the code under test - can stick it in root
+  - For first demo you might want to put executable code into spec file
+  - Then refactor to put code in `fizzbuzz.rb`
+- Test file will have `require 'rspec'` and `require './fizzbuzz'` at the top
+  - And `subject = Fizzbuzz.new` to call system under test
+- See [this commit](https://github.com/claresudbery/fizzbuzz-temp-academy/tree/1de27613bab439ab7862a0d8ed6045b0921c2353) for an example
 
 ## Tutorials and Guides
 
