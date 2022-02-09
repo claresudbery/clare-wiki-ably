@@ -55,10 +55,38 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 
 ## Simple icebreakers
 
-- stand back to back, one describes a picture, the other draws it. 
 - If still stuck for ideas, just google "icebreakers"
 - Use https://really.boring.website/ to play a game
 - Use costumes! Or just hats. A lot easier when everyone is remote.
+- More ideas in detail below
+
+### blind drawing
+
+- prep:
+  - either write down names of simple objects, one card each
+  - or print out simple pictures of objects
+  - or get links to simple picture of objects
+    - you can use this handy list of links:
+      - https://tinyurl.com/aca-image01 
+      - https://tinyurl.com/aca-image02
+      - https://tinyurl.com/aca-image03
+      - https://tinyurl.com/aca-image04
+      - https://tinyurl.com/aca-image05
+      - https://tinyurl.com/aca-image06
+      - https://tinyurl.com/aca-image07
+      - https://tinyurl.com/aca-image08
+      - https://tinyurl.com/aca-image09
+      - https://tinyurl.com/aca-image10
+      - https://tinyurl.com/aca-image11    
+    - Follow [this link](#blind-drawing-answers) to know what the above images are.
+    - You can use [this wheel link](https://wheelofnames.com/v7d-vyw) to get a random image link selector (expires ater 365 days), or create a new one copying in the above list of links.
+- everybody gets a different simple object / image
+- in person: 
+  - stand back to back
+- otherwise just do it remote
+- one describes the picture using only the following words:
+  - left, line, right, square, circle, middle, down, up, bendy, big, please
+- the other(s) try/tries to draw the picture.
 
 ## Links to Games Elsewhere
 
@@ -167,3 +195,17 @@ The teacher said to the children, “These balloons are like happiness. We won't
       - take it in turns
       - each person has to repeat all the previous items
       - each item should begin with next letter in alphabet
+
+## Blind drawing answers
+
+- 01 - dog
+- 02 - house
+- 03 - tree
+- 04 - cat
+- 05 - fence
+- 06 - robin
+- 07 - face
+- 08 - phone
+- 09 - teapot
+- 10 - car
+- 11 - bottle
