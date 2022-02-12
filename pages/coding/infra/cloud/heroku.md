@@ -15,6 +15,28 @@ permalink: /pages/coding/infra/cloud/Heroku
     - [webapi-docker](https://github.com/claresudbery/webapi-docker)
     - [dotnet-docker-clare](https://github.com/claresudbery/dotnet-docker-clare)
 
+## Deploying to heroku
+
+### Deploying direct to heroku (Ruby) without a CI tool
+
+For [Wordlessly](https://github.com/claresudbery/wordlessly/blob/master/README.md#deploying-to-heroku), I didn't even bother with Travis (or Circle CI). I just deployed direct to heroku, following these instructions:
+
+- Install [everything you need to deploy a ruby app to Heroku](https://devcenter.heroku.com/articles/getting-started-with-jruby)
+- Install [heroku command line tools](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli)
+- Login to heroku: `heroku login`
+- Create an app: `heroku apps:create your-app-name`
+- Run `git push heroku master` (note that even if your main git branch is named `main`, you still use `master` in this command)
+- Ensure that at least one instance of the app is running: `heroku ps:scale web=1`
+- Open the website: `heroku open`
+
+### Deploying to heroku (Ruby) with Circle CI
+
+If I decide to switch to Circle CI in the future, I think [this page for the Circle CI side of things](https://circleci.com/docs/2.0/language-ruby/) and [this page for the Heroku end](https://circleci.com/integrations/heroku) will probably be useful.
+
+### Deploying to heroku (Ruby) with Travis
+
+I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/README.md#deploying-to-heroku-via-travis).
+
 ## Misc Heroku Stuff
 
 - There are some heroku-related notes in the [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
