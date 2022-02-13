@@ -174,6 +174,26 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 
 ### CoreData
 
+#### Quick-start to add CoreData to an existing project
+
+- Create a new file and choose DataModel as its type
+    - This will open the datamodel editor
+    - you can return to this any time by double clicking the data model from the list of files on the left
+- Use the plus button to add an entity (equivalent of a data table)
+    - It will be called "Entity" by default - to rename it, just select its name on the left and click twice to type a new name
+    - I found it helpful to name them all with a suffix "Model" - eg "GameStateModel" - so I could distinguish the models from the wrapper entities I created to keep the code clean and easily testable
+    - Use the plus button to add attributes (columns)
+- I then created four classes for each entity:
+    - (all examples are visible in SquareFill - commit 0e758fb has everything below - accessible to Clare only)
+    - A gateway interface (protocol) - eg IGameStateGateway
+    - A gateway class - eg GameStateGateway - that can read from and write to CoreData
+    - A mapper class - eg GameStateMapper - that could convert between the data model and the wrapper object
+    - A DTO class (the wrapper object), that uses the gateway to update and fetch data
+    - Note that this was a pattern I was using for a singleton object (saving the current game state to disk), but I think it should translate for multiple instances
+    - Also I did it in a bit of a hurry - I'm sure it could be improved upon!
+
+#### My original notes
+
 - I used the CoreData approach for saving game state in [SquareFill](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only).
 - ! [This useful-ish article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) helps you get started
     - It talks about creating a data model but doesn't say how. 
