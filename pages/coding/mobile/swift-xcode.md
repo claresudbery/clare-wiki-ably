@@ -124,7 +124,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
             - Don't worry! It will stop eventually! It was a lot of times (ten?) and it made me think I'd got my password wrong, but actually it was just doing it several times.
             - To avoid this happening again in future, click Always Allow.
         - The final confirmation will be an Upload button, and this bit might take a little while.
-        - ! If you get an error saying you need to go to your developer account and sign the latest PLA, go to App Store Connect in the browser and you should find a banner there with a link to sign into your developer account and accpet the new agreement.
+        - ! If you get an error saying you need to go to your developer account and sign the latest PLA, go to App Stoare Connect in the browser and you should find a banner there with a link to sign into your developer account and accpet the new agreement.
         - If you get an "invalid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. See [ios dev page](/pages/coding/mobile/iOS-Development).
     - Go to 5) below.  
 		- Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
@@ -183,14 +183,29 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - It will be called "Entity" by default - to rename it, just select its name on the left and click twice to type a new name
     - I found it helpful to name them all with a suffix "Model" - eg "GameStateModel" - so I could distinguish the models from the wrapper entities I created to keep the code clean and easily testable
     - Use the plus button to add attributes (columns)
+    - Note that if you want your entity to be available to your tests, you'll need to add it to the test project too. Do this by 
+        - selecting the entity on the left in the data model editor
+        - clicking the button top right to get the property panel open on the right
+        - click the little file icon at the top of the right hand panel
+        - select the checkbox down in the Target Membership section 
+- Create a CoreDataManager class
+    - You can see an example in SquareFill (commit 0e758fb) or WordMistress (commit 1770b15)
 - I then created four classes for each entity:
-    - (all examples are visible in SquareFill - commit 0e758fb has everything below - accessible to Clare only)
+    - (all examples are visible in SquareFill - commit 0e758fb has everything below - accessible to Clare only - or Wordlessly, commit 1770b15)
     - A gateway interface (protocol) - eg IGameStateGateway
     - A gateway class - eg GameStateGateway - that can read from and write to CoreData
     - A mapper class - eg GameStateMapper - that could convert between the data model and the wrapper object
     - A DTO class (the wrapper object), that uses the gateway to update and fetch data
     - Note that this was a pattern I was using for a singleton object (saving the current game state to disk), but I think it should translate for multiple instances
     - Also I did it in a bit of a hurry - I'm sure it could be improved upon!
+- Create some tests - start as you mean to go on!
+    - You can see an example in SquareFill in GameStateMapperTests (commit 0e758fb) or in Wordlessly, commit 1770b15
+    - You'll need a fake gateway and a test context - see classes FakeGamestateGateway and TestCoreDataStack
+        - !! If you get the error "An NSManagedObject of class '[YourModelName]' must have a valid NSEntityDescription. (NSInvalidArgumentException)"
+        - this is probably because you haven't used the correct model name in TestCoreDataStack
+        - it needs to be the overall name of the parent data model - which I have been giving the same name as the overall project
+        - see a line of code that looks something like this: `let container = NSPersistentContainer(name: "Wordlessly")`
+    - To get a nice simple starting point, see the commits when I set this stuff up for the first time in WordMistress - see commit 1770b15.
 
 #### My original notes
 
@@ -230,6 +245,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - I got this working in SquareFill [here](https://github.com/claresudbery/SquareFillXCode/blob/ca2f6bfd6210e129b424c7ba360e12c4a990afa0/SquareFillXCodeTests/GameStateGatewayTests.swift#L43) (accessible to Clare only)
         - Note that it didn't work when I used background context - I used viewContext instead
         - Also the name for your container will be the name of the whole data model - eg mine is called "SquareFill". I got confused because XCode calls the whole thing a data model, whereas I am calling the individual classes (that represent tables) models.
+            - If you get this wrong you'll probably get an error something like "An NSManagedObject of class '[YourModelName]' must have a valid NSEntityDescription. (NSInvalidArgumentException)"
     - [This looks interesting](https://www.raywenderlich.com/11349416-unit-testing-core-data-in-ios), but is too complex to get up and running quickly
 - Using more complex data structures with CoreData
     - I think [this is the simplest example](https://www.hackingwithswift.com/books/ios-swiftui/one-to-many-relationships-with-core-data-swiftui-and-fetchrequest)
