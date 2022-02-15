@@ -240,7 +240,7 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
 
 #### Testing command-line inputs and outputs (stdin, stdout, stderr)
 
-You can stub command-line inputs using standard rspec stubbing functionality and the fact that `gets` and `puts` are functions inherited from `Object` by all classes. Note that you can also mimic several repeated inputs by giving a comma-separated list:
+You can stub command-line inputs using standard rspec stubbing functionality and the fact that `gets` and `puts` are functions inherited from `Object` by all classes. Note that you can also mimic several repeated inputs by giving a comma-separated list. Note that in the examples below, `@communicator` and `@mars_rover_app` are classes written by me, and I am specifying their inputs and outputs.
 
 ```ruby
 allow(@communicator).to receive(:gets).and_return(INITIAL_INPUT, "f", "r", "f", "f", "l", "b", "") 
