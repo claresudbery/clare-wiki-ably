@@ -242,6 +242,8 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
 
 You can stub command-line inputs using standard rspec stubbing functionality and the fact that `gets` and `puts` are functions inherited from `Object` by all classes. Note that you can also mimic several repeated inputs by giving a comma-separated list. Note that in the examples below, `@communicator` and `@mars_rover_app` are classes written by me, and I am specifying their inputs and outputs.
 
+For the code below you will need the `rspec` and `rspec-html-matchers` gems in your `Gemfile` (see [example here](https://github.com/claresudbery/mars-rover-kata-ruby/blob/bf78d04adb927e80cf1cb731c166c33b3823b7c8/Gemfile)).
+
 ```ruby
 allow(@communicator).to receive(:gets).and_return(INITIAL_INPUT, "f", "r", "f", "f", "l", "b", "") 
 ```
