@@ -341,4 +341,30 @@ I followed [this tutorial](), but for an app that already existed - was being de
             - This will ask you for a starting currency and price, and then allow you to tweak the converted prices for other regions
         - Click + to add a localization
             - I added one each for English US and English UK (not sure if that was necessary seing as I made them identical, but there you go)
+                - ! Confusingly I still got errors saying I was missing a localization
+                - When I clicked Learn More it took me to a diffrent screen asking for localizations
+                - I _think_ the issue was that as well as having to add localizations for the IAP, I also had to add them separately for the subscription group.
         - Add a promotional image
+            - This will be 1024x1024 for the app store
+        - Add an IAP screenshot
+            - This will not be displayed to users
+            - ! If you get an error saying "you must upload a valid screenshot", this might be because the dimensions are wrong
+                - This one is NOT a square image - it should have the same aspect ratio as a phone screen
+                - [Here is a list of acceptable dimensions](https://i.stack.imgur.com/2KgKJ.png)
+                    - eg 920 x 640 (h x w), which is what I chose
+                - [More here](https://stackoverflow.com/questions/44083933/itunes-connect-you-must-upload-a-valid-screenshot)
+    - Once you're all done, go back to the same screen by clicin In-App Purchases on the left, and Turn On the billing grace period
+    - Check your basic App information (also on the left in App Store Connect)
+    - Set up a Sandbox user, so that your testers can test in-app purchases without actually having to buy it
+        - App Store Connect home page
+        - On the left, Sandbox testers
+        - Add a user
+        - It has to have a different email address to any other existing user, but you can do the trick of things like emailaddress+test01@gmail.com
+        - Every time you buy something using that user, it sort of gets used up - so you might need multiple ones of these
+- Now you set things up in XCode:
+    - Select the root of the file tree on the left
+    - Select the app under Targets
+    - Select the Signing & Capabilities tab
+    - Team and bundle ID will probably already be filled in correctly for you
+    - You have to add a capability using the + button, which is well hidden but is basically in grey on the top left of the panel
+        - Scroll down in the list - In-App Purchase is quite low down - select it and double-click
