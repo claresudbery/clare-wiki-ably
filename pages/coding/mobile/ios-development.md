@@ -33,4 +33,8 @@ See [separate page](/pages/coding/mobile/iOS-Development) - there is bound to be
 - Follow the [review guidelines](https://developer.apple.com/app-store/review/)
 - [How to launch (2022)](https://instabug.com/blog/how-to-submit-app-to-app-store/)
 - [How to submit an updated app version](https://help.swiftic.com/hc/en-us/articles/201701881-Update-Your-App-on-the-Apple-App-Store)
-- [In-app purchases](https://help.apple.com/app-store-connect/#/devae49fb316) 
+- In-app purchases:
+    - [Official Apple help](https://help.apple.com/app-store-connect/#/devae49fb316) 
+    - [Ray Wenderlich Tutorial](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started)
+    - [My notes](/pages/coding/mobile/iOS-Development#in-app-purchases)
+

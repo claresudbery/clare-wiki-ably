@@ -125,7 +125,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
             - To avoid this happening again in future, click Always Allow.
         - The final confirmation will be an Upload button, and this bit might take a little while.
         - ! If you get an error saying you need to go to your developer account and sign the latest PLA, go to App Stoare Connect in the browser and you should find a banner there with a link to sign into your developer account and accpet the new agreement.
-        - If you get an "invalid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. See [ios dev page](/pages/coding/mobile/iOS-Development).
+        - If you get an "invalid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. See [ios dev page](/pages/coding/mobile/iOS-Development#creating-icons).
     - Go to 5) below.  
 		- Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
 			- Basically it boils down to:   
@@ -165,6 +165,10 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
                 - It's not obvious but when you click a + button to add testers to your App Store Connect Users group, if you read the text there is a link hiding in the text to [Add Users And Groups](https://appstoreconnect.apple.com/access/users).
                 - First they have to accept the first invite and _then_ you can add them to the list of testers for your app.
                 - The data you enter under "what to test" doesn't get emailed to testers. But if they open the TestFlight app on their device and click on the app icon, it says "What to test" and if they click on "more" they'll see the text you entered.
+
+## Creating icons
+
+- See [ios dev page](/pages/coding/mobile/iOS-Development#creating-icons)
 
 ## Data persistence
 
@@ -313,3 +317,28 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - How come when I created a new class WinDetector, I couldn't test it?
     - See commented out lines at the bottom of ShapeControllerTests
 - Surely I made notes on all this stuff before? What did I do with them??
+
+## In App Purchases
+
+I followed [this tutorial](), but for an app that already existed - was being deployed to Test Flight but hadn't yet been launched in app store. This is what I needed to do:
+
+- Sort out the tax / bank account stuff: [AppStore Connect](https://appstoreconnect.apple.com/) => Agreements, Tax and Banking (on the home page, BEFORE you click thrugh to an individual app) => Paid applications => Click any links you see in that row and follow instructions
+    - This should involve accepting the Paid Applications agreement, ad then entering bank details
+    - Note that I had to use an [IBAN generator](https://bank.codes/iban/generate/united-kingdom/) for Monzo
+    - Also I entered the name of the company as the account holder (rather than my name)
+- Add in-app purchases:
+    - [App Store Connect => Features](https://appstoreconnect.apple.com/apps/1603897441/appstore/addons?m=)
+    - Click + to add a new one - I went for auto-renewable subscription
+        - Reference name is your own private reference
+            - This can contain spaces
+        - Product ID: Start with the bundle id for your app (available in [Apple Developer => Certificates and Ids](https://developer.apple.com/account/resources/identifiers/list)) then append a unique id - eg YourName.YourApp.YourIAP
+            - I think this can't contain spaces
+        - Subscription group reference name
+            - I want to offer multiple subscrptions - one for Wordfully and one for Wordlessly - so I created a separate subscrption group for Wordfully 
+        - Cleared for sale
+            - This enables it
+        - Click the + button to set up a subscription price
+            - This will ask you for a starting currency and price, and then allow you to tweak the converted prices for other regions
+        - Click + to add a localization
+            - I added one each for English US and English UK (not sure if that was necessary seing as I made them identical, but there you go)
+        - Add a promotional image
