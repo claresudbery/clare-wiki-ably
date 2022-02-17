@@ -368,3 +368,9 @@ I followed [this tutorial](), but for an app that already existed - was being de
     - Team and bundle ID will probably already be filled in correctly for you
     - You have to add a capability using the + button, which is well hidden but is basically in grey on the top left of the panel
         - Scroll down in the list - In-App Purchase is quite low down - select it and double-click
+
+## How to lock screen orientation / prevent autorotate
+
+- Blimey, this is NOT easy to Google!
+- This is how you do it: Add this line to your main view controller (as I've done in SquareFill and Wordlessly):  
+`override public var shouldAutorotate: Bool {return false;}`
