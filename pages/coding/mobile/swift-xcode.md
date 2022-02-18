@@ -326,6 +326,12 @@ I followed [this tutorial](), but for an app that already existed - was being de
     - This should involve accepting the Paid Applications agreement, ad then entering bank details
     - Note that I had to use an [IBAN generator](https://bank.codes/iban/generate/united-kingdom/) for Monzo
     - Also I entered the name of the company as the account holder (rather than my name)
+    - !!!!! You also have to fill in a tax form!
+        - If it says something about waiting for tax forms on the parent page, and then "Your banking updates are processing, and you should see the changes in 24 hours." when you click through... that doesn't necessarily mean you just have to wait. 
+        - You also have to click through to "Select Tax Forms" in the tax forms section.
+        - This gets you to W-8BEN which you seem to get no matter what
+        - This is the tax form for individuals - I think if you want something different you maybe have to set up a separate Apple Developer account, for a company rather than an individual?
+        - Enter "Ms" (or whatever) under Title, and "Individual" under Capacity in which you are acting.
 - Add in-app purchases:
     - [App Store Connect => Features](https://appstoreconnect.apple.com/apps/1603897441/appstore/addons?m=)
     - Click + to add a new one - I went for auto-renewable subscription
