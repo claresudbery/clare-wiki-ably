@@ -446,11 +446,15 @@ and the repository exists."
   - 
 ### Getting Help with commands
 
-  - Enter ? at the command prompt
+- Enter ? at the command prompt
 
 ### Git tutorial
 
-  - Here: <https://www.atlassian.com/git/tutorials/>
+- Here: <https://www.atlassian.com/git/tutorials/>
+
+## Interactive tool to learn how to do git branching
+
+- [https://learngitbranching.js.org](https://learngitbranching.js.org)
 
 ### Case Sensitivity
 

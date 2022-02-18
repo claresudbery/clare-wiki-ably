@@ -124,8 +124,8 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
             - Don't worry! It will stop eventually! It was a lot of times (ten?) and it made me think I'd got my password wrong, but actually it was just doing it several times.
             - To avoid this happening again in future, click Always Allow.
         - The final confirmation will be an Upload button, and this bit might take a little while.
-        - ! If you get an error saying you need to go to your developer account and sign the latest PLA, go to App Store Connect in the browser and you should find a banner there with a link to sign into your developer account and accpet the new agreement.
-        - If you get an "invalid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. See [ios dev page](/pages/coding/mobile/iOS-Development).
+        - ! If you get an error saying you need to go to your developer account and sign the latest PLA, go to App Stoare Connect in the browser and you should find a banner there with a link to sign into your developer account and accpet the new agreement.
+        - If you get an "invalid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. See [ios dev page](/pages/coding/mobile/iOS-Development#creating-icons).
     - Go to 5) below.  
 		- Otherwise try [all the steps listed here](https://stackoverflow.com/questions/37806538/code-signing-is-required-for-product-type-application-in-sdk-ios-10-0-stic)  
 			- Basically it boils down to:   
@@ -166,6 +166,10 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
                 - First they have to accept the first invite and _then_ you can add them to the list of testers for your app.
                 - The data you enter under "what to test" doesn't get emailed to testers. But if they open the TestFlight app on their device and click on the app icon, it says "What to test" and if they click on "more" they'll see the text you entered.
 
+## Creating icons
+
+- See [ios dev page](/pages/coding/mobile/iOS-Development#creating-icons)
+
 ## Data persistence
 
 - There are many different types of data persistence
@@ -173,6 +177,41 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - See sections below for more detail.
 
 ### CoreData
+
+#### Quick-start to add CoreData to an existing project
+
+- Create a new file and choose DataModel as its type
+    - This will open the datamodel editor
+    - you can return to this any time by double clicking the data model from the list of files on the left
+- Use the plus button to add an entity (equivalent of a data table)
+    - It will be called "Entity" by default - to rename it, just select its name on the left and click twice to type a new name
+    - I found it helpful to name them all with a suffix "Model" - eg "GameStateModel" - so I could distinguish the models from the wrapper entities I created to keep the code clean and easily testable
+    - Use the plus button to add attributes (columns)
+    - Note that if you want your entity to be available to your tests, you'll need to add it to the test project too. Do this by 
+        - selecting the entity on the left in the data model editor
+        - clicking the button top right to get the property panel open on the right
+        - click the little file icon at the top of the right hand panel
+        - select the checkbox down in the Target Membership section 
+- Create a CoreDataManager class
+    - You can see an example in SquareFill (commit 0e758fb) or WordMistress (commit 1770b15)
+- I then created four classes for each entity:
+    - (all examples are visible in SquareFill - commit 0e758fb has everything below - accessible to Clare only - or Wordlessly, commit 1770b15)
+    - A gateway interface (protocol) - eg IGameStateGateway
+    - A gateway class - eg GameStateGateway - that can read from and write to CoreData
+    - A mapper class - eg GameStateMapper - that could convert between the data model and the wrapper object
+    - A DTO class (the wrapper object), that uses the gateway to update and fetch data
+    - Note that this was a pattern I was using for a singleton object (saving the current game state to disk), but I think it should translate for multiple instances
+    - Also I did it in a bit of a hurry - I'm sure it could be improved upon!
+- Create some tests - start as you mean to go on!
+    - You can see an example in SquareFill in GameStateMapperTests (commit 0e758fb) or in Wordlessly, commit 1770b15
+    - You'll need a fake gateway and a test context - see classes FakeGamestateGateway and TestCoreDataStack
+        - !! If you get the error "An NSManagedObject of class '[YourModelName]' must have a valid NSEntityDescription. (NSInvalidArgumentException)"
+        - this is probably because you haven't used the correct model name in TestCoreDataStack
+        - it needs to be the overall name of the parent data model - which I have been giving the same name as the overall project
+        - see a line of code that looks something like this: `let container = NSPersistentContainer(name: "Wordlessly")`
+    - To get a nice simple starting point, see the commits when I set this stuff up for the first time in WordMistress - see commit 1770b15.
+
+#### My original notes
 
 - I used the CoreData approach for saving game state in [SquareFill](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only).
 - ! [This useful-ish article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) helps you get started
@@ -210,6 +249,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - I got this working in SquareFill [here](https://github.com/claresudbery/SquareFillXCode/blob/ca2f6bfd6210e129b424c7ba360e12c4a990afa0/SquareFillXCodeTests/GameStateGatewayTests.swift#L43) (accessible to Clare only)
         - Note that it didn't work when I used background context - I used viewContext instead
         - Also the name for your container will be the name of the whole data model - eg mine is called "SquareFill". I got confused because XCode calls the whole thing a data model, whereas I am calling the individual classes (that represent tables) models.
+            - If you get this wrong you'll probably get an error something like "An NSManagedObject of class '[YourModelName]' must have a valid NSEntityDescription. (NSInvalidArgumentException)"
     - [This looks interesting](https://www.raywenderlich.com/11349416-unit-testing-core-data-in-ios), but is too complex to get up and running quickly
 - Using more complex data structures with CoreData
     - I think [this is the simplest example](https://www.hackingwithswift.com/books/ios-swiftui/one-to-many-relationships-with-core-data-swiftui-and-fetchrequest)
@@ -277,3 +317,60 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - How come when I created a new class WinDetector, I couldn't test it?
     - See commented out lines at the bottom of ShapeControllerTests
 - Surely I made notes on all this stuff before? What did I do with them??
+
+## In App Purchases
+
+I followed [this tutorial](), but for an app that already existed - was being deployed to Test Flight but hadn't yet been launched in app store. This is what I needed to do:
+
+- Sort out the tax / bank account stuff: [AppStore Connect](https://appstoreconnect.apple.com/) => Agreements, Tax and Banking (on the home page, BEFORE you click thrugh to an individual app) => Paid applications => Click any links you see in that row and follow instructions
+    - This should involve accepting the Paid Applications agreement, ad then entering bank details
+    - Note that I had to use an [IBAN generator](https://bank.codes/iban/generate/united-kingdom/) for Monzo
+    - Also I entered the name of the company as the account holder (rather than my name)
+- Add in-app purchases:
+    - [App Store Connect => Features](https://appstoreconnect.apple.com/apps/1603897441/appstore/addons?m=)
+    - Click + to add a new one - I went for auto-renewable subscription
+        - Reference name is your own private reference
+            - This can contain spaces
+        - Product ID: Start with the bundle id for your app (available in [Apple Developer => Certificates and Ids](https://developer.apple.com/account/resources/identifiers/list)) then append a unique id - eg YourName.YourApp.YourIAP
+            - I think this can't contain spaces
+        - Subscription group reference name
+            - I want to offer multiple subscrptions - one for Wordfully and one for Wordlessly - so I created a separate subscrption group for Wordfully 
+        - Cleared for sale
+            - This enables it
+        - Click the + button to set up a subscription price
+            - This will ask you for a starting currency and price, and then allow you to tweak the converted prices for other regions
+        - Click + to add a localization
+            - I added one each for English US and English UK (not sure if that was necessary seing as I made them identical, but there you go)
+                - ! Confusingly I still got errors saying I was missing a localization
+                - When I clicked Learn More it took me to a diffrent screen asking for localizations
+                - I _think_ the issue was that as well as having to add localizations for the IAP, I also had to add them separately for the subscription group.
+        - Add a promotional image
+            - This will be 1024x1024 for the app store
+        - Add an IAP screenshot
+            - This will not be displayed to users
+            - ! If you get an error saying "you must upload a valid screenshot", this might be because the dimensions are wrong
+                - This one is NOT a square image - it should have the same aspect ratio as a phone screen
+                - [Here is a list of acceptable dimensions](https://i.stack.imgur.com/2KgKJ.png)
+                    - eg 920 x 640 (h x w), which is what I chose
+                - [More here](https://stackoverflow.com/questions/44083933/itunes-connect-you-must-upload-a-valid-screenshot)
+    - Once you're all done, go back to the same screen by clicin In-App Purchases on the left, and Turn On the billing grace period
+    - Check your basic App information (also on the left in App Store Connect)
+    - Set up a Sandbox user, so that your testers can test in-app purchases without actually having to buy it
+        - App Store Connect home page
+        - On the left, Sandbox testers
+        - Add a user
+        - It has to have a different email address to any other existing user, but you can do the trick of things like emailaddress+test01@gmail.com
+        - Every time you buy something using that user, it sort of gets used up - so you might need multiple ones of these
+- Now you set things up in XCode:
+    - Select the root of the file tree on the left
+    - Select the app under Targets
+    - Select the Signing & Capabilities tab
+    - Team and bundle ID will probably already be filled in correctly for you
+    - You have to add a capability using the + button, which is well hidden but is basically in grey on the top left of the panel
+        - Scroll down in the list - In-App Purchase is quite low down - select it and double-click
+
+## How to lock screen orientation / prevent autorotate
+
+- Blimey, this is NOT easy to Google!
+- This is how you do it: Add this line to your main view controller (as I've done in SquareFill and Wordlessly):  
+`override public var shouldAutorotate: Bool {return false;}`

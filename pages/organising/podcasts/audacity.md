@@ -15,7 +15,7 @@ permalink: /pages/organising/podcasts/Audacity
 - High-level [Tutorial for using Audacity to edit podcasts](https://podcasts.ceu.edu/how-edit-your-podcast-audacity-step-step-guide)
     - Very high level
     - Things in that article that require more explanation:
-        - **Creating a new blank track**: Tracks | Add new
+        - **Creating a new blank track**: Tracks => Add new
 
 ## Useful actions
 
@@ -30,7 +30,7 @@ permalink: /pages/organising/podcasts/Audacity
 
 ### Creating a new blank track
 
-- Tracks | Add new
+- Tracks => Add new
 
 ### Adding markers / labels
 
@@ -64,7 +64,7 @@ permalink: /pages/organising/podcasts/Audacity
 - There's a very faint horizontal scroll bar at the bottom - easy to miss
 - You can use the home and end keys to go to start and end of track
 - You can use left/right keys to move left and right 
-    - the granularity of this can be set up in Edit | Preferences | Playback
+    - the granularity of this can be set up in Edit => Preferences => Playback
     - you want to change the "seek period"
 - Alt + left/right moves you between labels
 - You can use the selection toolbar at the bottom to go to a particular time stamp
@@ -77,7 +77,7 @@ permalink: /pages/organising/podcasts/Audacity
 
 ### Using copy/paste when naming files in Audacity on Macbook
 
-- For some reason I can't use Cmd+C and Cmd+V when naming files in the Export and Save dialogs on the Macbook, but there is a simple workaround: Use right-click | Copy and then right-click | Paste.
+- For some reason I can't use Cmd+C and Cmd+V when naming files in the Export and Save dialogs on the Macbook, but there is a simple workaround: Use right-click => Copy and then right-click => Paste.
 - I found others complaining about this on the internet, bit the right-click solution was the only suggestion that worked for me.
 
 ## Other Audacity Tips

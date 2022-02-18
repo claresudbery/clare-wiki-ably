@@ -23,7 +23,7 @@ Everything from Taskmaster (see book). For instance...
 
 This is one of my favourite party games. It always makes me laugh a lot.
 
-It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Drawful works better remotely, but Picture Consequences works better in person. Another online version of this game is [BrokenPicturePhone](brokenpicturephone.com).
+It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Drawful works better remotely, but Picture Consequences works better in person. Another online version of this game is [BrokenPicturePhone](http://brokenpicturephone.com), and [Gartic Phone](https://garticphone.com/) is also a good version.
 
 - You need at least 5 people. More than 10 is probably getting a bit excessive.
 - Everybody gets a piece of A4 paper
@@ -159,6 +159,11 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 - One person thinks of a thing or person
 - Everyone else asks them questions that can only have the answer Yes or No.
 - Traditionally you only got 20 questions, but we tend to just keep playing until you find out what the person / thing is.
+
+### A party in a spreadsheet
+
+- [Have a party in a spreadsheet!](https://onezero.medium.com/party-in-a-shared-google-doc-d576c565706e)
+	- We took this idea one step further and had a party in [Miro](https://miro.com/app/dashboard/) - allowing our guests to create their own "rooms" (visible frames) and use their imaginations to find new ways to communicate and move their avatars around. We deliberately had no audio or video aailable, so people had to find new ways to interact. It was mayhem but a lot of fun.
 
 ### A remote Zoom party
 

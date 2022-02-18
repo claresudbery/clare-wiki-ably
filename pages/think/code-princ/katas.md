@@ -33,6 +33,7 @@ permalink: /pages/think/code-princ/Katas
 
 - [Made Tech Learn Tech katas](https://learn.madetech.com/katas/)
     - (includes Bowling, Mumbling, Number to LCD, Roman numerals, Snake, Tennis, Tennis Refactoring, Turnstile, Wordwrap, Test Framework, Video Store and Mars Rover)
+    - Note that the bowling kata can sometimes be a bit opaque (because if you don't play the game, the scoring is quite complex), but I've updated the [readme on the Made Tech site](https://learn.madetech.com/katas/bowling/) to have a simpler explanation (in case that gets lost, I've also added it to the readme in [my repo](https://github.com/claresudbery/bowling-kata-ruby))
 - [Made Tech Learn Tech Sparring Exercises](https://learn.madetech.com/sparring/) (overview, then Tic Tac Toe (aka Noughts and Crosses) and Payroll exercises)
     - **Minimax algorithm**:
         - To get an unbeatable AI for [the tic-tac-toe kata](https://learn.madetech.com/sparring/tic-tac-toe/), people generally use the [Minimax algorithm](https://towardsdatascience.com/tic-tac-toe-creating-unbeatable-ai-with-minimax-algorithm-8af9e52c1e7d).
@@ -62,5 +63,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [NumberToLCD_Kata (PRIVATE)](https://github.com/claresudbery/NumberToLCD_Kata)
     - Made Tech recruitment exercise
 - Lots of Ruby katas are linked to [on my Ruby page](http://127.0.0.1:4000/pages/coding/lang/oo/Ruby#github-repos)
+    - There's also a [Quick-start Ruby kata guide](/pages/coding/lang/oo/ruby/Ruby#quick-start-ruby-kata-guide)
 - [tic-tac-toe kata in Ruby](https://github.com/claresudbery/tic-tac-toe-kata)
     - Also, [this is a nice implementation of the tic-tac-toe kata](https://github.com/Richard-Pentecost/tic_tac_toe) from our Made Tech academy engineers Richard and Claire, pairing together - note that it has a good example of using TDD to code the minimax game-playing AI algorithm

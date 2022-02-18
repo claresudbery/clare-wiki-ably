@@ -33,6 +33,29 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
       - If you want to run your script from anywhere on your system, see [Installing scripts](/pages/coding/infra/cmd/Misc-Terminal-Commands#installing-scripts)
 - There are more useful Bash links in my Chrome bookmarks: Useful - Coding Languages and Tech - Bash Scripts
 
+## Troubleshooting Git Bash
+
+### Where is the root of the git Bash terminal?
+
+- When you run Git Bash your command prompt is always at /, which is the root for Git Bash but is not the root of your machine (in windows 10)
+- The way to find out where it is is to run `explorer .` in the terminal
+- That will open a File Explorer at the location
+- It is generally at `C:\Program Files\Git\`
+- So for instance, what's shown as `/usr/bin` in Git Bash is actually at `C:\Program Files\Git\usr\bin`
+
+### Fails to run
+
+- If you get an error "Failed to run '/usr/bin/bash': No such file or directory"
+  - Avast sometimes quarantines bash.exe
+  - In Avast, go to Protection (on the left), then select Quarantine
+  - Find bash.exe
+  - Select the file 
+  - click the dots at the bottom
+  - select "restore and add exception"
+  - More [here](https://support.avast.com/en-us/article/Use-Antivirus-Quarantine/)
+- You can report a false positive [here](https://www.avast.com/false-positive-file-form.php?page=success#pc)
+- More [here](https://forum.avast.com/index.php?topic=219993.0)
+
 ## Bash variables
 
   - Lack of spaces is important when assigning to variables\!
