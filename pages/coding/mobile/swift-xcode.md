@@ -380,3 +380,12 @@ I followed [this tutorial](), but for an app that already existed - was being de
 - Blimey, this is NOT easy to Google!
 - This is how you do it: Add this line to your main view controller (as I've done in SquareFill and Wordlessly):  
 `override public var shouldAutorotate: Bool {return false;}`
+
+## String interpolation
+
+Like this:
+
+```CSharp
+var score = 85
+var str = "Your score was \(score)"
+```
