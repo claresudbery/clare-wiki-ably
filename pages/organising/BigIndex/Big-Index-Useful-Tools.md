@@ -159,10 +159,11 @@ Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/maste
 - Right-click that folder and choose Download
 - It will download a zipped copy of your folder
 - AND it will convert all Google docs and sheets into Word docs and Excel sheets
+- Then you can unzip and upload to a different google drive (or copy anywhere else)
 
 ## Converting Chrome bookmarks to markdown
 
-I used this tool: [Bookmarker](https://github.com/lubien/bookmarker)
+- I used this tool: [Bookmarker](https://github.com/lubien/bookmarker) (see instructions in next section)
 
 ### Installing Bookmarker in Ubuntu in WSL: 
 
@@ -177,7 +178,7 @@ export PATH=$PATH:/home/claresudbery/.mix/escripts
 
 ### Running Bookmarker 
 
-- Note that the input it expects is your current Chrome bookmarks file, which is in an entirely different format to any exported html bookmarks files).  
+- Note that the input it expects is your current Chrome bookmarks file, which is in an entirely different format to any exported html bookmarks files.  
 - In Windows you'll find it somewhere like here: C:\Users\CLARE\AppData\Local\Google\Chrome\User Data\Default\Bookmarks.  
 - If you have separate Chrome profiles, their bookmarks will be somewhere like `C:\Users\CLARE\AppData\Local\Google\Chrome\User Data\Profile 2`.  
 - `Bookmarks` is the file - it has no file extension - it's not a folder. 

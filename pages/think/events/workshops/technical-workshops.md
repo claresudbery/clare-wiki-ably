@@ -14,6 +14,8 @@ Sorry, at the time of writing some of these resources will not be publicly avail
 
 Some of these workshops can be self led - ie just give the relevant link to individuals or pairs and let them work independently. But some of them are designed to be facilitated as a group exercise.
 
+- [More workshops] (Clare only)
+    - See SS GDrive - details in clare-tech (tech-workshops.md)
 - [Ruby Environment Setup (self led)](https://learn.madetech.com/guides/00-Setup/)
 - [Command line (self led)](https://learn.madetech.com/guides/01-Command-Line/)
 - Git:
