@@ -382,7 +382,8 @@ I followed [this tutorial](), but for an app that already existed - was being de
 - [A CodeWithChris tutorial](https://codewithchris.com/submit-your-app-to-the-app-store/)
 - [Guidance from Apple](https://developer.apple.com/ios/submit/)
 - [Apple product page guidance](https://developer.apple.com/app-store/product-page/)
-- [Screenshot sizes and guidelines](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
+- [Screenshot sizes and guidelines from a blog](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
+- [Screenshot sizes and guidelines from Apple](https://help.apple.com/app-store-connect/?lang=en/#/dev4e413fcb8)
 
 ### Routing App Coverage File
 
@@ -412,11 +413,36 @@ Put your name or your company name. Even if you're not actually registered for c
         - iPad Pro 3rd gen (11 inch) ()
         - iPad Pro 5th gen (12.9 inch) ()
 - For any devices you don't own, run the app in the simulator and then record a video on your Mac:
-    - Open QuickTime Player
-    - Choose File > New Screen Recording
-    - Click on the down arrow next to the Record button
-    - Select Internal Microphone
-    - Record
+    - First method:
+        - Run your app in the simulator from XCode
+        - File => Record screen
+        - Once you're done, a small screenshot will pop up - you can right click on that and choose something like Save to Desktop
+    - Second method:
+        - Start your simulator
+        - On command line: 
+            - Go to location you want to save video
+            - Then `xcrun simctl io booted recordVideo iPhone11ProMax.mov --codec=h264`
+            - [More here](https://stackoverflow.com/questions/25797990/capture-ios-simulator-video-for-app-preview/66075167#66075167)
+                - note that this says to add `type=h264` but this has now changed to `codec=h264`
+            - Install ffmpeg
+                - Note that I followed the instructions below but it was a bit of a faff! After going through all that pain I [discovered something](https://superuser.com/questions/624561/install-ffmpeg-on-os-x) saying I could probably have just run `brew install ffmpeg` so I would probably do that next time!
+                - Otherwise follow [these instructions](https://bbc.github.io/bbcat-orchestration-docs/installation-mac-manual/)
+                    - one of the instructions says to close a terminal window when you're told that you can
+                    - but I waited a while and never saw anything telling me to close it
+                    - so I closed it anyway which meant I had to say yes to terminate running processes
+                    - after that I had to restart the terminal I was using to run ffmpeg
+            - command line: `~/audio-orchestrator-ffmpeg/bin/ffmpeg -i iPhone11ProMax.mov -c copy temp.mp4`
+            - [More here](https://mmazzarolo.com/blog/2020-09-07-app-store-previews/)
+        - Ctrl + C to stop recording
+        - If you see "error: unable to find utility "simctl"":
+            - XCode => Preferences => Locations => select option from Command Line Tools dropdown
+            - [More here](https://stackoverflow.com/questions/29108172/how-do-i-fix-the-xcrun-unable-to-find-simctl-error)
+    - Third method:
+        - Open QuickTime Player
+        - Choose File > New Screen Recording
+        - Click on the down arrow next to the Record button
+        - Select Internal Microphone
+        - Record
 - [More here](https://developer.apple.com/support/app-previews/)
 
 ## How to lock screen orientation / prevent autorotate
