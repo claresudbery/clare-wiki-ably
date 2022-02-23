@@ -381,6 +381,8 @@ I followed [this tutorial](), but for an app that already existed - was being de
 
 - [A CodeWithChris tutorial](https://codewithchris.com/submit-your-app-to-the-app-store/)
 - [Guidance from Apple](https://developer.apple.com/ios/submit/)
+- [Apple product page guidance](https://developer.apple.com/app-store/product-page/)
+- [Screenshot sizes and guidelines](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
 
 ### Routing App Coverage File
 
