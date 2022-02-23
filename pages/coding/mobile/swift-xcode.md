@@ -393,6 +393,14 @@ I followed [this tutorial](), but for an app that already existed - was being de
 
 Put your name or your company name. Even if you're not actually registered for copyright, this can help in the event of a claim.
 
+### Description, keywords etc
+
+See Wordlessly readme for values saved for these inputs
+
+### App clips
+
+An App Clip is a small part of an app that lets you do a task quickly, like rent a bike, pay for parking, or order food.
+
 ### Screenshots
 
 - You only need to do them (as of Feb 2022) for the following:
@@ -425,12 +433,15 @@ Put your name or your company name. Even if you're not actually registered for c
             - [More here](https://stackoverflow.com/questions/25797990/capture-ios-simulator-video-for-app-preview/66075167#66075167)
                 - note that this says to add `type=h264` but this has now changed to `codec=h264`
             - Install ffmpeg
+                - Use `brew install ffmpeg` but be aware that it downloads a lot of stuff and takes quite a long time!
                 - Note that I followed the instructions below but it was a bit of a faff! After going through all that pain I [discovered something](https://superuser.com/questions/624561/install-ffmpeg-on-os-x) saying I could probably have just run `brew install ffmpeg` so I would probably do that next time!
                 - Otherwise follow [these instructions](https://bbc.github.io/bbcat-orchestration-docs/installation-mac-manual/)
                     - one of the instructions says to close a terminal window when you're told that you can
                     - but I waited a while and never saw anything telling me to close it
                     - so I closed it anyway which meant I had to say yes to terminate running processes
                     - after that I had to restart the terminal I was using to run ffmpeg
+                    - but then when I ran ffmpeg on command line it appeared to just hang
+                    - maybe I needed to put it in the path or somethuing, I dunno, but at this point I gave up and used brew instead (see above)
             - command line: `~/audio-orchestrator-ffmpeg/bin/ffmpeg -i iPhone11ProMax.mov -c copy temp.mp4`
             - [More here](https://mmazzarolo.com/blog/2020-09-07-app-store-previews/)
         - Ctrl + C to stop recording
