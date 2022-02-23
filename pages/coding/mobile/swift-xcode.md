@@ -375,6 +375,48 @@ I followed [this tutorial](), but for an app that already existed - was being de
     - You have to add a capability using the + button, which is well hidden but is basically in grey on the top left of the panel
         - Scroll down in the list - In-App Purchase is quite low down - select it and double-click
 
+## Submitting / Deploying to the App Store
+
+### Useful links
+
+- [A CodeWithChris tutorial](https://codewithchris.com/submit-your-app-to-the-app-store/)
+- [Guidance from Apple](https://developer.apple.com/ios/submit/)
+
+### Routing App Coverage File
+
+"According to apple's AppStore guidelines, If your app uses location to provide routing information, you must supply a geographic coverage file before submitting your app to App Review. 8 Dec 2020"
+
+### Copyright
+
+Put your name or your company name. Even if you're not actually registered for copyright, this can help in the event of a claim.
+
+### Screenshots
+
+- You only need to do them (as of Feb 2022) for the following:
+    - iPhone 11 Pro Max (6.5 inch) (1242 x 2688 pixels)
+    - iPhone 8 Plus (5.5 inch) (1242 x 2208 pixels)
+    - iPad Pro 3rd gen (11 inch) (1668 x 2388 pixels)
+    - iPad Pro 5th gen (12.9 inch) (2048 x 2732 pixels)
+- [More here](https://developer.apple.com/support/app-previews/)
+- also [more here](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
+
+### App Previews
+
+- You only need to do them (as of Feb 2022) for the following devices:
+    - according to the [article I read](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
+        - iPad Pro 2nd gen (12.9 inch)
+        - iPad Pro 3rd gen (12.9 inch)
+    - ... but that doesn't make sense because the screen dimensions are identical, and the 2nd gen isn't available in the simulator, and anyway according to the simulator, 3rd gen is 11-inch, so I think they probably meant...
+        - iPad Pro 3rd gen (11 inch) ()
+        - iPad Pro 5th gen (12.9 inch) ()
+- For any devices you don't own, run the app in the simulator and then record a video on your Mac:
+    - Open QuickTime Player
+    - Choose File > New Screen Recording
+    - Click on the down arrow next to the Record button
+    - Select Internal Microphone
+    - Record
+- [More here](https://developer.apple.com/support/app-previews/)
+
 ## How to lock screen orientation / prevent autorotate
 
 - Blimey, this is NOT easy to Google!
