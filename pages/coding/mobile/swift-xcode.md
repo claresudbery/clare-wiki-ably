@@ -449,6 +449,28 @@ An App Clip is a small part of an app that lets you do a task quickly, like rent
                 - note that this says to add `type=h264` but this has now changed to `codec=h264`
             - Install ffmpeg
                 - Use `brew install ffmpeg` but be aware that it downloads a lot of stuff and takes quite a long time!
+                    - For me some things seemed to hang, so I did Ctrl + C and got the following messages:
+                    - `brew postinstall fontconfig`
+                    - `brew postinstall python@3.9`
+```
+curl is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have curl first in your PATH, run:
+  echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find curl you may need to set:
+  export LDFLAGS="-L/usr/local/opt/curl/lib"
+  export CPPFLAGS="-I/usr/local/opt/curl/include"
+
+For pkg-config to find curl you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig"
+
+
+zsh completions have been installed to:
+  /usr/local/opt/curl/share/zsh/site-functions
+```
                 - Note that I followed the instructions below but it was a bit of a faff! After going through all that pain I [discovered something](https://superuser.com/questions/624561/install-ffmpeg-on-os-x) saying I could probably have just run `brew install ffmpeg` so I would probably do that next time!
                 - Otherwise follow [these instructions](https://bbc.github.io/bbcat-orchestration-docs/installation-mac-manual/)
                     - one of the instructions says to close a terminal window when you're told that you can
