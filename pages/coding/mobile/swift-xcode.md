@@ -377,6 +377,10 @@ I followed [this tutorial](), but for an app that already existed - was being de
 
 ## Submitting / Deploying to the App Store
 
+- Sections below help with details. 
+- Note that you'll keep clicking Save and submit and it'll keep giving you links to fill more stuff in.
+- It takes a while!
+
 ### Useful links
 
 - [A CodeWithChris tutorial](https://codewithchris.com/submit-your-app-to-the-app-store/)
@@ -391,11 +395,20 @@ I followed [this tutorial](), but for an app that already existed - was being de
 
 ### Copyright
 
-Put your name or your company name. Even if you're not actually registered for copyright, this can help in the event of a claim.
+Put your name or your company name. Even if you're not actually registered for copyright, this can help in the event of a claim. Include a date.
+Like this: 2022 Sudbery Software Engineering Ltd
+
+### Privacy Policy URL
+
+You'll need a privacy policy because if you offer support via a web form that collects email addresses.
+
+En (UK): https://www.iubenda.com/privacy-policy/42682554
+En (US): https://www.iubenda.com/privacy-policy/62922505
 
 ### Description, keywords etc
 
-See Wordlessly readme for values saved for these inputs
+- See Wordlessly readme for values saved for these inputs
+- There are character limits - on Mac the quickest way I found of counting characters was to paste into VS Code and look at the column count at the bottom of the window.
 
 ### App clips
 
@@ -421,10 +434,12 @@ An App Clip is a small part of an app that lets you do a task quickly, like rent
         - iPad Pro 3rd gen (11 inch) ()
         - iPad Pro 5th gen (12.9 inch) ()
 - For any devices you don't own, run the app in the simulator and then record a video on your Mac:
+    - Note that so far the only method I've managed to use successfully is the fourth one below - recording on device
     - First method:
         - Run your app in the simulator from XCode
         - File => Record screen
         - Once you're done, a small screenshot will pop up - you can right click on that and choose something like Save to Desktop
+        - Sadly though, none of these worked for me - I just got errors in the app store saying the dimensions were wrong.
     - Second method:
         - Start your simulator
         - On command line: 
@@ -454,6 +469,11 @@ An App Clip is a small part of an app that lets you do a task quickly, like rent
         - Click on the down arrow next to the Record button
         - Select Internal Microphone
         - Record
+    - Fourth method
+        - Record on iphone or other device
+        - the drawback is it only works for devices you own
+        - I managed to record the 5.5" version on my iPhone 8 Plus
+        - Weirdly the one I uploaded was actually a cropped version - I clipped the red "Recording" bar from the top - but it didn't complain about dimensions!
 - [More here](https://developer.apple.com/support/app-previews/)
 
 ## How to lock screen orientation / prevent autorotate
