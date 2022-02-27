@@ -89,3 +89,27 @@ permalink: /pages/organising/podcasts/Audacity
 - Effect => Graphic EQ (or "Equalisation" on other versions of Audacity)
     - Manage => Factory Presets => 100Hz rumble
     - You might have to repeat the same effect several times - you can do this with Ctrl + R
+
+### Removing background noise
+
+- Select a silent bit that's nothing but background noise
+- Effects => Noise reduction (or noise removal in older versions)
+- Click Get noise profile
+- Go back and click the entire selection you want noise removed from
+- Effects => Noise reduction again 
+- this time you can click OK and it will reduce noise based on profile it collected previously
+- More [here](https://filmstro.com/blog/how-to-remove-background-noise-in-audacity)
+
+### Looping 
+
+- During playback:
+    - Use Shift + space instead opf just space
+- For export:
+    - Select the bit you want to repeat
+    - Effect => Repeat
+
+### Pasting a chunk of audio without shifting other things out of the way
+
+- Apparently it's not recommended, but...
+- If you really want to overwite existing content, do it like this:
+- Edit > Preferences > Tracks > Tracks Behaviors > Editing a clip can move other clips

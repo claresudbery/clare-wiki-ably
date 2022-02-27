@@ -260,3 +260,9 @@ gov
 - Youtube (free if you have gmail account)
 - Shotcut (free on windows desktop)
 
+## Creating nicely formatted snippets of code for slides etc
+
+- One good tool for snippets of code is [carbon.now](https://carbon.now.sh/)
+  - It can be fiddly if you want to correct mistakes (because you can’t necessarily reverse engineer back to code from rendered image)
+  - But it turns out you can give it a gist url](https://github.com/carbon-app/carbon#usage), which is a much better way of keeping track 
+

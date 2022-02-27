@@ -88,6 +88,14 @@ See also: [Fun games](/pages/think/life/Fun-Games).
   - left, line, right, square, circle, middle, down, up, bendy, big, please
 - the other(s) try/tries to draw the picture.
 
+### The Counting Game
+
+- People take it in turns to say (or type in the chat) numbers
+- You can't talk over anyone
+- You can't say more than one number
+- You have to go back to the beginning if those rules are broken
+- You're trying to count from one to ten
+
 ## Links to Games Elsewhere
 
 - [Play14](https://play14.org/) has a lot of games listed [here](https://play14.org/games/), and some remote-friendly games [here](trello.com/b/wAp7ZnnX/remote-friendly-games)
