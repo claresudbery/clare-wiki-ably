@@ -11,6 +11,9 @@ permalink: /pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL
     - !Warning!
     - Be aware that for many things WSL 2 is probably better (for instance if you want to run [node js](/pages/coding/webdev/js/Node-JS)). I USED to be that in order to get this you had to enter the Windows Insider programme, which could mean that your operating system will be potentially unstable. This is no longer true (as of at least Sept 2020). You can now install WSL2 without being a member of the Windows Insider programme. [Instructions here](https://docs.microsoft.com/en-gb/windows/wsl/install-win10).
         - I have a colleague, though, who reports that he has node js working fine on WSL (rather than WSL2), running in Windows 10 on a Debian distro and using the WSL extension in VS Code (not sure if this is [this one](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)?)
+        - I got this extension working in VS Code and it's pretty good.
+            - Note that you can open it up quickly by running `code .` on the command line from inside the folder you want to open.
+            - If you have any problems, try closing VS Code and opening it up again from the command line (using `code .`).
 
 ### If you have a version of Windows that needs Windows Insider to install WSL2
 

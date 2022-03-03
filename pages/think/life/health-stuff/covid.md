@@ -114,6 +114,7 @@ NB: This collection is months old now. Do you really need to follow these links?
   - [The Mermaid's Tongue](https://www.themermaidstongue.com/)
   - [The Kindling Hour](https://www.thekindlinghour.com/)
 - [Generic nice stuff](/pages/think/life/Nice-Stuff)
+- [Cocktail making](http://www.drinksbypost.co.uk) - these people will send you a cocktail making kit, then you can all just log on, make cocktails together and have a party
 
 ### Positive stuff
 

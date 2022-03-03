@@ -181,6 +181,10 @@ permalink: /pages/coding/infra/cmd/Linux
   - Normally if you’re struggling in the terminal, you’ll want to look
     up unix commands
 
+## Windows
+
+- If you want to run Linux on Windows, you need [WSL](/pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL).
+
 ## Yum
 
   - Yum is the package manager used in CentOs Linux

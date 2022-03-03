@@ -271,6 +271,7 @@ More examples of `stdin` and `stdout` testing in [this file here](https://github
   - Enter `exit` to leave)
   - Enter `load './myfile.rb'` to load a Ruby file called `myfile.rb` in the current folder (`./`)
     - To reload, just enter `load './myfile.rb'` again.
+  - An alternative to `IRB` is this [handy online repl tool](https://replit.com/languages/ruby)
 
 - The **puts** statement is how you can output to console - useful for
   quick-and-dirty debug logging.
@@ -548,3 +549,8 @@ For instance, consider a class that has a method get_data. This method does an e
 From [here](https://stackoverflow.com/questions/5626193/what-is-monkey-patching).
 
 Caution: "In our experience, having monkey-patched gems is usually one of the hardest things to deal with. We have to spend hours updating monkey-patched gems to make them compatible with newer Rails APIs. So please keep that in mind before monkey patching Rails core libraries or gems that depend on specific Rails versions." From [here](https://www.fastruby.io/blog/rails/upgrades/how-to-stay-up-to-date.html).
+
+## Troubleshooting
+
+See the [Ruby Gems](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems) page for most Ruby Troubleshooting stuff (including getting Ruby working on a 2022 Macbook)
+

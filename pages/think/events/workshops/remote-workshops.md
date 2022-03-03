@@ -93,6 +93,7 @@ The reason this is so important is that otherwise, participants are getting audi
 ## Tools others have recommended
 
 - [Wonder Me](https://www.wonder.me/) - allows you to move an avatar around in a physical space, as well as using video and audio. I have no experience of setting this up but it was used for [GovCampNorth 2020](https://govcampnorth.co.uk/) if you want to know more.
+- [Around](https://www.around.co/) - "like Google meet but better"
 - [Gather](https://gather.town/) is a video-calling space that lets multiple people hold separate conversations in parallel, walking in and out of those conversations just as easily as they would in real life.
 - [Discord](https://discord.com/) - Looks a lot like Slack, but you can create "rooms" for video meetings, which means you can move around between rooms in the same way you can move around between channels. I have no experience of setting this up but it was used for [Manchester BarCamp 2020](https://www.barcampmanchester.co.uk/) if you want to know more.
 - [Qiqochat - for interactive and participatory online events](https://qiqochat.com/about)

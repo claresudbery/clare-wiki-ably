@@ -13,11 +13,11 @@ permalink: /pages/think/code-princ/Useful-Terms
 
 ## Symbolic links
 
-  - They can be checked into source control
-
-  - They allow you to replace a file with a link to another file
-
-  - Same thing as an alias / shortcut in Windows?
+- They can be checked into source control
+- They allow you to replace a file with a link to another file
+- Same thing as an alias / shortcut in Windows?
+  - More command-liney, I think
+- If you want to find the path of the original file that a symbolic link is pointing to: Whilst in the home directory of the user in terminal If you do `ls -lart | grep .zshrc` where `.zshrc` is the name of the symbolic link (or maybe the name of the file which is the target of the symbolic link?) that should show you the path of the symbolic link.
 
 ## Gameday
 

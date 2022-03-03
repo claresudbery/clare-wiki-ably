@@ -249,6 +249,12 @@ require 'bundler/setup'
 
 ## Errors / problems you might see
 
+### Trouble getting Ruby working on a 2022 Macbook
+
+- (Seen by me when trying to get set up for the Made Tech Academy, Feb 2022)
+- [Getting Ruby working on a 2022 Macbook](https://betterprogramming.pub/ruby-on-apple-silicon-m1-macs-fb159849b2f5)
+- "I followed the step in this article in my laptop to check my rbconfig, and found that the system `ruby v.2.6.8` provided by Apple is indeed `"host_cpu"=>"x86_64"` , while the ruby v.2.6.9 that I installed via rbenv is `"host_cpu"=>"aarch64"`  (=arm64).  So perhaps some problem in apple's default settings maybe...?"
+
 ### "Your XXX version is a.b.c, but your Gemfile specified d.e.f"
 
 (See also [Conflicting Ruby versions](#conflicting-ruby-versions) below.)
