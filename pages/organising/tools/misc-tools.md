@@ -213,6 +213,11 @@ re, sorry!)
 - Find out what people are searching for!
   - [Here](https://trends.google.com/trends)
 
+### Gmail - downloading monthly Google Play 100Gb receipt
+
+- It's ridiculously difficult, but here's how:
+  - Three dots, top right of email => Print => Print as PDF
+
 ## How to make Zoom record individual voices locally
 
 - Settings => Recording => Local Recording => Record a separate audio file for each participant who speaks
