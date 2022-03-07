@@ -8,3 +8,10 @@ permalink: /pages/organising/tips/non-tech/Misc-Non-Tech-Tips
 ## Misc
 
 - [Useful tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7ae17d68-c956-43fd-841f-a3daba3b85ef&query=tag%1FUseful%1FtagGuid%3A445d553a-0d3d-80ce-5f4e-641a12368bae%1Eview%3AVIEW%2FALL_NOTES&)
+
+## Dust
+
+The links below were just from one random google. I make no claims for their authority or usefulness. The only reason I'm storing them here is because they were interesting and I'd like to be able to find them again.
+
+- [Tips to avoid dusting](https://www.apartmenttherapy.com/easy-ways-to-prevent-dust-and-avoid-dusting-260706)
+- [Dust-repellant coating](https://www.plasticstoday.com/packaging/nano-coating-plastics-repels-dirt-dust-and-stains-packaging-and-more#:~:text=HomePackaging-,Nano%20coating%20for%20plastics%20repels%20dirt%2C%20dust,stains%20on%20packaging%20and%20more&text=MetaShieldCLEAN%20protects%20products%20and%20packaging,View%20the%20demo%20video.)
