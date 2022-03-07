@@ -49,7 +49,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - [Theatrical Players Refactoring Kata](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
     - [Supermarket Receipt Refactoring Kata](https://github.com/emilybache/SupermarketReceipt-Refactoring-Kata)
     - Gilded Rose - see above
-- Jim Jeffries (@JJeffires1): "I sometimes use the [trip service kata from @sandromancuso](https://github.com/sandromancuso/trip-service-kata)
+- Jim Jeffries (@JJeffries1): "I sometimes use the [trip service kata from @sandromancuso](https://github.com/sandromancuso/trip-service-kata)
  for this. It's partly about getting tests round some code, but if you do that bit beforehand you can get straight into refactoring."
  - @LisaCrispin says "@janetgregoryca has a great non-code exercise for that."
 

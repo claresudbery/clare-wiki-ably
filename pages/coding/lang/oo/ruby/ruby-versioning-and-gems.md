@@ -130,23 +130,22 @@ You can install gems using the `gem install` command, and there are lots of othe
 
 ### Mac (OSX) and Linux
 
-The three main Ruby version management systems for Mac OSX and Linux (including WSL on Windows, but NOT [vanilla Windows via GitBash](#windows)) are:
-
-- [chruby](https://github.com/postmodern/chruby)
-    - This is what I'm currently using, via my Ubuntu system on Windows (NOT Ubuntu 16.04 (just because Ubuntu is the one I keep up to date and has everything in `~/.bashrc`))
-    - To list Ruby versions currently installed, just enter `chruby` at the command prompt.
-    - To switch to a new version of Ruby do the following:
-        - If the new version not already installed:
-            - Cmd: `ruby-install ruby 2.6.5` 
-            - Restart your shell by typing `exit` and then restarting.
-        - Then run cmd `chruby ruby-2.6.5` to switch to the new version. You can also put this command into your `~/.bashrc` to effectively make that version your default, but remember to edit it when you upgrade Ruby!
-    - More on chruby [here](https://daqo.medium.com/using-chruby-as-the-default-ruby-version-manager-c11346e3cc) and [here](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/managing-ruby-versions#:~:text=Managing%20Ruby%20Versions&text=Note%3A%20This%20lesson%20goes%20into,should%20use%20Ruby%20Version%20Manager.)
-- [rvm](https://rvm.io/)
-- [rbenv](https://github.com/rbenv/rbenv)
-
-[Here is a brief discussion / comparison of all three](https://stackoverflow.com/questions/22153521/what-are-the-differences-between-rbenv-rvm-and-chruby).
-
-No matter which system you use, the file `.ruby-version` can be used to specify your Ruby version. This is then referred to in `Gemfile` like this: `ruby File.read(File.expand_path("../.ruby-version", __FILE__)).strip`
+- The below notes are now probably out of date.
+    - [This page](https://mac.install.guide/ruby/1.html) is more up to date (Mar 2022)
+- The three main Ruby version management systems for Mac OSX and Linux (including WSL on Windows, but NOT [vanilla Windows via GitBash](#windows)) are:
+    - [chruby](https://github.com/postmodern/chruby)
+        - This is what I'm currently using, via my Ubuntu system on Windows (NOT Ubuntu 16.04 (just because Ubuntu is the one I keep up to date and has everything in `~/.bashrc`))
+        - To list Ruby versions currently installed, just enter `chruby` at the command prompt.
+        - To switch to a new version of Ruby do the following:
+            - If the new version not already installed:
+                - Cmd: `ruby-install ruby 2.6.5` 
+                - Restart your shell by typing `exit` and then restarting.
+            - Then run cmd `chruby ruby-2.6.5` to switch to the new version. You can also put this command into your `~/.bashrc` to effectively make that version your default, but remember to edit it when you upgrade Ruby!
+        - More on chruby [here](https://daqo.medium.com/using-chruby-as-the-default-ruby-version-manager-c11346e3cc) and [here](https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/managing-ruby-versions#:~:text=Managing%20Ruby%20Versions&text=Note%3A%20This%20lesson%20goes%20into,should%20use%20Ruby%20Version%20Manager.)
+    - [rvm](https://rvm.io/)
+    - [rbenv](https://github.com/rbenv/rbenv)
+    - [Here is a brief discussion / comparison of all three](https://stackoverflow.com/questions/22153521/what-are-the-differences-between-rbenv-rvm-and-chruby).
+- No matter which system you use, the file `.ruby-version` can be used to specify your Ruby version. This is then referred to in `Gemfile` like this: `ruby File.read(File.expand_path("../.ruby-version", __FILE__)).strip`
 
 ### Windows
 

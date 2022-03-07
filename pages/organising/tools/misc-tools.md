@@ -201,7 +201,7 @@ re, sorry!)
 
 ### Strikethrough in docs
 
-- Alt + Shift + 5
+- Alt + Shift + 5 (Google docs)
 - (In Word it's Ctrl + Alt + S)
 
 ### Google sheets on iphone
