@@ -362,8 +362,9 @@ I followed [this tutorial](), but for an app that already existed - was being de
     - Once you're all done, go back to the same screen by clicin In-App Purchases on the left, and Turn On the billing grace period
     - Check your basic App information (also on the left in App Store Connect)
     - Set up a Sandbox user, so that your testers can test in-app purchases without actually having to buy it
-        - App Store Connect home page
-        - On the left, Sandbox testers
+        - App Store Connect home page => My Apps => select your app
+        - at the very top, select Users and Access
+        - On the left, Sandbox - testers
         - Add a user
         - It has to have a different email address to any other existing user, but you can do the trick of things like emailaddress+test01@gmail.com
         - Every time you buy something using that user, it sort of gets used up - so you might need multiple ones of these
