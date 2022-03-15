@@ -72,7 +72,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - Action Learning
 	- see [dedicated Action Learning page](/pages/think/events/workshops/Action-Learning).
 - Lots of consultancy examples
-	- (available to Clare only): Until I've processed them, just need to look in this folder and trawl through the presentations: OneDrive\TW-Stuff\Clients\Pitches 
+	- (available to Clare only): Until I've processed them, just need to look in this folder and trawl through the presentations: OneDrive\T..\Cl...\Pi... 
 - Leadership style
 	- based on Kylie Yearsley's workshop at AOTB21. [See below](#leadership-style).
 
