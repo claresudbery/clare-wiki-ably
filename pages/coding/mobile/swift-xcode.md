@@ -516,3 +516,7 @@ Like this:
 var score = 85
 var str = "Your score was \(score)"
 ```
+
+## Emoji Unicode icon List
+
+[Full list](https://unicode.org/emoji/charts/full-emoji-list.html)
