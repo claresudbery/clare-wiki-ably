@@ -180,7 +180,7 @@ See [below](#quick-start-kata-guide) for a quick start guide if writing a kata f
 ### Front end testing
 
 - [Helpful guide on using `Rack::Test`](http://sinatrarb.com/testing.html) to test what is returned by your routes.
-  - Note that this allows you to interrogate the dom, but it doesn't automatically give you the capacity to test user interactions - eg button clicks. For that you will need something like [Capybara](http://testing-for-beginners.rubymonstas.org/headless/capybara.html) or [Cypress](https://www.toolsqa.com/cypress/what-is-cypress/).
+  - Note that this allows you to interrogate the dom, but it doesn't automatically give you the capacity to test user interactions - eg button clicks. For that you will need something like [Capybara](http://testing-for-beginners.rubymonstas.org/headless/capybara.html) or [Cypress](/pages/coding/tools/testing/Cypress).
 - Examples of front end testing using Rack::Test with Sinatra:
   - [In cah-answer-generator](https://github.com/claresudbery/cah-answer-generator/blob/main/spec/cahanswers_spec.rb)
   - [In mars-rover-kata-ruby](https://github.com/claresudbery/mars-rover-kata-ruby/blob/main/spec/webapp_spec.rb)
