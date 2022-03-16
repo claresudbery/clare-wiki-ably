@@ -97,7 +97,8 @@ Sarah Cooper: [10 tricks for appearing smart during meetings](https://thecooperr
 
 ## What's that popular front end / end to end testing framework?
 
-[Cypress](https://www.cypress.io/how-it-works/).
+- [Cypress](https://www.cypress.io/how-it-works/).
+- I now have a wiki page on that [here](/pages/coding/tools/testing/Cypress).
 
 ## When was Maisie born?
 
