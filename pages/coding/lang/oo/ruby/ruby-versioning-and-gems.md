@@ -132,6 +132,7 @@ You can install gems using the `gem install` command, and there are lots of othe
 
 - The below notes are now probably out of date.
     - [This page](https://mac.install.guide/ruby/1.html) is more up to date (Mar 2022)
+    - You can use [asdf](https://asdf-vm.com/) to manage Ruby versions - [some details here](https://mac.install.guide/ruby/5.html) 
 - The three main Ruby version management systems for Mac OSX and Linux (including WSL on Windows, but NOT [vanilla Windows via GitBash](#windows)) are:
     - [chruby](https://github.com/postmodern/chruby)
         - This is what I'm currently using, via my Ubuntu system on Windows (NOT Ubuntu 16.04 (just because Ubuntu is the one I keep up to date and has everything in `~/.bashrc`))
