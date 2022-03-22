@@ -10,6 +10,7 @@ permalink: /pages/coding/dotnet/DotNet-Core-Resources
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
+- [ContosoPizza](https://github.com/claresudbery/ContosoPizza) - from [this tutorial](https://docs.microsoft.com/en-us/learn/modules/build-web-api-aspnet-core/3-exercise-create-web-api) (see DotNetCoreMVC.docx in Events / Samba / Workshops / DotNetCore)
 - [interview-codebase-stage3-csharp (PRIVATE)](https://github.com/claresudbery/interview-codebase-stage3-csharp)
 - Hack Manchester 2018:
   - [TimeTravelHack (Hack Mcr 2018)](https://github.com/claresudbery/TimeTravelHack.git) 
@@ -23,9 +24,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - InSimpleTerms: Check the C# label (there are quite a few blog posts, but they're pretty much copies of what's in the word doc beow)
 - My notes: 
+    - in Events / Samba / Workshops / DotNetCore
     - DotNetCoreMVC.docx 
-      - !!! If you're wondering where on earth all my useful DotNetCore noites have gone, this is where they are!
+      - !!! If you're wondering where on earth all my useful DotNetCore notes have gone, this is where they are!
       - At the time of writing (March 20222), I haven't got round to migrating them into clare-wiki
     - DotNetCoreMVC.pptx 
-    - in Events / Samba / Workshops / DotNetCore
 
