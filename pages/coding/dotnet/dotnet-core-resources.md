@@ -24,6 +24,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - InSimpleTerms: Check the C# label (there are quite a few blog posts, but they're pretty much copies of what's in the word doc beow)
 - My notes: 
     - DotNetCoreMVC.docx 
+      - !!! If you're wondering where on earth all my useful DotNetCore noites have gone, this is where they are!
+      - At the time of writing (March 20222), I haven't got round to migrating them into clare-wiki
     - DotNetCoreMVC.pptx 
     - in Google Drive / Clients / SMBC / Workshops / DotNetCore
 
