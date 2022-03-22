@@ -352,3 +352,44 @@ I found this quite tricky. This is what worked in the end:
         If you are asked for the `postgres` password after running a `sudo`
         command, it’s probably because you ran a `sudo` command after
         running `sudo su`.
+
+## Heroku
+
+### PostGreSQL, Ruby, Sinatra/Rails and Heroku
+
+- I've got this working on my [site](https://github.com/claresudbery/wordlessly) (accessible to Clare only) - there's more useful stuff in the readme.
+
+- To get all this working on heroku, you need the addon:
+    - `heroku addons:create heroku-postgresql:hobby-dev`
+    - Pay attention to the database info that gets returned when you run this
+    - you'll need it for `.env`
+        - (The stuff in `database.yml` will somehow sort itself out via heroku?)
+        - I got this: `Created postgresql-defined-34084 as DATABASE_URL`
+        - Then what I had to do was create a `.env` file in my root folder, 
+            - and put this line in it: `DATABASE_URL=postgresql-defined-34084`
+        - Use `heroku addons:docs heroku-postgresql` to view documentation
+- I'm using ActiveRecord and postgreSQL
+    - Even though this is Sinatra rather than Rails, the Rails docs contain everything you need
+    - I [installed postgres first](https://postgresapp.com/)
+    - Then I followed [this tutorial](https://medium.com/@dmccoy/deploying-a-simple-sinatra-app-with-postgres-to-heroku-c4a883d3f19e)
+- See `database.yml` for database name
+- See the db/migrate folder for the code that creates and configures tables  
+    - You can create a migration for a new table on command line like this: 
+    - `rake db:create_migration NAME=create_table_name`
+    - ...where `table_name` is the name of the table you’d like to create. 
+- See the db/models folder for associated record classes.  
+- Don't forget to create new databases before running migrations to create tables!  
+    - Like this: `createdb database_name`  
+    - Also you need to make sure your config/database.yml has correct database name in it  
+    - Also don't get confused between database name and table name!  
+- ActiveRecord relies on various naming conventions, so table and class names are important.  
+- Run `rake db:migrate` on the command line to run migrations and create tables
+    - To run remotely on heroku, use `heroku run rake db:migrate`
+    - Don't forget to create database first! 
+        - `heroku addons:create heroku-postgresql:hobby-dev`
+        - (I think that's instead of this: `heroku run createdb database_name`)
+- Useful links:
+    - [ActiveRecord migrations](https://guides.rubyonrails.org/active_record_migrations.html)
+    - [ActiveRecord - basic CRUD operations](https://guides.rubyonrails.org/active_record_basics.html)
+    - [Install postgres](https://postgresapp.com/)
+    - [Tutorial for postgres and Sinatra and Heroku](https://medium.com/@dmccoy/)

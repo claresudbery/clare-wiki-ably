@@ -26,8 +26,13 @@ For [Wordlessly](https://github.com/claresudbery/wordlessly/blob/master/README.m
 - Login to heroku: `heroku login`
 - Create an app: `heroku apps:create your-app-name`
 - Run `git push heroku master` (note that even if your main git branch is named `main`, you still use `master` in this command)
-- Ensure that at least one instance of the app is running: `heroku ps:scale web=1`
-- Open the website: `heroku open`
+    - !! But if you get the error "fatal: 'heroku' does not appear to be a git repository", you need to run `heroku git:remote -a your-app-name` first (fill in your app name).
+- Ensure that at least one instance of the app is running: `heroku ps:scale web=1 --app your-app-name`
+- Open the website: `heroku open --app your-app-name`
+
+### Database stuff
+
+- For Ruby, PostgreSQL, Sinatra/Rails and heroku see [here](/pages/coding/data/PostgreSQL-and-PSQL#heroku)
 
 ### Deploying to heroku (Ruby) with Circle CI
 
