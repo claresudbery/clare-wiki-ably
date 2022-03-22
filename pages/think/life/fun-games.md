@@ -74,6 +74,12 @@ Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-page
 
 Guess the guesses when looking at someone else's already-played [Wordle game](https://www.powerlanguage.co.uk/wordle/)
 
+## The name game
+
+Work co-operatively to write all your names down. How can you do it more quickly?
+
+![the name game](/resources/images/the-name-game.png)
+
 ## Remote Games
 
 ### Jackbox.tv
