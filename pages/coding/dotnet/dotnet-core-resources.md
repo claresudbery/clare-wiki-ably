@@ -27,5 +27,5 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - !!! If you're wondering where on earth all my useful DotNetCore noites have gone, this is where they are!
       - At the time of writing (March 20222), I haven't got round to migrating them into clare-wiki
     - DotNetCoreMVC.pptx 
-    - in Google Drive / Clients / SMBC / Workshops / DotNetCore
+    - in Events / Samba / Workshops / DotNetCore
 

@@ -48,6 +48,13 @@ Longer Summary:
 
 ## Macs
 
+### How do I know whether I have Intel or Silicon, or x64 vs ARM64?
+
+-	Check About this Mac (top left) => Processor
+-	An Intel processor is x64
+-	An M1 processor = Apple Silicon = ARM64
+
+
 ### Mission Control
 
 For some reason my brain confuses this with Activity Monitor (the equivalent of Windows Task Manager).
