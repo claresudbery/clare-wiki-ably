@@ -38,7 +38,8 @@ See [below](#quick-start-kata-guide) for a quick start guide if writing a kata f
 - `bundle add rspec`
   - Or just add `gem 'rspec'` to end of gemfile
   - And then `bundle install –path ‘vendor/bundle’`
-- Create a spec folder and a spec file, eg `fizzbuzz_spec.rb`
+  - and `rspec --init`
+- Create a spec folder (might have already been done when you ran `rspec --init`) and a spec file, eg `fizzbuzz_spec.rb`
 - Now `bundle exec rspec`
 - Create something like `fizzbuzz.rb` to contain the code under test - can stick it in root
   - For first demo you might want to put executable code into spec file
@@ -82,6 +83,13 @@ See [below](#quick-start-kata-guide) for a quick start guide if writing a kata f
 - More examples of sinatra apps I have created:  
   - [cah-answer-generator](https://github.com/claresudbery/cah-answer-generator)
   - [mars-rover-kata-ruby](https://github.com/claresudbery/mars-rover-kata-ruby)
+  - [word game](https://github.com/claresudbery/wordlessly)
+
+### Using Sinatra to build a web api
+
+- This [word game repo of mine](https://github.com/claresudbery/wordlessly) builds an API
+  - Check out [the readme](https://github.com/claresudbery/wordlessly/blob/master/README.md#posting-to-the-api) for some notes
+
 
 ## Deployment with Heroku
 
