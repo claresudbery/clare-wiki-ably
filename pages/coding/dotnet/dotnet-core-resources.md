@@ -19,6 +19,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [ConsoleCatchall.NetCore (PRIVATE)](https://github.com/claresudbery/ConsoleCatchall.NetCore)
 - [NumberToLCD_Kata (PRIVATE)](https://github.com/claresudbery/NumberToLCD_Kata)
 - [Reconciliate](https://github.com/claresudbery/Reconciliate)
+- [Dockerising .Net Core and deploying to heroku](https://github.com/claresudbery/dotnet-docker-clare)
 
 ## Docs and Blog Posts
 
