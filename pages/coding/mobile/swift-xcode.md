@@ -288,6 +288,13 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - (see the Project => Build For menu)
 - Run all tests: Splat + U
 
+## Swift Debugging
+
+- More [here](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs)
+- To watch particular variables:
+    - Use console, bottom right, where logging info occurs
+    - Type `v` then eg `self._guessableWord._currentWord` then hit Enter
+
 
 ## New classes and their targets
 

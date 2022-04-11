@@ -24,6 +24,7 @@ For [Wordlessly](https://github.com/claresudbery/wordlessly/blob/master/README.m
 - Install [everything you need to deploy a ruby app to Heroku](https://devcenter.heroku.com/articles/getting-started-with-jruby)
 - Install [heroku command line tools](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli)
 - Login to heroku: `heroku login`
+    - if you get `bad request` it might mean you forgot to navigate to the project folder first.
 - Create an app: `heroku apps:create your-app-name`
 - Run `git push heroku master` (note that even if your main git branch is named `main`, you still use `master` in this command)
     - !! But if you get the error "fatal: 'heroku' does not appear to be a git repository", you need to run `heroku git:remote -a your-app-name` first (fill in your app name).
