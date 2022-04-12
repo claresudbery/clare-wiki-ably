@@ -415,7 +415,7 @@ En (US): https://www.iubenda.com/privacy-policy/62922505
 
 ### Description, keywords etc
 
-- See Wordlessly readme for values saved for these inputs
+- See Wordlessly notes.md for values saved for these inputs
 - There are character limits - on Mac the quickest way I found of counting characters was to paste into VS Code and look at the column count at the bottom of the window.
 
 ### App clips
