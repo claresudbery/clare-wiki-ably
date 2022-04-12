@@ -39,6 +39,18 @@ documentation)](https://www.postgresql.org/docs/9.2/app-psql.html).
 You can output query results to a file by running the following command:
 `\o out.txt`. After that all query output will go to your file.
 
+### Access local databases on macbook via psql
+
+- so far I've only used this to connect to local database
+  - but I suspect if you want to connect to a remote database (eg heroku)...
+  - ...you can click the + button bottom left to add a new server
+  - then... ok.... um... This doesn't have the same settings as you get in pgAdmin, so I'm not sure how you do this remotely 
+- If you click the elephant in the top system tray
+- then launch the database you want
+- you'll get psql command line for the local database
+- just enter normal SQL statements - eg `select * from guess_sets limit 1;`
+- !!! These statements will have no effect unless you terminate them with a colon!
+
 ## AWS databases
 
 ### Access AWS databases via command line
@@ -64,6 +76,35 @@ You can output query results to a file by running the following command:
         (simple
         guide)](http://postgresguide.com/utilities/psql.html) and [here
         (full docs)](https://www.postgresql.org/docs/9.2/app-psql.html)
+
+### Access Heroku (or local) Databases using pgAdmin 4
+
+- first you need to connect to the remote server (unless you're connecting to local db, in which case skip his bit)    
+    - Right-click on main server group ("Servers" on left)
+    - Select Register => Server
+    - On first tab, just enter a name
+    - Select Connection tab
+        - navigate to root folder in Terminal
+        - `heroku login`
+        - run this on command line: `heroku pg:credentials:url DATABASE`
+          - that's the exact command, including "DATABASE"
+        - Top tip: Rather than manually trying to select the right bits of the resulting output, double-click to make sure you only select one value at a time
+        - Use the following values to fill in Connection tab:
+            - Host name => host
+            - Port => port
+            - Maintenance database => dbname
+            - Username => user
+            - Password => password
+        - !! Important - also go to Advanced tab
+            - Under DB Restriction, paste dbname
+            - Otherwise you'll see thousands of databases!! (no idea why)
+    - [more here](https://stackoverflow.com/questions/11769860/connect-to-a-heroku-database-with-pgadmin)
+        - but it's Register server, not Create server when you start
+- now you can run SQL queries:
+    - Do NOT click the SQL tab
+    - Instead, click the icon top left that looks like a database icon with a kind of arrown on it
+    - Now type your query - eg `select * from guess_sets`
+    - Then click the big play button at the top
 
 ### Access AWS databases using pgAdmin
 
