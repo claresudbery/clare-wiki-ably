@@ -397,6 +397,13 @@ I followed [this tutorial](), but for an app that already existed - was being de
 - [Screenshot sizes and guidelines from a blog](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
 - [Screenshot sizes and guidelines from Apple](https://help.apple.com/app-store-connect/?lang=en/#/dev4e413fcb8)
 
+### Resubmitting an app
+
+- If you've already submitted a version but it failed and you want to try again, you'll need to edit details like version number (rather than adding a new version - this confused me for a while)
+- On the App Store tab you'll see something like "iOS app 3.8"
+- As well as editing version number, you'll also need to scroll down to the Build section at the bottom, then hover over it to remove that build (a red icon will appear on far right) and then add a new build.
+- Once you've saved all the details (top right), you can click the Add for review button - also top right (or not, if you haven't given it all the data it wants)
+
 ### Routing App Coverage File
 
 "According to apple's AppStore guidelines, If your app uses location to provide routing information, you must supply a geographic coverage file before submitting your app to App Review. 8 Dec 2020"
