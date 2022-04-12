@@ -79,6 +79,8 @@ You can output query results to a file by running the following command:
 
 ### Access Heroku (or local) Databases using pgAdmin 4
 
+- install pgadmin
+  - The installation is slightly opaque - you need to click on `pgadmin4-6.8.dmg` [on this page](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.8/macos/) (or get most recent installation [from here](https://www.pgadmin.org/download/pgadmin-4-macos/)) to download the installer, then double-click it after downloading, and it will prompt you to copy it into Applications folder.
 - first you need to connect to the remote server (unless you're connecting to local db, in which case skip his bit)    
     - Right-click on main server group ("Servers" on left)
     - Select Register => Server
