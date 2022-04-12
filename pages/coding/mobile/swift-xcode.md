@@ -482,7 +482,10 @@ zsh completions have been installed to:
 
 ```  
 
-- text inserted to fix formatting issue
+- text
+    - inserted
+        - to fix
+            - formatting issue
                 - Note that I followed the instructions below but it was a bit of a faff! After going through all that pain I [discovered something](https://superuser.com/questions/624561/install-ffmpeg-on-os-x) saying I could probably have just run `brew install ffmpeg` so I would probably do that next time!
                 - Otherwise follow [these instructions](https://bbc.github.io/bbcat-orchestration-docs/installation-mac-manual/)
                     - one of the instructions says to close a terminal window when you're told that you can
