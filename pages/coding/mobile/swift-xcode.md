@@ -96,6 +96,18 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - select project target on left
     - there will be errors with things you can click to re-enter password - probably in two places
 
+#### Error about certificate when deploying
+
+- "Invalid Provisioning Profile Signature. The provisioning profile included in the bundle 'ClareSudbery.WordMistress' (Payload/WordMistress.app) cannot be used to submit apps to the iOS App Store until it has a valid signature from Apple. For more information, visit the iOS Developer Portal. With error code STATE_ERROR.VALIDATION_ERROR.90165 for id 0a31e412-e51d-4966-bf7f-51c61b6732ad"
+- I was deploying from XCode using automatic signing. I whad just installed an OS update (Monterey), but the error happened both before and after the update.
+- Eventually the error went away
+- I did a few things:
+    - Visited the [bundle](https://developer.apple.com/account/ios/identifier/bundle/edit) online, turned something on (Fonts) then instantly off again without saving
+    - Had a go at turning on manual signing during deploy, but got stuck at profiles so cancelled out of that
+    - Went into project settings, selected Signing & Capabilities, unchecked "Automatically manage signing" then immediately checked it again
+        - What's really interesting is that project changes appeared to be made as a result of this action - see commit 1799b61 in WordMistress
+    - I'd originally tried to deploy v 5.9 but it failed with same error as above (I think). At the time I thought it might be because my laptop was awaiting an OS upgrade, so I carried on working and waited for a suitable pause to install the OS update. In the interval I created v 6.0. After the upgrade I went straight to v 6.0 - missing out 5.9 - and got the same error. Ater I'd done the things above I went back and tried to deploy 5.9 - which succeeded. So maybe the problem was that aftre the upgrade I was trying to deploy them out of order?
+
 #### When it tells you to check Devices & Simulators window
 
 - Go to Windows => Devices and Simulators
