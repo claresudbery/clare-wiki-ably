@@ -102,6 +102,7 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
 - I was deploying from XCode using automatic signing. I whad just installed an OS update (Monterey), but the error happened both before and after the update.
 - Eventually the error went away
 - I did a few things:
+    - Removed the build that had been rejected from the pending app review in App Store Connect
     - Visited the [bundle](https://developer.apple.com/account/ios/identifier/bundle/edit) online, turned something on (Fonts) then instantly off again without saving
     - Had a go at turning on manual signing during deploy, but got stuck at profiles so cancelled out of that
     - Went into project settings, selected Signing & Capabilities, unchecked "Automatically manage signing" then immediately checked it again
