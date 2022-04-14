@@ -447,8 +447,9 @@ An App Clip is a small part of an app that lets you do a task quickly, like rent
 - You only need to do them (as of Feb 2022) for the following:
     - iPhone 11 Pro Max (6.5 inch) (1242 x 2688 pixels)
     - iPhone 8 Plus (5.5 inch) (1242 x 2208 pixels)
-    - iPad Pro 3rd gen (11 inch) (1668 x 2388 pixels)
     - iPad Pro 5th gen (12.9 inch) (2048 x 2732 pixels)
+        - you can use these screenshots for both "2nd gen (12.9 inch)" and "iPad Pro 3rd gen (12.9 inch)" in the app store
+        - To record screenshots in the simulator, use File => Save screen
 - [More here](https://developer.apple.com/support/app-previews/)
 - also [more here](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
 
@@ -458,9 +459,8 @@ An App Clip is a small part of an app that lets you do a task quickly, like rent
     - according to the [article I read](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
         - iPad Pro 2nd gen (12.9 inch)
         - iPad Pro 3rd gen (12.9 inch)
-    - ... but that doesn't make sense because the screen dimensions are identical, and the 2nd gen isn't available in the simulator, and anyway according to the simulator, 3rd gen is 11-inch, so I think they probably meant...
-        - iPad Pro 3rd gen (11 inch) ()
-        - iPad Pro 5th gen (12.9 inch) ()
+    - ... That doesn't appear to make sense because the screen dimensions are identical, and the 2nd gen isn't available in the simulator, and anyway according to the simulator, 3rd gen is 11-inch, but anyway it turns out you just need to record screenshots from the simulator for iPad Pro 5th gen (12.9 inch)
+        - you can use these previews for both "2nd gen (12.9 inch)" and "iPad Pro 3rd gen (12.9 inch)" in the app store
 - For any devices you don't own, run the app in the simulator and then record a video on your Mac:
     - Note that so far the only method I've managed to use successfully is the fourth one below - recording on device
     - First method:
