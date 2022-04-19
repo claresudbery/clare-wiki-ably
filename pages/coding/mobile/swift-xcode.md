@@ -340,7 +340,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 
 ## In App Purchases
 
-I followed [this tutorial](), but for an app that already existed - was being deployed to Test Flight but hadn't yet been launched in app store. This is what I needed to do:
+I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started), but for an app that already existed - was being deployed to Test Flight but hadn't yet been launched in app store. This is what I needed to do:
 
 - Sort out the tax / bank account stuff: [AppStore Connect](https://appstoreconnect.apple.com/) => Agreements, Tax and Banking (on the home page, BEFORE you click thrugh to an individual app) => Paid applications => Click any links you see in that row and follow instructions
     - This should involve accepting the Paid Applications agreement, ad then entering bank details
