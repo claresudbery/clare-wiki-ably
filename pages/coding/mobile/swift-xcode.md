@@ -417,6 +417,10 @@ I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-i
 - As well as editing version number, you'll also need to scroll down to the Build section at the bottom, then hover over it to remove that build (a red icon will appear on far right) and then add a new build.
 - Once you've saved all the details (top right), you can click the Add for review button - also top right (or not, if you haven't given it all the data it wants)
 
+### Troubleshooting App Review / App Store Submission
+
+- I've written some notes on this [here in Trello](https://trello.com/c/dyzFQgos/941-app-store-submission).
+
 ### Routing App Coverage File
 
 "According to apple's AppStore guidelines, If your app uses location to provide routing information, you must supply a geographic coverage file before submitting your app to App Review. 8 Dec 2020"
