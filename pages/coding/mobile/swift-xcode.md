@@ -439,6 +439,7 @@ En (US): https://www.iubenda.com/privacy-policy/62922505
 
 ### Description, keywords etc
 
+- !!! If you have more than one primary language (I had EN(UK) and EN(US)) then you have to enter all this stuff TWICE. I got caught out because I only edited it in UK and not in US. I suspect this was a rod I created for my own back by having two primary languages - UK and US - I probably should have just stuck with one.
 - See Wordlessly notes.md for values saved for these inputs
 - There are character limits - on Mac the quickest way I found of counting characters was to paste into VS Code and look at the column count at the bottom of the window.
 
