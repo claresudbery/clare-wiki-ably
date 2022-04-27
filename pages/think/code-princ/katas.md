@@ -10,6 +10,18 @@ permalink: /pages/think/code-princ/Katas
 
 - [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
 - If you follow [this link](https://cyber-dojo.org/creator/choose_problem) you’ll see a list of katas on the left and then when you select one it describes the kata
+- Quick start guide if you're working in "classroom" mode - for instance several pairs working independently on the same exercise:
+    - Go to home page
+    - Click create a new practice
+        - Select exercise and language 
+    - Click Classroom
+    - Note the ID - or note the url after you click OK - or just add your ID to this url: https://cyber-dojo.proagile.se/creator/enter?id=
+    - Now for each pair: 
+        - They'll visit that url, or click "enter an existing practice" and enter the ID
+        - one will have to click "enter group practice as new avatar"
+        - the other will have to click "enter group practice as existing avatar" - selecting the avatar created by the first
+    - The facilitator can watch the progress of the pairs using the following link (add your ID to the end):
+        - https://cyber-dojo.proagile.se/dashboard/show/
 - Quick start guide if you're working solo:
     - Go to [main home page](https://cyber-dojo.org/creator/home) 
     - If this is your first time: Select "Create a new practice"
