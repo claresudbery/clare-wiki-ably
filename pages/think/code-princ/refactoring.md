@@ -72,7 +72,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Some things don't decrease at a constant rate.
     - Some things (concert tickets) lose all value after a certain date.
 - Your challenge is to add a new type of thing with its own rules.
-- There are links in the repo readme about ways of approaching it, and [here](praqma.com/stories/advanced-testing-refactoring-techniques/) are some discussions of different approaches. 
+- There are links in the repo readme about ways of approaching it, and [here](https://www.eficode.com/blog/advanced-testing-refactoring-techniques) are some discussions of different approaches. 
 
 ### Parrot
 
