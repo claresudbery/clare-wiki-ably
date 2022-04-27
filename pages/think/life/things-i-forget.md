@@ -112,6 +112,10 @@ Sigmoidoscopy (like a colonoscopy but camera only looks at only the lower part o
 
 Try inhere, or [finding-things.md in clare-tech](https://github.com/claresudbery/clare-tech/blob/master/organising/private/finding-things.md)
 
+## Where did I note down all my tinyurl links?
+
+Try [here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/finding-things.md#tinyurls) or sign into tinyurl account and see stats in there.
+
 ## What's the name of that Japanese plastic instrument that works a little like a theramin?
 
 Otamatone.
