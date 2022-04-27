@@ -22,6 +22,7 @@ permalink: /pages/think/code-princ/Katas
     - The first thing you see will be an explanation of the problem
     - On the left hand side (depending on language) will be a code file and a test file
         - !! The initial code you see will probably have nothing to do with the actual challenge you are attempting. The platform uses the same "hiker" code by default for all challenges. This code is just there as a guide to give you a reminder of the syntax for tests and code in the language / test platform you have chosen.
+        - You'll have to rename the files - which isn't obvious - the way to do this is to select the file and then click the grey square button to the right of the `+` and `-` buttons, top left
     - Write tests and code to make those tests pass by selecting the files on the left
     - Your first job is to write a test and see it fail. Then make it pass. Your next job is to write more failing tests, one at a time, and make them pass to gradually build a solution. Use tiny steps! The smaller the better.
     - Keep clicking test after every code change, to run the tests
