@@ -92,16 +92,17 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         - Emily uses an approval testing tool from texttest.org which has been implemented in many different languages:
         - Full details are [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests), but here is a summary:
         - `TextTest` is a Python-based tool, 
-            - It has to be installed separately.            
+            - It has to be installed separately (see below).            
             - Once you've installed `TextTest` you need to go to the `texttests` sub-folder in the Gilded Rose repo and find the file `texttests\config.gr` and uncomment the lines that relate to the language you're using.
                 - You also need to build the code in whatever language you're using
                 - For instance if you're using `C#`, you need to build the executable that's referred to in `config.gr`
                 - Note that the default value for `C#` in `config.gr` is incorrect - it should be `/csharp/bin/Debug/csharp.exe` rather than `/GildedRose.exe`
-                - Now you can run the approval tests 
+                - Now you can run the approval tests, by running `testtext &` on the command line 
             - You can install the [GUI tool for Windows here](https://sourceforge.net/projects/texttest/)
                 - I had to click the Download button a few times before it actually downloaded - I don't know why
                 - Then I had to run the tool manually, close it, and restart my bash prompt before I could run the Gilded Rose approval tests
                     - Do this by running `texttest &` on the command line in the root Gilded Rose folder - this will bring up the UI
+                    - (First edit `config.gr` - see above)
                     - now you have to select ThirtyDays on the left, and press the run button at the top of the screen.
                     - This will open a new window with the results of the tests. If they fail, you can click Approve to make the new results be the new master, or you can just close down the window if you don't want to do that.
                 - There are also tools for Linux and Mac in the "Installing TextTest Development Tools" section [on this page](https://texttest.org/)
