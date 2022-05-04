@@ -379,7 +379,11 @@ I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-i
                 - [Here is a list of acceptable dimensions](https://i.stack.imgur.com/2KgKJ.png)
                     - eg 920 x 640 (h x w), which is what I chose
                 - [More here](https://stackoverflow.com/questions/44083933/itunes-connect-you-must-upload-a-valid-screenshot)
-    - Once you're all done, go back to the same screen by clicin In-App Purchases on the left, and Turn On the billing grace period
+        - Review notes
+            - !! It turns out there's a separate text input for in-app purchases which gets used for app review. This is why they kept complaining they couldn't fnd my in-app purchases!
+            - It's at the bottom of the in-app purchases page when you configure it in App Store Connect
+            - First select the app, then select In-App Purchases ob the left under Features, then scroll to Review Notes at the bottom of the page.
+    - Once you're all done, go back to the same screen by clicking In-App Purchases on the left, and Turn On the billing grace period
     - Check your basic App information (also on the left in App Store Connect)
     - Set up a Sandbox user, so that your testers can test in-app purchases without actually having to buy it
         - App Store Connect home page => My Apps => select your app
