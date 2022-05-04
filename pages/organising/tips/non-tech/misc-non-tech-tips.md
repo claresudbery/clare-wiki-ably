@@ -15,3 +15,10 @@ The links below were just from one random google. I make no claims for their aut
 
 - [Tips to avoid dusting](https://www.apartmenttherapy.com/easy-ways-to-prevent-dust-and-avoid-dusting-260706)
 - [Dust-repellant coating](https://www.plasticstoday.com/packaging/nano-coating-plastics-repels-dirt-dust-and-stains-packaging-and-more#:~:text=HomePackaging-,Nano%20coating%20for%20plastics%20repels%20dirt%2C%20dust,stains%20on%20packaging%20and%20more&text=MetaShieldCLEAN%20protects%20products%20and%20packaging,View%20the%20demo%20video.)
+
+## Parking Fine Appeals
+
+- [This article](https://www.moneysavingexpert.com/reclaim/private-parking-tickets/) is really useful
+- I successfully appealed a fine from Jacksons Boat car park in Dec 2019
+    - I had to take photos and fill in an online form
+    - Details in "Jacksons Parking Appeal" folder in my Dropbox

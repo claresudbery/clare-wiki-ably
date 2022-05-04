@@ -86,10 +86,6 @@ Answer: [Sliming](https://clare-wiki.herokuapp.com/pages/think/code-princ/testin
 It's New Orleans.
 This won't make much sense to anyone else, but because it has a three-letter prefix to its name, I routinely get it confused with Los Angeles and Las Vegas, even though they have very little else in common.
 
-## What does taxonomy mean?
-
-Classification.
-
 ## Who's that woman that has that website with that funny thing about appearing smart in meetings?
 
 
@@ -223,3 +219,19 @@ Ing Direct.
 Goodhart's Law:  
 - Anything you measure and start to use as a target can be gamed
 - Also [as Woody Zuill quoted recently](https://twitter.com/WoodyZuill/status/1493228883147063296?s=20&t=zoFnbfK_nHcoM7MDsrhUkg), "If you try to improve the performance of a system of people, machines, and procedures by setting numerical goals for the improvement of individual parts of the system, the system will defeat your efforts and you will pay a price where you least expect it.” - Myron Tribus
+
+## What is a "heuristic"?
+
+- A rule of thumb. 
+- A pattern. 
+- A learnt behaviour, that I can do without thinking
+    - In the book Thinking Fast and Slow, heuristics are described as the things our brain does quickly without thought
+
+## What is a "taxonomy"?
+
+- A classification
+- A categorisation
+- Often a list of categories that describe a particular thing
+- eg Bloom's Taxonomy of learning:
+
+![/resources/images/BloomVerbs-exercise.png](/resources/images/BloomVerbs-exercise.png)
