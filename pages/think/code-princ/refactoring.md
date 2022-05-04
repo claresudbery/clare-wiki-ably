@@ -46,6 +46,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         - more notes [here](#parrot)
     - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)  
         - Jeremy Cook (@JCook21) says if [Parrot example](#parrot) too simplistic then Tennis kata might work well.
+        - Here's a video of Craig Bass tackling the [tennis refactoring kata in Ruby](https://www.youtube.com/watch?v=MLhoqpSz7CI)
     - [Theatrical Players Refactoring Kata](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
     - [Supermarket Receipt Refactoring Kata](https://github.com/emilybache/SupermarketReceipt-Refactoring-Kata)
     - Gilded Rose - see above
@@ -69,6 +70,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Some things (concert tickets) lose all value after a certain date.
 - Your challenge is to add a new type of thing with its own rules.
 - There are links in the repo readme about ways of approaching it, and [here](https://www.eficode.com/blog/advanced-testing-refactoring-techniques) are some discussions of different approaches. 
+- There are three videos made by Emily detailing some really interesting Gilded Rose refactoring:
+    - Part 1: [Using CombinedApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=OJmg9aMxPDI)
+    - Part 2: [Using "lift up conditional" to untangle the code](https://www.youtube.com/watch?v=OJmg9aMxPDI)
+    - Part 3: [Replacing conditional with polymorphism](https://www.youtube.com/watch?v=NADVhSjeyJA)
 
 #### Approval testing
 
