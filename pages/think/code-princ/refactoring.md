@@ -46,7 +46,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         - more notes [here](#parrot)
     - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)  
         - Jeremy Cook (@JCook21) says if [Parrot example](#parrot) too simplistic then Tennis kata might work well.
-        - Here's a video of Craig Bass tackling the [tennis refactoring kata in Ruby](https://www.youtube.com/watch?v=MLhoqpSz7CI)
+        - Here's a video of @Arkency tackling the [tennis refactoring kata in Ruby](https://www.youtube.com/watch?v=swokhWHKDmc)
     - [Theatrical Players Refactoring Kata](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
     - [Supermarket Receipt Refactoring Kata](https://github.com/emilybache/SupermarketReceipt-Refactoring-Kata)
     - Gilded Rose - see above
