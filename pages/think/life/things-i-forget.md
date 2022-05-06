@@ -235,3 +235,10 @@ Goodhart's Law:
 - eg Bloom's Taxonomy of learning:
 
 ![/resources/images/BloomVerbs-exercise.png](/resources/images/BloomVerbs-exercise.png)
+
+## Who are those two bands I think sound alike?
+
+I particularly noticed the similarity between:  
+
+- [Scratchcard Lanyard, by Dry Cleaning](https://open.spotify.com/track/5NtATk9xTMCKBlL46IJoXC?si=17b5600d67b349b4), and 
+- [Tennis, by Courting](https://open.spotify.com/track/3cJH8XcTtrdB1VcCYFdv82?si=54ba728da0c947c8)

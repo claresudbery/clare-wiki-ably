@@ -47,6 +47,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)  
         - Jeremy Cook (@JCook21) says if [Parrot example](#parrot) too simplistic then Tennis kata might work well.
         - Here's a video of @Arkency tackling the [tennis refactoring kata in Ruby](https://www.youtube.com/watch?v=swokhWHKDmc)
+        - Note I had some difficulty getting this running in Visual Studio. 
+            - First I had to install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (free Community version)
+            - Then I was getting errors about Xunit in the test file, but I think they were misleading - what I really needed was .Net 6:
+            - I had to [install .Net 6](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.202-windows-x64-installer) separately
+            - Detailed Visual Studio notes [here].
     - [Theatrical Players Refactoring Kata](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
     - [Supermarket Receipt Refactoring Kata](https://github.com/emilybache/SupermarketReceipt-Refactoring-Kata)
     - Gilded Rose - see above
