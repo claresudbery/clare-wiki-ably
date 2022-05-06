@@ -80,7 +80,7 @@ You can output query results to a file by running the following command:
 ### Access Heroku (or local) Databases using pgAdmin 4
 
 - install pgadmin
-  - The installation is slightly opaque - you need to click on `pgadmin4-6.8.dmg` [on this page](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.8/macos/) (or get most recent installation [from here](https://www.pgadmin.org/download/pgadmin-4-macos/)) to download the installer, then double-click it after downloading, and it will prompt you to copy it into Applications folder.
+  - The installation is slightly opaque - you need to click on `pgadmin4-6.8.dmg` [on this page](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.8/macos/) (or get most recent installation [from here](https://www.pgadmin.org/download/pgadmin-4-macos/)) to download the installer (the `dmg` file), then double-click it after downloading, and it will prompt you to copy it into Applications folder.
 - first you need to connect to the remote server (unless you're connecting to local db, in which case skip his bit)    
     - Right-click on main server group ("Servers" on left)
     - Select Register => Server
@@ -88,8 +88,8 @@ You can output query results to a file by running the following command:
     - Select Connection tab
         - navigate to root folder in Terminal
         - `heroku login`
-        - run this on command line: `heroku pg:credentials:url DATABASE`
-          - that's the exact command, including "DATABASE"
+        - run this on command line: `heroku pg:credentials:url DATABASE --app your-app-name`
+          - switch `your-app-name` for your app name
         - Top tip: Rather than manually trying to select the right bits of the resulting output, double-click to make sure you only select one value at a time
         - Use the following values to fill in Connection tab:
             - Host name => host
@@ -104,7 +104,8 @@ You can output query results to a file by running the following command:
         - but it's Register server, not Create server when you start
 - now you can run SQL queries:
     - Do NOT click the SQL tab
-    - Instead, click the icon top left that looks like a database icon with a kind of arrown on it
+    - Instead, drill down into the tree on the left and select the database with the name you entered on the Advanced tab 
+    - Then click the icon top left that looks like a database icon with a play icon overlaid
     - Now type your query - eg `select * from guess_sets`
     - Then click the big play button at the top
 
