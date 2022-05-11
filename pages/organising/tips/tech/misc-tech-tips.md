@@ -169,3 +169,21 @@ This fixed my problem:
 ## Avoiding an automatic update to Windows 11
 
 [This article is good](https://allthings.how/how-to-stop-windows-11-update-from-installing-on-your-windows-10-pc/amp/) for all the different ways you can evade the auto-install - basically you can fiddle about with the registry so that you continue to get updates vut don't get windows 11, or you can pause updates. ...although it turns out I have nothing to worry about because my PC doesn't meet the min requirements needed for win 11.
+
+## Avoid having your large image take over the whole of Miro
+
+You know that thing when someone asks you to add your photo to Miro, and suddenly your face has taken over the whole of space and time while everyone stares up your left nostril?
+
+Well, thanks to the Miro forum I have two solutions - one for facilitators and one for participants.
+
+Facilitators: Upload small images in advance. Ask people to click an image and select the Replace Image icon on the little toolbar that pops up above the image.
+
+Participants (assuming your facilitator didn't know the tip above): Keep a small image handy, like one of these...
+
+![__handy-miro-image.png](/resources/images/__handy-miro-image.png)
+
+![__handy-miro-image-larger.png](/resources/images/__handy-miro-image-larger.png)
+
+Drag your small image onto the board. Then click it and select the Replace Image icon on the little toolbar that pops up above it.
+
+That's it! Happy Miroing.
