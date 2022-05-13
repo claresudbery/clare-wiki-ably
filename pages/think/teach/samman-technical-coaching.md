@@ -75,8 +75,11 @@ Aim for improved dev practices:
 ##### Incremental and iterative development
 
 - WIKI
-- Increments are vertical slices, whereas iteration is building gradually one advance at a time, even when that advance doesn't result in a full new increment? And each iteration gets feedback and is used to improve on the previous iteration? I think the idea is that increments are fine as long as you use iteration to build each increment gradually and refine the process as you go. Otherwise you will try to perfect each increment before getting feedback from the users.
-- [Reference on diff between incremental and iterative](https://www.zentao.pm/agile-knowledge-share/Scrum-what-%23039%3Bs-the-difference-between-incremental-and-iterative-development-845.mhtml)
+- An increment is an addition, whereas an iteration is a change. The idea is that you make small additions (increments) to your product, but for each new increment you iterate, gradually refining the increment with each new iteration - ie changing it in response to feedback.
+	- So for instance an increment would be a vertical slice, which will change iteratively as you refine it in response to feedback.
+	- But even within your slice, you will ideally make small incremental changes as you build your implementation.
+	- Geepaw says: "I don't use the phrase much anymore, at least not formally, because my own behavior doesn't seem to vary based on whether I'm adding or changing. I do increments and iterations and iterations and increments and I do them at various scales."
+- [Reference on diff between incremental and iterative](https://itsadeliverything.com/revisiting-the-iterative-incremental-mona-lisa)
 
 #### Levelling up whole team together
 

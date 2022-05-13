@@ -187,3 +187,30 @@ Participants (assuming your facilitator didn't know the tip above): Keep a small
 Drag your small image onto the board. Then click it and select the Replace Image icon on the little toolbar that pops up above it.
 
 That's it! Happy Miroing.
+
+## Reinstate Alt + Enter Resharper keyboard shortcut in Visual Studio
+
+- Alt + Enter stopped working for me after I changed the default keyboard mapping scheme
+- The solution:
+  - Extensions => Resharper => Options
+  - Keyboard => Shortcut Scheme
+  - Change keyboard scheme (I changed to Visual Studio from IntelliJIDEA, not sure if it would have worked if I was changing in the other direction)
+  - Click Apply Scheme
+  - Do something that would warrant a refactor - eg change the name of a variable
+  - Place your cursor on the renamed var
+  - Hit Alt + Enter
+  - You should get a popup which will allow you to choose to override the VS default shortcut with the new Resharper action.
+
+## Record your screen in Windows 10
+
+Search terms: record screen / screen recording
+
+- Open the app you want to record. 
+- Press the Windows key + G at the same time to open the Game Bar dialog.
+- Check the "Yes, this is a game" checkbox to load the Game Bar. ...
+- Click on the Start Recording button (or Win + Alt + R) to begin capturing video
+
+
+
+
+  
