@@ -27,6 +27,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Learn Tech refactoring guide](https://learn.madetech.com/guides/05-Refactoring/)
 - [Dave Farley's youtube series on refactoring](https://www.youtube.com/watch?v=p-oWHEfXEVs)
 - My interview with Robby Russell - ["Refactoring Should Be Part of Your Daily Work"](https://maintainable.fm/episodes/clare-sudbery-refactoring-should-be-part-of-your-daily-work) - on the Maintainable podcast
+- I have refactoring videos in my SSE GDrive
 
 ## Misc
 
@@ -45,6 +46,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         - described by Jeremy Cook (@JCook21) as "The very simplest example that I know"
         - more notes [here](#parrot)
     - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)  
+        - My fork is [here](https://github.com/claresudbery/Tennis-Refactoring-Kata/branches) - used to demo various bits of refactoring (check the branches)
+            - I have some videos to go with them - at the time of writing (May '22) in the LH folder in SSE GDrive
         - Jeremy Cook (@JCook21) says if [Parrot example](#parrot) too simplistic then Tennis kata might work well.
         - Here's a video of @Arkency tackling the [tennis refactoring kata in Ruby](https://www.youtube.com/watch?v=swokhWHKDmc)
         - Note I had some difficulty getting this running in Visual Studio. 
