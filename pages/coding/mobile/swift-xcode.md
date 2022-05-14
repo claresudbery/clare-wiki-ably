@@ -363,6 +363,8 @@ I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-i
             - I want to offer multiple subscrptions - one for Wordfully and one for Wordlessly - so I created a separate subscrption group for Wordfully 
         - Cleared for sale
             - This enables it
+        - Family sharing
+            - Click to turn on
         - Click the + button to set up a subscription price
             - This will ask you for a starting currency and price, and then allow you to tweak the converted prices for other regions
         - Click + to add a localization
@@ -560,3 +562,13 @@ var str = "Your score was \(score)"
 ## Emoji Unicode icon List
 
 [Full list](https://unicode.org/emoji/charts/full-emoji-list.html)
+
+## Build running really slowly
+
+- I got this after I changed to release build and didn't change back to debug
+- This also meant I couldn't set breakpoints!
+- To select debug build:
+    - Product => Scheme => Edit scheme
+    - Click Run on the left
+    - Select Build configuration: Debug
+    - Check the Debug executable checkbox
