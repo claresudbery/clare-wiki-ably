@@ -82,6 +82,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Part 1: [Using CombinedApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=OJmg9aMxPDI)
     - Part 2: [Using "lift up conditional" to untangle the code](https://www.youtube.com/watch?v=OJmg9aMxPDI)
     - Part 3: [Replacing conditional with polymorphism](https://www.youtube.com/watch?v=NADVhSjeyJA)
+- Is Sandi Metz's book All the Little Things based around the gilded rose kata?
+    - She uses a technique in it a bit like lift up conditional?
 
 #### Approval testing
 
@@ -163,3 +165,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - "The point: Code with no tests is still testable."
 - My questions:
     - John's version is not fully functional. Is the point to write the tests or to refactor the code? Or both?
+    
