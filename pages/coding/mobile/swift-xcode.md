@@ -572,3 +572,4 @@ var str = "Your score was \(score)"
     - Click Run on the left
     - Select Build configuration: Debug
     - Check the Debug executable checkbox
+
