@@ -114,6 +114,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Used to demonstrate using coverage to design approval tests
 - Code is [here](https://github.com/emilybache/Product-Export-Refactoring-Kata)
 - Possible workshop exercise is [here](https://sammancoaching.org/learning_hours/approval_testing_legacy/verify_xml_reports.html)
+- Notes to get started
+    - The refactoring aim is to remove duplication
+    - The main code that you want to refactor is in `XmlExporter.cs`
+    - Check out Emily's `with_tests` branch and look at the approved text files to get a feel for the output and see where the duplication is
+        - Each report lists products and orders but in different formats and iwth different details included - handed individually in each function instead of using common code.
+
 
 ### Gilded Rose
 
