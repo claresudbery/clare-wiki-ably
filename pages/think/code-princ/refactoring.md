@@ -98,6 +98,23 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - My questions:
     - John's version is not fully functional. Is the point to write the tests or to refactor the code? Or both?
 
+### Theatrical players
+
+- Used by Martin Fowler in his book
+- Used by Emily to help identify code smells
+- Code is [here](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
+
+### Tennis
+
+- Used by Emily and me for lots of learning hours, and by me for one-day workshop (see my notes in clare-tech, and resources in SSE GDrive/SSE-Events, and Events drive for SDD conf)
+- Code is [here](https://github.com/emilybache/Tennis-Refactoring-Kata)
+
+### Product Export
+
+- Used to demonstrate using coverage to design approval tests
+- Code is [here](https://github.com/emilybache/Product-Export-Refactoring-Kata)
+- Possible workshop exercise is [here](https://sammancoaching.org/learning_hours/approval_testing_legacy/verify_xml_reports.html)
+
 ### Gilded Rose
 
 - Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
