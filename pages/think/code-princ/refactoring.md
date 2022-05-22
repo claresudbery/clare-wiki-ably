@@ -62,6 +62,42 @@ Sadly by necessity some of my repos are private. Those that are private are clea
  for this. It's partly about getting tests round some code, but if you do that bit beforehand you can get straight into refactoring."
  - @LisaCrispin says "@janetgregoryca has a great non-code exercise for that."
 
+### Parrot
+
+- [Here](github.com/emilybache/Parrot-Refactoring-Kata)
+- NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
+- Described by Jeremy Cook as "the most simple".
+- I thought it was pretty odd until I finally spotted the Monty Python reference.
+    - Here are my notes from that realisation:
+    - Frustrating in that it doesn't explain what it's about. Maybe that's the point?
+    - But anyway as far as I can work out, the code is trying to return the speed of different types of parrot
+        - But what does "nailed" mean and why is `voltage` a parameter??
+        - Ohhhh, it's a reference to the Monty Python dead parrot sketch!
+        - In a workshop should probably start by showing this sketch??
+        - In the sketch, the cutsomer brings in the "Norwegian blue" parrot they've brought from the shops and complains that it's dead - and is only upright because it's been nailed to its perch
+        - I couldn't find any references to voltage on a quick google
+- Each Parrot is initialised with a type (eg "African"), a voltage, a number of coconuts and a boolean for "Nailed".
+- You can then call GetSpeed to find the speed of the parrot.
+- The tests have cases which describe the expected speed for only a small subset of combinations of the four factors. What happens in other circs is not specified.
+- It looks like maybe the tests will initially fail? Not sure about that.
+- The readme hints that you will want to use polymorphism to improve the code.
+- The code as you initially receive it is basically just one switch statement.
+- Inspired by Martin Fowler - [replace conditional with polymorphism](refactoring.com/catalog/replaceConditionalWithPolymorphism.html)
+
+### Buzzer Dependency
+
+- [Here](github.com/MrTortoise/refactor_buzzer_dependancy)
+- NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
+- There are three APIs that cannot be altered - basically just three classes with one public method each
+- The buzzer must go off when the temp goes over one threshold and below another. The buzzer must keep going off until the temp goes back within a certain range.
+- The three APIs:
+    - BuzzerUtilManager.PerformTemperatureChecks
+    - Buzzer.Buzz
+    - HeatSensor.GetTemperature
+- "The point: Code with no tests is still testable."
+- My questions:
+    - John's version is not fully functional. Is the point to write the tests or to refactor the code? Or both?
+
 ### Gilded Rose
 
 - Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
@@ -128,41 +164,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
                 - Still no joy after that, so I had to modify my path - follow instructions [here](https://medium.com/swlh/solved-windows-pip-command-not-found-or-pip-is-not-recognized-as-an-internal-or-external-command-dd34f8b2938f)
             - After that, you can run `pip install texttest` in Bash prompt or Windows Terminal or Windows Powershell.
             - Full `TextTest` installation instructions are [here](https://texttest.org/) 
-
-
-### Parrot
-
-- [Here](github.com/emilybache/Parrot-Refactoring-Kata)
-- NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
-- Described by Jeremy Cook as "the most simple".
-- I thought it was pretty odd until I finally spotted the Monty Python reference.
-    - Here are my notes from that realisation:
-    - Frustrating in that it doesn't explain what it's about. Maybe that's the point?
-    - But anyway as far as I can work out, the code is trying to return the speed of different types of parrot
-        - But what does "nailed" mean and why is `voltage` a parameter??
-        - Ohhhh, it's a reference to the Monty Python dead parrot sketch!
-        - In a workshop should probably start by showing this sketch??
-        - In the sketch, the cutsomer brings in the "Norwegian blue" parrot they've brought from the shops and complains that it's dead - and is only upright because it's been nailed to its perch
-        - I couldn't find any references to voltage on a quick google
-- Each Parrot is initialised with a type (eg "African"), a voltage, a number of coconuts and a boolean for "Nailed".
-- You can then call GetSpeed to find the speed of the parrot.
-- The tests have cases which describe the expected speed for only a small subset of combinations of the four factors. What happens in other circs is not specified.
-- It looks like maybe the tests will initially fail? Not sure about that.
-- The readme hints that you will want to use polymorphism to improve the code.
-- The code as you initially receive it is basically just one switch statement.
-- Inspired by Martin Fowler - [replace conditional with polymorphism](refactoring.com/catalog/replaceConditionalWithPolymorphism.html)
-
-### Buzzer Dependency
-
-- [Here](github.com/MrTortoise/refactor_buzzer_dependancy)
-- NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
-- There are three APIs that cannot be altered - basically just three classes with one public method each
-- The buzzer must go off when the temp goes over one threshold and below another. The buzzer must keep going off until the temp goes back within a certain range.
-- The three APIs:
-    - BuzzerUtilManager.PerformTemperatureChecks
-    - Buzzer.Buzz
-    - HeatSensor.GetTemperature
-- "The point: Code with no tests is still testable."
-- My questions:
-    - John's version is not fully functional. Is the point to write the tests or to refactor the code? Or both?
     
