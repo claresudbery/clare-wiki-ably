@@ -151,8 +151,15 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - You review the text, and if it correctly describes the behaviour as you understand it, you can "approve" it, and save it as a "Golden Master".
 - Then after you change the code, you run it again, and compare the new output against the Golden Master. Any differences, and the test fails.
 - For Gilded Rose, there are at least two ways of running approval tests:
-    - NUnit's approval testing functionality: 
-        - If you're running the code in C#, there's an approval testing tool in NUnit which is being used
+    - Approval testing functionality: 
+        - If you're running the code in C#, there's an approval testing tool which is being used
+        - It's [this tool](https://github.com/approvals/ApprovalTests.Net)
+            - That page linked to above gives an example of verifying an array
+            - If you're starting from scratch, you first need to find a way of gathering enough possible outputs to cover your code
+            - Then run an Approvals test
+                - as in the above example, or as in `ApprovalTest.cs` in Gilded Rose, or as in `XmlExporterTest.cs` in the `with_tests` branch of the [Product Export kata](https://github.com/emilybache/Product-Export-Refactoring-Kata)
+                - also see my demo code in the `approval-tests` branch of [my fork of the Export Product kata](https://github.com/claresudbery/Product-Export-Refactoring-Kata/tree/approval-tests)
+                - Then copy the `received` file into a long-lived `approved` file as in the example below
         - Find `ApprovalTest.cs` and run the test in this file
         - You'll probably find the first time you run it, it fails
             - When it fails, it shows you the correct output and the actual output in a merge tool (my system uses KDiff3), so you can see why it's failing
