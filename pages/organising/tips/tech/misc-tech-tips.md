@@ -178,7 +178,7 @@ Well, thanks to the Miro forum I have two solutions - one for facilitators and o
 
 Facilitators: Upload small images in advance. Ask people to click an image and select the Replace Image icon on the little toolbar that pops up above the image.
 
-Participants (assuming your facilitator didn't know the tip above): Keep a small image handy, like one of these...
+Participants (assuming your facilitator didn't know the tip above): Keep a small image handy, like one of these (I keep them in the root of my Events folder)...
 
 ![__handy-miro-image.png](/resources/images/__handy-miro-image.png)
 
