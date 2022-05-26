@@ -137,7 +137,7 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
 ### Other quick shortcuts
 
-- **Copying / pasting cards between boards**: Simply hover over a card and use Ctrl + C / Cmd + C, then go to the destination board and use Ctrl + V / Cmd + V.
+- **Copying / pasting cards between boards**: Simply hover over a card and use Ctrl + C / Cmd + C, then go to the destination board and use Ctrl + V / Cmd + V. The key is to hover over either a card or a list (the strip at the top of the list). If you hover over a card, you could end up copying a card into a card instead of into a list.
 - **Adding your name to a card**: Hover over it and press the spacebar (doesn't work if the new card bit at the bottom has focus).
 
 ## File Explorer breaks / changes appearance after Windows 10 update.
