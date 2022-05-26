@@ -242,3 +242,9 @@ I particularly noticed the similarity between:
 
 - [Scratchcard Lanyard, by Dry Cleaning](https://open.spotify.com/track/5NtATk9xTMCKBlL46IJoXC?si=17b5600d67b349b4), and 
 - [Tennis, by Courting](https://open.spotify.com/track/3cJH8XcTtrdB1VcCYFdv82?si=54ba728da0c947c8)
+
+## What did Danny say about uppers vs downers in Withnail and I?
+
+The Camberwell Carrot scene in [Withnail and I](https://sfy.ru/transcript/withnail_ts):
+
+Danny: "Sit down man, find your neutral space. You have done something to your brain. You have made it high. If I lay 10 mills of diazipan on you, you will do something else to your brain, you will make it low. Why trust one drug rather than the other? That's politics ain't it."

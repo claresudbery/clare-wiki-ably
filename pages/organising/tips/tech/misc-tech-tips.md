@@ -210,6 +210,10 @@ Search terms: record screen / screen recording
 - Check the "Yes, this is a game" checkbox to load the Game Bar. ...
 - Click on the Start Recording button (or Win + Alt + R) to begin capturing video
 
+## Download bank statements from Monzo mobile
+
+- See notes in clare-tech (available to clare only)
+
 
 
 
