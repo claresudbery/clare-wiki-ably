@@ -44,6 +44,7 @@ Notes below are from Jeremy Clark's session on "Go for C# developers" at SDDConf
 
 - Needs to look like this. Formatting is non-optional.
 - CAUTION! I was typing all this code manually so I have probably made errors!
+- Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
 ```go
 package main
@@ -81,7 +82,7 @@ func main() {
 - Lower case start letter means private scope
     - Upper case start letter is public
 - If you import something and then don't use it, when you save it will be removed / deleted
-    - But just change your habits: don't import before you use. Instead, in your code, just type (eg) fmt.Println(), and it will do the import for you
+    - But just change your habits: don't import before you use. Instead, in your code, just type (eg) `fmt.Println()`, and it will do the import for you
 - Don't put semi-colons at end of lines - they will be removed when you save
 - var declaration and assignment:
     - `ids := [8]int{1, 2, 3, 4, 5, 6, 7, 8}`
@@ -91,12 +92,12 @@ func main() {
     - `fmt.Printf("IDs: %v\n" ids)` (where `ids` is an array of ints) will print to standard out
     - `%v` is default format - "natural format" - which for an array of ints will be "[1 2 3 4 5 6 7 8]"
     - `Sprintf` goes to a string
-        - `url := fmt.SPrintf""`
+        - `url := fmt.Sprintf""`
     - `Fprintf` goes to a file
 
 ### help docs
 
-- in browser just type for instance goloang fmt
+- in browser just type for instance `golang fmt`
 - will probably take you to `pkg.go` domain
 
 ## Code snippets
@@ -111,14 +112,13 @@ type person struct {
     ID int
     FamilyName string
     GivenName string
-
 }
 ```
 
 - Details
     - When you hit save it will line up all your formatting for you
     - Fields MUST be capitalised in order to work
-    - even though you might have associated json taht is not capitalised
+    - even though you might have associated json that is not capitalised
     - there's a json decoder package
         - `json.NewDecoder()` takes an IOReader parameter - IOReader is an interface
         - returns `*json.Decoder` which is a pointer to a decoder object
@@ -127,8 +127,9 @@ type person struct {
 ### functions
 
 - CAUTION! I was typing all this code manually so I have probably made errors!
+- Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
-```
+```go
 func main() {
     ids := [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
     fmt.Printf("IDs: %v\n" ids)
@@ -155,7 +156,7 @@ func (p person) String() string {
 
 - details
     - `http.Get` returns two things - a response and an error
-    - `resp.Body is a disposable object, which means it is caller's responsbility to call close on object
+    - `resp.Body` is a disposable object, which means it is caller's responsbility to call close on object
         - if you don't, you won't get compiler error - it will keep http connections alive
     - Go developers have habit of using single-character names
     - Instead of `resp, err := http.Get(url)` you can do `resp, _ := http.Get(url)` which means you're declaring you're not going to use that var
@@ -180,8 +181,8 @@ func (p person) String() string {
 ```
 
 - details
-    - v similar to C# BUT if you create an object that implements that method, it will automatically be considered to implement that interface - you don't have to explciitly declare that
-    - If you have two interfaces that both have a String() method but both also have other mnethods which your class does NOT implement, then yuour class will NOT be assumed to be implementing either of those intefaces
+    - v similar to C# BUT if you create an object that implements that method, it will automatically be considered to implement that interface - you don't have to explicitly declare that
+    - If you have two interfaces that both have a `String()` method but both also have other methods which your class does NOT implement, then your class will NOT be assumed to be implementing either of those intefaces
     - in the example above, this will be considered to implement that interface
 
 ### loops
@@ -230,16 +231,16 @@ func fetchAndDisplay(id int, *wg sync.WaitGroup) {
 ```
 
 - details
-    - There's no way you can get a return value from a async call
+    - There's no way you can get a return value from an async call
     - You can use channels
     - or shared vars
     - or do something to avoid the need to return things
-    - in the code above we've extracted some cod into a functon
+    - in the code above we've extracted some code into a functon
     - `fetchAndDisplay` will run somewhere else and not block thread
         - because of the `go` keyword
         - but we want to wait for it to finish
         - `wg.Done()` takes no params, it just decrements by 1
-        - It's important to pass pointer to waiter, so wg.Done() happens on correct object
+        - It's important to pass pointer to `waiter`, so `wg.Done()` happens on correct object
 
 
 ### error handling
@@ -301,7 +302,7 @@ func getPerson(id int) person {
 - details
     - errors are really just glorified strings
     - it's up to the programmer to handle them
-    - if you try to access memory you shouyldn't, you'll get a "panic"
+    - if you try to access memory you shouldn't, you'll get a "panic"
     - in first example above, we didn't store the error - so we got an error
     - in second example, `person{}` is an empty struct 
     - `defer wg.Done()` means you're saying this will happen no matter what
@@ -361,10 +362,10 @@ func main() {
 ```
 
 - details
-    - the code from fetchAnmdDisplay has been inlined as annonymous function
-    - no need to fiddle aroudn with pointers to `waiter` object any more
+    - the code from `fetchAndDisplay` has been inlined as annonymous function
+    - no need to fiddle around with pointers to `waiter` object any more
     - in second version, `currentId` doesn't work
         - in closures, value is from time var was used, not from time var was captured
-        - if you try to capture an indexer, you will run into these kinds of problems
+        - if you try to capture a loop indexer, you will run into these kinds of problems
         - but you'll get a warning if you try to do this
 

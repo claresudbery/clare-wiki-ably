@@ -248,3 +248,8 @@ I particularly noticed the similarity between:
 The Camberwell Carrot scene in [Withnail and I](https://sfy.ru/transcript/withnail_ts):
 
 Danny: "Sit down man, find your neutral space. You have done something to your brain. You have made it high. If I lay 10 mills of diazipan on you, you will do something else to your brain, you will make it low. Why trust one drug rather than the other? That's politics ain't it."
+
+## Where is the video of toddlers falling over in a hurdles race?
+
+- [Link to original](https://twitter.com/FillWerrell/status/1358558415447093251?s=20)
+- My doctored version + talk notes are linked to from clare-tech, in `finding-things.md` (available to Clare only, but check my youTube cos I do plan to put it there at some point)

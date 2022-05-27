@@ -214,7 +214,27 @@ Search terms: record screen / screen recording
 
 - See notes in clare-tech (available to clare only)
 
+## Change your DNS server / fix problems where some sites are suddenly unavailable
 
-
-
-  
+- Update: The issue appeared to fix itself after a couple of hours. No idea how / why.
+- I tried this because I couldn't access Twitter or LinkedIn on my Windows laptop
+- When I use Edge or incognito, I get a Twitter error. Not the same as the one I originally got (when I got all the context menus and surorunding Twitter site stuff, but errors instead of actual content), just a blanket "Try again" with a little Twitter logo. When I use Chrome non-incognito, I just get "This site can’t be reached" - which has changed since earlier.
+  - When I ran network diagnostics, it suggested there was a problem with my DNS server: "Windows can’t find the host name "www.twitter.com" using DNS."
+    - So I changed Windows to use same DNS server as Macbook (192.168.86.1, with Google - 8.8.4.4 - as secondary server), but it didn't work
+  - My MacBook didn't have the same problem
+  - Other things that didn't fix it:
+    - Switching to a different Chrome profile
+    - Restarting windows laptop 
+    - Temporarily turning off Avast Firewall 
+    - Secure browsing
+    - Temporarily turning off Avast Web Shield (Protection => Core Shields)
+    - Trying a different browser (Edge)
+    - Switching to WiFi instead of ethernet cable
+    - Flushed browser cache using Ctrl + Shift + Delete (claresudbery gmail profile)
+    - Flushed DNS resolver cache in Windows Terminal: `ipconfig /flushdns`
+    - Check whether twitter.com is blocked in `C:\Windows\System32\drivers\etc\hosts` (it isn't)
+    - Look up twitter.com using `nslookup` in Windows Terminal - weirdly this comes back with an IP address, so I don't know why network diagnostics says 'Windows can’t find the host name "www.twitter.com" using DNS.'
+- Next steps:
+  - Try the things in this article: https://www.addictivetips.com/windows-tips/reset-network-adapter-windows-10/#:~:text=How%20to%20Reset%20Network%20Adapter%20Windows%2010%201,10%20to%20automatically%20install%20drivers%20again.%20See%20More.
+    - Note: To work out which adapter is the one you want, compare the ones listed in the Device Manager with the ones you see when you go Settings => Network & Internet => Status => Advanced network settings => Change adapter options
+- [Article here abut how and why](https://uk.pcmag.com/security/138870/how-and-why-to-change-your-dns-server)
