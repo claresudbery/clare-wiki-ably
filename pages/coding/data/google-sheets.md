@@ -4,6 +4,8 @@ location: pages/coding/data/leaf
 permalink: /pages/coding/data/Google-Sheets
 ---
 
+- Google Sheets
+
 ## Sorting
 
 - To sort by single column:
@@ -58,3 +60,11 @@ With this table info...
 ...you would get this output: **wf coding/infra testing Testing**
 
 More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=9054531).
+
+## Time formatting
+
+To get times that are summed to be potentially more than 24 hours:
+
+
+
+

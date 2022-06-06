@@ -53,4 +53,14 @@ permalink: /pages/coding/tools/Visual-Studio
     - Then I was getting errors about Xunit in the test file, but I think they were misleading - what I really needed was .Net 6:
     - I had to [install .Net 6](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.202-windows-x64-installer) separately
 
-### 
+### Shortcuts
+
+- See Tools => Options => Environment => Keyboard for full list
+- Expand / collapse regions (works on markdown too)
+    - Ctrl + M, E - Expand current region
+    - Ctrl + M, S - Collapse current region
+    - Ctrl + M, X - Expand all regions
+    - Ctrl + M, A - Contract all regions
+- Select containing block
+    - Expand selection: Shift + Alt + `=` (keep pressing to expand to outer blocks)
+    - Contract selection: Shift + Alt + `-` (keep pressing to contract to inner blocks)
