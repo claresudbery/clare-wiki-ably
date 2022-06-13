@@ -253,3 +253,7 @@ Danny: "Sit down man, find your neutral space. You have done something to your b
 
 - [Link to original](https://twitter.com/FillWerrell/status/1358558415447093251?s=20)
 - My doctored version + talk notes are linked to from clare-tech, in `finding-things.md` (available to Clare only, but check my youTube cos I do plan to put it there at some point)
+
+## What's that book about the danger of algorithms and data engineering?
+
+Weapons of Math Destruction, by Cathy O'Neill
