@@ -152,7 +152,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Then after you change the code, you run it again, and compare the new output against the Golden Master. Any differences, and the test fails.
 - For Gilded Rose, there are at least two ways of running approval tests:
     - Approval testing functionality: 
-        - If you're running the code in C#, there's an approval testing tool which is being used
+        - If you're running the gilded rose code in C#, there's an approval testing tool which is being used
+            - Another C# approvals tool is also available - see [below](#verify-approval-testing-tool)
         - It's [this tool](https://github.com/approvals/ApprovalTests.Net)
             - That page linked to above gives an example of verifying an array
             - If you're starting from scratch, you first need to find a way of gathering enough possible outputs to cover your code
@@ -197,3 +198,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
             - After that, you can run `pip install texttest` in Bash prompt or Windows Terminal or Windows Powershell.
             - Full `TextTest` installation instructions are [here](https://texttest.org/) 
     
+#### Verify Approval Testing Tool
+
+- Emily showed us a new tool for Approval Testing. We'd previously been using `Approvals`, but this one is called `Verify`.
+- Details [here](https://github.com/VerifyTests/Verify).
+- Demo video from Emily [here](https://www.dropbox.com/s/arpaxxqbrcyn0x3/SupermarketReceipt_csharp_verify.mp4?dl=0).
+- Annotation is different - looks like this - `[UsesVerify]`
+- You can use the `NUnit.Verify` package - others exist for other test frameworks.
+- Each test case has to return `Task` (from `System Threading`) instead of `void`
+- At the end of the test: `return Verifier.Verify(myStringResult);`
+- What's produced is a "verified" file rather than an "approved" file - that you work with at the end
+- There's a Resharper plugin that will give you new resharper context menu items for Accept and Compare - makes it easier to work with output files.
