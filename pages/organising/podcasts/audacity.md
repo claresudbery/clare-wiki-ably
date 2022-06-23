@@ -103,7 +103,7 @@ permalink: /pages/organising/podcasts/Audacity
 ### Looping 
 
 - During playback:
-    - Use Shift + space instead opf just space
+    - Use Shift + space instead of just space
 - For export:
     - Select the bit you want to repeat
     - Effect => Repeat
@@ -113,3 +113,12 @@ permalink: /pages/organising/podcasts/Audacity
 - Apparently it's not recommended, but...
 - If you really want to overwite existing content, do it like this:
 - Edit > Preferences > Tracks > Tracks Behaviors > Editing a clip can move other clips
+
+### Replacing some content with silence
+
+- Select the content you want to replace
+- Edit => Remove Special => Silence Audio
+
+### Inserting silence
+
+Generate => Silence
