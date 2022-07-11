@@ -210,6 +210,9 @@ gem "rspec-html-matchers"
 
 ### Rspec
 
+- See [quick-start section](#quick-start-kata-guide) for a quick start guide if writing a kata from scratch (includes getting tests set up, and running tests / how to run tests)
+- See [debugging rspec](#debugging-rspec-tests) for how to debug rspec tests
+- See [here](https://manny.codes/7-ways-to-selectively-run-rspec-tests) for running individual tests or subsets of tests
 - Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
 - [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Rspec style guide](https://rspec.rubystyle.guide/)
