@@ -210,6 +210,7 @@ gem "rspec-html-matchers"
 
 ### Rspec
 
+- To run tests: either `rspec` or `bundle exec rspec` (depending whether you did a global bundle install or a vendor one, I think (eg if you ran `bundle config set --local path 'vendor/bundle'` before you ran `bundle install`))
 - See [quick-start section](#quick-start-kata-guide) for a quick start guide if writing a kata from scratch (includes getting tests set up, and running tests / how to run tests)
 - See [debugging rspec](#debugging-rspec-tests) for how to debug rspec tests
 - See [here](https://manny.codes/7-ways-to-selectively-run-rspec-tests) for running individual tests or subsets of tests
