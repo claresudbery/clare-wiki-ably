@@ -257,3 +257,8 @@ Danny: "Sit down man, find your neutral space. You have done something to your b
 ## What's that book about the danger of algorithms and data engineering?
 
 Weapons of Math Destruction, by Cathy O'Neill
+
+## Where is our Wedding Wordpress website?
+
+- Not Whincop Wedding - [Woolpack Wedding](https://woolpackwedding.wordpress.com/).
+- We got married on 7/9/19 (ceremony) and 9/9/19 (the boring bit).
