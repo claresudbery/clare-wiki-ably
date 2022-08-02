@@ -262,3 +262,13 @@ Weapons of Math Destruction, by Cathy O'Neill
 
 - Not Whincop Wedding - [Woolpack Wedding](https://woolpackwedding.wordpress.com/).
 - We got married on 7/9/19 (ceremony) and 9/9/19 (the boring bit).
+
+## What was that rhyme my grandad used to say?
+
+Eerie Ayrie Iggery Um.
+Filthsome Foulsome Dicksome John
+Squeamy Squirmy ~~Irishman~~*
+Squingulum Squangulum
+BUCK!!
+
+*Not nice at all.
