@@ -573,3 +573,7 @@ var str = "Your score was \(score)"
     - Select Build configuration: Debug
     - Check the Debug executable checkbox
 
+## Colour contrast testing for coplour blind people / WCAG guidelines / accessibility
+
+- Use [this tool](https://color-contrast-checker.deque.com/)
+- More info [here](https://www.deque.com/blog/testing-color-contrast-in-mobile-apps/#TestingMethodologies)
