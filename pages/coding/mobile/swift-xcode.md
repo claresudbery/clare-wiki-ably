@@ -576,4 +576,7 @@ var str = "Your score was \(score)"
 ## Colour contrast testing for coplour blind people / WCAG guidelines / accessibility
 
 - Use [this tool](https://color-contrast-checker.deque.com/)
+    - If you have a colour defined in XCode like this...
+    - `red: CGFloat(139.0/255.0), green: CGFloat(0/255.0), blue: CGFloat(139.0/255.0)`
+    - ... then you enter it into the website like this: `rgb(139,0,139)`
 - More info [here](https://www.deque.com/blog/testing-color-contrast-in-mobile-apps/#TestingMethodologies)
