@@ -21,7 +21,7 @@ See [separate page](/pages/coding/mobile/iOS-Development) - there is bound to be
         - Note that if you've selected "ios", it will probably create a folder called ios
         - Within that will probably be a sub-folder called `AppIcon.appiconset`
         - That will contain a file, `Contents.json`, which maps each of the files to a context
-        - That's why the icon file names can all be based on your original file name
+        - That's why the icon file names can all be based on your original file name (ie you don't have to give the icon file a special name)
         - What you actually want is for the entire `AppIcon.appiconset` folder to go into your `Assets.xcassets` folder
         - If you already have an `AppIcon.appiconset` folder in there, just replace it with the new one.
 - I think [this page](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/) is kept up to date with current icon guidelines

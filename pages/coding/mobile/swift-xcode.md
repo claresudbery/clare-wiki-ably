@@ -580,3 +580,7 @@ var str = "Your score was \(score)"
     - `red: CGFloat(139.0/255.0), green: CGFloat(0/255.0), blue: CGFloat(139.0/255.0)`
     - ... then you enter it into the website like this: `rgb(139,0,139)`
 - More info [here](https://www.deque.com/blog/testing-color-contrast-in-mobile-apps/#TestingMethodologies)
+
+## Various links and notes on using shapes and textures
+
+- Currently [still in Trello](https://trello.com/c/jlUegr0O/407-add-textures-as-backgrounds-and-make-panels-a-particular-shape) - need copying over here.
