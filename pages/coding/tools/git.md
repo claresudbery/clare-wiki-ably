@@ -448,9 +448,13 @@ and the repository exists."
 
 - Enter ? at the command prompt
 
-### Git tutorial
+### Atlassian Git tutorial
 
 - Here: <https://www.atlassian.com/git/tutorials/>
+
+### Another git tutorial
+
+- [Fracz tutorial](https://gitexercises.fracz.com/)
 
 ## Interactive tool to learn how to do git branching
 
