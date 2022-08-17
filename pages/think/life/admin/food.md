@@ -9,6 +9,7 @@ permalink: /pages/think/life/admin/Food
 - low carb pancakes - full recipe [here](https://www.wholesomeyum.com/recipes/keto-low-carb-pancakes-with-almond-flour-coconut-flour-paleo-gluten-free/) or see summarised version in Dropbox\Desktop\Current\low-carb-pancakes.docx and also in Evernote, or in kitchen recipe book, or see image in my phone dated 28/11/20
 - n'oatmeal - in box on top of kitchen cupboard, or see image in my phone dated 28/11/20
 - more recipes under the recipes tag in Evernote
+- Precise quantities of ingredients of low carb foods (pizza, quiche, lunch salad, noatmeal breakfast) are [here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/food.md) (for Clare only)
 
 ## Bicarb vs baking powder vs baking soda
 
