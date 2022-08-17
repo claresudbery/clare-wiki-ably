@@ -238,3 +238,7 @@ Search terms: record screen / screen recording
   - Try the things in this article: https://www.addictivetips.com/windows-tips/reset-network-adapter-windows-10/#:~:text=How%20to%20Reset%20Network%20Adapter%20Windows%2010%201,10%20to%20automatically%20install%20drivers%20again.%20See%20More.
     - Note: To work out which adapter is the one you want, compare the ones listed in the Device Manager with the ones you see when you go Settings => Network & Internet => Status => Advanced network settings => Change adapter options
 - [Article here abut how and why](https://uk.pcmag.com/security/138870/how-and-why-to-change-your-dns-server)
+
+## Bose Noise Cancelling Headphones Bose NC 700
+
+- [Using the buttons](https://www.bose.co.uk/en_gb/support/articles/HC2538/productCodes/noise_cancelling_headphones_700/article.html?cjevent=e93f88271e2711ed8207cc5b0a18050e&cjdata=MXxZfDB8WXww)
