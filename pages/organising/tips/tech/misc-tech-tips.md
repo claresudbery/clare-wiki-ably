@@ -242,3 +242,13 @@ Search terms: record screen / screen recording
 ## Bose Noise Cancelling Headphones Bose NC 700
 
 - [Using the buttons](https://www.bose.co.uk/en_gb/support/articles/HC2538/productCodes/noise_cancelling_headphones_700/article.html?cjevent=e93f88271e2711ed8207cc5b0a18050e&cjdata=MXxZfDB8WXww)
+
+## Select vertical coloumn of text
+
+- Select vertical column of text: 
+  - Place the cursor where you want it
+  - On a Mac:
+    - hold down Shift + Option, then click and drag with the mouse
+  - On Windows:
+    - In most places: same, but just use Alt key
+    - In VS Code: same, but Shift + Alt

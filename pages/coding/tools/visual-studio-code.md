@@ -22,7 +22,8 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 
   - Select vertical column of text: 
     - Place the cursor where you want it
-    - hold down Shift + Alt , then click and drag with the mouse
+    - hold down Shift + Alt/Option , then click and drag with the mouse
+    - (On a Mac it's Shift + Alt/Option in most apps)
 
 ## Debugging
 
