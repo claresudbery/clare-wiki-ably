@@ -141,8 +141,8 @@ construct a mock for each dependency passed in
 ## Ideas / Approaches
 
 - Steve Freeman: "Early XP trainings used to include a week-long “pure” project to really get the flow."
-- TDD techniques (ie Classic vs London): http://codemanship.co.uk/parlezuml/blog/?postid=987
-    - [More on that, re double-loop and outside-in](http://coding-is-like-cooking.info/2013/04/outside-in-development-with-double-loop-tdd/) from Emily Bache
+- Detroit TDD vs London TDD: https://tinnedfruit.com/list/20181004#:~:text=London-school%20TDD%20works%20'top,spies%2C%20stubs%2C%20etc
+    - [More on that, re double-loop and outside-in](http://coding-is-like-cooking.info/2013/04/outside-in-development-with-double-loop-tdd/) from Emily Bache, who says London School TDD has two features that distinguish it from Classic TDD. They are: Outside-In development with Double Loop TDD, and "Tell, Don’t Ask" Object Oriented Design.
 - "The problem is that the gap between katas and production code is still to big. Lately I've found mob programming in production code to be really effective. My current formula is katas + mob programming with someone who knows what they are doing." @emilybache
 - "Moving from katas to real world problems, its important to know that you don't have to write the tests in programming languages. It could be in the domain language - or @emilybache's TDD with diagrams." @thebddadvocate
     - "Approval testing is the term to google to learn more about how you could use sketches to do TDD" @emilybache
