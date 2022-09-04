@@ -252,3 +252,7 @@ Search terms: record screen / screen recording
   - On Windows:
     - In most places: same, but just use Alt key
     - In VS Code: same, but Shift + Alt
+
+## Block calls on BT landline phone handset
+
+Menu => call control => block calls => incoming calls => by call type => number withheld and no caller ID
