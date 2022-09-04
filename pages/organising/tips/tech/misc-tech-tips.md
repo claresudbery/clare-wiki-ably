@@ -255,7 +255,7 @@ Search terms: record screen / screen recording
 
 ## Block calls on BT landline phone handset
 
-Menu => call control => block calls => incoming calls => by call type => number withheld and no caller ID
+Menu => call control => incoming calls => block calls => by call type => two types: number withheld and no caller ID
 
 ## Turn on call retry
 

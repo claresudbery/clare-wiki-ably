@@ -13,6 +13,8 @@ permalink: /pages/think/code-princ/testing/TDD
 
 ### Recommended reads on the topic ["Why hasn't TDD taken over the world yet?"](https://cucumber.io/resources/webinars/tdd-roundtable-series/)
 
+- It's not a magic bullet. [Geepaw Hill on the damage done by dogmatic pedagogy around TDD](https://twitter.com/GeePawHill/status/1558159024520151041?s=20&t=mcDIAsahNnleWz2aGkRAbA)
+    - This is also a timely reminder that TDD is not something you can teach in one course or one book, and it's not easy to learn. It requires constant practice and thought.
 - [research paper on TDD from Petr Jasek of Aalborg University, Denmark](https://t.co/lQoS3ilFA8?amp=1)
 - TDD techniques: http://codemanship.co.uk/parlezuml/blog/?postid=987
 - [Summary of the "Is TDD dead?" controversy started at RailsConf by David Heinemeier Hansson](https://pythontesting.net/agile/is-tdd-dead/)
