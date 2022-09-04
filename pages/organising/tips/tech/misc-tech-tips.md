@@ -256,3 +256,9 @@ Search terms: record screen / screen recording
 ## Block calls on BT landline phone handset
 
 Menu => call control => block calls => incoming calls => by call type => number withheld and no caller ID
+
+## Turn on call retry
+
+If line is engaged and you want to be notified when it becomes clear:
+- Press 5 when you hear the engaged tone (I think?)
+- I asked about this on forum general questions thread some time in August 2022, probably in the week leading up to 21/8/22
