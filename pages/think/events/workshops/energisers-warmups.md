@@ -18,6 +18,15 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 
 (Each bullet point represents a different activity! This is not all one activity. The ones in more detail are listed below this initial section)
 
+- Speed dating
+  - Simple but very effective!
+  - Put pairs or threes into breakout rooms, randomly assigned.
+  - Give them 5 minutes or less, depending how many people and how much time you have. 
+  - Give them starter questions to use if they're stuck for conversation topics, but it's not mandatory to use them. Here are some suggestions:
+    - What part of the world do you currently live in?
+    - What takes up the majority of your weekday time?
+    - What's the last TV show you watched, and would you recommend it?
+    - What do you hope to get out of this course / job / project [add / delete as appropriate]?
 - Write down something nobody knows about you, then we have to guess which one is who.
     - In person:
       - this goes on folded pieces of paper. 
@@ -25,7 +34,15 @@ See also: [Fun games](/pages/think/life/Fun-Games).
       - Get people to add cards to a Trello board or similar
       - Or you can use a spreadsheet and just agree to not pay attention to who's writing what. The more people, the less likely people will register who wrote what.
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
-- Split into pairs and share something small you find satisfying, eg cycling over crunchy Autumn leaves. Then share your partner's satisfying thing with the rest of the group.
+- Split into pairs and share the answer to a question. Then share your partner's answer with the rest of the group. Suggested questions:
+  - What's something small you find satisfying? (eg cycling over crunchy Autumn leaves - but it's amazing how many different things people will come up with)
+  - What would you recommend a visitor to do or see, if they were planning to visit the place where you live?
+  - Tell us about your pets. If you don't have any, what is your favourite animal? If you don't like animals, what is your least favourite animal?
+  - What was the first piece of music you ever owned / connected with?
+  - What is your current favourite music track? Who is the artist?
+  - What takes up the majority of your weekday time?
+  - What's the last TV show you watched, and would you recommend it?
+  - What do you hope to get out of this course / job / project [add / delete as appropriate]?
 - [Composite superheroes](#composite-superheroes)
 - Say three surprising things about yourself (two true, one false), then everybody asks you questions to find out more, then everyone has to guess which one's false.
 - Get everyone to paste a baby pic of themselves into a spreadsheet (give them a few days to get this part done).
