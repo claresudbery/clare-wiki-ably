@@ -262,3 +262,26 @@ Menu => call control => incoming calls => block calls => by call type => two typ
 If line is engaged and you want to be notified when it becomes clear:
 - Press 5 when you hear the engaged tone (I think?)
 - I asked about this on forum general questions thread some time in August 2022, probably in the week leading up to 21/8/22
+
+## Convert a HEIC image downloaded from iPhone via iCloud
+
+On Macbook:
+
+- Open any HEIC image in the Preview app.
+- Click File ➙ Export in the menu bar.
+- Select JPG in the format dropdown and adjust other settings as needed.
+- Choose Save.
+
+On phone:
+
+- Paste your photo into the Files app to automatically convert it to JPG:
+  - In the Photos app, find the photo you wish to convert and tap Share.
+  - Tap Copy Photo.
+  - Open the Files app on your iPhone.
+  - Tap On My iPhone.
+  - Long-press on an empty area and tap Paste.
+  - The photo has now been pasted and automatically converted to JPG. 
+  - Tap the image to share it or Save Image to save it to your Photos. 
+- Alternatively, mail the photo to yourself to convert it to JPG.
+- Change all future photos to JPG by tapping Settings > Camera > Formats > Most Compatible.
+

@@ -359,6 +359,7 @@ I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-i
             - This can contain spaces
         - Product ID: Start with the bundle id for your app (available in [Apple Developer => Certificates and Ids](https://developer.apple.com/account/resources/identifiers/list)) then append a unique id - eg YourName.YourApp.YourIAP
             - I think this can't contain spaces
+            - I've recorded details of mine in my readme.md
         - Subscription group reference name
             - I want to offer multiple subscrptions - one for Wordfully and one for Wordlessly - so I created a separate subscrption group for Wordfully 
         - Cleared for sale
@@ -384,7 +385,11 @@ I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-i
         - Review notes
             - !! It turns out there's a separate text input for in-app purchases which gets used for app review. This is why they kept complaining they couldn't fnd my in-app purchases!
             - It's at the bottom of the in-app purchases page when you configure it in App Store Connect
-            - First select the app, then select In-App Purchases ob the left under Features, then scroll to Review Notes at the bottom of the page.
+            - First select the app, 
+                - then select either In-App Purchases or Subscriptions on the left under Features, 
+                - then select the name of the group
+                - then click the actual subscription,
+                - then scroll to Review Notes at the bottom of the page.
     - Once you're all done, go back to the same screen by clicking In-App Purchases on the left, and Turn On the billing grace period
     - Check your basic App information (also on the left in App Store Connect)
     - Set up a Sandbox user, so that your testers can test in-app purchases without actually having to buy it
@@ -559,7 +564,7 @@ var score = 85
 var str = "Your score was \(score)"
 ```
 
-## Emoji Unicode icon List
+## Emoji / Emoticon Unicode icon List
 
 [Full list](https://unicode.org/emoji/charts/full-emoji-list.html)
 
@@ -573,7 +578,7 @@ var str = "Your score was \(score)"
     - Select Build configuration: Debug
     - Check the Debug executable checkbox
 
-## Colour contrast testing for coplour blind people / WCAG guidelines / accessibility
+## Colour contrast testing for colour blind people / WCAG guidelines / accessibility
 
 - Use [this tool](https://color-contrast-checker.deque.com/)
     - If you have a colour defined in XCode like this...
@@ -584,3 +589,9 @@ var str = "Your score was \(score)"
 ## Various links and notes on using shapes and textures
 
 - Currently [still in Trello](https://trello.com/c/jlUegr0O/407-add-textures-as-backgrounds-and-make-panels-a-particular-shape) - need copying over here.
+
+## Entering in-app purchase instructions
+
+- !! It turns out there's a separate text input for in-app purchases which gets used for app review. This is why they kept complaining they couldn't fnd my in-app purchases!
+    - It's at the bottom of the in-app purchases page when you configure it in App Store Connect
+    - First select the app, then select In-App Purchases ob the left under Features, then scroll to Review Notes at the bottom of the page.
