@@ -308,7 +308,7 @@ and the repository exists."
 ### Useful links
 
   - My blog post full of useful git links:
-    <https://insimpleterms.blog/2017/08/13/want-to-learn-git-improve-your-git-knowledge/>
+    <https://insimpleterms.blog/want-to-learn-git-improve-your-git-knowledge>
 
 ### Staging bits of files or individual files:
 
