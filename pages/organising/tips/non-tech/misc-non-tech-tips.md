@@ -22,3 +22,7 @@ The links below were just from one random google. I make no claims for their aut
 - I successfully appealed a fine from Jacksons Boat car park in Dec 2019
     - I had to take photos and fill in an online form
     - Details in "Jacksons Parking Appeal" folder in my Dropbox
+
+## elderly cats and urination
+
+- [here](https://seniortailwaggers.com/elderly-cat-urinating-in-house/#:~:text=You%20could%20also%20move%20the,they%20always%20have%20one%20nearby.)
