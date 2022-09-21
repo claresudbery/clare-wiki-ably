@@ -14,19 +14,66 @@ See also: [Fun games](/pages/think/life/Fun-Games).
 - Think about what zone / frame of mind you want people to be in
 - Gauge the room. Some groups love wacky icebreakers, some are completely turned off by them
 
+## Creating pairs or groups
+
+When working in person, you often want to mix groups up so that people interact with people they don't know (online meeting software generally has the capacity to randomly assign people to breakout rooms). Here are some ideas for that.
+
+- Get everyone to form an ordered line around the outside of the room
+  - The order will be based on something they have to determine by talking to or interacting with each other. For instance:
+    - Alphabetical order of first name and/or last name
+    - Birth date order, but NOT including year of birth. So, 1st Jan at one end and 31st Dec at the other.
+    - From north to south, either the place they were born or the place they currently live. This will lead to some interesting conversations and disagreements!
+  - Once you have a line, you can form groups from this line by splitting them into chunks of the size you want, or by calculating the number of groups you want and giving everyone a number.
+    - For instance, if there are 20 people and you want 4 people in each group:
+    - 20 / 4 = 5
+    - Give everyone a number from 1 to 5 by just counting along the row: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...
+    - Label five areas 1 to 5
+    - Tell everyone to go find the area with the number they've been given
+
 ## Getting to know each other
 
 (Each bullet point represents a different activity! This is not all one activity. The ones in more detail are listed below this initial section)
 
-- Speed dating
+- See [section above](#creating-pairs-or-groups) for ideas on how to create random groups
+  - Not generally an issue when remote / online, but useful when in person
+- Speed networking 
+  - Based on the concept of speed dating, but DON'T call it this
+    - If you do, you create the idea that people might be flirting with each other - which can make people feel uncomfortable.
   - Simple but very effective!
-  - Put pairs or threes into breakout rooms, randomly assigned.
+  - Put pairs or threes together
   - Give them 5 minutes or less, depending how many people and how much time you have. 
   - Give them starter questions to use if they're stuck for conversation topics, but it's not mandatory to use them. Here are some suggestions:
     - What part of the world do you currently live in?
     - What takes up the majority of your weekday time?
     - What's the last TV show you watched, and would you recommend it?
     - What do you hope to get out of this course / job / project [add / delete as appropriate]?
+  - If remote: 
+    - Put people into breakout rooms, randomly assigned.
+  - If in person: 
+    - Have pairs of chairs facing each other (with or without tables). 
+    - Every 5 mins a timer goes off and the people on one side of the desk move round one space.
+    - If an odd number of people, on each rotation a different pair of consecutive people on the fixed side of the desks get just one person opposite them. The pairs rotate in the opposite direction:
+      - For instance, if you have 11 people:
+      - People numbered 1 to 6 are on one side of 6 desks. They don't move.
+      - People numbered 7 to 11 go on the other side of the desks, and after 5 mins they move on.
+      - On the first iteration, people numbered 5 and 6 are paired. Person 11 meets both of them at once, to make a three. People 7 to 10 are paired with people 1 to 4. Like this:
+        - 7 goes with 1 
+        - 8 goes with 2
+        - 9 goes with 3
+        - 10 goes with 4
+        - 11 goes with 5 & 6
+      - On the second iteration, people numbered 4 and 5 are paired. People numbered 7 to 11 rotate. This means:
+        - 11 goes with 1
+        - 7 goes with 2 
+        - 8 goes with 3
+        - 9 goes with 4 & 5
+        - 10 goes with 6
+      - On the third iteration the two rotations happen again, resulting in the following:
+        - 10 goes with 1
+        - 11 goes with 2 
+        - 7 goes with 3 & 4
+        - 8 goes with 5
+        - 9 goes with 6
 - Write down something nobody knows about you, then we have to guess which one is who.
     - In person:
       - this goes on folded pieces of paper. 

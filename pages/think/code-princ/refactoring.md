@@ -138,7 +138,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Your challenge is to add a new type of thing with its own rules.
 - There are links in the repo readme about ways of approaching it, and [here](https://www.eficode.com/blog/advanced-testing-refactoring-techniques) are some discussions of different approaches. 
 - There are three videos made by Emily detailing some really interesting Gilded Rose refactoring:
-    - Part 1: [Using CombinedApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=OJmg9aMxPDI)
+    - Part 1: [Using CombinationApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=zyM2Ep28ED8)
     - Part 2: [Using "lift up conditional" to untangle the code](https://www.youtube.com/watch?v=OJmg9aMxPDI)
     - Part 3: [Replacing conditional with polymorphism](https://www.youtube.com/watch?v=NADVhSjeyJA)
 - Is Sandi Metz's book All the Little Things based around the gilded rose kata?
