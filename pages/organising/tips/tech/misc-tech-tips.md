@@ -285,3 +285,6 @@ On phone:
 - Alternatively, mail the photo to yourself to convert it to JPG.
 - Change all future photos to JPG by tapping Settings > Camera > Formats > Most Compatible.
 
+## How to quit Slack if normal means don't work
+
+Ctrl + Q
