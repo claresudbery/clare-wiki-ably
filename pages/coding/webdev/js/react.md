@@ -19,6 +19,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## Docs and Blog Posts
 
 - [ReactiveX](/pages/coding/tools/ReactiveX)
+- [Difference between a framework and a library](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/) (spoiler: it's all about inversion of control)
 
 ## Reagent
 
