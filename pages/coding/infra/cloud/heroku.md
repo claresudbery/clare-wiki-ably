@@ -72,6 +72,7 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
             - Add review apps
         - I added a new branch 
         - I added an app.json to the new branch, with `{"stack": "heroku-22"}` in it
+            - Note this only works when upgrading review apps - you can't use this method to upgrade main app
         - I created a PR from that branch
         - I went to the Pipeline tab and clicked Create Review app under the PR
         - ... but this failed when I revbiewed the deployment, and there was no feedback as to why
