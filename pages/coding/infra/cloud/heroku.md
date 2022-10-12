@@ -43,6 +43,47 @@ If I decide to switch to Circle CI in the future, I think [this page for the Cir
 
 I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/README.md#deploying-to-heroku-via-travis).
 
+## My apps
+
+- See clare-tech: heroku.md
+
+## Free dyno hours
+
+- [More here](https://devcenter.heroku.com/articles/free-dyno-hours)
+- To see hours used by one app:
+    - Run `heroku login` and then `heroku ps -a [app-name]` to see how many hours have been used by that app and how many hours you have left in your account. The first two lines of output will tell you ("Free dyno hours...")
+- To see hours used by all apps:
+    - Visit [the billing page](https://dashboard.heroku.com/account/billing) to see a list of all apps and how many hours they've used
+- To turn off a worker dyno (might be running constantly if there is no web app, for instance if it's just a docker app - [more here](https://devcenter.heroku.com/articles/dynos)):
+    - Run `heroku login` and then `heroku ps:stop worker -a [app name]`
+
+## Upgrade to heroku-22 from heroku-18 (12/10/22)
+
+- Find out which apps are using a particular stack (in this case `heroku-18`):
+    - `heroku login`
+    - (If not already done) `heroku plugins:install apps-table`
+    - `heroku apps:table --filter="STACK=heroku-18"`
+- I followed instructions [here](https://devcenter.heroku.com/articles/upgrading-to-the-latest-stack) and [here](https://devcenter.heroku.com/articles/github-integration-review-apps#configuration)
+- This is what I did (on mars-rover, used as test bed):
+    - I tried using review apps, but it didn't work:
+        - I added review apps ([info here](https://devcenter.heroku.com/articles/github-integration-review-apps#configuration))
+            - Pipeline => Settings
+            - Connect to a github repo
+            - Add review apps
+        - I added a new branch 
+        - I added an app.json to the new branch, with `{"stack": "heroku-22"}` in it
+        - I created a PR from that branch
+        - I went to the Pipeline tab and clicked Create Review app under the PR
+        - ... but this failed when I revbiewed the deployment, and there was no feedback as to why
+    - Do I just clicked the upgrade button in the settings
+        - This didn't work - build log showed deploy failed because I was using a vserion of Ruby not supported by the new heroku stack
+        - So I rolled back: 
+            - find previous release: `heroku login` then `heroku releases -a [app name]`
+            - Roll back to last release using previous stack: `heroku rollback v28`
+            - Check it's worked by listing all apps using the previous stack (in this case `heroku-18`): 
+                - (If not already done) `heroku plugins:install apps-table`
+                - Then `heroku apps:table --filter="STACK=heroku-18"`
+
 ## Misc Heroku Stuff
 
 - There are some heroku-related notes in the [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
