@@ -55,7 +55,7 @@ You're one of today's lucky ten thousand! The diet coke and mentos thing.
     
 From [here](https://xkcd.com/1053/)
 
-## The sudo!! xkcd comic
+## The sudo !! xkcd comic
 
 ![Sudo make me a sandwich](https://imgs.xkcd.com/comics/sandwich.png)
     
