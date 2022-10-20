@@ -153,6 +153,7 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 - Also, if you make this change and you're using a command to run tests only in one folder, it will mess with that
   - It's all about the `package.json` ["scripts" setting](/pages/coding/tools/testing/jest.md#running-only-subsets-of-tests)
   - It should be possible to fix this with the right regex in the `testPathPattern` section, but I couldn't get this working because I'm hopeless at regex
+    - I asked a Stack Overflow question about it [here](https://stackoverflow.com/questions/74141047/how-to-create-simple-readable-regex-that-matches-either-of-two-possible-file-pat)
   - So in the end I gave up and used the [making files invisible](#making-derived-files-invisible-in-vs-code) method.  
 - An alternative to this method is to [make derived files invisible](#making-derived-files-invisible-in-vs-code).
 
