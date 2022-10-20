@@ -25,6 +25,23 @@ permalink: /pages/coding/tools/Visual-Studio-Code
     - hold down Shift + Alt/Option , then click and drag with the mouse
     - (On a Mac it's Shift + Alt/Option in most apps)
 
+## Moving Terminal and other panels around
+
+- To move it into right panel ("secondary sidebar"): 
+  - 1. (if you don't already have terminal open) Terminal => New terminal
+  - 2. View => Appearance => Secondary sidebar (turn on)
+  - 3. Drag the terminal from bottom to new sidebar panel on right
+- To move it back to bottom again:
+  - 1. View => Appearance => Panel (turn on)
+  - 2. Drag terminal back to the bottom by clicking and holding on the little ">" icon, top left of the Terminal panel.
+- General arrangement of screen components
+  - View => Appearance
+  - The "primary sidebar" is the one that contains folder view
+  - The "secondary sidebar" is the one that is optional and can have stuff ragged into it
+  - The "panel" is the thing that normally appears at the bottom and contains things like output and debug console.
+  - To get bottom panel to appear to right of primary sidebar instead of filling the width of the screen:
+    - View => Appearance => Align panel => Center
+
 ## Debugging
 
 - If you want to debug code in VS Code, you need a `launch.json` file. 
@@ -51,3 +68,4 @@ permalink: /pages/coding/tools/Visual-Studio-Code
     "files.autoSave": "afterDelay"
 }
 ```
+
