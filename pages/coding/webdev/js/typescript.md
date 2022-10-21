@@ -4,6 +4,10 @@ location: pages/coding/webdev/js/leaf
 permalink: /pages/coding/webdev/js/TypeScript
 ---
 
+## Useful links
+
+- [typescript tutorial](https://www.w3schools.com/typescript/index.php)
+
 ## Getting started with typescript in VS Code
 
 Run the following command on the comand line:

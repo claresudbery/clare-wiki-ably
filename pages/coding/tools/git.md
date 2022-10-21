@@ -48,6 +48,23 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Git-Playground](https://github.com/claresudbery/Git-Playground)
 
+## Rename master branch to main
+
+- "master" is problematic language because of its connotations of enslavement. Increasing numbers of people are renaming to `main` instead.
+- Like this:
+- Locally:
+  - `git branch -m master main`
+  - `git push -u origin main`
+- At github.com, gop to your repo:
+  - Settings => Branches => Default branch
+  - Click the "switch" button (two opposite-facing arrows) to the side of the master branch
+  - Select the main branch and click Update
+  - Confirm
+- Back on your local command line:
+  - `git push origin --delete master`
+
+
+
 ## Git autostash
 
   - `git autostash`
