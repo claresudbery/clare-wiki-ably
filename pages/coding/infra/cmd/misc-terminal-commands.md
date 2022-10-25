@@ -254,6 +254,7 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
           - For .xz: **unxz**
 
 ## Installing scripts
+
   - Copy script into \~/scripts folder
   - Edit PATH env var to include scripts folder
       - Put something like this into something like \~/.bashrc or

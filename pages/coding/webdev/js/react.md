@@ -24,6 +24,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [ReactiveX](/pages/coding/tools/ReactiveX)
 - [Difference between a framework and a library](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/) (spoiler: it's all about inversion of control)
 
+## Automatically responding to code changes with Live Server
+
+- On command line: `npm install -g live-server`
+- Then: `live-server`
+    - This will automatically launch the default browser. When you make a change to any file, the browser will reload the page - unless it was a CSS file in which case the changes are applied without a reload.
+- [More here](https://www.npmjs.com/package/live-server)
+
 ## Reagent
 
 - Reagent is a library – a Clojurescript wrapper around react js. See [Clojure notes](/pages/coding/lang/func/Clojure#reagent)
@@ -41,7 +48,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 #### Troubleshooting node version
 
-- I had node v 13 which didn't work (`The engine "node" is incompatible with this module. Expected version "^10 or ^12 or >=14". Got "13.10.1"`) so I upgraded node, but it took a bit of doing to get it right.
+- I had node v 13 which didn't work (`The engine "node" is incompatible with this module. Expected version "^10 or ^12 or >=14". Got "13.10.1"`) so I upgraded node
+    - On Windows, I just [used the Windows installer](https://nodejs.org/en/download/current/) but it took a bit of doing to get it right on both Windows and my Mac.
     - See [troubleshooting notes on my node page](/pages/coding/webdev/js/Node-JS#upgrading-node---troubleshooting).
 
 #### Troubleshooting getting started with a project not created on your machine

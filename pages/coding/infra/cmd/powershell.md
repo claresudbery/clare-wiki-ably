@@ -25,3 +25,9 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 - (Actually the first might not be necessary - I think maybe you would need that one if you were going to create your alias in a separate Powershell script file and run it from there).  
 - Re-open Powershell (or just open a new tab, if you have Windows Terminal), and now if you type `myfolder` (or whatever your function was called) and enter, you should execute the action of your alias / function.  
 - It is possible to use a `set-alias` command in Powershell to set up aliases, but in this case that just seems to unnecessary extra layers of complexity. I think you would use that if you wanted to run something from a separate Powershell script. More [here](https://superuser.com/questions/516700/bash-aliases-equivalent-for-powershell).
+
+
+## Environment variables
+
+- Works differently in Powershell.
+- For instance if you want to see your PATH env var, do it like this: `$Env:Path`

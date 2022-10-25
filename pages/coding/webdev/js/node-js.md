@@ -34,6 +34,19 @@ Good explanation [here](https://flaviocopes.com/update-npm-dependencies/).
 
 ## Upgrading node - Troubleshooting
 
+
+### Windows
+
+- I [used the Windows installer](https://nodejs.org/en/download/current/), but couldn't run node commands on the command line even after restart.
+- It turned out only my system path had been updated and not my user path.
+- Solution:
+  - Use Windows button to search for "environment variables" and select "Edit the system environment variables"
+  - Click Environment variables
+  - Find the path variable under user variables. Select it and click Edit...
+  - If you can't see `C:\Program Files\nodejs` or `C:\Program Files (x86)\nodejs` listed, click New and add it (check your file explorer to see which version is correct).
+
+### Mac
+
 - If you try to upgrade node, you might find yourself in a situation where despite the upgrade apparently being successful, you are still seeing the wrong version when you run `node -v` or `node --version` on the command line. This happened to me, and it turned out to be all about `nvm`. Here are my notes:
     - [Node upgrade details here](https://phoenixnap.com/kb/update-node-js-version)
         - I first used the [MacOS Installer](https://nodejs.org/en/download/current/), but it didn't work:
