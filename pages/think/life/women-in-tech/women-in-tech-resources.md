@@ -9,6 +9,7 @@ permalink: /pages/think/life/women-in-tech/Women-in-Tech-Resources
 - See OneDrive/TW-Stuff/Organising/Notes (only available to Clare, but all the publicly-facing info is now moved to the [public spreadsheet](https://docs.google.com/spreadsheets/d/1rUVdL8GbVa32JWuIW3UbFi2gKzQwY7TDLlaqkVzzWos/edit?usp=sharing) anyway)
 - List of non-male speakers [here](https://docs.google.com/spreadsheets/d/1rUVdL8GbVa32JWuIW3UbFi2gKzQwY7TDLlaqkVzzWos/edit?usp=sharing)
 - A bunch of really interesting non-men sharing a bunch of useful resources: https://twitter.com/thecodecleaner/status/1369046027437740033?s=20 (Twitter handles: @Kendra_Little, @SQLStephanie, @Julia_Hayward, @HobbitsWife, @sheel9, @HotCupOfTeaPls, @CeriShaw, @Labyrinthsprite, @DrPremaLatha_, @KateBrierton, @VictoriaJMS, @apaipi (Aino Vonge Corry), @CaraHanman, @Sazzle, @ZaraSheldrake, @ClaireyHannon, @ClareTunstall)
+- Clare only: See lists.md in clare-tech.
 
 ## Docs and Blog Posts
 

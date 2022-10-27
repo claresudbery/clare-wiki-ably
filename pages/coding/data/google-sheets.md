@@ -63,7 +63,10 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 
 ## Time formatting
 
-To get times that are summed to be potentially more than 24 hours:
+- To get times that are summed to be potentially more than 24 hours: 
+- Format => Number => Custom date and time => click the dropdown and select elapsed hours, then type a colon, then select minutes from the dropdown.
+  - If you google it, it will tell you to type "[hh]:mm" into the field, but I couldn't get this to work. I had to select from the dropdown instead, and then when I viewed it in the Format menu it would say "[hh]:mm" even though it owuldn't let me enter that manually
+- !! Sometimes it doesn't work when you are using the `SUM` formula. I discovered that if I'd added a `SUM` formula to a column that didn't have the correct formatting, then I fixed the formatting, the value would still refuse to over `24:00`. The solution seemed to be to delete the `SUM` formula and then manually re-insert it. Then finally I could get a value over `24:00`.
 
 
 

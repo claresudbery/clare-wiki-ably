@@ -18,6 +18,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - CBF PRIVATE: 
     - [cbf/react-starter-files](https://github.com/cbfacademy/react-starter-files) 
     - [cbf/cbf-sample-solutions/software engineering/C_react/2022-10-sample-solutions](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions)
+    - [cbf/react-starter-files-solutions](https://github.com/cbfacademy/react-starter-files-solutions)
+
 
 ## Docs and Blog Posts
 
@@ -73,3 +75,20 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 create-react-app-playground
 npx create-react-app create-react-app-playground --template typescript
 ```
+
+## JSX and Babel
+
+- Stands for JavaScript eXtensible markup language. So a bit like XML.
+- Allows you to write lines of code like this: `const element = <h1>Hello, world!</h1>;`
+- Lines like the above are transpiled into Javascript `React.createElement()` calls via the `Babeljs.io` library
+- You can use the [Babel repl](https://babeljs.io/repl) to test the compiler in the browser.
+- You can embed JavaScript in JSX using `{}` like this: `const element = <h1>{name}'s React Page</h1>;`
+
+## React Developer Tools
+
+- Chrome extension, v useful. Can be [found here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en).
+
+## React forms
+
+- [useful demo here](https://www.w3schools.com/react/react_forms.asp)
+- (Clare only) [Example here, in the jsx-components/bonus-greeting folder](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions)

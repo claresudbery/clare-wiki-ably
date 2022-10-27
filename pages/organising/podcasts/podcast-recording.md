@@ -34,6 +34,7 @@ But by default, every time I join a video call, my computer is selecting the ROD
 This is my second RODE mic. It is a replacement for another mic which was exactly the same product. This didn't happen with the previous mic.
 I feel like there must be some button I can press or setting I can change to stop this happening, as this didn't happen with the previous mic. 
 Can you help?
+(see below for response)
 
 Notes from me:
 - Maybe it only happens when my headphones are disconnected?
@@ -43,3 +44,7 @@ Notes from me:
   - got as far as deleting the driver and reinstalling via restarting laptop, but got same error. 
   - also tried disabling in device manager and re-enabling
   - Haven't yet tried installing driver via compatibility mode.
+
+Response from them:
+- "I would suggest to make sure your USB headphones are set as default playback and communication in your Windows sound settings."
+- I went into sound settings and clicked "Manage sound devices" then clicked through to each device. I didn't see a default option, but you can enable or disable each device, so I did that.

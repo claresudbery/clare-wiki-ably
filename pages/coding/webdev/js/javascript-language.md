@@ -22,3 +22,33 @@ permalink: /pages/coding/webdev/js/Javascript-Language
           };
           const { frontend, backend } = freeCodeCamp;`
 - [More here](https://www.freecodecamp.org/news/destructuring-patterns-javascript-arrays-and-objects/#:~:text=To%20destructure%20an%20array%20in,the%20array%20storing%20the%20element)
+
+## Javascript String Interpolation
+
+```
+const name = "Clare";
+const title = "This is ${name}'s page.";
+```
+
+## Javascript RegEx
+
+This will do case-insensitive matching use regex:
+
+```
+const name = "ClArE";
+if (name.match(/Clare/i)) {
+  const title = "You are now entering Clare's secret page.";
+}
+```
+
+## Javascript case-insensitive RegEx and string interpolation
+
+You can't do normal Javascript string interpolation in regex unless you use the RegExp object. The below is equivalent to `name.match(/Clare/i)`, but now we're using `MY_NAME` in place of the hard coded "Clare". 
+
+```
+const MY_NAME = "Clare";
+const name = "ClArE";
+if (name.match(new RegExp(MY_NAME, "i"))){
+  const title = "You are now entering Clare's secret page.";
+}
+```
