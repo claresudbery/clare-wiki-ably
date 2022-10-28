@@ -13,6 +13,7 @@ permalink: /pages/organising/tools/gadgets/Cat-Tracker
     - I changed tracking frequency to once per minute (Settings => Location Update Schedule) and went for another walk a few days later:
         - Date / time: 12/10/22, between 12:20 and 13:20
         - I did a loop around the park and then a loop around the Asda block (including brief visit to Asda), and it tracked my location accurately
+        - I've changed it back to update location every 10 mins (in settings) to preserve battery, but if she ever goes missing I'll just be able to change it back to track once per minute and I'll be able to track her movements.
 - Looking at tracking data:
     - On the tracking screen ("Track", bottom right of home screen), you have to click the Track button to see results
     - My original walk data (when it said I was in Bickerdyke Court) didn't seem to get persisted.

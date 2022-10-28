@@ -91,4 +91,69 @@ npx create-react-app create-react-app-playground --template typescript
 ## React forms
 
 - [useful demo here](https://www.w3schools.com/react/react_forms.asp)
-- (Clare only) [Example here, in the jsx-components/bonus-greeting folder](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions)
+- [Passing data and events between React components](https://www.freecodecamp.org/news/pass-data-between-components-in-react)
+- (Clare only) [Example forms here, in the jsx-components/bonus-greeting folder](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting). There are four different versions. You can switch between them by changing which component is referenced in `src/App.js`.
+
+## Hooks and functional components
+
+### useState hook
+
+- `useState` is the method used to change state in functional components
+- Typically it looks like this: `const [count, setCount] = useState(0);`
+    - This example uses [array destructuring](/pages/coding/webdev/js/javascript-language.md#destructuring-arrays-and-objects) to set the variable `count` with a default of 0 and a method of `setCount` for updating the variable.
+- [This code](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting) contains an example
+
+### useEffect hook
+
+- The `useEffect() `hook tells your component to do something after every render.
+
+```javascript
+useEffect(() => {
+    document.title = `${count} Clicks Counted`
+});
+```
+
+- The code in `useEffect` above would be called every time a component is rendered. 
+- This would means that the `title` tag of the site will change on each render if the variable `count` has changed
+- `useEffect` is equivalent to the class component methods of `componentDidMount()`, `componentDidUpdate()` and `componentWillUnMount()` all in one
+- `useEffect()` takes two arguments. The first is the function to call, and the second argument is an array which can be used to define how many times the first argument should be called
+
+## Class components
+
+### Lifecycle
+
+- Lifecycle Methods (in order of execution):
+    - Mounting (Birth)
+        - constuctor()
+        - static getDerivedStateFromProps()
+        - render()
+        - componentDidMount()
+    - Updating (Growth)
+        - static getDerivedStateFromProps()
+        - shouldComponentUpdate()
+        - render()
+        - getSnapshotBeforeUpdate()
+        - componentDidUpdate()
+    - Unmounting (Death)
+        - componentWillUnmount()
+- Special methods allow you to call code that can help setup or clear up resources when a component mounts or unmounts.
+- The order of execution of the components are important for when they are called.
+- [Lifecycle cheatsheet](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ )
+
+### State
+
+- React has another special built-in object called `state`, which allows components to create and manage their own data
+- Unlike `props`, components cannot pass data with `state`, but they can create and manage it internally
+    - Components can receive data via `props` and then store it in their own internal `state` via the constructor
+    - If you want to set state using props, pass props as the second argument of the `setState()` method e.g. `this.setState((state,props) => ({lastname: props.lastname}));`
+- `state` is set in the constructor of a component which is called only once when the component is created: `this.state = { firstname: "Donna", lastname: "Summer" }`
+- `state` should not be modified directly but can be modified with a special method called `setState()`: `this.setState({lastname: "Winter"});`
+    - Changing the state of a React component will trigger a re-rendering of the component (not the whole DOM)
+    - It's important to note that changing state directly is possible, but bad practice
+    - Changing state directly will not cause the component to re-render,  so, don't do this when you want to update state: `this.state.lastname = "Winter";`
+- With React Hooks, state can be changed in functional and class components
+    - Without React Hooks, state can only be used in class components
+    - `useState` is the method used to change state in functional 
+        - [This form code (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting) contains an example
+
+
