@@ -537,11 +537,7 @@ zsh completions have been installed to:
             - XCode => Preferences => Locations => select option from Command Line Tools dropdown
             - [More here](https://stackoverflow.com/questions/29108172/how-do-i-fix-the-xcrun-unable-to-find-simctl-error)
     - Third method:
-        - Open QuickTime Player
-        - Choose File > New Screen Recording
-        - Click on the down arrow next to the Record button
-        - Select Internal Microphone
-        - Record
+        - Use QuickTime Player. Details [here](/pages/organising/tips/tech/misc-tech-tips.md#record-your-screen-on-a-mac).
     - Fourth method
         - Record on iphone or other device
         - the drawback is it only works for devices you own

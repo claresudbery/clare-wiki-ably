@@ -210,6 +210,29 @@ Search terms: record screen / screen recording
 - Check the "Yes, this is a game" checkbox to load the Game Bar. ...
 - Click on the Start Recording button (or Win + Alt + R) to begin capturing video
 
+## Record your screen on a Mac
+
+- Open QuickTime Player
+  - Note that this opens the Finder app as its first screen, which can be confusing and feel like it hasn't open at all.
+  - But you will now have the QuickTime menu visible at the top of your screen, with all the quickTime functionality.
+- Choose File > New Screen Recording
+  - You will now have a dotted line around your screen which you can drag to adjust the screen area you want to record
+  - Once you're happy, just click the Record button on the menu bar.
+- If you want to record sound too (by default it will be silent):
+  - Click on the Options down arrow next to the Record button
+  - Select your internal microphone
+- How to stop recording!
+  - This is not obvious at all.
+  - In your menu bar will be a tiny Stop icon (a grey square). Click this.
+- How to play it back!
+  - Also can be not obvious, as if you've recorded full screen it will just feel like you're looking at your screen. And if you happened to start by looking at some form of media player, you might get confused.
+  - When you hover over your screen, a play bar will appear. Click play to start playback.
+  - The play bar will remain visible while you playback, unless you move your cursor to the edge of the screen. Move your cursor back to the centre to see it again. To stop playback, just click Pause.
+  - Then you can use the QuickTime menu to work with your recording.
+- How to find it!
+  - By default, the recording will be in your desktop.
+  - To find it, use File => Move
+
 ## Download bank statements from Monzo mobile
 
 - See notes in clare-tech (available to clare only)
