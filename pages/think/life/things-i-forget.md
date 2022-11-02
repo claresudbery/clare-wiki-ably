@@ -272,3 +272,16 @@ Squingulum Squangulum
 BUCK!!
 
 *Not nice at all.
+
+## What's that song with lyrics that sound exactly like two different phrases?
+
+[Think of us kissing, by Hamish Hawk](https://matchlyric.com/hamish-hawk-think-of-us-kissing/)
+
+```
+Still amidst all the hissing
+I'm remembering kissing the angel with the incredible piercing
+While you're on brand names and acquisitions
+Feckless sex dreams with cowards' omissions
+```
+
+I couldn't tell whether the last line was talking about "feckless extremes" or not (turns out not).

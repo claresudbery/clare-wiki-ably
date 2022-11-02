@@ -135,10 +135,11 @@ and the repository exists."
   - or if you get an email saying your personal access token has expired
   - or if you get "authentication failed" when trying to push to GitHub from command line
 - Follow the link to regenerate personal access token (I think I was sent this in an email)
+  - Make sure you take a copy! You can store it in a password manager.
   - Note that by default it will be set to expire in 30 days, but you can change this to make it last longer.
 - Windows:
   - The next time you do a git push on windows, it'll open a git dialog
-  - The first dialog wants your actual GitHub password
+  - The first dialog wants your actual GitHub password, and it will say it has failedclaresudbery
   - The second one - "OpenSSH" - wants your GitHub username but when it asks for a password it wants the personal access token.
   - After that Windows will store it for you and you won't need it again.
 - Mac:
