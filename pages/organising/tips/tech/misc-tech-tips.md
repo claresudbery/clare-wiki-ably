@@ -209,6 +209,14 @@ Search terms: record screen / screen recording
 - Press the Windows key + G at the same time to open the Game Bar dialog.
 - Check the "Yes, this is a game" checkbox to load the Game Bar. ...
 - Click on the Start Recording button (or Win + Alt + R) to begin capturing video
+- To find the resulting file: 
+  - Press Windows + G again 
+  - Select the recording in the gallery
+  - Click Open file location (lower down on the right).
+- To play back double speed:
+  - Open in Windows Media Player 
+  - Right-click and choose Enhancements => Play speed settings
+- See [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#heading=h.o2emasiobw17) for useful cheat sheet to use in workshops
 
 ## Record your screen on a Mac
 
@@ -232,6 +240,7 @@ Search terms: record screen / screen recording
 - How to find it!
   - By default, the recording will be in your desktop.
   - To find it, use File => Move
+- See [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#heading=h.o2emasiobw17) for useful cheat sheet to use in workshops
 
 ## Download bank statements from Monzo mobile
 
