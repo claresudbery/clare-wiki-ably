@@ -41,3 +41,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Organisations moving faster, are typically breaking less.
     - There is no evidence that organisations are able to optimise one of those things by trading off the others. High performers score highly across the board in all four metrics, low performers score badly across the board.
 - [Blog post about the report](https://www.previous.cloudbees.com/blog/dora-and-google-cloud-chart-pathway-elite-devops-performance?utm_source=google&utm_medium=cpc&utm_campaign=Flow_EU&utm_content=&gclid=EAIaIQobChMIh6faoY6v6AIViaztCh3JcwRkEAAYAiAAEgIVLfD_BwE)
+
+## The Three Ways of DevOps
+
+- From The Phoenix Project and The DevOps handbook
+- The First Way: Principles of Flow
+- The Second Way: Principles of Feedback
+- The Third Way: Principles of Continuous Learning
+- [More here](https://blog.sonatype.com/principle-based-devops-frameworks-three-ways#:~:text=If%20you've%20read%20either,Way%3A%20Principles%20of%20Continuous%20Learning)
