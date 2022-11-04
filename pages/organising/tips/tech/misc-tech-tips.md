@@ -205,6 +205,23 @@ That's it! Happy Miroing.
 
 Search terms: record screen / screen recording
 
+### Use Vimeo
+
+- Can be done in the browser
+- Go to [Vimeo website](https://vimeo.com/)
+- Set yourself up with a free account
+- Big blue button - "New video" - "Record screen"
+
+### Use OBS Studio
+
+- Free, open source
+- Has to be downloaded
+- Download [from here](https://obsproject.com/)
+
+### Use Game Bar
+
+!!! Not recommended for coding demos, because context menus are not recorded - so if you want to demo using Resharper tools, for instance, you never see the Resharper menu pop up on screen.
+
 - Open the app you want to record. 
 - Press the Windows key + G at the same time to open the Game Bar dialog.
 - Check the "Yes, this is a game" checkbox to load the Game Bar. ...
