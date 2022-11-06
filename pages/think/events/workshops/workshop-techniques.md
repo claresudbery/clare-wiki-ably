@@ -130,6 +130,17 @@ A lot of people hate it. Then again... a trainer I knew, during a powercut, got 
 
 Many other brilliant ideas for how to collaborate and brainstorm effectively are available [here at Liberating Structures](http://www.liberatingstructures.com/).
 
+## The perfection game
+
+- A way of providing feedback
+- Not actually one of the [Liberating Structures](http://www.liberatingstructures.com/) (as I first thought) but uses the same principles.
+- One by one, everyone...
+  - Gives a score of 1 to 5 according to the value of the thing being evaluated
+  - Says what they like about it
+  - Says what would be needed to make it perfect
+  - No negative comments allowed
+- [More here](https://allthingsagile.ca/post/4-ways-to-use-the-perfection-game-to-help-your-agile-teams/)
+
 ### Distributed learning
 
 Split people into groups and get each group to research answers to questions within a particular subject area. Then each group comes back and presents what they've learnt to the wider session. Each group learns more on their individual topic, all groups learn via the presentations at the end. 

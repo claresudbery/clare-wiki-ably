@@ -19,6 +19,32 @@ permalink: /pages/think/teach/Teaching-Resources
 - [Blog post](https://rbs-tito.medium.com/the-resilience-of-mixed-seniority-engineering-teams-eacb98f185d1) from Tito Sarrionandia about the benefits of having juniors on your team
 - [Blog post](https://craigbass.uk/my-blog/maximising-involvement-in-mixed-seniority-engineering-teams) from Craig Bass (who used to run the [Made Tech academy]()), also about the benefits of having juniors on your team
 
+## Concepts
+
+### Bloom's taxonomy
+
+- Set of three hierarchical models
+- Used for classification of educational learning objectives into levels of complexity and specificity
+- The three lists cover the learning objectives in cognitive, affective and psychomotor domains
+- The models were named after Benjamin Bloom, who chaired the committee of educators that devised the taxonomy. 
+    - He also edited the first volume of the standard text, Taxonomy of Educational Objectives: The Classification of Educational Goals
+- Cognitive domain list:
+  - The cognitive domain list has been the primary focus of most traditional education and is frequently used to structure curriculum learning objectives, assessments and activities.
+  - 6 stages:
+  - Remember 
+    - Remember what you've learnt
+  - Understand
+    - Understand what you've learnt
+  - Apply
+    - Apply what you've learnt
+  - Analyse
+    - Analyse what you've learnt and determine how the parts relate to one another
+  - Evaluate
+    - Evaluate what you've learnt and determine how the parts relate to one another
+  - Create 
+    - Take what you've learnt and use it to create something new
+    - was previously known as synthesis and came before evluation, but terminology and order was revised in 1956
+
 ## Training Programmes
 
 ### Skills Matrices
