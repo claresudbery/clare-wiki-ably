@@ -254,6 +254,13 @@ Search terms: record screen / screen recording
   - When you hover over your screen, a play bar will appear. Click play to start playback.
   - The play bar will remain visible while you playback, unless you move your cursor to the edge of the screen. Move your cursor back to the centre to see it again. To stop playback, just click Pause.
   - Then you can use the QuickTime menu to work with your recording.
+  - To play back double-speed:
+    - While watching a video in QuickTime:
+      - Hold the option key.
+      - Click the fast forward button.
+      - For each click of the fast forward button, you’ll see the speed start to  increase in 0.1 increments from 1.0x → 1.1x → 1.2x → etc. all the way up to 2.  - 0x.
+    - There is a bug though… The audio drops once you hit 2x speed. 
+      - To work around this bug, simply move to 1.9x speed and stop.
 - How to find it!
   - By default, the recording will be in your desktop.
   - To find it, use File => Move
