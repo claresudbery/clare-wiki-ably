@@ -4,6 +4,10 @@ location: pages/think/code-princ/architecture/leaf
 permalink: /pages/think/code-princ/architecture/Architecture-Principles
 ---
 
+## Neal Ford workshop
+
+- My notes on Neal Ford's architecture workshop: OneDrive\TW-Stuff\Writing\Architecture Book\Neal Ford architecture workshop
+
 ## Things to think about for webapps
 
 - CMS (Content Management System)

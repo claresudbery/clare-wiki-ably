@@ -29,6 +29,59 @@ When working in person, you often want to mix groups up so that people interact 
     - Give everyone a number from 1 to 5 by just counting along the row: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...
     - Label five areas 1 to 5
     - Tell everyone to go find the area with the number they've been given
+- To rotate pairs in person, see [rotating pairs in person](#rotating-pairs-in-person)
+
+### Rotating pairs in person
+
+- Have pairs of chairs facing each other (with or without tables). 
+- Every 5 mins a timer goes off and the people on one side of the desk move round one space.
+- If an odd number of people, on each rotation a different pair of consecutive people on the fixed side of the desks get just one person opposite them. The pairs rotate in the opposite direction:
+  - For instance, if you have 11 people:
+  - People numbered 1 to 6 are on one side of 6 desks. They don't move.
+  - People numbered 7 to 11 go on the other side of the desks, and after 5 mins they move on.
+  - On the first iteration, people numbered 5 and 6 are paired. Person 11 meets both of them at once, to make a three. People 7 to 10 are paired with people 1 to 4. Like this:
+    - 7 goes with 1 
+    - 8 goes with 2
+    - 9 goes with 3
+    - 10 goes with 4
+    - 11 goes with 5 & 6
+  - On the second iteration, people numbered 4 and 5 are paired. People numbered 7 to 11 rotate. This means:
+    - 11 goes with 1
+    - 7 goes with 2 
+    - 8 goes with 3
+    - 9 goes with 4 & 5
+    - 10 goes with 6
+  - On the third iteration the two rotations happen again, resulting in the following:
+    - 10 goes with 1
+    - 11 goes with 2 
+    - 7 goes with 3 & 4
+    - 8 goes with 5
+    - 9 goes with 6
+
+## Useful getting-to-know-you questions
+
+There are a couple of activities below that benefit from these types of questions. Take your pick or come up with your own:
+
+- What's something small you find satisfying? (eg cycling over crunchy Autumn leaves - but it's amazing how many different things people will come up with)
+- What part of the world do you currently live in?
+- What takes up the majority of your weekday time?
+- What's the last TV show you watched, and would you recommend it?
+- What do you hope to get out of this course / job / project [add / delete as appropriate]?
+- What would you recommend a visitor to do or see, if they were planning to visit the place where you live?
+- Tell us about your pets. If you don't have any, what is your favourite animal? If you don't like animals, what is your least favourite animal?
+- What was the first piece of music that moved you?
+- What is your current favourite music track? Who is the artist?
+- What's the last TV show you watched, and would you recommend it?
+- What do you hope to get out of this course / job / project [add / delete as appropriate]?
+- What is your favourite dish that gets cooked by a relative or friend or restaurant?
+- What was the best holiday you ever had?
+- What's your favourite (or most-recently acquired) gadget?
+- What's your favourite food?
+- What was your first job?
+- What was your first childhood pet or favourite toy / game?
+- What food do you hate?
+- What's your favourite holiday destination?
+- [if all software developers] What was your first computer language?
 
 ## Getting to know each other
 
@@ -42,38 +95,10 @@ When working in person, you often want to mix groups up so that people interact 
   - Simple but very effective!
   - Put pairs or threes together
   - Give them 5 minutes or less, depending how many people and how much time you have. 
-  - Give them starter questions to use if they're stuck for conversation topics, but it's not mandatory to use them. Here are some suggestions:
-    - What part of the world do you currently live in?
-    - What takes up the majority of your weekday time?
-    - What's the last TV show you watched, and would you recommend it?
-    - What do you hope to get out of this course / job / project [add / delete as appropriate]?
+  - Give them starter questions to use if they're stuck for conversation topics, but it's not mandatory to use them. For suggestions, see [Getting-to-know-you Questions](#useful-getting-to-know-you-questions).
   - If remote: 
     - Put people into breakout rooms, randomly assigned.
-  - If in person: 
-    - Have pairs of chairs facing each other (with or without tables). 
-    - Every 5 mins a timer goes off and the people on one side of the desk move round one space.
-    - If an odd number of people, on each rotation a different pair of consecutive people on the fixed side of the desks get just one person opposite them. The pairs rotate in the opposite direction:
-      - For instance, if you have 11 people:
-      - People numbered 1 to 6 are on one side of 6 desks. They don't move.
-      - People numbered 7 to 11 go on the other side of the desks, and after 5 mins they move on.
-      - On the first iteration, people numbered 5 and 6 are paired. Person 11 meets both of them at once, to make a three. People 7 to 10 are paired with people 1 to 4. Like this:
-        - 7 goes with 1 
-        - 8 goes with 2
-        - 9 goes with 3
-        - 10 goes with 4
-        - 11 goes with 5 & 6
-      - On the second iteration, people numbered 4 and 5 are paired. People numbered 7 to 11 rotate. This means:
-        - 11 goes with 1
-        - 7 goes with 2 
-        - 8 goes with 3
-        - 9 goes with 4 & 5
-        - 10 goes with 6
-      - On the third iteration the two rotations happen again, resulting in the following:
-        - 10 goes with 1
-        - 11 goes with 2 
-        - 7 goes with 3 & 4
-        - 8 goes with 5
-        - 9 goes with 6
+  - If in person, see [rotating pairs in person](#rotating-pairs-in-person)
 - Write down something nobody knows about you, then we have to guess which one is who.
     - In person:
       - this goes on folded pieces of paper. 
@@ -81,19 +106,22 @@ When working in person, you often want to mix groups up so that people interact 
       - Get people to add cards to a Trello board or similar
       - Or you can use a spreadsheet and just agree to not pay attention to who's writing what. The more people, the less likely people will register who wrote what.
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
-- Split into pairs and share the answer to a question. Then share your partner's answer with the rest of the group. Suggested questions:
-  - What's something small you find satisfying? (eg cycling over crunchy Autumn leaves - but it's amazing how many different things people will come up with)
-  - What would you recommend a visitor to do or see, if they were planning to visit the place where you live?
-  - Tell us about your pets. If you don't have any, what is your favourite animal? If you don't like animals, what is your least favourite animal?
-  - What was the first piece of music you ever owned / connected with?
-  - What is your current favourite music track? Who is the artist?
-  - What takes up the majority of your weekday time?
-  - What's the last TV show you watched, and would you recommend it?
-  - What do you hope to get out of this course / job / project [add / delete as appropriate]?
 - [Composite superheroes](#composite-superheroes)
 - Say three surprising things about yourself (two true, one false), then everybody asks you questions to find out more, then everyone has to guess which one's false.
 - Get everyone to paste a baby pic of themselves into a spreadsheet (give them a few days to get this part done).
     - Then everyone has to guess who's who.
+- [Pair intros](#pair-intros)
+
+### Pair intros
+
+- See [section above](#creating-pairs-or-groups) for ideas on how to create random pairs or groups
+- Split into pairs and share the answer to a question. Then share your partner's answer with the rest of the group. 
+- For question suggestions, see [Getting-to-know-you Questions](#useful-getting-to-know-you-questions).
+- If in person:
+  - postits round the outside numbered 1 to n, one postit per pair, each postit has a different warmup question
+  - tell each other answers to questions
+  - tell each other names
+  - then introduce each other to the rest of the room
 
 ### Composite superheroes
 
