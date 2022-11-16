@@ -87,6 +87,7 @@ There are a couple of activities below that benefit from these types of question
 
 (Each bullet point represents a different activity! This is not all one activity. The ones in more detail are listed below this initial section)
 
+- Lots of great ideas in the [energiser section of funretrospectives.com](https://www.funretrospectives.com/category/energizer/)
 - See [section above](#creating-pairs-or-groups) for ideas on how to create random groups
   - Not generally an issue when remote / online, but useful when in person
 - Speed networking 

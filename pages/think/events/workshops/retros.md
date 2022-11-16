@@ -4,6 +4,16 @@ location: pages/think/events/workshops/leaf
 permalink: /pages/think/events/workshops/Retros
 ---
 
+## Links
+
+- [Fun Retrospectives](https://www.funretrospectives.com/)
+    - Click Create retrospective and then use dropdowns to pick the components yoou want to use
+    - It will create a full interactive retro for you
+    - For each phase, click the share button to share the link so everyone can participate.
+- [Retrospectives wiki](http://retrospectivewiki.org/index.php?title=Retrospective_Plans)
+    - Has a big list of different types of retro, with top level descriptions
+    - and links for each different one with more detail
+
 ## Approaches
 
 ### Tito's Trello approach for remote collaboration

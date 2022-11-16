@@ -108,6 +108,11 @@ Pure functions don’t modify external variables/state/data outside of the scope
 - [More info here at agilealliance.org](https://www.agilealliance.org/glossary/xp)
     - [and here (extremeprogramming.org, Don Wells' site)](http://www.extremeprogramming.org/rules.html)
 
+## Many More Much Smaller Steps (MMMSS)
+
+- This idea comes from Geepaw Hill. It pretty much does what it says on the tin!
+- More from Geepaw [here](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/).
+
 ## Service Design
 
 - [The marbles post](https://thinkpurpose.com/that-marbles-post/)
