@@ -7,8 +7,9 @@ permalink: /pages/think/events/workshops/Retros
 ## Links
 
 - [Fun Retrospectives](https://www.funretrospectives.com/)
-    - Click Create retrospective and then use dropdowns to pick the components yoou want to use
-    - It will create a full interactive retro for you
+    - Click Create retrospective, then "New Retrospective (Full Agenda)"
+    - Use dropdowns to pick the components you want to use
+    - It will create a full interactive retro for you, with headings at the top for each phase
     - For each phase, click the share button to share the link so everyone can participate.
 - [Retrospectives wiki](http://retrospectivewiki.org/index.php?title=Retrospective_Plans)
     - Has a big list of different types of retro, with top level descriptions
