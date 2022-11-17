@@ -156,4 +156,109 @@ useEffect(() => {
     - `useState` is the method used to change state in functional 
         - [This form code (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting) contains an example
 
+## Routing - react-router-dom
+
+- Can use popular standard routing library `react-router-dom`
+    - `npm install react-router-dom`
+- Types of router: 
+    - HashRouter
+        - Uses hash portion of url (the window.location.hash) to keep UI in sync with url
+        - eg `<a href="#/bookcase/first">` 
+    - MemoryRouter
+        - keeps history of url in memory - doesn't read or write to address bar
+    - BrowserRouter
+        - Uses the HTML5 history API (`pushState`, `replaceState` and the `popstate` event) to keep your UI in sync with the URL
+        - Example [here in bookcase app (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions)
+- The `Link` element:
+    - The <Link/> component is used to navigate to the different parts of an application by way of hyperlinks. 
+    - It's similar to HTML’s anchor element (`<a href="/">link</a>`) but the main difference is that using the Link component does not reload the page, it renders the elements based on the matching Router
+    - Link syntax: `<Link to="/items">Items</Link>`
+
+
+## Fragments
+
+- By default, React components can only return one base DOM element
+- This will throw a syntax error: 
+
+```
+render(){
+	return(
+		<div>First</div>
+		<div>Second</div> 
+    );
+}
+```
+
+- Until I discovered fragments I got round this by adding unnecessary parent `div` elements to wrap everything
+- Fragment provides a base element that can be used to group a list of children without adding extra nodes to the DOM, reducing bloat
+- Like this:
+
+```
+render(){
+	return(
+	  <React.Fragment>
+				<div>First</div>
+				<div>Second</div>
+	  </React.Fragment>
+    );
+}
+```
+
+- Fragments declared with the explicit `<React.Fragment>` syntax may have keys. Key is the only attribute that can be passed to a Fragment
+- Keys are required when a child element in a list requires unique "keys". Without the key attribute React will raise a key warning.
+- The new short syntax will allow you to use what looks like empty tags <></> instead of `<React.Fragment>`
+- No attributes can be passed using the short syntax
+- Like this:
+
+```
+render(){
+	return(
+	  <>
+				<div>First</div>
+				<div>Second</div>
+	  </>
+    );
+}
+```
+
+## Controlled components
+
+- These are how React handles HTML forms
+    - They allow you to use React state to track values being typed into form elements
+- Here is an example from the `bonus-greeting` app in [here (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions):
+    - The `final_name` is not a requirement for this approach, it just allowed me to have a separate value for when the user hit Submit, that wouldn't bep opulated until they'd finished typing.
+    - The controlled component in the example below is the name component. The code has been expanded for readability but basically this snippet is the controlled component: `<label>Enter your name: <input type="text" value={name} onChange={(e) => setName(e.target.value)}/></label>`
+
+```
+function GreetingForm1() {
+  const [name, setName] = useState("");
+
+  const [final_name, setFinalName] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setFinalName(name);
+  }
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label>Enter your name:
+          <input 
+            type="text" 
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <input type="submit" />
+      </form> 
+      
+      <Greeting name={final_name} bio={final_bio} />
+    </div>
+  );
+}
+```
+
+
+
 
