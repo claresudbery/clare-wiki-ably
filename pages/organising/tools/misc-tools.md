@@ -271,5 +271,7 @@ gov
   - It can be fiddly if you want to correct mistakes (because you can’t necessarily reverse engineer back to code from rendered image)
   - But it turns out you can give it a gist url](https://github.com/carbon-app/carbon#usage), which is a much better way of keeping track 
 
+## Misc Public APIs
 
-
+- [Some interesting Public APIs](https://github.com/public-apis/public-apis)
+  - Over 100 public APIs that can be used in your projects. It contains APIs that return data on anything from animals, food, government and weather

@@ -14,16 +14,16 @@ permalink: /pages/coding/infra/cloud/Docker
 - [Docker Compose Docs](https://docs.docker.com/compose/compose-file/)
 - [Dockerising a Sinatra app](https://www.codewithjason.com/dockerize-sinatra-application/)
   - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above tutorial. It was deployed on Heroku [here](https://sinatra-docker.herokuapp.com/) but I've now deleted the app to preserve free dyno hours.
-  - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
+  - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It was deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe) but I've now deleted the app to preserve free dyno hours.
 - [Dockerising a .Net app](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows)
   - [dotnet docker hub](https://hub.docker.com/_/microsoft-dotnet)
   - [Deploying an ASP.Net dockerised app to Heroku](https://medium.com/@vnqmai.hcmue/deploy-asp-net-core-to-heroku-for-free-using-docker-bd6d6fc161ae)
   - My heroku-deployed dockerised ASP.Net app:
     - [source code](https://github.com/claresudbery/dotnet-docker-clare) (check readme for notes on things I had to do to get it working)
-    - [deployed app](https://dotnet-docker-clare.herokuapp.com/)
-  - I also have a heroku-deployed dockerised .Net Core web API:
+    - it was deployed [here](https://dotnet-docker-clare.herokuapp.com/) but I've now deleted the app to preserve free dyno hours.
+  - I did also have a heroku-deployed dockerised .Net Core web API:
     - [source code](https://github.com/claresudbery/webapi-docker) (check readme)
-    - [deployed API](https://webapi-docker.herokuapp.com/shiny)
+    - the API was deployed [here](https://webapi-docker.herokuapp.com/shiny) but I've now deleted the app to preserve free dyno hours.
 - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 
 ## Misc

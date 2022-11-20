@@ -76,8 +76,8 @@ See [below](#quick-start-kata-guide) for a quick start guide if writing a kata f
 - [Handy Sinatra documentation](http://sinatrarb.com/intro.html)
 - [Dockerising a Sinatra app](https://www.codewithjason.com/dockerize-sinatra-application/)
   - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
-  - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above two tutorials. It's deployed on Heroku [here](https://sinatra-docker.herokuapp.com/).
-  - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It's deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
+  - See [my sinatra-docker repo](https://github.com/claresudbery/sinatra-docker) for an example created following the above two tutorials. It was deployed on Heroku [here](https://sinatra-docker.herokuapp.com/) but I've now deleted the app to preserve free dyno hours.
+  - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for another example of a Dockerised Sinatra app. It was deployed on Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe) but I've now deleted the app to preserve free dyno hours.
   - Views are held in *.erb template files (same is true of Rails) - `erb` stands for embedded ruby
 - Have a look at [the Shotgun gem](https://github.com/rtomayko/shotgun) if you don't want to have to restart your server every time you make a change.
 - More examples of sinatra apps I have created:  

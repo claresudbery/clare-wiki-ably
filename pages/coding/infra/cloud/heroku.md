@@ -11,7 +11,7 @@ permalink: /pages/coding/infra/cloud/Heroku
 - This clare-wiki site (this one!) is also deployed via Heroku.
 - My [Cards Against Humanity answer generator](https://github.com/claresudbery/cah-answer-generator) is also deployed via Travis to Heroku.
 - My [Ruby version of the Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby) is also deployed via Travis to Heroku.
-- I also have a few simple dockerised sites deployed via Heroku:
+- I did also have a few simple dockerised sites deployed via Heroku (but I've now deleted the apps in Heroku to preserve free dyno hours):
     - [webapi-docker](https://github.com/claresudbery/webapi-docker)
     - [dotnet-docker-clare](https://github.com/claresudbery/dotnet-docker-clare)
 
@@ -56,6 +56,9 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
     - Visit [the billing page](https://dashboard.heroku.com/account/billing) to see a list of all apps and how many hours they've used
 - To turn off a worker dyno (might be running constantly if there is no web app, for instance if it's just a docker app - [more here](https://devcenter.heroku.com/articles/dynos)):
     - Run `heroku login` and then `heroku ps:stop worker -a [app name]`
+- To delete a worker dyno (it might keep gettin restarted for various reasons, so stopping it may not be enough):
+    - Go to the settings page for the app (change url to match app - eg https://dashboard.heroku.com/apps/dotnet-docker-clare/settings)
+    - Scroll down to bottom and click Delete App
 
 ## Upgrade to heroku-22 from heroku-18 (12/10/22)
 
@@ -98,12 +101,12 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
 ## Deploying Dockerised apps
 
 - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
-- See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for an example of a Dockerised Sinatra app, deployed via Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe).
+- See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for an example of a Dockerised Sinatra app, was deployed via Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe) (but I've now deleted the app to preserve free dyno hours.).
 - See [my Docker page](/pages/coding/infra/cloud/Docker) for more Docker stuff.
 - [Deploying an ASP.Net dockerised app to Heroku](https://medium.com/@vnqmai.hcmue/deploy-asp-net-core-to-heroku-for-free-using-docker-bd6d6fc161ae)
     - My heroku-deployed dockerised ASP.Net app:
         - [source code](https://github.com/claresudbery/dotnet-docker-clare) (check readme for notes on things I had to do to get it working)
-        - [deployed app](https://dotnet-docker-clare.herokuapp.com/)
-    - I also have a heroku-deployed dockerised .Net Core web API:
+        - it was deployed [here](https://dotnet-docker-clare.herokuapp.com/) but I've now deleted the app to preserve free dyno hours.
+    - I did also have a heroku-deployed dockerised .Net Core web API:
         - [source code](https://github.com/claresudbery/webapi-docker) (check readme)
-        - [deployed API](https://webapi-docker.herokuapp.com/shiny)
+        - API was deployed [here](https://webapi-docker.herokuapp.com/shiny) but I've now deleted the app to preserve free dyno hours.
