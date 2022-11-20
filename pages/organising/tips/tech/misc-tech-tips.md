@@ -298,6 +298,17 @@ Search terms: record screen / screen recording
 ## Bose Noise Cancelling Headphones Bose NC 700
 
 - [Using the buttons](https://www.bose.co.uk/en_gb/support/articles/HC2538/productCodes/noise_cancelling_headphones_700/article.html?cjevent=e93f88271e2711ed8207cc5b0a18050e&cjdata=MXxZfDB8WXww)
+- See also the insert in my headphone case:
+
+![Headphone insert](/resources/images/bose-headphones.JPEG)
+
+## Logitech G435 LIGHTSPEED Wireless Gaming Headset
+
+- To check battery:
+  - Single press power button, when the headset is ON
+  - Battery 31% to 100% the LED will show green for 5 seconds
+  - Battery 15% to 30% the LED will show red for 5 seconds
+- [Manual](https://manuals.plus/logitech/g435-lightspeed-wireless-gaming-headset-manual#axzz7lBSpqbNC)
 
 ## Select vertical coloumn of text
 
