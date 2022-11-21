@@ -139,7 +139,7 @@ and the repository exists."
   - Note that by default it will be set to expire in 30 days, but you can change this to make it last longer.
 - Windows:
   - The next time you do a git push on windows, it'll open a git dialog
-  - The first dialog wants your actual GitHub password, and it will say it has failedclaresudbery
+  - The first dialog wants your actual GitHub password, and it will say it has failed
   - The second one - "OpenSSH" - wants your GitHub username but when it asks for a password it wants the personal access token.
   - After that Windows will store it for you and you won't need it again.
 - Mac:
