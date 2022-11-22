@@ -195,7 +195,7 @@ There are a couple of activities below that benefit from these types of question
 
 ## The Dictionary Game
 
-- Prep: You need to find some unusual words, so you need goog googling skills or a big dictionary.
+- Prep: You need to find some unusual words, so you need googling skills or a big dictionary.
 - Split into groups of three.
 - Each group is given an unusual word, plus its definition.
 - Between them they have to come up with two false definitions of the word and decide who will read out each of the 3 definitions (false mixed with true).

@@ -259,6 +259,74 @@ function GreetingForm1() {
 }
 ```
 
+## React Routes
+
+### React Routes - Adding code to all pages
+
+- If you're going to include routes, your top level element returned by the `App` component has to be a `Router`
+- As long as you include a `"/"` route, whatever lives in that element will be what's displayed to the user when they first arrive at the site.
+- If you want to add other things that get displayed by default, you can return them from the `App` component, but they have to go inside the `Router` element.
+- This will work:
+
+```js
+export default function App() {
+  return (
+    <Router>
+      <ul className="breadcrumb">
+        <li><Link to="/"> All Pets </Link></li>
+      </ul>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </Router>
+  );
+```
+
+- This won't work:
+
+```js
+export default function App() {
+  return (
+  <>
+    <ul className="breadcrumb">
+      <li><Link to="/"> All Pets </Link></li>
+    </ul>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </Router>
+  </>
+  );
+```
+
+### React Routes - components vs elements
+
+- Some of the sample code you'll see for routes uses `component` and some of it uses `element`
+- `element={}` is version 6 syntax and preferred over `component={}`
+
+Component example (also see [here](https://v5.reactrouter.com/web/api/Route)):
+
+```js
+<Router>
+	<Route exact path="/" component={displayItems} />
+</Router>
+```
+
+Element example (also see [here](https://www.geeksforgeeks.org/reactjs-router/) and [here](https://github.com/claresudbery/cbf-sample-solutions/blob/main/software%20engineering/C_react/2022-10-sample-solutions/routes-and-forms/src/index.js)):
+
+```js
+<Router>
+	<Routes>
+        <Route path="/" element={<Home/>} />
+    </Routes>
+</Router>
+```
+
+- `element={}` is version 6 syntax and preferred over `component={}`
+- Explanation: "Using elements instead of components means we don't have to provide a passProps-style API so you can get the props you need to your elements. For example, in a component-based API there is no good way to pass props to the `<Profile>` element that is rendered when `<Route path=":userId" component={Profile} />` matches."
+    - (Copied from [here](https://reactrouter.com/en/main/upgrading/v5))
+
 
 
 

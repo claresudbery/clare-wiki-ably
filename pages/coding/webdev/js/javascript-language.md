@@ -16,15 +16,15 @@ permalink: /pages/coding/webdev/js/Javascript-Language
 ### Destructuring arrays
 
 - To destructure an array in JavaScript, we use the square brackets [] to store the variable names which will have values assigned to them from the array which currently stores the associated elements."
-    - `const [var1, var2, ...] = arrayName;`
+    - `const [var1, var2] = arrayName;`
 - The following two pieces of code are equivalent:
 
 ```javascript
-const [count, setCount] = useState(0);
+const [count, setCount] = useState("");
 ```
 
 ```javascript
-const countStateVariable = useState(0); 
+const countStateVariable = useState(""); 
 const count = countStateVariable[0]; 
 const setCount = countStateVariable[1]; 
 ```

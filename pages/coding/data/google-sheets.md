@@ -68,6 +68,23 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - If you google it, it will tell you to type "[hh]:mm" into the field, but I couldn't get this to work. I had to select from the dropdown instead, and then when I viewed it in the Format menu it would say "[hh]:mm" even though it owuldn't let me enter that manually
 - !! Sometimes it doesn't work when you are using the `SUM` formula. I discovered that if I'd added a `SUM` formula to a column that didn't have the correct formatting, then I fixed the formatting, the value would still refuse to over `24:00`. The solution seemed to be to delete the `SUM` formula and then manually re-insert it. Then finally I could get a value over `24:00`.
 
+## Conditional formatting
+
+- If you want a column of data to change colour based on another column
+  - so for instance, 
+    - cell H4 only goes green if C4 is populated
+    - cell H5 only goes green if C5 is populated
+    - etc
+  - Highlight the range of cells or column
+  - Format => Conditional formatting
+  - Over on right hand side: 
+    - Select Custom from the drop-down "Format cells if..."
+    - Enter the formula as it would apply to the top row in the range - eg `=C4>0`
+    - Click Done
+    - It will automatically adjust the formula to apply correctly to each individual row
+  - If it gets out of sync after you've copy/pasted or cut data from one place to another:
+    - Delete the custom formula and do it again
+
 
 
 
