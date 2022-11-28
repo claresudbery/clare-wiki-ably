@@ -82,6 +82,7 @@ There are a couple of activities below that benefit from these types of question
 - What food do you hate?
 - What's your favourite holiday destination?
 - [if all software developers] What was your first computer language?
+- What's the oldest piece of tech you still own?
 
 ## Getting to know each other
 
