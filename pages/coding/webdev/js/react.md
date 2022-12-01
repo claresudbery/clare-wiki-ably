@@ -46,6 +46,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [create-react-app - getting-started](https://create-react-app.dev/docs/getting-started/)
 - My [sample repo](https://github.com/claresudbery/create-react-app-playground-win)
 
+### How to start an app created using create-react-app
+
+- On command line: `npm start` (don't forget `npm install` first)
+- If you want to use a different port:
+  - You can just run `npm start` and if someting is already on port 3000, it will detect this and give you the option to use a different port
+  - Or you can place a file called `.env` in the root alongside `package.json` and add the line `PORT=4200` (for example)
+  - Or you can edit the `start` script line in `package.json`, to look like this: `"start": "set PORT=3006 && react-scripts start"`
+
 ### create-react-app - Troubleshooting getting started
 
 #### Troubleshooting node version
@@ -326,7 +334,3 @@ Element example (also see [here](https://www.geeksforgeeks.org/reactjs-router/) 
 - `element={}` is version 6 syntax and preferred over `component={}`
 - Explanation: "Using elements instead of components means we don't have to provide a passProps-style API so you can get the props you need to your elements. For example, in a component-based API there is no good way to pass props to the `<Profile>` element that is rendered when `<Route path=":userId" component={Profile} />` matches."
     - (Copied from [here](https://reactrouter.com/en/main/upgrading/v5))
-
-
-
-
