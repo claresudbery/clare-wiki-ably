@@ -32,7 +32,7 @@ Quick Guide:
       - See [separate section below](#navigating-files-lines-blocks)
   - Copy / paste:
       - Copy current line (“yank”): **yy** - which is the same as **Y**
-      - Paste current line below the line you are on (“put”): **p**
+      - Paste current clipboard contents below the line you are on (“put”): **p**
       - To replace one line with another: **Y** to yank a line, then go
         to the line you want to replace and type **Vp**
           - **V** puts the whole line into visual mode, and then **p**
