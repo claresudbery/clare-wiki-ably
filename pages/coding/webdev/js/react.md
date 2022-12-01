@@ -50,7 +50,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - On command line: `npm start` (don't forget `npm install` first)
 - If you want to use a different port:
-  - You can just run `npm start` and if someting is already on port 3000, it will detect this and give you the option to use a different port
+  - You can just run `npm start` and if someting is already on port 3000, it will detect this and give you the option to use a different port (it will automatically choose an alternative port for you)
   - Or you can place a file called `.env` in the root alongside `package.json` and add the line `PORT=4200` (for example)
   - Or you can edit the `start` script line in `package.json`, to look like this: `"start": "set PORT=3006 && react-scripts start"`
 
