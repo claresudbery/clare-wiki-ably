@@ -38,6 +38,13 @@ permalink: /pages/coding/tools/Git
 
   * !! Make sure your tests are still passing before you push to server 
 
+  * Configure user name and email:
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+```
+
 ## Git Misc
 
 - [ohshitgit.com](https://ohshitgit.com/) - A lovely little site by the wonderful [Katie Sylor-Miller](https://twitter.com/ksylor), designed to get you out of those horrible git messes you might get yourself in, using simple language.
