@@ -12,7 +12,10 @@ permalink: /pages/think/code-princ/Metrics
 
 ## Accelerate Metrics
 
-- The four key metrics described in [the "Accelerate" book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM) are:
+- The four key metrics described in [the "Accelerate" book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM) 
+- aka the DORA metrics
+    - DORA = DevOps Research and Assessment - a startup created by Gene Kim and Jez Humble with Dr. Nicole Forsgren at the helm (those three also wrote the book).
+- The metrics are:
     - Lead time for changes
     - Deployment frequency
     - Time to restore service
