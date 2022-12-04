@@ -37,11 +37,12 @@ permalink: /pages/organising/tools/Miscellaneous-Tools
 
 ## YouTube timestamp
 
-To add a time stamp to a YouTube video, add `?t=43` tp the end of the url.
-
-The time is in seconds, so if you want to go more than 60 seconds in, just calculate the total num of seconds. For instance 1:30 would be `?t=90`
-
-Like this: https://youtu.be/imNlIoeCjao?t=43
+- To add a time stamp to a YouTube video, add `?t=43s` to the end of the url (or `&t=43s` if there are already query params added to the end of the url).
+- The time is in seconds, so if you want to go more than 60 seconds in, just calculate the total num of seconds. For instance 1:30 would be `?t=90s`
+- Like this: https://youtu.be/imNlIoeCjao?t=43s
+- ...or like this: https://www.youtube.com/watch?v=zyM2Ep28ED8&t=127s
+- ! Note you don't have to do the calculation yourself. 
+  - You can just click the Share button in YouTube, check the "Start at" checkbox and fill in the timestamp there.
 
 ## Due app
 

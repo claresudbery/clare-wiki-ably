@@ -137,12 +137,29 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Some things (concert tickets) lose all value after a certain date.
 - Your challenge is to add a new type of thing with its own rules.
 - There are links in the repo readme about ways of approaching it, and [here](https://www.eficode.com/blog/advanced-testing-refactoring-techniques) are some discussions of different approaches. 
-- There are three videos made by Emily detailing some really interesting Gilded Rose refactoring:
-    - Part 1: [Using CombinationApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=zyM2Ep28ED8)
-    - Part 2: [Using "lift up conditional" to untangle the code](https://www.youtube.com/watch?v=OJmg9aMxPDI)
-    - Part 3: [Replacing conditional with polymorphism](https://www.youtube.com/watch?v=NADVhSjeyJA)
 - Is Sandi Metz's book All the Little Things based around the gilded rose kata?
     - She uses a technique in it a bit like lift up conditional?
+
+#### Emily's Gilded Rose Demo Videos
+
+- There are three videos made by Emily detailing some really interesting Gilded Rose refactoring:
+    - Part 1: [Using CombinationApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=zyM2Ep28ED8)
+        - See [below](#combination-approvals) for description of combination approvals
+        - See [mutation testing page](/pages/think/code-princ/testing/mutation-testing.md) for more on that
+        - She looks at the values in the if statements, for instance `if (value < CONSTANT)` and guesses that therefore if you make your inputs be close to the guard value (`CONSTANT`), you are likely to find edge cases
+        - Then she adds approval tests using those values
+        - Then she looks at test coverage metrics to see whether there are any areas of code not covered by the tests
+        - !It's important to notice that using coverage alone, she could NOT create a fully comprehensive suite of tests
+            - This is because you might hit a particular line of code with your tests, but just because you hit that line of code doesn't mean you hit it with every possible relevant set of data combinations
+            - This is where the mutation testing comes in, and I explain that bit on my [mutation testing page](/pages/think/code-princ/testing/mutation-testing.md#emily-bache---gilded-rose).
+        - It's also important to note that what's described above (tweaking inputs and checking the results using code coverage) is NOT mutation testing, because you're altering test test inputs, but you're not altering the actual code to.
+        - See the following timestamps for interesting demo points:
+            - 0:55
+            - 3:40
+            - 4:45
+            - 6:10
+    - Part 2: [Using "lift up conditional" to untangle the code](https://www.youtube.com/watch?v=OJmg9aMxPDI)
+    - Part 3: [Replacing conditional with polymorphism](https://www.youtube.com/watch?v=NADVhSjeyJA)
 
 #### Approval testing
 
@@ -152,6 +169,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Then after you change the code, you run it again, and compare the new output against the Golden Master. Any differences, and the test fails.
 - For Gilded Rose, there are at least two ways of running approval tests:
     - Approval testing functionality: 
+        - If you're using Java, you need to update the `pom` file
+            - See demo in Emily's video, starts timestamp 2:07 [here](https://www.youtube.com/watch?v=zyM2Ep28ED8&t=127s)
         - If you're running the gilded rose code in C#, there's an approval testing tool which is being used
             - Another C# approvals tool is also available - see [below](#verify-approval-testing-tool)
         - It's [this tool](https://github.com/approvals/ApprovalTests.Net)
@@ -209,3 +228,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - At the end of the test: `return Verifier.Verify(myStringResult);`
 - What's produced is a "verified" file rather than an "approved" file - that you work with at the end
 - There's a Resharper plugin that will give you new resharper context menu items for Accept and Compare - makes it easier to work with output files.
+
+#### Combination Approvals
+
+- Demoed by Emily [here](https://www.youtube.com/watch?v=zyM2Ep28ED8&t=400s) (timestamp 6:40)
+    - You can test different combinations of values
+    - Instead of just calling one function with one set of inputs / outputs, you can pass in arrays of values and ask it to test all combinations
