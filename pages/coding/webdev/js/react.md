@@ -334,3 +334,12 @@ Element example (also see [here](https://www.geeksforgeeks.org/reactjs-router/) 
 - `element={}` is version 6 syntax and preferred over `component={}`
 - Explanation: "Using elements instead of components means we don't have to provide a passProps-style API so you can get the props you need to your elements. For example, in a component-based API there is no good way to pass props to the `<Profile>` element that is rendered when `<Route path=":userId" component={Profile} />` matches."
     - (Copied from [here](https://reactrouter.com/en/main/upgrading/v5))
+
+## Relationship between React and Node
+
+- I'm a little bit unclear, but I think it's like this:
+- Node is used to run a server which you can use to run React locally
+- webpack is used to bundle your React js, and webpack is a node package.
+- I think maybe it's technically possible to write React apps without using node?
+- create-react-app is a Node package and relies on Node.
+

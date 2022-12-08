@@ -8,6 +8,30 @@ permalink: /pages/coding/webdev/js/Node-JS
 
 - [Top 10 VS Code extensions for Node js](https://developer.okta.com/blog/2019/05/08/top-vs-code-extensions-for-nodejs-developers)
 
+## Single-threaded non-blocking
+
+- Node can also have separate worker threads so is not always single-threaded, even though it's often described that way.
+- The reason a single thread can be non-blocking is that it is v good at using the same thread to switch between different jobs. And single thread is more performant than having a separate thread for each user.
+- [More here](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
+- ... and [here](https://stackoverflow.com/questions/29911478/node-js-single-thread-non-blocking)
+
+## REPL
+
+- Node [has its own `repl`](https://nodejs.org/api/repl.html). Just type `node` on the command line and hit Enter.
+
+## Misc
+
+- For more information on syntax and available functions view the [resource list](https://developer.mozilla.org/en-US/docs/Web/JavaScript):
+
+## Global scope
+
+- Node.js is different from browser JavaScript when it comes to global scope. 
+- In web browsers the global scope is the window object, which is at the top level. 
+- In a browser if you define a variable using the `var`, `let` or `const` keywords this will declare it as a global object as everything runs from the window.
+- Node is different. The top-level scope is not the global scope. 
+- Declaring a variable inside Node.js will not add it to the global scope. It will be local to that module.
+- To add something to the global scope you need to export it, or [add it to the `global` object](https://stackabuse.com/using-global-variables-in-node-js/).
+
 ## Package management - npm vs yarn
 
 - `Yarn` and `npm` are both package managers - `npm` was specifically created for node. `Yarn` was [created by Facebook engineers](https://engineering.fb.com/2016/10/11/web/yarn-a-new-package-manager-for-javascript/), and is described as simply "javascript package management" but I think maybe it was also created specifically for node?
@@ -145,3 +169,4 @@ If you get a “connection refused” error when trying to visit your app in the
   * It should contain the same list as in your "No Proxy for" setting (see above)
 
 * Check your hosts file
+
