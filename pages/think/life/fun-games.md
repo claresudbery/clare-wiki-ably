@@ -67,8 +67,14 @@ Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-page
 
 ## Games that can be done a bit at a time (eg for wooden advent calendar)
 
-- a new word each day, can be combined to form the title of a sing
+- a new word each day, can be combined to form the title of a song
 - a new letter each day, can be combined to form some word or title or something
+- Can have two song titles or words being clued simultaneously - so they have to work out which words / letters belong to which answers.
+- Possible words to accompany games (for Clare, see Xmas-Christmas-advent-games.docx): 
+    - You have five days to guess two song titles. 
+    - Every day you will receive more words .
+    - All words belong to the titles.
+
 
 ## Wordle backwards
 
