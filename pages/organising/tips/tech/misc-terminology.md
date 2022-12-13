@@ -21,3 +21,7 @@ permalink: /pages/organising/tips/tech/Misc-Terminology
 - Declarative: Declare an intent without specifying implementation detail. Eg Linq
 - Imperative: Say HOW it will be done. Eg detailed for loops?
 
+## SOAP and REST and SOAP vs REST
+
+- See UsefulNotes.docx (available to Clare only - TW-Stuff/Organising/Notes)
+
