@@ -363,3 +363,13 @@ https://forums.tomshardware.com/threads/toshiba-laptop-takes-ages-to-start-up.29
 https://youtu.be/iTnb9wRHnM8 - static discharge is at 1:10. Further things to try are at 3:12. Might be a problem with battery pack.
 
 My Trello card detailing my own attempts to fix: https://trello.com/c/VBANT3GQ/1503-fix-laptop-slow-startup-ring-toshiba-helpline-static-discharge
+
+## Postman
+
+### To see raw headers in Postman
+
+- Look in the console, bottom left
+
+### Postman collections
+
+- See saved Cadogan Postman collections linked to from [here](https://github.com/claresudbery/clare-tech/blob/master/notes/clients/cadogan/useful-links.md) (accessible to Clare only)

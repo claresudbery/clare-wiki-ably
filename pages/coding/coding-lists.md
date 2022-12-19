@@ -41,6 +41,7 @@ permalink: /pages/coding/Coding-Lists
 
 - [NancyFX](/pages/coding/tools/NancyFX)
 - [WebAPI](/pages/coding/dotnet/WebAPI)
+- [Public APIs](https://github.com/public-apis/public-apis)
 
 ### Back End Stuff
 
