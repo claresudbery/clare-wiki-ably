@@ -15,3 +15,10 @@ permalink: /pages/think/life/Places-To-Stay
 
 - [Quirky campers](https://www.quirkycampers.com/uk/)
     - can hire really cool camper vans
+
+## Canon Frome
+
+Family tree details gleaned from church:
+
+![Page 1](/resources/images/canon-frome-family-tree-01.JPG)
+![Page 2](/resources/images/canon-frome-family-tree-02.JPG)
