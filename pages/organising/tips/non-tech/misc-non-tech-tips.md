@@ -19,9 +19,10 @@ The links below were just from one random google. I make no claims for their aut
 ## Parking Fine Appeals
 
 - [This article](https://www.moneysavingexpert.com/reclaim/private-parking-tickets/) is really useful
-- I successfully appealed a fine from Jacksons Boat car park in Dec 2019
+- I successfully appealed a fine from Jacksons Boat (Jackson's Boat) car park in Dec 2019
     - I had to take photos and fill in an online form
     - Details in "Jacksons Parking Appeal" folder in my Dropbox
+    - You can park for free at Jackson's Boat if you're visiting the pub, and that just means you walk into the pub and enter your car reg into the machine on the bar. But you don't get a receipt and there's no obvious proof that you've done this!
 
 ## elderly cats and urination
 
