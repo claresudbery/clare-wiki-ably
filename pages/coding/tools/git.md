@@ -1327,3 +1327,7 @@ and the repository exists."
 ## API keys
 
 - There are some brief setup instructions (available to Clare only) in GitHub [here](https://github.com/claresudbery/samba), in `wiki-set-up-guide.txt` in the web-app sub-folder.
+
+## git reflog
+
+[Here](https://www.w3docs.com/learn-git/git-reflog.html)
