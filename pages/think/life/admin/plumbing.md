@@ -54,12 +54,16 @@ The things that make a difference are:
     - 10 litres per minute is 1 bar
 - 2. The flow rate coming from the tap
     - decent sites ([this one is the best I could find](https://www.savemoneycutcarbon.com/)) will advertise the flow rate, ideally according to your water pressure. If this info is not published, prob best not to buy the tap!
+        - This is where I bought my replacement tap
+        - BUT when it arrived, it not only had a narrow flexible supply pipe, it was even narrower than the previous one!
+        - I still haven't installed it yet, over a year later (Jan '23). I was so depressed / stressed by the whole thing, I couldn't face further disappointment.
     - A good flow rate is 11 lpm (litres per minute) or more. Anything less than this will probably be frustratingly slow - particularly when doing things like filling kettles or running baths.
-    - This will be determined by things like the bore (diameter) of the feed pipe that connects from your pipes to your pipe
+    - This will be determined by things like the bore (diameter) of the feed pipe that connects from your pipes to your tap
 
 Note: It seems v hard to get decent water pressure from cheap taps. I ended up spending £150 on a replacement tap (which seems like a lot to me) because the cheaper ones were either low pressure or didn't advertise flow rate, which meant I had to assume they would be low.
+BUT when the £150 replacement arrived (around Dec '21), it not only had a narrow flexible supply pipe, it was even narrower than the previous one! I was fully depressed by the whole thing and it has been sitting in a box ever since. I can't face the stress of installing it only to find out it's yet again not what I want.
 
-Here's the original question I posted on a [plumbing forum](https://www.diydoctor.org.uk/forums/plumbing-forum.html):
+Here's the original question I posted on a [plumbing forum](https://www.diydoctor.org.uk/forums/low-water-pressure-for-new-kitchen-mixer-tap-t52821.html#p126961) (for Clare: login details are in 1pw):
 
 Hi 
 
