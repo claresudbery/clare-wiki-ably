@@ -78,7 +78,7 @@ Quick setup guide - see headings below.
     - Click Continue on the security warning ("certificate couldn't be verified")
     - Note that on MacBook, it will place the desktop in a new space
         - This can be confusing because if you click the RDP icon or use alt-tab to reach it, it might look like you have no desktop running
-        - It's supposed to show the desktop with a green dot to show it's running, but it didn't do this for me after I created my first one
+        - It will show the desktop with a green dot to show it's running IF you used the "import from rdp file" approach, but it won't if you just double-clicked the rdp file
         - You can use Ctrl + right/left arrow to access the desktop
 
 ### Set up the instance
@@ -106,6 +106,7 @@ Quick setup guide - see headings below.
 - This is how they will connect
     - Because they have the pw, you can ignore the popup that asks you to accept their connection
 - You'll need a separate machine for each set of users (eg if running a workshop with pairs, a separate machine for each pair or mob - if only one mob, only one machine needed)
+- It won't work unless you're attached to the instance via RDP and you've launched AnyDesk
 - I found the Invite button didn't work - it was just always disabled no matter what
     - but it's fine, you don't need it
     - just give users your ID and they can use that to connect
@@ -121,6 +122,7 @@ Quick setup guide - see headings below.
 ### Gotchas
 
 - The AnyDesk invite button doesn't seem to work - see above
+- AnyDesk won't work unless you're attached to the instance via RDP and you've launched AnyDesk
 - While the instance is running, you will be charged for it - see above to see how to either shut it down or terminate it
 - If you close down an instance rather than restart (right-click Windows icon => Power => and then shut down instead of Restart), you have to download a new rdp
     - You will get a connection error if you try to connect from RDP using the previous RDP file
