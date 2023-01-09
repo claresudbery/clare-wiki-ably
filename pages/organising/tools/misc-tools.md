@@ -276,3 +276,17 @@ gov
 
 - [Some interesting Public APIs](https://github.com/public-apis/public-apis)
   - Over 100 public APIs that can be used in your projects. It contains APIs that return data on anything from animals, food, government and weather
+
+## Access Clipboard History
+
+- To access your full clipboard history
+- On Windows:
+  - Use Windows key + V
+- On Mac:
+  - Install Flycut from App store
+  - Use Command + Shift + V + left/right arrow keys to scroll through history
+    - ! Have to hold down Command + Shift + V while using arrow keys!
+  - ! Will have to enable in Accessibility to get it working
+    - When you first install it, it tells you to do this but you might find you can 't because it's not actually listed there
+    - Just copy something into clipboard and then press Command + Shift + V
+    - Then you will get the same message again, and this time Flycut will be listed under Accessibility
