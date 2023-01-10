@@ -40,6 +40,9 @@ permalink: /pages/coding/tools/Visual-Studio
     - Extensions => Customize menu => uncheck NCrunch to give it its own menu 
         - You have to restart VS again when you save
     - NCrunch => Tests will open the NCrunch pane, which I then drag down to the square in the middle of the cross you get when you hover over the bottom panel
+- Troubleshooting:
+    - Jan '23, Parrot kata: "Unable to restore NuGet packages required"
+        - I restarted VS, then disabled and re-enabled NCrunch at least once - this caused the NCrunch engine to re-initialise, and seemed to fix the problem
 
 
 ## Troubleshooting
