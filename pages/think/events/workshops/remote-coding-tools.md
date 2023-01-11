@@ -117,6 +117,7 @@ Quick setup guide - see headings below.
 - If you choose shut down (NOT restart) (right-click Windows icon => Power), you will not be charged by Amazon for ongoing compute time
     - you will still be charged (not much) for some storage
     - but it will be available to restart at any time: Instances => right-click => start instance
+    - it's really just gone into hibernation - everything you installed will still be there, but it is equivalent to shutting down a Windows machine
 - If you terminate the instance, it's gone forever but you won't be charged anything
 
 ### Gotchas
@@ -132,3 +133,4 @@ Quick setup guide - see headings below.
         - you might need to refresh this page to get updated rdp
     - Click "download remote desktop file"
 - If you have multiple pairs you will need one machine per pair
+- EC2 Windows machines are not really designed to be used in this way, hence odd things like having to keep creating a new RDP file
