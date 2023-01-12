@@ -187,6 +187,100 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 ### Module 5 terminology
 
+- block-level storage 
+  - accessed from EC2 instances
+  - a place to store files
+  - When a file is updated, it updates just the pieces that change. 
+  - good for databases, enterprise software, or file systems. 
+  - same as hard drive on laptop or PC
+  - different types of storage listed below
+- instance store volumes
+  - attached automatically to some EC2 instances
+  - ephemeral / temporary
+  - suitable for temporary files, scratch data, easily recreatable data
+  - physically attached to EC2 host
+  - if you stop or terminate instance, all data will be deleted
+    - because when restarted will likely start on different host
+- Amazon Elastic Block Store (EBS)
+  - create virtual hard drives - "EBS volumes" - to attach to EC2 instances
+  - not tied directly to same host
+  - data written will persist between EC2 instance stop / start
+  - define the size, type and configurations of the volume you need.
+  - can take incremental backups of your data called snapshots
+    - incremental, so only data changed since last snapshot are saved.
+  - After you create an EBS volume, it can attach to an Amazon EC2 instance.
+- S3: Amazon Simple Storage Service
+  - When selecting an Amazon S3 storage class, consider these two factors:
+    - How often you plan to retrieve your data
+    - How available you need your data to be
+  - maximum file size for an object in Amazon S3 is 5 TB.
+  - S3 tiers (aka storage classes):
+    - [full list is here](https://aws.amazon.com/s3/storage-classes/)
+    - S3 standard:
+      - high availability for objects
+      - higher cost than other storage classes
+      - 11 nines of durability
+        - means an object stored has 99.999999999% probability will remain intact after 1 year.
+      - data stored in at least 3 facilities. So multiple copies.
+      - useful for static website hosting (HTML files)
+        - just upload static web assets, and so forth into a bucket
+        - then enter the bucket's URL and ba-bam! Instant website
+    - S3-IA (S3 Infrequent Access)
+      - accessed less frequently but requires rapid access when needed
+      - backups, disaster recovery files, or owt that needs long-term storage
+      - Two types:
+        - Amazon S3 Standard-Infrequent Access (S3 Standard-IA)
+          - same level of availability as Amazon S3 Standard
+          - lower storage price and higher retrieval price
+          - store data in a minimum of three Availability Zones
+        - Amazon S3 One Zone-Infrequent Access (S3 One Zone-IA)
+          - Stores data in a single Availability Zone
+          - Has a lower storage price than Amazon S3 Standard-IA
+          - Good if:
+            - You want to save costs on storage.
+            - can easily reproduce data if AZ failure happens.    
+    - Amazon S3 Glacier
+      - retain data for several years for auditing purposes. 
+      - don't need it to be retrieved very rapidly
+      - S3 Glacier vault lock policy
+        - if compliance requirements re retaining data for certain period of time
+        - specify controls like WORM (write once read many)
+        - lock the policy from future edits
+        - option of uploading directly to Glacier or using S3 Lifecycle policies
+      - Different types:
+        - Amazon S3 Glacier Instant Retrieval
+          - Works well for archived data that requires immediate access
+          - can retrieve within millisecs, with same performance as S3 Standard.
+        - Amazon S3 Glacier Flexible Retrieval
+          - Low-cost storage designed for data archiving
+          - Able to retrieve objects within a few minutes to hours
+        - S3 Glacier Deep Archive
+          - Lowest-cost object storage class ideal for archiving
+          - Able to retrieve objects within 12 hours (from 12 to 48 hours)
+          - stored across at least 3 geographically dispersed Availability Zones
+    - Amazon S3 Intelligent-Tiering
+      - Ideal for data with unknown or changing access patterns
+      - Requires a small monthly monitoring and automation fee per object
+      - S3 monitors objects’ access patterns. 
+      - If object not accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, Amazon S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, Amazon S3 Standard.
+    - Amazon S3 Outposts
+      - Reminder: AWS Outposts = hosting in your own building
+      - Creates S3 buckets on Amazon S3 Outposts
+      - Makes it easier to retrieve, store, and access data on AWS Outposts
+- S3 Lifecycle policies
+  - policies you can create that can move data automatically between tiers
+  - eg 
+    - S3 Standard for 90 days, 
+    - then S3-IA for 30 days, 
+    - then after 120 days total, to S3 Glacier.
+- Object storage
+  - In object storage, each object consists of 
+    - data - eg image, video, text document
+    - metadata - info re what data is, how used, object size, etc
+    - key - unique identifier
+  - not same as block storage
+    - when you modify a file in block storage, only the pieces that are changed are updated. When a file in object storage is modified, the entire object is updated.
+
 ## Module 6 - Security
 
 ### Module 6 questions
