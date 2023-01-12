@@ -142,3 +142,11 @@ To see logs:
       - To see healthy host count, see notes above
       - …or you can go to Elastic Beanstalk | Monitoring and fiddle
         about with the date range
+
+## Billing alarms
+
+I have an alarm set up in Cloudwatch that’s triggered if the bill goes over $5, and again if it goes over $10.
+
+- Documentation [here on setting up billing alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html#turning_on_billing_metrics)
+- My alarms are [visible here](https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#alarmsV2:?)
+- I’m also set up to [receive billing alerts here](https://us-east-1.console.aws.amazon.com/billing/home?region=us-east-1#/preferences)
