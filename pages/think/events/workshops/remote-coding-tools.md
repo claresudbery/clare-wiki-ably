@@ -13,7 +13,7 @@ permalink: /pages/think/events/workshops/Remote-Coding-Tools
 - Visual Studio Code LiveShare extension
 - Dedicated Driver 
     - LF says easy to set up but a lot of disadvantages
-- [Anydesk](#anydesk)  
+- [Anydesk](#anydesk-plus-ec2-instance)  
     - LF says has best advantages
 - Git Handoff  
     - LF says not great
@@ -119,6 +119,13 @@ Quick setup guide - see headings below.
     - but it will be available to restart at any time: Instances => right-click => start instance
     - it's really just gone into hibernation - everything you installed will still be there, but it is equivalent to shutting down a Windows machine
 - If you terminate the instance, it's gone forever but you won't be charged anything
+
+### Stop AnyDesk from launching on startup on MacBook / MacOS
+
+- Not enough to go to systems preferences => Users and Groups
+- You have to delete items from `Library/LaunchDaemons` and `Library/LaunchAgents`
+- [full instructions here](https://anydesk.help/en/set-up-anydesk-to-auto-start/)
+    - but when it says Shift + Ctrl + G, it means Shift + Cmd + G, and I couldn't copy/paste `Library/LaunchDaemons` and `Library/LaunchAgents` from the text.
 
 ### Gotchas
 
