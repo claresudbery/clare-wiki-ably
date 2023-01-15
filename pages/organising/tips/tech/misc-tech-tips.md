@@ -360,7 +360,17 @@ Ctrl + Q
 
 https://forums.tomshardware.com/threads/toshiba-laptop-takes-ages-to-start-up.2907154/
 
-https://youtu.be/iTnb9wRHnM8 - static discharge is at 1:10. Further things to try are at 3:12. Might be a problem with battery pack.
+https://youtu.be/iTnb9wRHnM8 - static discharge is at 1:10 (see below for summary). Further things to try are at 3:12. Might be a problem with battery pack.
+
+Static discharge: 
+- get a timer ready, set at 1 min / 60 seconds
+- unplug all peripherals
+- Turn laptop over, remove battery
+- Keep charger unplugged
+- Hold power button down for 60 seconds (use a timer)
+- put battery back in
+- reattach charger
+- turn computer back on
 
 My Trello card detailing my own attempts to fix: https://trello.com/c/VBANT3GQ/1503-fix-laptop-slow-startup-ring-toshiba-helpline-static-discharge
 
