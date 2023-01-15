@@ -362,7 +362,7 @@ https://forums.tomshardware.com/threads/toshiba-laptop-takes-ages-to-start-up.29
 
 https://youtu.be/iTnb9wRHnM8 - static discharge is at 1:10 (see below for summary). Further things to try are at 3:12. Might be a problem with battery pack.
 
-Static discharge: 
+Static discharge (Toshiba Satellite): 
 - get a timer ready, set at 1 min / 60 seconds
 - unplug all peripherals
 - Turn laptop over, remove battery
@@ -372,7 +372,7 @@ Static discharge:
 - reattach charger
 - turn computer back on
 
-My Trello card detailing my own attempts to fix: https://trello.com/c/VBANT3GQ/1503-fix-laptop-slow-startup-ring-toshiba-helpline-static-discharge
+My laptop details, plus notes on what I tried to fix startup problems, are in clare-tech (sudbery-software-useful-notes.md#laptop-details)
 
 ## Postman
 
