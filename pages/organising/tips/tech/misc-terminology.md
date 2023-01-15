@@ -25,3 +25,18 @@ permalink: /pages/organising/tips/tech/Misc-Terminology
 
 - See UsefulNotes.docx (available to Clare only - TW-Stuff/Organising/Notes)
 
+## Saff squeeze
+
+- First taught to me by Mark Kirschstein in a workshop at LateRooms
+- A way of debugging
+- Gradually narrow down the possible lines of code that might contain the bug
+- Kent Beck: 
+  - "works by taking a failing test and progressively inlining parts of it until you can't inline further without losing sight of the defect. Here's the cycle:
+    - Inline a non-working method in the test.
+    - Place a (failing) assertion earlier in the test than the existing assertions.
+    - Prune away parts of the test that are no longer relevant.
+    - Repeat."
+- [More here](https://www.infoq.com/news/2008/11/beck-saff-squeeze/)
+- Same concept as binary search algorithm?
+- Similar concept to [Diff Debugging](https://martinfowler.com/bliki/DiffDebugging.html)?
+
