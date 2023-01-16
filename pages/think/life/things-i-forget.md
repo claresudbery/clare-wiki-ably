@@ -285,3 +285,9 @@ Feckless sex dreams with cowards' omissions
 ```
 
 I couldn't tell whether the last line was talking about "feckless extremes" or not (turns out not).
+
+## What are those two songs that have really similar lines?
+
+1. One day like this, by Elbow - [the line "One day like this a year would see me right"](https://www.youtube.com/watch?v=pQCMM-8ZhDQ&t=202s)
+
+2. No more, by Steve Mason and Javed Bashir - [the line "All aboard I don’t see right"](https://www.youtube.com/watch?v=PpUFg8odzPw&t=141s)

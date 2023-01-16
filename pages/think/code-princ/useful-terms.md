@@ -130,3 +130,42 @@ Pure functions don’t modify external variables/state/data outside of the scope
 - But be aware that too much obsession with DRY can lead to tightly coupled code which is hard to read. Balance is important, as in all things.
 	- More on that [here](https://overreacted.io/the-wet-codebase/).
 	- There's an interesting twitter convo about it [here](https://twitter.com/dixie3flatline/status/1416199317258334219?s=21) (although ironically it repeats itself quite a lot).
+
+## Continuous things
+
+- Continuous integration, continuous delivery, continuous deployment
+- The notes below are copied from [here](https://blog.assembla.com/AssemblaBlog/tabid/12618/bid/92411/Continuous-Delivery-vs-Continuous-Deployment-vs-Continuous-Integration-Wait-huh.aspx)
+- [This is also a good source](https://martinfowler.com/bliki/ContinuousDelivery.html) on the topic, from Martin Fowler.
+- Quick summary:
+  - **Continuous integration** is what happens on a development server - at-least-daily merges of all code into the mainline, integrated with everything else and automatically tested
+  - **Continuous delivery** means that the continuously integrated code is then made continuously *available* for deployment and manual testing
+  - **Continuous deployment** means that the continuously delivered code is *automatically* pushed all the way to production and external users
+  - See [below](#continuous-delivery-vs-continuous-deployment) for confusions between continuous delivery and continuous deployment
+
+### Continuous integration
+
+"Continuous Integration is the practice of merging development work with a Master/Trunk/Mainline branch constantly so that you can test changes, and test that changes work with other changes.  The idea here is to test your code as often as possible to catch issues early.  Most of the work is done by automated tests, and this technique requires a unit test framework.  Typically there is a build server performing these tests, so developers can continue working while tests are being performed."
+
+### Continuous delivery
+
+"Continuous Delivery is the continual delivery of code to an environment once the developer feels the code is ready to ship.  This could be UAT or Staging or could be Production.  But the idea is you are delivering code to a user base, whether it be QA or customers for continual review and inspection.  This is similar to Continuous Integration, but it can feed business logic tests.  Unit tests cannot catch all business logic, particularly design issues, so this stage or process can be used for these needs.   You may also be delivering code for Code Review.   Code may be batched for release or not after the UAT or QA is done.  The basis of Continuous Delivery is small batches of work continually fed to the next step will be consumed more easily and find more issues early on.  This system is easier for the developer because issues are presented to the developer before the task has left their memory."
+
+### Continuous deployment
+
+"Continuous Deployment is the deployment or release of code to Production as soon as it is ready.  There is no large batching in Staging nor long UAT process that is directly before Production.  Any testing is done prior to merging to the Mainline branch and is performed on Production-like environments, see Integration blog article for more information.  The Production branch is always stable and ready to be deployed by an automated process.  The automated process is key because it should be able to be performed by anyone in a matter of minutes (preferably by the press of a button).  After a deploy, logs must be inspected to determine if your key metrics are affected, positively or negatively.  Some of these metrics may include revenue, user sign-up, response time or traffic, preferably these metrics are graphed for easy consumption.  Continuous Deployment requires Continuous Integration and Continuous Delivery - otherwise, you are just cowboy coding and you will get errors in the release."
+
+### Continuous delivery vs continuous deployment 
+
+- Pull vs push:
+  - Delivery: pull – this is because some stages will be manual, eg exploratory testing – so the QA won’t pull a new version until they’re happy the previous one was tested
+  - Deployment: push – every stage in the pipeline automatically triggers the next stage
+- [Martin Fowler](https://martinfowler.com/bliki/ContinuousDelivery.html):
+  - "Continuous Delivery is sometimes confused with Continuous Deployment. Continuous Deployment means that every change goes through the pipeline and automatically gets put into production, resulting in many production deployments every day. Continuous Delivery just means that you are able to do frequent deployments but may choose not to do it, usually due to businesses preferring a slower rate of deployment. In order to do Continuous Deployment you must be doing Continuous Delivery."
+
+## Incremental and iterative development
+
+- An increment is an addition, whereas an iteration is a change. The idea is that you make small additions (increments) to your product, but for each new increment you iterate, gradually refining the increment with each new iteration - ie changing it in response to feedback.
+	- So for instance an increment would be a vertical slice, which will change iteratively as you refine it in response to feedback.
+	- But even within your slice, you will ideally make small incremental changes as you build your implementation.
+	- Geepaw says: "I don't use the phrase much anymore, at least not formally, because my own behavior doesn't seem to vary based on whether I'm adding or changing. I do increments and iterations and iterations and increments and I do them at various scales."
+- [Reference on diff between incremental and iterative](https://itsadeliverything.com/revisiting-the-iterative-incremental-mona-lisa)

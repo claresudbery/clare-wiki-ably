@@ -74,12 +74,7 @@ Aim for improved dev practices:
 
 ##### Incremental and iterative development
 
-- WIKI
-- An increment is an addition, whereas an iteration is a change. The idea is that you make small additions (increments) to your product, but for each new increment you iterate, gradually refining the increment with each new iteration - ie changing it in response to feedback.
-	- So for instance an increment would be a vertical slice, which will change iteratively as you refine it in response to feedback.
-	- But even within your slice, you will ideally make small incremental changes as you build your implementation.
-	- Geepaw says: "I don't use the phrase much anymore, at least not formally, because my own behavior doesn't seem to vary based on whether I'm adding or changing. I do increments and iterations and iterations and increments and I do them at various scales."
-- [Reference on diff between incremental and iterative](https://itsadeliverything.com/revisiting-the-iterative-incremental-mona-lisa)
+- now moved to [here](/pages/think/code-princ/useful-terms.md#incremental-and-iterative-development)
 
 #### Levelling up whole team together
 
