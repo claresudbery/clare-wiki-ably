@@ -521,15 +521,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 ## Module 7 - Monitoring and Analytics
 
-(Session on Tue 17th Jan)
-
-Recommended TV and film!
-
-- Luckiest Girl Alive
-- Riches / Richards, ITVX
-- White Lotus 
-- Glass Onion 
-
 ### Module 7 questions
 
 - "if an EC2 instance is being over-utilized, you can trigger a scaling event that automatically would launch another EC2 instance" - but isn't that what auto-scaling is for?
