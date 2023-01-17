@@ -521,9 +521,194 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 ## Module 7 - Monitoring and Analytics
 
+(Session on Tue 17th Jan)
+
+Recommended TV and film!
+
+- Luckiest Girl Alive
+- Riches / Richards, ITVX
+- White Lotus 
+- Glass Onion 
+
 ### Module 7 questions
 
+- "if an EC2 instance is being over-utilized, you can trigger a scaling event that automatically would launch another EC2 instance" - but isn't that what auto-scaling is for?
 
 ### Module 7 terminology
+
+- Amazon CloudWatch - monitoring soluton
+  - collect metrics and logs from all your AWS resources applications, and services
+  - tracks and monitors metrics
+    - eg CPU utilization of an EC2 instance
+  - can create a custom metric
+    - then alert when it crosses a certain threshold
+    - ... by creating a CloudWatch alarm
+    - ... and having the alert trigger an action
+      - alarms are integrated with SNS, so the action could be to send you a text
+  - CLoudWatch's dashboard feature means you can see all metrics in one place
+  - quickly pinpoint and resolve issues
+  - drive insights to optimize applications and operational resources
+    - eg aggregating usage across an entire fleet of EC2 instances to derive operational and utilization insights
+- MTTR = mean time to resolution
+  - Reduce via monitoring
+- TCO = total cost of ownership
+  - Improve via monitoring
+- AWS CloudTrail
+  - API auditing tool
+  - Every request gets logged in the CloudTrail engine
+    - who made the request?
+    - which operator?
+    - when did they send the API call? 
+    - Where were they? 
+    - What was their IP address? 
+    - What was the response? 
+    - Did something change? 
+    - What is the new state? 
+    - Was the request denied? 
+  - Events are typically updated in CloudTrail within 15 minutes after an API call
+  - means you can prove to an auditor that (eg) security group settings never changed
+  - CloudTrail can save logs indefinitely in secure S3 buckets
+- Vault Lock
+  - tamper-proof method means you can show absolute provenance of all critical security audit logs.
+- CloudTrail insights
+  - allows CloudTrail to automatically detect unusual API activities in your AWS account. 
+  - You can then review the full event details
+- AWS Trusted Advisor
+  - automated - will evaluate your resources against five pillars:
+    - cost optimisation
+    - performance
+    - security
+    - fault tolerance
+    - service limits
+  - real time
+  - Some checks are free and are included in your AWS account, and others are available depending on the level of your support plan
+  - eg
+    - if you don't have multi-factor authentication turned on for your root user
+    - If you have underutilized EC2 instances that might be able to be turned off in order to save money
+    - if you have EBS volumes that haven't been backed up in a reasonable amount of time
+    - You can set up email alerts
+
+## Module 8 - Pricing and Support
+
+### Module 8 questions
+
+
+### Module 8 terminology
+
+- Free tier 
+  - 3 options:
+  - always free
+  - free for 12 months
+  - free for trial period
+- AWS pricing
+  - 3 options:
+    - pay for what you use
+      - Some services offer reservation options that provide a significant discount compared to On-Demand Instance pricing.
+    - pay less when you reserve
+      - eg Amazon EC2 Instance Savings Plans, allows you to save up to 72% over the equivalent On-Demand Instance capacity.
+    - pay less with volume-based discounts when you use more
+      - eg the more Amazon S3 storage space you use, the less you pay for it per GB.
+- AWS Pricing calculator
+  - explore AWS services and create an estimate for the cost of your use cases on AWS. 
+  - organize your AWS estimates by groups that you define. 
+  - When you have created an estimate, you can save it and generate a link to share it with others.
+- AWS Lambda pricing
+  - AWS Lambda allows 1 million free requests and up to 3.2 million seconds of compute time per month.
+  - You can save on AWS Lambda costs by signing up for a Compute Savings Plan.
+  - offers lower compute costs in exchange for committing to a consistent amount of usage over a 1-year or 3-year term.
+- EC2 pricing
+  - see when this was covered previously (spot instances etc)
+- S3 pricing  
+  - storage cost
+    - based on your objects’ sizes, storage classes, and how long you have stored each object during the month.
+  - Requests and data retrievals 
+    - You pay for requests made to your Amazon S3 objects and buckets.
+    - eg photo downloads by users
+  - Data transfer 
+    - There is no cost to transfer data between different Amazon S3 buckets or from Amazon S3 to other services within the same AWS Region. 
+    - But you pay for data that you transfer into and out of Amazon S3
+  - Management and replication 
+    - You pay for the storage management features that you have enabled on your account’s Amazon S3 buckets. 
+- Billing dashboard
+  - displays billing info
+  - also Cost explorer
+  - and Budgets
+- Budgets
+  - set custom budgets for a variety of scenarios like cost and usage. 
+  - receive an alert when your costs or usage exceed or are forecasted to exceed your budgeted amount. 
+  - The information in AWS Budgets updates three times a day
+  - can group by tag
+    - Many resources in AWS are taggable. 
+    - Tags are essentially user-defined key-value pairs.
+  - gives you some powerful defaults for reports
+    - but you can build your own custom ones as well
+- Cost explorer
+  - console-based service that allows you to visually see and analyze how you are spending money with AWS
+  - gives you 12 months of historical data
+- Consolidated billing
+  - At the end of every month, instead of having to pay an AWS bill for every single account, you can roll those bills up into one bill owned by the owner of the organization
+  - can take advantage of bulk pricing: usage for AWS resources is rolled up to the organization level
+  - also if you have a savings plan in place, or if you are using reserved instances for EC2, it can be shared across AWS accounts in the organization
+  - The default maximum number of accounts allowed for an organization is 4, but you can contact AWS Support to increase your quota, if needed.
+- AWS Personal Health Dashboard. 
+  - personalized view of the health of AWS services and any alerts when your resources might be impacted
+- Support plans
+  - every customer automatically gets AWS Basic support, no cost at all
+  - free for everyone:
+    - 24/7 access to customer service
+    - documentation
+    - whitepapers
+    - support forums
+    - AWS Trusted Advisor
+    - AWS Personal Health Dashboard
+  - Developer tier
+    - Add on...
+    - email customer support directly with a 24 hour response time on any questions you have. 
+      - responses of less than 12 hours in case your systems are impaired
+  - Business tier
+    - Add on everything else plus...
+    - Trusted Advisor now opens up the entire suite of checks for your account.
+    - direct phone access to support team with four hour response SLA if production system impaired
+    - one hour SLA for production systems down
+    - access to infrastructure event management
+      - for an extra fee, will help you plan for massive events like brand new launches or global advertising blitzes. 
+  - Enterprise level    
+    - for companies running mission critical workloads
+    - Add on everything else plus...
+    - 15 minute SLA for business critical workloads
+    - a dedicated technical account manager (TAM) (see below)
+      - will coordinate access to programs and other AWS experts as needed
+- TAM = Technical Account Manager 
+  - part of the concierge support team that comes with Enterprise level support
+  - specialize in...
+    - proactively monitoring your environment 
+    - assisting with optimizations
+    - providing infrastructure event management
+    - Well-Architected reviews (see below)
+    - operations reviews
+- Well-Architected reviews
+  - review architectures against the five pillars of the Well-Architected Framework: 
+    - Operational Excellence
+    - Security
+    - Reliability
+    - Performance Efficiency
+    - Cost Optimization
+- AWS Marketplace
+  - curated digital catalog that streamlines your steps to find, deploy and manage **third party software** running in your AWS architecture
+  - instead of needing to build, install and maintain the foundational infrastructure needed to run these third party applications in the marketplace, customers have options like one-click deployment that allows them to quickly procure and use products from thousands of software sellers right when you need them. 
+  - almost every vendor in the marketplace will allow you to use any annual licenses you already own and credit them for AWS deployment
+  - But most vendors in the marketplace also offer on-demand pay-as-you-go options
+  - Many vendors even offer free trials or Quick Start plans to help you experiment and learn about their offerings
+  - offers a number of enterprise-focused features, such as custom terms and pricing, where you can manage custom licensing agreements.
+  - can explore software solutions by industry and use case
+
+
+## Module 9 - Migration and Innovation
+
+### Module 9 questions
+
+
+### Module 9 terminology
+
 
 
