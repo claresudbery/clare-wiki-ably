@@ -42,10 +42,24 @@ Use rhetorical permission:
       - take the lowest end of ranges provided by them, or cut numbers in half 
         - so you can say your dramatic ROI is based on conservative estimates provided by the buyer. If they won't give you numbers, they don't trust you and you're rushing the process. If they can't give you numbers, help them to estimate right figures by walking them through it
 
+### Contracts
+
+- The proposal is also the contract.
+- See the book for a useful reusable example. 
+
 ### Fees
 
 - "My fee represents my contribution to this project, with dramatic return on investment for you, and equitable compensation for me."
+- Fees are based on value, not on time.
+  - When you charge by the hour, you are in an ethical conflict with your client. You are motivated to spend MORE time there, but they are motivated for you to spend LESS time there.
+  - You can include something under Terms and Conditions to reflect this: 
+  - "I do not assess hourly fees, since the decision to use my expertise should not require a funding decision every time you need my assistance. Similarly, employees should not need to seek approval to spend against my expertise."
 - Fees are not agreed at same time as conceptual agreement: "it would be unfair to you for me to quote a fee without properly considering what we've discussed. I can get back to you within 24 hours."
+- Never negotiate fees. Negotiate terms instead.
+
+### Guarantees
+
+- Guarantee the quality of your work. Don't guarantee results.
 
 ### Retainers
 

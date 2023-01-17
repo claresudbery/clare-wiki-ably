@@ -14,7 +14,9 @@ permalink: /pages/think/code-princ/Metrics
 
 - The four key metrics described in [the "Accelerate" book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM) 
 - aka the DORA metrics
-    - DORA = DevOps Research and Assessment - a startup created by Gene Kim and Jez Humble with Dr. Nicole Forsgren at the helm (those three also wrote the book).
+    - DORA = [DevOps Research and Assessment](https://www.devops-research.com/research.html) - a startup created by Gene Kim and Jez Humble with Dr. Nicole Forsgren at the helm (those three also wrote the book).
+    - The first Dev Ops report was published [by DORA in 2018](https://services.google.com/fh/files/misc/state-of-devops-2018.pdf)
+    - (downloaded for Clare in clare-tech/resources)
 - The metrics are:
     - Lead time for changes
     - Deployment frequency
