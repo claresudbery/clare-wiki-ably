@@ -678,12 +678,14 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
     - Well-Architected reviews (see below)
     - operations reviews
 - Well-Architected reviews
-  - review architectures against the five pillars of the Well-Architected Framework: 
+  - review architectures against the six pillars of the Well-Architected Framework: 
     - Operational Excellence
     - Security
     - Reliability
     - Performance Efficiency
     - Cost Optimization
+    - Sustainability
+  - ! This originally said five pillars and didn't have sustainability added in, but in lesson 10 they said it was six pillars so I've updated it here?
 - AWS Marketplace
   - curated digital catalog that streamlines your steps to find, deploy and manage **third party software** running in your AWS architecture
   - instead of needing to build, install and maintain the foundational infrastructure needed to run these third party applications in the marketplace, customers have options like one-click deployment that allows them to quickly procure and use products from thousands of software sellers right when you need them. 
@@ -701,5 +703,163 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 ### Module 9 terminology
 
+- AWS Cloud Adoption Framework (CAF)
+  - Help you manage porting a system / getting started in the cloud 
+  - including working out who you need to hire
+  - provide advice to enable a quick and smooth migration to AWS
+  - organizes guidance into six areas (aka "Perspectives")
+  - Each Perspective is used to uncover gaps in your skills and processes
+    - recorded as inputs. 
+    - Inputs are used as basis for creating an AWS Cloud Adoption Framework Action Plan
+    - use to guide your organization's change management
+  - The 6 Perspectives are...
+    - Business capabilities:
+      - 1. Business
+        - business or finance analysts sit here
+        - ensures that IT aligns with business needs 
+        - and that IT investments link to key business results
+      - 2. People
+        - HR sit here
+        - supports development of an organization-wide change management strategy for successful cloud adoption.
+        - evaluate organizational structures and roles, new skill and process requirements, and identify gaps
+      - 3. Governance
+        - understand how to update the staff skills and processes necessary to ensure business governance in the cloud
+    - Technical capabilities:
+      - 4. Platform
+        - cloud architects sit here
+        - principles and patterns for implementing new solutions on the cloud, and migrating on-premises workloads to the cloud
+      - 5. Security 
+        - ensures that the organization meets security objectives for visibility, auditability, control, and agility
+        - structure the selection and implementation of security controls
+      - 6. Operations
+        - enable, run, use, operate, and recover IT workloads to the level agreed upon with your business stakeholders
+        - Define how day-to-day, quarter-to-quarter, and year-to-year business is conducted
+        - align with and support the operations of the business
+        - define current operating procedures and identify the process changes and training needed
+- The 6 Rs of migration
+  - Every application, or application groups, if they're tightly coupled, will have six possible options when it comes to your enterprise migration
+  - Remember each piece can use a different R
+  - 1. Rehost
+    - Lift and shift
+    - even without any optimization, could save up to 30% of total costs
+    - often easier to optimise after migration
+  - 2. Replatform
+    - Lift, tinker and shift
+    - might make a few cloud optimizations
+    - not touching any core code
+  - 3. Retire
+    - Some parts of infrastructure maybe no longer needed
+    - 10% to 20% of portfolios include applications no longer used or already have live replacements
+  - 4. Retain
+    - for applications about to be deprecated but maybe not just yet.
+  - 5. Repurchase
+    - abandon legacy software vendors and get a fresh start as part of migration
+    - Note: will now be dealing with a new software package
+      - total upfront expense of the step therefore goes up
+  - 6. Refactor
+    - writing new code
+    - driven by a strong business need to add features or performance that might not be possible on prem
+    - Dramatic changes to your architecture
+    - Highest initial cost in terms of planning and human effort
+- Moving data into the cloud
+  - a dedicated one gigabyte per second network connection theoretically moves one petabyte of data in about 100 days and in the real world likely longer and at a higher cost
+- AWS Snowcone
+  - holds up to eight terabytes of data and contains edge computing
+  - Edge computing options are Amazon EC2 instances and AWS IoT Greengrass
+  - we ship it to you, you plug it in and copy your data, and finally, ship it back to us
+  - secure and tamper-resistant while on-site or in transit
+- AWS Snowball Edge
+  - if 8 terabytes not enough
+  - Two versions:
+    - Snowball Edge Storage Optimized option 
+      - 80tb S3 or EBS
+      - 1tb SATA SSD
+      - 40 CPUs
+    - Snowball Edge Compute Optimized option
+      - 42tb S3 or EBS
+      - 7.68tb SSD
+      - 52 CPUs
+  - fit into existing server racks 
+  - can be clustered
+  - once plugged in, can run 
+    - AWS Lambda functions
+    - Amazon EC2-compatible AMI's
+    - or even AWS IoT Greengrass 
+    - to perform simple processing of data right then
+  - useful for remote locations
+  - secure and tamper-resistant while on-site or in transit
+- AWS Snowmobile
+  - largest of all
+  - 100 petabytes
+  - housed in a 45-foot rugged shipping container 
+  - pulled along by a truck!
+  - can handle data centre shutdowns
+  - We 
+    - drive the truck to your designated location
+    - plug it in
+    - it then appears as a network attached storage device 
+  - It  
+    - is tamper resistant, waterproof, temperature controlled
+    - has fire suppression and GPS tracking
+    - has 24/7 video surveillance 
+    - has dedicated security team 
+    - has escort security vehicle during transit
+- VMWare cloud
+  - lift and shift your VMWare
+- AI / ML tools
+  - Amazon SageMaker
+    - machine learning
+    - Quickly build, train, and deploy machine learning models at scale
+    - or build custom models, with support for all popular open source frameworks
+  - Amazon Augmented AI
+  - Amazon A2I
+  - Amazon Lex
+    - the heart of Alexa
+    - Helps you build interactive chat bots
+  - Amazon Textract
+    - Extracting text and data from documents
+  - AWS DeepRacer
+    - A chance for your developers to experiment with reinforcement learning
+  - Amazon Transcribe
+    - Convert speech to text 
+  - Amazon Comprehend
+    - Discover patterns in text 
+  - Amazon Fraud Detector
+    - Identify potentially fraudulent online activities 
+- AWS Ground Station 
+  - your own satellite
+  - only pay for the satellite time you actually need
 
+
+
+
+
+## Module 10 - The Cloud Journey
+
+### Module 10 questions
+
+
+### Module 10 terminology
+
+- WAF = Well-Architected Framework
+  - helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems
+  - has six pillars:
+    - Operational Excellence
+      - ability to run and monitor systems to deliver business value 
+      - and to continually improve supporting processes and procedures
+    - Security
+    - Reliability
+      - ability to...
+      - Recover from infrastructure or service disruptions
+      - Dynamically acquire computing resources to meet demand
+      - Mitigate disruptions such as misconfigurations or transient network issues
+    - Performance Efficiency
+      - ability to use computing resources efficiently to meet system requirements 
+      - and to maintain that efficiency as demand changes and technologies evolve
+    - Cost Optimization
+    - Sustainability
+      - continually improve sustainability impacts 
+      - reducing energy consumption 
+      - increasing efficiency across all components
+      - minimizing the total resources required.
 

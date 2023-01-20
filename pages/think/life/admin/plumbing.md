@@ -85,3 +85,9 @@ Cheers
 Clare.
 
 ![plumbing under sink](/resources/images/plumbing-under-sink.jpeg)
+
+## Changing a washer on an old tap
+
+- The old kind that our original taps were: [Change a tap washer](https://youtu.be/QpVMgbPQQj4)
+- The newer kind that our current taps are: [Replacing a tap washer & using a reseating tool](https://youtu.be/lueb03Bb-vY)
+- I couldn't undo the screw so I ended up following [this advice](/pages/think/life/misc-life-stuff.md#loosening--untightening-a-stuck-old-screw).
