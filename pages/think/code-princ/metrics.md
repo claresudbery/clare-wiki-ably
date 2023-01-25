@@ -10,20 +10,35 @@ permalink: /pages/think/code-princ/Metrics
 - Dee Hock - [the tyranny of measurement](http://www.deewhock.com/essays/community-and-the-non-monetary-exchange-of-value-1): " If we were to set out to deliberately design an efficient system for the methodical destruction of community, we could not do better than our present efforts to monetize all value, mechanize all societal organizations and reduce life to the tyranny of mathematical measurement, markets and the ever increasing centralization of power and wealth that result.  Money, mechanism, measurement and markets have their place.  They are useful tools indeed.  We should use them carefully for beneficent ends.  But useful tools are all they are.  They do not deserve the deification the apostles of unrestrained acquisition insist that we give them.  Only fools worship their tools."
 - Some things are really hard to measure - eg the impact of saying good morning to people - and yet we can still all agree that it's worth doing (this came from a conversation with [Tito Sarrionandia](https://twitter.com/rbs_tito) but I can't remember whether he was quoting anyone).
 
-## Accelerate Metrics
+## Accelerate Metrics / DORA metrics
 
 - The four key metrics described in [the "Accelerate" book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM) 
+    - Also referenced in [The DevOps Handbook](https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/), I think?
 - aka the DORA metrics
     - DORA = [DevOps Research and Assessment](https://www.devops-research.com/research.html) - a startup created by Gene Kim and Jez Humble with Dr. Nicole Forsgren at the helm (those three also wrote the book).
-    - The first Dev Ops report was published [by DORA in 2018](https://services.google.com/fh/files/misc/state-of-devops-2018.pdf)
     - (downloaded for Clare in clare-tech/resources)
+- Originally came from DORA State of DevOps report 
+    - [Here is the 2019 report (accessible to Clare only)](https://drive.google.com/file/d/1Ul3snv4o7b0AxAWPfdwzH5HylvWdsW76/view?usp=sharing) 
+    - you can [download your own copy here](https://cloud.google.com/devops/state-of-devops/)
+    - The first Dev Ops report was published [by DORA in 2018](https://services.google.com/fh/files/misc/state-of-devops-2018.pdf)
 - The metrics are:
-    - Lead time for changes
-    - Deployment frequency
-    - Time to restore service
+    - Deployment frequency 
+    - Lead time
+        - Lead Time for Changes measures the velocity of software delivery
+    - Time to restore, aka mean time to recovery (MTTR) (aka mean time to restore)
     - Change failure rate ("a measure of how often deployment failures occur in production that require immediate remedy (particularity, rollbacks).")
+    - Reliability [added in 2021] 
+- I saw a great presentation about this 
+    - by [Tito Sarrionandia](https://twitter.com/rbs_tito) (slides available to Clare only [here](https://docs.google.com/presentation/d/1W_zNVG0Pig3zryaWfCE66qvAzzm9ZtDJ/edit#slide=id.p1)) 
+    - where he talked about four key DORA metrics      
+    - He made the following points:
+        - Those four measurable areas are not tradeoffs
+        - They represent measures of speed and of stability - they correlate highly with each other
+        - Organisations moving faster, are typically breaking less.
+        - There is no evidence that organisations are able to optimise one of those things by trading off the others. High performers score highly across the board in all four metrics, low performers score badly across the board. 
 - "Focusing on only these metrics ... empower\[s\] organizations by having objective measures of determining if the changes they’re making have an actual impact"
     - The Accelerate book was very much focused on DevOps (infrastructure and deployment) and these metrics help you to focus on how good your infrastructure and deployment pipelines are.
     - [More here](https://stelligent.com/2018/12/21/measuring-devops-success-with-four-key-metrics/#:~:text=In%20the%20book%20Accelerate%20by,Lead%20time%20for%20changes&text=Time%20to%20restore%20service,Change%20failure%20rate)
+- [Blog post about the report](https://www.previous.cloudbees.com/blog/dora-and-google-cloud-chart-pathway-elite-devops-performance?utm_source=google&utm_medium=cpc&utm_campaign=Flow_EU&utm_content=&gclid=EAIaIQobChMIh6faoY6v6AIViaztCh3JcwRkEAAYAiAAEgIVLfD_BwE)
 
 

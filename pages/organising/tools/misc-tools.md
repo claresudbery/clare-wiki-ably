@@ -251,9 +251,9 @@ re, sorry!)
 
   ## Mentimeter
 
-  - Useful for quizzes, surveys, Q&A, audience participation, interactive presentations
-  - [menti.com](https://www.menti.com/)
-gov
+- Useful for quizzes, surveys, Q&A, audience participation, interactive presentations
+- [menti.com](https://www.menti.com/)
+- Also [mentimeter.com](https://www.mentimeter.com/)
 
 ## Random red panda
 

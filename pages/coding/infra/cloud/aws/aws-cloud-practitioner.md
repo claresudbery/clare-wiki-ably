@@ -9,6 +9,9 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 - Course is [here](https://explore.skillbuilder.aws/learn/course/134/play/62437/aws-cloud-practitioner-essentials)
   - Log in using SSE login (for Clare)
     - ...although sometimes it works with my AWS console login too? But sometimes not?
+- Sample exam
+  - Here: https://github.com/PacktPublishing/AWS-Certified-Cloud-Practitioner-CLF-C01-Exam-and-Beyond/blob/main/ACP140-Full%20Length%20Exam%20Practice%20Test.pdf
+
 
 ## Module 1 - Intro
 
@@ -811,8 +814,10 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
     - machine learning
     - Quickly build, train, and deploy machine learning models at scale
     - or build custom models, with support for all popular open source frameworks
-  - Amazon Augmented AI
-  - Amazon A2I
+  - Amazon Augmented AI    
+    - aka Amazon A2I
+    - provides built-in human review workflows for common machine learning use cases, such as content moderation and text extraction from documents
+    - enables you to build the workflows that are required for human review of machine learning predictions
   - Amazon Lex
     - the heart of Alexa
     - Helps you build interactive chat bots
