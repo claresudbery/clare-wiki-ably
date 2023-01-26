@@ -13,7 +13,10 @@ permalink: /pages/think/code-princ/Metrics
 ## Accelerate Metrics / DORA metrics
 
 - The four key metrics described in [the "Accelerate" book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM) 
-    - Also referenced in [The DevOps Handbook](https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/), I think?
+    - Martin Fowler's foreword describes Accelerate very clearly as the book that contains the explanation for why the State of DevOps reports (and the DORA metrics they use) are so very compelling and trustworthy
+    - DORA is also relevant to [The DevOps Handbook](https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/)... but not directly referenced apart from a nod in the acknowledgements
+        - Devops Handbook is more about the three ways
+        - See my notes on DevOps-Handbook, [here](https://clare-wiki.herokuapp.com/pages/think/code-princ/books/DevOps-Handbook)
 - aka the DORA metrics
     - DORA = [DevOps Research and Assessment](https://www.devops-research.com/research.html) - a startup created by Gene Kim and Jez Humble with Dr. Nicole Forsgren at the helm (those three also wrote the book).
     - (downloaded for Clare in clare-tech/resources)
@@ -38,6 +41,7 @@ permalink: /pages/think/code-princ/Metrics
         - There is no evidence that organisations are able to optimise one of those things by trading off the others. High performers score highly across the board in all four metrics, low performers score badly across the board. 
 - "Focusing on only these metrics ... empower\[s\] organizations by having objective measures of determining if the changes they’re making have an actual impact"
     - The Accelerate book was very much focused on DevOps (infrastructure and deployment) and these metrics help you to focus on how good your infrastructure and deployment pipelines are.
+    - My notes on Accelerate are [here](https://clare-wiki.herokuapp.com/pages/think/code-princ/books/Accelerate)
     - [More here](https://stelligent.com/2018/12/21/measuring-devops-success-with-four-key-metrics/#:~:text=In%20the%20book%20Accelerate%20by,Lead%20time%20for%20changes&text=Time%20to%20restore%20service,Change%20failure%20rate)
 - [Blog post about the report](https://www.previous.cloudbees.com/blog/dora-and-google-cloud-chart-pathway-elite-devops-performance?utm_source=google&utm_medium=cpc&utm_campaign=Flow_EU&utm_content=&gclid=EAIaIQobChMIh6faoY6v6AIViaztCh3JcwRkEAAYAiAAEgIVLfD_BwE)
 

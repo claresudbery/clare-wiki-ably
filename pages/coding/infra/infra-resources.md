@@ -30,11 +30,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ## DORA State of DevOps 2019
 
 - See [dedicated section](/pages/think/code-princ/metrics.md#accelerate-metrics--dora-metrics)
+- See also my notes on Accelerate, [here](https://clare-wiki.herokuapp.com/pages/think/code-princ/books/Accelerate)
 
 ## The Three Ways of DevOps
 
 - From The Phoenix Project and The DevOps handbook
-- The First Way: Principles of Flow
-- The Second Way: Principles of Feedback
-- The Third Way: Principles of Continuous Learning
+    - See my notes on DevOps-Handbook, [here](https://clare-wiki.herokuapp.com/pages/think/code-princ/books/DevOps-Handbook)
+- The First Way: The principles and technical practices of Flow
+- The Second Way: The principles and technical practices of Feedback
+- The Third Way: The principles and technical practices of Continuous Learning and experimentation
 - [More here](https://blog.sonatype.com/principle-based-devops-frameworks-three-ways#:~:text=If%20you've%20read%20either,Way%3A%20Principles%20of%20Continuous%20Learning)
