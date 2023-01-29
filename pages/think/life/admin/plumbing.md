@@ -91,3 +91,8 @@ Clare.
 - The old kind that our original taps were: [Change a tap washer](https://youtu.be/QpVMgbPQQj4)
 - The newer kind that our current taps are: [Replacing a tap washer & using a reseating tool](https://youtu.be/lueb03Bb-vY)
 - I couldn't undo the screw so I ended up following [this advice](/pages/think/life/misc-life-stuff.md#loosening--untightening-a-stuck-old-screw).
+- The whole job was awkward. Here are the notes I wrote afterwards, and a picture of the tap itself.
+
+![tap-washer-instructions](/resources/images/tap-washer-instructions.JPG)
+
+![tap-picture](/resources/images/tap-picture.JPG)
