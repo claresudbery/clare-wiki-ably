@@ -4,14 +4,25 @@ location: pages/think/code-princ/books/leaf
 permalink: /pages/think/code-princ/books/DevOps-Handbook
 ---
 
+## Overview
+
+- pub 2016
+- 2nd edition 2021
+- by 
+  - GENE KIM, 
+  - JEZ HUMBLE, 
+  - PATRICK DEBOIS, 
+  - JOHN WILLIS, 
+  - NICOLE FORSGREN
+
 ## Three Ways of DevOps
 
-- Originally came from The Phopenix Project! 
-  - "The Phoenix Project presents the Three Ways as the set of underpinning principles from which all the observed DevOps behaviors and patterns are derived"
 - The core of the book outlines these three ways - summarised below
   - The First Way: The principles and technical practices of Flow
   - The Second Way: The principles and technical practices of Feedback
   - The Third Way: The principles and technical practices of Continuous Learning and experimentation
+- Originally came from The Phoenix Project! 
+  - "The Phoenix Project presents the Three Ways as the set of underpinning principles from which all the observed DevOps behaviors and patterns are derived"
 
 ### First Way: Flow
 
@@ -49,3 +60,18 @@ permalink: /pages/think/code-princ/books/DevOps-Handbook
     - Become ever better at self-diagnostics and self-improvement and must be skilled at detecting problems, solving them, and multiplying the effects by making the solutions available throughout the organization
   - Converting local discoveries into global improvements
   - Reserving time to create organizational improvements and learning
+
+## Chapter 11: Enable and Practice Continuous Integration
+
+- Follows on from an automated testing chapter - assumes you've sorted out your testing
+- “continuous integration is one of the most critical practices that enable the fast flow of work in our value stream”
+- “continuous integration remains a controversial practice”
+- "the longer developers are allowed to work in their branches in isolation, the more difficult it becomes to integrate and merge everyone’s changes back into trunk."
+- "Integration problems result in a significant amount of rework to get back into a deployable state"
+- "when merging code is painful, we tend to do it less often, making future merges even worse."
+- "Continuous integration was designed to solve this problem by making merging into trunk a part of everyone’s daily work."
+- "The surprising breadth of problems that continuous integration solves"
+- Contains great practical example - Gary Gruver, HP’s LaserJet Firmware division
+  - Note for Clare: I made detailed notes on this for the TBD O'Reilly piece - see "unshared notes" doc
+- Trunk-based development is crucial
+  - Note for Clare: I made detailed notes on this for the TBD O'Reilly piece - see "unshared notes" doc
