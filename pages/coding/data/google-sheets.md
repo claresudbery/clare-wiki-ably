@@ -65,8 +65,15 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 
 - To get times that are summed to be potentially more than 24 hours: 
 - Format => Number => Custom date and time => click the dropdown and select elapsed hours, then type a colon, then select minutes from the dropdown.
-  - If you google it, it will tell you to type "[hh]:mm" into the field, but I couldn't get this to work. I had to select from the dropdown instead, and then when I viewed it in the Format menu it would say "[hh]:mm" even though it owuldn't let me enter that manually
+  - If you google it, it will tell you to type "[hh]:mm" into the field, but I couldn't get this to work. I had to select from the dropdown instead, and then when I viewed it in the Format menu it would say "[hh]:mm" even though it wouldn't let me enter that manually
 - !! Sometimes it doesn't work when you are using the `SUM` formula. I discovered that if I'd added a `SUM` formula to a column that didn't have the correct formatting, then I fixed the formatting, the value would still refuse to over `24:00`. The solution seemed to be to delete the `SUM` formula and then manually re-insert it. Then finally I could get a value over `24:00`.
+- To convert times into a decimal num of hours and/or minutes, you can use the `HOUR` and `MINUTE` functions (eg `HOUR(C3)`)
+  - BUT these do not work on times that have more than 24 hours, because the number of hours returned is always between 0 and 23.
+  - To get more than 24 hours you need to use the `CONVERT` function, AND make sure the formatting of your cell is Format => Number => Number
+  - Like this: `CONVERT(A3, "day", "hr")`
+    - The time in Sheets is technically a day unit, where 24 hours make up a full day.
+    - This will give you a decimal value, eg 3.4 hours - so no need to get minutes as well.
+    - ! Watch out the target cell is formatted as a number! Otherwise you won't get the right result.
 
 ## Conditional formatting
 
