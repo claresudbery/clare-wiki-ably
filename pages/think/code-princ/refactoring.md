@@ -159,6 +159,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
             - 4:45
             - 6:10
     - Part 2: [Using "lift up conditional" to untangle the code](https://www.youtube.com/watch?v=OJmg9aMxPDI)
+        - I have detailed notes on this (Clare only) in clare-tech - LHs - lift-up-conditional.md
     - Part 3: [Replacing conditional with polymorphism](https://www.youtube.com/watch?v=NADVhSjeyJA)
 
 #### Approval testing
