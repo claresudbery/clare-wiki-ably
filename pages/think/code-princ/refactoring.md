@@ -14,6 +14,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - The original markdown for my [refactoring article on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html). 
 - @emilybache's excellent [Gilded Rose code base](https://github.com/emilybache/GildedRose-Refactoring-Kata) - great refactoring exercise and contains code in a LOT of different languages.
     - My [C# branch of gilded rose](https://github.com/claresudbery/gilded-rose-kata/tree/csharp-test-start) with unit tests for use in exercises
+    - ...but note that these days I'm mostly using my [forked repo](https://github.com/claresudbery/GildedRose-Refactoring-Kata) instead
+        - See the [`clare-fork-readme`](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/clare-fork-readme/README.md) for notes on how I'm using the repo.
 
 
 ## Docs and Blog Posts
@@ -126,6 +128,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
 - My C# attempt is [here](https://github.com/claresudbery/gilded-rose-kata).
     - My notes on the approach I used are [here](https://github.com/claresudbery/clare-tech/blob/ea4cce0c797d2055e19577f546aad5118238eab9/made-tech/mt-org/demand-events/refactoring-workshop.md#gilded-rose) (currently available only to me).
+    - ...but note that these days I'm mostly using my [forked repo](https://github.com/claresudbery/GildedRose-Refactoring-Kata) instead
+        - See the [`clare-fork-readme`](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/clare-fork-readme/README.md) for notes on how I'm using the repo.
 - NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
 - It's all about stock having a sell by date and quality degrading with age.
 - It has been translated into many different languages by Emily.
@@ -168,55 +172,61 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Before you change the code, you run it, and gather the output of the code as a plain text file.
 - You review the text, and if it correctly describes the behaviour as you understand it, you can "approve" it, and save it as a "Golden Master".
 - Then after you change the code, you run it again, and compare the new output against the Golden Master. Any differences, and the test fails.
-- For Gilded Rose, there are at least two ways of running approval tests:
-    - Approval testing functionality: 
-        - If you're using Java, you need to update the `pom` file
-            - See demo in Emily's video, starts timestamp 2:07 [here](https://www.youtube.com/watch?v=zyM2Ep28ED8&t=127s)
-        - If you're running the gilded rose code in C#, there's an approval testing tool which is being used
-            - Another C# approvals tool is also available - see [below](#verify-approval-testing-tool)
-        - It's [this tool](https://github.com/approvals/ApprovalTests.Net)
-            - That page linked to above gives an example of verifying an array
-            - If you're starting from scratch, you first need to find a way of gathering enough possible outputs to cover your code
-            - Then run an `Approvals` test
-                - as in the above example, where an array of strings is used as the golden master
-                - or as in `ApprovalTest.cs` in Gilded Rose, where Console output is redirected from Program.Main
-                - or as in `XmlExporterTest.cs` in the `with_tests` branch of the [Product Export kata](https://github.com/emilybache/Product-Export-Refactoring-Kata), where xml is verified
-                - also see my demo code in the `approval-tests` branch of [my fork of the Export Product kata](https://github.com/claresudbery/Product-Export-Refactoring-Kata/tree/approval-tests), where I create a dictionary of objects, call `VerifyAll`, and I implement `ToString` for the relevant class, so that each object can be printed out into the approval file.
-                - Then copy the `received` file into a long-lived `approved` file as in the example below
-        - Find `ApprovalTest.cs` and run the test in this file
-        - You'll probably find the first time you run it, it fails
-            - When it fails, it shows you the correct output and the actual output in a merge tool (my system uses KDiff3), so you can see why it's failing
-        - The reason for this is that it needs a template to compare output against
-        - When the tests are run, it creates two files: `ApprovalTest.ThirtyDays.approved.txt` and `ApprovalTest.ThirtyDays.received.txt`
-        - It then compares the two files, and if they match, the test passes
-        - What you need to do is copy the `received` file into the `approved` file.
-            - This command will do that for you on the command line: `cp csharp/ApprovalTest.ThirtyDays.received.txt csharp/ApprovalTest.ThirtyDays.approved.txt`
-        - After this when you run the test, it will pass and the `received` file will be deleted as soon as the test is run.
-    - TextTest:
-        - Emily uses an approval testing tool from texttest.org which has been implemented in many different languages:
-        - Full details are [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests), but here is a summary:
-        - `TextTest` is a Python-based tool, 
-            - It has to be installed separately (see below).            
-            - Once you've installed `TextTest` you need to go to the `texttests` sub-folder in the Gilded Rose repo and find the file `texttests\config.gr` and uncomment the lines that relate to the language you're using.
-                - You also need to build the code in whatever language you're using
-                - For instance if you're using `C#`, you need to build the executable that's referred to in `config.gr`
-                - Note that the default value for `C#` in `config.gr` is incorrect - it should be `/csharp/bin/Debug/csharp.exe` rather than `/GildedRose.exe`
-                - Now you can run the approval tests, by running `testtext &` on the command line 
-            - You can install the [GUI tool for Windows here](https://sourceforge.net/projects/texttest/)
-                - I had to click the Download button a few times before it actually downloaded - I don't know why
-                - Then I had to run the tool manually, close it, and restart my bash prompt before I could run the Gilded Rose approval tests
-                    - Do this by running `texttest &` on the command line in the root Gilded Rose folder - this will bring up the UI
-                    - (First edit `config.gr` - see above)
-                    - now you have to select ThirtyDays on the left, and press the run button at the top of the screen.
-                    - This will open a new window with the results of the tests. If they fail, you can click Approve to make the new results be the new master, or you can just close down the window if you don't want to do that.
-                - There are also tools for Linux and Mac in the "Installing TextTest Development Tools" section [on this page](https://texttest.org/)
-            - ...or you can install the Python command line tool:
-            - First install [Python3](https://www.python.org/)
-            - For Windows, you can download one of the installers at the [bottom of this page](https://www.python.org/downloads/release/python-3104/) (for most people, it's 64-bit), then just follow instructions. It's recommended to click the final button to allow longer file paths.
-                - ! I found I got `command pip not found` after this, so I had to run the installer again, select "modify installation" and make sure that pip was installed
-                - Still no joy after that, so I had to modify my path - follow instructions [here](https://medium.com/swlh/solved-windows-pip-command-not-found-or-pip-is-not-recognized-as-an-internal-or-external-command-dd34f8b2938f)
-            - After that, you can run `pip install texttest` in Bash prompt or Windows Terminal or Windows Powershell.
-            - Full `TextTest` installation instructions are [here](https://texttest.org/) 
+- For Gilded Rose, to run approval tests in Java, you need to update the `pom` file
+    - See demo in Emily's video, starts timestamp 2:07 [here](https://www.youtube.com/watch?v=zyM2Ep28ED8&t=127s)
+- For gilded rose and C#, there are at least two ways of running approval tests:
+    - [`ApprovalTests` nuget package](#gilded-rose-c-approval-testing-with-nuget-approvaltests-package)
+    - [`texttest` tool](#gilded-rose-c-approval-testing-with-texttest-tool)
+
+#### Gilded Rose C# Approval testing with nuget ApprovalTests package
+
+- Note that another C# approvals tool is also available - see [below](#verify-approval-testing-tool). But otherwise...
+- If you're running the gilded rose code in C#, there's an approval testing tool which is being used
+- It's [this tool](https://github.com/approvals/ApprovalTests.Net)
+    - That page linked to above gives an example of verifying an array
+    - If you're starting from scratch, you first need to find a way of gathering enough possible outputs to cover your code
+    - Then run an `Approvals` test
+        - as in the above example, where an array of strings is used as the golden master
+        - or as in `ApprovalTest.cs` in Gilded Rose, where Console output is redirected from Program.Main
+        - or as in `XmlExporterTest.cs` in the `with_tests` branch of the [Product Export kata](https://github.com/emilybache/Product-Export-Refactoring-Kata), where xml is verified
+        - also see my demo code in the `approval-tests` branch of [my fork of the Export Product kata](https://github.com/claresudbery/Product-Export-Refactoring-Kata/tree/approval-tests), where I create a dictionary of objects, call `VerifyAll`, and I implement `ToString` for the relevant class, so that each object can be printed out into the approval file.
+        - Then copy the `received` file into a long-lived `approved` file as in the example below
+- Find `ApprovalTest.cs` and run the test in this file
+- You'll probably find the first time you run it, it fails
+    - When it fails, it shows you the correct output and the actual output in a merge tool (my system uses KDiff3), so you can see why it's failing
+- The reason for this is that it needs a template to compare output against
+- When the tests are run, it creates two files: `ApprovalTest.ThirtyDays.approved.txt` and `ApprovalTest.ThirtyDays.received.txt`
+- It then compares the two files, and if they match, the test passes
+- What you need to do is copy the `received` file into the `approved` file.
+    - This command will do that for you on the command line: `cp csharp/ApprovalTest.ThirtyDays.received.txt csharp/ApprovalTest.ThirtyDays.approved.txt`
+- After this when you run the test, it will pass and the `received` file will be deleted as soon as the test is run.
+
+#### Gilded Rose C# Approval testing with texttest tool
+    
+- Emily uses an approval testing tool from texttest.org which has been implemented in many different languages:
+- Full details are [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests), but here is a summary:
+- `TextTest` is a Python-based tool, 
+    - It has to be installed separately (see below).            
+    - Once you've installed `TextTest` you need to go to the `texttests` sub-folder in the Gilded Rose repo and find the file `texttests\config.gr` and uncomment the lines that relate to the language you're using.
+        - You also need to build the code in whatever language you're using
+        - For instance if you're using `C#`, you need to build the executable that's referred to in `config.gr`
+        - Note that the default value for `C#` in `config.gr` is incorrect - it should be `/csharp/bin/Debug/csharp.exe` rather than `/GildedRose.exe`
+        - Now you can run the approval tests, by running `testtext &` on the command line 
+    - You can install the [GUI tool for Windows here](https://sourceforge.net/projects/texttest/)
+        - I had to click the Download button a few times before it actually downloaded - I don't know why
+        - Then I had to run the tool manually, close it, and restart my bash prompt before I could run the Gilded Rose approval tests
+            - Do this by running `texttest &` on the command line in the root Gilded Rose folder - this will bring up the UI
+            - (First edit `config.gr`, and build an updated executable - see above)
+            - now you have to select ThirtyDays on the left, and press the run button at the top of the screen.
+            - This will open a new window with the results of the tests. If they fail, you can click Approve to make the new results be the new master, or you can just close down the window if you don't want to do that.
+        - There are also tools for Linux and Mac in the "Installing TextTest Development Tools" section [on this page](https://texttest.org/)
+    - ...or you can install the Python command line tool:
+    - First install [Python3](https://www.python.org/)
+    - For Windows, you can download one of the installers at the [bottom of this page](https://www.python.org/downloads/release/python-3104/) (for most people, it's 64-bit), then just follow instructions. It's recommended to click the final button to allow longer file paths.
+        - ! I found I got `command pip not found` after this, so I had to run the installer again, select "modify installation" and make sure that pip was installed
+        - Still no joy after that, so I had to modify my path - follow instructions [here](https://medium.com/swlh/solved-windows-pip-command-not-found-or-pip-is-not-recognized-as-an-internal-or-external-command-dd34f8b2938f)
+    - After that, you can run `pip install texttest` in Bash prompt or Windows Terminal or Windows Powershell.
+    - Full `TextTest` installation instructions are [here](https://texttest.org/) 
     
 #### Verify Approval Testing Tool
 
