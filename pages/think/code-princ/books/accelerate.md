@@ -17,8 +17,8 @@ permalink: /pages/think/code-princ/books/Accelerate
     - CONTINUOUS DELIVERY CAPABILITIES:
         - Version control
         - Deployment automation
-        - Continuous integration
-        - Trunk-based development
+        - **Continuous integration**
+        - **Trunk-based development**
         - Test automation
         - Test data management
         - Shift left on security

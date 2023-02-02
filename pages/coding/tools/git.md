@@ -1110,29 +1110,55 @@ and the repository exists."
 
 ### git merge
 
-  - See “Checkout / Branch / Merge / Pull Confusions” above for full
-    explanation of where `merge` fits into the process
-  - Merge changes from one branch to another
-  - Like this: `git merge myBranch`
-  - This means you are not currently in the myBranch branch – you are in
-    a different one. This will cause the myBranch changes to be merged
-    into your current branch.
-  - If there are conflicts:
-      - Git status will show you what’s waiting to be resolved
-      - In SmartGit, the conflicted files have an exclamation mark on
-        them
-          - Right-click and select Conflict Solver
-  - If you get stuck in the middle of a merge and want to abandon
-      - (You may get a message like this: “You have not concluded your
-        merge (MERGE\_HEAD exists)”
-      - Use this: `git merge abort`
-          - If it says you need to commit changes first, you can just do
-            `git stash` instead
-          - Or if you get “merge is not possible because you have
-            unmerged files.”, you can do `git add .` and then `git
-            stash`
-      - You can tell if it has worked in gitbash, because it will stop
-        saying “MERGING” after the branch name
+- See also [strategies for avoiding tricky merges](#to-avoid-tricky-merges-when-merging-pull-requests) below
+- See “Checkout / Branch / Merge / Pull Confusions” above for full
+  explanation of where `merge` fits into the process
+- Merge changes from one branch to another
+- Like this: `git merge myBranch`
+- This means you are not currently in the myBranch branch – you are in
+  a different one. This will cause the myBranch changes to be merged
+  into your current branch.
+- If there are conflicts:
+    - Git status will show you what’s waiting to be resolved
+    - In SmartGit, the conflicted files have an exclamation mark on
+      them
+        - Right-click and select Conflict Solver
+- If you get stuck in the middle of a merge and want to abandon
+    - (You may get a message like this: “You have not concluded your
+      merge (MERGE\_HEAD exists)”
+    - Use this: `git merge abort`
+        - If it says you need to commit changes first, you can just do
+          `git stash` instead
+        - Or if you get “merge is not possible because you have
+          unmerged files.”, you can do `git add .` and then `git
+          stash`
+    - You can tell if it has worked in gitbash, because it will stop
+      saying “MERGING” after the branch name
+
+### To avoid tricky merges when merging pull requests
+
+There are three strategies you can use to make merges easier:
+
+#### 1. Small branches
+
+Keep branches small, simple and short-lived. Restrict them to single items of change, and merge them as quickly and frequently as possible. If everyone on your team does this, then all merges will be small and therefore easier. Communicate with each other if you think you might have two people impacting the same area of code. Work together to avoid merge problems.
+
+#### 2. Avoid branches altogether!
+
+"Trunk-based development" refers to a strategy where everyone keeps merging with the main branch of the code ("the trunk"), very frequently indeed (at least once a day). This is an extreme version of the first approach and takes a bit of getting used to, but is actually the safest and most efficient appriach. you can read more about it [here](https://martinfowler.com/articles/continuousIntegration.html) and in my upcoming O'Reilly report on the topic.
+
+#### 3. Merge and test locally before issuing a pull request.
+
+Merge changes locally, and fix any resulting merge issues, BEFORE issuing a pull request.
+
+When you have work ready to merge, do the following:
+
+1. Pull the latest version of the main branch: `git checkout main` and then `git pull`
+2. Merge the main branch in with your branch: `git checkout name-of-your-branch` and then `git merge main`
+3. If there are any merge conflicts, fix them on your machine. If there are any problems, ask for help! Maybe you will need to get another team member to work through it with you.
+4. Once you've fixed any merge conflicts, test the code locally. Is everything ok? Is anything broken?
+5. Has the main branch changed again while you did the above? Just to make sure, run steps 1 and 2 again. Fix any issues. Test the code again.
+6. Now you're finally ready to issue a pull request and merge your code back into main. At this point, it should be simple and easy and nothing should get broken.
 
 ### git clone
 

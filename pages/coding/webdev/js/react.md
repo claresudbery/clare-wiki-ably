@@ -15,10 +15,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - It was used by another project - MenopauseTracker, I think.
 - [Samba (PRIVATE)](https://github.com/claresudbery/samba)
     - See sub-folders son**, sig** and vis**
-- CBF PRIVATE: 
+- CBF PRIVATE (Accessible to Clare only): 
     - [cbf/react-starter-files](https://github.com/cbfacademy/react-starter-files) 
     - [cbf/cbf-sample-solutions/software engineering/C_react/2022-10-sample-solutions](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions)
     - [cbf/react-starter-files-solutions](https://github.com/cbfacademy/react-starter-files-solutions)
+    - [Directory of all sample CBF React code](https://github.com/claresudbery/cbf-sample-solutions/blob/main/README.md#react]
 
 
 ## Docs and Blog Posts
