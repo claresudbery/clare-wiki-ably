@@ -7,6 +7,24 @@ permalink: /pages/coding/tools/Visual-Studio
 ## Visual Studio Shortcuts
 
 - Refactor this: Ctrl + Shift + R
+- Make font smaller:
+    - Tools => Options => Environment => Fonts and Colors => Change font size
+        - This will change font size in all open and unopened files
+    - Extensions => install Tweaks extension
+        - ! You have to close down VS and then find the VSIX installer window and set it going BEFORE you open up VS again
+        - You can then open up Visual Studio to initialise the extension, then close it down again
+        - Now you can right-click VS in the system tray, and choose Presentation mode
+        - I'm not sure what you do if you don't have it pinned to system tray! I think you might need to open it up, then right-click the icon and choose Presentation mode??
+        - The first time you open in presentation mode it will look like any other instance, but you can now change settings, eg Tools => Theme and Tools => Options => Environment => Fonts and Colors, and it will remember the settings for the next time you open in presentation mode.
+- See Tools => Options => Environment => Keyboard for full list
+- Expand / collapse regions (works on markdown too)
+    - Ctrl + M, E - Expand current region
+    - Ctrl + M, S - Collapse current region
+    - Ctrl + M, X - Expand all regions
+    - Ctrl + M, A - Contract all regions
+- Select containing block
+    - Expand selection: Shift + Alt + `=` (keep pressing to expand to outer blocks)
+    - Contract selection: Shift + Alt + `-` (keep pressing to contract to inner blocks)
 
 ## NuGet package manager
 
@@ -56,14 +74,3 @@ permalink: /pages/coding/tools/Visual-Studio
     - Then I was getting errors about Xunit in the test file, but I think they were misleading - what I really needed was .Net 6:
     - I had to [install .Net 6](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.202-windows-x64-installer) separately
 
-### Shortcuts
-
-- See Tools => Options => Environment => Keyboard for full list
-- Expand / collapse regions (works on markdown too)
-    - Ctrl + M, E - Expand current region
-    - Ctrl + M, S - Collapse current region
-    - Ctrl + M, X - Expand all regions
-    - Ctrl + M, A - Contract all regions
-- Select containing block
-    - Expand selection: Shift + Alt + `=` (keep pressing to expand to outer blocks)
-    - Contract selection: Shift + Alt + `-` (keep pressing to contract to inner blocks)
