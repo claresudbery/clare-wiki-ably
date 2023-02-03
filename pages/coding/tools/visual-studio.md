@@ -25,6 +25,8 @@ permalink: /pages/coding/tools/Visual-Studio
 - Select containing block
     - Expand selection: Shift + Alt + `=` (keep pressing to expand to outer blocks)
     - Contract selection: Shift + Alt + `-` (keep pressing to contract to inner blocks)
+    - Select block including brackets: Ctrl + Shift + `]`
+    - Select containing function: Ctrl + Shift + `[`
 
 ## NuGet package manager
 
