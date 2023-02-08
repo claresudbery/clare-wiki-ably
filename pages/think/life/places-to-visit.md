@@ -18,6 +18,14 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots), and
 - Donkey sanctuary off the cycle track near Debdale reservoir.
 - [Looney Tunes graffiti walk in Manchester](https://www.warnerbros.co.uk/news/articles/2021/06/09/looney-tunes-unleashed-manchester) - part of the 2021 Manchester International Festival (I think?)
 
+### Water parks
+
+- Hyde leisure pools
+- Aquatics centre 
+- Grand central Stockport 
+- Sandcastle water park, Blackpool
+    - Has the half-pipe waterslide that you go down in a ring
+
 ## General things to do
 
 - [Drive-in cinema at Event City](https://parknpartymcr.co.uk/drive-in-cinema-manchester/)

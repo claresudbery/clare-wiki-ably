@@ -10,6 +10,10 @@ permalink: /pages/coding/tools/testing/Jest
 - [Docs](https://jestjs.io/docs)
 - [Matchers](https://jestjs.io/docs/using-matchers)
 
+## Links
+
+- CLARE ONLY: CBF [github repo](https://github.com/claresudbery/cbf-sample-solutions/tree/main/software%20engineering/B_tdd/tdd-javascript/2022-10_sample-solutions/src) 
+
 ## Running only subsets of tests
 
 Because I edited my package.json like this...
