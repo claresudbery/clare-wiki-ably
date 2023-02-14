@@ -188,6 +188,14 @@ Drag your small image onto the board. Then click it and select the Replace Image
 
 That's it! Happy Miroing.
 
+## Mural tips
+
+- Select multiple objects
+  - Shift + drag
+- Group objects
+  - Multi-select (Shift + drag)
+  - Then Ctrl + G
+
 ## Reinstate Alt + Enter Resharper keyboard shortcut in Visual Studio
 
 - Alt + Enter stopped working for me after I changed the default keyboard mapping scheme
