@@ -18,6 +18,7 @@ permalink: /pages/coding/tools/Visual-Studio
         - The first time you open in presentation mode it will look like any other instance, but you can now change settings, eg Tools => Theme and Tools => Options => Environment => Fonts and Colors, and it will remember the settings for the next time you open in presentation mode.
 - See Tools => Options => Environment => Keyboard for full list
 - Expand / collapse regions (works on markdown too)
+    - Ctrl + M + M - Expand or collapse current region (toggles back and forth)
     - Ctrl + M, E - Expand current region
     - Ctrl + M, S - Collapse current region
     - Ctrl + M, X - Expand all regions
@@ -25,6 +26,7 @@ permalink: /pages/coding/tools/Visual-Studio
 - Select containing block
     - Expand selection: Shift + Alt + `=` (keep pressing to expand to outer blocks)
     - Contract selection: Shift + Alt + `-` (keep pressing to contract to inner blocks)
+    - Resharper offers the same functionality via Ctrl + Alt + Right/Left, but watch out for [conflicting Windows shortcut](/pages/organising/tips/tech/misc-tech-tips.md#stop-your-screen-flipping--screen-rotating-when-you-press-certain-keys)
     - Select block including brackets: Ctrl + Shift + `]`
     - Select containing function: Ctrl + Shift + `[`
 
