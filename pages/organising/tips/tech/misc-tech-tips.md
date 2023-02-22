@@ -209,24 +209,45 @@ That's it! Happy Miroing.
   - Hit Alt + Enter
   - You should get a popup which will allow you to choose to override the VS default shortcut with the new Resharper action.
 
-## Record your screen in Windows 10
+## RECORD YOUR SCREEN
+
+- Useful doc [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#)
+- Search terms: record screen / screen recording
+
+### Record your screen in Windows 10
 
 Search terms: record screen / screen recording
 
-### Use Vimeo
+#### Use Vimeo
 
 - Can be done in the browser
 - Go to [Vimeo website](https://vimeo.com/)
 - Set yourself up with a free account
 - Big blue button - "New video" - "Record screen"
+  - To stop recording, find the little bar on same screen as browser, will probably be floating bottom left
+- Context menus are recorded 
+  - NB if using VS + Resharper it's a good idea to use Ctrl + Shift + R then select option from menu, instead of using direct shortcuts like Ctrl + R + M. 
+  - The reason is that the viewer gets better visual feedback on which option you're using.
+- To download:
+  - Go to list of all videos, click "Send file" - you will get a download screen
+- To play back double speed:
+  - In browser: Click Settings cog, bottom right of video, select Speed
+  - As file:
+    - Download (see above)
+    - Open in Windows Media Player 
+    - Right-click and choose Enhancements => Play speed settings
+- If using Resharper menus it's a good idea to use Ctrl + Shift + R to see which option you're selecting, instead of direct shortcuts like Ctrl + R, M
 
-### Use OBS Studio
+#### Use OBS Studio
 
 - Free, open source
 - Has to be downloaded
 - Download [from here](https://obsproject.com/)
+- Context menus are recorded (I think)
+  - NB if using VS + Resharper it's a good idea to use Ctrl + Shift + R then select option from menu, instead of using direct shortcuts like Ctrl + R + M. 
+  - The reason is that the viewer gets better visual feedback on which option you're using.
 
-### Use Game Bar
+#### Use Game Bar
 
 !!! Not recommended for coding demos, because context menus are not recorded - so if you want to demo using Resharper tools, for instance, you never see the Resharper menu pop up on screen.
 
@@ -243,7 +264,7 @@ Search terms: record screen / screen recording
   - Right-click and choose Enhancements => Play speed settings
 - See [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#heading=h.o2emasiobw17) for useful cheat sheet to use in workshops
 
-## Record your screen on a Mac
+### Record your screen on a Mac
 
 - Open QuickTime Player
   - Note that this opens the Finder app as its first screen, which can be confusing and feel like it hasn't open at all.
@@ -254,6 +275,9 @@ Search terms: record screen / screen recording
 - If you want to record sound too (by default it will be silent):
   - Click on the Options down arrow next to the Record button
   - Select your internal microphone
+- Context menus are recorded 
+  - NB if using Rider + Resharper it's a good idea to use Ctrl + Shift + R then select option from menu, instead of using direct shortcuts like Ctrl + R + M. 
+  - The reason is that the viewer gets better visual feedback on which option you're using.
 - How to stop recording!
   - This is not obvious at all.
   - In your menu bar will be a tiny Stop icon (a grey square). Click this.
@@ -391,3 +415,16 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
 ### Postman collections
 
 - See saved Cadogan Postman collections linked to from [here](https://github.com/claresudbery/clare-tech/blob/master/notes/clients/cadogan/useful-links.md) (accessible to Clare only)
+
+## Windows
+
+### Stop your screen flipping / screen rotating when you press certain keys
+
+- Resharper Ctrl + Alt + Right allows you to extend selection... unless you have the Windows graphics hotkeys enabled
+- Ctrl + Alt + Right (or left / up / down) will rotate your screen in Windows by default
+- To turn it off: 
+  - Ctrl + Alt + F12 
+  - "Options and Support" 
+  - disable hotkeys 
+  - Click Apply
+- To get the keys assigned to Resharper, ust use them in Visual Studio and say yes when the popup asks if you want to reassign those keys to the Resharper command
