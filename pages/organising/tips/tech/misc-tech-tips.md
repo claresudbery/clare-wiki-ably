@@ -211,7 +211,7 @@ That's it! Happy Miroing.
 
 ## RECORD YOUR SCREEN
 
-- Useful doc [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#)
+- Google doc for sharing [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#) - but it doesn't contain as much detail as this page.
 - Search terms: record screen / screen recording
 
 ### Record your screen in Windows 10
