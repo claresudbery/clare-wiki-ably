@@ -251,9 +251,13 @@ re, sorry!)
 
   ## Mentimeter
 
-- Useful for quizzes, surveys, Q&A, audience participation, interactive presentations
-- [menti.com](https://www.menti.com/)
-- Also [mentimeter.com](https://www.mentimeter.com/)
+- Search terms: poll, quiz
+
+- Useful for quizzes, surveys, polls, Q&A, audience participation, interactive presentations
+- Use [mentimeter.com](https://www.mentimeter.com/) to create something new
+- Use [menti.com](https://www.menti.com/) when sharing someting you've created
+- !! Is a great alternative to typeform, which will draw you in with a free account
+  - ...but it's pretty useless because it's only free for 10 responses per month, and that includes when you're testing your own poll or quiz!
 
 ## Random red panda
 
