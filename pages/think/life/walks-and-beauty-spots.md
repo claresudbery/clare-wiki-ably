@@ -53,6 +53,9 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - Monsaldale
 - Edale / Mam Tor / Castleton 
 
+### Yorkshire
+
+- Malham Cove and Gordale Scar
 
 ### Rest of the UK
 

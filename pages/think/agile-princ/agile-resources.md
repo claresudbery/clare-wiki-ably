@@ -19,4 +19,4 @@ permalink: /pages/think/agile-princ/Agile-Resources
 - [Kanban Intro](https://drive.google.com/open?id=182XoEaZ-85TdiLGeKzJeezuY5M9WmvTF)
 - [GDS (Government Digital Services) - Agile Ways of Working](https://www.gov.uk/service-manual/agile-delivery) (discovery, alpha, beta etc)
 - [Slides about flow](https://docs.google.com/presentation/d/1pza_bUGmABPnjk1HgLr8svKToaL4Sw38rGCqLBSmR8w/edit#slide=id.p1) (only accessible to clare) (Flow is the idea of getting pieces of work flowing smoothly through your processes)
-- [The Nature of software Development by Ron Jeffries](https://pragprog.com/titles/rjnsd/the-nature-of-software-development/) - "this is one of my favourite books at the moment and it's helped so much with these conversations" [about things like not being in a rush when developing software] (comment made by my colleague in a Slack thread)
+- [The Nature of software Development by Ron Jeffries](/pages/think/code-princ/books/RJeffries-Nature-Software.md)
