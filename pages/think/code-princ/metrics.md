@@ -16,7 +16,7 @@ permalink: /pages/think/code-princ/Metrics
     - Martin Fowler's foreword describes Accelerate very clearly as the book that contains the explanation for why the State of DevOps reports (and the DORA metrics they use) are so very compelling and trustworthy
     - DORA is also relevant to [The DevOps Handbook](https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/)... but not directly referenced apart from a nod in the acknowledgements
         - Devops Handbook is more about the three ways
-        - See my notes on DevOps-Handbook, [here](https://clare-wiki.herokuapp.com/pages/think/code-princ/books/DevOps-Handbook)
+        - See my notes on DevOps-Handbook, [here](/pages/think/code-princ/books/DevOps-Handbook)
 - aka the DORA metrics
     - DORA = [DevOps Research and Assessment](https://www.devops-research.com/research.html) - a startup created by Gene Kim and Jez Humble with Dr. Nicole Forsgren at the helm (those three also wrote the book).
     - (downloaded for Clare in clare-tech/resources)
