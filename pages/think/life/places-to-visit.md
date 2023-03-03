@@ -18,7 +18,7 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots), and
 - Donkey sanctuary off the cycle track near Debdale reservoir.
 - [Looney Tunes graffiti walk in Manchester](https://www.warnerbros.co.uk/news/articles/2021/06/09/looney-tunes-unleashed-manchester) - part of the 2021 Manchester International Festival (I think?)
 
-### Water parks
+## Water parks
 
 - Hyde leisure pools
 - Aquatics centre 
@@ -35,3 +35,10 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots), and
 - [Magpie Cottages & Spa](https://www.magpiecottages.co.uk/) in the Goyt valley - just a short walk along the river from Chadkirk Chapel near Marple (we found it on a walk with dogs from Chadkirk Chapel).
 - [Duke of Edinburgh Hotel](https://www.dukeofedinburghhotel.co.uk/), Barrow in Furness - owned by the [Lancaster brewery company](https://www.lancasterbrewery.co.uk/beer-and-cider) - the people who brew Lancaster Red, Lancaster Black etc
 - [Last drop Inn](https://www.lastdropvillage.co.uk/bedrooms-suites), Bolton
+
+## In New York
+
+- Katz Deli: 
+    - Katz's Delicatessen, 205 E Houston St, New York, NY 10002, United States
+    - [Website](https://katzsdelicatessen.com/)
+    - Recommended by Llewellyn Falco: pastrami, pickles, everything else is a bonus

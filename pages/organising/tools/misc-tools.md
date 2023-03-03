@@ -249,7 +249,7 @@ re, sorry!)
   - On mobile you see it by clicking through to the list and THEN clicking the three dots top right and selecting edit - but you have to do this while looking at the whole list, not when looking at an individual film (then click Edit entries, then select the film you want to edit from the list that comes up)
   - I suspect maybe you can't add a note while adding a film - you have to go back and add the note afterwards?
 
-  ## Mentimeter
+## Mentimeter
 
 - Search terms: poll, quiz
 
@@ -257,7 +257,22 @@ re, sorry!)
 - Use [mentimeter.com](https://www.mentimeter.com/) to create something new
 - Use [menti.com](https://www.menti.com/) when sharing someting you've created
 - !! Is a great alternative to typeform, which will draw you in with a free account
-  - ...but it's pretty useless because it's only free for 10 responses per month, and that includes when you're testing your own poll or quiz!
+  - ...but Typeform is pretty useless because it's only free for 10 responses per month, and that includes when you're testing your own poll or quiz!
+- Things I found difficult when creating a form with Menti:
+  - Everythign is called a presentation, whether it's quiz or poll or whatever... and every question is called a slide.
+  - To allow multi-select on multiple choice questions, on the Content tab scroll down to the bottom and select "Let participants submit multiple options"
+  - You have to enable voting on quiz questions - click Customize
+  - You have to set it to "audience pace" (click Settings) or they'll only get whichever question you're looking at, and won't get the next until you move to next slide
+  - When you click View Results it doesn't actually show you voting statistics. To see those, go back to the slides and the results are shown next to them
+  - To share the quiz with people, click the Share button => Participation => Copy link
+  - To share results, you can do the following, but the first option works best:
+    - 1. click Share => Presentation sharing and copy link for live results
+      - !! I could only get this to work for the first slide in the presentation, until I realised if you hover bottom left, you'll get a next/prev slide button
+      - You can grab the urls from clicking next/prev slide to get permanent links for each page of results
+    - 2. Click View results, click through to each slide from the bottom of the screen and note the url
+      - BUT these are only updated every 10 mins so not much use in a live situation
+    - 3. Just share the management screen which has results next to each slide
+      - Doesn't look great but does give you instant results
 
 ## Random red panda
 
