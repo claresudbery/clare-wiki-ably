@@ -82,4 +82,4 @@ Ask the two simple questions below, and give partipants some simple way of choos
 
 ------------------------------
 
-License: [CC-BY-SA-4.0](https://www.sammancoaching.org/LICENSE.html). Attribution: [Clare Sudbery](https://medium.com/a-woman-in-technology) - [sammancoaching.org](https://www.sammancoaching.org/)
+License: [CC-BY-SA-4.0](https://www.sammancoaching.org/LICENSE.html). Attribution: [Clare Sudbery](https://medium.com/a-woman-in-technology), [Xavi Ametller](INSERT LINK) - [sammancoaching.org](https://www.sammancoaching.org/)
