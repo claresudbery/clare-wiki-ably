@@ -12,6 +12,8 @@ The basic principle is to find conditions that are repeated throughout the code 
 
 In this learning hour we demonstrate the technique, and then let the participants try it out for themselves. You can do this in one hour, but as the technique takes a bit of time to really understand, it's a good idea to repeat the exercise again in a second learning hour.
 
+[This slide deck](https://docs.google.com/presentation/d/11HjxVD99vyKyt8HT_5UHIBnAnr4Pck5g/edit?usp=sharing&ouid=117794872566978197093&rtpof=true&sd=true) (also available as [a pdf](https://drive.google.com/file/d/11cEwkIv2NRWLkSCQfqltXIkNUTzCQFyW/view?usp=sharing)) contains all the resources on this page plus more - many of which may be useful in preparing for this learning hour.
+
 ### Session Outline
 
 - 10 min connect 
@@ -30,18 +32,23 @@ In pairs: Which if statements are equivalent? Join them up. Because they are abo
 Below are the if statements I use, each statement paired with the correct answer. You can use a visual tool like Miro or Mural to join text boxes with arrows, or print them out on paper, or find another technique that fits your situation.
 
 ```csharp
+// First pair
 if(colour1 == colour1 && colour2 == colour2)
 if(true)
 
+// Second pair
 if(colour1 == "green" && colour1 == "blue")
 if(false)
 
+// Third pair
 if(colour1 != "green" && colour2 != "blue")
 if(!(colour1 == "green" || colour2 == "blue"))
 
+// Fourth pair
 if(!(colour1 != "green" && colour2 != "blue"))
 if(colour1 == "green" || colour2 == "blue")
 
+// Fifth pair
 if(!(colour1 == "green" && colour2 == "blue"))
 if(colour1 != "green" || colour2 != "blue")
 ```
@@ -49,8 +56,6 @@ if(colour1 != "green" || colour2 != "blue")
 Below is a sample of what the solution looks like in Mural. I suggest that, if using a tool like Mural or Miro, you create a separate frame for each pair to use for the exercise.
 
 ![Sample if-parsing exercise solution](/resources/images/temp/If-parsing-solution.png)
-
-[This slide deck](https://docs.google.com/presentation/d/11HjxVD99vyKyt8HT_5UHIBnAnr4Pck5g/edit?usp=sharing&ouid=117794872566978197093&rtpof=true&sd=true) (also available as [a pdf](https://drive.google.com/file/d/11cEwkIv2NRWLkSCQfqltXIkNUTzCQFyW/view?usp=sharing))
 
 #### Connect v2: Favourite keyboard shortcuts
 
