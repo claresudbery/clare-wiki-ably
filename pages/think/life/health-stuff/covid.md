@@ -31,6 +31,9 @@ Aka COVID-19 / coronavirus / Sars-CoV-2
 - Order a [vaccination certificate for travelling](https://www.nhs.uk/conditions/coronavirus-covid-19/covid-pass/get-your-covid-pass-letter/)
   - Note that you can also download a pdf from the NHS app (not the covid app) - see link below.
 - [Download a digital vaccination certificate / covid pass](https://www.gov.uk/guidance/nhs-covid-pass#how-to-access-the-nhs-covid-pass) (note: It's in the general NHS app, not the Covid app)
+  - NHS app (not covid app) => Get your NHS covid pass
+  - I've downloaded a copy (expires Sept '23) - see 1password
+  - When pass expires, you can log back in to get a new one
 - Foreign travel:
   - On 19/8/21, France was on the amber list
     - This means you need a covid pass to travel there
