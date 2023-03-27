@@ -905,9 +905,9 @@ and the repository exists."
         NOT the commit that will become the new head
       - This only reverts one commit at a time. To safely revert
         multiple commits, do them one at a time, starting with the most
-        recent… but that doesn’t have to be several commits. You can use
+        recent… but that doesn’t have to result in several commits. You can use
         `git revert –no-commit \<commitId\>` for all the reverted
-        commits, then finally do `git commit –m “commit message”` to
+        commits, one at a time, then finally do `git commit –m “commit message”` to
         commit them all in one go. More here:
         <http://stackoverflow.com/questions/1463340/revert-multiple-git-commits>
   - `git revert --edit`
@@ -950,7 +950,7 @@ and the repository exists."
   - Note that using commit Ids, you are only reverting one commit at a
     time.
       - If you want to go back several commits, you could do it
-        manually,starting with most recent and going back one by one…
+        manually, starting with most recent and going back one by one…
       - Or you can use `git revert HEAD\~3`
           - **??? \!\!\! When Chen tried this, it didn’t work as
             expected\!**
