@@ -156,7 +156,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         - !It's important to notice that using coverage alone, she could NOT create a fully comprehensive suite of tests
             - This is because you might hit a particular line of code with your tests, but just because you hit that line of code doesn't mean you hit it with every possible relevant set of data combinations
             - This is where the mutation testing comes in, and I explain that bit on my [mutation testing page](/pages/think/code-princ/testing/mutation-testing.md#emily-bache---gilded-rose).
-        - It's also important to note that what's described above (tweaking inputs and checking the results using code coverage) is NOT mutation testing, because you're altering test test inputs, but you're not altering the actual code to.
+        - It's also important to note that what's described above (tweaking inputs and checking the results using code coverage) is NOT mutation testing, because you're altering test test inputs, but you're not altering the actual code too.
         - See the following timestamps for interesting demo points:
             - 0:55
             - 3:40
