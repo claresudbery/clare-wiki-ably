@@ -163,6 +163,8 @@ and the repository exists."
 
   - Note that I now have two scripts in my scripts repo - `add-ssh-key-mac` and `add-ssh-key-win` that help with this.
 
+  - For error "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" see [below](#troubleshooting-error-warning-remote-host-identification-has-changed)
+
   - This is what I did to get ssh up and running in the Chef repo - I
     did this twice, for both VM and local laptop:
     
@@ -228,6 +230,16 @@ and the repository exists."
         
           - Click New SSH key (top right) and give it an appropriate
             name
+
+### Troubleshooting error: "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!"
+
+- You might get this when pushing or pulling, around March 2023.
+- [Article here explains the fix](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)
+- I found on Windows in GitBash that I could manually edit `known_hosts`
+  - But I did then get warnings about IP addresses: "Warning: the RSA host key for 'github.com' differs from the key for the IP address "
+  - I fixed this by changing the lines in `known_hosts` relating to the two specified IP addresses, so that they also had the new ssh-rsa hash
+  - but I don't really know why those lines are there and whether they're used by anything else, so I've kept the original lines commented out
+  - I don't know the difference between `known_hosts` and `hosts`
 
 ## GitHub "A personal access token has been added to your account"
 
