@@ -216,10 +216,9 @@ That's it! Happy Miroing.
 
 ### Record your screen in Windows 10
 
-Search terms: record screen / screen recording
-
 #### Use Vimeo
 
+- My preferred option
 - Can be done in the browser
 - Go to [Vimeo website](https://vimeo.com/)
 - Set yourself up with a free account
