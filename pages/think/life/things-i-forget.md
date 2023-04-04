@@ -295,3 +295,7 @@ I couldn't tell whether the last line was talking about "feckless extremes" or n
 ## Where's that post by Geepaw on Mastodon on ChatGPT and AI?
 
 [Here](https://mastodon.social/@GeePawHill/110024701282104560).
+
+## What's the name of that singer whose name begins with N I can never remember?
+
+Nadine Shah.
