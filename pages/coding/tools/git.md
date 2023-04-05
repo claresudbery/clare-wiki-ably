@@ -968,6 +968,9 @@ and the repository exists."
           - **??? \!\!\! When Chen tried this, it didn’t work as
             expected\!**
           - **This would go back 3 commits, doing them one at a time**
+  - If you get a merge conflict and you'd like to handle it by reverting
+    - [Here is an example](https://github.com/claresudbery/Git-Playground/blob/master/Merging-examples.md) I manufactured when I was writing the O'Reilly trunk-based development (TBD) report
+    - also references `git reflog`, `git cherry-pick`, `git diff`
 
 ### git reset
 
@@ -1147,6 +1150,8 @@ and the repository exists."
           stash`
     - You can tell if it has worked in gitbash, because it will stop
       saying “MERGING” after the branch name
+- If you get a merge conflict and you'd like to handle it by reverting
+  - [Here is an example](https://github.com/claresudbery/Git-Playground/blob/master/Merging-examples.md) I manufactured when I was writing the O'Reilly trunk-based development (TBD) report
 
 ### To avoid tricky merges when merging pull requests
 
