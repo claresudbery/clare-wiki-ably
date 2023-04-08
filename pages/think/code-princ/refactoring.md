@@ -36,6 +36,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Refactoring tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=dbccb66e-f286-40ac-a13e-93848ca66909&query=tag%1Frefactoring%1FtagGuid%3A2a3fac9f-ae6f-43b6-b619-f20d2eca33be%1Eview%3AVIEW%2FALL_NOTES&)
 - @KevinRutherford and @JJeffries1 have a [good refactoring video](https://www.youtube.com/watch?v=fSr8LDcb0Y0) from XP Manchester which focuses on connascence. 
 
+## Coverage
+
+- Note you can use DotCover (in both Visual Studio and Rider) to check coverage
+    - Rider details [here](https://www.jetbrains.com/help/rider/Cover_Unit_Tests_(Basic_Scenario).html)
+    - V similar for Visual Studio
+- NCrunch also gives you coverage indications
+
 ## Actual sample code you can use for refactoring exercises
 
 - Also see individual dedicated sections below for each code base listed here (I'm still building that list, so it may not be complete).
@@ -114,6 +121,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### Product Export
 
 - Used to demonstrate using coverage to design approval tests
+    - See [coverage](#coverage) section
 - Code is [here](https://github.com/emilybache/Product-Export-Refactoring-Kata)
 - Possible workshop exercise is [here](https://sammancoaching.org/learning_hours/approval_testing_legacy/verify_xml_reports.html)
 - Notes to get started
@@ -148,6 +156,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - There are three videos made by Emily detailing some really interesting Gilded Rose refactoring:
     - Part 1: [Using CombinationApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=zyM2Ep28ED8)
+        - See [coverage](#coverage) section
         - See [below](#combination-approvals) for description of combination approvals
         - See [mutation testing page](/pages/think/code-princ/testing/mutation-testing.md) for more on that
         - She looks at the values in the if statements, for instance `if (value < CONSTANT)` and guesses that therefore if you make your inputs be close to the guard value (`CONSTANT`), you are likely to find edge cases
