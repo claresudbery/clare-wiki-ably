@@ -172,7 +172,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - Click the icon for your build (you may have to expand to see) 
             - ! If your build isn’t visible yet, this might be because you didn't complete the Archive process - see above
             - Once it's uploaded, it then spends a while "processing" - you just have to wait.
-        - Select the Test Details tab  
+        - Select the Test Information tab  
             - Enter testing / build notes here  
             - Also add testers here. 
                 - It's not obvious but when you click a + button to add testers to your App Store Connect Users group, if you read the text there is a link hiding in the text to [Add Users And Groups](https://appstoreconnect.apple.com/access/users).
