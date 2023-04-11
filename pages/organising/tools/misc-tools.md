@@ -309,3 +309,11 @@ re, sorry!)
     - When you first install it, it tells you to do this but you might find you can 't because it's not actually listed there
     - Just copy something into clipboard and then press Command + Shift + V
     - Then you will get the same message again, and this time Flycut will be listed under Accessibility
+
+## Bulk rename utility for Windows
+
+- search terms: bulk file renaming, bulk file naming, filenames
+- The Free File Renaming Utility for Windows.
+- Rename multiple files with the click of a button.
+- [here](https://www.bulkrenameutility.co.uk/)
+  - recommended by BillyBum and Duck on forum
