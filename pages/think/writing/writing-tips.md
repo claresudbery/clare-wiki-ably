@@ -19,7 +19,7 @@ I know I've given this advice several times, so I must have written it up in mor
 
 ## Understand the impact of feedback
 
-Feedback is very useful. If your writing is to be read and understood by anyone but yourself, it's a good idea to find out what other people think of it, and then decide if and how you want to act on what they tell you. But when and where and how will make a difference, and the difference it makes will be very personal.
+Feedback is very useful. If your writing is to be read and understood by anyone but yourself, it's a good idea to find out what other people think of it. Then you can decide if and how you want to act on what they tell you. But when and where and how will make a difference, and the difference it makes will be very personal.
 
 I found that if I got feedback too early on in the process, before I was happy that what I had written was ready for an audience, it was stressful and counter-productive. It made me scared to re-enter the document or revisit the feedback in order to act on it, because every time I did, I felt terrible about what a terrible job I'd done. 
 
