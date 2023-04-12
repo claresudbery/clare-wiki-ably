@@ -237,44 +237,48 @@ Quick Guide:
 
 ## Searching
 
-  - Search: **/\[search term - regex\]**    
+  - Search: `/[search term - regex]`
+      - Examples: 
+        - `/gup` will find the string "gup" including when it's embedded in other words, eg "guppy"
+        - `/\<gup\>` will only find "gup" if it exists as a standalone word
+        - `/\<gup` will find any terms that start with "gup" (eg "gup" and "guppy)
+        - `/gup\>` will find any terms that end with "gup" (eg "gup" and "hangup)
+        - More [here](https://vim.fandom.com/wiki/Search_patterns)
       - Press n to get next search result    
       - Press N to get previous search result    
-      - For case insensitive search, add **\\c** to the command (either
-        at start or end)    
-      - If you then get highlighting which won’t go away, type **:noh**        
-          - For a more permanent solution which means you can clear it
-            by hitting Esc, see here:
-            [<span class="underline">https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting</span>](https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting)
-  - Search and replace: **:%s/\[search term\]/\[replacement\]/g**    
-      - **%s** means whole file, **/g** means every occurrence on every
-        line    
-      - If you want it to ask you for confirmation on every replacement,
-        add **c** as well: **:%s/foo/bar/gc**    
+      - For case insensitive search, add `\c` to the command (either at start or end): `/clare\c`
+      - If you then get highlighting which won’t go away, type `:noh`       
+          - For a more permanent solution which means you can clear it by hitting Esc, see [here](https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting)
+  - Search and replace: `:s/[search term]/[replacement]/`   
+      - `:s` means substitute (ie search and replace)
+      - `%` means whole file
+      - `g` means every occurrence on every line    
+      - Examples: 
+        - `:s/claire/Clare/` - Find the first occurrence of "claire" in this file and replace with "Clare"
+        - `:%s/claire/Clare/` - Find all occurrences of "claire" in this file and replace with "Clare"
+        - `:%s/claire/Clare/g` - Find all occurrences of "claire" in this file and replace with "Clare", including multiple occurrences on single lines
+      - If you want it to ask you for confirmation on every replacement, add `c` as well: `:%s/foo/bar/gc`   
       - If you want to escape any characters, use backslash (`\`)
-      - More here:
-        [<span class="underline">https://vim.fandom.com/wiki/Search\_and\_replace</span>](https://vim.fandom.com/wiki/Search_and_replace)    
-      - And here:
-        [<span class="underline">https://www.linux.com/learn/vim-tips-basics-search-and-replace</span>](https://www.linux.com/learn/vim-tips-basics-search-and-replace)    
-      - If your strings contain forward slashes, then you can replace
-        the forward slashes in the command with any other character\!    
-      - For case insensitive search, add **\\c** to the command (either
-        at start or end)    
-      - To do it on whole words only: **:%s/\\\<word\\\>/newword/g** -
-        you have to delimit the word with \\\< and \\\>
+      - More [here](https://vim.fandom.com/wiki/Search_and_replace)    
+      - And [here](https://www.linux.com/learn/vim-tips-basics-search-and-replace)    
+      - If your strings contain forward slashes, then you can replace the forward slashes in the command with any other character\!    
+      - For case insensitive search, add `\c` to the command (either at start or end)  
+        - or add `i` at end
+        - these are equivalent: `:%s/foo/bar/gci` and `:%s/foo\c/bar/gc`  
+      - To do it on whole words only: `:%s/\<word\>/newword/g` - you have to delimit the word with `\<` and `\>`
   - f – find character on this line    
       - Add a number to do multiple    
-      - Eg **2f\_**
-  - \* Find the word under the cursor: **\***    
+      - Eg `2f\_`
+  - \* Find the word under the cursor: `\*`   
       - This works on words containing underscores    
       - By default it won’t work on words containing hyphens        
-          - You can change this by adding **set iskeyword+=-** to .vimrc        
-          - Or just type **:set isk+=-** in Vim
+          - You can change this by adding `set iskeyword+=-` to .vimrc        
+          - Or just type `:set isk+=-` in Vim
   - Find whatever text you have highlighted (in visual mode)    
       - See solution here, which I have in both my vim configs:
         [<span class="underline">https://github.com/nelstrom/vim-visual-star-search/blob/master/plugin/visual-star-search.vim</span>](https://github.com/nelstrom/vim-visual-star-search/blob/master/plugin/visual-star-search.vim)    
-      - To use it, hit **v** to get in visual mode, highlight the yext
-        you want to search for, then hit **\***
+      - To use it, hit `v` to get in visual mode, highlight the yext
+        you want to search for, then hit `\*`
 
 ## Less + Vim
   - **G** – end of file
