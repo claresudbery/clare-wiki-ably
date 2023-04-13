@@ -317,3 +317,13 @@ re, sorry!)
 - Rename multiple files with the click of a button.
 - [here](https://www.bulkrenameutility.co.uk/)
   - recommended by BillyBum and Duck on forum
+
+## Mastodon
+
+- [Trello card with more Mastodon advice](https://trello.com/c/8wa3z8k1/498-finish-setting-up-mastodon) (accessible to Clare only)
+- Linking to Twitter profiles that don't (as far as you know) have associated Mastodon accounts: `@twitterhandle@twitter.com`
+- Linking to other Mastodon users within a post: `@woodyzuill@mstdn.social`
+- Sharing your Mastodon profile: 
+  1. You'll see people doing the same as you would do within a Mastodon post: `@claresudbery@mastodon.social `
+  2. Or you can build a normal link to your profile like this: https://mastodon.social/@claresudbery
+- Adding alt text to images: See [discussion here](https://mastodon.social/@claresudbery/110146029522676081)

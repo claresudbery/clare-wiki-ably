@@ -783,7 +783,8 @@ and the repository exists."
     server and then merging it into your current branch.
       - This means you need to be sure you are in the correct branch
         before you pull.
-  - If you do `git pull --rebase`, if there are changes in both your
+  - If there are any conflicts, the merge will be aborted and you will now have two copies of the branch on your machine - the local one and the remote one.
+  - If you do `git pull --rebase` (this is what my alias `gup` does), if there are changes in both your
     local branch and the remote branch, git will attempt to play them on
     top of each other and create one smooth line, instead of splitting
     off and then coming back together again.
