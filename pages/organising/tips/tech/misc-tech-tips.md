@@ -427,3 +427,10 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
   - disable hotkeys 
   - Click Apply
 - To get the keys assigned to Resharper, ust use them in Visual Studio and say yes when the popup asks if you want to reassign those keys to the Resharper command
+
+## Make your own QR code
+
+- Use Chrome
+  - Visit the url you want to turn into a QR code
+  - Click the share icon at the right end of the url bar
+  - Select Create QR code
