@@ -112,6 +112,46 @@ Pure functions don’t modify external variables/state/data outside of the scope
 
 - This idea comes from Geepaw Hill. It pretty much does what it says on the tin!
 - More from Geepaw [here](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/).
+- Even more in this piece where he describes the benefcits in detail (see below for Rework Avoidance Theory)
+  - https://www.geepawhill.org/2021/11/16/mmmss-the-intrinsic-benefit-of-steps/
+  - Summary:
+    - Three choices:
+        - In path A, we have one ready-to-ready step of size 10 stride-lengths. 
+        - Path B has five steps of size 2. 
+        - The third path, C, has 15 steps of size 1. THIS IS BEST
+    - READY TO READY
+    - responsiveness benefits are 
+        - interruptability, 
+        - steerability, 
+            - The cheapest point at which we can steer our system? Clearly, it’s when the system is ready
+        - reversability, and 
+        - target parallelism
+            - you can move towards parallel targets by switching between them
+    - human benefits are 
+        - scope, 
+            - reducing scope
+            - Adding entities to a step seems linear, but it’s combinatoric
+            - it isn’t the entities, per se, that make things harder, it’s the relationships and interactions
+        - rhythm, 
+            - Alternating periods of tension and release produce endorphins
+        - autonomy,     
+            - smaller steps allow both individuals and teams a much greater degree of autonomy.
+        - safety
+            - people are more creative, thoughtful, and thorough when they feel less at risk
+
+## Rework Avoidance Theory (RAT)
+
+- Rework avoidance theory: https://www.geepawhill.org/2020/07/17/the-rat-rework-avoidance-theory/
+- seeing a change as having a clear start-point & end-point and a straight & stable path between them.
+- our chosen method will be inefficient if it ever does the "same thing" twice. 
+- The proviso "no same thing twice" has lots of variants. The three I want to talk about today are 
+    - "don’t learn about this twice", 
+    - "don’t code this twice", and 
+    - "don’t talk about this twice".
+- we assume taking one larger step would be better than taking three smaller ones.
+- we assume that the landscape between here and some change-endpoint is stable, well-marked
+    - But Not only does the target shift, routinely, in response to the vagaries of the market, but the shortest path to that target also shifts, routinely, by way of new technology, new technique, and new insight.
+- It consistently adds costs to software development in the name of "efficiency", and it does it at every level: in coding, in planning, in meeting, every level.
 
 ## Service Design
 
