@@ -434,3 +434,10 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
   - Visit the url you want to turn into a QR code
   - Click the share icon at the right end of the url bar
   - Select Create QR code
+
+## When sound is suddenly muted through headphones in Chrome on Macbook
+
+- you plug headphones in and Chrome is suddenly muted
+- Unplug them again and not muted
+- Check sound settings, output is correct
+- ...BUT what you might miss is that output is getting muted every time you plug headphones in. Untick the muted box in sound settings and all will be well again.
