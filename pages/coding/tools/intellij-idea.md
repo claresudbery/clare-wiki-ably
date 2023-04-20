@@ -77,14 +77,23 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 
 ## Getting started with a new project
 
-  - Import project: find project.clj
-  - JDK: Select “JDK” (first option) – this will take you to a Finder
-    window – search for Library folder, then drill down into Java folder
-    (so, it’s in /Library/Java) and find folder named
-    jdk-somethingorother
-      - This is because you need an SDK installed
-      - JDK is the Java SDK
-      - You only need one per machine
+- Import project: for clojure, find project.clj
+- For plain Java, just open the containing folder
+- When you first open a Java project in IDEA, it will ask you to specify the SDK
+  - This is because you need an SDK installed
+  - JDK is the Java SDK
+  - You only need one per machine
+  - It will give you a configure button to click
+  - Then you select an SDK from dropdown 
+    – if JDK’s not already there, click download
+      - Nothing actually appears to download straight away though
+      - Then, if using Maven, it prompts you to download some stuff (not sure if this is related to the above though!)
+      - But anyway, then you’ll see a message at bottom of window saying it’s installing the JDK
+  - Once downloaded, Select “JDK” (first option) – this will take you to a Finder window – search for Library folder, then drill down into Java folder
+    - (so, it’s in /Library/Java) 
+    - and find folder named jdk-somethingorother
+  - Note that you'll still see the notification saying SDK is not specified in the notifications window
+    - but this seems to just be history of old notifications
 
 ## Change / add keyboard shortcuts
 
@@ -97,5 +106,4 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 
 ## Troubleshooting
 
-  - If you get surprising errors in the repl: Try restarting the repl (I
-    think I wrote this in reference to ClojureScript)
+  - If you get surprising errors in the repl: Try restarting the repl (I think I wrote this in reference to ClojureScript)
