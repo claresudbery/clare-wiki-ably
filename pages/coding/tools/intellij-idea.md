@@ -3,8 +3,10 @@ layout: page
 location: pages/coding/tools/leaf
 permalink: /pages/coding/tools/IntelliJ-IDEA
 ---
+
 ## General
 
+- Note that it's not obvious from their site, but the Community edition of IDEA is FREE - so you can get IDEA without having to pay.
   - See also [debugging a java app using intellij idea and
     gradle](/pages/coding/tools/Gradle#debugging-a-java-app-using-intellij-idea-and-gradle)
   - To have a repl available:
