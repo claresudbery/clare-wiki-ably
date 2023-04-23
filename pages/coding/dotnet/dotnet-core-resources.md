@@ -31,3 +31,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - At the time of writing (March 20222), I haven't got round to migrating them into clare-wiki
     - DotNetCoreMVC.pptx 
 
+## Misc
+
+### Getting C# code to work in Rider
+
+- If you try to open a C# .Net Core project in Rider, or a C# project which may or may not be .Net Core, and you get an error something like **"You must install or update .NET to run this application. App: /Applications/Rider.app/Contents/lib/ReSharperHost/TestRunner/netcoreapp3.0/ReSharperTestRunner.dll Architecture: x64 Framework: 'Microsoft.NETCore.App', version '3.1.0' (x64) .NET location: /usr/local/share/dotnet/"**
+- ... then it might be as simple a matter as editing one line in the `*.csproj` file
+- For instance, I just had to change from `<TargetFramework>netcoreapp3.1</TargetFramework>` to `<TargetFramework>net6.0</TargetFramework>`
+- ! Don't forget to change all `*.csproj` files! 
+  - For instance, there might be a separate one for the test project.
+

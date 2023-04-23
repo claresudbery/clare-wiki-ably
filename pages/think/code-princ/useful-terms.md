@@ -209,3 +209,11 @@ Pure functions don’t modify external variables/state/data outside of the scope
 	- But even within your slice, you will ideally make small incremental changes as you build your implementation.
 	- Geepaw says: "I don't use the phrase much anymore, at least not formally, because my own behavior doesn't seem to vary based on whether I'm adding or changing. I do increments and iterations and iterations and increments and I do them at various scales."
 - [Reference on diff between incremental and iterative](https://itsadeliverything.com/revisiting-the-iterative-incremental-mona-lisa)
+
+## Roll forward
+
+- You roll back when you take your code back to a previous version.
+- In pipeline terms, this often means returning to a previous deployment, possibly by deploying previously stored artefacts.
+- The most common reason this happens is when your current deployment is problematic - eg contains a bug or has brought your system down.
+- Rolling *forward* happens when you deploy a quick fix, rather than returning to a previous version.
+- Note that many people (eg Geepaw Hill) advocate for having a default habit of rolling forward rather than back. Geepaw says "If our steps are actually small enough, it's usually quicker to roll forward than to roll back."
