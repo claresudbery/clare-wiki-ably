@@ -186,6 +186,8 @@ Pure functions don’t modify external variables/state/data outside of the scope
 
 "Continuous Integration is the practice of merging development work with a Master/Trunk/Mainline branch constantly so that you can test changes, and test that changes work with other changes.  The idea here is to test your code as often as possible to catch issues early.  Most of the work is done by automated tests, and this technique requires a unit test framework.  Typically there is a build server performing these tests, so developers can continue working while tests are being performed."
 
+See [dedicated page](/pages/think/code-princ/coding-theory/Continuous-Integration)
+
 ### Continuous delivery
 
 "Continuous Delivery is the continual delivery of code to an environment once the developer feels the code is ready to ship.  This could be UAT or Staging or could be Production.  But the idea is you are delivering code to a user base, whether it be QA or customers for continual review and inspection.  This is similar to Continuous Integration, but it can feed business logic tests.  Unit tests cannot catch all business logic, particularly design issues, so this stage or process can be used for these needs.   You may also be delivering code for Code Review.   Code may be batched for release or not after the UAT or QA is done.  The basis of Continuous Delivery is small batches of work continually fed to the next step will be consumed more easily and find more issues early on.  This system is easier for the developer because issues are presented to the developer before the task has left their memory."
