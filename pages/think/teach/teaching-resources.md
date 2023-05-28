@@ -23,6 +23,12 @@ permalink: /pages/think/teach/Teaching-Resources
 
 ### Bloom's taxonomy
 
+- think about how learning works, what level of learning you're trying to achieve and how you might achieve it
+- i've delivered this bit in mine and Emily's training
+  - didn't have slides, just used the Miro as a slide show with the various frames
+  - eg what's in here: https://miro.com/app/board/uXjVPiyqtik=/
+  - Emily's slides: https://docs.google.com/presentation/d/1fmiYHtRH67Tr-oZLkb8LdWEV5JBKv_ux68ER2Mka9sk/edit#slide=id.gec8e4f2e15_1_16
+- a taxonomy is just a scheme of classification
 - Set of three hierarchical models
 - Used for classification of educational learning objectives into levels of complexity and specificity
 - The three lists cover the learning objectives in cognitive, affective and psychomotor domains
