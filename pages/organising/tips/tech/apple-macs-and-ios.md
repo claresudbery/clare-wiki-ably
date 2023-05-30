@@ -48,6 +48,15 @@ Longer Summary:
 
 ## Macs
 
+### Ventura OS - fingerprint recognition slow or unresponsive
+
+- Remember to manually lock your laptop when testing fixes, use Cmd + Ctrl + Q
+    - Using the off button on the smart bar doesn't lock it!
+- Turn keyboard off and on again
+    - this seemed to work for me
+- Reconfigure fingerprints in settings
+- Turn laptop off and on again
+
 ### How do I know whether I have Intel or Silicon, or x64 vs ARM64?
 
 -	Check About this Mac (top left) => Processor

@@ -51,6 +51,12 @@ permalink: /pages/think/code-princ/Metrics
 - NewRelic
 - Honeycomb
 - [Twitter question about measuring DORA metrics](https://twitter.com/bluesky383/status/1659171340237131776?s=46&t=r9YzfVeOvsijkv89U8okaQ)
+- [Multitudes](https://www.multitudes.co/)
+    - via Pete Hodgson (ex TW), who knows the founder
+- Pluralsite Flow (neé GitPrime) 
+    - more focused on CI-side metrics (how long PRs and branches are alive for, lead time for tickets, that sort of thing) rather than CD-side metrics (deploy frequency, change failure rate)
+    - less recommended
+
 
 
 
