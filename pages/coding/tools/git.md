@@ -142,15 +142,16 @@ and the repository exists."
   - or if you get an email saying your personal access token has expired
   - or if you get "authentication failed" when trying to push to GitHub from command line
 - Follow the link to regenerate personal access token (I think I was sent this in an email)
+  - ! Note that by default it will be set to expire in 30 days, but you can change this to make it last longer.
   - Make sure you take a copy! You can store it in a password manager.
-  - Note that by default it will be set to expire in 30 days, but you can change this to make it last longer.
 - Windows:
   - The next time you do a git push on windows, it'll open a git dialog
   - The first dialog wants your actual GitHub password, and it will say it has failed
   - The second one - "OpenSSH" - wants your GitHub username but when it asks for a password it wants the personal access token.
   - After that Windows will store it for you and you won't need it again.
 - Mac:
-  - The next time you do a git push, use the PAT (access token) instead of password and (on my setup at any rate) it will get saved for you.
+  - The next time you do a git push, use your GitHub user name and the PAT (access token) instead of password and (on my setup at any rate) it will get saved for you.
+  - If pushing a new branch, it might not ask for un + pw, but it will if just doing a normal push
   - If you get "authentication failed" when trying to do a pull, do a push instead and it'll give you the opportunity to enter user name and password - use the new PAT as your password.
 - [More here](https://stackoverflow.com/a/51505417).
 

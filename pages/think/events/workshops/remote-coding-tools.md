@@ -22,6 +22,7 @@ permalink: /pages/think/events/workshops/Remote-Coding-Tools
 - VNC
     - used by Emily
 - CyberDojo 
+- [Code With Me](https://www.jetbrains.com/code-with-me/)
 
 ## AnyDesk Plus EC2 Instance
 

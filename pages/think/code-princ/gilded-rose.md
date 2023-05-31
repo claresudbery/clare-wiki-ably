@@ -9,6 +9,10 @@ permalink: /pages/think/code-princ/Gilded-Rose
 - I've forked the main repo and added a lot of branches for various different purposes
     - My branches are listed and documented in the `clare-fork-readme` branch [here](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/clare-fork-readme/README.md)
 
+## Google doc for when clare-wiki is down
+
+- [This Google doc](https://docs.google.com/document/d/18XsMcFpEaMVboDV34adPQAfoJumMS94Ya3nMOeOpjkc/edit?usp=sharing) has everything on this page
+
 ## Gilded Rose: Getting Started With Approval Tests in C#
 
 - There are two ways to run approval tests. The simplest is to use the nuget [ApprovalTests package](https://github.com/approvals/ApprovalTests.Net), as in [ApprovalTest.cs](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/csharp-liftup-start/csharp/ApprovalTest.cs). 
