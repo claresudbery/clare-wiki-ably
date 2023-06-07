@@ -143,6 +143,22 @@ killall SystemUIServer
         - System Preferences | Sound
         - Check the checkbox 
 
+### Laggy mouse
+
+- plug-in USB trackball mouse lagging or being jerky (not responding at all then suddenly catching up)
+- I found something online suggesting you [reset the SMC](#resetting-the-smc)
+
+### Resetting the SMC
+
+- on my machine (ex-MT Macbook Pro with Ventura OS (June '23)), which has an Intel processor (which I can tell because in the Mac abhout dialog it says processor instead of chip), you do it like this:
+- Turn laptop off
+- Hold down the following four keys for 10 seconds:
+    - Shift
+    - Ctrl 
+    - Alt/Option
+    - Power (the fingerprint key, top right)
+- Restart
+
 ### System Preferences - Top Tips
 
 - Keyboard shortcuts 
