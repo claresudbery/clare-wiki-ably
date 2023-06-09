@@ -196,6 +196,10 @@ killall SystemUIServer
 
 - Cmd + 0 will fix that.
 
+## Do simple video editing in QuickTime on Macbook
+
+- See [here](/pages/organising/tips/tech/misc-tech-tips.md#do-simple-video-editing-in-quicktime-on-macbook)
+
 ## Both iOS and Macs
 
 ### Find lost device

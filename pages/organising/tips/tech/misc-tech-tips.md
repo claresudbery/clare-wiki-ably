@@ -297,6 +297,50 @@ That's it! Happy Miroing.
   - To find it, use File => Move
 - See [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#heading=h.o2emasiobw17) for useful cheat sheet to use in workshops
 
+## Do simple video editing in QuickTime on Macbook
+
+### Trouble-shoot menu items not being available
+
+- A lot of editing features are not available for mp4 files
+- Convert to *.mov first:
+  - Right click on file in Finder and choose "Encode selected video files"
+  - Wait for popup
+  - Click Continue
+  - Wait a few seconds
+  - Mov file will appear in Finder
+
+### Extract a clip from a longer video
+
+- Edit => Trim, or Splat + T
+- This will create a new file
+- Use File => Save to name it and give it a location
+
+### Splice two videos together
+
+- Open the one you want to appear first
+- Open Finder
+- Find the second one (the one you want to add after the first)
+- Drag and drop the second into the first
+- This will create a new file, but I found File => Save was not available
+  - Instead, just close the file and the Save dialog will appear
+
+### Remove a section from the middle of a video
+
+- You're supposed to be able to use Edit => Split Clip for this (see instructions below)
+  - but when I tried this technique, I found it pretty impossible to find the right points for splitting
+  - instead it was easier to...
+    - use [Edit => Trim](#extract-a-clip-from-a-longer-video) to create sub-sections, 
+    - then [splice them together](#splice-two-videos-together)
+- To use Edit => Split Clip:
+  - 1. In QuickTime Player, drag the playhead (the small diamond) in the timeline to the location where you want to split your movie.
+  - 2. Choose Edit > Split Clip.
+    - Your movie splits into two clips.
+  - 3. To split one of the clips in two, select the clip, drag the playhead (now represented by a red vertical line) to the location where you want to split the clip
+    - Choose Edit > Split Clip.
+    - Your movie is now split into three clips.
+  - 4. To continue splitting clips, repeat step three.
+  - 5. When you’re done splitting clips, you can rearrange your clips or click Done.
+
 ## Download bank statements from Monzo mobile
 
 - See notes in clare-tech (available to clare only)
