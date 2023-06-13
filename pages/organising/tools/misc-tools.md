@@ -258,6 +258,7 @@ re, sorry!)
 - Use [menti.com](https://www.menti.com/) when sharing someting you've created
 - !! Is a great alternative to typeform, which will draw you in with a free account
   - ...but Typeform is pretty useless because it's only free for 10 responses per month, and that includes when you're testing your own poll or quiz!
+  - ...so I ended up paying for an account
 - Things I found difficult when creating a form with Menti:
   - Everythign is called a presentation, whether it's quiz or poll or whatever... and every question is called a slide.
   - To allow multi-select on multiple choice questions, on the Content tab scroll down to the bottom and select "Let participants submit multiple options"
