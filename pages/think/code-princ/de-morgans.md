@@ -4,6 +4,8 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/De-Morgans
 ---
 
+Note that everything below was copied from [this page by Mike Foster](http://ix.cs.uoregon.edu/~michaelh/111/misc/inverting-logical-exprs.html) - I only put it here so I would have offline access.
+
 ## Inverting Logical Expressions with De Morgan's Laws
 
 by Mike Foster ([cross-browser.com](https://cross-browser.com/))
