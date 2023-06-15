@@ -35,6 +35,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Refactoring tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=dbccb66e-f286-40ac-a13e-93848ca66909&query=tag%1Frefactoring%1FtagGuid%3A2a3fac9f-ae6f-43b6-b619-f20d2eca33be%1Eview%3AVIEW%2FALL_NOTES&)
 - @KevinRutherford and @JJeffries1 have a [good refactoring video](https://www.youtube.com/watch?v=fSr8LDcb0Y0) from XP Manchester which focuses on connascence. 
+- [De Morgan's Laws](/pages/think/code-princ/De-Morgans)
 
 ## Coverage
 
