@@ -13,3 +13,5 @@ Rider is an IntelliJ tool very much like Visual Studio
 - Shift + Shift to search everywhere
 - When working on remote machines, might need to change keymap:
   - Shift + Shift then type `keymap`
+- Cmd + Shift + R brings up refactoring menu
+- Option/Alt + Enter to bring up lightbulb menu ("intention actions")
