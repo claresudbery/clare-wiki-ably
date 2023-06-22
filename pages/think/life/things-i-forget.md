@@ -299,3 +299,12 @@ I couldn't tell whether the last line was talking about "feckless extremes" or n
 ## What's the name of that singer whose name begins with N I can never remember?
 
 Nadine Shah.
+
+## What are those terms used by psychiatrists and psychologists about how people relate to each other?
+
+- Transference
+    - Where you redirect some of your feelings or desires for another person to an entirely different person
+- Projection
+    - Where you project your feelings and motivations and actions onto others - ie you accuse them of doing the things that actually you're doing yourself
+- "Projection and transference are very similar. They both involve you attributing emotions or feelings to a person who doesn't actually have them. The difference between the two is where the misattributions occur."
+    - From [here](https://www.healthline.com/health/mental-health/transference)
