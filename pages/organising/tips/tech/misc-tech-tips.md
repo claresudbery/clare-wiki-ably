@@ -266,7 +266,7 @@ That's it! Happy Miroing.
 ### Record your screen on a Mac
 
 - Open QuickTime Player
-  - Note that this opens the Finder app as its first screen, which can be confusing and feel like it hasn't open at all.
+  - Note that this opens the Finder app as its first screen, which can be confusing and feel like it hasn't opened at all.
   - But you will now have the QuickTime menu visible at the top of your screen, with all the quickTime functionality.
 - Choose File > New Screen Recording
   - You will now have a dotted line around your screen which you can drag to adjust the screen area you want to record

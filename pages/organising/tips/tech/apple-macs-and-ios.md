@@ -147,6 +147,9 @@ killall SystemUIServer
 
 - plug-in USB trackball mouse lagging or being jerky (not responding at all then suddenly catching up)
 - I found something online suggesting you [reset the SMC](#resetting-the-smc)
+- I also foudn something suggesting closing down background apps
+- and someting saying turn bluetooth keyboard on and off
+- and restart laptop
 
 ### Resetting the SMC
 
