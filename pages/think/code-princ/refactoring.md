@@ -56,8 +56,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         - described by Jeremy Cook (@JCook21) as "The very simplest example that I know"
         - more notes [here](#parrot)
     - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)  
-        - My fork is [here](https://github.com/claresudbery/Tennis-Refactoring-Kata/branches) - used to demo various bits of refactoring (check the branches)
-            - I have some videos to go with them - at the time of writing (May '22) in the LH folder in SSE GDrive
+        - My fork is [here](https://github.com/claresudbery/Tennis-Refactoring-Kata/branches) - used to demo various bits of refactoring 
+            - Branches are listed [here](https://github.com/claresudbery/Tennis-Refactoring-Kata/blob/clare-fork-readme/README.md)
+            - I have some videos to go with them - at the time of writing (May '22) in the coding videos folder in SSE GDrive
         - Jeremy Cook (@JCook21) says if [Parrot example](#parrot) too simplistic then Tennis kata might work well.
         - Here's a video of @Arkency tackling the [tennis refactoring kata in Ruby](https://www.youtube.com/watch?v=swokhWHKDmc)
         - Note I had some difficulty getting this running in Visual Studio. 
