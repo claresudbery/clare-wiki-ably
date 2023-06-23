@@ -8,6 +8,11 @@ permalink: /pages/coding/tools/Rider
 
 Rider is an IntelliJ tool very much like Visual Studio
 
+## Troubleshooting    
+
+- In Rider when I accidentally click in gutter and open horrid window on left
+  - right click in horrid area => close annotations
+
 ## Useful shortcuts
 
 - Shift + Shift to search everywhere
