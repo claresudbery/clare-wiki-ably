@@ -162,6 +162,7 @@ Pure functions don’t modify external variables/state/data outside of the scope
 
 - You Ain't Gonna Need It.
 - Be wary of over-designing and over-optimising.
+- See [Ron Jeffries](https://ronjeffries.com/xprog/articles/practices/pracnotneed/)
 
 ## DRY
 

@@ -28,9 +28,17 @@ permalink: /pages/think/code-princ/Metrics
     - Deployment frequency 
     - Lead time
         - Lead Time for Changes measures the velocity of software delivery
+        - Lead time for changes measures the time that a commit takes to reach production.
     - Time to restore, aka mean time to recovery (MTTR) (aka mean time to restore)
+        - MTTR describes the average time to recover from a failed deployment, incident, or service outage. It measures the time from the detection of an incident or outage until the full system functionality is restored.
     - Change failure rate ("a measure of how often deployment failures occur in production that require immediate remedy (particularity, rollbacks).")
+        - Change failure rate is a metric that determines the changes that lead to failures after they reach production or are released to end-users, and it's expressed in percentages.
     - Reliability [added in 2021] 
+        - From DORA 2022:
+        - "Reliability is a broader measure that includes availability, latency, performance, and scalability"
+        - "Both the practices we associate with reliability engineering (e.g., clear reliability goals, salient reliability metrics, - etc.) and the extent to which people report meeting their reliability expectations are powerful predictors of high levels of - organizational performance."
+        - captures operational capabilities
+        - "We asked respondents to rate their ability to meet or exceed their reliability targets."
 - I saw a great presentation about this 
     - by [Tito Sarrionandia](https://twitter.com/rbs_tito) (slides available to Clare only [here](https://docs.google.com/presentation/d/1W_zNVG0Pig3zryaWfCE66qvAzzm9ZtDJ/edit#slide=id.p1)) 
     - where he talked about four key DORA metrics      
