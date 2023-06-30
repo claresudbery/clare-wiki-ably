@@ -308,3 +308,20 @@ Nadine Shah.
     - Where you project your feelings and motivations and actions onto others - ie you accuse them of doing the things that actually you're doing yourself
 - "Projection and transference are very similar. They both involve you attributing emotions or feelings to a person who doesn't actually have them. The difference between the two is where the misattributions occur."
     - From [here](https://www.healthline.com/health/mental-health/transference)
+
+# What's that song "I wrote this song cos..."
+
+Looking for you, by Nina Ferrer
+
+The lyrics I remember:
+
+I wrote this song cos I love you
+I was thinking of you
+I wrote this song deep in my heart
+
+The actual lyrics are:
+
+I made this song cos I love you
+I made this song just for you
+I made this song deep in my heart
+I was thinking of you
