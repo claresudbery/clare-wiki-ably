@@ -328,3 +328,15 @@ re, sorry!)
   1. You'll see people doing the same as you would do within a Mastodon post: `@claresudbery@mastodon.social `
   2. Or you can build a normal link to your profile like this: https://mastodon.social/@claresudbery
 - Adding alt text to images: See [discussion here](https://mastodon.social/@claresudbery/110146029522676081)
+
+## Powerpoint
+
+### Change background for all powerpoint slides
+
+- View => Slide master => Background styles => Format background => Picture or texture fill
+- To just change the background for one slide: Design => Format background 
+  - but if you want to, from here, you can select all slides you are interested in on left
+- If you have image in clipboard you can click "from clipboard"
+- If you click top slide on left, it will be applied to all slides
+  - or if you are already on a slide, in the slide master, the relevant template will be selected and will only affect certain slides
+- ! To get out of it, click "Close master" on right hand of ribbon at top.
