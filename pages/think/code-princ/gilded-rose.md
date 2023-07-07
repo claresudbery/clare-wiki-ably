@@ -4,14 +4,19 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Gilded-Rose
 ---
 
+## Intro
+
+This page was created specifically for workshops using Gilded Rose. I have more notes on Gilded Rose [over here](/pages/think/code-princ/Refactoring#gilded-rose)
+
 ## Gilded Rose: My forked repo
 
 - I've forked the main repo and added a lot of branches for various different purposes
     - My branches are listed and documented in the `clare-fork-readme` branch [here](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/clare-fork-readme/README.md)
 
-## Google doc for when clare-wiki is down
+## Google doc / GitHub page for when clare-wiki is down
 
 - [This Google doc](https://docs.google.com/document/d/18XsMcFpEaMVboDV34adPQAfoJumMS94Ya3nMOeOpjkc/edit?usp=sharing) has everything on this page
+- [This GitHub-hosted page](https://github.com/claresudbery/OReilly-Bootcamp-Resources/blob/main/gilded-rose-approvals.md) also has same.
 
 ## Gilded Rose: Getting Started With Approval Tests in C#
 
@@ -71,6 +76,14 @@ permalink: /pages/think/code-princ/Gilded-Rose
         - You don't want to check it into source control
         - I've added it to `gitignore` in the [`csharp-approval-fixes` branch](https://github.com/claresudbery/GildedRose-Refactoring-Kata/tree/csharp-approval-fixes) of Gilded Rose. 
 
+## Gilded Rose C# Approval testing with nuget ApprovalTests package
+
+- See [here](/pages/think/code-princ/Refactoring#gilded-rose-c-approval-testing-with-nuget-approvaltests-package)
+
+## Verify Approval Testing Tool
+
+- See [here](/pages/think/code-princ/Refactoring#verify-approval-testing-tool)
+
 ## Gilded Rose: Working in Visual Studio
 
 - Enterprise version of VS has Live Unit Testing - green button on right in test explorer (see image below) - equivalent to NCrunch
@@ -85,3 +98,7 @@ permalink: /pages/think/code-princ/Gilded-Rose
     - another one missing from VS is "remove braces"
 
 ![gilded-rose-visual-studio-no-resharper-change-target-version](/resources/images/gilded-rose-visual-studio-no-resharper-change-target-version.png)
+
+## Gilded Rose C# Approval testing with texttest tool
+
+- See [here](/pages/think/code-princ/Refactoring#gilded-rose-c-approval-testing-with-texttest-tool)

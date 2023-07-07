@@ -48,7 +48,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - Also see individual dedicated sections below for each code base listed here (I'm still building that list, so it may not be complete).
 - Mark Kirschtein's [ferry booking example](github.com/Kirschstein/legacy-ferry-booking-system)
-- Gilded Rose - see [below](#gilded-rose)
+- Gilded Rose - see [below](#gilded-rose) and [separate dedicated page](/pages/think/code-princ/Gilded-Rose)
 - [JBrains' Trivia](https://github.com/jbrains/trivia) - Mark Kirschtein uses this at legacy coding retreats. It's also been translated into many different languages.
 - Mark Kirschtein says: "Another approach is to take a well known problem, checkout, potterkata etc and do it badly, that way you don't need to explain the domain."
 - Emily Bache has several refactoring katas, recommended by many people:
@@ -135,6 +135,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### Gilded Rose
 
+- I now also have a [separate dedicated page](/pages/think/code-princ/Gilded-Rose) devoted to getting started with Gilded Rose.
 - Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
 - My C# attempt is [here](https://github.com/claresudbery/gilded-rose-kata).
     - My notes on the approach I used are [here](https://github.com/claresudbery/clare-tech/blob/ea4cce0c797d2055e19577f546aad5118238eab9/made-tech/mt-org/demand-events/refactoring-workshop.md#gilded-rose) (currently available only to me).
