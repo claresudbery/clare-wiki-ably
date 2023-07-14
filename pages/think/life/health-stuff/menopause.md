@@ -15,3 +15,17 @@ permalink: /pages/think/life/health-stuff/Menopause
 - [My tweet about it all](https://twitter.com/claresudbery/status/1390996217019211776?s=21)
 - [Guardian article](https://www.theguardian.com/society/2021/may/09/mission-menopause-my-hormones-went-off-a-cliff-and-im-not-going-to-be-ashamed) by Kate Muir about her experience of menopause
 
+HRT
+
+- Podcast with louise newson and professor isaac manyonda on hrt, breast cancer and oestrogen: [PODCAST](https://podcasts.apple.com/gb/podcast/126-what-does-the-evidence-say-about-breast-cancer/id1459614845?i=1000542069721)
+  - [more on same subject](https://harleystreetemporium.com/menopause-hrt-and-breast-cancer-with-professor-isaac-manyonda/)
+  - [full original interview](https://www.instagram.com/tv/COLc3kmlZPP/?igshid=OGIzYTJhMTRmYQ==)
+- [CRUK: HRT and breast cancer](https://www.cancerresearchuk.org/about-cancer/causes-of-cancer/hormones-and-cancer/does-hormone-replacement-therapy-increase-cancer-risk)
+- More:
+  - [Hormone therapy blocks the body's ability to produce / respond to oestrogen and therefore increases all the symptoms and risks associated with menopause](https://www.cancerresearchuk.org/about-cancer/breast-cancer/treatment/hormone-therapy)
+  - [Not taking hormone therapy increases chance of recurrence](https://www.breastcancer.org/research-news/not-taking-hormonal-tx-leads-to-more-recurrence)
+- [Limitations of mammograms](https://www.cancer.org/cancer/types/breast-cancer/screening-tests-and-early-detection/mammograms/limitations-of-mammograms.html)
+- [cysts as opposed to tumours](https://www.breastcancer.org/benign-breast-conditions/cysts?gclid=CjwKCAjw5MOlBhBTEiwAAJ8e1p4BNFAJ4XDQO3prxxnJhM3C5bg4U0jh8AfzwR3gF9eb4aqTuOFcxRoC6AAQAvD_BwE)
+- [Mammograms](https://www.breastcancer.org/screening-testing/mammograms)
+- [What mammograms show](https://www.breastcancer.org/screening-testing/mammograms/what-mammograms-show)
+- Lipomas are fatty lumps and not the same as cysts. [Breast lipomas](https://www.invisionsallyjobe.com/conditions/breast-lipoma/)

@@ -112,7 +112,7 @@ Pure functions don’t modify external variables/state/data outside of the scope
 
 - This idea comes from Geepaw Hill. It pretty much does what it says on the tin!
 - More from Geepaw [here](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/).
-- Even more in this piece where he describes the benefcits in detail (see below for Rework Avoidance Theory)
+- Even more in this piece where he describes the benefits in detail (see below for Rework Avoidance Theory)
   - https://www.geepawhill.org/2021/11/16/mmmss-the-intrinsic-benefit-of-steps/
   - Summary:
     - Three choices:

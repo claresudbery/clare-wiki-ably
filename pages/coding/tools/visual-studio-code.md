@@ -69,3 +69,19 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 }
 ```
 
+## Troubleshooting
+
+### If your embedded links stop being colour-coded and having clickable links
+
+- This happens if you have double-indented sub-list items without a parent
+  - So for instance, [this works fine](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+    - and [this works fine](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+- and if you do this
+    - and then this, it will [work](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+
+### gratuitious subheading number 1
+  - and this [will work](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+
+### gratuitious subheading number 2
+    - but this [won't work](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+
