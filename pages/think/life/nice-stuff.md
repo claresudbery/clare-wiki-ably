@@ -26,6 +26,10 @@ permalink: /pages/think/life/Nice-Stuff
 - [Cute baby otter](https://youtu.be/Yl6zZEHBHwE)
     - [More cute baby animals](https://www.youtube.com/watch?v=z8_PAuaQ9SE)
     - (Oh no. I've fallen down the "cute baby animals on YouTube" rabbit hole...)
+- [Cute baby bears](https://www.youtube.com/watch?v=HCyzLlv3dNU)
+- [Live water hole webcam](https://www.youtube.com/watch?v=ydYDqZQpim8) in Namibia with gemsbok (S. African oryx - bit like gazelle)
+- [The Beast of Birker Fell](https://www.youtube.com/watch?v=5pF7rxjKD04)
+- [Zombie Holiday from Hell](https://youtu.be/WLG4anfU218?si=2gyodrd9z4liVkTM)
 
 ## Jokes
 
