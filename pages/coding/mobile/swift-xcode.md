@@ -274,7 +274,6 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - You might have to click some of the icons at the top of the right hand panel to find what you want
     - I got this working in my GridGateway class. My code there will probably end up in GameStateGateway, but you can see an intermediate working version in [this commit](). 
 
-
 ### Restoring app state using built-in functionality
 
 - I tried doing this via ViewController using [this article as a guide](https://developer.apple.com/documentation/uikit/uiscenedelegate/restoring_your_app_s_state), and you can see my attempt in [this commit]() (accessible to Clare only), but it didn't work - the relevant code never got fired.
@@ -284,7 +283,14 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - ... I decided I may as well continue with my efforts to solve this using CoreData
     - ...which I seem to have got working pretty well (see notes above).
 
-## Swift Keyboard Navigation
+## XCode Settings
+
+- Dark mode:
+    - XCode menu => Settings
+        - General => Appearance => Dark
+        - Themes => Classic (Dark)
+
+## XCode Keyboard Navigation
 
 - Find references:
     - Splat + click ("Command-click") on the name of the method, and select "Callers" from the resulting menu.
@@ -302,7 +308,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - (see the Project => Build For menu)
 - Run all tests: Splat + U
 
-## Swift Debugging
+## XCode Debugging
 
 - More [here](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs)
 - To watch particular variables:
