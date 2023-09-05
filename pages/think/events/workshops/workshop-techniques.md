@@ -159,3 +159,5 @@ Split people into groups and get each group to research answers to questions wit
 ### 1-2-4-All
 
 Read all about it [here](http://www.liberatingstructures.com/1-1-2-4-all/).
+
+
