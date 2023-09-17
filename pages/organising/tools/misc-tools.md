@@ -56,11 +56,16 @@ permalink: /pages/organising/tools/Miscellaneous-Tools
 ## Drawing tools
 
 - Free tools:
+  - [Excalidraw](https://excalidraw.com/) 
+    - comes highly recommended by Neal Ford and Mark Richards for architecture diagrams
+    - good sketch view - encourages people to realise this is not final
   - [Google drawings](https://docs.google.com/drawings)
   - [Draw.io](https://app.diagrams.net/) (not the same as Google drawings but integrates with Google drive)
 - Paid:
   - [Miro](https://www.miro.com) (free if someone else hosts?)
   - [Jamboard](https://jamboard.google.com/) (not actually a drawing tool - postits only)
+  - [Omnigraffle on the Mac](https://www.omnigroup.com/omnigraffle)
+  - [Visio](https://www.microsoft.com/en-au/microsoft-365/visio/visio-in-microsoft-365)
 
 ## Snapdrop: "Like airdrop, but for everything"
 
@@ -285,6 +290,7 @@ re, sorry!)
 - Inshot (good on mobile)
 - Youtube (free if you have gmail account)
 - Shotcut (free on windows desktop)
+- QuickTime (on Mac)
 
 ## Creating nicely formatted code snippets for slides etc
 

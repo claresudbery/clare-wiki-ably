@@ -121,4 +121,5 @@ permalink: /pages/organising/podcasts/Audacity
 
 ### Inserting silence
 
-Generate => Silence
+- Edit > Preferences > Tracks > Tracks Behaviors > Editing a clip can move other clips
+- Generate => Silence
