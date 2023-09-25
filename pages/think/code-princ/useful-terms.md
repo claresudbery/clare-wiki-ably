@@ -220,3 +220,9 @@ See [dedicated page](/pages/think/code-princ/coding-theory/Continuous-Integratio
 - The most common reason this happens is when your current deployment is problematic - eg contains a bug or has brought your system down.
 - Rolling *forward* happens when you deploy a quick fix, rather than returning to a previous version.
 - Note that many people (eg Geepaw Hill) advocate for having a default habit of rolling forward rather than back. Geepaw says "If our steps are actually small enough, it's usually quicker to roll forward than to roll back."
+
+## Technical Debt, aka Tech Debt
+
+- [Martin Fowler's definition of technical debt](https://martinfowler.com/bliki/TechnicalDebt.html)
+- [Martin Fowler's quadrant idea for tech debt](https://martinfowler.com/bliki/TechnicalDebtQuadrant.html)
+- Some people don't like the term - see my notes from SoCraTes UK 2023 (in phone Notes)
