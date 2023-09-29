@@ -346,3 +346,13 @@ re, sorry!)
 - If you click top slide on left, it will be applied to all slides
   - or if you are already on a slide, in the slide master, the relevant template will be selected and will only affect certain slides
 - ! To get out of it, click "Close master" on right hand of ribbon at top.
+
+### Change background for individual powerpoint slide
+
+- To create a new theme, View => Slide master
+  - You can copy/paste and edit an existing theme by selecting the parent slide at the top of the theme and using copy/paste
+- To apply the new theme to specific slide(s):
+  - Select the slide(s)
+  - Select Design at the top
+  - Scroll through the carousel of themes at the top until you see the parent slide for your theme
+  - PRESS CTRL, then click on the theme you want, select "Apply to selected slides" it will be applied to the selected slide(s).
