@@ -40,6 +40,10 @@ tools you don’t have licenses for:
     — “we've enjoyed realtimeboard because it's rather more free-form,
     easier to do things like scribble circles around groups of
     stickies and similar.”  
+    - Pricing (in Oct 2023):
+      - free plan gives unlimited board members but no private access and no timers or voting, and only 3 editable boards
+      - basic plan gives private access and timers and voting
+      - the quoted figures are a bit confusing - they are all quoted as per month, even though the cheaper price is actually an annual fee, which they don't show in comparison tables, maybe because it's a bit eye watering. So to find out what you'll actually have to pay upfront, multiply the cheaper figure by 12.
 
   - [Google Jamboard](https://jamboard.google.com/u/0/) - like a quicker / lower-friction version of Miro (also fewer features)
 

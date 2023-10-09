@@ -78,7 +78,7 @@ There are a couple of activities below that benefit from these types of question
 - What's your favourite (or most-recently acquired) gadget?
 - What's your favourite food?
 - What was your first job?
-- What was the best job you ever had,and why?
+- What was the best job you ever had, and why?
 - What was the worst job you ever had, and why?
 - What was the biggest challenge you ever faced?
 - What was your first childhood pet or favourite toy / game?
