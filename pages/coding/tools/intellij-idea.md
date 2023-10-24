@@ -109,3 +109,9 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 ## Troubleshooting
 
   - If you get surprising errors in the repl: Try restarting the repl (I think I wrote this in reference to ClojureScript)
+
+## Ted's useful shortcuts cheatsheet
+
+- (It's a pdf so won't embed as image)
+
+![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf)
