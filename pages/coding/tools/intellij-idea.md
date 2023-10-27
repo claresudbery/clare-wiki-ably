@@ -97,7 +97,13 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Note that you'll still see the notification saying SDK is not specified in the notifications window
     - but this seems to just be history of old notifications
 
-## Change / add keyboard shortcuts
+## Troubleshooting
+
+  - If you get surprising errors in the repl: Try restarting the repl (I think I wrote this in reference to ClojureScript)
+
+## Keyboard shortcuts
+
+### Change / add keyboard shortcuts
 
   - Splat-shift-A
   - Keyboard | keymap
@@ -106,12 +112,12 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Clojure keybindings | Search for “repl”
   - Right-click – keyboard shortcut
 
-## Troubleshooting
+### Ted's useful shortcuts cheatsheet
 
-  - If you get surprising errors in the repl: Try restarting the repl (I think I wrote this in reference to ClojureScript)
+- (pdf version is [here](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf))
 
-## Ted's useful shortcuts cheatsheet
+![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.png)
 
-- (It's a pdf so won't embed as image)
+### List of shortcuts
 
-![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf)
+- Find/show usages: Alt + Splat + F7
