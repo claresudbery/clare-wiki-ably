@@ -120,4 +120,9 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 
 ### List of shortcuts
 
+- [Full list of Mac shortcuts](https://www.jetbrains.com/help/idea/reference-keymap-mac-default.html)
 - Find/show usages: Alt + Splat + F7
+  - or just Alt + F7
+- Go back: Cmd + [
+- Find in files: Cmd + shift + F
+- Search everywhere: Shift + Shift
