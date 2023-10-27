@@ -485,3 +485,13 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
 - Unplug them again and not muted
 - Check sound settings, output is correct
 - ...BUT what you might miss is that output is getting muted every time you plug headphones in. Untick the muted box in sound settings and all will be well again.
+
+## Dropbox size / dropbox file size / dropbox space / dropbox usage
+
+- To find out what's taking up space in Dropbox:
+  - Sign in to Dropbox.com
+  - Click All Files in the sidebar.
+  - Click on the Size column to organize your files by size.
+    - If you don’t see a size column, you can click on the arrow in one of the columns and select Size.
+  - Folder sizes don't show by default.
+    - You can see those folder sizes by clicking on the ellipses next to the folder and selecting Calculate size.
