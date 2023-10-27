@@ -48,8 +48,58 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
     used to it cos you will type your own brackets and muck everything
     up?
 
+## Configuring your setup
+
+- To make deprecated method calls be shown as strikethrough
+    - Settings (Splat + ,) => Inspections => Code maturity => Deprecated API usage 
+    - Select "Deprecated symbol" from the "Highlighting in editor" dropdown, bottom right
+- Notes from Ted M Young's ensemble (Oct 2023, IDEA v 2023.2.3):
+    - Customsie - light theme
+        - Font - 14.0 or 16.0
+    - All settings (mid screen) (or Splat + ,)
+        - Editor => font = 16
+    - Projects = > From VS => ssh => Trust project
+    - Cmd + ; to see SDKs => click SDKs on left
+        - + button at top of screen to get JDK = select num 21 (will prob find automatically)
+        - Hit Apply after downloaded
+    - Select Project top left
+        - Select JDK 21 in SDK drtopdown
+        - Clidk OK at bottom
+        - Might take a while cos it has to download and index all dependencies
+    - Cmd + ; 
+        - Sel;ect Modules top left
+        - Check name is blackjack and language level is 21
+    - IntelliJ cheat sheet for all Ted's classes
+        - https://ted.dev/courses/mastering-intellij-idea.html
+    - Get old UI
+        - Cmd + ,
+        - New UI - unchjeck enable new UI
+    - Settings (at mid top of IDE) => open files with single click
+    - Cmd + , => Editor => General => Code folding => Un check "one line methods"
+
+## Getting started with a new project
+
+- Import project: for clojure, find project.clj
+- For plain Java, just open the containing folder
+- When you first open a Java project in IDEA, it will ask you to specify the SDK
+  - This is because you need an SDK installed
+  - JDK is the Java SDK
+  - You only need one per machine
+  - It will give you a configure button to click
+  - Then you select an SDK from dropdown 
+    – if JDK’s not already there, click download
+      - Nothing actually appears to download straight away though
+      - Then, if using Maven, it prompts you to download some stuff (not sure if this is related to the above though!)
+      - But anyway, then you’ll see a message at bottom of window saying it’s installing the JDK
+  - Once downloaded, Select “JDK” (first option) – this will take you to a Finder window – search for Library folder, then drill down into Java folder
+    - (so, it’s in /Library/Java) 
+    - and find folder named jdk-somethingorother
+  - Note that you'll still see the notification saying SDK is not specified in the notifications window
+    - but this seems to just be history of old notifications
+
 ## IntelliJ shortcuts
 
+  - See also [keyboard shortcuts](#keyboard-shortcuts) below - which seem slightly different - maybe different keyboard mapping?
   - Splat-B – go to definition (equivalent of Ctrl+B in Resharper)
   - Splat-alt-left (and right) – move back and forwards in history
   - Splat-shift-A – Action (v useful)
@@ -77,26 +127,6 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Alt + Splat + L: Pretty print: Xml formatting – and other formatting
       - From menu, this is is Cocde | Reformat code
 
-## Getting started with a new project
-
-- Import project: for clojure, find project.clj
-- For plain Java, just open the containing folder
-- When you first open a Java project in IDEA, it will ask you to specify the SDK
-  - This is because you need an SDK installed
-  - JDK is the Java SDK
-  - You only need one per machine
-  - It will give you a configure button to click
-  - Then you select an SDK from dropdown 
-    – if JDK’s not already there, click download
-      - Nothing actually appears to download straight away though
-      - Then, if using Maven, it prompts you to download some stuff (not sure if this is related to the above though!)
-      - But anyway, then you’ll see a message at bottom of window saying it’s installing the JDK
-  - Once downloaded, Select “JDK” (first option) – this will take you to a Finder window – search for Library folder, then drill down into Java folder
-    - (so, it’s in /Library/Java) 
-    - and find folder named jdk-somethingorother
-  - Note that you'll still see the notification saying SDK is not specified in the notifications window
-    - but this seems to just be history of old notifications
-
 ## Troubleshooting
 
   - If you get surprising errors in the repl: Try restarting the repl (I think I wrote this in reference to ClojureScript)
@@ -120,9 +150,20 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 
 ### List of shortcuts
 
+- See also [IntelliJ shortcuts](#intellij-shortcuts) above - which seem slightly different - maybe different keyboard mapping?
 - [Full list of Mac shortcuts](https://www.jetbrains.com/help/idea/reference-keymap-mac-default.html)
 - Find/show usages: Alt + Splat + F7
   - or just Alt + F7
 - Go back: Cmd + [
-- Find in files: Cmd + shift + F
-- Search everywhere: Shift + Shift
+- finding stuff:
+  - Search everywhere: Shift + Shift
+  - Find in files: Cmd + shift + F
+  - Search for objects / classes rather than just "find in files"
+    - Cmd + Shift O gives files and classes
+    - Cmd + O gives just classes
+    - Cmd + Alt + O gives symbols, which is everything but classes
+    - Note that IntelliJ does not describe this as "Find" or "Search" but as "Go to"
+- Refactoring menu: Ctrl + t
+- Cmd + Shift + Enter - finish a line (if no semicolon for instance)
+- Alt + Up = select the nearest thing - up again to select wider scope
+- In Command + O search menu, instead of typing GameBuilder to search for GameBuilder, you can just type GB
