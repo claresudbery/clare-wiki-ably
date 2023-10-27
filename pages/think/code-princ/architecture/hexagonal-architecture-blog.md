@@ -25,7 +25,9 @@ So, what is hexagonal architecture? Here is a diagram:
 It's all about ports and adapters. These are split into primary and secondary. 
 
 * The **primary** ports and adapters represent the way you interact with your users
+    * Ted M. Young prefers to call these "in" - as they tend to represent stuff coming in to the application, and it's easier to understand
 * The **secondary** ports and adapters represent the way you interact with any services you need. 
+    * Ted M. Young prefers to call these "out" - as they tend to represent stuff going out of the application, and it's easier to understand
 
 The ports are the interfaces, and the adapters represent the code which allows those interfaces to be utilised.
 
