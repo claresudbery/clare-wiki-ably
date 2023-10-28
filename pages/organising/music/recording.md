@@ -19,3 +19,12 @@ permalink: /pages/organising/music/Recording
 ## Recording snippets from external sources
 
 See [here](https://github.com/claresudbery/clare-tech/blob/master/writing/Music/recording.md).
+
+## Recording on phone using Voice Record Pro
+
+- To turn gain (input volume) up / down to avoid distortion:
+    - Click Record
+    - Select the Advanced tab
+    - Scroll down to Record Engine at the bottom and select Advanced
+    - Click the graph icon at the top 
+    - Use the slider to change the input gain
