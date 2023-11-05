@@ -13,3 +13,4 @@ permalink: /pages/think/life/admin/Gifts
 - See [Nice things to do during lockdown](/pages/think/life/health-stuff/Covid#nice-things-to-do-during-lockdown) for things like cheese-tasting vouchers and cocktail-making kits.
 - Neals Yard seaweed and arnica foaming bath is LOVELY and makes everyone feel better. [Buy it here](https://uk.nyrorganic.com/shop/louisescrivens/?a=33&search=seaweed%20arnica&cat=0&bid=19d58d85c4e80b764d71b50efc6e0185b897959d)
     - Their scented candles are also great
+- [Plucky pickle gift vouchers](https://www.pluckypickle.co.uk/pickles-shop/gift-vouchers)
