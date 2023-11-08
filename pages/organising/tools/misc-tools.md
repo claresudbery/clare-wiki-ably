@@ -339,7 +339,10 @@ re, sorry!)
 
 ### Change background for all powerpoint slides
 
-- View => Slide master => Background styles => Format background => Picture or texture fill
+- View => Slide master => 
+  - Background styles => 
+  - Format background => 
+  - Picture or texture fill
 - To just change the background for one slide: Design => Format background 
   - but if you want to, from here, you can select all slides you are interested in on left
 - If you have image in clipboard you can click "from clipboard"
