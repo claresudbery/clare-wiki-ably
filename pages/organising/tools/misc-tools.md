@@ -4,6 +4,17 @@ location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/Miscellaneous-Tools
 ---
 
+## Misc
+
+- Notepad++ Macros: See [separate notepad++ macro page](/pages/organising/tools//Sample-Notepad++-Macros)
+- [Useful tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7ae17d68-c956-43fd-841f-a3daba3b85ef&query=tag%1FUseful%1FtagGuid%3A445d553a-0d3d-80ce-5f4e-641a12368bae%1Eview%3AVIEW%2FALL_NOTES&)
+- [Tools tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=e4f18f96-b476-459c-a741-a54e1c505904&query=tag%1FTools%1FtagGuid%3Abf7c84e2-5e3a-06c7-2762-f2213ad6e7ce%1Eview%3AVIEW%2FALL_NOTES&)
+- [Brew: Mac Bulk App Installer For a New Mac OS Install using HomeBrew](https://www.switchingtomac.com/tutorials/how-to-make-a-bulk-app-installer-for-a-new-mac-os-install-using-homebrew/)
+
+## Advice on choosing tech tools
+
+- See [Rob Bowley's great LinkedIn post](https://www.linkedin.com/posts/robertbowley_startups-scaleups-ctoinsights-activity-7130114354934370304-DNro?utm_source=share&utm_medium=member_desktop)
+
 ## Spectacle
 
   - Tool which allows keyboard shortcuts for moving windows around
@@ -19,14 +30,6 @@ permalink: /pages/organising/tools/Miscellaneous-Tools
     
       - > **Alt + Splat + arrow** (anchor current window to left or
         > right - good for tiling / to tile)
-
-
-## Misc
-
-- Notepad++ Macros: See [separate notepad++ macro page](/pages/organising/tools//Sample-Notepad++-Macros)
-- [Useful tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7ae17d68-c956-43fd-841f-a3daba3b85ef&query=tag%1FUseful%1FtagGuid%3A445d553a-0d3d-80ce-5f4e-641a12368bae%1Eview%3AVIEW%2FALL_NOTES&)
-- [Tools tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=e4f18f96-b476-459c-a741-a54e1c505904&query=tag%1FTools%1FtagGuid%3Abf7c84e2-5e3a-06c7-2762-f2213ad6e7ce%1Eview%3AVIEW%2FALL_NOTES&)
-- [Brew: Mac Bulk App Installer For a New Mac OS Install using HomeBrew](https://www.switchingtomac.com/tutorials/how-to-make-a-bulk-app-installer-for-a-new-mac-os-install-using-homebrew/)
 
 ## Avatar maker
 
@@ -359,3 +362,9 @@ re, sorry!)
   - Select Design at the top
   - Scroll through the carousel of themes at the top until you see the parent slide for your theme
   - PRESS CTRL, then click on the theme you want, select "Apply to selected slides" it will be applied to the selected slide(s).
+
+### Booking.com
+
+- To add new hotel booking to calendar - do nothing!
+  - There's often a bit of a delay, but you will receive an invite to your Google calendar
+  - (not sure if this is a setting somewhere, but you only have to set it up once)

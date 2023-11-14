@@ -218,6 +218,7 @@ Ing Direct.
 
 Goodhart's Law:  
 - Anything you measure and start to use as a target can be gamed
+	- "When a measure becomes a target, it ceases to be a good measure."
 - Also [as Woody Zuill quoted recently](https://twitter.com/WoodyZuill/status/1493228883147063296?s=20&t=zoFnbfK_nHcoM7MDsrhUkg), "If you try to improve the performance of a system of people, machines, and procedures by setting numerical goals for the improvement of individual parts of the system, the system will defeat your efforts and you will pay a price where you least expect it.” - Myron Tribus
 
 ## What is a "heuristic"?

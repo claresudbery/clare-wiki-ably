@@ -89,3 +89,27 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 
 * [Sugar free margarita](https://www.wholesomeyum.com/recipes/best-skinny-margarita-recipe-sugar-free-low-carb-paleo/)
 
+### Peanut butter croissants
+
+- See video on this guy's Instagram (@georgegg - George Egg - snack hacker)
+    - [Here](https://www.instagram.com/p/CzlmuXDMmUV/?hl=en-gb)
+- Take stale croissants
+- Slice them in half
+- Trickle the cut halves with honey (or date syrup is even better) and water mixed together
+- Ingredients:
+    - 50g butter, softened
+    - 50g white sugar
+    - 50g peanut butter
+    - 1 egg
+    - 1 tbsp plain flour
+    - Chopped peanuts
+    - Icing sugar
+    - METHOD
+- Make a peanut butter cream: Butter, sugar, eggs, peanut butter and a little bit of flour
+    - beaten together like making a cake batter
+    - spread some of that inside the croissant    
+    - close the lid, spread more on top
+    - sprinkle peanuts on top
+    - Bake in oven, 190 degrees about 15 mins
+    - Let them cool, then drench them in icing sugar
+    - they're fudgy and peanutty and a bit like almond croissants

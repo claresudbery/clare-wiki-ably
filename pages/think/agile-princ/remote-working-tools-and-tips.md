@@ -56,6 +56,8 @@ tools you don’t have licenses for:
   - Online warm-ups and energisers:
     [https://blog.mural.co/online-warm-ups-energizers](https://blog.mural.co/online-warm-ups-energizers)
 
+- [Break timer](https://www.bigtimer.net/)
+
 ### Diagramming
 
   - Zoom lets you draw on shared screens for quick collaboration
