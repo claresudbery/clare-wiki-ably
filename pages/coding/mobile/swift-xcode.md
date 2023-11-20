@@ -8,6 +8,12 @@ permalink: /pages/coding/mobile/Swift-and-XCode
 
 See [separate page](/pages/coding/mobile/iOS-Development) - there may be other iOS XCode stuff in there too.
 
+## Misc utils
+
+- [hacking with swift](https://www.hackingwithswift.com/)
+    - Useful tool for getting better at ios dev
+    - Recommended by one of the Code First Girls graduates
+
 ## GitHub Repos
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.

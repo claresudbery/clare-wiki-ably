@@ -6,7 +6,7 @@ permalink: /pages/coding/mobile/iOS-Development
 
 ## Swift & XCode
 
-See [separate page](/pages/coding/mobile/iOS-Development) - there is bound to be other iOS development stuff in there too.
+See [separate page](/pages/coding/mobile/swift-xcode.md) - there is bound to be other iOS development stuff in there too.
 
 ## Creating icons
 
