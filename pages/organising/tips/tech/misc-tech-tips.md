@@ -34,6 +34,18 @@ permalink: /pages/organising/tips/tech/Misc-Tech-Tips
 
 ## Gmail / Google Calendar
 
+- Turn on keyboard shortcuts
+  - Settings => General => Keyboard shortcuts on
+  - Settings => Advanced => Custom keyboard shortcuts => enable
+  - Settings => Keyboard shortcuts 
+    - Delete: # or 3
+  - Useful shortcuts:
+    - Delete: 3
+    - Archive: e
+    - Move: v
+    - Label: l
+    - Undo: z
+    - Select: x
 - Add bullet list: Cmd + Shift + 8
   - Indent a sub item: Ctrl + ] to indent right, Ctrl + [ to indent left
 - [Other gmail shortcuts](https://blog.hubspot.com/sales/gmail-keyboard-shortcuts)
