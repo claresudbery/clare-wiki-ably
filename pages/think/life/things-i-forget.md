@@ -326,3 +326,11 @@ I made this song cos I love you
 I made this song just for you
 I made this song deep in my heart
 I was thinking of you
+
+# What's that song that has lyrics that sound like my name?
+
+Billy Bragg - Sexuality
+
+Sexuality, strong and warm and wild and free
+Sexuality, your laws do not apply to me
+A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
