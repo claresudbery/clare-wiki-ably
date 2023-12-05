@@ -228,3 +228,18 @@ See [dedicated page](/pages/think/code-princ/coding-theory/Continuous-Integratio
 - Some people don't like the term - see my notes from SoCraTes UK 2023 (in phone Notes)
 - I've transcribed a conversation about the value (or otherwise) of the term in clare-tech (private-tech-conversations.md) - was a private convo so accessible to Clare only I'm afraid, sorry about that.
 
+## Turing Complete
+
+- Turing described a theoretical Turing machine that could process any set of instructions
+- Nice little [video here](https://www.youtube.com/watch?v=dNRDvLACg5Q) describing the Turing machine
+- A language or system is described as Turing complete if it can handle any instruction / can process any algorithm
+- A calculator is non Turing complete because it can only handle mathematical calculations
+- From [wikipedia](https://esolangs.org/wiki/Turing_machine):
+    - A Turing machine "consists of a finite-state automaton (often called its "control mechanism") hooked up to an unbounded tape which can be moved to the left and right, from which symbols can be read, and onto which symbols can be written."
+    - "A universal Turing machine is a Turing machine with a control mechanism constructed in such a way that it can simulate any other Turing machine's control mechanism, if that mechanism is encoded on the tape before execution begins."
+    - "while many systems of computation have been shown to be able to solve only a subset of computation problems that a given Turing machine can solve, no system of computation has ever been shown to be able to solve a computation problem that a Turing machine cannot."
+    - the "the Church-Turing thesis ... states (roughly) that ... a Turing machine can make any sort of calculation that it is possible to precisely define an algorithm for."
+    - "It is often an interesting and/or valuable task to show that an esoteric programming language is (or is not) equivalent to a Turing machine."
+        - An example: The esoteric Korean [Aheui programming language](https://esolangs.org/wiki/Aheui), designed to play a similar role to [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck), is probably Turing-complete, because "Since a pair of unbounded stacks can be used to simulate the unbounded tape of a Turing machine, it is likely that Aheui is Turing-complete.:
+
+
