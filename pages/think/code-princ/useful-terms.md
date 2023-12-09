@@ -180,7 +180,7 @@ Pure functions don’t modify external variables/state/data outside of the scope
 - Quick summary:
   - **Continuous integration** is what happens on a development server - at-least-daily merges of all code into the mainline, integrated with everything else and automatically tested
   - **Continuous delivery** means that the continuously integrated code is then made continuously *available* for deployment and manual testing
-  - **Continuous deployment** means that the continuously delivered code is *automatically* pushed all the way to production and external users
+  - **Continuous deployment** means that the continuously delivered code is *automatically* pushed all the way to production and external users (see below)
   - See [below](#continuous-delivery-vs-continuous-deployment) for confusions between continuous delivery and continuous deployment
 
 ### Continuous integration
@@ -196,6 +196,9 @@ See [dedicated page](/pages/think/code-princ/coding-theory/Continuous-Integratio
 ### Continuous deployment
 
 "Continuous Deployment is the deployment or release of code to Production as soon as it is ready.  There is no large batching in Staging nor long UAT process that is directly before Production.  Any testing is done prior to merging to the Mainline branch and is performed on Production-like environments, see Integration blog article for more information.  The Production branch is always stable and ready to be deployed by an automated process.  The automated process is key because it should be able to be performed by anyone in a matter of minutes (preferably by the press of a button).  After a deploy, logs must be inspected to determine if your key metrics are affected, positively or negatively.  Some of these metrics may include revenue, user sign-up, response time or traffic, preferably these metrics are graphed for easy consumption.  Continuous Deployment requires Continuous Integration and Continuous Delivery - otherwise, you are just cowboy coding and you will get errors in the release."
+
+Nice description from Martin Fowler: "Continuous Integration ensures everyone integrates their code at least daily to the mainline in version control. Continuous Delivery then carries out any steps required to ensure that the product is releasable to product whenever anyone wishes. Continuous Deployment means the product is automatically released to production whenever it passes all the automated tests in the deployment pipeline.
+With Continuous Deployment every commit pushed to mainline as part of Continuous Integration will be automatically deployed to production providing all of the verifications in the deployment pipeline are green. Continuous Delivery just assures that this is possible (and is thus a pre-requisite for Continuous Deployment)."
 
 ### Continuous delivery vs continuous deployment 
 

@@ -180,7 +180,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 #### Approval testing
 
-- Text-based approval testing is based on the golden master approach:
+- Text-based approval testing is based on the golden master approach (also called characterisation testing / characterization testing):
 - Before you change the code, you run it, and gather the output of the code as a plain text file.
 - You review the text, and if it correctly describes the behaviour as you understand it, you can "approve" it, and save it as a "Golden Master".
 - Then after you change the code, you run it again, and compare the new output against the Golden Master. Any differences, and the test fails.
