@@ -32,6 +32,9 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 
 - [Cheesy leeks](https://www.bbc.co.uk/food/recipes/cheesy_leeks_46292)
 - [Marzipan](https://www.daringgourmet.com/how-to-make-marzipan-almond-paste/)
+    - ! But that's one of those horrible web pages full of ads and requiring infinite scrolling, so I've copied the key info into this doc:
+        - Dropbox/Desktop-Current/marzipan-recipe.docx
+        - ...and printed it out and put it in my recipe book
     - [How to ice a Christmas cake](https://www.greatbritishchefs.com/how-to-cook/how-to-ice-a-christmas-cake)
 - [Bread sauce](https://www.bbcgoodfood.com/recipes/bread-sauce-0)
 - [Christmas pomanders](https://craftbits.com/project/orange-and-clove-pomanders/) (made from oranges and cloves)

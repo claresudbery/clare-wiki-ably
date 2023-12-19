@@ -130,7 +130,7 @@ A lot of people hate it. Then again... a trainer I knew, during a powercut, got 
 
 Many other brilliant ideas for how to collaborate and brainstorm effectively are available [here at Liberating Structures](http://www.liberatingstructures.com/).
 
-## The perfection game
+### The perfection game
 
 - A way of providing feedback
 - Not actually one of the [Liberating Structures](http://www.liberatingstructures.com/) (as I first thought) but uses the same principles.
@@ -159,5 +159,15 @@ Split people into groups and get each group to research answers to questions wit
 ### 1-2-4-All
 
 Read all about it [here](http://www.liberatingstructures.com/1-1-2-4-all/).
+
+### Bingo / voting
+
+- Assign numbers to a bunch of topics
+- Get people to vote on which topic they'd like to know more about
+- Address the most popular
+- The benefit of this is that people also read through titles (and maybe descriptions) of other options, 
+    - this means they are aware of those other options, so they know they exist
+    - it might pique their interest and lead to them finding out more offline
+    - they might also learn just a teeny amount abiout them via the titles / descriptions
 
 
