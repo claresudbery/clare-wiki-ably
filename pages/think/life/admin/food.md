@@ -38,6 +38,7 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
     - [How to ice a Christmas cake](https://www.greatbritishchefs.com/how-to-cook/how-to-ice-a-christmas-cake)
 - [Bread sauce](https://www.bbcgoodfood.com/recipes/bread-sauce-0)
 - [Christmas pomanders](https://craftbits.com/project/orange-and-clove-pomanders/) (made from oranges and cloves)
+- [Frangipane almond topped mince pies](https://www.easypeasyfoodie.com/easy-frangipane-topped-mince-pies/)
 
 ## Snacks
 
