@@ -368,3 +368,12 @@ re, sorry!)
 - To add new hotel booking to calendar - do nothing!
   - There's often a bit of a delay, but you will receive an invite to your Google calendar
   - (not sure if this is a setting somewhere, but you only have to set it up once)
+
+## Canon Scanner / Scanning
+
+- On windows I used the IJ Scan Utility
+
+## HP OfficeJet Pro X551dw HP Printer
+
+- On windows I used the HP Print & Scan Doctor 
+- Windows Key + Print
