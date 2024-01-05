@@ -12,6 +12,15 @@ Aka COVID-19 / coronavirus / Sars-CoV-2
 
 [Updated symptom advice](https://covid.joinzoe.com/post/new-top-5-covid-symptoms)
 
+### Anti-virals / paxlovid / PANORAMIC study
+
+- Paxlovid is available on NHS in UK, but only for high risk groups
+    - [This anti-Covid pill changes everything. So why won’t it be available for all?](https://amp.theguardian.com/commentisfree/2021/dec/21/paxlovid-anti-covid-pill-why-not-available)
+    - [NICE guidelines, May '23 (but they're being appealed?)](https://www.england.nhs.uk/wp-content/uploads/2023/05/PRN00453-RPS-ICCP-Remdesivir-and-molnupiravir-for-non-hosp-patients-with-COVID-19-May-2023.pdf)
+    - Not sure if this is the appeal mentioned elsewhere - [it relates to funding](https://www.nice.org.uk/guidance/indevelopment/gid-ta11324)
+- ...but you can join a trial if you're not in a high risk group
+    - [Panoramic trial for those not in high risk group](https://www.panoramictrial.org/?gclid=EAIaIQobChMIz7XOjJHBgwMVFZBQBh1qawtpEAAYASAAEgISXPD_BwE)
+
 ### Vaccination
 
 - [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)

@@ -42,3 +42,4 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots), and
     - Katz's Delicatessen, 205 E Houston St, New York, NY 10002, United States
     - [Website](https://katzsdelicatessen.com/)
     - Recommended by Llewellyn Falco: pastrami, pickles, everything else is a bonus
+    - [How to order](https://mattweinberg.net/ordering-at-katzs-deli.html)

@@ -15,6 +15,7 @@ permalink: /pages/think/events/workshops/Remote-Coding-Tools
     - LF says easy to set up but a lot of disadvantages
 - [Anydesk](#anydesk-plus-ec2-instance)  
     - LF says has best advantages
+    - !I kept thinking he was saying "Inidesk" and I had the same problem when speaking to another US person! Putting it here in case it happens again and I try to search for it
 - Git Handoff  
     - LF says not great
         - hard to get consistent experience on everyone's machine
