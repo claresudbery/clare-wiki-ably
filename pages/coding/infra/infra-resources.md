@@ -40,3 +40,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - The Second Way: The principles and technical practices of Feedback
 - The Third Way: The principles and technical practices of Continuous Learning and experimentation
 - [More here](https://blog.sonatype.com/principle-based-devops-frameworks-three-ways#:~:text=If%20you've%20read%20either,Way%3A%20Principles%20of%20Continuous%20Learning)
+
+## Little's Law
+
+Little’s Law provides insight into how increasing work-in-process (WIP) has a detrimental impact on cycle time. This is counterintuitive to common practice in conventional project management, where the belief is that increasing WIP will increase throughput and ‘get more things going.’
+[More here](https://projectproduction.org/journal/littles-law-a-practical-approach-to-understanding-production-system-performance/#:~:text=Little's%20Law%20provides%20insight%20into,and%20'get%20more%20things%20going.)
+

@@ -377,3 +377,6 @@ re, sorry!)
 
 - On windows I used the HP Print & Scan Doctor 
 - Windows Key + Print
+
+
+
