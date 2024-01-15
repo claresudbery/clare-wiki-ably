@@ -71,7 +71,7 @@ There are a couple of activities below that benefit from these types of question
 - Tell us about your pets. If you don't have any, what is your favourite animal? If you don't like animals, what is your least favourite animal?
 - What was the first piece of music that moved you?
 - What is your current favourite music track? Who is the artist?
-- What's the last TV show you watched, and would you recommend it?
+- What's the last TV show / film you watched, and would you recommend it? Or book, if you don't do film/TV
 - What do you hope to get out of this course / job / project [add / delete as appropriate]?
 - What is your favourite dish that gets cooked by a relative or friend or restaurant?
 - What was the best holiday you ever had?
