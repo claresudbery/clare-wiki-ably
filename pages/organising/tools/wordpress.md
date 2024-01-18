@@ -14,13 +14,25 @@
 # Changing account settings
 
 - There's an account settings page which isn't accessible for me via the blog dashboard
-- Instead I have to go directly to wordpress.com (NOT wordpress.org, where I seem to have an unrelated account) and log in there.
+- Instead I have to go directly to wordpress.com (NOT wordpress.org, where I also seem to have an account - see [below](#wordpressorg-vs-wordpresscom) and log in there.
     - Click on the person / profile icon, top right
     - Select Account Settings on the left
 - But there's also a Settings page on the left in the blog dashboard.
     - Log in via https://insimpleterms.blog/wp-admin (change the first part to your blog url)
     - Go to Settings on the left
     - ...or click the Profile icon, top right, and select Edit profile
+
+# Wordpress.org vs wordpress.com
+
+"Your site is not hosted on WordPress.com. It’s a self-hosted WordPress.org site hosted by a different hosting company. 
+
+We do not have access to self-hosted sites, so I cannot see the setup of the backend of your account.
+
+To clarify:
+
+WordPress.com is a managed host platform that offers WordPress in a pre-customized server environment already set up for you to build your site. Hosting with WordPress.com is free, and the server, security, updates, and site optimization are all handled by us. We offer free and paid plans that provide additional features for your site based on your needs (plugins, custom themes, etc). You also have access to professional assistance via Happiness Engineers to address any issues you encounter.
+
+WordPress.org is a self-hosted platform, meaning you download the WordPress software and install it on a web server from a host of your choosing. You have to pay the host when you’re self-hosting, and the server, security, updates, and site optimization are all handled by you. This gives you more flexibility and control of your plugins, themes, and code but also more responsibility to ensure those things are operating correctly."
 
 # Changing email addresses
 
@@ -88,3 +100,15 @@ NB: I MANAGED TO FIX THIS BY SWITCHING TO RECAPTCHA V3.
 ![Wordpress-contact-form7-config.png](/resources/images/Wordpress-contact-form7-config.png)
 
 ![Wordpress-rogue-BWS-reCaptcha-text-field.png](/resources/images/Wordpress-rogue-BWS-reCaptcha-text-field.png)
+
+# Problems with site excerpts
+
+Message below posted to the wordpress.org support forum (I tried wordpress.com but they said I should go to wordpress.org - see [above](#wordpressorg-vs-wordpresscom))
+
+Posted [here](https://wordpress.org/support/topic/excerpt-module-missing/#new-topic-0):
+
+Excerpt module missing:
+Hi
+When I post a link to my Contact page, the preview contains the text “This is just a short excerpt for the contact page.”
+I understand this text is normally configured in the “Excerpt” module. But I have no Excerpt module available to me, even if I click Screen options at the top of the page, it’s just not there.
+I understand that some themes do not offer an excerpt module (I’m using the Franklin theme), but if that’s the case, how can I get rid of that text?

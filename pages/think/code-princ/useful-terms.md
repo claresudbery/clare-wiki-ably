@@ -243,6 +243,15 @@ With Continuous Deployment every commit pushed to mainline as part of Continuous
     - "while many systems of computation have been shown to be able to solve only a subset of computation problems that a given Turing machine can solve, no system of computation has ever been shown to be able to solve a computation problem that a Turing machine cannot."
     - the "the Church-Turing thesis ... states (roughly) that ... a Turing machine can make any sort of calculation that it is possible to precisely define an algorithm for."
     - "It is often an interesting and/or valuable task to show that an esoteric programming language is (or is not) equivalent to a Turing machine."
-        - An example: The esoteric Korean [Aheui programming language](https://esolangs.org/wiki/Aheui), designed to play a similar role to [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck), is probably Turing-complete, because "Since a pair of unbounded stacks can be used to simulate the unbounded tape of a Turing machine, it is likely that Aheui is Turing-complete.:
+        - An example: The esoteric Korean [Aheui programming language](https://esolangs.org/wiki/Aheui), designed to play a similar role to [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck), is probably Turing-complete, because "Since a pair of unbounded stacks can be used to simulate the unbounded tape of a Turing machine, it is likely that Aheui is Turing-complete.
+
+# The Pareto principle (80/20 rule)
+
+- For many outcomes, roughly 80% of consequences come from 20% of causes (the "vital few").
+- Other names for this principle are 
+    - the 80/20 rule
+    - the law of the vital few  
+    - the principle of factor sparsity
+- One place this gets used is in respect to to-do list prioritisation: Try to identify the 20% of actions that will have 80% impact
 
 
