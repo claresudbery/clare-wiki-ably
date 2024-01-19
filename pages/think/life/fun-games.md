@@ -4,7 +4,7 @@ location: pages/think/life/leaf
 permalink: /pages/think/life/Fun-Games
 ---
 
-See also [energisers](/pages/think/events/workshops/Energisers-and-Warmups).
+See also [energisers](/pages/think/events/workshops/energisers-warmups.md).
 
 There is a proven therapeutic benefit to laughing together with other people. It's also a great way to build team relationships, and playing silly games is a great way of providing opportunities to laugh together.
 
