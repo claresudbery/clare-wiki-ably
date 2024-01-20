@@ -18,16 +18,20 @@ permalink: /pages/think/code-princ/Katas
 
 - ...for instance several pairs working independently on the same exercise:
 - Go to home page
-- Click create a new practice
+- Click "create a new practice"
     - Select exercise and language 
 - Click Classroom
-- Note the ID - or note the url after you click OK - or just add your ID to this url: https://cyber-dojo.org/kata/edit/
+- Note the ID 
+    - or note the url after you click OK 
+    - or just add your ID to this url: https://cyber-dojo.org/kata/edit/
 - Now for each pair: 
     - They'll visit that url, or click "enter an existing practice" and enter the ID
     - one will have to click "enter group practice as new avatar"
         - make a note of their avatar
-    - the other will have to click "join group practice as existing avatar" - selecting the avatar created by the first
-- The facilitator can watch the progress of the pairs using the following link (add your ID to the end):
+    - the other will have to click "join group practice as existing avatar" 
+        - selecting the avatar created by the first
+- The facilitator can watch the progress of the pairs by clicking "dashboard"
+    - or by using the following link (add ID to the end):
     - https://cyber-dojo.org/dashboard/show/
 
 #### Quick start guide if you're working solo
