@@ -39,6 +39,56 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 - [Bread sauce](https://www.bbcgoodfood.com/recipes/bread-sauce-0)
 - [Christmas pomanders](https://craftbits.com/project/orange-and-clove-pomanders/) (made from oranges and cloves)
 - [Frangipane almond topped mince pies](https://www.easypeasyfoodie.com/easy-frangipane-topped-mince-pies/)
+- [Recipe for Pfeffernusse](#recipe-for-pfeffernusse)
+
+### Recipe for Pfeffernusse
+
+- How much?
+    - 50 Portions
+    - 42 kcal per Portion
+- Ingredients:
+    - 150 g Honey
+    - 100 g sugar
+    - a pinch White pepper
+    - 1 teaspoon baker's ammonia
+    - 1 tablespoon lukewarm water
+    - 300g Wheat flour
+    - 1 egg
+    - 30 g Powdered sugar
+    - 2 teaspoon Lemon juice
+    - 1 teaspoon Gingerbread spice:
+        - Lebkuchengwürz is a mixture of dried ground spices: mine contains: per 20 g
+        - 5g bitter orange (can be replaced with 5g standard orange zests
+        - 3 g lemon zest
+        - 3g cinnamon
+        - 2g clove
+        - 2g star anise
+        - 2g ginger
+        - 2g nutmeg
+        - 1g cardamom
+- Method:
+    - Soft peppernuts only develop their full flavour after 2 to 3 days 
+        - and become a little softer again in the biscuit tin after baking. 
+    - Season soft peppernuts carefully with white pepper, 
+        - as the flavour increases after a few days. 
+    - Slowly heat the honey and sugar in a pan, 
+        - stirring until the honey becomes liquid and combines with the sugar. 
+    - Remove the pan from the heat and leave to cool slightly. 
+    - Stir the gingerbread spice and a pinch of white pepper into the honey. 
+    - Dissolve the baker's ammonia in lukewarm water and stir into the honey. 
+    - The ammonium will create foam. 
+    - Stir the flour into the honey and mix in an egg until you have a slightly sticky dough. 
+    - Do not use too much flour so that the peppernuts do not become dry. 
+    - The dough should be slightly sticky to the touch. 
+    - Preheat the oven to 190° C. 
+    - Line two baking trays with baking paper. 
+    - Shape 50 balls with a diameter of 2cm 
+        - and place them on the trays with some space between them. 
+    - Bake the trays one after the other on the middle shelf. 
+    - The first tray takes 10 to 12 minutes, 
+        - the second tray 10 minutes. 
+    - Mix the icing sugar with the lemon juice. 
+    - Coat the soft peppernuts with the sugar glaze while still warm.
 
 ## Snacks
 
