@@ -13,11 +13,15 @@ I have more notes on clean architecture [here](/pages/think/code-princ/architect
 Ian looks at the following precursors to clean architecture, all of which are described below:
 - Layered Architectures
 - Ports and Adapters / Hexagonal architecture (Alistair Cockburn)
+    - See Ted Young's stuff on this - goes into more detail re moving left to right, and re putting the domain in the middle of the hexagon
+    - See notes on left/right and in/out
 - Onion architecture (Jeffrey Palermo)
     - I didn't make any notes on onion architecture - not sure Ian Cooper covered this in any detail?
 - Boundaries, Controllers and Entities (Ivar Jacobson)
 
 Clean architecture is a synthesis of all the above - described first by Bob Martin but with acknowledgement to all the above precursors.
+
+! My and Ted M Youn g's "testable architecture" O'Reilly course is all abhout all of this stuff!
 
 
 ## Layered Architectures
