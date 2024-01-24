@@ -254,4 +254,7 @@ With Continuous Deployment every commit pushed to mainline as part of Continuous
     - the principle of factor sparsity
 - One place this gets used is in respect to to-do list prioritisation: Try to identify the 20% of actions that will have 80% impact
 
+# #NoEstimates
+
+- Interesting convo about it stored in clare-tech (accessible to Clare only)
 

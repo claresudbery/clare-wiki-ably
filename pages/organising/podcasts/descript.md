@@ -18,3 +18,22 @@ Anyway, she told me about a site called descript.com (https://www.descript.com
 
 Ted Young also swears by it for video editing.
 
+## Finding projects that have been shared with you
+
+- Go Home
+- click Projects on the left
+- Click Shared With me near the top of the screen
+
+## Downloading transcript
+
+- Click the Publish button, top right
+- A little popup window appears, top right
+- At the top of that window, click Export
+- Click Transcript at the top
+- Select settings
+- click Export at the bottom
+
+
+
+
+
