@@ -258,3 +258,7 @@ With Continuous Deployment every commit pushed to mainline as part of Continuous
 
 - Interesting convo about it stored in clare-tech (accessible to Clare only)
 
+# BDUF
+
+Big Design Up Front
+
