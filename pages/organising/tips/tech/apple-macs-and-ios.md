@@ -212,7 +212,7 @@ killall SystemUIServer
     - Settings => Lock screen => Turn display off on power adaptor when inactive (change to "never")
     - Settings => Displays => Advanced => Battery and energy => Turn on “prevent automatic sleeping on power adaptor when the display is off”
 - ! Don't forget to turn everything back on again !
-    - You have to do it in the right order. You won't be able to change the “prevent automatic sleeping" display setting setting until you've changed the Lock screen settings to something other than "Never"
+    - You have to do it in the right order. Do Lock screen settings first. You won't be able to change the “prevent automatic sleeping" display setting setting until you've changed the Lock screen settings to something other than "Never", and it doesn't always pick up on those changed settings straight away - sometimes yoou have to close and open Settings and then go back to Lock screen settings to check it's changed everything
 
 ## Both iOS and Macs
 
