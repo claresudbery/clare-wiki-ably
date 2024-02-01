@@ -48,3 +48,13 @@ You need:
 ## Weiss
 
 - see clare-tech (accessible to Clare only)
+
+## How to bleed radiators
+
+- Boiler should be off and radiators cold
+- Start furthest away from boiler and work towards boiler, apart from...
+  - Do downstairs before upstairs
+  - See clare-tech/finding-things for list for our house
+- if it doesn't work and no water comes out after the air has come out (or no air comes out)
+  - ...and it's a closed system (which ours is)
+  - Increase the pressure of the system by topping it up
