@@ -57,6 +57,8 @@ From [here](https://xkcd.com/1053/)
 
 ## The sudo !! xkcd comic
 
+- Reminder: sudo !! means "run the command I just ran, but this time with super-user privileges"
+
 ![Sudo make me a sandwich](https://imgs.xkcd.com/comics/sandwich.png)
     
 From [here](https://xkcd.com/149/)

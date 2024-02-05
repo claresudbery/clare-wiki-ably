@@ -46,7 +46,7 @@ You need:
   - some grinding compound / grinding paste (I bought Chemico grinding paste)
 
 ## Weiss
-
+Cat litter
 - see clare-tech (accessible to Clare only)
 
 ## How to bleed radiators
