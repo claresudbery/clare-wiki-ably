@@ -118,6 +118,8 @@ behaviour
 test the fakes
 - They’re best avoided if possible”
 
+https://www.madetech.com/podcast/
+
 #### Auto-mocking
 
 - Available from RhinoMocks, StructureMap, Moq, and many others.
