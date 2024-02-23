@@ -25,6 +25,18 @@ permalink: /pages/coding/tools/Visual-Studio-Code
     - hold down Shift + Alt/Option , then click and drag with the mouse
     - (On a Mac it's Shift + Alt/Option in most apps)
 
+## Refactoring
+
+- VS Code has various bits of functionality
+    - refactoring, extract method etc - comes for free iwth VS Code
+    - but might be part of Python language settings?
+
+## Testing
+
+  - to get tests running in background:
+      - There's a pytest testmon plugin
+      - ...and a pytest watch plugin
+
 ## Moving Terminal and other panels around
 
 - To move it into right panel ("secondary sidebar"): 

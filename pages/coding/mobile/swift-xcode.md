@@ -130,11 +130,23 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - 2) (optional) [Edit the app bundle](https://developer.apple.com/account/ios/identifier/bundle/edit)   
 - 3) (generally useful) [App Store Connect](https://appstoreconnect.apple.com)  
 - 4) Product => Archive 
-	- !! The Archive option may be disabled. To fix:  
-        - Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. 
-	- Wait a minute for the archive to happen
-    - Enter a description on the right, then if all is good go to 5) below.  
-        - Note that I've been copying description from here to readme.md, but that means focus moves away from the Archive window. To get back to it, don't click Product => Archive again, or it will create another archive. Instead, select Window => Organizer 
+    - If you don't want to build a new version of the app, you can skip the next bit and just open Window => Organizer manually
+        - ...but be aware that if you're here because the test version has expired after 90 days...
+        - ...you might need to do a new build just because the SDK version has changed in the meantime
+        - You'll know if the SDK version has changed, because when you open XCode it'll make you install a new SDK before you can do anything
+        - Also if the SDK version is reaching end of life, you'll get an email titled someting like "The uploaded build for SquareFill has one or more issues"
+            - with the body of the email mentioning "SDK version issue"
+        - I haven't yet found an easy way of working out which SDK version your XCode installation is currently using!
+            - If you go into the project file there's an info section
+            - it has targeted SDK, but that will be lower than current SDK
+            
+    - Build a new version of the app:
+        - !! The Archive option may be disabled. To fix:  
+            - Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. 
+        - Wait a minute for the archive to happen
+        - The Organizer window will open
+        - Enter a description on the right, then if all is good go to 5) below.  
+            - Note that I've been copying description from here to readme.md, but that means focus moves away from the Archive window. To get back to it, don't click Product => Archive again, or it will create another archive. Instead, select Window => Organizer 
     - Click Distribute App
         - This might take a while
         - !! Watch out! There are a couple more dialogs that need your input after you click Distribute App, and they take a while to load so you might miss them and wonder why your build doesn't appear in App Store Connect.
