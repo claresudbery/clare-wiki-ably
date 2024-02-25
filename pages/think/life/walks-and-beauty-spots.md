@@ -63,3 +63,7 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 ![Devil's Pulpit](/resources/images/devils-pulpit-waterfall.jpg)
 - [Little Moreton Hall, Congleton](https://www.nationaltrust.org.uk/little-moreton-hall) - very twisty half-timbered building.
 - [Road trips](https://vm.tiktok.com/ZMRecmKwo/)
+- Nunhead cemetery - nice little oasis of green in London!
+    - has nice wooded areas and wildlife
+    - one of the "magnificent seven" Victorian cemeteries in London
+    - (Highgate is also one)

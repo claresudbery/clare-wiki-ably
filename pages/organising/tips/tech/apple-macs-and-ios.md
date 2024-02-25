@@ -63,7 +63,6 @@ Longer Summary:
 -	An Intel processor is x64
 -	An M1 processor = Apple Silicon = ARM64
 
-
 ### Mission Control
 
 For some reason my brain confuses this with Activity Monitor (the equivalent of Windows Task Manager).
@@ -195,6 +194,11 @@ killall SystemUIServer
 - What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it. It's a toggle, so you can press again to retore things to how they were.
 - System Preferences => Mission Control => Show Desktop - select "Right Option"
 
+### Take screenshot and copy straight to clipboard
+
+- Cmd + Ctrl + Shift + 4
+- (Cmd + Shift + 4 is just take a screenshot)
+
 ### If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
 
 - Cmd + 0 will fix that.
@@ -230,3 +234,4 @@ killall SystemUIServer
     - I erased a faulty work laptop on 13/11/21 (after it had been replaced with a new one). 
     - In the process, I found another two laptops listed (old work laptops?) (annoyingly I couldn't tell the difference between them), so I erased them too.
         - I guess this means that at some random point in the future I may get a notification that one of these devices has been connected to the internet... and be confused by it. So this is a note for my future self!
+

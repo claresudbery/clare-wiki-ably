@@ -167,3 +167,7 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 - Cmd + Shift + Enter - finish a line (if no semicolon for instance)
 - Alt + Up = select the nearest thing - up again to select wider scope
 - In Command + O search menu, instead of typing GameBuilder to search for GameBuilder, you can just type GB
+
+## Auto-running tests
+
+- Running tests automatically in IntelliJ: Click Rerun Automatically on the Run toolbar to enable the autotest-like runner.

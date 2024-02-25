@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# There is stuff which has NOT been added to this script but you might want to
+# See [dedicated section](pages/organising/tips/tech/installing-a-new-mac.md#new-stuff)
+
 # The following sections have been commented out for you to edit with your details and then uncomment:
 # set up git user details
 # Clone your scripts repo into a new scripts folder 

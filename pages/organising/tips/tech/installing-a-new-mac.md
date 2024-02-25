@@ -169,3 +169,10 @@ When I ran this script I got lots of git permission errors for this step which I
 brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
 ```
+
+## New stuff
+
+- Here is a list of stuff which I don't think is in the current script, but which I might want to add
+    - Install IntelliJ IDEA Community edition
+        - Have to use the IntelliJ toolbox - instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html#toolbox)
+    - Install PyCharm
