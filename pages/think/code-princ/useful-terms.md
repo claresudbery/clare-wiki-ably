@@ -262,3 +262,13 @@ With Continuous Deployment every commit pushed to mainline as part of Continuous
 
 Big Design Up Front
 
+# Law of Demeter
+
+Copied from wikipedia:
+
+The Law of Demeter (LoD) or principle of least knowledge is a design guideline for developing software, particularly object-oriented programs. In its general form, the LoD is a specific case of loose coupling. The guideline was proposed by Ian Holland at Northeastern University towards the end of 1987,[1] and the following three recommendations serve as a succinct summary:[2]
+
+- Each unit should have only limited knowledge about other units: only units "closely" related to the current unit.
+- Each unit should only talk to its friends; don't talk to strangers.
+- Only talk to your immediate friends.
+

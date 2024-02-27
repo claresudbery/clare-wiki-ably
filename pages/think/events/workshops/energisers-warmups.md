@@ -62,7 +62,7 @@ When working in person, you often want to mix groups up so that people interact 
 
 There are a couple of activities below that benefit from these types of questions. Take your pick or come up with your own:
 
-- What's something small you find satisfying? (eg cycling over crunchy Autumn leaves - but it's amazing how many different things people will come up with)
+- What's something small/trivial you find satisfying? (eg cycling over crunchy Autumn leaves - but it's amazing how many different things people will come up with)
 - What part of the world do you currently live in?
 - What takes up the majority of your weekday time?
 - What's the last TV show you watched, and would you recommend it?
@@ -71,9 +71,9 @@ There are a couple of activities below that benefit from these types of question
 - Tell us about your pets. If you don't have any, what is your favourite animal? If you don't like animals, what is your least favourite animal?
 - What was the first piece of music that moved you?
 - What is your current favourite music track? Who is the artist?
-- What's the last TV show / film you watched, and would you recommend it? Or book, if you don't do film/TV
+- What was the last TV show / film / book you watched/read, and would you recommend it?
 - What do you hope to get out of this course / job / project [add / delete as appropriate]?
-- What is your favourite dish that gets cooked by a relative or friend or restaurant?
+- What is your favourite dish that gets cooked by a relative or friend or restaurant you like?
 - What was the best holiday you ever had?
 - What's your favourite (or most-recently acquired) gadget?
 - What's your favourite food?
