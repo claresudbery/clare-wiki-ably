@@ -262,4 +262,93 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     
       - There are various library functions available
 
+## Language notes
 
+I learnt a lot of the following while working on Llewellyn Falco's duplication kata: https://github.com/LearnWithLlew/DuplicationKata.Python
+    - I've forked this into `DuplicationKataPython-Clare-Fork`
+
+### Approval tests
+
+- Final working code can be seen here: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L50
+  - ...and here: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/RegressionTest.test_segment_index.approved.txt
+- Source code for Python approvals: https://github.com/approvals/ApprovalTests.Python/blob/main/approvaltests/combination_approvals.py
+- Useful examples: https://snyk.io/advisor/python/approvaltests/functions/approvaltests.verify_all_combinations
+- Gotcha: I got a `TypeError` error because I got the syntax wrong when creating an arg list that only contained one member 
+    - You have to add a comma after the first element if there's only one element
+    - Like this: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L103
+
+### Enums
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L4
+- Reference: https://docs.python.org/3/howto/enum.html
+
+### Getting the index of a member in a list
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L24
+- Reference: https://treyhunner.com/2016/04/how-to-loop-with-indexes-in-python/#What_if_we_need_indexes?
+
+### Break statements in for loops
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/Lesson32.py#L14
+- Reference: https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3
+
+### Creating and instantiating a simple class
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L10
+- Reference: https://dev.to/ogwurujohnson/creating-and-instantiating-a-simple-class-in-python-79b
+
+### Adding the param name in front of an argument
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L54
+- Reference - but watch out though - this talks about forcing it using `*` but you don't need to do that if you just want to do it optionally: https://www.vegardstikbakke.com/python-keyword-only/#:~:text=By%20adding%20a%20*%20in%20the,all%20arguments%20to%20be%20named.&text=This%20makes%20writing%20defensive%20Python%20easier!
+
+### Lambda functions
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L24
+- Reference: https://www.w3schools.com/python/python_lambda.asp
+
+### Using args keyword for variable length list of args
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L109
+- Reference: https://realpython.com/python-kwargs-and-args/
+
+### Getting the name of an enum
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L109
+- Reference: https://stackoverflow.com/questions/29880323/how-to-get-back-name-of-the-enum-element
+
+### String interpolation
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L35
+- Reference: https://www.programiz.com/python-programming/string-interpolation
+
+### The built in str function 
+
+- equivalent of ToString in C# or Java
+- Example: 
+  - Definition: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L35
+  - Usage: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L40
+  - More usage: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L109
+- Reference: https://www.digitalocean.com/community/tutorials/python-str-repr-functions
+
+### Using map 
+
+- equivalent of Linq Select in C#
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L24
+- Reference: https://www.w3schools.com/python/ref_func_map.asp
+
+### Joining strings from a collection together with a separator
+
+- Example: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/kata/LineSegment.py#L25
+- Reference: https://www.w3schools.com/python/ref_string_join.asp
+
+### Using product() to create all possible permutations to combine members of collections
+
+- Example: https://github.com/approvals/ApprovalTests.Python/blob/98bf3df9a05a1fc03a851c6cc89b79810a172e7b/approvaltests/combination_approvals.py#L110
+- Reference 1: https://www.hackerrank.com/challenges/itertools-product/problem#:~:text=product(),-Problem&text=This%20tool%20computes%20the%20cartesian,equivalent%20to%20nested%20for%2Dloops.
+- Reference 2: https://www.geeksforgeeks.org/python-itertools-product/
+
+### AttributeError
+
+- This is what you get if you try to access a function on an object that doesn't actually have that function
+- Example: In this map call, I originally tried to call `self.line_segments.map` and got attribute error because `map` is not a method that belongs to objects.

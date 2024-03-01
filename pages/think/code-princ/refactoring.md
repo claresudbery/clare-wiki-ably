@@ -189,6 +189,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - For gilded rose and C#, there are at least two ways of running approval tests:
     - [`ApprovalTests` nuget package](#gilded-rose-c-approval-testing-with-nuget-approvaltests-package)
     - [`texttest` tool](#gilded-rose-c-approval-testing-with-texttest-tool)
+- For notes on running approval tests in Python, see Python.md
+- For more examples of approval tests, see my various learning hour notes
 
 #### Gilded Rose C# Approval testing with nuget ApprovalTests package
 
