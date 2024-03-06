@@ -97,6 +97,41 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Note that you'll still see the notification saying SDK is not specified in the notifications window
     - but this seems to just be history of old notifications
 
+## Format code to indent the way I like it
+
+- ! This came about because I was looking at some Java code that was formatted the way I'm used to (the C# way)
+- ...like this:
+
+```
+lifts.forEach(lift -> 
+{
+    if (!lift.requests.isEmpty()) 
+    {
+        lift.MoveTo(lift.requests.get(0));
+    }
+});
+```
+
+- ... but it turns out this is not idiomatic for Java. It should look like this:
+
+```
+lifts.forEach(lift -> {
+    if (!lift.requests.isEmpty()) {
+        lift.MoveTo(lift.requests.get(0));
+    }
+});
+```
+
+- ...and that's why it was so non-obvious for me to change it in IDEA.
+- But if you DO want to change it, here's how:
+  - Cmd + `,`
+  - Editor => Code style (expand node) => Java
+  - Wrapping and braces (at top) 
+      - Braces placement (on left)
+          - Change all four to "Next line" instead of "End of line"
+      - 'if()' statement (further down on left)
+          - Check the checkbox for `'else' on new line`
+
 ## IntelliJ shortcuts
 
   - See also [keyboard shortcuts](#keyboard-shortcuts) below - which seem slightly different - maybe different keyboard mapping?

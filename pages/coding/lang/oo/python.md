@@ -269,6 +269,7 @@ I learnt a lot of the following while working on Llewellyn Falco's duplication k
 
 ### Approval tests
 
+- (see below for configuring diff reporter)
 - Final working code can be seen here: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L50
   - ...and here: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/RegressionTest.test_segment_index.approved.txt
 - Source code for Python approvals: https://github.com/approvals/ApprovalTests.Python/blob/main/approvaltests/combination_approvals.py
@@ -276,6 +277,10 @@ I learnt a lot of the following while working on Llewellyn Falco's duplication k
 - Gotcha: I got a `TypeError` error because I got the syntax wrong when creating an arg list that only contained one member 
     - You have to add a comma after the first element if there's only one element
     - Like this: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L103
+
+### Configuring a diff reporter for Python approval tests
+
+
 
 ### Enums
 
@@ -352,3 +357,92 @@ I learnt a lot of the following while working on Llewellyn Falco's duplication k
 
 - This is what you get if you try to access a function on an object that doesn't actually have that function
 - Example: In this map call, I originally tried to call `self.line_segments.map` and got attribute error because `map` is not a method that belongs to objects.
+
+### for loop across a list
+
+Example:
+
+```python
+def __init__(self, lifts=None):
+  self.lifts = list(lifts) if lifts else []
+
+  for lift in self.lifts:
+      request = lift.requested_floors[0]
+      lift.move_to(request)
+```
+
+### Check if a list is empty or non-empty
+
+#### Empty...
+
+```python
+def __init__(self, requested_floors=None):
+  self.requested_floors = list(requested_floors) if requested_floors else []
+
+  if not self.requested_floors:
+    num_requested_floors = 0
+```
+
+or
+
+```python
+def __init__(self, requested_floors=None):
+  self.requested_floors = list(requested_floors) if requested_floors else []
+
+  if len(lift.requested_floors) == 0:
+    num_requested_floors = 0
+```
+
+#### ...Non-Empty
+
+```python
+def __init__(self, requested_floors=None):
+  self.requested_floors = list(requested_floors) if requested_floors else []
+
+  if self.requested_floors:
+    first_requested_floor = self.requested_floors[0]
+```
+
+or
+
+```python
+def __init__(self, requested_floors=None):
+  self.requested_floors = list(requested_floors) if requested_floors else []
+
+  if len(lift.requested_floors) > 0:
+    first_requested_floor = self.requested_floors[0]
+```
+
+### Remove an element from a list
+
+```python
+def __init__(self, requested_floors=None):
+  self.requested_floors = list(requested_floors) if requested_floors else []
+
+  if self.requested_floors:
+    request = lift.requested_floors[0]
+    self.requested_floors.remove(request)
+```
+
+### address the error "'set' object is not subscriptable"
+
+- This happens when you try to use subscript to access a member of a set
+- Use a list instead
+- This will result in the error:
+
+```python
+def __init__(self, requested_floors=None):
+  self.requested_floors = set(requested_floors) if requested_floors else set()
+
+  first_requested_floor = self.requested_floors[0]
+```
+
+- ...but this will work:
+
+```python
+def __init__(self, requested_floors=None):
+  self.requested_floors = list(requested_floors) if requested_floors else []
+
+  first_requested_floor = self.requested_floors[0]
+```
+
