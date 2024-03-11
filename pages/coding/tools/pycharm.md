@@ -32,3 +32,16 @@
     - More info here: https://github.com/approvals/ApprovalTests.Python.PytestPlugin
         - and here: https://pypi.org/project/pytest-approvaltests/
         - Note: I tried configuring VSCode as a diff reporter, using info I found here, but I couldn't get it working: https://www.roboleary.net/vscode/2020/09/15/vscode-git.html
+
+## Convert between snake case, camel case, etc
+
+- Install [this plugin](https://plugins.jetbrains.com/plugin/10985-case-conversion)
+- Works in Rider, Pycharm, IDEA etc (all JetBrains tools)
+- Download
+- Open your IDE and press ⌘ , to open the IDE settings.
+- Select Plugins, click the cog and then click Install Plugin from Disk.
+- Select the plugin archive file and click OK.
+- Once installed:
+    - Select text
+    - Edit => Convert case
+    - Select Plugin in plugin manager for more help

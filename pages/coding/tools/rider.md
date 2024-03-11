@@ -28,3 +28,16 @@ Rider is an IntelliJ tool very much like Visual Studio
 - Step into - Cmd + F11
 - Step over - F10
 - Comment out a block of code - Alt + Cmd + /going to sleep
+
+## Convert between snake case, camel case, etc
+
+- Install [this plugin](https://plugins.jetbrains.com/plugin/10985-case-conversion)
+- Works in Rider, Pycharm, IDEA etc (all JetBrains tools)
+- Download
+- Open your IDE and press ⌘ , to open the IDE settings.
+- Select Plugins, click the cog and then click Install Plugin from Disk.
+- Select the plugin archive file and click OK.
+- Once installed:
+    - Select text
+    - Edit => Convert case
+    - Select Plugin in plugin manager for more help
