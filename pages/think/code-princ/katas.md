@@ -12,6 +12,7 @@ permalink: /pages/think/code-princ/Katas
 - If you follow [this link](https://cyber-dojo.org/creator/choose_problem) you’ll see a list of katas on the left and then when you select one it describes the kata
 
 - [Quick start guide if you're working in "classroom" mode](#quick-start-guide-if-youre-working-in-classroom-mode)
+- [How to use traffic lights to spot people who might need help](#use-traffic-lights-to-spot-people-who-might-need-help)
 - [Quick start guide if you're working solo](#quick-start-guide-if-youre-working-solo)
 
 #### Quick start guide if you're working in "classroom" mode 
@@ -33,6 +34,16 @@ permalink: /pages/think/code-princ/Katas
 - The facilitator can watch the progress of the pairs by clicking "dashboard"
     - or by using the following link (add ID to the end):
     - https://cyber-dojo.org/dashboard/show/
+
+#### Use traffic lights to spot people who might need help
+
+- No new traffic lights:
+    - If one of the pairs tries to take too big a step, and doesn’t run the tests for ages, their row won’t show any new traffic lights. Remind them not to write too much code at once, TDD is about small steps.
+- Long row of yellow traffic lights:
+    - Another problem you can spot easily is if a pair has a syntax error they don’t know how to fix - a long row of yellow traffic lights. You might be able to help them spot the problem, or just advise them to revert to the latest green. 
+- Long row of red traffic lights:
+    - Similarly if one pair has a long row of red traffic lights - that indicates they tried to take too big a step and wrote a test that was too hard to make pass in one step. Go and talk to them, share your concerns, suggest they revert.
+
 
 #### Quick start guide if you're working solo
 

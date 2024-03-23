@@ -315,6 +315,12 @@ re, sorry!)
   - Install Flycut from App store
   - Use Command + Shift + V + left/right arrow keys to scroll through history
     - ! Have to hold down Command + Shift + V while using arrow keys!
+  - ! You have to start the app before it will work!
+    - It won't be obvious that it's started - it'll just get added to the system tray on the top of the screen.
+    - What it has in its clipboard history will be whatever got added the last time you opened the app.
+    - To add to system startup items:
+    - Apple menu > System Settings, click General in the sidebar, then click Login Items on the right.
+    - Click the + button, open the Applications folder, and search for Flycut.
   - ! Will have to enable in Accessibility to get it working
     - When you first install it, it tells you to do this but you might find you can 't because it's not actually listed there
     - Just copy something into clipboard and then press Command + Shift + V

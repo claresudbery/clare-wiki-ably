@@ -17,3 +17,70 @@ Flutter is an open-source software development kit which enables smooth and easy
         - I put this line into `~/.bashrc`: `export PATH=$PATH:[path-to-flutter]/flutter/bin`
             - (replace `[path-to-flutter]` with your flutter location)
         - Then run `source ~/.bashrc`
+
+# Create / run new app
+
+## VS Code
+
+- From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
+- Create a project/app:
+    - This will create a Flutter project directory that contains a simple demo app that uses [Material Components](#material-components)
+    - Cmd + Shift + P (View > Command Palette) => type flutter
+    - Flutter: New Project
+    - Which Flutter Project => Application
+    - Select location
+    - Enter project name, press Enter
+    - Open the `lib` directory, then `main.dart`
+        - The comments explain the different parts of the code
+- Run the app:
+    - Cmd + Shift + P (View > Command Palette) => type flutter 
+    - Flutter: Select Device
+        - you can start a new iOS simluator here if you want
+    - F5 (Run > Start Debugging)
+        - if running in iOS for the first time, it downloads ios tools which takes a while
+        - ...but eventually the app will load in the simulator
+        - ! If you simultaneously have a project open in IDEA, it will use the SAME ios simulator!
+        - But if you then try to go back to the project you originally used to launch the device, it won't be connected to it any more
+        - To get control back to IDEA, click the Stop icon (top of screen) in VS Code, and stop the app in IDEA, then run again in IDEA
+    - To hot reload: Make a change in main.dart and click the lightning button in the top toolbar
+- Tutorial
+    - run through the codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
+
+## IntelliJ IDEA
+
+- From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
+- Create a project/app:
+    - File => New => Project...
+    - Select Flutter on left
+        - ! The first path at the top is NOT the location of your new project
+        - It's the location of the SDK - it will probably get this right
+    - Click Next
+    - Enter project name and check location
+        - ! If you change the project location after entering project name it won't create a new folder for you, so you probably want to do that yourself and select that as the location    
+            - Easiest thing is to enter the new folder name under project location, and if that folder doesn't already exist it will create it for you
+            - If you try to move stuff around / rename stuff after it's been created, the IDE doesn't cope well with this
+    - Select Project Type => Application
+    - Change Organization to `com.example.flutter.testdrive
+    - Click Create
+    - Open the `lib` directory, then `main.dart`
+        - The comments explain the different parts of the code
+- Run the app:
+    - Select target from dropdown (top right)
+    - Ctrl + R, or Click Green play button at top
+    - It will spin up the selected device
+        - ! If you simultaneously have a project open in VS Code, it will use the SAME ios simulator!
+        - But if you then try to go back to the project you originally used to launch the device, it won't be connected to it any more
+        - To get control back to VS Code, click the Stop icon (top of screen) in IDEA, and stop the app in VS Code, then run again in VS Code
+    - To hot reload: Make a change in main.dart and click the lightning button 
+        - It's at the BOTTOM of the screen, at the top of the console panel 
+- Tutorial
+    - There's a codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
+    - ...but it assumes you're in VS Code
+
+# Material Components
+
+- [More here](https://m3.material.io/components)
+- Seems to be a similar concept to Bootstrap UI templates
+- based on Material Design
+    - Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design.
+- Components are interactive building blocks for creating a user interface. They can be organized into categories based on their purpose: Action, containment, communication, navigation, selection, and text input.

@@ -272,3 +272,29 @@ The Law of Demeter (LoD) or principle of least knowledge is a design guideline f
 - Each unit should only talk to its friends; don't talk to strangers.
 - Only talk to your immediate friends.
 
+# Cynefin Framework
+
+- [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework)
+- Pronounced "Cunneffin"
+- Mark Kirschstein, Barcamp '16:
+    - Four quadrants (see pic):
+    - Top left: complex - emergent 
+    - Top right: complicated - good practice
+    - Bottom left: chaotic - novel
+    - Bottom right: simple - best practice 
+![Cynefin](/resources/images/cynefin02.jpg)
+- Liz Keogh, YOW London '22:
+    - Cynefin diagram also talks about constraints 
+        - Clear: fixed constraints 
+        - Complicated : governing constraints : context free rules, eg red traffic lights 
+        - Complex: enabling constraints 
+        - Chaotic: no enabling constraints 
+    - For liz, Cynefin just feels a certain way in her head 
+        - She can visualise:
+        - Clear = building bricks 
+        - Complicated = Lego
+        - Complex = organic stuff like elephants 
+        - Chaotic = on fire 
+- Eduardo da Silva, Agile Meets Architecture, 5-6 Oct '23:
+    - many companies are operating as though they are in Complicated and Clear, but actually they are in Complex
+![Cynefin](/resources/images/cynefin01.jpeg)

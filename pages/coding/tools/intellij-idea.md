@@ -202,6 +202,10 @@ lifts.forEach(lift -> {
 - Cmd + Shift + Enter - finish a line (if no semicolon for instance)
 - Alt + Up = select the nearest thing - up again to select wider scope
 - In Command + O search menu, instead of typing GameBuilder to search for GameBuilder, you can just type GB
+- Collapse all function names: Cmd Shift `-`
+- Search in file: Cmd + F
+  - Find next occurrence: Cmd + G
+  - Find prev occurrence: Shift + Cmd + G
 
 ## Auto-running tests
 
