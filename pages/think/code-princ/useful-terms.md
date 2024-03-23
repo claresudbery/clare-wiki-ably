@@ -284,7 +284,7 @@ The Law of Demeter (LoD) or principle of least knowledge is a design guideline f
     - Bottom right: simple - best practice 
 ![Cynefin](/resources/images/cynefin02.jpg)
 - Liz Keogh, YOW London '22:
-    - Cynefin diagram also talks about constraints 
+    - Cynefin diagram (see below for more recent version - has "clear" instead of "simple") also talks about constraints 
         - Clear: fixed constraints 
         - Complicated : governing constraints : context free rules, eg red traffic lights 
         - Complex: enabling constraints 
@@ -296,5 +296,5 @@ The Law of Demeter (LoD) or principle of least knowledge is a design guideline f
         - Complex = organic stuff like elephants 
         - Chaotic = on fire 
 - Eduardo da Silva, Agile Meets Architecture, 5-6 Oct '23:
-    - many companies are operating as though they are in Complicated and Clear, but actually they are in Complex
+    - many companies are operating as though they are in Complicated or Clear, but actually they are in Complex
 ![Cynefin](/resources/images/cynefin01.jpeg)
