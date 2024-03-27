@@ -8,6 +8,13 @@ permalink: /pages/coding/tools/Flutter
 
 Flutter is an open-source software development kit which enables smooth and easy cross-platform mobile app development. You can build high quality natively compiled apps for iOS and Android quickly, without having to write the code for the two apps separately. All you need is one codebase for both platforms.
 
+# Useful links
+
+- Flutter is the name of the sdk. The _language_ it uses is [Dart](/pages/coding/lang/func/Dart)
+- [Getting started](https://docs.flutter.dev/get-started/install/macos/web)
+- [Codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
+- [More tutorials and docs](https://flutter.dev/learn)
+
 # Installing Flutter
 
 - [Here](https://docs.flutter.dev/get-started/install/macos/web)
@@ -43,8 +50,17 @@ Flutter is an open-source software development kit which enables smooth and easy
         - But if you then try to go back to the project you originally used to launch the device, it won't be connected to it any more
         - To get control back to IDEA, click the Stop icon (top of screen) in VS Code, and stop the app in IDEA, then run again in IDEA
     - To hot reload: Make a change in main.dart and click the lightning button in the top toolbar
+- Navigation
+    - Place cursor and right-click
+    - For things defined in a library imported at the top of a file, choose right-click => Peek, or Option + F12
 - Tutorial
     - run through the codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
+    - Note for Clare: For notes on where I'm up to in the tutorial, see [here](https://github.com/claresudbery/Flutter_codelab_namer_app/blob/main/README.md#where-im-up-to) 
+    - See my [list of commits](https://github.com/claresudbery/Flutter_codelab_namer_app/commits/main/) to see how different things can be implemented
+    - See [codelab repo](https://github.com/flutter/codelabs/tree/main/namer/step_08) to see sample code generated during codelab
+    - See [advanced version](https://dartpad.dev/?id=e7076b40fb17a0fa899f9f7a154a02e8) of the app created during the tutorial
+    - [More tutorials and docs](https://flutter.dev/learn)
+
 
 ## IntelliJ IDEA
 
