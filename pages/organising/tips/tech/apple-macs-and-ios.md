@@ -194,6 +194,11 @@ killall SystemUIServer
 - What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it. It's a toggle, so you can press again to retore things to how they were.
 - System Preferences => Mission Control => Show Desktop - select "Right Option"
 
+### When dock / system tray moves to another monitor
+
+- If you drag the mouse to the bottom of a screen and keep dragging, the dock will move to that screen.
+- Go to the screen you want the dock on, drag the mouse to the bottom of the screen and keep dragging. The dock will come back.
+
 ### Take screenshot and copy straight to clipboard
 
 - Cmd + Ctrl + Shift + 4

@@ -13,6 +13,10 @@ See [separate page](/pages/coding/mobile/iOS-Development) - there may be other i
 - [hacking with swift](https://www.hackingwithswift.com/)
     - Useful tool for getting better at ios dev
     - Recommended by one of the Code First Girls graduates
+- [cocoapods](/pages/coding/mobile/Cocoapods)
+    - It's a package management system for ios development
+    - When you run commands like `pod install` on the command line, you're using cocoapods
+    - Notes on using pods in XCode are [here](/pages/coding/mobile/Cocoapods#in-xcode)
 
 ## GitHub Repos
 
