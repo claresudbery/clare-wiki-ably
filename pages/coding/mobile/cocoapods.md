@@ -15,9 +15,15 @@ permalink: /pages/coding/mobile/Cocoapods
 
 ## Basics
 
+- To install: `sudo gem install cocoapods`
+    - But I found it hung when I tried that
+    - I used `brew install cocapods` instead
 - You list the pods (packages) you want in your `podfile`
 - `pod install` when anything changes in your podfile. Will install any new pods
 - `pod update` to update your pods to their newest versions
+- Installed pods will live somewhere like this: `/Users/[username]/Library/Caches/CocoaPods/Pods/Release`
+    - ...but they will also be copied into your project when you run `pod install`
+    - ...which will create a `Pods` folder containing a `Pods.xcodeproj` file and a subfolder for each pod containing `.h` and `.m` files copied from your central `Library` folder
 
 ## In XCode
 

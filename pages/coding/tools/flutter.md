@@ -40,10 +40,17 @@ Flutter is an open-source software development kit which enables smooth and easy
     - Open the `lib` directory, then `main.dart`
         - The comments explain the different parts of the code
 - Run the app:
+    - Make sure you start by opening the correct folder 
+        - it should be the app folder
+        - it won't necessarily be called `app`, but it's the parent that contains the `lib` folder
+    - Then you have to open `lib/main.dart`
+        - You can tell you've done the right thing, because a play button will appear, top right
     - Cmd + Shift + P (View > Command Palette) => type flutter 
     - Flutter: Select Device
+        - Or click bottom right, where it will show you which device is currently selected
         - you can start a new iOS simluator here if you want
     - F5 (Run > Start Debugging)
+        - Or click the play button, top right
         - if running in iOS for the first time, it downloads ios tools which takes a while
         - ...but eventually the app will load in the simulator
         - ! If you simultaneously have a project open in IDEA, it will use the SAME ios simulator!
@@ -54,7 +61,7 @@ Flutter is an open-source software development kit which enables smooth and easy
     - Place cursor and right-click
     - For things defined in a library imported at the top of a file, choose right-click => Peek, or Option + F12
 - Tutorial
-    - run through the codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
+    - run through the codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0)
     - Note for Clare: For notes on where I'm up to in the tutorial, see [here](https://github.com/claresudbery/Flutter_codelab_namer_app/blob/main/README.md#where-im-up-to) 
     - See my [list of commits](https://github.com/claresudbery/Flutter_codelab_namer_app/commits/main/) to see how different things can be implemented
     - See [codelab repo](https://github.com/flutter/codelabs/tree/main/namer/step_08) to see sample code generated during codelab
@@ -100,3 +107,17 @@ Flutter is an open-source software development kit which enables smooth and easy
 - based on Material Design
     - Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design.
 - Components are interactive building blocks for creating a user interface. They can be organized into categories based on their purpose: Action, containment, communication, navigation, selection, and text input.
+
+# Run tests
+
+To run all tests in one file:
+
+- In Visual Studio: Open test file and click run button top right (or use the Run menu, or F5)
+- On command line: `flutter test path/to/test_file_test.dart`
+
+To run all tests:
+
+- In VS Code: Select the whole test folder in the explorer, right-click and choose Run tests
+- On command line (from the folder which contains the tests): `flutter test .`
+
+More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).

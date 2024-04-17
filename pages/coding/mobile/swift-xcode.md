@@ -620,3 +620,13 @@ var str = "Your score was \(score)"
 - !! It turns out there's a separate text input for in-app purchases which gets used for app review. This is why they kept complaining they couldn't fnd my in-app purchases!
     - It's at the bottom of the in-app purchases page when you configure it in App Store Connect
     - First select the app, then select In-App Purchases ob the left under Features, then scroll to Review Notes at the bottom of the page.
+
+## Changing project settings without all the pointing and clicking
+
+- There's a file called *.pbxproj which contains a text version of all the settings you see in XCode when you select the top level of the project folder
+- In XCode this will be described as *.xcodeproj and will have sections for things like Info and Build Settings
+- In Finder, you will only see *.xcodeproj
+- But in Finder, you can right click on the xcodeproj file and select "Show Package Contents" - this will allow you to see the *.pbxproj file
+- You can then right-click and open that file using TextEdit, then edit the text directly.
+- To find out which setting you need, you can edit in XCode first, then save, then check git status to see what the text value is
+    - eg in XCode the setting called "iOS Deployment Target" is in the text file as "IPHONEOS_DEPLOYMENT_TARGET"

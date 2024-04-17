@@ -336,3 +336,11 @@ Billy Bragg - Sexuality
 Sexuality, strong and warm and wild and free
 Sexuality, your laws do not apply to me
 A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
+
+# Where is Dance Your Way to Psychic Sex?
+
+(My second novel)
+
+- Main site: https://s3-eu-west-1.amazonaws.com/clare-test-001/DanceYourWay/index.html
+- Lulu, paperback: https://www.lulu.com/shop/alice-turing-aka-clare-sudbery/dance-your-way-to-psychic-sex/paperback/product-1pe982pp.html?q=dance+your+way+to+psychic+sex&page=1&pageSize=4
+- Lulu, ebook: https://www.lulu.com/shop/clare-sudbery/dance-your-way-to-psychic-sex/ebook/product-1wkz2evg.html?q=dance+your+way+to+psychic+sex&page=1&pageSize=4
