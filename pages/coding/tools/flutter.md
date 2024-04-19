@@ -121,3 +121,69 @@ To run all tests:
 - On command line (from the folder which contains the tests): `flutter test .`
 
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
+
+# Dependency Injection with GetIt
+
+- The way I've done it:
+- Create an abstract class (an interface) and an implementation of that class:
+
+```
+abstract class IThing {
+  Future<void> doStuff();
+}
+
+class Thing implements IThing {
+  @override
+  Future<void> doStuff() async {
+    int thing = 0;
+    return Future.value();
+  }
+```
+
+- Register a singleton in dedicated method in `main.dart`:
+
+```
+void main() async {
+  setupDependencyInjection();
+  runApp(const MyFlutterApp());
+}
+
+setupDependencyInjection() {
+  GetIt.I.registerSingleton<IThing>(
+    Thing(),
+  );
+}
+```
+
+- Use GetIt to instantiate the object where you need it:
+
+```
+class MyScreen extends StatefulWidget {
+  const MyScreen({
+    super.key,
+  });
+
+  @override
+  State<StatefulWidget> createState() {
+    return MyScreenState();
+  }
+}
+
+class MyScreenState extends State<MyScreen> {
+  final _thing = GetIt.I.get<IThing>();
+
+  onFormSubmitted() async {
+    if (_form.currentState!.validate()) {
+      try {
+        await doThing();
+      } on Exception catch (exception) {
+        _loggerService.error(exception);
+      }
+    }
+  }
+
+  Future<void> doThing() async {
+    await _thing.doStuff();
+  }
+}
+```

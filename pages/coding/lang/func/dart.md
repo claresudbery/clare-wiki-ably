@@ -29,3 +29,19 @@ permalink: /pages/coding/lang/func/Dart
 - eg `var favorites = <WordPair>[];`
     - this is an empty list of objects of type `WordPair`
     - (instances of the `WordPair` class)
+
+## Static consts
+
+```
+class CreateMatchboxWidgetKeys {
+  static const Key nameLabel = Key('Name_Label');
+  static const Key descriptionLabel = Key('Description_Label');
+}
+
+...
+        children: <Widget>[
+          Text(
+            item.title ?? '',
+            key: CreateMatchboxWidgetKeys.nameLabel,
+          ),
+```
