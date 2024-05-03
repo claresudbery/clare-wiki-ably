@@ -384,5 +384,11 @@ re, sorry!)
 - On windows I used the HP Print & Scan Doctor 
 - Windows Key + Print
 
+## Get past paywalls
 
+Avoid ads / adverts, turn off paywalls, access content for free, view sites without interference.
+https://12ft.io/ then enter the url you're trying to view.
+You can also turn off javascript for the site you're on
+Chrome Extensions that can help: 
+More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 

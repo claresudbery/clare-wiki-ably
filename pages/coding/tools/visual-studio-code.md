@@ -97,3 +97,9 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 ### gratuitious subheading number 2
     - but this [won't work](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
 
+## Formatting
+
+### Pretty-print json
+
+- Option + Shift + F
+
