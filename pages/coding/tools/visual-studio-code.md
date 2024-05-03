@@ -103,3 +103,18 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 
 - Option + Shift + F
 
+## Git tools
+
+### Merge Editor
+
+- [More here](https://code.visualstudio.com/docs/sourcecontrol/overview#_merge-conflicts)
+- When you open a file that has merge conflicts, a blue button appears bottom right - "Resolve in Merge Editor"
+- There are up and down arrows top right (high up, small, easy to miss) that allow you to go back and forth between conflicts
+  - There's also a "n conflicts remaining" thing in the middle - you can click this to go to next unresolved conflict
+- Each conflict is shown as "incoming" code on left and "current" on right, surrounded with yellow rectangles
+- At the top of each yellow rectangle is tiny text saying things like "Accept incoming" or "Accept combination" - click on these to accept a change.
+- Click Complete Merge, big blue button bottom right, when done.
+  - This just completes the merge for this file. 
+  - If you have other conflicts in other files, you can open them up in VS Code either via Github Desktop, or by clicing the red text on the left in VS Code
+- Sometimes you'll click to get to the next conflict and there will be no code changes visible on the top half of the screen
+  - Just resize the top pane and the changes will come into view

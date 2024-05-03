@@ -45,3 +45,12 @@ class CreateMatchboxWidgetKeys {
             key: CreateMatchboxWidgetKeys.nameLabel,
           ),
 ```
+
+## String interpolation
+
+```
+var greeting = "Hello";
+var person = "Rohan";
+
+print("${greeting}, ${person}!"); // prints "Hello, Rohan!"
+```
