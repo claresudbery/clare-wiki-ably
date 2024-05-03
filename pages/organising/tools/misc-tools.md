@@ -386,7 +386,7 @@ re, sorry!)
 
 ## Get past paywalls
 
-Avoid ads / adverts, turn off paywalls, access content for free, view sites without interference.
+Avoid ads / adverts, turn off paywalls, access content for free, view websites in Chrome without interference.
 https://12ft.io/ then enter the url you're trying to view.
 You can also turn off javascript for the site you're on
 Chrome Extensions that can help: 
