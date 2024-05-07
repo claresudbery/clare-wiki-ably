@@ -58,3 +58,7 @@ Cat litter
 - if it doesn't work and no water comes out after the air has come out (or no air comes out)
   - ...and it's a closed system (which ours is)
   - Increase the pressure of the system by topping it up
+
+# Cream / balm / ointment recommended by Emma / Dolly for itchy skin
+
+Delhicious High tea moisture balm

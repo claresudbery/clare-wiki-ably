@@ -385,6 +385,10 @@ That's it! Happy Miroing.
 ## Bose Noise Cancelling Headphones Bose NC 700
 
 - [Using the buttons](https://www.bose.co.uk/en_gb/support/articles/HC2538/productCodes/noise_cancelling_headphones_700/article.html?cjevent=e93f88271e2711ed8207cc5b0a18050e&cjdata=MXxZfDB8WXww)
+- Turning off voice announcements (e.g. battery status and connection prompts) :
+  - In the Bose Music app, tap the Settings icon icon in the upper-right corner.
+  - In the Settings menu, scroll down to the Preferences section and select Voice Prompts.
+  - Use toggle to enable or disable prompts for device connections & incoming calls, and for the battery charge level on startup. 
 - See also the insert in my headphone case:
 
 ![Headphone insert](/resources/images/bose-headphones.JPEG)
