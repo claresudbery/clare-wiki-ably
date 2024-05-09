@@ -392,3 +392,10 @@ You can also turn off javascript for the site you're on
 Chrome Extensions that can help: 
 More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 
+## Schedule social media posts
+
+- [OneUp](https://www.oneupapp.io/)
+- [Later.com](https://app.later.com/)
+- Typefully - [Twitter/X thread writer](https://typefully.com/)
+- [Buffer](https://buffer.com/) - used by TWIP
+
