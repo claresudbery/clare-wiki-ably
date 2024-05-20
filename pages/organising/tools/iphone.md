@@ -15,6 +15,7 @@ permalink: /pages/organising/tools/iPhone
 - Select the app you want to open it with 
 
 ### Method 2: iTunes from Windows
+
 - Open iTunes on your laptop.
 - Attach your phone to your laptop using USB / lightning cable.
 - Click "Allow device" on your iphone

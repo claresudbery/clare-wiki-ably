@@ -187,3 +187,34 @@ class MyScreenState extends State<MyScreen> {
   }
 }
 ```
+
+## Using GetIt for mocking dependencies in tests
+
+```
+class MockUsersRepository extends Mock implements IUsersRepository {}
+
+void main() {
+  test('My code should do a thing',
+      () async {
+    const personEmail = 'person@gmail.com';
+    final person = User();
+
+    var usersRepository = MockUsersRepository();
+    GetIt.I.registerSingleton<IUsersRepository>(usersRepository);
+
+    when(() => usersRepository.getUserByEmail(personEmail))
+        .thenAnswer((_) => Future.value(person));
+    
+    verify(() => usersRepository.createUserIdentity(
+          person: person,
+        )).called(1);
+  });
+}
+```
+
+## Troubleshoot "repository is already registered inside GetIt"
+
+- If you have more than one test in your test file, and they are all using `GetIt` for dependency injection, you'll need a separate `setUp` method:
+
+```
+```

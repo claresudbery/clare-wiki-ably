@@ -6,7 +6,9 @@ permalink: /pages/organising/tools/Kinemaster
 
 ## To turn an audio file into a video file for youtube
 
+## To extract sound from video
 
+- Just import video into Audacity then export as audio file!
 
 ## To add your own sound
 
