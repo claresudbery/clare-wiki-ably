@@ -1,0 +1,87 @@
+---
+layout: page
+location: pages/organising/tools/leaf
+permalink: /pages/organising/tools/OBS
+---
+
+# Getting started
+
+- Downloade and install from obsproject.com
+- First time in:
+    - Click through the differrent settings
+    - Don't need to do "quit & reopen" can just hit later
+    - Set up all the system permissions it prompts you for
+    - Optimise just for recording
+    - Base canvas resolution = 1920 x 1080 for O'Reilly
+        - standard 16:9 1080p blah
+    - FPS = Frames per second, smaller means smlaler file sizes, O'Reilly want 30
+- Go to Setitngs, lower right
+    - Select output on left
+        - output mode: advanced
+            - select recording tab
+                - recording format: MP4
+                - video encoder: apple vt H264 hardware encoder
+                - encoder settings 
+                    - bitrate: 5000
+                    - keyframe interval: 0s
+                        - it either records a full frame or a differential from the last keyframe
+                        - the interval makes the difference to how often it stores keyframes
+                        - how many keyframes there are also affects editing - are you editing a keyframe? Better if you are.
+        - Video bit rate = 5000
+        - Audio bit rate = 320
+            - O'Reilly spec says 32kbps for audio qualoity but shgould prob be 320!
+        - Recording - recoridngp tha - this is where recordings will go
+            - this hsould be local not in cloud!
+        - Recording quality: high quality, medium file size
+        - Audio encoder: AAC
+    - Select Audio on left
+        - Enable push-to-mute if youu want
+            - can set up hot keys so you can mute quickly if you're coughing or whatever
+    - Select hotkeys on left
+        - Most useful is probably pause / unpause
+        - Split recording file
+            - Allows you to stop recording in current file and start a new file, eg if you istake and want to do over
+    - Select advanced on left
+        - recording filename formatting is here
+- Top tips
+    - Clap hands or use dog clicker to make large noise that will be easy to find in the audio to go back and find a particular spot
+- Recording
+    - Scene
+        - a screen is basically a screen layout
+        - you get one by default - can rename to Desktop
+        - hit plus button at bottom of Scenes pane - can call ClareCam to represent face on screen
+        - Select a scene
+            - Go to sources section, hit plus to add a source
+            - Then select the source to change settings (might have to restart OBS if you changed other stuff previously)
+            - Select the right display
+            - Check "Hide OBS from capture"
+            - while the source si selected, hit Cmd + F to fit the capture to your screen
+            - If you get black bars on left and right that's because the aspect ratio of your screen resolution does not match your target (eg 16:9)
+            - you can drag things around to get rid of black bars - tradeoff is that you might lose the top or bottom of your screen to get rid of black bars on left or right
+                - the red box is not the thing that will show up on the video
+                - the green box is the same, just indicates you're not editing it any more
+                - the area you can see if the area that will show up on video
+            - Set up second scene
+                - Source = Vdieo capture device
+                - Cmd + F to fill screen
+                - Hit lock icon on source to lock it
+                - Drag things around as before
+- Performance
+    - Bottom right you can see CPU and FPS
+    - you don't want FPS to go down 
+    - Docks => Stats - select to toggle on 
+    - Frames missed due to redenring lag will show in red
+        - ideally you want that as close to 0 as poss
+        - more of a concern for face than for code
+        - To fix, change stuff 
+            - settings (bottom right)
+                - output on left - recording tab 
+                    - change video encoder to x264
+                        - ! This might reset your encoder settings at the bottom!
+                    - change bitrate to 4000
+                    - change profile to main
+            - then hit OK then hit Reset button mid right
+            - laptop system settings
+                - display resolution - make smaller
+- double-click title bar at top of window to get it to fit Mac screen
+    - 

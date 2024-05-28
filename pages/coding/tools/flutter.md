@@ -43,6 +43,7 @@ Flutter is an open-source software development kit which enables smooth and easy
     - Make sure you start by opening the correct folder 
         - it should be the app folder
         - it won't necessarily be called `app`, but it's the parent that contains the `lib` folder
+    - Update dependencies: `flutter pub get`
     - Then you have to open `lib/main.dart`
         - You can tell you've done the right thing, because a play button will appear, top right
     - Cmd + Shift + P (View > Command Palette) => type flutter 

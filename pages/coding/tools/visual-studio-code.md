@@ -115,6 +115,6 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 - At the top of each yellow rectangle is tiny text saying things like "Accept incoming" or "Accept combination" - click on these to accept a change.
 - Click Complete Merge, big blue button bottom right, when done.
   - This just completes the merge for this file. 
-  - If you have other conflicts in other files, you can open them up in VS Code either via Github Desktop, or by clicing the red text on the left in VS Code
+  - If you have other conflicts in other files, you can open them up in VS Code either via Github Desktop, or by clicking the red text on the left in VS Code
 - Sometimes you'll click to get to the next conflict and there will be no code changes visible on the top half of the screen
   - Just resize the top pane and the changes will come into view
