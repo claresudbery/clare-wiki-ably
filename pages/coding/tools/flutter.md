@@ -123,6 +123,20 @@ To run all tests:
 
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
 
+# Mocking Firebase 
+
+- using standard mocking - couldn't get this working 
+    - [users_test.dart](/organising/private/career/Construct/jira-tickets/mock-firebase-example-1.dart)
+- using FakeCloudFirestore - got this working in the end - 
+    - [users_test.dart](/pages/coding/tools/testing/fake-firebase-example-2.md)
+    - don't forget to edit pubspec.yaml as per comment in file
+    - You also need to make sure your repository does not give a default value to its firebaseFirestoreInstance
+    - (otherwise you'll get errors saying you need to call Firebase.initializeApp)
+    - See https://stackoverflow.com/questions/52268590/how-to-unit-test-methods-using-firebase-cloud-firestore
+    - Or probably more usefully, https://github.com/brianegan/flutter_architecture_samples/blob/master/firebase_flutter_repository/test/firebase_flutter_repository_test.dart
+    - (Linked to from the stack overflow page)
+    - Also try this: https://blog.victoreronmosele.com/mocking-firestore-flutter
+
 # Dependency Injection with GetIt
 
 - The way I've done it:
@@ -219,3 +233,16 @@ void main() {
 
 ```
 ```
+
+# Debugging
+
+- Debug console
+  - Tyoe the thing you want to know about
+  - eg var name
+  - or even limited function calls - eg simple local functions
+  - but also things like `res.data()` in a firebase repository after a query's been done
+  - then you can expand result using arrows on left
+
+# finding useful widgets etc
+
+- [Material Design](https://m3.material.io/)
