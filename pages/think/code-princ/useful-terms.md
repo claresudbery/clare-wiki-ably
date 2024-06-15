@@ -298,3 +298,14 @@ The Law of Demeter (LoD) or principle of least knowledge is a design guideline f
 - Eduardo da Silva, Agile Meets Architecture, 5-6 Oct '23:
     - many companies are operating as though they are in Complicated or Clear, but actually they are in Complex
 ![Cynefin](/resources/images/cynefin01.jpeg)
+
+# ADKAR
+
+- From my notes from a Tech Leads NorthWest event (TLNW) in spring 2024
+- In the context of change management 
+- These are things worth bearing in mind when considering whether changes are worthwhile and when managing changes in general:
+- Awareness
+- Desire
+- Knowledge
+- Ability
+- Reinforcement/Revisit/Review

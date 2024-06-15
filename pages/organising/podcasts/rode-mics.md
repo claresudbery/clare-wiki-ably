@@ -27,7 +27,7 @@ Manual: https://rode.com/en/user-guides/wireless-go-ii
     - then capture the output live and record it yourself
     - see above for how to do this with iphone
     - or you could use a 3.5mm jack to attach it to a recording device
-        - eg the Zoom h4n
+        - eg the Zoom h5
     - remember this whole setup is just a glorified microphone so you wouldn't expect it to record its own output - that's up to you to do
 - Each individual transmitter has onboard recording
     - This is most useful as a backup though

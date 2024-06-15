@@ -123,6 +123,21 @@ To run all tests:
 
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
 
+# Test navigation / routing
+
+- See [here for some suggestions](https://stackoverflow.com/questions/50704647/how-to-test-navigation-via-navigator-in-flutter)
+- See [here for some sample code](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/test/widgets/navigator_test.dart#L277C5-L279C48)
+  - From same place:
+  - [Flutter source code for Navigator?](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/lib/src/widgets/navigator.dart#L3453)
+- See [here for a tutorial using MockNavigatorObserver](https://iiro.dev/writing-widget-tests-for-navigation-events/)
+- See [here for more on navigator observers](https://medium.com/@sumit.ghoshqa/understanding-routeobserver-in-flutter-309ce2997c27)
+- In our code, I coded someting similar in `display_name_test.dart` (circa 14/6/24)
+- How to do it if you're using GoRouter / MaterialApp.router:
+  - Brief notes [here](https://github.com/flutter/flutter/issues/134239)
+  - [How to test GoRouter](https://guillaume.bernos.dev/testing-go-router/)
+  - [More on testing GoRouter](https://stackoverflow.com/questions/77703670/unable-to-test-navigation-using-gorouter-in-my-flutter-app)
+  - [A cheatsheet on routing in flutter](https://medium.com/flutter-community/flutter-navigation-cheatsheet-a-guide-to-named-routing-dc642702b98c)
+
 # Mocking Firebase 
 
 - using standard mocking - couldn't get this working 
@@ -246,3 +261,27 @@ void main() {
 # finding useful widgets etc
 
 - [Material Design](https://m3.material.io/)
+
+# Get a dialog to return a value
+
+- In the dialog code do this:
+
+```dart
+ElevatedButton(
+  // Pass the value you want to return here ---------------|
+  onPressed: () => Navigator.pop(context, value), //<-----|
+  child: const Text('confirm'),
+),
+```
+
+- Call it like this:
+
+```dart
+double? val = await showDialog<double>(  
+  context: context,
+  builder: (context) => const DialogOne(),
+);
+print('Dialog one returned value ---> $val');
+```
+
+- From [here]https://stackoverflow.com/questions/59768792/how-to-get-a-value-from-a-dialog-in-flutter

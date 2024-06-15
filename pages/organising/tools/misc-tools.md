@@ -191,6 +191,12 @@ re, sorry!)
 
 - You can set up breakout rooms in advance of a meeting, as long as participants are on the invite list - just go into the meeting and set it up. Then you can close mtg down but it will be remembered
 - If you set someone up as a co-host, that means they can also assign breakout rooms
+- For me to get this working, because I have a pro Google account:
+  - I have to log into separate Google account - clare@claresudbery.com
+  - Then create calendar invite
+  - Use calendar settings to turn on host management
+  - Then add co-host of SSE account
+  - Copy Google meet link into an invite created using Google SSE account
 
 ### Google meet - co-hosts
 
@@ -399,3 +405,6 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 - Typefully - [Twitter/X thread writer](https://typefully.com/)
 - [Buffer](https://buffer.com/) - used by TWIP
 
+## Neck message roller
+
+- I bought this from Poxdo PTE Ltd on Sat 16/3/24, after seeing an ad on Twitter (I think? Or maybe Insta?)

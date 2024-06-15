@@ -190,6 +190,7 @@ lifts.forEach(lift -> {
 - Find/show usages: Alt + Splat + F7
   - or just Alt + F7
 - Go back: Cmd + [
+    - Go forward: Cmd + ]
 - finding stuff:
   - Search everywhere: Shift + Shift
   - Find in files: Cmd + shift + F
@@ -199,6 +200,7 @@ lifts.forEach(lift -> {
     - Cmd + Alt + O gives symbols, which is everything but classes
     - Note that IntelliJ does not describe this as "Find" or "Search" but as "Go to"
 - Refactoring menu: Ctrl + t
+  - Rename: Shift + F6
 - Cmd + Shift + Enter - finish a line (if no semicolon for instance)
 - Alt + Up = select the nearest thing - up again to select wider scope
 - In Command + O search menu, instead of typing GameBuilder to search for GameBuilder, you can just type GB

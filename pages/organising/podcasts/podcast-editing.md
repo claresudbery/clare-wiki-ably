@@ -129,5 +129,15 @@ In Audacity...
 - Press Solo on the new snippet track
 - File => Export => Export as mp3
 
+## Removing background noise
 
-
+- Descript has its "studio sound" option
+- [Uniconverter](https://videoconverter.wondershare.net/) is another option
+    - bit suspicious of this though - seems extremely spammy
+- [Veed.io](https://www.veed.io/) is another
+- [Audostudio](https://app.audostudio.com/)
+- HitPaw 
+- CapCut
+- https://podcastpontifications.com/background-audio-remover/
+- Adobe Podcast Enhance
+- Audacity: Noise Gate and Noise Reduction

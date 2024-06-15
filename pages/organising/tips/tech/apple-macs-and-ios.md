@@ -194,6 +194,10 @@ killall SystemUIServer
 - What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it. It's a toggle, so you can press again to retore things to how they were.
 - System Preferences => Mission Control => Show Desktop - select "Right Option"
 
+### Maximise window on Mac without creating separate desktop / space
+
+- double-click title bar at top of window to get it to fit Mac screen
+
 ### When dock / system tray moves to another monitor
 
 - If you drag the mouse to the bottom of a screen and keep dragging, the dock will move to that screen.
@@ -240,3 +244,6 @@ killall SystemUIServer
     - In the process, I found another two laptops listed (old work laptops?) (annoyingly I couldn't tell the difference between them), so I erased them too.
         - I guess this means that at some random point in the future I may get a notification that one of these devices has been connected to the internet... and be confused by it. So this is a note for my future self!
 
+## To properly quit an app
+
+- Cmd + Q - removes it from system tray

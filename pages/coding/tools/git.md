@@ -144,15 +144,18 @@ and the repository exists."
 - Follow the link to regenerate personal access token (I think I was sent this in an email)
   - ! Note that by default it will be set to expire in 30 days, but you can change this to make it last longer.
   - Make sure you take a copy! You can store it in a password manager.
-- Windows:
-  - The next time you do a git push on windows, it'll open a git dialog
-  - The first dialog wants your actual GitHub password, and it will say it has failed
-  - The second one - "OpenSSH" - wants your GitHub username but when it asks for a password it wants the personal access token.
-  - After that Windows will store it for you and you won't need it again.
-- Mac:
-  - The next time you do a git push, use your GitHub user name and the PAT (access token) instead of password and (on my setup at any rate) it will get saved for you.
-  - If pushing a new branch, it might not ask for un + pw, but it will if just doing a normal push
-  - If you get "authentication failed" when trying to do a pull, do a push instead and it'll give you the opportunity to enter user name and password - use the new PAT as your password.
+- Then...
+  - Windows:
+    - The next time you do a git push on windows, it'll open a git dialog
+    - The first dialog wants your actual GitHub password, and it will say it has failed
+    - The second one - "OpenSSH" - wants your GitHub username but when it asks for a password it wants the personal access token.
+    - After that Windows will store it for you and you won't need it again.
+  - Mac:
+    - The next time you do a git push, use your GitHub user name and the PAT (access token) instead of password and (on my setup at any rate) it will get saved for you.
+      - !! If you're using Terminal in an IDE, eg Rider, it might not ask you for a password
+      - Just go and do same in iTerm (or similar) and it should ask for pw there
+    - If pushing a new branch, it might not ask for un + pw, but it will if just doing a normal push
+    - If you get "authentication failed" when trying to do a pull, do a push instead and it'll give you the opportunity to enter user name and password - use the new PAT as your password.
 - [More here](https://stackoverflow.com/a/51505417).
 
 ## Use ssh to Access Repos (instead of https)

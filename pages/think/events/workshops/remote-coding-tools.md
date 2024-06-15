@@ -24,6 +24,10 @@ permalink: /pages/think/events/workshops/Remote-Coding-Tools
     - used by Emily
 - CyberDojo 
 - [Code With Me](https://www.jetbrains.com/code-with-me/)
+- [Live Code Together](https://live.codetogether.io/#/yvRDsaZidDDu0oea08ZnRA/r1gD4QFwgEjc9Qq1zqww7O)
+    - I made these notes when one of the participants in one of mine and Emily's LH trainings (6/2/24) used the tool in our session.
+    - Think we were effectively all logging on to his machine - he said that if we ran tests it would run them on his machine - and we wouldn't get feedback ourselves in browser - would have to look at his screenshare?
+    - But when the individual user sees a popup on screen, it's not visible on the shared screen - bit awkward for IDE refactoring tools
 
 ## AnyDesk Plus EC2 Instance
 
