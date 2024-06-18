@@ -4,6 +4,10 @@ location: pages/organising/music/leaf
 permalink: /pages/organising/music/Garage-Band
 ---
 
+## Where files are stores
+
+- Home/Music/GarageBand
+
 ## Getting started
 
 - New empty project - it gives you a bunch of anoying options, none of which look like what you want - select drum track.
