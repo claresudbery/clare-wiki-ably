@@ -130,10 +130,12 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
 - See [here for some suggestions](https://stackoverflow.com/questions/50704647/how-to-test-navigation-via-navigator-in-flutter)
 - See [here for some sample code](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/test/widgets/navigator_test.dart#L277C5-L279C48)
   - In our code, I coded someting similar in `display_name_test.dart` (circa 14/6/24)
-    - see [sample hand-cranked code](#sample-hand-cranked-navigation-testing-code) below
+    - see [sample hand-cranked code v1](#sample-hand-cranked-navigation-testing-code-v1) below
   - From same place:
   - [Flutter source code for Navigator?](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/lib/src/widgets/navigator.dart#L3453)
 - See [here for a tutorial using MockNavigatorObserver](https://iiro.dev/writing-widget-tests-for-navigation-events/)
+  - In our code, I coded someting similar in `display_name_test.dart` (circa 14/6/24)
+    - see [sample hand-cranked code v2](#sample-hand-cranked-navigation-testing-code-v2) below
 - See [here for more on navigator observers](https://medium.com/@sumit.ghoshqa/understanding-routeobserver-in-flutter-309ce2997c27)
 - How to do it if you're using GoRouter / MaterialApp.router:
   - Brief notes [here](https://github.com/flutter/flutter/issues/134239)
@@ -141,8 +143,9 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
   - [More on testing GoRouter](https://stackoverflow.com/questions/77703670/unable-to-test-navigation-using-gorouter-in-my-flutter-app)
   - [A cheatsheet on routing in flutter](https://medium.com/flutter-community/flutter-navigation-cheatsheet-a-guide-to-named-routing-dc642702b98c)
 
-## Sample hand-cranked navigation testing code
+## Sample hand-cranked navigation testing code v1
 
+- See [here for some sample code](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/test/widgets/navigator_test.dart#L277C5-L279C48)
 - Notes:
   - I'm testing for TWO observations because there's a push first and THEN a pop
 - In the test:
@@ -252,6 +255,90 @@ class TestObserver extends NavigatorObserver {
     onStartUserGesture?.call(route, previousRoute);
   }
 }
+```
+
+## Sample hand-cranked navigation testing code v2
+
+- See [here for a tutorial using MockNavigatorObserver](https://iiro.dev/writing-widget-tests-for-navigation-events/)
+- My test code using `MockNavigatorObserver`:
+
+```dart
+class MockNavigatorObserver extends Mock implements NavigatorObserver {}
+class MockRoute extends Mock implements Route {}
+
+void main() {
+
+  setUpAll(() {
+    registerFallbackValue(MockRoute());
+  });
+
+  testWidgets('My test',
+      (WidgetTester tester) async {
+    final mockObserver = MockNavigatorObserver();
+
+    await tester.pumpWidget(
+      ListenableProvider(
+        create: (_) => authProvider,
+        child: MaterialApp(
+          home: MyScreen(),
+          navigatorObservers: [mockObserver],
+        ),
+      ),
+    );
+
+    final submitButton = find.text('Submit');
+    await tester.tap(submitButton);
+
+    // Verify that a pop event happened
+    verify(() => mockObserver.didPop(any(), any()));
+  });
+}
+```
+
+# Testing the return value of a dialog
+
+- Testing what's returned as the value/result passed to `Navigator.pop`
+- I don't know if this is the best way to do it, but it works!
+- I tried doing it via checking what was passed to `Navigator.pop`, but I couldn't get that to work
+  - See [Stack Overflow question here](https://stackoverflow.com/questions/78679816/flutter-how-to-test-what-value-is-being-returned-via-navigator-pop)
+- ...So instead I tested what was returned if I called `showDialog`:
+
+```dart
+  testWidgets('Display name screen returns false when cancelled', (WidgetTester tester) async {
+    // ARRANGE
+    const openDialogButtonText = 'Dummy display name launch';
+    final displayNameScreen = DisplayNameScreen();
+    bool result = false;
+
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: SizedBox(
+            child: OutlinedButton(
+              child: const Text(openDialogButtonText),
+              onPressed: () async {
+                result = await showDialog(
+                  context: tester.element(find.text(openDialogButtonText)),
+                  builder: (context) => displayNameScreen,
+                );
+              },
+            ),
+          ),
+        ),
+      ),
+    );
+
+    // ACT
+    final openDialogButton = find.text(openDialogButtonText);
+    await tester.tap(openDialogButton);
+    await tester.pumpAndSettle();
+
+    final cancelButton = find.text('Cancel');
+    await tester.tap(cancelButton);    
+
+    // ASSERT
+    expect(result, false);
+  });
 ```
 
 # Testing exactly what's happening in some code
