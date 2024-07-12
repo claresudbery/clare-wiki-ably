@@ -112,7 +112,7 @@ permalink: /pages/organising/podcasts/Audacity
 
 - Apparently it's not recommended, but...
 - If you really want to overwite existing content, do it like this:
-- Edit > Preferences > Tracks > Tracks Behaviors > Editing a clip can move other clips
+- Edit > Preferences > Tracks > Tracks Behaviors > Editing a clip can move other clips (turn that off)
 
 ### Replacing some content with silence
 
