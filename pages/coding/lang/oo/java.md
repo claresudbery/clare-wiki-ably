@@ -22,5 +22,23 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - `final` - write once: gets defined in constructor and after that you can't change it
 
+## String interpolation
+
+- If it's at the end of the string, you can concatenate it:
+
+```java
+private String generateContent(int quantity) {
+        return "Ticket\n content\n x " + quantity;
+    }
+```
+
+- (No need to use `Integer.toString(quantity)`, Java automatically converts it to a string).
+- If it were in the middle and if there were multiple variables, you could use `formatted` (a method on all `String`s):
+
+```java
+private String generateContent(int quantity) {
+        return "Ticket\n content\n x %d".formatted(quantity);
+    }
+```
 
 
