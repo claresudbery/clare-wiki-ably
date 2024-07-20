@@ -4,6 +4,28 @@ location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/OBS
 ---
 
+# Checklist when filming
+
+- Check lighting
+    - I found this worked best:
+        - no glasses 
+        - blackout shade (arch-shaped piece of hardboard) on arched window 
+        - all Other Shades And Doors Closed
+        - main Light On
+        - two other side Lights on
+- Make sure you're using the mic you want in system settings
+- Make sure the AI noise-reducing mic is on / enabled
+    - You have to open it manually - Cmd + Space + Krisp app
+    - Log in (I use Google a/c)
+    - Select microphone (this will also help you to discover whether your favourite mic is currently enabled in your system)
+- Remember my default setup for O'Reilly videos was to capture the screen in front of me
+    - This means front screen has full-screen slides
+    - ...and slide notes are on side screen
+    - ...which means I'm not looking straight ahead, but this is fine because my face won't be on screen!
+- Do a short test video
+    - Is there sound? Is it good quality?
+    - Is anything crucial disappearing off the bottom / sides of the screen because aspect ratio?
+
 # Getting started
 
 - Downloade and install from obsproject.com

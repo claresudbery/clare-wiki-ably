@@ -65,9 +65,9 @@ Longer Summary:
 
 ### Mission Control
 
-For some reason my brain confuses this with Activity Monitor (the equivalent of Windows Task Manager).
-
-Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all running apps and spaces.
+- For some reason my brain confuses this with Activity Monitor (the equivalent of Windows Task Manager).
+- Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all running apps and spaces.
+- Use this if you want to shut down / terminate / force quit an app.
 
 ### Finding / quitting running apps 
 
