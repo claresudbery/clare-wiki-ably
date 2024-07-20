@@ -18,6 +18,7 @@ permalink: /pages/organising/tools/OBS
     - You have to open it manually - Cmd + Space + Krisp app
     - Log in (I use Google a/c)
     - Select microphone (this will also help you to discover whether your favourite mic is currently enabled in your system)
+    - To close it down again, the only way I've found so far is via Activity Monitor and Force Quit! 
 - Remember my default setup for O'Reilly videos was to capture the screen in front of me
     - This means front screen has full-screen slides
     - ...and slide notes are on side screen
@@ -144,5 +145,7 @@ permalink: /pages/organising/tools/OBS
     - then you can go into OBS => Settings => Audio => Mic/Auxiliary and select "krisp microphone"
         - You might have to do this every time you run OBS, and make sure Krisp is running (see above) and using correct input source
         - !!!! Initially for any scenes that shared my screen, I got echo on audio! See [above](#avoid-echoes) for how to fix this.
+    - To close Krisp down again, the only way I've found so far is via Activity Monitor and Force Quit! 
+        - It can be quite intrusive and annoying but it does do the job.
 - [More here](https://krisp.ai/blog/obs-remove-background-noise/)
 

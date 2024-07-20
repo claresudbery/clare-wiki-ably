@@ -152,6 +152,7 @@ with just putting a small microphone quite close to your mouth”
     reported installing this improved sound quality, but someone else
     found they experienced a lot of cut-outs when they did and had to
     revert
+    - It can be quite intrusive and anoying and hard to configure, but I did find it worked
 
   - Push-to-talk in Zoom
 
