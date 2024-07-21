@@ -1,3 +1,4 @@
+
 ---
 layout: page
 location: pages/think/life/admin/leaf
@@ -85,6 +86,29 @@ Cheers
 Clare.
 
 ![plumbing under sink](/resources/images/plumbing-under-sink.jpeg)
+
+### How to convert to 15mm when what you want is female end
+
+Posted 21/7/24, [here](https://community.screwfix.com/threads/convert-15mm-male-to-female-when-connecting-pipes-to-fit-new-tap.275767/)
+
+Hi
+
+I've bought a new kitchen tap which has a different size connector to the existing one (which is 15mm). I've bought a connector that converts to 15mm, but the connector gives me a male end instead of female, and now I can't find anything that will convert male to female so I can connect to the existing pipes.
+
+It seems all I need is a 15mm pipe with a thread inside so it will screw at both ends onto what I have, but I can't find anything like that.
+
+I attach photos of
+(a) the situation under the sink, with the old tap connector and the new one side by side. The new one is smaller and is on the right hand side.
+(b) the connector I've bought to convert to 15mm, next to the new tap, so you can see that what I end up with is male instead of female, so it doesn't do what I need
+(c) the connector I've bought to convert to 15mm, attached to the new tap.
+
+Please can you advise what I need to buy to fix this situation? What should I be searching for when browsing plumbing supplies sites? What would it be called?
+
+Thank you in advance!
+
+![(a) old-15mm-tap-by-new-tap-under-sink](/resources/images/old-15mm-tap-new-tap-under-sink.JPG)
+![(b) new-tap-next-to-15mm-converter](/resources/images/new-tap-next-to-15mm-converter.JPG)
+![(c) new-tap-attached-to-15mm-converter](/resources/images/new-tap-attached-to-15mm-converter.JPG)
 
 ## Changing a washer on an old tap
 
