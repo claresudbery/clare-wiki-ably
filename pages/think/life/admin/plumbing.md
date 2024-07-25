@@ -106,9 +106,35 @@ Please can you advise what I need to buy to fix this situation? What should I be
 
 Thank you in advance!
 
+(see below for reply)
+
 ![(a) old-15mm-tap-by-new-tap-under-sink](/resources/images/old-15mm-tap-new-tap-under-sink.JPG)
 ![(b) new-tap-next-to-15mm-converter](/resources/images/new-tap-next-to-15mm-converter.JPG)
 ![(c) new-tap-attached-to-15mm-converter](/resources/images/new-tap-attached-to-15mm-converter.JPG)
+
+OK, I got a reply advising me to get a ["tap tail adaptor"](https://www.toolstation.com/tap-tail-adaptors/p63663?store=O8) and I realised somebody had already advised me to get same and I did have one, but it was no use because the thread was 15mm instead of 3/8".
+
+Here's my reply:
+
+Ah ok, I see what the problem is. Those tap tail adaptors are what somebody advised me to buy last time, but they're no good because they're 15mm at the wrong end. I need the screw thread to be 3/8" but on that adaptor the screw thread is 15mm. The problem seems to be that when they say on the description '15mm x 3/8"' what they actually mean is 3/8" on the inside and 15mm on the outside. But I need 3/8" on the outside thread, to attach to the 3/8" internal thread on the end of my tap.
+
+You can tell the tap tail adaptor's wrong when you look at the image, because if the smooth end is going to attach to a 15mm female opening, how can the screw thread end possibly be 3/8"? It's too wide.
+
+Here's a diagram...
+
+![connecting-narrow-tap-to-wider-valve](/resources/images/connecting-narrow-tap-to-wider-valve.JPEG)
+
+OK, I think I've discovered the problem. That website is selling the wrong thing. The link you shared above is the same link I had already used to buy that exact same product, as shown in my photograph.
+
+But here is another one, with the same description, but it looks different: https://www.screwfix.com/p/tesla-br...exible-tap-connectors-15mm-x-3-8-2-pack/6089r
+
+In this link you can clearly see that the thread end has a smaller diameter than in the first link and in my photos. I will buy two of these and keep my fingers crossed they send me the right thing.
+
+![wrong-size-tap-tail-adaptors](/resources/images/wrong-size-tap-tail-adaptors.JPG)
+
+Here are the two products next to each other. You can clearly see the difference. One (the bad one) from Toolstation described as "Tap Tail Adaptors 15mm x 3/8"". One (the good one) from Screwfix described as "FLEXIBLE TAP CONNECTORS 15MM X 3/8""
+
+![good-and-bad-adaptors-side-by-side](/resources/images/good-and-bad-adaptors-side-by-side.png)
 
 ## Changing a washer on an old tap
 

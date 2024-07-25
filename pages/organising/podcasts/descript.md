@@ -33,7 +33,8 @@ Ted Young also swears by it for video editing.
 - Select settings
 - click Export at the bottom
 
+## Copying clip into new project
 
-
-
-
+- Select text
+- Right click: Duplicate into new composition
+- !! The new project will then be nested under the parent one and will NOT be visible in the main project window. you have to open the original and then there will be a path a t the top - click on the final file name and you'll get a down error allowing you to select other compositions in this project

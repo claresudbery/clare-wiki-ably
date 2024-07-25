@@ -1,3 +1,4 @@
+
 ---
 layout: page
 location: pages/organising/tools/leaf
@@ -14,6 +15,9 @@ permalink: /pages/organising/tools/OBS
         - main Light On
         - two other side Lights on
 - Make sure you're using the mic you want in system settings
+- Make sure mic is as close as poss to mouth
+- Check sound levels in OBS - need to be close to the top of the green
+    - Can adjust input levels in system settings
 - Make sure the AI noise-reducing mic is on / enabled
     - You have to open it manually - Cmd + Space + Krisp app
     - Log in (I use Google a/c)
@@ -62,6 +66,9 @@ permalink: /pages/organising/tools/OBS
             - can set up hot keys so you can mute quickly if you're coughing or whatever
     - Select hotkeys on left
         - Most useful is probably pause / unpause
+            - This is where you would set up the equivalent of push button to record 
+            - can set it up so that spacebar starts recording
+            - but I found when I had this set up, every time I had OBS open I kept inadvertently startong recordings without realising!
         - Split recording file
             - Allows you to stop recording in current file and start a new file, eg if you istake and want to do over
     - Select advanced on left
