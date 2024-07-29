@@ -247,3 +247,39 @@ killall SystemUIServer
 ## To properly quit an app
 
 - Cmd + Q - removes it from system tray
+
+## Troubleshooting
+
+### If external hard disk is not appearing in Finder
+
+- In Finder, select Finder > Settings from the menu bar.
+- In the General section of settings, make sure you tick the boxes next to External disks and Hard disks.
+- Go to the Sidebar and check Hard disks and External disks there as well.
+- This setting gets changed if you've followed an online instruction telling you to drag the hard disk icon into Terminal. the only icon I've ever been able to find is the one in the Sidebar in Finder. If you drag this into Terminal, Terminal doesn't respond but it does disappear from the Sidebar and turns the above setting off in Settings! Most annoying!
+
+### If you want to access an external hard drive in Terminal
+
+- These three steps:
+    - `cd /`
+    - `cd Volumes`
+    - `cd ls -la` (list all hard drives)
+    - Then if for instance it is listed as `WD USB 2`, you can do `cd "WD USB 2"`
+
+### If you are being told your external hard dive is read only
+
+- It may be that the hard disk is NTFS, which is a Windows format and doesn't work with Mac by default
+- I downloaded / installed [Paragon NTFS For Mac](https://shop.paragon-software.com/277/?scope=checkout&cart=255539&cfg=paragon2018)
+    - The install required a restart and then I had to 
+        - eject the hard disk (in Finder)
+        - Turn hard disk off/on again and reconnect USB
+- It required some quite heavy duty system access, which made me a bit worried so I turned it off again afterwards:
+    - System Settings => Login Items
+        - kextload
+        - NTFS for Mac.app
+        - Paragon NTFS for Mac
+    - System Settings => Privacy and Security => Full Disk Access
+        - com.paragon-software
+    - System Settings => Privacy and Security => ???
+        - I thought there was something else but if there was I can't find it!
+- It was only a 10-day trial anyway. You have to pay for full version. It's £26.
+
