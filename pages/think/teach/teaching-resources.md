@@ -67,3 +67,11 @@ permalink: /pages/think/teach/Teaching-Resources
     - (For Clare only) There is more info on BA roles and competencies at `OneDrive\TW-Stuff\Clients\[Samba]\Development Programmes`.
 
 ![skills matrix](/resources/images/skills-matrix.png)
+
+## Shape and space
+
+### Origami / paper folding / cube / cubes
+
+- On external hard disk:
+- /Volumes/WD USB 2/2014-04-01_Backup/_201105_ClaresStuff_backup/_Teaching/Resources/Shape and Space/Shapes/Paper folding/origami cube
+

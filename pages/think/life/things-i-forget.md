@@ -348,3 +348,8 @@ A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 # What's the name of that AI noise-reducing mic / microphone I used with OBS for better sound recording?
 
 - Krisp
+
+# Where are the instructions for making an origami cube
+
+- On external hard disk:
+- /Volumes/WD USB 2/2014-04-01_Backup/_201105_ClaresStuff_backup/_Teaching/Resources/Shape and Space/Shapes/Paper folding/origami cube

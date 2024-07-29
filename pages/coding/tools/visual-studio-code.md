@@ -3,6 +3,7 @@ layout: page
 location: pages/coding/tools/leaf
 permalink: /pages/coding/tools/Visual-Studio-Code
 ---
+
 ## Visual Studio Code (VS Code) - Misc
 
   - Keyboard shortcut cheat sheet:
@@ -83,6 +84,17 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 
 ## Troubleshooting
 
+### Large chunks of your doc are suddenly in strikethrough
+
+- This was an issue in Visual Studio Code Insiders in July '24
+- It only happened in `clare-wiki` files - seemed to be caused by the Jekyl metadata at the top of each file
+  - Probably the `---` section at the very top of the file
+- Workaround is to press Enter at the very top pf the file to add an empty line
+
+### Finding useful tools / utils
+
+Cmd + Shift + P then type the name of the thing you're looking for
+
 ### If your embedded links stop being colour-coded and having clickable links
 
 - This happens if you have double-indented sub-list items without a parent
@@ -102,6 +114,7 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 ### Pretty-print json
 
 - Option + Shift + F
+- ...or Cmd + Shift + P... "Format document"
 
 ## Git tools
 
@@ -118,3 +131,20 @@ permalink: /pages/coding/tools/Visual-Studio-Code
   - If you have other conflicts in other files, you can open them up in VS Code either via Github Desktop, or by clicking the red text on the left in VS Code
 - Sometimes you'll click to get to the next conflict and there will be no code changes visible on the top half of the screen
   - Just resize the top pane and the changes will come into view
+
+## Navigating the editor
+
+### Collapse regions
+
+- Fold folds the innermost uncollapsed region at the cursor:
+  - Ctrl + Shift + [ on Windows and Linux
+  - ⌥ + ⌘ + [ on macOS
+- Unfold unfolds the collapsed region at the cursor:
+  - Ctrl + Shift + ] on Windows and Linux
+  - ⌥ + ⌘ + ] on macOS
+- Fold All folds all regions in the editor:
+  - Ctrl+K Ctrl+0 Windows
+  - Cmd+K Cmd+0 Mac
+- Unfold All unfolds all regions in the editor:
+  - Ctrl+K Ctrl+J Windows
+  - Cmd+K Cmd+J Mac
