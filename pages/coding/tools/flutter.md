@@ -4,18 +4,18 @@ location: pages/coding/tools/leaf
 permalink: /pages/coding/tools/Flutter
 ---
 
-# What is Flutter 
+## What is Flutter 
 
 Flutter is an open-source software development kit which enables smooth and easy cross-platform mobile app development. You can build high quality natively compiled apps for iOS and Android quickly, without having to write the code for the two apps separately. All you need is one codebase for both platforms.
 
-# Useful links
+## Useful links
 
 - Flutter is the name of the sdk. The _language_ it uses is [Dart](/pages/coding/lang/func/Dart)
 - [Getting started](https://docs.flutter.dev/get-started/install/macos/web)
 - [Codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
 - [More tutorials and docs](https://flutter.dev/learn)
 
-# Installing Flutter
+## Installing Flutter
 
 - [Here](https://docs.flutter.dev/get-started/install/macos/web)
 - Troubleshooting: 
@@ -25,9 +25,9 @@ Flutter is an open-source software development kit which enables smooth and easy
             - (replace `[path-to-flutter]` with your flutter location)
         - Then run `source ~/.bashrc`
 
-# Create / run new app
+## Create / run new app
 
-## VS Code
+### VS Code
 
 - From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
 - Create a project/app:
@@ -70,7 +70,7 @@ Flutter is an open-source software development kit which enables smooth and easy
     - [More tutorials and docs](https://flutter.dev/learn)
 
 
-## IntelliJ IDEA
+### IntelliJ IDEA
 
 - From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
 - Create a project/app:
@@ -101,7 +101,7 @@ Flutter is an open-source software development kit which enables smooth and easy
     - There's a codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
     - ...but it assumes you're in VS Code
 
-# Material Components
+## Material Components
 
 - [More here](https://m3.material.io/components)
 - Seems to be a similar concept to Bootstrap UI templates
@@ -109,7 +109,9 @@ Flutter is an open-source software development kit which enables smooth and easy
     - Material Design is an adaptable system of guidelines, components, and tools that support the best practices of user interface design.
 - Components are interactive building blocks for creating a user interface. They can be organized into categories based on their purpose: Action, containment, communication, navigation, selection, and text input.
 
-# Run tests
+## Testing
+
+### Run tests
 
 To run all tests in one file:
 
@@ -123,7 +125,7 @@ To run all tests:
 
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
 
-# Testing navigation / routing
+### Testing navigation / routing
 
 - ! I think navigation and routing are two separate things?
   - Routing is about urls, but navigation is about popping and pushing screens from the navigation stack?
@@ -143,7 +145,7 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
   - [More on testing GoRouter](https://stackoverflow.com/questions/77703670/unable-to-test-navigation-using-gorouter-in-my-flutter-app)
   - [A cheatsheet on routing in flutter](https://medium.com/flutter-community/flutter-navigation-cheatsheet-a-guide-to-named-routing-dc642702b98c)
 
-## Sample hand-cranked navigation testing code v1
+### Sample hand-cranked navigation testing code v1
 
 - See [here for some sample code](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/test/widgets/navigator_test.dart#L277C5-L279C48)
 - Notes:
@@ -257,7 +259,7 @@ class TestObserver extends NavigatorObserver {
 }
 ```
 
-## Sample hand-cranked navigation testing code v2
+### Sample hand-cranked navigation testing code v2
 
 - See [here for a tutorial using MockNavigatorObserver](https://iiro.dev/writing-widget-tests-for-navigation-events/)
 - My test code using `MockNavigatorObserver`:
@@ -295,7 +297,7 @@ void main() {
 }
 ```
 
-# Testing the return value of a dialog
+### Testing the return value of a dialog
 
 - Testing what's returned as the value/result passed to `Navigator.pop`
 - I don't know if this is the best way to do it, but it works!
@@ -341,7 +343,7 @@ void main() {
   });
 ```
 
-# Testing exactly what's happening in some code
+### Testing exactly what's happening in some code
 
 - I came up with this probably-terrible hack to give me the equivalent of debug strings while testing!
 - I injected a made-up object into the widget under test,  
@@ -391,7 +393,7 @@ class DisplayNameScreenState extends State<DisplayNameScreen> {
     expect(clareThing.test, "start");
 ```
 
-# Mocking Firebase 
+### Mocking Firebase 
 
 - using standard mocking - couldn't get this working 
     - [users_test.dart](/organising/private/career/Construct/jira-tickets/mock-firebase-example-1.dart)
@@ -405,12 +407,75 @@ class DisplayNameScreenState extends State<DisplayNameScreen> {
     - (Linked to from the stack overflow page)
     - Also try this: https://blog.victoreronmosele.com/mocking-firestore-flutter
 
-# Dependency Injection with GetIt
+### Useful mocking tips
+
+- If you don't use the return value, you don't need to use the `when()` formation - it's irrelevant
+    - But if you do use the return value and the return value is `Future<void>`, either of the following formations will work:
+    - `.thenAnswer((_) async {})`
+    - `.thenAnswer((_) => Future.value())`
+    - (otherwise, if you try to do `thenReturn(null)`, you get the error "The argument type 'Null' can't be assigned to the parameter type 'Future<void>'")
+    - Note that if the return value is `Future<void>` then it only needs stubbing if the test itself actually uses the `await` keyword. If the `await` keyword is (for instance) in the `onSubmit()` method for a widget and the test uses `await tester.pumpWidget`, then you don't actually need to stub the method that returns `Future<void>`.
+        - I'm still a little confused by this, but I've proved it's the case for the call to `usersRepository.createUserIdentity` in `display_name_test`
+- If the return value is passed along somewhere in the code under test, even if it's not actually used, then if you haven't set up a `when()` clause correctly, you'll get the following error: "_TypeError (type 'Null' is not a subtype of type 'Future<void>')"
+    - This is because the default behaviour of the mock is to return null, if you haven't specified otherwise
+    - Note that this can also happen if you do have a `when()` call, but the specified params don't match those used during the actual call - for instance if there are optional named calls that you have covered with something like `any(named: "matchboxID")` (see below)
+    - You can use `@GenerateMocks` and `build_runner` to get past null issues
+        - See [here](https://github.com/dart-lang/mockito/blob/master/NULL_SAFETY_README.md)
+        - and [here](https://stackoverflow.com/questions/67371802/dart-type-null-is-not-a-subtype-of-type-futurestring-in-mockito)
+- If you have named params, you have to add them to the `when()` thing or your `when()` setup will be ignored
+- You can use `any()` for optional named params, but have to do it like this: 
+    - `matchboxID: any(named: "matchboxID"),`
+        - or like this: 
+    - If you just do this: `matchboxID: any(),`
+    - ... you'll get this error: "Invalid argument(s): An argument matcher (like `any()`) was either not used as an immediate argument to Symbol("createUserIdentity") (argument matchers can only be used as an argument for the very method being stubbed or verified), or was used as a named argument without the Mocktail "named" API (Each argument matcher that is used as a named argument needs to specify the name of the argument it is being used in. For example: `when(() => obj.fn(x: any(named: "x")))`)."
+- Optional named params look like this (they are the ones in the `{}` - ie `name` and `role`): 
+
+```dart
+Future<void> createUserIdentity(
+    String userID,
+    String ringID, {
+    String? name,
+    UserRole? role,
+}) async {
+```
+
+- If you use `any()` for optional named params, then you'll be able to capture if one of them doesn't get called
+- If you want to output debug strings:
+    - `import 'package:flutter/foundation.dart';` 
+    - `debugPrint("****** HOOY 02, output = $thing");`
+- Mostly when stubbing, you can pass `_` through to say you don't care what the params are
+    - Like this: `.thenAnswer((invocation) => Future.value(challengee));`
+        - More [here](https://pub.dev/packages/mockito)
+    - ...but if you want to know more about exactly what was passed through to a mock
+        - You can pass `invocation` through in the `thenAnswer` clause
+        - then access `invocation.namedArguments[Symbol('argName')]`
+        - Like this:
+
+```dart
+)).thenAnswer((Invocation invocation) {
+final namedArgs = invocation.namedArguments;
+final onData = namedArgs[Symbol('onData')] as Function(Photo);
+final onDone = namedArgs[Symbol('onDone')] as Function();
+final onError = namedArgs[Symbol('onError')] as Function(dynamic);
+
+return Stream<Photo>.fromFuture(
+    Future<Photo>.delayed(Duration(milliseconds: 50), () => Photo()),
+).listen(onData, onDone: onDone, onError: onError, cancelOnError: true);
+});
+```
+        
+- More on that [here](https://stackoverflow.com/questions/58453530/dart-mockito-how-to-call-function-argument-in-mocked-method)
+
+### Testing blocs
+
+- See [here](/pages/coding/lang/func/dart-bloc.md)
+
+## Dependency Injection with GetIt
 
 - The way I've done it:
 - Create an abstract class (an interface) and an implementation of that class:
 
-```
+```dart
 abstract class IThing {
   Future<void> doStuff();
 }
@@ -425,7 +490,7 @@ class Thing implements IThing {
 
 - Register a singleton in dedicated method in `main.dart`:
 
-```
+```dart
 void main() async {
   setupDependencyInjection();
   runApp(const MyFlutterApp());
@@ -440,7 +505,7 @@ setupDependencyInjection() {
 
 - Use GetIt to instantiate the object where you need it:
 
-```
+```dart
 class MyScreen extends StatefulWidget {
   const MyScreen({
     super.key,
@@ -471,9 +536,9 @@ class MyScreenState extends State<MyScreen> {
 }
 ```
 
-## Using GetIt for mocking dependencies in tests
+### Using GetIt for mocking dependencies in tests
 
-```
+```dart
 class MockUsersRepository extends Mock implements IUsersRepository {}
 
 void main() {
@@ -495,14 +560,21 @@ void main() {
 }
 ```
 
-## Troubleshoot "repository is already registered inside GetIt"
+### Troubleshoot "repository is already registered inside GetIt"
 
 - If you have more than one test in your test file, and they are all using `GetIt` for dependency injection, you'll need a separate `setUp` method:
 
-```
+```dart
+void main() {
+  final matchboxesService = MockMatchboxesService();
+
+  setUpAll(() {
+    GetIt.I.registerSingleton<ILoggerService>(MockLoggerService());
+    GetIt.I.registerSingleton<IMatchboxesService>(matchboxesService);
+  });
 ```
 
-# Debugging
+## Debugging
 
 - Debug console
   - Type the thing you want to know about
@@ -511,15 +583,15 @@ void main() {
   - but also things like `res.data()` in a firebase repository after a query's been done
   - then you can expand result using arrows on left
 
-# debug text / logging / debug strings
+## debug text / logging / debug strings
 
 - If you want to debug while testing, you could use my [ridiculous hack](#testing-exactly-whats-happening-in-some-code)
 
-# finding useful widgets etc
+## finding useful widgets etc
 
 - [Material Design](https://m3.material.io/)
 
-# Get a dialog to return a value
+## Get a dialog to return a value
 
 - In the dialog code do this:
 

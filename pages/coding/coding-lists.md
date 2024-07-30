@@ -30,7 +30,7 @@ permalink: /pages/coding/Coding-Lists
 ### Things you can use to build stuff quickly
 
 - [Windows console apps](/pages/coding/dotnet/Windows-Console-Apps)
-- [NancyFX](/pages/coding/tools/NancyFX)
+- [NancyFX](/pages/coding/tools/Nancy-FX)
 - [Asp.Net Core](/pages/coding/dotnet/Asp-Net-Core)
 - [.Net Core](/pages/coding/dotnet/DotNet-Core-Resources)
 - [HTML](/pages/coding/webdev/html)
