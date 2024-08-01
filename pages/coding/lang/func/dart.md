@@ -1,3 +1,4 @@
+
 ---
 layout: page
 location: pages/coding/lang/func/leaf
@@ -53,4 +54,54 @@ var greeting = "Hello";
 var person = "Rohan";
 
 print("${greeting}, ${person}!"); // prints "Hello, Rohan!"
+```
+
+## The double dots / double dot operator
+
+- It allows you to not repeat the same target if you want to call several methods on the same object.
+- e.g without double dots:
+
+```dart
+var paint = Paint();
+paint.color = Colors.black;
+paint.strokeCap = StrokeCap.round;
+paint.strokeWidth = 5.0;
+```
+
+- But after using `..`, the above code will be written like this:
+
+```dart
+var paint = Paint()
+..color = Colors.black
+..strokeCap = StrokeCap.round
+..strokeWidth = 5.0;
+```
+
+## => notation
+
+```dart
+).thenAnswer((_) => Future.value());
+```
+
+is equivalent to
+
+```dart
+).thenAnswer((_) {
+      return true;
+    });
+```
+
+and
+
+```dart
+).whenComplete(() => emit(const MatchboxStateUserReady()));
+```
+
+is equivalent to
+
+```dart
+).whenComplete(() {
+      debugPrint("******************* about to emit event");
+      emit(const MatchboxStateUserReady());
+    });
 ```

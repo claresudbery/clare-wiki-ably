@@ -1,3 +1,4 @@
+
 ---
 layout: page
 location: pages/coding/tools/leaf
@@ -113,15 +114,37 @@ Flutter is an open-source software development kit which enables smooth and easy
 
 ### Run tests
 
-To run all tests in one file:
-
-- In Visual Studio: Open test file and click run button top right (or use the Run menu, or F5)
-- On command line: `flutter test path/to/test_file_test.dart`
-
 To run all tests:
 
 - In VS Code: Select the whole test folder in the explorer, right-click and choose Run tests
-- On command line (from the folder which contains the tests): `flutter test .`
+- On command line (from the `test` folder): `flutter test .`
+
+To run all tests in one file:
+
+- In Visual Studio: Open test file and click run button top right (or use the Run menu, or F5)
+- On command line (from the `app` folder): `flutter test test/helpers/date_time_formatter_test.dart`
+
+To run only a single flutter test:
+
+- `flutter test test/path/to/file --name nameOfTest`
+
+...Or a group of tests:
+
+- `flutter test --name nameOfGroup`
+
+You can also TAG tests within your testing code, then run tests that match that tag:
+
+- `flutter test --tags chrome`
+
+...eg, taken from the dart test page:
+
+```dart
+void main() {
+  test('launches two browsers at once', () {
+    // ...
+  }, tags: ['chrome', 'firefox']);
+}
+```
 
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
 
@@ -440,9 +463,6 @@ Future<void> createUserIdentity(
 ```
 
 - If you use `any()` for optional named params, then you'll be able to capture if one of them doesn't get called
-- If you want to output debug strings:
-    - `import 'package:flutter/foundation.dart';` 
-    - `debugPrint("****** HOOY 02, output = $thing");`
 - Mostly when stubbing, you can pass `_` through to say you don't care what the params are
     - Like this: `.thenAnswer((invocation) => Future.value(challengee));`
         - More [here](https://pub.dev/packages/mockito)
@@ -583,9 +603,17 @@ void main() {
   - but also things like `res.data()` in a firebase repository after a query's been done
   - then you can expand result using arrows on left
 
-## debug text / logging / debug strings
+### Seeing call stack
+
+- In VS Code, click the Debug Play button (triangle with insect) on the left
+- It will give you a panel bottom left with call stack
+
+### debug text / logging / debug strings
 
 - If you want to debug while testing, you could use my [ridiculous hack](#testing-exactly-whats-happening-in-some-code)
+- ...or if you want to output debug strings:
+    - `import 'package:flutter/foundation.dart';` 
+    - `debugPrint("****** HOOY 02, output = $thing");`
 
 ## finding useful widgets etc
 
