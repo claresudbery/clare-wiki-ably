@@ -486,6 +486,37 @@ return Stream<Photo>.fromFuture(
         
 - More on that [here](https://stackoverflow.com/questions/58453530/dart-mockito-how-to-call-function-argument-in-mocked-method)
 
+- If you want to test one what has been passed into a function
+
+```dart
+final verifyRhet = verify(
+  () => mockRhetsRepository.postRhet(captureAny<Rhet>()),
+);
+```
+
+- I wanted to ensure the service was posting a rhet for the specific matchbox
+- by using `captureAny<Rhet>` we can obtain the rhet that was passed:
+
+```dart
+final Rhet postedRhet = verifyRhet.captured.first;
+expect(postedRhet.matchboxID, equals(matchboxID));
+```
+
+- the reason I'm doing this is because Dart can't do equality checks between two instances unless you override `==` on a class
+- so:
+
+```dart
+expect(postedRhet, equals(testRhet)); // false
+expect(postedRhet, equals(postedRhet)); // true
+```
+
+- Bloc uses [Equatable](https://pub.dev/packages/equatable) for comparing instances of state but I wasn't sure if it would introduce too much complexity 
+  - we would need to ensure we keep the `props` attribute in sync like we do with the blocs
+  - it uses the props to check the values against (rather than automatically figuring out which attributes on the class to use)
+  - https://github.com/felangel/equatable/blob/ed646e59e8e33942b3aa6c35cbf78e83324e3e25/lib/src/equatable_mixin.dart#L25
+  - `equals(props, other.props);`
+
+
 ### Testing blocs
 
 - See [here](/pages/coding/lang/func/dart-bloc.md)
@@ -580,6 +611,8 @@ void main() {
 }
 ```
 
+### Testing 
+
 ### Troubleshoot "repository is already registered inside GetIt"
 
 - If you have more than one test in your test file, and they are all using `GetIt` for dependency injection, you'll need a separate `setUp` method:
@@ -642,3 +675,9 @@ print('Dialog one returned value ---> $val');
 ```
 
 - From [here]https://stackoverflow.com/questions/59768792/how-to-get-a-value-from-a-dialog-in-flutter
+
+## Useful UI Stuff
+
+### Flutter Widget for autocomplete text fields
+
+- [Here](https://api.flutter.dev/flutter/material/Autocomplete-class.html)
