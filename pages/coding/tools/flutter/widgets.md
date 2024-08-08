@@ -6,7 +6,7 @@ permalink: /pages/coding/tools/flutter/Widgets
 
 ## Finding useful widgets etc
 
-- [Material components](/pages/coding/tools/flutter/material.md)
+- [Material components](material.md)
 
 ## Get a dialog to return a value
 

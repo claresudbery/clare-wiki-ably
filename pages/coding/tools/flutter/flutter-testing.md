@@ -8,11 +8,11 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
 
 ## Testing dependency injection
 
-- See [here](/pages/coding/tools/flutter/flutter-di.md#testing)
+- See [here](flutter-di.md#testing)
 
 ## Testing blocs
 
-- See [here](/pages/coding/tools/flutter/bloc.md#testing-blocs)
+- See [here](bloc.md#testing-blocs)
 
 ## Run tests
 
@@ -151,7 +151,7 @@ expect(postedRhet.matchboxID, equals(matchboxID));
 ```
 
 - the reason I'm doing this is because Dart can't do equality checks between two instances unless you override `==` on a class
-    - more [here](/pages/coding/tools/flutter/Dart#equality-checks-in-dart)
+    - more [here](Dart#equality-checks-in-dart)
 
 ## Testing navigation / routing
 

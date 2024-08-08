@@ -10,17 +10,17 @@ Flutter is an open-source software development kit which enables smooth and easy
 
 ## Sub-pages
 
-- [Dart language](/pages/coding/tools/flutter/dart.md)
-- [Material components](/pages/coding/tools/flutter/material.md)
-- [Flutter testing](/pages/coding/tools/flutter/flutter-testing.md)
-- [Bloc state management](/pages/coding/tools/flutter/bloc.md)
-- [Dependency Injection](/pages/coding/tools/flutter/flutter-di.md)
-- [Debugging](/pages/coding/tools/flutter/flutter-debugging.md)
-- [Widgets](/pages/coding/tools/flutter/widgets.md)
+- [Dart language](dart.md)
+- [Material components](material.md)
+- [Flutter testing](flutter-testing.md)
+- [Bloc state management](bloc.md)
+- [Dependency Injection](flutter-di.md)
+- [Debugging](flutter-debugging.md)
+- [Widgets](widgets.md)
 
 ## Useful links
 
-- Flutter is the name of the sdk. The _language_ it uses is [Dart](/pages/coding/tools/flutter/dart.md)
+- Flutter is the name of the sdk. The _language_ it uses is [Dart](dart.md)
 - [Getting started](https://docs.flutter.dev/get-started/install/macos/web)
 - [Codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
 - [More tutorials and docs](https://flutter.dev/learn)
