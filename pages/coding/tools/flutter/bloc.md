@@ -4,15 +4,17 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Bloc
 ---
 
+# Bloc
+
 ## Contents of this page:
 
-- []()
-    - []()
-    - []()
-    - []()
-- []()
-    - []()
-    - []()
+- [Testing blocs](#testing-blocs)
+    - [Verifying mocks in bloc tests](#verifying-mocks-in-bloc-tests)
+    - [Troubleshooting "No method stub was called from within `when()`"](#troubleshooting-no-method-stub-was-called-from-within-when)
+    - [Testing widget code that uses a BlocListener](#testing-widget-code-that-uses-a-bloclistener)
+- [Troubleshooting](#troubleshooting)
+    - [Troubleshooting "Cannot add new events after calling close"](#troubleshooting-cannot-add-new-events-after-calling-close)
+    - [Troubleshooting error on emitter.dart line 114](#troubleshooting-error-on-emitterdart-line-114)
 
 ## Testing blocs
 

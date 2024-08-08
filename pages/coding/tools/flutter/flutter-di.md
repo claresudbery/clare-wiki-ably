@@ -4,19 +4,14 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Flutter-DI
 ---
 
+# Flutter Dependency Injection
+
 ## Contents of this page:
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Dependency Injection with GetIt](#dependency-injection-with-getit)
+- [Testing](#testing)
+  - [Using GetIt for mocking dependencies in tests](#using-getit-for-mocking-dependencies-in-tests)
+  - [Troubleshoot "repository is already registered inside GetIt"](#troubleshoot-repository-is-already-registered-inside-getit)
 
 ## Dependency Injection with GetIt
 

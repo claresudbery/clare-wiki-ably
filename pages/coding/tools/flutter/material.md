@@ -4,21 +4,14 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Material
 ---
 
+# Material Components
+
 ## Contents of this page:
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Material Components - Intro](#material-components---intro)
+- [Flutter Widget for autocomplete text fields](#flutter-widget-for-autocomplete-text-fields)
 
-## Material Components
+## Material Components - Intro
 
 - [More here](https://m3.material.io/components)
 - Seems to be a similar concept to Bootstrap UI templates

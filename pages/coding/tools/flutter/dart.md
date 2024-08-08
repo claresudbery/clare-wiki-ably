@@ -4,19 +4,19 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Dart
 ---
 
+# Dart
+
 ## Contents of this page:
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Useful links](#useful-links)
+- [Lists](#lists)
+- [Sets](#sets)
+- [Generics](#generics)
+- [Static consts](#static-consts)
+- [String interpolation](#string-interpolation)
+- [The double dots / double dot operator](#the-double-dots--double-dot-operator)
+- [=> notation](#-notation)
+- [Equality checks in Dart](#equality-checks-in-dart)
 
 ## Useful links
 

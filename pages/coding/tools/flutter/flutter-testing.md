@@ -4,21 +4,24 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Flutter-Testing
 ---
 
+# Flutter Testing
+
 ## Contents of this page:
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-
-## Flutter Testing
+- [Testing dependency injection](#testing-dependency-injection)
+- [Testing blocs](#testing-blocs)
+- [Run tests](#run-tests)
+- [Mocking Firebase](#mocking-firebase)
+- [Useful mocking tips](#useful-mocking-tips)
+  - [When and how to use When](#when-and-how-to-use-when)
+  - [Troubleshooting Null is not a subtype of type Future](#troubleshooting-null-is-not-a-subtype-of-type-future)
+  - [Named params in when clauses](#named-params-in-when-clauses)
+  - [Inspecting what has been passed to a mock](#inspecting-what-has-been-passed-to-a-mock)
+- [Testing navigation / routing](#testing-navigation--routing)
+  - [Sample hand-cranked navigation testing code v1](#sample-hand-cranked-navigation-testing-code-v1)
+  - [Sample hand-cranked navigation testing code v2](#sample-hand-cranked-navigation-testing-code-v2)
+- [Testing the return value of a dialog](#testing-the-return-value-of-a-dialog)
+- [Testing exactly what's happening in some code](#testing-exactly-whats-happening-in-some-code)
 
 ## Testing dependency injection
 
@@ -64,7 +67,7 @@ void main() {
 
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
 
-## Mocking Firebase 
+## Mocking Firebase
 
 - using standard mocking - couldn't get this working 
     - [users_test.dart](/organising/private/career/Construct/jira-tickets/mock-firebase-example-1.dart)

@@ -4,21 +4,19 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Flutter
 ---
 
+# Flutter
+
 ## Contents of this page:
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [What is Flutter](#what-is-flutter)
+- [Sub-pages](#sub-pages)
+- [Useful links](#useful-links)
+- [Installing Flutter](#installing-flutter)
+- [Create / run new app](#create--run-new-app)
+    - [VS Code](#vs-code)
+    - [IntelliJ IDEA](#intellij-idea)
 
-## What is Flutter 
+## What is Flutter
 
 Flutter is an open-source software development kit which enables smooth and easy cross-platform mobile app development. You can build high quality natively compiled apps for iOS and Android quickly, without having to write the code for the two apps separately. All you need is one codebase for both platforms.
 
