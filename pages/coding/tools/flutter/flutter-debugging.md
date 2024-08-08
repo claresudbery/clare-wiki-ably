@@ -1,0 +1,26 @@
+---
+layout: page
+location: pages/coding/tools/flutter/leaf
+permalink: /pages/coding/tools/flutter/Flutter-Debugging
+---
+
+## Debugging
+
+- Debug console
+  - Type the thing you want to know about
+  - eg var name
+  - or even limited function calls - eg simple local functions
+  - but also things like `res.data()` in a firebase repository after a query's been done
+  - then you can expand result using arrows on left
+
+## Seeing call stack
+
+- In VS Code, click the Debug Play button (triangle with insect) on the left
+- It will give you a panel bottom left with call stack
+
+## debug text / logging / debug strings
+
+- If you want to debug while testing, you could use my [ridiculous hack](#testing-exactly-whats-happening-in-some-code)
+- ...or if you want to output debug strings:
+    - `import 'package:flutter/foundation.dart';` 
+    - `debugPrint("****** HOOY 02, output = $thing");`

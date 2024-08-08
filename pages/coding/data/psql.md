@@ -349,6 +349,7 @@ I found this quite tricky. This is what worked in the end:
       - In a Linux terminal (using WSL):
       - `sudo apt-get install dos2unix`
       - `dos2unix path/to/table-name-backup.dmp`
+      - This also works if you try to run a script on a Mac and you get the error "bad interpreter: /bin/bash^M: no such file or directory"
   - If you’re on Windows and you get "C:: Permission denied", this could
     be because you used backslashes instead of forward slashes in your
     `\i` command. You also need the single quotes.
