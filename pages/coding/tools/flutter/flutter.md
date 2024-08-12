@@ -70,7 +70,7 @@ Flutter is an open-source software development kit which enables smooth and easy
     - Then you have to open `lib/main.dart`
         - You can tell you've done the right thing, because a play button will appear, top right
     - Cmd + Shift + P (View > Command Palette) => type flutter 
-    - Flutter: Select Device
+    - Flutter: Select Device (to select Chrome / browser or ios)
         - Or click bottom right, where it will show you which device is currently selected
         - you can start a new iOS simluator here if you want
     - F5 (Run > Start Debugging)

@@ -39,8 +39,9 @@ When the pipes look like this...
     - "Turn the screw 90 degrees and it'll isolate the valve, then you can detatch the top bit. They're called isolator valves if you need to Google."
     - "No welding required, those are compression joints and the bit in the middle is a valve. Turn the valve with a screwdriver to turn off water to the pipes coming off the tap, loosen the nut and the pipe should come out with that bronze bit (called an olive) round the outside near the end of the pipe. It's possible whoever fit it also put some tape/putty other stuff round the joint but you really don't need that with compression joints. If the olive won't come off the pipe or it's a bit bent then just buy some more, cost next to nothing. "
     - "the key lesson with them is to not over-tighten when you're doing it back up."
+        - But as I discovered when fitting our new kitchen tap, don't undertighten either!!
     - "it's an isolator valve with compression joints on the ends. Depending on how your new tap fits it might need that same copper pipe into it or it might have flexi pipes that just screw onto the top of the isolator valve, no olives or other bits needed. "
-    - "Also a top tip - If you are installing a tap from Grohe, Germans use valves that are based on metric rather than imperial measurements and are ever so slightly differently sized from standard UK plumbing so you need an adaptor. Fine for going into compression joints, not fine for screwing onto things like isolator valves."
+    - "Also a top tip - If you are installing a tap from Grohe, Germans use valves that are based on metric rather than imperial measurements and are ever so slightly differently sized from standard UK plumbing so you need an adaptor (see [below](#how-to-convert-to-15mm-when-what-you-want-is-female-end)). Fine for going into compression joints, not fine for screwing onto things like isolator valves."
 
 ### How to get good water pressure from a tap
 
