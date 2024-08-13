@@ -11,7 +11,9 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
 - [Testing dependency injection](#testing-dependency-injection)
 - [Testing blocs](#testing-blocs)
 - [Run tests](#run-tests)
-- [Mocking Firebase](#mocking-firebase)
+- [Testing firebase code](#testing-firebase-code)
+  - [Mocking Firebase](#mocking-firebase)
+  - [Testing real-time Firebase queries](#testing-real-time-firebase-queries)
 - [Useful mocking tips](#useful-mocking-tips)
   - [When and how to use When](#when-and-how-to-use-when)
   - [Troubleshooting Null is not a subtype of type Future](#troubleshooting-null-is-not-a-subtype-of-type-future)
@@ -21,7 +23,6 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
   - [Sample hand-cranked navigation testing code v1](#sample-hand-cranked-navigation-testing-code-v1)
   - [Sample hand-cranked navigation testing code v2](#sample-hand-cranked-navigation-testing-code-v2)
 - [Testing the return value of a dialog](#testing-the-return-value-of-a-dialog)
-- [Testing exactly what's happening in some code](#testing-exactly-whats-happening-in-some-code)
 
 ## Testing dependency injection
 
@@ -67,7 +68,9 @@ void main() {
 
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
 
-## Mocking Firebase
+## Testing Firebase code
+
+### Mocking Firebase
 
 - using standard mocking - couldn't get this working 
     - [users_test.dart](/organising/private/career/Construct/jira-tickets/mock-firebase-example-1.dart)
@@ -80,6 +83,10 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
     - Or probably more usefully, https://github.com/brianegan/flutter_architecture_samples/blob/master/firebase_flutter_repository/test/firebase_flutter_repository_test.dart
     - (Linked to from the stack overflow page)
     - Also try this: https://blog.victoreronmosele.com/mocking-firestore-flutter
+
+### Testing real-time Firebase queries
+
+- I've put a hacky way of doing this in [construct-hacks](construct-hacks.md#testing-real-time-firebase-queries) 
 
 ## Useful mocking tips
 
@@ -388,52 +395,3 @@ void main() {
   });
 ```
 
-## Testing exactly what's happening in some code
-
-- I came up with this probably-terrible hack to give me the equivalent of debug strings while testing!
-- I injected a made-up object into the widget under test,  
-  - then wrote debug strings to that object,
-  - and asserted against those strings
-- Like this, in the code under test:
-
-```dart
-class ClareThing {
-  String test = "";
-}
-class DisplayNameScreen extends StatefulWidget {
-  final ClareThing clareThing;
-
-  const DisplayNameScreen({
-    required this.clareThing,
-  });
-
-  @override
-  State<DisplayNameScreen> createState() => DisplayNameScreenState();
-}
-
-class DisplayNameScreenState extends State<DisplayNameScreen> {
-  onSubmit() async {
-    if (mounted) {
-      widget.clareThing.test = "MOUNTED";
-    }
-```
-
-- ...then like this in the test:
-
-```dart
-    final ClareThing clareThing = ClareThing();
-    clareThing.test = "start";
-
-    await tester.pumpWidget(
-      ListenableProvider(
-        create: (_) => authProvider,
-        child: MaterialApp(
-          home: DisplayNameScreen(
-                        clareThing: clareThing,
-                      ),
-        ),
-      ),
-    );
-
-    expect(clareThing.test, "start");
-```

@@ -15,6 +15,8 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Create / run new app](#create--run-new-app)
     - [VS Code](#vs-code)
     - [IntelliJ IDEA](#intellij-idea)
+- [Dependencies](#dependencies)
+- [Troubleshooting](#troubleshooting)
 
 ## What is Flutter
 
@@ -22,6 +24,10 @@ Flutter is an open-source software development kit which enables smooth and easy
 
 ## Sub-pages
 
+- [Construct hacks](construct-hacks.md)
+- [Construct debugging](construct-debugging.md)
+- [Construct infra](construct-infra.md)
+- [Construct examples](construct-examples.md)
 - [Dart language](dart.md)
 - [Material components](material.md)
 - [Flutter testing](flutter-testing.md)
@@ -67,12 +73,13 @@ Flutter is an open-source software development kit which enables smooth and easy
         - it should be the app folder
         - it won't necessarily be called `app`, but it's the parent that contains the `lib` folder
     - Update dependencies: `flutter pub get`
+        - but generally VS Code should do this for you, whenever it detects that pubspec.yaml has changed
     - Then you have to open `lib/main.dart`
         - You can tell you've done the right thing, because a play button will appear, top right
     - Cmd + Shift + P (View > Command Palette) => type flutter 
     - Flutter: Select Device (to select Chrome / browser or ios)
         - Or click bottom right, where it will show you which device is currently selected
-        - you can start a new iOS simluator here if you want
+        - you can start a new iOS simulator here if you want (see [iOS notes](#getting-started-in-ios))
     - F5 (Run > Start Debugging)
         - Or click the play button, top right
         - if running in iOS for the first time, it downloads ios tools which takes a while
@@ -92,6 +99,15 @@ Flutter is an open-source software development kit which enables smooth and easy
     - See [advanced version](https://dartpad.dev/?id=e7076b40fb17a0fa899f9f7a154a02e8) of the app created during the tutorial
     - [More tutorials and docs](https://flutter.dev/learn)
 
+### Getting started in iOS
+
+- Flutter iOS Tutorial 
+    - I tried the ios one: https://firebase.google.com/codelabs/firebase-ios-swift#2
+    - Do not do this! It's out of date and none of it works as stated!
+- Running in ios simulator
+    - When I (Clare) did this, it updated a bunch of stuff - see my `ios-update` branch
+    - ...then it seemed like nothing happened - it just said "Flutter: Launching..." for ages - not sure how long - 1 or 2 mins maybe?
+    - ...but then it started up
 
 ### IntelliJ IDEA
 
@@ -124,3 +140,12 @@ Flutter is an open-source software development kit which enables smooth and easy
     - There's a codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
     - ...but it assumes you're in VS Code
 
+## Dependencies
+
+- Dependencies are configured in `pubspec.yaml`
+- Update dependencies: `flutter pub get`
+    - but generally VS Code should do this for you, whenever it detects that pubspec.yaml has changed
+
+## Troubleshooting
+
+- See also [Debugging](flutter-debugging.md)

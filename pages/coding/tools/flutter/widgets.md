@@ -10,6 +10,7 @@ permalink: /pages/coding/tools/flutter/Widgets
 
 - [Finding useful widgets etc](#finding-useful-widgets-etc)
 - [Get a dialog to return a value](#get-a-dialog-to-return-a-value)
+- [Streams vs futures](#streams-vs-futures)
 
 ## Finding useful widgets etc
 
@@ -39,5 +40,8 @@ print('Dialog one returned value ---> $val');
 
 - From [here](https://stackoverflow.com/questions/59768792/how-to-get-a-value-from-a-dialog-in-flutter)
 
+# Streams vs futures
 
+- a future gives you a thing from the database and that's it, you've got it, won't know if it changes
+- streams open a connection that stays open, like a web socket, with events notifying you of changes
 

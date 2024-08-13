@@ -8,13 +8,72 @@ permalink: /pages/coding/tools/flutter/Bloc
 
 ## Contents of this page:
 
+- [Intro](#blocs-intro)
+- [How blocs work](#how-blocs-work)
+- [Adding BlocProvider and BlocListener to widgets](#adding-blocprovider-and-bloclistener-to-widgets)
+- [BlocListener](#bloclistener)
+  - [Intro to BlocListener](#intro-to-bloclistener)
+  - [Testing BlocListener](#testing-bloclistener)
 - [Testing blocs](#testing-blocs)
-    - [Verifying mocks in bloc tests](#verifying-mocks-in-bloc-tests)
-    - [Troubleshooting "No method stub was called from within `when()`"](#troubleshooting-no-method-stub-was-called-from-within-when)
-    - [Testing widget code that uses a BlocListener](#testing-widget-code-that-uses-a-bloclistener)
+  - [Verifying mocks in bloc tests](#verifying-mocks-in-bloc-tests)
+  - [Troubleshooting "No method stub was called from within `when()`"](#troubleshooting-no-method-stub-was-called-from-within-when)
+  - [Testing widget code that uses a BlocListener](#testing-widget-code-that-uses-a-bloclistener)
 - [Troubleshooting](#troubleshooting)
-    - [Troubleshooting "Cannot add new events after calling close"](#troubleshooting-cannot-add-new-events-after-calling-close)
-    - [Troubleshooting error on emitter.dart line 114](#troubleshooting-error-on-emitterdart-line-114)
+  - [Troubleshooting "Cannot add new events after calling close"](#troubleshooting-cannot-add-new-events-after-calling-close)
+  - [Troubleshooting error on emitter.dart line 114](#troubleshooting-error-on-emitterdart-line-114)
+
+## Blocs Intro
+
+- Useful [getting started link](https://bloclibrary.dev/getting-started/)
+
+## How blocs work
+
+- in each bloc you have three things
+    - the bloc - logic combining events and states - `xxx_bloc.dart`
+    - the events - `xxx_event.dart`
+    - the states - `xxx_state.dart`
+- in `xxx_bloc.dart` in our event handler we emit states
+    - in our test, we assert that those states should have been emitted
+    - each state is an instance of a class
+        - those classes are defined in `xxxx_state`
+    - then in the screen...
+        - you could (eg) have a switch statement that responds to the different states
+    - when the screen starts up, it might triggers an initial Event
+    - the bloc is responsible for defining what happens in response to different events
+    - it will emit different states while responding to events
+    - the screen might then have a switch statement that responds to different states
+- events emit states 
+    - the internal state of the object will change as a result of the state being emitted
+    - so any data that's passed to the emit code on the new state instance will get persisted
+    - this is not immediately visible - it's down to the internal plumbing of bloc code, and what happens when you call emit
+- tests will always have expectation sections that say "we expect these states to be emitted, set up in this way"
+    - so your expect section expects to be passed a list of state instances
+        - Pedantic note: The expect section is in fact an argument being passed to the bloctest framework
+    - order matters! You're basically saying, "I expect these states to be emitted in this order"
+- An example - the `FetchMatchbox` event 
+  - see [here](construct-examples.md#the-matchbox-bloc-and-the-fetchmatchbox-event)
+- An example using `BlocListener` 
+  - This allows us to add functionality that needs to occur once per state change - in this case showing a Dialog
+  - see [here](construct-examples.md#the-matchbox-bloc-and-bloclistener)
+  - also notes [below](#bloclistener)
+
+## Adding BlocProvider and BlocListener to widgets
+
+- It can be a bit fiddly to get everything nested in the right order.
+- See skeleton examples [here](construct-examples.md#nested-structures-for-blocprovider-bloclistener-etc)
+
+## BlocListener
+
+### Intro to BlocListener
+
+- See documentation [here](https://bloclibrary.dev/flutter-bloc-concepts/#bloclistener)
+- BlocListener is a Flutter widget which takes a BlocWidgetListener and an optional Bloc and invokes the listener in response to state changes in the bloc. It should be used for functionality that needs to occur once per state change such as navigation, showing a SnackBar, showing a Dialog, etc
+- see example [here](construct-examples.md#the-matchbox-bloc-and-bloclistener)
+- See also [Testing widget code that uses a BlocListener](#testing-widget-code-that-uses-a-bloclistener)
+
+### Testing BlocListener
+
+- This approach works, using `whenListen`: https://github.com/felangel/bloc/blob/db714f374fe315dd78d644ad56daa003aca58de7/examples/flutter_weather/test/settings/view/settings_page_test.dart#L48
 
 ## Testing blocs
 
@@ -158,6 +217,7 @@ testWidgets('If bloc has UserReady state, redirect to thing',
 
 ### Troubleshooting error on emitter.dart line 114
 
+- This is actually an `async / await` problem
 - This manifests really oddly
 - The code stops in the debugger on whatever the previous line of code was
 - But if you add debug strings you'll see the code has got past that and into the bloc event handler

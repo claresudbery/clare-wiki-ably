@@ -17,6 +17,8 @@ permalink: /pages/coding/tools/flutter/Dart
 - [The double dots / double dot operator](#the-double-dots--double-dot-operator)
 - [=> notation](#-notation)
 - [Equality checks in Dart](#equality-checks-in-dart)
+- [dart format, etc](#dart-format-etc)
+- [Trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
 
 ## Useful links
 
@@ -131,3 +133,55 @@ expect(postedRhet, equals(postedRhet)); // true
   - it uses the props to check the values against (rather than automatically figuring out which attributes on the class to use)
   - https://github.com/felangel/equatable/blob/ed646e59e8e33942b3aa6c35cbf78e83324e3e25/lib/src/equatable_mixin.dart#L25
   - `equals(props, other.props);`
+
+## Dart format, etc
+
+- run the following commands before issuing a PR:
+
+```bash
+dart fix --apply
+dart format .
+dart analyze
+```
+
+- `dart fix --dry-run` will suggest changes based on what options are in `analysis_options.yaml`
+    - `dart fix --apply` will make actual changes to fix issues
+- but often those changes will result in formatting issues, eg it will add a trailing comm a but not move the final enclosing bracket to a new line
+    - to fix that, run `dart format .`
+    - it will fix any problems it finds
+    - you need the dot at the end to specify location
+- all these commands can be run on a specific file or folder
+    - get the relative path of the file (right-click at the top to get relative path) and just paste it after the command
+    - eg `dart fix --apply test/screens/display_name_test.dart`
+    - or `dart format test/screens/display_name_test.dart`
+- can also turn on format on save in VS Code => Settings => Search for format => Format on Save
+    - it picks up on any settings in any formatters you have to have configured
+    - because I have the Dart extension, I therefore have Dart formatting rules
+    - it won't fix everything though - will still need to run `dart fix --apply` and `dart format`
+- Chad has made a change to how `dart format` runs in the pipeline...
+  - See [construct infra](construct-infra.md#tools-like-dart-format-in-our-pipeline)
+
+## Trying to make things const that can't be const
+
+- VS Code will often prompt you to make objects `const` for efficiency
+- But this can lead you down the road of thinking they HAVE to be const, when they don't
+- In my case it was the `expect` statement in a `blocTest`:
+
+```dart
+expect: () => [
+    const MatchboxStateInitial(),
+    const MatchboxStateLoading(),
+  ],
+```
+
+- I then changed the second object into something that couldn't be `const`, but because the prev one was `const`, I thought this had to be `const` too.
+- Led me down a whole rabit hole of trying to make something be `const` that couldn't be `const`!
+- Anyway, the solution was to simply remove the `const` keyword and all was fine:
+
+```dart
+expect: () => [
+    const MatchboxStateInitial(),
+    MatchboxStateSuccess(matchbox: matchbox),
+  ],
+```
+
