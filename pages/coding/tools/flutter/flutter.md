@@ -24,10 +24,10 @@ Flutter is an open-source software development kit which enables smooth and easy
 
 ## Sub-pages
 
-- [Construct hacks](construct-hacks.md)
-- [Construct debugging](construct-debugging.md)
-- [Construct infra](construct-infra.md)
-- [Construct examples](construct-examples.md)
+- [Construct hacks](flutter-construct/construct-hacks.md)
+- [Construct debugging](flutter-construct/construct-debugging.md)
+- [Construct infra](flutter-construct/construct-infra.md)
+- [Construct examples](flutter-construct/construct-examples.md)
 - [Dart language](dart.md)
 - [Material components](material.md)
 - [Flutter testing](flutter-testing.md)

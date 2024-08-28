@@ -159,7 +159,7 @@ dart analyze
     - because I have the Dart extension, I therefore have Dart formatting rules
     - it won't fix everything though - will still need to run `dart fix --apply` and `dart format`
 - Chad has made a change to how `dart format` runs in the pipeline...
-  - See [construct infra](construct-infra.md#tools-like-dart-format-in-our-pipeline)
+  - See [construct infra](flutter-construct/construct-infra.md#tools-like-dart-format-in-our-pipeline)
 
 ## Trying to make things const that can't be const
 

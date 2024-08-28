@@ -86,7 +86,7 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
 
 ### Testing real-time Firebase queries
 
-- I've put a hacky way of doing this in [construct-hacks](construct-hacks.md#testing-real-time-firebase-queries) 
+- I've put a hacky way of doing this in [construct-hacks](flutter-construct/construct-hacks.md#testing-real-time-firebase-queries) 
 
 ## Useful mocking tips
 

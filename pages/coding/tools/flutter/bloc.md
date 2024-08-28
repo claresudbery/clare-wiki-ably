@@ -51,16 +51,16 @@ permalink: /pages/coding/tools/flutter/Bloc
         - Pedantic note: The expect section is in fact an argument being passed to the bloctest framework
     - order matters! You're basically saying, "I expect these states to be emitted in this order"
 - An example - the `FetchMatchbox` event 
-  - see [here](construct-examples.md#the-matchbox-bloc-and-the-fetchmatchbox-event)
+  - see [here](flutter-construct/construct-examples.md#the-matchbox-bloc-and-the-fetchmatchbox-event)
 - An example using `BlocListener` 
   - This allows us to add functionality that needs to occur once per state change - in this case showing a Dialog
-  - see [here](construct-examples.md#the-matchbox-bloc-and-bloclistener)
+  - see [here](flutter-construct/construct-examples.md#the-matchbox-bloc-and-bloclistener)
   - also notes [below](#bloclistener)
 
 ## Adding BlocProvider and BlocListener to widgets
 
 - It can be a bit fiddly to get everything nested in the right order.
-- See skeleton examples [here](construct-examples.md#nested-structures-for-blocprovider-bloclistener-etc)
+- See skeleton examples [here](flutter-construct/construct-examples.md#nested-structures-for-blocprovider-bloclistener-etc)
 
 ## BlocListener
 
@@ -68,7 +68,7 @@ permalink: /pages/coding/tools/flutter/Bloc
 
 - See documentation [here](https://bloclibrary.dev/flutter-bloc-concepts/#bloclistener)
 - BlocListener is a Flutter widget which takes a BlocWidgetListener and an optional Bloc and invokes the listener in response to state changes in the bloc. It should be used for functionality that needs to occur once per state change such as navigation, showing a SnackBar, showing a Dialog, etc
-- see example [here](construct-examples.md#the-matchbox-bloc-and-bloclistener)
+- see example [here](flutter-construct/construct-examples.md#the-matchbox-bloc-and-bloclistener)
 - See also [Testing widget code that uses a BlocListener](#testing-widget-code-that-uses-a-bloclistener)
 
 ### Testing BlocListener
