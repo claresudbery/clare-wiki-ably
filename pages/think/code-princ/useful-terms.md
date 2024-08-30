@@ -309,3 +309,20 @@ The Law of Demeter (LoD) or principle of least knowledge is a design guideline f
 - Knowledge
 - Ability
 - Reinforcement/Revisit/Review
+
+# mixin
+
+- A mixin is a special kind of multiple inheritance. There are two main situations where mixins are used:
+  - You want to provide a lot of optional features for a class.
+  - You want to use one particular feature in a lot of different classes.
+- The below is copied from [here](https://stackoverflow.com/questions/533631/what-is-a-mixin-and-why-is-it-useful):
+- In Python, if I wanted to make a request object that supports accept headers, etags, authentication, and user agent support, I could do this:
+
+```python
+from werkzeug import BaseRequest, AcceptMixin, ETagRequestMixin, UserAgentMixin, AuthenticationMixin
+
+class Request(AcceptMixin, ETagRequestMixin, UserAgentMixin, AuthenticationMixin, BaseRequest):
+    pass
+```
+
+The mixin classes weren't made to stand on their own. In more traditional multiple inheritance, the AuthenticationMixin (for example) would probably be designed to stand on its own.

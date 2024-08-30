@@ -408,3 +408,16 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 ## Neck message roller
 
 - I bought this from Poxdo PTE Ltd on Sat 16/3/24, after seeing an ad on Twitter (I think? Or maybe Insta?)
+
+## Microsoft Office 365
+
+- If any family member needs to [reinstall](#microsoft-office-365):
+- Two options:
+  - 1. They sign in to their account and manage from there:
+    - That family member simply needs to log into the same MS Account used to accept the original share 
+    - Go to Services/Subscriptions: https://account.microsoft.com/services/
+    - Download and install
+  - 2. Give them a sharing link:
+    - Go to the Microsoft Office section in your account: https://account.microsoft.com/services/microsoft365/details
+    - Click the Share button (even though it's already shared with them)
+    - Copy and share the link it gives you
