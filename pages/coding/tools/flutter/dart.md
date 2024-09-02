@@ -6,21 +6,25 @@ permalink: /pages/coding/tools/flutter/Dart
 
 # Dart
 
-## Contents of this page:
+## Contents of this page
 
 - [Useful links](#useful-links)
+- [Intro](#intro)
 - [Dart Parameters](#dart-parameters)
 - [Dart Classes](#dart-classes)
+- [Final and Const](#final-and-const)
+  - [Static consts](#static-consts)
+  - [Trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
+- [Extension methods](#extension-methods)
+- [The dynamic type](#the-dynamic-type)
 - [Lists](#lists)
 - [Sets](#sets)
 - [Generics](#generics)
-- [Static consts](#static-consts)
 - [String interpolation](#string-interpolation)
 - [The double dots / double dot operator](#the-double-dots--double-dot-operator)
 - [=> notation](#-notation)
 - [Equality checks in Dart](#equality-checks-in-dart)
 - [dart format, etc](#dart-format-etc)
-- [Trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
 
 ## Useful links
 
@@ -31,7 +35,7 @@ permalink: /pages/coding/tools/flutter/Dart
 ## Intro
 
 - Dart is an object-oriented language with classes and mixin-based inheritance
-  - A [mixin](#mixins) is a special kind of multiple inheritance
+  - A [mixin](dart-classes.md#mixins) is a special kind of multiple inheritance
 - Every object is an instance of a [class](#classes), and all classes except `Null` descend from `Object`
 
 ## Dart Parameters
@@ -42,40 +46,78 @@ permalink: /pages/coding/tools/flutter/Dart
 
 - See [separate page](dart-classes.md#dart-classes)
 
-## Mixins
+## Final and Const
 
-- Mixins are a way of defining code that can be reused in multiple class hierarchies.
-- To use a mixin, use the with keyword followed by one or more mixin names:
-
-```dart
-class Maestro extends Person with Musical, Aggressive, Demented {
-  Maestro(String maestroName) {
-    name = maestroName;
-    canConduct = true;
-  }
-}
-```
-
-- To define a mixin, use the mixin declaration. 
-- Mixins and mixin classes cannot have an extends clause, and must not declare any generative constructors.
+- A `final` variable can be set only once
+- A `const` variable is a compile-time constant. 
+- Const variables are implicitly `final`.
+- Instance variables can be `final` but not `const`.
+- `final` and `const` can be used either instead of var or in addition to a type
+- If the `const` variable is at the class level, mark it [`static const`](#static-consts)
+  - `final` instance variables will be unchangeable beyond initialization
+  - This means they don't get the implicit setter that other instance vars get
+- The analyzer will encourage you to use `const` when you can, because it optimises compilation
+  - But sometimes that leaves you with `const` keywords that cause errors when you try to replace a const with a non-const
+  - In these cases you can often simply remove the `const` keyword
+  - See [trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
 
 ```dart
-mixin Musical {
-
-  void entertainMe() {
-    print('Playing piano');
-  }
-}
+final name = 'Bob'; // Without a type annotation
+final String nickname = 'Bobby';
+const bar = 1000000; // Unit of pressure (dynes/cm2)
+const double atm = 1.01325 * bar; // Standard atmosphere
 ```
 
-- mixins can't use constructor parameters to instantiate their own fields, but it is possible to
-  - Define abstract members in the mixin
-  - Access state in the mixin's subclass
-  - Implement an interface
-  - Use the `on` clause to declare a superclass
-  - Use the `mixin class` declaration to define a class that is usable as both a regular class and a mixin
-    - Any restrictions that apply to classes or mixins also apply to mixin classes
-- More [here](https://dart.dev/language/mixins)
+- You can also use `const` to create constant values. 
+- Any variable can have a constant value.
+- You can change the value of a non-final, non-const variable, even if it used to have a `const` value
+
+```dart
+var foo = const [];
+final bar = const [];
+const baz = []; // Equivalent to `const baz = const []`
+foo = [1, 2, 3]; // Was const []
+```
+
+### Static consts
+
+```
+class CreateMatchboxWidgetKeys {
+  static const Key nameLabel = Key('Name_Label');
+  static const Key descriptionLabel = Key('Description_Label');
+}
+
+...
+        children: <Widget>[
+          Text(
+            item.title ?? '',
+            key: CreateMatchboxWidgetKeys.nameLabel,
+          ),
+```
+
+### Trying to make things const that can't be const
+
+- VS Code will often prompt you to make objects `const` for efficiency
+- But this can lead you down the road of thinking they HAVE to be const, when they don't
+- In my case it was the `expect` statement in a `blocTest`:
+
+```dart
+expect: () => [
+    const MatchboxStateInitial(),
+    const MatchboxStateLoading(),
+  ],
+```
+
+- I then changed the second object into something that couldn't be `const`, but because the prev one was `const`, I thought this had to be `const` too.
+- Led me down a whole rabit hole of trying to make something be `const` that couldn't be `const`!
+- Anyway, the solution was to simply remove the `const` keyword and all was fine:
+
+```dart
+expect: () => [
+    const MatchboxStateInitial(),
+    MatchboxStateSuccess(matchbox: matchbox),
+  ],
+```
 
 ## Extension methods
 
@@ -137,22 +179,6 @@ print('42'.parseInt()); // Use an extension method.
 - eg `var favorites = <WordPair>[];`
     - this is an empty list of objects of type `WordPair`
     - (instances of the `WordPair` class)
-
-## Static consts
-
-```
-class CreateMatchboxWidgetKeys {
-  static const Key nameLabel = Key('Name_Label');
-  static const Key descriptionLabel = Key('Description_Label');
-}
-
-...
-        children: <Widget>[
-          Text(
-            item.title ?? '',
-            key: CreateMatchboxWidgetKeys.nameLabel,
-          ),
-```
 
 ## String interpolation
 
@@ -254,28 +280,4 @@ dart analyze
     - it won't fix everything though - will still need to run `dart fix --apply` and `dart format`
 - Chad has made a change to how `dart format` runs in the pipeline...
   - See [construct infra](flutter-construct/construct-infra.md#tools-like-dart-format-in-our-pipeline)
-
-## Trying to make things const that can't be const
-
-- VS Code will often prompt you to make objects `const` for efficiency
-- But this can lead you down the road of thinking they HAVE to be const, when they don't
-- In my case it was the `expect` statement in a `blocTest`:
-
-```dart
-expect: () => [
-    const MatchboxStateInitial(),
-    const MatchboxStateLoading(),
-  ],
-```
-
-- I then changed the second object into something that couldn't be `const`, but because the prev one was `const`, I thought this had to be `const` too.
-- Led me down a whole rabit hole of trying to make something be `const` that couldn't be `const`!
-- Anyway, the solution was to simply remove the `const` keyword and all was fine:
-
-```dart
-expect: () => [
-    const MatchboxStateInitial(),
-    MatchboxStateSuccess(matchbox: matchbox),
-  ],
-```
 

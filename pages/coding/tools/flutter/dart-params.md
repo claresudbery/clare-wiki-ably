@@ -4,7 +4,18 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Dart-Params
 ---
 
-## Dart Parameters
+# Dart Parameters
+
+## Contents of this page
+
+- [Intro](#intro)
+- [Default values](#default-values)
+- [Named parameters](#named-parameters)
+- [Positional parameters](#positional-parameters)
+- [Optional parameters](#optional-parameters)
+- [Required parameters](#required-parameters)
+
+## Intro
 
 - There are lots of different types of parameter
 - It can get confusing, particularly when the compiler complains at you and tries to suggest ways of fixing things which can end up just making things worse.
@@ -25,13 +36,13 @@ permalink: /pages/coding/tools/flutter/Dart-Params
   - When calling a function, named params can be placed anywhere in the argument list
     - ...but positional params cannot (the clue's in the name!)
 - More detail on the different things you can do with parameters:
-  - Give [default values](#parameters-default-values)
+  - Give [default values](#default-values)
   - Have [named parameters](#named-parameters)
   - Have [positional parameters](#positional-parameters)
   - Have [optional parameters](#optional-parameters)
   - Have [required parameters](#required-parameters)
 
-### Parameters: Default values
+## Default values
 
 - You can't give default values to ordinary parameters 
 - You can only do it with optional parameters (named or positional)
@@ -58,7 +69,7 @@ void defaultNamedParams({int param2 = 3, int param3 = 4}) {
 }
 ```
 
-### Named parameters
+## Named parameters
 
 - Named params are denoted using `{}`, eg `void myFunc({bool namedParam}) {...}`
 - Named params are optional by default. To make them required, add the `required` keyword (see [below](#named-parameters))
@@ -91,7 +102,7 @@ void doStuff() {
 }
 ```
 
-### Positional parameters
+## Positional parameters
 
 - Unless specified otherwise (as described below), all params are positional
 - Positional params have to be provided in the correct order when the function is called
@@ -131,7 +142,7 @@ void doStuff() {
 }
 ```
 
-### Optional parameters
+## Optional parameters
 
 - Unless specified otherwise (as described below), all params are required
 - Optional params do not have to be present in the arg list when the function is called
@@ -178,7 +189,7 @@ void doStuff() {
 }
 ```
 
-### Required parameters
+## Required parameters
 
 - Unless specified otherwise (as described below), all params are required
 - Required params have to be present in the arg list when the function is called

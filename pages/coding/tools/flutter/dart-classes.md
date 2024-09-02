@@ -4,9 +4,24 @@ location: pages/coding/tools/flutter/leaf
 permalink: /pages/coding/tools/flutter/Dart-Classes
 ---
 
+# Dart Classes
 
+## Contents of this page
 
-## Dart Classes
+- [Intro](#intro)
+- [Declaring Classes](#declaring-classes)
+- [Instance variables](#instance-variables)
+- [Constructors](#constructors)
+  - [Default constructors](#default-constructors)
+  - [Generative constructors](#generative-constructors)
+  - [Named constructors](#named-constructors)
+  - [Other constructors](#other-constructors)
+- [Initializing instance variables](#initializing-instance-variables)
+  - ['Initializing formal' parameters](#initializing-formal-parameters)
+  - [Initializer lists](#initializer-lists)
+- [Mixins](#mixins)
+
+## Intro
 
 - Mixin-based inheritance means that although every class (except for the top class, Object?) has exactly one superclass, a class body can be reused in multiple class hierarchies.
   - See [below](#mixins) for more on mixins
@@ -21,15 +36,30 @@ var p1 = new Point(2, 2);
 var p2 = new Point.fromJson({'x': 1, 'y': 2});
 ```
 
-### Declaring Classes
+## Declaring Classes
 
-- Objects have members consisting of functions and data (methods and instance variables, respectively).
-- Here's how you declare instance variables:
+- Objects have members consisting of functions and data (methods and [instance variables](#instance-variables), respectively).
+- Here's a pretty typical class declaration:
 
 ```dart
-class Point {
-  double? x; // Declare instance variable x, initially null.
-  double z = 0; // Declare z, initially 0.
+class Thing {
+  // Instance variables with implicit getters
+  final String? id;
+  final DateTime? startDate;
+  String authorID; // non-final means implicit setter too
+
+  // Generative constructor
+  Thing({
+    // Named initializing formal parameters
+    this.id,
+    required this.startDate,
+    required this.authorID,
+  });
+
+  // class member method
+  bool hasStarted() {
+    return DateTime.now().isAfter(startDate!);
+  }
 }
 ```
 
@@ -39,7 +69,44 @@ class Point {
   - [Named constructors](#named-constructors)
   - [Other constructors](#other-constructors)
   - ['Initializing formal' parameters](#initializing-formal-parameters)
-  - [Initializer lists]()
+  - [Initializer lists](#initializer-lists)
+
+## Instance variables
+
+- Here's how you declare instance variables (class properties):
+
+```dart
+class Point {
+  double? x; // Declare instance variable x, initially null.
+  double z = 0; // Declare z, initially 0.
+}
+```
+
+- All non-nullable instance variables must be initialised 
+  - but this can happen via initializing formal params
+  - or the initializer list of a constructor
+  - it doesn't have to happen at the point of declaration
+  - see [below](#initializing-instance-variables) for more
+- Implicit getters and setters:
+  - All instance variables generate an implicit getter method. 
+  - Non-final instance variables and `late final` instance variables without initializers also generate an implicit setter method.
+  - See [here](dart.md#final-and-const) for more on `const and final`
+
+```dart
+class Point {
+  double? x; // Declare instance variable x, initially null.
+  double? y; // Declare y, initially null.
+}
+
+void main() {
+  var point = Point();
+  point.x = 4; // Use the setter method for x.
+  assert(point.x == 4); // Use the getter method for x.
+  assert(point.y == null); // Values default to null.
+}
+```
+
+## Constructors
 
 ### Default constructors
 
@@ -97,6 +164,8 @@ class Thing6 {
 - [Constant constructors](https://dart.dev/language/constructors#constant-constructors)
 - [Factory constructors](https://dart.dev/language/constructors#factory-constructors)
 - [Redirecting constructors](https://dart.dev/language/constructors#redirecting-constructors)
+
+## Initializing instance variables
 
 ### 'Initializing formal' parameters
 
@@ -170,6 +239,10 @@ class Thing7 {
 ```
 
 - ...or you can add an initializer list to a generative or named constructor.
+- All non-nullable instance variables must be initialised 
+  - but this can happen via initializing formal params
+  - or the initializer list of a constructor
+  - it doesn't have to happen at the point of declaration
 - Warning: The right-hand side of an initializer list can't access `this`.
 - More [here](https://dart.dev/language/constructors#use-an-initializer-list)
 
@@ -201,4 +274,38 @@ class Point {
 }
 ```
 
+## Mixins
+
+- Mixins are a way of defining code that can be reused in multiple class hierarchies.
+- To use a mixin, use the with keyword followed by one or more mixin names:
+
+```dart
+class Maestro extends Person with Musical, Aggressive, Demented {
+  Maestro(String maestroName) {
+    name = maestroName;
+    canConduct = true;
+  }
+}
+```
+
+- To define a mixin, use the mixin declaration. 
+- Mixins and mixin classes cannot have an extends clause, and must not declare any generative constructors.
+
+```dart
+mixin Musical {
+
+  void entertainMe() {
+    print('Playing piano');
+  }
+}
+```
+
+- mixins can't use constructor parameters to instantiate their own fields, but it is possible to
+  - Define abstract members in the mixin
+  - Access state in the mixin's subclass
+  - Implement an interface
+  - Use the `on` clause to declare a superclass
+  - Use the `mixin class` declaration to define a class that is usable as both a regular class and a mixin
+    - Any restrictions that apply to classes or mixins also apply to mixin classes
+- More [here](https://dart.dev/language/mixins)
 
