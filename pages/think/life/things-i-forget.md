@@ -353,3 +353,8 @@ A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 
 - On external hard disk:
 - /Volumes/WD USB 2/2014-04-01_Backup/_201105_ClaresStuff_backup/_Teaching/Resources/Shape and Space/Shapes/Paper folding/origami cube
+
+# What are those company / place names that I think hint at swearwords like fuck?
+
+- Ing Direct makes me think of "Fucking Direct"
+- "Kinell" (place name and surname) make me think of "Fucking Hell" or "Fuckin' 'ell"

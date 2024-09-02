@@ -56,6 +56,18 @@ Flutter is an open-source software development kit which enables smooth and easy
 
 ## Create / run new app
 
+### Command line
+
+- This is from [this tutorial](https://codelabs.developers.google.com/codelabs/flutter-app-testing?hl=en#2) to create an app for the purpose of exploring the test framework
+- Run these commands:
+
+```bash
+flutter create --empty testing_app
+cd testing_app
+flutter pub add provider go_router dev:test 'dev:flutter_driver:{"sdk":"flutter"}' 'dev:integration_test:{"sdk":"flutter"}'
+flutter run
+```
+
 ### VS Code
 
 - From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
