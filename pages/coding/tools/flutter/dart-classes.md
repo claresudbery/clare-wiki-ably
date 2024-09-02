@@ -39,6 +39,7 @@ var p2 = new Point.fromJson({'x': 1, 'y': 2});
 ## Declaring Classes
 
 - Objects have members consisting of functions and data (methods and [instance variables](#instance-variables), respectively).
+- See [sample code](sample_code_test.dart) for some tests that play around with constructors and parameters
 - Here's a pretty typical class declaration:
 
 ```dart
@@ -70,6 +71,7 @@ class Thing {
   - [Other constructors](#other-constructors)
   - ['Initializing formal' parameters](#initializing-formal-parameters)
   - [Initializer lists](#initializer-lists)
+- See [sample code](sample_code_test.dart) for some tests that play around with constructors and parameters
 
 ## Instance variables
 
