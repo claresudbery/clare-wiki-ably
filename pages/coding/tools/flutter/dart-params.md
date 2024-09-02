@@ -41,7 +41,8 @@ permalink: /pages/coding/tools/flutter/Dart-Params
   - Have [positional parameters](#positional-parameters)
   - Have [optional parameters](#optional-parameters)
   - Have [required parameters](#required-parameters)
-- See [sample code](sample_code_test.dart) for some tests that play around with constructors and parameters
+- See [sample code](flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
+  - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 
 ## Default values
 
