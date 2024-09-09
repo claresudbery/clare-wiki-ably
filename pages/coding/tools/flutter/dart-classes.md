@@ -20,6 +20,7 @@ permalink: /pages/coding/tools/flutter/Dart-Classes
   - ['Initializing formal' parameters](#initializing-formal-parameters)
   - [Initializer lists](#initializer-lists)
 - [Mixins](#mixins)
+- [Private classes](#private-classes)
 
 ## Intro
 
@@ -313,3 +314,6 @@ mixin Musical {
     - Any restrictions that apply to classes or mixins also apply to mixin classes
 - More [here](https://dart.dev/language/mixins)
 
+## Private classes
+
+- The underscore at the start of `_MyHomePageState` in [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/161dbb89bcf7d0ea0e4a3ea52049cb85fcd7437b) makes that class private and is enforced by the compiler.

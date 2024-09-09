@@ -8,6 +8,7 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
 
 ## Contents of this page:
 
+- [Creating a simple test project](#creating-a-simple-test-project)
 - [Testing dependency injection](#testing-dependency-injection)
 - [Testing blocs](#testing-blocs)
 - [Run tests](#run-tests)
@@ -23,6 +24,45 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
   - [Sample hand-cranked navigation testing code v1](#sample-hand-cranked-navigation-testing-code-v1)
   - [Sample hand-cranked navigation testing code v2](#sample-hand-cranked-navigation-testing-code-v2)
 - [Testing the return value of a dialog](#testing-the-return-value-of-a-dialog)
+
+## Creating a simple test project
+
+- I've created an app [here](https://github.com/claresudbery/flutter-test-app/tree/main/testing_app) purely for the purpose of writing / running tests
+- This is what I did to create this v simple test app
+  - Use the following commands to get started:
+
+```bash
+flutter create --empty testing_app
+cd testing_app
+flutter pub add provider go_router dev:test 'dev:flutter_driver:{"sdk":"flutter"}' 'dev:integration_test:{"sdk":"flutter"}'
+flutter run
+```
+
+  - Add a `test` folder at the same level as `lib`
+  - Add a `test` file in the `test` folder, eg `test/sample_code_test.dart`
+  - Remove all the following folders from the same level as `lib` and `dart`:
+    - (You'll be left with only `lib` and `test` folders, apart from hidden folders) 
+    - Remove `windows`, `web`, `ios`, `android`, `linux` and `macos` folders 
+  - Fwiw I used [this codelab](https://codelabs.developers.google.com/codelabs/flutter-app-testing#2) to arrive at this point, but I ended up removing most of the code that was added via that tutorial
+- ! Note that if you want to open this code in VS Code, you have to open the parent folder (`flutter-test-app`) not the app folder (`testing_app`), or VS Code will complain.
+- These are the files / folders I ended up with:
+  - You'll see that I was able to create a very minimal solution, with only the following files:
+    - `lib/main.dart`
+    - `test/sample_code_test.dart` (the name of this file is up to you)
+    - ...and in the root folder:
+      - `analysis_options.yaml`
+      - `devtools_options.yaml`
+      - `pubspec.lock`
+      - `pubspec.yaml`
+      - `README.md`
+  - In my local file system there are some more files, which don't get checked into github but get created as a result of running the app / tests in VS Code:
+    - There is a `build` folder
+    - There is a hidden `.dart_tool` folder
+    - There are the following hidden files in the root folder:
+      - `.flutter-plugins`
+      - `.flutter-plugins-dependencies`
+      - `.gitignore`
+      - `.metadata`
 
 ## Testing dependency injection
 
