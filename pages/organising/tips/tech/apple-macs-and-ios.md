@@ -283,3 +283,8 @@ killall SystemUIServer
         - I thought there was something else but if there was I can't find it!
 - It was only a 10-day trial anyway. You have to pay for full version. It's £26.
 
+## Which thunderbolt / USB-C port to use for charging
+
+- Apparently if you charge your Mac using the left hand ports, it can cause overheating and excessive CPU usage
+- Some recommend using the right hand ports instead
+- But I don't think my current MacBook (circa 2020 to 2024) has this problem!
