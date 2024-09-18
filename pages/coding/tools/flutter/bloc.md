@@ -38,7 +38,7 @@ permalink: /pages/coding/tools/flutter/Bloc
         - those classes are defined in `xxxx_state`
     - then in the screen...
         - you could (eg) have a switch statement that responds to the different states
-    - when the screen starts up, it might triggers an initial Event
+    - when the screen starts up, it might trigger an initial Event
     - the bloc is responsible for defining what happens in response to different events
     - it will emit different states while responding to events
     - the screen might then have a switch statement that responds to different states
@@ -61,6 +61,21 @@ permalink: /pages/coding/tools/flutter/Bloc
 
 - It can be a bit fiddly to get everything nested in the right order.
 - See skeleton examples [here](flutter-construct/construct-examples.md#nested-structures-for-blocprovider-bloclistener-etc)
+- Notes:
+  - The widget's `build` method gets called repeatedly, independently of whether bloc state changes
+  - Every time it's called, it returns a new `BlocProvider`
+  - It also calls whatever `builder` method is returned by the blocProvider
+    - (which might be a previously-generated method)
+  - ...but the blocProvider will only regenerate the `builder` method that's returned in the following circumstances:
+    - a `buildWhen` method returns true (see [here](https://pub.dev/documentation/flutter_bloc/latest/flutter_bloc/BlocBuilder-class.html))
+    - the state has changed
+      - BUT not if the state has changed twice within the same bloc event handler
+      - it only seems to be intersted in the final state emitted from one event handler
+      - However, even though previous state changes in an event handler will not result in the builder being regenerated, the fact that the state has changed within the event handler WILL result in the final state being used for a builder regeneration
+        - but if an event handler just emits one state and that state is the same state as the one previously emitted, that will NOT result in builder regeneration and will NOT result in the widget being rerendered
+    - what happens in the `BlocListener` does not seem to be relevant to whether the widget is re-rendered
+      - I did think maybe events had to be handled in the BlocListener in order to result in re-rendering, but that doesn't seem to be the case
+
 
 ## BlocListener
 
@@ -189,6 +204,17 @@ testWidgets('If bloc has UserReady state, redirect to thing',
 ```
 
 ## Troubleshooting
+
+### Troubleshooting bloc integration tests
+
+- I wanted to test whether it was possible to enter, exit and then re-enter a popup dialog
+- This was dependent on whether a bloc tried to emit the same state repeatedly, and how a bloc listener responded to that
+- I couldn't find a way to test this by mocking the bloc - I needed a real bloc instance rather than a mocked one
+- But when I tried to call `showDialog` within the tested code, the dialog widget was not being added to the widget tree and my test was failing
+- The solution was to use `GetIt.RegisterFactory` within the test code instead of `GetIt.RegisterSingleton`
+  - Same as [below](#troubleshooting-cannot-add-new-events-after-calling-close)
+- I'm still not sure exactly why, but I think it MIGHT be something to do with the context passed to `showDialog`
+- The relevant code is in `matchbox_preview.dart` and `matchbox_preview_bloc_test.dart`
 
 ### Troubleshooting "Cannot add new events after calling close"
 

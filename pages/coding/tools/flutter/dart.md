@@ -58,7 +58,8 @@ permalink: /pages/coding/tools/flutter/Dart
   - This means they don't get the implicit setter that other instance vars get
 - The analyzer will encourage you to use `const` when you can, because it optimises compilation
   - But sometimes that leaves you with `const` keywords that cause errors when you try to replace a const with a non-const
-  - In these cases you can often simply remove the `const` keyword
+    - You might see the error "Invalid constant value"
+  - In these cases you can often simply remove a `const` keyword
   - See [trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
 
 ```dart
@@ -77,6 +78,20 @@ var foo = const [];
 final bar = const [];
 const baz = []; // Equivalent to `const baz = const []`
 foo = [1, 2, 3]; // Was const []
+```
+
+- Sometimes you can get the slightly confusing situation where the return value of a function can be marked `const`, but it can't be put into a `const` variable
+- Idon't honestly quite understand what this means. It's not a compile-time constant because presumably the compiler can't determine the result of a non-const function call in advance... so in this case what does `const` actually mean?
+
+```dart
+// Not allowed - will cause error "Methods can't be invoked in constant expressions"
+const ringID = Uuid().v4(); 
+
+// This is fine, but you'll get a suggestion to use the const keyword
+final ringID = const Uuid().v4();
+
+// This is fine, and will be recommended by the analyzer to improve performance
+final ringID = const Uuid().v4();
 ```
 
 ### Static consts
@@ -117,6 +132,38 @@ expect: () => [
     const MatchboxStateInitial(),
     MatchboxStateSuccess(matchbox: matchbox),
   ],
+```
+
+- Another common example of this looks like this.
+- In the code below, the declaration of `ringID` has been changed from this... 
+  - `const ringID = '4dbea213-afeb-45d7-b44a-30d3cc2ebeb2';` 
+  - ...to this:
+  - `final ringID = const Uuid().v4();`
+- This means you get an error that `ringID` is an "invalid constant value":
+
+```dart
+final ringID = const Uuid().v4();
+GoRoute(
+  path: '/',
+  builder: (context, state) => const MatchboxPreviewScreen(
+    ringID: ringID,
+    matchboxID: matchboxID,
+  ),
+),
+```
+
+- This is because `ringID` is no longer a `const`
+- It can seem like this problem is insurmountable, but actually you just need to remove the `const` keyword from the call to the `MatchboxPreviewScreen` constructor:
+
+```dart
+final ringID = const Uuid().v4();
+GoRoute(
+  path: '/',
+  builder: (context, state) => MatchboxPreviewScreen(
+    ringID: ringID,
+    matchboxID: matchboxID,
+  ),
+),
 ```
 
 ## Extension methods
@@ -259,8 +306,13 @@ expect(postedRhet, equals(postedRhet)); // true
 - run the following commands before issuing a PR:
 
 ```bash
+flutter test
+gch main
+gup
+git merge main
+flutter test
 dart fix --apply
-dart format .
+dart format . # Don't forget to include the dot!
 dart analyze
 ```
 

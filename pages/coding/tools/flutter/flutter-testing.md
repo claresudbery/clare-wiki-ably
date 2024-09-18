@@ -102,7 +102,17 @@ You can also TAG tests within your testing code, then run tests that match that 
 void main() {
   test('launches two browsers at once', () {
     // ...
-  }, tags: ['chrome', 'firefox']);
+  }, tags: ['chrome', 'firefox'],);
+}
+```
+
+You can also SKIP tests you want to ignore:
+
+```dart
+void main() {
+  test("won't actually be executed", () {
+    // ...
+  }, skip: true,);
 }
 ```
 
