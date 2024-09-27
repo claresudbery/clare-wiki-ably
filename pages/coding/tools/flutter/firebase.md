@@ -61,5 +61,12 @@ permalink: /pages/coding/tools/flutter/Firebase
   - Try closing it down with Ctrl + C, then running `pkill -f "firebase/emulators"` before starting it up again
   - We also had to edit emulator.sh at one point to change the `--project` flag from `default` to `--project dev`
 
+## Troubleshooting "permission denied"
+
+- If you try to do various database actions before the user has logged in, you'll get this error
+- eg fetching user info
+- or trying to update matchboxes
+- looks like this: `cloud_firestore/permission-denied`
+
 
     
