@@ -358,3 +358,5 @@ A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 
 - Ing Direct makes me think of "Fucking Direct"
 - "Kinell" (place name and surname) make me think of "Fucking Hell" or "Fuckin' 'ell"
+
+# What's that app that helps you cope with jet lag / jetlag?

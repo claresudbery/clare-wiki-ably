@@ -421,3 +421,21 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
     - Go to the Microsoft Office section in your account: https://account.microsoft.com/services/microsoft365/details
     - Click the Share button (even though it's already shared with them)
     - Copy and share the link it gives you
+
+## Obsidian
+
+- For taking notes / organising knowledge
+- [Obsidian](https://obsidian.md/)
+- See [here](/pages/organising/BigIndex/Big-Index-Useful-Tools.md#other-technologies-considered-for-bigindex) for other note-taking tools
+- See iPhone Notes: "SoCraTes UK '24" for notes on a session I attended about Obsidian
+- See also book by Tiago Forte - building a second brain - been recommended to me by a few people
+
+## How to oil a lock
+
+- From comvo with mojo on blue pages, #General Questions, p289:
+- "Don't use WD40 for anything other than water displacement or penetration, it all but gives up the ghost in in weeks rather than months (its what its designed for, and is in the title - W(ater)D(isplacement)-40) use something like 3in1, chain oil or sewing machine oil for lubrication. Oh and for god sake never oil a sticky or stiff lock use graphite powder (from a pencil) or spray."
+- "The stuff I used is `WRX Technical Spray - Penetrating oilk, contains graphite and MoS`. I can't tell from your description whether it's right or wrong. Because it's oil (which you say not to use) and it's penetrating (which you also warn against), but it contains graphite (which you recommend) and it's a spray (which you also recommend)??"
+- "So this is entirely to do with what happens after the oil has penetrated (this is a penetrating oil, with graphite and Molybdenum disulfide) - by being light and having the ability to get between seized items it also evaporates rather rapidly leaving a gummy residue which sometimes makes the situation worse - a lock has many small items that are dependant on being able to move smoothly - this is where the Graphite and Molybdenum disulfide come into play - they remain after the oil evaporates leaving a longer and dryer lubrication still in the lock (*locks can get stiff for other reasons other than lubricaton)."
+- "So... is it the right stuff or not?"
+- "Middle of the road - not great, not the worst it could be."
+

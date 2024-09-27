@@ -4,7 +4,16 @@ location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/Kinemaster
 ---
 
+- See also [misc-tools.md](/pages/organising/tools/misc-tools.md#video-editing-tools)
+
 ## To turn an audio file into a video file for youtube
+
+- (Alternatively, use [Descript](pages/organising/podcasts/descript.md) and just drag and drop the audio into a new video project)
+- Create new project
+- Add an image using the media section
+- Import the audio as per [instructions below](#to-add-your-own-sound)
+- Lengthen the image to last as long as the audio
+- Use the export button (top right) to save as video
 
 ## To extract sound from video
 

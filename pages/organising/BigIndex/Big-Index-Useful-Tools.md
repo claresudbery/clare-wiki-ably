@@ -15,6 +15,10 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 - [Notion](https://www.notion.so)
   - "I've been exploring [Notion](https://www.notion.so) for the last few months and found it to be excellent at most of the things you're looking for. But the advanced features of databases with custom views, functions, etc are what I'm really enjoying the most."
   - "If you want a good idea of what you can do with it - Here's a good [YouTube video that turned me onto it](https://youtu.be/m9S5I3pWz94)."
+  - Luce Carter uses it too
+    - I think I have notes somewhere about that, not sure where though!
+- [Obsidian](/pages/organising/tools/misc-tools.md#obsidian)
+- See also book by Tiago Forte - building a second brain - been recommended to me by a few people
 
 ### Dokuwiki
 
