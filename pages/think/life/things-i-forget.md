@@ -360,3 +360,10 @@ A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 - "Kinell" (place name and surname) make me think of "Fucking Hell" or "Fuckin' 'ell"
 
 # What's that app that helps you cope with jet lag / jetlag?
+
+- Timeshifter
+
+# Is Truman Hanks related to Tom Hanks?
+
+- Yes, he is his son and played the younger him in A Man Called Otto, but Tom Hanks was not in The Truman Show and has not shared why he called his son Truman
+
