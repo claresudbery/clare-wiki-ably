@@ -37,6 +37,12 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - [Beaumont Park](https://www.tripadvisor.co.uk/Attraction_Review-g190748-d7029653-Reviews-Beaumont_Park-Huddersfield_West_Yorkshire_England.html?m=19905), Huddersfield - gothic victorian overgrown park
 - Pickmere lake in Cheshire - gentle wild swimming (recommended by Doug)
 - Creswell Crags / Cresswell Crags - near Sheffield - can book tour of cave paintings - has nice little museum
+- Yorkshire Sculpture Park (YSP), Bretton Hall
+- The Crocky Trail, Cheshire
+- Dunham Massey Christmas Lights / Xmas Lights
+  - [Main info](https://www.nationaltrust.org.uk/visit/cheshire-greater-manchester/dunham-massey/christmas-lights-at-dunham-massey)
+  - [Tickets](https://premier.ticketek.co.uk/shows/Show.aspx?sh=DMTRAILO24)
+- Tatton Park
 
 ### Peak District
 

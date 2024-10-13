@@ -630,3 +630,20 @@ var str = "Your score was \(score)"
 - You can then right-click and open that file using TextEdit, then edit the text directly.
 - To find out which setting you need, you can edit in XCode first, then save, then check git status to see what the text value is
     - eg in XCode the setting called "iOS Deployment Target" is in the text file as "IPHONEOS_DEPLOYMENT_TARGET"
+
+## Testing with older simulators
+
+- To add a simulator for an older iPhone version in Xcode, you can do the following: 
+- Open Xcode 
+- Select Window > Devices and Simulators 
+- Select Simulators at the top of the sidebar 
+- Click the Add button (+) in the bottom left corner 
+- Choose a Device Type and OS Version for your simulator 
+- Optionally, provide a name for the simulator 
+- You might find there isn't an appropriate ios version available for the simulator, in which case:
+  - Click "download more simulator runtimes" in the dropdown
+  - Click the + button at the bottom of the list of platforms
+  - find the one you want, and download it
+  - after you've done this, if you stioll have the previous dialog open, you won't be able to select the new runtime
+    - you have to close it and then open it again with the plus button
+- Click Create to create the new simulator

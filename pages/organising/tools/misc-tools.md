@@ -331,6 +331,9 @@ re, sorry!)
     - When you first install it, it tells you to do this but you might find you can 't because it's not actually listed there
     - Just copy something into clipboard and then press Command + Shift + V
     - Then you will get the same message again, and this time Flycut will be listed under Accessibility
+  - ! Sometimes a bug means the popup gets stuck in the middle of your screen
+    - To get rid of it, Use Cmd + Space + Flycut to "open" the Flycut app
+    - The app won't open, but the popup will go away
 
 ## Bulk rename utility for Windows
 
@@ -375,7 +378,19 @@ re, sorry!)
   - Scroll through the carousel of themes at the top until you see the parent slide for your theme
   - PRESS CTRL, then click on the theme you want, select "Apply to selected slides" it will be applied to the selected slide(s).
 
-### Booking.com
+### Turn on live subtitles
+
+- You can do this while presenting
+- You need an Office 365 subscription
+- Click the Slide Show tab
+- Check Always Use Subtitles
+- Underneath, click Settings:
+  - Select the language you're speaking and the language you want the subtitles to be in
+  - Choose your microphone
+  - Set the position of your subtitles
+- When you start the slide show, it will transcribe what you're saying live! Cool!
+
+## Booking.com
 
 - To add new hotel booking to calendar - do nothing!
   - There's often a bit of a delay, but you will receive an invite to your Google calendar
