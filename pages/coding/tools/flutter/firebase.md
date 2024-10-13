@@ -12,6 +12,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 - [Editing database - gotchas](#editing-database---gotchas)
 - [How to export / import data?](#how-to-export--import-data)
 - [Troubleshooting lost data from emulator](#troubleshooting-lost-data-from-emulator)
+- [Troubleshooting "permission denied"](#troubleshooting-permission-denied)
 
 ## Tutorial
 
@@ -58,7 +59,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 ## Troubleshooting lost data from emulator
 
 - ! Sometimes the Firebase emulator gets confused and data in the browser doesn't seem to match what's in the app
-  - Try closing it down with Ctrl + C, then running `pkill -f "firebase/emulators"` before starting it up again
+  - Try closing it down / kill the process with Ctrl + C, then running `pkill -f "firebase/emulators"` before starting it up again
   - We also had to edit emulator.sh at one point to change the `--project` flag from `default` to `--project dev`
 
 ## Troubleshooting "permission denied"

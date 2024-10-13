@@ -256,7 +256,7 @@ class SillyText extends StatelessWidget {
   - Extract variable
   - Extract method
   - Extract widget
-  - Wrap with widget
+  - Wrap with widget / insert widget
     - This allows you to specify a parent widget for an existing widget
     - This basically allows you to insert another widget into the widget tree hierarchy
     - It will insert the widget you want (you have to type in its name) and place the existing widget in the new widget's `child` attribute

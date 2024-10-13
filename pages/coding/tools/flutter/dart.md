@@ -19,6 +19,7 @@ permalink: /pages/coding/tools/flutter/Dart
 - [The dynamic type](#the-dynamic-type)
 - [Lists](#lists)
 - [Sets](#sets)
+- [Maps](#maps)
 - [Generics](#generics)
 - [String interpolation](#string-interpolation)
 - [The double dots / double dot operator](#the-double-dots--double-dot-operator)
@@ -219,6 +220,29 @@ print('42'.parseInt()); // Use an extension method.
 ## Sets
 
 - Expressed using `{}`
+
+## Maps
+
+- More [here](https://dart.dev/language/collections#maps)
+- Expressed using `<>` and the keyword `Map`:
+
+```dart
+Map<String, dynamic> initialData = {
+  'foo': 'bar',
+  'bar': 123,
+  'baz': '456',
+};
+```
+
+- ...BUT the `Map` keyword is optional, so it can just look like this:
+
+```dart
+return <String, dynamic> {
+  'foo': 'bar',
+  'bar': 123,
+  'baz': '456',
+};
+```
 
 ## Generics
 

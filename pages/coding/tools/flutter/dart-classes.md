@@ -19,6 +19,7 @@ permalink: /pages/coding/tools/flutter/Dart-Classes
 - [Initializing instance variables](#initializing-instance-variables)
   - ['Initializing formal' parameters](#initializing-formal-parameters)
   - [Initializer lists](#initializer-lists)
+  - [Initialising inherited variables](#initialising-inherited-variables)
 - [Mixins](#mixins)
 - [Private classes](#private-classes)
 
@@ -276,6 +277,19 @@ class Point {
   Point.withAssert(this.x, this.y) : assert(x >= 0) {
     print('In Point.withAssert(): ($x, $y)');
   }
+}
+```
+
+### Initialising inherited variables
+
+- More [here](https://dart.dev/tools/linter-rules/use_super_parameters)
+- In the following examples, the parent class `ShortcutManager` constructor takes a `shortcuts` parameter 
+- and so does the `LoggingShortcutManager` constructor
+- but it just passed its parameter straight through to the parent class for initialisation:
+
+```dart
+class LoggingShortcutManager extends ShortcutManager {
+  LoggingShortcutManager({super.shortcuts});
 }
 ```
 
