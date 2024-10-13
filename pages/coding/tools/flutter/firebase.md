@@ -59,7 +59,9 @@ permalink: /pages/coding/tools/flutter/Firebase
 ## Troubleshooting lost data from emulator
 
 - ! Sometimes the Firebase emulator gets confused and data in the browser doesn't seem to match what's in the app
-  - Try closing it down / kill the process with Ctrl + C, then running `pkill -f "firebase/emulators"` before starting it up again
+  - Try closing it down / kill the process before starting it up again:
+    - Ctrl + C, 
+    - then run `pkill -f "firebase/emulators"` 
   - We also had to edit emulator.sh at one point to change the `--project` flag from `default` to `--project dev`
 
 ## Troubleshooting "permission denied"

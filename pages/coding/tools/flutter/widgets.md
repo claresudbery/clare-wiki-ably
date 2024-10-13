@@ -11,12 +11,12 @@ permalink: /pages/coding/tools/flutter/Widgets
 - [Finding useful widgets etc](#finding-useful-widgets-etc)
 - [Get a dialog to return a value](#get-a-dialog-to-return-a-value)
 - [Streams vs futures](#streams-vs-futures)
-- [Quill Editor]()
-- [Keyboard Shortcuts]()
+- [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Flutter Shortcuts, Actions and Intents](#flutter-shortcuts-actions-and-intents)
   - [The Shortcuts Widget](#the-shortcuts-widget)
   - [Handling Keyboard Shortcuts in the Quill Editor](#handling-keyboard-shortcuts-in-the-quill-editor)
   - [Bug in Quill Editor's Overriding of Keyboard Shortcuts](#handling-keyboard-shortcuts-in-the-quill-editor)
+- [Quill Editor](#quill-editor)
 
 ## Finding useful widgets etc
 

@@ -74,6 +74,7 @@ class Thing {
   - [Other constructors](#other-constructors)
   - ['Initializing formal' parameters](#initializing-formal-parameters)
   - [Initializer lists](#initializer-lists)
+  - [Initialising inherited variables](#initialising-inherited-variables)
 - See [sample code](flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 
