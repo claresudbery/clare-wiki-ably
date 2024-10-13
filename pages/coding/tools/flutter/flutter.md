@@ -6,6 +6,24 @@ permalink: /pages/coding/tools/flutter/Flutter
 
 # Flutter
 
+## Sub-pages
+
+- [Construct hacks](flutter-construct/construct-hacks.md)
+- [Construct debugging](flutter-construct/construct-debugging.md)
+- [Construct infra](flutter-construct/construct-infra.md)
+- [Construct examples](flutter-construct/construct-examples.md)
+- [Bloc state management](bloc.md)
+- [Dart Classes](dart-classes.md)
+- [Dart Params](dart-params.md)
+- [Dart language](dart.md)
+- [Firebase](firebase.md)
+- [Debugging](flutter-debugging.md)
+- [Dependency Injection](flutter-di.md)
+- [Flutter testing](flutter-testing.md)
+- [Material components](material.md)
+- [Navigation and Routing](navigation-routing.md)
+- [Widgets](widgets.md)
+
 ## Contents of this page:
 
 - [What is Flutter](#what-is-flutter)
@@ -38,20 +56,6 @@ permalink: /pages/coding/tools/flutter/Flutter
 ## What is Flutter
 
 Flutter is an open-source software development kit which enables smooth and easy cross-platform mobile app development. You can build high quality natively compiled apps for iOS and Android quickly, without having to write the code for the two apps separately. All you need is one codebase for both platforms.
-
-## Sub-pages
-
-- [Construct hacks](flutter-construct/construct-hacks.md)
-- [Construct debugging](flutter-construct/construct-debugging.md)
-- [Construct infra](flutter-construct/construct-infra.md)
-- [Construct examples](flutter-construct/construct-examples.md)
-- [Dart language](dart.md)
-- [Material components](material.md)
-- [Flutter testing](flutter-testing.md)
-- [Bloc state management](bloc.md)
-- [Dependency Injection](flutter-di.md)
-- [Debugging](flutter-debugging.md)
-- [Widgets](widgets.md)
 
 ## Useful links
 

@@ -76,7 +76,6 @@ permalink: /pages/coding/tools/flutter/Bloc
     - what happens in the `BlocListener` does not seem to be relevant to whether the widget is re-rendered
       - I did think maybe events had to be handled in the BlocListener in order to result in re-rendering, but that doesn't seem to be the case
 
-
 ## BlocListener
 
 ### Intro to BlocListener
