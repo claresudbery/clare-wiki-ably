@@ -390,6 +390,38 @@ re, sorry!)
   - Set the position of your subtitles
 - When you start the slide show, it will transcribe what you're saying live! Cool!
 
+## Google Slides
+
+### Animations in Google Slides
+
+- Select visual component
+    - Insert => animation
+    - or right-click => animate
+    - or click the 3 dots on the tool bar at the top and you'll see the animate option
+    - gives a dialog on the right
+- bullet points can have "appear on click"
+- select an object and click "add animation"
+- each object you want to appear on click has to have an animation added to it
+- the order they appear in the list of animations on the right is the order they'll appear in when you click (you can reorder them)
+- to animate bullet points...
+    - select the containing object, eg textbox containing bullet points, and check "by paragraph" - each bullet point is considered a separate paragraph
+- to animate screenshots...
+    - could have two screenshots, one highlighted and one not
+    - or could have a transparent-filled rectangle which appears on screen in animated fashion and encloses the bit of code you want to highlight
+
+## Demo Pro
+
+- DemoPro
+- For drawing on screen during presentations
+- Look for the diagonal arrow in the top system menu bar
+- Useful shortcuts:
+  - REMEMBER YOU HAVE TO HOLD DOWN THE KEY COMBINATION WHILE DRAWING
+  - AND SET THE COLOUR BEFORE STARTING
+  - Ctrl A - arrow
+  - Ctrl Q - rectangle
+  - Ctrl Z - undo
+  - Ctrl X - erase all
+
 ## Booking.com
 
 - To add new hotel booking to calendar - do nothing!
