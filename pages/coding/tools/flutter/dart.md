@@ -333,6 +333,7 @@ expect(postedRhet, equals(postedRhet)); // true
 flutter test
 gch main
 gup
+gch [your branch]
 git merge main
 flutter test
 dart fix --apply

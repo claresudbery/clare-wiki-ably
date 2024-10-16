@@ -23,6 +23,7 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Material components](material.md)
 - [Navigation and Routing](navigation-routing.md)
 - [Widgets](widgets.md)
+- [Performance](performance.md)
 
 ## Contents of this page:
 
@@ -64,6 +65,7 @@ Flutter is an open-source software development kit which enables smooth and easy
 - [Codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
 - [More tutorials and docs](https://flutter.dev/learn)
 - Finding useful widgets etc: [Material Design](https://m3.material.io/)
+- [DartPad - good tool for experimenting with Dart](https://dartpad.dev/)
 
 ## Installing Flutter
 
