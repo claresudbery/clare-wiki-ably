@@ -33,7 +33,7 @@ permalink: /pages/organising/tools/OBS
 
 # Getting started
 
-- Downloade and install from obsproject.com
+- Download and install from obsproject.com
 - First time in:
     - Click through the differrent settings
     - Don't need to do "quit & reopen" can just hit later
@@ -57,8 +57,8 @@ permalink: /pages/organising/tools/OBS
         - Video bit rate = 5000
         - Audio bit rate = 320
             - O'Reilly spec says 32kbps for audio qualoity but shgould prob be 320!
-        - Recording - recoridngp tha - this is where recordings will go
-            - this hsould be local not in cloud!
+        - Recording - recording path - this is where recordings will go
+            - this should be local not in cloud!
         - Recording quality: high quality, medium file size
         - Audio encoder: AAC
     - Select Audio on left
@@ -125,7 +125,7 @@ permalink: /pages/organising/tools/OBS
 
 - Disable sound source from "MacOS screen capture"
     - do this by selecting MacOS screen capture under sources (bottom half of screen)
-    - then click the microphone icon on the right hand side under "audio mixer", to mute
+    - then click the microphone icon on the right hand panel under "audio mixer", to mute
     - otherwise you get echoes if using Krisp microphone (see [below](#filter-out-background-noise))
     
 ## Filter out background noise
@@ -144,7 +144,7 @@ permalink: /pages/organising/tools/OBS
 - ...so I installed Krisp, and that worked
     - Download installer: https://app.krisp.ai/setup
     - Install
-    - When it insists you set up calendar, click through to Google calendar, but then ust click Continue without selecting anything
+    - When it insists you set up calendar, click through to Google calendar, but then just click Continue without selecting anything
     - After it's installed, even though it says it's made background changes, you have to actually run the Krisp software
         - !!! This is true every time you use it I think
         - You have to start up Krisp
