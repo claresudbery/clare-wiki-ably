@@ -10,4 +10,10 @@ describe("Our security rules test social app", () => {
     const testDoc = db.collection("readonly").doc("testDoc");
     await firebase.assertSucceeds(testDoc.get());
   })
+
+  it ("Cannot write items to the read-only collection", async() => {
+    const db = firebase.initializeTestApp({projectId: MY_PROJECT_ID}).firestore();
+    const testDoc = db.collection("readonly").doc("testDoc2");
+    await firebase.assertFails(testDoc.set({foo: "bar"}));
+  })
 })
