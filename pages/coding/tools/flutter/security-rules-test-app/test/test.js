@@ -117,6 +117,20 @@ describe("Our security rules test social app", () => {
     const testDoc = db.collection("posts").doc(postId);
     await firebase.assertSucceeds(testDoc.update({content: "after"}));
   })
+
+  it ("Doesn't allow a user to edit somebody else's post", async() => {
+    const admin = getAdminFirestore();
+    const postId = "post_123";
+    const setupDoc = admin.collection("posts").doc(postId);
+    await setupDoc.set({
+      content: "before",
+      authorId: theirId
+    });
+
+    const db = getFirestore(myAuth);
+    const testDoc = db.collection("posts").doc(postId);
+    await firebase.assertFails(testDoc.update({content: "after"}));
+  })
 });
 
 after(async() => {
