@@ -4,7 +4,9 @@ const firebase = require('@firebase/testing');
 const MY_PROJECT_ID = "security-rules-test-app-43bc6";
 const myId = "user_abc";
 const theirId = "user_xyz";
-const myAuth = {uid: myId, email: "user_abc@gmail.com"}
+const modId = "user_mod";
+const myAuth = {uid: myId, email: "user_abc@gmail.com"};
+const modAuth = {uid: modId, email: "mod@gmail.com", isModerator: true};
 
 function getFirestore(auth){
   const db = firebase.initializeTestApp({
@@ -13,7 +15,7 @@ function getFirestore(auth){
   }).firestore();
   // db.settings({ host: "localhost:4401", ssl: false });
   return db;
-}
+};
 
 function getAdminFirestore(){
   const db = firebase.initializeAdminApp({
@@ -21,7 +23,7 @@ function getAdminFirestore(){
   }).firestore();
   // db.settings({ host: "localhost:4401", ssl: false });
   return db;
-}
+};
 
 beforeEach(async() => {
   await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
@@ -130,6 +132,20 @@ describe("Our security rules test social app", () => {
     const db = getFirestore(myAuth);
     const testDoc = db.collection("posts").doc(postId);
     await firebase.assertFails(testDoc.update({content: "after"}));
+  })
+
+  it ("Doesn't allow a user to edit somebody else's post", async() => {
+    const admin = getAdminFirestore();
+    const postId = "post_123";
+    const setupDoc = admin.collection("posts").doc(postId);
+    await setupDoc.set({
+      content: "before",
+      authorId: theirId
+    });
+
+    const db = getFirestore(modAuth);
+    const testDoc = db.collection("posts").doc(postId);
+    await firebase.assertSucceeds(testDoc.update({content: "after"}));
   })
 });
 
