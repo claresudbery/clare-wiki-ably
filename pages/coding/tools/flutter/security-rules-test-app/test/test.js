@@ -11,7 +11,7 @@ function getFirestore(auth){
     projectId: MY_PROJECT_ID,
     auth: auth,
   }).firestore();
-  db.settings({ host: "localhost:4401", ssl: false });
+  // db.settings({ host: "localhost:4401", ssl: false });
   return db;
 }
 
@@ -19,12 +19,12 @@ function getAdminFirestore(){
   const db = firebase.initializeAdminApp({
     projectId: MY_PROJECT_ID,
   }).firestore();
-  db.settings({ host: "localhost:4401", ssl: false });
+  // db.settings({ host: "localhost:4401", ssl: false });
   return db;
 }
 
 beforeEach(async() => {
-  // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
 });
 
 describe("Our security rules test social app", () => {
@@ -106,5 +106,5 @@ describe("Our security rules test social app", () => {
 });
 
 after(async() => {
-  // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
 });

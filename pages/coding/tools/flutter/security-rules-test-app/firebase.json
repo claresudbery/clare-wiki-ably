@@ -5,7 +5,7 @@
   },
   "emulators": {
     "singleProjectMode": true,
-    "firestore": {
+    "//firestore": {
       "host": "127.0.0.1",
       "port": "4401"
     }
