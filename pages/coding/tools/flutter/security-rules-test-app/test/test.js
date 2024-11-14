@@ -51,9 +51,9 @@ describe("Our security rules test social app", () => {
     await firebase.assertSucceeds(testQuery.get());
   })
 
-  it ("Can query all posts", async() => {
+  it ("Can't query all posts", async() => {
     const db = getFirestore(myAuth);
     const testQuery = db.collection("posts");
-    await firebase.assertSucceeds(testQuery.get());
+    await firebase.assertFails(testQuery.get());
   })
 })
