@@ -16,6 +16,7 @@ permalink: /pages/think/life/Nice-Stuff
 - [many laughing babies](https://www.youtube.com/watch?v=qBay1HrK8WU)
     - [more of the same quadruplets](https://www.youtube.com/watch?v=zZH0sNsaAz4)
     - [where are they now (2017)](https://www.huffpost.com/entry/laughing-quadruplets-now-in-high-school_n_58a5f7a6e4b045cd34bfb3bf)
+- [You are still alive](https://www.instagram.com/reel/C-vyRx6ybg1/?igsh=bnN0MDNvZGd0NnI%3D)
 - [goat under cooker](https://www.facebook.com/watch/?v=255153025785280)
 - [donkeys in kitchen](https://twitter.com/oldhamvending/status/1325468674564698112?s=20)
 - [Ray Charles singing Oh Happy Day](https://www.youtube.com/watch?v=wv5n_eCGkvM)
