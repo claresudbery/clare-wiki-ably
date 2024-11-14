@@ -26,4 +26,14 @@ describe("Our security rules test social app", () => {
     const testDoc = db.collection("users").doc("user_abc");
     await firebase.assertSucceeds(testDoc.set({foo: "bar"}));
   })
+
+  it ("Can't write to a user doc with a different ID to our user", async() => {
+    const myAuth = {uid: "user_abc", email: "user_abc@gmail.com"}
+    const db = firebase.initializeTestApp({
+      projectId: MY_PROJECT_ID,
+      auth: myAuth,
+    }).firestore();
+    const testDoc = db.collection("users").doc("user_xyz");
+    await firebase.assertFails(testDoc.set({foo: "bar"}));
+  })
 })
