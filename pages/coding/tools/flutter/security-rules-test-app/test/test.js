@@ -13,6 +13,10 @@ function getFirestore(auth){
     }).firestore();
 }
 
+function getAdminFirestore(){
+  return firebase.initializeAdminApp({projectId: MY_PROJECT_ID}).firestore();
+}
+
 describe("Our security rules test social app", () => {
 
   it ("Can read items in the read-only collection", async() => {
@@ -58,11 +62,13 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can read a single public post", async() => {
-    const db = getFirestore(myAuth);
-    const testDoc = db.collection("posts").doc("public_post");
-    await testDoc.set({authorId: theirId, visibility: "public"});
+    const admin = getAdminFirestore();
+    const postId = "public_post";
+    const setupDoc = admin.collection("posts").doc(postId);
+    await setupDoc.set({authorId: theirId, visibility: "public"});
 
-    const testQuery = db.collection("posts").doc("public_post");
-    await firebase.assertSucceeds(testDoc.get());
+    const db = getFirestore(null);
+    const testRead = db.collection("posts").doc(postId);
+    await firebase.assertSucceeds(testRead.get());
   })
 })
