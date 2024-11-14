@@ -56,4 +56,13 @@ describe("Our security rules test social app", () => {
     const testQuery = db.collection("posts");
     await firebase.assertFails(testQuery.get());
   })
+
+  it ("Can read a single public post", async() => {
+    const db = getFirestore(myAuth);
+    const testDoc = db.collection("posts").doc("public_post");
+    await testDoc.set({authorId: theirId, visibility: "public"});
+
+    const testQuery = db.collection("posts").doc("public_post");
+    await firebase.assertSucceeds(testDoc.get());
+  })
 })
