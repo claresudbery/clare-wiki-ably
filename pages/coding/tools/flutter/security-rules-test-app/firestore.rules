@@ -13,8 +13,8 @@ service cloud.firestore {
       allow write: if (request.auth.uid == userId);
     }
     match /posts/{postId} {
-      allow read: if (resource.data.visibility == "public") ||
-        (resource.data.authorId == resource.auth.uid);
+      allow read: if (resource.data.authorId == resource.auth.uid) ||
+        (resource.data.visibility == "public");
     }
   }
 }
