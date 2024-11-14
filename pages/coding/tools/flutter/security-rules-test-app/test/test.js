@@ -7,18 +7,26 @@ const theirId = "user_xyz";
 const myAuth = {uid: myId, email: "user_abc@gmail.com"}
 
 function getFirestore(auth){
-  return firebase.initializeTestApp({
+  const db = firebase.initializeTestApp({
       projectId: MY_PROJECT_ID,
       auth: auth,
     }).firestore();
+  // db.settings({ host: "localhost:4401" });
+  return db;
 }
 
 function getAdminFirestore(){
-  return firebase.initializeAdminApp({projectId: MY_PROJECT_ID}).firestore();
+  const db = firebase.initializeAdminApp({projectId: MY_PROJECT_ID}).firestore();
+  // db.settings({ host: "localhost:4401" });
+  return db;
 }
 
 beforeEach(async() => {
-  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  // process.env.FIRESTORE_EMULATOR_HOST = 'localhost:4401';
+  await firebase.clearFirestoreData({
+    projectId: MY_PROJECT_ID,
+    // host: "localhost:4401"
+  });
 });
 
 describe("Our security rules test social app", () => {
@@ -100,5 +108,9 @@ describe("Our security rules test social app", () => {
 });
 
 after(async() => {
-  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  // process.env.FIRESTORE_EMULATOR_HOST = 'localhost:4401';
+  await firebase.clearFirestoreData({
+    projectId: MY_PROJECT_ID,
+    // host: "localhost:4401"
+  });
 });
