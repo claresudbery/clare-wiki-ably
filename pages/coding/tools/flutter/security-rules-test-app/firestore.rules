@@ -23,5 +23,13 @@ service cloud.firestore {
       allow update: if (resource.data.authorId == request.auth.uid) ||
         userIsModerator();
     }
+    match /rooms/{roomId} {
+      // Security rules for rooms go here
+      match /posts/{postId} {
+        allow update: if (resource.data.authorId == request.auth.uid) ||
+          get(/databases/$(database)/documents/rooms/$(roomId))
+            .data.roomMod == request.auth.uid;
+      }
+    }
   }
 }

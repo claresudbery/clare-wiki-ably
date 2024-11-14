@@ -26,7 +26,7 @@ function getAdminFirestore(){
 };
 
 beforeEach(async() => {
-  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
 });
 
 describe("Our security rules test social app", () => {
@@ -147,8 +147,34 @@ describe("Our security rules test social app", () => {
     const testDoc = db.collection("posts").doc(postId);
     await firebase.assertSucceeds(testDoc.update({content: "after"}));
   })
+
+  it ("Allows a user to edit their own room post", async() => {
+    const admin = getAdminFirestore();
+    const postPath = "rooms/room_abc/posts/post_123";
+    const setupDoc = admin.doc(postPath);
+    await setupDoc.set({
+      content: "before",
+      authorId: myId
+    });
+
+    const db = getFirestore(myAuth);
+    const testDoc = db.doc(postPath);
+    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+  })
+
+  it ("Allows a room mod to edit another person's room post", async() => {
+    const admin = getAdminFirestore();
+    const roomPath = "rooms/room_abc";
+    const postPath = `${roomPath}/posts/post_123`;
+    await admin.doc(roomPath).set({topic: "Unit testers", roomMod: myId});
+    await admin.doc(postPath).set({content: "before", authorId: theirId});
+
+    const db = getFirestore(myAuth);
+    const testDoc = db.doc(postPath);
+    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+  })
 });
 
 after(async() => {
-  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
 });
