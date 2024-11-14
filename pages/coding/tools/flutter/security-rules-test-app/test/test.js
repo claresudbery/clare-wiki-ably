@@ -17,6 +17,10 @@ function getAdminFirestore(){
   return firebase.initializeAdminApp({projectId: MY_PROJECT_ID}).firestore();
 }
 
+beforeEach(async() => {
+  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+});
+
 describe("Our security rules test social app", () => {
 
   it ("Can read items in the read-only collection", async() => {
@@ -74,7 +78,7 @@ describe("Our security rules test social app", () => {
 
   it ("Can read a private post belonging to the user", async() => {
     const admin = getAdminFirestore();
-    const postId = "private_post";
+    const postId = "my_private_post";
     const setupDoc = admin.collection("posts").doc(postId);
     await setupDoc.set({authorId: myId, visibility: "private"});
 
@@ -85,7 +89,7 @@ describe("Our security rules test social app", () => {
 
   it ("Can't read a private post belonging to another user", async() => {
     const admin = getAdminFirestore();
-    const postId = "private_post";
+    const postId = "their_private_post";
     const setupDoc = admin.collection("posts").doc(postId);
     await setupDoc.set({authorId: theirId, visibility: "private"});
 
@@ -93,4 +97,8 @@ describe("Our security rules test social app", () => {
     const testRead = db.collection("posts").doc(postId);
     await firebase.assertFails(testRead.get());
   })
-})
+});
+
+after(async() => {
+  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+});
