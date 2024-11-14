@@ -71,4 +71,15 @@ describe("Our security rules test social app", () => {
     const testRead = db.collection("posts").doc(postId);
     await firebase.assertSucceeds(testRead.get());
   })
+
+  it ("Can read a private post belonging to the user", async() => {
+    const admin = getAdminFirestore();
+    const postId = "private_post";
+    const setupDoc = admin.collection("posts").doc(postId);
+    await setupDoc.set({authorId: myId, visibility: "private"});
+
+    const db = getFirestore(myAuth);
+    const testRead = db.collection("posts").doc(postId);
+    await firebase.assertSucceeds(testRead.get());
+  })
 })
