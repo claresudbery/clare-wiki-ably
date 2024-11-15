@@ -2,13 +2,6 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    function requiredFields() {
-      return ["authorId", "visibility", "content", "headline"];
-    }
-    function optionalFields() {
-      return ["photo", "tags", "location"];
-    }
-
     function userIsModerator() {
       return request.auth.token.isModerator == true;
     }
@@ -18,15 +11,16 @@ service cloud.firestore {
         (get(/databases/$(database)/documents/rooms/$(roomId)).data.roomMods)
     }
 
-    function postHasAllRequiredFields() {
-      return (request.resource.data.keys()
-        .hasAll(requiredFields()));
+    function documentHasCorrectFields(requiredFields, optionalFields) {
+      let requiredAndOptionalFields = requiredFields().concat(optionalFields());
+      return (request.resource.data.keys().hasAll(requiredFields))
+        && (request.resource.data.keys().hasOnly(requiredAndOptionalFields));
     }
 
-    function postHasOnlyAllowedFields() {
-      let requiredAndOptionalFields = requiredFields().concat(optionalFields());
-      return (request.resource.data.keys()
-        .hasOnly(requiredAndOptionalFields));
+    function postHasCorrectFields() {
+      let requiredFields = ["authorId", "visibility", "content", "headline"];
+      let optionalFields = ["photo", "tags", "location"];
+      return documentHasCorrectFields(requiredFields, optionalFields);
     }
 
     match /{document=**} {
@@ -45,7 +39,7 @@ service cloud.firestore {
       allow update: if (resource.data.authorId == request.auth.uid) 
         || userIsModerator();
       allow create: if (request.resource.data.authorId == request.auth.uid) 
-        && postHasAllRequiredFields() && postHasOnlyAllowedFields();
+        && postHasCorrectFields();
     }
     match /rooms/{roomId} {
       // Security rules for rooms go here
