@@ -234,6 +234,44 @@ describe("Our security rules test social app", () => {
       not_allowed: true
     }));
   })
+
+  it ("Can edit a post with allowed fields", async() => {
+    const admin = getAdminFirestore();
+    const postPath = "posts/post_133";
+    await admin.doc(postPath).set({
+      authorId: myId, 
+      content: "before_content",
+      visibility: "public",
+      headline: "before_headline"
+    });
+
+    const db = getFirestore(myAuth);
+    const testDoc = db.doc(postPath);
+    await firebase.assertSucceeds(testDoc.update({
+      content: "after_content",
+      visibility: "private",
+    }));
+  })
+
+  it ("Can't edit a post with unallowed fields", async() => {
+    const admin = getAdminFirestore();
+    const postPath = "posts/post_134";
+    await admin.doc(postPath).set({
+      authorId: myId, 
+      content: "before_content",
+      visibility: "public",
+      headline: "before_headline"
+    });
+
+    const db = getFirestore(myAuth);
+    const testDoc = db.doc(postPath);
+    await firebase.assertFails(testDoc.update({
+      authorId: theirId, 
+      content: "after_content",
+      visibility: "private",
+      headline: "ater_headline"
+    }));
+  })
 });
 
 after(async() => {
