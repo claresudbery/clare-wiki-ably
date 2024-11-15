@@ -12,6 +12,11 @@ service cloud.firestore {
         (get(/databases/$(database)/documents/rooms/$(roomId)).data.roomMods)
     }
 
+    function postHasAllRequiredFields(postId) {
+      return (request.resource.data.keys()
+        .hasAll(["authorId", "visibility", "content", "headline"]));
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }
@@ -23,11 +28,12 @@ service cloud.firestore {
       allow write: if (request.auth.uid == userId);
     }
     match /posts/{postId} {
-      allow read: if (resource.data.visibility == "public") ||
-        (resource.data.authorId == request.auth.uid);
-      allow update: if (resource.data.authorId == request.auth.uid) ||
-        userIsModerator();
-      allow create: if (request.resource.data.authorId == request.auth.uid);
+      allow read: if (resource.data.visibility == "public") 
+        || (resource.data.authorId == request.auth.uid);
+      allow update: if (resource.data.authorId == request.auth.uid) 
+        || userIsModerator();
+      allow create: if (request.resource.data.authorId == request.auth.uid) 
+        && postHasAllRequiredFields(postId);
     }
     match /rooms/{roomId} {
       // Security rules for rooms go here

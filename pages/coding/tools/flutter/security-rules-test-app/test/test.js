@@ -178,14 +178,33 @@ describe("Our security rules test social app", () => {
     const db = getFirestore(myAuth);
     const postPath = "posts/post_124";
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.set({authorId: myId, content: "lorem ipsum"}));
+    await firebase.assertSucceeds(testDoc.set({
+      authorId: myId, 
+      content: "lorem ipsum",
+      visibility: "public",
+      headline: "Post headline"
+    }));
   })
 
   it ("Doesn't allow a user to create a post when they set someone else as the author", async() => {
     const db = getFirestore(myAuth);
     const postPath = "posts/post_125";
     const testDoc = db.doc(postPath);
-    await firebase.assertFails(testDoc.set({authorId: theirId, content: "lorem ipsum"}));
+    await firebase.assertFails(testDoc.set({
+      authorId: theirId, 
+      content: "lorem ipsum",
+      visibility: "public",
+      headline: "Post headline"
+    }));
+  })
+
+  it ("Can't create a post with missing fields", async() => {
+    const db = getFirestore(myAuth);
+    const postPath = "posts/post_125";
+    const testDoc = db.doc(postPath);
+    await firebase.assertFails(testDoc.set({
+      authorId: theirId, 
+      content: "lorem ipsum"}));
   })
 });
 
