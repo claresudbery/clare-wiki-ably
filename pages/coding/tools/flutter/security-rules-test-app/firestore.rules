@@ -18,12 +18,12 @@ service cloud.firestore {
         (get(/databases/$(database)/documents/rooms/$(roomId)).data.roomMods)
     }
 
-    function postHasAllRequiredFields(postId) {
+    function postHasAllRequiredFields() {
       return (request.resource.data.keys()
         .hasAll(requiredFields()));
     }
 
-    function postHasOnlyAllowedFields(postId) {
+    function postHasOnlyAllowedFields() {
       let requiredAndOptionalFields = requiredFields().concat(optionalFields());
       return (request.resource.data.keys()
         .hasOnly(requiredAndOptionalFields));
@@ -45,7 +45,7 @@ service cloud.firestore {
       allow update: if (resource.data.authorId == request.auth.uid) 
         || userIsModerator();
       allow create: if (request.resource.data.authorId == request.auth.uid) 
-        && postHasAllRequiredFields(postId) && postHasOnlyAllowedFields(postId);
+        && postHasAllRequiredFields() && postHasOnlyAllowedFields();
     }
     match /rooms/{roomId} {
       // Security rules for rooms go here
