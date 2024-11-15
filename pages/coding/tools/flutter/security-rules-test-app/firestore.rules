@@ -13,8 +13,9 @@ service cloud.firestore {
     }
 
     function postHasAllRequiredFields(postId) {
+      let requiredFields = ["authorId", "visibility", "content", "headline"];
       return (request.resource.data.keys()
-        .hasAll(["authorId", "visibility", "content", "headline"]));
+        .hasAll(requiredFields));
     }
 
     match /{document=**} {
