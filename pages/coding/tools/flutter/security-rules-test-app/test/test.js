@@ -122,7 +122,7 @@ describe("Our security rules test social app", () => {
 
   it ("Doesn't allow a user to edit somebody else's post", async() => {
     const admin = getAdminFirestore();
-    const postId = "post_123";
+    const postId = "post_124";
     const setupDoc = admin.collection("posts").doc(postId);
     await setupDoc.set({
       content: "before",
@@ -136,7 +136,7 @@ describe("Our security rules test social app", () => {
 
   it ("Doesn't allow a user to edit somebody else's post", async() => {
     const admin = getAdminFirestore();
-    const postId = "post_123";
+    const postId = "post_125";
     const setupDoc = admin.collection("posts").doc(postId);
     await setupDoc.set({
       content: "before",
@@ -150,7 +150,7 @@ describe("Our security rules test social app", () => {
 
   it ("Allows a user to edit their own room post", async() => {
     const admin = getAdminFirestore();
-    const postPath = "rooms/room_abc/posts/post_123";
+    const postPath = "rooms/room_abc/posts/post_126";
     const setupDoc = admin.doc(postPath);
     await setupDoc.set({
       content: "before",
@@ -165,7 +165,7 @@ describe("Our security rules test social app", () => {
   it ("Allows a room mod to edit another person's room post", async() => {
     const admin = getAdminFirestore();
     const roomPath = "rooms/room_abc";
-    const postPath = `${roomPath}/posts/post_123`;
+    const postPath = `${roomPath}/posts/post_127`;
     await admin.doc(roomPath).set({topic: "Unit testers", roomMods: [myId, "dummy_user"]});
     await admin.doc(postPath).set({content: "before", authorId: theirId});
 
@@ -176,7 +176,7 @@ describe("Our security rules test social app", () => {
 
   it ("Allows a user to create a post when they set themselves as the author", async() => {
     const db = getFirestore(myAuth);
-    const postPath = "posts/post_124";
+    const postPath = "posts/post_128";
     const testDoc = db.doc(postPath);
     await firebase.assertSucceeds(testDoc.set({
       authorId: myId, 
@@ -188,7 +188,7 @@ describe("Our security rules test social app", () => {
 
   it ("Doesn't allow a user to create a post when they set someone else as the author", async() => {
     const db = getFirestore(myAuth);
-    const postPath = "posts/post_125";
+    const postPath = "posts/post_129";
     const testDoc = db.doc(postPath);
     await firebase.assertFails(testDoc.set({
       authorId: theirId, 
@@ -200,7 +200,7 @@ describe("Our security rules test social app", () => {
 
   it ("Can't create a post with missing fields", async() => {
     const db = getFirestore(myAuth);
-    const postPath = "posts/post_125";
+    const postPath = "posts/post_130";
     const testDoc = db.doc(postPath);
     await firebase.assertFails(testDoc.set({
       authorId: theirId, 
