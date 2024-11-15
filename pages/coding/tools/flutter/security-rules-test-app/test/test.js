@@ -134,7 +134,7 @@ describe("Our security rules test social app", () => {
     await firebase.assertFails(testDoc.update({content: "after"}));
   })
 
-  it ("Doesn't allow a user to edit somebody else's post", async() => {
+  it ("Allows a moderator to edit somebody else's post", async() => {
     const admin = getAdminFirestore();
     const postId = "post_125";
     const setupDoc = admin.collection("posts").doc(postId);
