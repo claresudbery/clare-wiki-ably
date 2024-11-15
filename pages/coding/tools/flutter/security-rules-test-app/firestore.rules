@@ -5,6 +5,9 @@ service cloud.firestore {
     function requiredFields() {
       return ["authorId", "visibility", "content", "headline"];
     }
+    function optionalFields() {
+      return ["photo", "tags", "location"];
+    }
 
     function userIsModerator() {
       return request.auth.token.isModerator == true;
@@ -18,6 +21,12 @@ service cloud.firestore {
     function postHasAllRequiredFields(postId) {
       return (request.resource.data.keys()
         .hasAll(requiredFields()));
+    }
+
+    function postHasOnlyAllowedFields(postId) {
+      let requiredAndOptionalFields = requiredFields().concat(optionalFields());
+      return (request.resource.data.keys()
+        .hasOnly(requiredAndOptionalFields));
     }
 
     match /{document=**} {
@@ -36,7 +45,7 @@ service cloud.firestore {
       allow update: if (resource.data.authorId == request.auth.uid) 
         || userIsModerator();
       allow create: if (request.resource.data.authorId == request.auth.uid) 
-        && postHasAllRequiredFields(postId);
+        && postHasAllRequiredFields(postId) && postHasOnlyAllowedFields(postId);
     }
     match /rooms/{roomId} {
       // Security rules for rooms go here

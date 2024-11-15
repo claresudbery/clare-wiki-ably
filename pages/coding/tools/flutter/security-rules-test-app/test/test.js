@@ -206,6 +206,34 @@ describe("Our security rules test social app", () => {
       authorId: theirId, 
       content: "lorem ipsum"}));
   })
+
+  it ("Can create a post with all required and optional fields", async() => {
+    const db = getFirestore(myAuth);
+    const postPath = "posts/post_131";
+    const testDoc = db.doc(postPath);
+    await firebase.assertSucceeds(testDoc.set({
+      authorId: myId, 
+      content: "lorem ipsum",
+      visibility: "public",
+      headline: "Post headline",
+      location: "Manchester",
+      tags: ["screenshot", "firebase"],
+      photo: "photo_url"
+    }));
+  })
+
+  it ("Can't create a post with unapproved fields", async() => {
+    const db = getFirestore(myAuth);
+    const postPath = "posts/post_132";
+    const testDoc = db.doc(postPath);
+    await firebase.assertFails(testDoc.set({
+      authorId: theirId, 
+      content: "lorem ipsum",
+      visibility: "public",
+      headline: "Post headline",
+      not_allowed: true
+    }));
+  })
 });
 
 after(async() => {
