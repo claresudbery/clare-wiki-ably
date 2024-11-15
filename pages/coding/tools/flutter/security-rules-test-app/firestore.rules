@@ -2,6 +2,9 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    function requiredFields() {
+      return ["authorId", "visibility", "content", "headline"];
+    }
 
     function userIsModerator() {
       return request.auth.token.isModerator == true;
@@ -13,9 +16,8 @@ service cloud.firestore {
     }
 
     function postHasAllRequiredFields(postId) {
-      let requiredFields = ["authorId", "visibility", "content", "headline"];
       return (request.resource.data.keys()
-        .hasAll(requiredFields));
+        .hasAll(requiredFields()));
     }
 
     match /{document=**} {
