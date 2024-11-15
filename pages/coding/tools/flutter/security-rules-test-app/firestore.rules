@@ -7,6 +7,11 @@ service cloud.firestore {
       return request.auth.token.isModerator == true;
     }
 
+    function userIsRoomMod(roomId) {
+      return request.auth.uid in 
+        (get(/databases/$(database)/documents/rooms/$(roomId)).data.roomMods)
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }
@@ -24,14 +29,10 @@ service cloud.firestore {
         userIsModerator();
     }
     match /rooms/{roomId} {
-      function userIsRoomMod() {
-        return request.auth.uid in 
-          (get(/databases/$(database)/documents/rooms/$(roomId)).data.roomMods)
-      }
       // Security rules for rooms go here
       match /posts/{postId} {
         allow update: if (resource.data.authorId == request.auth.uid) ||
-          userIsRoomMod();
+          userIsRoomMod(roomId);
       }
     }
   }
