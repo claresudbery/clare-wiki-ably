@@ -24,7 +24,8 @@ service cloud.firestore {
     }
 
     function editOnlyChangesFields(allowedFields) {
-      let affectedKeys = request.resource.data.diff(resource.data).affectedKeys();
+      let debugString = debug("************* Diff of changed fields ****************");
+      let affectedKeys = debug(request.resource.data.diff(resource.data)).affectedKeys();
       return affectedKeys.hasOnly(allowedFields);
     }
 
