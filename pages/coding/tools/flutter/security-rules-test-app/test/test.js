@@ -173,6 +173,20 @@ describe("Our security rules test social app", () => {
     const testDoc = db.doc(postPath);
     await firebase.assertSucceeds(testDoc.update({content: "after"}));
   })
+
+  it ("Allows a user to create a post when they set themselves as the author", async() => {
+    const db = getFirestore(myAuth);
+    const postPath = "posts/post_124";
+    const testDoc = db.doc(postPath);
+    await firebase.assertSucceeds(testDoc.set({authorId: myId, content: "lorem ipsum"}));
+  })
+
+  it ("Doesn't allow a user to create a post when they set someone else as the author", async() => {
+    const db = getFirestore(myAuth);
+    const postPath = "posts/post_125";
+    const testDoc = db.doc(postPath);
+    await firebase.assertFails(testDoc.set({authorId: theirId, content: "lorem ipsum"}));
+  })
 });
 
 after(async() => {
