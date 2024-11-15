@@ -659,12 +659,14 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         **tail -f \[file-name\]**
         
           - \*\* After this, pause the console scrolling with Ctrl + s,
-            then resume with ctrl + q
+            then resume with ctrl + q. To exit altogether, use Ctrl + C
     
       - Note that you can pipe the results to grep so that you can only
         output the stuff you are interested in
+
+      - Like this: `tail -f firestore-debug.log`
     
-      - Like this: **tail -f /var/log/logstash/logstash.log | grep -E -o
+      - ...or like this: **tail -f /var/log/logstash/logstash.log | grep -E -o
         '"reason"=\>"\\\[logdb...\\.ny.\\.acme\\.com1\\\]\\\[.\*\\\]
         Node not connected'**
         
