@@ -13,6 +13,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 - [How to export / import data?](#how-to-export--import-data)
 - [Troubleshooting lost data from emulator](#troubleshooting-lost-data-from-emulator)
 - [Troubleshooting "permission denied"](#troubleshooting-permission-denied)
+- [Collection groups / Collection group queries](#collection-group-queries)
 
 ## Tutorial
 
@@ -71,5 +72,11 @@ permalink: /pages/coding/tools/flutter/Firebase
 - or trying to update matchboxes
 - looks like this: `cloud_firestore/permission-denied`
 
+## Collection Group Queries
 
-    
+- A collection group happens when several collections have sub-collections of the same name
+- eg `collection(citiesRef, 'SF', 'landmarks')` and `collection(citiesRef, 'DC', 'landmarks')`
+- so both SF and DC have a `landmarks` sub-collection
+- We can use the simple and compound query described earlier to query a single city's landmarks subcollection, but you might also want to retrieve results from every city's landmarks subcollection at once.
+  - This is what collection group queries are for
+- More [here](https://firebase.google.com/docs/firestore/query-data/queries#collection-group-query)
