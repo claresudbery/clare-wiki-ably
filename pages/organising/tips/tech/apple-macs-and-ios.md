@@ -288,3 +288,99 @@ killall SystemUIServer
 - Apparently if you charge your Mac using the left hand ports, it can cause overheating and excessive CPU usage
 - Some recommend using the right hand ports instead
 - But I don't think my current MacBook (circa 2020 to 2024) has this problem!
+
+## If your Spotlight index is not getting rebuilt
+
+- This happened to me after OS upgrade to Sequioia on Mac - I couldn't use the Spotlight search (cmd + spacebar) to search for apps any more - it wouldn't find any of them
+- I tried manually forcing index rebuild by adding the Application folder to Spotlight privacy (DSettings => Spotlight => Privacy) and then taking it out again, but that didn't work
+- I tried leaving the laptop on overnight for several days to give it time to rebuild index in background, but that didn't work
+- I tried effectively turning Spotlight off and on again to force it to rebuild its index:
+  - Open Terminal from /Applications/Utilities/ (you can use Spotlight to open Terminal as well, if Spotlight is working enough to be able to do that)
+  - Run the following command to find out if indexing is enabled on the volumes your data is on that you wish to search: `mdutil -as`
+  - At the command line enter the following command exactly, with precise characters and capitalization: `sudo mdutil -Ea -i off`
+      - ! This is slighty different to what they say in the below article. This is the correct version.
+    - `-i` is used to toggle indexing on and off
+    - `-E` is used to erase and rebuild the index
+    - `-a` is used to apply the command to all volumes
+  - Now that Spotlight search has been disabled, it’s time to turn it back on again which will force the index to rebuild: `sudo mdutil -Ea -i on`
+    - When I did this, the feedback on the command line only said it was enabling the index on `/System/Volumes/Data`
+    - No matter what I did, it always said it was working with `/System/Volumes/Data` and ignore my requests to make changes to other folders
+      - See copy of command line [below](#what-happened-when-i-tried-to-rebuild-spotlight-index-from-command-line)
+    - But the day after I did all of this, my index on `/Applications` was rebuilt. 
+      - I don't know if that was because of what I did on the command line or because I was leaving my machine on overnight, which was another piece of advice from [this article](https://osxdaily.com/2024/11/11/how-to-fix-spotlight-search-issues-on-macos-sequoia/).
+  - Let the Spotlight index rebuilding process complete, this can take many hours depending on how much data you have on the Mac, so just let it run in the background
+  - When Spotlight has finished rebuilding its index, run `mdutil -as` again to confirm indexing is enabled on the volumes your data is on that you wish to search
+    - Check to make sure your primary drive (/) shows “Indexing enabled” and that any other volume you wish to search or index is also showing “Indexing Enabled”
+  - From [here](https://osxdaily.com/2024/11/11/how-to-fix-spotlight-search-issues-on-macos-sequoia/)
+    - ! In this article they get the command slightly wrong. You can't use the flags all together as `-Eia off`, you have to do `-Ea -i off` instead. Otherwise you get `Error: unexpected indexing state (a)`
+
+### What happened when I tried to rebuild Spotlight index from command line
+
+- It seemed like no matter how I tried to direct it ot other volumes, it only ever acted on `/System/Volumes/Data`:
+
+```bash
+Usage: mdutil -pEsa -i (on|off) -d volume ...
+       mdutil -t {volume-path | deviceid} fileid
+	Utility to manage Spotlight indexes.
+	-i (on|off)    Turn indexing on or off.
+	-E             Erase and rebuild index.
+	-s             Print indexing status.
+	-a             Apply command to all stores on all volumes.
+	-V vol         Apply command to all stores on the specified volume.
+	-L volume-path List the directory contents of the Spotlight index on the specified volume.
+
+➜  ~ sudo mdutil -L /Applications
+Spotlight directory not found at root: /Applications
+
+➜  ~ sudo mdutil -E -i on -V /Applications
+/System/Volumes/Data:
+	Indexing enabled.
+
+➜  ~ sudo mdutil -E -i off -V /Applications
+/System/Volumes/Data:
+2024-11-17 10:32:17.530 mdutil[71186:2809821] mdutil disabling Spotlight: /System/Volumes/Data -> kMDConfigSearchLevelFSSearchOnly
+	Indexing disabled.
+
+➜  ~ sudo mdutil -E -i on -V /Applications
+/System/Volumes/Data:
+	Indexing enabled.
+
+➜  ~ mdutil -as
+/:
+	Indexing enabled.
+/System/Volumes/Data:
+	Indexing enabled.
+/System/Volumes/Preboot:
+	Indexing enabled.
+
+➜  ~ sudo mdutil -E -i off -V /
+/System/Volumes/Data:
+2024-11-17 10:34:12.777 mdutil[71232:2811416] mdutil disabling Spotlight: /System/Volumes/Data -> kMDConfigSearchLevelFSSearchOnly
+	Indexing disabled.
+
+➜  ~ sudo mdutil -E -i off -V "/"
+/System/Volumes/Data:
+2024-11-17 10:34:21.608 mdutil[71237:2811512] mdutil disabling Spotlight: /System/Volumes/Data -> kMDConfigSearchLevelFSSearchOnly
+	Indexing disabled.
+
+➜  ~ sudo mdutil -E -i off -V "/Applications"
+/System/Volumes/Data:
+2024-11-17 10:34:31.202 mdutil[71243:2811652] mdutil disabling Spotlight: /System/Volumes/Data -> kMDConfigSearchLevelFSSearchOnly
+	Indexing disabled.
+
+➜  ~ sudo mdutil -E -i on -V "/Applications"
+/System/Volumes/Data:
+	Indexing enabled.
+
+➜  ~ sudo mdutil -E -i on -V "/"
+/System/Volumes/Data:
+	Indexing enabled.
+
+➜  ~ sudo mdutil -E -i on -V /
+/System/Volumes/Data:
+	Indexing enabled.
+
+➜  ~ sudo mdutil -E -i on -V /Applications
+/System/Volumes/Data:
+	Indexing enabled.
+```
