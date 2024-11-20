@@ -29,6 +29,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 
 - [Reference](https://firebase.google.com/docs/firestore/manage-data/export-import)
 - emulator can store snapshot of data
+  - This can also work as a backup / back up
 - there are json files in a hidden `.firebase` directory (Cm + shift + `.` to show hidden files)
 - should be able to create a zip file of that whole folder
 - can zip the `.firebase` folder, send it to someone, then they can start their emulator with your `.firebase` folder
@@ -37,7 +38,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 - but if you look at the emulator script you'll see it does export the `.firebase` folder by default
     - This means that as long as emulator is closed down properly, it will save all current data into the `.firebase` folder and everything gets saved
     - When you close down the emulators, then the files in `.firebase` are updated with exported data: 
-        - `auth_export/acounts.json` contains user logins
+        - `auth_export/accounts.json` contains user logins
         - `firestore_export/all_namespaces/all_kinds/output-0` contains ring, matchbox and user data
 - If your laptop closes down while emulator running, it automatically creates an export folder
     - This happened when my laptop ran out of juice while the emulator was running
