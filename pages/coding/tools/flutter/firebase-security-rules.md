@@ -254,6 +254,7 @@ const moderatorToken = {
   - Replace `getFirestore(modAuth);` with `testEnv.authenticatedContext(modId, moderatorToken).firestore();`
   - Replace `firebase.assertFails` with `assertFails`
   - Replace `firebase.assertSucceeds` with `assertSucceeds`
+  - Replace `firebase.clearFirestoreData({projectId: MY_PROJECT_ID});` with `testEnv.clearFirestore();`
 - Remove all calls to `getAdminFirestore()` (eg `const admin = getAdminFirestore();`)
   - ...and replace `admin.collection` with `adminDB.collection`
 

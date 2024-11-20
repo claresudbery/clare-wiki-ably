@@ -40,7 +40,7 @@ const theirId = "user_xyz";
 const modId = "user_mod";
 
 beforeEach(async() => {
-  // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  // await testEnv.clearFirestore();
 });
 
 describe("Our security rules test social app", () => {
@@ -279,5 +279,5 @@ describe("Our security rules test social app", () => {
 });
 
 after(async() => {
-  // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  // await testEnv.clearFirestore();
 });
