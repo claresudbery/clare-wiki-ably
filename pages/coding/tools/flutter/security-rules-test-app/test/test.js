@@ -1,6 +1,3 @@
-// const assert = require('assert');
-// const firebase = require('@firebase/testing');
-
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 var assert = require('assert');
@@ -38,29 +35,9 @@ const moderatorToken = {
   isModerator: true,
 };
 
-// const MY_PROJECT_ID = "security-rules-test-app-43bc6";
 const myId = "user_abc";
 const theirId = "user_xyz";
 const modId = "user_mod";
-// const myAuth = {uid: myId, email: "user_abc@gmail.com"};
-// const modAuth = {uid: modId, email: "mod@gmail.com", isModerator: true};
-
-// function getFirestore(auth){
-//   const db = firebase.initializeTestApp({
-//     projectId: MY_PROJECT_ID,
-//     auth: auth,
-//   }).firestore();
-//   // db.settings({ host: "localhost:4401", ssl: false });
-//   return db;
-// };
-
-// function getAdminFirestore(){
-//   const db = firebase.initializeAdminApp({
-//     projectId: MY_PROJECT_ID,
-//   }).firestore();
-//   // db.settings({ host: "localhost:4401", ssl: false });
-//   return db;
-// };
 
 beforeEach(async() => {
   // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
@@ -111,7 +88,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can read a single public post", async() => {
-    // const admin = getAdminFirestore();
     const postId = "public_post";
     const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({authorId: theirId, visibility: "public"});
@@ -122,7 +98,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can read a private post belonging to the user", async() => {
-    // const admin = getAdminFirestore();
     const postId = "my_private_post";
     const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({authorId: myId, visibility: "private"});
@@ -133,7 +108,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can't read a private post belonging to another user", async() => {
-    // const admin = getAdminFirestore();
     const postId = "their_private_post";
     const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({authorId: theirId, visibility: "private"});
@@ -144,7 +118,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Allows a user to edit their own post", async() => {
-    // const admin = getAdminFirestore();
     const postId = "post_123";
     const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({
@@ -158,7 +131,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Doesn't allow a user to edit somebody else's post", async() => {
-    // const admin = getAdminFirestore();
     const postId = "post_124";
     const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({
@@ -172,7 +144,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Allows a moderator to edit somebody else's post", async() => {
-    // const admin = getAdminFirestore();
     const postId = "post_125";
     const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({
@@ -186,7 +157,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Allows a user to edit their own room post", async() => {
-    // const admin = getAdminFirestore();
     const postPath = "rooms/room_abc/posts/post_126";
     const setupDoc = adminDB.doc(postPath);
     await setupDoc.set({
@@ -200,7 +170,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Allows a room mod to edit another person's room post", async() => {
-    // const admin = getAdminFirestore();
     const roomPath = "rooms/room_abc";
     const postPath = `${roomPath}/posts/post_127`;
     await adminDB.doc(roomPath).set({topic: "Unit testers", roomMods: [myId, "dummy_user"]});
@@ -273,7 +242,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can edit a post with allowed fields", async() => {
-    // const admin = getAdminFirestore();
     const postPath = "posts/post_133";
     await adminDB.doc(postPath).set({
       authorId: myId, 
@@ -291,7 +259,6 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can't edit a post with unallowed fields", async() => {
-    // const admin = getAdminFirestore();
     const postPath = "posts/post_134";
     await adminDB.doc(postPath).set({
       authorId: myId, 
