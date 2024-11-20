@@ -99,7 +99,7 @@ firebase init
     - Pick default port if asked
 - Now you'll have a `firestore.rules` file
 
-## Writing unit tests
+## Getting started with unit tests
 
 - First [create test app](#creating-a-test-app)
 - Now, create a folder called test:
@@ -119,6 +119,15 @@ npm init # or npm install if this was already done
   - Enter your name for author
   - You can ignore Git repo for now, and also leave licence blank
   - Press Enter to continue
+- I originally did all this after watching [this video]()
+  - But that video was 4 years old and things have moved on.
+  - So I've documented here 
+    - [what I originally did](#what-i-originally-did)
+    - [how I converted to a more up to date approach](#how-i-converted-to-a-more-up-to-date-approach)
+    - [how to start with more up to date approach](#how-to-start-with-more-up-to-date-approach)
+
+### What I originally did
+
 - Install a couple of libraries:
 
 ```bash
@@ -127,34 +136,177 @@ npm install @firebase/testing --save-dev
 ```
 
 - Create new file called `test.js` in `test` folder.
-- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- Put what's shown below at the top of your file.
+- See [sample code](security-rules-test-app/test/test.js#L1) for example
 - Quick example:
 
 ```js
 const assert = require('assert');
 const firebase = require('@firebase/testing');
 
-const MY_PROJECT_ID = "security-rules-test-app-43bc6";
+const MY_PROJECT_ID = "security-rules-test-app-43bc6"; // see below
+```
 
+- Project ID (`MY_PROJECT_ID`) comes from Firebase console: Click Settings cog in your project, top left
+  - Select Project settings
+  - Copy Project ID (something like `security-rules-test-app-43bc6`)
+
+### How I converted to a more up to date approach
+
+- You can see the commit where I did all of this [here]()
+- Installed some new libraries:
+
+```bash
+npm install firebase-admin --save-dev #save-dev means only save this for dev purposes, don't deploy it with my code
+npm install firebase-tools --save-dev
+npm install @firebase/rules-unit-testing --save-dev
+```
+
+- In `test.js`, replaced this...
+
+```js
+const assert = require('assert');
+const firebase = require('@firebase/testing');
+
+const MY_PROJECT_ID = "security-rules-test-app-43bc6";
+```
+
+- ... with this:
+
+```js
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+var assert = require('assert');
+var admin = require("firebase-admin");
+
+import { describe, it, afterEach } from "mocha";
+import {
+  initializeTestEnvironment,
+  assertFails,
+  assertSucceeds,
+} from "@firebase/rules-unit-testing";
+import { readFileSync } from "fs";
+import { initializeApp } from "firebase-admin/app";
+import { getFirestore } from "firebase-admin/firestore";
+
+const projectId = "security-rules-test-app-43bc6";
+```
+
+- Set up admin access:
+  - In Firebase console, select your test project
+  - Click Settings cog, top left => Project settings => Service accounts (tab at top) 
+  - click Generate new private key
+  - Take the generated json file and rename it `serviceAccountKey.json`
+  - Put it somewhere secure - NOT in your repo
+  - There's a snippet of code provided in Firebase console which should be equivalent to the relevant below
+- Replaced this...
+
+```js
+const myAuth = {uid: myId, email: "user_abc@gmail.com"};
+const modAuth = {uid: modId, email: "mod@gmail.com", isModerator: true};
+
+function getFirestore(auth){
+  const db = firebase.initializeTestApp({
+    projectId: MY_PROJECT_ID,
+    auth: auth,
+  }).firestore();
+  // db.settings({ host: "localhost:4401", ssl: false });
+  return db;
+};
+
+function getAdminFirestore(){
+  const db = firebase.initializeAdminApp({
+    projectId: MY_PROJECT_ID,
+  }).firestore();
+  // db.settings({ host: "localhost:4401", ssl: false });
+  return db;
+};
+```
+
+- ... with this 
+  - (note you need to change the path to wherever you have stored `serviceAccountKey.json`):
+
+```js
+var serviceAccount = require("/path/to/serviceAccountKey.json");
+const adminApp = initializeApp({
+  projectId,
+  credential: admin.credential.cert(serviceAccount),
+});
+const adminDB = getFirestore(adminApp);
+
+const firestore = {
+  rules: readFileSync("./../firestore.rules", "utf8"),
+  host: "localhost",
+  port: 8080,
+};
+const testEnv = await initializeTestEnvironment({
+  projectId,
+  firestore,
+});
+const moderatorToken = {
+  isModerator: true,
+};
+```
+
+- Throughout the code, make the following replacements:
+  - Replace `getFirestore(null);` with `testEnv.unauthenticatedContext().firestore();`
+  - Replace `getFirestore(myAuth);` with `testEnv.authenticatedContext(myId).firestore();`
+  - Replace `getFirestore(modAuth);` with `testEnv.authenticatedContext(modId, moderatorToken).firestore();`
+  - Replace `firebase.assertFails` with `assertFails`
+  - Replace `firebase.assertSucceeds` with `assertSucceeds`
+- Remove all calls to `getAdminFirestore()` (eg `const admin = getAdminFirestore();`)
+  - ...and replace `admin.collection` with `adminDB.collection`
+
+### How to start with more up to date approach
+
+- Install some libraries:
+
+```bash
+npm install mocha --save-dev #save-dev means only save this for dev purposes, don't deploy it with my code
+npm install @firebase/rules-unit-testing --save-dev
+npm install firebase-admin --save-dev
+npm install firebase-tools --save-dev
+```
+
+- Create new file called `test.js` in `test` folder.
+- Put what's shown below at the top of your file.
+- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- Quick example:
+
+```js
+const assert = require('assert');
+const firebase = require('@firebase/testing');
+
+const MY_PROJECT_ID = "security-rules-test-app-43bc6"; // see below
+```
+
+- Project ID (`MY_PROJECT_ID`) comes from Firebase console: Click Settings cog in your project, top left
+  - Select Project settings
+  - Copy Project ID (something like `security-rules-test-app-43bc6`)
+
+## Writing unit tests
+
+- Edit `test.js` to add your first test(s)
+- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- Quick example:
+
+```js
 describe("Our security rules test social app", () => {
 
   it ("Can read items in the read-only collection", async() => {
     const db = firebase.initializeTestApp({projectId: MY_PROJECT_ID}).firestore();
     const testDoc = db.collection("readonly").doc("testDoc");
-    await firebase.assertSucceeds(testDoc.get());
+    await assertSucceeds(testDoc.get());
   })
 
   it ("Cannot write items to the read-only collection", async() => {
     const db = firebase.initializeTestApp({projectId: MY_PROJECT_ID}).firestore();
     const testDoc = db.collection("readonly").doc("testDoc2");
-    await firebase.assertFails(testDoc.set({foo: "bar"}));
+    await assertFails(testDoc.set({foo: "bar"}));
   })
 })
 ```
 
-- Project ID comes from Firebase console: Click Settings cog in your project, top left
-  - Select Project settings
-  - Copy Project ID (something like `security-rules-test-app-43bc6`)
 - Run `npm test` on command line from within `test` folder
   - You may get the error `FirebaseError: No matching allow statements`
     - This is either because you haven't added anything to `firestore.rules` yet, or because you already have an emulator running on a different database, in which case you need to start up the emulator on this database (see below)
@@ -244,7 +396,7 @@ describe("Our security rules test social app", () => {
       auth: myAuth,
     }).firestore();
     const testDoc = db.collection("users").doc("user_abc");
-    await firebase.assertSucceeds(testDoc.set({foo: "bar"}));
+    await assertSucceeds(testDoc.set({foo: "bar"}));
   })
 
   it ("Can't write to a user doc with a different ID to our user", async() => {
@@ -254,7 +406,7 @@ describe("Our security rules test social app", () => {
       auth: myAuth,
     }).firestore();
     const testDoc = db.collection("users").doc("user_xyz");
-    await firebase.assertFails(testDoc.set({foo: "bar"}));
+    await assertFails(testDoc.set({foo: "bar"}));
   })
 })
 ```
@@ -305,21 +457,21 @@ function getFirestore(auth){
 describe("Our security rules test social app", () => {
 
   it ("Can read posts marked public", async() => {
-    const db = getFirestore(null);
+    const db = testEnv.unauthenticatedContext().firestore();
     const testQuery = db.collection("posts").where("visibility", "==", "public");
-    await firebase.assertSucceeds(testQuery.get());
+    await assertSucceeds(testQuery.get());
   })
 
   it ("Can query personal posts", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testQuery = db.collection("posts").where("authorId", "==", myId);
-    await firebase.assertSucceeds(testQuery.get());
+    await assertSucceeds(testQuery.get());
   })
 
   it ("Can't query all posts", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testQuery = db.collection("posts");
-    await firebase.assertFails(testQuery.get());
+    await assertFails(testQuery.get());
   })
 })
 ```
@@ -331,7 +483,7 @@ describe("Our security rules test social app", () => {
 - You can't do things like this:
 
 ```js
-  const db = getFirestore(null);
+  const db = testEnv.unauthenticatedContext().firestore();
   const testDoc = db.collection("posts").doc("public_post");
   await testDoc.set({authorId: theirId, visibility: "public"});
 ```
@@ -368,14 +520,13 @@ beforeEach(async() => {
 
 describe("Our security rules test social app", () => {
   it ("Can read a single public post", async() => {
-    const admin = getAdminFirestore();
     const postId = "public_post";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({authorId: theirId, visibility: "public"});
 
-    const db = getFirestore(null);
+    const db = testEnv.unauthenticatedContext().firestore();
     const testRead = db.collection("posts").doc(postId);
-    await firebase.assertSucceeds(testRead.get());
+    await assertSucceeds(testRead.get());
   })
 });
 
@@ -407,17 +558,16 @@ service cloud.firestore {
 
 ```js
   it ("Allows a user to edit their own post", async() => {
-    const admin = getAdminFirestore();
     const postId = "post_123";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({
       content: "before",
       authorId: myId
     });
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.collection("posts").doc(postId);
-    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+    await assertSucceeds(testDoc.update({content: "after"}));
   })
 ```
 
@@ -468,9 +618,9 @@ function getFirestore(auth){
 it ("Allows a moderator to edit somebody else's post", async() => {
   await getAdminFirestore().doc("posts/post_127").set({content: "before"});
 
-  const db = getFirestore(modAuth);
+  const db = testEnv.authenticatedContext(modId, moderatorToken).firestore();
   const testDoc = db.doc("posts/post_127");
-  await firebase.assertSucceeds(testDoc.update({content: "after"}));
+  await assertSucceeds(testDoc.update({content: "after"}));
 })
 ```
 
@@ -507,15 +657,14 @@ service cloud.firestore {
 
 ```js
   it ("Allows a room mod to edit another person's room post", async() => {
-    const admin = getAdminFirestore();
     const roomPath = "rooms/room_abc";
     const postPath = `${roomPath}/posts/post_123`;
-    await admin.doc(roomPath).set({topic: "Unit testers", roomMods: [myId, "dummy_user"]});
-    await admin.doc(postPath).set({content: "before", authorId: theirId});
+    await adminDB.doc(roomPath).set({topic: "Unit testers", roomMods: [myId, "dummy_user"]});
+    await adminDB.doc(postPath).set({content: "before", authorId: theirId});
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+    await assertSucceeds(testDoc.update({content: "after"}));
   })
 ```
 
@@ -616,10 +765,10 @@ service cloud.firestore {
 
 ```js
   it ("Allows a user to create a post when they set themselves as the author", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_124";
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.set({authorId: myId, content: "lorem ipsum"}));
+    await assertSucceeds(testDoc.set({authorId: myId, content: "lorem ipsum"}));
   })
 ```
 
@@ -670,10 +819,10 @@ service cloud.firestore {
 
 ```js
   it ("Can't create a post with unapproved fields", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_132";
     const testDoc = db.doc(postPath);
-    await firebase.assertFails(testDoc.set({
+    await assertFails(testDoc.set({
       authorId: theirId, 
       visibility: "public",
       content: "lorem ipsum",
@@ -721,10 +870,10 @@ service cloud.firestore {
 
 ```js
   it ("Can't create a post with unapproved fields", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_132";
     const testDoc = db.doc(postPath);
-    await firebase.assertFails(testDoc.set({
+    await assertFails(testDoc.set({
       authorId: theirId, 
       visibility: "public",
       content: "lorem ipsum",

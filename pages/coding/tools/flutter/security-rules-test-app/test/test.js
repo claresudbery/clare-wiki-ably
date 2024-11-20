@@ -1,29 +1,66 @@
-const assert = require('assert');
-const firebase = require('@firebase/testing');
+// const assert = require('assert');
+// const firebase = require('@firebase/testing');
 
-const MY_PROJECT_ID = "security-rules-test-app-43bc6";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+var assert = require('assert');
+var admin = require("firebase-admin");
+
+import { describe, it, afterEach } from "mocha";
+import {
+  initializeTestEnvironment,
+  assertFails,
+  assertSucceeds,
+} from "@firebase/rules-unit-testing";
+import { readFileSync } from "fs";
+import { initializeApp } from "firebase-admin/app";
+import { getFirestore } from "firebase-admin/firestore";
+
+const projectId = "security-rules-test-app-43bc6";
+
+var serviceAccount = require("/Users/claresudbery/development/_keys/serviceAccountKey.json");
+const adminApp = initializeApp({
+  projectId,
+  credential: admin.credential.cert(serviceAccount),
+});
+const adminDB = getFirestore(adminApp);
+
+const firestore = {
+  rules: readFileSync("./../firestore.rules", "utf8"),
+  host: "localhost",
+  port: 8080,
+};
+const testEnv = await initializeTestEnvironment({
+  projectId,
+  firestore,
+});
+const moderatorToken = {
+  isModerator: true,
+};
+
+// const MY_PROJECT_ID = "security-rules-test-app-43bc6";
 const myId = "user_abc";
 const theirId = "user_xyz";
 const modId = "user_mod";
-const myAuth = {uid: myId, email: "user_abc@gmail.com"};
-const modAuth = {uid: modId, email: "mod@gmail.com", isModerator: true};
+// const myAuth = {uid: myId, email: "user_abc@gmail.com"};
+// const modAuth = {uid: modId, email: "mod@gmail.com", isModerator: true};
 
-function getFirestore(auth){
-  const db = firebase.initializeTestApp({
-    projectId: MY_PROJECT_ID,
-    auth: auth,
-  }).firestore();
-  // db.settings({ host: "localhost:4401", ssl: false });
-  return db;
-};
+// function getFirestore(auth){
+//   const db = firebase.initializeTestApp({
+//     projectId: MY_PROJECT_ID,
+//     auth: auth,
+//   }).firestore();
+//   // db.settings({ host: "localhost:4401", ssl: false });
+//   return db;
+// };
 
-function getAdminFirestore(){
-  const db = firebase.initializeAdminApp({
-    projectId: MY_PROJECT_ID,
-  }).firestore();
-  // db.settings({ host: "localhost:4401", ssl: false });
-  return db;
-};
+// function getAdminFirestore(){
+//   const db = firebase.initializeAdminApp({
+//     projectId: MY_PROJECT_ID,
+//   }).firestore();
+//   // db.settings({ host: "localhost:4401", ssl: false });
+//   return db;
+// };
 
 beforeEach(async() => {
   // await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
@@ -32,153 +69,153 @@ beforeEach(async() => {
 describe("Our security rules test social app", () => {
 
   it ("Can read items in the read-only collection", async() => {
-    const db = getFirestore(null);
+    const db = testEnv.unauthenticatedContext().firestore();
     const testDoc = db.collection("readonly").doc("testDoc");
-    await firebase.assertSucceeds(testDoc.get());
+    await assertSucceeds(testDoc.get());
   })
 
   it ("Cannot write items to the read-only collection", async() => {
-    const db = getFirestore(null);
+    const db = testEnv.unauthenticatedContext().firestore();
     const testDoc = db.collection("readonly").doc("testDoc2");
-    await firebase.assertFails(testDoc.set({foo: "bar"}));
+    await assertFails(testDoc.set({foo: "bar"}));
   })
 
   it ("Can write to a user doc with the same ID as our user", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.collection("users").doc(myId);
-    await firebase.assertSucceeds(testDoc.set({foo: "bar"}));
+    await assertSucceeds(testDoc.set({foo: "bar"}));
   })
 
   it ("Can't write to a user doc with a different ID to our user", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.collection("users").doc(theirId);
-    await firebase.assertFails(testDoc.set({foo: "bar"}));
+    await assertFails(testDoc.set({foo: "bar"}));
   })
 
   it ("Can read posts marked public", async() => {
-    const db = getFirestore(null);
+    const db = testEnv.unauthenticatedContext().firestore();
     const testQuery = db.collection("posts").where("visibility", "==", "public");
-    await firebase.assertSucceeds(testQuery.get());
+    await assertSucceeds(testQuery.get());
   })
 
   it ("Can query personal posts", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testQuery = db.collection("posts").where("authorId", "==", myId);
-    await firebase.assertSucceeds(testQuery.get());
+    await assertSucceeds(testQuery.get());
   })
 
   it ("Can't query all posts", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testQuery = db.collection("posts");
-    await firebase.assertFails(testQuery.get());
+    await assertFails(testQuery.get());
   })
 
   it ("Can read a single public post", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postId = "public_post";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({authorId: theirId, visibility: "public"});
 
-    const db = getFirestore(null);
+    const db = testEnv.unauthenticatedContext().firestore();
     const testRead = db.collection("posts").doc(postId);
-    await firebase.assertSucceeds(testRead.get());
+    await assertSucceeds(testRead.get());
   })
 
   it ("Can read a private post belonging to the user", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postId = "my_private_post";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({authorId: myId, visibility: "private"});
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testRead = db.collection("posts").doc(postId);
-    await firebase.assertSucceeds(testRead.get());
+    await assertSucceeds(testRead.get());
   })
 
   it ("Can't read a private post belonging to another user", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postId = "their_private_post";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({authorId: theirId, visibility: "private"});
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testRead = db.collection("posts").doc(postId);
-    await firebase.assertFails(testRead.get());
+    await assertFails(testRead.get());
   })
 
   it ("Allows a user to edit their own post", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postId = "post_123";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({
       content: "before",
       authorId: myId
     });
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.collection("posts").doc(postId);
-    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+    await assertSucceeds(testDoc.update({content: "after"}));
   })
 
   it ("Doesn't allow a user to edit somebody else's post", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postId = "post_124";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({
       content: "before",
       authorId: theirId
     });
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.collection("posts").doc(postId);
-    await firebase.assertFails(testDoc.update({content: "after"}));
+    await assertFails(testDoc.update({content: "after"}));
   })
 
   it ("Allows a moderator to edit somebody else's post", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postId = "post_125";
-    const setupDoc = admin.collection("posts").doc(postId);
+    const setupDoc = adminDB.collection("posts").doc(postId);
     await setupDoc.set({
       content: "before",
       authorId: theirId
     });
 
-    const db = getFirestore(modAuth);
+    const db = testEnv.authenticatedContext(modId, moderatorToken).firestore();
     const testDoc = db.collection("posts").doc(postId);
-    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+    await assertSucceeds(testDoc.update({content: "after"}));
   })
 
   it ("Allows a user to edit their own room post", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postPath = "rooms/room_abc/posts/post_126";
-    const setupDoc = admin.doc(postPath);
+    const setupDoc = adminDB.doc(postPath);
     await setupDoc.set({
       content: "before",
       authorId: myId
     });
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+    await assertSucceeds(testDoc.update({content: "after"}));
   })
 
   it ("Allows a room mod to edit another person's room post", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const roomPath = "rooms/room_abc";
     const postPath = `${roomPath}/posts/post_127`;
-    await admin.doc(roomPath).set({topic: "Unit testers", roomMods: [myId, "dummy_user"]});
-    await admin.doc(postPath).set({content: "before", authorId: theirId});
+    await adminDB.doc(roomPath).set({topic: "Unit testers", roomMods: [myId, "dummy_user"]});
+    await adminDB.doc(postPath).set({content: "before", authorId: theirId});
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.update({content: "after"}));
+    await assertSucceeds(testDoc.update({content: "after"}));
   })
 
   it ("Allows a user to create a post when they set themselves as the author", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_128";
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.set({
+    await assertSucceeds(testDoc.set({
       authorId: myId, 
       content: "lorem ipsum",
       visibility: "public",
@@ -187,10 +224,10 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Doesn't allow a user to create a post when they set someone else as the author", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_129";
     const testDoc = db.doc(postPath);
-    await firebase.assertFails(testDoc.set({
+    await assertFails(testDoc.set({
       authorId: theirId, 
       content: "lorem ipsum",
       visibility: "public",
@@ -199,19 +236,19 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can't create a post with missing fields", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_130";
     const testDoc = db.doc(postPath);
-    await firebase.assertFails(testDoc.set({
+    await assertFails(testDoc.set({
       authorId: theirId, 
       content: "lorem ipsum"}));
   })
 
   it ("Can create a post with all required and optional fields", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_131";
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.set({
+    await assertSucceeds(testDoc.set({
       authorId: myId, 
       content: "lorem ipsum",
       visibility: "public",
@@ -223,10 +260,10 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can't create a post with unapproved fields", async() => {
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const postPath = "posts/post_132";
     const testDoc = db.doc(postPath);
-    await firebase.assertFails(testDoc.set({
+    await assertFails(testDoc.set({
       authorId: theirId, 
       content: "lorem ipsum",
       visibility: "public",
@@ -236,36 +273,36 @@ describe("Our security rules test social app", () => {
   })
 
   it ("Can edit a post with allowed fields", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postPath = "posts/post_133";
-    await admin.doc(postPath).set({
+    await adminDB.doc(postPath).set({
       authorId: myId, 
       content: "before_content",
       visibility: "public",
       headline: "before_headline"
     });
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.doc(postPath);
-    await firebase.assertSucceeds(testDoc.update({
+    await assertSucceeds(testDoc.update({
       content: "after_content",
       visibility: "private",
     }));
   })
 
   it ("Can't edit a post with unallowed fields", async() => {
-    const admin = getAdminFirestore();
+    // const admin = getAdminFirestore();
     const postPath = "posts/post_134";
-    await admin.doc(postPath).set({
+    await adminDB.doc(postPath).set({
       authorId: myId, 
       content: "before_content",
       visibility: "public",
       headline: "before_headline"
     });
 
-    const db = getFirestore(myAuth);
+    const db = testEnv.authenticatedContext(myId).firestore();
     const testDoc = db.doc(postPath);
-    await firebase.assertFails(testDoc.update({
+    await assertFails(testDoc.update({
       authorId: theirId, 
       content: "after_content",
       visibility: "private",

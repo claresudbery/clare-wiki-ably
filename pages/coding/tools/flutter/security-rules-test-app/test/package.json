@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "Unit testing for security-rules-test-app",
   "main": "test.js",
+  "type": "module",
   "scripts": {
     "test": "mocha --exit"
   },
   "author": "Clare Sudbery",
   "license": "ISC",
   "devDependencies": {
+    "@firebase/rules-unit-testing": "^4.0.1",
     "@firebase/testing": "^0.20.11",
+    "firebase-admin": "^13.0.0",
+    "firebase-tools": "^13.26.0",
     "mocha": "^10.8.2"
   }
 }
