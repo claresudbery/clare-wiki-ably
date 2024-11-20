@@ -12,7 +12,7 @@ service cloud.firestore {
     }
 
     function documentHasCorrectFields(requiredFields, optionalFields) {
-      let requiredAndOptionalFields = requiredFields().concat(optionalFields());
+      let requiredAndOptionalFields = requiredFields.concat(optionalFields);
       return (request.resource.data.keys().hasAll(requiredFields))
         && (request.resource.data.keys().hasOnly(requiredAndOptionalFields));
     }
