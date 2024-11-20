@@ -41,13 +41,17 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
   - Documentation: https://firebase.google.com/docs/rules and https://firebase.google.com/docs/firestore/security/get-started
 - The emulator listens for changes to `infra/firestore.rules`
 - by default all access is turned off (`false`) unless specified
-- `read` is two commands: list and get
 - by default there are two commands - `read` and `write`
   - both have 2 commands under the hood
   - write = update and create
     - can disallow write to disallow both, or be more granular by disallowing one or the other
   - read = list and get
     - can disallow read to disallow both, or be more granular by disallowing one or the other
+    - `list` refers to reading a whole collection rather than an individual document
+    - `get` means reading just one doc
+    - The docs admit it's unlikely you'd want someone to `list` but not `get` - it's more likely to be the other way round
+    - Note there is no `list` command per se - it's just if you perform a `get` on a whole collection
+    - More [here](https://www.fullstackfirebase.com/cloud-firestore/security-rules#read-rules)
 
 ## Getting started
 
@@ -122,7 +126,9 @@ npm install mocha --save-dev #save-dev means only save this for dev purposes, do
 npm install @firebase/testing --save-dev
 ```
 
-- Create new file called `test.js` in `test` folder:
+- Create new file called `test.js` in `test` folder.
+- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- Quick example:
 
 ```js
 const assert = require('assert');
@@ -164,7 +170,9 @@ describe("Our security rules test social app", () => {
     - You may have to wait for emulator to be downloaded
 - Run `npm test` again
   - You should get the error `FirebaseError: false for 'get'`
-- To make the test pass, edit `firestore.rules` as follows:
+- To make the test pass, edit `firestore.rules` 
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -191,8 +199,9 @@ service cloud.firestore {
 - Now the test passes even though there is no actual data in the database
   - An empty record is returned, but the point is that the user has permission to read that data, 
   - so even though it's an empty document snapshot, it's still returned with no error.
-
-- You can capture data from the auth object and use that to verify:
+- You can capture data from the auth object and use that to verify
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -217,6 +226,8 @@ service cloud.firestore {
 - Then in our test, we can create a dummy auth object so it seems like we are signed in as a particular user
   - again, notice that we're writing to a doc which doesn't actually exist
   - ...but that doesn't matter, the point is that we have permission to do it
+- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- Quick example:
 
 ```js
 const assert = require('assert');
@@ -251,7 +262,9 @@ describe("Our security rules test social app", () => {
 - So far we've looked at the auth object, but there is also a resource object
   - This is the current thing in the database that the user is trying to access
   - returns all of the fields in the doc as a map (set of key-value pairs), which is in `resource.data`
-- You can use the resource object to look at particular fields in a document:
+- You can use the resource object to look at particular fields in a document
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -273,6 +286,8 @@ service cloud.firestore {
 - Note that in these tests, the underlying data does not exist.
 - This is because it doesn't need to: We can see from the query which data will be fetched, and the rules dictate whether that data is accessible or not.
   - The rules engine will not look at data unless it absolutely has to - making it more performant.
+- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- Quick example:
 
 ```js
 const assert = require('assert');
@@ -327,7 +342,8 @@ describe("Our security rules test social app", () => {
 - You'll also need to clear up all that data at the end of the test
   - Use `firebase.clearFirestoreData({projectId: MY_PROJECT_ID})`
   - You can do it in a `beforeEach` and in an `after` (which runs after ALL tests have run) to make sure each test is working with a clean slate.
-- Like this:
+- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- Quick example:
 
 ```js
 const MY_PROJECT_ID = "security-rules-test-app-43bc6";
@@ -371,7 +387,9 @@ after(async() => {
 ## Different types of database action
 
 - There is `read` and `write` covered in examples above
-- Then there is `update`:
+- Then there is `update`
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -437,7 +455,8 @@ if (request.auth.token.role == "Moderator")
   - There's a delay before updates will materialise - updates only happen once an hour
     - So use it for stuff that will change infrequently
 - Alternative is to [store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
-- Setting it up in a test:
+- See [sample code](security-rules-test-app/test/test.js#L1) for example of test
+- Quick example of test:
 
 ```js
 const modAuth = {uid: modId, email: "mod@gmail.com", isModerator: true};
@@ -459,7 +478,8 @@ it ("Allows a moderator to edit somebody else's post", async() => {
 
 - In this case you have to do an actual database fetch in the middle of the rule config
 - So you have to call `get` to fetch the field that gives you access control info
-- Like this:
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -482,7 +502,8 @@ service cloud.firestore {
 }
 ```
 
-- ...and the test:
+- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- Quick example:
 
 ```js
   it ("Allows a room mod to edit another person's room post", async() => {
@@ -499,6 +520,9 @@ service cloud.firestore {
 ```
 
 ## Functions in rules
+
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -519,7 +543,9 @@ service cloud.firestore {
 }
 ```
 
-- They can also go inside a `match` block:
+- They can also go inside a `match` block
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -538,7 +564,9 @@ service cloud.firestore {
 }
 ```
 
-- ...but you can't add extra code inside a match block:
+- ...but you can't add extra code inside a match block
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -562,7 +590,9 @@ service cloud.firestore {
 
 - So far, we've seen `resource.data` be used to refer to data that already exists in the database
 - But sometimes we want to access new data - whether it's a new doc being inserted or new data that will be updated on an existing doc
-- We do this via `request.resource.data`:
+- We do this via `request.resource.data`
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -579,7 +609,9 @@ service cloud.firestore {
 }
 ```
 
-- ...and here's a test:
+
+- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- Quick example:
 
 
 ```js
@@ -602,6 +634,8 @@ service cloud.firestore {
   - (and you can use `in` to check whether a particular value is in a list or a set)
   - More [here](https://firebase.google.com/docs/reference/rules/rules.List)
   - and [here](https://firebase.google.com/docs/reference/rules/rules.Set)
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -630,7 +664,9 @@ service cloud.firestore {
 }
 ```
 
-...and here's a test:
+
+- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- Quick example:
 
 ```js
   it ("Can't create a post with unapproved fields", async() => {
@@ -656,6 +692,8 @@ service cloud.firestore {
   - `data.diff` gives us the difference between the two maps
   - `affectedKeys()` gives us the names of all the fields that have changed in any way
   - `hasOnly` checks that it only contains a subset of the supplied set, and nothing else. This method is available on lists and sets (in this case it's a set).
+- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- Quick example:
 
 ```js
 rules_version = '2';
@@ -677,7 +715,9 @@ service cloud.firestore {
 }
 ```
 
-...and here's a test:
+
+- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- Quick example:
 
 ```js
   it ("Can't create a post with unapproved fields", async() => {
@@ -716,6 +756,7 @@ service cloud.firestore {
 - To access the debug log, open `firestore-debug.log`, which lives in same folder as `firebase.json` (possibly one level up from your tests)
   - You'll need to scroll to the end
   - These commands will get you there: `cd..`, `less firestore-debug.log`
+    - ! For us, it's `cd ../..`
     - but actually `tail -f firestore-debug.log` is even better cos then it'll keep showing you new entries
     - I have an alias `fdebug` that stands for `tail -f firestore-debug.log`
   - Remember that in `vim` and `less`, Shift G will take you to the end of the file
@@ -744,13 +785,22 @@ let affectedKeys = debug(request.resource.data.diff(resource.data)).affectedKeys
   - Also, if your rules contain a logical OR, eg `if (resource.data.authorId == resource.auth.uid) || (resource.data.visibility == "public")` 
     - then you might get an error based on some other part of the OR statement not working
     - With this example, the error could be `Property visibility is undefined on object` because it can't find either `visibility` OR `auth`, so the first thing it errors on is `visibility`
-
+- If you get the error `ECONNREFUSED ::1:8080` while trying to run tests
+  - This started happening to me randomly when previously it hadn't been happening
+  - I was running my local emulator from iTerm, it was running correctly, but when I tried to run tests I just got the error `ECONNREFUSED ::1:8080` and no other feedback
+    - There was nothing in `firestore-debug.log` and nothing on the command line in the emulator
+  - I tried stopping the emulator, killing the process and restarting the emulator, but still had same problem
+  - I tried restarting laptop, but still had same problem
+  - But then I ran the emulator from within the VS Code terminal instead of in iTerm, and that seemed to fix it.
+    - Note that after I'd done that, I could stop it in VS Code (Ctrl + C) and then start it again in iTerm and it worked fine. V odd.
+  - See also [Running emulator on another port](#running-emulator-on-another-port)
 
 ## Running emulator on another port
 
 - I found myself experimenting with security rules in a separate project - with its own Firebase emulator - while also running a local version of Construct on its own emulator
-  - My test emaultor was running on a separate port
+  - My test emulator was running on a separate port
 - This IS possible, but it's quite difficult to get your tests to attach to the correct emulator
+  - (You might get `ECONNREFUSED` errors)
 - I achieved it by doing three things, all illustrated below:
   - 1. Edit `firebase.json` to indicate emulator should run on a different port
     - See [below](#1-edit-firebasejson)
@@ -867,3 +917,10 @@ it("can't create matchboxes if fields are not valid", async () => {
 
 - I got the following answer in Firebase Community Slack from `Greg Fenton (GDE for Firebase)` on 17/11/24:
 
+"The API syntax has evolved since Todd’s videos.  So yes, the two are the same thing.  We no longer import firebase as a single thing (that included every single component that is under the Firebase umbrella whether you used it or not).  Now we import from the only modules that we use such as `firebase-admin/app` and `firebase-admin/firestore`."
+
+- My follow-up:
+
+"OK, thank you.
+But `@firebase/testing` is still available and still works? Is that for backwards compatibility?
+Also it looks like the actual functions available have changed, eg `initializeApp` instead of `initializeAdminApp`. Is this documented somewhere?"
