@@ -330,7 +330,7 @@ const moderatorToken = {
 ## Writing unit tests
 
 - Edit `test.js` to add your first test(s)
-- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L46) for example of a test
 - Quick example:
 
 ```js
@@ -366,7 +366,7 @@ describe("Our security rules test social app", () => {
 - Run `npm test` again
   - You should get the error `FirebaseError: false for 'get'`
 - To make the test pass, edit `firestore.rules` 
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L34) for example
 - Quick example:
 
 ```js
@@ -395,7 +395,7 @@ service cloud.firestore {
   - An empty record is returned, but the point is that the user has permission to read that data, 
   - so even though it's an empty document snapshot, it's still returned with no error.
 - You can capture data from the auth object and use that to verify
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L38) for example
 - Quick example:
 
 ```js
@@ -421,15 +421,10 @@ service cloud.firestore {
 - Then in our test, we can create a dummy auth object so it seems like we are signed in as a particular user
   - again, notice that we're writing to a doc which doesn't actually exist
   - ...but that doesn't matter, the point is that we have permission to do it
-- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- See [sample code](security-rules-test-app/test/test.js#L60) for example
 - Quick example:
 
 ```js
-const assert = require('assert');
-const firebase = require('@firebase/testing');
-
-const MY_PROJECT_ID = "insert-your-project-id-here";
-
 describe("Our security rules test social app", () => {
 
   it ("Can write to a user doc with the same ID as our user", async() => {
@@ -458,7 +453,7 @@ describe("Our security rules test social app", () => {
   - This is the current thing in the database that the user is trying to access
   - returns all of the fields in the doc as a map (set of key-value pairs), which is in `resource.data`
 - You can use the resource object to look at particular fields in a document
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L41) for example
 - Quick example:
 
 ```js
@@ -481,22 +476,10 @@ service cloud.firestore {
 - Note that in these tests, the underlying data does not exist.
 - This is because it doesn't need to: We can see from the query which data will be fetched, and the rules dictate whether that data is accessible or not.
   - The rules engine will not look at data unless it absolutely has to - making it more performant.
-- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- See [sample code](security-rules-test-app/test/test.js#L72) for example
 - Quick example:
 
 ```js
-const assert = require('assert');
-const firebase = require('@firebase/testing');
-
-const MY_PROJECT_ID = "insert-your-project-id-here";
-
-function getFirestore(auth){
-  return firebase.initializeTestApp({
-      projectId: MY_PROJECT_ID,
-      auth: auth,
-    }).firestore();
-}
-
 describe("Our security rules test social app", () => {
 
   it ("Can read posts marked public", async() => {
@@ -539,7 +522,7 @@ describe("Our security rules test social app", () => {
 - You'll also need to clear up all that data at the end of the test
   - Use `testEnv.clearFirestore()`
   - You can do it in a `beforeEach` and in an `after` (which runs after ALL tests have run) to make sure each test is working with a clean slate.
-- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- See [sample code](security-rules-test-app/test/test.js#L90) for example
 - Quick example:
 
 ```js
@@ -591,7 +574,7 @@ after(async() => {
 
 - There is `read` and `write` covered in examples above
 - Then there is `update`
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L44) for example
 - Quick example:
 
 ```js
@@ -657,15 +640,14 @@ if (request.auth.token.role == "Moderator")
   - There's a delay before updates will materialise - updates only happen once an hour
     - So use it for stuff that will change infrequently
 - Alternative is to [store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
-- See [sample code](security-rules-test-app/test/test.js#L1) for example of test
+- See [sample code](security-rules-test-app/test/test.js#L146) for example of test
 - Quick example of test:
 
 ```js
-const modAuth = {uid: modId, email: "mod@gmail.com", isModerator: true};
-
-function getFirestore(auth){
-  return firebase.initializeTestApp({projectId: MY_ID, auth: auth}).firestore();
+const moderatorToken = {
+  isModerator: true,
 };
+const modId = "user_mod";
 
 it ("Allows a moderator to edit somebody else's post", async() => {
   await adminDB.doc("posts/post_127").set({content: "before"});
@@ -680,7 +662,7 @@ it ("Allows a moderator to edit somebody else's post", async() => {
 
 - In this case you have to do an actual database fetch in the middle of the rule config
 - So you have to call `get` to fetch the field that gives you access control info
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L9) for example
 - Quick example:
 
 ```js
@@ -704,7 +686,7 @@ service cloud.firestore {
 }
 ```
 
-- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L172) for example of a test
 - Quick example:
 
 ```js
@@ -722,7 +704,7 @@ service cloud.firestore {
 
 ## Functions in rules
 
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L5) for example
 - Quick example:
 
 ```js
@@ -745,7 +727,6 @@ service cloud.firestore {
 ```
 
 - They can also go inside a `match` block
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
 - Quick example:
 
 ```js
@@ -766,7 +747,6 @@ service cloud.firestore {
 ```
 
 - ...but you can't add extra code inside a match block
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
 - Quick example:
 
 ```js
@@ -792,7 +772,7 @@ service cloud.firestore {
 - So far, we've seen `resource.data` be used to refer to data that already exists in the database
 - But sometimes we want to access new data - whether it's a new doc being inserted or new data that will be updated on an existing doc
 - We do this via `request.resource.data`
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L47) for example
 - Quick example:
 
 ```js
@@ -811,7 +791,7 @@ service cloud.firestore {
 ```
 
 
-- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L183) for example of a test
 - Quick example:
 
 
@@ -835,7 +815,7 @@ service cloud.firestore {
   - (and you can use `in` to check whether a particular value is in a list or a set)
   - More [here](https://firebase.google.com/docs/reference/rules/rules.List)
   - and [here](https://firebase.google.com/docs/reference/rules/rules.Set)
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L48) for example
 - Quick example:
 
 ```js
@@ -866,7 +846,7 @@ service cloud.firestore {
 ```
 
 
-- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L231) for example of a test
 - Quick example:
 
 ```js
@@ -893,7 +873,7 @@ service cloud.firestore {
   - `data.diff` gives us the difference between the two maps
   - `affectedKeys()` gives us the names of all the fields that have changed in any way
   - `hasOnly` checks that it only contains a subset of the supplied set, and nothing else. This method is available on lists and sets (in this case it's a set).
-- See [sample code](security-rules-test-app/firestore.rules#L1) for example
+- See [sample code](security-rules-test-app/firestore.rules#L46) for example
 - Quick example:
 
 ```js
@@ -917,7 +897,7 @@ service cloud.firestore {
 ```
 
 
-- See [sample code](security-rules-test-app/test/test.js#L1) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L231) for example of a test
 - Quick example:
 
 ```js
