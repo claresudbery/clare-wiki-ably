@@ -45,3 +45,6 @@ See [separate page](/pages/coding/mobile/swift-xcode.md) - there is bound to be 
     - [Ray Wenderlich Tutorial](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started)
     - [My notes](/pages/coding/mobile/iOS-Development#in-app-purchases)
 
+## Troubleshooting app crash / crashing on phone on startup
+
+- See [here](/pages/coding/mobile/swift-xcode.md#troubleshooting-app-crash--crashing-on-phone-on-startup)

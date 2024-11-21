@@ -647,3 +647,10 @@ var str = "Your score was \(score)"
   - after you've done this, if you stioll have the previous dialog open, you won't be able to select the new runtime
     - you have to close it and then open it again with the plus button
 - Click Create to create the new simulator
+
+## Troubleshooting app crash / crashing on phone on startup
+
+- Try a full rebuild and deploy
+- Try running app on phone direct from XCode
+  - After that, it's installed direct to your phone and it stays there
+  - Note that if you try downloading via TestFlight again after this, it may stop working again
