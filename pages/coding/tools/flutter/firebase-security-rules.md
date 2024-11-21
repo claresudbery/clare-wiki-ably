@@ -352,7 +352,7 @@ const moderatorToken = {
 ## Writing unit tests
 
 - Edit `test.js` to add your first test(s)
-- See [sample code](security-rules-test-app/test/test.js#L46) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L49) for example of a test
 - Quick example:
 
 ```js
@@ -443,7 +443,7 @@ service cloud.firestore {
 - Then in our test, we can create a dummy auth object so it seems like we are signed in as a particular user
   - again, notice that we're writing to a doc which doesn't actually exist
   - ...but that doesn't matter, the point is that we have permission to do it
-- See [sample code](security-rules-test-app/test/test.js#L60) for example
+- See [sample code](security-rules-test-app/test/test.js#L63) for example
 - Quick example:
 
 ```js
@@ -498,7 +498,7 @@ service cloud.firestore {
 - Note that in these tests, the underlying data does not exist.
 - This is because it doesn't need to: We can see from the query which data will be fetched, and the rules dictate whether that data is accessible or not.
   - The rules engine will not look at data unless it absolutely has to - making it more performant.
-- See [sample code](security-rules-test-app/test/test.js#L72) for example
+- See [sample code](security-rules-test-app/test/test.js#L75) for example
 - Quick example:
 
 ```js
@@ -544,7 +544,7 @@ describe("Our security rules test social app", () => {
 - You'll also need to clear up all that data at the end of the test
   - Use `testEnv.clearFirestore()`
   - You can do it in a `beforeEach` and in an `after` (which runs after ALL tests have run) to make sure each test is working with a clean slate.
-- See [sample code](security-rules-test-app/test/test.js#L90) for example
+- See [sample code](security-rules-test-app/test/test.js#L93) for example
 - Quick example:
 
 ```js
@@ -664,7 +664,7 @@ if (request.auth.token.role == "Moderator")
   - There's a delay before updates will materialise - updates only happen once an hour
     - So use it for stuff that will change infrequently
 - Alternative is to [store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
-- See [sample code](security-rules-test-app/test/test.js#L146) for example of test
+- See [sample code](security-rules-test-app/test/test.js#L149) for example of test
 - Quick example of test:
 
 ```js
@@ -710,7 +710,7 @@ service cloud.firestore {
 }
 ```
 
-- See [sample code](security-rules-test-app/test/test.js#L172) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L175) for example of a test
 - Quick example:
 
 ```js
@@ -815,7 +815,7 @@ service cloud.firestore {
 ```
 
 
-- See [sample code](security-rules-test-app/test/test.js#L183) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L186) for example of a test
 - Quick example:
 
 
@@ -870,7 +870,7 @@ service cloud.firestore {
 ```
 
 
-- See [sample code](security-rules-test-app/test/test.js#L231) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L234) for example of a test
 - Quick example:
 
 ```js
@@ -921,7 +921,7 @@ service cloud.firestore {
 ```
 
 
-- See [sample code](security-rules-test-app/test/test.js#L231) for example of a test
+- See [sample code](security-rules-test-app/test/test.js#L234) for example of a test
 - Quick example:
 
 ```js
