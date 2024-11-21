@@ -137,19 +137,19 @@ npm install @firebase/testing --save-dev
 
 - Create new file called `test.js` in `test` folder.
 - Put what's shown below at the top of your file.
-- See [sample code](security-rules-test-app/test/test.js#L1) for example
+- (this was done in [clare-wiki](https://github.com/claresudbery/clare-wiki-ably) - it's still present in commit 63de4b2)
 - Quick example:
 
 ```js
 const assert = require('assert');
 const firebase = require('@firebase/testing');
 
-const MY_PROJECT_ID = "security-rules-test-app-43bc6"; // see below
+const MY_PROJECT_ID = "insert-your-project-id-here"; // see below
 ```
 
 - Project ID (`MY_PROJECT_ID`) comes from Firebase console: Click Settings cog in your project, top left
   - Select Project settings
-  - Copy Project ID (something like `security-rules-test-app-43bc6`)
+  - Copy Project ID (something like `name-of-your-app-45fs4`)
 
 ### How I converted to a more up to date approach
 
@@ -171,7 +171,7 @@ npm install @firebase/rules-unit-testing --save-dev
 const assert = require('assert');
 const firebase = require('@firebase/testing');
 
-const MY_PROJECT_ID = "security-rules-test-app-43bc6";
+const MY_PROJECT_ID = "insert-your-project-id-here";
 ```
 
 - ... with this:
@@ -192,7 +192,7 @@ import { readFileSync } from "fs";
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
-const projectId = "security-rules-test-app-43bc6";
+const projectId = "insert-your-project-id-here";
 ```
 
 - Set up admin access:
@@ -201,7 +201,7 @@ const projectId = "security-rules-test-app-43bc6";
   - click Generate new private key
   - Take the generated json file and rename it `serviceAccountKey.json`
   - Put it somewhere secure - NOT in your repo
-  - There's a snippet of code provided in Firebase console which should be equivalent to the relevant below
+  - There's a snippet of code provided in Firebase console which should be equivalent to the relevant bit below
 - Replaced this...
 
 ```js
@@ -272,21 +272,60 @@ npm install firebase-admin --save-dev
 npm install firebase-tools --save-dev
 ```
 
+- Set up admin access:
+  - In Firebase console, select your test project
+  - Click Settings cog, top left => Project settings => Service accounts (tab at top) 
+  - click Generate new private key
+  - Take the generated json file and rename it `serviceAccountKey.json`
+  - Put it somewhere secure - NOT in your repo
+  - There's a snippet of code provided in Firebase console which should be equivalent to the relevant bit below
 - Create new file called `test.js` in `test` folder.
 - Put what's shown below at the top of your file.
 - See [sample code](security-rules-test-app/test/test.js#L1) for example
 - Quick example:
 
 ```js
-const assert = require('assert');
-const firebase = require('@firebase/testing');
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+var assert = require('assert');
+var admin = require("firebase-admin");
 
-const MY_PROJECT_ID = "security-rules-test-app-43bc6"; // see below
+import { describe, it, afterEach } from "mocha";
+import {
+  initializeTestEnvironment,
+  assertFails,
+  assertSucceeds,
+} from "@firebase/rules-unit-testing";
+import { readFileSync } from "fs";
+import { initializeApp } from "firebase-admin/app";
+import { getFirestore } from "firebase-admin/firestore";
+
+const projectId = "insert-your-project-id-here"; // see below
+ 
+var serviceAccount = require("/path/to/serviceAccountKey.json");
+const adminApp = initializeApp({
+  projectId,
+  credential: admin.credential.cert(serviceAccount),
+});
+const adminDB = getFirestore(adminApp);
+
+const firestore = {
+  rules: readFileSync("./../firestore.rules", "utf8"),
+  host: "localhost",
+  port: 8080,
+};
+const testEnv = await initializeTestEnvironment({
+  projectId,
+  firestore,
+});
+const moderatorToken = {
+  isModerator: true,
+};
 ```
 
 - Project ID (`MY_PROJECT_ID`) comes from Firebase console: Click Settings cog in your project, top left
   - Select Project settings
-  - Copy Project ID (something like `security-rules-test-app-43bc6`)
+  - Copy Project ID (something like `name-of-your-app-56d4s`)
 
 ## Writing unit tests
 
@@ -389,7 +428,7 @@ service cloud.firestore {
 const assert = require('assert');
 const firebase = require('@firebase/testing');
 
-const MY_PROJECT_ID = "security-rules-test-app-43bc6";
+const MY_PROJECT_ID = "insert-your-project-id-here";
 
 describe("Our security rules test social app", () => {
 
@@ -449,7 +488,7 @@ service cloud.firestore {
 const assert = require('assert');
 const firebase = require('@firebase/testing');
 
-const MY_PROJECT_ID = "security-rules-test-app-43bc6";
+const MY_PROJECT_ID = "insert-your-project-id-here";
 
 function getFirestore(auth){
   return firebase.initializeTestApp({
@@ -493,33 +532,42 @@ describe("Our security rules test social app", () => {
 ```
 
 - ...because the rules say we don't have permission to create docs.
-- Instead, use `firebase.initializeAdminApp` alongside `firebase.initializeTestApp` 
+- Instead, use `initializeApp` from `firebase-admin/app` 
+  - alongside `getFirestore` from `firebase-admin/firestore`
+  - and `initializeTestEnvironment` from `@firebase/rules-unit-testing` 
   - This allows us to bypass all the client security rules.
 - You'll also need to clear up all that data at the end of the test
-  - Use `firebase.clearFirestoreData({projectId: MY_PROJECT_ID})`
+  - Use `testEnv.clearFirestore()`
   - You can do it in a `beforeEach` and in an `after` (which runs after ALL tests have run) to make sure each test is working with a clean slate.
 - See [sample code](security-rules-test-app/test/test.js#L1) for example
 - Quick example:
 
 ```js
-const MY_PROJECT_ID = "security-rules-test-app-43bc6";
-const myId = "user_abc";
-const theirId = "user_xyz";
-const myAuth = {uid: myId, email: "user_abc@gmail.com"}
+import { initializeTestEnvironment } from "@firebase/rules-unit-testing";
+import { initializeApp } from "firebase-admin/app";
+import { getFirestore } from "firebase-admin/firestore";
 
-function getFirestore(auth){
-  return firebase.initializeTestApp({
-      projectId: MY_PROJECT_ID,
-      auth: auth,
-    }).firestore();
-}
+const projectId = "insert-your-project-id-here"; // see below
+ 
+var serviceAccount = require("/path/to/serviceAccountKey.json");
+const adminApp = initializeApp({
+  projectId,
+  credential: admin.credential.cert(serviceAccount),
+});
+const adminDB = getFirestore(adminApp);
 
-function getAdminFirestore(){
-  return firebase.initializeAdminApp({projectId: MY_PROJECT_ID}).firestore();
-}
+const firestore = {
+  rules: readFileSync("./../firestore.rules", "utf8"),
+  host: "localhost",
+  port: 8080,
+};
+const testEnv = await initializeTestEnvironment({
+  projectId,
+  firestore,
+});
 
 beforeEach(async() => {
-  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  await testEnv.clearFirestore();
 });
 
 describe("Our security rules test social app", () => {
@@ -535,7 +583,7 @@ describe("Our security rules test social app", () => {
 });
 
 after(async() => {
-  await firebase.clearFirestoreData({projectId: MY_PROJECT_ID});
+  await testEnv.clearFirestore();
 });
 ```
 
@@ -620,7 +668,7 @@ function getFirestore(auth){
 };
 
 it ("Allows a moderator to edit somebody else's post", async() => {
-  await getAdminFirestore().doc("posts/post_127").set({content: "before"});
+  await adminDB.doc("posts/post_127").set({content: "before"});
 
   const db = testEnv.authenticatedContext(modId, moderatorToken).firestore();
   const testDoc = db.doc("posts/post_127");
