@@ -153,7 +153,10 @@ const MY_PROJECT_ID = "security-rules-test-app-43bc6"; // see below
 
 ### How I converted to a more up to date approach
 
-- You can see the commit where I did all of this [here]()
+- You can see the commits where I did all of this 
+  - [here](https://github.com/claresudbery/clare-wiki-ably/commit/2331b4a0ab9e3d35e0469916056faa43e6af863d)
+  - and [here](https://github.com/claresudbery/clare-wiki-ably/commit/3e554c2b8e2473de7bcb0caf3d610e6f9290238f)
+  - and [here](https://github.com/claresudbery/clare-wiki-ably/commit/abbdc197d63a14f8b3f47fa04e9798f0183c62ab)
 - Installed some new libraries:
 
 ```bash
