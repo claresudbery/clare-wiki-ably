@@ -29,6 +29,10 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
 - [Experimenting with security rules](#experimenting-with-security-rules)
 - [Debugging](#debugging)
 - [Troubleshooting](#troubleshooting)
+  - [Error `Property auth is undefined on object`](#error-property-auth-is-undefined-on-object)
+  - [Error `ECONNREFUSED ::1:8080`](#error-econnrefused-18080)
+  - [Tests failing unexpectedly](#tests-failing-unexpectedly)
+  - [Error `Detected non-HTTP/2 connection.`](#error-detected-non-http2-connection)
 - [Running emulator on another port](#running-emulator-on-another-port)
   - [1. Edit firebase.json](#1-edit-firebasejson)
   - [2. Edit your test file](#2-edit-your-test-file)
@@ -67,7 +71,8 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
   - Note that the video suggests `npm -i -g firebase-tools`
     - This didn't work on my machine
     - neither did `firebase-tools -v`
-    - when I ran `firebase login` it said I was already logged in, but also suggested I upgrade from 13.7.0 to 13.25.0 via `npm install -g firebase-tools`, which I did
+    - Login to Firebase: `firebase login`
+      - Note: When I ran `firebase login` it said I was already logged in, but also suggested I upgrade from 13.7.0 to 13.25.0 via `npm install -g firebase-tools`, which I did
     - I think the problem is that it should be `npm -i -g firebase-tools`, not `npm i -g firebase-tools`
       - (`npm i` is equivalent to `npm install`)
     - and once it's installed it's called `firebase`, not `firebase-tools`
@@ -213,6 +218,8 @@ import { readFileSync } from "fs";
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
+process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:8080";
+
 const projectId = "insert-your-project-id-here";
 ```
 
@@ -320,6 +327,8 @@ import {
 import { readFileSync } from "fs";
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
+
+process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:8080";
 
 // !! Both these values will need changing to get things working!! 
 const projectId = "insert-your-project-id-here"; // see below 
@@ -984,12 +993,17 @@ let affectedKeys = debug(request.resource.data.diff(resource.data)).affectedKeys
 
 ## Troubleshooting
 
+### Error `Property auth is undefined on object`
+
 - If you get the error `Property auth is undefined on object` this could be because you accidentally wrote `if (resource.data.authorId == resource.auth.uid)`
   - it should be `request`, not `resource`
   - so it should be `if (resource.data.authorId == request.auth.uid)`
   - Also, if your rules contain a logical OR, eg `if (resource.data.authorId == resource.auth.uid) || (resource.data.visibility == "public")` 
     - then you might get an error based on some other part of the OR statement not working
     - With this example, the error could be `Property visibility is undefined on object` because it can't find either `visibility` OR `auth`, so the first thing it errors on is `visibility`
+
+### Error `ECONNREFUSED ::1:8080`
+
 - If you get the error `ECONNREFUSED ::1:8080` while trying to run tests
   - This started happening to me randomly when previously it hadn't been happening
   - I was running my local emulator from iTerm, it was running correctly, but when I tried to run tests I just got the error `ECONNREFUSED ::1:8080` and no other feedback
@@ -999,6 +1013,18 @@ let affectedKeys = debug(request.resource.data.diff(resource.data)).affectedKeys
   - But then I ran the emulator from within the VS Code terminal instead of in iTerm, and that seemed to fix it.
     - Note that after I'd done that, I could stop it in VS Code (Ctrl + C) and then start it again in iTerm and it worked fine. V odd.
   - See also [Running emulator on another port](#running-emulator-on-another-port)
+
+### Tests failing unexpectedly
+
+- If tests start failing unexpectedly and `debug` commands won't work
+  - Check `firestore-debug.log` - see [debugging](#debugging)
+  - If you're getting the error `Detected non-HTTP/2 connection.`, see below
+
+### Error `Detected non-HTTP/2 connection.`
+
+- If you get the error `Detected non-HTTP/2 connection.` when running tests
+  - Try adding `process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:8080";` to the top of `test.js`
+  - (You might need to change IP and port according to your `firebase.json`)
 
 ## Running emulator on another port
 

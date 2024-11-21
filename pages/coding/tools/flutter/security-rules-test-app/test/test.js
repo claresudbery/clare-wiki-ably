@@ -13,6 +13,8 @@ import { readFileSync } from "fs";
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
+process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:8080";
+
 // !! Both these values will need changing to get things working!! 
 //    See firebase-security-rules.md#how-to-start-with-more-up-to-date-approach
 //    (Clare, see clare-tech/finding-things.md#firebase-security-testing)
