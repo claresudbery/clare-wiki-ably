@@ -13,9 +13,11 @@ import { readFileSync } from "fs";
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
+// !! Both these values will need changing to get things working!! 
+//    See firebase-security-rules.md#how-to-start-with-more-up-to-date-approach
 const projectId = "security-rules-test-app-43bc6";
-
 var serviceAccount = require("/Users/claresudbery/development/_keys/serviceAccountKey.json");
+
 const adminApp = initializeApp({
   projectId,
   credential: admin.credential.cert(serviceAccount),
