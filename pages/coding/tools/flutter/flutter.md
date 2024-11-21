@@ -17,6 +17,7 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Dart Params](dart-params.md)
 - [Dart language](dart.md)
 - [Firebase](firebase.md)
+- [Firebase security rules](firebase-security-rules.md)
 - [Debugging](flutter-debugging.md)
 - [Dependency Injection](flutter-di.md)
 - [Flutter testing](flutter-testing.md)

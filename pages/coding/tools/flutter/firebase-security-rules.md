@@ -11,11 +11,16 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
 - [Overview](#overview)
 - [Getting started](#getting-started)
 - [Creating a test app](#creating-a-test-app)
+- [Getting started with unit tests](#getting-started-with-unit-tests)
+  - [What I originally did](#what-i-originally-did)
+  - [How I converted to a more up to date approach](#how-i-converted-to-a-more-up-to-date-approach)
+  - [How to start with more up to date approach](#how-to-start-with-more-up-to-date-approach)
 - [Writing unit tests](#writing-unit-tests)
 - [Working with test data](#working-with-test-data)
 - [Different types of database action](#different-types-of-database-action)
-- [Custom auth claims](#custom-auth-claims)
-- [Store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
+- [Testing authentication](#testing-authentication)
+  - [Custom auth claims](#custom-auth-claims)
+  - [Store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
 - [Functions in rules](#functions-in-rules)
 - [Accessing the new data rather than the existing data](#accessing-the-new-data-rather-than-the-existing-data)
 - [Accessing / checking specific fields](#accessing--checking-specific-fields)
@@ -27,7 +32,7 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
 - [Running emulator on another port](#running-emulator-on-another-port)
   - [1. Edit firebase.json](#1-edit-firebasejson)
   - [2. Edit your test file](#2-edit-your-test-file)
-  - [3. Remove calls to clearFirestoreData](#3-remove-calls-to-clearfirestoredata)
+  - [3. Remove calls to clearFirestore](#3-remove-calls-to-clearfirestore)
 - [My questions to the firebase community](#my-questions-to-the-firebase-community)
   - [Difference between firebase testing node modules](#difference-between-firebase-testing-node-modules)
 
@@ -121,10 +126,10 @@ npm init # or npm install if this was already done
   - Press Enter to continue
 - I originally did all this after watching [this video]()
   - But that video was 4 years old and things have moved on.
-  - So I've documented here 
-    - [what I originally did](#what-i-originally-did)
-    - [how I converted to a more up to date approach](#how-i-converted-to-a-more-up-to-date-approach)
-    - [how to start with more up to date approach](#how-to-start-with-more-up-to-date-approach)
+  - So I've documented here... 
+    - [What I originally did](#what-i-originally-did)
+    - [How I converted to a more up to date approach](#how-i-converted-to-a-more-up-to-date-approach)
+    - [How to _start_ with more up to date approach](#how-to-start-with-more-up-to-date-approach)
 
 ### What I originally did
 
@@ -246,7 +251,7 @@ function getAdminFirestore(){
   - (note you need to change the path to wherever you have stored `serviceAccountKey.json`):
 
 ```js
-var serviceAccount = require("/path/to/serviceAccountKey.json");
+var serviceAccount = require("/path/to/serviceAccountKey.json"); // see above
 const adminApp = initializeApp({
   projectId,
   credential: admin.credential.cert(serviceAccount),
@@ -316,9 +321,10 @@ import { readFileSync } from "fs";
 import { initializeApp } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
-const projectId = "insert-your-project-id-here"; // see below
- 
-var serviceAccount = require("/path/to/serviceAccountKey.json");
+// !! Both these values will need changing to get things working!! 
+const projectId = "insert-your-project-id-here"; // see below 
+var serviceAccount = require("/path/to/serviceAccountKey.json"); // see below
+
 const adminApp = initializeApp({
   projectId,
   credential: admin.credential.cert(serviceAccount),
@@ -622,7 +628,9 @@ service cloud.firestore {
   })
 ```
 
-## Custom auth claims
+## Testing authentication
+
+### Custom auth claims
 
 - You can add custom fields to the auth object
 - ...but accessing anything other than `uid` on the auth object requires you to use `auth.token`, which is slightly confusing.
@@ -674,7 +682,7 @@ it ("Allows a moderator to edit somebody else's post", async() => {
 })
 ```
 
-## Store custom auth stuff in your database
+### Store custom auth stuff in your database
 
 - In this case you have to do an actual database fetch in the middle of the rule config
 - So you have to call `get` to fetch the field that gives you access control info
@@ -1041,9 +1049,10 @@ function getFirestore(auth){
 }
 ```
 
-### 3. Remove calls to clearFirestoreData
+### 3. Remove calls to clearFirestore
 
-- I tried many many things to get calls to `clearFirestoreData` working on an emulator on a different port
+- I tried many many things to get calls to `clearFirestore` working on an emulator on a different port
+  - It was actually `clearFirestoreData`, as that was when I was working with the older version
 - None of them worked
 - I found the following links:
   - https://stackoverflow.com/questions/74821542/why-an-error-connect-econnrefused-127-0-0-18080-occurs-when-testing-firestore
