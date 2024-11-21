@@ -165,6 +165,22 @@ npm install firebase-tools --save-dev
 npm install @firebase/rules-unit-testing --save-dev
 ```
 
+- This next bit is really just because my team are working this way, but none of the rest will work without this...
+- Add `"type": "module"` to `package.json`
+  - This is what means we have to use `import` statements instead of `require`
+  - Although in some places I did use `require` via `createRequire(import.meta.url)`, because I couldn't work out the corresponding `import` statement
+- Like this:
+
+```json
+  "version": "1.0.0",
+  "description": "Unit testing for security-rules-test-app",
+  "main": "test.js",
+  "type": "module", // THIS LINE IS NEW
+  "scripts": {
+    "test": "mocha --exit"
+  },
+```
+
 - In `test.js`, replaced this...
 
 ```js
