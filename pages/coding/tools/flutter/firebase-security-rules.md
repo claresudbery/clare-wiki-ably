@@ -1018,12 +1018,15 @@ const firestore = {
 };
 ```
 
-  - I tried stopping the emulator, killing the process and restarting the emulator, but still had same problem
-  - I tried restarting laptop, but still had same problem
-  - I ran the emulator from within the VS Code terminal instead of in iTerm, and that _seemed_ to fix it.
-    - But the next time I encountered this problem, that _didn't_ fix it.
-    - Note that after I'd done that, I could stop it in VS Code (Ctrl + C) and then start it again in iTerm and it worked fine. V odd.
-  - See also [Running emulator on another port](#running-emulator-on-another-port)
+- When I’ve been troubleshooting other problems, I’ve often found people recommending swapping localhost for 127.0.0.1. Here are a couple of examples:
+  - https://stackoverflow.com/questions/74821542/why-an-error-connect-econnrefused-127-0-0-18080-occurs-when-testing-firestore
+  - https://stackoverflow.com/questions/72749391/firebase-admin-gives-error-econnrefused-on-connecting-to-auth-emulator/73179684#73179684
+- I tried stopping the emulator, killing the process and restarting the emulator, but still had same problem
+- I tried restarting laptop, but still had same problem
+- I ran the emulator from within the VS Code terminal instead of in iTerm, and that _seemed_ to fix it.
+  - But the next time I encountered this problem, that _didn't_ fix it.
+  - Note that after I'd done that, I could stop it in VS Code (Ctrl + C) and then start it again in iTerm and it worked fine. V odd.
+- See also [Running emulator on another port](#running-emulator-on-another-port)
 
 ### Tests failing unexpectedly
 
