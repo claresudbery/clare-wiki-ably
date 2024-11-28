@@ -23,3 +23,20 @@ permalink: /pages/coding/data/Microsoft-Excel
     - You can use `VLOOKUP`, `XLOOKUP` or `INDEX`.
     - More info [here](https://www.ablebits.com/office-addins-blog/2018/10/31/excel-merge-tables-matching-columns/).
 
+## Format currency / accounting data with negative amounts in read with minus signs
+
+- To format negative amounts:
+- Select the cell or column
+- Select Format => Cells from the menu
+- Select Currency
+  - Set decimal places = 2
+  - Set Symbol = £
+  - Set negative numbers = Red text
+- Select custom
+  - You'll probably see the Type field is already filled in with `£#,##0.00_);[Red]£#,##0.00`
+  - Edit it slightly to add a minus symbol after `[Red]`
+    - ...so it looks like this: `£#,##0.00_);[Red]-£#,##0.00`
+- Now all the amounts should have £ symbols and the same num of decimal places
+  - ...and all the negative amounts should be in red with minus symbols in front
+
+

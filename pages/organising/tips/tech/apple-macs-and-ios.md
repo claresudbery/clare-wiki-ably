@@ -384,3 +384,15 @@ Spotlight directory not found at root: /Applications
 /System/Volumes/Data:
 	Indexing enabled.
 ```
+
+## Kernel panics
+
+- Sometimes when the Mac shuts down unexpectly you get an error report that talks abhout "panic" or "kernel panic".
+  - "Sleep transition timed out after 180 seconds"
+    - ...or at least I think this was the error. I didn't actually save the error, only the web page I found when I searched it (see below).    
+  - I got this error after I'd left my 2020 Mackbook Pro plugged in overnight with the case closed. It was plugged in before I closed the case.
+  - I think this is quite unusual - I might leave it plugged in overnight or I might close the case overnight, but rarely both at once.
+  - It was also awaiting an OS update which I thkn I'd set to "try again tonight", so it's possible it had tried to act on that.
+    - The update hadn't been installed but had been doanloaded. I don't know if it was already downloaded before I'd closed the case.
+  - This page might be relevant: https://discussions.apple.com/thread/251274321?sortBy=rank&page=4
+    - Everything here is dated 2020, which might be relevant to the fact that I have a 2020 model?
