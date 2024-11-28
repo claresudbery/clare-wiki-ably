@@ -267,7 +267,7 @@ const adminDB = getFirestore(adminApp);
 
 const firestore = {
   rules: readFileSync("./../firestore.rules", "utf8"),
-  host: "localhost",
+  host: "localhost", // Sometimes I've had to change "localhost" to "127.0.0.1" - see Troubleshooting (ECONNREFUSED error)
   port: 8080,
 };
 const testEnv = await initializeTestEnvironment({
@@ -342,7 +342,7 @@ const adminDB = getFirestore(adminApp);
 
 const firestore = {
   rules: readFileSync("./../firestore.rules", "utf8"),
-  host: "localhost",
+  host: "localhost", // Sometimes I've had to change "localhost" to "127.0.0.1" - see Troubleshooting (ECONNREFUSED error)
   port: 8080,
 };
 const testEnv = await initializeTestEnvironment({
@@ -572,7 +572,7 @@ const adminDB = getFirestore(adminApp);
 
 const firestore = {
   rules: readFileSync("./../firestore.rules", "utf8"),
-  host: "localhost",
+  host: "localhost", // Sometimes I've had to change "localhost" to "127.0.0.1" - see Troubleshooting (ECONNREFUSED error)
   port: 8080,
 };
 const testEnv = await initializeTestEnvironment({
@@ -1008,9 +1008,20 @@ let affectedKeys = debug(request.resource.data.diff(resource.data)).affectedKeys
   - This started happening to me randomly when previously it hadn't been happening
   - I was running my local emulator from iTerm, it was running correctly, but when I tried to run tests I just got the error `ECONNREFUSED ::1:8080` and no other feedback
     - There was nothing in `firestore-debug.log` and nothing on the command line in the emulator
+  - In the end what worked consistently was changing `localhost` to `127.0.0.1` in the following piece of code at the head of `test.js`:
+
+```js
+const firestore = {
+  rules: readFileSync("./../firestore.rules", "utf8"),
+  host: "127.0.0.1", // This was previously localhost
+  port: 8080,
+};
+```
+
   - I tried stopping the emulator, killing the process and restarting the emulator, but still had same problem
   - I tried restarting laptop, but still had same problem
-  - But then I ran the emulator from within the VS Code terminal instead of in iTerm, and that seemed to fix it.
+  - I ran the emulator from within the VS Code terminal instead of in iTerm, and that _seemed_ to fix it.
+    - But the next time I encountered this problem, that _didn't_ fix it.
     - Note that after I'd done that, I could stop it in VS Code (Ctrl + C) and then start it again in iTerm and it worked fine. V odd.
   - See also [Running emulator on another port](#running-emulator-on-another-port)
 

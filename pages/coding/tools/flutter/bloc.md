@@ -33,6 +33,11 @@ permalink: /pages/coding/tools/flutter/Bloc
     - the events - `xxx_event.dart`
     - the states - `xxx_state.dart`
 - in `xxx_bloc.dart` in our event handler we emit states
+    - note that each bloc will have its own base state
+      - You can see what this is because it's passed into the base `Bloc` class in the definition of the bloc
+      - in some cases we'll create several subclasses, so the bloc will have several possible states, and these will all be defined in `xxx_state.dart`
+      - ...but in some cases there'll only ever be that one state, in which case its referred to as just `state` - which is the member var inherited from the base class
+        - This can cause some confusion when you're reading the code, as it's not obvious what state is being emitted
     - in our test, we assert that those states should have been emitted
     - each state is an instance of a class
         - those classes are defined in `xxxx_state`
@@ -64,7 +69,7 @@ permalink: /pages/coding/tools/flutter/Bloc
 - Notes:
   - The widget's `build` method gets called repeatedly, independently of whether bloc state changes
   - Every time it's called, it returns a new `BlocProvider`
-  - It also calls whatever `builder` method is returned by the blocProvider
+  - It also calls whatever `builder` method is returned by the blocProvider (which will be a `builder` wrapped in a `BlocBuilder`)
     - (which might be a previously-generated method)
   - ...but the blocProvider will only regenerate the `builder` method that's returned in the following circumstances:
     - a `buildWhen` method returns true (see [here](https://pub.dev/documentation/flutter_bloc/latest/flutter_bloc/BlocBuilder-class.html))
