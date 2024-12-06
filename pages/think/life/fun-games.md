@@ -71,10 +71,17 @@ Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-page
 - a new letter each day, can be combined to form some word or title or something
 - Can have two song titles or words being clued simultaneously - so they have to work out which words / letters belong to which answers.
 - Possible words to accompany games (for Clare, see Xmas-Christmas-advent-games.docx): 
+- Song titles:
     - You have five days to guess two song titles. 
-    - Every day you will receive more words .
+    - Every day you will receive more words.
     - All words belong to the titles.
-
+- Phrases:
+    - You have six days to guess two common phrases. 
+    - Every day you will receive more words.
+    - Each word belongs to either the first phrase or the second one.
+    - You get two guesses every day.
+    - On the fifth day, predict what words you’ll get on the 6th day.
+    
 
 ## Wordle backwards
 

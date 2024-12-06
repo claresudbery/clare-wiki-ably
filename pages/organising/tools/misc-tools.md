@@ -486,3 +486,6 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 - "So... is it the right stuff or not?"
 - "Middle of the road - not great, not the worst it could be."
 
+## How to plan journeys across the UK (particularly in Greater Manchester) using public transport
+
+- [Traveline journey planner](https://www.traveline.info/)

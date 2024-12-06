@@ -28,6 +28,7 @@ permalink: /pages/coding/data/Microsoft-Excel
 - To format negative amounts:
 - Select the cell or column
 - Select Format => Cells from the menu
+  - or right-click => Format cells
 - Select Currency
   - Set decimal places = 2
   - Set Symbol = £
@@ -39,4 +40,24 @@ permalink: /pages/coding/data/Microsoft-Excel
 - Now all the amounts should have £ symbols and the same num of decimal places
   - ...and all the negative amounts should be in red with minus symbols in front
 
+## Format time elapsed to cope with times greater than 24 hours
 
+- Select the cell or column
+- Select Format => Cells from the menu
+  - or right-click => Format cells
+- Select Time
+  - Select the one without the asterisk
+- Select custom
+  - You'll probably see the Type field is already filled in with `hh:mm:ss;@`
+  - Change it to `[hh]:mm:ss;@`
+  - If you want, get rid of seconds: `[hh]:mm;@`
+- ! Gotcha!
+  - MS Excel calculates this as time elapsed since 31/12/1899
+  - This means if you want to edit the value and you double slick in the cell, it'll show you something odd like `01/01/1900 21:25:00`
+  - Rather than try to calculate what this value should be, just select the cell and type the value you want directly in (without double-clicking).
+
+## Convert time in seconds into a decimal number
+
+- If D2 contains time formatted as `56:30`...
+- In anoither cell, enter the formula `=ROUND(D2*24,2)`
+- Should give you `56.50`
