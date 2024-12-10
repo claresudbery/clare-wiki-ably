@@ -233,6 +233,25 @@ re, sorry!)
 - It's ridiculously difficult, but here's how:
   - Three dots, top right of email => Print => Print as PDF
 
+### Getting Google Authenticator to autofill for passcodes and passkeys on iPhone 16 ios
+
+- Settings => General => Autofill & Passwords => Autofill From
+  - Select "Passwords" 
+  - Then lower down on the same screen, where it says "Set up Codes in" it will have a default selection of "Passwords" 
+  - but you can change this to "Authenticator"
+  - You may well have TWO Authenticator apps. The blue one is Microsoft. You want the Google one, which is (Dec '24) a multicoloured asterisk.
+
+### Adding more than 10 Google accounts in Gmail on iphone 16 ios
+
+- After you've added 10 accounts, you'll get an error saying max accounts reached
+- This problem is not with google and not with ios settings, it's actually with Safari
+- The solution is to clear your Safari cache: 
+  - Settings => Apps => Safari => scroll right down to "Clear History and Website Data"
+- Then close the recent Google login browser tabs in Safari
+- Restart Safari
+- Restart Gmail
+- Proceed to add more accounts 
+
 ## How to make Zoom record individual voices locally
 
 - Settings => Recording => Local Recording => Record a separate audio file for each participant who speaks
