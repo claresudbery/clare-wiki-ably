@@ -60,6 +60,7 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
     - `get` means reading just one doc
     - The docs admit it's unlikely you'd want someone to `list` but not `get` - it's more likely to be the other way round
     - Note there is no `list` command per se - it's just if you perform a `get` on a whole collection
+      - but the keyword `list` is meaningful in the context of a security rule, eg `allow list: if true;`
     - More [here](https://www.fullstackfirebase.com/cloud-firestore/security-rules#read-rules)
 
 ## Getting started

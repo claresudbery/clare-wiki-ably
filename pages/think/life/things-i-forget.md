@@ -312,7 +312,7 @@ Nadine Shah.
 - "Projection and transference are very similar. They both involve you attributing emotions or feelings to a person who doesn't actually have them. The difference between the two is where the misattributions occur."
     - From [here](https://www.healthline.com/health/mental-health/transference)
 
-# What's that song "I wrote this song cos..."
+## What's that song "I wrote this song cos..."
 
 Looking for you, by Nina Ferrer
 
@@ -329,7 +329,7 @@ I made this song just for you
 I made this song deep in my heart
 I was thinking of you
 
-# What's that song that has lyrics that sound like my name?
+## What's that song that has lyrics that sound like my name?
 
 Billy Bragg - Sexuality
 
@@ -337,7 +337,7 @@ Sexuality, strong and warm and wild and free
 Sexuality, your laws do not apply to me
 A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 
-# Where is Dance Your Way to Psychic Sex?
+## Where is Dance Your Way to Psychic Sex?
 
 (My second novel)
 
@@ -345,25 +345,28 @@ A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 - Lulu, paperback: https://www.lulu.com/shop/alice-turing-aka-clare-sudbery/dance-your-way-to-psychic-sex/paperback/product-1pe982pp.html?q=dance+your+way+to+psychic+sex&page=1&pageSize=4
 - Lulu, ebook: https://www.lulu.com/shop/clare-sudbery/dance-your-way-to-psychic-sex/ebook/product-1wkz2evg.html?q=dance+your+way+to+psychic+sex&page=1&pageSize=4
 
-# What's the name of that AI noise-reducing mic / microphone I used with OBS for better sound recording?
+## What's the name of that AI noise-reducing mic / microphone I used with OBS for better sound recording?
 
 - Krisp
 
-# Where are the instructions for making an origami cube
+## Where are the instructions for making an origami cube
 
 - On external hard disk:
 - /Volumes/WD USB 2/2014-04-01_Backup/_201105_ClaresStuff_backup/_Teaching/Resources/Shape and Space/Shapes/Paper folding/origami cube
 
-# What are those company / place names that I think hint at swearwords like fuck?
+## What are those company / place names that I think hint at swearwords like fuck?
 
 - Ing Direct makes me think of "Fucking Direct"
 - "Kinell" (place name and surname) make me think of "Fucking Hell" or "Fuckin' 'ell"
 
-# What's that app that helps you cope with jet lag / jetlag?
+## What's that app that helps you cope with jet lag / jetlag?
 
 - Timeshifter
 
-# Is Truman Hanks related to Tom Hanks?
+## Is Truman Hanks related to Tom Hanks?
 
 - Yes, he is his son and played the younger him in A Man Called Otto, but Tom Hanks was not in The Truman Show and has not shared why he called his son Truman
 
+## What's that economics / economist's story about the cheap jewellery?
+
+- The one that illustrates why it's worth charging more

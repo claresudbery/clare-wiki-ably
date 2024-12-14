@@ -19,3 +19,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - [Articles on this site re what I've learnt about Jekyll](/pages/coding/webdev/Jekyll)
 
+## Notes from Ron Jeffries about his Jekyll solution
+
+- See clare-tech: jekyll-extra.md
+
