@@ -35,6 +35,7 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Create / run new app](#create--run-new-app)
     - [Command line](#command-line)
     - [VS Code](#vs-code)
+    - [Flutter tutorial](#flutter-tutorial)
     - [Getting started in iOS](#getting-started-in-ios)
     - [IntelliJ IDEA](#intellij-idea)
 - [Dependencies](#dependencies)
@@ -128,13 +129,15 @@ flutter run
 - Navigation
     - Place cursor and right-click
     - For things defined in a library imported at the top of a file, choose right-click => Peek, or Option + F12
-- Tutorial
-    - run through the codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0)
-    - Note for Clare: For notes on where I'm up to in the tutorial, see [here](https://github.com/claresudbery/Flutter_codelab_namer_app/blob/main/README.md#where-im-up-to) 
-    - See my [list of commits](https://github.com/claresudbery/Flutter_codelab_namer_app/commits/main/) to see how different things can be implemented
-    - See [codelab repo](https://github.com/flutter/codelabs/tree/main/namer/step_08) to see sample code generated during codelab
-    - See [advanced version](https://dartpad.dev/?id=e7076b40fb17a0fa899f9f7a154a02e8) of the app created during the tutorial
-    - [More tutorials and docs](https://flutter.dev/learn)
+
+### Flutter tutorial
+
+- Run through the codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0)
+- See my (clare's) [list of commits](https://github.com/claresudbery/Flutter_codelab_namer_app/commits/main/) to see how different things can be implemented
+- See [Clare's codelab repo](https://github.com/flutter/codelabs/tree/main/namer/step_08) to see sample code generated during codelab
+- I've now been through all my commits and documented what I learnt for each one, by adding notes in relevant sections in these pages. You'll see I've linked to tutorial commits in many places.
+- See [advanced version](https://dartpad.dev/?id=e7076b40fb17a0fa899f9f7a154a02e8) of the app created during the tutorial
+- [More tutorials and docs](https://flutter.dev/learn)
 
 ### Getting started in iOS
 

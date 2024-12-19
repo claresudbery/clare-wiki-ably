@@ -8,10 +8,30 @@ permalink: /pages/coding/tools/flutter/Navigation-And-Routing
 
 ## Contents of this page:
 
+- [Use Link component to embed a link](#use-link-component-to-embed-a-link)
 - [Redirect while routing](#redirect-while-routing)
 - [Testing navigation / routing](#testing-navigation--routing)
   - [Sample hand-cranked navigation testing code v1](#sample-hand-cranked-navigation-testing-code-v1)
   - [Sample hand-cranked navigation testing code v2](#sample-hand-cranked-navigation-testing-code-v2)
+
+## Use Link component to embed a link
+
+- You can link to another page in your app like this:
+
+```dart
+    Link(
+      uri: Uri.parse('/things/${thing.id}/home'),
+      builder: (context, followLink) {
+        return InkWell(
+          onTap: followLink,
+          child: Text(
+            thing.name,
+            style: linkTextTheme,
+          ),
+        );
+      },
+    ),
+```
 
 ## Redirect while routing
 
