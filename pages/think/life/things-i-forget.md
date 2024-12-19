@@ -369,4 +369,17 @@ A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 
 ## What's that economics / economist's story about the cheap jewellery?
 
-- The one that illustrates why it's worth charging more
+- The one that illustrates why it's worth charging more.
+
+The one about the jewellery store owner who was having difficulty selling a particular range of high quality, reasonably priced turquoise items. 
+
+She tried moving them to a more visible location and getting the staff to push them heavily, but it wasn't working. In the end, on her way out to a vacation, she left a happy scribbled note for her assistant, saying "everything in this display case, price x 1/2".
+
+When she came back, she found the entire display cabinet had sold out. So halving the price worked! But when she spoke to her assistant it turned out he'd misread her note and thought it said "x 2". So he'd _doubled_ the price.
+
+And now that it was more expensive, it signalled high quality to people just wanting to buy a gift of a particular quality, and assuming the price told them how high quality it was.
+
+## What's that Latin word that kind of means small speaker fee?
+
+- ...or expenses
+- honorarium

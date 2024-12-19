@@ -31,6 +31,7 @@ permalink: /pages/think/life/Nice-Stuff
 - [Live water hole webcam](https://www.youtube.com/watch?v=ydYDqZQpim8) in Namibia with gemsbok (S. African oryx - bit like gazelle)
 - [The Beast of Birker Fell](https://www.youtube.com/watch?v=5pF7rxjKD04)
 - [Zombie Holiday from Hell](https://youtu.be/WLG4anfU218?si=2gyodrd9z4liVkTM)
+- [A brick in a washing machine](https://youtu.be/dq6T5BojXc8?si=cFM9fOceJ3vNgjKU)
 
 ## Jokes
 
