@@ -111,14 +111,17 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 
 - If you want to find a value and then return another value from the same row
 - eg 
-  - you are looking in row 2, and 
-  - you want to see whether C2 (row 2 col C) has the same value as A1,
-  - and if it does you want to return E2 (row 2 col E)
+  - you are looking at a range of data, and 
+  - you want to see whether anything in the first col of your range has the same value as cell A1,
+  - and if it does you want to return the value in the third col of your range, in the same row as the matching value
+  - so for instance, if your range is cols C to E, and you find a match in cell C2 (row 2, col C), then the value returned will be the value in cell E2 (row 2, col E)
 - it looks like this: `=VLOOKUP(A1,C2:E10,3,0)`
   - You're searching for a match for `A1`
   - The range of values you're searching ("the table") is `C2:E10`
   - You're going to return the value from the 3rd col in the table (C is the first col, E is the third)
   - The `0` represents `false` for `range_lookup` which means the data is sorted in ascending order (I think)
+- If you want to return an empty string if the `VLOOKUP` fails to find a result, wrap it in `IFERROR`:
+  - `=IFERROR(VLOOKUP(A1,C2:E10,3,0),"")`
 - If you want to return not just a single value but a sum of values in many cols...
   - See this spreadsheet for an illustration of the different approaches: https://docs.google.com/spreadsheets/d/16pQ6E9zYMN1zaNgM6gCVA-b2UalYj2UhgTsyiv3j0rw/edit?gid=1372164098#gid=1372164098
   - First approach:
@@ -154,8 +157,101 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 
 ## Copy multiple cols into one col without including empty rows
 
+- Also works for merging multiple sheets into one
 - Like this: `=FILTER({Categories!A:A;Categories!C:C},LEN({Categories!A:A;Categories!C:C}))`
+- It only works on one col at a time, but you can use autofill functionality to pull the formula across into adjacent cols and get those cols filled in too
+- If you want empty rows to be included, you can just change the `LEN` part to reference a col that contains no empty rows! For Clare, see Current Historic monthly in Time FRecording spreadssheet for an example.
+- Sometimes the first row of time/date data will have the wrong format. The way to fix this is to copy formatting from the second row down to the first row (use the little paint roller icon)
 
+## Have a chart which charts hours greater than 240 without going down to -144
 
+- I asked for help with this problem [here](https://support.google.com/docs/thread/317591568?hl=en&sjid=15803700076749272558-EU)
 
+"Hi
 
+I have a chart tracking hours spent on various projects. But if any of the values go over 240 hours, the Y axis suddenly changes its lowest value to -144, even though there are no values less than zero.
+
+According to the documentation, I can set min and max values for each axis via the Customize menu, but I see nowhere to set min/max values. ("To edit the minimum and maximum values for a chart in Google Sheets, you can do the following: 
+Open the spreadsheet in Google Sheets
+Double-click the chart you want to change
+Click Customize on the right
+Click Horizontal axis or Vertical axis
+Enter the desired minimum and maximum values")
+
+Here is a sample: https://docs.google.com/spreadsheets/d/15JekJRilFscgtecvxids5Bvn4UC-W1RQF6R6zqpgJc8/edit?usp=sharing
+
+You'll see in the sample I've created two charts: One includes source data > 240 hours and the Y axis goes down to -144. The other has max data of 240 hours, and the Y axis is as I would want it to be.
+
+I'm attaching a screenshot of what I see in the Customize menu for the vertical axis.
+
+Hoping you can help! Thank you."
+
+## Have a chart whose title and data change dynamically in response to source data changing
+
+- I asked for help with this problem [here](https://support.google.com/docs/thread/317595598?hl=en&sjid=15803700076749272558-EU)
+- "How can I make my chart title and content change dynamically in response to changes in source data?"
+- Note that originally I thought I also had a problem with getting the number of columns in the line gvraph to change according to how many rows of data there are, but either I was wrong about this being a problem or at some point it just stopped being a problem!
+
+"Hi
+
+I have data which changes according to which year I'm looking at. For different years and combinations of years, the number of rows change and the header also changes to indicate which year(s) are being included.
+
+I can create a chart from the resulting data, but its title appears to be fixed in stone, even when the underlying header and number of rows changes.
+
+Is it possible for the chart title to change dynamically in response to data? I would love it if I didn't have to manually edit the chart title every time the underlying data changes.
+
+Here is an example of my problem. In cell A2, you'll see there is text which changes according to which years have been selected. I would like this cell to be used as the title for the chart. If you change the values in cells F2, G2 and H2 (to "yes" or "no"), data from different years is taken into account and the text in A2 changes. 
+
+I've created two charts (pie chart and line chart). I can't find a way for either of them to change their title in response to the data in cell A2.
+
+Here is the spreadsheet: https://docs.google.com/spreadsheets/d/1IoiIcPQWQw_6yx2GGq1ZHP5Y3k-TeJ-xHG9QIJ8tj7E/edit?usp=sharing
+
+Hoping somebody can help! Thank you."
+
+## Insert multiple rows
+
+- This is a really weird one!
+- You select the number of rows you want to insert
+  - even if those rows have data
+- Then right-click and you'll get the option to "insert n rows" where n is the number of rows you selected
+- Now n empty rows will be inserted above the top selected row
+- ...and all the data in the selected rows will get pushed down by the newly inserted rows
+
+## Sort data via function
+
+- `=SORT(A2:B26, 1, TRUE)`
+  - This sorts the range `A2:B26`, in ascending order (`TRUE`), using the data in col `1` (the first col, col A) to do the sorting.
+
+## Create a unique list of data, removing duplicates, in order
+
+- `=SORT(UNIQUE(A1:A10), 1, TRUE)`
+
+## Why is search-replace / find-replace not working?
+
+- Is it because you're searching derived data, eg data that's being populated via something like `VLOOKUP` or `FILTER` or arrays like `={Categories!A:A}`?
+  - In that case, search the source data instead
+- ...or is it because you're searching for text that's come from a data range, eg `=meet` being translated into `Meeting`?
+  - In that case, search will work but search/replace will not.
+  - You need to check "Match entire cell contents" and "Also search within formulae" and then you need to search explicitly for (eg) `=meet` and replace it explicitly with (eg) `=bigmeet`
+
+## How to autofill down hundreds of rows without manually dragging the blue square in the corner
+
+- Copy a cell that contains the formula you want to autofill
+- Select the _whole column_
+- Paste
+
+## How to search for cells that contain errors
+
+- A quick way to discover whether a column contains any errors is to create a sorted (in descending order) unique list of all unique values in that col(s)
+  - If any errors, you'll get one `#REF!` entry at the top of the list
+  - Like this: `={SORT(UNIQUE('The sheet I'm interested in'!A:A),1,FALSE);SORT(UNIQUE('The sheet I'm interested in'!B:B),1,FALSE)}`
+    - The `FALSE` indicates descending order
+    - The enclosing `{}` and semi-colons allow you to create an array of multiple cols in one col
+- Then, if there are errors, you'll need to find individual erroring cells:
+  - You can't just search for `#REF!`
+  - Instead, wrap formulas in `IFERROR` to fill the cells with searchable text
+    - Like this: `=IFERROR(formula_name,"THIS FIELD IS ERRORING")`
+  - If you don't want to do that in the source data, you can create a copy of the data somewhere and search that instead
+    - eg `=IFERROR('The sheet I'm interested in'!D1,"******ERROR-ERROR-ERROR******")`
+    - then autofill the entire col by copying that cell and then selecting the col to autofill all the way down
+  - You can do the same for neighbouring cols if they'll help you to find the bad rows

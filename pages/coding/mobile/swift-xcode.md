@@ -654,3 +654,23 @@ var str = "Your score was \(score)"
 - Try running app on phone direct from XCode
   - After that, it's installed direct to your phone and it stays there
   - Note that if you try downloading via TestFlight again after this, it may stop working again
+
+## Troubleshooting error re LSApplicationCategoryType key when distributing app
+
+- Error seen after creating an archive and clicking Distribute app in the Organiser window
+- "The product archive is invalid. The Info.plist must contain a LSApplicationCategoryType key, whose value is the UTI for a valid category."
+- Solution: Select a category from the dropdown in the Project settings
+- "You can set a category in Xcode under the macOS App target, in the General tab under the Identity section. That will add it to the built Info.plist for you."
+- More here: https://forums.developer.apple.com/forums/thread/737134
+
+## Troubleshooting uploaded archive not appearing in App Store Connect
+
+- I uploaded an archive and it didn't appear in App Store Connect
+- It turned out I'd build a Mac OS archive by accident instead of an ios archive!
+- This is how I found out: 
+  - In App Store Connect, on the left hand side, under Builds, you'll see iOS and macOS
+  - If you select macOS, your build might appear
+- To build the correct archive, I needed to change the “active scheme” to Any Ios Device 
+  – this is the dropdown you use to select which device the app will run on, at the top 
+  - but I hadn't done that, and when I tried, that option wasn't available - there weren't any ios options available
+  - but there was a thing encouraging me to download the latest ios version, and after I did that, the "Any ios Device" option became available
