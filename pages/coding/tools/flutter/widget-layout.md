@@ -8,7 +8,35 @@ permalink: /pages/coding/tools/flutter/Widget-Layout
 
 ## Contents of this page:
 
+- [See also...](#see-also)
 - [Useful layout resources](#useful-layout-resources)
+- [Troubleshooting Color Hex values](#troubleshooting-color-hex-values)
+- [Use the widget inspector / layout explorer](#use-the-widget-inspector--layout-explorer)
+- [Aligning text to the left](#aligning-text-to-the-left)
+- [Layout constraints](#layout-constraints)
+- [Expanded vs flexible](#expanded-vs-flexible)
+- [Add borders](#add-borders)
+- [Troubleshooting layout](#troubleshooting-layout)
+  - [Find the widget inspector / layout explorer](#find-the-widget-inspector--layout-explorer)
+  - [Infinite size / blank screen](#infinite-size--blank-screen)
+  - [Alternatives to IntrinsicHeight or IntrinsicWidth](#alternatives-to-intrinsicheight-or-intrinsicwidth)
+  - [Persuading a widget to have a particular width or height](#persuading-a-widget-to-have-a-particular-width-or-height)
+  - [Getting a row / col to have width / height of its widest / highest widget](#getting-a-row--col-to-have-width--height-of-its-widest--highest-widget)
+  - [Cutting too-long text short and replacing it with ellipsis](#cutting-too-long-text-short-and-replacing-it-with-ellipsis)
+  - [Give text a background colour](#give-text-a-background-colour)
+  - [When width or height is unconstrained](#when-width-or-height-is-unconstrained)
+
+## See also...
+
+- [Separate section in flutter.md](flutter.md#visual-styling-and-layout)
+- ...which contains...
+  - [Themes](flutter.md#themes)
+  - [Styling](flutter.md#styling)
+  - [Centring widgets on the screen](flutter.md#centring-widgets-on-the-screen)
+  - [Creating space between elements on the screen](flutter.md#creating-space-between-elements-on-the-screen)
+  - [Preventing visual clashes with OS features](flutter.md#preventing-visual-clashes-with-os-features)
+  - [Giving a button an icon](flutter.md#giving-a-button-an-icon)
+  - [Other components helpful for layout](flutter.md#other-components-helpful-for-layout)
 
 ## Useful layout resources
 
@@ -167,8 +195,9 @@ Container(
 
 ### Find the widget inspector / layout explorer
 
-- If the widget tree won't refresh and is just blank
+- If the widget tree won't refresh and is just blank, restart VS Code
 - To get it back again, after closing it:
+  - Check you haven't dragged it into a separate window first! Use Cmd + backtick to see if there's another window lurking somewhere
   - Click the blue square icon on the far right end of the floating toolbar that has the Hot Reload button
   - ... or Cmd + Shift + P - search for "flutter: inspect"
     - You'll get two options: 

@@ -24,6 +24,7 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Material components](material.md)
 - [Navigation and Routing](navigation-routing.md)
 - [Widgets](widgets.md)
+- [Widget layout](widget-layout.md)
 - [Performance](performance.md)
 
 ## Contents of this page:
@@ -41,6 +42,7 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Dependencies](#dependencies)
 - [Troubleshooting](#troubleshooting)
 - [Hot reload](#hot-reload)
+ - [Troubleshoot: Hot reload toolbar missing](#troubleshoot-hot-reload-toolbar-missing)
 - [Widgets](#widgets)
   - [App state](#app-state)
   - [Stateless vs Stateful widgets](#stateless-vs-stateful-widgets)

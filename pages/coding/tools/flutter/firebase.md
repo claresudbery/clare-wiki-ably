@@ -14,6 +14,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 - [Troubleshooting lost data from emulator](#troubleshooting-lost-data-from-emulator)
 - [Troubleshooting "permission denied"](#troubleshooting-permission-denied)
 - [Collection groups / Collection group queries](#collection-group-queries)
+- [Upload an image to local emulator storage](#upload-an-image-to-local-emulator-storage)
 
 ## Tutorial
 
