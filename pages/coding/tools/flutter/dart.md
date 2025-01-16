@@ -336,9 +336,9 @@ gup
 gch [your branch]
 git merge main
 flutter test
-dart fix --apply
-dart format . # Don't forget to include the dot!
-dart analyze
+dart fix --apply # alias dfi on my machine
+dart format . # Don't forget to include the dot! # alias dfo on my machine
+dart analyze # alias dan on my machine
 ```
 
 - `dart fix --dry-run` will suggest changes based on what options are in `analysis_options.yaml`

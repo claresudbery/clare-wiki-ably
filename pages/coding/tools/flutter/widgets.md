@@ -17,6 +17,7 @@ permalink: /pages/coding/tools/flutter/Widgets
   - [Handling Keyboard Shortcuts in the Quill Editor](#handling-keyboard-shortcuts-in-the-quill-editor)
   - [Bug in Quill Editor's Overriding of Keyboard Shortcuts](#handling-keyboard-shortcuts-in-the-quill-editor)
 - [Quill Editor](#quill-editor)
+- [Widget layout]()
 
 ## Finding useful widgets etc
 
@@ -255,3 +256,8 @@ Widget buildQuillEditor() {
 - To look at details of different versions, see changelog [here](https://github.com/singerdmx/flutter-quill/blob/master/CHANGELOG.md)
 - For notes about overriding keyboard shortcuts, see [above](#handling-keyboard-shortcuts-in-the-quill-editor) 
 - For notes about a bug in overriding keyboard shortcuts, see [above](#bug-in-quill-editors-overriding-of-keyboard-shortcuts)
+
+### Common flutter errors
+
+- See [here](https://docs.flutter.dev/testing/common-errors)
+

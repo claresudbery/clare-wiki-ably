@@ -81,3 +81,11 @@ permalink: /pages/coding/tools/flutter/Firebase
 - We can use the simple and compound query described earlier to query a single city's landmarks subcollection, but you might also want to retrieve results from every city's landmarks subcollection at once.
   - This is what collection group queries are for
 - More [here](https://firebase.google.com/docs/firestore/query-data/queries#collection-group-query)
+
+## Upload an image to local emulator storage
+
+- Use a url like this: http://127.0.0.1:4000/storage/project-id.appspot.com/avatars
+- ...where `avatars` is the name of the place where you're storing your images
+- ...and `project-id` is the project ID for your Firebase - will be set as `projectId` in firebase.json and maybe `PROJECT_ID` in various bits of config - might look something like `app-xxxxxxx-dv-123456`
+- That url will take you to a page with an "Upload file" button
+

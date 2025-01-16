@@ -200,6 +200,12 @@ flutter run
   - Refactor some code to extract a new widget class
 - I found some things did not work for hot reload, but I'm not sure if that was because I was checking out different commits, which might have been interpreted differently than saving the contents of a file
 
+### Troubleshoot: Hot reload toolbar missing
+
+- It's possible to drag it and move it around the screen, so you might just have moved it somewhere odd
+- Try searching for "hot reload" or "floating toolbar" in settings (Cmd `,`)
+- If you still can't see the hot reload floating toolbar anywhere, try restarting VS Code.
+
 ## Widgets
 
 - Widgets are the elements from which you build every Flutter app. 
@@ -346,7 +352,7 @@ class SillyText extends StatelessWidget {
 
 ### Creating space between elements on the screen
 
-- Add a `SizedBox` widget beetween other elements - often used to create visual gaps
+- Add a `SizedBox` widget between other elements - often used to create visual gaps
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/4af6787861a2ff1593f87fc4a2f485a8874f9261)
 
 ### Preventing visual clashes with OS features 
