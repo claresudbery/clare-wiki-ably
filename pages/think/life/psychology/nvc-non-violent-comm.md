@@ -4,16 +4,77 @@ location: pages/think/life/psychology/leaf
 permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 ---
 
+## Intro
+
+- These notes are from 
+  - Nonviolent Communication: A Language of Life: 
+    - Life-Changing Tools for Healthy Relationships 
+    - (Nonviolent Communication Guides)
+  - by Rosenberg, Marshall B.; Chopra, Deepak. 
+  - 3rd edition (Kindle Edition). 
+- Note that these notes are almost 100% simply copied direct from the book. 
+
+## Table of Contents
+
+- [Quotes](#quotes)
+- [Four components of the NVC model](#four-components-of-the-nvc-model)
+  - Chapter 1
+- [Give and receive](#give-and-receive)
+  - Chapter 1
+- [Avoid judgements](#avoid-judgements) 
+  - Chapter 2
+- [Avoid denial of responsibility](#avoid-denial-of-responsibility)
+  - Chapter 2
+- [Avoid Life-Alienating Communication](#avoid-life-alienating-communication)
+  - Chapter 2
+- [Observe without evaluating](#observe-without-evaluating)
+  - Chapter 3
+- [The Heavy Cost of Unexpressed Feelings](#the-heavy-cost-of-unexpressed-feelings)
+  - Chapter 4
+- [Taking Responsibility for Our Feelings](#taking-responsibility-for-our-feelings)
+  - Chapter 5
+- [The Needs at the Roots of Feelings](#the-needs-at-the-roots-of-feelings)
+  - Chapter 5
+- [From Emotional Slavery to Emotional Liberation](#from-emotional-slavery-to-emotional-liberation)
+  - Chapter 5
+- [Using Positive Action Language](#using-positive-action-language)
+  - Chapter 6
+- [Requesting Honesty](#requesting-honesty)
+  - Chapter 6
+- [Requests versus Demands](#requests-versus-demands)
+  - Chapter 6
+- [Receiving Empathically](#receiving-empathically)
+  - Chapter 7
+- [When Pain Blocks Our Ability to Empathize](#when-pain-blocks-our-ability-to-empathize)
+  - Chapter 7
+- [Empathy That Heals](#empathy-that-heals)
+  - Chapter 8
+- [Connecting Compassionately With Ourselves](#connecting-compassionately-with-ourselves)
+  - Chapter 9
+- [Don’t Do Anything That Isn’t Play!](#dont-do-anything-that-isnt-play)
+  - Chapter 9
+- [EXERCISE: Translating “Have to” to “Choose to”](#exercise-translating-have-to-to-choose-to)
+  - Chapter 9
+- [Expressing Anger Fully](#expressing-anger-fully)
+  - Chapter 10
+- [Conflict Resolution and Mediation](#conflict-resolution-and-mediation)
+  - Chapter 11
+- [The Protective Use of Force](#the-protective-use-of-force)
+  - Chapter 12
+- [Liberating Ourselves and Counseling Others](#liberating-ourselves-and-counseling-others)
+  - Chapter 13
+- [Expressing Appreciation in Nonviolent Communication](#expressing-appreciation-in-nonviolent-communication)
+  - Chapter 14
+
 ## Quotes
 
 - "As NVC replaces our old patterns of defending, withdrawing, or attacking in the face of judgment and criticism, we come to perceive ourselves and others, as well as our intentions and relationships, in a new light."
   - "We perceive relationships in a new light when we use NVC to hear our own deeper needs and those of others."
 - "We pay dearly when people meet our needs out of fear, guilt or shame"
 
-## Key principles
-
 ### Four components of the NVC model
 
+- Chapter 1
 - Four components of the NVC model: 
   - 1. observations 
   - 2. feelings 
@@ -39,6 +100,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Give and receive
 
+- Chapter 1
 - Give and receive
   - Two parts of NVC: 
     - 1. expressing honestly through the four components 
@@ -53,6 +115,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Avoid judgements
 
+- Chapter 2
 - Certain ways of communicating alienate us from our natural state of compassion.
 - Analyses of others are actually tragic expressions of our own needs and values.
 - They are tragic because when we express our values and needs in this form, we increase defensiveness and resistance among the very people whose behaviors are of concern to us.
@@ -64,6 +127,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Avoid denial of responsibility
 
+- Chapter 2
 - Another kind of life-alienating communication is denial of responsibility.
 - We deny responsibility for our actions when we attribute their cause to factors outside ourselves: Vague, impersonal forces — “I cleaned my room because I had to.”
 - We can replace language that implies lack of choice with language that acknowledges choice.
@@ -71,6 +135,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Avoid Life-Alienating Communication
 
+- Chapter 2
 - Communicating our desires as demands is yet another form of language that blocks compassion.
 - We can never make people do anything.
 - Thinking based on “who deserves what” blocks compassionate communication.
@@ -78,6 +143,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Observe without evaluating
 
+- Chapter 3
 - When we combine observation with evaluation, people are apt to hear criticism.
 - Distinguishing Observations From Evaluations
 - The words always, never, ever, whenever, etc. express observations when used in the following ways: 
@@ -87,6 +153,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### The Heavy Cost of Unexpressed Feelings
 
+- Chapter 4
 - For families, the toll is severe when members are unable to communicate emotions.
 - Expressing our vulnerability can help resolve conflicts.
 - Feelings versus Non-Feelings
@@ -105,6 +172,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Taking Responsibility for Our Feelings
 
+- Chapter 5
 - What others do may be the stimulus of our feelings, but not the cause.
 - When someone gives us a negative message, whether verbally or nonverbally, we have four options as to how to receive it.
   - 1. blame ourselves.
@@ -120,6 +188,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### The Needs at the Roots of Feelings
 
+- Chapter 5
 - If we express our needs, we have a better chance of getting them met.
 - The Pain of Expressing Our Needs versus the Pain of Not Expressing Our Needs
   - In a world where we’re often judged harshly for identifying and revealing our needs, doing so can be very frightening. 
@@ -129,6 +198,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### From Emotional Slavery to Emotional Liberation
 
+- Chapter 5
 - In our development toward a state of emotional liberation, most of us experience three stages in the way we relate to others.
 - Stage 1. Emotional slavery
   - We see ourselves responsible for others’ feelings.
@@ -140,6 +210,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Using Positive Action Language
 
+- Chapter 6
 - Use positive language when making requests.
   - She had successfully communicated to him what she did not want—his spending so much time at work—but had failed to request what she did want. Encouraged to reword her request, she thought a minute and said, “I wish I had told him that I would like him to spend at least one evening a week at home with the children and me.”
 - Making requests in clear, positive, concrete action language reveals what we really want.
@@ -157,6 +228,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Requesting Honesty
 
+- Chapter 6
 - After we’ve openly expressed ourselves and received the understanding we want, we’re often eager to know the other person’s reaction to what we’ve said.
 - Usually the honesty we would like to receive takes one of three directions. After we express ourselves vulnerably, we often want to know 
 - 1. what the listener is feeling;
@@ -169,6 +241,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Requests versus Demands
 
+- Chapter 6
 - When the other person hears a demand from us, they see two options: to submit or to rebel.
   - The more we have in the past blamed, punished, or “laid guilt trips” on others when they haven’t responded to our requests, the higher the likelihood that our requests will now be heard as demands.
 - To tell if it’s a demand or a request, observe what the speaker does if the request is not complied with.
@@ -181,6 +254,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Receiving Empathically
 
+- Chapter 7
 - The two parts of NVC: 
   - 1. expressing honestly 
   - 2. receiving empathically
@@ -217,6 +291,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### When Pain Blocks Our Ability to Empathize
 
+- Chapter 7
 - It is impossible for us to give something to another if we don’t have it ourselves.
   - We need empathy to give empathy.
 - It may be necessary to provide ourselves with some “emergency first aid” empathy by listening to what’s going on in ourselves with the same quality of presence and attention that we offer to others. 
@@ -229,6 +304,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Empathy That Heals
 
+- Chapter 8
 - Empathy allows us “to reperceive [our] world in a new way and to go on.”
 - "I don’t want you to do anything; I just want you to listen."
 - It’s harder to empathize with those who appear to possess more power, status, or resources.
@@ -251,6 +327,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Connecting Compassionately With Ourselves
 
+- Chapter 9
 - NVC’s most important use may be in developing self-compassion.
 - We use NVC to evaluate ourselves in ways that engender growth rather than self-hatred.
 - In our language there is a word with enormous power to create shame and guilt: "should"
@@ -269,6 +346,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Don’t Do Anything That Isn’t Play!
 
+- Chapter 9
 - Remove all the "shoulds"
 - We want to take action out of the desire to contribute to life rather than out of fear, guilt, shame, or obligation.
 - I earnestly believe that an important form of self-compassion is to make choices motivated purely by our desire to contribute to life rather than out of fear, guilt, shame, duty, or obligation. 
@@ -277,6 +355,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### EXERCISE: Translating “Have to” to “Choose to”
 
+- Chapter 9
 - Step 1 
   - What do you do in your life that you don’t experience as playful? List on a piece of paper all those things that you tell yourself you have to do. 
   - List any activity you dread but do anyway because you perceive yourself to have no choice.
@@ -309,6 +388,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Expressing Anger Fully
 
+- Chapter 10
 - hitting, blaming, hurting others—whether physically or emotionally—are all superficial expressions of what is going on within us when we are angry.
 - Distinguishing Stimulus From Cause
   - The first step to fully expressing anger in NVC is to divorce the other person from any responsibility for our anger.
@@ -339,4 +419,74 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ### Conflict Resolution and Mediation
 
-[Chapter 11]
+- Chapter 11
+- Creating a connection between people is the most important thing.
+- Avoid the use of language that implies wrongness.
+- Intellectual analysis is often received as criticism.
+- Learn to hear needs regardless of how people express them.
+- Criticism and diagnosis get in the way of peaceful resolution of conflicts.
+- People often need empathy before they are able to hear what is being said.
+- Using Present and Positive Action Language to Resolve Conflict
+  - Action language requires the use of action verbs.
+- Maintaining respect is a key element in successful conflict resolution.
+- the importance of not hearing “no” as rejection.
+  - When they say “no,” they’re saying they have a need that keeps them from saying “yes” to what we are asking.
+- The objective is not to get the parties to do what we want them to do.
+- Keep Track: Follow the Bouncing Ball 
+  - When we are mediating, we have to “keep score” by paying careful attention to what has been said, making sure both parties have the opportunity to express their needs, listen to the other person’s needs, and make requests.
+  - Keep the Conversation in the Present
+  - Keep Things Moving
+- Use role-play to speed up the mediation process.
+  - To keep them from spending time telling the same stories over and over, I asked one of the brothers if I could play his role; then I would switch and play the part of the other brother.
+  - Though the conflict had persisted for years, with lawyers on both sides working unsuccessfully to come to agreement, it became simple to resolve once the brothers heard each other’s pain and needs as revealed through the role-playing.
+  - If I had waited for both of them to tell their stories, the resolution would have taken much longer.
+- Interrupting
+  - when both sides are screaming or talking at the same time, I insert myself: “Excuse me, excuse me, excuse me!” I repeat this as loudly and as often as necessary until I regain their attention.
+- Informal Mediation: Sticking Our Nose in Other People’s Business
+  - When we witness behaviors that raise concern in us—unless it is a situation that calls for the protective use of force as described in Chapter 12—the first thing we do is to empathize with the needs of the person who is behaving in the way we dislike.
+  - We need to be well practiced at hearing the need in any message.
+
+### The Protective Use of Force
+
+- Chapter 12
+- When the Use of Force Is Unavoidable
+- The intention behind the protective use of force is only to protect, not to punish, blame, or condemn.
+- Punitive force
+  - Fear of corporal punishment obscures children’s awareness of the compassion underlying their parents’ demands.
+  - Punishment also includes judgmental labeling and the withholding of privileges.
+  - When we fear punishment, we focus on consequences, not on our own values. Fear of punishment diminishes self-esteem and goodwill.
+  - Two Questions That Reveal the Limitations of Punishment
+    - Question 1: What do I want this person to do? 
+    - Question 2: What do I want this person’s reasons to be for doing it?
+
+### Liberating Ourselves and Counseling Others
+
+- Chapter 13
+- We can liberate ourselves from cultural conditioning.
+- Resolving Internal Conflicts
+  - The ability to hear our own feelings and needs and empathize with them can free us from depression.
+- Focus on what we want to do rather than what went wrong.
+- Defuse stress by hearing our own feelings and needs.
+- Defuse stress by empathizing with others.
+- Replacing Diagnosis With NVC
+  - I thus began to experiment by replacing clinical language with the language of NVC. Instead of interpreting what my clients were saying in line with the personality theories I had studied, I made myself present to their words and listened empathically. Instead of diagnosing them, I revealed what was going on within myself.
+  - I empathized with clients instead of interpreting them; I revealed myself instead of diagnosing them.
+
+### Expressing Appreciation in Nonviolent Communication
+
+- Chapter 14
+- Compliments are often judgments—however positive-of others.
+- Express appreciation to celebrate, not to manipulate.
+- The Three Components of Appreciation
+  - 1. the actions that have contributed to our well-being 
+  - 2. the particular needs of ours that have been fulfilled 
+  - 3. the pleasureful feelings engendered by the fulfillment of those needs
+- Saying “thank you” in NVC: “This is what you did; this is what I feel; this is the need of mine that was met.”
+- Receiving Appreciation
+  - Receive appreciation without feelings of superiority or false humility.
+- The Hunger for Appreciation
+  - We tend to notice what’s wrong rather than what’s right.
+  - I’ve tried to be more aware of what others around me are doing that enriches my life, and to hone my skills in expressing this appreciation.
+- Conventional compliments often take the form of judgments, however positive, and are sometimes intended to manipulate the behavior of others. 
+  - NVC encourages the expression of appreciation solely for celebration.
+
