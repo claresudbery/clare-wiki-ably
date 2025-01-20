@@ -9,3 +9,7 @@ permalink: /pages/coding/hardware/Music-Making
 ## Misc
 
 - Music software?: Dropbox\IT Training\Music software\wavepot\bassonly.txt
+
+## Piano Man harmonica tutorial
+
+https://youtu.be/0BsiyZcWNOM?si=kviRMHo3pnEfVjJQ

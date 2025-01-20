@@ -17,60 +17,162 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 ## Table of Contents
 
 - [Quotes](#quotes)
-- [Four components of the NVC model](#four-components-of-the-nvc-model)
-  - Chapter 1
-- [Give and receive](#give-and-receive)
-  - Chapter 1
-- [Avoid judgements](#avoid-judgements) 
-  - Chapter 2
-- [Avoid denial of responsibility](#avoid-denial-of-responsibility)
-  - Chapter 2
-- [Avoid Life-Alienating Communication](#avoid-life-alienating-communication)
-  - Chapter 2
-- [Observe without evaluating](#observe-without-evaluating)
-  - Chapter 3
-- [The Heavy Cost of Unexpressed Feelings](#the-heavy-cost-of-unexpressed-feelings)
-  - Chapter 4
-- [Taking Responsibility for Our Feelings](#taking-responsibility-for-our-feelings)
-  - Chapter 5
-- [The Needs at the Roots of Feelings](#the-needs-at-the-roots-of-feelings)
-  - Chapter 5
-- [From Emotional Slavery to Emotional Liberation](#from-emotional-slavery-to-emotional-liberation)
-  - Chapter 5
-- [Using Positive Action Language](#using-positive-action-language)
-  - Chapter 6
-- [Requesting Honesty](#requesting-honesty)
-  - Chapter 6
-- [Requests versus Demands](#requests-versus-demands)
-  - Chapter 6
-- [Receiving Empathically](#receiving-empathically)
-  - Chapter 7
-- [When Pain Blocks Our Ability to Empathize](#when-pain-blocks-our-ability-to-empathize)
-  - Chapter 7
-- [Empathy That Heals](#empathy-that-heals)
-  - Chapter 8
-- [Connecting Compassionately With Ourselves](#connecting-compassionately-with-ourselves)
-  - Chapter 9
-- [Don’t Do Anything That Isn’t Play!](#dont-do-anything-that-isnt-play)
-  - Chapter 9
-- [EXERCISE: Translating “Have to” to “Choose to”](#exercise-translating-have-to-to-choose-to)
-  - Chapter 9
-- [Expressing Anger Fully](#expressing-anger-fully)
-  - Chapter 10
-- [Conflict Resolution and Mediation](#conflict-resolution-and-mediation)
-  - Chapter 11
-- [The Protective Use of Force](#the-protective-use-of-force)
-  - Chapter 12
-- [Liberating Ourselves and Counseling Others](#liberating-ourselves-and-counseling-others)
-  - Chapter 13
-- [Expressing Appreciation in Nonviolent Communication](#expressing-appreciation-in-nonviolent-communication)
-  - Chapter 14
+- Chapter 1
+  - [Four components of the NVC model](#four-components-of-the-nvc-model)
+  - [Give and receive](#give-and-receive)
+- Chapter 2
+  - [Avoid judgements](#avoid-judgements) 
+  - [Avoid denial of responsibility](#avoid-denial-of-responsibility)
+  - [Avoid Life-Alienating Communication](#avoid-life-alienating-communication)
+- Chapter 3
+  - [Observe without evaluating](#observe-without-evaluating)
+- Chapter 4
+  - [The Heavy Cost of Unexpressed Feelings](#the-heavy-cost-of-unexpressed-feelings)
+- Chapter 5
+  - [Taking Responsibility for Our Feelings](#taking-responsibility-for-our-feelings)
+  - [The Needs at the Roots of Feelings](#the-needs-at-the-roots-of-feelings)
+  - [From Emotional Slavery to Emotional Liberation](#from-emotional-slavery-to-emotional-liberation)
+- Chapter 6
+  - [Using Positive Action Language](#using-positive-action-language)
+  - [Requesting Honesty](#requesting-honesty)
+  - [Requests versus Demands](#requests-versus-demands)
+- Chapter 7
+  - [Receiving Empathically](#receiving-empathically)
+  - [When Pain Blocks Our Ability to Empathize](#when-pain-blocks-our-ability-to-empathize)
+- Chapter 8
+  - [Empathy That Heals](#empathy-that-heals)
+- Chapter 9
+  - [Connecting Compassionately With Ourselves](#connecting-compassionately-with-ourselves)
+  - [Don’t Do Anything That Isn’t Play!](#dont-do-anything-that-isnt-play)
+  - [EXERCISE: Translating “Have to” to “Choose to”](#exercise-translating-have-to-to-choose-to)
+- Chapter 10
+  - [Expressing Anger Fully](#expressing-anger-fully)
+- Chapter 11
+  - [Conflict Resolution and Mediation](#conflict-resolution-and-mediation)
+- Chapter 12
+  - [The Protective Use of Force](#the-protective-use-of-force)
+- Chapter 13
+  - [Liberating Ourselves and Counseling Others](#liberating-ourselves-and-counseling-others)
+- Chapter 14
+  - [Expressing Appreciation in Nonviolent Communication](#expressing-appreciation-in-nonviolent-communication)
 
 ## Quotes
 
 - "As NVC replaces our old patterns of defending, withdrawing, or attacking in the face of judgment and criticism, we come to perceive ourselves and others, as well as our intentions and relationships, in a new light."
   - "We perceive relationships in a new light when we use NVC to hear our own deeper needs and those of others."
 - "We pay dearly when people meet our needs out of fear, guilt or shame"
+- "The recognition that we have chosen to use our power to serve life and have done so successfully brings us the genuine joy of celebrating ourselves in a way that approval from others can never offer."
+
+## Summary
+
+- Four components of the NVC model: 
+  - 1. observations 
+    - First, we observe what is actually happening in a situation: what are we observing others saying or doing that is either enriching or not enriching our life?
+  - 2. feelings 
+    - Next, we state how we feel when we observe this action: are we hurt, scared, joyful, amused, irritated?
+  - 3. needs 
+    - And thirdly, we say what needs of ours are connected to the feelings we have identified. 
+    - Connect your feeling with your need
+      - “I feel … because I need …”
+  - 4. requests
+    - This fourth component addresses what we are wanting from the other person that would enrich our lives or make life more wonderful for us.
+    - When we simply express our feelings, it may not be clear to the listener what we want them to do.
+    - They are REQUESTS, not DEMANDS
+      - Requests may sound like demands when unaccompanied by the speaker’s feelings and needs.
+    - Make requests in clear, positive, concrete action language to reveal what you really want.
+    - To tell if it’s a demand or a request, observe what the speaker does if the request is not complied with.
+      - It’s a demand if the speaker then criticizes or judges.
+      - It’s a demand if the speaker then lays a guilt trip.
+      - It’s a request if the speaker then shows empathy toward the other person’s needs.
+- Give and receive
+  - Two parts of NVC: 
+    - 1. expressing honestly through the four components 
+    - 2. receiving empathically through the four components
+- In difficult exchanges... 
+  - Start by empathisizing
+  - If they can't express their feelings and needs, try to do it for them
+  - Listen to what people are needing rather than what they are thinking.
+  - Reflect back messages that are emotionally charged.
+  - Ask them if you've got it right
+  - Paraphrase only when it contributes to greater compassion and understanding.
+    - When hearing themselves reflected back, people are likely to be sensitive to the slightest hint of criticism or sarcasm.
+  - Behind intimidating messages are merely people appealing to us to meet their needs.
+    - A difficult message becomes an opportunity to enrich someone’s life.
+  - When our own pain prevents us from empathizing with others
+    - It may be necessary to provide ourselves with some “emergency first aid” empathy by listening to what’s going on in ourselves with the same quality of presence and attention that we offer to others. 
+      - If we become skilled at giving ourselves empathy, we often experience in just a few seconds a natural release of energy that then enables us to be present with the other person.
+    - We may have to share our own pain
+    - We may have to remove ourselves from the situation
+  - Empathize with silence by listening for the feelings and needs behind it.
+    - this also allows you to play back what you've guessed, and hopefully get confirmation / clarification
+- When you try to communicate your own feelings and needs, ask them to play it back
+  - We make clear that we’re not testing their listening skills, but checking out whether we’ve expressed ourselves clearly.
+  - Express appreciation when your listener tries to meet your request for a reflection.
+  - Empathize with the listener who doesn’t want to reflect back.
+- Avoid judging
+  - Rather than judging others, try to empathize with them instead
+  - Comparisons are judgments
+  - Compliments can also be judgments!
+- Avoid "shoulds"
+  - We can replace language that implies lack of choice with language that acknowledges choice.
+  - If the person we are judging happens to be ourselves, what we are saying is, “I myself am not behaving in harmony with my own needs.” 
+  - We want to take action out of the desire to contribute to life rather than out of fear, guilt, shame, or obligation.
+  - When the sole energy that motivates us is simply to make life wonderful for others and ourselves, then even hard work has an element of play in it. 
+  - See the [Have to => Choose to exercise](#exercise-translating-have-to-to-choose-to)
+- Don't beat yourself up
+  - You can mourn actions you took that you regret
+  - NVC self-forgiveness: connecting with the need we were trying to meet when we took the action that we now regret.
+- Avoid doing things for approval
+  - When we do things solely in the spirit of enhancing life, we will find others appreciating us. Their appreciation, however, is only a feedback mechanism confirming that our efforts had the intended effect. 
+  - The recognition that we have chosen to use our power to serve life and have done so successfully brings us the genuine joy of celebrating ourselves in a way that approval from others can never offer.
+- Observe without evaluating
+  - Avoid words like always, never, ever, whenever, frequently, seldom when observing
+- Distinguish feelings from thoughts
+  - "I feel that" and "I feel you" and "I feel inadequate" and "I feel unimportant" are not feelings
+- After we express ourselves vulnerably, we often want to know 
+  - 1. what the listener is feeling;
+  - 2. what the listener is thinking;
+  - 3. whether the listener would be willing to take a particular action.
+- What others do is the stimulus for our feelings, not the cause
+  - Expressing genuine requests also requires an awareness of our objective. If our objective is only to change people and their behavior or to get our way, then NVC is not an appropriate tool. 
+  - Our objective is a relationship based on honesty and empathy.
+- When someone gives us a negative message, whether verbally or nonverbally, we have four options as to how to receive it. Aim for options 3 and 4.
+  - 1. blame ourselves.
+  - 2. blame others.
+  - 3. sense our own feelings and needs.
+  - 4. sense others’ feelings and needs.
+  - You can use the components of NVC to tune in to the feelings and needs of those close to you in contrast to either 
+    - 1. blaming yourself by taking the message personally, or 
+    - 2. blaming and judging them.
+- When asking for information, first express our own feelings and needs.
+  - Thus, instead of asking someone, “What did I do?” we might say, “I’m frustrated because I’d like to be clearer about what you are referring to. Would you be willing to tell me what I’ve done that leads you to see me in this way?”
+- The Pain of Expressing Our Needs versus the Pain of Not Expressing Our Needs
+  - It's OK to express your needs
+- Ask before offering advice or reassurance.
+  - Believing we have to “fix” situations and make others feel better prevents us from being present.
+  - Allow others the opportunity to fully express themselves before turning your attention to solutions or requests for relief.
+- Using Empathy to Defuse Danger
+  - Rather than put your “but” in the face of an angry person, empathize.
+  - When we listen for feelings and needs, we no longer see people as monsters.
+- Steps to expressing anger: 
+  - 1. Stop. Breathe. 
+  - 2. Identify our judgmental thoughts. 
+    - Stay conscious of the violent thoughts that arise in our minds, without judging them.
+    - Practice translating each judgment into an unmet need.
+  - 3. Identify the other person's feelings and needs
+    - When we hear another person’s feelings and needs, we recognize our common humanity.
+  - 4. Connect with our needs.
+  - 5. Express our feelings and unmet needs, without judging the other person.
+    - People do not hear our pain when they believe they are at fault.
+- Compliments are often judgments — however positive - of others.
+  - Express appreciation to celebrate, not to manipulate.
+  - The Three Components of Appreciation
+    - 1. the actions that have contributed to our well-being 
+    - 2. the particular needs of ours that have been fulfilled 
+    - 3. the pleasureful feelings engendered by the fulfillment of those needs
+  - "I’ve tried to be more aware of what others around me are doing that enriches my life, and to hone my skills in expressing this appreciation."
+- Take your time
+  - We may feel awkward deviating from the habitual behaviors that our conditioning has rendered automatic, but if our intention is to consciously live life in harmony with our values, then we’ll want to take our time.
 
 ### Four components of the NVC model
 
@@ -90,7 +192,8 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 - 3. needs
   - The _needs_, values, desires, etc. that create our feelings
   - And thirdly, we say what needs of ours are connected to the feelings we have identified. 
-  - For example, a mother might express these three pieces to her teenage son by saying, “Felix, when I see two balls of soiled socks under the coffee table and another three next to the TV, I feel irritated because I am needing more order in the rooms that we share in common.” 
+  - For example, a mother might express these three pieces to her teenage son by saying, “Felix*, when I see two balls of soiled socks under the coffee table and another three next to the TV, I feel irritated because I am needing more order in the rooms that we share in common.” 
+    - *Not my choice of example name! That's in the book.
 - All the first three
   - An awareness of these three components is present when we use NVC to clearly and honestly express how we are. 
 - 4. requests
@@ -124,6 +227,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 - Classifying and judging people promotes violence.
 - Comparisons are a form of judgment.
 - Judgments of others are alienated expressions of our own unmet needs. 
+- This also applies to judgments we make of ourselves. See [connecting compassionately with ourselves](#connecting-compassionately-with-ourselves)
 
 ### Avoid denial of responsibility
 
@@ -146,7 +250,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 - Chapter 3
 - When we combine observation with evaluation, people are apt to hear criticism.
 - Distinguishing Observations From Evaluations
-- The words always, never, ever, whenever, etc. express observations when used in the following ways: 
+- The words always, never, ever, whenever, etc. express evaluations when used in the following ways: 
   - Whenever I have observed Jack on the phone, he has spoken for at least thirty minutes. 
   - I cannot recall your ever writing to me.
 - Words like frequently and seldom can also contribute to confusing observation with evaluation.
@@ -212,7 +316,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 - Chapter 6
 - Use positive language when making requests.
-  - She had successfully communicated to him what she did not want—his spending so much time at work—but had failed to request what she did want. Encouraged to reword her request, she thought a minute and said, “I wish I had told him that I would like him to spend at least one evening a week at home with the children and me.”
+  - She had successfully communicated to him what she did not want — his spending so much time at work — but had failed to request what she did want. Encouraged to reword her request, she thought a minute and said, “I wish I had told him that I would like him to spend at least one evening a week at home with the children and me.”
 - Making requests in clear, positive, concrete action language reveals what we really want.
 - Vague language contributes to internal confusion.
 - Making Requests Consciously
@@ -389,7 +493,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 ### Expressing Anger Fully
 
 - Chapter 10
-- hitting, blaming, hurting others—whether physically or emotionally—are all superficial expressions of what is going on within us when we are angry.
+- hitting, blaming, hurting others — whether physically or emotionally — are all superficial expressions of what is going on within us when we are angry.
 - Distinguishing Stimulus From Cause
   - The first step to fully expressing anger in NVC is to divorce the other person from any responsibility for our anger.
   - We are never angry because of what others say or do.
@@ -475,7 +579,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 ### Expressing Appreciation in Nonviolent Communication
 
 - Chapter 14
-- Compliments are often judgments—however positive-of others.
+- Compliments are often judgments — however positive - of others.
 - Express appreciation to celebrate, not to manipulate.
 - The Three Components of Appreciation
   - 1. the actions that have contributed to our well-being 
@@ -486,7 +590,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
   - Receive appreciation without feelings of superiority or false humility.
 - The Hunger for Appreciation
   - We tend to notice what’s wrong rather than what’s right.
-  - I’ve tried to be more aware of what others around me are doing that enriches my life, and to hone my skills in expressing this appreciation.
+  - "I’ve tried to be more aware of what others around me are doing that enriches my life, and to hone my skills in expressing this appreciation."
 - Conventional compliments often take the form of judgments, however positive, and are sometimes intended to manipulate the behavior of others. 
   - NVC encourages the expression of appreciation solely for celebration.
 
