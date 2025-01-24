@@ -43,7 +43,7 @@ Ted Young also swears by it for video editing.
 
 - Click the "Range" button, which looks like an old fashioned magnetic tape
 - Then click and drag WITHIN THE WAVEFORM ITSELF to select a bit of wav
-- Then click Delete to delete.
+- Then click Delete to delete. 
 
 ## Inserting subtitles for transcript on video
 
@@ -51,6 +51,27 @@ Ted Young also swears by it for video editing.
 - They're called "captions"
 - Click Captions in the right-hand sidebar
 - Apply to either "All scenes" or "this scene" at the top
+- Select the style you like
+  - I prefer "classic"
+  - ! It's not obvious when you've selected a style. Nothing changes on the right-hand side, and it'll keep scrolling back up to the top
+  - But it will be added to the main screen in the middle (after a short delay)
+  - If you select a style more than once, you'll end up with several captions on top of each other
+  - ...and most infuriatingly of all, in order to delete what you've added you'll have to delete them all on each individual scene
+    - a better approach is to use Cmd + Z / Ctrl + Z to undo
+    - you'll probably have to undo several steps, but a little thing will pop up in the middle of the screen to say what you're undoing
+    - there'll be a lot of odd things to do with the color of stuff, but you'll be abnle to see the subtitles gradually disappearing
+- Change the size and position of the caption 
+  - It seems like by default, changes you make only get made on whatever scene is selected
+  - So you have to click the three dots on the right and check the "Size and position" section 
+  - Then click All scenes at the top
+  - Or maybe just select "all scenes" under the image while you're manually dragging the size / position of the subtitles?
+  - Then copy the values you like into the "Size and position" section 
+  - I like these settings:
+    - X: 1935, Y:1873, W: 3522, H: 282
+    - Otherwise...
+      - Change the size to fill more of the screen (not all the way to the egdes)
+      - Change the position so it's not too close to the bottom
+      - Change the height so there's only one line of text at a time
 
 ## Remove ums and ers and ahs 
 

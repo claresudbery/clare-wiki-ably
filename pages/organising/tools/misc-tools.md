@@ -352,7 +352,7 @@ re, sorry!)
     - Then you will get the same message again, and this time Flycut will be listed under Accessibility
   - ! Sometimes a bug means the popup gets stuck in the middle of your screen
     - To get rid of it, Use Cmd + Space + Flycut to "open" the Flycut app
-    - The app won't open, but the popup will go away
+    - The app won't open, but the popup will go away when you next click on the screen
 
 ## Bulk rename utility for Windows
 

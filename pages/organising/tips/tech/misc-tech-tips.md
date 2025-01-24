@@ -277,6 +277,11 @@ That's it! Happy Miroing.
 
 ### Record your screen on a Mac
 
+- [1. With quicktime](#1-with-quicktime)
+- [2. With Screenshot functionality](#2-with-screenshot-functionality)
+
+### 1. With QuickTime
+
 - Open QuickTime Player
   - Note that this opens the Finder app as its first screen, which can be confusing and feel like it hasn't opened at all.
   - But you will now have the QuickTime menu visible at the top of your screen, with all the quickTime functionality.
@@ -286,6 +291,7 @@ That's it! Happy Miroing.
 - If you want to record sound too (by default it will be silent):
   - Click on the Options down arrow next to the Record button
   - Select your internal microphone
+    - but be aware that what this actually means is the sound will come out of your speakers and then go back in via your microphone, so won't have the same quality as the original
 - Context menus are recorded 
   - NB if using Rider + Resharper it's a good idea to use Ctrl + Shift + R then select option from menu, instead of using direct shortcuts like Ctrl + R + M. 
   - The reason is that the viewer gets better visual feedback on which option you're using.
@@ -308,6 +314,21 @@ That's it! Happy Miroing.
   - By default, the recording will be in your desktop.
   - To find it, use File => Move
 - See [here](https://docs.google.com/document/d/18mj2lhBS7XgWT8y34Yq74kXrpeFxlssxiG_vNrFSUtg/edit#heading=h.o2emasiobw17) for useful cheat sheet to use in workshops
+
+### 2. With Screenshot functionality
+
+- Cmd + Shift 5
+- Select the little dotted square with a recording circle (otherwise you just get a normal screenshot)
+  - This will change the button at the right hand end to say "Record" instead if "Capture"
+- Select the screen area
+- If you want to record audio:
+  - Click on the Options down arrow at the right hand end
+  - Select your internal microphone
+    - but be aware that what this actually means is the sound will come out of your speakers and then go back in via your microphone, so won't have the same quality as the original
+- Click Record at right hand end
+- To stop the recording, click the (easy to miss) tiny black Stop button in your top Apple system menu bar
+  - Then you'll get a little popup at bottom right of screen like you do with a normal screenshot
+  - You can click on this to save to a particular location, or just wait and it'll go to your normal [screenshot location](/pages/organising/tips/tech/apple-macs-and-ios.md#specify-location-of-screenshots)
 
 ## Do simple video editing in QuickTime on Macbook
 
