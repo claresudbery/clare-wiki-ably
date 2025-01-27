@@ -23,7 +23,7 @@ permalink: /pages/coding/data/Microsoft-Excel
     - You can use `VLOOKUP`, `XLOOKUP` or `INDEX`.
     - More info [here](https://www.ablebits.com/office-addins-blog/2018/10/31/excel-merge-tables-matching-columns/).
 
-## Format currency / accounting data with negative amounts in read with minus signs
+## Format currency / accounting data with negative amounts in red with minus signs
 
 - To format negative amounts:
 - Select the cell or column
@@ -61,3 +61,11 @@ permalink: /pages/coding/data/Microsoft-Excel
 - If D2 contains time formatted as `56:30`...
 - In anoither cell, enter the formula `=ROUND(D2*24,2)`
 - Should give you `56.50`
+
+## FILTER / CONTAINS SUBSTRING
+
+- Return all the cells that match the search criteria
+- The good thing about this is that you can search one col but return the contents of another col in the same row
+- For instance: `=FILTER(D2:E10,ISNUMBER(SEARCH(A1,C2:C10)),"No results")`
+  - This will return all the values in `D2:E10` (so, two cols of data)
+  - ...but only for those rows where the value in col C contains the value in `A1` as a substring

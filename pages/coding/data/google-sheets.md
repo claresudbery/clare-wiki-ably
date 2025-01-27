@@ -107,6 +107,24 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - Make sure you check the "Also search within formulae" box
 - But actually a simpler way is to copy the whole spreadsheet (File => Make a copy) and then just delete the stuff you don't want
 
+## FILTER / CONTAINS SUBSTRING
+
+- Return all the cells that match the search criteria
+- The good thing about this is that you can search one col but return the contents of another col in the same row
+- For instance: `=FILTER(D2:E10,REGEXMATCH(C2:C10,A1))`
+  - This will return all the values in `D2:E10` (so, two cols of data)
+  - ...but only for those rows where the value in col C contains the value in `A1` as a substring
+- Incidentally, to achieve the same result in Excel, you'd do it like this:
+  - `=FILTER(D2:E10,ISNUMBER(SEARCH(A1,C2:C10)),"No results")`
+
+## Diff between FILTER and VLOOKUP
+
+- `FILTER` allows more complex search conditions
+- `VLOOKUP` is for just looking up one value
+  - eg find all the rows where the values in one col are the same as each other
+  - then return the values from a different col in those rows
+  - Useful for finding specific information like an employee name based on their ID 
+
 ## VLOOKUP and Gotchas
 
 - If you want to find a value and then return another value from the same row
@@ -225,6 +243,7 @@ Hoping somebody can help! Thank you."
 ## Create a unique list of data, removing duplicates, in order
 
 - `=SORT(UNIQUE(A1:A10), 1, TRUE)`
+  - This sorts the unique set of data, in ascending order (`TRUE`), using the data in col `1` (the first col, col A) to do the sorting.
 
 ## Why is search-replace / find-replace not working?
 
