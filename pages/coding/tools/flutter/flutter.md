@@ -205,6 +205,11 @@ flutter run
 ### Troubleshoot: Hot reload toolbar missing
 
 - It's possible to drag it and move it around the screen, so you might just have moved it somewhere odd
+  - If you've pulled out the Widget Inspector into a separate window on another screen, the hot reload toolbar might have ended up there
+    - In fact I found out that consistently if I pulled the Widget Inspector ouot into its own separate window, it took the hot reload toolbar with it
+    - ...and at first I couldn't find a way to stop this or to drag the hot reload toolbar back to the main window.
+    - ...but then I discovered that when you switch focus back and forth between the two windows (using Cmd + `), the hot reload toolbar also switches back and forth between them.
+  - Use Cmd + ` (Cmd + backtick) to find other windows
 - Try searching for "hot reload" or "floating toolbar" in settings (Cmd `,`)
 - If you still can't see the hot reload floating toolbar anywhere, try restarting VS Code.
 

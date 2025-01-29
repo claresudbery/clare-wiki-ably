@@ -47,6 +47,32 @@ permalink: /pages/coding/tools/flutter/Dart
 
 - See [separate page](dart-classes.md#dart-classes)
 
+## The spread operator / ellipsis / three dots
+
+- More [here](https://stackoverflow.com/questions/57194452/meaning-of-triple-dots-in-flutter-syntax)
+- When you see `...` in code, it's a concise way to insert multiple elements into a collection
+- For example, you can use the spread operator (`...`) to insert all the elements of a list into another list
+- Like this:
+
+```dart
+final members = <Widget>[];
+
+if (snapshot.hasData) {
+  for (var member in snapshot.requireData) {
+    members.add(
+      buildMemberWidget(member),
+    );
+  }
+}
+
+return ListView(
+  children: [
+    Text("Here's a thing"),
+    ...members,
+  ],
+);
+```
+
 ## Final and Const
 
 - A `final` variable can be set only once

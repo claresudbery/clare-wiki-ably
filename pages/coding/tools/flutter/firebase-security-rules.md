@@ -15,7 +15,7 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
   - [What I originally did](#what-i-originally-did)
   - [How I converted to a more up to date approach](#how-i-converted-to-a-more-up-to-date-approach)
   - [How to start with more up to date approach](#how-to-start-with-more-up-to-date-approach)
-- [Writing unit tests](#writing-unit-tests)
+- [Writing / running unit tests](#writing--running-unit-tests)
 - [Working with test data](#working-with-test-data)
 - [Different types of database action](#different-types-of-database-action)
 - [Testing authentication](#testing-authentication)
@@ -80,7 +80,7 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
     - also just for the laughs, if you want to know version you have to use `-V` not `-v`
     - so, to check version, use `firebase -V`
 - You'll also need to [create a test app](#creating-a-test-app)
-- ...and get yourself set up to [write unit tests](#writing-unit-tests)
+- ...and get yourself set up to [write unit tests](#writing--running-unit-tests)
 
 ## Creating a test app
 
@@ -359,7 +359,7 @@ const moderatorToken = {
   - Select Project settings
   - Copy Project ID (something like `name-of-your-app-56d4s`)
 
-## Writing unit tests
+## Writing / running unit tests
 
 - Edit `test.js` to add your first test(s)
 - See [sample code](security-rules-test-app/test/test.js#L49) for example of a test
