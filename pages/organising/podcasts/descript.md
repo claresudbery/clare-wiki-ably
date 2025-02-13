@@ -70,7 +70,8 @@ Ted Young also swears by it for video editing.
     - This doesn't seem to work though, I think you have to do it on the right instead
   - Then copy the values you like into the "Size and position" section 
   - I like these settings:
-    - X: 1935, Y:1873, W: 3522, H: 282
+    - Landscape: X: 1935, Y:1873, W: 3522, H: 282
+    - Portrait: X: 1080, Y:3024, W: 1476, H: 159
     - Sometimes it keeps changing the width back again every time you change the height 
       - If that happens, click the button that looks a bit like a link icon - a kind of broken oval shape
       - You want it NOT to be highlighted - ie turned off
