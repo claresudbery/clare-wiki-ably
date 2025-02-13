@@ -1,7 +1,7 @@
 ---
 layout: page
-location: pages/think/life/leaf
-permalink: /pages/think/life/Fun-Games
+location: pages/think/life/fun-games/leaf
+permalink: /pages/think/life/fun-games/Fun-Games
 ---
 
 See also [energisers](/pages/think/events/workshops/energisers-warmups.md).
