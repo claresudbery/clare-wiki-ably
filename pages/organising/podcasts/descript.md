@@ -81,6 +81,8 @@ Ted Young also swears by it for video editing.
       - Change the height so there's only one line of text at a time
   - Check that it's worked, by clicking on different scenes in the middle of text and playing it a little
     - All scenes should have the same size / position of subtitle
+- Note: When editing subtitles, sometimes the text gets shifted over to right or left instead of centred. 
+  - To fix this, click the horizontal lines in the popup above the text - they'll togle it to left, right and centre. Keep clicking til text is centred.
 - Save in Descript:
   - Click Publish, top right
   - Make sure Publish is selected at the top (rather than Export)
