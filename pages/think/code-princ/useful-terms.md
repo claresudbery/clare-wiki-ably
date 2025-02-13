@@ -335,3 +335,10 @@ The mixin classes weren't made to stand on their own. In more traditional multip
 - "Together, these ideologies have given rise to a normative worldview — essentially, a “religion” for atheists — built around a deeply impoverished utopianism crafted almost entirely by affluent white men at elite universities and in Silicon Valley, who now want to impose this vision on the rest of humanity — and they’re succeeding. This is why TESCREALism needs to be named, called out and criticized."
 - "Let’s define a “TESCREAList” as anyone who’s linked to more than one of these ideologies. Examples include Bostrom, Yudkowsky, MacAskill, Musk, Altman and Bankman-Fried."
 - [good explanation](https://www.truthdig.com/articles/the-acronym-behind-our-wildest-ai-dreams-and-nightmares/)
+
+# Flow / Slack
+
+- Book: Flow: The Psychology of Happiness (aka The Psychology of Optimal Experience), by Mihaly Csikszentmihalyi
+- Book: Slack, by Tom Demarco
+- Flow / slack simulators
+  - See clare-tech: 

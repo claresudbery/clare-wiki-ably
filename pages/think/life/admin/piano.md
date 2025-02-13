@@ -43,3 +43,11 @@ permalink: /pages/think/life/admin/Piano-Stuff
     - Ability to connect to external amp?
     - Ability to connect to computer?
     - Carrying case?
+
+# Embodiment
+
+- The book (about embodiment) is called "What Every Pianist Needs to Know About The Body" by Dr. Thomas Mark
+- I have a copy on my Kindle
+- This is a good unaffiliated link for the book: https://www.pianostreet.com/smf/index.php?topic=60548.0
+- Amazon link: https://www.amazon.com/What-Every-Pianist-Needs-About/dp/1579992064
+- I made lots of notes in phone notes - see “The Piano application notes”

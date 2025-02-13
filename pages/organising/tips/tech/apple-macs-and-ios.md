@@ -67,13 +67,15 @@ Longer Summary:
 
 - For some reason my brain confuses this with Activity Monitor (the equivalent of Windows Task Manager).
 - Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all running apps and spaces.
-- Use this if you want to shut down / terminate / force quit an app.
 
 ### Finding / quitting running apps 
 
 - [Detailed stuff here](http://osxdaily.com/2013/05/17/see-all-running-apps-mac-os-x/)
 - Options:
+    - Cmd + option/alt + escape
+      - will bring up a list of running apps, so you can select one and force quit
     - Activity Monitor (the equivalent of Windows Task Manager)
+      - You can use this if you want to shut down / terminate / force quit an app.
     - the `top` command in Terminal
         - is updated live
         - more useful with flags:
@@ -396,3 +398,7 @@ Spotlight directory not found at root: /Applications
     - The update hadn't been installed but had been doanloaded. I don't know if it was already downloaded before I'd closed the case.
   - This page might be relevant: https://discussions.apple.com/thread/251274321?sortBy=rank&page=4
     - Everything here is dated 2020, which might be relevant to the fact that I have a 2020 model?
+
+### Check battery level on keyboard
+
+- System Settings => bluetooth

@@ -73,6 +73,7 @@ Ted Young also swears by it for video editing.
     - X: 1935, Y:1873, W: 3522, H: 282
     - Sometimes it keeps changing the width back again every time you change the height 
       - If that happens, click the button that looks a bit like a link icon - a kind of broken oval shape
+      - You want it NOT to be highlighted - ie turned off
     - Otherwise...
       - Change the size to fill more of the screen (not all the way to the egdes)
       - Change the position so it's not too close to the bottom
@@ -113,18 +114,19 @@ Ted Young also swears by it for video editing.
 - Place your cursor just after the slash in the trsnacript
 - You should see an Add File button in the transcript - use that to choose an audio file
 
+## Loudness / LUFS
+
+- To edit loudness:
+- Click Projects on the right
+- Select the audio file you're interested in
+  - I found not audio files appeared, but when I clicked into the transcript of the audio I was interested in, it appeared on the right
+- Click the three dots to the right
+- Select loudness => normalize audio => loudness
+- To change the LUFS number, go Publish => Export => Audio => Normalize volume
+
 ## Scratch
 
 Hi, I have two questions. The first is, why does my recording still have lots of "er"s in it despite removing filler words? It seems like the app can detect they are filler words because they are greyed out inn the waveform.
 The second question is, this is a good example of when I want to use the waveform to identify chunks of audio to remove, instead of using the transcript. How do I do this? In the screenshot you'll see the transcript says "But I met this young guy" but the wave form has some grey areas where the it just says "...". In fact when you listen to the audio you can very clearly here "Er, but I met this, er, young guy". I want to remove those greyed-out sections by deleting them from the wav file. But every time I try to click and drag to select a part of the waveform, things behave really weirdly and I don't get the behaviour I want. How do I highlight a section of the waveform and delete it?
 
-https://share.descript.com/view/UWBWDa5HPq0
-buzzsprout .com /2365878/15753181
-
-Who is Extremely Sloppy Productions (ESP)? Listen to the latest episode of The Street Pianist and find out all about him!
-
-https://buff.ly/3TvKAoZ 
-(buzzsprout.com /2365878/15753181)
-
-#TheStreetPianist
-#pianists #streetpiano #streetpianist 
+h

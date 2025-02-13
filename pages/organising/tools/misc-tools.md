@@ -216,7 +216,9 @@ re, sorry!)
 
 ### Strikethrough in docs
 
-- Alt + Shift + 5 (Google docs)
+- Google docs:
+  - Windows: Alt + Shift + 5
+  - Mac: Cmd + Shift + X (If this gets overridden by 1Password, go to chrome://extensions/shortcuts and just delete whatever's set there and then it should change to "not set")
 - (In Word it's Ctrl + Alt + S)
 
 ### Google sheets on iphone

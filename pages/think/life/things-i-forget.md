@@ -383,3 +383,9 @@ And now that it was more expensive, it signalled high quality to people just wan
 
 - ...or expenses
 - honorarium
+
+## Where are details of jazz workshops?
+
+- Search terms: singing workshops, jazz singing
+- See clare-tech: singing.md#jazz-workshops
+

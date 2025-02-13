@@ -6,6 +6,10 @@ permalink: /pages/coding/data/Google-Sheets
 
 - Google Sheets
 
+## Google Sheets vs Excel
+
+- Note that most of the formulas here will also work on [MS Excel](/pages/coding/data/Microsoft-Excel), and vice versa
+
 ## Sorting
 
 - To sort by single column:
@@ -111,9 +115,12 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 
 - Return all the cells that match the search criteria
 - The good thing about this is that you can search one col but return the contents of another col in the same row
-- For instance: `=FILTER(D2:E10,REGEXMATCH(C2:C10,A1))`
+- For instance: `=FILTER(D2:E10,C2:C10=A1)`
   - This will return all the values in `D2:E10` (so, two cols of data)
-  - ...but only for those rows where the value in col C contains the value in `A1` as a substring
+  - ...but only for those rows where the value in col C equals the value in `A1`
+- A more complex example: `=FILTER(D2:E10,REGEXMATCH(C2:C10,A1))`
+  - This will return all the values in `D2:E10` (so, two cols of data)
+  - ...but only for those rows where the value in col C _contains_ the value in `A1` as a substring
 - Incidentally, to achieve the same result in Excel, you'd do it like this:
   - `=FILTER(D2:E10,ISNUMBER(SEARCH(A1,C2:C10)),"No results")`
 
@@ -274,3 +281,63 @@ Hoping somebody can help! Thank you."
     - eg `=IFERROR('The sheet I'm interested in'!D1,"******ERROR-ERROR-ERROR******")`
     - then autofill the entire col by copying that cell and then selecting the col to autofill all the way down
   - You can do the same for neighbouring cols if they'll help you to find the bad rows
+
+## SUMIF to calculate all the values that relate to a condition
+
+- (If you want to AND multiple conditions, see below - [SUMIFS](#sumifs-to-calculate-all-the-values-that-relate-to-multiple-conditions))
+- Note that the values to be summed are the LAST param - which is the opposite to `SUMIFS` (see below - [SUMIFS](#sumifs-to-calculate-all-the-values-that-relate-to-multiple-conditions)))
+- Like this: `=SUMIF(C2:C300, "=y", D2:D300)`
+  - This means add all the values in the D col from rows where the C col has the value "y"
+- ...or this: `=SUMIF(B2:B300, ">="&start_date, D2:D300)`
+  - This means add all the values in the D col from rows where the B col has a date less than the specified start date
+
+## SUMIFS to calculate all the values that relate to multiple conditions
+
+- Like this: `=SUMIFS(D2:D300, C2:C300, ">="&start_date, B2:B300, ">="&start_date)`
+  - This means add all the values in the D col from rows where the C col has the value "y" AND the B col has a date less than the specified start date
+- Note that the values to be summed are the FIRST param - which is the opposite to `SUMIF` (see above - [SUMIF](#sumif-to-calculate-all-the-values-that-relate-to-a-condition)))
+
+## SUMIF or SUMIFS where one condition is that a value exists in a range
+
+- Quick answer:
+  - To add all the C-col values from rows whose B col has a value that exists in range `'Values'!A2:A100`:
+    - `=SUM(SUMIF(B2:B50,WRAPROWS('Values'!A2:A100,1),D2:D50,"YES"),C2:C50)`
+  - To add all the C-col values from rows whose B col has a value that exists in range `'Values'!A2:A100` AND whose D-col val = "YES":
+    - `=SUM(SUMIFS(C2:C50,B2:B50,WRAPROWS('Values'!A2:A100,1),D2:D50,"YES"))`
+  - To add all the C-col values from rows whose B col has a value that exists in EITHER the range `'Values'!A2:A100` OR the range `'Values'!B2:B100` AND whose D-col val = "YES":
+    - (Use `VSTACK` to combine two cols - see [below](#stack-multiple-cols-on-top-of-each-other-to-make-one-col))
+    - `=SUM(SUMIFS(C2:C50,B2:B50,WRAPROWS(VSTACK('Values'!A2:A100,'Values'!B2:B100),1),D2:D50,"YES"))`
+- Explanation:
+  - In other circumstances you could just say `B2:B50 IN 'Values'!A2:A100`
+    - ...and you would mean that you want values that exist in the range `'Values'!A2:A100`
+  - You can't do it quite like that in `SUMIF` or `SUMIFS`
+  - What you're basically saying is that tyou want the value in col B to be 'Values'!B2 _or_ 'Values'!B3 _or_ 'Values'!B4... etc
+  - You do this with an array: 
+    - `=SUMIF(B2:B50,{"pending","complete"},C2:C50)`
+  - That says that you'll sum the values in the A col as long as corresponding values in the B col equal either "pending" or "complete"
+  - But this means you'll get TWO results 
+    - 1. The sum for when B col values equal "pending"
+    - 1. The sum for when B col values equal "complete"
+  - So you have to sum the two results to add them all up:
+    - `=SUM(SUMIF(B2:B50,{"pending","complete"},C2:C50))`
+  - But what if, as originally stated, rather than the hard-coded `{"pending","complete"}` array, you want any of the values listed in `'Values'!A2:A100`?
+  - You have to turn that range into an array, like this: `WRAPROWS('Values'!A2:A100,1)`
+  - ...giving this: `=SUM(SUMIF(B2:B50,WRAPROWS('Values'!A2:A100,1),C2:C50))`
+  - And finally, if you want to add other conditions, you just add them to the `SUMIFS` as normal.
+    - The result will, as before, be several results than you then wrap in a `SUM`
+    - Each of those results will also have the additional criteria applied to them
+
+## Turn a column into an array
+
+- `=WRAPROWS('Values'!A2:A100,1)`
+- [More here](https://www.ablebits.com/office-addins-blog/excel-wrapcols-wraprows-functions/#wraprows)
+
+## Stack multiple cols on top of each other to make one col
+
+- `=VSTACK(H1:H5,I1:I5)`
+- [More here](https://www.ablebits.com/office-addins-blog/combine-ranges-arrays-excel-vstack-hstack/#vstack)
+
+## Stack multiple rows next to each other to make one row
+
+- `=HSTACK(D1:I1,D2:I2)`
+- [More here](https://www.ablebits.com/office-addins-blog/combine-ranges-arrays-excel-vstack-hstack/#hstack)

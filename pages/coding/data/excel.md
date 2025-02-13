@@ -8,6 +8,9 @@ permalink: /pages/coding/data/Microsoft-Excel
 
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/excel) (Excel category)
 
+## Google Sheets vs Excel
+
+- Note that most of the formulas here will also work on [Google Sheets](/pages/coding/data/Google-Sheets), and vice versa
 
 ## Misc
 
