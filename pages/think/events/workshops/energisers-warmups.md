@@ -6,7 +6,7 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 
 ## See also
 
-See also: [Fun games](/pages/think/life/Fun-Games).
+See also: [Fun games](/pages/think/life/fun-games/Fun-Games).
 
 ## General tips
 

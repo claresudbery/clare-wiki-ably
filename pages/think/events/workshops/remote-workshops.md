@@ -98,7 +98,7 @@ The reason this is so important is that otherwise, participants are getting audi
 - [Discord](https://discord.com/) - Looks a lot like Slack, but you can create "rooms" for video meetings, which means you can move around between rooms in the same way you can move around between channels. I have no experience of setting this up but it was used for [Manchester BarCamp 2020](https://www.barcampmanchester.co.uk/) if you want to know more.
 - [Qiqochat - for interactive and participatory online events](https://qiqochat.com/about)
 - [BigBlueButton - open source web conferencing](https://bigbluebutton.org/) - has breakout rooms
-- [Have a party in a spreadsheet!](/pages/think/life/Fun-Games#a-party-in-a-spreadsheet)
+- [Have a party in a spreadsheet!](/pages/think/life/fun-games/Fun-Games#a-party-in-a-spreadsheet)
 - [HopIn](https://hopin.to/) - allows for multiple different channels, can be used to host your entire event - with different rooms that users can hop between, and chats for each room. I saw this used well for [GovCampNorth 2020](https://govcampnorth.co.uk/). Here's an idea of what's available:
 ![Hopin](/resources/images/hopin.png)
 - You can host Lean Coffee sessions using [Lean Coffee Table](https://www.leancoffeetable.com/TaskBoard/View/41ef2077-5dbc-449b-be48-a39700ca5f4f?guest=true). You have to pay, but there is a free trial available. Trello is also a good tool for Lean Coffee (top tip: USe the Voting powerup), but it only really works internally to orgs. This is because some employers won't allow their employees to access Trello, and also you will often find that bits of functionality are only available to people in the same org. 
