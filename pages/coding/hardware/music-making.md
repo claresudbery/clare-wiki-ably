@@ -24,4 +24,5 @@ permalink: /pages/coding/hardware/Music-Making
   - 4. Make sure your upper lip extends right over the top of the harmonica, as far to the back of it as possible
     - Both lips should have their moist inner parts touching the silver plates of the harmonica
   - 5. Untuck the bottom lip with finger, so it's not folded under the instrument
+- Bending notes: https://www.youtube.com/watch?v=moVpn-mBFr8&t=134s
 
