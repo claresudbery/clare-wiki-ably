@@ -120,7 +120,7 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
 ### Mocking Firebase
 
 - using standard mocking - couldn't get this working 
-    - [users_test.dart](/organising/private/career/Construct/jira-tickets/mock-firebase-example-1.dart)
+    - [users_test.dart](/career/Construct/jira-tickets/mock-firebase-example-1.dart)
 - using FakeCloudFirestore - got this working in the end - 
     - [users_test.dart](/pages/coding/tools/testing/fake-firebase-example-2.md)
     - don't forget to edit pubspec.yaml as per comment in file
