@@ -6,7 +6,7 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 
 (Technical Agile Coaching With the Samman Method, by Emily Bache - A Summary)
 
-(See also [clare-tech page](https://github.com/claresudbery/clare-tech/tree/master/organising/private/career/samman-technical-coaching.md)) (accessible to Clare only)
+(See also [clare-tech page](https://github.com/claresudbery/clare-tech/tree/master/career/samman-technical-coaching.md)) (accessible to Clare only)
 
 ## Preface
 
