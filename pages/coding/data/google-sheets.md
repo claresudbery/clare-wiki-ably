@@ -148,6 +148,7 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - If you want to return an empty string if the `VLOOKUP` fails to find a result, wrap it in `IFERROR`:
   - `=IFERROR(VLOOKUP(A1,C2:E10,3,0),"")`
 - If you want to return not just a single value but a sum of values in many cols...
+  - First of all, if it's a simple example, maybe you just want [SUMIF or SUMIFS](#sumif-to-calculate-all-the-values-that-relate-to-a-condition)?
   - See this spreadsheet for an illustration of the different approaches: https://docs.google.com/spreadsheets/d/16pQ6E9zYMN1zaNgM6gCVA-b2UalYj2UhgTsyiv3j0rw/edit?gid=1372164098#gid=1372164098
   - First approach:
     - Use `FILTER` instead of `VLOOKUP`: `=SUM(FILTER(D2:E10,C2:C10=A1))`

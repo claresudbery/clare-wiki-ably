@@ -88,5 +88,6 @@ permalink: /pages/coding/tools/flutter/Firebase
 - Use a url like this: http://127.0.0.1:4000/storage/project-id.appspot.com/avatars
 - ...where `avatars` is the name of the place where you're storing your images
 - ...and `project-id` is the project ID for your Firebase - will be set as `projectId` in firebase.json and maybe `PROJECT_ID` in various bits of config - might look something like `app-xxxxxxx-dv-123456`
+
 - That url will take you to a page with an "Upload file" button
 

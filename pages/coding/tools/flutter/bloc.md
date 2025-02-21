@@ -10,6 +10,7 @@ permalink: /pages/coding/tools/flutter/Bloc
 
 - [Intro](#blocs-intro)
 - [How blocs work](#how-blocs-work)
+- [Cubits](#cubits)
 - [Adding BlocProvider and BlocListener to widgets](#adding-blocprovider-and-bloclistener-to-widgets)
 - [BlocListener](#bloclistener)
   - [Intro to BlocListener](#intro-to-bloclistener)
@@ -61,6 +62,16 @@ permalink: /pages/coding/tools/flutter/Bloc
   - This allows us to add functionality that needs to occur once per state change - in this case showing a Dialog
   - see [here](flutter-construct/construct-examples.md#the-matchbox-bloc-and-bloclistener)
   - also notes [below](#bloclistener)
+
+## Cubits
+
+- Cubits are a specialised type of bloc
+- "Cubit is a subset of the BLoC Pattern package that does not rely on events and instead uses methods to emit new states.
+- So, we can use Cubit for simple states, and as needed we can use the Bloc.
+- There are many advantages of choosing Cubit over Bloc. The two main benefits are:
+  - Cubit is a subset of Bloc; so, it reduces complexity. 
+  - Cubit eliminates the event classes. Cubit uses emit rather than yield to emit state. Since emit works synchronously, you can ensure that the state is updated in the next line."
+- (From [here](https://stackoverflow.com/questions/63131067/what-is-the-difference-between-cubit-and-bloc))
 
 ## Adding BlocProvider and BlocListener to widgets
 

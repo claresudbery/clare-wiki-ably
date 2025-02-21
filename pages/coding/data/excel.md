@@ -72,3 +72,7 @@ permalink: /pages/coding/data/Microsoft-Excel
 - For instance: `=FILTER(D2:E10,ISNUMBER(SEARCH(A1,C2:C10)),"No results")`
   - This will return all the values in `D2:E10` (so, two cols of data)
   - ...but only for those rows where the value in col C contains the value in `A1` as a substring
+
+## Filter, lookup, vlookup
+
+- See [Google Sheets](/pages/coding/data/Google-Sheets), seeing as most of that stuff is interchangeable.

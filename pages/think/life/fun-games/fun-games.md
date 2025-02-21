@@ -46,6 +46,25 @@ It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Draw
     - Take it in turns to read out the three sentences on your paper and laugh at the results.
     - Pass the papers around so that everyone can see the hilarious drawings.
 
+### The scoring game
+
+One person goes out of the room
+Everyone left comes up with a score out of 10
+The original person comes back and picks a category - eg "films"
+Everyone takes it in turns to give examples from that category that would have that score (based on personal opinion)
+The original person tries to guess the score
+
+### A rizla game variation
+
+Each person gives one-word clues to the next person’s Rizla (on their left)
+You're trying to guess your own, but will also get points if the next person along guesses correctly. You get more points for guesing your own, but you still get some points if your clues led to your neighbour's correct guess
+
+### Got one
+
+Say “got one” then “3…2…1…” then say a random word simultaneously… 
+then try to think of a word in the middle of the two words
+Again, say “got one” then “3…2…1…”. 
+Keep going until you both say the same word.
 
 ## Coding Games
 

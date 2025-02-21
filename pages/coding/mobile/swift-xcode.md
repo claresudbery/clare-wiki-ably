@@ -324,6 +324,7 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - Find call hierarchy: Ctrl + Shift + Splat + H
 - Find symbol in project: Ctrl + Shift + Splat + F
 - Find class or file: Cmd + Shift + O
+- Find path / location of file: Cmd + Shift + O, then pay attention to what shows up 
 - Build: 
     - build project code only: Splat + B
     - build project AND test code: Shift + Splat + U

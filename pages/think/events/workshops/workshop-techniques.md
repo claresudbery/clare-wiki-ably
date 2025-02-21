@@ -170,4 +170,31 @@ Read all about it [here](http://www.liberatingstructures.com/1-1-2-4-all/).
     - it might pique their interest and lead to them finding out more offline
     - they might also learn just a teeny amount abiout them via the titles / descriptions
 
+### Everyone in two lines making pairs round the edge of the room
+
+- This is the activity they did at the end of ScrumDay, where people were lined around the room in pairs and kept moving to left or right
+  - See the template slide deck in Events/Lead Dev Berlin folder (LeadDevBerlin_TechnicalLeadership_Template.pptx)
+  - There are detailed instructions in this slide deck, starting from the slide titled "Form a line round the edge of the room" (currently slide 64)
+- These are my original notes, but the slides were probably refined after this:
+  - Form a line around the edge of the room in order of how many miles you travelled to get here
+  - Every second person move out so they're facing the person to their left
+  - Person on inside tells outside person the most inspiring / useful thing they've heard today
+  - Inside people move two steps to the right
+  - Outside people tell new people what inside person's inspiring thing was
+  - Outside people move two steps to the right
+  - Person on outside tells inside person what new thing they will do, or existing thing they will do more, because of this workshop
+  - Inside people move two steps to the right
+  - Inside people tell new people what outside person is planning to do differently
+  - If time...
+  - Outside people move two steps to the right
+  - Person on outside tells inside person the most inspiring / useful thing they've heard today
+  - Inside people move two steps to the right
+  - Inside people tell new people what outside person's inspiring thing was
+  - Outside people move two steps to the right
+  - Person on inside tells outside person what new thing they will do, or existing thing they will do more, because of this workshop
+  - Inside people move two steps to the right
+      - Outside people tell new people what inside person is planning to do differently
+
+
+
 

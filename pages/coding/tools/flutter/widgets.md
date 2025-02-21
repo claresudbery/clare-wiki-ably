@@ -8,6 +8,7 @@ permalink: /pages/coding/tools/flutter/Widgets
 
 ## Contents of this page:
 
+- [Intro to widgets](#intro-to-widgets)
 - [Finding useful widgets etc](#finding-useful-widgets-etc)
 - [Get a dialog to return a value](#get-a-dialog-to-return-a-value)
 - [Streams vs futures](#streams-vs-futures)
@@ -19,6 +20,10 @@ permalink: /pages/coding/tools/flutter/Widgets
 - [Quill Editor](#quill-editor)
 - [Widget layout](#widget-layout)
 - [Common flutter errors](#common-flutter-errors)
+
+## Intro to widgets
+
+- See [here](/pages/coding/tools/flutter/Flutter#widgets)
 
 ## Finding useful widgets etc
 
