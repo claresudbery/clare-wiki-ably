@@ -1,0 +1,18 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isReferringToThemselves(userID) {
+      return request.auth.uid == userID;
+    }
+
+    match /{allPaths=**} {
+      allow read;
+    }
+
+    match /images/{userID} {
+      allow write: if isReferringToThemselves(userID);
+      allow delete: if isReferringToThemselves(userID);
+    }
+  }
+}

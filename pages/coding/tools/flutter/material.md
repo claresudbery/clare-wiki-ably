@@ -17,6 +17,9 @@ permalink: /pages/coding/tools/flutter/Material
 - [FittedBox](#fittedbox)
 - [LayoutBuilder](#layoutbuilder)
 - [ListView](#listview)
+- [Images and ImagePicker](#images-and-imagepicker)
+  - [Max width and max height of images](#max-width-and-max-height-of-images)
+  - [Image dimension units](#image-dimension-units)
 
 ## Material Components - Intro
 
@@ -83,3 +86,32 @@ permalink: /pages/coding/tools/flutter/Material
 
 - a `Column` that scrolls
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/a2c9c5cc3a84ee406b0e1694bb74a588a771a7e7) for an example
+
+## Images and ImagePicker
+
+### Max width and max height of images
+
+- We're using the [`ImagePicker` class](https://pub.dev/packages/image_picker) when users upload avatars
+- We've set max width and height to 400
+  - This means 400 _pixels_ - see [below](#image-dimension-units)
+  - But when I tried to upload an image with larger dimensions, it just shrank it down for me - didn't actually stop me
+- We've set max file size to 2Mb
+- File types are 
+  - JPEG, PNG, GIF, Animated GIF, WebP, Animated WebP, BMP, WBMP, HEIC (iOS only)
+    - Additional formats may be supported by user device.
+    - I verified all the above on my macbook (Chrome) apart from Animated WebP, BMP, WBMP
+    - I tried the following on my MacBook (Chrome) and they were NOT supported:
+      - tiff, pdf, heic (only works on ios), jpeg-200 (`.jp2`), OpenEXR (`.exr`)
+  - This is assumed, based on what's documented [here](https://api.flutter.dev/flutter/widgets/Image-class.html#:~:text=The%20following%20image%20formats%20are,supported%20by%20the%20underlying%20platform.)
+
+### Image dimension units
+
+- Ah ok, you can ignore the below notes, it's documented as pixels [here](https://github.com/flutter/packages/blob/main/packages/image_picker/image_picker_platform_interface/lib/src/types/image_options.dart#L62-L70)
+- What are the image dimension units?
+  - This is driving me mad. The `ImagePicker` class has a `pickImage` method that takes params maxWidth and maxHeight which we’re setting to 400… but 400 _what_? I can’t find documentation that tells me what the units are! I’m guessing pixels, but that’s not always the case?
+  - [Where we use it](https://github.com/The-Construct-Software-Dev/construct/blob/5049b9e394992f0d1781f18cff38de823e89f26a/app/lib/screens/rings/widgets/cs_upload_ring_avatar.dart#L40)
+  - [Official docs](https://pub.dev/packages/image_picker)
+  - [This article says pixels though](https://www.dhiwise.com/post/streamlining-image-selection-with-flutter-image-picker-plugin), so I’m gonna go with that.
+  - Docs in the file (image_picker-1.1.2/lib/image_picker.dart):
+
+![flutter-image-picker.png](/resources/images/flutter-image-picker.png)

@@ -13,8 +13,10 @@ permalink: /pages/coding/tools/flutter/Firebase
 - [How to export / import data?](#how-to-export--import-data)
 - [Troubleshooting lost data from emulator](#troubleshooting-lost-data-from-emulator)
 - [Troubleshooting "permission denied"](#troubleshooting-permission-denied)
+- [Troubleshooting emulator failing on startup](#troubleshooting-emulator-failing-on-startup)
 - [Collection groups / Collection group queries](#collection-group-queries)
 - [Upload an image to local emulator storage](#upload-an-image-to-local-emulator-storage)
+- [How to verify a new user without actually having to literally click a link in an email](#how-to-verify-a-new-user-without-actually-having-to-literally-click-a-link-in-an-email)
 
 ## Tutorial
 
@@ -65,6 +67,7 @@ permalink: /pages/coding/tools/flutter/Firebase
   - Try closing it down / kill the process before starting it up again:
     - Ctrl + C, 
     - then run `pkill -f "firebase/emulators"` 
+      - I have this set up as an alias called `killf`
   - We also had to edit emulator.sh at one point to change the `--project` flag from `default` to `--project dev`
 
 ## Troubleshooting "permission denied"
@@ -73,6 +76,49 @@ permalink: /pages/coding/tools/flutter/Firebase
 - eg fetching user info
 - or trying to update matchboxes
 - looks like this: `cloud_firestore/permission-denied`
+
+## Troubleshooting emulator failing on startup
+
+- I got this error: `Fatal error occurred:  Emulator UI has exited with code: 1,  stopping all running emulators`
+
+![/resources/images/firebase-emulator-error-01.png](/resources/images/firebase-emulator-error-01.png)
+
+- The previous lines in the console feedback (see screenshot above) suggested I run `firebase login`, but when I did that I got the message `already logged in`
+- I checked `ui-debug.log` (which I found in the top level `[named-after-project]` folder of the code base) and found this:
+
+```js
+node:internal/modules/cjs/loader:986
+    throw new ERR_REQUIRE_ESM(filename, true);
+    ^
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/claresudbery/.cache/firebase/emulators/ui-v1.11.8/server/server.mjs not supported.
+Instead change the require of /Users/claresudbery/.cache/firebase/emulators/ui-v1.11.8/server/server.mjs to a dynamic import() which is available in all CommonJS modules.
+    at Function.runMain (pkg/prelude/bootstrap.js:1979:12) {
+  code: 'ERR_REQUIRE_ESM'
+}
+
+Node.js v18.5.0
+```
+
+- I found [this link](https://github.com/firebase/firebase-tools/issues/6931) complaining of same problem
+- I ran this: `npm i firebase-tools -g` to install `firebase-tools` as a global npm package, as suggested by the link above
+- ...but got this error:
+
+```js
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'superstatic@9.2.0',
+npm warn EBADENGINE   required: { node: '18 || 20 || 22' },
+npm warn EBADENGINE   current: { node: 'v23.8.0', npm: '10.9.2' }
+npm warn EBADENGINE }
+```
+
+- As with the complainant in that link, the error file was reporting the wrong version of node
+  - `node -v` told me I was on v `23.8.0`, as installed via `nvm install 22.14.0`
+  - But the error above, and the link, state that only even versions of node are supported
+  - So I went back down to latest stable version of node 22, which is currently (18/3/25) `22.14.0`
+  - I did this via `nvm install 22.14.0`
+- then I ran `npm i firebase-tools -g` again
+- After that, the emulators started successfully.
 
 ## Collection Group Queries
 
@@ -91,3 +137,13 @@ permalink: /pages/coding/tools/flutter/Firebase
 
 - That url will take you to a page with an "Upload file" button
 
+## How to verify a new user without actually having to literally click a link in an email
+
+- Go to your [local Firebase emulator suite](http://127.0.0.1:4000/)
+- Click on Authentication at the top
+- Find the relevant email address
+- Click the three dots on the right => Edit user
+- Move the slider to change on the right under "Verified email?" to be `Verified` rather than `Not verified`
+- Scroll down and click Save
+- Back in the app, refresh the browser and then sign in 
+  - (clicking "I have verified my email" probably won't work)

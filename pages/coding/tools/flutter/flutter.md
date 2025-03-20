@@ -111,7 +111,7 @@ flutter run
     - Make sure you start by opening the correct folder 
         - it should be the app folder
         - it won't necessarily be called `app`, but it's the parent that contains the `lib` folder
-    - Update dependencies: `flutter pub get`
+    - Update dependencies: `flutter pub get` or `flutter pub upgrade`
         - but generally VS Code should do this for you, whenever it detects that pubspec.yaml has changed
     - Then you have to open `lib/main.dart`
         - You can tell you've done the right thing, because a play button will appear, top right

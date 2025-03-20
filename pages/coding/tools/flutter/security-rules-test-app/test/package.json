@@ -1,11 +1,11 @@
 {
-  "name": "test",
+  "name": "security-rules-tests",
   "version": "1.0.0",
   "description": "Unit testing for security-rules-test-app",
-  "main": "test.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --exit"
+    "test": "mocha \"./*.test.js\" --exit"
   },
   "author": "Clare Sudbery",
   "license": "ISC",
