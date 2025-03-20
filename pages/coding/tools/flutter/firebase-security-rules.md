@@ -97,7 +97,7 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
 - (was previously `"test": "mocha --exit"`)
 - Note that I also changed `package.json` to have `"main": "index.js"` instead of `"main": "test.js"`, but I'm not sure that made any difference to anything.
 - See [sample code](security-rules-test-app/test/storage.test.js) for example
-  - But note that after I added `storage.test.js` to this example code, in commit [](), I never tested it, so I don't know if I broke it!
+  - But note that after I added `storage.test.js` to this example code, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), I never tested it, so I don't know if I broke it!
 
 ## Getting started
 
@@ -347,7 +347,7 @@ npm install firebase-tools --save-dev
 - Create new file called `test.js` in `test` folder.
 - Put what's shown below at the top of your file.
 - See [sample code](security-rules-test-app/test/firestore.test.js#L1) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -400,7 +400,7 @@ const moderatorToken = {
 
 - Edit `test.js` to add your first test(s)
 - See [sample code](security-rules-test-app/test/firestore.test.js#L49) for example of a test
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -437,7 +437,7 @@ describe("Our security rules test social app", () => {
   - You should get the error `FirebaseError: false for 'get'`
 - To make the test pass, edit `firestore.rules` 
 - See [sample code](security-rules-test-app/firestore.rules#L34) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -467,7 +467,7 @@ service cloud.firestore {
   - so even though it's an empty document snapshot, it's still returned with no error.
 - You can capture data from the auth object and use that to verify
 - See [sample code](security-rules-test-app/firestore.rules#L38) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -494,7 +494,7 @@ service cloud.firestore {
   - again, notice that we're writing to a doc which doesn't actually exist
   - ...but that doesn't matter, the point is that we have permission to do it
 - See [sample code](security-rules-test-app/test/firestore.test.js#L63) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -527,7 +527,7 @@ describe("Our security rules test social app", () => {
   - returns all of the fields in the doc as a map (set of key-value pairs), which is in `resource.data`
 - You can use the resource object to look at particular fields in a document
 - See [sample code](security-rules-test-app/firestore.rules#L41) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -551,7 +551,7 @@ service cloud.firestore {
 - This is because it doesn't need to: We can see from the query which data will be fetched, and the rules dictate whether that data is accessible or not.
   - The rules engine will not look at data unless it absolutely has to - making it more performant.
 - See [sample code](security-rules-test-app/test/firestore.test.js#L75) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -624,7 +624,7 @@ describe("Our security rules test social app", () => {
   - Use `testEnv.clearFirestore()`
   - You can do it in a `beforeEach` and in an `after` (which runs after ALL tests have run) to make sure each test is working with a clean slate.
 - See [sample code](security-rules-test-app/test/firestore.test.js#L93) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -677,7 +677,7 @@ after(async() => {
 - There is `read` and `write` covered in examples above
 - Then there is `update`
 - See [sample code](security-rules-test-app/firestore.rules#L44) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -746,7 +746,7 @@ if (request.auth.token.role == "Moderator")
     - So use it for stuff that will change infrequently
 - Alternative is to [store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
 - See [sample code](security-rules-test-app/test/firestore.test.js#L149) for example of test
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example of test:
 
 ```js
@@ -769,7 +769,7 @@ it ("Allows a moderator to edit somebody else's post", async() => {
 - In this case you have to do an actual database fetch in the middle of the rule config
 - So you have to call `get` to fetch the field that gives you access control info
 - See [sample code](security-rules-test-app/firestore.rules#L9) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -794,7 +794,7 @@ service cloud.firestore {
 ```
 
 - See [sample code](security-rules-test-app/test/firestore.test.js#L175) for example of a test
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -813,7 +813,7 @@ service cloud.firestore {
 ## Functions in rules
 
 - See [sample code](security-rules-test-app/firestore.rules#L5) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -882,7 +882,7 @@ service cloud.firestore {
 - But sometimes we want to access new data - whether it's a new doc being inserted or new data that will be updated on an existing doc
 - We do this via `request.resource.data`
 - See [sample code](security-rules-test-app/firestore.rules#L47) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -926,7 +926,7 @@ service cloud.firestore {
   - More [here](https://firebase.google.com/docs/reference/rules/rules.List)
   - and [here](https://firebase.google.com/docs/reference/rules/rules.Set)
 - See [sample code](security-rules-test-app/firestore.rules#L48) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -958,7 +958,7 @@ service cloud.firestore {
 
 
 - See [sample code](security-rules-test-app/test/firestore.test.js#L234) for example of a test
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -986,7 +986,7 @@ service cloud.firestore {
   - `affectedKeys()` gives us the names of all the fields that have changed in any way
   - `hasOnly` checks that it only contains a subset of the supplied set, and nothing else. This method is available on lists and sets (in this case it's a set).
 - See [sample code](security-rules-test-app/firestore.rules#L46) for example
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
@@ -1011,7 +1011,7 @@ service cloud.firestore {
 
 
 - See [sample code](security-rules-test-app/test/firestore.test.js#L234) for example of a test
-  - Note that I edited this slightly to add `storage.test.js`, in commit [](), but never tested it, so I don't know if I broke it
+  - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
 
 ```js
