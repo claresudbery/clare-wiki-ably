@@ -120,9 +120,9 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
 ### Mocking Firebase
 
 - using standard mocking - couldn't get this working 
-    - [users_test.dart](/career/Construct/jira-tickets/mock-firebase-example-1.dart)
+    - [users_test.dart](fake-firebase/fake-firebase-example-1.md)
 - using FakeCloudFirestore - got this working in the end - 
-    - [users_test.dart](/pages/coding/tools/testing/fake-firebase-example-2.md)
+    - [users_test.dart](fake-firebase/fake-firebase-example-2.md)
     - don't forget to edit pubspec.yaml as per comment in file
     - You also need to make sure your repository does not give a default value to its firebaseFirestoreInstance
     - (otherwise you'll get errors saying you need to call Firebase.initializeApp)

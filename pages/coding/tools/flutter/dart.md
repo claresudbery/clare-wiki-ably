@@ -12,6 +12,7 @@ permalink: /pages/coding/tools/flutter/Dart
 - [Intro](#intro)
 - [Dart Parameters](#dart-parameters)
 - [Dart Classes](#dart-classes)
+- [The spread operator / ellipsis / three dots](#the-spread-operator--ellipsis--three-dots)
 - [Final and Const](#final-and-const)
   - [Static consts](#static-consts)
   - [Trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
