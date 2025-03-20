@@ -389,3 +389,6 @@ And now that it was more expensive, it signalled high quality to people just wan
 - Search terms: singing workshops, jazz singing
 - See clare-tech: singing.md#jazz-workshops
 
+## What's that app that Ted uses to draw on screen?
+
+- Demo Pro App.com

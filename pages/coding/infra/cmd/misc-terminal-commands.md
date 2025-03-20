@@ -273,8 +273,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
 
   - To look at the existing value of an env var: **echo $PATH**
 
-<!-- end list -->
-
   - To set the value of an env var (temporary):
     **PATH=$PATH:\[additional-path\]**
 
@@ -1075,13 +1073,9 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - For instance, the ES search returns json, so pipe the results to
         jq to get pretty-print / json formatting
     
-    <!-- end list -->
-    
       - Like this: **curl
         "thingelk.acmecorp.com:9200/thingelk-%%\\{index\_timestamp\\}/\_search?sort=@timestamp:desc"
         -s -n | jq "."**
-    
-    <!-- end list -->
     
       - The “.” argument means start at the root node of the json
 

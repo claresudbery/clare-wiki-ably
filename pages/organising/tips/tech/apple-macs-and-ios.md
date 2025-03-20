@@ -402,3 +402,9 @@ Spotlight directory not found at root: /Applications
 ### Check battery level on keyboard
 
 - System Settings => bluetooth
+
+## Edit images in the Preview app
+
+- Sometimes you don't get any edit features and it seems like you can't edit
+  - When this happens, just select View => Show Markup Toolbar
+- If you want to change the dimensions of an image, use Tools => Adjust Size

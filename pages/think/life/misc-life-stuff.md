@@ -62,3 +62,56 @@ Cat litter
 # Cream / balm / ointment recommended by Emma / Dolly for itchy skin
 
 Delhicious High tea moisture balm
+
+# Lasting Power of Attorney (UK)
+
+- These notes were made March '25 and in some places apply specifically to choices I made. You might be different!
+- [Online info here](https://www.gov.uk/power-of-attorney)
+- The guide referred to in the form is [this one here](https://www.gov.uk/government/publications/register-a-lasting-power-of-attorney/lp13-register-your-lasting-power-of-attorney-a-guide-web-version)
+  - I have this printed out on paper
+- There are two versions - for health and finances
+- Clare: see clare-tech for locations of forms
+- You only get one copy sent to you once it's registered - you can choose who gets that copy
+- You have to fill in everything extremely neatly - eg no gap between diagnals and uprights in the letter A, and everything has to be inside the boxes
+  - If you make mistakes, you can correct and initial them
+  - We did it all by hand and it took HOURS to fill in all the names and addresses neatly. I wonder whether this was strictly necessary? Couldn't we have filled in most of the pdf eletronically, then printed it out and signed / dated in relevant places? I don't know.
+- Certificate provider
+  - The certificate provider must sign after the donor but before the attorneys.
+  - This is someone impartial you've known for 2+ years, not a family member of you or any of the attorneys, or the partner (married otherwise) of a family member of you or any of the attorneys
+    - or a professional, eg doctor
+  - They can't be the donor or one of the attorneys
+  - They must be 18 or over
+  - They are asserting that they are happy that everyone involved knows what they're doing
+  - They can also be the witness
+- Donor
+  - The person who the attorneys will be acting on behalf of, if they become incapacaitated
+- Attorneys
+  - People who will act on the donor's behalf
+  - you can also have replacement attorneys, for if main attorneys not able to do it for whatever reason 
+- Things you can fill in in advance:
+  - All printed names, addresses and email addresses
+  - The various tick boxes
+  - Any preferences and requirements (p8)
+  - Don't forget to fill in witness name and address! This is on multiple pages: p6(health only), p10, p11, p12, p13, p14
+- Pages that might get messed up, and are therefore worth having spare copies of during filling and signing:
+  - 1, 2, 4, 5, `6`, `10`, `11`, `12`, `13`, `14`, 17, 18, 19, `20`
+  - (The highlighted ones are the ones that involve signatures)
+- Things that need doing after filling in the staple info (names, addresses, emails, tickboxes, preferences + requirements):
+  - Everyone (donor, attorneys, certificate provider) read and understand `p9`
+  - Donor signs `p6` - witness signs too
+  - Donor signs `p10` - witness signs too
+  - AFTER donor signs p10 and BEFORE attorneys sign: Certificate provider signs `p11` - no witness needed
+  - Attorneys sign `p12`, `p13`, etc - witness signs too
+  - Backup attorney(s) sign `p14` etc - witness signs too
+  - Donors sign `p20` - no witness needed
+  - Check the checklist on the page after `p20`
+  - Send WITH PAYMENT (if cheque) to address on `checklist page`
+
+
+The certificate provider must sign after the donor but before the attorneys.
+This is someone impartial you've known for 2+ years, not a family member of you or any of the attorneys, or the partner (married otherwise) of a family member of you or any of the attorneys
+or a professional, eg doctor
+They can't be the donor or one of the attorneys
+They must be 18 or over
+They are asserting that they are happy that everyone involved knows what they're doing
+They can also be the witness

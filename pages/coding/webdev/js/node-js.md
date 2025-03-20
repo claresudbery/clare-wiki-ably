@@ -44,6 +44,16 @@ permalink: /pages/coding/webdev/js/Node-JS
 - If you have `yarn` installed, you don't *have* to use `yarn`. You can still install and run projects that use `npm` rather than `yarn`.
 - If a project is set up to use `yarn`, you won't be able to use it with `npm`. You'll have to install `yarn` (but that's quick and easy, so shouldn't be a problem).
 
+### How to use npm package manager
+
+- `package.json` is where your dependencies are specified / configured
+- `npm init` gets you set up with a brand new `package.json`
+- `npm install` installs all the dependencies set up in `package.json`
+  - Use this when you've just acquired a new set of code 
+- `npm update` is NOT for installing new dependencies that have just been added to your `package.json`
+  - `npm install` will do that for you
+  - `npm update` will update all the already-installed dependencies to their newest versions
+
 ### Migrating from npm to yarn
 
 - If you want to move a project from `npm` to `yarn`, do the following:

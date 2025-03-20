@@ -153,3 +153,7 @@ if (name.match(new RegExp(MY_NAME, "i"))){
 - It's to do with passing iterable objects such as arrays into functions
 - It allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.
 - [More explanation here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+
+## Promises
+
+- See [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
