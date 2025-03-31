@@ -492,11 +492,7 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 
 ## Obsidian
 
-- For taking notes / organising knowledge
-- [Obsidian](https://obsidian.md/)
-- See [here](/pages/organising/BigIndex/Big-Index-Useful-Tools.md#other-technologies-considered-for-bigindex) for other note-taking tools
-- See iPhone Notes: "SoCraTes UK '24" for notes on a session I attended about Obsidian
-- See also book by Tiago Forte - building a second brain - been recommended to me by a few people
+- See [Obsidian page](/pages/organising/tools/Obsidian)
 
 ## How to oil a lock
 

@@ -135,16 +135,16 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 ## VLOOKUP and Gotchas
 
 - If you want to find a value and then return another value from the same row
-- eg 
-  - you are looking at a range of data, and 
-  - you want to see whether anything in the first col of your range has the same value as cell A1,
-  - and if it does you want to return the value in the third col of your range, in the same row as the matching value
-  - so for instance, if your range is cols C to E, and you find a match in cell C2 (row 2, col C), then the value returned will be the value in cell E2 (row 2, col E)
 - it looks like this: `=VLOOKUP(A1,C2:E10,3,0)`
   - You're searching for a match for `A1`
   - The range of values you're searching ("the table") is `C2:E10`
   - You're going to return the value from the 3rd col in the table (C is the first col, E is the third)
   - The `0` represents `false` for `range_lookup` which means the data is sorted in ascending order (I think)
+- So... 
+  - youre looking at a range of data, and 
+  - you want to see whether anything in the first col of your range has the same value as cell A1,
+  - and if it does you want to return the value in the third col of your range, in the same row as the matching value
+  - so for instance, if your range is cols C to E, and you find a match in cell C2 (row 2, col C), then the value returned will be the value in cell E2 (row 2, col E)
 - If you want to return an empty string if the `VLOOKUP` fails to find a result, wrap it in `IFERROR`:
   - `=IFERROR(VLOOKUP(A1,C2:E10,3,0),"")`
 - If you want to return not just a single value but a sum of values in many cols...
@@ -342,3 +342,153 @@ Hoping somebody can help! Thank you."
 
 - `=HSTACK(D1:I1,D2:I2)`
 - [More here](https://www.ablebits.com/office-addins-blog/combine-ranges-arrays-excel-vstack-hstack/#hstack)
+
+## Join a bunch of cells together with a comma separator, but only if they contain data
+
+- `JOIN(", ", FILTER(AK3:BL3,AK3:BL3<>""))`
+
+## Find out a cell reference
+
+- `=CELL("row", A5)` returns row number `5` for cell A5
+- `=CELL("col", A5)` returns col number `1` for cell A5
+- `=CELL("address",'Sheet name'!A2)` return cell ref `'Sheet name'!$A$5`
+- or you can convert col number to a letter like this:
+  - `=REGEXEXTRACT(ADDRESS(ROW(A5), COLUMN(A5)), "[A-Z]+")`
+  - The `ROW(A5)` part of this is actually irrelevant, cos it's only extracting the col letter
+- or you can use regex to extract only the sheet name like this:
+  - `=REGEXREPLACE(CELL("address",'Sheet name'!A2),"'?([^']+)'?!.*","$1")`
+    - This will return `Sheet name`
+  - This is useful if you want to return the sheet name to other things (like a script) in case it changes
+- But if all you really want is to know the cell ref of a cell...
+  - (you might want it for a script, so if a cell moves and its cell ref changes, the script wn't be broken)
+  - This will give you `$A$5` and will change dynamically if A5 is moved elsewhere:
+    - `=ADDRESS(ROW(A5), COLUMN(A5))`
+  - The dollars are probably extraneous but they won't do any harm
+
+## Graphs / Charts
+
+### Having dynamic numbers of cells in source data
+
+- The trick is to make the range of source data include a bunch of empty rows - as many as you think might get filled. The resulting chart will only contain data for cells / rows that were populated.
+  - My timesheet spreadsheet contains plenty of examples (accessible to Clare only).
+
+### Having chart titles that change dynamically in response to source data
+
+- You need a script
+- See [below](#using-a-script-to-dynamically-change-chart-titles)
+
+## Google Apps Scripts
+
+### Overview
+
+- They live under Extensions => Apps Script
+
+### Scripts and Charts/Graphs
+
+- Overall documentation [here](https://developers.google.com/apps-script/reference/charts#classes)
+  - For methods available on charts, you want to look at methods available in various places:
+    - `BarChartBuilder`, [here](https://developers.google.com/apps-script/reference/charts#barchartbuilder)
+    - `PieChartBuilder`, [here](https://developers.google.com/apps-script/reference/charts#piechartbuilder)
+    - `EmbeddedChart`, [here](https://developers.google.com/apps-script/reference/spreadsheet/embedded-chart)
+      - ! A lot of useful stuff here that is otherwise hard to find!
+- Documentation of different options available on the Chart object [here](https://developers.google.com/apps-script/chart-configuration-options)
+  - [For bar charts](https://developers.google.com/apps-script/chart-configuration-options#bar-config-options)
+  - [For pie charts](https://developers.google.com/apps-script/chart-configuration-options#pie-config-options)
+
+### Looking up charts using their subtitle or title
+
+
+
+### Using a script to dynamically change chart titles
+
+- See explanation [here](https://benlcollins.kit.com/posts/sheets-tip-272-dynamic-chart-heading-in-sheets) (scroll down a little)
+- For documentation of useful methods, see [above](#scripts-and-chartsgraphs)
+- My example:
+
+```javascript
+/**
+* Function to automatically change chart title
+*/
+function changeChartTitle() {
+
+// get the chart
+// assumes only one chart, adjust the index [0] if needed
+const chartSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Hours per period');
+const chart = chartSheet.getCharts()[0];
+
+// get the chart title from the cell
+const period = chartSheet.getRange('I1').getValue();
+const hrsSpent = chartSheet.getRange('Q2').getValue();
+const category = chartSheet.getRange('P2').getValue();
+const newTitle = hrsSpent + " for " + category + ", " + period;
+
+// update the chart title to the new title
+const chartBuilder = chart.modify();
+chartBuilder.setOption('title', newTitle);
+const updatedChart = chartBuilder.build();
+chartSheet.updateChart(updatedChart);
+}
+```
+
+- Summary in case link breaks:
+- In your Sheet with your chart, open the Apps Script editor from the menu:
+Extensions > Apps Script
+- Clear out the example code in the editor.
+- Add the code in my example above and press save (the disk icon in the toolbar):
+- This code assumes there is a single chart in the sheet called Sheet1.
+- It takes the value from cell A1 as the chart title.
+- Feel free to modify "Sheet1" and "A1" in the code to match your specific situation (e.g. if your sheet is called "Data" change the "Sheet1" to "Data" in the code above).
+- Press Save.
+  - Don't forget this step!
+- Test the script by running it in the script editor with the big Run button at the top
+  - Click the Execution log (at the top) to see any errors
+  - It will run against the "active spreadsheet" which seems to be whatever you have open
+- The final step is to set a trigger so that this code runs every time the sheet changes.
+- Create a new trigger by clicking the Triggers section in the left menu
+  - This will take you away from the main script - click Yes to save
+- In the Triggers section click "+ Add Trigger".
+- Then set up your trigger to look like this:
+  - Function to run: changeChartTitle
+    - If you add a new file in the editor, with a new function, thew new function will end up appearing in this dropdown
+    - But only if you save the file and wait a few seconds
+    - While your file is open, you'll see a dropdown at the top with the names of any functions in that file
+    - The function name will default to myFunction until you save the file
+  - Deployment to run: Head
+  - Event source: From spreadsheet
+  - Event type: On edit
+  - Failure notification settings: Notify me daily
+- The only change you need to make is to ensure that the final box for "Select event type" is set to "On edit".
+- Press Save.
+  - Don't forget this step!
+- Then you're prompted to give the script permission to access your Sheet. (More info on that in [this article](https://www.benlcollins.com/apps-script/google-apps-script-beginner-guide/#permissions).)
+  - I had to click through to Advanced and Are you sure and stuff, cos it didn't want to let me give access
+- And that's all.
+- Back in your Sheet, your chart will display whatever text is shown in cell A1. And if that text changes, the chart title will automatically update to reflect it.
+  - I had to update some source data and then wait several seconds - there was a longish delay before the chart title was updated
+- It's very slow though, and gets slower for every new chart you try to update!
+  - I asked for help in speeding that up, [here](https://support.google.com/docs/thread/333402052?hl=en&sjid=9344226696062890043-EU)
+
+## Display dates in string format
+
+- If you return a date from a function, it might cme out as an integer instead of a string
+- To ensure a string, use `=TEXT(H1, "dd/mm/yy")`
+
+## Troubleshooting 
+
+### Chart can't cope with hours > 240
+
+- I was finding that when my data included hours > 240, even if over a millisecond over, the chart was suddenly going down to -144, even though I had no negative data
+- A helpful person on the Google help forum worked out that the problem was more about the range of data
+  - If the lower bound was raised, values > 240 stopped being a problem
+  - She wasn't sure exactly why it was happening, but she found she could fix it by setting the Major gridlines count to at least six:
+    - Three dots, top right of chart => Edit => Customise
+    - Gridlines and ticks => select vertical axis
+    - Major count => 6 or more
+      - Note that one of mycharts had data that went as high as 672 hours, and for that one I had to set it to major count = 10
+      - 10 was the maximum, so I'm guessing if data went higher I'd need ro reduce the range, maybe by excluding the smaller numbers
+      - I've reported this via Help => Help sheets improve
+- The full question in detail is [here](https://support.google.com/docs/thread/317591568?hl=en&sjid=5856071677799606417-EU)
+- A sample spreadsheet containing a demo of the problem is [here](https://docs.google.com/spreadsheets/d/15JekJRilFscgtecvxids5Bvn4UC-W1RQF6R6zqpgJc8/edit?gid=475101449#gid=475101449)
+- Note that when this problem occurs, it also leads to the error "Those columns are out of bounds" when I try to edit the chart title via a script
+
+### 
