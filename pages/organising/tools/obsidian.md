@@ -212,9 +212,10 @@ permalink: /pages/organising/tools/Obsidian
 - !! Syncing can sometimes be slow
   - Even though Google Drive says it's up to date, new files might not appear immediately - can take several seconds
 - !! There's some kind of bug to do with folders!
-  - If you create a brand new vault and create more than one folder before pushing to Google Drive for the first time, it will create two directory in Google Drive for that vault, and each directory will contain a different one of the vault folders
+  - If you create a brand new vault and create more than one folder before pushing to Google Drive for the first time, it will create two directories in Google Drive for that vault, and each directory will contain a different one of the vault folders
   - To avoid this happening, push to Google Drive after creating the first folder, then again after creating the second folder
     - After this you can add multiple folders in one sync, and it will work fine
+  - I reported this as an issue [here](https://github.com/RichardX366/Obsidian-Google-Drive/issues/10)
 
 ### Syncing with iCloud
 
