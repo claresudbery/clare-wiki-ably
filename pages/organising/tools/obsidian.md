@@ -8,10 +8,18 @@ permalink: /pages/organising/tools/Obsidian
 
 - [Obsidian Overview](#obsidian-overview)
 - [Useful Obsidian links](#useful-obsidian-links)
+- [To do](#to-do)
+- [Questions](#questions)
 - [Notes from Diana's presentation at Socrates UK '24](#notes-from-dianas-presentation-at-socrates-uk-24)
 - [Vault management](#vault-management)
-- [Plugins](#plugins)
+- [Keyboard shortcuts](#keyboard-shortcuts)
+- [Customising Obsidian](#customising-obsidian)
+  - [Plugins](#plugins)
+  - [Modal forms](#modal-forms)
 - [Basic operations](#basic-operations)
+  - [Command palette](#command-palette)
+  - [Settings](#settings)
+  - [Quick Switcher](#quick-switcher)
   - [Meta organisation](#meta-organisation)
   - [Formatting markdown](#formatting-markdown)
   - [File / folder management](#file--folder-management)
@@ -20,6 +28,11 @@ permalink: /pages/organising/tools/Obsidian
   - [Syncing with iCloud](#syncing-with-icloud)
   - [Github Sync plugin](#github-sync-plugin)
   - [GitHub Syncing on iPhone](#github-syncing-on-iphone)
+- [Organising content](#organising-content)
+  - [Saving / storing links to 3rd party content](#saving--storing-links-to-3rd-party-content)
+  - [Importing content from other Notes systems](#importing-content-from-other-notes-systems)
+  - [Maps of Content (MOCs)](#maps-of-content-mocs)
+  - [Properties](#properties)
 
 ## Obsidian Overview
 
@@ -32,6 +45,20 @@ permalink: /pages/organising/tools/Obsidian
 ## Useful Obsidian links
 
 - Nice getting-started tutorial [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
+
+## To do
+
+- Check out [properties](#properties)
+- Check out [simple ideas](#each-note-should-contain-one-idea)
+- Check ToCs for published content
+
+## Questions
+
+- Tables of contents?
+  - Use the `outline` core plugin?
+  - For some other ideas, see [here](https://forum.obsidian.md/t/a-graphically-cool-table-of-contents/87684/5)
+- Linking to individual headings / sections in notes?
+  - See [formatting](#formatting-markdown) below
 
 ## Notes from Diana's presentation at Socrates UK '24
 
@@ -96,10 +123,29 @@ permalink: /pages/organising/tools/Obsidian
   - then in Finder, you can right-click and choose Get Info
   - If you want the path for Terminal, just copy / paste - then something like `iCloud Drive > Documents > GitHubTest-iCloud` will get pasted as `/Users/claresudbery/Documents/GitHubTest-iCloud` in Terminal
 
-## Plugins
+## Keyboard shortcuts
+
+- From [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
+- Note: for convenience we use “super” in this list, which means either the command key on Mac or ctrl on Windows and Linux: 
+  - Super+,	- Open [settings](#settings)
+  - Super+b	- Bold text
+  - Super+i	- Italicize text
+  - Super+k	- Insert link
+  - Super+p	- Open command palette (more on that below)
+  - Super+Shift+p	- Open quick switcher
+  - Super+n	- Create new note
+  - Super+w	- Close current tab
+  - Super+t	- New tab
+  - Super+Shift+F - Search
+- You can also setup your own shortcuts, via [Settings](#settings) => Hotkeys
+
+## Customising Obsidian
+
+### Plugins
 
 - On desktop:
   - Obsidian (top left) => Settings => Community plugins => turn on
+    - or use [command palette](#command-palette) to reach settings
   - Browse for what you want, and install
     - You have to do it separately for every vault you want to use the plugin for
   - Now two things might (should?) happen:
@@ -119,7 +165,91 @@ permalink: /pages/organising/tools/Obsidian
   - Also, when in an open file, click the hamburger menu bottom right to see any commands related to that plugin
   - Also, in Settings => Community plugins (not the list of plugins but the place you go to add new plugins), you'll see it listed and you can select it to read the readme
 
+### Modal forms
+
+- `Modal forms` is a useful plugin
+- My notes come from [this article](https://obsidian.rocks/improving-callouts-with-obsidian-modal/)
+- The modal forms plugin doesn't add any icons on the left hand side - instead it adds a bunch of commands to [command palette](#command-palette) - just search for "modal forms"
+  - Each command opens a new form - by default they appear on right hand side (or main panel on mobile), but you can configure it differently via [plugin settings](#plugins)
+  - Note that these forms are what you use to _manage_ forms you will then create yourself - so they are effectively _meta_ forms
+- Example - create a form you can use in future to create new callouts:
+  - Install two [plugins](#plugins): `QuickAdd` and `Modal Forms`
+  - Create the form:
+    - Select "Modal Forms - new form" from [command palette](#command-palette)
+    - Name = `new_callout`, Title = `New Callout`
+    - Click `Add more fields`
+      - ! You'll then instantly get an error for fields BELOW that you haven't even filled in yet - don't worry, just keep filling in the form
+    - Add four fields (every time you want another field, click `Add more fields`):
+      - 1. Name = `Title`, Type = `Text`
+      - 2. Name = `Contents`, Type = `Text`
+      - 3. Name = `Collapsible`, Type = `Toggle`
+      - 4. Name = `Type`, Type = `Select`
+        - Click `Add more options` and keep clicking it every time you want to add a new option
+        - Labels are up to you, values should be actual values - see [below](#callouts) for list of callout types
+        - Use the arrows to change the order they'll appear in the dropdown
+    - (Optional) Click `Preview` to see what it looks like
+    - Click `Save and Close`
+  - Now you have a way of gathering data from user, but as yet, you don't have
+    - A way of triggering the form
+    - A way of processing the data from the form. 
+    - So...
+  - ...Use `QuickAdd` to define what will be done with the form data:
+    - Go to the QuickAdd settings (see [plugins](#plugins) for how)
+    - Type "New Callout" into the input next to `Manage Macros`
+    - Click the `Template` button to the right, and select `Capture`
+    - Click `Add Choice` to create a new action called `New Callout`
+    - Click the gear icon to the right of the new `New Callout` action
+    - Turn on `Capture to active file`
+    - Scroll down and turn on `Capture format`.
+    - Paste this code (note that the encasing triple backticks should ALSO be pasted into the textbox - it won't work without them!):
+````js 
+```js quickadd
+    const modalForm = app.plugins.plugins.modalforms.api;
+    const result = await modalForm.openForm('new_callout');
+    const collapsible = result.get('Collapsible');
+    const col = (collapsible) ? '-' : '';
+    return result.asString(`> [!{{Type}}]${col} {{Title}}\n> {{Contents}}\n\n`);
+```
+````
+    - Close the popup
+  - Test it works:
+    - Open [command palette](#command-palette) and type "quick" to select `Run QuickAdd`
+    - Select `New Callout` (if it's the only one, you can just hit Enter)
+    - Fill in the form 
+      - You can use tab to navigate, and spacebar to set the toggle, and Enter to Submit
+      - You can include `\n` in the `Content` input to add new lines, or once it's done, use up arrow to enter the callout, and use Shift+Enter at the END of a line to add new lines
+
+### QuickAdd
+
+- You can use the `QuickAdd` [plugin](#plugins) to automate actions you do frequently `thing`
+- See [Modal Forms](#modal-forms) for an example of using it to automate the creation of [callouts](#callouts)
+
 ## Basic operations
+
+### Command palette
+
+- Mobile: In main window, pull down from top of screen as though refreshing
+- Desktop: Cmd + P / Ctrl + P
+- Note you can use this to reach Settings: Open command palette => search for settings => "Open settings"
+
+### Settings
+
+- Open command palette (Cmd+P) => search for settings => "Open settings"
+- Or just use Cmd/Ctrl + `,`
+
+### Quick Switcher
+
+- Get there via Cmd/Ctrl+O
+- Used to find and go to, or create, other notes / content
+- There's also search functionlaity via magnifying glass, top right
+
+### Navigating
+
+- Use [quick switcher](#quick-switcher) to move between notes
+- Backlinks show you what links to your content and what it links to
+- Click the link icons with arrows, top right
+- You can also see relationships in graph format
+  - Click the graph icon (linked circles) on left hand side
 
 ### Meta organisation
 
@@ -129,6 +259,12 @@ permalink: /pages/organising/tools/Obsidian
 
 ### Formatting markdown
 
+- Links to sub-sections via headings
+  - Like this: `[[#A header|that header there]]`
+  - As soon as you type `[[#` you'll be given a list of possible headings in this file
+  - Whatever goes after `|` is the link text
+  - If you want to link to a heading in another note, do it like this: `[[Clare's Career MOC#A heading|a heading in another note]]`
+    - Note the first part is the name of the other note - once you type`[[` it will give you a dropdown of notes, then type `#` and it'll give you another dropdown of headings
 - Links to other files: 
   - Like this `[[my other file]]`
   - Just start typing `[[` - the closing braces will be filled in, and you can type note/file name to search
@@ -136,28 +272,57 @@ permalink: /pages/organising/tools/Obsidian
   - `[Link text](actual url)`
   - You can also just type the link text and then Cmd+K or Ctrl+K like most other apps
 - Bold/italic:
-  - `*italic*`
-  - `**bold**`
+  - `*italic*` Cmd + I / Ctrl + i will get you here
+  - `**bold**` Cmd + b / Ctrl + b will get you here
   - `***bold and italic***`
   - you can use underscores instead of asterisks
+- Horizontal line / divider
+  - `***` then press Enter
 - Lists:
   - Type `1.` and enter for ordered list
   - Type `-` for bullet list
 - blockquotes:
   - Type `> ` then the quote
-- Callouts:
-  - Tip: 
-    - `> [!tip] A tip`
-    - `> the actual tip`
-  - Custom callout: 
-    - `> [!custom title]`
-    - `> the text of the callout`
-  - Collapsible callout, default to closed: 
-    - `> [!tip]- A collapsed tip`
-    - `> the text of the callout`
-    - To default to open, use `[!tip]+` instead of `[!tip]-`
-  - If you want, you can use command palette (Cmd + P or see below), type "callout", select "insert callout" and it will give you a template to fill in
-  - [More here](https://obsidian.rocks/using-callouts-in-obsidian/)
+
+### Callouts
+
+- [My notes came from this article](https://obsidian.rocks/using-callouts-in-obsidian/)
+- [Official documentation here](https://help.obsidian.md/callouts)
+- You can also create yourself a little modal form to fill in to create callouts
+  - See [Modal forms](#modal-forms)
+- If you want, you can use [command palette](#command-palette), type "callout", select "insert callout" and it will give you a template to fill in
+  - The focus will automatically be in the callout type, so you can replace this text with the type you want - but don't press Enter afterwards! Use arrow keys instead
+  - When you're done, either keep pressing Enter until you're out the bottom, or use the down arrow to get out of it.
+- Tip: 
+  - `> [!tip] A tip`
+  - `> the actual tip`
+  - Instead of `[!tip]` you can use another type of callout - see list below
+- Custom callout: 
+  - `> [!custom title]`
+  - `> the text of the callout`
+- Collapsible callout, default to closed: 
+  - `> [!tip]- A collapsed tip`
+  - `> the text of the callout`
+  - To default to open, use `[!tip]+` instead of `[!tip]-`
+- All the callout types:
+  - `abstract` (green)
+  - `attention`, `caution` (orange)
+  - `bug` (red)
+  - `check`, `done` (green)
+  - `cite` (grey)
+  - `danger`, `error` (red)
+  - `example` (purple)
+  - `fail`, `failure`, `missing` (red)
+  - `faq`, `help`, `question` (yellow)
+  - `hint`, `important` (sky blue)
+  - `info` (blue)
+  - `note` (blue)
+  - `quote` (grey)
+  - `success` (green)
+  - `summary`, `tldr` (green)
+  - `tip` (sky blue)
+  - `todo` (blue)
+  - `warning` (orange)
 
 ### File / folder management
 
@@ -172,9 +337,6 @@ permalink: /pages/organising/tools/Obsidian
   - Mobile: Create a new folder, then long-press and "move folder to"
 - Rename a file or folder: 
   - Mobile: Long press on the folder name for at least a second, wait for menu to appear - select rename
-- Command palette:
-  - Mobile: In main window, pull down from top of screen as though refreshing
-  - Desktop: Cmd + P / Ctrl + P
    
 ## File syncing
 
@@ -196,7 +358,7 @@ permalink: /pages/organising/tools/Obsidian
     - !Do this while the vault is still empty!
     - Don't add any content or push to Google Drive until you've set up the refresh token
 - To sync with Google Drive:
-  - Use the command palette
+  - Use the [command palette](#command-palette)
   - You can use either of the two commands `pull from google drive` or `push to google drive`
   - Also, when in an open file, click the hamburger menu bottom right to see "push to google drive"
     - When you push, it pulls first
@@ -292,3 +454,59 @@ Alternative: Using iCloud (with caveats):
 Create a vault in Obsidian that uses iCloud: This allows Obsidian to automatically create a folder in iCloud. 
 Set up Git with the iCloud vault: You can still use Git with an iCloud vault, but you might encounter issues with iCloud's limitations. 
 Consider using a tool like a-shell or iSH: These tools can help manage Git operations on your iPhone, even with an iCloud vault. 
+
+## Organising content
+
+### Saving / storing links to 3rd party content
+
+- Info here copied from [this article](https://obsidian.rocks/save-articles-to-obsidian-five-different-methods/)
+- Five methods...
+- 1. Bookmark it
+  - Using your browser's bookmarks. Nothing to do with Obsidian
+- 2. Copy/paste selective sentences / paras into an Obsidian note
+  - Include the url of the original article
+- 3. Summarise the content in your own words, in an Obsidian note
+  - Include the url of the original article
+- 4. Use a bookmarklet. This is 
+  - "a tool that you can install as a bookmark, but instead of taking you to a website, it performs some common task for you."
+  - There is a bookmarklet that helps pull content into Obsidian. You can find installation instructions on [Kepano’s site](https://stephanango.com/obsidian-web-clipper)
+  - The suggestion is that "you also write a note that links to this note with your takeaways. Treat your clipped note as a source article, and create a new note for your own thoughts. This is a great way to save articles in Obsidian."
+  - ...or explore this [altenative way of clipping articles into Obsidian](https://obsidian.rocks/clipping-articles-into-obsidian/)
+- 5. Use a service
+  - The recommended one here is [Readwise](https://readwise.io/)
+  - "Readwise is a highlighter tool. It’s like a bookmark tool, but on steroids."
+  - "Instead of bookmarking whole articles, you can bookmark a single sentence, image, or even a single word if you want. Readwise will then save that highlight in their database and offer it up to you whenever you need it."
+  - "You can automatically sync your Readwise account with your Obsidian vault, so that new notes are created in your vault anytime you highlight something on the internet."
+  - "This is both the easiest and the most effective solution I’ve found for saving content to Obsidian."
+  - "The downside is that Readwise is a premium tool, and not the cheapest one at that."
+  - "If you’re interested in this functionality but don’t want to pay for it, I hear that [Omnivore](https://omnivore.app/) is a great open-source and free alternative. I haven’t tried it yet, but it looks great as well."
+
+### Importing content from other Notes systems
+
+- https://obsidian.md/plugins?id=obsidian-importer
+- "The Obsidian team recently released a Community Plugin called Obsidian Importer (click to open in your vault). This new tool allows you to transfer notes from many other note-taking systems. At the time of writing, Obsidian Importer supports:
+  - Evernote
+  - HTML
+  - Notion
+  - Bear
+  - Google Keep
+- And they’re planning on supporting many others, including Apple Notes"
+
+### Each note should contain one idea
+
+- Notes summarised from [here](https://obsidian.rocks/five-title-ideas-for-notes/#Idea-1-Each-Note-Should-Contain-One-Idea)
+
+### Maps of Content (MOCs)
+
+- Notes summarised from [this article](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
+
+### Properties
+
+- Properties are note metadata - or notes about your notes
+- More [here](https://obsidian.rocks/an-introduction-to-obsidian-properties/)
+  - and [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/)
+- Different types of property:
+  - [Tags](#tag-properties)
+
+#### Tag properties
+
