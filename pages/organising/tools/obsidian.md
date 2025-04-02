@@ -17,6 +17,7 @@ permalink: /pages/organising/tools/Obsidian
   - [Plugins](#plugins)
   - [Modal forms](#modal-forms)
   - [QuickAdd](#quickadd)
+    - [Use QuickAdd to automate note creation](#use-quickadd-to-automate-note-creation)
 - [Basic operations](#basic-operations)
   - [Command palette](#command-palette)
   - [Settings](#settings)
@@ -36,6 +37,7 @@ permalink: /pages/organising/tools/Obsidian
   - [Importing content from other Notes systems](#importing-content-from-other-notes-systems)
   - [Each note should contain one idea](#each-note-should-contain-one-idea)
   - [Maps of Content (MOCs)](#maps-of-content-mocs)
+  - [Templates](#templates)
   - [Properties](#properties)
     - [Showing / hiding properties](#showing--hiding-properties)
     - [Bad properties](#bad-properties)
@@ -233,6 +235,14 @@ permalink: /pages/organising/tools/Obsidian
 
 - You can use the `QuickAdd` [plugin](#plugins) to automate actions you do frequently `thing`
 - See [Modal Forms](#modal-forms) for an example of using it to automate the creation of [callouts](#callouts)
+- See [below](#use-quickadd-to-automate-note-creation) for using QuickAdd to automate the creation of a file in specific folder using a specific template
+
+#### Use QuickAdd to automate note creation
+
+- Here's how to use QuickAdd to automate the creation of a file in specific folder using a specific template:
+- 1. Create a [template](#templates)
+- 2. In the [QuickAdd settings](#plugins), navigate to the "Template" section and specify the path to your templates folder. 
+- 3. 
 
 ## Basic operations
 
@@ -527,6 +537,38 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 ### Maps of Content (MOCs)
 
 - Notes summarised from [this article](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
+
+### Templates
+
+- My notes summarised from [this article](https://obsidian.rocks/getting-started-with-templates-in-obsidian/#comment-29383)
+- Create a Templates folder in your vault
+- Make sure you have the core `Templates` [plugin](#plugins) enabled
+  - Configure it in [Settings](#settings) to use your Templates folder
+- Place notes in your Templates folder
+  - Each note represents a template
+  - When you "insert" this template, everything in it will be inserted into the note you are in
+  - The most likely thing you'll put in it will be [properties](#properties), but you can also put content if you want
+  - You can use variables so that, for instance, the date will always be set to the current date
+    - The example below has a formatted date, but you can also just use `{{date}}` or `{{time}}`
+- To use the template: 
+  - Open / create a note
+  - Select the "insert template" icon on the left below the calendar icon
+  - Any content in the template will be inserted into your note wherever your cursor is
+  - Any properties in the template will go at the top of your note regardless of where your cursor is
+    - If you already have properties, the new ones will be merged with the existing ones
+    - See [this article](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/#Tip-4-Merge-Properties-from-Templates) for some discussion of potential gotchas when mergng properties from a template
+- Here is an example template adapted from the above article:
+```
+---
+parent: "[[Home]]"
+tags:
+- any-tag
+date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
+---
+```
+- Note that in the article, they suggest `{{date:YYYY-MM-DD}}T{{time:HH:mm}}` for the date, but that results in an "invalid properties" error and prevents you from editing the properties in the properties editor.
+  - But if you use `"{{date:YYYY-MM-DD}}T{{time:HH:mm}}"` instead of `{{date:YYYY-MM-DD}}T{{time:HH:mm}}` (ie, encase the value in quotes) then it works a bit better. You might still get a warning but you can now edit the properties in the properties panel without getting the "invalid properties" error.
+  - Note that I found a suggestion that it might be better not to use the core Templates plugin, and use the community `Templater` plugin instead: [here](https://forum.obsidian.md/t/correct-format-for-date-time-template-variables-in-properties/68241/5)
 
 ### Properties
 
