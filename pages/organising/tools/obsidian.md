@@ -15,8 +15,10 @@ permalink: /pages/organising/tools/Obsidian
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Troubleshooting](#troubleshooting)
   - [If you lose the outline or properties pane](#if-you-lose-the-outline-or-properties-pane)
-  - [If folders are not in alphabetical order in dropdowns]()
+  - [If folders are not in alphabetical order in dropdowns](#if-folders-are-not-in-alphabetical-order-in-dropdowns)
+  - [If live preview colours text inside single brackets](#if-live-preview-colours-text-inside-single-brackets)
 - [Customising Obsidian](#customising-obsidian)
+  - [css snippets](#css-snippets)
   - [Plugins](#plugins)
   - [Variables](#variables)
   - [Modal forms](#modal-forms)
@@ -29,6 +31,7 @@ permalink: /pages/organising/tools/Obsidian
   - [Quick Switcher](#quick-switcher)
   - [Navigating](#navigating)
   - [Source mode](#source-mode)
+  - [Linking to other content](#linking-to-other-content)
   - [Formatting markdown](#formatting-markdown)
   - [Callouts](#callouts)
   - [File / folder management](#file--folder-management)
@@ -147,10 +150,12 @@ permalink: /pages/organising/tools/Obsidian
 
 ## Keyboard shortcuts
 
+- !! Now maintaining this list in Obsidian - CareerAnalysis vault
 - From [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
 - Note: for convenience we use “super” in this list, which means either the command key on Mac or ctrl on Windows and Linux: 
   - Super + ,	- Open [settings](#settings)
   - Super + b	- Bold text
+  - Super + o - open or create note
   - Super + i	- Italicize text
   - Super + k	- Insert link
   - Super + p	- Open command palette (more on that below)
@@ -158,8 +163,11 @@ permalink: /pages/organising/tools/Obsidian
   - Super + n	- Create new note
   - Super + w	- Close current tab
   - Super + t	- New tab
+  - Ctrl + tab - Go to next tab
+  - Ctrl + Shift + tab - go to previous tab
   - Super + Shift + F - [Search](#searching-for-properties-and-other-things)
   - Super + ; - Create a new property
+  - Cmd + option(Mac)/Shift(Win) + i - open developer tools
 - You can also setup your own shortcuts, via [Settings](#settings) => Hotkeys
   - Here are some of the ones I use:
     - Super + Shift + T - Insert template
@@ -167,6 +175,8 @@ permalink: /pages/organising/tools/Obsidian
     - Super + Shift + I - create Stacking the Bricks file using my QuickAdd template
     - Super + Shift + S - create Stacking the Bricks file in new section folder using my QuickAdd template
     - Super + Alt/option + 1-6 - apply headings 1-6
+    - Super + Shift + B - Toggle left sidebar (file explorer)
+    - Super + Alt/option + B - Toggle right sidebar (properties and outline)
 
 ## Troubleshooting
 
@@ -183,7 +193,40 @@ permalink: /pages/organising/tools/Obsidian
 - This seemed to reset the order to the way I wanted it in the dropdown
 - ...although this does suggest that the dropdown is listing them in creation order - so the workaround wouldn't work so well with more folders involved
 
+### If live preview colours text inside single brackets
+
+- You can't have "[text]" because the text gets turned into a different colour
+- See discussion [here](https://forum.obsidian.md/t/live-preview-dont-color-square-bracketed-text-as-a-link-unless-its-part-of-a-link/79896/2)
+- Fix it using [css snippets](#css-snippets)
+- Use the following snippet:
+```css
+.cm-s-obsidian {
+  & .cm-link.cm-hmd-barelink {
+      color: var(--text-normal);
+  }
+  
+  & .cm-link.cm-hmd-barelink:hover {
+      color: var(--text-normal);
+      text-decoration: none;
+  }
+}
+```
+
 ## Customising Obsidian
+
+### css snippets
+
+- Used for styling how things look in a note
+- In [settings](#settings) under Appearance, at the bottom, click the folder icon next to CSS Snippets to open the correct location
+- Create a `css` file in your vault, under `.obsidian/snippets` (Use Cmd + shift + `.` to show hidden files in MacOS file explorer)
+  - Call it what you like, eg `my-styles.css`
+- In [settings](#settings) under Appearance, at the bottom, click the Refresh button to show your css file
+- Turn the switch on next to your file to load what's in it
+- To find out what the css is for the bit you're interested in, use the developer tools:
+  - Cmd + option + i (Mac) or Ctrl + Shift + i (Windows)
+  - Click the "Select an element on the page to inspect it" tool 
+  - (top left of the right hand pane - a diagonal arow in a dotted square).
+  - Hover over the app to highlight pieces of it, and click on the part you want to style.
 
 ### Plugins
 
@@ -433,7 +476,7 @@ Time: 1 second
   - Mobile: Three dots, top right => Source mode
     - View => Source mode 
 
-### Formatting markdown
+### Linking to other content
 
 - Links to sub-sections via headings
   - Like this: `[[#A header|that header there]]`
@@ -447,10 +490,17 @@ Time: 1 second
 - Ordinary links
   - `[Link text](actual url)`
   - You can also just type the link text and then Cmd+K or Ctrl+K like most other apps
+- Links to sentences / paragraphs in other notes
+  - You can add an id anywhere at the end of a sentence or paragraph, by typing `^id-name`
+  - Then elsewhere you can type `^id-name` inside a link - either just `[[^id-name]]` in the same file, or `[[file-name^id-name]]` in another file (note that it will get converted to `[[file-name#^id-name]]`)
+  - Or if the ID hasn't been added yet, you can just type `[[^` or `[[file-name^` and you'll get a dropdown containing all the paragraphs in that file, and you can also type words and it will find the relevant para - then select the para and it will create an id with a random name (eg `^adf45g`) and insert it at the end of the relevant block in the relevant file
+
+### Formatting markdown
+
 - Bold/italic:
   - `*italic*` Cmd + I / Ctrl + i will get you here
   - `**bold**` Cmd + b / Ctrl + b will get you here
-  - `***bold and italic***`
+  - `***bold and italic***`  
   - you can use underscores instead of asterisks
 - Horizontal line / divider
   - `***` then press Enter
