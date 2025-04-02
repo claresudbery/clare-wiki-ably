@@ -13,6 +13,9 @@ permalink: /pages/organising/tools/Obsidian
 - [Notes from Diana's presentation at Socrates UK '24](#notes-from-dianas-presentation-at-socrates-uk-24)
 - [Vault management](#vault-management)
 - [Keyboard shortcuts](#keyboard-shortcuts)
+- [Troubleshooting](#troubleshooting)
+  - [If you lose the outline or properties pane](#if-you-lose-the-outline-or-properties-pane)
+  - [If folders are not in alphabetical order in dropdowns]()
 - [Customising Obsidian](#customising-obsidian)
   - [Plugins](#plugins)
   - [Variables](#variables)
@@ -158,11 +161,27 @@ permalink: /pages/organising/tools/Obsidian
   - Super + Shift + F - [Search](#searching-for-properties-and-other-things)
   - Super + ; - Create a new property
 - You can also setup your own shortcuts, via [Settings](#settings) => Hotkeys
-- Here are some of the ones I use:
-  - Super + Shift + T - Insert template
-  - Super + Shift + M - Switch to [source mode](#source-mode)
-  - Super + Shift + I - create Stacking the Bricks file using my QuickAdd template
-  - Super + Shift + S - create Stacking the Bricks file in new section folder using my QuickAdd template
+  - Here are some of the ones I use:
+    - Super + Shift + T - Insert template
+    - Super + Shift + M - Switch to [source mode](#source-mode)
+    - Super + Shift + I - create Stacking the Bricks file using my QuickAdd template
+    - Super + Shift + S - create Stacking the Bricks file in new section folder using my QuickAdd template
+    - Super + Alt/option + 1-6 - apply headings 1-6
+
+## Troubleshooting
+
+### If you lose the outline or properties pane
+
+- Use [command palette](#command-palette) to "show outline" or "show file properties"
+- They might both be in the same pane on the right, in which case the circle with an i icon will show properties, abd the horizontal lines will show outline
+
+### If folders are not in alphabetical order in dropdowns
+
+- This happened to me when I removed the third folder down out of four (in alpha order) and then re-added it. 
+- It started appearing as the fourth item in selection dropdowns
+- I fixed it by dragging the fourth folder to a new location and then dragging it back to its origiinal location
+- This seemed to reset the order to the way I wanted it in the dropdown
+- ...although this does suggest that the dropdown is listing them in creation order - so the workaround wouldn't work so well with more folders involved
 
 ## Customising Obsidian
 
