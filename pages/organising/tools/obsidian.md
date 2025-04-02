@@ -15,9 +15,11 @@ permalink: /pages/organising/tools/Obsidian
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Customising Obsidian](#customising-obsidian)
   - [Plugins](#plugins)
+  - [Variables](#variables)
   - [Modal forms](#modal-forms)
   - [QuickAdd](#quickadd)
-    - [Use QuickAdd to automate note creation](#use-quickadd-to-automate-note-creation)
+    - [Use QuickAdd to automate note and folder creation](#use-quickadd-to-automate-note-and-folder-creation)
+    - [DON'T Use QuickAdd this way to automate folder and file creation](#dont-use-quickadd-this-way-to-automate-folder-and-file-creation)
 - [Basic operations](#basic-operations)
   - [Command palette](#command-palette)
   - [Settings](#settings)
@@ -63,6 +65,11 @@ permalink: /pages/organising/tools/Obsidian
 - Check ToCs for published content
   - (I'm not sure how the `outline` core plugin will work on published content?)
 - Look into [day planning using Obsidian](https://obsidian.rocks/planning-your-day-by-timeboxing-in-obsidian/)
+- Get to know QuickAdd better:
+  - [video](https://youtu.be/xAR6N9N8e6U?si=roUI4BADRh0yY_Q4)
+- Explore automatic updating of MoC contents using DataView
+  - "To automatically update a Map of Content (MoC) in Obsidian with links to all notes within a folder, you can use the Dataview plugin or a plugin like Waypoint. Dataview allows you to create dynamic lists of linked notes, while Waypoint automates the creation of a MOC note within a folder and links all notes within that folder to it."
+  - Jackie's [DataView article](https://medium.com/os-techblog/how-to-get-started-with-obsidian-dataview-and-dataviewjs-5d6b5733d4a4)
 
 ## Questions
 
@@ -144,15 +151,18 @@ permalink: /pages/organising/tools/Obsidian
   - Super + i	- Italicize text
   - Super + k	- Insert link
   - Super + p	- Open command palette (more on that below)
-  - Super + Shift+p	- Open quick switcher
+  - Super + Shift + p	- Open quick switcher
   - Super + n	- Create new note
   - Super + w	- Close current tab
   - Super + t	- New tab
-  - Super + Shift+F - [Search](#searching-for-properties-and-other-things)
+  - Super + Shift + F - [Search](#searching-for-properties-and-other-things)
   - Super + ; - Create a new property
 - You can also setup your own shortcuts, via [Settings](#settings) => Hotkeys
 - Here are some of the ones I use:
-  - Super + t - Insert template
+  - Super + Shift + T - Insert template
+  - Super + Shift + M - Switch to [source mode](#source-mode)
+  - Super + Shift + I - create Stacking the Bricks file using my QuickAdd template
+  - Super + Shift + S - create Stacking the Bricks file in new section folder using my QuickAdd template
 
 ## Customising Obsidian
 
@@ -179,6 +189,26 @@ permalink: /pages/organising/tools/Obsidian
   - you'll now find the plugin settings in the plugin section at the bottom of Settings for this vault (click top left, select vault, click Cog)
   - Also, when in an open file, click the hamburger menu bottom right to see any commands related to that plugin
   - Also, in Settings => Community plugins (not the list of plugins but the place you go to add new plugins), you'll see it listed and you can select it to read the readme
+
+### Variables
+
+- There are various places you can use variables
+- The places I know about are [templates](#templates) and [QuickAdd](#quickadd)
+- In templates, you can use them to fill in values, like `{{date}}` in the example [below](#templates)
+- In QuickAdd, you can use them in things like file paths, like in the example [below](#use-quickadd-to-automate-note-and-folder-creation)
+- There are standard Obsidian variables. I know about these three (I don't _think_ there are any more):
+  - `{{date}}`
+  - `{{time}}`
+  - `{{title}}`
+- You can also create your own variables. In that case you need the `VALUE` keyword followed by the name of the variable:
+  - `{{VALUE:VariableName}}`
+- The only way I know of capturing a variable is via `QuickAdd`
+  - In this case, it's not at all obvious and (IMHO) really badly documented, but the way to do it is simply to refer to it elsewhere in a QuickAdd thing
+  - eg in the example [below](#use-quickadd-to-automate-note-and-folder-creation)
+    - I want a FileName variable 
+    - so I simply add `{{VALUE:FileName}}` to my file name format and when I run the `QuickAdd` command, it will popup an input asking me to enter a value for `FileName`
+    - I also found a sneaky way of getting other variables using the `Folder path` field - for explanation, see [example](#use-quickadd-to-automate-note-and-folder-creation)
+  - As far as I can work out, you _don't_ (and maybe even can't?) use the `Capture` type of QuickAdd to capture variables. Anything captured via that method will end up being pasted into a file, rather than being made available as a variable to other bits of functionality
 
 ### Modal forms
 
@@ -238,14 +268,113 @@ permalink: /pages/organising/tools/Obsidian
 
 - You can use the `QuickAdd` [plugin](#plugins) to automate actions you do frequently `thing`
 - See [Modal Forms](#modal-forms) for an example of using it to automate the creation of [callouts](#callouts)
-- See [below](#use-quickadd-to-automate-note-creation) for using QuickAdd to automate the creation of a file in specific folder using a specific template
+- See [below](#use-quickadd-to-automate-note-and-folder-creation) for using QuickAdd to automate the creation of a file in specific folder using a specific template
+- [Format syntax](https://quickadd.obsidian.guide/docs/FormatSyntax)
 
-#### Use QuickAdd to automate note creation
+#### Use QuickAdd to automate note and folder creation
 
 - Here's how to use QuickAdd to automate the creation of a file in specific folder using a specific template:
-- 1. Create a [template](#templates)
-- 2. In the [QuickAdd settings](#plugins), navigate to the "Template" section and specify the path to your templates folder. 
-- 3. 
+- Create a [template](#templates)
+- Open the [QuickAdd settings](#plugins)
+  - In the `Template Folder Path` section, specify the path to your templates folder. 
+  - Create a new macro: 
+    - Next to `Manage Macros`, enter your macro's name 
+    - Select Template via the button to the right 
+    - Click `Add Choice`
+    - The macro will appear above `Manage Macros`
+  - Edit the new macro: Click the cog icon to the right of its name:
+    - Specify which template to use next to `Template path`
+    - Select `File Name Format` 
+      - Put something like this in the input: `{{VALUE:LessonID}} - {{VALUE:LessonName}}`
+        - Or if you want a bespoke sub-folder to be created...
+        - Enter this instead: `{{VALUE:FolderName}}/{{VALUE:LessonID}} - {{VALUE:LessonName}}`
+        - The forward-slash means the missing folder will be created, with `FolderName`
+      - These are custom [variables](#variables)
+      - It means QuickAdd will prompt the user to enter two values for `LessonID` and `LessonName` (and `FolderName` if you went for that option)
+    - I discovered I could also access the `LessonID` variable in my template
+      - I wanted to capture another variable to use in my template, and I found a sneaky way of doing this...
+      - In `Folder path` I entered `{{VALUE:LessonUrl}}` and clicked `Add`
+      - It adds it to the list of folders in the config, but not to the list the user sees
+      - but it does mean I can reference `{{VALUE:LessonUrl}}` in my template!
+      - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
+    - Select `Create in folder` and select the folder you want to use
+      - You can select multiple folders here
+    - Select `Include subfolders` (if you want)
+    - Select `Open`
+    - There's no Save button, just close the popup and your settings will be saved
+  - Turn the macro into a command: 
+    - Click the lightning icon to the right of its name
+    - Now it will turn up in the [command palette](#command-palette) and you can setup a [hotkey](#keyboard-shortcuts) to trigger it
+- I tried to make this fancier by adding more steps in `QuickAdd` - spoecifically I tried to use `Capture` and `Macro` but I couldn't make head or tail of it and the documentation didn't help
+  - eg I found lots of scources suggesting I use scripts using javascript but I couldn't for the life of me work out how to actually enter a script
+  - and I couldn't work out how the hell to get variables to work
+  - ...and I was spending WAY too long on it
+  - ...so I had to give up and stick with my original simple solution
+  - but fwiw this video MIGHT help - I just didn't have 45 mins spare to watch it: [here](https://youtu.be/xAR6N9N8e6U?si=roUI4BADRh0yY_Q4)
+
+#### DON'T Use QuickAdd this way to automate folder and file creation
+
+- Go to [settings](#settings) => QuickAdd
+- Click Manage Macros
+- Give it a name
+- Click `Add Macro`
+- Click `Configure`
+- Add a template step:
+  - Click `Template`
+  - Click the cog next to the new Template step 
+  - Click the title to change it to what you want
+  - Select the template you want to use (click in `template path` input)
+  - Close the popup (there is no Save button, it saves automatically)
+- Add a Capture step:
+  - Click `Capture`
+  - Click the cog next to the new Capture step 
+  - Click the title to change it to the name of the captured variable - eg `FolderName`
+  - Close the popup (there is no Save button, it saves automatically)
+- Nope. I give up. I was trying to follow the instructions below from Google AI, but I couldn't make any sense of "Add a macro choice and select create folder" and "Add a macro choice and select create note" - these options did not appear to be available
+- 2. Create a Macro:
+Go to the "Macro" choice in QuickAdd settings.
+Click "Add New Macro".
+Give your macro a name (e.g., "Create Folder and Note").
+Click "Configure". 
+3. Configure the Macro:
+Template Choice:
+Add a "Template Choice" to your macro.
+Choose a template that will be used to create the note within the folder.
+Capture Choice (Optional):
+Add a "Capture Choice" to your macro.
+This allows you to capture input from the user, for example, to name the folder.
+Macro Choice (Create Folder):
+Add a "Macro Choice" and select "Create Folder".
+In the "Folder Path" field, specify where the new folder should be created (e.g., "Projects/{{VALUE:Folder Name}}").
+In the "File Name" field, specify the name of the new folder (e.g., "{{VALUE:Folder Name}}").
+Macro Choice (Create Note):
+Add a "Macro Choice" and select "Create Note".
+In the "Folder Path" field, specify where the new note should be created (e.g., "Projects/{{VALUE:Folder Name}}").
+In the "File Name" field, specify the name of the new note (e.g., "{{VALUE:Folder Name}}.md").
+Add a "Wait" Choice (Optional):
+Add a "Wait Choice" to allow the user to see the folder and note being created.
+Save the Macro:
+Click "Save" to save your macro. 
+4. Use the Macro:
+Open the command palette (Ctrl/Cmd + P).
+Type "QuickAdd" and select the macro you created.
+Follow the prompts to create the folder and note. 
+Example Macro Configuration:
+Macro Name: Create Project Folder and Note
+Template Choice: (Choose your preferred template)
+Capture Choice:
+Name: Folder Name
+Prompt: Enter the name of the project folder:
+Macro Choice (Create Folder):
+Action: Create Folder
+Folder Path: Projects/{{VALUE:Folder Name}}
+File Name: {{VALUE:Folder Name}}
+Macro Choice (Create Note):
+Action: Create Note
+Folder Path: Projects/{{VALUE:Folder Name}}
+File Name: {{VALUE:Folder Name}}.md
+Wait Choice: (Optional)
+Time: 1 second
 
 ## Basic operations
 
@@ -281,6 +410,7 @@ permalink: /pages/organising/tools/Obsidian
     - View => Source mode
     - Three dots top right => source mode
     - [Command palette](#command-palette) => View source mode
+    - I have the hotkey Cmd + Shift + M set up for this
   - Mobile: Three dots, top right => Source mode
     - View => Source mode 
 
@@ -555,6 +685,11 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - You can use variables so that, for instance, the date will always be set to the current date
     - The example below has a formatted date, but you can also just use `{{date}}` or `{{time}}`
     - I experimented with `{{datetime}}` and `{{DateTime}}`, but I couldn't get either of those to work
+  - You can also use [custom variables](#variables)
+    - I used this feature for my [file creation macro](#use-quickadd-to-automate-note-and-folder-creation)
+    - I wanted to capture another variable to use ONLY in my template, and I found a sneaky way of doing this using `QuickAdd`, by entering `{{VALUE:LessonUrl}}` under `Folder path`
+      - See [example](#use-quickadd-to-automate-note-and-folder-creation)
+      - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
 - To use the template: 
   - Open / create a note
   - Select the "insert template" icon on the left below the calendar icon
@@ -568,6 +703,8 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 ```
 ---
 parent: "[[Home]]"
+ID: "{{VALUE:LessonID}}"
+Lesson link: "{{VALUE:LessonUrl}}"
 tags:
 - any-tag
 date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
