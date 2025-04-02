@@ -16,12 +16,15 @@ permalink: /pages/organising/tools/Obsidian
 - [Customising Obsidian](#customising-obsidian)
   - [Plugins](#plugins)
   - [Modal forms](#modal-forms)
+  - [QuickAdd](#quickadd)
 - [Basic operations](#basic-operations)
   - [Command palette](#command-palette)
   - [Settings](#settings)
   - [Quick Switcher](#quick-switcher)
-  - [Meta organisation](#meta-organisation)
+  - [Navigating](#navigating)
+  - [Source mode](#source-mode)
   - [Formatting markdown](#formatting-markdown)
+  - [Callouts](#callouts)
   - [File / folder management](#file--folder-management)
 - [File syncing](#file-syncing)
   - [Syncing with Google Drive](#syncing-with-google-drive)
@@ -31,8 +34,15 @@ permalink: /pages/organising/tools/Obsidian
 - [Organising content](#organising-content)
   - [Saving / storing links to 3rd party content](#saving--storing-links-to-3rd-party-content)
   - [Importing content from other Notes systems](#importing-content-from-other-notes-systems)
+  - [Each note should contain one idea](#each-note-should-contain-one-idea)
   - [Maps of Content (MOCs)](#maps-of-content-mocs)
   - [Properties](#properties)
+    - [Showing / hiding properties](#showing--hiding-properties)
+    - [Bad properties](#bad-properties)
+    - [Searching for properties and other things](#searching-for-properties-and-other-things)
+    - [Tag properties](#tag-properties)
+    - [Parent properties](#parent-properties)
+    - [Aliases](#aliases)
 
 ## Obsidian Overview
 
@@ -48,9 +58,8 @@ permalink: /pages/organising/tools/Obsidian
 
 ## To do
 
-- Check out [properties](#properties)
-- Check out [simple ideas](#each-note-should-contain-one-idea)
 - Check ToCs for published content
+  - (I'm not sure how the `outline` core plugin will work on published content?)
 
 ## Questions
 
@@ -136,7 +145,8 @@ permalink: /pages/organising/tools/Obsidian
   - Super+n	- Create new note
   - Super+w	- Close current tab
   - Super+t	- New tab
-  - Super+Shift+F - Search
+  - Super+Shift+F - [Search](#searching-for-properties-and-other-things)
+  - Super+; - Create a new property
 - You can also setup your own shortcuts, via [Settings](#settings) => Hotkeys
 
 ## Customising Obsidian
@@ -251,11 +261,15 @@ permalink: /pages/organising/tools/Obsidian
 - You can also see relationships in graph format
   - Click the graph icon (linked circles) on left hand side
 
-### Meta organisation
+### Source mode
 
 - View source as markdown instead of formatted:
-  - Desktop: View => Source mode
+  - Desktop: 
+    - View => Source mode
+    - Three dots top right => source mode
+    - [Command palette](#command-palette) => View source mode
   - Mobile: Three dots, top right => Source mode
+    - View => Source mode 
 
 ### Formatting markdown
 
@@ -495,6 +509,20 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 ### Each note should contain one idea
 
 - Notes summarised from [here](https://obsidian.rocks/five-title-ideas-for-notes/#Idea-1-Each-Note-Should-Contain-One-Idea)
+- 1. Each note contains only one idea
+  - eg "Vit D can prevent kidney stones"
+  - So my habit of adding multiple sections per file would prob change so that each section was an individual note
+- 2. Rename notes some time after you write them
+  - Keep revisiting them to decide whether they're ephemeral or not
+  - If you're keeping them, rename them (if appropriate) and edit
+  - This is from the [Zettelkasten](https://obsidian.rocks/getting-started-with-zettelkasten-in-obsidian/) notes technique
+- 3. Search before creating
+  - The Cmd/Ctrl + O hotkey allows you to search and see if a thing already exists... then if it doesn't, pressing Enter will create it for you
+- 4. If you can't find a note you wrote, rename it
+  - Give it a name that matches whatever you were searching for - then you know it'll be easier to find next time!
+- 5. Use [aliases](#aliases) sparingly
+  - "I typically recommend aliases for only two things: synonyms and abbreviations. If I write a note about GTD, it’s not a bad idea to also add an alias spelling out “Getting Things Done”. That way you can search for either term and find the note."
+  - "Additionally there are few things more frustrating than searching for a word, expecting to find a note, and discovering later that you used a different word."
 
 ### Maps of Content (MOCs)
 
@@ -505,8 +533,85 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 - Properties are note metadata - or notes about your notes
 - More [here](https://obsidian.rocks/an-introduction-to-obsidian-properties/)
   - and [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/)
+- It used to be that properties were added using frontmatter
+  - Same as Jekyll! Same as clare-wiki!
+  - Like this at top of each file:
+```yaml
+---
+updated: 2023-08-11T06:17
+date: 2023-08-11T06:16
+tags: writing/idea
+parent: "[[Home]]"
+---
+```
+  - You can still add that to the top of an Obsidian file, but when you hit Enter it will turn into a `Properties` metadata section
+    - ...depending on whether you have them [hidden](#showing--hiding-properties)
+  - If you add a Jekyll frontmatter header to the top of an Obsidian file, it won't acknowledge the specific properties as being meaningful in any special Obsidian way, but it will recognise it as representing properties, and format it accordingly.
+- You can add properties using the Add property button or by just adding a row to the yaml
+- To remove a property...
+  - Click on its icon and select Remove, or...
+  - [view source](#source-mode) and remove the line of yaml
+- It's up to you how many properties you have per file, or you can have no properties at all
+- The keyboard shortcut Cmd/Ctrl + `;` allows you to create a new property
+- More on properties:
+  - [Showing / hiding properties](#showing--hiding-properties)
+  - [Bad properties](#bad-properties)
+  - [Searching for properties](#searching-for-properties-and-other-things)
 - Different types of property:
   - [Tags](#tag-properties)
+  - [Parent](#tag-properties)
+
+#### Showing / hiding properties
+
+- You can make properties sections be hidden by default: [Settings](#settings) => Editor => show properties in document
+  - or set to "source" to allow you to see the YAML as it appears in the code snippet above
+  - If they're hidden, one way to see them is to go into [source mode](#source-mode) and then expand the section at the top via the little arrow
+    - ...or enable the core "Properties view" plugin, then go to [command palette](#command-palette) => `Properties: Show all properties` or `Properties: Show file properties`
+
+#### Bad properties
+
+- Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
+- When you have a bad property, it shows up as yellow in the property editor but won't let you edit it. The only way to edit is either in [source mode](#source-mode) or by clicking on the icon and deleting the property, then recreating it.
+
+#### Searching for properties and other things
+
+- In the search box (Cmd/Ctrl+Shift+F), put your search term in square brackets, and it will search properties for you
+- "Use brackets and a colon ([property:value]) to return files with that property and value. For instance:
+  - [aliases:MOC] returns files where the aliases property value contains MOC
+  - [completed:true] returns files where the completed property value is true
+- Both property and value allow complex logic, such as parentheses for grouping, the OR operator, double-quotes for exact matching, and regex.
+  - To learn more about complex logic, see [Search Operators](https://obsidian.rocks/obsidian-search-five-hidden-features/#search-operators).
+  - Bonus tip: If you use a search frequently, you can also embed searches within notes."
+- (from [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/))
 
 #### Tag properties
 
+- Go into properties (depending how you're [showing them](#showing--hiding-properties))
+- If you don't have one already, you can add a `tags` property:
+```
+---
+tags: writing/idea
+---
+```
+- Then in a non-source view, when you place cursor in the tags value, it will give you a dropdown to auto-complete, which gets filtered when you start typing
+
+#### Parent properties
+
+- Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
+  - See [bad data](#bad-properties) for how to fix this
+
+### Aliases
+
+- [More here](https://help.obsidian.md/aliases)
+- Aliases allow you to reference a file using different names
+- Like this in YAML:
+```yaml
+---
+aliases:
+  - Doggo
+  - Woofer
+  - Yapper
+---
+```
+- You can link to aliases by just typing an alias name in an internal link
+- Obsidian creates the link with the alias as its custom display text, for example `[[Artificial Intelligence|AI]]`.
