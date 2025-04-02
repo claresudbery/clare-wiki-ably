@@ -62,6 +62,7 @@ permalink: /pages/organising/tools/Obsidian
 
 - Check ToCs for published content
   - (I'm not sure how the `outline` core plugin will work on published content?)
+- Look into [day planning using Obsidian](https://obsidian.rocks/planning-your-day-by-timeboxing-in-obsidian/)
 
 ## Questions
 
@@ -138,18 +139,20 @@ permalink: /pages/organising/tools/Obsidian
 
 - From [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
 - Note: for convenience we use “super” in this list, which means either the command key on Mac or ctrl on Windows and Linux: 
-  - Super+,	- Open [settings](#settings)
-  - Super+b	- Bold text
-  - Super+i	- Italicize text
-  - Super+k	- Insert link
-  - Super+p	- Open command palette (more on that below)
-  - Super+Shift+p	- Open quick switcher
-  - Super+n	- Create new note
-  - Super+w	- Close current tab
-  - Super+t	- New tab
-  - Super+Shift+F - [Search](#searching-for-properties-and-other-things)
-  - Super+; - Create a new property
+  - Super + ,	- Open [settings](#settings)
+  - Super + b	- Bold text
+  - Super + i	- Italicize text
+  - Super + k	- Insert link
+  - Super + p	- Open command palette (more on that below)
+  - Super + Shift+p	- Open quick switcher
+  - Super + n	- Create new note
+  - Super + w	- Close current tab
+  - Super + t	- New tab
+  - Super + Shift+F - [Search](#searching-for-properties-and-other-things)
+  - Super + ; - Create a new property
 - You can also setup your own shortcuts, via [Settings](#settings) => Hotkeys
+- Here are some of the ones I use:
+  - Super + t - Insert template
 
 ## Customising Obsidian
 
@@ -361,6 +364,7 @@ permalink: /pages/organising/tools/Obsidian
   - Mobile: Create a new folder, then long-press and "move folder to"
 - Rename a file or folder: 
   - Mobile: Long press on the folder name for at least a second, wait for menu to appear - select rename
+  - Desktop: Select folder and hit F2
    
 ## File syncing
 
@@ -550,9 +554,12 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - The most likely thing you'll put in it will be [properties](#properties), but you can also put content if you want
   - You can use variables so that, for instance, the date will always be set to the current date
     - The example below has a formatted date, but you can also just use `{{date}}` or `{{time}}`
+    - I experimented with `{{datetime}}` and `{{DateTime}}`, but I couldn't get either of those to work
 - To use the template: 
   - Open / create a note
   - Select the "insert template" icon on the left below the calendar icon
+    - or use [command palette](#command-palette) => "insert template"
+    - or create a [hotkey](#keyboard-shortcuts) - Cmd/Ctrl + T is a good one (that's what I've done)
   - Any content in the template will be inserted into your note wherever your cursor is
   - Any properties in the template will go at the top of your note regardless of where your cursor is
     - If you already have properties, the new ones will be merged with the existing ones
