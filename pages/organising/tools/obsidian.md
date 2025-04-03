@@ -13,10 +13,6 @@ permalink: /pages/organising/tools/Obsidian
 - [Notes from Diana's presentation at Socrates UK '24](#notes-from-dianas-presentation-at-socrates-uk-24)
 - [Vault management](#vault-management)
 - [Keyboard shortcuts](#keyboard-shortcuts)
-- [Troubleshooting](#troubleshooting)
-  - [If you lose the outline or properties pane](#if-you-lose-the-outline-or-properties-pane)
-  - [If folders are not in alphabetical order in dropdowns](#if-folders-are-not-in-alphabetical-order-in-dropdowns)
-  - [If live preview colours text inside single brackets](#if-live-preview-colours-text-inside-single-brackets)
 - [Customising Obsidian](#customising-obsidian)
   - [css snippets](#css-snippets)
   - [Plugins](#plugins)
@@ -53,6 +49,11 @@ permalink: /pages/organising/tools/Obsidian
     - [Tag properties](#tag-properties)
     - [Parent properties](#parent-properties)
     - [Aliases](#aliases)
+- [Troubleshooting](#troubleshooting)
+  - [If you lose the outline or properties pane](#if-you-lose-the-outline-or-properties-pane)
+  - [If folders are not in alphabetical order in dropdowns](#if-folders-are-not-in-alphabetical-order-in-dropdowns)
+  - [If live preview colours text inside single brackets](#if-live-preview-colours-text-inside-single-brackets)
+  - [If you can't delete a note](#if-you-cant-delete-a-note)
 
 ## Obsidian Overview
 
@@ -177,40 +178,6 @@ permalink: /pages/organising/tools/Obsidian
     - Super + Alt/option + 1-6 - apply headings 1-6
     - Super + Shift + B - Toggle left sidebar (file explorer)
     - Super + Alt/option + B - Toggle right sidebar (properties and outline)
-
-## Troubleshooting
-
-### If you lose the outline or properties pane
-
-- Use [command palette](#command-palette) to "show outline" or "show file properties"
-- They might both be in the same pane on the right, in which case the circle with an i icon will show properties, abd the horizontal lines will show outline
-
-### If folders are not in alphabetical order in dropdowns
-
-- This happened to me when I removed the third folder down out of four (in alpha order) and then re-added it. 
-- It started appearing as the fourth item in selection dropdowns
-- I fixed it by dragging the fourth folder to a new location and then dragging it back to its origiinal location
-- This seemed to reset the order to the way I wanted it in the dropdown
-- ...although this does suggest that the dropdown is listing them in creation order - so the workaround wouldn't work so well with more folders involved
-
-### If live preview colours text inside single brackets
-
-- You can't have "[text]" because the text gets turned into a different colour
-- See discussion [here](https://forum.obsidian.md/t/live-preview-dont-color-square-bracketed-text-as-a-link-unless-its-part-of-a-link/79896/2)
-- Fix it using [css snippets](#css-snippets)
-- Use the following snippet:
-```css
-.cm-s-obsidian {
-  & .cm-link.cm-hmd-barelink {
-      color: var(--text-normal);
-  }
-  
-  & .cm-link.cm-hmd-barelink:hover {
-      color: var(--text-normal);
-      text-decoration: none;
-  }
-}
-```
 
 ## Customising Obsidian
 
@@ -338,31 +305,31 @@ permalink: /pages/organising/tools/Obsidian
 - Here's how to use QuickAdd to automate the creation of a file in specific folder using a specific template:
 - Create a [template](#templates)
 - Open the [QuickAdd settings](#plugins)
-  - In the `Template Folder Path` section, specify the path to your templates folder. 
+  - (if not done already) In the `Template Folder Path` section, specify the path to your templates folder. 
   - Create a new macro: 
     - Next to `Manage Macros`, enter your macro's name 
     - Select Template via the button to the right 
     - Click `Add Choice`
-    - The macro will appear above `Manage Macros`
+    - The macro will appear above the `Manage Macros` button
   - Edit the new macro: Click the cog icon to the right of its name:
     - Specify which template to use next to `Template path`
-    - Select `File Name Format` 
+    - Turn on `File Name Format` 
       - Put something like this in the input: `{{VALUE:LessonID}} - {{VALUE:LessonName}}`
         - Or if you want a bespoke sub-folder to be created...
         - Enter this instead: `{{VALUE:FolderName}}/{{VALUE:LessonID}} - {{VALUE:LessonName}}`
         - The forward-slash means the missing folder will be created, with `FolderName`
-      - These are custom [variables](#variables)
-      - It means QuickAdd will prompt the user to enter two values for `LessonID` and `LessonName` (and `FolderName` if you went for that option)
+      - The `{{VALUE:` part indicates these are custom [variables](#variables)
+        - It means QuickAdd will prompt the user to enter two values for `LessonID` and `LessonName` (and `FolderName` if you went for that option)
     - I discovered I could also access the `LessonID` variable in my template
       - I wanted to capture another variable to use in my template, and I found a sneaky way of doing this...
-      - In `Folder path` I entered `{{VALUE:LessonUrl}}` and clicked `Add`
+      - I turned on `Create in folder`, and in `Folder path` I entered `{{VALUE:LessonUrl}}` and clicked `Add`
       - It adds it to the list of folders in the config, but not to the list the user sees
       - but it does mean I can reference `{{VALUE:LessonUrl}}` in my template!
       - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
     - Select `Create in folder` and select the folder you want to use
       - You can select multiple folders here
     - Select `Include subfolders` (if you want)
-    - Select `Open`
+    - Select `Open` (if you want)
     - There's no Save button, just close the popup and your settings will be saved
   - Turn the macro into a command: 
     - Click the lightning icon to the right of its name
@@ -870,3 +837,42 @@ aliases:
 ```
 - You can link to aliases by just typing an alias name in an internal link
 - Obsidian creates the link with the alias as its custom display text, for example `[[Artificial Intelligence|AI]]`.
+
+## Troubleshooting
+
+### If you lose the outline or properties pane
+
+- Use [command palette](#command-palette) to "show outline" or "show file properties"
+- They might both be in the same pane on the right, in which case the circle with an i icon will show properties, abd the horizontal lines will show outline
+
+### If folders are not in alphabetical order in dropdowns
+
+- This happened to me when I removed the third folder down out of four (in alpha order) and then re-added it. 
+- It started appearing as the fourth item in selection dropdowns
+- I fixed it by dragging the fourth folder to a new location and then dragging it back to its origiinal location
+- This seemed to reset the order to the way I wanted it in the dropdown
+- ...although this does suggest that the dropdown is listing them in creation order - so the workaround wouldn't work so well with more folders involved
+
+### If live preview colours text inside single brackets
+
+- You can't have "[text]" because the text gets turned into a different colour
+- See discussion [here](https://forum.obsidian.md/t/live-preview-dont-color-square-bracketed-text-as-a-link-unless-its-part-of-a-link/79896/2)
+- Fix it using [css snippets](#css-snippets)
+- Use the following snippet:
+```css
+.cm-s-obsidian {
+  & .cm-link.cm-hmd-barelink {
+      color: var(--text-normal);
+  }
+  
+  & .cm-link.cm-hmd-barelink:hover {
+      color: var(--text-normal);
+      text-decoration: none;
+  }
+}
+```
+
+### If you can't delete a note
+
+- If all it has a title and no content, you can't delete it. 
+- Add some text in the body and then you'll be able to delete it.
