@@ -232,11 +232,12 @@ permalink: /pages/organising/tools/Obsidian
 - You can also create your own variables. In that case you need the `VALUE` keyword followed by the name of the variable:
   - `{{VALUE:VariableName}}`
 - The only way I know of capturing a variable is via `QuickAdd`
-  - In this case, it's not at all obvious and (IMHO) really badly documented, but the way to do it is simply to refer to it elsewhere in a QuickAdd thing
+  - In this case, it's not at all obvious and (IMHO) really badly documented, but the way to do it is simply to refer to it elsewhere, either in a QuickAdd macro or in a template.
   - eg in the example [below](#use-quickadd-to-automate-note-and-folder-creation)
     - I want a FileName variable 
     - so I simply add `{{VALUE:FileName}}` to my file name format and when I run the `QuickAdd` command, it will popup an input asking me to enter a value for `FileName`
-    - I also found a sneaky way of getting other variables using the `Folder path` field - for explanation, see [example](#use-quickadd-to-automate-note-and-folder-creation)
+    - I also want a `LessonUrl` variable, so I add it to my template, and this also results in a popup with an input asking me for a value
+    - For full explanation, see [example](#use-quickadd-to-automate-note-and-folder-creation)
   - As far as I can work out, you _don't_ (and maybe even can't?) use the `Capture` type of QuickAdd to capture variables. Anything captured via that method will end up being pasted into a file, rather than being made available as a variable to other bits of functionality
 
 ### Modal forms
@@ -292,6 +293,10 @@ permalink: /pages/organising/tools/Obsidian
     - Fill in the form 
       - You can use tab to navigate, and spacebar to set the toggle, and Enter to Submit
       - You can include `\n` in the `Content` input to add new lines, or once it's done, use up arrow to enter the callout, and use Shift+Enter at the END of a line to add new lines
+  - Create a hotkey / command
+    - If you want, in QuickAdd [settings](#settings) you can click the lightning icon next to `New Callout`
+    - Now it'll turn up as its own item in [command palette](#command-palette)
+    - This also means you can give it its own [hotkey](#keyboard-shortcuts) if you like
 
 ### QuickAdd
 
@@ -321,10 +326,14 @@ permalink: /pages/organising/tools/Obsidian
       - The `{{VALUE:` part indicates these are custom [variables](#variables)
         - It means QuickAdd will prompt the user to enter two values for `LessonID` and `LessonName` (and `FolderName` if you went for that option)
     - I discovered I could also access the `LessonID` variable in my template
-      - I wanted to capture another variable to use in my template, and I found a sneaky way of doing this...
-      - I turned on `Create in folder`, and in `Folder path` I entered `{{VALUE:LessonUrl}}` and clicked `Add`
-      - It adds it to the list of folders in the config, but not to the list the user sees
-      - but it does mean I can reference `{{VALUE:LessonUrl}}` in my template!
+      - I wanted to capture another variable (`{{VALUE:LessonUrl}}`) to use only in my template (not in the `QuickAdd` macro), so I just added it to the [template](#templates), and because that template was referenced in the QuickAdd macro, when the macro ran, it popped up an input asking the user for a value for the variable
+      - Note that I couldn't originally get this to work (not sure why), so I attempted a sneaky way of doing this...
+        - I do NOT recommend this...
+        - I turned on `Create in folder`, and in `Folder path` I entered `{{VALUE:LessonUrl}}` and clicked `Add`
+        - It added it to the list of folders in the config, but not to the list the user sees
+        - but it did SEEM to mean I could reference `{{VALUE:LessonUrl}}` in my template...
+        - but then the folder-picking stopped working, so it seemed this just broke stuff
+        - ...and anyway it turned to be unnecessary, as I could just add the variable to the template
       - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
     - Select `Create in folder` and select the folder you want to use
       - You can select multiple folders here
@@ -723,7 +732,7 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
     - I experimented with `{{datetime}}` and `{{DateTime}}`, but I couldn't get either of those to work
   - You can also use [custom variables](#variables)
     - I used this feature for my [file creation macro](#use-quickadd-to-automate-note-and-folder-creation)
-    - I wanted to capture another variable to use ONLY in my template, and I found a sneaky way of doing this using `QuickAdd`, by entering `{{VALUE:LessonUrl}}` under `Folder path`
+    - I wanted to capture another variable to use ONLY in my template, so I just added `{{VALUE:LessonUrl}}` to the template, and when I ran the `QuickAdd` macro, it popped up an input asking for a value for the variable
       - See [example](#use-quickadd-to-automate-note-and-folder-creation)
       - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
 - To use the template: 
