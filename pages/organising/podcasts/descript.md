@@ -8,6 +8,12 @@ permalink: /pages/organising/podcasts/Descript
 
 Allows you to edit a transcript and then apply the changes to the audio / video
 
+## Related content
+
+- For Clare: 
+  - I used Descript for making Street Pianist podcast episodes
+  - All my notes on how to do that are in clare-tech (accessible to Clare only), in /organising/podcasts/the-street-pianist/street-pianist-podcast-editing.md#how-to-edit-an-episode
+
 ## Recommendations
 
 "I was interviewing a new guest yesterday and she told me about a tool she uses which sounds fascinating and I thought I'd tell you about it in case you'd like to try it out and see if you can make use of it.
@@ -105,6 +111,14 @@ Ted Young also swears by it for video editing.
 - You can select the whole transcript using Cmd + A and then cick Add Layer, but it seems to add it nly to the current scene. Then you can select the image and use Cmd + C and Cmd + V to copy to other scenes.
 - You can right-click on the image and choose Layer Order => Send backward to get captions back on top.
 - You can drag and drop image files onto scenes, but sometimes this doesn't work and I don't know why.
+  - Instead, you can place your cursor in the relevant bit of the transcript and then drag the image over to the main bit of the Descript screen
+  - ...or you can select the scene (grey rectangle) on the left so that it's highlighted, and then drag the image on top of the transcript
+  - You can tell which bit of the transcript the image is being added to, because it will get highlightedd
+- !Watch out! If adding / changing images after subtitles have already been added...
+  - When you change the image after adding subtitles, it ends up hiding the subtitles. 
+  - To fix this, right-click on the image = Layer order => Send backward. 
+  - Then click in the text for that scene to check subtitles are visible again. 
+    - If not, send backward again.
 
 ## Add scenes
 
@@ -116,6 +130,20 @@ Ted Young also swears by it for video editing.
 - [add a scene](#add-scenes)
 - Place your cursor just after the slash in the trsnacript
 - You should see an Add File button in the transcript - use that to choose an audio file
+- If at the start of the video, you might have to press Enter before the first text to create an empty line at the top. 
+  - Then you should see the Add file button in the empty line.
+
+## Extract small sections of video as short video (eg if making trailers)
+
+- Find the bit of the transcript you're interested in
+  - Highlight the whole chunk of text
+    - If the section you want starts in the middle of a sentence, press enter in the Descript transcript before the first word, to create a new sentence and make sure it doesn't include other words in the subtitles.
+  - Click Publish (top right)
+  - Select Export at the top
+  - Make sure Video is selected at the top
+  - From the drop-down next to Export, choose "Current selection"
+  - Click the icon next to audio and make sure "Normalize volume" is set to "-24 LUFS"
+  - Click Export and save the file 
 
 ## Loudness / LUFS
 
@@ -132,4 +160,9 @@ Ted Young also swears by it for video editing.
 Hi, I have two questions. The first is, why does my recording still have lots of "er"s in it despite removing filler words? It seems like the app can detect they are filler words because they are greyed out inn the waveform.
 The second question is, this is a good example of when I want to use the waveform to identify chunks of audio to remove, instead of using the transcript. How do I do this? In the screenshot you'll see the transcript says "But I met this young guy" but the wave form has some grey areas where the it just says "...". In fact when you listen to the audio you can very clearly here "Er, but I met this, er, young guy". I want to remove those greyed-out sections by deleting them from the wav file. But every time I try to click and drag to select a part of the waveform, things behave really weirdly and I don't get the behaviour I want. How do I highlight a section of the waveform and delete it?
 
-h
+## Download content
+
+- Top right: Click Publish or Export
+- Select Export
+- Select Transcript or video or audio or whatever you want
+- There is currently a small download button at the bottom (but they do keep changing the interface!)
