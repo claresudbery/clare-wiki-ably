@@ -392,3 +392,15 @@ And now that it was more expensive, it signalled high quality to people just wan
 ## What's that app that Ted uses to draw on screen?
 
 - Demo Pro App.com
+
+## What's that thing about cleaning versus washing
+
+- Clean teeth vs wash hands
+- Clean house vs wash clothes
+- Washing vs washing up
+- Washing machine vs dishwasher
+
+## What's that tool on Windows called, that gives break periods and exercises?
+
+- It has a sheep icon
+- It's called Rave
