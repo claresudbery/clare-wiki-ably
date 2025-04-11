@@ -611,17 +611,19 @@ Time: 1 second
 
 ### Syncing with iCloud
 
-- It's a bit buggy / idiosyncratic op set up, but after that seems pretty smooth
-- Here's what I had to do:
-- Start in phone app
-  - It might give an iCloud option on startup, but only for opening existing vaults, not creating new ones
-  - ... and if you try adding an Obsidian folder to your iCloud drive folder n your MacBook, it won't show up on your phone
-  - But if you just create a new vault, and then delete it (click icon top left, then click name of vault, then select Manage vaults, then select vault name, then "delete vault")...
-  - ...this will bring you to a screen with a "Create new vault" option that allows you to select "Store in iCloud"
-    - I worked this out courtesy of [this post on the Obsidian forum](https://forum.obsidian.md/t/not-able-to-sync-through-icloud/97859/2) (the post is dated 9 Mar '25, I was looking on 31 Mar '25)
-  - ! Warning! If you already created an Obsidian folder in your iCloud drive folder via Macbook, it will still be there! In Finder, it will look as though you have two identically-named folders in the same location
-    - I suggest either removing or renaming the duplicate (not the one being accessed via the phone app) asap
-  - You will now be able to open that folder on desktop and find the vault you created on mobile
+- It's a bit buggy / idiosyncratic to set up, but after that seems pretty smooth
+- Here's what I had to do to get it working first time (see below for subsequent times):
+	- Start in phone app
+	  - It might give an iCloud option on startup, but only for opening existing vaults, not creating new ones
+	  - ... and if you try adding an Obsidian folder to your iCloud drive folder in your MacBook, it won't show up on your phone
+	  - But if you just create a new vault, and then delete it (click icon top left, then click name of vault, then select Manage vaults, then select vault name, then "delete vault")...
+	  - ...this will bring you to a screen with a "Create new vault" option that allows you to select "Store in iCloud"
+	    - I worked this out courtesy of [this post on the Obsidian forum](https://forum.obsidian.md/t/not-able-to-sync-through-icloud/97859/2) (the post is dated 9 Mar '25, I was looking on 31 Mar '25)
+	  - ! Warning! If you already created an Obsidian folder in your iCloud drive folder via Macbook, it will still be there! In Finder, it will look as though you have two identically-named folders in the same location
+	    - I suggest either removing or renaming the duplicate (not the one being accessed via the phone app) asap
+	  - You will now be able to open that folder on desktop and find the vault you created on mobile
+  - After you've got it working, you can just place vaults in your iCloud drive folder
+	  - This will mean they show up on your phone
   - ! I don't know if the duplicate folder was the cause, but I also had another problem:
     - When I copied another vault I'd already created, on Macbook, from another folder to the new iCloud drive/Obsidian folder, it DID appear on both mobile and desktop, BUT changes did not sync bwteeen desktop and mobile. It seemed like there were two entirely separate vaults.
     - And then when I looked on Desktop at the vault list (via File => open vault), the vault I created on mobile was not listed as being in iCloud Drive / Obsidian. Instead, it was listed as being in `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
