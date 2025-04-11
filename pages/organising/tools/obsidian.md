@@ -3,7 +3,6 @@ layout: page
 location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/Obsidian
 ---
-
 ## Contents of this file:
 
 - [Obsidian Overview](#obsidian-overview)
@@ -13,6 +12,7 @@ permalink: /pages/organising/tools/Obsidian
 - [Notes from Diana's presentation at Socrates UK '24](#notes-from-dianas-presentation-at-socrates-uk-24)
 - [Vault management](#vault-management)
 - [Keyboard shortcuts](#keyboard-shortcuts)
+- [[#Customising Obsidian]]
 - [Customising Obsidian](#customising-obsidian)
   - [css snippets](#css-snippets)
   - [Plugins](#plugins)
@@ -181,6 +181,33 @@ permalink: /pages/organising/tools/Obsidian
 
 ## Customising Obsidian
 
+### Configuring a new vault
+
+- Start with the vault closed while you do actions in the file system:
+	- Plugins:
+		- Easiest thing is to copy `community-plugins.json` and `core-plugins.json` ***and the plugins folder*** from the `.obsidian` folder of another vault...
+		- ...or open the [[#Plugins|plugins section]] of another vault and copy over the plugins you want in both vaults
+		- I currently have the following...
+		- Core (non-default): 
+			- Properties view
+		- Community:
+			- Colored Text
+			- GitHub Sync
+			- Highlightr
+			- Modal forms
+			- QuickAdd
+	- Hotkeys:
+		- Copy `hotkeys.json` from the `.obsidian` folder of another vault
+			- Remember that if the other vault has hotkeys that you want to keep that refer to specific things created using community plugins, you need to create those things first - eg a specific [[#QuickAdd]] macro
+		- Open up your new copy of `hotkeys.json` in a text editor and remove any that you don't want to keep
+	- While you're looking at the `.obsidian` folder of your source vault, check whether any of the other `json` files might contain any other customisations you want to copy over to the new vault
+- Open the vault
+	- (Note that these are my preferred settings, stored here for my benefit - your preferences may differ):
+	- Make properties sections be hidden by default: [Settings](#settings) => Editor => properties in document => hidden
+	- Create a Templates folder, point to it from the core `Templates` plugin, add at least one simple template
+		- More on this [[#Templates|here]]
+	- Go to [Settings](#settings) and remove any [[#Plugins|plugin]] macros you don't want
+		- If you copied over the whole of your `plugins` folder and you had the `QuickAdd` or `Modal forms` plugins, you will now have all the macros you set up, and this might include stuff that's not relevant to this vault
 ### css snippets
 
 - Used for styling how things look in a note
@@ -794,7 +821,7 @@ parent: "[[Home]]"
 
 #### Showing / hiding properties
 
-- You can make properties sections be hidden by default: [Settings](#settings) => Editor => show properties in document
+- You can make properties sections be hidden by default: [Settings](#settings) => Editor => properties in document => hidden
   - or set to "source" to allow you to see the YAML as it appears in the code snippet above
   - If they're hidden, one way to see them is to go into [source mode](#source-mode) and then expand the section at the top via the little arrow
     - ...or enable the core "Properties view" plugin, then go to [command palette](#command-palette) => `Properties: Show all properties` or `Properties: Show file properties`
