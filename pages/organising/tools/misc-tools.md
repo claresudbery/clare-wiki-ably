@@ -499,10 +499,21 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 - From comvo with mojo on blue pages, #General Questions, p289:
 - "Don't use WD40 for anything other than water displacement or penetration, it all but gives up the ghost in in weeks rather than months (its what its designed for, and is in the title - W(ater)D(isplacement)-40) use something like 3in1, chain oil or sewing machine oil for lubrication. Oh and for god sake never oil a sticky or stiff lock use graphite powder (from a pencil) or spray."
 - "The stuff I used is `WRX Technical Spray - Penetrating oilk, contains graphite and MoS`. I can't tell from your description whether it's right or wrong. Because it's oil (which you say not to use) and it's penetrating (which you also warn against), but it contains graphite (which you recommend) and it's a spray (which you also recommend)??"
-- "So this is entirely to do with what happens after the oil has penetrated (this is a penetrating oil, with graphite and Molybdenum disulfide) - by being light and having the ability to get between seized items it also evaporates rather rapidly leaving a gummy residue which sometimes makes the situation worse - a lock has many small items that are dependant on being able to move smoothly - this is where the Graphite and Molybdenum disulfide come into play - they remain after the oil evaporates leaving a longer and dryer lubrication still in the lock (*locks can get stiff for other reasons other than lubricaton)."
+- "So this is entirely to do with what happens after the oil has penetrated (this is a penetrating oil, with graphite and Molybdenum disulfide) - by being light and having the ability to get between seized items it also evaporates rather rapidly leaving a gummy residue which sometimes makes the situation worse - a lock has many small items that are dependant on being able to move smoothly - this is where the Graphite and Molybdenum disulfide come into play - they remain after the oil evaporates leaving a longer and dryer lubrication still in the lock (*locks can get stiff for other reasons other than lubrication)."
 - "So... is it the right stuff or not?"
 - "Middle of the road - not great, not the worst it could be."
 
 ## How to plan journeys across the UK (particularly in Greater Manchester) using public transport
 
 - [Traveline journey planner](https://www.traveline.info/)
+
+## Calendly
+
+- To troubleshoot why slots are not available...
+	- Make sure you're signed into your Calendly account
+	- Visit the scheduling page as though you were trying to book an appointment
+	- Click the troubleshooting button at the bottom
+	- Click on a date you're interested in
+	- On the right, the various timeslots will be listed, along with reasons they're not available
+	- Click on a time you're interested in, and it will give more info as to why it's not available
+	- Click done when you're done

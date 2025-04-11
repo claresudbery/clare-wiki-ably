@@ -14,7 +14,7 @@ permalink: /pages/organising/tools/Obsidian
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [[#Customising Obsidian]]
 - [Customising Obsidian](#customising-obsidian)
-  - [css snippets](#css-snippets)
+  - [css snippets](#css-snippets) / [[#css snippets]]
   - [Plugins](#plugins)
   - [Variables](#variables)
   - [Modal forms](#modal-forms)
@@ -200,9 +200,16 @@ permalink: /pages/organising/tools/Obsidian
 		- Copy `hotkeys.json` from the `.obsidian` folder of another vault
 			- Remember that if the other vault has hotkeys that you want to keep that refer to specific things created using community plugins, you need to create those things first - eg a specific [[#QuickAdd]] macro
 		- Open up your new copy of `hotkeys.json` in a text editor and remove any that you don't want to keep
+	- css
+		- Check the snippets sub-folder (if there is one) under `.obsidian`
+		- Copy whatever's in there into a new `snippets` sub-folder under your destination `.obsidian` folder
 	- While you're looking at the `.obsidian` folder of your source vault, check whether any of the other `json` files might contain any other customisations you want to copy over to the new vault
 - Open the vault
 	- (Note that these are my preferred settings, stored here for my benefit - your preferences may differ):
+	- Turn on any css snippets:
+		- Go to [[#Settings]] => Appearance => scroll down to css at the bottom
+		- If no snippets are listed (and you copied some over in the previous step), click the Refresh button
+		- Turn the slider to "on" for each snippet you want to apply
 	- Make properties sections be hidden by default: [Settings](#settings) => Editor => properties in document => hidden
 	- Create a Templates folder, point to it from the core `Templates` plugin, add at least one simple template
 		- More on this [[#Templates|here]]
@@ -214,14 +221,13 @@ permalink: /pages/organising/tools/Obsidian
 - In [settings](#settings) under Appearance, at the bottom, click the folder icon next to CSS Snippets to open the correct location
 - Create a `css` file in your vault, under `.obsidian/snippets` (Use Cmd + shift + `.` to show hidden files in MacOS file explorer)
   - Call it what you like, eg `my-styles.css`
-- In [settings](#settings) under Appearance, at the bottom, click the Refresh button to show your css file
+- In [settings](#settings) under Appearance, at the bottom, click the Refresh button to show your css file [thing]
 - Turn the switch on next to your file to load what's in it
 - To find out what the css is for the bit you're interested in, use the developer tools:
   - Cmd + option + i (Mac) or Ctrl + Shift + i (Windows)
   - Click the "Select an element on the page to inspect it" tool 
   - (top left of the right hand pane - a diagonal arow in a dotted square).
   - Hover over the app to highlight pieces of it, and click on the part you want to style.
-
 ### Plugins
 
 - On desktop:
@@ -650,6 +656,10 @@ Time: 1 second
     - You can use either the HTTPS or SSH url. 
     - Try clicking the Sync button now - it should work.
 - "Follow my stuff at https://kevin.gd/"
+- Troubleshooting:
+	- At one point I suddenly got an error in Github Desktop and on the command line: "Your branch is based on 'origin/main', but the upstream is gone." 
+	- I still don't understand what this meant or what had happened - everything looked fine in github config and at github.com
+	- Whether this is what fixed it I don't know, but I ran `git branch --unset-upstream` on the command line, then closed and reopened Github Desktop and Obsidian, and everything was working again.
 
 ### GitHub Syncing on iPhone
 
@@ -887,13 +897,13 @@ aliases:
 
 - This happened to me when I removed the third folder down out of four (in alpha order) and then re-added it. 
 - It started appearing as the fourth item in selection dropdowns
-- I fixed it by dragging the fourth folder to a new location and then dragging it back to its origiinal location
+- I fixed it by dragging the fourth folder to a new location and then dragging it back to its original location
 - This seemed to reset the order to the way I wanted it in the dropdown
 - ...although this does suggest that the dropdown is listing them in creation order - so the workaround wouldn't work so well with more folders involved
 
-### If live preview colours text inside single brackets
+### If live preview adds colour to text inside single brackets
 
-- You can't have "[text]" because the text gets turned into a different colour
+- You can't have `[text]` because the text gets turned into a different colour inside the square brackets
 - See discussion [here](https://forum.obsidian.md/t/live-preview-dont-color-square-bracketed-text-as-a-link-unless-its-part-of-a-link/79896/2)
 - Fix it using [css snippets](#css-snippets)
 - Use the following snippet:

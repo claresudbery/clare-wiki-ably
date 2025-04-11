@@ -1,0 +1,14 @@
+.cm-s-obsidian {
+  & .cm-link.cm-hmd-barelink {
+      color: var(--text-normal);
+  }
+  
+  & .cm-link.cm-hmd-barelink:hover {
+      color: var(--text-normal);
+      text-decoration: none;
+  }
+}
+
+.cm-inline-code {
+  color: darkorange!important;
+}

@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "calendly",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -185,8 +185,9 @@
   },
   "active": "f5351a35a1fca293",
   "lastOpenFiles": [
-    "Templates/date template.md",
+    "pages/organising/tools/misc-tools.md",
     "pages/organising/tools/obsidian.md",
+    "Templates/date template.md",
     "Templates",
     "pages/organising/music/clare-singing.md",
     "pages/organising/tools/convertkit.md",
