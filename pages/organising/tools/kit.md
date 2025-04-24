@@ -44,7 +44,7 @@ I did this by automatically tagging / segmenting people who signed up via differ
 - I created two forms (Grow => Landing pages & forms), and gave them both urls (form => edit => settings => domain name, then click Add, then click Save, then Publish back on the main page):
 	- Subscribe to Technical leadership newsletter: https://queen-of-questions.kit.com/tech-lead-subscribe 
 	- Subscribe to Freelance career newsletter: https://queen-of-questions.kit.com/freelance-career-subscribe
-- You can now add links to your creator profile and landing page that will take people to these forms.
+- You can now add links to your creator profile ([mine is here, still a work in progress](https://queen-of-questions.kit.com/)) and landing page ([mine is here, still a work in progress](https://queen-of-questions.kit.com/landing)) that will take people to these forms.
 
 ### Set up tags and automations
 
@@ -72,7 +72,7 @@ I did this by automatically tagging / segmenting people who signed up via differ
 	- Scroll down on the right, find Segments => Create a Segment
 	- Matching all => Add filter
 	- Subscribed to => forms => select form(s)
-		- Note: As well as any manually-created forms, this will also allow you to select the subscription form on your creator profile and the subscription form on your landing page
+		- Note: As well as any manually-created forms, this will also allow you to select the subscription form on your creator profile ([mine is here, still a work in progress](https://queen-of-questions.kit.com/)) and the subscription form on your landing page ([mine is here, still a work in progress](https://queen-of-questions.kit.com/landing)) 
 	- Click Add filter
 	- Click Save
 - To delete / edit a segment, select it and it will then appear on the left and you can click where it says Edit in brackets
