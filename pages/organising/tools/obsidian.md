@@ -474,6 +474,8 @@ Time: 1 second
 - Click the link icons with arrows, top right
 - You can also see relationships in graph format
   - Click the graph icon (linked circles) on left hand side
+- Use Cmd + P => "Copy file path" to copy file path
+- Use the community plugin "Reveal active file" from Clare Macrae to get a little crosshairs-ish icon at the top of the file explorer that will reveal the location of the current file
 
 ### Source mode
 
