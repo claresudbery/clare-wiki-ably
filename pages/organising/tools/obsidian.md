@@ -186,6 +186,8 @@ permalink: /pages/organising/tools/Obsidian
 - Start with the vault closed while you do actions in the file system:
 	- Plugins:
 		- Easiest thing is to copy `community-plugins.json` and `core-plugins.json` ***and the plugins folder*** from the `.obsidian` folder of another vault...
+			- ...but be aware that you'll also be copying over vault-related config info
+			- ...so, for instance, I ended up with a Git config file having its remote source being overwritten with the url of a different repo, because I'd copied over the [[#Github Sync plugin|Github Sync community plugin]] from another vault
 		- ...or open the [[#Plugins|plugins section]] of another vault and copy over the plugins you want in both vaults
 		- I currently have the following...
 		- Core (non-default): 
