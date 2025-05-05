@@ -192,7 +192,6 @@ permalink: /pages/organising/tools/Obsidian
 			- Properties view
 		- Community:
 			- Colored Text
-			- GitHub Sync
 			- Highlightr
 			- Modal forms
 			- QuickAdd
@@ -639,9 +638,10 @@ Time: 1 second
 ### Github Sync plugin
 
 - Note that in the end I didn't bother trying to get this working on mobile
+- Actually in the end I didn't use it at all, because even on desktop the functionality is limited - eg you can't edit commit messages - they're automatically generated - and I found it just as easy to use my normal GitHub tools (command line and Git?Hub Desktop, fwiw)
   - I installed the plugin on desktop, and used [iCloud sync](#syncing-with-icloud) to sync with my phone
   - Then changes are committed to Github on laptop
-  - I did find these instructions on how to get it working on phone, but I couldn't be bothered
+  - I did find [[#GitHub Syncing on iPhone|these instructions]] on how to get it working on phone, but I couldn't be bothered
 - How to Use
   - Click the Sync with Remote ribbon icon (little GitHub cat, on the left in main page) to pull changes from your GitHub repo and push local changes.
   - If there are any conflicts, the unmerged files will be opened for you to resolve (or just push again with the unresolved conflicts - that should work too).

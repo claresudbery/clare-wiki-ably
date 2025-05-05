@@ -43,6 +43,10 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
   - [Main info](https://www.nationaltrust.org.uk/visit/cheshire-greater-manchester/dunham-massey/christmas-lights-at-dunham-massey)
   - [Tickets](https://premier.ticketek.co.uk/shows/Show.aspx?sh=DMTRAILO24)
 - Tatton Park
+- Alderley Edge Mine tours
+	- Booking: https://www.derbyscc.org.uk/alderley/trip_booking_form.php
+	- More info: https://www.derbyscc.org.uk/alderley/current_visiting.php
+	- The copper mine is twice yearly - "Engine Vein Mine" - more info: https://www.derbyscc.org.uk/base/display.php?liref=docLEV
 
 ### Peak District
 

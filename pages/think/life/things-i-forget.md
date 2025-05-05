@@ -404,3 +404,8 @@ And now that it was more expensive, it signalled high quality to people just wan
 
 - It has a sheep icon
 - It's called Rave
+
+## What are those neat symmetrical phrases?
+
+- Those that matter don't mind, and those that mind don't matter
+- It's nice to be important, but it's important to be nice

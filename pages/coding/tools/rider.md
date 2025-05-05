@@ -27,7 +27,7 @@ Rider is an IntelliJ tool very much like Visual Studio
 - Right click => Go to for all optiosn like find usages etc
 - Step into - Cmd + F11
 - Step over - F10
-- Comment out a block of code - Alt + Cmd + /going to sleep
+- Comment out a block of code - Alt + Cmd + /
 
 ## Convert between snake case, camel case, etc
 
