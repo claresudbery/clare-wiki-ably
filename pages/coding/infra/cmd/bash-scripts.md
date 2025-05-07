@@ -9,7 +9,7 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 - There are lots of scripts in my [infra-scripts repo](https://github.com/claresudbery/Infra-Scripts) (only available to Clare).
   - Note that this also contains a file called `useful-aliases.txt` - if I want the most up to date versions of these functions (eg `wp`), I need to copy its contents into `~/.bashrc`.
   - But they were all written for Windows, so you'll need to do a search and replace on file paths for both Clare home and the development directory.
-  - Also sometiumes you might get weird errors caused by WIndows line endings (eg "command not found" for an empty line), in which case you need to run `dos2unix` on your scripts (search elsewhere in this wiki for info on `dos2unix`)
+  - Also sometimes you might get weird errors caused by Windows line endings (eg "command not found" for an empty line), in which case you need to run `dos2unix` on your scripts (search elsewhere in this wiki for [[psql#Gotchas|info on `dos2unix`]])
 - Sample bash script: Dropbox\IT Training\Misc\sample.bashrc
 - if statement - the spaces matter\! **if \[\[ $NumDifferences \!= 0
     \]\]; then ... fi**

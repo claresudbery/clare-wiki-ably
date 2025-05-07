@@ -153,6 +153,11 @@ Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/maste
 - [wiki-page](/resources/scripts/wiki-page) - creates a new wiki page
 - [wiki-page-insert](/resources/scripts/wiki-page-insert) - Inserts wiki front matter into a pre-existing markdown file
 
+## Issues with line endings / encoding / file formats
+
+- Typically seen when moving between Windows and Mac
+-  Use `dos2unix` (downloadable from elsewhere) - [[psql#Gotchas|more info here]]
+
 ## Scripts Used for RefactoringExamples
 
 - See [RefactoringExamples repo](https://github.com/claresudbery/RefactoringExamples/blob/master/github-markdown/notes/code-changes.md) (private only, I'm afraid).

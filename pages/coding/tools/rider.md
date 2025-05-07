@@ -12,6 +12,8 @@ Rider is an IntelliJ tool very much like Visual Studio
 
 - In Rider when I accidentally click in gutter and open horrid window on left
   - right click in horrid area => close annotations
+- Deleting files on left in file explorer:
+	- It's not obvious - choose Edit from the context menu and there is a whole sub-menu including a Delete option
 
 ## Useful shortcuts
 

@@ -343,9 +343,11 @@ I found this quite tricky. This is what worked in the end:
 
 #### Gotchas
 
-  - If you’re on Windows and you get an error from line 1 syntax error
-    at or near "ÿ\_", it’s caused by Unicode discrepancies. You can do
-    the following:
+  - `dos2unix` - useful tool for fixing line endings / Windows encoding / bad file formats
+	  - If you’re on Windows and you get an error from `line 1 syntax error at or near "ÿ\_"`, it’s caused by Unicode discrepancies. 
+		  - Another case can be if, on a Mac, Github thinks a `.cs` file is a binary file
+		  - or if you get encoding errors when opening `.cs` files in Rider on a Mac
+	  - You can do the following:
       - In a Linux terminal (using WSL):
       - `sudo apt-get install dos2unix`
       - `dos2unix path/to/table-name-backup.dmp`
