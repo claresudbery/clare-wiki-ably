@@ -31,6 +31,7 @@ permalink: /pages/organising/tools/Obsidian
   - [Formatting markdown](#formatting-markdown)
   - [Callouts](#callouts)
   - [File / folder management](#file--folder-management)
+  - Attachments
 - [File syncing](#file-syncing)
   - [Syncing with Google Drive](#syncing-with-google-drive)
   - [Syncing with iCloud](#syncing-with-icloud)
@@ -583,6 +584,12 @@ Time: 1 second
 - You can also place your folder somewhere like [Google Drive](#syncing-with-google-drive)
   - but this seems a bit flakier than iCloud, and you have to keep manually pulling and pushing, and it's risky to have files open on both devices at once - whereas iCloud just automatically syncs across devices
 - Or you can use [GitHub](#github-sync-plugin)
+
+## Attachments and images
+
+- You can just copy / paste an image and it will embed it for you
+- Or place the image in the Attachments folder, which you configure in Settings => Files and links => default location for new attachments
+	- then use this syntax: `![[my-image.jpg]]`
 
 ### Syncing with Google Drive
 
