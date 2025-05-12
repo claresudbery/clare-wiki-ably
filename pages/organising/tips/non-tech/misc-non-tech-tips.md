@@ -27,3 +27,7 @@ The links below were just from one random google. I make no claims for their aut
 ## elderly cats and urination
 
 - [here](https://seniortailwaggers.com/elderly-cat-urinating-in-house/#:~:text=You%20could%20also%20move%20the,they%20always%20have%20one%20nearby.)
+
+## Drafts / draughts
+
+- Simple door strip for insulating against noise and drafts: https://tozio.co/door-strip
