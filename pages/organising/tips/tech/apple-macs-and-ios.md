@@ -7,6 +7,35 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 
 ## iOS
 
+### Turn off default live photos
+
+- To stop your iPhone from taking Live Photos by default, 
+- you need to disable the Live Photo feature in the Camera app 
+- and then ensure your phone preserves those settings. 
+- First, go to Settings > Camera > Preserve Settings 
+	- and make sure the switch next to "Live Photo" is turned on. 
+- Then, in the Camera app, 
+	- disable Live Photos by tapping the Live Photos icon 
+	- (it will have a slash through it when off). 
+### Convert live photos to normal ones in ios
+
+- To convert multiple Live Photos to regular still photos on your iPhone, you can use the Photos app to select and save them as still images. You can also use the Shortcuts app to automate this process.  
+- Here's how to convert multiple Live Photos to still photos using the Photos app:  
+	- Open the Photos app and navigate to Live Photos: Scroll down to the "Media types" section, then select "Live Photos".  
+	- Select the photos: Tap the "Select" button and choose the Live Photos you want to convert.  
+	- Save to Files: Tap the Share icon and select "Save to Files," choosing a location like "Downloads".  
+	- Open Files app and save as images: Open the Files app, navigate to the folder where you saved the photos, tap the three-dot icon, select "Select," choose the photos, and tap the Share icon, then select "Save images".  
+- Alternatively, you can use the Shortcuts app for automation:  
+	- Open the Shortcuts app: Search for it or find it on your homescreen.  
+	- Create a new shortcut: Tap the "+" icon and search for "photos".  
+	- Configure the shortcut:  
+	- Select "Photos" under Actions and turn on "Select Multiple".  
+	- Search for "Convert Image" and select it, turning on "Preserve Metadata".  
+	- Search for "Save to Photo Album" and tap it, then tap "Next".  
+	- Name and save the shortcut: Give it a name and tap "Done".  
+	- Run the shortcut: Use the shortcut to select and convert your Live Photos.  
+- Important Note: Converting Live Photos to still photos essentially creates a duplicate of the key frame (the main still image) in the Live Photo. 
+	- The original Live Photo will still remain in your library, and the new still photo will be saved separately.
 ### Text manipulation in iOS 13
 
 - Long explanation of all the things (moving cursor around, selecting and highlighting text etc): [Text manipulation in iOS 13](https://ios.gadgethacks.com/how-to/ios-13-changes-way-you-navigate-edit-text-heres-place-cursor-make-selections-perform-edits-more-0203292/) 
