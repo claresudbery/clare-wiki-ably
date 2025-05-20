@@ -202,11 +202,7 @@ That's it! Happy Miroing.
 
 ## Mural tips
 
-- Select multiple objects
-  - Shift + drag
-- Group objects
-  - Multi-select (Shift + drag)
-  - Then Ctrl + G
+- See [[Mural]]
 
 ## Reinstate Alt + Enter Resharper keyboard shortcut in Visual Studio
 
@@ -532,3 +528,11 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
     - If you don’t see a size column, you can click on the arrow in one of the columns and select Size.
   - Folder sizes don't show by default.
     - You can see those folder sizes by clicking on the ellipses next to the folder and selecting Calculate size.
+
+## Browsing chapters in ios Audible app 
+
+- Next to the name of the current chapter
+- Just above the progress bar, above the play icon
+- On the left hand side of chapter title is an icon that looks like a list of chapter headings
+- Click on this
+- It's really not obvious that this is a clickable icon!

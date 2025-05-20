@@ -35,10 +35,18 @@ permalink: /pages/organising/tools/Kit
 	      - ...and finally I see the point of the extra email address I was given (clare@claresudbery.com) when I upgraded to a paid Gmail account. When I use this, my mailouts don't seem to go into spam folders. I can't remember how I changed this, but I was prompted to do it by Kit.
 
 
+## Find pages and forms
+
+- I have subscriber forms, which also double as permanent pages, in the following places...
+- Editable/configurable via Grow => Creator Profile:
+	- Creator profile (effectively main home page): https://queen-of-questions.kit.com/
+- Editable/configurable via Grow => Landing pages & forms:
+	- Technical leadership newsletter: https://queen-of-questions.kit.com/tech-lead-subscribe 
+	- Freelance career newsletter: https://queen-of-questions.kit.com/freelance-career-subscribe
+	- Landing page: https://queen-of-questions.kit.com/landing
 ## Create the capability for more than one "newsletter"
 
 I did this by automatically tagging / segmenting people who signed up via different forms designed to represent the different "newsletters", using the following steps:
-
 ### Create forms
 
 - I created two forms (Grow => Landing pages & forms), and gave them both urls (form => edit => settings => domain name, then click Add, then click Save, then Publish back on the main page):
@@ -79,3 +87,8 @@ I did this by automatically tagging / segmenting people who signed up via differ
 	- See [this page](https://help.kit.com/en/articles/2577659-how-to-create-a-segment) for more on creating segments
 - Then when you publish...
 	- Add filter => Within segment => select your segment(s)
+
+## Routine actions
+### Change which posts are featured on subscriber page
+
+- Grow => Creator profile => Newsletter posts (on right)

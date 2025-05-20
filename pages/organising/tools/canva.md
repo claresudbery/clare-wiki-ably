@@ -18,3 +18,8 @@ permalink: /pages/organising/tools/Canva
   - Find the one you're interested in
   - Hover over it til you get three dots, top right
   - Click those dots and select "Open in new tab"
+
+## How to create logos
+
+- Annoyingly, if you search for logos within the design section of the app, it gives you a bunch of designs that I wouldn't call logos at all - they're more like banners
+- But [this logo creation link](https://www.canva.com/create/logos/) will take you where you need to be

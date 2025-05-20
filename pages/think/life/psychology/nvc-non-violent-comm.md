@@ -118,7 +118,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
   - If the person we are judging happens to be ourselves, what we are saying is, “I myself am not behaving in harmony with my own needs.” 
   - We want to take action out of the desire to contribute to life rather than out of fear, guilt, shame, or obligation.
   - When the sole energy that motivates us is simply to make life wonderful for others and ourselves, then even hard work has an element of play in it. 
-  - See the [Have to => Choose to exercise](#exercise-translating-have-to-to-choose-to)
+  - See the [[#EXERCISE Translating “Have to” to “Choose to”|Have to => Choose to exercise]]
 - Don't beat yourself up
   - You can mourn actions you took that you regret
   - NVC self-forgiveness: connecting with the need we were trying to meet when we took the action that we now regret.
@@ -129,6 +129,8 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
   - Avoid words like always, never, ever, whenever, frequently, seldom when observing
 - Distinguish feelings from thoughts
   - "I feel that" and "I feel you" and "I feel inadequate" and "I feel unimportant" are not feelings
+  - They are pseudo feelings
+  - "I feel that you..." can actually be a way of identifying a pseudo feeling and turning it into a statement. Not a feeling any more!
 - After we express ourselves vulnerably, we often want to know 
   - 1. what the listener is feeling;
   - 2. what the listener is thinking;
@@ -446,7 +448,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
   - In response to “Look, you just messed up again!”, we can quickly stop and ask ourselves, “What unmet need of mine is being expressed through this moralistic judgment?”
 - We follow up on the process of mourning with self-forgiveness.
   - NVC self-forgiveness: connecting with the need we were trying to meet when we took the action that we now regret.
-- We are compassionate with ourselves when we are able to embrace all parts of ourselves and recognize the needs and values expressed by each part. [thing](#exercise-translating-have-to-to-choose-to)
+- We are compassionate with ourselves when we are able to embrace all parts of ourselves and recognize the needs and values expressed by each part. [[#EXERCISE Translating “Have to” to “Choose to”]]
 
 ### Don’t Do Anything That Isn’t Play!
 
@@ -460,6 +462,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 ### EXERCISE: Translating “Have to” to “Choose to”
 
 - Chapter 9
+- (My attempt at this exercise is in clare-tech)
 - Step 1 
   - What do you do in your life that you don’t experience as playful? List on a piece of paper all those things that you tell yourself you have to do. 
   - List any activity you dread but do anyway because you perceive yourself to have no choice.

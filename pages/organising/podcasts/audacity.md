@@ -123,3 +123,18 @@ permalink: /pages/organising/podcasts/Audacity
 
 - Edit > Preferences > Tracks > Tracks Behaviors > Editing a clip can move other clips
 - Generate => Silence
+
+## Record music from internet into Spotify
+
+From Duck:
+
+[How to Record Streaming Audio with Audacity - Windows & Mac](https://www.appgeeker.com/capture/record-streaming-audio-audacity.html)  
+- You have to install the Sunflower thing to get decent quality
+- You have to hold down control key while clicking - otherwise go to Macbook settings and find Privacy & Security and scroll down to the bottom to see what needs approving.
+- Then you have to set computer output (in macbook settings) AND Audacity input to be Sunflower 2ch
+  
+then, yes, you can add local files to your Spotify library. It varies depending on platform again, but:  
+  
+[Local files - Spotify](https://support.spotify.com/uk/article/local-files/)
+
+- The "local files" thing is set up as a PLAYLIST called "local files" - that's not obvious!

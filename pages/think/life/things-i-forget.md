@@ -409,3 +409,27 @@ And now that it was more expensive, it signalled high quality to people just wan
 
 - Those that matter don't mind, and those that mind don't matter
 - It's nice to be important, but it's important to be nice
+
+## What was that song Emily and I played during the retro at one of our tech coaching workshops?
+
+- Fun fun fun till her daddy takes her T-bird away 
+- The words “fun fun fun” were contributed by one of the participants in the retro, so I found the track on Spotify and played it while people were still filling out stickies. I think it happened again the following day and became a kind of running theme.
+- I think it was either the "Hands-on technical leadership for a healthy engineering culture" workshop with Emily Bache at NewCrafts '23, or the one at SDD Deep Dive '22.
+
+## What's that song I got slightly obsessed by on 6Music, that wasn't available on Spotify?
+
+Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Car seat Headrest CCF
+
+- "CCF (I'm Gonna Stay With You)", by Car Seat Headrest
+- Only the 8-min album version is available to buy / on Spotify
+	- It's fine, but I prefer the snappy radio edit
+- It seems the 3-min radio edit might have been a promo to radio and only available by listening to the radio
+- You can currently (May '25) hear it constantly on 6Music cos it's on their [A playlist]([https://www.bbc.co.uk/programmes/articles/5JDPyPdDGs3yCLdtPhGgWM7/bbc-radio-6-music-playlist](https://www.bbc.co.uk/programmes/articles/5JDPyPdDGs3yCLdtPhGgWM7/bbc-radio-6-music-playlist))
+	- ...but obvs that won't last
+- You can also hear it on Craig Charles (show from 9/5/25, when it was played 15:35) here at 2:35:32: [https://www.bbc.co.uk/sounds/play/m002bg6m?partner=uk.co.bbc&origin=share-mobile](https://www.bbc.co.uk/sounds/play/m002bg6m?partner=uk.co.bbc&origin=share-mobile)
+- ...or at 1:57:14 in [https://www.bbc.co.uk/sounds/play/m002bg5d](https://www.bbc.co.uk/sounds/play/m002bg5d)
+- ...but they won't stay online forever either
+
+## Where did I put my notes on what to do when a credit card is replaced?
+
+- Over in clare-tech, in SE Procedures
