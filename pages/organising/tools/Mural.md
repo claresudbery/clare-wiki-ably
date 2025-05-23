@@ -18,8 +18,9 @@
 ## Convert text into stickies / postits
 
 1. Copy the multiple lines of text you want to paste to your mural.
+	1. Make sure each one is on a new line, and there are no blank lines between them
 2. Right-click the canvas (just canvas, not area) and select Paste.
-3. Click the dropdown arrow next to the Paste as icon.
+3. Click the dropdown arrow next to the Paste-as icon.
 	1. Note: I don't see a dropdown arrow - I just Paste and they automatically get turned into stickies - BUT then a floating paste icon appears (like in Google Sheets), and if I click on it, I get the next bit...
 4. Select how you want your text to display: Single paragraph. Multiple sticky notes. Multiple paragraphs.
 ## Convert stickies into text
@@ -37,7 +38,13 @@
 - **Trello's detection:** Trello will typically recognize the pasted text as a list and ask if you want to create individual cards from it. 
 	- At first it seems like it's just created one Trello card with a multiline title, but as soon as you hit Enter, it'll offer the toption to create multiple cards
 - **Confirm card creation:** Select "Create multiple cards" or a similar option (the exact wording may vary depending on the Trello version).
-## Troubleshooting
+## Convert Trello cards into stickies
+
+- I [found this](https://gist.github.com/jeremyzilar/17f001c999e234083796215ca79e26eb), which achieves it via js in the console, but it's out of date and grabs the wrong data
+- Instead, I installed the Kolekti "Board Export" powerup, which costs ony $24 per year and is really nice / easy to use
+- The only gotcha is that although I initially signed up for the 14-day free period, I then lost track of what I was doing and when I clicked through to settings I ended up inadvertently signing up for a paid account and apparently having two accounts by accident
+- If you export to csv or Excel, you can open up the resulting spreadsheet and then copy/paste into Mural - initially you'll probably get text, but then you can click the floating "paste as" icon and choose "multiple sticky notes"
+## Troubleshooting fuzziness
 
 - This was advised to me by an agent when I was having trouble because my text on my stickies was fuzzy and out of focus, even when I zoomed in
 	- ...although actually in the end I didn't do any of the below. I had more than one browser window open, so I could compare two Murals on two different screens. I closed Mural down in one browser window and then refreshed it in the other, and that fixed it. Then opened it up again in the other browser and it started working again.

@@ -50,17 +50,31 @@
             }
           },
           {
+            "id": "c95b16108083eaac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/organising/tools/Mural.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mural"
+            }
+          },
+          {
             "id": "7a517e4d25e0727d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tips/tech/misc-tech-tips.md",
+                "file": "pages/organising/tools/bandcamp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "misc-tech-tips"
+              "title": "bandcamp"
             }
           },
           {
@@ -124,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "quicktime",
+                "query": "sonos",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/organising/tips/tech/misc-tech-tips.md",
+                "file": "pages/organising/tools/Mural.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of misc-tech-tips"
+              "title": "Outline of Mural"
             }
           },
           {
@@ -254,17 +268,17 @@
       "modalforms:Edit forms": false
     }
   },
-  "active": "7a517e4d25e0727d",
+  "active": "c95b16108083eaac",
   "lastOpenFiles": [
+    "pages/organising/tips/tech/misc-tech-tips.md",
     "pages/organising/tools/bandcamp.md",
+    "pages/organising/tools/Mural.md",
     "pages/think/life/things-i-forget.md",
     "pages/organising/tools/kit.md",
     "pages/organising/podcasts/audacity.md",
     "pages/organising/music/garage-band.md",
-    "pages/organising/tools/Mural.md",
     "pages/organising/tools/canva.md",
     "pages/think/life/psychology/nvc-non-violent-comm.md",
-    "pages/organising/tips/tech/misc-tech-tips.md",
     "pages/organising/tools/obsidian.md",
     "pages/organising/tips/tech/apple-macs-and-ios.md",
     "pages/organising/tips/tech/installing-a-new-mac.md",
