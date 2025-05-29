@@ -435,5 +435,5 @@ Spotlight directory not found at root: /Applications
 ## Edit images in the Preview app
 
 - Sometimes you don't get any edit features and it seems like you can't edit
-  - When this happens, just select View => Show Markup Toolbar
+  - When this happens, just select View => Show Markup Toolbar (near the bottom of the menu), or click the two forward-facing arrows, top right
 - If you want to change the dimensions of an image, use Tools => Adjust Size

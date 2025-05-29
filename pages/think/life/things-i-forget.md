@@ -433,3 +433,7 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 ## Where did I put my notes on what to do when a credit card is replaced?
 
 - Over in clare-tech, in SE Procedures
+
+## Where are all the MyFitnessPal recipes?
+
+- Over in clare-tech, 
