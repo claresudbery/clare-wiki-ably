@@ -211,6 +211,8 @@ re, sorry!)
 
 - Ctrl + cmd + space to embed emojis
   - Windows key + `;` on Windows
+- In Google docs now in Chrome you can just type a colon to get a dropdown
+	- Right-click => menu doesn't work any more - it creates a comment instead of embedding it in the text
 - NB: In google sheets you have to be in the formula input for it to
   work.
 
@@ -517,3 +519,18 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 	- On the right, the various timeslots will be listed, along with reasons they're not available
 	- Click on a time you're interested in, and it will give more info as to why it's not available
 	- Click done when you're done
+## Spotify
+
+### List of Spotify voice commands
+
+- "Hey siri, xxxx on Spotify"
+- From here: [https://support.spotify.com/uk/article/siri-and-spotify/](https://support.spotify.com/uk/article/siri-and-spotify/)
+- I can't get them to work though!
+- Things you should be able to do:
+	- Play songs, artists, albums, playlists, podcasts  
+	- Like music to save it to Your Library  
+	- Tell you what’s currently playing  
+	- Change the volume  
+	- Skip tracks  
+	- Play/pause  
+	- And more!

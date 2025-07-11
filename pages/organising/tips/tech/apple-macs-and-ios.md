@@ -17,6 +17,28 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 - Then, in the Camera app, 
 	- disable Live Photos by tapping the Live Photos icon 
 	- (it will have a slash through it when off). 
+### How to create a new iPhone Siri command
+
+- In Shortcuts app, click plus button top right    
+- search for first action, eg dictate text    
+- search for second action, eg add trello card    
+- the second action will be added after the first    
+- if you want to dictate text, the result will be listed at the bottom as a variable called "dictated text" whenever you have a gap where a variable can go, eg for the name of a Trello card or the content of a note    
+- click the drop down at the top => rename to give it a sensible name    
+- click done    
+- in settings => accessibility, scroll down to vocal shortcuts    
+- it's not just a toggle! You can click through   
+- click Add Action => continue    
+- search for the shortcut you just created    
+- enter the words that will trigger the command  
+    - !!!! The only way I could get this to work for my trello action was for the trigger words to be exactly the same as the name of the command!
+- hit enter on keyboard    
+- say the phrase three times - it's a good idea to wait for the green tick at the end of each repetition
+
+### How do i draw a quick diagram on my phone?
+    
+- Use the ability to draw in the photos app	
+- But also, the Notes app also has some diagram drawing functionality!
 ### Convert live photos to normal ones in ios
 
 - To convert multiple Live Photos to regular still photos on your iPhone, you can use the Photos app to select and save them as still images. You can also use the Shortcuts app to automate this process.  

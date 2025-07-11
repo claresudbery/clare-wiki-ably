@@ -23,6 +23,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [Python wiki](https://wiki.python.org/moin/) and its [language page](https://wiki.python.org/moin/CompLangPython)
 - For learning Python:
   - [Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/)  
+  - [The Python tutorial on python.org](https://docs.python.org/3/tutorial/)
   - [w3schools](https://www.w3schools.com/python/default.asp)
   - [Head First Python (book by Paul Barry)](https://www.amazon.co.uk/Head-First-Python-Paul-Barry/dp/1491919531)  
   - [Python koans](https://github.com/gregmalcolm/python_koans) (they form an interactive tutorial for learning the Python programming language by making tests pass)  
@@ -262,6 +263,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     
       - There are various library functions available
 
+## Using Python for teaching
+
+- (I learnt this from interviewing Andreas Zeller about his great book/teaching tool - [The Debugging Book](https://www.debuggingbook.org/))
+- Python can be run with no scaffolding or setup, and therefore is great for demos and teaching!
+- It can also inspect other programs and itself very easily while running, which makes it great for writing debugging tools
+- Maybe this is why Emily Bache likes it so much! Useful for workshops and teaching?
 ## Language notes
 
 I learnt a lot of the following while working on Llewellyn Falco's duplication kata: https://github.com/LearnWithLlew/DuplicationKata.Python
@@ -279,7 +286,6 @@ I learnt a lot of the following while working on Llewellyn Falco's duplication k
     - Like this: https://github.com/LearnWithLlew/DuplicationKata.Python/blob/2d177b7ee5f2fda372a9f899c503edb65b798ea8/tests/test_regression.py#L103
 
 ### Configuring a diff reporter for Python approval tests
-
 
 
 ### Enums

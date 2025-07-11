@@ -115,6 +115,7 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 
 - Return all the cells that match the search criteria
 - The good thing about this is that you can search one col but return the contents of another col in the same row
+	- You can also search more than one col - see [[#Using FILTER to search more than one col|below]]
 - For instance: `=FILTER(D2:E10,C2:C10=A1)`
   - This will return all the values in `D2:E10` (so, two cols of data)
   - ...but only for those rows where the value in col C equals the value in `A1`
@@ -123,6 +124,14 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - ...but only for those rows where the value in col C _contains_ the value in `A1` as a substring
 - Incidentally, to achieve the same result in Excel, you'd do it like this:
   - `=FILTER(D2:E10,ISNUMBER(SEARCH(A1,C2:C10)),"No results")`
+
+### Using FILTER to search more than one col
+
+
+- For instance: `=FILTER(D2:E10,C2:C10=A1,E2:E10='Splat')`
+  - This will return all the values in `D2:E10` (so, two cols of data)
+  - ...but only for those rows where the value in col C equals the value in `A1`
+	  - ...AND the value in col E equals "Splat"
 
 ## Diff between FILTER and VLOOKUP
 
@@ -472,7 +481,20 @@ Extensions > Apps Script
 
 - If you return a date from a function, it might cme out as an integer instead of a string
 - To ensure a string, use `=TEXT(H1, "dd/mm/yy")`
+## INDIRECT so you can refer to cell references as text
 
+- Example 1: 
+```C
+=INDIRECT("'" // Enclose sheet name in quotes
+  & VLOOKUP(period, Categories!$AI$3:$AJ, 2, 0) // Look up sheet name for period
+  & "'!M:M") // Close quotes and reference big category col
+```
+- Example 2:
+```C
+=INDIRECT("'Current Historic mnthly'!" // Sheet name
+& $S$2 // Fetch col letter from another cell
+& "$1") // Add row number
+``` 
 ## Troubleshooting 
 
 ### Chart can't cope with hours > 240
@@ -491,4 +513,3 @@ Extensions > Apps Script
 - A sample spreadsheet containing a demo of the problem is [here](https://docs.google.com/spreadsheets/d/15JekJRilFscgtecvxids5Bvn4UC-W1RQF6R6zqpgJc8/edit?gid=475101449#gid=475101449)
 - Note that when this problem occurs, it also leads to the error "Those columns are out of bounds" when I try to edit the chart title via a script
 
-### 

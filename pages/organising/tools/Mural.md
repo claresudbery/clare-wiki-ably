@@ -57,3 +57,9 @@
 3. Sign in to Mural from this web address: [https://app.mural.co](https://app.mural.co/) 
 4. If you're still having difficulties, try opening an Incognito/private browsing window in Chrome and repeat step 3 above. 
 5. In many situations these steps will resolve the issue, so please give them a try and let me know how you get on.
+
+## Advanced searching
+
+- If you want to make searches case sensitive or search on whole words
+	- eg if you're trying to search for "AI"!
+- Click the A->T icon top right and select "find and replace" and then you get some advanced search options

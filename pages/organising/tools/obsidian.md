@@ -13,7 +13,7 @@ permalink: /pages/organising/tools/Obsidian
 - [Vault management](#vault-management)
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [[#Customising Obsidian]]
-- [Customising Obsidian](#customising-obsidian)
+	- [[#Configuring a new vault]]
   - [css snippets](#css-snippets) / [[#css snippets]]
   - [Plugins](#plugins)
   - [Variables](#variables)
@@ -257,7 +257,7 @@ permalink: /pages/organising/tools/Obsidian
 ### Variables
 
 - There are various places you can use variables
-- The places I know about are [templates](#templates) and [QuickAdd](#quickadd)
+- The places I know about are [templates](#templates) and [QuickAdd](#quickadd)[]()
 - In templates, you can use them to fill in values, like `{{date}}` in the example [below](#templates)
 - In QuickAdd, you can use them in things like file paths, like in the example [below](#use-quickadd-to-automate-note-and-folder-creation)
 - There are standard Obsidian variables. I know about these three (I don't _think_ there are any more):
@@ -646,7 +646,10 @@ Time: 1 second
     - But if I closed down the problematic one on Desktop and removed it from the vault list (via the three dots nest to the vault name in the vault list), then opened it up again by selecting iCloud Drive in the Finder, it found the right one, synced bwteeen desktop and mobile, and the location in the vault list was listed as `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
     - At this point I could have the same vault open on both desktop and mobile, and changes in either one would sync with a second or two
 
-### Github Sync plugin
+### Github Sync plugin> [!abstract]+ test callout
+> some content
+
+
 
 - Note that in the end I didn't bother trying to get this working on mobile
 - Actually in the end I didn't use it at all, because even on desktop the functionality is limited - eg you can't edit commit messages - they're automatically generated - and I found it just as easy to use my normal GitHub tools (command line and Git?Hub Desktop, fwiw)

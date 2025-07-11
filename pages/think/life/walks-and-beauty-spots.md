@@ -66,6 +66,8 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 ### Yorkshire
 
 - Malham Cove and Gordale Scar
+- The art trail at Hanging Stones, Northdale, Yorkshire. 
+	- [Art by Andy Goldsworthy](https://www.nytimes.com/2025/06/14/arts/design/a-decade-of-bruising-labor-a-6-mile-work-of-land-art.html?unlocked_article_code=1.Sk8.FkJx.wJCwpkjLvDKk&smid=nytcore-ios-share&referringSource=articleShare)
 
 ### Rest of the UK
 

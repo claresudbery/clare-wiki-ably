@@ -24,6 +24,13 @@ Anyway, she told me about a site called descript.com (https://www.descript.com
 
 Ted Young also swears by it for video editing.
 
+## Export / Publish
+
+- Click the Export button top right (used to be Publish)
+- It will recommend that you use the link rather than download
+	- This makes sense, partic as you can make the link publicly sharable...
+	- ...BUT make sure you click on the link before sharing, as it will take time to render it into something people can just click and view
+	- I'm not sure if the rendering happens by default in the background whether you click the link or not, but at least if you click it you can see progress and you'll know when the video is fully rendered and ready to share.
 ## Finding projects that have been shared with you
 
 - Go Home
@@ -41,9 +48,15 @@ Ted Young also swears by it for video editing.
 
 ## Copying clip into new project
 
-- Select text
-- Right click: Duplicate into new composition
-- !! The new project will then be nested under the parent one and will NOT be visible in the main project window. you have to open the original and then there will be a path a t the top - click on the final file name and you'll get a down error allowing you to select other compositions in this project
+- Select text in the transcript
+- Click Export, top right
+- In the destination dropdown, select Local export
+- This will add a bunch of new controls, including an "Export options" dropdown
+- Under Export options, select "Current selection"
+- Click Export
+- That'll allow you to download the selected clip
+- You can then upload that to a new project
+- It's kind of annoying that it forces you to download and re-upload, but there you go.
 
 ## Cutting content using the waveform at the bottom
 
@@ -125,6 +138,19 @@ Ted Young also swears by it for video editing.
 - Place cursor where you want it
 - Press forward slash on the keyboard
 
+## Rename scenes / add chapter headings
+
+- Renaming scenes doesn't seem to be possible, but you can add chapter headings:
+- Either ask Underlord to add chapters, in which case it will come up with (surprisingly good) chapter headings... 
+	- To get it to actually insert them, click Add to script
+- ...or type hash (`#`) in the transcript and type your chapter heading. It will then appear on the left hand side.
+
+## Reorder scenes
+
+- Drag and drop
+- Moving a scene to the start is tricky, but if you persevere you will eventually see a line at the start where you want the scene to go
+- *Infuriatingly*, it immediately renumbers the scenes. So there is no visual indicator on the left to tell you the scenes have been reordered. So you have to check what's in the transcript instead.
+
 ## Insert new audio files
 
 - [add a scene](#add-scenes)
@@ -166,3 +192,25 @@ The second question is, this is a good example of when I want to use the wavefor
 - Select Export
 - Select Transcript or video or audio or whatever you want
 - There is currently a small download button at the bottom (but they do keep changing the interface!)
+
+## Interact with Underlord
+
+- After you've asked it to do something and it makes a suggestion and you want it to go ahead and do the suggestion, you have to click "Follow up" to get the chat window up, then you can type "yes please" or add further instructions.
+# Troubleshooting
+
+## Can't install update, 20/6/25
+
+- What I typed in chat:
+	- "I can't install the latest update. Macbook Pro, Sequoia 15.5 (24F74). I download it, then run the installer, then it opens up Descript (I didn't have it open already), then it complains that Descript is open so it can't install. So I close Descript and click Try again, but the same thing happens again."
+- Then they got me to fill in help request, which required a project link, so I gave them a link to the last-opened project which was Mamma Mia: https://share.descript.com/view/A11oJlh5s1o
+- In the end I restarted my laptop and that fixed it
+
+## Can't tell Underlord what to do, 20/6/25
+
+- What I typed in chat:
+	- "I've asked Underlord to rename scenes. Underlord has made suggestions. Underlord says "would you like me to rename scenes like this?" I want to say "yes please" but I don't understand how!"
+	- They said: "To accept Underlord's suggestion to rename scenes, you can simply type "yes" or "yes please" in the chat or prompt area where Underlord is interacting with you. This should confirm your acceptance of the suggested changes."
+	- I said: "You say type Yes in the chat area. What chat area? There isn't anywhere on screen where I can type anything."
+	- This is what I see, but I can't share screenshots... If I click Add to script it just adds that text to the bottom of the script. 
+	- It turns out what I have to do is click "Follow up" and then there'll be chat area where I can type "Yes"
+	![[Pasted image 20250620114054.png]]

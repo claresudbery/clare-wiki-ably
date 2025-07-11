@@ -92,3 +92,10 @@ I did this by automatically tagging / segmenting people who signed up via differ
 ### Change which posts are featured on subscriber page
 
 - Grow => Creator profile => Newsletter posts (on right)
+
+## Edit published content
+
+- You CAN edit broadcasts when they are web only (not emailed)
+- It's not obvious from the main screen but go to Send => Broadcasts
+- Open the broadcast either by clicking on it or three dots => Open
+- Now you'll see an edit button at the top right

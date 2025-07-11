@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tips/non-tech/misc-non-tech-tips.md",
+                "file": "pages/think/leading/tech-lead-new-project-checklist.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "misc-non-tech-tips"
+              "title": "tech-lead-new-project-checklist"
             }
           },
           {
@@ -97,6 +97,76 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "pages/organising/tools/Xero.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Xero"
+            }
+          },
+          {
+            "id": "e84f68f8a17ccda1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/organising/tools/obsidian.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "obsidian"
+            }
+          },
+          {
+            "id": "113b7bb7263a710c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/organising/podcasts/descript.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "descript"
+            }
+          },
+          {
+            "id": "a1ce3e4f58ef8a4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/organising/tools/Mural.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mural"
+            }
+          },
+          {
+            "id": "022a6f273406c2ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/organising/tools/kit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "kit"
+            }
+          },
+          {
+            "id": "ddefce5316fc775b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "pages/organising/tips/tech/apple-macs-and-ios.md",
                 "mode": "source",
                 "source": false
@@ -106,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -138,7 +208,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "preview",
+                "query": "spotify",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,7 +234,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "a3c22f045402a4f0",
@@ -227,13 +297,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/organising/tips/tech/apple-macs-and-ios.md",
+                "file": "pages/organising/tools/obsidian.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of apple-macs-and-ios"
+              "title": "Outline of obsidian"
             }
           },
           {
@@ -269,34 +339,35 @@
       "modalforms:Edit forms": false
     }
   },
-  "active": "743096d8d0f0c3a4",
+  "active": "c345b736b39b8823",
   "lastOpenFiles": [
-    "pages/think/events/workshops/workshop-types.md",
-    "pages/organising/tools/Mural.md",
-    "pages/coding/infra/cmd/vim.md",
+    "pages/think/life/things-i-forget.md",
+    "pages/organising/tips/non-tech/misc-non-tech-tips.md",
+    "pages/organising/tips/tech/apple-macs-and-ios.md",
+    "pages/organising/tools/misc-tools.md",
+    "pages/think/life/places-to-visit.md",
+    "pages/think/life/walks-and-beauty-spots.md",
     "pages/think/life/health-stuff/food.md",
+    "pages/coding/data/google-sheets.md",
+    "Untitled.md",
+    "pages/coding/data/excel.md",
+    "pages/organising/tools/obsidian.md",
+    "pages/organising/tools/Xero.md",
+    "pages/organising/podcasts/descript.md",
+    "pages/organising/tools/Mural.md",
+    "pages/organising/tools/kit.md",
+    "pages/coding/lang/oo/python.md",
+    "pages/organising/tools/convertkit.md",
+    "resources/images/Pasted image 20250620114054.png",
+    "pages/organising/tools/quickbooks.md",
+    "pages/think/events/workshops/workshop-types.md",
+    "pages/coding/infra/cmd/vim.md",
     "pages/think/life/health-stuff/MyFitnessPal Recipes.md",
     "pages/think/life/health-stuff/MyFitnessPal Meals.md",
     "pages/think/life/health-stuff/MyFitnessPal Foods.md",
     "pages/think/life/health-stuff/health-stuff.md",
     "pages/think/life/health.md",
-    "pages/think/life/things-i-forget.md",
     "pages/organising/tips/tech/misc-tech-tips.md",
-    "pages/organising/tools/bandcamp.md",
-    "pages/organising/tools/kit.md",
-    "pages/organising/podcasts/audacity.md",
-    "pages/organising/music/garage-band.md",
-    "pages/organising/tools/canva.md",
-    "pages/think/life/psychology/nvc-non-violent-comm.md",
-    "pages/organising/tools/obsidian.md",
-    "pages/organising/tips/tech/apple-macs-and-ios.md",
-    "pages/organising/tips/tech/installing-a-new-mac.md",
-    "pages/organising/tips/non-tech/misc-non-tech-tips.md",
-    "pages/coding/tools/rider.md",
-    "pages/coding/data/psql.md",
-    "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
-    "pages/coding/infra/cmd/bash-scripts.md",
-    "resources/scripts/installing-new-mac.md",
     "Templates"
   ]
 }

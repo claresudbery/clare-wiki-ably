@@ -436,4 +436,18 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 
 ## Where are all the MyFitnessPal recipes?
 
-- Over in clare-tech, 
+- See [[MyFitnessPal Meals]] and [[MyFitnessPal Recipes]] 
+
+## Where's that blog post re cards against humanity and Ruby?
+
+- On Haskell, Ruby, and Cards Against Humanity (blog post)  
+[https://www.drmaciver.com/2015/04/on-haskell-ruby-and-cards-against-humanity/](https://www.drmaciver.com/2015/04/on-haskell-ruby-and-cards-against-humanity/ "https://www.drmaciver.com/2015/04/on-haskell-ruby-and-cards-against-humanity/")
+
+## What are lichen?
+
+- Lichen are a symbiotic combination of algae and fungi.
+- Learnt while walking the SouthWest coast path in Cornwall, 30th June '25
+
+## Who helped to build the Minack theatre?
+
+- Billy Rawlings was the guy who helped build the Minack. His cottage is covered in ivy and has corrugated roof
