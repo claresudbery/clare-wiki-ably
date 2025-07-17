@@ -31,7 +31,7 @@ permalink: /pages/organising/tools/Obsidian
   - [Formatting markdown](<#formatting markdown>)
   - [Callouts](<#callouts>)
   - [File / folder management](<#file  folder management>)
-  - Attachments
+  - [[#Attachments and images]]
 - [File syncing](<#file syncing>)
   - [Syncing with Google Drive](<#syncing with google drive>)
   - [Syncing with iCloud](<#syncing with icloud>)
@@ -55,6 +55,7 @@ permalink: /pages/organising/tools/Obsidian
   - [If folders are not in alphabetical order in dropdowns](<#if folders are not in alphabetical order in dropdowns>)
   - [If live preview colours text inside single brackets](<#if live preview colours text inside single brackets>)
   - [If you can't delete a note](<#if you cant delete a note>)
+  - [[#Fixing internal links that use hyphens instead of spaces]]
 
 ## Obsidian Overview
 
@@ -578,6 +579,12 @@ Time: 1 second
 - Rename a file or folder: 
   - Mobile: Long press on the folder name for at least a second, wait for menu to appear - select rename
   - Desktop: Select folder and hit F2
+
+### Attachments and images
+
+- You can just copy / paste an image and it will embed it for you
+- Or place the image in the Attachments folder, which you configure in Settings => Files and links => default location for new attachments
+	- then use this syntax: `![[my-image.jpg]]`
    
 ## File syncing
 
@@ -585,12 +592,6 @@ Time: 1 second
 - You can also place your folder somewhere like [Google Drive](<#syncing with google drive>)
   - but this seems a bit flakier than iCloud, and you have to keep manually pulling and pushing, and it's risky to have files open on both devices at once - whereas iCloud just automatically syncs across devices
 - Or you can use [GitHub](<#github sync plugin>)
-
-## Attachments and images
-
-- You can just copy / paste an image and it will embed it for you
-- Or place the image in the Attachments folder, which you configure in Settings => Files and links => default location for new attachments
-	- then use this syntax: `![[my-image.jpg]]`
 
 ### Syncing with Google Drive
 
@@ -819,7 +820,14 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
 - More [here](https://obsidian.rocks/an-introduction-to-obsidian-properties/)
   - and [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/)
 - To get started with properties...
-	- 
+	- First, stop them from appearing by default at the top of your file: Go to [[#Settings]], and disable Editor > Show properties in document
+	- Now open the [[#Command palette]], type “properties”, and select “Show file properties”
+	- You'll now be able to see them in the panel on the right (Cmd + Alt + B) by clicking the little `i` icon at the top
+	- ...or you can see them at the top of the note using [view source](<#source mode>) 
+- Note that if you copy properties as pure text using [[#Source mode]], they might not work
+	- you might get an error in the panel on the right saying "invalid properties"
+	- I don't know why!
+	- But you can fix this by instead deleting the copied text, clicking Add property in the panel on the right to add any old random property, and then once the property text is added to the top of your file, edit it appropriately.
 - It used to be that properties were added using frontmatter
   - Same as Jekyll! Same as clare-wiki!
   - Like this at top of each file:
@@ -944,7 +952,69 @@ aliases:
 
 ### Fixing internal links that use hyphens instead of spaces
 
-- When they use hyphens instead of spaces, this is called "slugifying"
+- When internal links use hyphens instead of spaces, this is called "slugifying"
+- Whatever markdown tools I was using for internal links before I imported this repo into Obsidian, they did it like this:
+	- If you had a heading that looked like this: `# My Heading`
+	- ...and you wanted to link to that section from elsewhere in the file, you would create a link that looked like this: `[My Heading](#my-heading)`
+	- But sadly Obsidian doesn't understand this syntax. Obsidian, instead of using hyphens to represent spaces in heading titles, uses two possible syntaxes:
+		- This: `[My Heading](#my%sheading)`
+		- ...or this: `[My Heading](<#my heading>)`
+	- The second of those is preferable (easier to read)
+		- (More on this [here](https://forum.obsidian.md/t/internal-links-not-working-with-spaces-in-titles-missing-file-explorer-plugin/92350))
 - What you want to do is unslugify!
-- I haven't found any plugins that do this
-- ChatGPT suggested using Python - see below
+- I couldn't find any plugins that do this
+- By default, Obsidian uses a different syntax for internal links
+	- They're called wikilinks and they look like this: `[[#My Heading]]`
+	- I found a community plugin called Link Converter that changed markdown links to wikilinks, but sadly it couldn't handle hyphens - it didn't understand that they represented spaces. So after conversion, the links still didn't work.
+	- I also tried the Better Markdown Links plugin mentioned in the above [forum link](https://forum.obsidian.md/t/internal-links-not-working-with-spaces-in-titles-missing-file-explorer-plugin/92350/5), but that wasn't any use either.
+- I tried doing it in VS Code with regex that I got from ChatGPT, but that wasn't possible without using Python:
+	- **Find:** `\[\[#([^\]|]+)\|([^\]]+)\]\]`
+	- **Replace with:** `[[#${1//-/ }|${2}]]`
+	- "`//-/` is a **non-standard** syntax. This exact replacement might require scripting (e.g., JavaScript, Python) because vanilla regex replace doesn’t support nested replacement logic (like replacing inside a group result)."
+- I [asked for help on the Obsidian forum](https://forum.obsidian.md/t/trying-to-convert-old-markdown-to-work-in-obsidian-hyphens-in-internal-links/103017), but I solved the problem all by myself before they had a chance to answer
+- In the end I used a Python script suggested by ChatGPT
+	- To be honest I was surprised it worked!
+	- But it did.
+	- I've saved it in `development/python-scripts/fix_links.py`
+	- I ran it via `python3 fix_links.py` in the relevant folder
+	- You have to change the path at the bottom to point at the root of your obsidian vault
+	-  If you comment out the three lines after `if new_content != content:` and uncomment the two print statements after that, you can test the output before running it for real (or just use source control).
+	- Here's the full Python script:
+
+```python
+import os
+import re
+
+def deslugify(slug):
+    return slug.replace('-', ' ')
+
+def process_file(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Find and replace markdown-style links
+    # e.g. [Some Header](#some-header) → [Some Header](<#some header>)
+    new_content = re.sub(
+        r'\[([^\]]+)\]\(#([a-z0-9\-]+)\)',
+        lambda m: f'[{m.group(1)}](<#{deslugify(m.group(2))}>)',
+        content,
+        flags=re.IGNORECASE
+    )
+
+    if new_content != content:
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        print(f"Updated: {file_path}")
+        # print(f"Would update: {file_path}")
+        # print(new_content)
+
+def process_directory(directory):
+    for root, _, files in os.walk(directory):
+        for filename in files:
+            if filename.endswith('.md'):
+                process_file(os.path.join(root, filename))
+
+# 🟡 Change this to your folder path
+target_directory = '/path/to/vault/root'
+process_directory(target_directory)
+```
