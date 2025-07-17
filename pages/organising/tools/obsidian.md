@@ -3,7 +3,7 @@ layout: page
 location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/Obsidian
 ---
-## Contents of this file:
+## Contents of this file
 
 - [Obsidian Overview](<#obsidian overview>)
 - [Useful Obsidian links](<#useful obsidian links>)
