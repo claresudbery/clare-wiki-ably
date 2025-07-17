@@ -117,7 +117,7 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 
 ### Python + Ruby + Rails
 
-- See [Python/Flask / Pytest / Ruby + Rails / rspec](#pythonflask--pytest--ruby--rails--rspec)
+- See [Python/Flask / Pytest / Ruby + Rails / rspec](<#pythonflask  pytest  ruby  rails  rspec>)
 
 ### Github actions + Heroku  / Ruby / Sinatra / rspec
 

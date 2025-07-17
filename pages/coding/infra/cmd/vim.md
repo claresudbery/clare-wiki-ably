@@ -27,9 +27,9 @@ Quick Guide:
       - ...but actually you can just type **$MY** and then tab to
         autocomplete.
   - Searching:
-      - See [separate section below](#searching)
+      - See [separate section below](<#searching>)
   - Navigating files, lines, blocks
-      - See [separate section below](#navigating-files-lines-blocks)
+      - See [separate section below](<#navigating files lines blocks>)
   - Copy / paste:
       - Copy current line (“yank”): **yy** - which is the same as **Y**
       - Paste current clipboard contents below the line you are on (“put”): **p**
@@ -51,7 +51,7 @@ Quick Guide:
           - **C** is to replace from cursor to end of line
           - See also separate section below on navigating blocks
   - Select a vertical column of text (like alt click)
-      - See [separate section below](#vertical-columns-of-text-like-alt-click)
+      - See [separate section below](<#vertical columns of text like alt click>)
   - Text objects:
       - **aw** is a word
       - **iw** is an inner word

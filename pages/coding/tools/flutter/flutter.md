@@ -29,34 +29,34 @@ permalink: /pages/coding/tools/flutter/Flutter
 
 ## Contents of this page:
 
-- [What is Flutter](#what-is-flutter)
-- [Sub-pages](#sub-pages)
-- [Useful links](#useful-links)
-- [Installing Flutter](#installing-flutter)
-- [Create / run new app](#create--run-new-app)
-    - [Command line](#command-line)
-    - [VS Code](#vs-code)
-    - [Flutter tutorial](#flutter-tutorial)
-    - [Getting started in iOS](#getting-started-in-ios)
-    - [IntelliJ IDEA](#intellij-idea)
-- [Dependencies](#dependencies)
-- [Troubleshooting](#troubleshooting)
-- [Hot reload](#hot-reload)
- - [Troubleshoot: Hot reload toolbar missing](#troubleshoot-hot-reload-toolbar-missing)
-- [Widgets](#widgets)
-  - [App state](#app-state)
-  - [Stateless vs Stateful widgets](#stateless-vs-stateful-widgets)
-- [Refactoring in VS Code](#refactoring-in-vs-code)
-- [Seeing possible arguments to a method](#seeing-possible-arguments-to-a-method)
-- [Visual styling and layout](#visual-styling-and-layout)
-  - [Themes](#themes)
-  - [Styling](#styling)
-  - [Centring widgets on the screen](#centring-widgets-on-the-screen)
-  - [Creating space between elements on the screen](#creating-space-between-elements-on-the-screen)
-  - [Preventing visual clashes with OS features](#preventing-visual-clashes-with-os-features)
-  - [Giving a button an icon](#giving-a-button-an-icon)
-  - [Other components helpful for layout](#other-components-helpful-for-layout)
-- [Accessibility](#accessibility)
+- [What is Flutter](<#what is flutter>)
+- [Sub-pages](<#sub pages>)
+- [Useful links](<#useful links>)
+- [Installing Flutter](<#installing flutter>)
+- [Create / run new app](<#create  run new app>)
+    - [Command line](<#command line>)
+    - [VS Code](<#vs code>)
+    - [Flutter tutorial](<#flutter tutorial>)
+    - [Getting started in iOS](<#getting started in ios>)
+    - [IntelliJ IDEA](<#intellij idea>)
+- [Dependencies](<#dependencies>)
+- [Troubleshooting](<#troubleshooting>)
+- [Hot reload](<#hot reload>)
+ - [Troubleshoot: Hot reload toolbar missing](<#troubleshoot hot reload toolbar missing>)
+- [Widgets](<#widgets>)
+  - [App state](<#app state>)
+  - [Stateless vs Stateful widgets](<#stateless vs stateful widgets>)
+- [Refactoring in VS Code](<#refactoring in vs code>)
+- [Seeing possible arguments to a method](<#seeing possible arguments to a method>)
+- [Visual styling and layout](<#visual styling and layout>)
+  - [Themes](<#themes>)
+  - [Styling](<#styling>)
+  - [Centring widgets on the screen](<#centring widgets on the screen>)
+  - [Creating space between elements on the screen](<#creating space between elements on the screen>)
+  - [Preventing visual clashes with OS features](<#preventing visual clashes with os features>)
+  - [Giving a button an icon](<#giving a button an icon>)
+  - [Other components helpful for layout](<#other components helpful for layout>)
+- [Accessibility](<#accessibility>)
 
 ## What is Flutter
 
@@ -99,7 +99,7 @@ flutter run
 
 - From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
 - Create a project/app:
-    - This will create a Flutter project directory that contains a simple demo app that uses [Material Components](#material-components)
+    - This will create a Flutter project directory that contains a simple demo app that uses [Material Components](<#material components>)
     - Cmd + Shift + P (View > Command Palette) => type flutter
     - Flutter: New Project
     - Which Flutter Project => Application
@@ -118,7 +118,7 @@ flutter run
     - Cmd + Shift + P (View > Command Palette) => type flutter 
     - Flutter: Select Device (to select Chrome / browser or ios)
         - Or click bottom right, where it will show you which device is currently selected
-        - you can start a new iOS simulator here if you want (see [iOS notes](#getting-started-in-ios))
+        - you can start a new iOS simulator here if you want (see [iOS notes](<#getting started in ios>))
     - F5 (Run > Start Debugging)
         - Or click the play button, top right
         - if running in iOS for the first time, it downloads ios tools which takes a while
@@ -127,7 +127,7 @@ flutter run
         - But if you then try to go back to the project you originally used to launch the device, it won't be connected to it any more
         - To get control back to IDEA, click the Stop icon (top of screen) in VS Code, and stop the app in IDEA, then run again in IDEA
     - To hot reload: Make a change in main.dart and click the lightning button in the top toolbar
-      - More on this [below](#hot-reload)
+      - More on this [below](<#hot reload>)
 - Navigation
     - Place cursor and right-click
     - For things defined in a library imported at the top of a file, choose right-click => Peek, or Option + F12
@@ -219,7 +219,7 @@ flutter run
 - Even the app itself is a widget 
   - Typically in `main.dart`, you'll see a call to `runApp` with a class passed in
   - That class typically extends `StatelessWidget`
-    - see [below](#stateless-vs-stateful-widgets) for a discussion of stateless vs stateful widgets
+    - see [below](<#stateless vs stateful widgets>) for a discussion of stateless vs stateful widgets
   - In the class definition, you'll see an overridden definition for `Widget build` which returns a `provider` which has a `child` that represents either a page, or a router allowing different pages to be shown for different routes
   - See `main.dart` in [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/3a66e0d844a787c968ea6dc7a07de47d9ec692e0) for a simple example
 - A nice way to see a very simple widget is to extract a widget
@@ -255,7 +255,7 @@ class SillyText extends StatelessWidget {
   - The app widget returns a provider from its build method, but the widgets used to represent pages or screens will typically return a widget or a nested tree of widgets (eg a `Scaffold`)
 - Nested trees of widgets
   - Most widgets have a `child` attribute, and this shows you the parent-child relationship for that part of the widget tree
-- See [below](#stateless-vs-stateful-widgets) for a discussion of stateless vs stateful widgets
+- See [below](<#stateless vs stateful widgets>) for a discussion of stateless vs stateful widgets
 
 ### Stateless vs Stateful widgets
 

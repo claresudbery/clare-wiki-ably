@@ -11,11 +11,11 @@ permalink: /pages/think/code-princ/SOLID
 Below are the five principles that the five letters S, O, L, I and D
 stand for:
 
-  - **S** – [SRP - Single responsibility principle](#s-srp-single-responsibility-principle)
-  - **O** – [OCP - Open/closed principle](#o-ocp-open-closed-principle)
-  - **L** – [LSP - Liskov substitution principle](#l-lsp-liskov-substitution-principle)
-  - **I** - [ISP - Interface Segregation Principle](#i-isp-interface-segregation-principle)
-  - **D** – [DIP - Dependency Inversion Principle](#d-dip-dependency-inversion-principle)
+  - **S** – [SRP - Single responsibility principle](<#s srp single responsibility principle>)
+  - **O** – [OCP - Open/closed principle](<#o ocp open closed principle>)
+  - **L** – [LSP - Liskov substitution principle](<#l lsp liskov substitution principle>)
+  - **I** - [ISP - Interface Segregation Principle](<#i isp interface segregation principle>)
+  - **D** – [DIP - Dependency Inversion Principle](<#d dip dependency inversion principle>)
 
 ## S – SRP - Single responsibility principle
 

@@ -8,25 +8,25 @@ permalink: /pages/coding/tools/flutter/Dart
 
 ## Contents of this page
 
-- [Useful links](#useful-links)
-- [Intro](#intro)
-- [Dart Parameters](#dart-parameters)
-- [Dart Classes](#dart-classes)
-- [The spread operator / ellipsis / three dots](#the-spread-operator--ellipsis--three-dots)
-- [Final and Const](#final-and-const)
-  - [Static consts](#static-consts)
-  - [Trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
-- [Extension methods](#extension-methods)
-- [The dynamic type](#the-dynamic-type)
-- [Lists](#lists)
-- [Sets](#sets)
-- [Maps](#maps)
-- [Generics](#generics)
-- [String interpolation](#string-interpolation)
-- [The double dots / double dot operator](#the-double-dots--double-dot-operator)
-- [=> notation](#-notation)
-- [Equality checks in Dart](#equality-checks-in-dart)
-- [dart format, etc](#dart-format-etc)
+- [Useful links](<#useful links>)
+- [Intro](<#intro>)
+- [Dart Parameters](<#dart parameters>)
+- [Dart Classes](<#dart classes>)
+- [The spread operator / ellipsis / three dots](<#the spread operator  ellipsis  three dots>)
+- [Final and Const](<#final and const>)
+  - [Static consts](<#static consts>)
+  - [Trying to make things const that can't be const](<#trying to make things const that cant be const>)
+- [Extension methods](<#extension methods>)
+- [The dynamic type](<#the dynamic type>)
+- [Lists](<#lists>)
+- [Sets](<#sets>)
+- [Maps](<#maps>)
+- [Generics](<#generics>)
+- [String interpolation](<#string interpolation>)
+- [The double dots / double dot operator](<#the double dots  double dot operator>)
+- [=> notation](<# notation>)
+- [Equality checks in Dart](<#equality checks in dart>)
+- [dart format, etc](<#dart format etc>)
 
 ## Useful links
 
@@ -38,7 +38,7 @@ permalink: /pages/coding/tools/flutter/Dart
 
 - Dart is an object-oriented language with classes and mixin-based inheritance
   - A [mixin](dart-classes.md#mixins) is a special kind of multiple inheritance
-- Every object is an instance of a [class](#classes), and all classes except `Null` descend from `Object`
+- Every object is an instance of a [class](<#classes>), and all classes except `Null` descend from `Object`
 
 ## Dart Parameters
 
@@ -81,14 +81,14 @@ return ListView(
 - Const variables are implicitly `final`.
 - Instance variables can be `final` but not `const`.
 - `final` and `const` can be used either instead of var or in addition to a type
-- If the `const` variable is at the class level, mark it [`static const`](#static-consts)
+- If the `const` variable is at the class level, mark it [`static const`](<#static consts>)
   - `final` instance variables will be unchangeable beyond initialization
   - This means they don't get the implicit setter that other instance vars get
 - The analyzer will encourage you to use `const` when you can, because it optimises compilation
   - But sometimes that leaves you with `const` keywords that cause errors when you try to replace a const with a non-const
     - You might see the error "Invalid constant value"
   - In these cases you can often simply remove a `const` keyword
-  - See [trying to make things const that can't be const](#trying-to-make-things-const-that-cant-be-const)
+  - See [trying to make things const that can't be const](<#trying to make things const that cant be const>)
 
 ```dart
 final name = 'Bob'; // Without a type annotation

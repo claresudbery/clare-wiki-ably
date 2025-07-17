@@ -83,7 +83,7 @@ permalink: /pages/organising/tools/OBS
         - Select a scene
             - Go to sources section, hit plus to add a source
             - Then select the source to change settings (might have to restart OBS if you changed other stuff previously)
-            - Avoid echoes - see [below](#avoid-echoes)
+            - Avoid echoes - see [below](<#avoid echoes>)
             - Select the right display
             - Check "Hide OBS from capture"
             - while the source is selected, hit Cmd + F to fit the capture to your screen
@@ -119,14 +119,14 @@ permalink: /pages/organising/tools/OBS
     - select Audio on left
     - under Mic / Auxiliary Audio (third dropdown), select your input
     - The first two dropdowns ("desktop audio") refer to the sound that comes from your system - eg sounds from apps - you probably want to set these to disabled    
-- [Filter out](#filter-out-background-noise) background noise, otherwise you'll prob get noise from mouse and keyboard
+- [Filter out](<#filter out background noise>) background noise, otherwise you'll prob get noise from mouse and keyboard
 
 ## Avoid echoes
 
 - Disable sound source from "MacOS screen capture"
     - do this by selecting MacOS screen capture under sources (bottom half of screen)
     - then click the microphone icon on the right hand panel under "audio mixer", to mute
-    - otherwise you get echoes if using Krisp microphone (see [below](#filter-out-background-noise))
+    - otherwise you get echoes if using Krisp microphone (see [below](<#filter out background noise>))
     
 ## Filter out background noise
 
@@ -151,7 +151,7 @@ permalink: /pages/organising/tools/OBS
         - You also have to configure it (on main startup screen) to use your preferred mic for sound input
     - then you can go into OBS => Settings => Audio => Mic/Auxiliary and select "krisp microphone"
         - You might have to do this every time you run OBS, and make sure Krisp is running (see above) and using correct input source
-        - !!!! Initially for any scenes that shared my screen, I got echo on audio! See [above](#avoid-echoes) for how to fix this.
+        - !!!! Initially for any scenes that shared my screen, I got echo on audio! See [above](<#avoid echoes>) for how to fix this.
     - To close Krisp down again, the only way I've found so far is via Activity Monitor and Force Quit! 
         - It can be quite intrusive and annoying but it does do the job.
 - [More here](https://krisp.ai/blog/obs-remove-background-noise/)

@@ -48,7 +48,7 @@ curl https://cli-assets.heroku.com/install.sh | sh
     * install ruby and jekyll and heroku stuff: https://blog.heroku.com/jekyll-on-heroku
      	* NB: Change those instructions slightly:
         * Instead of ```ruby-install ruby```, use ```ruby-install``` to install the same Ruby version as specified in Gemfile, like this: ```ruby-install ruby 2.6.5```
-    * MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
+    * MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](<#ruby version stuff>)
 	
 ## Deploying jekyll using heroku: https://blog.heroku.com/jekyll-on-heroku
 * Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/coding/webdev/jekyll/Jekyll-Notes.md) (accessible to Clare only).
@@ -60,7 +60,7 @@ curl https://cli-assets.heroku.com/install.sh | sh
 		* I fixed this by adding these two lines to ~/.bashrc: 
 		* ```source /usr/local/share/chruby/chruby.sh```
 		* ```source /usr/local/share/chruby/auto.sh```
-	* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](#ruby-version-stuff)
+	* MacOS Catalina has the wrong version of Ruby - see [Ruby Version Stuff](<#ruby version stuff>)
 	* Then I installed Heroku CLI: ```curl https://cli-assets.heroku.com/install.sh | sh```
 		* (that's because I got an error when I used the ```snapd``` command: https://superuser.com/questions/1391219/setting-up-heroku-cli-in-wsl)
 		* After that you have to qualify heroku commands like this: ```/usr/local/bin/heroku create```
@@ -149,7 +149,7 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 
 ### Bundler version problems when deploying with Travis
 
-- (see [above for summary](#summary-of-early-2021-versioning-problems))
+- (see [above for summary](<#summary of early 2021 versioning problems>))
 - On or around 30/12/20, starting at around commit e4bb0ba: 
 - Getting the following error in Travis: "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
 /home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
@@ -158,7 +158,7 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 	- This led me down another set of rabbit holes. See commits [484dbf2](https://github.com/claresudbery/clare-wiki-ably/commit/484dbf2) to [b128805](https://github.com/claresudbery/clare-wiki-ably/commit/b128805), to see the various things I tried.
 	- Then I got the following error in Travis: "`bundle exec rake` - rake aborted! Don't know how to build task 'default'", so I added lines to my `Rakefile` as recommended by [this article](https://coderwall.com/p/sdxxaa/travis-ci-don-t-know-how-to-build-task-default).
 		- This was the final action that fixed everything!
-		- ...well, sort of. Sadly it meant that [this formatting problem](#issue-with-site-layout-caused-when-you-push-gemfile-lock-changes) returned.
+		- ...well, sort of. Sadly it meant that [this formatting problem](<#issue with site layout caused when you push gemfile lock changes>) returned.
 		- Also I'm pretty sure it was at this point that I started getting a million warnings on the command line whenever I ran jekyll serve.
 - These are the things I tried before I realised the problem was likely the `rvm` section of `.travis.yml` (see explanation above):
 	- Found [this issue](https://github.com/rbenv/rbenv/issues/1138) and [this article](https://bundler.io/blog/2019/01/04/an-update-on-the-bundler-2-release.html) and [this article](https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html.)
@@ -177,7 +177,7 @@ gem update --system
 
 #### Problems related to the above
 
-- (see [above for summary](#summary-of-early-2021-versioning-problems))
+- (see [above for summary](<#summary of early 2021 versioning problems>))
 - On or around 26/2/21:
 - At some point after the above I started getting deployment errors because there was no `Gemfile.lock` being pushed to source control.
 	- When I committed Gemfile.lock I got internal server errors on every page of the site except the home page.
@@ -198,7 +198,7 @@ gem update --system
 		- I started by merging the dependabot branches
 		- Then I ran [`bundle-audit`](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems#acting-on-security-recommendations-with-bundle-audit) and acted on its recommendations
 		- Then I upgraded jekyll (which I couldn't do without simultaneously upgrading minima and html-proofer - I worked out I needed to update versions in `Gemfile` and also run `bundle update jekyll minima html-proofer` after getting a lot of errors about conflicting dependencies centering on those three gems)
-		- Finally I replaced `redcarpet` with `kramdown`, after getting server errors in `heroku` and realising that the newer version of `Jekyll` didn't support `redcarpet` - [see notes here](#switching-from-redcarpet-to-kramdown)
+		- Finally I replaced `redcarpet` with `kramdown`, after getting server errors in `heroku` and realising that the newer version of `Jekyll` didn't support `redcarpet` - [see notes here](<#switching from redcarpet to kramdown>)
 	- I don't quite understand why, but this still leaves the formatting of the search box screwed up.
 		- Maybe something to do with the version of nokogiri?
 		- Previously (on 30/12/20) in commit 96d475a, I had updated nokogiri from 1.10.4 to 1.10.10, and that got reversed by my changes above

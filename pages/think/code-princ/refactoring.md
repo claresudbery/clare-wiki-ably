@@ -48,18 +48,18 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - Also see individual dedicated sections below for each code base listed here (I'm still building that list, so it may not be complete).
 - Mark Kirschtein's [ferry booking example](github.com/Kirschstein/legacy-ferry-booking-system)
-- Gilded Rose - see [below](#gilded-rose) and [separate dedicated page](/pages/think/code-princ/Gilded-Rose)
+- Gilded Rose - see [below](<#gilded rose>) and [separate dedicated page](/pages/think/code-princ/Gilded-Rose)
 - [JBrains' Trivia](https://github.com/jbrains/trivia) - Mark Kirschtein uses this at legacy coding retreats. It's also been translated into many different languages.
 - Mark Kirschtein says: "Another approach is to take a well known problem, checkout, potterkata etc and do it badly, that way you don't need to explain the domain."
 - Emily Bache has several refactoring katas, recommended by many people:
     - [Parrot Refactoring Kata](https://github.com/emilybache/Parrot-Refactoring-Kata) 
         - described by Jeremy Cook (@JCook21) as "The very simplest example that I know"
-        - more notes [here](#parrot)
+        - more notes [here](<#parrot>)
     - [Tennis Refactoring Kata](https://github.com/emilybache/Tennis-Refactoring-Kata)  
         - My fork is [here](https://github.com/claresudbery/Tennis-Refactoring-Kata/branches) - used to demo various bits of refactoring 
             - Branches are listed [here](https://github.com/claresudbery/Tennis-Refactoring-Kata/blob/clare-fork-readme/README.md)
             - I have some videos to go with them - at the time of writing (May '22) in the coding videos folder in SSE GDrive
-        - Jeremy Cook (@JCook21) says if [Parrot example](#parrot) too simplistic then Tennis kata might work well.
+        - Jeremy Cook (@JCook21) says if [Parrot example](<#parrot>) too simplistic then Tennis kata might work well.
         - Here's a video of @Arkency tackling the [tennis refactoring kata in Ruby](https://www.youtube.com/watch?v=swokhWHKDmc)
         - Note I had some difficulty getting this running in Visual Studio. 
             - First I had to install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (free Community version)
@@ -123,7 +123,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### Product Export
 
 - Used to demonstrate using coverage to design approval tests
-    - See [coverage](#coverage) section
+    - See [coverage](<#coverage>) section
 - Code is [here](https://github.com/emilybache/Product-Export-Refactoring-Kata)
 - Possible workshop exercise is [here](https://sammancoaching.org/learning_hours/approval_testing_legacy/verify_xml_reports.html)
 - Notes to get started
@@ -145,7 +145,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - It's all about stock having a sell by date and quality degrading with age.
 - It has been translated into many different languages by Emily.
 - Emily has also added one failing test and some test fixtures for text-based approval testing.
-    - See section below on [approval testing](#approval-testing)
+    - See section below on [approval testing](<#approval testing>)
 - There are various different types of thing that age in different ways:
     - Some things increase in quality over time rather than decrease.
     - Some things don't decrease at a constant rate.
@@ -159,8 +159,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 - There are three videos made by Emily detailing some really interesting Gilded Rose refactoring:
     - Part 1: [Using CombinationApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=zyM2Ep28ED8)
-        - See [coverage](#coverage) section
-        - See [below](#combination-approvals) for description of combination approvals
+        - See [coverage](<#coverage>) section
+        - See [below](<#combination approvals>) for description of combination approvals
         - See [mutation testing page](/pages/think/code-princ/testing/mutation-testing.md) for more on that
         - She looks at the values in the if statements, for instance `if (value < CONSTANT)` and guesses that therefore if you make your inputs be close to the guard value (`CONSTANT`), you are likely to find edge cases
         - Then she adds approval tests using those values
@@ -187,14 +187,14 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - For Gilded Rose, to run approval tests in Java, you need to update the `pom` file
     - See demo in Emily's video, starts timestamp 2:07 [here](https://www.youtube.com/watch?v=zyM2Ep28ED8&t=127s)
 - For gilded rose and C#, there are at least two ways of running approval tests:
-    - [`ApprovalTests` nuget package](#gilded-rose-c-approval-testing-with-nuget-approvaltests-package)
-    - [`texttest` tool](#gilded-rose-c-approval-testing-with-texttest-tool)
+    - [`ApprovalTests` nuget package](<#gilded rose c approval testing with nuget approvaltests package>)
+    - [`texttest` tool](<#gilded rose c approval testing with texttest tool>)
 - For notes on running approval tests in Python, see Python.md
 - For more examples of approval tests, see my various learning hour notes
 
 #### Gilded Rose C# Approval testing with nuget ApprovalTests package
 
-- Note that another C# approvals tool is also available - see [below](#verify-approval-testing-tool). But otherwise...
+- Note that another C# approvals tool is also available - see [below](<#verify approval testing tool>). But otherwise...
 - If you're running the gilded rose code in C#, there's an approval testing tool which is being used
 - It's [this tool](https://github.com/approvals/ApprovalTests.Net)
     - That page linked to above gives an example of verifying an array

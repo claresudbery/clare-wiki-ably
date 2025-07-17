@@ -29,7 +29,7 @@ When working in person, you often want to mix groups up so that people interact 
     - Give everyone a number from 1 to 5 by just counting along the row: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...
     - Label five areas 1 to 5
     - Tell everyone to go find the area with the number they've been given
-- To rotate pairs in person, see [rotating pairs in person](#rotating-pairs-in-person)
+- To rotate pairs in person, see [rotating pairs in person](<#rotating pairs in person>)
 
 ### Rotating pairs in person
 
@@ -93,7 +93,7 @@ There are a couple of activities below that benefit from these types of question
 (Each bullet point represents a different activity! This is not all one activity. The ones in more detail are listed below this initial section)
 
 - Lots of great ideas in the [energiser section of funretrospectives.com](https://www.funretrospectives.com/category/energizer/)
-- See [section above](#creating-pairs-or-groups) for ideas on how to create random groups
+- See [section above](<#creating pairs or groups>) for ideas on how to create random groups
   - Not generally an issue when remote / online, but useful when in person
 - Speed networking 
   - Based on the concept of speed dating, but DON'T call it this
@@ -101,10 +101,10 @@ There are a couple of activities below that benefit from these types of question
   - Simple but very effective!
   - Put pairs or threes together
   - Give them 5 minutes or less, depending how many people and how much time you have. 
-  - Give them starter questions to use if they're stuck for conversation topics, but it's not mandatory to use them. For suggestions, see [Getting-to-know-you Questions](#useful-getting-to-know-you-questions).
+  - Give them starter questions to use if they're stuck for conversation topics, but it's not mandatory to use them. For suggestions, see [Getting-to-know-you Questions](<#useful getting to know you questions>).
   - If remote: 
     - Put people into breakout rooms, randomly assigned.
-  - If in person, see [rotating pairs in person](#rotating-pairs-in-person)
+  - If in person, see [rotating pairs in person](<#rotating pairs in person>)
 - Write down something nobody knows about you, then we have to guess which one is who.
     - In person:
       - this goes on folded pieces of paper. 
@@ -112,17 +112,17 @@ There are a couple of activities below that benefit from these types of question
       - Get people to add cards to a Trello board or similar
       - Or you can use a spreadsheet and just agree to not pay attention to who's writing what. The more people, the less likely people will register who wrote what.
 - Use paper and crayons (and glue and whatever else you want to give them) to introduce yourself.
-- [Composite superheroes](#composite-superheroes)
+- [Composite superheroes](<#composite superheroes>)
 - Say three surprising things about yourself (two true, one false), then everybody asks you questions to find out more, then everyone has to guess which one's false.
 - Get everyone to paste a baby pic of themselves into a spreadsheet (give them a few days to get this part done).
     - Then everyone has to guess who's who.
-- [Pair intros](#pair-intros)
+- [Pair intros](<#pair intros>)
 
 ### Pair intros
 
-- See [section above](#creating-pairs-or-groups) for ideas on how to create random pairs or groups
+- See [section above](<#creating pairs or groups>) for ideas on how to create random pairs or groups
 - Split into pairs and share the answer to a question. Then share your partner's answer with the rest of the group. 
-- For question suggestions, see [Getting-to-know-you Questions](#useful-getting-to-know-you-questions).
+- For question suggestions, see [Getting-to-know-you Questions](<#useful getting to know you questions>).
 - If in person:
   - postits round the outside numbered 1 to n, one postit per pair, each postit has a different warmup question
   - tell each other answers to questions
@@ -176,7 +176,7 @@ There are a couple of activities below that benefit from these types of question
       - https://tinyurl.com/aca-image09
       - https://tinyurl.com/aca-image10
       - https://tinyurl.com/aca-image11    
-    - Follow [this link](#blind-drawing-answers) to know what the above images are.
+    - Follow [this link](<#blind drawing answers>) to know what the above images are.
     - You can use [this wheel link](https://wheelofnames.com/v7d-vyw) to get a random image link selector (expires ater 365 days), or create a new one copying in the above list of links.
 - everybody gets a different simple object / image
 - in person: 

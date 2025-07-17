@@ -56,7 +56,7 @@ You can access vars in permalinks, eg **permalink: /:categories** will mean that
 
 Other vars available are :year, :month, :day, :title. You can also add your own cutom extension at the end, eg **permalink: /:categories/:title.html**.
 
-!! See [Permalinks not working unless you do them in a certain way](#permalinks-not-working-unless-you-do-them-in-a-certain-way) below.
+!! See [Permalinks not working unless you do them in a certain way](<#permalinks not working unless you do them in a certain way>) below.
 
 ## Changing _config.yml
 
@@ -145,12 +145,12 @@ kramdown:
   auto_ids: true
 {% endhighlight %}
 
-Then you can link to a section [like this](#draft-posts).
+Then you can link to a section [like this](<#draft posts>).
 
 In the raw markdown that looks like this:
 
 {% highlight markdown %}
-Then you can link to a section [like this](#draft-posts).
+Then you can link to a section [like this](<#draft posts>).
 {% endhighlight %}
 
 ## Table of Contents
@@ -198,4 +198,4 @@ You can see where I've used it in `_includes/recursive-subfolders.html` and `_la
 
 !! After adding the plugin, you have to restart the Jekyll server, otherwise you'll get an error because it can't find the new plugin.
 
-For installing plugins see [here](#jekyll-plugins).
+For installing plugins see [here](<#jekyll plugins>).

@@ -137,11 +137,11 @@ Longer Summary:
         - defaults to only displaying terminal processes active under the current user
         - but `ps aux` gives you more and therefore more useful
         - pipe to `more` to see pages of output one at a time: `ps aux | more`
-- [See below](#diagnosing-a-constantly-spinning-fan) for what to do if fan keeps going off
+- [See below](<#diagnosing a constantly spinning fan>) for what to do if fan keeps going off
 
 ### Diagnosing a constantly-spinning fan
 
-- Start with [Activity Monitor](#finding--quitting-running-apps)
+- Start with [Activity Monitor](<#finding  quitting running apps>)
 - Useful article with more tips [here](https://mackeeper.com/blog/fix-macbook-pro-fan-noise-loud/)
     - When it says hold down D and then select a language, it just means the d key on your keyboard, not specifically upper case D.
     - When it says select a language, after you have done that just wait. No need to click on either of the buttons below ("shut down" and "restart").
@@ -184,7 +184,7 @@ killall SystemUIServer
   - Go to a folder you know the path for: Cmd+Shift+G
   - Show hidden files : `Cmd + Shift + Dot`
     - You might also have to run these lines in the terminal (from [here](https://apple.stackexchange.com/questions/280736/folder-displaying-in-terminal-but-not-finder)): `defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder`
-- [System preferences](#system-preferences-top-tips)
+- [System preferences](<#system preferences top tips>)
 - [shortcuts tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=ba3426a1-35e2-47d5-888d-445432271c8c&query=tag%1Fshortcuts%1FtagGuid%3A830603fb-b0ba-403f-9177-3e3ae2b8a9a0%1Eview%3AVIEW%2FALL_NOTES&)
  
 ### Problems with headphones
@@ -198,7 +198,7 @@ killall SystemUIServer
 ### Laggy mouse
 
 - plug-in USB trackball mouse lagging or being jerky (not responding at all then suddenly catching up)
-- I found something online suggesting you [reset the SMC](#resetting-the-smc)
+- I found something online suggesting you [reset the SMC](<#resetting the smc>)
 - I also foudn something suggesting closing down background apps
 - and someting saying turn bluetooth keyboard on and off
 - and restart laptop
@@ -358,7 +358,7 @@ killall SystemUIServer
   - Now that Spotlight search has been disabled, it’s time to turn it back on again which will force the index to rebuild: `sudo mdutil -Ea -i on`
     - When I did this, the feedback on the command line only said it was enabling the index on `/System/Volumes/Data`
     - No matter what I did, it always said it was working with `/System/Volumes/Data` and ignore my requests to make changes to other folders
-      - See copy of command line [below](#what-happened-when-i-tried-to-rebuild-spotlight-index-from-command-line)
+      - See copy of command line [below](<#what happened when i tried to rebuild spotlight index from command line>)
     - But the day after I did all of this, my index on `/Applications` was rebuilt. 
       - I don't know if that was because of what I did on the command line or because I was leaving my machine on overnight, which was another piece of advice from [this article](https://osxdaily.com/2024/11/11/how-to-fix-spotlight-search-issues-on-macos-sequoia/).
   - Let the Spotlight index rebuilding process complete, this can take many hours depending on how much data you have on the Mac, so just let it run in the background

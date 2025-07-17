@@ -8,19 +8,19 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
 
 ## Contents of this page:
 
-- [Creating a simple test project](#creating-a-simple-test-project)
-- [Testing dependency injection](#testing-dependency-injection)
-- [Testing blocs](#testing-blocs)
-- [Run tests](#run-tests)
-- [Testing firebase code](#testing-firebase-code)
-  - [Mocking Firebase](#mocking-firebase)
-  - [Testing real-time Firebase queries](#testing-real-time-firebase-queries)
-- [Useful mocking tips](#useful-mocking-tips)
-  - [When and how to use When](#when-and-how-to-use-when)
-  - [Troubleshooting Null is not a subtype of type Future](#troubleshooting-null-is-not-a-subtype-of-type-future)
-  - [Named params in when clauses](#named-params-in-when-clauses)
-  - [Inspecting what has been passed to a mock](#inspecting-what-has-been-passed-to-a-mock)
-- [Testing the return value of a dialog](#testing-the-return-value-of-a-dialog)
+- [Creating a simple test project](<#creating a simple test project>)
+- [Testing dependency injection](<#testing dependency injection>)
+- [Testing blocs](<#testing blocs>)
+- [Run tests](<#run tests>)
+- [Testing firebase code](<#testing firebase code>)
+  - [Mocking Firebase](<#mocking firebase>)
+  - [Testing real-time Firebase queries](<#testing real time firebase queries>)
+- [Useful mocking tips](<#useful mocking tips>)
+  - [When and how to use When](<#when and how to use when>)
+  - [Troubleshooting Null is not a subtype of type Future](<#troubleshooting null is not a subtype of type future>)
+  - [Named params in when clauses](<#named params in when clauses>)
+  - [Inspecting what has been passed to a mock](<#inspecting what has been passed to a mock>)
+- [Testing the return value of a dialog](<#testing the return value of a dialog>)
 
 ## Creating a simple test project
 
@@ -146,8 +146,8 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
     - (otherwise, if you try to do `thenReturn(null)`, you get the error "The argument type 'Null' can't be assigned to the parameter type 'Future<void>'")
     - Note that if the return value is `Future<void>` then it only needs stubbing if the test itself actually uses the `await` keyword. If the `await` keyword is (for instance) in the `onSubmit()` method for a widget and the test uses `await tester.pumpWidget`, then you don't actually need to stub the method that returns `Future<void>`.
         - I'm still a little confused by this, but I've proved it's the case for the call to `usersRepository.createUserIdentity` in `display_name_test`
-- See [below](#named-params-in-when-clauses) if you have named params in the thing you are mocking
-- See [below](#troubleshooting-null-is-not-a-subtype-of-type-future) for errors caused by bad config of `when` clauses
+- See [below](<#named params in when clauses>) if you have named params in the thing you are mocking
+- See [below](<#troubleshooting null is not a subtype of type future>) for errors caused by bad config of `when` clauses
 
 ### Troubleshooting Null is not a subtype of type Future
 
@@ -181,7 +181,7 @@ Future<void> createUserIdentity(
 - Mostly when stubbing, you can pass `_` through to say you don't care what the params are
     - Like this: `.thenAnswer((invocation) => Future.value(challengee));`
         - More [here](https://pub.dev/packages/mockito)
-    - ...but if you want to know more about exactly what was passed through to a mock, see [below](#inspecting-what-has-been-passed-to-a-mock)
+    - ...but if you want to know more about exactly what was passed through to a mock, see [below](<#inspecting what has been passed to a mock>)
 
 ### Inspecting what has been passed to a mock
 

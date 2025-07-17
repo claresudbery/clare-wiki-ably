@@ -112,7 +112,7 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 - then select `tsc:build` from the menu 
   - you might have to scroll down to the bottom of the list of options
     - but once you've selected it, it will float up to the top of the menu next time
-  - (See [default build task](#set-as-default-build-task) for how to avoid selecting from menu)
+  - (See [default build task](<#set as default build task>) for how to avoid selecting from menu)
 - This will create a `*.js` and a `*.js.map` file for each of your typescript files.
   - sourceMap files (`*.js.map`) allow you to focus on your typescript files even though the actual underlying code is in a javascript file.
 - (See below for how to get it happening automatically)
@@ -124,7 +124,7 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 - then select `tsc:watch` from the menu 
   - you might have to scroll down to the bottom of the list of options
     - but once you've selected it, it will float up to the top of the menu next time
-  - (See [default build task](#set-as-default-build-task) for how to avoid selecting from menu)
+  - (See [default build task](<#set as default build task>) for how to avoid selecting from menu)
 - This will create a `*.js` and a `*.js.map` file for each of your typescript files, every time you edit any file.
   - sourceMap files (`*.js.map`) allow you to focus on your typescript files even though the actual underlying code is in a javascript file.
 - !! If you have constant tests running in the background as well as automatic transpilation:
@@ -158,8 +158,8 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
   - It's all about the `package.json` ["scripts" setting](/pages/coding/tools/testing/jest.md#running-only-subsets-of-tests)
   - It should be possible to fix this with the right regex in the `testPathPattern` section, but I couldn't get this working because I'm hopeless at regex
     - I asked a Stack Overflow question about it [here](https://stackoverflow.com/questions/74141047/how-to-create-simple-readable-regex-that-matches-either-of-two-possible-file-pat)
-  - So in the end I gave up and used the [making files invisible](#making-derived-files-invisible-in-vs-code) method.  
-- An alternative to this method is to [make derived files invisible](#making-derived-files-invisible-in-vs-code).
+  - So in the end I gave up and used the [making files invisible](<#making derived files invisible in vs code>) method.  
+- An alternative to this method is to [make derived files invisible](<#making derived files invisible in vs code>).
 
 ## Making derived files invisible in VS Code 
 

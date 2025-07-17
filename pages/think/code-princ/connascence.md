@@ -9,9 +9,9 @@ permalink: /pages/think/code-princ/Connascence
 - There's a great site [here](https://connascence.io) that describes connascence in more detail than I have here, and with lots of examples.
 - Good blog post here.
 - Connascence is a way of measuring / describing the way in which software elements are coupled.
-- There are three connascence metrics: locality, degree and strength ([see below](#connascence-metrics)). 
-- Connascence can be either dynamic or static (see [below](#dynamic-vs-static))
-- There are several [types of connascence](#types-of-connascence).
+- There are three connascence metrics: locality, degree and strength ([see below](<#connascence metrics>)). 
+- Connascence can be either dynamic or static (see [below](<#dynamic vs static>))
+- There are several [types of connascence](<#types of connascence>).
 - @KevinRutherford and @JJeffries1 have a [good refactoring video](https://www.youtube.com/watch?v=fSr8LDcb0Y0) from XP Manchester which goes over the usage of connascence. 
 
 ## Connascence metrics
@@ -22,7 +22,7 @@ There are three connascence metrics: locality, degree, strength. They are listed
 
 How close two entities are to each other. 
 
-See [below](#locality-and-strength) for an explanation of why locality and strength should be considered in conjunction with one another.
+See [below](<#locality and strength>) for an explanation of why locality and strength should be considered in conjunction with one another.
 
 ### Degree
 
@@ -32,9 +32,9 @@ The number of entities that are affected.
 
 The ease with which the type of coupling can be refactored.
 
-See [below](#locality-and-strength) for an explanation of why locality and strength shlud be considered in conjunction with one another.
+See [below](<#locality and strength>) for an explanation of why locality and strength shlud be considered in conjunction with one another.
 
-This useful diagram (by @KevinRutherford, via [DZone](https://dzone.com/articles/about-connascence)) lists the types of connascence in strength order - where red is strong and green is weak ("convention" equates to "meaning", and see [below](#dynamic-vs-static) for dynamic/static distinction):
+This useful diagram (by @KevinRutherford, via [DZone](https://dzone.com/articles/about-connascence)) lists the types of connascence in strength order - where red is strong and green is weak ("convention" equates to "meaning", and see [below](<#dynamic vs static>) for dynamic/static distinction):
 
 ![connascence-o-meter.png](/resources/images/connascence-o-meter.png)
 

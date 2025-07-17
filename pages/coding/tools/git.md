@@ -132,7 +132,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - If you get an error like this: "ERROR: Permission to repo/reponame.git denied to claresudbery.
 fatal: Could not read from remote repository. Please make sure you have the correct access rights
 and the repository exists."
-  - It might be that you need to set up ssh access (see [below](#use-ssh-to-access-repos-instead-of-https))
+  - It might be that you need to set up ssh access (see [below](<#use ssh to access repos instead of https>))
   - It might be that you're using ssh access instead of https (or vice versa) - check the remote origin url configured in `.git/config`
   - It might be that someone has added you as a collaborator but you have ***forgotten to accept the invite***. Check your email!!
 
@@ -160,14 +160,14 @@ and the repository exists."
 
 ## Use ssh to Access Repos (instead of https)
 
-  - Are you sure you want ssh, and not [personal access token](#use-personal-access-token-to-access-repos)?
+  - Are you sure you want ssh, and not [personal access token](<#use personal access token to access repos>)?
 
   - Ssh stuff:
     [<span class="underline">https://help.github.com/en/articles/connecting-to-github-with-ssh</span>](https://help.github.com/en/articles/connecting-to-github-with-ssh)
 
   - Note that I now have two scripts in my scripts repo - `add-ssh-key-mac` and `add-ssh-key-win` that help with this.
 
-  - For error "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" see [below](#troubleshooting-error-warning-remote-host-identification-has-changed)
+  - For error "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!" see [below](<#troubleshooting error warning remote host identification has changed>)
 
   - This is what I did to get ssh up and running in the Chef repo - I
     did this twice, for both VM and local laptop:
@@ -1131,7 +1131,7 @@ and the repository exists."
 
 ### git merge
 
-- See also [strategies for avoiding tricky merges](#to-avoid-tricky-merges-when-merging-pull-requests) below
+- See also [strategies for avoiding tricky merges](<#to avoid tricky merges when merging pull requests>) below
 - See “Checkout / Branch / Merge / Pull Confusions” above for full
   explanation of where `merge` fits into the process
 - Merge changes from one branch to another

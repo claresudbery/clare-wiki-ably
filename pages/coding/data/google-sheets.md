@@ -157,7 +157,7 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - If you want to return an empty string if the `VLOOKUP` fails to find a result, wrap it in `IFERROR`:
   - `=IFERROR(VLOOKUP(A1,C2:E10,3,0),"")`
 - If you want to return not just a single value but a sum of values in many cols...
-  - First of all, if it's a simple example, maybe you just want [SUMIF or SUMIFS](#sumif-to-calculate-all-the-values-that-relate-to-a-condition)?
+  - First of all, if it's a simple example, maybe you just want [SUMIF or SUMIFS](<#sumif to calculate all the values that relate to a condition>)?
   - See this spreadsheet for an illustration of the different approaches: https://docs.google.com/spreadsheets/d/16pQ6E9zYMN1zaNgM6gCVA-b2UalYj2UhgTsyiv3j0rw/edit?gid=1372164098#gid=1372164098
   - First approach:
     - Use `FILTER` instead of `VLOOKUP`: `=SUM(FILTER(D2:E10,C2:C10=A1))`
@@ -294,8 +294,8 @@ Hoping somebody can help! Thank you."
 
 ## SUMIF to calculate all the values that relate to a condition
 
-- (If you want to AND multiple conditions, see below - [SUMIFS](#sumifs-to-calculate-all-the-values-that-relate-to-multiple-conditions))
-- Note that the values to be summed are the LAST param - which is the opposite to `SUMIFS` (see below - [SUMIFS](#sumifs-to-calculate-all-the-values-that-relate-to-multiple-conditions)))
+- (If you want to AND multiple conditions, see below - [SUMIFS](<#sumifs to calculate all the values that relate to multiple conditions>))
+- Note that the values to be summed are the LAST param - which is the opposite to `SUMIFS` (see below - [SUMIFS](<#sumifs to calculate all the values that relate to multiple conditions>)))
 - Like this: `=SUMIF(C2:C300, "=y", D2:D300)`
   - This means add all the values in the D col from rows where the C col has the value "y"
 - ...or this: `=SUMIF(B2:B300, ">="&start_date, D2:D300)`
@@ -305,7 +305,7 @@ Hoping somebody can help! Thank you."
 
 - Like this: `=SUMIFS(D2:D300, C2:C300, ">="&start_date, B2:B300, ">="&start_date)`
   - This means add all the values in the D col from rows where the C col has the value "y" AND the B col has a date less than the specified start date
-- Note that the values to be summed are the FIRST param - which is the opposite to `SUMIF` (see above - [SUMIF](#sumif-to-calculate-all-the-values-that-relate-to-a-condition)))
+- Note that the values to be summed are the FIRST param - which is the opposite to `SUMIF` (see above - [SUMIF](<#sumif to calculate all the values that relate to a condition>)))
 
 ## SUMIF or SUMIFS where one condition is that a value exists in a range
 
@@ -315,7 +315,7 @@ Hoping somebody can help! Thank you."
   - To add all the C-col values from rows whose B col has a value that exists in range `'Values'!A2:A100` AND whose D-col val = "YES":
     - `=SUM(SUMIFS(C2:C50,B2:B50,WRAPROWS('Values'!A2:A100,1),D2:D50,"YES"))`
   - To add all the C-col values from rows whose B col has a value that exists in EITHER the range `'Values'!A2:A100` OR the range `'Values'!B2:B100` AND whose D-col val = "YES":
-    - (Use `VSTACK` to combine two cols - see [below](#stack-multiple-cols-on-top-of-each-other-to-make-one-col))
+    - (Use `VSTACK` to combine two cols - see [below](<#stack multiple cols on top of each other to make one col>))
     - `=SUM(SUMIFS(C2:C50,B2:B50,WRAPROWS(VSTACK('Values'!A2:A100,'Values'!B2:B100),1),D2:D50,"YES"))`
 - Explanation:
   - In other circumstances you could just say `B2:B50 IN 'Values'!A2:A100`
@@ -384,7 +384,7 @@ Hoping somebody can help! Thank you."
 ### Having chart titles that change dynamically in response to source data
 
 - You need a script
-- See [below](#using-a-script-to-dynamically-change-chart-titles)
+- See [below](<#using a script to dynamically change chart titles>)
 
 ## Google Apps Scripts
 
@@ -411,7 +411,7 @@ Hoping somebody can help! Thank you."
 ### Using a script to dynamically change chart titles
 
 - See explanation [here](https://benlcollins.kit.com/posts/sheets-tip-272-dynamic-chart-heading-in-sheets) (scroll down a little)
-- For documentation of useful methods, see [above](#scripts-and-chartsgraphs)
+- For documentation of useful methods, see [above](<#scripts and chartsgraphs>)
 - My example:
 
 ```javascript

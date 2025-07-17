@@ -120,10 +120,10 @@ You can output query results to a file by running the following command:
       - **Port**: 5432
       - **Maintenance database**: database-name
       - **User name**: \[your db user name\] (follow instructions
-        [here](#create-yourself-a-database-user)
+        [here](<#create yourself a database user>)
         if needed)
       - **Password**: \[your db password\] (follow instructions
-        [here](#create-yourself-a-database-user)
+        [here](<#create yourself a database user>)
         if needed)
   - On the SSL tab:
       - load up your client certificate (xxx.crt), client certificate
@@ -157,7 +157,7 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
 
 ### Access GovPaaS databases using pgAdmin
 
-  - If this is is your first time, see [section on getting started](#your-first-time)
+  - If this is is your first time, see [section on getting started](<#your first time>)
     .
   - Run `cf conduit database-name` - where `database-name` is the database
     you're connecting to

@@ -125,7 +125,7 @@ Menti.com 4455 1044
 
 ## 3/9/21, Emily Bache - Samman technical coaching 
 
-I turned this into a Twitter thread [here](https://twitter.com/ClareSudbery/status/1434130606976339968?s=20). The actual content of the tweets is [here](#emily-bache-talk---tweets).
+I turned this into a Twitter thread [here](https://twitter.com/ClareSudbery/status/1434130606976339968?s=20). The actual content of the tweets is [here](<#emily bache talk   tweets>).
 
 * My tweet thread of these notes is here: https://twitter.com/ClareSudbery/status/1434130606976339968?s=20
 * Samman = Swedish, means "together".

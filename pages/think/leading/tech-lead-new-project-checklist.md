@@ -9,9 +9,9 @@ permalink: /pages/think/leading/Tech-Lead-New-Project-Checklist
 - The original list is [here](https://insimpleterms.blog/the-tech-leads-new-project-checklist). I'm starting to add to it. There are five new sections below that I added to the InSimpleTerms post on 11th July '25:
 	- [[#Extra Tech Checks]]
 	- [[#Processes]]
-	- [Building New Relationships](#building-new-relationships) 
+	- [Building New Relationships](<#building new relationships>) 
 	- [[#Outcomes and Stories]]
-	- [Potential Pitfalls](#potential-pitfalls) 
+	- [Potential Pitfalls](<#potential pitfalls>) 
 
 ## Extra Tech Checks
 

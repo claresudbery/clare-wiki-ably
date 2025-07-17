@@ -9,7 +9,7 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 
 - Boostnote (quite limited and not cross platform)
 - Alex's clare-bot (needed quite a lot of work and only worked in Slack)
-- [dokuwiki](#dokuwiki)
+- [dokuwiki](<#dokuwiki>)
 - [Simple Note](https://blog.danhhz.com/simplenote-934cb2a5e50b), the one Joe Ray found for me
 - [Bear](https://bear.app/) - shown to me by Phil from TW but only works on Mac / iOS
 - [Notion](https://www.notion.so)
@@ -47,7 +47,7 @@ I also made another amendment to add a heading to each toc: [commit ebb8600](htt
 Other possible tools:
 
 - [Simple online tool that will generate a markdown table of contents](https://ecotrust-canada.github.io/markdown-toc/)
-- [command line tool for non-Jekyll markdown files (gh-md-toc)](#gh-md-toc-command-line-tool)    
+- [command line tool for non-Jekyll markdown files (gh-md-toc)](<#gh md toc command line tool>)    
 - [python tool](https://gist.github.com/live-wire/fdcd9adaf4738fcabb0af47a28b7b279)
     - "Use toc.py which is a tiny python script which generates a table-of-contents for your markdown.
     - Usage:
@@ -106,7 +106,7 @@ My version of the script can be found [here](/resources/scripts/gh-md-toc).
 * Issues:
     * Unnecessary blank lines are created between bullet points
         * I orignally solved this in [wiki-doc-convert](/resources/scripts/wiki-doc-convert) using the sed command `sed -i '/^[[:space:]]*$/d' $md_path`, but that didn't work because Jekyll couldn't parse sub headings with no proper line break (or something). I dunno but anyway all the sub headings got lost when Jekyll rendered the markdown. I
-        * Instead I used a `lua` solution, also in [wiki-doc-convert](/resources/scripts/wiki-doc-convert) - [see below](#lua-solution-to-pandoc-inserting-blank-lines-between-bullet-points)
+        * Instead I used a `lua` solution, also in [wiki-doc-convert](/resources/scripts/wiki-doc-convert) - [see below](<#lua solution to pandoc inserting blank lines between bullet points>)
     * Can I append the resulting markdown to an existing markdown file, instead of creating a new file?
 * Converting a word doc: 
 

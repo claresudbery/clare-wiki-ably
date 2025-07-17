@@ -232,7 +232,7 @@ with just putting a small microphone quite close to your mouth”
     half an hour during their week to set up a remote meeting with
     each other and just shoot the breeze (chat). Ideally with actual
     coffee and cake\! You can set up a spreadsheet in the same way as
-    [Pair Stairs](#pair-stairs):
+    [Pair Stairs](<#pair stairs>):
     
       - ![Pair stairs](/resources/images/pair-stairs-cake.png) 
 

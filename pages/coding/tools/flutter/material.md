@@ -8,18 +8,18 @@ permalink: /pages/coding/tools/flutter/Material
 
 ## Contents of this page:
 
-- [Material Components - Intro](#material-components---intro)
-- [Flutter Widget for autocomplete text fields](#flutter-widget-for-autocomplete-text-fields)
-- [Navigation rails](#navigation-rails)
-- [The `Expanded` widget](#the-expanded-widget)
-- [Placeholder](#placeholder)
-- [Wrap](#wrap)
-- [FittedBox](#fittedbox)
-- [LayoutBuilder](#layoutbuilder)
-- [ListView](#listview)
-- [Images and ImagePicker](#images-and-imagepicker)
-  - [Max width and max height of images](#max-width-and-max-height-of-images)
-  - [Image dimension units](#image-dimension-units)
+- [Material Components - Intro](<#material components   intro>)
+- [Flutter Widget for autocomplete text fields](<#flutter widget for autocomplete text fields>)
+- [Navigation rails](<#navigation rails>)
+- [The `Expanded` widget](<#the expanded widget>)
+- [Placeholder](<#placeholder>)
+- [Wrap](<#wrap>)
+- [FittedBox](<#fittedbox>)
+- [LayoutBuilder](<#layoutbuilder>)
+- [ListView](<#listview>)
+- [Images and ImagePicker](<#images and imagepicker>)
+  - [Max width and max height of images](<#max width and max height of images>)
+  - [Image dimension units](<#image dimension units>)
 
 ## Material Components - Intro
 
@@ -93,7 +93,7 @@ permalink: /pages/coding/tools/flutter/Material
 
 - We're using the [`ImagePicker` class](https://pub.dev/packages/image_picker) when users upload avatars
 - We've set max width and height to 400
-  - This means 400 _pixels_ - see [below](#image-dimension-units)
+  - This means 400 _pixels_ - see [below](<#image dimension units>)
   - But when I tried to upload an image with larger dimensions, it just shrank it down for me - didn't actually stop me
 - We've set max file size to 2Mb
 - File types are 

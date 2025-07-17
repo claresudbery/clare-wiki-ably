@@ -187,7 +187,7 @@ permalink: /pages/coding/data/Elastic-Search
             '{print "minutes:", $1/6e+10, "nanoseconds:", $1}'**
 
 ## Too few shards
-  - (See also [Templates](#templates))
+  - (See also [Templates](<#templates>))
   - Happens when template deleted but not replaced
       - This is because when template changes are deployed the old one
         is deleted before the new one is deployed, so if there are any
@@ -254,7 +254,7 @@ permalink: /pages/coding/data/Elastic-Search
 
 ## Templates
 
-  - (See also [“too few shards”](#too-few-shards))
+  - (See also [“too few shards”](<#too few shards>))
 
   - The template defines how many shards you get amongst other things
 
@@ -300,7 +300,7 @@ permalink: /pages/coding/data/Elastic-Search
         the error above.
     
       - ES has measures in place to prevent using too much memory –
-        hence you get a circuit breaker exception if there are [“too few shards”](#too-few-shards).
+        hence you get a circuit breaker exception if there are [“too few shards”](<#too few shards>).
     
       - (See section on circuit breakers under Troubleshooting)
 

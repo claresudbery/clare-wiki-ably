@@ -61,7 +61,7 @@ permalink: /pages/coding/tools/testing/Nightwatch
     Notes](https://github.com/claresudbery/samba/blob/master/Useful-Notes.docx)
     (accessible to Clare only) for example of headless xunit front end
     tests
-  - See ["More notes from a different project"](#more-notes-from-a-different-project) below
+  - See ["More notes from a different project"](<#more notes from a different project>) below
 
 ## More notes from a different project 
 

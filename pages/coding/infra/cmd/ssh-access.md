@@ -14,7 +14,7 @@ permalink: /pages/coding/infra/cmd/SSH-Access
     have to look into the docker container
       - To see running docker instances: **sudo docker ps -a**
   - To ssh direct into instance, you can use a pem file
-  - To copy files, see [Copying Files From an SSH-ed Instance](#copying-files-from-an-ssh-ed-instance)
+  - To copy files, see [Copying Files From an SSH-ed Instance](<#copying files from an ssh ed instance>)
   - Ssh access: These are the commands to run on command line:
       - \!\! It’s not the same on Windows – see below
       - This: ssh -i "your-pem-file.pem"
@@ -46,7 +46,7 @@ permalink: /pages/coding/infra/cmd/SSH-Access
 ## Copying Files From an SSH-ed Instance
 
   - To copy files, use SCP command or PSCP on Windows with Putty
-    installed (see [above](#ssh-access-to-servers-mac-and-windows))
+    installed (see [above](<#ssh access to servers mac and windows>))
       - SCP on a Mac:
           - scp -i "\[path to file\]"
             [<span class="underline">ubuntu@\[ip

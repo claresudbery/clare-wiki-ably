@@ -11,7 +11,7 @@ permalink: /pages/organising/tools/Kinemaster
 - (Alternatively, use [Descript](pages/organising/podcasts/descript.md) and just drag and drop the audio into a new video project)
 - Create new project
 - Add an image using the media section
-- Import the audio as per [instructions below](#to-add-your-own-sound)
+- Import the audio as per [instructions below](<#to add your own sound>)
 - Lengthen the image to last as long as the audio
 - Use the export button (top right) to save as video
 

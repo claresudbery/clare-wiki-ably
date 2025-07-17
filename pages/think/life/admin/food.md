@@ -39,7 +39,7 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 - [Bread sauce](https://www.bbcgoodfood.com/recipes/bread-sauce-0)
 - [Christmas pomanders](https://craftbits.com/project/orange-and-clove-pomanders/) (made from oranges and cloves)
 - [Frangipane almond topped mince pies](https://www.easypeasyfoodie.com/easy-frangipane-topped-mince-pies/)
-- [Recipe for Pfeffernusse](#recipe-for-pfeffernusse)
+- [Recipe for Pfeffernusse](<#recipe for pfeffernusse>)
 
 ### Recipe for Pfeffernusse
 

@@ -13,7 +13,7 @@ permalink: /pages/think/events/workshops/Remote-Coding-Tools
 - Visual Studio Code LiveShare extension
 - Dedicated Driver 
     - LF says easy to set up but a lot of disadvantages
-- [Anydesk](#anydesk-plus-ec2-instance)  
+- [Anydesk](<#anydesk plus ec2 instance>)  
     - LF says has best advantages
     - !I kept thinking he was saying "Inidesk" and I had the same problem when speaking to another US person! Putting it here in case it happens again and I try to search for it
 - Git Handoff  

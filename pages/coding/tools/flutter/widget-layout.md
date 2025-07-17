@@ -8,23 +8,23 @@ permalink: /pages/coding/tools/flutter/Widget-Layout
 
 ## Contents of this page:
 
-- [See also...](#see-also)
-- [Useful layout resources](#useful-layout-resources)
-- [Troubleshooting Color Hex values](#troubleshooting-color-hex-values)
-- [Use the widget inspector / layout explorer](#use-the-widget-inspector--layout-explorer)
-- [Aligning text to the left](#aligning-text-to-the-left)
-- [Layout constraints](#layout-constraints)
-- [Expanded vs flexible](#expanded-vs-flexible)
-- [Add borders](#add-borders)
-- [Troubleshooting layout](#troubleshooting-layout)
-  - [Find the widget inspector / layout explorer](#find-the-widget-inspector--layout-explorer)
-  - [Infinite size / blank screen](#infinite-size--blank-screen)
-  - [Alternatives to IntrinsicHeight or IntrinsicWidth](#alternatives-to-intrinsicheight-or-intrinsicwidth)
-  - [Persuading a widget to have a particular width or height](#persuading-a-widget-to-have-a-particular-width-or-height)
-  - [Getting a row / col to have width / height of its widest / highest widget](#getting-a-row--col-to-have-width--height-of-its-widest--highest-widget)
-  - [Cutting too-long text short and replacing it with ellipsis](#cutting-too-long-text-short-and-replacing-it-with-ellipsis)
-  - [Give text a background colour](#give-text-a-background-colour)
-  - [When width or height is unconstrained](#when-width-or-height-is-unconstrained)
+- [See also...](<#see also>)
+- [Useful layout resources](<#useful layout resources>)
+- [Troubleshooting Color Hex values](<#troubleshooting color hex values>)
+- [Use the widget inspector / layout explorer](<#use the widget inspector  layout explorer>)
+- [Aligning text to the left](<#aligning text to the left>)
+- [Layout constraints](<#layout constraints>)
+- [Expanded vs flexible](<#expanded vs flexible>)
+- [Add borders](<#add borders>)
+- [Troubleshooting layout](<#troubleshooting layout>)
+  - [Find the widget inspector / layout explorer](<#find the widget inspector  layout explorer>)
+  - [Infinite size / blank screen](<#infinite size  blank screen>)
+  - [Alternatives to IntrinsicHeight or IntrinsicWidth](<#alternatives to intrinsicheight or intrinsicwidth>)
+  - [Persuading a widget to have a particular width or height](<#persuading a widget to have a particular width or height>)
+  - [Getting a row / col to have width / height of its widest / highest widget](<#getting a row  col to have width  height of its widest  highest widget>)
+  - [Cutting too-long text short and replacing it with ellipsis](<#cutting too long text short and replacing it with ellipsis>)
+  - [Give text a background colour](<#give text a background colour>)
+  - [When width or height is unconstrained](<#when width or height is unconstrained>)
 
 ## See also...
 
@@ -96,8 +96,8 @@ Row (
 
 - Tutorial for layout explorer [here](https://docs.flutter.dev/tools/devtools/inspector)
   - you can also click the "Watch tutorial" button at the bottom of the explorer
-- If you've lost it / want to know how to open it, see [below](#find-the-widget-inspector--layout-explorer) on how to find it
-- If you want to see an inspected widget be highlighted in the running app, see "Flutter: inspect widget" [below](#find-the-widget-inspector--layout-explorer)
+- If you've lost it / want to know how to open it, see [below](<#find the widget inspector  layout explorer>) on how to find it
+- If you want to see an inspected widget be highlighted in the running app, see "Flutter: inspect widget" [below](<#find the widget inspector  layout explorer>)
 - If there are errors in your layout, you'll get a red box and arrows you can click to find the places in the layout where the errors are
 
 ## Aligning text to the left
@@ -205,7 +205,7 @@ Container(
       - which opens up the tool in VS Code
       - then you can select widgets from the tree on the left
       - note that IF you also turn on "inspect widget" (see below), they will also be highlighted in the running app, so you can tell what you've selected
-      - More on the inspector [above](#use-the-widget-inspector--layout-explorer)
+      - More on the inspector [above](<#use the widget inspector  layout explorer>)
     - 2. "Flutter: inspect widget"
       - This will highlight the current widget in the running app
         - but I can't work out whether this works if you don't have the widget inspector open
@@ -220,7 +220,7 @@ Container(
 - If you remove a parent widget and the screen, or parts of the screen, go blank as a result, check the Debug Console
 - If you have an error about something "given an infinite size during layout", it means there is no parent in the widget tree determining the height or width of the wrapped widget.
 - The solution is to insert a `SizedBox` or `Container` or `Expanded` or `Flexible` widget somewhere up in the parent hierarchy, and get them to specify height and/or width
-  - see [Expanded vs flexible](#expanded-vs-flexible)
+  - see [Expanded vs flexible](<#expanded vs flexible>)
 
 ### Alternatives to IntrinsicHeight or IntrinsicWidth
 
@@ -230,7 +230,7 @@ Container(
 ### Persuading a widget to have a particular width or height
 
 - "When you specify a width / height on a Container, you're not constraining Container. You're constraining the child of Container."
-- See [constraints](#layout-constraints)
+- See [constraints](<#layout constraints>)
 
 ### Getting a row / col to have width / height of its widest / highest widget
 
@@ -275,7 +275,7 @@ Text(
 ### Give text a background colour
 
 - Use `DecoratedBox` and populate its `color` property
-- See [here](#troubleshooting-color-hex-values) for discussion of different ways of specifying colour
+- See [here](<#troubleshooting color hex values>) for discussion of different ways of specifying colour
 
 ### When width or height is unconstrained
 

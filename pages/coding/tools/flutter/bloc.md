@@ -8,20 +8,20 @@ permalink: /pages/coding/tools/flutter/Bloc
 
 ## Contents of this page:
 
-- [Intro](#blocs-intro)
-- [How blocs work](#how-blocs-work)
-- [Cubits](#cubits)
-- [Adding BlocProvider and BlocListener to widgets](#adding-blocprovider-and-bloclistener-to-widgets)
-- [BlocListener](#bloclistener)
-  - [Intro to BlocListener](#intro-to-bloclistener)
-  - [Testing BlocListener](#testing-bloclistener)
-- [Testing blocs](#testing-blocs)
-  - [Verifying mocks in bloc tests](#verifying-mocks-in-bloc-tests)
-  - [Troubleshooting "No method stub was called from within `when()`"](#troubleshooting-no-method-stub-was-called-from-within-when)
-  - [Testing widget code that uses a BlocListener](#testing-widget-code-that-uses-a-bloclistener)
-- [Troubleshooting](#troubleshooting)
-  - [Troubleshooting "Cannot add new events after calling close"](#troubleshooting-cannot-add-new-events-after-calling-close)
-  - [Troubleshooting error on emitter.dart line 114](#troubleshooting-error-on-emitterdart-line-114)
+- [Intro](<#blocs intro>)
+- [How blocs work](<#how blocs work>)
+- [Cubits](<#cubits>)
+- [Adding BlocProvider and BlocListener to widgets](<#adding blocprovider and bloclistener to widgets>)
+- [BlocListener](<#bloclistener>)
+  - [Intro to BlocListener](<#intro to bloclistener>)
+  - [Testing BlocListener](<#testing bloclistener>)
+- [Testing blocs](<#testing blocs>)
+  - [Verifying mocks in bloc tests](<#verifying mocks in bloc tests>)
+  - [Troubleshooting "No method stub was called from within `when()`"](<#troubleshooting no method stub was called from within when>)
+  - [Testing widget code that uses a BlocListener](<#testing widget code that uses a bloclistener>)
+- [Troubleshooting](<#troubleshooting>)
+  - [Troubleshooting "Cannot add new events after calling close"](<#troubleshooting cannot add new events after calling close>)
+  - [Troubleshooting error on emitter.dart line 114](<#troubleshooting error on emitterdart line 114>)
 
 ## Blocs Intro
 
@@ -61,7 +61,7 @@ permalink: /pages/coding/tools/flutter/Bloc
 - An example using `BlocListener` 
   - This allows us to add functionality that needs to occur once per state change - in this case showing a Dialog
   - see [here](flutter-construct/construct-examples.md#the-matchbox-bloc-and-bloclistener)
-  - also notes [below](#bloclistener)
+  - also notes [below](<#bloclistener>)
 
 ## Cubits
 
@@ -99,7 +99,7 @@ permalink: /pages/coding/tools/flutter/Bloc
 - See documentation [here](https://bloclibrary.dev/flutter-bloc-concepts/#bloclistener)
 - BlocListener is a Flutter widget which takes a BlocWidgetListener and an optional Bloc and invokes the listener in response to state changes in the bloc. It should be used for functionality that needs to occur once per state change such as navigation, showing a SnackBar, showing a Dialog, etc
 - see example [here](flutter-construct/construct-examples.md#the-matchbox-bloc-and-bloclistener)
-- See also [Testing widget code that uses a BlocListener](#testing-widget-code-that-uses-a-bloclistener)
+- See also [Testing widget code that uses a BlocListener](<#testing widget code that uses a bloclistener>)
 
 ### Testing BlocListener
 
@@ -227,7 +227,7 @@ testWidgets('If bloc has UserReady state, redirect to thing',
 - I couldn't find a way to test this by mocking the bloc - I needed a real bloc instance rather than a mocked one
 - But when I tried to call `showDialog` within the tested code, the dialog widget was not being added to the widget tree and my test was failing
 - The solution was to use `GetIt.RegisterFactory` within the test code instead of `GetIt.RegisterSingleton`
-  - Same as [below](#troubleshooting-cannot-add-new-events-after-calling-close)
+  - Same as [below](<#troubleshooting cannot add new events after calling close>)
 - I'm still not sure exactly why, but I think it MIGHT be something to do with the context passed to `showDialog`
 - The relevant code is in `matchbox_preview.dart` and `matchbox_preview_bloc_test.dart`
 

@@ -181,7 +181,7 @@ Pure functions don’t modify external variables/state/data outside of the scope
   - **Continuous integration** is what happens on a development server - at-least-daily merges of all code into the mainline, integrated with everything else and automatically tested
   - **Continuous delivery** means that the continuously integrated code is then made continuously *available* for deployment and manual testing
   - **Continuous deployment** means that the continuously delivered code is *automatically* pushed all the way to production and external users (see below)
-  - See [below](#continuous-delivery-vs-continuous-deployment) for confusions between continuous delivery and continuous deployment
+  - See [below](<#continuous delivery vs continuous deployment>) for confusions between continuous delivery and continuous deployment
 
 ### Continuous integration
 

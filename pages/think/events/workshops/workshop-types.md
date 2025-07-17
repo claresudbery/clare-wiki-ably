@@ -33,8 +33,8 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_framework)
 - Elevator pitch
 - Trade-off sliders 
-- Hypothesis Workshops - see [notes below](#hypothesis-workshops)
-- Inverse Conway Manoeuvre - see [notes below](#inverse-conway-manoeuvre)
+- Hypothesis Workshops - see [notes below](<#hypothesis workshops>)
+- Inverse Conway Manoeuvre - see [notes below](<#inverse conway manoeuvre>)
 - CRC cards
 	- blank ("naked") CRC cards 
 - Value proposition map / value proposition design
@@ -74,7 +74,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - Lots of consultancy examples
 	- (available to Clare only): Until I've processed them, just need to look in this folder and trawl through the presentations: OneDrive\T..\Cl...\Pi... 
 - Leadership style
-	- based on Kylie Yearsley's workshop at AOTB21. [See below](#leadership-style).
+	- based on Kylie Yearsley's workshop at AOTB21. [See below](<#leadership style>).
 
 ## Specific types of workshop in more detail
 ### Value Stream Mapping

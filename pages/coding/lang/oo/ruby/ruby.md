@@ -16,11 +16,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - My [Cards Against Humanity answer generator](https://github.com/claresudbery/cah-answer-generator) was written in Sinatra and Ruby.
 - [Sample gov uk front end rails app from Csaba](https://github.com/C-gyorfi/govuk-front-end-rails-app)
 - [Learn Enough Ruby](https://github.com/claresudbery/learn_enough_ruby) - My code following along with examples in the book.
-- See [Sinatra](#sinatra) below for various Sinatra repos.
+- See [Sinatra](<#sinatra>) below for various Sinatra repos.
 
 ### Ruby katas
 
-See [below](#quick-start-kata-guide) for a quick start guide if writing a kata from scratch
+See [below](<#quick start kata guide>) for a quick start guide if writing a kata from scratch
 
 - [Bowling kata](https://github.com/claresudbery/bowling-kata-ruby) - bowling kata implemented in Ruby
   - Note that the bowling kata can sometimes be a bit opaque (because if you don't play the game, the scoring is quite complex), but I've updated the [readme on the Made Tech site](https://learn.madetech.com/katas/bowling/) to have a simpler explanation (in case that gets lost, I've also added it to the readme in [my repo](https://github.com/claresudbery/bowling-kata-ruby))
@@ -172,7 +172,7 @@ See [below](#quick-start-kata-guide) for a quick start guide if writing a kata f
 
 ## Testing
 
-- For Rspec [see below](#rspec)
+- For Rspec [see below](<#rspec>)
 - Overview of unit testing using Test::Unit:
   [<span class="underline">https://en.wikibooks.org/wiki/Ruby\_Programming/Unit\_testing</span>](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
 - Running a single test in Rails:
@@ -211,8 +211,8 @@ gem "rspec-html-matchers"
 ### Rspec
 
 - To run tests: either `rspec` or `bundle exec rspec` (depending whether you did a global bundle install or a vendor one, I think (eg if you ran `bundle config set --local path 'vendor/bundle'` before you ran `bundle install`))
-- See [quick-start section](#quick-start-kata-guide) for a quick start guide if writing a kata from scratch (includes getting tests set up, and running tests / how to run tests)
-- See [debugging rspec](#debugging-rspec-tests) for how to debug rspec tests
+- See [quick-start section](<#quick start kata guide>) for a quick start guide if writing a kata from scratch (includes getting tests set up, and running tests / how to run tests)
+- See [debugging rspec](<#debugging rspec tests>) for how to debug rspec tests
 - See [here](https://manny.codes/7-ways-to-selectively-run-rspec-tests) for running individual tests or subsets of tests
 - Using Rspec for Testing: [Intro to Rspec](https://www.rubyguides.com/2018/07/rspec-tutorial/)
 - [Getting started with Ruby and TDD (using rspec)](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
@@ -224,7 +224,7 @@ gem "rspec-html-matchers"
 - [Rspec mocking (stubs and doubles)](https://www.tutorialspoint.com/rspec/rspec_test_doubles.htm) 
   - See also [expecting messages](https://relishapp.com/rspec/rspec-mocks/docs/basics/expecting-messages) for specifying what gets called on a test double
   - ... and [matching arguments](https://relishapp.com/rspec/rspec-mocks/v/3-2/docs/setting-constraints/matching-arguments) for specifying what gets passed to a test double
-- See [Front end testing](#front-end-testing) for how to do front end testing with Rspec.
+- See [Front end testing](<#front end testing>) for how to do front end testing with Rspec.
 
 #### Test cases in rspec
 
@@ -436,7 +436,7 @@ my_hash4 = { :first_name => "Pippi", :last_name => "Longstocking" }
 # this is equivalent to the above:
 my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
 ```
-- `:name` is a **symbol** (see [below](#symbols))
+- `:name` is a **symbol** (see [below](<#symbols>))
 - The `=>` operator is called a "hashrocket".
 - when hashes have string keys, [those strings are frozen](https://tenderlovemaking.com/2015/02/11/weird-stuff-with-hashes.html)
 - Ruby [documentation on hashes](https://docs.ruby-lang.org/en/2.0.0/Hash.html) (it's pretty good documentation)
@@ -463,7 +463,7 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
   - It doesn’t seem to work in a Ruby script run via knife exec -
   instead, you can do this:
     - This: **query="fqdn:"+ARGV\[2\]**
-  - See [below](#symbols) for how to do string interpolation with symbols
+  - See [below](<#symbols>) for how to do string interpolation with symbols
 - **Single-quoted strings**
   - Single-quoted strings are literal strings. You can't do interpolation with them but you can include special characters without having to escape them - so they can be useful for that. [More here](https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html).
 - `?h` is the same as `"h"`

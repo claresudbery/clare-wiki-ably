@@ -25,7 +25,7 @@ Here I'm recording some notes about what we are doing.
 Here is what we sent out to participants the week before the inception started:
 
 - Please dial in individually. That is to say, don't be in the same room as any other participant. This will significantly improve the experience for everyone who is working from home.
-- Please, if at all possible, use a headset with dedicated microphone. This too will improve the experience for all participants (further explanation [here](#headsets-with-microphones)). If you can't get one in time for Monday, it's still worth getting one in time for subsequent days.
+- Please, if at all possible, use a headset with dedicated microphone. This too will improve the experience for all participants (further explanation [here](<#headsets with microphones>)). If you can't get one in time for Monday, it's still worth getting one in time for subsequent days.
 - If you haven't used Zoom before then before 10am Monday, please click on the Zoom link in the invite. This will cause Zoom to download on your machine and hopefully give you a chance to troubleshoot any problems (not that we expect any).
 - Please dial in prompt at 10am Monday (or even a few minutes before).
 - Try to set up a workspace where you will have two screens. This will make it much easier for you to switch between our two main tools, which will be Miro and Zoom.
@@ -82,11 +82,11 @@ The reason this is so important is that otherwise, participants are getting audi
 	- Get them to log out and then log back in again, or even restart their computer.
 	- Get them to check whether they've left a connection open to a VPN.
 - If there are sound issues:
-	- Encourage people to get hold of a headset with microphone (explanation [here](#headsets-with-microphones)). 
+	- Encourage people to get hold of a headset with microphone (explanation [here](<#headsets with microphones>)). 
 	- Make sure people have their mics at about chin level - not too close to their mouth but not too far away.
 	- Encourage everyone but the main speaker to mute their microphone.
 	- Encourage people to find a quiet space with no background noise.
-	- Encourage each participant to be on their own in a room instead of in the same room as co-workers. If this isn't possible then a decent headset with microphone will make a BIG difference (explanation [here](#headsets-with-microphones)).
+	- Encourage each participant to be on their own in a room instead of in the same room as co-workers. If this isn't possible then a decent headset with microphone will make a BIG difference (explanation [here](<#headsets with microphones>)).
 	- Get them to log out and then log back in again, or even restart their computer.
 	- If sound is cutting out, take the same actions listed above for connectivity issues.
 

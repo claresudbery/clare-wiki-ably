@@ -76,7 +76,7 @@ Share files between any two devices: https://snapdrop.net/
 
 ## Phantom Buster
 
-[Phantom Buster](https://phantombuster.com/automations/linkedin/9227/linkedin-message-sender) is another tool you can also to send linkedin messages - similar to [Dux Soup](#dux-soup).
+[Phantom Buster](https://phantombuster.com/automations/linkedin/9227/linkedin-message-sender) is another tool you can also to send linkedin messages - similar to [Dux Soup](<#dux soup>).
 
 ## Dux Soup 
 
@@ -481,7 +481,7 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 
 ## Microsoft Office 365
 
-- If any family member needs to [reinstall](#microsoft-office-365):
+- If any family member needs to [reinstall](<#microsoft office 365>):
 - Two options:
   - 1. They sign in to their account and manage from there:
     - That family member simply needs to log into the same MS Account used to accept the original share 

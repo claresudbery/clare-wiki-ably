@@ -153,7 +153,7 @@ Ted Young also swears by it for video editing.
 
 ## Insert new audio files
 
-- [add a scene](#add-scenes)
+- [add a scene](<#add scenes>)
 - Place your cursor just after the slash in the trsnacript
 - You should see an Add File button in the transcript - use that to choose an audio file
 - If at the start of the video, you might have to press Enter before the first text to create an empty line at the top. 

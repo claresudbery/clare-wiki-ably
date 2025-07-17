@@ -21,7 +21,7 @@ permalink: /pages/organising/music/Garage-Band
 
 ## Sequencing notes - adding notes
 
-- Start with [sequencing start](#sequencing-notes---getting-started)
+- Start with [sequencing start](<#sequencing notes   getting started>)
 - Right-click in the right hand section, where the wav form for the SoCal track is
 - Select "Create MIDI region"
 - Drag right hand edge to the right to fill more bars
@@ -35,8 +35,8 @@ permalink: /pages/organising/music/Garage-Band
 
 ## Getting an instrument that sounds like a voice
 
-- Start with [getting started](#getting-started)
-- Then [sequencing start](#sequencing-notes---getting-started)
+- Start with [getting started](<#getting started>)
+- Then [sequencing start](<#sequencing notes   getting started>)
 - Click the Library icon top left - looks a bit like a drawer in a filing cabinet
 - Search for "choir" and select one of the options
 - To change the instrument, just select the left hand end of the track, click library again, search for a new instrument and click on it / select it
@@ -52,8 +52,8 @@ permalink: /pages/organising/music/Garage-Band
 - Double click on the track to show the piano roll at the bottom
 - Click "Score" instead of "piano roll" at the top of the section
 - If you want to print, you have to have the cursor in the score region (not piano roll) and then you can select file => Print
-- If you want all tracks on one score, start by [merging all tracks into one](#merge-tracks)
-    - or use [special tool for scoring](#special-tool-to-create-better-scores)
+- If you want all tracks on one score, start by [merging all tracks into one](<#merge tracks>)
+    - or use [special tool for scoring](<#special tool to create better scores>)
 - If you want to control whether things live on bass or treble clef, all you can do is set the whole score to be either bass, treble, or a mix of both
     - Click on the clef on the left, and it gives you three options
     - General consensus on the internet seems to be that if you want more control over scores you shuld use a free piece of software called MuseScore - but I couldn't get this to work on my machine
@@ -92,7 +92,7 @@ permalink: /pages/organising/music/Garage-Band
 ### Special tool to create better scores
 
 - ! Sibelius ONLY shows you score view - you can't get piano roll view
-- you might first need to [convert to midi](#convert-from-garageband-to-midi-for-converting-into-a-scoring-tool)
+- you might first need to [convert to midi](<#convert from garageband to midi for converting into a scoring tool>)
 - [Sibelius](https://www.avid.com/sibelius)
 
 ## Export to a music file

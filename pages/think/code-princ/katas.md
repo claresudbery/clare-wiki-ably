@@ -11,9 +11,9 @@ permalink: /pages/think/code-princ/Katas
 - [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
 - If you follow [this link](https://cyber-dojo.org/creator/choose_problem) you’ll see a list of katas on the left and then when you select one it describes the kata
 
-- [Quick start guide if you're working in "classroom" mode](#quick-start-guide-if-youre-working-in-classroom-mode)
-- [How to use traffic lights to spot people who might need help](#use-traffic-lights-to-spot-people-who-might-need-help)
-- [Quick start guide if you're working solo](#quick-start-guide-if-youre-working-solo)
+- [Quick start guide if you're working in "classroom" mode](<#quick start guide if youre working in classroom mode>)
+- [How to use traffic lights to spot people who might need help](<#use traffic lights to spot people who might need help>)
+- [Quick start guide if you're working solo](<#quick start guide if youre working solo>)
 
 #### Quick start guide if you're working in "classroom" mode 
 

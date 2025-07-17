@@ -8,25 +8,25 @@ permalink: /pages/coding/tools/flutter/Dart-Classes
 
 ## Contents of this page
 
-- [Intro](#intro)
-- [Declaring Classes](#declaring-classes)
-- [Instance variables](#instance-variables)
-- [Constructors](#constructors)
-  - [Default constructors](#default-constructors)
-  - [Generative constructors](#generative-constructors)
-  - [Named constructors](#named-constructors)
-  - [Other constructors](#other-constructors)
-- [Initializing instance variables](#initializing-instance-variables)
-  - ['Initializing formal' parameters](#initializing-formal-parameters)
-  - [Initializer lists](#initializer-lists)
-  - [Initialising inherited variables](#initialising-inherited-variables)
-- [Mixins](#mixins)
-- [Private classes](#private-classes)
+- [Intro](<#intro>)
+- [Declaring Classes](<#declaring classes>)
+- [Instance variables](<#instance variables>)
+- [Constructors](<#constructors>)
+  - [Default constructors](<#default constructors>)
+  - [Generative constructors](<#generative constructors>)
+  - [Named constructors](<#named constructors>)
+  - [Other constructors](<#other constructors>)
+- [Initializing instance variables](<#initializing instance variables>)
+  - ['Initializing formal' parameters](<#initializing formal parameters>)
+  - [Initializer lists](<#initializer lists>)
+  - [Initialising inherited variables](<#initialising inherited variables>)
+- [Mixins](<#mixins>)
+- [Private classes](<#private classes>)
 
 ## Intro
 
 - Mixin-based inheritance means that although every class (except for the top class, Object?) has exactly one superclass, a class body can be reused in multiple class hierarchies.
-  - See [below](#mixins) for more on mixins
+  - See [below](<#mixins>) for more on mixins
 - You can create an object using a constructor. Constructor names can be either `ClassName` or `ClassName.identifier`.
 
 ```dart
@@ -40,7 +40,7 @@ var p2 = new Point.fromJson({'x': 1, 'y': 2});
 
 ## Declaring Classes
 
-- Objects have members consisting of functions and data (methods and [instance variables](#instance-variables), respectively).
+- Objects have members consisting of functions and data (methods and [instance variables](<#instance variables>), respectively).
 - See [sample code](flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 - Here's a pretty typical class declaration:
@@ -68,13 +68,13 @@ class Thing {
 ```
 
 - There are various ways of constructing classes...
-  - [Default constructors](#default-constructors)
-  - [Generative constructors](#generative-constructors)
-  - [Named constructors](#named-constructors)
-  - [Other constructors](#other-constructors)
-  - ['Initializing formal' parameters](#initializing-formal-parameters)
-  - [Initializer lists](#initializer-lists)
-  - [Initialising inherited variables](#initialising-inherited-variables)
+  - [Default constructors](<#default constructors>)
+  - [Generative constructors](<#generative constructors>)
+  - [Named constructors](<#named constructors>)
+  - [Other constructors](<#other constructors>)
+  - ['Initializing formal' parameters](<#initializing formal parameters>)
+  - [Initializer lists](<#initializer lists>)
+  - [Initialising inherited variables](<#initialising inherited variables>)
 - See [sample code](flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 
@@ -93,7 +93,7 @@ class Point {
   - but this can happen via initializing formal params
   - or the initializer list of a constructor
   - it doesn't have to happen at the point of declaration
-  - see [below](#initializing-instance-variables) for more
+  - see [below](<#initializing instance variables>) for more
 - Implicit getters and setters:
   - All instance variables generate an implicit getter method. 
   - Non-final instance variables and `late final` instance variables without initializers also generate an implicit setter method.
@@ -118,7 +118,7 @@ void main() {
 ### Default constructors
 
 - If you don't declare a constructor, Dart uses the default constructor. 
-- The default constructor is a [generative constructor](#generative-constructors) without arguments or name.
+- The default constructor is a [generative constructor](<#generative constructors>) without arguments or name.
 
 ### Generative constructors
 
@@ -211,8 +211,8 @@ class Thing4 {
   - [named](dart-params.md#named-parameters)
   - In this case they need default values (unless nullable or [required](dart-params.md#required-parameters))
 - No matter whether optional, named, or named and required, they can all be used in either 
-  - [generative constructors](#generative-constructors)
-  - or [named constructors](#named-constructors)
+  - [generative constructors](<#generative constructors>)
+  - or [named constructors](<#named constructors>)
 
 ```dart
 class Thing5 {

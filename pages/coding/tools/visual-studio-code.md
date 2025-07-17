@@ -98,16 +98,16 @@ Cmd + Shift + P then type the name of the thing you're looking for
 ### If your embedded links stop being colour-coded and having clickable links
 
 - This happens if you have double-indented sub-list items without a parent
-  - So for instance, [this works fine](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
-    - and [this works fine](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+  - So for instance, [this works fine](<#if your embedded links stop being colour coded and having clickable links>)
+    - and [this works fine](<#if your embedded links stop being colour coded and having clickable links>)
 - and if you do this
-    - and then this, it will [work](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+    - and then this, it will [work](<#if your embedded links stop being colour coded and having clickable links>)
 
 ### gratuitious subheading number 1
-  - and this [will work](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+  - and this [will work](<#if your embedded links stop being colour coded and having clickable links>)
 
 ### gratuitious subheading number 2
-    - but this [won't work](#if-your-embedded-links-stop-being-colour-coded-and-having-clickable-links)
+    - but this [won't work](<#if your embedded links stop being colour coded and having clickable links>)
 
 ## Formatting
 

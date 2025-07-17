@@ -8,7 +8,7 @@ This is a slightly abbreviated version for public consumption - the full [Clare 
 
 Note that this was created purely for me. I'm not suggesting these are sensible defaults for anyone else setting up a new Mac / Macbook.
 
-I've created a [brew script for some of it](#automating-the-installation) but sadly a lot of it is still manual.
+I've created a [brew script for some of it](<#automating the installation>) but sadly a lot of it is still manual.
 
 ## See also
 
@@ -74,9 +74,9 @@ See also the following resources from others who have done similar but with more
 * Install any OS updates - might need to agree terms and conditions for OS upgrade?
 
 ## Stuff I have put in a script
-* To run the brew script, see [Automating the installation](#automating-the-installation) below.
-    * !! You have to install brew and cask first before running script - notes are [below](#automating-the-installation)
-    * Once you're done, see [Stuff that would have to be done after script has run](#stuff-that-would-have-to-be-done-after-script-has-run) below.
+* To run the brew script, see [Automating the installation](<#automating the installation>) below.
+    * !! You have to install brew and cask first before running script - notes are [below](<#automating the installation>)
+    * Once you're done, see [Stuff that would have to be done after script has run](<#stuff that would have to be done after script has run>) below.
 
 ## Stuff that would have to be done after script has run
 
@@ -138,7 +138,7 @@ See also the following resources from others who have done similar but with more
 
 ## How to automate?
 
-I used [a brew script](#using-the-script), which will make my life easier but is till not ideal. There are still a lot of manual steps which you could probably avoid if you used a tool more fit for the purpose. One of the problems is how many times I need to enter passwords or use 2FA - both in the manual part of the process and while running the script - but any automation of this side of things opens up a million attack vectors unless you're very very careful, and I didn't have time to set it all up and test it for security.
+I used [a brew script](<#using the script>), which will make my life easier but is till not ideal. There are still a lot of manual steps which you could probably avoid if you used a tool more fit for the purpose. One of the problems is how many times I need to enter passwords or use 2FA - both in the manual part of the process and while running the script - but any automation of this side of things opens up a million attack vectors unless you're very very careful, and I didn't have time to set it all up and test it for security.
 
 I could have used something like Ansible - but that would have required me to learn Ansible and spend even more time on a thing that was already sucking time out of my week. 
 
@@ -147,7 +147,7 @@ Or I could have just copied the whole thing to a VM and stuck it in the cloud - 
 ## Using the script
 
 - The script is [here](/resources/scripts/installing-new-mac).
-- You have to install brew and cask manually first - I couldn't get it to work in a script (dunno why) - see [below](#install-brew).
+- You have to install brew and cask manually first - I couldn't get it to work in a script (dunno why) - see [below](<#install brew>).
 - The script requires some user input - keep an eye on it.
 - Get the script
     - Put it in home folder 

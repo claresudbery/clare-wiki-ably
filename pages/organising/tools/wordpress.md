@@ -14,7 +14,7 @@
 # Changing account settings
 
 - There's an account settings page which isn't accessible for me via the blog dashboard
-- Instead I have to go directly to wordpress.com (NOT wordpress.org, where I also seem to have an account - see [below](#wordpressorg-vs-wordpresscom) and log in there.
+- Instead I have to go directly to wordpress.com (NOT wordpress.org, where I also seem to have an account - see [below](<#wordpressorg vs wordpresscom>) and log in there.
     - Click on the person / profile icon, top right
     - Select Account Settings on the left
 - But there's also a Settings page on the left in the blog dashboard.
@@ -103,7 +103,7 @@ NB: I MANAGED TO FIX THIS BY SWITCHING TO RECAPTCHA V3.
 
 # Problems with site excerpts
 
-Message below posted to the wordpress.org support forum (I tried wordpress.com but they said I should go to wordpress.org - see [above](#wordpressorg-vs-wordpresscom))
+Message below posted to the wordpress.org support forum (I tried wordpress.com but they said I should go to wordpress.org - see [above](<#wordpressorg vs wordpresscom>))
 
 Posted [here](https://wordpress.org/support/topic/excerpt-module-missing/#new-topic-0):
 

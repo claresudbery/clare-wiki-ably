@@ -8,12 +8,12 @@ permalink: /pages/coding/tools/flutter/Dart-Params
 
 ## Contents of this page
 
-- [Intro](#intro)
-- [Default values](#default-values)
-- [Named parameters](#named-parameters)
-- [Positional parameters](#positional-parameters)
-- [Optional parameters](#optional-parameters)
-- [Required parameters](#required-parameters)
+- [Intro](<#intro>)
+- [Default values](<#default values>)
+- [Named parameters](<#named parameters>)
+- [Positional parameters](<#positional parameters>)
+- [Optional parameters](<#optional parameters>)
+- [Required parameters](<#required parameters>)
 
 ## Intro
 
@@ -36,11 +36,11 @@ permalink: /pages/coding/tools/flutter/Dart-Params
   - When calling a function, named params can be placed anywhere in the argument list
     - ...but positional params cannot (the clue's in the name!)
 - More detail on the different things you can do with parameters:
-  - Give [default values](#default-values)
-  - Have [named parameters](#named-parameters)
-  - Have [positional parameters](#positional-parameters)
-  - Have [optional parameters](#optional-parameters)
-  - Have [required parameters](#required-parameters)
+  - Give [default values](<#default values>)
+  - Have [named parameters](<#named parameters>)
+  - Have [positional parameters](<#positional parameters>)
+  - Have [optional parameters](<#optional parameters>)
+  - Have [required parameters](<#required parameters>)
 - See [sample code](flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 
@@ -74,7 +74,7 @@ void defaultNamedParams({int param2 = 3, int param3 = 4}) {
 ## Named parameters
 
 - Named params are denoted using `{}`, eg `void myFunc({bool namedParam}) {...}`
-- Named params are optional by default. To make them required, add the `required` keyword (see [below](#named-parameters))
+- Named params are optional by default. To make them required, add the `required` keyword (see [below](<#named parameters>))
 - When defining a function, named params must appear AFTER the normal params
   - You can add named OR optional positional params, but not both
 - When calling a function, named params can be placed anywhere in the argument list

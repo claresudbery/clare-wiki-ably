@@ -8,11 +8,11 @@ permalink: /pages/coding/tools/flutter/Navigation-And-Routing
 
 ## Contents of this page:
 
-- [Use Link component to embed a link](#use-link-component-to-embed-a-link)
-- [Redirect while routing](#redirect-while-routing)
-- [Testing navigation / routing](#testing-navigation--routing)
-  - [Sample hand-cranked navigation testing code v1](#sample-hand-cranked-navigation-testing-code-v1)
-  - [Sample hand-cranked navigation testing code v2](#sample-hand-cranked-navigation-testing-code-v2)
+- [Use Link component to embed a link](<#use link component to embed a link>)
+- [Redirect while routing](<#redirect while routing>)
+- [Testing navigation / routing](<#testing navigation  routing>)
+  - [Sample hand-cranked navigation testing code v1](<#sample hand cranked navigation testing code v1>)
+  - [Sample hand-cranked navigation testing code v2](<#sample hand cranked navigation testing code v2>)
 
 ## Use Link component to embed a link
 
@@ -76,12 +76,12 @@ FutureOr<String?> myRedirect(
 - See [here for some suggestions](https://stackoverflow.com/questions/50704647/how-to-test-navigation-via-navigator-in-flutter)
 - See [here for some sample code](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/test/widgets/navigator_test.dart#L277C5-L279C48)
   - In our code, I coded someting similar in `display_name_test.dart` (circa 14/6/24)
-    - see [sample hand-cranked code v1](#sample-hand-cranked-navigation-testing-code-v1) below
+    - see [sample hand-cranked code v1](<#sample hand cranked navigation testing code v1>) below
   - From same place:
   - [Flutter source code for Navigator?](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/lib/src/widgets/navigator.dart#L3453)
 - See [here for a tutorial using MockNavigatorObserver](https://iiro.dev/writing-widget-tests-for-navigation-events/)
   - In our code, I coded someting similar in `display_name_test.dart` (circa 14/6/24)
-    - see [sample hand-cranked code v2](#sample-hand-cranked-navigation-testing-code-v2) below
+    - see [sample hand-cranked code v2](<#sample hand cranked navigation testing code v2>) below
 - See [here for more on navigator observers](https://medium.com/@sumit.ghoshqa/understanding-routeobserver-in-flutter-309ce2997c27)
 - How to do it if you're using GoRouter / MaterialApp.router:
   - Brief notes [here](https://github.com/flutter/flutter/issues/134239)

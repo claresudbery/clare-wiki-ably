@@ -8,9 +8,9 @@ permalink: /pages/coding/tools/flutter/Flutter-Debugging
 
 ## Contents of this page:
 
-- [Debugging](#debugging)
-- [Seeing call stack](#seeing-call-stack)
-- [debug text / logging / debug strings](#debug-text--logging--debug-strings)
+- [Debugging](<#debugging>)
+- [Seeing call stack](<#seeing call stack>)
+- [debug text / logging / debug strings](<#debug text  logging  debug strings>)
 
 ## Debugging
 

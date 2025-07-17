@@ -8,40 +8,40 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
 
 ## Contents of this page:
 
-- [Overview](#overview)
-- [Storage rules](#storage-rules)
-- [Getting started](#getting-started)
-- [Creating a test app](#creating-a-test-app)
-- [Getting started with unit tests](#getting-started-with-unit-tests)
-  - [What I originally did](#what-i-originally-did)
-  - [How I converted to a more up to date approach](#how-i-converted-to-a-more-up-to-date-approach)
-  - [How to start with more up to date approach](#how-to-start-with-more-up-to-date-approach)
-- [Writing / running unit tests](#writing--running-unit-tests)
-  - [Running individual unit tests](#running-individual-unit-tests)
-  - [Working with test data](#working-with-test-data)
-- [Different types of database action](#different-types-of-database-action)
-- [Testing authentication](#testing-authentication)
-  - [Custom auth claims](#custom-auth-claims)
-  - [Store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
-- [Functions in rules](#functions-in-rules)
-- [Accessing the new data rather than the existing data](#accessing-the-new-data-rather-than-the-existing-data)
-- [Accessing / checking specific fields](#accessing--checking-specific-fields)
-- [Checking which fields have been changed on update](#checking-which-fields-have-been-changed-on-update)
-- [Good practice](#good-practice)
-- [Experimenting with security rules](#experimenting-with-security-rules)
-- [Debugging](#debugging)
-- [Troubleshooting](#troubleshooting)
-  - [Error `Property auth is undefined on object`](#error-property-auth-is-undefined-on-object)
-  - [Error `ECONNREFUSED ::1:8080`](#error-econnrefused-18080)
-  - [Tests failing unexpectedly](#tests-failing-unexpectedly)
-  - [Error `Detected non-HTTP/2 connection.`](#error-detected-non-http2-connection)
-  - [Firebase storage test timeout issues](#firebase-storage-test-timeout-issues)
-- [Running emulator on another port](#running-emulator-on-another-port)
-  - [1. Edit firebase.json](#1-edit-firebasejson)
-  - [2. Edit your test file](#2-edit-your-test-file)
-  - [3. Remove calls to clearFirestore](#3-remove-calls-to-clearfirestore)
-- [My questions to the firebase community](#my-questions-to-the-firebase-community)
-  - [Difference between firebase testing node modules](#difference-between-firebase-testing-node-modules)
+- [Overview](<#overview>)
+- [Storage rules](<#storage rules>)
+- [Getting started](<#getting started>)
+- [Creating a test app](<#creating a test app>)
+- [Getting started with unit tests](<#getting started with unit tests>)
+  - [What I originally did](<#what i originally did>)
+  - [How I converted to a more up to date approach](<#how i converted to a more up to date approach>)
+  - [How to start with more up to date approach](<#how to start with more up to date approach>)
+- [Writing / running unit tests](<#writing  running unit tests>)
+  - [Running individual unit tests](<#running individual unit tests>)
+  - [Working with test data](<#working with test data>)
+- [Different types of database action](<#different types of database action>)
+- [Testing authentication](<#testing authentication>)
+  - [Custom auth claims](<#custom auth claims>)
+  - [Store custom auth stuff in your database](<#store custom auth stuff in your database>)
+- [Functions in rules](<#functions in rules>)
+- [Accessing the new data rather than the existing data](<#accessing the new data rather than the existing data>)
+- [Accessing / checking specific fields](<#accessing  checking specific fields>)
+- [Checking which fields have been changed on update](<#checking which fields have been changed on update>)
+- [Good practice](<#good practice>)
+- [Experimenting with security rules](<#experimenting with security rules>)
+- [Debugging](<#debugging>)
+- [Troubleshooting](<#troubleshooting>)
+  - [Error `Property auth is undefined on object`](<#error property auth is undefined on object>)
+  - [Error `ECONNREFUSED ::1:8080`](<#error econnrefused 18080>)
+  - [Tests failing unexpectedly](<#tests failing unexpectedly>)
+  - [Error `Detected non-HTTP/2 connection.`](<#error detected non http2 connection>)
+  - [Firebase storage test timeout issues](<#firebase storage test timeout issues>)
+- [Running emulator on another port](<#running emulator on another port>)
+  - [1. Edit firebase.json](<#1 edit firebasejson>)
+  - [2. Edit your test file](<#2 edit your test file>)
+  - [3. Remove calls to clearFirestore](<#3 remove calls to clearfirestore>)
+- [My questions to the firebase community](<#my questions to the firebase community>)
+  - [Difference between firebase testing node modules](<#difference between firebase testing node modules>)
 
 ## Overview
 
@@ -115,8 +115,8 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
     - and once it's installed it's called `firebase`, not `firebase-tools`
     - also just for the laughs, if you want to know version you have to use `-V` not `-v`
     - so, to check version, use `firebase -V`
-- You'll also need to [create a test app](#creating-a-test-app)
-- ...and get yourself set up to [write unit tests](#writing--running-unit-tests)
+- You'll also need to [create a test app](<#creating a test app>)
+- ...and get yourself set up to [write unit tests](<#writing  running unit tests>)
 
 ## Creating a test app
 
@@ -148,7 +148,7 @@ firebase init
 
 ## Getting started with unit tests
 
-- First [create test app](#creating-a-test-app)
+- First [create test app](<#creating a test app>)
 - Now, create a folder called test:
 
 ```bash
@@ -169,9 +169,9 @@ npm init # or npm install if this was already done
 - I originally did all this after watching [this video]()
   - But that video was 4 years old and things have moved on.
   - So I've documented here... 
-    - [What I originally did](#what-i-originally-did)
-    - [How I converted to a more up to date approach](#how-i-converted-to-a-more-up-to-date-approach)
-    - [How to _start_ with more up to date approach](#how-to-start-with-more-up-to-date-approach)
+    - [What I originally did](<#what i originally did>)
+    - [How I converted to a more up to date approach](<#how i converted to a more up to date approach>)
+    - [How to _start_ with more up to date approach](<#how to start with more up to date approach>)
 
 ### What I originally did
 
@@ -431,7 +431,7 @@ describe("Our security rules test social app", () => {
     - Run `firebase emulators:start`
     - You may get an error about ports if you already have an emulator running
       - You can edit port in `firebase.json` as per instructions, or you can close down the other emulator first
-      - !Editing port can be problematic! See [below](#running-emulator-on-another-port)
+      - !Editing port can be problematic! See [below](<#running emulator on another port>)
     - You may have to wait for emulator to be downloaded
 - Run `npm test` again
   - You should get the error `FirebaseError: false for 'get'`
@@ -744,7 +744,7 @@ if (request.auth.token.role == "Moderator")
   - There's a size limit to how much data you can add (is pretty big though)
   - There's a delay before updates will materialise - updates only happen once an hour
     - So use it for stuff that will change infrequently
-- Alternative is to [store custom auth stuff in your database](#store-custom-auth-stuff-in-your-database)
+- Alternative is to [store custom auth stuff in your database](<#store custom auth stuff in your database>)
 - See [sample code](security-rules-test-app/test/firestore.test.js#L149) for example of test
   - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example of test:
@@ -1042,7 +1042,7 @@ service cloud.firestore {
   - select Rules at top
   - click Rules playground, bottom left
 - In emulator, you can experiment with security rules by other means: https://firebase.google.com/docs/emulator-suite/connect_firestore#visualize_security_rules_activity
-- ...but the best way is to write unit tests, and then you can [debug](#debugging) if necessary
+- ...but the best way is to write unit tests, and then you can [debug](<#debugging>) if necessary
 
 ## Debugging
 
@@ -1107,12 +1107,12 @@ const firestore = {
 - I ran the emulator from within the VS Code terminal instead of in iTerm, and that _seemed_ to fix it.
   - But the next time I encountered this problem, that _didn't_ fix it.
   - Note that after I'd done that, I could stop it in VS Code (Ctrl + C) and then start it again in iTerm and it worked fine. V odd.
-- See also [Running emulator on another port](#running-emulator-on-another-port)
+- See also [Running emulator on another port](<#running emulator on another port>)
 
 ### Tests failing unexpectedly
 
 - If tests start failing unexpectedly and `debug` commands won't work
-  - Check `firestore-debug.log` - see [debugging](#debugging)
+  - Check `firestore-debug.log` - see [debugging](<#debugging>)
   - If you're getting the error `Detected non-HTTP/2 connection.`, see below
 
 ### Error `Detected non-HTTP/2 connection.`
@@ -1170,11 +1170,11 @@ Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is
   - (You might get `ECONNREFUSED` errors)
 - I achieved it by doing three things, all illustrated below:
   - 1. Edit `firebase.json` to indicate emulator should run on a different port
-    - See [below](#1-edit-firebasejson)
+    - See [below](<#1 edit firebasejson>)
   - 2. Edit your test file to indicate emulator is running on a different port
-    - See [below](#2-edit-your-test-file)
+    - See [below](<#2 edit your test file>)
   - 3. Remove any calls in your tests to `clearFirestoreData`
-    - See [below](#3-remove-calls-to-clearfirestoredata)
+    - See [below](<#3 remove calls to clearfirestoredata>)
 
 ### 1. Edit firebase.json
 

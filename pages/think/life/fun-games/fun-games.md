@@ -23,7 +23,7 @@ Everything from Taskmaster (see book). For instance...
 
 This is one of my favourite party games. It always makes me laugh a lot.
 
-It's similar to the Drawful game available at [Jackbox games](#jackbox-tv). Drawful works better remotely, but Picture Consequences works better in person. Another online version of this game is [BrokenPicturePhone](http://brokenpicturephone.com), and [Gartic Phone](https://garticphone.com/) is also a good version. There's also [Skribbl](https://skribbl.io/).
+It's similar to the Drawful game available at [Jackbox games](<#jackbox tv>). Drawful works better remotely, but Picture Consequences works better in person. Another online version of this game is [BrokenPicturePhone](http://brokenpicturephone.com), and [Gartic Phone](https://garticphone.com/) is also a good version. There's also [Skribbl](https://skribbl.io/).
 
 - You need at least 5 people. More than 10 is probably getting a bit excessive.
 - Everybody gets a piece of A4 paper
@@ -117,12 +117,12 @@ Work co-operatively to write all your names down. How can you do it more quickly
 ### Jackbox.tv
 
 There are many different games available [at jackbox](https://www.jackboxgames.com/how-to-play/). We particularly enjoyed: 
-- Drawful (People draw pictures and then try to guess the descriptions - see [Picture Consequences](#picture-consequences) above, which is similar)
+- Drawful (People draw pictures and then try to guess the descriptions - see [Picture Consequences](<#picture consequences>) above, which is similar)
 - Fibbage (People are asked to invent definitions and then guess the correct ones)
 
 ### Skribbl.io
 
-[Like Pictionary](https://skribbl.io/). See also [Picture consequences](#picture-consequences--telephone-pictionary).
+[Like Pictionary](https://skribbl.io/). See also [Picture consequences](<#picture consequences  telephone pictionary>).
 
 ### Really Boring Website
 

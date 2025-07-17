@@ -5,56 +5,56 @@ permalink: /pages/organising/tools/Obsidian
 ---
 ## Contents of this file:
 
-- [Obsidian Overview](#obsidian-overview)
-- [Useful Obsidian links](#useful-obsidian-links)
-- [To do](#to-do)
-- [Questions](#questions)
-- [Notes from Diana's presentation at Socrates UK '24](#notes-from-dianas-presentation-at-socrates-uk-24)
-- [Vault management](#vault-management)
-- [Keyboard shortcuts](#keyboard-shortcuts)
+- [Obsidian Overview](<#obsidian overview>)
+- [Useful Obsidian links](<#useful obsidian links>)
+- [To do](<#to do>)
+- [Questions](<#questions>)
+- [Notes from Diana's presentation at Socrates UK '24](<#notes from dianas presentation at socrates uk 24>)
+- [Vault management](<#vault management>)
+- [Keyboard shortcuts](<#keyboard shortcuts>)
 - [[#Customising Obsidian]]
 	- [[#Configuring a new vault]]
-  - [css snippets](#css-snippets) / [[#css snippets]]
-  - [Plugins](#plugins)
-  - [Variables](#variables)
-  - [Modal forms](#modal-forms)
-  - [QuickAdd](#quickadd)
-    - [Use QuickAdd to automate note and folder creation](#use-quickadd-to-automate-note-and-folder-creation)
-    - [DON'T Use QuickAdd this way to automate folder and file creation](#dont-use-quickadd-this-way-to-automate-folder-and-file-creation)
-- [Basic operations](#basic-operations)
-  - [Command palette](#command-palette)
-  - [Settings](#settings)
-  - [Quick Switcher](#quick-switcher)
-  - [Navigating](#navigating)
-  - [Source mode](#source-mode)
-  - [Linking to other content](#linking-to-other-content)
-  - [Formatting markdown](#formatting-markdown)
-  - [Callouts](#callouts)
-  - [File / folder management](#file--folder-management)
+  - [css snippets](<#css snippets>) / [[#css snippets]]
+  - [Plugins](<#plugins>)
+  - [Variables](<#variables>)
+  - [Modal forms](<#modal forms>)
+  - [QuickAdd](<#quickadd>)
+    - [Use QuickAdd to automate note and folder creation](<#use quickadd to automate note and folder creation>)
+    - [DON'T Use QuickAdd this way to automate folder and file creation](<#dont use quickadd this way to automate folder and file creation>)
+- [Basic operations](<#basic operations>)
+  - [Command palette](<#command palette>)
+  - [Settings](<#settings>)
+  - [Quick Switcher](<#quick switcher>)
+  - [Navigating](<#navigating>)
+  - [Source mode](<#source mode>)
+  - [Linking to other content](<#linking to other content>)
+  - [Formatting markdown](<#formatting markdown>)
+  - [Callouts](<#callouts>)
+  - [File / folder management](<#file  folder management>)
   - Attachments
-- [File syncing](#file-syncing)
-  - [Syncing with Google Drive](#syncing-with-google-drive)
-  - [Syncing with iCloud](#syncing-with-icloud)
-  - [Github Sync plugin](#github-sync-plugin)
-  - [GitHub Syncing on iPhone](#github-syncing-on-iphone)
-- [Organising content](#organising-content)
-  - [Saving / storing links to 3rd party content](#saving--storing-links-to-3rd-party-content)
-  - [Importing content from other Notes systems](#importing-content-from-other-notes-systems)
-  - [Each note should contain one idea](#each-note-should-contain-one-idea)
-  - [Maps of Content (MOCs)](#maps-of-content-mocs)
-  - [Templates](#templates)
-  - [Properties](#properties)
-    - [Showing / hiding properties](#showing--hiding-properties)
-    - [Bad properties](#bad-properties)
-    - [Searching for properties and other things](#searching-for-properties-and-other-things)
-    - [Tag properties](#tag-properties)
-    - [Parent properties](#parent-properties)
-    - [Aliases](#aliases)
-- [Troubleshooting](#troubleshooting)
-  - [If you lose the outline or properties pane](#if-you-lose-the-outline-or-properties-pane)
-  - [If folders are not in alphabetical order in dropdowns](#if-folders-are-not-in-alphabetical-order-in-dropdowns)
-  - [If live preview colours text inside single brackets](#if-live-preview-colours-text-inside-single-brackets)
-  - [If you can't delete a note](#if-you-cant-delete-a-note)
+- [File syncing](<#file syncing>)
+  - [Syncing with Google Drive](<#syncing with google drive>)
+  - [Syncing with iCloud](<#syncing with icloud>)
+  - [Github Sync plugin](<#github sync plugin>)
+  - [GitHub Syncing on iPhone](<#github syncing on iphone>)
+- [Organising content](<#organising content>)
+  - [Saving / storing links to 3rd party content](<#saving  storing links to 3rd party content>)
+  - [Importing content from other Notes systems](<#importing content from other notes systems>)
+  - [Each note should contain one idea](<#each note should contain one idea>)
+  - [Maps of Content (MOCs)](<#maps of content mocs>)
+  - [Templates](<#templates>)
+  - [Properties](<#properties>)
+    - [Showing / hiding properties](<#showing  hiding properties>)
+    - [Bad properties](<#bad properties>)
+    - [Searching for properties and other things](<#searching for properties and other things>)
+    - [Tag properties](<#tag properties>)
+    - [Parent properties](<#parent properties>)
+    - [Aliases](<#aliases>)
+- [Troubleshooting](<#troubleshooting>)
+  - [If you lose the outline or properties pane](<#if you lose the outline or properties pane>)
+  - [If folders are not in alphabetical order in dropdowns](<#if folders are not in alphabetical order in dropdowns>)
+  - [If live preview colours text inside single brackets](<#if live preview colours text inside single brackets>)
+  - [If you can't delete a note](<#if you cant delete a note>)
 
 ## Obsidian Overview
 
@@ -85,7 +85,7 @@ permalink: /pages/organising/tools/Obsidian
   - Use the `outline` core plugin?
   - For some other ideas, see [here](https://forum.obsidian.md/t/a-graphically-cool-table-of-contents/87684/5)
 - Linking to individual headings / sections in notes?
-  - See [formatting](#formatting-markdown) below
+  - See [formatting](<#formatting markdown>) below
 
 ## Notes from Diana's presentation at Socrates UK '24
 
@@ -155,7 +155,7 @@ permalink: /pages/organising/tools/Obsidian
 - !! Now maintaining this list in Obsidian - CareerAnalysis vault
 - From [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
 - Note: for convenience we use “super” in this list, which means either the command key on Mac or ctrl on Windows and Linux: 
-  - Super + ,	- Open [settings](#settings)
+  - Super + ,	- Open [settings](<#settings>)
   - Super + b	- Bold text
   - Super + o - open or create note
   - Super + i	- Italicize text
@@ -167,13 +167,13 @@ permalink: /pages/organising/tools/Obsidian
   - Super + t	- New tab
   - Ctrl + tab - Go to next tab
   - Ctrl + Shift + tab - go to previous tab
-  - Super + Shift + F - [Search](#searching-for-properties-and-other-things)
+  - Super + Shift + F - [Search](<#searching for properties and other things>)
   - Super + ; - Create a new property
   - Cmd + option(Mac)/Shift(Win) + i - open developer tools
-- You can also setup your own shortcuts, via [Settings](#settings) => Hotkeys
+- You can also setup your own shortcuts, via [Settings](<#settings>) => Hotkeys
   - Here are some of the ones I use:
     - Super + Shift + T - Insert template
-    - Super + Shift + M - Switch to [source mode](#source-mode)
+    - Super + Shift + M - Switch to [source mode](<#source mode>)
     - Super + Shift + I - create Stacking the Bricks file using my QuickAdd template
     - Super + Shift + S - create Stacking the Bricks file in new section folder using my QuickAdd template
     - Super + Alt/option + 1-6 - apply headings 1-6
@@ -212,18 +212,18 @@ permalink: /pages/organising/tools/Obsidian
 		- Go to [[#Settings]] => Appearance => scroll down to css at the bottom
 		- If no snippets are listed (and you copied some over in the previous step), click the Refresh button
 		- Turn the slider to "on" for each snippet you want to apply
-	- Make properties sections be hidden by default: [Settings](#settings) => Editor => properties in document => hidden
+	- Make properties sections be hidden by default: [Settings](<#settings>) => Editor => properties in document => hidden
 	- Create a Templates folder, point to it from the core `Templates` plugin, add at least one simple template
 		- More on this [[#Templates|here]]
-	- Go to [Settings](#settings) and remove any [[#Plugins|plugin]] macros you don't want
+	- Go to [Settings](<#settings>) and remove any [[#Plugins|plugin]] macros you don't want
 		- If you copied over the whole of your `plugins` folder and you had the `QuickAdd` or `Modal forms` plugins, you will now have all the macros you set up, and this might include stuff that's not relevant to this vault
 ### css snippets
 
 - Used for styling how things look in a note
-- In [settings](#settings) under Appearance, at the bottom, click the folder icon next to CSS Snippets to open the correct location
+- In [settings](<#settings>) under Appearance, at the bottom, click the folder icon next to CSS Snippets to open the correct location
 - Create a `css` file in your vault, under `.obsidian/snippets` (Use Cmd + shift + `.` to show hidden files in MacOS file explorer)
   - Call it what you like, eg `my-styles.css`
-- In [settings](#settings) under Appearance, at the bottom, click the Refresh button to show your css file [thing]
+- In [settings](<#settings>) under Appearance, at the bottom, click the Refresh button to show your css file [thing]
 - Turn the switch on next to your file to load what's in it
 - To find out what the css is for the bit you're interested in, use the developer tools:
   - Cmd + option + i (Mac) or Ctrl + Shift + i (Windows)
@@ -234,7 +234,7 @@ permalink: /pages/organising/tools/Obsidian
 
 - On desktop:
   - Obsidian (top left) => Settings => Community plugins => turn on
-    - or use [command palette](#command-palette) to reach settings
+    - or use [command palette](<#command palette>) to reach settings
   - Browse for what you want, and install
     - You have to do it separately for every vault you want to use the plugin for
   - Now two things might (should?) happen:
@@ -257,9 +257,9 @@ permalink: /pages/organising/tools/Obsidian
 ### Variables
 
 - There are various places you can use variables
-- The places I know about are [templates](#templates) and [QuickAdd](#quickadd)[]()
-- In templates, you can use them to fill in values, like `{{date}}` in the example [below](#templates)
-- In QuickAdd, you can use them in things like file paths, like in the example [below](#use-quickadd-to-automate-note-and-folder-creation)
+- The places I know about are [templates](<#templates>) and [QuickAdd](<#quickadd>)[]()
+- In templates, you can use them to fill in values, like `{{date}}` in the example [below](<#templates>)
+- In QuickAdd, you can use them in things like file paths, like in the example [below](<#use quickadd to automate note and folder creation>)
 - There are standard Obsidian variables. I know about these three (I don't _think_ there are any more):
   - `{{date}}`
   - `{{time}}`
@@ -268,24 +268,24 @@ permalink: /pages/organising/tools/Obsidian
   - `{{VALUE:VariableName}}`
 - The only way I know of capturing a variable is via `QuickAdd`
   - In this case, it's not at all obvious and (IMHO) really badly documented, but the way to do it is simply to refer to it elsewhere, either in a QuickAdd macro or in a template.
-  - eg in the example [below](#use-quickadd-to-automate-note-and-folder-creation)
+  - eg in the example [below](<#use quickadd to automate note and folder creation>)
     - I want a FileName variable 
     - so I simply add `{{VALUE:FileName}}` to my file name format and when I run the `QuickAdd` command, it will popup an input asking me to enter a value for `FileName`
     - I also want a `LessonUrl` variable, so I add it to my template, and this also results in a popup with an input asking me for a value
-    - For full explanation, see [example](#use-quickadd-to-automate-note-and-folder-creation)
+    - For full explanation, see [example](<#use quickadd to automate note and folder creation>)
   - As far as I can work out, you _don't_ (and maybe even can't?) use the `Capture` type of QuickAdd to capture variables. Anything captured via that method will end up being pasted into a file, rather than being made available as a variable to other bits of functionality
 
 ### Modal forms
 
 - `Modal forms` is a useful plugin
 - My notes come from [this article](https://obsidian.rocks/improving-callouts-with-obsidian-modal/)
-- The modal forms plugin doesn't add any icons on the left hand side - instead it adds a bunch of commands to [command palette](#command-palette) - just search for "modal forms"
-  - Each command opens a new form - by default they appear on right hand side (or main panel on mobile), but you can configure it differently via [plugin settings](#plugins)
+- The modal forms plugin doesn't add any icons on the left hand side - instead it adds a bunch of commands to [command palette](<#command palette>) - just search for "modal forms"
+  - Each command opens a new form - by default they appear on right hand side (or main panel on mobile), but you can configure it differently via [plugin settings](<#plugins>)
   - Note that these forms are what you use to _manage_ forms you will then create yourself - so they are effectively _meta_ forms
 - Example - create a form you can use in future to create new callouts:
-  - Install two [plugins](#plugins): `QuickAdd` and `Modal Forms`
+  - Install two [plugins](<#plugins>): `QuickAdd` and `Modal Forms`
   - Create the form:
-    - Select "Modal Forms - new form" from [command palette](#command-palette)
+    - Select "Modal Forms - new form" from [command palette](<#command palette>)
     - This will open a form for you to fill out in the right hand panel (where properties normally appear)
     - Name = `new_callout`, Title = `New Callout`
     - Click `Add more fields`
@@ -296,7 +296,7 @@ permalink: /pages/organising/tools/Obsidian
       - 3. Name = `Collapsible`, Type = `Toggle`
       - 4. Name = `Type`, Type = `Select`
         - Click `Add more options` and keep clicking it every time you want to add a new option
-        - Labels are up to you, values should be actual values - see [below](#callouts) for list of callout types
+        - Labels are up to you, values should be actual values - see [below](<#callouts>) for list of callout types
         - Use the arrows to change the order they'll appear in the dropdown
     - (Optional) Click `Preview` to see what it looks like
     - Click `Save and Close`
@@ -305,7 +305,7 @@ permalink: /pages/organising/tools/Obsidian
     - A way of processing the data from the form. 
     - So...
   - ...Use `QuickAdd` to define what will be done with the form data:
-    - Go to the QuickAdd settings (see [plugins](#plugins) for how)
+    - Go to the QuickAdd settings (see [plugins](<#plugins>) for how)
     - Type "New Callout" into the input next to `Manage Macros`
     - Click the `Template` button to the right, and select `Capture`
     - Click `Add Choice` to create a new action called `New Callout`
@@ -324,28 +324,28 @@ permalink: /pages/organising/tools/Obsidian
 ````
     - Close the popup
   - Test it works:
-    - Open [command palette](#command-palette) and type "quick" to select `Run QuickAdd`
+    - Open [command palette](<#command palette>) and type "quick" to select `Run QuickAdd`
     - Select `New Callout` (if it's the only one, you can just hit Enter)
     - Fill in the form 
       - You can use tab to navigate, and spacebar to set the toggle, and Enter to Submit
       - You can include `\n` in the `Content` input to add new lines, or once it's done, use up arrow to enter the callout, and use Shift+Enter at the END of a line to add new lines
   - Create a hotkey / command
-    - If you want, in QuickAdd [settings](#settings) you can click the lightning icon next to `New Callout`
-    - Now it'll turn up as its own item in [command palette](#command-palette)
-    - This also means you can give it its own [hotkey](#keyboard-shortcuts) if you like
+    - If you want, in QuickAdd [settings](<#settings>) you can click the lightning icon next to `New Callout`
+    - Now it'll turn up as its own item in [command palette](<#command palette>)
+    - This also means you can give it its own [hotkey](<#keyboard shortcuts>) if you like
 
 ### QuickAdd
 
-- You can use the `QuickAdd` [plugin](#plugins) to automate actions you do frequently 
-- See [Modal Forms](#modal-forms) for an example of using it to automate the creation of [callouts](#callouts)
-- See [below](#use-quickadd-to-automate-note-and-folder-creation) for using QuickAdd to automate the creation of a file in specific folder using a specific template
+- You can use the `QuickAdd` [plugin](<#plugins>) to automate actions you do frequently 
+- See [Modal Forms](<#modal forms>) for an example of using it to automate the creation of [callouts](<#callouts>)
+- See [below](<#use quickadd to automate note and folder creation>) for using QuickAdd to automate the creation of a file in specific folder using a specific template
 - [Format syntax](https://quickadd.obsidian.guide/docs/FormatSyntax)
 
 #### Use QuickAdd to automate note and folder creation
 
 - Here's how to use QuickAdd to automate the creation of a file in specific folder using a specific template:
-- Create a [template](#templates)
-- Open the [QuickAdd settings](#plugins)
+- Create a [template](<#templates>)
+- Open the [QuickAdd settings](<#plugins>)
   - (if not done already) In the `Template Folder Path` section, specify the path to your templates folder. 
   - Create a new macro: 
     - Next to `Manage Macros`, enter your macro's name 
@@ -359,10 +359,10 @@ permalink: /pages/organising/tools/Obsidian
         - Or if you want a bespoke sub-folder to be created...
         - Enter this instead: `{{VALUE:FolderName}}/{{VALUE:LessonID}} - {{VALUE:LessonName}}`
         - The forward-slash means the missing folder will be created, with `FolderName`
-      - The `{{VALUE:` part indicates these are custom [variables](#variables)
+      - The `{{VALUE:` part indicates these are custom [variables](<#variables>)
         - It means QuickAdd will prompt the user to enter two values for `LessonID` and `LessonName` (and `FolderName` if you went for that option)
     - I discovered I could also access the `LessonID` variable in my template
-      - I wanted to capture another variable (`{{VALUE:LessonUrl}}`) to use only in my template (not in the `QuickAdd` macro), so I just added it to the [template](#templates), and because that template was referenced in the QuickAdd macro, when the macro ran, it popped up an input asking the user for a value for the variable
+      - I wanted to capture another variable (`{{VALUE:LessonUrl}}`) to use only in my template (not in the `QuickAdd` macro), so I just added it to the [template](<#templates>), and because that template was referenced in the QuickAdd macro, when the macro ran, it popped up an input asking the user for a value for the variable
       - Note that I couldn't originally get this to work (not sure why), so I attempted a sneaky way of doing this...
         - I do NOT recommend this...
         - I turned on `Create in folder`, and in `Folder path` I entered `{{VALUE:LessonUrl}}` and clicked `Add`
@@ -378,7 +378,7 @@ permalink: /pages/organising/tools/Obsidian
     - There's no Save button, just close the popup and your settings will be saved
   - Turn the macro into a command: 
     - Click the lightning icon to the right of its name
-    - Now it will turn up in the [command palette](#command-palette) and you can setup a [hotkey](#keyboard-shortcuts) to trigger it
+    - Now it will turn up in the [command palette](<#command palette>) and you can setup a [hotkey](<#keyboard shortcuts>) to trigger it
 - I tried to make this fancier by adding more steps in `QuickAdd` - spoecifically I tried to use `Capture` and `Macro` but I couldn't make head or tail of it and the documentation didn't help
   - eg I found lots of scources suggesting I use scripts using javascript but I couldn't for the life of me work out how to actually enter a script
   - and I couldn't work out how the hell to get variables to work
@@ -388,7 +388,7 @@ permalink: /pages/organising/tools/Obsidian
 
 #### DON'T Use QuickAdd this way to automate folder and file creation
 
-- Go to [settings](#settings) => QuickAdd
+- Go to [settings](<#settings>) => QuickAdd
 - Click Manage Macros
 - Give it a name
 - Click `Add Macro`
@@ -471,7 +471,7 @@ Time: 1 second
 
 ### Navigating
 
-- Use [quick switcher](#quick-switcher) to move between notes
+- Use [quick switcher](<#quick switcher>) to move between notes
 - Backlinks show you what links to your content and what it links to
 - Click the link icons with arrows, top right
 - You can also see relationships in graph format
@@ -485,7 +485,7 @@ Time: 1 second
   - Desktop: 
     - View => Source mode
     - Three dots top right => source mode
-    - [Command palette](#command-palette) => View source mode
+    - [Command palette](<#command palette>) => View source mode
     - I have the hotkey Cmd + Shift + M set up for this
   - Mobile: Three dots, top right => Source mode
     - View => Source mode 
@@ -529,8 +529,8 @@ Time: 1 second
 - [My notes came from this article](https://obsidian.rocks/using-callouts-in-obsidian/)
 - [Official documentation here](https://help.obsidian.md/callouts)
 - You can also create yourself a little modal form to fill in to create callouts
-  - See [Modal forms](#modal-forms)
-- If you want, you can use [command palette](#command-palette), type "callout", select "insert callout" and it will give you a template to fill in
+  - See [Modal forms](<#modal forms>)
+- If you want, you can use [command palette](<#command palette>), type "callout", select "insert callout" and it will give you a template to fill in
   - The focus will automatically be in the callout type, so you can replace this text with the type you want - but don't press Enter afterwards! Use arrow keys instead
   - When you're done, either keep pressing Enter until you're out the bottom, or use the down arrow to get out of it.
 - Tip: 
@@ -581,10 +581,10 @@ Time: 1 second
    
 ## File syncing
 
-- If syncing between MacBook and iPhone, your best option seems to be [iCloud](#syncing-with-icloud)
-- You can also place your folder somewhere like [Google Drive](#syncing-with-google-drive)
+- If syncing between MacBook and iPhone, your best option seems to be [iCloud](<#syncing with icloud>)
+- You can also place your folder somewhere like [Google Drive](<#syncing with google drive>)
   - but this seems a bit flakier than iCloud, and you have to keep manually pulling and pushing, and it's risky to have files open on both devices at once - whereas iCloud just automatically syncs across devices
-- Or you can use [GitHub](#github-sync-plugin)
+- Or you can use [GitHub](<#github sync plugin>)
 
 ## Attachments and images
 
@@ -597,7 +597,7 @@ Time: 1 second
 - First create a new vault on mobile (I did this on iphone)
   - just vault, not in iCloud
   - Install + enable the `Google Drive Sync` plugin
-    - see [plugin instructions](#plugins) if you're not sure how
+    - see [plugin instructions](<#plugins>) if you're not sure how
   - READ THE CAVEATS
     - You have to use the plugin to manage all syncing from now on
     - You can NOT manually add, edit or remove files or config files directly in Google Drive
@@ -605,7 +605,7 @@ Time: 1 second
     - !Do this while the vault is still empty!
     - Don't add any content or push to Google Drive until you've set up the refresh token
 - To sync with Google Drive:
-  - Use the [command palette](#command-palette)
+  - Use the [command palette](<#command palette>)
   - You can use either of the two commands `pull from google drive` or `push to google drive`
   - Also, when in an open file, click the hamburger menu bottom right to see "push to google drive"
     - When you push, it pulls first
@@ -654,7 +654,7 @@ Time: 1 second
 
 - Note that in the end I didn't bother trying to get this working on mobile
 - Actually in the end I didn't use it at all, because even on desktop the functionality is limited - eg you can't edit commit messages - they're automatically generated - and I found it just as easy to use my normal GitHub tools (command line and Git?Hub Desktop, fwiw)
-  - I installed the plugin on desktop, and used [iCloud sync](#syncing-with-icloud) to sync with my phone
+  - I installed the plugin on desktop, and used [iCloud sync](<#syncing with icloud>) to sync with my phone
   - Then changes are committed to Github on laptop
   - I did find [[#GitHub Syncing on iPhone|these instructions]] on how to get it working on phone, but I couldn't be bothered
 - How to Use
@@ -763,7 +763,7 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - The Cmd/Ctrl + O hotkey allows you to search and see if a thing already exists... then if it doesn't, pressing Enter will create it for you
 - 4. If you can't find a note you wrote, rename it
   - Give it a name that matches whatever you were searching for - then you know it'll be easier to find next time!
-- 5. Use [aliases](#aliases) sparingly
+- 5. Use [aliases](<#aliases>) sparingly
   - "I typically recommend aliases for only two things: synonyms and abbreviations. If I write a note about GTD, it’s not a bad idea to also add an alias spelling out “Getting Things Done”. That way you can search for either term and find the note."
   - "Additionally there are few things more frustrating than searching for a word, expecting to find a note, and discovering later that you used a different word."
 
@@ -775,25 +775,25 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 
 - My notes summarised from [this article](https://obsidian.rocks/getting-started-with-templates-in-obsidian/#comment-29383)
 - Create a Templates folder in your vault
-- Make sure you have the core `Templates` [plugin](#plugins) enabled
-  - Configure it in [Settings](#settings) to use your Templates folder
+- Make sure you have the core `Templates` [plugin](<#plugins>) enabled
+  - Configure it in [Settings](<#settings>) to use your Templates folder
 - Place notes in your Templates folder
   - Each note represents a template
   - When you "insert" this template, everything in it will be inserted into the note you are in
-  - The most likely thing you'll put in it will be [properties](#properties), but you can also put content if you want
+  - The most likely thing you'll put in it will be [properties](<#properties>), but you can also put content if you want
   - You can use variables so that, for instance, the date will always be set to the current date
     - The example below has a formatted date, but you can also just use `{{date}}` or `{{time}}`
     - I experimented with `{{datetime}}` and `{{DateTime}}`, but I couldn't get either of those to work
-  - You can also use [custom variables](#variables)
-    - I used this feature for my [file creation macro](#use-quickadd-to-automate-note-and-folder-creation)
+  - You can also use [custom variables](<#variables>)
+    - I used this feature for my [file creation macro](<#use quickadd to automate note and folder creation>)
     - I wanted to capture another variable to use ONLY in my template, so I just added `{{VALUE:LessonUrl}}` to the template, and when I ran the `QuickAdd` macro, it popped up an input asking for a value for the variable
-      - See [example](#use-quickadd-to-automate-note-and-folder-creation)
+      - See [example](<#use quickadd to automate note and folder creation>)
       - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
 - To use the template: 
   - Open / create a note
   - Select the "insert template" icon on the left below the calendar icon
-    - or use [command palette](#command-palette) => "insert template"
-    - or create a [hotkey](#keyboard-shortcuts) - Cmd/Ctrl + T is a good one (that's what I've done)
+    - or use [command palette](<#command palette>) => "insert template"
+    - or create a [hotkey](<#keyboard shortcuts>) - Cmd/Ctrl + T is a good one (that's what I've done)
   - Any content in the template will be inserted into your note wherever your cursor is
   - Any properties in the template will go at the top of your note regardless of where your cursor is
     - If you already have properties, the new ones will be merged with the existing ones
@@ -832,33 +832,33 @@ parent: "[[Home]]"
 ---
 ```
   - You can still add that to the top of an Obsidian file, but when you hit Enter it will turn into a `Properties` metadata section
-    - ...depending on whether you have them [hidden](#showing--hiding-properties)
+    - ...depending on whether you have them [hidden](<#showing  hiding properties>)
   - If you add a Jekyll frontmatter header to the top of an Obsidian file, it won't acknowledge the specific properties as being meaningful in any special Obsidian way, but it will recognise it as representing properties, and format it accordingly.
 - You can add properties using the Add property button or by just adding a row to the yaml
 - To remove a property...
   - Click on its icon and select Remove, or...
-  - [view source](#source-mode) and remove the line of yaml
+  - [view source](<#source mode>) and remove the line of yaml
 - It's up to you how many properties you have per file, or you can have no properties at all
 - The keyboard shortcut Cmd/Ctrl + `;` allows you to create a new property
 - More on properties:
-  - [Showing / hiding properties](#showing--hiding-properties)
-  - [Bad properties](#bad-properties)
-  - [Searching for properties](#searching-for-properties-and-other-things)
+  - [Showing / hiding properties](<#showing  hiding properties>)
+  - [Bad properties](<#bad properties>)
+  - [Searching for properties](<#searching for properties and other things>)
 - Different types of property:
-  - [Tags](#tag-properties)
-  - [Parent](#tag-properties)
+  - [Tags](<#tag properties>)
+  - [Parent](<#tag properties>)
 
 #### Showing / hiding properties
 
-- You can make properties sections be hidden by default: [Settings](#settings) => Editor => properties in document => hidden
+- You can make properties sections be hidden by default: [Settings](<#settings>) => Editor => properties in document => hidden
   - or set to "source" to allow you to see the YAML as it appears in the code snippet above
-  - If they're hidden, one way to see them is to go into [source mode](#source-mode) and then expand the section at the top via the little arrow
-    - ...or enable the core "Properties view" plugin, then go to [command palette](#command-palette) => `Properties: Show all properties` or `Properties: Show file properties`
+  - If they're hidden, one way to see them is to go into [source mode](<#source mode>) and then expand the section at the top via the little arrow
+    - ...or enable the core "Properties view" plugin, then go to [command palette](<#command palette>) => `Properties: Show all properties` or `Properties: Show file properties`
 
 #### Bad properties
 
 - Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
-- When you have a bad property, it shows up as yellow in the property editor but won't let you edit it. The only way to edit is either in [source mode](#source-mode) or by clicking on the icon and deleting the property, then recreating it.
+- When you have a bad property, it shows up as yellow in the property editor but won't let you edit it. The only way to edit is either in [source mode](<#source mode>) or by clicking on the icon and deleting the property, then recreating it.
 
 #### Searching for properties and other things
 
@@ -873,7 +873,7 @@ parent: "[[Home]]"
 
 #### Tag properties
 
-- Go into properties (depending how you're [showing them](#showing--hiding-properties))
+- Go into properties (depending how you're [showing them](<#showing  hiding properties>))
 - If you don't have one already, you can add a `tags` property:
 ```
 ---
@@ -885,7 +885,7 @@ tags: writing/idea
 #### Parent properties
 
 - Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
-  - See [bad data](#bad-properties) for how to fix this
+  - See [bad data](<#bad properties>) for how to fix this
 
 ### Aliases
 
@@ -907,7 +907,7 @@ aliases:
 
 ### If you lose the outline or properties pane
 
-- Use [command palette](#command-palette) to "show outline" or "show file properties"
+- Use [command palette](<#command palette>) to "show outline" or "show file properties"
 - They might both be in the same pane on the right, in which case the circle with an i icon will show properties, abd the horizontal lines will show outline
 
 ### If folders are not in alphabetical order in dropdowns
@@ -922,7 +922,7 @@ aliases:
 
 - You can't have `[text]` because the text gets turned into a different colour inside the square brackets
 - See discussion [here](https://forum.obsidian.md/t/live-preview-dont-color-square-bracketed-text-as-a-link-unless-its-part-of-a-link/79896/2)
-- Fix it using [css snippets](#css-snippets)
+- Fix it using [css snippets](<#css snippets>)
 - Use the following snippet:
 ```css
 .cm-s-obsidian {

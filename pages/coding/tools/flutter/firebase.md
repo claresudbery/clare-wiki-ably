@@ -8,15 +8,15 @@ permalink: /pages/coding/tools/flutter/Firebase
 
 ## Contents of this page
 
-- [Tutorial](#tutorial)
-- [Editing database - gotchas](#editing-database---gotchas)
-- [How to export / import data?](#how-to-export--import-data)
-- [Troubleshooting lost data from emulator](#troubleshooting-lost-data-from-emulator)
-- [Troubleshooting "permission denied"](#troubleshooting-permission-denied)
-- [Troubleshooting emulator failing on startup](#troubleshooting-emulator-failing-on-startup)
-- [Collection groups / Collection group queries](#collection-group-queries)
-- [Upload an image to local emulator storage](#upload-an-image-to-local-emulator-storage)
-- [How to verify a new user without actually having to literally click a link in an email](#how-to-verify-a-new-user-without-actually-having-to-literally-click-a-link-in-an-email)
+- [Tutorial](<#tutorial>)
+- [Editing database - gotchas](<#editing database   gotchas>)
+- [How to export / import data?](<#how to export  import data>)
+- [Troubleshooting lost data from emulator](<#troubleshooting lost data from emulator>)
+- [Troubleshooting "permission denied"](<#troubleshooting permission denied>)
+- [Troubleshooting emulator failing on startup](<#troubleshooting emulator failing on startup>)
+- [Collection groups / Collection group queries](<#collection group queries>)
+- [Upload an image to local emulator storage](<#upload an image to local emulator storage>)
+- [How to verify a new user without actually having to literally click a link in an email](<#how to verify a new user without actually having to literally click a link in an email>)
 
 ## Tutorial
 

@@ -151,7 +151,7 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
 ## Upgrade to heroku-22 from heroku-18 (12/10/22)
 
 - This was my first attempt, and it failed. Details below.
-    - Second attempt is documented [here](#upgrade-to-heroku-22-from-heroku-18-290423).
+    - Second attempt is documented [here](<#upgrade to heroku 22 from heroku 18 290423>).
 - Find out which apps are using a particular stack (in this case `heroku-18`):
     - `heroku login`
     - (If not already done) `heroku plugins:install apps-table`
@@ -172,7 +172,7 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
         - ... but this failed when I reviewed the deployment, and there was no feedback as to why
     - So I just clicked the upgrade button in the settings
         - This didn't work - build log showed deploy failed because I was using a vserion of Ruby not supported by the new heroku stack
-            - Same happened when I tried again Apr '23, so I [tried again](#upgrade-to-heroku-22-from-heroku-18-290423).
+            - Same happened when I tried again Apr '23, so I [tried again](<#upgrade to heroku 22 from heroku 18 290423>).
         - So I rolled back: 
             - find previous release: `heroku login` then `heroku releases -a [app name]`
             - Roll back to last release using previous stack: `heroku rollback v28`

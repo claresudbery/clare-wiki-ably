@@ -134,7 +134,7 @@ lifts.forEach(lift -> {
 
 ## IntelliJ shortcuts
 
-  - See also [keyboard shortcuts](#keyboard-shortcuts) below - which seem slightly different - maybe different keyboard mapping?
+  - See also [keyboard shortcuts](<#keyboard shortcuts>) below - which seem slightly different - maybe different keyboard mapping?
   - Splat-B – go to definition (equivalent of Ctrl+B in Resharper)
   - Splat-alt-left (and right) – move back and forwards in history
   - Splat-shift-A – Action (v useful)
@@ -185,7 +185,7 @@ lifts.forEach(lift -> {
 
 ### List of shortcuts
 
-- See also [IntelliJ shortcuts](#intellij-shortcuts) above - which seem slightly different - maybe different keyboard mapping?
+- See also [IntelliJ shortcuts](<#intellij shortcuts>) above - which seem slightly different - maybe different keyboard mapping?
 - [Full list of Mac shortcuts](https://www.jetbrains.com/help/idea/reference-keymap-mac-default.html)
 - Find/show usages: Alt + Splat + F7
   - or just Alt + F7

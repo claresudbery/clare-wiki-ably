@@ -8,18 +8,18 @@ permalink: /pages/coding/tools/flutter/Widgets
 
 ## Contents of this page:
 
-- [Intro to widgets](#intro-to-widgets)
-- [Finding useful widgets etc](#finding-useful-widgets-etc)
-- [Get a dialog to return a value](#get-a-dialog-to-return-a-value)
-- [Streams vs futures](#streams-vs-futures)
-- [Keyboard Shortcuts](#keyboard-shortcuts)
-  - [Flutter Shortcuts, Actions and Intents](#flutter-shortcuts-actions-and-intents)
-  - [The Shortcuts Widget](#the-shortcuts-widget)
-  - [Handling Keyboard Shortcuts in the Quill Editor](#handling-keyboard-shortcuts-in-the-quill-editor)
-  - [Bug in Quill Editor's Overriding of Keyboard Shortcuts](#handling-keyboard-shortcuts-in-the-quill-editor)
-- [Quill Editor](#quill-editor)
-- [Widget layout](#widget-layout)
-- [Common flutter errors](#common-flutter-errors)
+- [Intro to widgets](<#intro to widgets>)
+- [Finding useful widgets etc](<#finding useful widgets etc>)
+- [Get a dialog to return a value](<#get a dialog to return a value>)
+- [Streams vs futures](<#streams vs futures>)
+- [Keyboard Shortcuts](<#keyboard shortcuts>)
+  - [Flutter Shortcuts, Actions and Intents](<#flutter shortcuts actions and intents>)
+  - [The Shortcuts Widget](<#the shortcuts widget>)
+  - [Handling Keyboard Shortcuts in the Quill Editor](<#handling keyboard shortcuts in the quill editor>)
+  - [Bug in Quill Editor's Overriding of Keyboard Shortcuts](<#handling keyboard shortcuts in the quill editor>)
+- [Quill Editor](<#quill editor>)
+- [Widget layout](<#widget layout>)
+- [Common flutter errors](<#common flutter errors>)
 
 ## Intro to widgets
 
@@ -63,7 +63,7 @@ print('Dialog one returned value ---> $val');
 ### Flutter Shortcuts, Actions and Intents
 
 - [High-level overview](https://docs.flutter.dev/ui/interactivity/actions-and-shortcuts#shortcuts)
-- See [below](#the-shortcuts-widget) for the `Shortcuts` widget
+- See [below](<#the shortcuts widget>) for the `Shortcuts` widget
 - Note that there are several `Intent` classes built in to Flutter, which are mapped to `Action` classes behind the scenes, and just work.
   - For instance: `SelectAllTextIntent`, `DoNothingIntent`, `PreviousFocusIntent`, `NextFocusIntent`
     - More [here](https://api.flutter.dev/flutter/widgets/NextFocusIntent-class.html)
@@ -95,7 +95,7 @@ class InsertWordAction extends Action<InsertWordIntent> {
 }
 ```
 
-- The final piece of the puzzle comes when Intents are mapped to Actions, for instance in a `Shortcuts` widget - see [example below](#the-shortcuts-widget)
+- The final piece of the puzzle comes when Intents are mapped to Actions, for instance in a `Shortcuts` widget - see [example below](<#the shortcuts widget>)
 
 ### The Shortcuts Widget
 
@@ -201,9 +201,9 @@ Widget buildShortcuts() {
 - Quill has a lot of keyboard events it handles by default
   - You can see some [here](https://github.com/slab/quill/blob/v1.3.7/modules/keyboard.js#L141)
   - ...and some more [here](https://github.com/singerdmx/flutter-quill/blob/6dbf0f7caf6da89db9eed08cb377a5458124bfc6/lib/src/editor/widgets/default_single_activator_actions.dart#L18)
-    - (see [above](#flutter-shortcuts-actions-and-intents) for explanation of `Intent` objects)
+    - (see [above](<#flutter shortcuts actions and intents>) for explanation of `Intent` objects)
 - You can override keyboard shortcut events using the `customShortcuts` and `customActions` parameters to the `QuillEditorConfigurations` constructor 
-  - We had to upgrade to flutter-quill v 10.1.7 to fix a bug in this functionality - see [below](#bug-in-quill-editors-overriding-of-keyboard-shortcuts)
+  - We had to upgrade to flutter-quill v 10.1.7 to fix a bug in this functionality - see [below](<#bug in quill editors overriding of keyboard shortcuts>)
   - This is what it looks like:
 
 ```dart
@@ -260,8 +260,8 @@ Widget buildQuillEditor() {
 
 - The repo is [here](https://github.com/singerdmx/flutter-quill)
 - To look at details of different versions, see changelog [here](https://github.com/singerdmx/flutter-quill/blob/master/CHANGELOG.md)
-- For notes about overriding keyboard shortcuts, see [above](#handling-keyboard-shortcuts-in-the-quill-editor) 
-- For notes about a bug in overriding keyboard shortcuts, see [above](#bug-in-quill-editors-overriding-of-keyboard-shortcuts)
+- For notes about overriding keyboard shortcuts, see [above](<#handling keyboard shortcuts in the quill editor>) 
+- For notes about a bug in overriding keyboard shortcuts, see [above](<#bug in quill editors overriding of keyboard shortcuts>)
 
 ## Widget layout
 

@@ -24,7 +24,7 @@ permalink: /pages/coding/infra/cloud/Kubernetes
       - You can use **kubectl** to specify which namespace you will be
         working in (see Changing namespace below), but be aware that
         this is still within one cluster. If you want to switch clusters
-        you have to set your config up - see [Kube Config section below](#kube-config-adding-clusters).
+        you have to set your config up - see [Kube Config section below](<#kube config adding clusters>).
       - There’s a quota (for memory and CPU) on the namespace which
         doesn’t kill anything but stops you from running things
       - The quota determines how much of the cluster we are able to use
@@ -42,7 +42,7 @@ permalink: /pages/coding/infra/cloud/Kubernetes
       - So one way to see clusters is via GCP UI - select a project,
         then Kubernetes Engine on the left, then select clusters
   - If you want to access multiple clusters from the command line:
-      - See [Kube Config section below](#kube-config-adding-clusters)
+      - See [Kube Config section below](<#kube config adding clusters>)
       
 
 ## Kube Config / Adding Clusters

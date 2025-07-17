@@ -6,7 +6,7 @@ permalink: /pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems
 
 ## Important
 
-- Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date)
+- Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](<#staying up to date>)
 
 ## Intro
 
@@ -36,8 +36,8 @@ There are two possible sources of version woes when working Ruby:
 These can sometimes be related - eg your project may depend on a particular gem that itself is dependent on a particular version of Ruby.
 Generally though, the two areas are handled by different means:  
 
-1. You can simply have gems manually installed on your system, using `gem` commands. But most Ruby projects use [`bundler`](#bundler) to manage gem versions. This leads to the use of a file called `Gemfile`, which will itself specify your Ruby version (in different ways depending on [which Ruby version management system you're using](#different-versions-of-ruby)).
-2. There are [various different tools available](#different-versions-of-ruby) to manage differing versions of Ruby between projects.
+1. You can simply have gems manually installed on your system, using `gem` commands. But most Ruby projects use [`bundler`](<#bundler>) to manage gem versions. This leads to the use of a file called `Gemfile`, which will itself specify your Ruby version (in different ways depending on [which Ruby version management system you're using](<#different versions of ruby>)).
+2. There are [various different tools available](<#different versions of ruby>) to manage differing versions of Ruby between projects.
 
 ## What gems are / how gems work
 
@@ -45,20 +45,20 @@ You can use the `gem` command to use the [`RubyGems` software](https://guides.ru
 
 A gem is a Ruby software package. Each gem contains a packaged Ruby application or library. More concretely, it’s a zip file containing a bunch of ruby files and/or dynamic library files that can be imported by your code, along with some metadata.
 
-You can install gems using the `gem install` command, and there are lots of other useful `gem` commands (eg `gem list` to see what's installed - more [here](https://guides.rubygems.org/rubygems-basics/)) but this on its own does not allow you to control which gems are used by which projects. That's where [bundler](#bundler) comes in.
+You can install gems using the `gem install` command, and there are lots of other useful `gem` commands (eg `gem list` to see what's installed - more [here](https://guides.rubygems.org/rubygems-basics/)) but this on its own does not allow you to control which gems are used by which projects. That's where [bundler](<#bundler>) comes in.
 
 [More on gems here](https://guides.rubygems.org/rubygems-basics/)
 
 ## Staying up to date
 
-- See also [Different versions of Ruby](#different-versions-of-ruby)
+- See also [Different versions of Ruby](<#different versions of ruby>)
 - NB: You should aim to always keep your Ruby version at the most stable version (in Jan 2021 this is 3.0.0). 
     - To find the latest stable version, go [here](https://www.ruby-lang.org/en/downloads/). 
 - For advice on how to keep ALL your dependencies (ie gems as well as Ruby itself) up to date, see [this article](https://thoughtbot.com/blog/keep-your-gems-up-to-date) - which also gives advice on how to automate the process. GitHub's dependabot will also help with this.
 - ...or follow this simple approach (there are [some notes here](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#problems-related-to-the-above) re when I did this on 1/3/21 - see commits cd73da4 to d9548ea):
-    - 1. Make sure all dependabot PRs are acted on ([instructions here](#updating-from-dependabot-branches))
-    - 2. Make sure dependabot security alerts are also acted upon (not the same as PRs) (they happen when PRs are not possible - see [how dependabot works](#how-dependabot-works)) ([instructions here](#acting-on-dependabot-alerts))
-    - 3. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](#acting-on-security-recommendations-with-bundle-audit))    
+    - 1. Make sure all dependabot PRs are acted on ([instructions here](<#updating from dependabot branches>))
+    - 2. Make sure dependabot security alerts are also acted upon (not the same as PRs) (they happen when PRs are not possible - see [how dependabot works](<#how dependabot works>)) ([instructions here](<#acting on dependabot alerts>))
+    - 3. Run bundle-audit weekly or monthly and act on all recommendations ([instructions here](<#acting on security recommendations with bundle audit>))    
     - 4. Make sure your main technologies are up to date (for this site, that's Ruby and Jekyll)
     - 5. Run `bundle outdated` at regular intervals and then run `bundle update [gem-name]` one at a time on each of the outdated gems, with a separate commit for each gem (fixing any related deprecation warnings in the same commit) ([more detail here](https://thoughtbot.com/blog/keep-your-gems-up-to-date))
 
@@ -76,7 +76,7 @@ You can install gems using the `gem install` command, and there are lots of othe
 
 ### Updating from dependabot branches
 
-- See also [How dependabot works](#how-dependabot-works)
+- See also [How dependabot works](<#how dependabot works>)
 - Actions you can take:
     - If dependabot branches are failing in Travis:
         - Check / Google error messages in Travis
@@ -95,7 +95,7 @@ You can install gems using the `gem install` command, and there are lots of othe
 
 ### Acting on dependabot alerts
 
-- See also [How dependabot works](#how-dependabot-works)
+- See also [How dependabot works](<#how dependabot works>)
 - Dependabot alerts live on the main front page in GitHub
 - or visit Security | Dependabot alerts
 - They require a little more attention - see details in GitHub
@@ -106,7 +106,7 @@ You can install gems using the `gem install` command, and there are lots of othe
 
 ### How dependabot works
 
-- See also [Updating from dependabot branches](#updating-from-dependabot-branches)
+- See also [Updating from dependabot branches](<#updating from dependabot branches>)
 - Dependabot is a free service offered by GitHub - you can enable it there
 - !! It does NOT necessarily catch all critical security updates. It's worth using [bundle-audit](https://github.com/rubysec/bundler-audit) as well 
     - `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
@@ -133,7 +133,7 @@ You can install gems using the `gem install` command, and there are lots of othe
 - The below notes are now probably out of date.
     - [This page](https://mac.install.guide/ruby/1.html) is more up to date (Mar 2022)
     - You can use [asdf](https://asdf-vm.com/) to manage Ruby versions - [some details here](https://mac.install.guide/ruby/5.html) 
-- The three main Ruby version management systems for Mac OSX and Linux (including WSL on Windows, but NOT [vanilla Windows via GitBash](#windows)) are:
+- The three main Ruby version management systems for Mac OSX and Linux (including WSL on Windows, but NOT [vanilla Windows via GitBash](<#windows>)) are:
     - [chruby](https://github.com/postmodern/chruby)
         - This is what I'm currently using, via my Ubuntu system on Windows (NOT Ubuntu 16.04 (just because Ubuntu is the one I keep up to date and has everything in `~/.bashrc`))
         - To list Ruby versions currently installed, just enter `chruby` at the command prompt.
@@ -190,7 +190,7 @@ puts $LOADED_FEATURES
 
 ## Bundler
 
-NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](#staying-up-to-date).
+NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](<#staying up to date>).
 
 - Run `bundle init` to create a brand new `Gemfile`.
 - [bundler](https://bundler.io) is itself a gem, which has to be installed like other gems (`gem install bundler`).
@@ -257,7 +257,7 @@ require 'bundler/setup'
 
 ### "Your XXX version is a.b.c, but your Gemfile specified d.e.f"
 
-(See also [Conflicting Ruby versions](#conflicting-ruby-versions) below.)
+(See also [Conflicting Ruby versions](<#conflicting ruby versions>) below.)
 
 - **Example**: 
     - `Your Ruby version is 2.6.3, but your Gemfile specified 2.6.5`
@@ -463,7 +463,7 @@ require 'bundler/setup'
 
 ### Use chruby to manage your Ruby versions
 
-- See also [Different versions of Ruby](#different-versions-of-ruby) in this doc.
+- See also [Different versions of Ruby](<#different versions of ruby>) in this doc.
 
 - **Example**:
     - Add stuff to `~/.bash_profile` and `.ruby-version` as per https://github.com/postmodern/chruby
@@ -483,7 +483,7 @@ require 'bundler/setup'
 
 ### Use ruby-install to specify a Ruby version
 
-- See also [Different versions of Ruby](#different-versions-of-ruby) in this doc.
+- See also [Different versions of Ruby](<#different versions of ruby>) in this doc.
 
 - **Example**:
     - Cmd: `brew install ruby-install`

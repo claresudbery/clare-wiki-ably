@@ -16,45 +16,45 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 
 ## Table of Contents
 
-- [Quotes](#quotes)
+- [Quotes](<#quotes>)
 - Chapter 1
-  - [Four components of the NVC model](#four-components-of-the-nvc-model)
-  - [Give and receive](#give-and-receive)
+  - [Four components of the NVC model](<#four components of the nvc model>)
+  - [Give and receive](<#give and receive>)
 - Chapter 2
-  - [Avoid judgements](#avoid-judgements) 
-  - [Avoid denial of responsibility](#avoid-denial-of-responsibility)
-  - [Avoid Life-Alienating Communication](#avoid-life-alienating-communication)
+  - [Avoid judgements](<#avoid judgements>) 
+  - [Avoid denial of responsibility](<#avoid denial of responsibility>)
+  - [Avoid Life-Alienating Communication](<#avoid life alienating communication>)
 - Chapter 3
-  - [Observe without evaluating](#observe-without-evaluating)
+  - [Observe without evaluating](<#observe without evaluating>)
 - Chapter 4
-  - [The Heavy Cost of Unexpressed Feelings](#the-heavy-cost-of-unexpressed-feelings)
+  - [The Heavy Cost of Unexpressed Feelings](<#the heavy cost of unexpressed feelings>)
 - Chapter 5
-  - [Taking Responsibility for Our Feelings](#taking-responsibility-for-our-feelings)
-  - [The Needs at the Roots of Feelings](#the-needs-at-the-roots-of-feelings)
-  - [From Emotional Slavery to Emotional Liberation](#from-emotional-slavery-to-emotional-liberation)
+  - [Taking Responsibility for Our Feelings](<#taking responsibility for our feelings>)
+  - [The Needs at the Roots of Feelings](<#the needs at the roots of feelings>)
+  - [From Emotional Slavery to Emotional Liberation](<#from emotional slavery to emotional liberation>)
 - Chapter 6
-  - [Using Positive Action Language](#using-positive-action-language)
-  - [Requesting Honesty](#requesting-honesty)
-  - [Requests versus Demands](#requests-versus-demands)
+  - [Using Positive Action Language](<#using positive action language>)
+  - [Requesting Honesty](<#requesting honesty>)
+  - [Requests versus Demands](<#requests versus demands>)
 - Chapter 7
-  - [Receiving Empathically](#receiving-empathically)
-  - [When Pain Blocks Our Ability to Empathize](#when-pain-blocks-our-ability-to-empathize)
+  - [Receiving Empathically](<#receiving empathically>)
+  - [When Pain Blocks Our Ability to Empathize](<#when pain blocks our ability to empathize>)
 - Chapter 8
-  - [Empathy That Heals](#empathy-that-heals)
+  - [Empathy That Heals](<#empathy that heals>)
 - Chapter 9
-  - [Connecting Compassionately With Ourselves](#connecting-compassionately-with-ourselves)
-  - [Don’t Do Anything That Isn’t Play!](#dont-do-anything-that-isnt-play)
-  - [EXERCISE: Translating “Have to” to “Choose to”](#exercise-translating-have-to-to-choose-to)
+  - [Connecting Compassionately With Ourselves](<#connecting compassionately with ourselves>)
+  - [Don’t Do Anything That Isn’t Play!](<#dont do anything that isnt play>)
+  - [EXERCISE: Translating “Have to” to “Choose to”](<#exercise translating have to to choose to>)
 - Chapter 10
-  - [Expressing Anger Fully](#expressing-anger-fully)
+  - [Expressing Anger Fully](<#expressing anger fully>)
 - Chapter 11
-  - [Conflict Resolution and Mediation](#conflict-resolution-and-mediation)
+  - [Conflict Resolution and Mediation](<#conflict resolution and mediation>)
 - Chapter 12
-  - [The Protective Use of Force](#the-protective-use-of-force)
+  - [The Protective Use of Force](<#the protective use of force>)
 - Chapter 13
-  - [Liberating Ourselves and Counseling Others](#liberating-ourselves-and-counseling-others)
+  - [Liberating Ourselves and Counseling Others](<#liberating ourselves and counseling others>)
 - Chapter 14
-  - [Expressing Appreciation in Nonviolent Communication](#expressing-appreciation-in-nonviolent-communication)
+  - [Expressing Appreciation in Nonviolent Communication](<#expressing appreciation in nonviolent communication>)
 
 ## Quotes
 
@@ -229,7 +229,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 - Classifying and judging people promotes violence.
 - Comparisons are a form of judgment.
 - Judgments of others are alienated expressions of our own unmet needs. 
-- This also applies to judgments we make of ourselves. See [connecting compassionately with ourselves](#connecting-compassionately-with-ourselves)
+- This also applies to judgments we make of ourselves. See [connecting compassionately with ourselves](<#connecting compassionately with ourselves>)
 
 ### Avoid denial of responsibility
 

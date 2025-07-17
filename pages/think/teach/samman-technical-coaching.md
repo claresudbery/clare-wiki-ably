@@ -26,7 +26,7 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 	- Code with your teams daily on their BAU as a mob, using driver-navigator
 	- Use timers
 	- Use whiteboards to sketch out ideas
-	- Daily learning hour (see [Good Ideas](#daily-learning-hour))
+	- Daily learning hour (see [Good Ideas](<#daily learning hour>))
 	- TDD
 	- Refactoring
 - More about Samman

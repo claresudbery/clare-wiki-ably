@@ -56,7 +56,7 @@ I did this by automatically tagging / segmenting people who signed up via differ
 
 ### Set up tags and automations
 
-- ! It turns out you don't NEED to use tags for this next bit - see [adding segments](#set-up-segments) - but I decided I liked the idea of having tags
+- ! It turns out you don't NEED to use tags for this next bit - see [adding segments](<#set up segments>) - but I decided I liked the idea of having tags
 - Then I created two tags
 	- Grow => Subscribers
 	- Scroll down on the right, find Tags => Create a tag

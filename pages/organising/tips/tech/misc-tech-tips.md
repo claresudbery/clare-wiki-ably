@@ -273,8 +273,8 @@ That's it! Happy Miroing.
 
 ### Record your screen on a Mac
 
-- [1. With quicktime](#1-with-quicktime)
-- [2. With Screenshot functionality](#2-with-screenshot-functionality)
+- [1. With quicktime](<#1 with quicktime>)
+- [2. With Screenshot functionality](<#2 with screenshot functionality>)
 
 ### 1. With QuickTime
 
@@ -358,8 +358,8 @@ That's it! Happy Miroing.
 - You're supposed to be able to use Edit => Split Clip for this (see instructions below)
   - but when I tried this technique, I found it pretty impossible to find the right points for splitting
   - instead it was easier to...
-    - use [Edit => Trim](#extract-a-clip-from-a-longer-video) to create sub-sections, 
-    - then [splice them together](#splice-two-videos-together)
+    - use [Edit => Trim](<#extract a clip from a longer video>) to create sub-sections, 
+    - then [splice them together](<#splice two videos together>)
 - To use Edit => Split Clip:
   - 1. In QuickTime Player, drag the playhead (the small diamond) in the timeline to the location where you want to split your movie.
   - 2. Choose Edit > Split Clip.
