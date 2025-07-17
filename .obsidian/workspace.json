@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/testing/obsidian-test.md",
+                "file": "pages/coding/lang/oo/python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "obsidian-test"
+              "title": "python"
             }
           },
           {
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -368,7 +368,7 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "e84f68f8a17ccda1",
+  "active": "be021e3dd7ee400b",
   "lastOpenFiles": [
     "pages/organising/tools/testing/obsidian-test.md",
     "pages/organising/tools/obsidian.md",
