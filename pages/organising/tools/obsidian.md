@@ -9,9 +9,10 @@ permalink: /pages/organising/tools/Obsidian
 - [Useful Obsidian links](<#useful obsidian links>)
 - [To do](<#to do>)
 - [Questions](<#questions>)
-- [Notes from Diana's presentation at Socrates UK '24](<#notes from dianas presentation at socrates uk 24>)
+- [Notes from Diana's presentation at Socrates UK '24](<#notes from diana's presentation at socrates uk '24>)
 - [Vault management](<#vault management>)
 - [Keyboard shortcuts](<#keyboard shortcuts>)
+- [[#Publish to a website]]
 - [[#Customising Obsidian]]
 	- [[#Configuring a new vault]]
   - [css snippets](<#css snippets>) / [[#css snippets]]
@@ -93,7 +94,7 @@ permalink: /pages/organising/tools/Obsidian
 - Personal note taking app and organising knowledge 
 - like notion, but runs on laptop or phone rather than in browser 
 - Can be published to a website (clare-wiki!)
-    - But can I link to private pages from elsewhere, like I can with clare-tech by using GitHub links?
+	- See [[#Publish to a website|notes below on publishing]]
 - Tasks plugin allows you to manage tasks 
 - It's all markdown 
     - But it has its own query language which is embedded and proprietary 
@@ -126,8 +127,7 @@ permalink: /pages/organising/tools/Obsidian
     - Used it to write her book 
     - Could highlight words she wanted in a glossary, and then use a plugin to generate the glossary for her 
     - It created a graph for her of the conceptual relationships between the different parts of her book 
-    - It has a publish feature which will allow you to turn your notes into a website!!! Clare-wiki!!
-    - uses it in concert with github, so things get pushed automatically, I think?
+    - It has a [[#Publish to a website|publish feature]] which will allow you to turn your notes into a website!!! Clare-wiki!!
 
 ## Vault management
 
@@ -153,34 +153,27 @@ permalink: /pages/organising/tools/Obsidian
 
 ## Keyboard shortcuts
 
-- !! Now maintaining this list in Obsidian - CareerAnalysis vault
-- From [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
-- Note: for convenience we use “super” in this list, which means either the command key on Mac or ctrl on Windows and Linux: 
-  - Super + ,	- Open [settings](<#settings>)
-  - Super + b	- Bold text
-  - Super + o - open or create note
-  - Super + i	- Italicize text
-  - Super + k	- Insert link
-  - Super + p	- Open command palette (more on that below)
-  - Super + Shift + p	- Open quick switcher
-  - Super + n	- Create new note
-  - Super + w	- Close current tab
-  - Super + t	- New tab
-  - Ctrl + tab - Go to next tab
-  - Ctrl + Shift + tab - go to previous tab
-  - Super + Shift + F - [Search](<#searching for properties and other things>)
-  - Super + ; - Create a new property
-  - Cmd + option(Mac)/Shift(Win) + i - open developer tools
-- You can also setup your own shortcuts, via [Settings](<#settings>) => Hotkeys
-  - Here are some of the ones I use:
-    - Super + Shift + T - Insert template
-    - Super + Shift + M - Switch to [source mode](<#source mode>)
-    - Super + Shift + I - create Stacking the Bricks file using my QuickAdd template
-    - Super + Shift + S - create Stacking the Bricks file in new section folder using my QuickAdd template
-    - Super + Alt/option + 1-6 - apply headings 1-6
-    - Super + Shift + B - Toggle left sidebar (file explorer)
-    - Super + Alt/option + B - Toggle right sidebar (properties and outline)
+- !! Now maintaining this list in Obsidian - [[Keyboard shortcuts|CareerAnalysis vault]]
+## Publish to a website
 
+- I hoped I could link to private pages from elsewhere, like I can with clare-tech by using GitHub links...
+	- ...but it wasn't really the same. I found a way of doing this by putting my vault into a GitHub repo and sharing links to files in that repo, but Obsidian uses non-standard markdown so things like internal links and callouts didn't work nicely
+- By paying for Obsidian publish, you can publish your whole vault as a website
+	- It's not very cheap! It's $95 per year PER WEBSITE
+- You can publish multiple vaults to one website
+	- ...and you can publish only parts of your vault
+- I've published [here](https://publish.obsidian.md/clare-wiki-career)
+	- I've published only the public parts of my Clare's Career vault, AND sections of clare-wiki, all to the same site
+- To get this working, do the following:
+	- Create an [Obsidian account online](https://obsidian.md/auth?returnto=%2Faccount%2Fpublish#signup)
+		- You won't necessarily have one of these already if you're using the free version
+	- Sign in online and [pay for Obsidian Publish](https://obsidian.md/account/publish) in your account
+	- Sign in within the Obsidian app as well
+		- Not the same as signing in online
+		- Go to [[#Settings]] > General > Account > Login
+	- Enable Obsidian Publish in the app: [[#Settings]] > Core plugins > Publish.
+	- Now you can publish via [[#Command palette]] > Publish changes
+	- [More here](https://help.obsidian.md/publish/setup)
 ## Customising Obsidian
 
 ### Configuring a new vault
