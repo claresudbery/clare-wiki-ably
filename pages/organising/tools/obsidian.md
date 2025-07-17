@@ -286,6 +286,7 @@ permalink: /pages/organising/tools/Obsidian
   - Install two [plugins](#plugins): `QuickAdd` and `Modal Forms`
   - Create the form:
     - Select "Modal Forms - new form" from [command palette](#command-palette)
+    - This will open a form for you to fill out in the right hand panel (where properties normally appear)
     - Name = `new_callout`, Title = `New Callout`
     - Click `Add more fields`
       - ! You'll then instantly get an error for fields BELOW that you haven't even filled in yet - don't worry, just keep filling in the form
@@ -335,7 +336,7 @@ permalink: /pages/organising/tools/Obsidian
 
 ### QuickAdd
 
-- You can use the `QuickAdd` [plugin](#plugins) to automate actions you do frequently `thing`
+- You can use the `QuickAdd` [plugin](#plugins) to automate actions you do frequently 
 - See [Modal Forms](#modal-forms) for an example of using it to automate the creation of [callouts](#callouts)
 - See [below](#use-quickadd-to-automate-note-and-folder-creation) for using QuickAdd to automate the creation of a file in specific folder using a specific template
 - [Format syntax](https://quickadd.obsidian.guide/docs/FormatSyntax)
@@ -817,6 +818,8 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
 - Properties are note metadata - or notes about your notes
 - More [here](https://obsidian.rocks/an-introduction-to-obsidian-properties/)
   - and [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/)
+- To get started with properties...
+	- 
 - It used to be that properties were added using frontmatter
   - Same as Jekyll! Same as clare-wiki!
   - Like this at top of each file:
@@ -938,3 +941,10 @@ aliases:
 
 - If all it has a title and no content, you can't delete it. 
 - Add some text in the body and then you'll be able to delete it.
+
+### Fixing internal links that use hyphens instead of spaces
+
+- When they use hyphens instead of spaces, this is called "slugifying"
+- What you want to do is unslugify!
+- I haven't found any plugins that do this
+- ChatGPT suggested using Python - see below

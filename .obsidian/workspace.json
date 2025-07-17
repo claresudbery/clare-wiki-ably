@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -368,10 +368,10 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "be021e3dd7ee400b",
+  "active": "e84f68f8a17ccda1",
   "lastOpenFiles": [
-    "pages/organising/tools/obsidian.md",
     "pages/organising/tools/testing/obsidian-test.md",
+    "pages/organising/tools/obsidian.md",
     "pages/coding/lang/oo/python.md",
     "pages/organising/tools/testing/obsidian.md",
     "pages/organising/tools/testing",
