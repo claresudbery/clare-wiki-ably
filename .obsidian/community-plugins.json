@@ -3,5 +3,8 @@
   "modalforms",
   "highlightr-plugin",
   "colored-text",
-  "reveal-active-file-button"
+  "reveal-active-file-button",
+  "wikilinks-to-mdlinks-obsidian",
+  "obsidian-link-converter",
+  "better-markdown-links"
 ]

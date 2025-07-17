@@ -120,6 +120,34 @@
             }
           },
           {
+            "id": "be021e3dd7ee400b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/organising/tools/testing/obsidian-test.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "obsidian-test"
+            }
+          },
+          {
+            "id": "7835f12b174977a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Big-Index-Useful-Tools"
+            }
+          },
+          {
             "id": "113b7bb7263a710c",
             "type": "leaf",
             "state": {
@@ -167,16 +195,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tips/tech/apple-macs-and-ios.md",
+                "file": "pages/organising/tools/obsidian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "apple-macs-and-ios"
+              "title": "obsidian"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -208,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spotify",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -321,7 +349,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -336,14 +364,25 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "modalforms:Edit forms": false
+      "modalforms:Edit forms": false,
+      "publish:Publish changes...": false
     }
   },
-  "active": "c345b736b39b8823",
+  "active": "be021e3dd7ee400b",
   "lastOpenFiles": [
+    "pages/organising/tools/obsidian.md",
+    "pages/organising/tools/testing/obsidian-test.md",
+    "pages/coding/lang/oo/python.md",
+    "pages/organising/tools/testing/obsidian.md",
+    "pages/organising/tools/testing",
+    "pages/organising/tools/untitled folder",
+    "pages/coding/tools/flutter/security-rules-test-app/test/node_modules/@firebase/testing/node_modules/protobufjs/cli/node_modules/espree/node_modules/acorn/CHANGELOG.md",
+    "pages/organising/tools/Xero.md",
+    "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
+    "pages/organising/tips/tech/apple-macs-and-ios.md",
+    "pages/think/leading/tech-lead-new-project-checklist.md",
     "pages/think/life/things-i-forget.md",
     "pages/organising/tips/non-tech/misc-non-tech-tips.md",
-    "pages/organising/tips/tech/apple-macs-and-ios.md",
     "pages/organising/tools/misc-tools.md",
     "pages/think/life/places-to-visit.md",
     "pages/think/life/walks-and-beauty-spots.md",
@@ -351,23 +390,15 @@
     "pages/coding/data/google-sheets.md",
     "Untitled.md",
     "pages/coding/data/excel.md",
-    "pages/organising/tools/obsidian.md",
-    "pages/organising/tools/Xero.md",
     "pages/organising/podcasts/descript.md",
     "pages/organising/tools/Mural.md",
     "pages/organising/tools/kit.md",
-    "pages/coding/lang/oo/python.md",
     "pages/organising/tools/convertkit.md",
     "resources/images/Pasted image 20250620114054.png",
     "pages/organising/tools/quickbooks.md",
     "pages/think/events/workshops/workshop-types.md",
     "pages/coding/infra/cmd/vim.md",
     "pages/think/life/health-stuff/MyFitnessPal Recipes.md",
-    "pages/think/life/health-stuff/MyFitnessPal Meals.md",
-    "pages/think/life/health-stuff/MyFitnessPal Foods.md",
-    "pages/think/life/health-stuff/health-stuff.md",
-    "pages/think/life/health.md",
-    "pages/organising/tips/tech/misc-tech-tips.md",
     "Templates"
   ]
 }
