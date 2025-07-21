@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/bandcamp.md",
+                "file": "pages/think/life/places-to-visit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bandcamp"
+              "title": "places-to-visit"
             }
           },
           {
@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/Xero.md",
+                "file": "pages/coding/data/google-sheets.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Xero"
+              "title": "google-sheets"
             }
           },
           {
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -236,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "experiment-spreadsheet-cell-refs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -368,16 +368,18 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "e84f68f8a17ccda1",
+  "active": "a76a367104ebcad1",
   "lastOpenFiles": [
+    "pages/organising/tools/bandcamp.md",
+    "pages/coding/data/google-sheets.md",
+    "pages/organising/tools/Xero.md",
+    "pages/organising/tools/obsidian.md",
     "pages/coding/lang/oo/python.md",
     "pages/organising/tools/testing/obsidian-test.md",
-    "pages/organising/tools/obsidian.md",
     "pages/organising/tools/testing/obsidian.md",
     "pages/organising/tools/testing",
     "pages/organising/tools/untitled folder",
     "pages/coding/tools/flutter/security-rules-test-app/test/node_modules/@firebase/testing/node_modules/protobufjs/cli/node_modules/espree/node_modules/acorn/CHANGELOG.md",
-    "pages/organising/tools/Xero.md",
     "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
     "pages/organising/tips/tech/apple-macs-and-ios.md",
     "pages/think/leading/tech-lead-new-project-checklist.md",
@@ -387,7 +389,6 @@
     "pages/think/life/places-to-visit.md",
     "pages/think/life/walks-and-beauty-spots.md",
     "pages/think/life/health-stuff/food.md",
-    "pages/coding/data/google-sheets.md",
     "Untitled.md",
     "pages/coding/data/excel.md",
     "pages/organising/podcasts/descript.md",
@@ -398,7 +399,6 @@
     "pages/organising/tools/quickbooks.md",
     "pages/think/events/workshops/workshop-types.md",
     "pages/coding/infra/cmd/vim.md",
-    "pages/think/life/health-stuff/MyFitnessPal Recipes.md",
     "Templates"
   ]
 }
