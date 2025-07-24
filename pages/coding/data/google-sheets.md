@@ -168,7 +168,7 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
       - So the example above would go like this: `=SUM(VLOOKUP(A1,C2:E10,{2,3},0))`
     - c. But `SUM` on its own isn't enough, you also have to add `ARRAYFORMULA`
       - Like this: `=ARRAYFORMULA(SUM(VLOOKUP(A1,C2:E10,{2,3},0)))`
-      - I discovered this when I followed the internet's advice and tried only steps 1 and 2, and it wasn't enough. These are the otes I made while I was lookign for the solution...
+      - I discovered this when I followed the internet's advice and tried only steps 1 and 2, and it wasn't enough. These are the notes I made while I was looking for the solution...
         - I couldn't get this to work! 
         - Instead I had to use `=SUM(VLOOKUP(A1,C2:E10,2,0),VLOOKUP(A1,C2:E10,3,0))`
         - I posted a question about this [here](https://support.google.com/docs/thread/313246778?hl=en&sjid=14309708405826442934-EU)
@@ -404,6 +404,23 @@ Hoping somebody can help! Thank you."
   - [For bar charts](https://developers.google.com/apps-script/chart-configuration-options#bar-config-options)
   - [For pie charts](https://developers.google.com/apps-script/chart-configuration-options#pie-config-options)
 
+### Using a script to get the name of a tab/sheet
+
+- **Open the Script Editor:** In your Google Sheet, go to "Extensions" > "Apps Script".
+- Copy and paste the following code into the script editor:
+```vbscript
+function SHEETNAME() {  
+	let activeSheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();  
+	return activeSheet.getName();  
+}
+```
+- Click the save icon (looks like a floppy disk) to save the script.
+- **Use the Function in a Cell:** In your Google Sheet, enter the formula `=SHEETNAME()` in the cell where you want the sheet name to appear.
+- You can then reference the contents of that cell elsewhere in your spreadsheet.
+- !!! But if you then rename your sheet, the results of this function don't seem to update automatically! 
+	- Even refreshing the page and closing / reopening the spreadsheet didn't seem to make it update. In the end it seemed like I had to go into the cell with the `=SHEETNAME()` formula and press Enter to rerun the formula. 
+	- But it also seemed like maybe that didn't work either, and what I actually had to do was delete the cell contents, tab away, then go back and repopulate the cell... and then it was CRAZY slow to repopulate (but I don't know if that's cos it was a giant spreadsheet).
+	- But after that I could close and reopen the spreadsheet and it populated quickly.
 ### Looking up charts using their subtitle or title
 
 

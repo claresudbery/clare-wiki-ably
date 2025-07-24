@@ -534,3 +534,10 @@ More advice here: https://www.wikihow.com/Access-News-Articles-for-Free
 	- Skip tracks  
 	- Play/pause  
 	- And more!
+## LinkedIn Pulse
+
+- eg Steve Smith from AOTB published a post about values...
+	- The post as it appears on linkedin feed: [Taking the time to examine my personal values has given me a powerful leadership tool. | Steve Smith](https://www.linkedin.com/posts/stevesmithtech_taking-the-time-to-examine-my-personal-values-activity-7352843402419269632-rbjt?utm_source=share&utm_medium=member_ios&rcm=ACoAAAiZYLUBKE3tP8lBfqVfboHdbSUih9-OOXY)
+	- The post as it appears standalone: [My personal values](https://www.linkedin.com/pulse/my-personal-values-steve-smith-vxa4e?utm_source=share&utm_medium=member_ios&utm_campaign=share_via)
+- LinkedIn Pulse is a publishing platform integrated within LinkedIn that allows users to create and share long-form articles and other content directly on the platform. 
+- Originally a separate app, LinkedIn acquired and integrated Pulse, making it a core part of the LinkedIn experience.
