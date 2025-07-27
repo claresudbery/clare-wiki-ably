@@ -1,0 +1,11 @@
+- Zoom H5 recorder
+- To manage recordings:
+	- Take SD card out of device
+	- attach it to laptop using gismo
+	- I have one that's one of the many gismos I use to attach USB things to my laptop 
+		- it normally lives in my laptop case
+		- It's long and rectangular and silver and flat, and one of its inputs is an SD input
+		- It has "NOVOO" written on one side
+		- It's a little over an inch wide, and about 4 inches long
+		- When it's plugged in, you'll see ZOOM-H5 in Finder
+		- Open Stereo/Folder01 to see most stuff
