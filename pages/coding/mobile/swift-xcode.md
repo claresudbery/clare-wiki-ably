@@ -134,7 +134,8 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - 2) (optional) [Edit the app bundle](https://developer.apple.com/account/ios/identifier/bundle/edit)   
 - 3) (generally useful) [App Store Connect](https://appstoreconnect.apple.com)  
 - 4) Product => Archive 
-    - If you don't want to build a new version of the app, you can skip the next bit and just open Window => Organizer manually
+    - Make sure you change the destination to "Any iOS Device" first (dropdown at top or Product => Destination)
+	- If you don't want to build a new version of the app (won't be true if you're Clare and you've updated TargetWords etc!), you can skip the next bit and just open Window => Organizer manually
         - ...but be aware that if you're here because the test version has expired after 90 days...
         - ...you might need to do a new build just because the SDK version has changed in the meantime
         - You'll know if the SDK version has changed, because when you open XCode it'll make you install a new SDK before you can do anything
@@ -146,13 +147,15 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
             
     - Build a new version of the app:
         - !! The Archive option may be disabled. To fix:  
-            - Try changing the “active scheme” to Generic Ios Device – this is the dropdown you use to select which device the app will run on – top left. 
+            - Try changing the “destination” to "Any iOS Device" – this is the dropdown you use to select which device the app will run on – at the top (or go to Product => Destination). 
         - Wait a minute for the archive to happen
         - The Organizer window will open
         - Enter a description on the right, then if all is good go to 5) below.  
             - Note that I've been copying description from here to readme.md, but that means focus moves away from the Archive window. To get back to it, don't click Product => Archive again, or it will create another archive. Instead, select Window => Organizer 
     - Click Distribute App
         - This might take a while
+        - !! Make sure you select the correct thing on the left hand side!
+	        - There are two possible gotchas here. One is that you select the wrong app, and the other is that you select the wrong version - eg if you inadvertently built for MacOS rather than "Any iOS Device", there will be two versions of your app visible on the left.
         - !! Watch out! There are a couple more dialogs that need your input after you click Distribute App, and they take a while to load so you might miss them and wonder why your build doesn't appear in App Store Connect.
         - It might create a new signing certificate for you. You should export this and store it somewhere like a password manager.
         - When it asks for permission to access your keychain, use your laptop password (stored in 1password). It will ask several times in a row 
@@ -667,11 +670,13 @@ var str = "Your score was \(score)"
 ## Troubleshooting uploaded archive not appearing in App Store Connect
 
 - I uploaded an archive and it didn't appear in App Store Connect
-- It turned out I'd build a Mac OS archive by accident instead of an ios archive!
+- Also, in Organizer I kept seeing the wrong versions listed ready for deployment
+- It turned out I'd built a Mac OS archive by accident instead of an ios archive!
 - This is how I found out: 
-  - In App Store Connect, on the left hand side, under Builds, you'll see iOS and macOS
-  - If you select macOS, your build might appear
-- To build the correct archive, I needed to change the “active scheme” to Any Ios Device 
-  – this is the dropdown you use to select which device the app will run on, at the top 
+	- In App Store Connect, on the left hand side, under Builds, you'll see iOS and macOS
+		- If you select macOS, your build might appear
+	- In Organizer, make sure you select the correct archive on the left - not just the right app, but the right archive for that app (eg "Any iOS Device" rather than MacOS)
+- To build the correct archive, I needed to change the destination to Any Ios Device 
+  – this is the dropdown you use to select which device the app will run on, at the top (or you can go to Product => Destination)
   - but I hadn't done that, and when I tried, that option wasn't available - there weren't any ios options available
   - but there was a thing encouraging me to download the latest ios version, and after I did that, the "Any ios Device" option became available
