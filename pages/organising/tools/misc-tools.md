@@ -237,6 +237,14 @@ re, sorry!)
 - It's ridiculously difficult, but here's how:
   - Three dots, top right of email => Print => Print as PDF
 
+### Chrome bookmarks
+
+ - To copy bookmark links with titles as well as urls (eg to add links from bookmarks to a spreadsheet)... 
+ - Create Chrome bookmarks folder (click 3 dots top right => bookmarks and lists => bookmark all tabs)
+ - Use Export functionality from bookmarks manager to export bookmarks (click three dots top right in bookmark manager)
+ - Open exported html in TextEdit, find the bit you're interested 
+ - Then just c+p direct into Excel
+
 ### Getting Google Authenticator to autofill for passcodes and passkeys on iPhone 16 ios
 
 - Settings => General => Autofill & Passwords => Autofill From

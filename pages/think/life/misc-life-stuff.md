@@ -115,3 +115,9 @@ They can't be the donor or one of the attorneys
 They must be 18 or over
 They are asserting that they are happy that everyone involved knows what they're doing
 They can also be the witness
+
+## How to fix velux blind with frayed cord
+
+- Search terms: "velux blinds", "broken blinds"
+- [This video is really helpful](https://www.youtube.com/watch?v=xtQFFkVeaNc)
+- ...and [here's a good knot to use (the "sheet bend")](https://youtu.be/Qfwc50zKmW0?si=cRx6uHlm3I7qVrhY)

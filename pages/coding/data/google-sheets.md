@@ -133,6 +133,12 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - ...but only for those rows where the value in col C equals the value in `A1`
 	  - ...AND the value in col E equals "Splat"
 
+### Using FILTER to RETURN more than one col
+
+- If you want the range of values returned to come from separate non-consecutive cols, you can do it like this: 
+`=FILTER({$L$4:$L,$E$4:$E,$Q$4:$Q},$A$4:$A=$D15,$C$4:$C<>"")`
+- In this example, we're returning cols L, E and Q.
+
 ## Diff between FILTER and VLOOKUP
 
 - `FILTER` allows more complex search conditions

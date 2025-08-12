@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/coding/mobile/swift-xcode.md",
+                "file": "pages/organising/tools/misc-tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "swift-xcode"
+              "title": "misc-tools"
             }
           },
           {
@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/think/life/places-to-visit.md",
+                "file": "pages/think/life/misc-life-stuff.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "places-to-visit"
+              "title": "misc-life-stuff"
             }
           },
           {
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -236,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "folder01",
+                "query": "blind",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -368,15 +368,16 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "89d264e7b1dac19a",
+  "active": "a76a367104ebcad1",
   "lastOpenFiles": [
+    "pages/coding/data/google-sheets.md",
+    "pages/think/life/places-to-visit.md",
+    "pages/organising/tools/misc-tools.md",
+    "pages/coding/mobile/swift-xcode.md",
     "pages/organising/podcasts/Zoom-H5-recorder.md",
     "pages/organising/podcasts/rode-mics.md",
     "pages/think/life/misc-life-stuff.md",
-    "pages/coding/data/google-sheets.md",
-    "pages/organising/tools/misc-tools.md",
     "pages/organising/tips/tech/misc-tech-tips.md",
-    "pages/think/life/places-to-visit.md",
     "pages/organising/tools/bandcamp.md",
     "pages/organising/tools/Xero.md",
     "pages/organising/tools/obsidian.md",
@@ -397,7 +398,6 @@
     "pages/coding/data/excel.md",
     "pages/organising/podcasts/descript.md",
     "pages/organising/tools/Mural.md",
-    "pages/organising/tools/kit.md",
     "resources/images/Pasted image 20250620114054.png",
     "Templates"
   ]
