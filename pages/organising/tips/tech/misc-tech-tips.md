@@ -536,3 +536,11 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
 - On the left hand side of chapter title is an icon that looks like a list of chapter headings
 - Click on this
 - It's really not obvious that this is a clickable icon!
+
+## Skip forward or back in youtube
+
+- iphone: double tap on left or right of video to go forwards or backwards ten seconds
+- browser / laptop: Use shortcut keys `j`, `k` and `l`:
+	- `j` = go back 10 secs
+	- `k` = pause / play
+	- `l` = go forward 10 secs

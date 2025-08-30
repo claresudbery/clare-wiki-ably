@@ -92,10 +92,21 @@ I did this by automatically tagging / segmenting people who signed up via differ
 ### Change which posts are featured on subscriber page
 
 - Grow => Creator profile => Newsletter posts (on right)
+- Turn on "Show Newsletter Posts" to show all of them
+- Change Featured post to either Newest post or Selected post
+- Click "Select broadcasts to display publicly" to change, one by one, which ones will appear and which will not
+
+Change the thumbnail for posts featured on subscriber page
+
+* Send => Broadcasts
+* Open the broadcast by clicking on the title, NOT by three dots => Open
+* Scroll down on the right and find the SEO Settings section. Click the little Edit pencil, and you can change the featured image, the meta description and the alt text for the image.
+* GOTCHA:
+	* The mistake I made was to click Edit. You have to NOT click Edit. 
 
 ## Edit published content
 
 - You CAN edit broadcasts when they are web only (not emailed)
 - It's not obvious from the main screen but go to Send => Broadcasts
-- Open the broadcast either by clicking on it or three dots => Open
+- Open the broadcast by clicking on the title, NOT by three dots => Open
 - Now you'll see an edit button at the top right

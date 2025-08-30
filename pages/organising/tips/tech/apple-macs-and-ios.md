@@ -199,13 +199,13 @@ killall SystemUIServer
 
 - plug-in USB trackball mouse lagging or being jerky (not responding at all then suddenly catching up)
 - I found something online suggesting you [reset the SMC](<#resetting the smc>)
-- I also foudn something suggesting closing down background apps
-- and someting saying turn bluetooth keyboard on and off
+- I also found something suggesting closing down background apps
+- and something saying turn bluetooth keyboard on and off
 - and restart laptop
 
 ### Resetting the SMC
 
-- on my machine (ex-MT Macbook Pro with Ventura OS (June '23)), which has an Intel processor (which I can tell because in the Mac abhout dialog it says processor instead of chip), you do it like this:
+- on my machine (ex-MT Macbook Pro with Ventura OS (June '23)), which has an Intel processor (which I can tell because in the Mac about dialog it says processor instead of chip), you do it like this:
 - Turn laptop off
 - Hold down the following four keys for 10 seconds:
     - Shift

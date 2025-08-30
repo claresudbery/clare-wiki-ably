@@ -15,6 +15,9 @@ permalink: /pages/organising/tools/Miscellaneous-Tools
 
 - See [Rob Bowley's great LinkedIn post](https://www.linkedin.com/posts/robertbowley_startups-scaleups-ctoinsights-activity-7130114354934370304-DNro?utm_source=share&utm_medium=member_desktop)
 
+## Little automations
+
+- These are all documented in [[misc-automations]]
 ## Spectacle
 
   - Tool which allows keyboard shortcuts for moving windows around

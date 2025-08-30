@@ -1,3 +1,6 @@
+## Skipping forward / back while watching videos
+
+- See [[misc-tech-tips#Skip forward or back in youtube|misc-tech-tips - Skip forward or back in youtube]]
 ## Editing YouTube Videos
 
 ### Add an end screen
