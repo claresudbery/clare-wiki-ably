@@ -102,6 +102,7 @@ See [here](/pages/think/events/workshops/Remote-Workshops#tools-others-have-reco
 
   - Take minutes for meetings (using a Google Doc means it can be
     real-time and people can follow along)
+  - SuperWhisper - there's a link to it in [Llewellyn Falco's talk resources](https://github.com/isidore/Talks/blob/master/AgenticAIAndProcessfiles.md "https://github.com/isidore/Talks/blob/master/AgenticAIAndProcessfiles.md") and he seemed to use it as some kind of transcription service during his talk. It was very useful when he wanted to write prompts for the AI - he would just talk and get it to transcribe for him.
 
 ### Audio
 

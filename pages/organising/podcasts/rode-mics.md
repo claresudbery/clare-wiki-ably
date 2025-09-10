@@ -5,6 +5,7 @@ location: pages/organising/podcasts/leaf
 permalink: /pages/organising/podcasts/Rode-Mics
 ---
 
+This page is for the GO mics. For the Rode podcaster mic I bought for the Making Tech Better podcast, see [[podcast-recording#RODE mic (RODE Podcaster)|here]].
 ## Wireless GO II
 
 Manual: https://rode.com/en/user-guides/wireless-go-ii

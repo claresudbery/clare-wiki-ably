@@ -121,3 +121,4 @@ They can also be the witness
 - Search terms: "velux blinds", "broken blinds"
 - [This video is really helpful](https://www.youtube.com/watch?v=xtQFFkVeaNc)
 - ...and [here's a good knot to use (the "sheet bend")](https://youtu.be/Qfwc50zKmW0?si=cRx6uHlm3I7qVrhY)
+- For Clare: Notes on garret repairs are in clare-tech: house.md

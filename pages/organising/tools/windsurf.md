@@ -3,7 +3,7 @@
 - Initial choices:
 	- Setup flow: start from scratch (add windsurf to path)
 	- Keybindings: Default (VS Code)
-	- Sign up: Set up a free account
+	- Sign up: Set up a free account (managed not in the app but at https://windsurf.com/account/login)
 	- Getting started with Windsurf:
 		- Code with Cascade
 		- Generate a New Project

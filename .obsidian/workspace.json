@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/windsurf.md",
+                "file": "pages/think/life/health-stuff/covid.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "windsurf"
+              "title": "covid"
             }
           },
           {
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -236,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cognition",
+                "query": "\"worms aren't worrying\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -257,7 +257,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -324,13 +325,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/organising/tools/windsurf.md",
+                "file": "pages/organising/podcasts/rode-mics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of windsurf"
+              "title": "Outline of rode-mics"
             }
           },
           {
@@ -368,36 +369,36 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "89d264e7b1dac19a",
+  "active": "022a6f273406c2ac",
   "lastOpenFiles": [
-    "pages/coding/tools/visual-studio.md",
+    "pages/think/life/health-stuff/covid.md",
+    "pages/organising/tools/obsidian.md",
+    "pages/organising/tools/Mural.md",
     "pages/organising/tools/windsurf.md",
+    "pages/organising/tips/non-tech/sonos.md",
+    "pages/coding/data/excel.md",
+    "pages/think/life/misc-life-stuff.md",
+    "pages/organising/podcasts/rode-mics.md",
+    "pages/organising/podcasts/podcast-recording.md",
+    "pages/think/life/places-to-visit.md",
+    "pages/think/agile-princ/remote-working-tools-and-tips.md",
+    "pages/think/life/admin/gifts.md",
+    "pages/coding/tools/visual-studio.md",
     "pages/organising/tips/tech/apple-macs-and-ios.md",
     "pages/organising/tools/misc-automations.md",
     "pages/organising/tools/misc-tools.md",
     "pages/organising/tools/youtube-studio.md",
     "pages/organising/tips/tech/misc-tech-tips.md",
     "pages/coding/data/psql.md",
-    "pages/organising/tools/obsidian.md",
     "pages/organising/tools/kit.md",
     "pages/organising/tools/kinemaster.md",
-    "pages/think/life/misc-life-stuff.md",
     "pages/coding/data/google-sheets.md",
-    "pages/think/life/places-to-visit.md",
     "pages/coding/mobile/swift-xcode.md",
     "pages/organising/podcasts/Zoom-H5-recorder.md",
-    "pages/organising/podcasts/rode-mics.md",
     "pages/organising/tools/bandcamp.md",
     "pages/organising/tools/Xero.md",
-    "pages/coding/lang/oo/python.md",
-    "pages/organising/tools/testing/obsidian-test.md",
-    "pages/organising/tools/testing/obsidian.md",
     "pages/organising/tools/testing",
     "pages/organising/tools/untitled folder",
-    "pages/coding/tools/flutter/security-rules-test-app/test/node_modules/@firebase/testing/node_modules/protobufjs/cli/node_modules/espree/node_modules/acorn/CHANGELOG.md",
-    "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
-    "pages/think/leading/tech-lead-new-project-checklist.md",
-    "pages/think/life/things-i-forget.md",
     "resources/images/Pasted image 20250620114054.png",
     "Templates"
   ]

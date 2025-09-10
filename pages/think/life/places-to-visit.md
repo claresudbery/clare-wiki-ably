@@ -47,6 +47,7 @@ See also [Walks and Beauty Spots](/pages/think/life/Walks-And-Beauty-Spots), and
     - [Website](https://katzsdelicatessen.com/)
     - Recommended by Llewellyn Falco: pastrami, pickles, everything else is a bonus
     - [How to order](https://mattweinberg.net/ordering-at-katzs-deli.html)
+- La Monte Young's "[dream house palace of vibration and light installation](https://en.wikipedia.org/wiki/Dream_House_(installation))" 
 
 ## International places I'd like to see
 

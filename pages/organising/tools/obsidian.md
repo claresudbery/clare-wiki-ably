@@ -500,6 +500,7 @@ Time: 1 second
   - You can also just type the link text and then Cmd+K or Ctrl+K like most other apps
 - Links to sentences / paragraphs in other notes
   - You can add an id anywhere at the end of a sentence or paragraph, by typing `^id-name`
+	  - It has to be at the end of the line, and you have to have a space between the end of the line and the `^` character
   - Then elsewhere you can type `^id-name` inside a link - either just `[[^id-name]]` in the same file, or `[[file-name^id-name]]` in another file (note that it will get converted to `[[file-name#^id-name]]`)
   - Or if the ID hasn't been added yet, you can just type `[[^` or `[[file-name^` and you'll get a dropdown containing all the paragraphs in that file, and you can also type words and it will find the relevant para - then select the para and it will create an id with a random name (eg `^adf45g`) and insert it at the end of the relevant block in the relevant file
 
@@ -906,6 +907,10 @@ aliases:
 
 ## Troubleshooting
 
+### Updating headings so links aren't broken
+
+- There is no functionality and no plugins to react automatically to update links when headings are edited, cos it wouldn't be performant
+- ...but what you can do is right-click and choose "Rename this heading", and then it will find and update all links for you
 ### If you lose the outline or properties pane
 
 - Use [command palette](<#command palette>) to "show outline" or "show file properties"
