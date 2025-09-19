@@ -244,16 +244,20 @@ re, sorry!)
 - I created email templates in SSE Gmail 
 	- (when composing, click three dots bottom right => template - have to turn feature on first via Settings => Advanced)
 	- (to edit an existing template, compose new email, click three dots bottom right, select existing template, edit, then click three dots again and save it to overwrite existing template)
-- then used mail merge 
+	- !Watch out! It has a tendency to overwrite the subject line with the name of the template! If you edit it back again and then save again to overwrite the template, sometimes this works. But mostly it doesn't. The whole thing seems a little buggy tbh.
+- ...then used mail merge 
 	- (have to use pro account - I had to use clare@claresudbery.com) 
 	- (the mail merge icon appears over on right hand side when you click in the To field)
 	- (you have to check the mail merge checkbox before the spreadsheet option gets enabled)
 	- (it will want fields for first name, last name and email address by default)
 	- (for other fields, in the body of the email type an @ after you've set up the mail merge and attached the spreadsheet via the icon in the To field - it'll give you the option to select spreadsheet columns)
-		- You have to type the @ at the start of a blank line for it to work, but once you've done that you can move it to be embedded in a para 
+		- You have to type the @ at the start of a blank line for it to work, but once you've done that you can move it to be embedded in a para
+			- ...or if you delete a chunk of text and then paste it back in again, that seems to kick-start it to pick up on all the cell-refs
 		- If your source data has line breaks, they'll be ignored in the mail merge - it'll collapse it all into one para
 			- This is apparently fixable, but it's a bit of an arse:
 			- "I found [this documented solution](https://stackoverflow.com/questions/74194424/stop-multi-line-cell-from-combining-into-paragraph-when-emailed-from-google-shee) on Stack Overflow, which references a tweak to the code in [this Apps Script mail merge solution](https://developers.google.com/apps-script/samples/automations/mail-merge#code.gs). In brief, the way to adjust this behavior in the native Gmail is to change how the JSON character escapes are happening and replace `/n` with `<br>` in function `escapeData_()`."
+	- Some gotchas:
+		- It kept telling me my email addresses were missing or badly formatted. the only fix I could find was to delete all empty rows in the sheet. I shouldn't have had to do this - I definitely saw it working previously with empty rows, but wevs, this fixed the problem.
 ### Chrome bookmarks
 
  - To copy bookmark links with titles as well as urls (eg to add links from bookmarks to a spreadsheet)... 

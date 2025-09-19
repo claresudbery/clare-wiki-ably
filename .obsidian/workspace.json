@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/coding/lang/oo/python.md",
+                "file": "pages/coding/tools/rider.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python"
+              "title": "rider"
             }
           },
           {
@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
+                "file": "pages/organising/tips/tech/misc-tech-tips.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Big-Index-Useful-Tools"
+              "title": "misc-tech-tips"
             }
           },
           {
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -236,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gmail",
+                "query": "quicktime",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -325,13 +325,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/organising/podcasts/rode-mics.md",
+                "file": "pages/organising/tips/tech/misc-tech-tips.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of rode-mics"
+              "title": "Outline of misc-tech-tips"
             }
           },
           {
@@ -369,10 +369,19 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "a76a367104ebcad1",
+  "active": "7835f12b174977a9",
   "lastOpenFiles": [
-    "Keyboard shortcuts.md",
     "pages/organising/tips/tech/apple-macs-and-ios.md",
+    "pages/organising/tips/tech/misc-tech-tips.md",
+    "pages/think/code-princ/refactoring.md",
+    "pages/coding/tools/rider.md",
+    "pages/coding/lang/oo/python.md",
+    "pages/think/code-princ/gilded-rose.md",
+    "pages/coding/tools/visual-studio.md",
+    "pages/coding/data/google-sheets.md",
+    "pages/organising/tools/misc-tools.md",
+    "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
+    "Keyboard shortcuts.md",
     "pages/organising/tools/Mural.md",
     "pages/organising/tools/kit.md",
     "pages/think/life/health-stuff/covid.md",
@@ -386,17 +395,8 @@
     "pages/think/life/places-to-visit.md",
     "pages/think/agile-princ/remote-working-tools-and-tips.md",
     "pages/think/life/admin/gifts.md",
-    "pages/coding/tools/visual-studio.md",
     "pages/organising/tools/misc-automations.md",
-    "pages/organising/tools/misc-tools.md",
     "pages/organising/tools/youtube-studio.md",
-    "pages/organising/tips/tech/misc-tech-tips.md",
-    "pages/coding/data/psql.md",
-    "pages/organising/tools/kinemaster.md",
-    "pages/coding/data/google-sheets.md",
-    "pages/coding/mobile/swift-xcode.md",
-    "pages/organising/podcasts/Zoom-H5-recorder.md",
-    "pages/organising/tools/bandcamp.md",
     "pages/organising/tools/testing",
     "pages/organising/tools/untitled folder",
     "resources/images/Pasted image 20250620114054.png",

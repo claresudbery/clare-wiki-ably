@@ -43,3 +43,12 @@ Rider is an IntelliJ tool very much like Visual Studio
     - Select text
     - Edit => Convert case
     - Select Plugin in plugin manager for more help
+## Continuous Testing (like nCrunch)
+
+- See [instructions here](https://www.jetbrains.com/help/rider/Work_with_Continuous_Testing.html#:~:text=Enable%20continuous%20testing%20in%20a,Continuous%20Testing%20on%20the%20left.)
+	- ...but they seem to be out of date? Or maybe my tool is out of date?
+	- They say settings are under `Build, Execution, Deployment | dotCover | Continuous Testing` 
+	- but I found them under `Build, Execution, Deployment | Unit Testing | Continuous Testing`
+	- but a workshop participant found them under dotCover
+	- I set it to run tests on save rather than build (which seems to be the default)
+	- ...and you also have to click the little icon at the top of the testing window that looks like arrows chasing each other in a circle with an embedded half filled circle... and select "run all tests". You can also turn on dotCover and attach it to a continuous testing session using the toolbar at the top of the dotCover window (on right), but I'm not sure this is relevant.

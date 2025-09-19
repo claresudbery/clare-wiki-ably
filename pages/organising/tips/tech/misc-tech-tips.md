@@ -238,11 +238,19 @@ That's it! Happy Miroing.
 - To download:
   - Go to list of all videos, click "Send file" - you will get a download screen
 - To play back double speed:
-  - In browser: Click Settings cog, bottom right of video, select Speed
-  - As file:
-    - Download (see above)
-    - Open in Windows Media Player 
-    - Right-click and choose Enhancements => Play speed settings
+	- In browser: Click Settings cog, bottom right of video, select Speed
+	- As file in Windows:
+		- Download (see above)
+		- Open in Windows Media Player 
+		- Right-click and choose Enhancements => Play speed settings
+	- As file on Mac:
+		- Download (see above)
+		- Open in QuickTime Player
+		- Option 1:
+			- Hover over the video while playing, so the little toolbar comes up
+			- Click `>>` over to the right of the toolbar
+		- Option 2:
+			- View => Playback speed
 - If using Resharper menus it's a good idea to use Ctrl + Shift + R to see which option you're selecting, instead of direct shortcuts like Ctrl + R, M
 
 #### Use OBS Studio
@@ -301,9 +309,15 @@ That's it! Happy Miroing.
   - Then you can use the QuickTime menu to work with your recording.
   - To play back double-speed:
     - While watching a video in QuickTime:
-      - Hold the option key.
-      - Click the fast forward button.
-      - For each click of the fast forward button, you’ll see the speed start to  increase in 0.1 increments from 1.0x → 1.1x → 1.2x → etc. all the way up to 2.  - 0x.
+	  - Option 1:
+		  - Hover over the video while playing, so the little toolbar comes up
+		  - Click `>>` over to the right of the toolbar
+	  - Option 2:
+		  - View => Playback speed
+      - Option 3: 
+	      - Hold the option key.
+	      - Click the fast forward button.
+	      - For each click of the fast forward button, you’ll see the speed start to  increase in 0.1 increments from 1.0x → 1.1x → 1.2x → etc. all the way up to 2.  - 0x.
     - There is a bug though… The audio drops once you hit 2x speed. 
       - To work around this bug, simply move to 1.9x speed and stop.
 - How to find it!
