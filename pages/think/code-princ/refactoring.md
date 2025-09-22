@@ -135,7 +135,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### Gilded Rose
 
-- I now also have a [separate dedicated page](/pages/think/code-princ/Gilded-Rose) devoted to getting started with Gilded Rose.
+- I now also have a [[gilded-rose|separate dedicated page]] devoted to getting started with Gilded Rose.
 - Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
 - My C# attempt is [here](https://github.com/claresudbery/gilded-rose-kata).
     - My notes on the approach I used are [here](https://github.com/claresudbery/clare-tech/blob/ea4cce0c797d2055e19577f546aad5118238eab9/made-tech/mt-org/demand-events/refactoring-workshop.md#gilded-rose) (currently available only to me).
@@ -194,6 +194,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 #### Gilded Rose C# Approval testing with nuget ApprovalTests package
 
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[gilded-rose#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - Note that another C# approvals tool is also available - see [below](<#verify approval testing tool>). But otherwise...
 - If you're running the gilded rose code in C#, there's an approval testing tool which is being used
 - It's [this tool](https://github.com/approvals/ApprovalTests.Net)
@@ -217,6 +218,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 #### Gilded Rose C# Approval testing with texttest tool
     
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[gilded-rose#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - Emily uses an approval testing tool from texttest.org which has been implemented in many different languages:
 - Full details are [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests), but here is a summary:
 - `TextTest` is a Python-based tool, 
@@ -244,6 +246,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     
 #### Verify Approval Testing Tool
 
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[gilded-rose#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - Emily showed us a new tool for Approval Testing. We'd previously been using `Approvals`, but this one is called `Verify`.
 - Details [here](https://github.com/VerifyTests/Verify).
 - Demo video from Emily [here](https://www.dropbox.com/s/arpaxxqbrcyn0x3/SupermarketReceipt_csharp_verify.mp4?dl=0).
@@ -256,6 +259,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 #### Combination Approvals
 
+- NB: I now have a whole learning hour for combination approvals. See my "Approvals Testing and Code Coverage" Learning Hour, which is the first part of my coverage and mutation testing LH (Clare only: see `code-coverage-add-tests.md` in `clare-tech`).
 - Demoed by Emily [here](https://www.youtube.com/watch?v=zyM2Ep28ED8&t=400s) (timestamp 6:40)
     - You can test different combinations of values
     - Instead of just calling one function with one set of inputs / outputs, you can pass in arrays of values and ask it to test all combinations

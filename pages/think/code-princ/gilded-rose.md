@@ -18,8 +18,18 @@ This page was created specifically for workshops using Gilded Rose. I have more 
 - [This Google doc](https://docs.google.com/document/d/18XsMcFpEaMVboDV34adPQAfoJumMS94Ya3nMOeOpjkc/edit?usp=sharing) has everything on this page
 - [This GitHub-hosted page](https://github.com/claresudbery/OReilly-Bootcamp-Resources/blob/main/gilded-rose-approvals.md) also has same.
 
-## Gilded Rose: Getting Started With Approval Tests in C#
+## Gilded Rose: Getting started with all tests in `C#`
 
+- In Sept '25, in the [`csharp.xUnit` folder](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/csharp.xUnit/GildedRose),  there are effectively three ways of testing:
+- 1. You can use the `ThirtyDays` test ([here](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/6d97f93b7e98c22e07cd372ff36c76c8abe9984d/csharp.xUnit/GildedRoseTests/ApprovalTest.cs#L27)), which uses the output of `Program.main` as an approvals test - which it compares to the verified / approved output in `ApprovalTest.ThirtyDays.verified.txt` . 
+	- You should just be able to run tests and follow instructions from test output. [[#Gilded Rose Getting Started With Approval Tests in `C `|More info below]].
+- 2. There is a `Foo` test in the same file as `ThirtyDays` ([here](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/6d97f93b7e98c22e07cd372ff36c76c8abe9984d/csharp.xUnit/GildedRoseTests/ApprovalTest.cs#L17)), which you can develop yourself as a new approvals test. But you can just remove it (because the `ThirtyDays` test works with no extra work needed, and will let you know if you've broken anything - so useful for refactoring exercises)
+- 3. There is also a `Foo` test in `GildedRoseTest.cs` ([here](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/6d97f93b7e98c22e07cd372ff36c76c8abe9984d/csharp.xUnit/GildedRoseTests/GildedRoseTest.cs#L10)). This is the one I develop using CombinationApprovals in my "Approvals Testing and Code Coverage" Learning Hour (Clare only: see `code-coverage-add-tests.md` in `clare-tech`). Again, if you just want to do some refactoring with good test coverage, you can remove this and use the `ThirtyDays` test instead.
+- In my `csharp-liftup-start` branch I've removed
+
+## Gilded Rose: Getting Started With Approval Tests in `C#`
+
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - There are two ways to run approval tests. The simplest is to use the nuget [ApprovalTests package](https://github.com/approvals/ApprovalTests.Net), as in [ApprovalTest.cs](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/csharp-liftup-start/csharp/ApprovalTest.cs). 
     - See below for getting approvals working in .Net Core in Rider on MacOS
     - You might need to install the [ApprovalTests](https://github.com/approvals/ApprovalTests.Net) nuget package: Tools => NuGet Package Manager => Manage Nuget packages for solution
@@ -37,6 +47,7 @@ This page was created specifically for workshops using Gilded Rose. I have more 
 
 ### Gilded Rose and Approval Tests for .Net Core in Rider on a Mac
 
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - use the `csharpcore` folder
 - `Testtextfixture.cs` contains a `Main` function which is the equivalent of `Program.Main` in .Net framework
     - It currently only tests 2 days, so set the `days` var to 31 instead of 2 
@@ -78,11 +89,13 @@ This page was created specifically for workshops using Gilded Rose. I have more 
 
 ## Gilded Rose C# Approval testing with nuget ApprovalTests package
 
-- See [here](/pages/think/code-princ/Refactoring#gilded-rose-c-approval-testing-with-nuget-approvaltests-package)
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
+- See [[refactoring#Gilded Rose C Approval testing with nuget ApprovalTests package|here]]
 
 ## Verify Approval Testing Tool
 
-- See [here](/pages/think/code-princ/Refactoring#verify-approval-testing-tool)
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
+- See [[refactoring#Verify Approval Testing Tool|here]]
 
 ## Gilded Rose: Working in Visual Studio
 
@@ -101,4 +114,5 @@ This page was created specifically for workshops using Gilded Rose. I have more 
 
 ## Gilded Rose C# Approval testing with texttest tool
 
-- See [here](/pages/think/code-princ/Refactoring#gilded-rose-c-approval-testing-with-texttest-tool)
+- NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
+- See [[refactoring#Gilded Rose C Approval testing with texttest tool|here]]
