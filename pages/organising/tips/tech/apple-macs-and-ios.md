@@ -17,6 +17,22 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 - Then, in the Camera app, 
 	- disable Live Photos by tapping the Live Photos icon 
 	- (it will have a slash through it when off). 
+### Turn burst photos into just one image
+
+- Open the photo
+- Click on the burst icon top left
+- Choose favourite
+- Click done
+- Click "Choose only one favourite"
+### Turn live photos into still images
+
+- You can just click the Live icon top left and turn live off, but it will still retain the original live recording so it doesn't take up any less space
+- To make it smaller, you have to duplicate the image and choose "duplicate as still photo"
+### Turn timer on in iPhone camera
+
+- There's a tiny little arrow in the middle of the screen at the top
+- Click on that or swipe up
+- New controls will appear at bottom of screen scroll to see the far right end of thsoe controls - timer is there
 ### How to create a new iPhone Siri command
 
 - In Shortcuts app, click plus button top right    
