@@ -224,6 +224,8 @@ permalink: /pages/organising/tools/Obsidian
   - Click the "Select an element on the page to inspect it" tool 
   - (top left of the right hand pane - a diagonal arow in a dotted square).
   - Hover over the app to highlight pieces of it, and click on the part you want to style.
+- To get your css to work when publishing your notes using Obsidian Publish:
+	- Copy any css snippets into one file called `publish.css` in the root of your vault. Publish this file when you publish everything else.
 ### Plugins
 
 - On desktop:
@@ -579,6 +581,11 @@ Time: 1 second
 - You can just copy / paste an image and it will embed it for you
 - Or place the image in the Attachments folder, which you configure in Settings => Files and links => default location for new attachments
 	- then use this syntax: `![[my-image.jpg]]`
+- To make them smaller:
+	- `![[Pasted image 20250813180043x.jpg|100]]`
+	- The `|100` bit at the end is specifying that it should only be 100 pixels wide
+- I found a way of getting screenshots pasted directly into Obsidian low res so they don't take up tons of storage
+	- I documented it in Clare's Career Obsidian (currently accesible to Clare only), in `Misc small AI projects#Get low-res Macbook screenshots` and in `Keyboard shortcuts`
    
 ## File syncing
 
