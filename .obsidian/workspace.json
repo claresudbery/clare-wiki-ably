@@ -153,12 +153,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/obsidian.md",
+                "file": "pages/coding/data/google-sheets.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "obsidian"
+              "title": "google-sheets"
             }
           },
           {
@@ -262,7 +262,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a3c22f045402a4f0",
@@ -371,12 +372,12 @@
   },
   "active": "113b7bb7263a710c",
   "lastOpenFiles": [
+    "pages/organising/tools/obsidian.md",
     "pages/organising/podcasts/descript.md",
     "pages/organising/tools/AI/claude.md",
     "pages/organising/tools/AI/windsurf.md",
     "pages/organising/tools/AI",
     "pages/organising/tools/misc-tools.md",
-    "pages/organising/tools/obsidian.md",
     "pages/think/life/health-stuff/covid.md",
     "pages/organising/tips/tech/apple-macs-and-ios.md",
     "pages/think/code-princ/gilded-rose.md",

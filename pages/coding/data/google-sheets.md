@@ -153,10 +153,12 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - it looks like this: `=VLOOKUP(A1,C2:E10,3,0)`
   - You're searching for a match for `A1`
   - The range of values you're searching ("the table") is `C2:E10`
-  - You're going to return the value from the 3rd col in the table (C is the first col, E is the third)
-  - The `0` represents `false` for `range_lookup` which means the data is sorted in ascending order 
-	  - !!! If the search col of your source data is NOT in ascending order, you'll get really odd results!
-	  - So ignore / miss this value at your peril. You might want to set it to false. It defaults to true if you miss it out.
+  - You're going to return the value from the 3rd col in the table (not 0-based - so C is the first col, E is the third)
+  - The `0` represents `false` for `range_lookup` which means the data is NOT sorted in ascending order 
+	  - !!! If the search col of your source data is not in ascending order but you set this value to `1`, you'll get really odd results!
+	  - And the DEFAULT is true (`1`)!
+	  - So ignore / miss this value at your peril. 
+	  - It's always worth explicitly setting it to `0`.
 - So... 
   - youre looking at a range of data, and 
   - you want to see whether anything in the first col of your range has the same value as cell A1,
