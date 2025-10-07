@@ -5,130 +5,71 @@ permalink: /pages/organising/tools/Obsidian
 ---
 ## Contents of this file
 
-- [Obsidian Overview](<#obsidian overview>)
-- [Useful Obsidian links](<#useful obsidian links>)
-- [To do](<#to do>)
-- [Questions](<#questions>)
-- [Notes from Diana's presentation at Socrates UK '24](<#notes from diana's presentation at socrates uk '24>)
-- [Vault management](<#vault management>)
-- [Keyboard shortcuts](<#keyboard shortcuts>)
-- [[#Publish to a website]]
+- [[#Getting started with Obsidian]]
+- [[#Useful bits and bobs]]
+	- [Vault management](<#vault management>)
+	- [Keyboard shortcuts](<#keyboard shortcuts>)
+	- [[#Publish to a website]]
 - [[#Customising Obsidian]]
 	- [[#Configuring a new vault]]
-  - [css snippets](<#css snippets>) / [[#css snippets]]
-  - [Plugins](<#plugins>)
-  - [Variables](<#variables>)
-  - [Modal forms](<#modal forms>)
-  - [QuickAdd](<#quickadd>)
-    - [Use QuickAdd to automate note and folder creation](<#use quickadd to automate note and folder creation>)
-    - [DON'T Use QuickAdd this way to automate folder and file creation](<#dont use quickadd this way to automate folder and file creation>)
+	- [css snippets](<#css snippets>) / [[#css snippets]]
+	- [Plugins](<#plugins>)
+	- [Variables](<#variables>)
+	- [Modal forms](<#modal forms>)
+	- [QuickAdd](<#quickadd>)
+		- [Use QuickAdd to automate note and folder creation](<#use quickadd to automate note and folder creation>)
+		- [DON'T Use QuickAdd this way to automate folder and file creation](<#dont use quickadd this way to automate folder and file creation>)
 - [Basic operations](<#basic operations>)
-  - [Command palette](<#command palette>)
-  - [Settings](<#settings>)
-  - [Quick Switcher](<#quick switcher>)
-  - [Navigating](<#navigating>)
-  - [Source mode](<#source mode>)
-  - [Linking to other content](<#linking to other content>)
-  - [Formatting markdown](<#formatting markdown>)
-  - [Callouts](<#callouts>)
-  - [File / folder management](<#file  folder management>)
-  - [[#Attachments and images]]
+	- [Command palette](<#command palette>)
+	- [Settings](<#settings>)
+	- [Quick Switcher](<#quick switcher>)
+	- [Navigating](<#navigating>)
+	- [Source mode](<#source mode>)
+	- [Linking to other content](<#linking to other content>)
+	- [Formatting markdown](<#formatting markdown>)
+	- [Callouts](<#callouts>)
+	- [File / folder management](<#file  folder management>)
+	- [[#Attachments and images]]
 - [File syncing](<#file syncing>)
-  - [Syncing with Google Drive](<#syncing with google drive>)
-  - [Syncing with iCloud](<#syncing with icloud>)
-  - [Github Sync plugin](<#github sync plugin>)
-  - [GitHub Syncing on iPhone](<#github syncing on iphone>)
+	- [Syncing with Google Drive](<#syncing with google drive>)
+	- [Syncing with iCloud](<#syncing with icloud>)
+	- [Github Sync plugin](<#github sync plugin>)
+	- [GitHub Syncing on iPhone](<#github syncing on iphone>)
 - [Organising content](<#organising content>)
-  - [Saving / storing links to 3rd party content](<#saving  storing links to 3rd party content>)
-  - [Importing content from other Notes systems](<#importing content from other notes systems>)
-  - [Each note should contain one idea](<#each note should contain one idea>)
-  - [Maps of Content (MOCs)](<#maps of content mocs>)
-  - [Templates](<#templates>)
-  - [Properties](<#properties>)
-    - [Showing / hiding properties](<#showing  hiding properties>)
-    - [Bad properties](<#bad properties>)
-    - [Searching for properties and other things](<#searching for properties and other things>)
-    - [Tag properties](<#tag properties>)
-    - [Parent properties](<#parent properties>)
-    - [Aliases](<#aliases>)
+	- [Saving / storing links to 3rd party content](<#saving  storing links to 3rd party content>)
+	- [Importing content from other Notes systems](<#importing content from other notes systems>)
+	- [Each note should contain one idea](<#each note should contain one idea>)
+	- [Maps of Content (MOCs)](<#maps of content mocs>)
+	- [Templates](<#templates>)
+	- [Properties](<#properties>)
+		- [Showing / hiding properties](<#showing  hiding properties>)
+		- [Bad properties](<#bad properties>)
+		- [Searching for properties and other things](<#searching for properties and other things>)
+		- [Tag properties](<#tag properties>)
+		- [Parent properties](<#parent properties>)
+		- [Aliases](<#aliases>)
 - [Troubleshooting](<#troubleshooting>)
-  - [If you lose the outline or properties pane](<#if you lose the outline or properties pane>)
-  - [If folders are not in alphabetical order in dropdowns](<#if folders are not in alphabetical order in dropdowns>)
-  - [If live preview colours text inside single brackets](<#if live preview colours text inside single brackets>)
-  - [If you can't delete a note](<#if you cant delete a note>)
-  - [[#Fixing internal links that use hyphens instead of spaces]]
-
-## Obsidian Overview
-
-- For taking notes / organising knowledge
-- [Obsidian](https://obsidian.md/)
-- See [here](/pages/organising/BigIndex/Big-Index-Useful-Tools.md#other-technologies-considered-for-bigindex) for other note-taking tools
-- See iPhone Notes: "SoCraTes UK '24" for notes on a session I attended about Obsidian
-- See also book by Tiago Forte - building a second brain - been recommended to me by a few people
-
-## Useful Obsidian links
+	- [[#Updating headings so links aren't broken]]
+	- [If you lose the outline or properties pane](<#if you lose the outline or properties pane>)
+	- [If folders are not in alphabetical order in dropdowns](<#if folders are not in alphabetical order in dropdowns>)
+	- [If live preview colours text inside single brackets](<#if live preview colours text inside single brackets>)
+	- [If you can't delete a note](<#if you cant delete a note>)
+	- [[#Fixing internal links that use hyphens instead of spaces]]
+- [[#To do (Clare)]]
+	- [Questions](<#questions>)
+- [[#My original Obsidian notes]]
+	- [Obsidian Overview](<#obsidian overview>)
+	- [Notes from Diana's presentation at Socrates UK '24](<#notes from diana's presentation at socrates uk '24>)
+# Getting started with Obsidian
 
 - Nice getting-started tutorial [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
-
-## To do
-
-- Check ToCs for published content
-  - (I'm not sure how the `outline` core plugin will work on published content?)
-- Look into [day planning using Obsidian](https://obsidian.rocks/planning-your-day-by-timeboxing-in-obsidian/)
-- Get to know QuickAdd better:
-  - [video](https://youtu.be/xAR6N9N8e6U?si=roUI4BADRh0yY_Q4)
-- Explore automatic updating of MoC contents using DataView
-  - "To automatically update a Map of Content (MoC) in Obsidian with links to all notes within a folder, you can use the Dataview plugin or a plugin like Waypoint. Dataview allows you to create dynamic lists of linked notes, while Waypoint automates the creation of a MOC note within a folder and links all notes within that folder to it."
-  - Jackie's [DataView article](https://medium.com/os-techblog/how-to-get-started-with-obsidian-dataview-and-dataviewjs-5d6b5733d4a4)
-
-## Questions
-
-- Tables of contents?
-  - Use the `outline` core plugin?
-  - For some other ideas, see [here](https://forum.obsidian.md/t/a-graphically-cool-table-of-contents/87684/5)
-- Linking to individual headings / sections in notes?
-  - See [formatting](<#formatting markdown>) below
-
-## Notes from Diana's presentation at Socrates UK '24
-
-- Personal note taking app and organising knowledge 
-- like notion, but runs on laptop or phone rather than in browser 
-- Can be published to a website (clare-wiki!)
-	- See [[#Publish to a website|notes below on publishing]]
-- Tasks plugin allows you to manage tasks 
-- It's all markdown 
-    - But it has its own query language which is embedded and proprietary 
-- You can customise it endlessly!
-- Minimum information principle - keep notes small 
-- Use a template plugin 
-- Use the randomizer to find random notes and either read them or delete them, as a way of cleaning things up 
-- Is easy to take one big note and split it up into separate files - select text and say extract note from selection 
-- Refactoring plugin allows you to identify a pattern and refactor accordingly 
-- Questions 
-    - Cross platform?
-        - You can pay extra to sync across devices - £8 per month 
-        - But also the files can be placed somewhere like Google drive to create syncing for free 
-        - Any customisations have to be done manually on each separate device 
-    - Editing markdown?
-        - Yes, easy to link between pages and sections of pages 
-        - Can link to paragraphs as well 
-    - Porting data?
-        - Standard markdown 
-    - Ios?
-        - Standard ios editing interface, so it's just as awkward to edit as any other ios app 
-        - But all the functionality is there, eg linking between docs 
-        - Has customisable toolbar 
-    - Performance when you have lots of notes?
-        - Works well but will take a while to sync data on a new device 
-- Tiago Forte - building a second brain 
-    - Good book 
-    - Anita used a system suggested there, which is to divide everything using the PARA paradigm - Projects, Areas, Resources and Archive 
-- Diana 
-    - Used it to write her book 
-    - Could highlight words she wanted in a glossary, and then use a plugin to generate the glossary for her 
-    - It created a graph for her of the conceptual relationships between the different parts of her book 
-    - It has a [[#Publish to a website|publish feature]] which will allow you to turn your notes into a website!!! Clare-wiki!!
-
+- The [[#Basic operations]] section below - browse these to help you find your way around
+- [[#Publish to a website]] is v handy functionality if you want to publish
+- I love [[#QuickAdd]] and [[#Modal forms]]
+- I use [[#Syncing with iCloud]] which I find v useful
+- You might find useful stuff in the [[#Organising content]] section
+- See [[#Troubleshooting]] if you have problems
+# Useful bits and bobs
 ## Vault management
 
 - File => Open Vault to both open and create vaults
@@ -174,9 +115,9 @@ permalink: /pages/organising/tools/Obsidian
 	- Enable Obsidian Publish in the app: [[#Settings]] > Core plugins > Publish.
 	- Now you can publish via [[#Command palette]] > Publish changes
 	- [More here](https://help.obsidian.md/publish/setup)
-## Customising Obsidian
+# Customising Obsidian
 
-### Configuring a new vault
+## Configuring a new vault
 
 - Start with the vault closed while you do actions in the file system:
 	- Plugins:
@@ -211,7 +152,7 @@ permalink: /pages/organising/tools/Obsidian
 		- More on this [[#Templates|here]]
 	- Go to [Settings](<#settings>) and remove any [[#Plugins|plugin]] macros you don't want
 		- If you copied over the whole of your `plugins` folder and you had the `QuickAdd` or `Modal forms` plugins, you will now have all the macros you set up, and this might include stuff that's not relevant to this vault
-### css snippets
+## css snippets
 
 - Used for styling how things look in a note
 - In [settings](<#settings>) under Appearance, at the bottom, click the folder icon next to CSS Snippets to open the correct location
@@ -226,7 +167,7 @@ permalink: /pages/organising/tools/Obsidian
   - Hover over the app to highlight pieces of it, and click on the part you want to style.
 - To get your css to work when publishing your notes using Obsidian Publish:
 	- Copy any css snippets into one file called `publish.css` in the root of your vault. Publish this file when you publish everything else.
-### Plugins
+## Plugins
 
 - On desktop:
   - Obsidian (top left) => Settings => Community plugins => turn on
@@ -250,7 +191,7 @@ permalink: /pages/organising/tools/Obsidian
   - Also, when in an open file, click the hamburger menu bottom right to see any commands related to that plugin
   - Also, in Settings => Community plugins (not the list of plugins but the place you go to add new plugins), you'll see it listed and you can select it to read the readme
 
-### Variables
+## Variables
 
 - There are various places you can use variables
 - The places I know about are [templates](<#templates>) and [QuickAdd](<#quickadd>)[]()
@@ -271,7 +212,7 @@ permalink: /pages/organising/tools/Obsidian
     - For full explanation, see [example](<#use quickadd to automate note and folder creation>)
   - As far as I can work out, you _don't_ (and maybe even can't?) use the `Capture` type of QuickAdd to capture variables. Anything captured via that method will end up being pasted into a file, rather than being made available as a variable to other bits of functionality
 
-### Modal forms
+## Modal forms
 
 - `Modal forms` is a useful plugin
 - My notes come from [this article](https://obsidian.rocks/improving-callouts-with-obsidian-modal/)
@@ -330,14 +271,14 @@ permalink: /pages/organising/tools/Obsidian
     - Now it'll turn up as its own item in [command palette](<#command palette>)
     - This also means you can give it its own [hotkey](<#keyboard shortcuts>) if you like
 
-### QuickAdd
+## QuickAdd
 
 - You can use the `QuickAdd` [plugin](<#plugins>) to automate actions you do frequently 
 - See [Modal Forms](<#modal forms>) for an example of using it to automate the creation of [callouts](<#callouts>)
 - See [below](<#use quickadd to automate note and folder creation>) for using QuickAdd to automate the creation of a file in specific folder using a specific template
 - [Format syntax](https://quickadd.obsidian.guide/docs/FormatSyntax)
 
-#### Use QuickAdd to automate note and folder creation
+### Use QuickAdd to automate note and folder creation
 
 - Here's how to use QuickAdd to automate the creation of a file in specific folder using a specific template:
 - Create a [template](<#templates>)
@@ -382,8 +323,9 @@ permalink: /pages/organising/tools/Obsidian
   - ...so I had to give up and stick with my original simple solution
   - but fwiw this video MIGHT help - I just didn't have 45 mins spare to watch it: [here](https://youtu.be/xAR6N9N8e6U?si=roUI4BADRh0yY_Q4)
 
-#### DON'T Use QuickAdd this way to automate folder and file creation
+### DON'T Use QuickAdd this way to automate folder and file creation
 
+- (Don't do this! Use QuickAdd in a different way instead, [[#Use QuickAdd to automate note and folder creation|as described in separate section]])
 - Go to [settings](<#settings>) => QuickAdd
 - Click Manage Macros
 - Give it a name
@@ -446,26 +388,26 @@ File Name: {{VALUE:Folder Name}}.md
 Wait Choice: (Optional)
 Time: 1 second
 
-## Basic operations
+# Basic operations
 
-### Command palette
+## Command palette
 
 - Mobile: In main window, pull down from top of screen as though refreshing
 - Desktop: Cmd + P / Ctrl + P
 - Note you can use this to reach Settings: Open command palette => search for settings => "Open settings"
 
-### Settings
+## Settings
 
 - Open command palette (Cmd+P) => search for settings => "Open settings"
 - Or just use Cmd/Ctrl + `,`
 
-### Quick Switcher
+## Quick Switcher
 
 - Get there via Cmd/Ctrl+O
 - Used to find and go to, or create, other notes / content
 - There's also search functionlaity via magnifying glass, top right
 
-### Navigating
+## Navigating
 
 - Use [quick switcher](<#quick switcher>) to move between notes
 - Backlinks show you what links to your content and what it links to
@@ -475,7 +417,7 @@ Time: 1 second
 - Use Cmd + P => "Copy file path" to copy file path
 - Use the community plugin "Reveal active file" from Clare Macrae to get a little crosshairs-ish icon at the top of the file explorer that will reveal the location of the current file
 
-### Source mode
+## Source mode
 
 - View source as markdown instead of formatted:
   - Desktop: 
@@ -486,7 +428,7 @@ Time: 1 second
   - Mobile: Three dots, top right => Source mode
     - View => Source mode 
 
-### Linking to other content
+## Linking to other content
 
 - Links to sub-sections via headings
   - Like this: `[[#A header|that header there]]`
@@ -506,7 +448,7 @@ Time: 1 second
   - Then elsewhere you can type `^id-name` inside a link - either just `[[^id-name]]` in the same file, or `[[file-name^id-name]]` in another file (note that it will get converted to `[[file-name#^id-name]]`)
   - Or if the ID hasn't been added yet, you can just type `[[^` or `[[file-name^` and you'll get a dropdown containing all the paragraphs in that file, and you can also type words and it will find the relevant para - then select the para and it will create an id with a random name (eg `^adf45g`) and insert it at the end of the relevant block in the relevant file
 
-### Formatting markdown
+## Formatting markdown
 
 - Bold/italic:
   - `*italic*` Cmd + I / Ctrl + i will get you here
@@ -521,7 +463,7 @@ Time: 1 second
 - blockquotes:
   - Type `> ` then the quote
 
-### Callouts
+## Callouts
 
 - [My notes came from this article](https://obsidian.rocks/using-callouts-in-obsidian/)
 - [Official documentation here](https://help.obsidian.md/callouts)
@@ -561,7 +503,7 @@ Time: 1 second
   - `todo` (blue)
   - `warning` (orange)
 
-### File / folder management
+## File / folder management
 
 - Add a file to a folder:
   - Desktop: Right-click the folder => Add note
@@ -576,7 +518,7 @@ Time: 1 second
   - Mobile: Long press on the folder name for at least a second, wait for menu to appear - select rename
   - Desktop: Select folder and hit F2
 
-### Attachments and images
+## Attachments and images
 
 - You can just copy / paste an image and it will embed it for you
 - Or place the image in the Attachments folder, which you configure in Settings => Files and links => default location for new attachments
@@ -587,14 +529,14 @@ Time: 1 second
 - I found a way of getting screenshots pasted directly into Obsidian low res so they don't take up tons of storage
 	- I documented it in Clare's Career Obsidian (currently accesible to Clare only), in `Misc small AI projects#Get low-res Macbook screenshots` and in `Keyboard shortcuts`
    
-## File syncing
+# File syncing
 
 - If syncing between MacBook and iPhone, your best option seems to be [iCloud](<#syncing with icloud>)
 - You can also place your folder somewhere like [Google Drive](<#syncing with google drive>)
   - but this seems a bit flakier than iCloud, and you have to keep manually pulling and pushing, and it's risky to have files open on both devices at once - whereas iCloud just automatically syncs across devices
 - Or you can use [GitHub](<#github sync plugin>)
 
-### Syncing with Google Drive
+## Syncing with Google Drive
 
 - First create a new vault on mobile (I did this on iphone)
   - just vault, not in iCloud
@@ -628,7 +570,7 @@ Time: 1 second
     - After this you can add multiple folders in one sync, and it will work fine
   - I reported this as an issue [here](https://github.com/RichardX366/Obsidian-Google-Drive/issues/10)
 
-### Syncing with iCloud
+## Syncing with iCloud
 
 - It's a bit buggy / idiosyncratic to set up, but after that seems pretty smooth
 - Here's what I had to do to get it working first time (see below for subsequent times):
@@ -649,10 +591,7 @@ Time: 1 second
     - But if I closed down the problematic one on Desktop and removed it from the vault list (via the three dots nest to the vault name in the vault list), then opened it up again by selecting iCloud Drive in the Finder, it found the right one, synced bwteeen desktop and mobile, and the location in the vault list was listed as `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
     - At this point I could have the same vault open on both desktop and mobile, and changes in either one would sync with a second or two
 
-### Github Sync plugin> [!abstract]+ test callout
-> some content
-
-
+## Github Sync plugin
 
 - Note that in the end I didn't bother trying to get this working on mobile
 - Actually in the end I didn't use it at all, because even on desktop the functionality is limited - eg you can't edit commit messages - they're automatically generated - and I found it just as easy to use my normal GitHub tools (command line and Git?Hub Desktop, fwiw)
@@ -678,7 +617,7 @@ Time: 1 second
 	- I still don't understand what this meant or what had happened - everything looked fine in github config and at github.com
 	- Whether this is what fixed it I don't know, but I ran `git branch --unset-upstream` on the command line, then closed and reopened Github Desktop and Obsidian, and everything was working again.
 
-### GitHub Syncing on iPhone
+## GitHub Syncing on iPhone
 
 - I also found this video but didn't watch in the end: https://www.youtube.com/watch?v=h3oK1yX3CZ8&t=190s
 - This is what I got via Google's AI, so might not be accurate:
@@ -714,9 +653,9 @@ Create a vault in Obsidian that uses iCloud: This allows Obsidian to automatical
 Set up Git with the iCloud vault: You can still use Git with an iCloud vault, but you might encounter issues with iCloud's limitations. 
 Consider using a tool like a-shell or iSH: These tools can help manage Git operations on your iPhone, even with an iCloud vault. 
 
-## Organising content
+# Organising content
 
-### Saving / storing links to 3rd party content
+## Saving / storing links to 3rd party content
 
 - Info here copied from [this article](https://obsidian.rocks/save-articles-to-obsidian-five-different-methods/)
 - Five methods...
@@ -740,7 +679,7 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - "The downside is that Readwise is a premium tool, and not the cheapest one at that."
   - "If you’re interested in this functionality but don’t want to pay for it, I hear that [Omnivore](https://omnivore.app/) is a great open-source and free alternative. I haven’t tried it yet, but it looks great as well."
 
-### Importing content from other Notes systems
+## Importing content from other Notes systems
 
 - https://obsidian.md/plugins?id=obsidian-importer
 - "The Obsidian team recently released a Community Plugin called Obsidian Importer (click to open in your vault). This new tool allows you to transfer notes from many other note-taking systems. At the time of writing, Obsidian Importer supports:
@@ -751,7 +690,7 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - Google Keep
 - And they’re planning on supporting many others, including Apple Notes"
 
-### Each note should contain one idea
+## Each note should contain one idea
 
 - Notes summarised from [here](https://obsidian.rocks/five-title-ideas-for-notes/#Idea-1-Each-Note-Should-Contain-One-Idea)
 - 1. Each note contains only one idea
@@ -769,11 +708,11 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - "I typically recommend aliases for only two things: synonyms and abbreviations. If I write a note about GTD, it’s not a bad idea to also add an alias spelling out “Getting Things Done”. That way you can search for either term and find the note."
   - "Additionally there are few things more frustrating than searching for a word, expecting to find a note, and discovering later that you used a different word."
 
-### Maps of Content (MOCs)
+## Maps of Content (MOCs)
 
-- Notes summarised from [this article](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
+- See [this article](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
 
-### Templates
+## Templates
 
 - My notes summarised from [this article](https://obsidian.rocks/getting-started-with-templates-in-obsidian/#comment-29383)
 - Create a Templates folder in your vault
@@ -815,7 +754,7 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
   - But if you use `"{{date:YYYY-MM-DD}}T{{time:HH:mm}}"` instead of `{{date:YYYY-MM-DD}}T{{time:HH:mm}}` (ie, encase the value in quotes) then it works a bit better. You might still get a warning but you can now edit the properties in the properties panel without getting the "invalid properties" error.
   - Note that I found a suggestion that it might be better not to use the core Templates plugin, and use the community `Templater` plugin instead: [here](https://forum.obsidian.md/t/correct-format-for-date-time-template-variables-in-properties/68241/5)
 
-### Properties
+## Properties
 
 - Properties are note metadata - or notes about your notes
 - More [here](https://obsidian.rocks/an-introduction-to-obsidian-properties/)
@@ -857,19 +796,19 @@ parent: "[[Home]]"
   - [Tags](<#tag properties>)
   - [Parent](<#tag properties>)
 
-#### Showing / hiding properties
+### Showing / hiding properties
 
 - You can make properties sections be hidden by default: [Settings](<#settings>) => Editor => properties in document => hidden
   - or set to "source" to allow you to see the YAML as it appears in the code snippet above
   - If they're hidden, one way to see them is to go into [source mode](<#source mode>) and then expand the section at the top via the little arrow
     - ...or enable the core "Properties view" plugin, then go to [command palette](<#command palette>) => `Properties: Show all properties` or `Properties: Show file properties`
 
-#### Bad properties
+### Bad properties
 
 - Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
 - When you have a bad property, it shows up as yellow in the property editor but won't let you edit it. The only way to edit is either in [source mode](<#source mode>) or by clicking on the icon and deleting the property, then recreating it.
 
-#### Searching for properties and other things
+### Searching for properties and other things
 
 - In the search box (Cmd/Ctrl+Shift+F), put your search term in square brackets, and it will search properties for you
 - "Use brackets and a colon ([property:value]) to return files with that property and value. For instance:
@@ -880,7 +819,7 @@ parent: "[[Home]]"
   - Bonus tip: If you use a search frequently, you can also embed searches within notes."
 - (from [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/))
 
-#### Tag properties
+### Tag properties
 
 - Go into properties (depending how you're [showing them](<#showing  hiding properties>))
 - If you don't have one already, you can add a `tags` property:
@@ -891,12 +830,12 @@ tags: writing/idea
 ```
 - Then in a non-source view, when you place cursor in the tags value, it will give you a dropdown to auto-complete, which gets filtered when you start typing
 
-#### Parent properties
+### Parent properties
 
 - Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
   - See [bad data](<#bad properties>) for how to fix this
 
-### Aliases
+## Aliases
 
 - [More here](https://help.obsidian.md/aliases)
 - Aliases allow you to reference a file using different names
@@ -912,18 +851,18 @@ aliases:
 - You can link to aliases by just typing an alias name in an internal link
 - Obsidian creates the link with the alias as its custom display text, for example `[[Artificial Intelligence|AI]]`.
 
-## Troubleshooting
+# Troubleshooting
 
-### Updating headings so links aren't broken
+## Updating headings so links aren't broken
 
 - There is no functionality and no plugins to react automatically to update links when headings are edited, cos it wouldn't be performant
 - ...but what you can do is right-click and choose "Rename this heading", and then it will find and update all links for you
-### If you lose the outline or properties pane
+## If you lose the outline or properties pane
 
 - Use [command palette](<#command palette>) to "show outline" or "show file properties"
 - They might both be in the same pane on the right, in which case the circle with an i icon will show properties, abd the horizontal lines will show outline
 
-### If folders are not in alphabetical order in dropdowns
+## If folders are not in alphabetical order in dropdowns
 
 - This happened to me when I removed the third folder down out of four (in alpha order) and then re-added it. 
 - It started appearing as the fourth item in selection dropdowns
@@ -931,7 +870,7 @@ aliases:
 - This seemed to reset the order to the way I wanted it in the dropdown
 - ...although this does suggest that the dropdown is listing them in creation order - so the workaround wouldn't work so well with more folders involved
 
-### If live preview adds colour to text inside single brackets
+## If live preview adds colour to text inside single brackets
 
 - You can't have `[text]` because the text gets turned into a different colour inside the square brackets
 - See discussion [here](https://forum.obsidian.md/t/live-preview-dont-color-square-bracketed-text-as-a-link-unless-its-part-of-a-link/79896/2)
@@ -950,12 +889,12 @@ aliases:
 }
 ```
 
-### If you can't delete a note
+## If you can't delete a note
 
 - If all it has a title and no content, you can't delete it. 
 - Add some text in the body and then you'll be able to delete it.
 
-### Fixing internal links that use hyphens instead of spaces
+## Fixing internal links that use hyphens instead of spaces
 
 - When internal links use hyphens instead of spaces, this is called "slugifying"
 - Whatever markdown tools I was using for internal links before I imported this repo into Obsidian, they did it like this:
@@ -1023,3 +962,70 @@ def process_directory(directory):
 target_directory = '/path/to/vault/root'
 process_directory(target_directory)
 ```
+
+# To do (Clare)
+
+- Check ToCs for published content
+  - (I'm not sure how the `outline` core plugin will work on published content?)
+- Look into [day planning using Obsidian](https://obsidian.rocks/planning-your-day-by-timeboxing-in-obsidian/)
+- Get to know QuickAdd better:
+  - [video](https://youtu.be/xAR6N9N8e6U?si=roUI4BADRh0yY_Q4)
+- Explore automatic updating of MoC contents using DataView
+  - "To automatically update a Map of Content (MoC) in Obsidian with links to all notes within a folder, you can use the Dataview plugin or a plugin like Waypoint. Dataview allows you to create dynamic lists of linked notes, while Waypoint automates the creation of a MOC note within a folder and links all notes within that folder to it."
+  - Jackie's [DataView article](https://medium.com/os-techblog/how-to-get-started-with-obsidian-dataview-and-dataviewjs-5d6b5733d4a4)
+
+## Questions
+
+- Tables of contents?
+  - Use the `outline` core plugin?
+  - For some other ideas, see [here](https://forum.obsidian.md/t/a-graphically-cool-table-of-contents/87684/5)
+- Linking to individual headings / sections in notes?
+  - See [formatting](<#formatting markdown>) below
+# My original Obsidian notes
+## Obsidian Overview
+
+- For taking notes / organising knowledge
+- [Obsidian](https://obsidian.md/)
+- See [here](/pages/organising/BigIndex/Big-Index-Useful-Tools.md#other-technologies-considered-for-bigindex) for other note-taking tools
+- See iPhone Notes: "SoCraTes UK '24" for notes on a session I attended about Obsidian
+- See also book by Tiago Forte - building a second brain - been recommended to me by a few people
+
+## Notes from Diana's presentation at Socrates UK '24
+
+- Personal note taking app and organising knowledge 
+- like notion, but runs on laptop or phone rather than in browser 
+- Can be published to a website (clare-wiki!)
+	- See [[#Publish to a website|notes below on publishing]]
+- Tasks plugin allows you to manage tasks 
+- It's all markdown 
+    - But it has its own query language which is embedded and proprietary 
+- You can customise it endlessly!
+- Minimum information principle - keep notes small 
+- Use a template plugin 
+- Use the randomizer to find random notes and either read them or delete them, as a way of cleaning things up 
+- Is easy to take one big note and split it up into separate files - select text and say extract note from selection 
+- Refactoring plugin allows you to identify a pattern and refactor accordingly 
+- Questions 
+    - Cross platform?
+        - You can pay extra to sync across devices - £8 per month 
+        - But also the files can be placed somewhere like Google drive to create syncing for free 
+        - Any customisations have to be done manually on each separate device 
+    - Editing markdown?
+        - Yes, easy to link between pages and sections of pages 
+        - Can link to paragraphs as well 
+    - Porting data?
+        - Standard markdown 
+    - Ios?
+        - Standard ios editing interface, so it's just as awkward to edit as any other ios app 
+        - But all the functionality is there, eg linking between docs 
+        - Has customisable toolbar 
+    - Performance when you have lots of notes?
+        - Works well but will take a while to sync data on a new device 
+- Tiago Forte - building a second brain 
+    - Good book 
+    - Anita used a system suggested there, which is to divide everything using the PARA paradigm - Projects, Areas, Resources and Archive 
+- Diana 
+    - Used it to write her book 
+    - Could highlight words she wanted in a glossary, and then use a plugin to generate the glossary for her 
+    - It created a graph for her of the conceptual relationships between the different parts of her book 
+    - It has a [[#Publish to a website|publish feature]] which will allow you to turn your notes into a website!!! Clare-wiki!!
