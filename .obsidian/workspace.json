@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/obsidian.md",
+                "file": "pages/think/life/fun-games/snake-toy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "obsidian"
+              "title": "snake-toy"
             }
           },
           {
@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/AI/claude.md",
+                "file": "pages/think/life/fun-games/snake-toy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "claude"
+              "title": "snake-toy"
             }
           },
           {
@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -180,7 +180,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useful-aliases",
+                "query": "snake toy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -206,8 +206,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a3c22f045402a4f0",
@@ -314,14 +313,17 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "7835f12b174977a9",
+  "active": "113b7bb7263a710c",
   "lastOpenFiles": [
-    "pages/coding/infra/cmd/bash-scripts.md",
-    "pages/organising/tools/misc-automations.md",
-    "pages/organising/tools/kit.md",
-    "pages/organising/tools/obsidian.md",
-    "pages/think/leading/tech-lead-new-project-checklist.md",
+    "pages/think/life/fun-games/snake-toy.md",
+    "pages/organising/tips/tech/misc-tech-tips.md",
     "pages/think/life/health-stuff/covid.md",
+    "pages/organising/tools/AI/claude.md",
+    "pages/organising/tools/obsidian.md",
+    "pages/organising/tools/misc-automations.md",
+    "pages/coding/infra/cmd/bash-scripts.md",
+    "pages/organising/tools/kit.md",
+    "pages/think/leading/tech-lead-new-project-checklist.md",
     "pages/think/life/health-stuff/food.md",
     "pages/organising/tools/kinemaster.md",
     "pages/coding/infra/cmd/misc-terminal-commands.md",
@@ -329,20 +331,17 @@
     "pages/organising/tips/tech/apple-macs-and-ios.md",
     "pages/coding/data/google-sheets.md",
     "pages/organising/podcasts/descript.md",
-    "pages/organising/tools/AI/claude.md",
     "pages/organising/tools/AI/windsurf.md",
     "pages/organising/tools/AI",
     "pages/organising/tools/misc-tools.md",
     "pages/think/code-princ/gilded-rose.md",
     "pages/think/code-princ/refactoring.md",
-    "pages/organising/tips/tech/misc-tech-tips.md",
     "pages/coding/lang/oo/python.md",
     "pages/coding/tools/visual-studio.md",
     "pages/organising/BigIndex/Big-Index-Useful-Tools.md",
     "Keyboard shortcuts.md",
     "pages/organising/tools/Mural.md",
     "pages/organising/tips/non-tech/sonos.md",
-    "pages/coding/data/excel.md",
     "pages/organising/tools/testing",
     "pages/organising/tools/untitled folder",
     "resources/images/Pasted image 20250620114054.png",

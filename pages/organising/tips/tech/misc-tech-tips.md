@@ -558,3 +558,7 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
 	- `j` = go back 10 secs
 	- `k` = pause / play
 	- `l` = go forward 10 secs
+## Work out the date of a linkedin post
+
+- Get the link to the post (three dots top right => Copy link to post) and then paste it into this tool
+- https://thefacilitainer.com/2-click-linkedin-post-time-date-extractor/
