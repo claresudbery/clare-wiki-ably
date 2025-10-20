@@ -23,6 +23,7 @@ permalink: /pages/think/code-princ/Metrics
 - Originally came from DORA State of DevOps report 
     - [Here is the 2019 report (accessible to Clare only)](https://drive.google.com/file/d/1Ul3snv4o7b0AxAWPfdwzH5HylvWdsW76/view?usp=sharing) 
     - you can [download your own copy here](https://cloud.google.com/devops/state-of-devops/)
+    - See also [[#DORA AI Reports]]
     - The first Dev Ops report was published [by DORA in 2014](https://dora.dev/publications/pdf/state-of-devops-2014.pdf)
 - The metrics are:
     - Deployment frequency 
@@ -65,6 +66,18 @@ permalink: /pages/think/code-princ/Metrics
     - more focused on CI-side metrics (how long PRs and branches are alive for, lead time for tickets, that sort of thing) rather than CD-side metrics (deploy frequency, change failure rate)
     - less recommended
 
+## DORA AI Reports
 
+- I have these downloaded to Google Drive/MyDrive/Research/DORA
+- Two reports:
+	- DORA: Impact of Generative AI in Software Development, 2024 (I think?)
+		- [Online here](https://dora.dev/research/ai/gen-ai-report/)
+		- Downloaded here:
+			- `Google Drive/MyDrive/Research/DORA/`
+			- `dora-impact-of-generative-ai-in-software-development.pdf`
+	- DORA: State of AI-assisted Software Development, 2025
+		- [Online here](https://dora.dev/research/2025/dora-report/)
+			- `Google Drive/MyDrive/Research/DORA`
+			- `2025_state_of_ai_assisted_software_development.pdf`
 
 

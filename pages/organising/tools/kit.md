@@ -46,6 +46,23 @@ permalink: /pages/organising/tools/Kit
 	- Landing page: https://queen-of-questions.kit.com/landing
 ## Create the capability for more than one "newsletter"
 
+1. [[#1. The simple way of having multiple newsletters|The simple way]]
+2. [[#2. The more complicated way of having multiple newsletters|The more complicated way]]
+## 1. The simple way of having multiple newsletters
+
+- Grow => Subscribers
+- Scroll down until you see "Manage Subscriber Preferences" over on the right - click this
+- Create "topics of interest" as per instructions on screen
+- There's a warning in there about not reusing existing tags, but that's only a problem if you have automations set up that mean extra things happen when people get tagged
+	- It's not a problem if you reuse tags that you only created for categorisation purposes
+	- ...and whose only automation so far is that they get automatically applied whenever somebody fills in a particular form
+- People can now change their own preferences to get the right tags applied to their profile when they click "Update Profile" at the bottom of a Kit newsletter email
+	- The UI says they get it when they click "Update preferences" but it's actually "Update profile" (or it was for me, anyway).
+
+## 2. The more complicated way of having multiple newsletters
+
+I think maybe when I wrote the notes, the simple way didn't exist yet!
+
 I did this by automatically tagging / segmenting people who signed up via different forms designed to represent the different "newsletters", using the following steps:
 ### Create forms
 
@@ -90,6 +107,14 @@ I did this by automatically tagging / segmenting people who signed up via differ
 
 ## Routine actions
 ### Change which posts are featured on subscriber page
+
+When posting...
+
+- The last page when clicking Continue to publish
+- ...gives you the option to feature the new post on the creator profile
+- (as well as set a thumbnail and some other things)
+
+After the fact...
 
 - Grow => Creator profile => Newsletter posts (on right)
 - Turn on "Show Newsletter Posts" to show all of them
