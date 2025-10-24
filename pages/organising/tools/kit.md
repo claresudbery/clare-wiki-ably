@@ -37,14 +37,11 @@ But what I should have done is click the Edit button on the previous post and TH
 - Add this text at the bottom: 
 	- "🔗 Want to share this article or save it for later? [Here's a handy link for you!](https://queen-of-questions.kit.com/posts/i-m-a-tech-lead-but-my-senior-devs-have-better-technical-skills-am-i-losing-my-edge)"
 	- !! That example includes a link to a different post! But it shows you how to convert from title to url
-	- You can also use my new tool to do the hyphenising for you
-		- The tool is [in GitHub here](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/kit_link_generator.html) - I have a shortcut in Chrome bookmarks: Admin/Utils
-		- I originally asked Windsurf / ChatGPT / Claude to do the hyphenising
-		- Prompt: "Please follow the instructions in @KitLinks.process.md"
-		- It should then ask you for the post title and create the url for you.
-		- You'll need to be in a folder that contains that process file - it's currently in the following folder (for Clare): `development/AI experiments/ai-general/misc tools/kit link generator`
-			- It's in the `.windsurf/processes` sub-folder
-		- The [process file is here](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/.windsurf/processes/KitLinks.process.md).
+	- You can also use my tool to do the hyphenising for you
+		- The tool is [in GitHub here](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/kit_link_generator.html) 
+		- I have a shortcut in Chrome bookmarks: Admin/Utils
+		- Just download [the html](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/kit_link_generator.html) and double-click to run in browser
+		- I originally used [this process file](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/.windsurf/processes/KitLinks.process.md), and documented the tool creation in [this blog post](https://queen-of-questions.kit.com/posts/llms-how-can-i-make-a-quick-thing).
 ## Quick setup notes
 
 - I've used Kit (formerly ConvertKit) to create a newsletter
