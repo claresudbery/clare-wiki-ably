@@ -33,13 +33,15 @@ Fontaines DC
 
 Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSalPairing Cyberdojo coderdojo
 
-## Exploit of a mom / SQL Mom / Little Bobby Tables / Drop Table (xkcd comic)
+## What are all those great xkcd comics?
+
+### Exploit of a mom / SQL Mom / Little Bobby Tables / Drop Table (xkcd comic)
 
 ![SQL Mom / Little Bobby Tables](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)  
 
 From [here](https://xkcd.com/327/)
 
-## Is it worth the time? (xkcd comic)
+### Is it worth the time? (xkcd comic)
 
 xkcd comic talking about the value of automating vs the time it takes
 
@@ -47,7 +49,7 @@ xkcd comic talking about the value of automating vs the time it takes
     
 From [here](https://xkcd.com/1205/)
 
-## The lucky 10,000 (xkcd comic)
+### The lucky 10,000 (xkcd comic)
 
 You're one of today's lucky ten thousand! The diet coke and mentos thing.
 
@@ -55,7 +57,7 @@ You're one of today's lucky ten thousand! The diet coke and mentos thing.
     
 From [here](https://xkcd.com/1053/)
 
-## The sudo !! xkcd comic
+### The sudo !! xkcd comics
 
 - Reminder: sudo !! means "run the command I just ran, but this time with super-user privileges"
 
@@ -65,7 +67,7 @@ From [here](https://xkcd.com/149/)
 
 I can't find the xkcd original for this next one, which is my favourite... so maybe this was someone else's edit of xkcd? I found it [here](https://www.reddit.com/r/xkcd/comments/53ysu8/how_the_pros_do_it/).
 
-![sudo!!](/resources/images/Sudo-make-sandwich.png)
+![sudo!!](/resources/images/sudo-make-me-a-sandwich-part2!!-v2.png)
 
 Incidentally that reddit page led me [here](https://github.com/nvbn/thefuck), which looks like fun.
 

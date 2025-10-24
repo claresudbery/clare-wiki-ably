@@ -3,6 +3,48 @@ layout: page
 location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/Kit
 ---
+
+## How to avoid gotchas when posting
+
+- 1. [[#1. Don't copy/paste from previous posts without hitting Edit|Don't copy/paste from previous posts without hitting Edit]]
+- 2. You CAN edit existing posts. (see [[#Edit published content|section below]])
+- 3. [[#3. Things to add at the last step|Don't forget to add extra stuff on the last step of publishing]]
+- 4. Don't forget to [[#4. Publish to the right subscribers|publish to the right subscribers (and edit title accordingly)]]
+- 5. Don't forget to [[#5. Include a link for sharing|include a link for sharing]]
+- 6. Include at least one image. `clare-tech/finding-things#Images` has a list of places you can look to find good images (Clare only).
+- 7. Be aware that bullet lists are formatted such that there's no decent space between the end of the list and the next piece of text. The best solution is to use Shift + Enter before the next piece of text.
+- 8. It helps to refer to other people and all their good shit. Don't make it just about you!
+### 1. Don't copy/paste from previous posts without hitting Edit
+
+What I was doing was going to the Broadcasts page, finding a previous post, clicking on it and then copy/pasting sections with links. The problem with this is you don't get proper urls - instead you get preview versions, and your new post will be published with preview links (eg https://preview.convertkit-mail2.com/click/dpheh0hzhm/aHR0cHM6Ly9xdWVlbi1vZi1xdWVzdGlvbnMua2l0LmNvbS8=, which leads to my Kit home page) instead of proper links.
+
+But what I should have done is click the Edit button on the previous post and THEN copy/paste the section with links. That way I get the proper urls and not the preview version.
+### 3. Things to add at the last step
+
+- Add a thumbnail image
+- Add some meta description and alt text for the thumbnail
+- Tick the box to feature the post at the top of my profile
+- Scroll down and expand Advanced, then add a summary of the article for social media etc
+- If you forget and need to do this after the fact, see [[#^seo-settings|section below on SEO settings]]
+### 4. Publish to the right subscribers
+
+- Select the right subscribers in the final step
+- Add `[LLM]` or `[Tech Leads]` to the start of the title
+	- ...unless it's either, in which case don't bother, and publish to all subscribers
+### 5. Include a link for sharing
+
+- Include a link for sharing
+- Add this text at the bottom: 
+	- "🔗 Want to share this article or save it for later? [Here's a handy link for you!](https://queen-of-questions.kit.com/posts/i-m-a-tech-lead-but-my-senior-devs-have-better-technical-skills-am-i-losing-my-edge)"
+	- !! That example includes a link to a different post! But it shows you how to convert from title to url
+	- You can also use my new tool to do the hyphenising for you
+		- The tool is [in GitHub here](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/kit_link_generator.html) - I have a shortcut in Chrome bookmarks: Admin/Utils
+		- I originally asked Windsurf / ChatGPT / Claude to do the hyphenising
+		- Prompt: "Please follow the instructions in @KitLinks.process.md"
+		- It should then ask you for the post title and create the url for you.
+		- You'll need to be in a folder that contains that process file - it's currently in the following folder (for Clare): `development/AI experiments/ai-general/misc tools/kit link generator`
+			- It's in the `.windsurf/processes` sub-folder
+		- The [process file is here](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/.windsurf/processes/KitLinks.process.md).
 ## Quick setup notes
 
 - I've used Kit (formerly ConvertKit) to create a newsletter
@@ -121,7 +163,7 @@ After the fact...
 - Change Featured post to either Newest post or Selected post
 - Click "Select broadcasts to display publicly" to change, one by one, which ones will appear and which will not
 
-Change the thumbnail for posts featured on subscriber page
+Change the thumbnail for posts featured on subscriber page ^seo-settings
 
 * Send => Broadcasts
 * Open the broadcast by clicking on the title, NOT by three dots => Open
@@ -135,3 +177,27 @@ Change the thumbnail for posts featured on subscriber page
 - It's not obvious from the main screen but go to Send => Broadcasts
 - Open the broadcast by clicking on the title, NOT by three dots => Open
 - Now you'll see an edit button at the top right
+## Get a shareable url for a published post
+
+1. Go to the Broadcasts page and click on your broadcast's title
+
+2. Click the "Open" button at the top right of the report page
+
+3. Copy the URL from your browser's address bar - this is your shareable link
+
+## Troubleshooting
+
+### Bad gateway error (502)
+
+- This appeared briefly late at night and was fixed by their team - don't know what the problem was (see emails 14/10/25)
+### Bad formatting of bullet lists
+
+- this was a css problem and was fixed by them who, "have added some CSS codes to your creator profile and here is how a public broadcast now looks like, please see the screenshot below for your reference."
+- (see emails on 1/10/25)
+### Deleting test broadcasts
+
+- "Unfortunately, we can't delete the Broadcast email that sent out already."
+### Removing the X/Twitter share button from your pages
+
+- They sorted it out for me: "I added a CSS code to remove the X share button."
+- See emails 8/4/25
