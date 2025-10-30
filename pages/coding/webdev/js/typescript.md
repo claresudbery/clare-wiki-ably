@@ -7,6 +7,7 @@ permalink: /pages/coding/webdev/js/TypeScript
 ## Useful links
 
 - [typescript tutorial](https://www.w3schools.com/typescript/index.php)
+- [[comparing-typescript-with-csharp|Comparing Typescript With C#]] (my notes)
 
 ## Getting started with typescript in VS Code
 
