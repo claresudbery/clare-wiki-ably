@@ -15,3 +15,6 @@ Zoe podcast on inflammation after eating: https://youtu.be/ol6wTjj7Y18
 ## Nutrition and exercise record from MyFitnessPal
 
 - I used it mostly in 2019. The downloaded data is in Desktop-Current/MyFitnessPal Downloaded Data
+## Kombucha instructions
+
+- [I followed these](https://www.youbrewkombucha.com/flavoring)

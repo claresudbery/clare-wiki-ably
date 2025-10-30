@@ -39,8 +39,8 @@ But what I should have done is click the Edit button on the previous post and TH
 	- !! That example includes a link to a different post! But it shows you how to convert from title to url
 	- You can also use my tool to do the hyphenising for you
 		- The tool is [in GitHub here](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/kit_link_generator.html) 
-		- I have a shortcut in Chrome bookmarks: Admin/Utils
 		- Just download [the html](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/kit_link_generator.html) and double-click to run in browser
+		- ...unless you're me. I have a shortcut in Chrome bookmarks: `Admin/Utils`
 		- I originally used [this process file](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/.windsurf/processes/KitLinks.process.md), and documented the tool creation in [this blog post](https://queen-of-questions.kit.com/posts/llms-how-can-i-make-a-quick-thing).
 ## Quick setup notes
 

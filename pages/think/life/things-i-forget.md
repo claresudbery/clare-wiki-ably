@@ -453,3 +453,38 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 ## Who helped to build the Minack theatre?
 
 - Billy Rawlings was the guy who helped build the Minack. His cottage is covered in ivy and has corrugated roof
+## What are the three things you can do to help your friend who is suffering?
+
+- "I'll give you three options"
+	- Talk about it
+	- Distraction
+	- Space
+- [The video is here](https://youtube.com/shorts/EKHpUK_RshE?si=ijZmkIMJaS93kIVv) (35 seconds long)
+- Keywords for searching: advice, hard time
+## What kind of fluorescent tube do I need?
+
+- You might not need "fluorescent" at all! 
+	- I don't.
+	- My old fitting was fluorescent, but that got replaced by a newer one at some point
+	- Fluorescent tubes are about to become illegal (Nov '25) and are no longer manufactured because mercury.
+	- The alternative is LED
+	- If your system doesn't have a starter (see below), you probably have LED
+		- In the end I had to just guess that my system was probably LED cos no starter
+		- It didn't actually say LED on the tube or the housing. Very annoying!
+- Do you need a starter?
+	- Older systems have these, newer ones don't
+	- My old fitting had a starter, but that got replaced by a newer one at some point
+	- If you have a starter, it will slot into the side of the housing and be clearly visible as a raised circle, protruding slightly from the housing. Twist to replace.
+- Look out for delivery charges
+	- These often cost more than the tube, cos "oversized item"
+- Wattage may vary
+	- You may see things like "will serve 58W"
+- Be wary of "5ft" 
+	- Sometimes this means 150cm, sometimes 152cm
+- This is what I got in the end:
+	- LED (NOT fluorescent)
+	- 150cm long
+	- 58W equivalent
+	- T8 (this is the tube shape)
+	- "865" (no idea what this means)
+	- Warm white
