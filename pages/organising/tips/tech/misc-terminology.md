@@ -39,4 +39,7 @@ permalink: /pages/organising/tips/tech/Misc-Terminology
 - [More here](https://www.infoq.com/news/2008/11/beck-saff-squeeze/)
 - Same concept as binary search algorithm?
 - Similar concept to [Diff Debugging](https://martinfowler.com/bliki/DiffDebugging.html)?
+## Event sourcing
+
+- Search for event sourcing in clare-tech
 

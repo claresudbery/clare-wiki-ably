@@ -1,6 +1,8 @@
 Asked of GPT-5: 
 
 *"Can you give me a summary of the differences between typescript and C sharp, with some examples?"*
+
+- See also  [`misc_typescript_stuff.ts`](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/src/misc_typescript_stuff.ts) and misc AI projects note in Clare's Career Obsidian (Clare only)
 # TypeScript vs C#: Key Differences and Examples
 
 ## Big Picture
@@ -18,16 +20,14 @@ Asked of GPT-5:
 
 *"What is the difference between compiling and transpiling?"*
 
-- **Compiling**
-    
+- **Compiling**    
     - Converts source code to a lower-level target (machine code, bytecode).
     - Often changes abstraction level and may optimize heavily.
     - Examples:
         - C/C++ → machine code (native binary).
         - C# → IL (bytecode) for the .NET runtime (then JIT/AOT to native).
         - Rust/Go → native binaries.
-- **Transpiling**
-    
+- **Transpiling**    
     - Converts source code to another source language at a similar abstraction level.
     - Typically preserves program structure more directly.
     - Examples:
@@ -64,50 +64,60 @@ Asked of GPT-5:
 - **Generics**
     - **TS**: Erased at runtime; no runtime info on `T`.
     - **C#**: Reified; constraints enforced at runtime; reflection works on `T`.
-- **Nullability**
+    - [[#Generics with Constraints|See examples of this below]]
+    - Also see [[#When to use generics]]
+- ❓ **Nullability**
     - **TS**: `strictNullChecks` opt-in; `null`/`undefined` common in JS interop.
     - **C#**: Nullable reference types (`string?`) with flow analysis; value types use `Nullable<T>`.
 - **Inheritance and Interfaces**
     - Both support classes and interfaces.
     - **C#** adds abstract classes, sealed, virtual/override, records, and value types (`struct`).
+    - [[#Class and Interface|See examples of this below]]
 - **Functions and Overloads**
     - **TS**: Overload signatures collapse to one JS function; checks are compile-time only.
     - **C#**: True overloads resolved at compile-time with different signatures.
+    - [[#Function Overloads|See examples of this below]]
 - **Enums**
     - **TS**: Compiles to JS objects (string/number enums), or `const enum` inlined.
     - **C#**: True enums backed by integral types.
-- **Pattern Matching vs Unions**
+    - [[#Enums|See examples of this below]]
+- ❓ **Pattern Matching vs Unions**
     - **TS**: Discriminated unions + control-flow narrowing.
     - **C#**: Pattern matching on types and values (`switch` expressions, `is` patterns).
+    - [[#Discriminated Unions vs Pattern Matching|See examples of this below]]
 - **Attributes/Decorators**
     - **TS**: Experimental decorators (metadata requires transform/runtime).
     - **C#**: Attributes baked into metadata, first-class.
 - **Operator Overloading**
     - **TS**: Not supported.
     - **C#**: Supported.
-- **Concurrency**
+- ❓ **Concurrency**
     - **TS**: `async/await` over Promises; single-threaded; Workers for parallelism.
     - **C#**: `async/await` over Tasks; threads, thread pool, `IAsyncEnumerable`, rich synchronization.
-- **Collections and LINQ**
+    - [[#Async/Await|See examples of this below]]
+- ‼️ **Collections and LINQ**
     - **TS**: JS arrays/maps/sets; libraries for query ops (e.g., lodash/fp).
     - **C#**: `IEnumerable<T>`, `IQueryable<T>`, LINQ, immutable collections.
-- **Modules/Namespaces**
+- ❓ **Modules/Namespaces**
     - **TS**: ES modules (`import/export`).
     - **C#**: Namespaces and assemblies; `using` for imports.
 ## Duck typing
 
-- **Definition**
-    
+- [[#Duck typing Intro|Intro]]
+- [[#Duck typing examples|Examples]]
+- [[#Duck typing Key contrasts|Key contrasts]]
+- [[#Duck typing Summary|Summary]]
+### Duck typing: Intro
+
+- **Definition**    
     - A typing style where an object’s suitability is determined by the presence of certain methods/properties, not by its explicit type. “If it walks like a duck and quacks like a duck, it’s a duck.”
-- **Core idea**
-    
+- **Core idea**    
     - Compatibility by behavior/shape rather than by declared type/identity.
     - Common in dynamic languages (Python, Ruby) and in structural type systems (TypeScript).
 
 ### Duck typing examples
 
 - **Python (dynamic duck typing)**
-
 ```python
 
 def quack(o):  
@@ -123,9 +133,7 @@ quack(Duck())    # quack
 quack(Person())  # I can quack too
 ```
 
-
 - **TypeScript (structural typing ≈ duck typing)**
-
 ```ts
 
 type Quacker = { quack: () => void };  
@@ -139,9 +147,7 @@ speak(duck);   // OK
 speak(person); // OK
 ```
 
-
 - **C# (nominal typing, not duck typed by default)**
-
 ```csharp
 
 public interface IQuacker { void Quack(); }  
@@ -153,26 +159,33 @@ class Person { public void Quack() { Console.WriteLine("I can quack"); } }
 Speak(new Duck());   // OK  
 // Speak(new Person()); // Error: Person doesn't implement IQuacker
 ```
-
 ### Duck typing: Key contrasts
 
-- **Duck/structural typing**
-    
+- **Duck/structural typing**    
     - Based on shape/available members.
     - TypeScript uses this by default.
-- **Nominal typing**
-    
+- **Nominal typing**    
     - Based on explicit declarations (names/implements/extends).
     - C# uses this model.
 
-# Summary
+### Duck typing: Summary
 
 - Duck typing = behavior-based compatibility.
 - TypeScript’s structural types make it duck-typing-like.
 - C# requires declared compatibility (e.g., implements an interface).
+
 ## Small Side-by-Side Examples
 
-- **Class and Interface**
+See also  [`misc_typescript_stuff.ts`](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/src/misc_typescript_stuff.ts)
+
+### Class and Interface
+
+- Note that in modern TypeScript, the common convention is to avoid the I prefix for interfaces. Prefer descriptive names like `Person`, `User`, `Config`, etc.
+	- **Why not use I-?** It’s a legacy pattern from C#/early TS. TypeScript’s structural typing makes the distinction less important, and the prefix adds noise.
+	- **Ecosystem guidance:** TS docs and popular style guides (including Angular’s) generally discourage `I` prefixes.
+	- **When it might be used:** Teams with strong .NET conventions, or where interfaces and classes intentionally share names (some prefer `Person` for the interface and `PersonImpl` for the class instead).
+- Note also that objects do not have to formally implement an interface in order to be used where that interface is expected
+	- But if an object is declared to implement an interface and then does not have the required fields, there will be a transpiler error.
 
 ```ts
 
@@ -183,12 +196,28 @@ interface Person {
 }  
   
 class Employee implements Person {  
+  // Note that just having constructor params effectively declares properties
+  // ...but only when using the "public" keyword
   constructor(public name: string, public id: number, public age?: number) {}  
 }
+  
+class Friend implements Person {  
+  constructor(public name: string, public id: number) {}  // Error - no age
+}
+  
+class BestFriend {  
+  constructor(public name: string, public id: number) {}  
+}  
+
+function printPerson(p: Person) {
+	console.log(p.name);
+	console.log(p.nickname);
+}
+
+printPerson(new Employee("Patty", 123, "Pattykins")); // OK
+printPerson(new BestFriend("Patty", 123)); // Error - no age
 ```
-
 ```csharp
-
 // C#  
 public interface IPerson  
 {  
@@ -208,17 +237,73 @@ public class Employee : IPerson
     }  
 }
 ```
+### When to use generics
 
-- **Generics with Constraints**
+- In the example below: Use `peopleThings2(p: Person)` when you only need `Person` properties and your return type doesn’t depend on the specific subtype. Use `peopleThings(p: T)` when you want to preserve the caller’s specific type and relate it to other type parameters or return values.
+- When a generic is worth it:
+	- **Preserve subtype information**: If you return `p` (or something derived from it), a generic keeps the precise type.
+	- **Relate multiple type params**: When argument and return types depend on each other.
+	- **Type inference convenience**: Call-site inference gives precise types without explicit annotations.
+	- **Reusable utilities**: Libraries often need functions that adapt to the caller’s types rather than erasing them to Person.
+- See also  [`misc_typescript_stuff.ts`](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/src/misc_typescript_stuff.ts)
 
+```ts
+// Generic functions with constraints and dynamic types:
+// The param to this function has to be something that correlates to the Person interface
+// (doesn't have to explicitly implement it)
+function peopleThings<T extends Person>(p: T) {
+  return "Name: " + p.name + ", Nickname: " + p.nickname;
+}  
+
+function usePeopleThings() {
+  var friendText = peopleThings(new Friend("Friend", 123, "Friendly"));
+  return friendText + peopleThings(new Employee("Patty", 123, "Pattykins"));
+}  
+
+// The above example doesn't actually need generics.
+// It returns a string and reads only name/nickname.
+// A plain parameter type is simpler and equally safe
+function peopleThings2(p: Person) {
+  return "Name: " + p.name + ", Nickname: " + p.nickname;
+}
+
+function usePeopleThings2() {
+  var friendText = peopleThings2(new Friend("Friend", 123, "Friendly"));
+  return friendText + peopleThings2(new Employee("Patty", 123, "Pattykins"));
+}
+```
+### Generics with Constraints
+
+See also  [`misc_typescript_stuff.ts`](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/src/misc_typescript_stuff.ts)
 ```ts
 
 // TypeScript (structural, erased at runtime)  
 function first<T extends { length: number }>(x: T): number {  
   return x.length;  
 }
-```
 
+// The param to this function has to be something that 
+// correlates to the Person interface
+// (doesn't have to explicitly implement it)
+function peopleThings<T extends Person>(p: T) {
+  return "Name: " + p.name + ", Nickname: " + p.nickname;
+}
+
+function hasName(x: unknown): x is { name: string } {
+  return typeof x === 'object' 
+	  && x !== null 
+	  && 'name' in x 
+	  && typeof (x as any).name === 'string';
+}
+// Unconstrained generic functions
+// This avoids `extends` by refining at runtime with a user-defined type guard.
+function describe<T>(p: T): string {
+	if (hasName(p)) {
+		return `Name: ${p.name}`;
+	}
+	return 'No name';
+}
+```
 ```csharp
 
 // C# (reified, nominal, compile/runtime constraints)  
@@ -227,9 +312,7 @@ int First<T>(T x) where T : ICollection
     return x.Count;  
 }
 ```
-
-- **Function Overloads**
-
+### Function Overloads
 ```ts
 
 // TypeScript: overload signatures + single implementation  
@@ -237,7 +320,6 @@ function len(x: string): number;
 function len(x: any[]): number;  
 function len(x: string | any[]) { return x.length; }
 ```
-
 ```csharp
 
 // C#: true overloads  
@@ -245,9 +327,7 @@ int Len(string s) => s.Length;
 int Len<T>(IList<T> list) => list.Count;
 
 ```
-
-- **Async/Await**
-
+### Async/Await
 ```ts
 
 // TypeScript  
@@ -256,7 +336,6 @@ async function getData(): Promise<string> {
   return res.text();  
 }
 ```
-
 ```csharp
 
 // C#  
@@ -266,9 +345,7 @@ public async Task<string> GetDataAsync(HttpClient client)
     return await res.Content.ReadAsStringAsync();  
 }
 ```
-
-- **Discriminated Unions vs Pattern Matching**
-
+### Discriminated Unions vs Pattern Matching
 ```ts
 
 // TypeScript  
@@ -281,7 +358,6 @@ function area(s: Shape): number {
   }  
 }
 ```
-
 ```csharp
 
 // C# (pattern matching)  
@@ -296,9 +372,7 @@ double Area(Shape s) => s switch
     _ => throw new ArgumentOutOfRangeException()  
 };
 ```
-
-- **Enums**
-
+### Enums
 ```ts
 
 // TypeScript  
@@ -312,7 +386,6 @@ const s: Status = Status.Ok;
 public enum Status { Ok = 200, NotFound = 404 }  
 var s = Status.Ok;
 ```
-
 ## Tooling and Build
 
 - **TypeScript**
