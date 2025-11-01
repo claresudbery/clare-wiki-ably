@@ -22,7 +22,7 @@ But what I should have done is click the Edit button on the previous post and TH
 ### 3. Things to add at the last step
 
 - Add a thumbnail image
-- Add some meta description and alt text for the thumbnail
+- Add alt text for the thumbnail
 - Tick the box to feature the post at the top of my profile
 - Scroll down and expand Advanced, then add a summary of the article for social media etc
 - If you forget and need to do this after the fact, see [[#^seo-settings|section below on SEO settings]]
