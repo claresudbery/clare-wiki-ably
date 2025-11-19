@@ -41,5 +41,8 @@ permalink: /pages/organising/tips/tech/Misc-Terminology
 - Similar concept to [Diff Debugging](https://martinfowler.com/bliki/DiffDebugging.html)?
 ## Event sourcing
 
-- Search for event sourcing in clare-tech
+- See [[architecture-principles#Event sourcing]]
+## Event storming
+
+- See [[architecture-principles#Event Storming]]
 

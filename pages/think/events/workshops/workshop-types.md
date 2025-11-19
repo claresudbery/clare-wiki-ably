@@ -21,6 +21,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - Empathy mapping
 - Stakeholder empathy mapping
 - Event storming
+	- See [[architecture-principles#Event Storming]]
 - Service mapping
 - Wardley mapping:	
 	- [Wikipedia](https://en.wikipedia.org/wiki/Wardley_map)
