@@ -19,6 +19,13 @@ See [energisers](/pages/think/events/workshops/Energisers-and-Warmups#getting-to
 Everything from Taskmaster (see book). For instance...
 - Standing on a bridge and popping up every 30 seconds for 30 seconds. When you're ducked down, somebody down below the bridge has to try and approach the bridge. Bit like What time is it Mr Wolf. Every time you pop up and bob down, blow a horn or make some kind of loud noise.
 
+### Wibble bibble bam
+
+- The gamesmaster randomly says either "wibble", "bibble" or "bam" to randomly selected people, repeatedly. Every time someone gets their response wrong, they're out. Keep going until there is only one winner.
+- Responses:  
+	- Wibble: Bibble  
+	- Bibble: Bam  
+	- Bam: Wibble bibble bam
 ### Picture consequences / Telephone pictionary
 
 This is one of my favourite party games. It always makes me laugh a lot.

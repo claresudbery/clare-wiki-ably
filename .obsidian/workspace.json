@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/kit.md",
+                "file": "pages/organising/tools/Xero.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kit"
+              "title": "Xero"
+            }
+          },
+          {
+            "id": "45f5ea43dcb9b958",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/think/life/things-i-forget.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "things-i-forget"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -82,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "event sourcing",
+                "query": "fluorescent",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -215,19 +229,23 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "a1ce3e4f58ef8a4a",
+  "active": "45f5ea43dcb9b958",
   "lastOpenFiles": [
+    "pages/organising/tools/Xero.md",
+    "pages/think/life/things-i-forget.md",
+    "Every morning.md",
+    "pages/think/life/health-stuff/food.md",
+    "pages/think/life/fun-games/fun-games.md",
+    "pages/organising/tools/misc-tools.md",
+    "pages/organising/tools/kit.md",
     "pages/coding/webdev/js/typescript notes/comparing-typescript-with-csharp.md",
     "pages/coding/webdev/js/typescript.md",
     "pages/organising/tips/tech/misc-terminology.md",
     "pages/organising/tools/misc-automations.md",
     "pages/coding/data/google-sheets.md",
-    "pages/think/life/things-i-forget.md",
     "pages/coding/webdev/js/express-js.md",
     "pages/coding/webdev/js/typescript notes",
-    "pages/think/life/health-stuff/food.md",
     "pages/coding/infra/servers/chef.md",
-    "pages/organising/tools/kit.md",
     "resources/images/sudo-make-me-a-sandwich-part2!!.png",
     "resources/images/sudo-make-me-a-sandwich-part2!!-v2.png",
     "resources/images/sudo-make-me-a-sandwich-part2!!-v1.png",
@@ -236,21 +254,17 @@
     "resources/images/sudo-make-me-a-sandwich!!.png",
     "pages/think/life/health-stuff/covid.md",
     "pages/organising/tools/AI/windsurf.md",
-    "pages/think/life/fun-games/fun-games.md",
     "pages/coding/lang/oo/python.md",
     "pages/think/code-princ/metrics.md",
     "pages/coding/infra/infra-resources.md",
     "pages/organising/tips/tech/misc-tech-tips.md",
     "README.md",
     "resources/images/Screenshot 2025-10-13 at 11.01.36.jpg",
-    "Untitled.md",
     "temp.md",
     "pages/think/life/fun-games/snake-toy.md",
     "pages/organising/tools/AI/claude.md",
     "pages/organising/tools/obsidian.md",
     "pages/coding/infra/cmd/bash-scripts.md",
-    "pages/think/leading/tech-lead-new-project-checklist.md",
-    "pages/organising/tools/kinemaster.md",
     "pages/organising/tools/AI",
     "pages/organising/tools/testing",
     "pages/organising/tools/untitled folder",

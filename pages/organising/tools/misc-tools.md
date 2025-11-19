@@ -3,7 +3,7 @@ layout: page
 location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/Miscellaneous-Tools
 ---
-
+ 
 ## Misc
 
 - Notepad++ Macros: See [separate notepad++ macro page](/pages/organising/tools//Sample-Notepad++-Macros)
@@ -432,6 +432,7 @@ re, sorry!)
 
 ### Turn on live subtitles
 
+- Search terms: transcript, transcription
 - You can do this while presenting
 - You need an Office 365 subscription
 - Click the Slide Show tab

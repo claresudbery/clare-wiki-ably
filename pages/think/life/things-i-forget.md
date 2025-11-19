@@ -463,18 +463,21 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 - Keywords for searching: advice, hard time
 ## What kind of fluorescent tube do I need?
 
+- When replacing, TURN POWER OFF first
+	- In our cellar that means bringing a torch, doing it in daylight, and opening the door to outside
+	- The tube slots in from the side at both ends, and then you twist it until it clicks
+	- It doesn't matter which end is which
 - You might not need "fluorescent" at all! 
-	- I don't.
-	- My old fitting was fluorescent, but that got replaced by a newer one at some point
+	- I thought I didn't, but I was wrong!
+	- My old fitting was fluorescent, and got replaced by a newer one at some point
+	- The new one didn't have a starter which made me think it wasn't fluorescent, but it IS
 	- Fluorescent tubes are about to become illegal (Nov '25) and are no longer manufactured because mercury.
 	- The alternative is LED
-	- If your system doesn't have a starter (see below), you probably have LED
-		- In the end I had to just guess that my system was probably LED cos no starter
-		- It didn't actually say LED on the tube or the housing. Very annoying!
+	- But you can't put LED tubes in a fluorescent fitting
 - Do you need a starter?
 	- Older systems have these, newer ones don't
-	- My old fitting had a starter, but that got replaced by a newer one at some point
-	- If you have a starter, it will slot into the side of the housing and be clearly visible as a raised circle, protruding slightly from the housing. Twist to replace.
+	- My old fitting had a starter, but that got replaced by a newer system (no starter) at some point
+	- If you have a starter, it will slot into the side of the housing and be clearly visible as a raised circle, protruding slightly from the housing. Twist to remove and replace.
 - Look out for delivery charges
 	- These often cost more than the tube, cos "oversized item"
 - Wattage may vary
@@ -482,9 +485,11 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 - Be wary of "5ft" 
 	- Sometimes this means 150cm, sometimes 152cm
 - This is what I got in the end:
-	- LED (NOT fluorescent)
 	- 150cm long
 	- 58W equivalent
 	- T8 (this is the tube shape)
-	- "865" (no idea what this means)
+	- "835" (this means the shade of white)
 	- Warm white
+# Where's that post from the guy who doesn't like the term neurospicy?
+
+- [Here it is](https://www.linkedin.com/posts/studioarlo_i-am-neurodivergent-not-neurospicy-do-activity-7388485359141138432-psEn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiZYLUBKE3tP8lBfqVfboHdbSUih9-OOXY) - LinkedIn post by Arlo West.

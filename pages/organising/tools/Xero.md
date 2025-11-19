@@ -16,7 +16,6 @@
 - Already reconciled - look at "Bank statements" and they are marked on the right either reconciled or unreconciled
 	- Looks like "account transactipns is everything that's been reconciled"
 	- on the "Reconcile" tab you can see "balance in Xero" £2014.41 which means there are £2014.41 worth of unreconciled transactions
-
 ## Accessing Settings
 
 - Click business name, top left
@@ -24,9 +23,9 @@
 
 ## Creating invoices
 
-- Go Business => Invoices
+- Go Sales => Invoices
 - It will make you add an "item" with a "code"
-- To see all items created so far, go to Business => Products and Services (all the way down at the bottom of the menu)
+- To see all items created so far, go to Sales => Products and Services (all the way down at the bottom of the menu)
 - To edit payment details or contact details: [[#Adding payment and contact details to invoices]]
 	- This won't all be visible on the main page, but you'll see it when you click Oreview (top of page)
 - To add a new client, 
