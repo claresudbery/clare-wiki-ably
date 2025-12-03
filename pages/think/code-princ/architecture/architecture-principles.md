@@ -28,8 +28,11 @@ permalink: /pages/think/code-princ/architecture/Architecture-Principles
 
 ## Residuality theory, from Barry O'Reilly
 
+- See also [[residuality-theory|my detailed notes]] from Barry O'Reilly's talk at Software Architecture Gathering Berlin, 2025
 - (See also my phone notes from Chris Simon's talk at NewCrafts '25)
 - (See also [this blog post](https://www.architecture-weekly.com/p/residuality-theory-a-rebellious-take))
+- See also [my SAG notes, in 3 parts, on linkedin](https://www.linkedin.com/posts/clare-sudbery-she-her-35939540_time-uncertainty-and-change-in-software-activity-7399403143282708480-Bov1) 
+	- ...and [the reposted version with images](https://www.linkedin.com/posts/clare-sudbery-she-her-35939540_what-on-earth-is-residuality-theory-time-activity-7401721070275424256-Z4ob)
 - Consider as many stressors as you can think of - could be 200 (not 3 like in the example in Chris's talk)
 	- Don't spend a lot of time on each one 
 	- By having a lot of stressors we don't have to get them all right 

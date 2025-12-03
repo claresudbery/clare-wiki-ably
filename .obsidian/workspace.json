@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tips/tech/misc-terminology.md",
+                "file": "pages/think/code-princ/architecture/residuality-theory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "misc-terminology"
+              "title": "residuality-theory"
             }
           },
           {
@@ -138,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"event storming\"",
+                "query": "residuality theory",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,13 +159,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 415.5,
-    "collapsed": true
+    "width": 415.5
   },
   "right": {
     "id": "a3c22f045402a4f0",
@@ -275,6 +273,9 @@
   "active": "1653bab3b9efe8e8",
   "lastOpenFiles": [
     "pages/think/code-princ/architecture/architecture-principles.md",
+    "pages/think/code-princ/architecture/residuality-theory.md",
+    "pages/organising/tips/tech/apple-macs-and-ios.md",
+    "pages/think/life/fun-games/fun-games.md",
     "pages/organising/tips/tech/misc-terminology.md",
     "pages/think/events/workshops/workshop-types.md",
     "pages/think/life/things-i-forget.md",
@@ -283,7 +284,6 @@
     "pages/organising/tools/Xero.md",
     "Every morning.md",
     "pages/think/life/health-stuff/food.md",
-    "pages/think/life/fun-games/fun-games.md",
     "pages/organising/tools/misc-tools.md",
     "pages/organising/tools/kit.md",
     "pages/coding/webdev/js/typescript notes/comparing-typescript-with-csharp.md",
@@ -307,8 +307,6 @@
     "README.md",
     "resources/images/Screenshot 2025-10-13 at 11.01.36.jpg",
     "temp.md",
-    "pages/think/life/fun-games/snake-toy.md",
-    "pages/organising/tools/AI/claude.md",
     "pages/organising/tools/AI",
     "pages/organising/tools/testing",
     "pages/organising/tools/untitled folder",

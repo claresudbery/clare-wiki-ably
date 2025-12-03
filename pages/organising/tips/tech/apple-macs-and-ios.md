@@ -475,3 +475,11 @@ Spotlight directory not found at root: /Applications
 - Sometimes you don't get any edit features and it seems like you can't edit
   - When this happens, just select View => Show Markup Toolbar (near the bottom of the menu), or click the two forward-facing arrows, top right
 - If you want to change the dimensions of an image, use Tools => Adjust Size
+
+## Get rid of the annoying blue indicator that pops up when caps lock is on
+
+- In Terminal: `defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO`
+	- ...but you'll prob need to prefix the whole command with `sudo`
+- Restart the Mac
+- To turn it back on again: `defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool YES`
+	- ...but you'll prob need to prefix the whole command with `sudo`
