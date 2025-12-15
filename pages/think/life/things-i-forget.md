@@ -493,3 +493,14 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 # Where's that post from the guy who doesn't like the term neurospicy?
 
 - [Here it is](https://www.linkedin.com/posts/studioarlo_i-am-neurodivergent-not-neurospicy-do-activity-7388485359141138432-psEn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiZYLUBKE3tP8lBfqVfboHdbSUih9-OOXY) - LinkedIn post by Arlo West.
+# How do I strip cruft from online recipes?
+
+- See [[pages/think/life/health-stuff/food#Tool that will strip the cruft from online recipes|Tool that will strip the cruft from online recipes]]
+# How do I get Radio Waters (with the people from Purple Radio) to play on my Sonos speaker?
+
+- The Tunein service doesn't work in my version of the Sonos app
+- The myTuner service works for some radio stations, but for some reason not Radio Waters
+- The my Tuner service has no search function, but you can use the global Sonos search function to find stuff - but still Radio Waters doesn't seem to work
+- Instead, I did this:
+	- Get youtube on phone to use airplay to play on Sonos
+	- Get RadioWaters.co.uk up in Safari on phone, and play from there

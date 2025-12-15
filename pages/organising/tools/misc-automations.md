@@ -43,6 +43,7 @@
 			- Change to clare-wiki-ably: `wscreen`
 	- How it works: ^vault-how
 		- It's a bit unwieldy on the surface, but it works and it was the quickest easiest thing without getting sucked down a rabbit hole...
+		- !This does mean that if you edit the base scripts, you might have to run `wscreen` or whatever to get the correct base script overwritten back onto `lowres-screenshot`
 		- There are three copies of `lowres-screenshot` that are identical apart from the path that screenshots are copied to:
 			- `lowres-screenshot-script-career`
 			- `lowres-screenshot-script-tech`

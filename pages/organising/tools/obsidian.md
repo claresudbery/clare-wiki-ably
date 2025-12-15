@@ -30,6 +30,8 @@ permalink: /pages/organising/tools/Obsidian
 	- [Callouts](<#callouts>)
 	- [File / folder management](<#file  folder management>)
 	- [[#Attachments and images]]
+	- [[#Centre text on the page]]
+	- [[#Find and replace with line breaks]]
 - [File syncing](<#file syncing>)
 	- [Syncing with Google Drive](<#syncing with google drive>)
 	- [Syncing with iCloud](<#syncing with icloud>)
@@ -526,9 +528,44 @@ Time: 1 second
 - To make them smaller:
 	- `![[Pasted image 20250813180043x.jpg|100]]`
 	- The `|100` bit at the end is specifying that it should only be 100 pixels wide
+- To centre them on the page (with optional sizing too):
+	- `![[Pasted image 20250813180043x.jpg|center|100]]`
+	- [[#Centre text on the page|See below]] for how to centre text
 - I found a way of getting screenshots pasted directly into Obsidian low res so they don't take up tons of storage
 	- I documented it in Clare's Career Obsidian (currently accesible to Clare only), in `Misc small AI projects#Get low-res Macbook screenshots` and in `Keyboard shortcuts`
    
+## Centre text on the page
+
+- Based on [instructions here](https://forum.obsidian.md/t/text-alignment-with-links-images-formatting-using-markdown-etc/33920/2) (although I didn't do the `cMenu` bit)
+- Open a separate editor (I use VS Code) (you can't edit css direct in Obsidian)
+- Add this css to both `snippets/my-styles.css` and `publish.css`:
+```css
+.center-align {
+display: block;
+text-align: center;
+}
+
+.right-align {
+display: block;
+text-align: right;
+}
+
+.left-align {
+display: block;
+text-align: left;
+}
+```
+- Create three templates files in your `Templates` folder:
+	- One called `Center Align Text Template` containing the following: `<span class="center-align"><% tp.file.selection ( ) %></span>`
+	- One called `Left Align Text Template` containing the following: `<span class="left-align"><% tp.file.selection ( ) %></span>`
+	- One called `Right Align Text Template` containing the following: `<span class="right-align"><% tp.file.selection ( ) %></span>`
+- Use the Templater (Cmd + `,` then bottom left) plugin to create hotkeys for the above 3 templates
+	- I've only done one hotkey so far - it's Cmd + Ctrl + c for centring text
+- Select the text you want to centre, and press the hotkey - it'll surround the text with the appropriate html, resulting in something like this:
+	- `<span class="center-align">Centred text</span>`
+## Find and replace with line breaks
+
+- See here: https://forum.obsidian.md/t/find-and-replace-and-linebreaks/53041
 # File syncing
 
 - If syncing between MacBook and iPhone, your best option seems to be [iCloud](<#syncing with icloud>)
@@ -850,7 +887,6 @@ aliases:
 ```
 - You can link to aliases by just typing an alias name in an internal link
 - Obsidian creates the link with the alias as its custom display text, for example `[[Artificial Intelligence|AI]]`.
-
 # Troubleshooting
 
 ## Updating headings so links aren't broken

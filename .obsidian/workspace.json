@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/organising/tools/Xero.md",
+                "file": "pages/think/life/health-stuff/food.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Xero"
+              "title": "food"
             }
           },
           {
@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/think/code-princ/architecture/residuality-theory.md",
+                "file": "pages/think/life/things-i-forget.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "residuality-theory"
+              "title": "things-i-forget"
             }
           },
           {
@@ -97,16 +97,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/think/events/workshops/workshop-types.md",
+                "file": "pages/organising/tools/obsidian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "workshop-types"
+              "title": "obsidian"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -163,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.5
+    "width": 415.5,
+    "collapsed": true
   },
   "right": {
     "id": "a3c22f045402a4f0",
@@ -270,25 +271,26 @@
       "publish:Publish changes...": false
     }
   },
-  "active": "1653bab3b9efe8e8",
+  "active": "2a6a9b187d0f05c6",
   "lastOpenFiles": [
-    "pages/think/code-princ/architecture/architecture-principles.md",
+    "pages/think/events/workshops/workshop-types.md",
+    "pages/think/life/things-i-forget.md",
+    "pages/think/life/health-stuff/food.md",
+    "pages/organising/tools/misc-automations.md",
+    "pages/coding/data/google-sheets.md",
+    "pages/organising/tools/obsidian.md",
+    "pages/organising/tools/Xero.md",
     "pages/think/code-princ/architecture/residuality-theory.md",
+    "pages/think/code-princ/architecture/architecture-principles.md",
     "pages/organising/tips/tech/apple-macs-and-ios.md",
     "pages/think/life/fun-games/fun-games.md",
     "pages/organising/tips/tech/misc-terminology.md",
-    "pages/think/events/workshops/workshop-types.md",
-    "pages/think/life/things-i-forget.md",
     "resources/images/Screenshot 2025-11-19 at 19.21.08.jpg",
-    "pages/organising/tools/misc-automations.md",
-    "pages/organising/tools/Xero.md",
     "Every morning.md",
-    "pages/think/life/health-stuff/food.md",
     "pages/organising/tools/misc-tools.md",
     "pages/organising/tools/kit.md",
     "pages/coding/webdev/js/typescript notes/comparing-typescript-with-csharp.md",
     "pages/coding/webdev/js/typescript.md",
-    "pages/coding/data/google-sheets.md",
     "pages/coding/webdev/js/express-js.md",
     "pages/coding/webdev/js/typescript notes",
     "pages/coding/infra/servers/chef.md",
@@ -306,7 +308,6 @@
     "pages/organising/tips/tech/misc-tech-tips.md",
     "README.md",
     "resources/images/Screenshot 2025-10-13 at 11.01.36.jpg",
-    "temp.md",
     "pages/organising/tools/AI",
     "pages/organising/tools/testing",
     "pages/organising/tools/untitled folder",
