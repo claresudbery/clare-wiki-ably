@@ -21,7 +21,7 @@ Everything from Taskmaster (see book). For instance...
 
 ### Wibble bibble bam
 
-- The gamesmaster randomly says either "wibble", "bibble" or "bam" to randomly selected people, repeatedly. Every time someone gets their response wrong, they're out. Keep going until there is only one winner.
+- The gamesmaster randomly says either "wibble", "bibble" or "bam" to randomly selected people, in turn (but in no discernible order). Every time someone gets their response wrong, they're out. Keep going until there is only one winner.
 - Responses:  
 	- Wibble: Bibble  
 	- Bibble: Bam  
