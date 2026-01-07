@@ -218,6 +218,7 @@ and the repository exists."
         passphrase in the keychain: `ssh-add --apple-use-keychain \~/.ssh/id\_rsa`
         
           - You will be asked for a file name and a passphrase. No input needed! Just press Enter to use defaults!
+          - The default file name is `id_rsa`, which will result in files called `id_rsa.pub` and `id_rsa.pub`
         
           - \! The --apple-use-keychain option is only for Mac: It only works on local machine
         and not VM (because that’s Linux and not Mac), so remove it for
