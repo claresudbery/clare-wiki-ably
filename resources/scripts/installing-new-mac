@@ -116,6 +116,9 @@ echo "-- Go to GitHub - Top right - user icon - Settings - SSH and GPG keys --"
 echo "-- and add your new ssh key - which you can grab by opening a new ---"
 echo "-- window and running pbcopy < ~/.ssh/id_rsa.pub (or whatever name you gave it) --"
 echo "--------------------------------------------------------------------"
+echo "-- On some systems (eg Autotrader laptop), ssh won't work! Try cloning a small repo to test. --"
+echo "-- If you have problems, use personal access token instead. See notes in clare-wiki, git.md. --"
+echo "--------------------------------------------------------------------"
 read -n1 -r -p "Press space to continue (after you've added the ssh key to your GitHub account)..." key
 #------------------
 
@@ -230,6 +233,8 @@ gsed -i "s@/c/development@/Users/your-username/development@gI" ~/.bashrc
 source ~/.bashrc
 # -----
 # Add source ~/.bashrc into ~/.zshrc
+# The next three lines can't be run individually! They need to be run all 3 at once.
+# This is because the quote started on line 1 doesn't get closed until line 3.
 sed -i '' '1i\
 source ~/.bashrc
 ' ~/.zshrc
