@@ -143,6 +143,7 @@ and the repository exists."
   - or if you get "authentication failed" when trying to push to GitHub from command line
 - Follow the link to regenerate personal access token (I think I was sent this in an email)
   - ! Note that by default it will be set to expire in 30 days, but you can change this to make it last longer.
+  - You only need to check the first two sets of checkboxes titled "repo" and "workflow" to set what it can access. You can ignore the rest.
   - Make sure you take a copy! You can store it in a password manager.
 - Then...
   - Windows:
@@ -215,9 +216,12 @@ and the repository exists."
           - `IdentityFile \~/.ssh/id\_rsa`
     
       - This to add your SSH private key to the ssh-agent and store your
-        passphrase in the keychain: `ssh-add -K \~/.ssh/id\_rsa`
+        passphrase in the keychain: `ssh-add --apple-use-keychain \~/.ssh/id\_rsa`
         
-          - \! The -K option is only for Mac: It only works on local machine
+          - You will be asked for a file name and a passphrase. No input needed! Just press Enter to use defaults!
+          - The default file name is `id_rsa`, which will result in files called `id_rsa.pub` and `id_rsa.pub`
+        
+          - \! The --apple-use-keychain option is only for Mac: It only works on local machine
         and not VM (because that’s Linux and not Mac), so remove it for
         VM
     
