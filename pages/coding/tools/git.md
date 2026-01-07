@@ -215,11 +215,11 @@ and the repository exists."
           - `IdentityFile \~/.ssh/id\_rsa`
     
       - This to add your SSH private key to the ssh-agent and store your
-        passphrase in the keychain: `ssh-add -K \~/.ssh/id\_rsa`
+        passphrase in the keychain: `ssh-add --apple-use-keychain \~/.ssh/id\_rsa`
         
           - You will be asked for a file name and a passphrase. No input needed! Just press Enter to use defaults!
         
-          - \! The -K option is only for Mac: It only works on local machine
+          - \! The --apple-use-keychain option is only for Mac: It only works on local machine
         and not VM (because that’s Linux and not Mac), so remove it for
         VM
     
