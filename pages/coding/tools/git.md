@@ -143,6 +143,7 @@ and the repository exists."
   - or if you get "authentication failed" when trying to push to GitHub from command line
 - Follow the link to regenerate personal access token (I think I was sent this in an email)
   - ! Note that by default it will be set to expire in 30 days, but you can change this to make it last longer.
+  - You only need to check the first two sets of checkboxes titled "repo" and "workflow" to set what it can access. You can ignore the rest.
   - Make sure you take a copy! You can store it in a password manager.
 - Then...
   - Windows:
