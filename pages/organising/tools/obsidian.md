@@ -6,8 +6,10 @@ permalink: /pages/organising/tools/Obsidian
 ## Contents of this file
 
 - [[#Getting started with Obsidian]]
+- [[#Getting started with a new vault]]
 - [[#Useful bits and bobs]]
 	- [Vault management](<#vault management>)
+	- [[#Creating a new vault on Macbook]]
 	- [Keyboard shortcuts](<#keyboard shortcuts>)
 	- [[#Publish to a website]]
 - [[#Customising Obsidian]]
@@ -31,10 +33,13 @@ permalink: /pages/organising/tools/Obsidian
 	- [File / folder management](<#file  folder management>)
 	- [[#Attachments and images]]
 	- [[#Centre text on the page]]
+	- [[#Space paragraphs to make prose easier to read]]
+	- [[#Change the text colour for inline code]]
 	- [[#Find and replace with line breaks]]
 - [File syncing](<#file syncing>)
 	- [Syncing with Google Drive](<#syncing with google drive>)
 	- [Syncing with iCloud](<#syncing with icloud>)
+	- [[#Creating Github Repos for your vaults]]
 	- [Github Sync plugin](<#github sync plugin>)
 	- [GitHub Syncing on iPhone](<#github syncing on iphone>)
 - [Organising content](<#organising content>)
@@ -51,6 +56,7 @@ permalink: /pages/organising/tools/Obsidian
 		- [Parent properties](<#parent properties>)
 		- [Aliases](<#aliases>)
 - [Troubleshooting](<#troubleshooting>)
+	- [[#Syncing a new vault with iCloud]]
 	- [[#Updating headings so links aren't broken]]
 	- [If you lose the outline or properties pane](<#if you lose the outline or properties pane>)
 	- [If folders are not in alphabetical order in dropdowns](<#if folders are not in alphabetical order in dropdowns>)
@@ -71,32 +77,47 @@ permalink: /pages/organising/tools/Obsidian
 - I use [[#Syncing with iCloud]] which I find v useful
 - You might find useful stuff in the [[#Organising content]] section
 - See [[#Troubleshooting]] if you have problems
+# Getting started with a new vault
+
+- 1. If using GitHub, [[#Creating Github Repos for your vaults|create a GitHub repo]]
+- 2. Turn the repo into an Obsidian vault:
+	- !! It might be best to start on phone! See [[#Syncing with iCloud]]. 
+	- But otherwise... See [[#Creating a new vault on Macbook]]
+- 3. Configure the vault with plugins etc
+	- See [[#Configuring a new vault]] 
 # Useful bits and bobs
 ## Vault management
 
 - File => Open Vault to both open and create vaults
-- You can put them anywhere on hard disk
-  - Obsidian will automatically create a new folder with the name of the vault, so you don't need to do that bit - just specify the root folder
-  - If you want to move it, just close Obsidian and move folders around (including all contents)
+	- See [[#Creating a new vault on Macbook]] for vault creation
+- If you want to move a vault, just close Obsidian and move folders around (including all contents)
 - Different vaults will open in different windows
-  - When looking at a window, the way to tell which vault it is is to look bottom left
+	- When looking at a window, the way to tell which vault it is is to look bottom left
     - or on iPhone, click the icon top left to see the name of the vault
     - Then click the name of the vault to see a list of all vaults, which will also show you where they are (eg "iCloud")
-- The default is for them to go into your Mac Documents folder
 - You can open folders containing existing markdown files
 - If you want to change the location of an existing vault, just close Obsidian and move folders around (including all contents)
-  - but when you reopen, community plugins will have to be re-enabled (see below)
+	- ...but when you reopen, community plugins will have to be re-enabled (see below)
 - If you want to know whereabouts on your hard disk a particular file or folder lives...
-  - The file explorer in Obsidian is the left hand pane
-  - Files are not given extensions here (or not by default)
-  - So the default `Welcome.md` will just appear here as "Welcome"
-  - Right click on a file, choose Reveal in Finder (or Show in System Explorer if not Mac)
-  - then in Finder, you can right-click and choose Get Info
-  - If you want the path for Terminal, just copy / paste - then something like `iCloud Drive > Documents > GitHubTest-iCloud` will get pasted as `/Users/claresudbery/Documents/GitHubTest-iCloud` in Terminal
+	- The file explorer in Obsidian is the left hand pane
+	- Files are not given extensions here (or not by default)
+	- So the default `Welcome.md` will just appear here as "Welcome"
+	- Right click on a file, choose Reveal in Finder (or Show in System Explorer if not Mac)
+	- then in Finder, you can right-click and choose Get Info
+	- If you want the path for Terminal, just copy / paste - then something like `iCloud Drive > Documents > GitHubTest-iCloud` will get pasted as `/Users/claresudbery/Documents/GitHubTest-iCloud` in Terminal
 
+## Creating a new vault on Macbook
+
+- !! It's best to do it on phone! See [[#Syncing with iCloud]]. But otherwise...
+- File => Open Vault to create a vault (as well as open existing ones)
+	- You can put them anywhere on hard disk
+	- The default is for them to go into your Mac Documents folder (NOT where I want them to go - I'm putting them in my iCloud folder, which is different)
+	- Obsidian will automatically create a new folder with the name of the vault, so you don't need to do that bit - just specify the root folder
+	- If you want to move it, just close Obsidian and move folders around (including all contents)
+		- ...but when you reopen, community plugins will have to be re-enabled (see below)
 ## Keyboard shortcuts
 
-- !! Now maintaining this list in Obsidian - [[Keyboard shortcuts|CareerAnalysis vault]]
+- !! I'm now maintaining this list in Obsidian - [[Keyboard shortcuts|CareerAnalysis vault]]
 ## Publish to a website
 
 - I hoped I could link to private pages from elsewhere, like I can with clare-tech by using GitHub links...
@@ -124,6 +145,7 @@ permalink: /pages/organising/tools/Obsidian
 - Start with the vault closed while you do actions in the file system:
 	- Plugins:
 		- Easiest thing is to copy `community-plugins.json` and `core-plugins.json` ***and the plugins folder*** from the `.obsidian` folder of another vault...
+			- (and make sure the plugins folder is copied to INSIDE the `.obsidian` folder)
 			- ...but be aware that you'll also be copying over vault-related config info
 			- ...so, for instance, I ended up with a Git config file having its remote source being overwritten with the url of a different repo, because I'd copied over the [[#Github Sync plugin|Github Sync community plugin]] from another vault
 		- ...or open the [[#Plugins|plugins section]] of another vault and copy over the plugins you want in both vaults
@@ -135,17 +157,24 @@ permalink: /pages/organising/tools/Obsidian
 			- Highlightr
 			- Modal forms
 			- QuickAdd
+	- Templates:
+		- I currently have a template called `Center Align Text Template.md` that has an associated hotkey, so it's worth copying this and its `Left Align` and `Right Align` siblings over (along with the parent `Templates` folder)
 	- Hotkeys:
 		- Copy `hotkeys.json` from the `.obsidian` folder of another vault
 			- Remember that if the other vault has hotkeys that you want to keep that refer to specific things created using community plugins, you need to create those things first - eg a specific [[#QuickAdd]] macro
+		- If you're using GitHub, commit before the next step so you can see what changes you make
 		- Open up your new copy of `hotkeys.json` in a text editor and remove any that you don't want to keep
-	- css
+			- For me, most likely these will be the ones that are headed with strings that start `quickadd:choice:`
+				- The way for me identify them is to open up any documentation I've created - for me that's most likely [this file](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Obsidian/Keyboard%20shortcuts.md).
+	- [[#css snippets]]
 		- Check the snippets sub-folder (if there is one) under `.obsidian`
 		- Copy whatever's in there into a new `snippets` sub-folder under your destination `.obsidian` folder
+		- You might also want to copy over the `themes` folder
 	- While you're looking at the `.obsidian` folder of your source vault, check whether any of the other `json` files might contain any other customisations you want to copy over to the new vault
 - Open the vault
+	- You'll be asked whether you trust the author and want to enable community plugins - say yes
 	- (Note that these are my preferred settings, stored here for my benefit - your preferences may differ):
-	- Turn on any css snippets:
+	- Turn on any [[#css snippets]]:
 		- Go to [[#Settings]] => Appearance => scroll down to css at the bottom
 		- If no snippets are listed (and you copied some over in the previous step), click the Refresh button
 		- Turn the slider to "on" for each snippet you want to apply
@@ -153,7 +182,16 @@ permalink: /pages/organising/tools/Obsidian
 	- Create a Templates folder, point to it from the core `Templates` plugin, add at least one simple template
 		- More on this [[#Templates|here]]
 	- Go to [Settings](<#settings>) and remove any [[#Plugins|plugin]] macros you don't want
-		- If you copied over the whole of your `plugins` folder and you had the `QuickAdd` or `Modal forms` plugins, you will now have all the macros you set up, and this might include stuff that's not relevant to this vault
+		- Most likely this means going to Settings => QuickAdd and removing a bunch of macros from there
+			- If you copied over the whole of your `plugins` folder and you had the `QuickAdd` or `Modal forms` plugins, you will now have all the macros you set up, and this might include stuff that's not relevant to this vault
+			- To check what Modal forms you have set up, go to the [command palette](<#command palette>) and search for "Modal forms: Edit form"
+			- You might have created QuickAdd macros called something like `New Callout` and `Insert Link` that use two Modal Forms, but if they're the only Modal Form things, you probably want to keep them
+- Get mobile working how you want it
+	- Do this as soon as possible, so there's not too much indexing needed
+	- The first time you open on mobile, it'll sync and you'll be asked to enable plugins - click "Trust author and enable plugins"
+	- You'll also have ti wait for indexing to happen
+	- Now you might want to do things like...
+		- 
 ## css snippets
 
 - Used for styling how things look in a note
@@ -563,6 +601,35 @@ text-align: left;
 	- I've only done one hotkey so far - it's Cmd + Ctrl + c for centring text
 - Select the text you want to centre, and press the hotkey - it'll surround the text with the appropriate html, resulting in something like this:
 	- `<span class="center-align">Centred text</span>`
+## Space paragraphs to make prose easier to read
+
+- (I got the following advice [from this link](https://forum.obsidian.md/t/need-help-with-the-distance-between-the-headers-and-text-using-minimal-theme/65920))
+	- (I also tried [this](https://forum.obsidian.md/t/how-to-increase-paragraph-spacing/66816/2) and [this](https://forum.obsidian.md/t/need-help-with-the-distance-between-the-headers-and-text-using-minimal-theme/65920) but they didn't work for me)
+- Add the following to your [[#css snippets]] file:
+```css
+/* Spacing between paragraphs (so I can write novels) */
+.markdown-preview-view br {
+    content: '';
+    display: block;
+    margin-top: 10px;
+}
+.markdown-source-view :is(.cm-line:not(.HyperMD-list-line):not(.HyperMD-codeblock):not(.HyperMD-callout)) {
+   padding-top: 1em;
+}
+```
+- Note: The `.markdown-source-view` works for source mode on both desktop and iOS mobile, but the `.markdown-preview-view` css doesn't work for reading view on mobile (but it works on desktop).
+	- I've asked for help [getting it working in mobile here](https://forum.obsidian.md/t/how-to-use-css-to-change-para-spacing-and-inline-code-text-colour-in-reading-view-on-ios-mobile/109637).
+	- Incidentally I did find something online that suggested using `.markdown-source-view.mod-cm6` for mobile, but that made no difference to anything.
+## Change the text colour for inline code
+
+- Use [[#css snippets]]:
+```css
+.cm-inline-code {
+  color: darkorange!important;
+}
+```
+- Note: This works for source mode on both desktop and iOS mobile, but not for reading view on either mobile or desktop.
+	- I've asked for help [getting it working in reading view here](https://forum.obsidian.md/t/how-to-use-css-to-change-para-spacing-and-inline-code-text-colour-in-reading-view-on-ios-mobile/109637).
 ## Find and replace with line breaks
 
 - See here: https://forum.obsidian.md/t/find-and-replace-and-linebreaks/53041
@@ -610,28 +677,37 @@ text-align: left;
 ## Syncing with iCloud
 
 - It's a bit buggy / idiosyncratic to set up, but after that seems pretty smooth
+- !! It might be best to create it on phone first, NOT on Macbook
+	- ...although that might only be true for the first vault you sync
+	- (See [[#Syncing a new vault with iCloud|notes here]])
 - Here's what I had to do to get it working first time (see below for subsequent times):
 	- Start in phone app
-	  - It might give an iCloud option on startup, but only for opening existing vaults, not creating new ones
-	  - ... and if you try adding an Obsidian folder to your iCloud drive folder in your MacBook, it won't show up on your phone
-	  - But if you just create a new vault, and then delete it (click icon top left, then click name of vault, then select Manage vaults, then select vault name, then "delete vault")...
-	  - ...this will bring you to a screen with a "Create new vault" option that allows you to select "Store in iCloud"
-	    - I worked this out courtesy of [this post on the Obsidian forum](https://forum.obsidian.md/t/not-able-to-sync-through-icloud/97859/2) (the post is dated 9 Mar '25, I was looking on 31 Mar '25)
-	  - ! Warning! If you already created an Obsidian folder in your iCloud drive folder via Macbook, it will still be there! In Finder, it will look as though you have two identically-named folders in the same location
-	    - I suggest either removing or renaming the duplicate (not the one being accessed via the phone app) asap
-	  - You will now be able to open that folder on desktop and find the vault you created on mobile
-  - After you've got it working, you can just place vaults in your iCloud drive folder
-	  - This will mean they show up on your phone
-  - ! I don't know if the duplicate folder was the cause, but I also had another problem:
-    - When I copied another vault I'd already created, on Macbook, from another folder to the new iCloud drive/Obsidian folder, it DID appear on both mobile and desktop, BUT changes did not sync bwteeen desktop and mobile. It seemed like there were two entirely separate vaults.
-    - And then when I looked on Desktop at the vault list (via File => open vault), the vault I created on mobile was not listed as being in iCloud Drive / Obsidian. Instead, it was listed as being in `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
-    - But if I closed down the problematic one on Desktop and removed it from the vault list (via the three dots nest to the vault name in the vault list), then opened it up again by selecting iCloud Drive in the Finder, it found the right one, synced bwteeen desktop and mobile, and the location in the vault list was listed as `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
-    - At this point I could have the same vault open on both desktop and mobile, and changes in either one would sync with a second or two
+		- Click icon top left, then click name of currently-open vault, then select Manage vaults
+		- Wait a few seconds for the totally-black screen to populate!
+		- Click Create new vault
+		- Enter a name
+		- Select "store in iCloud"
+		- Select Create
+		- Create a note with some content so you can see it sync
+	- Now on desktop...
+		- Use Cmd + Alt + V to open vaults
+		- It probably won't be listed in the list of vaults even though you should see the folder synced into your folder in the iCloud drive folder
+		- Click the Open button next to "Open folder as vault"
+		- After this it should appear in the list of vaults
+- After you've got it working, you can just place vaults in your iCloud drive folder
+	- This should mean they show up on your phone
+- If any trouble, see [[#Syncing a new vault with iCloud|the workaround I had to use]] when I had trouble with this in Mar '25
+## Creating Github Repos for your vaults
 
+- This is simple. Just make sure your root folder is also a repo
+- ...ie it has a hidden `.git` folder and `.gitignore` file at the root
+- You can do this by creating a repo in GitHub and cloning it locally
+- You can do this alongside also using [[#Syncing with iCloud|iCloud syncing]], you just need to make sure your repo is cloned into your iCloud drive folder
 ## Github Sync plugin
 
 - Note that in the end I didn't bother trying to get this working on mobile
-- Actually in the end I didn't use it at all, because even on desktop the functionality is limited - eg you can't edit commit messages - they're automatically generated - and I found it just as easy to use my normal GitHub tools (command line and Git?Hub Desktop, fwiw)
+- Actually in the end I didn't use it at all, because even on desktop the functionality is limited - eg you can't edit commit messages - they're automatically generated - and I found it just as easy to use my normal GitHub tools (command line and GitHub Desktop, fwiw)
+	- See [[#Creating Github Repos for your vaults]]
   - I installed the plugin on desktop, and used [iCloud sync](<#syncing with icloud>) to sync with my phone
   - Then changes are committed to Github on laptop
   - I did find [[#GitHub Syncing on iPhone|these instructions]] on how to get it working on phone, but I couldn't be bothered
@@ -889,6 +965,23 @@ aliases:
 - Obsidian creates the link with the alias as its custom display text, for example `[[Artificial Intelligence|AI]]`.
 # Troubleshooting
 
+## Syncing a new vault with iCloud
+
+- !! It might be best to create it on phone first, NOT on Macbook
+- ...and on phone, it might give an iCloud option on startup, but only for opening existing vaults, not creating new ones
+	- (although I didn't find this when I created one in Jan '26, but I don't know if that's cos I already had some vaults successfully syncing)
+- ... and if you try adding an Obsidian folder to your iCloud drive folder in your MacBook, it won't show up on your phone
+- But if you just create a new vault, and then delete it (click icon top left, then click name of vault, then select Manage vaults, then select vault name, then "delete vault")...
+- ...this will bring you to a screen with a "Create new vault" option that allows you to select "Store in iCloud"
+- I worked this out courtesy of [this post on the Obsidian forum](https://forum.obsidian.md/t/not-able-to-sync-through-icloud/97859/2) (the post is dated 9 Mar '25, I was looking on 31 Mar '25)
+	- ! Warning! If you already created an Obsidian folder in your iCloud drive folder via Macbook, it will still be there! In Finder, it will look as though you have two identically-named folders in the same location
+	- I suggest either removing or renaming the duplicate (not the one being accessed via the phone app) asap
+	- You will now be able to open that folder on desktop and find the vault you created on mobile
+- ! I don't know if the duplicate folder was the cause, but I also had another problem:
+    - When I copied another vault I'd already created, on Macbook, from another folder to the new iCloud drive/Obsidian folder, it DID appear on both mobile and desktop, BUT changes did not sync between desktop and mobile. It seemed like there were two entirely separate vaults.
+    - And then when I looked on Desktop at the vault list (via File => open vault), the vault I created on mobile was not listed as being in iCloud Drive / Obsidian. Instead, it was listed as being in `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
+    - But if I closed down the problematic one on Desktop and removed it from the vault list (via the three dots nest to the vault name in the vault list), then opened it up again by selecting iCloud Drive in the Finder, it found the right one, synced between desktop and mobile, and the location in the vault list was listed as `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
+    - At this point I could have the same vault open on both desktop and mobile, and changes in either one would sync with a second or two
 ## Updating headings so links aren't broken
 
 - There is no functionality and no plugins to react automatically to update links when headings are edited, cos it wouldn't be performant

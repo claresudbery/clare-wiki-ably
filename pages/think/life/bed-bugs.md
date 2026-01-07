@@ -1,0 +1,2 @@
+- Great [Mark Rober video](https://youtu.be/2JAOTJxYqh8?si=IUdksvfVqoQaRmNQ)
+- 
