@@ -136,6 +136,7 @@ permalink: /pages/organising/tools/Obsidian
 		- Not the same as signing in online
 		- Go to [[#Settings]] > General > Account > Login
 	- Enable Obsidian Publish in the app: [[#Settings]] > Core plugins > Publish.
+		- !! This isn't in the section on the left with the *heading* Core plugins... it's above that, as an individual item in the top section (headed "Options").
 	- Now you can publish via [[#Command palette]] > Publish changes
 	- [More here](https://help.obsidian.md/publish/setup)
 # Customising Obsidian
