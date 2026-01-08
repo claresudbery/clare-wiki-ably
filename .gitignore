@@ -64,6 +64,8 @@ vendor
 
 # Visual Studio
 /.vs
+
+# General
 .DS_Store
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
