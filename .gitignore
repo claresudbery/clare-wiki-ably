@@ -64,3 +64,5 @@ vendor
 
 # Visual Studio
 /.vs
+.DS_Store
+.obsidian/workspace.json
