@@ -262,6 +262,8 @@ killall SystemUIServer
 
 - What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it. It's a toggle, so you can press again to retore things to how they were.
 - System Preferences => Mission Control => Show Desktop - select "Right Option"
+- This seems to have changed now: No keyboard option available, and not in Mission control
+	* But (on work macbook) I went to Desktop & Dock => Show Desktop and set it to "Always on Wallpaper click", which is good enough
 
 ### Maximise window on Mac without creating separate desktop / space
 

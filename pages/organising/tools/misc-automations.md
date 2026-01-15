@@ -9,6 +9,9 @@
 	- [[#^vault-how|How the vault-changing works]]
 - [[#^why|How / why the tool was created]]
 - [[#^mechanics|How the tool works]]
+- [[#^new-setup|Getting it working on a new laptop / with a new vault]]
+	- [[#^new-vault|New vault]]
+	- [[#^new-laptop|New laptop]]
 ### low-res Macbook screenshots - Details
 
 - tl;dr - On Macbook, to turn the most recent screenshot into a small low-res file and paste it into the Career-analysis Obsidian, 3 steps are needed: ^how
@@ -25,34 +28,68 @@
 		- You'd also have to edit the Shortcut in the Shortcuts app, to take inputs
 - How / why it was created ^why
 	- I created this because I often paste screenshots into Obsidian, and the default Macbook screenshot is an unnecessarily-huge file.
-	- I used Claude, and documented the process [here](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Clare's%20Career/0%20-%20Missions/09-AI-Mission/AI%20coding%20projects/Misc%20small%20AI%20projects.md#get-low-res-macbook-screenshots).
+	- I used Claude, and documented the process [here](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Current%20Project%20Notes/0%20-%20Missions/09-AI-Mission/AI%20coding%20projects/_Misc%20small%20AI%20projects.md#get-low-res-macbook-screenshots).
 - How it works: ^mechanics
 	- The result of my Claude session was a script called `lowres-screenshot` in my `scripts` folder/repo, which means you can now type `lowres-screenshot` on the command line and it will take the most recent screenshot, convert it to jpeg (readable rather than absolute lowest quality), copy to my Career-Analysis Obsidian Attachments folder, then auto-delete the original after copying.
-	- I put this into a Cmd + Shift + J keyboard shortcut on my Macbook (using the Shortcuts app), or you can just run it from the command line. 
+	- I put this into a Cmd + Shift + J keyboard shortcut on my Macbook (using the Shortcuts app - see [Claude session where I first set this up](https://claude.ai/chat/376ea8c6-bf93-41ef-9557-3e6acb69bbf8), or there is a [[#^new-laptop|better summary below]]), or you can just run it from the command line. 
 	- Then all you have to do it paste into Obsidian (Career-Analysis)!
 - Changing the vault ^vault-details
 	- (ie the vault that screenshots go to when you use the Cmd + Shift + J keyboard shortcut)
-	- The three vaults currently catered for are:
+	- The four vaults currently catered for are:
 		- CareerAnalysis Obsidian vault - sometimes referred to below as "career"
 		- clare-tech Obsidian vault - sometimes referred to below as "tech"
 		- clare-wiki-ably Obsidian vault - sometimes referred to below as "wiki"
+		- ClaresAutotraderNotes Obsidian vault - sometimes referred to below as "auto"
 	- What to do: ^vault-instr
 		- Run one of the following commands on the command line:
 			- Change to CareerAnalysis: `cscreen`
 			- Change to clare-tech: `tscreen`
 			- Change to clare-wiki-ably: `wscreen`
+			- Change to ClaresAutotraderNotes: `ascreen`
 	- How it works: ^vault-how
 		- It's a bit unwieldy on the surface, but it works and it was the quickest easiest thing without getting sucked down a rabbit hole...
 		- !This does mean that if you edit the base scripts, you might have to run `wscreen` or whatever to get the correct base script overwritten back onto `lowres-screenshot`
-		- There are three copies of `lowres-screenshot` that are identical apart from the path that screenshots are copied to:
+		- There are four copies of `lowres-screenshot` that are identical apart from the path that screenshots are copied to:
 			- `lowres-screenshot-script-career`
 			- `lowres-screenshot-script-tech`
 			- `lowres-screenshot-script-wiki`
-		- There are three very simple scripts that just overwrite the default `lowres-screenshot` file with one of the above specialised scripts:
+			- `lowres-screenshot-script-auto`
+		- There are four very simple scripts that just overwrite the default `lowres-screenshot` file with one of the above specialised scripts:
 			- `lowres-screenshot-make-career`
 			- `lowres-screenshot-make-tech`
 			- `lowres-screenshot-make-wiki`
-		- There are three aliases that are in `~/scripts/useful-aliases.txt` and `~/.bashrc` - calling each of these aliases causes one of the `lowres-screenshot-make-` scripts above to be called: 
+			- `lowres-screenshot-make-auto`
+		- There are four aliases that are in `~/scripts/useful-aliases.txt` and `~/.bashrc` - calling each of these aliases causes one of the `lowres-screenshot-make-` scripts above to be called: 
 			- Change to CareerAnalysis: `cscreen`
 			- Change to clare-tech: `tscreen`
 			- Change to clare-wiki-ably: `wscreen`
+			- Change to ClaresAutotraderNotes: `ascreen`
+- Getting it working on a new laptop / with a new vault: ^new-setup
+	- New vault: ^new-vault
+		- Make sure your vault has an Attachments folder or equivalent, and configure it in Settings (see [[obsidian#Attachments and images]] for details)
+		- Add your vault to the lists above ([[#^vault-instr|here]] and [[#^vault-how|here]])
+		- Create a copy of `lowres-screenshot-script-auto` with an appropriate name for your vault and the details changed for your vault (just change the path at the top)
+		- Create a copy of `lowres-screenshot-make-auto` with an appropriate name for your vault and the details changed for your vault
+		- Add an appropriately named alias to `~/scripts/useful-aliases.txt` and `~/.bashrc` (in same place as `wscreen` etc)
+	- New laptop: ^new-laptop
+		- Make sure you have the scripts folder with the above scripts (see [[installing-a-new-mac]]), and you're sourcing ~/.bashrc for aliases
+		- Go into the Shortcuts app 
+		- Click the **+** to create a new shortcut
+		- Search in the search box top right for a **"Run Shell Script"** action and double-click it
+			- If scripting actions are disabled, click Preferences to sort that ("Allow running scripts")
+		- Find out where on your laptop the script lives
+			- Run `which lowres-screenshot` on command line
+			- Use the resulting full path in the next bit
+		- Enter: `/Users/clare.sudbery/scripts/lowres-screenshot` (or whatever your path is)
+		- Save with a name like "Process Low Res Screenshot" (enter it at the very top screen where the title is - doesn't look like it's editable but it is)
+		- Click the `i` info icon in the top right
+		- Choose **"Add Keyboard Shortcut"**
+		- In the "Run with" input, press your preferred key combination (Cmd + Shift + J)
+		- **In your shortcut editor**, look at the very top where it says "receive images and 18 more"
+			- **Click on that text**
+			- Unselect all 18 things
+			- It will now say "Receive Apps input from quick actions" - this is fine - just ignore it
+			- In the "Run Shell Script" action, set the Input dropdown to **"Shortcut Input"**
+			- Make sure "Pass Input" is set to **"as arguments"** or **"to stdin"** (either works since our script ignores input anyway)
+		- No need to save, it gets saved automatically
+		- If you get stuck, [here is the original conversation with Claude](https://claude.ai/chat/376ea8c6-bf93-41ef-9557-3e6acb69bbf8) where I first set this up (log in with SSE Google)
