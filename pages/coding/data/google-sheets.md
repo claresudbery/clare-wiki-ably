@@ -160,7 +160,7 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 	  - So ignore / miss this value at your peril. 
 	  - It's always worth explicitly setting it to `0`.
 - So... 
-  - youre looking at a range of data, and 
+  - you're looking at a range of data, and 
   - you want to see whether anything in the first col of your range has the same value as cell A1,
   - and if it does you want to return the value in the third col of your range, in the same row as the matching value
   - so for instance, if your range is cols C to E, and you find a match in cell C2 (row 2, col C), then the value returned will be the value in cell E2 (row 2, col E)
@@ -195,7 +195,11 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - When counting cols, start from the first col of the TABLE
     - (So above, even though col E is the fifth col on the sheet, it's the third col in the range of values we're searching ("the table"))
   - If the last arg is `1`, that means you're setting `true` for `range_lookup`, and if the data in the table isn't sorted in ascending order, that won't work
+## Stop VLOOKUP  and LOOKUP from returning 0
 
+- If VLOOKUP finds no corresponding value, it will return 0 instead of empty string
+- Fix this by forcing it to treat the result as a string by adding `&""`:
+- `VLOOKUP(A2,A2:G1000,7,0)&""`
 ## Copy a whole col from one sheet to another
 
 - Like this: `={Categories!A:A}`
@@ -207,7 +211,12 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - It only works on one col at a time, but you can use autofill functionality to pull the formula across into adjacent cols and get those cols filled in too
 - If you want empty rows to be included, you can just change the `LEN` part to reference a col that contains no empty rows! For Clare, see Current Historic monthly in Time FRecording spreadssheet for an example.
 - Sometimes the first row of time/date data will have the wrong format. The way to fix this is to copy formatting from the second row down to the first row (use the little paint roller icon)
+## Fill a formula 1000s of rows down without manually dragging
 
+- 1. Click the cell containing the formula.
+2. In the **Name Box** (located to the left of the formula bar), type the range you want to fill, for example, `C1:C2000` and press **Enter**.
+3. This highlights the 2000 cells.
+4. Press **`Cmd` + `D`** to fill.
 ## Have a chart which charts hours greater than 240 without going down to -144
 
 - I asked for help with this problem [here](https://support.google.com/docs/thread/317591568?hl=en&sjid=15803700076749272558-EU)

@@ -15,12 +15,9 @@ Zoe podcast on inflammation after eating: https://youtu.be/ol6wTjj7Y18
 ## Nutrition and exercise record from MyFitnessPal
 
 - I used it mostly in 2019. The downloaded data is in Desktop-Current/MyFitnessPal Downloaded Data
-## Kombucha instructions
+## Kombucha
 
-- I followed these:
-	- [First fermentation](https://www.youbrewkombucha.com/guide-to-first-fermentation)
-	- [Second fermentation](https://www.youbrewkombucha.com/guide-to-2nd-fermentation)
-	- [Flavouring](https://www.youbrewkombucha.com/flavoring)
+- See [[kombucha]]
 ## Tool that will strip the cruft from online recipes
 
 - `cooked.wiki`

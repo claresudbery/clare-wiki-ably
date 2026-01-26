@@ -76,3 +76,26 @@ permalink: /pages/coding/data/Microsoft-Excel
 ## Filter, lookup, vlookup
 
 - See [Google Sheets](/pages/coding/data/Google-Sheets), seeing as most of that stuff is interchangeable.
+
+## Conditional formatting 
+
+- To base it on a formula:
+	- Highlight the whole range you want to apply the formatting to
+	- In Click Home 
+		- => Conditional formatting (from the ribbon)
+		- => Highlight cells rules 
+		- => More rules
+	- From the "Only format cells that contain" dropdown, select "Use a formula..."
+	- Then, for instance, to say only highlight rows that have an even value in col F, enter the following: `=ISEVEN($F2)`
+		- Important:
+			- You need the `=` symbol
+			- The row number of the referenced cell (in this case row 2, cos F2) needs to be the first row in the range you started by selecting
+			- The `$` symbol ensures that the formula will be applied to all rows
+	- You can see an example of this in Dropbox/Accounting/Tax/Felix/24-25-felix-calcs.xlsx, on the Subsistence tab
+	- To edit afterwards:
+		- Select Home => Conditional formatting (from the ribbon) => Manage rules
+		- If you haven't selected any of the cells in the range, select this worksheet from dropdown at the top
+		- Select rule, then Edit Rule at the bottom
+		- You can change the range under "applies to" at the bottom
+			- Don't use left and right arrow keys in this field, it makes weird things happen!
+		- Use plus and minus buttons bottom left to add and remove rules
