@@ -282,7 +282,10 @@ killall SystemUIServer
 ### If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
 
 - Cmd + 0 will fix that.
+### Screen rotation in MacOS Tahoe (like my work laptop)
 
+- You have to hold down the option key before you open System Settings, and then keep it held down while in the Settings dialog!
+- Then go to Displays and select the display you want to rotate, and there'll be a Rotation option available.
 ## Do simple video editing in QuickTime on Macbook
 
 - See [here](/pages/organising/tips/tech/misc-tech-tips.md#do-simple-video-editing-in-quicktime-on-macbook)

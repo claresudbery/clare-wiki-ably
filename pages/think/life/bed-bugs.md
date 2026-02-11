@@ -1,2 +1,2 @@
 - Great [Mark Rober video](https://youtu.be/2JAOTJxYqh8?si=IUdksvfVqoQaRmNQ)
-- 
+- I have more notes, all on paper on my desk somewhere

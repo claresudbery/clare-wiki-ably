@@ -119,6 +119,7 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - For instance: `=FILTER(D2:E10,C2:C10=A1)`
   - This will return all the values in `D2:E10` (so, two cols of data)
   - ...but only for those rows where the value in col C equals the value in `A1`
+  - (note that we're searching on col C even though col C is not included in the results, which are cols D and E)
 - A more complex example: `=FILTER(D2:E10,REGEXMATCH(C2:C10,A1))`
   - This will return all the values in `D2:E10` (so, two cols of data)
   - ...but only for those rows where the value in col C _contains_ the value in `A1` as a substring

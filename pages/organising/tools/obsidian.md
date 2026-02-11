@@ -48,6 +48,9 @@ permalink: /pages/organising/tools/Obsidian
 	- [Each note should contain one idea](<#each note should contain one idea>)
 	- [Maps of Content (MOCs)](<#maps of content mocs>)
 	- [Templates](<#templates>)
+		- [[#Insert link in current file to newly created template-based file]]
+		- [[#Use Templater to add a section header plus a link to that section]]
+		- [[#Set up hotkey for Templater Template]]
 	- [Properties](<#properties>)
 		- [Showing / hiding properties](<#showing  hiding properties>)
 		- [Bad properties](<#bad properties>)
@@ -868,6 +871,30 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
   - But if you use `"{{date:YYYY-MM-DD}}T{{time:HH:mm}}"` instead of `{{date:YYYY-MM-DD}}T{{time:HH:mm}}` (ie, encase the value in quotes) then it works a bit better. You might still get a warning but you can now edit the properties in the properties panel without getting the "invalid properties" error.
   - Note that I found a suggestion that it might be better not to use the core Templates plugin, and use the community `Templater` plugin instead: [here](https://forum.obsidian.md/t/correct-format-for-date-time-template-variables-in-properties/68241/5)
 
+### Insert link in current file to newly created template-based file 
+
+- The way to do it is to turn on "Append link" in your QuickAdd macro
+- See "New Samman Meetup" QuickAdd macro in `clare-tech` Obsidian for an example
+	- There are instructions on how to use it in `samman-meetup-index.md`, also in `clare-tech`
+### Use Templater to add a section header plus a link to that section
+
+- It's not perfect cos it means sections get added in reverse order, but it'll do for now
+- Put this in a "New section" template:
+- ```md
+[[#<% tp.file.selection ( ) %>]]
+# <% tp.file.selection ( ) %>
+  ```
+- [[#Set up hotkey for Templater Template|Set up a hotkey]] for that template
+- I've got this set up in LifeNovel Obsidian vault to have a hotkey of Ctrl + Cmd + S
+- To use: 
+	- Type the name of the header
+	- Select the text you just typed
+	- Press the hotkey
+### Set up hotkey for Templater Template
+
+- (Note you have to first install the Templater plugin)
+- I did this by going into Templater (Settings, then bottom left) then scrolling down to Template Hotkeys, Add new hotkey for template, add the template in there
+	- Then you have to go to Settings => Hotkeys (top left), search for the template, and set up the hotkey in there
 ## Properties
 
 - Properties are note metadata - or notes about your notes

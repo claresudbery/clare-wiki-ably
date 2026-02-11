@@ -13,6 +13,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 
 ## All types of workshop
 
+- M
 - Five whys
 	- aka root cause analysis
 	- [Miro created at XP Manchester](https://miro.com/app/board/o9J_lVcMmxU=/) in an attempt to use the Five Whys technique to determine why XP isn't more widely adopted.
@@ -234,6 +235,18 @@ These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) 
 	- how many female leaders are there overall, out of the total number of leaders? 
 		- (This is just an interesting statistic).
 
+### Manual of me
+
+- Create a grid with the following headings, one blank one per person, everyone fills in their own grid
+	- I do my best work when...
+	- Things I struggle with include...
+	- The best way to communicate with me is... at the following times...
+	- Please give me feedback when... in this way...
+	- I am really motivated by...
+	- If I'm stressed, the best way to support me is...
+	- Outside of work, I get excited about...
+	- Outside of this project, I'm also dealing with...
+- There's an example of what I filled in for mine with Coding Black Females, Tue 16/8/22, in clare-tech: coding-black-females.md
 ## Meetups
 
 ### Office Hours

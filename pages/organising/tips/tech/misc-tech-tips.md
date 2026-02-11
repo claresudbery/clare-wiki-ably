@@ -553,11 +553,7 @@ My laptop details, plus notes on what I tried to fix startup problems, are in cl
 
 ## Skip forward or back in youtube
 
-- iphone: double tap on left or right of video to go forwards or backwards ten seconds
-- browser / laptop: Use shortcut keys `j`, `k` and `l`:
-	- `j` = go back 10 secs
-	- `k` = pause / play
-	- `l` = go forward 10 secs
+- [[youtube#Skip forward or back in youtube]]
 ## Work out the date of a linkedin post
 
 - Get the link to the post (three dots top right => Copy link to post) and then paste it into this tool
