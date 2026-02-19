@@ -3,7 +3,9 @@ layout: page
 location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Refactoring
 ---
+## Definition of refactoring
 
+- Martin Fowler: Refactoring is making code "easier to understand and cheaper to modify"
 ## GitHub Repos
 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
@@ -17,7 +19,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - ...but note that these days I'm mostly using my [forked repo](https://github.com/claresudbery/GildedRose-Refactoring-Kata) instead
         - See the [`clare-fork-readme`](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/clare-fork-readme/README.md) for notes on how I'm using the repo.
 
-
 ## Docs and Blog Posts
 
 - My [refactoring article on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
@@ -26,7 +27,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [MF's Refactoring book - web copy (InformIT)](https://memberservices.informit.com/my_account/index.aspx?partner=53&_ga=2.102882948.507915267.1547471980-1562501179.1547471980)
 - [Martin Fowler refactorings catalog](https://refactoring.com/catalog/)
 - [Geepaw Hill on refactoring](https://www.geepawhill.org/category/refactoring/)
-- [Learn Tech refactoring guide](https://learn.madetech.com/guides/05-Refactoring/)
+- [Learn Tech refactoring guide](https://learn.madetech.com/technology/guides/05-Refactoring/)
 - [Dave Farley's youtube series on refactoring](https://www.youtube.com/watch?v=p-oWHEfXEVs)
 - My interview with Robby Russell - ["Refactoring Should Be Part of Your Daily Work"](https://maintainable.fm/episodes/clare-sudbery-refactoring-should-be-part-of-your-daily-work) - on the Maintainable podcast
 - I have refactoring videos in my SSE GDrive

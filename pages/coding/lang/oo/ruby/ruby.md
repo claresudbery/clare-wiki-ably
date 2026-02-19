@@ -55,7 +55,7 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
 - [TDD and OOP and Ruby from Sandi Metz](https://www.sandimetz.com/99bottles/sample)
 - [Learn TDD in Ruby](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
 - [Getting started with Ruby on Rails](https://medium.com/@micosmin/learn-tdd-in-ruby-in-5-easy-steps-3ab28014fec4)
-- [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
+- [Gem Learn Tech (Made Tech) Packaging Tutorial](https://learn.madetech.com/technology/guides/06-Gem-Packaging/)
 - [Your first Sinatra app](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
 - [Writing a command-line application in Ruby](https://flatironschool.com/blog/building-your-first-command-line-application-in-ruby)
   - More detailed [documentation for `OptionParser`](https://ruby-doc.org/stdlib-2.6.3/libdoc/optparse/rdoc/OptionParser.html#class-OptionParser-label-Minimal+example)
@@ -165,7 +165,7 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
 ## Gems, packaging, versioning
 
 - [My separate page on gems, versions and packaging](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems)
-- [Gem Packaging Tutorial](https://learn.madetech.com/guides/06-Gem-Packaging/)
+- [Gem Learn Tech (Made Tech) Packaging Tutorial](https://learn.madetech.com/technology/guides/06-Gem-Packaging/)
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
 - Require, gems, loading files: 
   [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
