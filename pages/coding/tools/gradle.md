@@ -51,17 +51,13 @@ permalink: /pages/coding/tools/Gradle
 
 ## Gradle and Spring Boot 
 
-  - Sample code base at [Cadogan
-    (PRIVATE)](https://github.com/claresudbery/Cadogan)
-  - build.gradle: jar section: manifest attributes – tell it what the
-    main class, ie entry point for the code is
+  - Sample code base at [Cadogan (PRIVATE)](https://github.com/claresudbery/Cadogan)
+  - build.gradle: jar section: manifest attributes – tell it what the main class, ie entry point for the code is
   - backendapplication.java:
       - SpringApplication. Run – classic spring boot
   - Gradle config: build.gradle
-      - See gradle docs:
-        [<span class="underline">http://gradle.org/docs</span>](http://gradle.org/docs)
-      - You can also set key-value pairs in gradle.properties, then
-        refer to them from build.gradle
+      - See gradle docs: [http://gradle.org/docs](http://gradle.org/docs)
+      - You can also set key-value pairs in gradle.properties, then refer to them from build.gradle
       - Uses groovy language
       - Plugins:
           - Jacoco – test reports
@@ -81,8 +77,7 @@ permalink: /pages/coding/tools/Gradle
 
 ## Running tests
 
-  - ([Sample code base for Clare
-    only](https://github.com/claresudbery/Cadogan))
+  - ([Sample code base for Clare only](https://github.com/claresudbery/Cadogan))
   - There are two sets of tests in the backend: unit tests and
     integration tests.
   - This means that there are two separate commands to run on the
