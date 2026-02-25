@@ -24,6 +24,10 @@ Some of these workshops can be self led - ie just give the relevant link to indi
 - Debugging (self led - Made Tech Learn Tech)
 	- [The exercise](https://learn.madetech.com/technology/guides/03-Debugging/)
 	- [The repo that goes with it](https://github.com/madetech/learn/tree/master/technology/guides/03-Debugging/BuggyProject)
+		- It's actually just a sub-folder in a much bigger "learn" repo
+		- To clone the whole repo, use my fork (see below) or use `git clone https://github.com/madetech/learn.git`
+		- I created my own fork, with extra notes added to the `readme`, and a separate `debugging-approach` branch with my commits
+		- To clone my fork, use `git clone git@github.com:claresudbery/MadeTech-learn-tech.git`
 - [Naming conventions (self led)](https://learn.madetech.com/seminars/01-The-Power-of-Naming/)
 - [Pull requests (self led - Made Tech Learn Tech)](https://learn.madetech.com/technology/guides/12-Pull-Requests )
 - [General Ledger Analysis (accessible to Clare only)](https://docs.google.com/presentation/d/1218d2kOgJLdbikAzhYqz799nK0r1Nxi9ML3XEBO9Mvs/edit)

@@ -360,7 +360,19 @@ require 'bundler/setup'
     - For instance if you get "cannot load such file -- rspec/core/rake_task", then try adding `gem 'rspec'` to your `Gemfile`.
 - If you get “command not found: bundle” then you might need to install Bundler: `sudo gem install bundler`
    - !! The password it wants is your laptop password
+### Installing gems on Apple Silicon
 
+- I had trouble with `bundle install` in [this Debugging project](https://github.com/claresudbery/MadeTech-learn-tech/tree/master/technology/guides/03-Debugging/BuggyProject) on 19 Feb '26. Got the following error:
+```
+
+An error occurred while installing ffi (1.9.25), and Bundler cannot continue.
+
+Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` succeeds before bundling.
+
+```
+- Following the `gem install ffi` instructions didn't work, probably because Apple Silicon.
+	- On M1/M2 you may need x86_64 build for old native gems. Tried this instead: `sudo arch -x86_64 gem install ffi -v '1.9.25'`
+- Then ran `bundle install` again.
 ## Things you might do to fix a problem
 
 ### gem install bundler

@@ -93,6 +93,7 @@ See also the following resources from others who have done similar but with more
     * Pin Chrome to Dock
     * Sync Chrome with Made Tech gmail account (pw needed)
     * Sync Chrome with personal gmail account (pw needed)
+* Do everything in [[#New stuff]] below
 * Set Slack up
     * Start the Slack app and you'll be redirected to the browser
     * Add Slack to Login (so it starts every time you start laptop):
@@ -176,3 +177,5 @@ brew install caskroom/cask/brew-cask
     - Install IntelliJ IDEA Community edition
         - Have to use the IntelliJ toolbox - instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html#toolbox)
     - Install PyCharm
+    - Install Windsurf
+    - To show file extensions in macOS Finder, ==open **Finder**, click **Settings** (or Preferences) in the menu bar, go to the **Advanced** tab, and check **"Show all filename extensions"**==. This globally enables file type visibility (e.g., .jpg, .pdf) for all files.
