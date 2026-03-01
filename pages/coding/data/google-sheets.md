@@ -154,6 +154,7 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - it looks like this: `=VLOOKUP(A1,C2:E10,3,0)`
   - You're searching for a match for `A1`
   - The range of values you're searching ("the table") is `C2:E10`
+  - If you find a match, it will be in the FIRST col of the range you're searching
   - You're going to return the value from the 3rd col in the table (not 0-based - so C is the first col, E is the third)
   - The `0` represents `false` for `range_lookup` which means the data is NOT sorted in ascending order 
 	  - !!! If the search col of your source data is not in ascending order but you set this value to `1`, you'll get really odd results!

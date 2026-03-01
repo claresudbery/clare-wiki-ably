@@ -5,7 +5,7 @@
 	- Keybindings: Default (VS Code)
 	- Sign up: Set up a free account (managed not in the app but at https://windsurf.com/account/login)
 	- Getting started with Windsurf:
-		- Code with Cascade
+		- Code with Cascade - that's Windsurf's name for the actual chat prompt. See [[#What if I lose the Cascade pane?]]
 		- Generate a New Project
 - New project:
 	- Select a folder
@@ -19,7 +19,8 @@
 ### What if I lose the Cascade pane?
 
 - Once any folder is open, the Cascade panel should appear automatically on the right side of the editor.
-- If it is not visible, you can open it manually by pressing `Cmd/Ctrl + L` or by clicking the Cascade icon (toggle side panel - two rectangles side by side) in the top right corner of the Windsurf window.
+- If it is not visible, you can open it manually by pressing `Cmd/Ctrl + L` or by clicking the Cascade icon (aka "toggle side panel" - two rectangles side by side) in the top right corner of the Windsurf window.
+	- You can also click the W icon to the right of the thing top middle that looks like a browser search input
 ## Starting a new project
 
 - Create a `.windsurf` folder, with the following sub-folders: `rules` and `processes`

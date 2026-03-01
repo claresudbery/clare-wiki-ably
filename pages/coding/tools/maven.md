@@ -1,0 +1,58 @@
+## Overview
+
+- **Maven** is a **build tool** for Java projects. In the same way that you might use `npm` for JavaScript or `pip` for Python
+- If I understand correctly, it performs the same function as gradle. My notes on [[gradle|gradle are here]].
+- Maven handles things (via maven commands - see [[#Running Maven commands|separate section]]) like:
+	- **Downloading dependencies** (libraries your code needs)    
+	- **Compiling** your Java source code    
+	- **Running tests**    
+	- **Packaging** your app into a distributable file (e.g. a `.jar`)
+- Maven projects are defined by `pom.xml` - see [[#pom.xml|separate section]].
+## pom.xml
+
+- You can tell when a Java project is a `maven` project, if there is a file `pom.xml` in the root of your project.
+- `pom` stands for **Project Object Model**. `pom.xml` is the single file that defines a Maven project.
+## Installing Maven
+
+- Having `pom.xml` in your project just means "this project _uses_ Maven," but you still need the Maven tool itself installed on your machine to use it.
+- If  you run `which mvn` on the command line that'll tell you if you have global Maven installed. 
+- But even if you don't have global maven, you may still have Maven bundled with (eg) IntelliJ IDEA, so might still be able to use Maven. See section in this file, [[#Running Maven commands]].
+- To install global maven, run `brew update` and then `brew install maven`
+## Running Maven commands
+
+- You can run Maven commands using the `mvn` command on the command line
+- You can also run Maven commands from with IntelliJ by clicking on the m icon in the right-hand side bar, expanding the Lifecycle node in the tree, and double-clicking commands like `compile` or `test`
+	- IntelliJ can run Maven even when `mvn` is not available in the shell environment, because IntelliJ may be using:
+	- 1. Bundled Maven, or
+	- 2. A configured Maven home in IDE settings, independent of your terminal PATH.
+	- In IntelliJ, look at Settings > Build, Execution, Deployment > Build Tools > Maven and check Maven home path.
+- You can also switch your project to use Maven Wrapper (`mvnw`) so you can run commands either in the terminal or the IDE, without requiring global Maven.
+	- This is the best approach for team consistency. 
+	- To configure a project to use Maven wrapper:
+		- Generate wrapper files in project root:
+		- From terminal (if `mvn` exists): `mvn -N wrapper:wrapper`
+		- Or from IntelliJ Maven tool window (uses bundled Maven): 
+			- run goal `-N wrapper:wrapper`
+			- This means clicking the little Terminal icon at the top ("Execute Maven goal")...
+			- ...and then pasting `-N wrapper:wrapper` in there and hitting Enter.
+		- This adds the following files:
+			- `mvnw`
+			- `mvnw.cmd`
+			- `.mvn/wrapper/maven-wrapper.properties` (and related wrapper files)
+	- Then use:
+		- `./mvnw -version`
+		- `./mvnw clean compile`
+		- After that, everyone can build with `./mvnw` even without a global Maven install.
+## Folder structure with Maven
+
+- If you create a new Maven project in IntelliJ, you'll see that by default you have the following folder structure: `src/main/java/org/example/Main.java` 
+- This is the standard Maven project layout plus Java package naming.
+- `src/main/java/` is Maven’s default location for production Java source.
+- `org/example/` maps to the Java package which is called `org.example` (you'll see the folder path mirrors the package name).
+- So you will end up with a package called `org.example`. and in `Main.java` there will be a line at the top stating `package org.example;` which means the class is declaring that package and therefore belongs in that directory.
+- This convention lets Maven/IntelliJ compile and run without extra configuration.
+- `org.example` is Maven’s default placeholder package/group name for sample projects.
+	- It’s not special and you should usually replace it with something project-specific, often based on a reversed domain you control (for example `com.yourname.bootcamp`).
+	- To rename it in IntelliJ IDEA, you can place the cursor on each part of the package one by one and use the rename refactor functionality to rename it
+		- Various ways of accessing this, eg Shift + F6 or righgt-click = Rename, or right-click => Refactor => Rename
+	- eg I first renamed `org` to `manchester` and then `example` to `digital`, turning package `org.example` into package `manchester.digital`.

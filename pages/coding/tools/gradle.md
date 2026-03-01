@@ -3,6 +3,9 @@ layout: page
 location: pages/coding/tools/leaf
 permalink: /pages/coding/tools/Gradle
 ---
+## Overview
+
+- If I understand correctly, `gradle` is a Java build tool that performs the same purpose as maven. My notes on [[maven|maven are here]].
 ## Historic Notes
 
   - These notes were originally written 2018
