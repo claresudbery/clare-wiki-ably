@@ -10,7 +10,7 @@ There is a proven therapeutic benefit to laughing together with other people. It
 
 ## Getting to know each other
 
-See [energisers](/pages/think/events/workshops/Energisers-and-Warmups#getting-to-know-each-other).
+See [energisers](/pages/think/events/workshops/energisers-warmups#getting-to-know-each-other).
 
 ## Daft Games
 

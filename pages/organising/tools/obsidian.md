@@ -607,6 +607,8 @@ text-align: left;
 	- `<span class="center-align">Centred text</span>`
 ## Space paragraphs to make prose easier to read
 
+- (I implemented this in the Obsidian vault for my novel)
+	- NB: One time I found this stopped working, but then I opened my [[#css snippets]] file in VS Code and it started working again! After that it worked even with a restart.
 - (I got the following advice [from this link](https://forum.obsidian.md/t/need-help-with-the-distance-between-the-headers-and-text-using-minimal-theme/65920))
 	- (I also tried [this](https://forum.obsidian.md/t/how-to-increase-paragraph-spacing/66816/2) and [this](https://forum.obsidian.md/t/need-help-with-the-distance-between-the-headers-and-text-using-minimal-theme/65920) but they didn't work for me)
 - Add the following to your [[#css snippets]] file:
@@ -637,6 +639,9 @@ text-align: left;
 ## Find and replace with line breaks
 
 - See here: https://forum.obsidian.md/t/find-and-replace-and-linebreaks/53041
+## Word count
+
+- Install the Core Word Count plugin, select text (or not) and look at the status bar bottom right.
 # File syncing
 
 - If syncing between MacBook and iPhone, your best option seems to be [iCloud](<#syncing with icloud>)

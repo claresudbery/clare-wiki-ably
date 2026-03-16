@@ -215,6 +215,7 @@ There are a couple of activities below that benefit from these types of question
 4. Facilitator shouts "GO"
 5. Play for the best of 3 or 5 to see which team wins
 6. [More info here](https://www.funretrospectives.com/human-rock-paper-scissors/)
+7. Or... [[#rock paper scissors championship]]
 
 ## rock paper scissors championship 
 
@@ -224,15 +225,6 @@ There are a couple of activities below that benefit from these types of question
 - The winner finds another winner to compete against. The loser becomes their cheerleader and has to follow them round chanting their name
 - The number of players becomes smaller and each player gets a larger and larger group of cheerleaders until there are only two players left, and one of them wins!
 - We played this at the thoughtworks Away Day in Birmingham, and at the Agile Leadership meetup at Made Tech in London 13/1/20 - I won!
-
-## "1,2 ... 3,1"
-
-- Everybody stand up.
-- When the leader says "One," everyone else must say "Two."
-- When the leader says "Two," everyone else must say "Three."  
-- When the leader says "Three," everyone else must say "One."  
-- Start by practising that, then when they've got the hang of it, tell them that every time THEY say "One," they must clap (it's harder than it sounds).
-- That's it!
 
 ## Spirit Animals 
 
@@ -262,9 +254,15 @@ The teacher said to the children, “These balloons are like happiness. We won't
 
 - Some of these [games designed for drama classes](https://theatrenerds.com/10-theatre-games-perfect-drama-class/) can work well as energisers.
 - There are some more drama games [listed here](dramaresource.com/drama-games/) - this list is a bit more generically play-focused, rather than specifically focused on acting skills.
+## "1,2 ... 3,1"
 
-## Retro Games
-
+- Everybody stand up.
+- When the leader says "One," everyone else must say "Two."
+- When the leader says "Two," everyone else must say "Three."  
+- When the leader says "Three," everyone else must say "One."  
+- Start by practising that, then when they've got the hang of it, tell them that every time THEY say "One," they must clap (it's harder than it sounds).
+- That's it!
+- In more detail...
   - Count to 3 repeatedly (1,2,3,1,2,3) but do it by taking it in turns
     between the leader and everybody else. So:
       - Leader says 1
