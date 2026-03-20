@@ -17,3 +17,5 @@ permalink: /pages/think/life/admin/Gifts
 - Unitom, in the Northern quarter, Manchester
 	- Arty bookshop with lots of cute suff
 	- Stevenson square, just round corner from dentist. There are things there for husbands, parents, best girlfriends. (For Clare: See photos in phone from 26/8/25). The big books cost £30 each, and I also got really nice candles for only £15 each (hmm ok they smell nice when not lit, but don't seem to emit much scent when lit), and they have pillow sprays with the same scent for £14 each.
+- Hanayama Metal Puzzles
+	- See separate [[Hanayama-puzzles|Hanayama puzzle page]]

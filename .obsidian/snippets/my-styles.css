@@ -1,3 +1,10 @@
+/* !! Remember to copy everything in here into publish.css if you want to see changes when you pubish to the web!
+    But also remember that publish.css also has to be explicitly published when it's updated
+    ...and I ONLY need to update the version that's in ClaresCareer.
+    I don't even need that file to exist in my other vaults.
+*/
+
+
 .cm-s-obsidian {
   & .cm-link.cm-hmd-barelink {
       color: var(--text-normal);
@@ -9,6 +16,38 @@
   }
 }
 
+/* The colour of text for code snippets */
 .cm-inline-code {
   color: darkorange!important;
+}
+
+img[alt*="center"] { 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.center-align {
+display: block;
+text-align: center;
+}
+
+.right-align {
+display: block;
+text-align: right;
+}
+
+.left-align {
+display: block;
+text-align: left;
+}
+
+/* Spacing between paragraphs (so I can write novels) */
+.markdown-preview-view br {
+    content: '';
+    display: block;
+    margin-top: 10px;
+}
+.markdown-source-view :is(.cm-line:not(.HyperMD-list-line):not(.HyperMD-codeblock):not(.HyperMD-callout)) {
+   padding-bottom: 1em;
 }

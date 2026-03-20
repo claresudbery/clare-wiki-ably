@@ -5,15 +5,10 @@ permalink: /pages/think/events/workshops/Workshop-Types
 ---
 
 See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques) and [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Consulting Principles](/pages/think/agile-princ/Consulting-Principles).
-
-## Misc
-
-- [workshops tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7247fd4c-5a5c-4678-a41b-aa72740b1df4&query=tag%1Fworkshops%1FtagGuid%3Af516d459-b182-4e38-85c0-15ad61fe373f%1Eview%3AVIEW%2FALL_NOTES&)
+## Misc - [workshops tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7247fd4c-5a5c-4678-a41b-aa72740b1df4&query=tag%1Fworkshops%1FtagGuid%3Af516d459-b182-4e38-85c0-15ad61fe373f%1Eview%3AVIEW%2FALL_NOTES&)
 - [Running a remote inception / remote workshops](/pages/think/events/workshops/Remote-Inception)
-
 ## All types of workshop
-
-- M
+- [[#Manual of me]]
 - Five whys
 	- aka root cause analysis
 	- [Miro created at XP Manchester](https://miro.com/app/board/o9J_lVcMmxU=/) in an attempt to use the Five Whys technique to determine why XP isn't more widely adopted.
@@ -234,22 +229,9 @@ These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) 
 	- Would you like to change your leadership style to emphasise other attributes? 
 	- how many female leaders are there overall, out of the total number of leaders? 
 		- (This is just an interesting statistic).
-
 ### Manual of me
-
-- Create a grid with the following headings, one blank one per person, everyone fills in their own grid
-	- I do my best work when...
-	- Things I struggle with include...
-	- The best way to communicate with me is... at the following times...
-	- Please give me feedback when... in this way...
-	- I am really motivated by...
-	- If I'm stressed, the best way to support me is...
-	- Outside of work, I get excited about...
-	- Outside of this project, I'm also dealing with...
-- There's an example of what I filled in for mine with Coding Black Females, Tue 16/8/22, in clare-tech: coding-black-females.md
+- See [[manual-of-me|manual-of-me.md]]
 ## Meetups
-
 ### Office Hours
-
 - [This is a great article](https://ideolalia.com/essays/the-office-hours-meetup.html) suggesting the idea of an "office hours" meetup. The description of a dysfunctional meetup is unfair to most meetups I've ever attended, because they allow time for discussion after each talk and they often use a workshop style rather than a lecture format. But still I like the office-hours idea. For those that haven't come across the concept (I hadn't before I worked with a US-based company), it seems to be something commonly used in US universities, where lecturers will make themselves available at certain times of the day for students to knock on their door and get some one-to-one time.
 

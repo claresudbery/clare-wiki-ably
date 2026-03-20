@@ -159,5 +159,23 @@
       ],
       "key": "X"
     }
+  ],
+  "templater-obsidian:Templates/Center Align Text Template.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ],
+  "templater-obsidian:Templates/New section.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "S"
+    }
   ]
 }

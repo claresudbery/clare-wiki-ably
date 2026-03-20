@@ -580,7 +580,7 @@ Time: 1 second
 
 - Based on [instructions here](https://forum.obsidian.md/t/text-alignment-with-links-images-formatting-using-markdown-etc/33920/2) (although I didn't do the `cMenu` bit)
 - Open a separate editor (I use VS Code) (you can't edit css direct in Obsidian)
-- Add this css to both `snippets/my-styles.css` and `publish.css`:
+- Add this css to both `snippets/my-styles.css` and `publish.css` (note that I only have `publish.css` in the main vault that's published, not in the other ones):
 ```css
 .center-align {
 display: block;
@@ -602,6 +602,7 @@ text-align: left;
 	- One called `Left Align Text Template` containing the following: `<span class="left-align"><% tp.file.selection ( ) %></span>`
 	- One called `Right Align Text Template` containing the following: `<span class="right-align"><% tp.file.selection ( ) %></span>`
 - Use the Templater (Cmd + `,` then bottom left) plugin to create hotkeys for the above 3 templates
+	- See instructions in here on how to [[#Set up hotkey for Templater Template|set up a hotkey]] 
 	- I've only done one hotkey so far - it's Cmd + Ctrl + c for centring text
 - Select the text you want to centre, and press the hotkey - it'll surround the text with the appropriate html, resulting in something like this:
 	- `<span class="center-align">Centred text</span>`
@@ -882,26 +883,23 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
 - See "New Samman Meetup" QuickAdd macro in `clare-tech` Obsidian for an example
 	- There are instructions on how to use it in `samman-meetup-index.md`, also in `clare-tech`
 ### Use Templater to add a section header plus a link to that section
-
 - It's not perfect cos it means sections get added in reverse order, but it'll do for now
 - Put this in a "New section" template:
-- ```md
+```
 [[#<% tp.file.selection ( ) %>]]
 # <% tp.file.selection ( ) %>
-  ```
-- [[#Set up hotkey for Templater Template|Set up a hotkey]] for that template
+```
+- [[#Set up hotkey for Templater Template|Set up a hotkey]] for that template 
 - I've got this set up in LifeNovel Obsidian vault to have a hotkey of Ctrl + Cmd + S
 - To use: 
 	- Type the name of the header
 	- Select the text you just typed
 	- Press the hotkey
 ### Set up hotkey for Templater Template
-
 - (Note you have to first install the Templater plugin)
 - I did this by going into Templater (Settings, then bottom left) then scrolling down to Template Hotkeys, Add new hotkey for template, add the template in there
 	- Then you have to go to Settings => Hotkeys (top left), search for the template, and set up the hotkey in there
 ## Properties
-
 - Properties are note metadata - or notes about your notes
 - More [here](https://obsidian.rocks/an-introduction-to-obsidian-properties/)
   - and [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/)
