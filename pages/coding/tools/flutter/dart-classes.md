@@ -41,7 +41,7 @@ var p2 = new Point.fromJson({'x': 1, 'y': 2});
 ## Declaring Classes
 
 - Objects have members consisting of functions and data (methods and [instance variables](<#instance variables>), respectively).
-- See [sample code](flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
+- See [sample code](https://github.com/claresudbery/flutter-examples/tree/main/flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 - Here's a pretty typical class declaration:
 
@@ -75,7 +75,7 @@ class Thing {
   - ['Initializing formal' parameters](<#initializing formal parameters>)
   - [Initializer lists](<#initializer lists>)
   - [Initialising inherited variables](<#initialising inherited variables>)
-- See [sample code](flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
+- See [sample code](https://github.com/claresudbery/flutter-examples/tree/main/flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 
 ## Instance variables

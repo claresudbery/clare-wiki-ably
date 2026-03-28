@@ -43,6 +43,7 @@ permalink: /pages/organising/tools/Obsidian
 	- [Github Sync plugin](<#github sync plugin>)
 	- [GitHub Syncing on iPhone](<#github syncing on iphone>)
 - [Organising content](<#organising content>)
+	- [[#Shrinking the size of your vault]]
 	- [Saving / storing links to 3rd party content](<#saving  storing links to 3rd party content>)
 	- [Importing content from other Notes systems](<#importing content from other notes systems>)
 	- [Each note should contain one idea](<#each note should contain one idea>)
@@ -493,19 +494,39 @@ Time: 1 second
   - Or if the ID hasn't been added yet, you can just type `[[^` or `[[file-name^` and you'll get a dropdown containing all the paragraphs in that file, and you can also type words and it will find the relevant para - then select the para and it will create an id with a random name (eg `^adf45g`) and insert it at the end of the relevant block in the relevant file
 
 ## Formatting markdown
-
 - Bold/italic:
-  - `*italic*` Cmd + I / Ctrl + i will get you here
-  - `**bold**` Cmd + b / Ctrl + b will get you here
-  - `***bold and italic***`  
-  - you can use underscores instead of asterisks
+	- `*italic*` Cmd + I / Ctrl + i will get you here
+	- `**bold**` Cmd + b / Ctrl + b will get you here
+	- `***bold and italic***`  
+	- you can use underscores instead of asterisks
 - Horizontal line / divider
-  - `***` then press Enter
+	- `***` then press Enter
 - Lists:
-  - Type `1.` and enter for ordered list
-  - Type `-` for bullet list
+	- Type `1.` and enter for ordered list
+	- Type `-` for bullet list
 - blockquotes:
-  - Type `> ` then the quote
+	- Type `> ` then the quote
+- Code:
+	- Surround the text with `one backtick at each end`, 
+	- or type three backticks on one line, followed by code on a new line, followed by three backticks on another line 
+	- See also [[#Change the text colour for inline code]]
+	- If you want syntax highlighting for a particular language, add the language name after the first three backticks, eg `csharp` for C# or `js` for Javascript:
+```csharp
+var s = 10;
+```
+- Tables:
+	- `|col1|col2|col3|`
+	- `|-|-|-|`
+	- `|content1|content2|content3|`
+	- ...will look like what you see below. BUT it won't format correctly unless 
+		- 1. preceded by an empty line.
+		- 2. The SECOND row is the empty one with the hyphens
+		- 3. All rows have the same num of columns
+	- Sometimes the row with the hyphens will automatically adjust for the num hyphens to be as wide as the widest content, but although this happened to me when I was fidling about just now, I couldn't replicate it!
+
+| col1     | col2     | col3     |
+|-|-|-|
+| content1 | content2 | content3 |
 
 ## Callouts
 
@@ -687,6 +708,9 @@ text-align: left;
 ## Syncing with iCloud
 
 - It's a bit buggy / idiosyncratic to set up, but after that seems pretty smooth
+	- ...until it totally grinds to a halt!!
+	- To fix this, you can try selecting Keep Files Downloaded on your Obsidian folder, both on MacBook (right-click in Finder) and iPhone (Files app, long-press on folder) and then wait for files to be downloaded
+	- You can also shrink the size of your Obsidian repo
 - !! It might be best to create it on phone first, NOT on Macbook
 	- ...although that might only be true for the first vault you sync
 	- (See [[#Syncing a new vault with iCloud|notes here]])
@@ -775,9 +799,14 @@ Alternative: Using iCloud (with caveats):
 Create a vault in Obsidian that uses iCloud: This allows Obsidian to automatically create a folder in iCloud. 
 Set up Git with the iCloud vault: You can still use Git with an iCloud vault, but you might encounter issues with iCloud's limitations. 
 Consider using a tool like a-shell or iSH: These tools can help manage Git operations on your iPhone, even with an iCloud vault. 
-
 # Organising content
-
+## Shrinking the size of your vault
+- I did the following:
+- Found which folders were large:
+	- See [[apple-macs-and-ios#Find how much storage folders are using up]]
+- Moved large stuff into Git repos and linked out to them (eg [flutter-test-app](https://github.com/claresudbery/flutter-examples/tree/main/flutter-test-app))
+- Used `git repack -a -d --depth=250 --window=250` to make my `.git` folder smaller
+- Used my new script to shrink the size of images
 ## Saving / storing links to 3rd party content
 
 - Info here copied from [this article](https://obsidian.rocks/save-articles-to-obsidian-five-different-methods/)
@@ -1189,3 +1218,29 @@ process_directory(target_directory)
     - Could highlight words she wanted in a glossary, and then use a plugin to generate the glossary for her 
     - It created a graph for her of the conceptual relationships between the different parts of her book 
     - It has a [[#Publish to a website|publish feature]] which will allow you to turn your notes into a website!!! Clare-wiki!!
+
+# Useful override data
+- More detail is available [in this Google sheet](https://docs.google.com/spreadsheets/d/1U1z0EYH4THeuIrwf4CYk0nYOjdJpmg8gC3Pqk6-V8FE/edit?gid=0#gid=0)
+
+| **vin**           | **registration** | **type**     |
+| ----------------- | ---------------- | ------------ |
+| SAL1A2AU7PA125931 | 65TK             | VIN          |
+|                   | A13ARU           | REGISTRATION |
+| VF3V1ZKXZNZ070851 | AF72CXZ          | VIN          |
+| VF3V1ZKXZNZ070851 | AF72CXZ          | VIN          |
+| VF3V1ZKXZNZ061791 | AF72CZJ          | VIN          |
+| VF3V1ZKXZNZ061791 | AF72CZJ          | VIN          |
+|                   | BC14XUB          | REGISTRATION |
+|                   | BDD9B            | REGISTRATION |
+| 101168            | DNP419N          | VIN          |
+|                   | DU65TVE          | REGISTRATION |
+| 5Y4AM87C0N0503518 | EU72BYT          | VIN          |
+| WMWSR32070T343526 | EY13MUE          | VIN          |
+| WMWSR32070T343526 | EY13MUE          | VIN          |
+| SJNFEAJ11UZ000456 | EY17MDE          | VIN          |
+| SALLDVA576A728790 | FIB193           | VIN          |
+| LCELVYZ84J6004377 | FV68LUJ          | VIN          |
+| WV2ZZZ2KZKX089012 | GD19TUW          | VIN          |
+| SALRA2AK9K2404950 | GM19FLJ          | VIN          |
+| 15451             | GUB940T          | VIN          |
+| 23923             | GVM9E            | VIN          |

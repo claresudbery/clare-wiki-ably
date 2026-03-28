@@ -504,3 +504,5 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 - Instead, I did this:
 	- Get youtube on phone to use airplay to play on Sonos
 	- Get RadioWaters.co.uk up in Safari on phone, and play from there
+# Where are my notes on shrinking the size of Obsidian vaults?
+- [[obsidian#Shrinking the size of your vault|obsidian.md - Shrinking the size of your vault]]

@@ -286,6 +286,19 @@ killall SystemUIServer
 
 - You have to hold down the option key before you open System Settings, and then keep it held down while in the Settings dialog!
 - Then go to Displays and select the display you want to rotate, and there'll be a Rotation option available.
+### Configure macbook or iphone to auto-complete your own shorthand
+- System Settings => Keyboard => text replacements
+- On iphone: Settings => General => Keyboard => text replacements
+	- Click the `+` button
+![[Pasted image 20260320191858.png]]
+### Find how much storage folders are using up
+- Find which folders are large:
+	- In MacBook finder...
+	- Navigate to parent folder
+	- Hit Cmd + J
+	- Check the "Calculate all sizes" checkbox at the bottom
+	- Right-click at the top to show the Size col
+	- Order by Size
 ## Do simple video editing in QuickTime on Macbook
 
 - See [here](/pages/organising/tips/tech/misc-tech-tips.md#do-simple-video-editing-in-quicktime-on-macbook)
