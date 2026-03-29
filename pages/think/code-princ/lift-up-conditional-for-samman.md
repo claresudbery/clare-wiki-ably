@@ -55,7 +55,7 @@ if(colour1 != "green" || colour2 != "blue")
 
 Below is a sample of what the solution looks like in Mural. I suggest that, if using a tool like Mural or Miro, you create a separate frame for each pair to use for the exercise.
 
-![Sample if-parsing exercise solution](/resources/images/temp/If-parsing-solution.png)
+![Sample if-parsing exercise solution](/resources/images/temp/If-parsing-solution.jpg)
 
 #### Connect v2: Favourite keyboard shortcuts
 
@@ -69,7 +69,7 @@ This is a good exercise to get them thinking about keyboard shortcuts, which wit
 
 I find it helpful to use schematics to visualise what's happening, as if you haven't seen the technique before it can be confusing at first. I also show the Gilded Rose code before and after, to show what we're aiming for and get them primed for what I'm about to demonstrate.
 
-![Schematic showing technique visually](/resources/images/temp/lift-up-conditional-simple-schematic.png)
+![Schematic showing technique visually](/resources/images/temp/lift-up-conditional-simple-schematic.jpg)
 
 [This slide deck](https://docs.google.com/presentation/d/11HjxVD99vyKyt8HT_5UHIBnAnr4Pck5g/edit?usp=sharing&ouid=117794872566978197093&rtpof=true&sd=true) (also available as [a pdf](https://drive.google.com/file/d/11cEwkIv2NRWLkSCQfqltXIkNUTzCQFyW/view?usp=sharing)) contains two versions of the schematic above, as well as a more detailed example using the same principle. I recommend only using the more detailed version if you are planning to devote two learning hours to this activity. Even then, you may prefer the shorter simpler version.
 

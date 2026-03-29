@@ -16,7 +16,7 @@ aka "Mob Programming"
 - "It impacts developer productivity"
     - “Unfortunately, after decades of research ... knowing how to measure productivity or even define developer productivity has remained elusive”
         - from ["The SPACE of Developer Productivity"](https://queue.acm.org/detail.cfm?id=3454124) by Nicole Forsgren, (Github) Margaret-Anne Storey, (University of Victoria), Chandra Maddila, Thomas Zimmermann, Brian Houck, and Jenna Butler, (Microsoft Research)
-![pair programing quotes](/resources/images/quotes-about-pair-programming.png)
+![pair programing quotes](/resources/images/quotes-about-pair-programming.jpg)
         - image is from [Laurie Williams’ doctoral thesis]()
     - Many more useful sources [here on Agile Alliance site](https://www.agilealliance.org/glossary/pairing/#q=~(infinite~false~filters~(postType~(~'page~'post~'aa_book~'aa_event_session~'aa_experience_report~'aa_glossary~'aa_research_paper~'aa_video)~tags~(~'pair*20programming))~searchTerm~'~sort~false~sortDirection~'asc~page~1))
     - it ramatically reduces the bus factor - more nicely described as the lottery-win factor (someone might win the lottery and give up work)

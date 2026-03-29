@@ -81,7 +81,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 
 - I got this error: `Fatal error occurred:  Emulator UI has exited with code: 1,  stopping all running emulators`
 
-![/resources/images/firebase-emulator-error-01.png](/resources/images/firebase-emulator-error-01.png)
+![/resources/images/firebase-emulator-error-01.jpg](/resources/images/firebase-emulator-error-01.jpg)
 
 - The previous lines in the console feedback (see screenshot above) suggested I run `firebase login`, but when I did that I got the message `already logged in`
 - I checked `ui-debug.log` (which I found in the top level `[named-after-project]` folder of the code base) and found this:

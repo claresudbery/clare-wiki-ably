@@ -97,7 +97,7 @@ NB: I MANAGED TO FIX THIS BY SWITCHING TO RECAPTCHA V3.
     - It didn't mind me having multiple ReCaptcha site configs for the same domain
     - To see all configs, go [here](https://www.google.com/recaptcha/admin)
 
-![Wordpress-contact-form7-config.png](/resources/images/Wordpress-contact-form7-config.png)
+![Wordpress-contact-form7-config.jpg](/resources/images/Wordpress-contact-form7-config.jpg)
 
 ![Wordpress-rogue-BWS-reCaptcha-text-field.png](/resources/images/Wordpress-rogue-BWS-reCaptcha-text-field.png)
 

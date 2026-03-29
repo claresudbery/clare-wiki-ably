@@ -39,7 +39,7 @@ permalink: /pages/organising/tools/Miscellaneous-Tools
 - Personal avatar / profile image maker: [Makowka](https://picrew.me/image_maker/644129)
 - Here's the image I made (Feb 2021) (Make sure you credit Makowka, and images can only be used as profile pictures):
 
-![Makowka avatar](/resources/images/MAKOWKA-AVATAR.png)
+![Makowka avatar](/resources/images/MAKOWKA-AVATAR.jpg)
 
 ## YouTube timestamp
 

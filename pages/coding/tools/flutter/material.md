@@ -114,4 +114,4 @@ permalink: /pages/coding/tools/flutter/Material
   - [This article says pixels though](https://www.dhiwise.com/post/streamlining-image-selection-with-flutter-image-picker-plugin), so I’m gonna go with that.
   - Docs in the file (image_picker-1.1.2/lib/image_picker.dart):
 
-![flutter-image-picker.png](/resources/images/flutter-image-picker.png)
+![flutter-image-picker.jpg](/resources/images/flutter-image-picker.jpg)

@@ -25,7 +25,7 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 
 - (pdf version is [here](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf))
 
-![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.png)
+![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.jpg)
 
 ### List of shortcuts
 

@@ -32,7 +32,7 @@ Examples from a "Measures of Success" workshop:
 
 ![Measures of success workshop agenda](/resources/images/MeasuresOfSuccess-Workshop-Agenda.jpg)
 ![Ground rules](/resources/images/MeasuresOfSuccess-Workshop-GroundRules.jpg)
-![Workshop rules](/resources/images/workshop-rules.png)
+![Workshop rules](/resources/images/workshop-rules.jpg)
 
 ### Under promise and over deliver
 

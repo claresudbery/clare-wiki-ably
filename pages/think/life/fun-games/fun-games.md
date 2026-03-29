@@ -73,9 +73,10 @@ then try to think of a word in the middle of the two words
 Again, say “got one” then “3…2…1…”. 
 Keep going until you both say the same word.
 
-## Coding Games
+## Fun Coding Games, eg Tixyland
 
-- Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)
+- Play with css animation using Javascript expressions with tixyland: [tixy.land](/pages/coding/webdev/js/tixy-land)
+- This is a lot of fun!!
 
 ## The backward recording game
 
@@ -238,12 +239,12 @@ The full description of the party [is here](https://github.com/claresudbery/clar
 
 ### Online board games
 
-![Online board games 01](/resources/images/Online-board-games-01.png)
-![Online board games 02](/resources/images/Online-board-games-02.png)
-![Online board games 03](/resources/images/Online-board-games-03.png)
-![Online board games 04](/resources/images/Online-board-games-04.png)
-![Online board games 05](/resources/images/Online-board-games-05.png)
-![Online board games 06](/resources/images/Online-board-games-06.png)
-![Online board games 07](/resources/images/Online-board-games-07.png)
-![Online board games 08](/resources/images/Online-board-games-08.png)
-![Online board games 09](/resources/images/Online-board-games-09.png)
+![Online board games 01](/resources/images/Online-board-games-01.jpg)
+![Online board games 02](/resources/images/Online-board-games-02.jpg)
+![Online board games 03](/resources/images/Online-board-games-03.jpg)
+![Online board games 04](/resources/images/Online-board-games-04.jpg)
+![Online board games 05](/resources/images/Online-board-games-05.jpg)
+![Online board games 06](/resources/images/Online-board-games-06.jpg)
+![Online board games 07](/resources/images/Online-board-games-07.jpg)
+![Online board games 08](/resources/images/Online-board-games-08.jpg)
+![Online board games 09](/resources/images/Online-board-games-09.jpg)

@@ -32,4 +32,4 @@ Personally, I follow the following advice and it has made a MASSIVE difference t
     - 2. Word association: I list random words and phrases in my head, no rules, just free association. Focus on that and only that. It seems to put my brain in a creative dream space and often morphs into dreams.
   - If it's prolonged, get out of bed and have a hot bath in low lighting.
 
-![Sleep tips](/resources/images/sleep-tips.png)
+![Sleep tips](/resources/images/sleep-tips.jpg)

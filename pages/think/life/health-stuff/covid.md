@@ -168,7 +168,7 @@ If you don't find that Kara's style works for you, don't feel bad! Turn it off a
 
 ### Control what you can, accept what you can't
 
-![controlling covid-19](/resources/images/covid-19-can-control.PNG)
+![controlling covid-19](/resources/images/covid-19-can-control.jpG)
 
 ### Don't put pressure on yourself to become super-productive
 

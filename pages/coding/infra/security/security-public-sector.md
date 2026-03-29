@@ -23,7 +23,7 @@ permalink: /pages/coding/infra/security/Security-in-the-Public-Sector
     - Draw out who all the possible disruptors, what do they care about, where are we vulnerable?
     - Draw your system using boxes, and lines between the disruptors and the components to show what / how they might attack
 - Attack trees
-    - ![attack trees](/resources/images/attack-trees.png)
+    - ![attack trees](/resources/images/attack-trees.jpg)
 - Books to read
     - "Agile Application Security" by Bell, Brunton-Spall, Smith, Bird
     - "Threat Modelling - Designing for Security" by Adam Shostack
@@ -38,7 +38,7 @@ permalink: /pages/coding/infra/security/Security-in-the-Public-Sector
     - What would the effects be of various problems?
         - You can enhance your attack tree with a list of possible impacts on the org, and then consider how much do they matter?
         - Here's a sample impact list:
-        - ![attack-tree-with-impact-list.png](/resources/images/attack-tree-with-impact-list.png)
+        - ![attack-tree-with-impact-list.png](/resources/images/attack-tree-with-impact-list.jpg)
 - Remember that everything keeps changing! Eg Zoom have made security updates.
 - Summary:
     - The key to security is balancing risk with need
@@ -91,7 +91,7 @@ permalink: /pages/coding/infra/security/Security-in-the-Public-Sector
         - The law is the law, it doesn't matter whether you've signed the Official Secrets Act or not
 - Three categories of info:
     - Official, Secret, Top Secret:
-![official-secret-top-secret](/resources/images/secret-top-secret.png)
+![official-secret-top-secret](/resources/images/secret-top-secret.jpg)
     - **Secret** is the fuzziest one
     - It's unlikely you'll encounter anything other than official
     - There used to be more categories
@@ -99,15 +99,15 @@ permalink: /pages/coding/infra/security/Security-in-the-Public-Sector
 
 ### 14 cloud security principles
 
-![14-principles](/resources/images/14-considerations.png)
+![14-principles](/resources/images/14-considerations.jpg)
 - Before using cloud security principles, put it in context. Ask not "Are we secure?" but "Are we secure against what?"
 - Tons of guidance [here](https://www.cloud.service.gov.uk/cloud-security-principles)
-![Principles-1-to-3](/resources/images/Principles-1-to-3.png)
-![Principles-4-to-6](/resources/images/Principles-4-to-6.png)
+![Principles-1-to-3](/resources/images/Principles-1-to-3.jpg)
+![Principles-4-to-6](/resources/images/Principles-4-to-6.jpg)
 - the one about personnel security can be misinterpreted - suggesting everyone in your org needs to be security checked when that is probably not actually necessary.
-![Principles-7-to-9](/resources/images/Principles-7-to-9.png)
-![Principles-10-to-12](/resources/images/Principles-10-to-12.png)
-![Principles-13-to-14](/resources/images/Principles-13-to-14.png)
+![Principles-7-to-9](/resources/images/Principles-7-to-9.jpg)
+![Principles-10-to-12](/resources/images/Principles-10-to-12.jpg)
+![Principles-13-to-14](/resources/images/Principles-13-to-14.jpg)
 - Summary:
     - Be sensible
     - Take risk seriously

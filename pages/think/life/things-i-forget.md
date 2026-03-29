@@ -67,7 +67,7 @@ From [here](https://xkcd.com/149/)
 
 I can't find the xkcd original for this next one, which is my favourite... so maybe this was someone else's edit of xkcd? I found it [here](https://www.reddit.com/r/xkcd/comments/53ysu8/how_the_pros_do_it/).
 
-![sudo!!](/resources/images/sudo-make-me-a-sandwich-part2!!-v2.png)
+![sudo!!](/resources/images/sudo-make-me-a-sandwich-part2!!.png)
 
 Incidentally that reddit page led me [here](https://github.com/nvbn/thefuck), which looks like fun.
 
@@ -138,7 +138,7 @@ Anyway, it was called the Astroglide.
 
 It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) in Coasterpedia. Here's a picture of an equivalent slide at Margate: 
 
-![astroglide-at-margate](/resources/images/astroglide.png)
+![astroglide-at-margate](/resources/images/astroglide.jpg)
 
 ## What are those really creepy American dolls called?
 
@@ -239,7 +239,7 @@ Goodhart's Law:
 - Often a list of categories that describe a particular thing
 - eg Bloom's Taxonomy of learning:
 
-![/resources/images/BloomVerbs-exercise.png](/resources/images/BloomVerbs-exercise.png)
+![/resources/images/BloomVerbs-exercise.jpg](/resources/images/BloomVerbs-exercise.jpg)
 
 ## Who are those two bands I think sound alike?
 

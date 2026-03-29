@@ -100,7 +100,7 @@ The reason this is so important is that otherwise, participants are getting audi
 - [BigBlueButton - open source web conferencing](https://bigbluebutton.org/) - has breakout rooms
 - [Have a party in a spreadsheet!](/pages/think/life/fun-games/Fun-Games#a-party-in-a-spreadsheet)
 - [HopIn](https://hopin.to/) - allows for multiple different channels, can be used to host your entire event - with different rooms that users can hop between, and chats for each room. I saw this used well for [GovCampNorth 2020](https://govcampnorth.co.uk/). Here's an idea of what's available:
-![Hopin](/resources/images/hopin.png)
+![Hopin](/resources/images/hopin.jpg)
 - You can host Lean Coffee sessions using [Lean Coffee Table](https://www.leancoffeetable.com/TaskBoard/View/41ef2077-5dbc-449b-be48-a39700ca5f4f?guest=true). You have to pay, but there is a free trial available. Trello is also a good tool for Lean Coffee (top tip: USe the Voting powerup), but it only really works internally to orgs. This is because some employers won't allow their employees to access Trello, and also you will often find that bits of functionality are only available to people in the same org. 
 - [Online Town](https://theonline.town/) - where you [move an avatar around and see/hear people in the distance](https://mashable.com/article/online-town-video-chat-for-groups/?europe=true)
 - [Excalidraw](excalidraw.com) - good free online diagramming / drawing tool
@@ -128,7 +128,7 @@ The reason this is so important is that otherwise, participants are getting audi
 
 This gives you a good idea of the kind of thing we have been able to create collaboratively using Miro:
 
-![Miro diagrams](/resources/images/remote-inception-01.PNG)
+![Miro diagrams](/resources/images/remote-inception-01.jpg)
 
 
 ### Miro Tips

@@ -35,7 +35,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 - CRC cards
 	- blank ("naked") CRC cards 
 - Value proposition map / value proposition design
-	- [Real example here](https://github.com/claresudbery/clare-tech/blob/master/resources/images/value-proposition-map.png) (Clare only) 
+	- [Real example here](https://github.com/claresudbery/clare-tech/blob/master/resources/images/value-proposition-map.jpg) (Clare only) 
 	- [Blank example here](value-proposition-map-blank.jpeg)
 	- Over on the far right you list the things you want to achieve ("jobs to be done")
 	- In the same section, you list gains that users might get
@@ -64,7 +64,7 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 	- To-be:
 	- Now do the same again but for the suggested improvement journey (or to represent a brand new journey)
 - Storyboarding
-	- [Real example in this repo](/resources/images/storyboarding.png)
+	- [Real example in this repo](/resources/images/storyboarding.jpg)
 	- Fold paper to create 8 panels, then use them to create a ocmic strip that describes a blue-sky imagined new or improved user journey.
 - Action Learning
 	- see [dedicated Action Learning page](/pages/think/events/workshops/Action-Learning).
@@ -130,9 +130,9 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 - then your hypothesis is that nobody will use this product so don't implement it
 	- or it's highly likely that you'll reach your goal by improving / reimplementing this thing, therefore go for it	
 
-![hypothesis-workshops.png](/resources/images/hypothesis-workshops.png)
-![hypothesis-workshops-2.png](/resources/images/hypothesis-workshops-2.png)
-![hypothesis-workshops-3.png](/resources/images/hypothesis-workshops-3.png)
+![hypothesis-workshops.png](/resources/images/hypothesis-workshops.jpg)
+![hypothesis-workshops-2.png](/resources/images/hypothesis-workshops-2.jpg)
+![hypothesis-workshops-3.png](/resources/images/hypothesis-workshops-3.jpg)
 
 ### Inverse Conway Manoeuvre 
 
@@ -145,7 +145,7 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 - you need strong leaders to manage the fact that there will be a temp velocity slowdown and a bit of chaos
 
 ![inverse-conway-manoeuvre.png](/resources/images/inverse-conway-manoeuvre.png)
-![inverse-conway-manoeuvre-2.png](/resources/images/inverse-conway-manoeuvre-2.png)
+![inverse-conway-manoeuvre-2.png](/resources/images/inverse-conway-manoeuvre-2.jpg)
 
 ### Measures of Success
 

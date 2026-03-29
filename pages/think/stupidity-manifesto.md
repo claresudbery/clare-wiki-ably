@@ -27,4 +27,4 @@ This "Stupidity Manifesto" came from my talk "Let's Stop Making Each Other Feel 
 
 ![Stupidity-Manifesto-Part-1.png](/resources/images/Stupidity-Manifesto-Part-1.png)
 ![Stupidity-Manifesto-Part-2.png](/resources/images/Stupidity-Manifesto-Part-2.png)
-![Stupidity-Manifesto-Part-2.png](/resources/images/Stop-Stupid.png)
+![Stupidity-Manifesto-Part-2.png](/resources/images/Stop-Stupid.jpg)

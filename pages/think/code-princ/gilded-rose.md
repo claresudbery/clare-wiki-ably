@@ -101,7 +101,7 @@ This page was created specifically for workshops using Gilded Rose. I have more 
 
 - Enterprise version of VS has Live Unit Testing - green button on right in test explorer (see image below) - equivalent to NCrunch
 
-![gilded-rose-visual-studio-live-unit-testing](/resources/images/gilded-rose-visual-studio-live-unit-testing.png)
+![gilded-rose-visual-studio-live-unit-testing](/resources/images/gilded-rose-visual-studio-live-unit-testing.jpg)
 
 - You can do a lot of what Resharper provides just using VS default functionality
     - People without Resharper might need to change target version of project from AnyCPu to x86 (see image below)
@@ -110,7 +110,7 @@ This page was created specifically for workshops using Gilded Rose. I have more 
         - there's a big debate about this online apparently!
     - another one missing from VS is "remove braces"
 
-![gilded-rose-visual-studio-no-resharper-change-target-version](/resources/images/gilded-rose-visual-studio-no-resharper-change-target-version.png)
+![gilded-rose-visual-studio-no-resharper-change-target-version](/resources/images/gilded-rose-visual-studio-no-resharper-change-target-version.jpg)
 
 ## Gilded Rose C# Approval testing with texttest tool
 

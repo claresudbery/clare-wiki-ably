@@ -15,7 +15,7 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 - give the users a choice - they don't have to use the platform 
 - GovPaaS are a great example of a team creating platform as a product
 
-![platforms-are-products.png](/resources/images/platforms-are-products.png)
+![platforms-are-products.jpg](/resources/images/platforms-are-products.jpg)
 
 ## Think Big, Start Small
 
