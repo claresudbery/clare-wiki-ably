@@ -806,7 +806,8 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 	- See [[apple-macs-and-ios#Find how much storage folders are using up]]
 - Moved large stuff into Git repos and linked out to them (eg [flutter-test-app](https://github.com/claresudbery/flutter-examples/tree/main/flutter-test-app))
 - Used `git repack -a -d --depth=250 --window=250` to make my `.git` folder smaller
-- Used my new script to shrink the size of images
+	- As per [here](https://stackoverflow.com/questions/5613345/how-to-shrink-the-git-folder/5613380#5613380) and [here](https://www.graphapp.ai/engineering-glossary/git/git-repack)
+- Used my new `lowres-images` script (in my scripts folder and Root Scripts repo) to shrink the size of images
 ## Saving / storing links to 3rd party content
 
 - Info here copied from [this article](https://obsidian.rocks/save-articles-to-obsidian-five-different-methods/)
