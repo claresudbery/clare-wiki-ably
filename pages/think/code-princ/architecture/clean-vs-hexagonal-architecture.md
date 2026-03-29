@@ -152,7 +152,7 @@ Three layers:
 
 ## Clean Architecture
 
-![Clean Architecture](/resources/images/clean-architecture.png)
+![Clean Architecture](/resources/images/clean-architecture.jpg)
 
 I want to separate my concerns, stop having to think about my framework or my infrastructure, nd get to the nub of what matters - which is "I am an app that handles these use cases and has this business logic".
 

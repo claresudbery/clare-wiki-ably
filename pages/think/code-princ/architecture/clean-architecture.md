@@ -4,7 +4,7 @@ location: pages/think/code-princ/architecture/leaf
 permalink: /pages/think/code-princ/architecture/Clean-Architecture
 ---
 
-![Clean Architecture](/resources/images/clean-architecture.png)
+![Clean Architecture](/resources/images/clean-architecture.jpg)
 
 ## Links
 
