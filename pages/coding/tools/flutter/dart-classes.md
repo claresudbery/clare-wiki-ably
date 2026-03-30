@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Dart-Classes
 ---
 
 # Dart Classes
-
 ## Contents of this page
-
 - [Intro](<#intro>)
 - [Declaring Classes](<#declaring classes>)
 - [Instance variables](<#instance variables>)
@@ -24,7 +22,6 @@ permalink: /pages/coding/tools/flutter/Dart-Classes
 - [Private classes](<#private classes>)
 
 ## Intro
-
 - Mixin-based inheritance means that although every class (except for the top class, Object?) has exactly one superclass, a class body can be reused in multiple class hierarchies.
   - See [below](<#mixins>) for more on mixins
 - You can create an object using a constructor. Constructor names can be either `ClassName` or `ClassName.identifier`.
@@ -39,7 +36,6 @@ var p2 = new Point.fromJson({'x': 1, 'y': 2});
 ```
 
 ## Declaring Classes
-
 - Objects have members consisting of functions and data (methods and [instance variables](<#instance variables>), respectively).
 - See [sample code](https://github.com/claresudbery/flutter-examples/tree/main/flutter-test-app/testing_app/test/sample_code_test.dart) for some tests that play around with constructors and parameters
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
@@ -79,7 +75,6 @@ class Thing {
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 
 ## Instance variables
-
 - Here's how you declare instance variables (class properties):
 
 ```dart
@@ -114,14 +109,11 @@ void main() {
 ```
 
 ## Constructors
-
 ### Default constructors
-
 - If you don't declare a constructor, Dart uses the default constructor. 
 - The default constructor is a [generative constructor](<#generative constructors>) without arguments or name.
 
 ### Generative constructors
-
 - The simplest kind.
 - Has the same name as the class.
 - Doesn't have to have a body.
@@ -146,7 +138,6 @@ class Thing2 {
 ```
 
 ### Named constructors
-
 - Use a named constructor to implement multiple constructors for a class or to provide extra clarity
 - Prefix the constructor name with the name of the class
 
@@ -167,15 +158,12 @@ class Thing6 {
 ```
 
 ### Other constructors
-
 - [Constant constructors](https://dart.dev/language/constructors#constant-constructors)
 - [Factory constructors](https://dart.dev/language/constructors#factory-constructors)
 - [Redirecting constructors](https://dart.dev/language/constructors#redirecting-constructors)
 
 ## Initializing instance variables
-
 ### 'Initializing formal' parameters
-
 - To simplify the common pattern of assigning a constructor argument to an instance variable, Dart has initializing formal parameters.
 - These seem to be the most common.
 - They have (what seems to me (Clare)) a slightly odd syntax. 
@@ -235,7 +223,6 @@ class Thing5 {
 ```
 
 ### Initializer lists
-
 - You can initialize instance vars at the point of declaration - this seems to be sometimes called an intializer list:
 
 ```dart
@@ -282,7 +269,6 @@ class Point {
 ```
 
 ### Initialising inherited variables
-
 - More [here](https://dart.dev/tools/linter-rules/use_super_parameters)
 - In the following examples, the parent class `ShortcutManager` constructor takes a `shortcuts` parameter 
 - and so does the `LoggingShortcutManager` constructor
@@ -295,7 +281,6 @@ class LoggingShortcutManager extends ShortcutManager {
 ```
 
 ## Mixins
-
 - Mixins are a way of defining code that can be reused in multiple class hierarchies.
 - To use a mixin, use the with keyword followed by one or more mixin names:
 
@@ -330,5 +315,4 @@ mixin Musical {
 - More [here](https://dart.dev/language/mixins)
 
 ## Private classes
-
 - The underscore at the start of `_MyHomePageState` in [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/161dbb89bcf7d0ea0e4a3ea52049cb85fcd7437b) makes that class private and is enforced by the compiler.

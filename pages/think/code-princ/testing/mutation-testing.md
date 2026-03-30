@@ -5,7 +5,6 @@ permalink: /pages/think/code-princ/testing/Mutation-Testing
 ---
 
 ## Overview of mutation testing
-
 - The basic principle:
   - make a small change to the code and see whether your tests fail
   - if they don't, you draw the conclusion that your tests are not adequate
@@ -19,14 +18,11 @@ permalink: /pages/think/code-princ/testing/Mutation-Testing
   - You end up with a set of tests that tells you everything about how your code behaves. Then you can go away and decide if that's what the code SHOULD be... because otherwise you're maintaining your code's bugs.
 
 ## Useful resources
-
 - [Chris Shepherd's XConf talk on mutation testing](https://www.youtube.com/watch?v=h_DBFHWn3YE&list=PL8f-F_Zx8XA8ygwmHhY9KIhazYM7oh7Wk&index=8&t=0s)
 - [Mutation testing](https://www.guru99.com/mutation-testing.html)
 
 ## Demos
-
 ### Emily Bache - gilded rose
-
 - Details [here](/pages/think/code-princ/refactoring.md#emilys-gilded-rose-demo-videos) of Emily Bache's refactoring demo on Gilded Rose, which uses some mutation testing.
   - Specifically Part 1: [Using CombinationApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=zyM2Ep28ED8)
   - She used test coverage to get set up with decent approval tests

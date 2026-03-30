@@ -1,7 +1,5 @@
 ## Recipes
-
 #### Mushroom Omelette
-
 Servings 3
 
 calories per serving: 442
@@ -40,7 +38,6 @@ Ingredients
 | <br>Iron                   | 0 %  |
 
 #### Cook Well Cauliflower Tabbouleh
-
 Servings 18
 
 calories per serving
@@ -84,7 +81,6 @@ Ingredients
 | Calcium                    | 6 %  |
 | Iron                       | 1 %  |
 #### Cook well Lamb Patties
-
 Servings 14
 
 calories per serving
@@ -120,7 +116,6 @@ Ingredients
 | Calcium                    | 0 %  |
 | Iron                       | 0 %  |
 #### Pumpkin Pie
-
 Servings 28
 
 calories per serving
@@ -162,7 +157,6 @@ Ingredients
 | Iron                       | 0 %  |
 
 #### Low carb Chicken cauliflower cheese
-
 Servings 11
 
 calories per serving
@@ -210,7 +204,6 @@ Ingredients
 | Iron                       | 2 %  |
 
 #### Chicken Stir Fry Curry
-
 Servings 7
 
 calories per serving
@@ -254,7 +247,6 @@ Ingredients
 | Calcium                    | 1 %  |
 | Iron                       | 0 %  |
 #### Oscar Birthday Cake
-
 Servings 16
 
 calories per serving
@@ -297,7 +289,6 @@ Ingredients
 | Calcium                     | 6 %  |
 | Iron                        | 4 %  |
 #### Cauliflower And Chickpea Curry
-
 Servings 22
 
 calories per serving
@@ -341,7 +332,6 @@ Ingredients
 |Iron|1 %|
 
 #### Nutty Low Carb Apple & Grape Crumble
-
 Servings 15
 
 calories per serving
@@ -381,7 +371,6 @@ Ingredients
 | Calcium                     | 0 %  |
 | Iron                        | 0 %  |
 #### Clare Porridge
-
 Servings 1
 
 calories per serving
@@ -419,7 +408,6 @@ Ingredients
 | Calcium                     | 6 %  |
 | Iron                        | 10 % |
 #### Savoury Cheese Cake Quiche
-
 Servings 16
 
 calories per serving
@@ -469,7 +457,6 @@ Ingredients
 | Calcium                    | 30 % |
 | Iron                       | 2 %  |
 #### Decaf Filter Coffee With Unsweetened Almond Milk
-
 Servings 1
 
 calories per serving
@@ -506,7 +493,6 @@ Ingredients
 | Iron                       | 0 % |
 
 #### One Piece Peoperoni
-
 Servings 1
 
 calories per serving
@@ -540,7 +526,6 @@ Ingredients
 | Calcium                    | 0 % |
 | Iron                       | 0 % |
 #### Clare's Keto Low Carb Pancakes
-
 Servings 19
 
 calories per serving
@@ -582,7 +567,6 @@ Ingredients
 | Calcium                    | 3 %  |
 | Iron                       | 3 %  |
 #### Decaf Coffee With Cream & Almond Milk
-
 Servings 1
 
 calories per serving
@@ -619,7 +603,6 @@ Ingredients
 | Calcium                    | 1 %  |
 | Iron                       | 0 %  |
 #### Clare's Keto Almond Flour Pancakes
-
 Servings 6
 
 calories per serving
@@ -662,7 +645,6 @@ Ingredients
 | Calcium                    | 8 %  |
 | Iron                       | 8 %  |
 #### Decaf Filter Coffee With Soy Milk
-
 Servings 1
 
 calories per serving
@@ -698,7 +680,6 @@ Ingredients
 | Calcium                    | 6 % |
 | Iron                       | 0 % |
 #### Avocado Bacon And Saint Agur
-
 Servings 3
 
 calories per serving
@@ -735,7 +716,6 @@ Ingredients
 | Calcium                    | 12 % |
 | Iron                       | 1 %  |
 #### Mini Square Lindt 90%
-
 Servings 1
 
 calories per serving
@@ -769,7 +749,6 @@ Ingredients
 | Calcium                    | 0 % |
 | Iron                       | 0 % |
 #### Clementine And Cream
-
 Servings 1
 
 calories per serving

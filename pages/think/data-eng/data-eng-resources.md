@@ -7,18 +7,15 @@ permalink: /pages/think/data-eng/Data-Engineering-Resources
 ([Main Data Engineering directory is here](/pages/think/Data-Engineering))
 
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don’t ask me to share the code, because I can’t. They’re listed here purely for my reference.
 
 - [data-engineering (PRIVATE)](https://github.com/claresudbery/data-engineering.git)
     - Stuff learnt / played with during TW data engineering course.
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/data) (Data category)
 
 ## Background Reading
-
 - [What do you mean by 'Event-Driven'?](https://martinfowler.com/articles/201701-event-driven.html)
 - [NoSQL Guide](https://www.martinfowler.com/nosql.html)
 - [NoSQL Databases: An Overview | ThoughtWorks](https://www.thoughtworks.com/insights/blog/nosql-databases-overview)
@@ -28,5 +25,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [AggregateOrientedDatabase](https://www.martinfowler.com/bliki/AggregateOrientedDatabase.html)
 
 ## Misc
-
 - [DataEng tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=ea3db17b-65c9-49b7-b6f3-5dab6070e18e&query=tag%1FDataEng%1FtagGuid%3A1158c22a-9d46-436b-b9ff-89a04b185ba5%1Eview%3AVIEW%2FALL_NOTES&)

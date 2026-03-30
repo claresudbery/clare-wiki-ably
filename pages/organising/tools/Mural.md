@@ -1,9 +1,7 @@
 
 ## Select multiple objects
-
 - Shift + drag
 ## Keyboard shortcuts
-
 - Create a new sticky
 	- Make sure you've double-clicked inside the sticky as though you were going to type 
 		- (or maybe you've already done some typing)
@@ -12,11 +10,9 @@
 - Add a link to a sticky
 	- Ctrl/Cmd + K
 ## Group objects
-
 - Multi-select (Shift + drag)
 - Then Ctrl + G
 ## Convert text into stickies / postits
-
 1. Copy the multiple lines of text you want to paste to your mural.
 	1. Make sure each one is on a new line, and there are no blank lines between them
 2. Right-click the canvas (just canvas, not area) and select Paste.
@@ -24,14 +20,12 @@
 	1. Note: I don't see a dropdown arrow - I just Paste and they automatically get turned into stickies - BUT then a floating paste icon appears (like in Google Sheets), and if I click on it, I get the next bit...
 4. Select how you want your text to display: Single paragraph. Multiple sticky notes. Multiple paragraphs.
 ## Convert stickies into text
-
 - Select Sticky Notes:
 	- Use the Shift key to click and drag to select multiple sticky notes or hold Ctrl/Cmd and click each sticky note individually.         
 - Copy the text from the sticky notes: 
 	- While they're all selected, right-click and select Copy => Copy text
 - You can now paste the text elsewhere and it will come out as multiple lines of text - one line per sticky
 ## Convert stickies into Trello cards
-
 - Start by [[#Convert stickies into text]]
 - **Create a new card:** In Trello, go to the list where you want to add the cards and click the "Add a card" button. 
 - **Paste your list:** Paste the copied list of lines of text into the card title field. 
@@ -39,13 +33,11 @@
 	- At first it seems like it's just created one Trello card with a multiline title, but as soon as you hit Enter, it'll offer the toption to create multiple cards
 - **Confirm card creation:** Select "Create multiple cards" or a similar option (the exact wording may vary depending on the Trello version).
 ## Convert Trello cards into stickies
-
 - I [found this](https://gist.github.com/jeremyzilar/17f001c999e234083796215ca79e26eb), which achieves it via js in the console, but it's out of date and grabs the wrong data
 - Instead, I installed the Kolekti "Board Export" powerup, which costs ony $24 per year and is really nice / easy to use
 - The only gotcha is that although I initially signed up for the 14-day free period, I then lost track of what I was doing and when I clicked through to settings I ended up inadvertently signing up for a paid account and apparently having two accounts by accident
 - If you export to csv or Excel, you can open up the resulting spreadsheet and then copy/paste into Mural - initially you'll probably get text, but then you can click the floating "paste as" icon and choose "multiple sticky notes"
 ## Troubleshooting fuzziness
-
 - This was advised to me by an agent when I was having trouble because my text on my stickies was fuzzy and out of focus, even when I zoomed in
 	- ...although actually in the end I didn't do any of the below. I had more than one browser window open, so I could compare two Murals on two different screens. I closed Mural down in one browser window and then refreshed it in the other, and that fixed it. Then opened it up again in the other browser and it started working again.
 - (You might need to close the chat/browser in order to do this, so you can write to us again or send us an email at [support@mural.co](mailto:support@mural.co))
@@ -59,7 +51,6 @@
 5. In many situations these steps will resolve the issue, so please give them a try and let me know how you get on.
 
 ## Advanced searching
-
 - If you want to make searches case sensitive or search on whole words
 	- eg if you're trying to search for "AI"!
 - Click the A->T icon top right and select "find and replace" and then you get some advanced search options

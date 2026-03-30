@@ -5,9 +5,7 @@ permalink: /pages/coding/data/GovPaaS-And-Cloud-Foundry
 ---
 
 ## Gov PaaS Cloud Foundry Access
-
 ### Intro
-
 Cloud Foundry is an open source container-based architecture that runs
 apps in any programming language. Gov PaaS is a UK government digital
 service, which can be accessed via the Cloud Foundry (cf) utility:
@@ -15,7 +13,6 @@ service, which can be accessed via the Cloud Foundry (cf) utility:
 More info: <https://docs.cloud.service.gov.uk/get_started.html#get-started>
 
 #### Pre Requisties:
-
   - In order to connect, a user needs a Gov PaaS account..
   - `cf utility` needs to be installed following the instructions
     at <https://docs.cloud.service.gov.uk/get_started.html#get-started>
@@ -27,7 +24,6 @@ Note - when instantiating `cf login` for the first  time, you may have to
 provide the `-a` parameter with `api.cloud.service.gov.uk`
 
 ### Access
-
 1.  Install the "cf" utility:
     [https://docs.cloud.service.gov.uk/get_started.html#get-started](https://docs.cloud.service.gov.uk/get_started.html#get-started)
 

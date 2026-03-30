@@ -4,13 +4,11 @@ location: pages/coding/tools/leaf
 permalink: /pages/coding/tools/Spring-Boot
 ---
 ## Misc
-
   - Sample code base at [Cadogan
     (PRIVATE)](https://github.com/claresudbery/Cadogan)
   - These notes were originally written 2018
 
 ## Logging Config
-
   - Src/main/Logback-spring.xml – logging config
   - Want logging to be minimal, useful, but not affect performance
   - For debug use level=”debug”
@@ -23,7 +21,6 @@ permalink: /pages/coding/tools/Spring-Boot
   - default log location is same location as jar file
 
 ## Application.yml and VendorProperties
-
   - Environment-specific details, urls, access tokens etc are in
     src/main/resources/Application.yml
   - How are settings from application.yml used?
@@ -48,5 +45,4 @@ permalink: /pages/coding/tools/Spring-Boot
             [<span class="underline">http://www.baeldung.com/configuration-properties-in-spring-boot</span>](http://www.baeldung.com/configuration-properties-in-spring-boot)
 
 ## Gradle and Spring Boot
-
   - See section on Gradle page

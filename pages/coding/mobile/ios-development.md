@@ -5,11 +5,9 @@ permalink: /pages/coding/mobile/iOS-Development
 ---
 
 ## Swift & XCode
-
 See [separate page](/pages/coding/mobile/swift-xcode.md) - there is bound to be other iOS development stuff in there too.
 
 ## Creating icons
-
 - If you get an "invalid binary" error when trying to deploy, this might be because you haven't created assets / icons yet. 
 - [SquareFillXCode](https://github.com/claresudbery/SquareFillXCode) (accessibile to Clare only) has icons for all contexts in SquareFillXCode\Assets.xcassets\
 - You can use [Icon Set Creator](https://apps.apple.com/de/app/icon-set-creator/id939343785?l=en&mt=12) to create icons.
@@ -36,7 +34,6 @@ See [separate page](/pages/coding/mobile/swift-xcode.md) - there is bound to be 
 | App Store	| 1024x1024 pt (1024x1024 px @1x) |
 
 ## Launching on the app store
-
 - Follow the [review guidelines](https://developer.apple.com/app-store/review/)
 - [How to launch (2022)](https://instabug.com/blog/how-to-submit-app-to-app-store/)
 - [How to submit an updated app version](https://help.swiftic.com/hc/en-us/articles/201701881-Update-Your-App-on-the-Apple-App-Store)
@@ -46,5 +43,4 @@ See [separate page](/pages/coding/mobile/swift-xcode.md) - there is bound to be 
     - [My notes](/pages/coding/mobile/iOS-Development#in-app-purchases)
 
 ## Troubleshooting app crash / crashing on phone on startup
-
 - See [here](/pages/coding/mobile/swift-xcode.md#troubleshooting-app-crash--crashing-on-phone-on-startup)

@@ -4,7 +4,6 @@ location: pages/coding/infra/cloud/aws/leaf
 permalink: /pages/coding/infra/cloud/aws/Cloud-Formation
 ---
 ## Intro
-
   - You can access all Amazon APIs via Cloud Formation
       - Declarative
       - Use to create and manage resources in AWS setup

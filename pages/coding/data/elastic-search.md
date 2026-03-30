@@ -4,7 +4,6 @@ location: pages/coding/data/leaf
 permalink: /pages/coding/data/Elastic-Search
 ---
 ## General
-
   - To find out which version of ES: just log into that node and do
     **curl localhost:9200**
 
@@ -18,7 +17,6 @@ permalink: /pages/coding/data/Elastic-Search
   - My [“useful notes” for the Samba project](https://github.com/claresudbery/samba/blob/master/signposts-misc-files/useful-single-view-notes.md) (accessible to Clare only) contain some Elastic Search stuff
 
 ## Disable ELK on a server
-
   - Temporarily disable Elastic Search, Logstash and Kibana (set
     enabled=0 in the repo files you find here: /etc/yum.repos.d)
     
@@ -31,7 +29,6 @@ permalink: /pages/coding/data/Elastic-Search
       - (In those .repo files, set enabled=0)
 
 ## Querying ES
-
   - This command: **curl
     "thingelk.acmecorp.com:9200/thingelk-2019.02.05/\_search?sort=\\@timestamp:desc"
     -s -n | jq "." | less**
@@ -77,7 +74,6 @@ permalink: /pages/coding/data/Elastic-Search
         navigate as though it were a file
 
 ## CAT API and other ES APIs
-
   - Accessed like this from anywhere (including your local machine):
     **curl logs.acmecorp.com:9200/\_cat/master**
     
@@ -253,7 +249,6 @@ permalink: /pages/coding/data/Elastic-Search
   - Check cpu usage: **htop**
 
 ## Templates
-
   - (See also [“too few shards”](<#too few shards>))
 
   - The template defines how many shards you get amongst other things
@@ -332,7 +327,6 @@ permalink: /pages/coding/data/Elastic-Search
         problem.
 
 ## Nodes and Indices and Shards
-
   - Regular nodes and archive nodes
 
   - Archive nodes have the older indices
@@ -420,7 +414,6 @@ permalink: /pages/coding/data/Elastic-Search
   - If there is only one yellow shard, the cluster will be yellow
 
 ## Finding logs & analysing them
-
   - All logs are in /var/log
 
   - We have a slow query log on elastic search
@@ -442,7 +435,6 @@ permalink: /pages/coding/data/Elastic-Search
     from different days
 
 ## Comparing two slow-log files
-
   - We extracted the top 35 queries for each Elastic-Search slow-log log
     file from 2 different days (so we could compare them and see what’s
     changed), and put them into files: We used Joe’s log-analyse.py
@@ -546,7 +538,6 @@ permalink: /pages/coding/data/Elastic-Search
                 current row
 
 ## Shards
-
   - Check shard state: **curl -XGET -n
     'logs.acmecorp.com:9200/\_cat/shards?h=index,shard,prirep,state,unassigned.reason,node'
     -s | grep -v START | sort | less**
@@ -556,7 +547,6 @@ permalink: /pages/coding/data/Elastic-Search
         in that state
 
 ## Unassigned shards
-
   - When shards are assigned, that means that ES knows which nodes to go
     to for both primary and replica for each shard.
 
@@ -591,7 +581,6 @@ permalink: /pages/coding/data/Elastic-Search
         [<span class="underline">https://github.acmecorp.com/Observability/observability-toolbox.git</span>](https://github.acmecorp.com/Observability/observability-toolbox.git)
 
 ## Indices
-
   - When an index is closed, you can’t read / write and it doesn’t
     guarantee that it will keep a replica around
 
@@ -650,7 +639,6 @@ permalink: /pages/coding/data/Elastic-Search
       - Close index: **curl -XPOST 'localhost:9200/my\_index/\_close'**
 
 ## Deleting indices / yellow indices
-
   - We saw a lot of yellow indices in Testelk - just ended up deleting
     them.
     
@@ -731,7 +719,6 @@ permalink: /pages/coding/data/Elastic-Search
         second-from-last is total data size)).
 
 ## Allocating Shards
-
   - \! Note that it is possible to have shards on disk that are not
     listed in \_cat/shards - this could be because they belong to closed
     indices. Be wary of deleting them\!
@@ -745,7 +732,6 @@ permalink: /pages/coding/data/Elastic-Search
   - See Unassigned Shards section
 
 ## Fielddata
-
   - More here:
     [<span class="underline">https://www.elastic.co/guide/en/elasticsearch/guide/current/\_limiting\_memory\_usage.html</span>](https://www.elastic.co/guide/en/elasticsearch/guide/current/_limiting_memory_usage.html)
 
@@ -782,12 +768,10 @@ permalink: /pages/coding/data/Elastic-Search
         [<span class="underline">https://www.elastic.co/guide/en/elasticsearch/reference/2.4/fielddata.html</span>](https://www.elastic.co/guide/en/elasticsearch/reference/2.4/fielddata.html)
 
 ## Snapshot repository
-
   - See **closed indices:**
     <https://docs.google.com/document/d/1eeEXpBgsuWIIt_teRYAIbYxY9Zf7sdQNC6BKlw9BPVg/edit#heading=h.gjdgxs>
 
 ## Rolling Restart
-
   - Needed if, for instance, there are config changes
 
   - There’s a ruby script in the Chef cookbook you use to interact with
@@ -803,9 +787,7 @@ permalink: /pages/coding/data/Elastic-Search
     that machine?
 
 ## Script to find missing shards
-
 - [Here](https://github.com/claresudbery/Infra-Scripts/blob/master/observability-toolbox/missing_shards.py) (Clare only).
 
 ## Useful Queries
-
 - [Useful ElasticSearch Queries (from Samba) (available to Clare only)](https://docs.google.com/document/d/1CDjGin_uAAGl-0dCqQ0-3IzruRLEWk5b2MFPK2YHaXo/edit)

@@ -5,14 +5,12 @@ permalink: /pages/think/events/other-talks/SDD-Conf-2023
 ---
 
 # Intro
-
 - Note to self: I only attended two talks!
     - The rest of the time I was either sleeping, chilling or prepping / delivering my own two talks
     - I only attended two days, there are only 4 talks per day
     - The other talk I attended (Jules May), I missed the first half hour and anyway I was hungover, so didn't take live notes
 
 # Jules May - Tech Debt
-
 - Note: These notes were written the following day 
 - Tech debt obeys the same rules as financial debt
 - It has interest applied
@@ -27,7 +25,6 @@ permalink: /pages/think/events/other-talks/SDD-Conf-2023
     - He suggested this is not proper effective refactoring, this is just "bug splatting"
 
 # Allen Holub - using TDD to design architecture ("Design by Coding")
-
 - TDD has nothing to do with testing
   - Dan North, example guided design
 - You won't test exceptions or corner conditions (??)
@@ -128,7 +125,6 @@ permalink: /pages/think/events/other-talks/SDD-Conf-2023
     - start at the outside edge - the_guard.signInACustomer() then get finer and finer grained as you move down into the structure
 
 # ideas for me
-
 - from allen's talk
     - gif of your own cat sleeping, on a loop, to represent calm, lack of stress
     - pretty much everyting he's saying is stuff I also say about TDD - I could do a talk like this!

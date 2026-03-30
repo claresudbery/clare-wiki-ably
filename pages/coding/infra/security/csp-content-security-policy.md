@@ -4,7 +4,6 @@ location: pages/coding/infra/security/leaf
 permalink: /pages/coding/infra/security/CSP-Content-Security-Policy
 ---
 ## What is CSP
-
   - **Content Security
     Policy** ([CSP](https://developer.mozilla.org/en-US/docs/Glossary/CSP))
     is an added layer of security that helps to detect and mitigate
@@ -18,7 +17,6 @@ permalink: /pages/coding/infra/security/CSP-Content-Security-Policy
   - [More here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
 ## A Half Example
-
   - It’s available
     [here](https://github.com/claresudbery/samba/tree/master/csp-testing)
     (to Clare only).

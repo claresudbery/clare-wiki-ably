@@ -5,7 +5,6 @@ permalink: /pages/think/life/admin/DIY
 ---
 
 ## How to do a good job of silicone sealant / silicon sealant
-
 - [This video](https://youtu.be/nbKcZLSbr3Q?si=9P4wUWxwcLReqbhq) is a good quick non-nonsense tutorial
 - Quick summary:
   - If doing the edge of a bath, fill the bath with water. 

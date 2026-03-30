@@ -6,7 +6,6 @@ permalink: /pages/think/life/admin/Plumbing
 ---
 
 ## Fixing leaks to pipes under sink
-
 - [https://homeguides.sfgate.com/fix-pipes-come-loose-under-sink-31304.html](https://homeguides.sfgate.com/fix-pipes-come-loose-under-sink-31304.html)
 - [https://www.hunker.com/13417096/how-to-install-slip-joint-washers-in-plumbing](https://www.hunker.com/13417096/how-to-install-slip-joint-washers-in-plumbing)
 - [https://youtu.be/1b0asFPDzfA](https://youtu.be/1b0asFPDzfA)
@@ -23,9 +22,7 @@ permalink: /pages/think/life/admin/Plumbing
 ![sink-pipe-coupler](/resources/images/sink-pipe-coupler.JPEG)
 
 ## Installing a new kitchen mixer tap
-
 ### How to attach the pipes
-
 When the pipes look like this...
 
 ![isolation-valve.jpeg](/resources/images/isolation-valve.jpeg)
@@ -44,7 +41,6 @@ When the pipes look like this...
     - "Also a top tip - If you are installing a tap from Grohe, Germans use valves that are based on metric rather than imperial measurements and are ever so slightly differently sized from standard UK plumbing so you need an adaptor (see [below](<#how to convert to 15mm when what you want is female end>)). Fine for going into compression joints, not fine for screwing onto things like isolator valves."
 
 ### How to get good water pressure from a tap
-
 The things that make a difference are:
 
 - 1. Your water pressure
@@ -89,7 +85,6 @@ Clare.
 ![plumbing under sink](/resources/images/plumbing-under-sink.jpeg)
 
 ### How to convert to 15mm when what you want is female end
-
 Posted 21/7/24, [here](https://community.screwfix.com/threads/convert-15mm-male-to-female-when-connecting-pipes-to-fit-new-tap.275767/)
 
 Hi
@@ -138,7 +133,6 @@ Here are the two products next to each other. You can clearly see the difference
 ![good-and-bad-adaptors-side-by-side](/resources/images/good-and-bad-adaptors-side-by-side.png)
 
 ## Changing a washer on an old tap
-
 - The old kind that our original taps were: [Change a tap washer](https://youtu.be/QpVMgbPQQj4)
 - The newer kind that our current taps are: [Replacing a tap washer & using a reseating tool](https://youtu.be/lueb03Bb-vY)
 - I couldn't undo the screw so I ended up following [this advice](/pages/think/life/misc-life-stuff.md#loosening--untightening-a-stuck-old-screw).

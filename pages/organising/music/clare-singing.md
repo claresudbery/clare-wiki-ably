@@ -5,7 +5,6 @@ permalink: /pages/organising/music/Clare-Singing
 ---
 
 ## Clare singing
-
 - [Here is a rough playlist](https://www.youtube.com/watch?v=JXjhYtWbEdI&list=PLNJwA3LE0_4FFJBRV57c-ECKdnN0Q6-pk). I don't have any decent recordings because I am a rank amateur! So the quality is patchy to say the least.
 - The songs on the playlist are: 
   - *Molly the Bandit* - written by me, accompanied on the hoof (they'd never even seen the music before) by a fantastic band called Geriatric Jazz.
@@ -18,9 +17,7 @@ permalink: /pages/organising/music/Clare-Singing
   - *For You* (Eric Bibb) - Ally on guitar. Recorded at our wedding (so you get to see my amazing wedding dress - this is the only one with actual video footage). I was kind of distracted with, you know, getting married... so I don't think I did a brilliant job, but the context makes it moving.
 
 ## Chitty chitty bang bang Doll on a music box duet
-
 ### Doll on a music box
-
 What do you see
 You people gazing at me
 You see a doll on a music box
@@ -38,7 +35,6 @@ While
 I'm turning around and around
 
 ### Truly scrumptious 
-
 Truly Scrumptious
 You're truly truly scrumptious
 Scrumptious as a cherry peach parfait

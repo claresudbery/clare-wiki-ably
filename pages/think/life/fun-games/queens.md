@@ -5,7 +5,6 @@ permalink: /pages/think/life/fun-games/Queens
 ---
 
 ## Tips on how to play
-
 - Look out for shapes which only occupy one square - give it a crown instantly
 - Look for shapes which only inhabit one row/col - rule out everything else in that row/col
 - Look for shapes which inhabit the whole of one row or col - rule out everything else in that shape

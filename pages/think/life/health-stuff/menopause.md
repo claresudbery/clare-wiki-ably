@@ -5,7 +5,6 @@ permalink: /pages/think/life/health-stuff/Menopause
 ---
 
 ## Menopause and Perimenopause
-
 - All 4, ['Davina McCall: Sex, Myths and the Menopause'](https://www.channel4.com/programmes/davina-mccall-sex-myths-and-the-menopause?cntsrc=social_share_ios_davina_mccall_sex_myths_and_the_menopause)
 - [Davina McCall and Dr Louise Newson (@menopause_doctor) on Instagram](https://www.instagram.com/p/COgI9QDFVrG/?igshid=mznti6ls0hmt&fbclid=IwAR09zdZ8uYlwl6KyBSC3OeeRrFNb7BC2GNOxcoczYYrT7EmBGP8zzYshJw8) - interview video about how HRT is less dangerous and more beneficial than people realise
 - [The Balance App](https://www.menopausedoctor.co.uk/resources/the-balance-app) - for logging symptoms, and also contains useful links and articles

@@ -4,7 +4,6 @@ location: pages/think/code-princ/coding-theory/leaf
 permalink: /pages/think/code-princ/coding-theory/Functional-vs-OO
 ---
 ## Misc
-
   - Interesting conversation about the benefits of the functional
     approach
 
@@ -15,7 +14,6 @@ permalink: /pages/think/code-princ/coding-theory/Functional-vs-OO
     > here</span>](https://twitter.com/ClareSudbery/status/1223179502198673409?s=20)
 
 ## Functional programming - smells
-
   - Strength of functional = heterogeneity and lack of
     strongly-typedness
   - But this means you don’t have the confidence of the compiler via

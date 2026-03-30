@@ -5,18 +5,15 @@ permalink: /pages/coding/webdev/js/Ember-JS
 ---
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [cadogan (PRIVATE)](https://github.com/claresudbery/cadogan) 
 
 ## Other Resources
-
 - Chrome bookmarks: Useful | Coding | Ember
 - [Why is PhantomJS disconnecting? - Testing - Ember.JS](https://discuss.emberjs.com/t/why-is-phantomjs-disconnecting/9636/8)
 
 ## Intro to Ember
-
   - These notes were written 2018
   - There might be some useful sample code at [Cadogan
     (PRIVATE)](https://github.com/claresudbery/Cadogan)
@@ -63,7 +60,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         only this bit gets rerendered
 
 ## Installing & Running an Ember Code Base
-
   - (NB: This was based on another code base which may have been
     customised beyond vanilla Ember JS)
   - Clean clone
@@ -83,25 +79,21 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         change ENV.APP.BACKEND\_URL (in environment.js?)
 
 ## Debugging
-
   - To debug: add the word debugger into the javascript, then inspect
     element and it will hit a breakpoint at the word debugger
 
 ## Code Structure
-
   - This is the description of a particular code base (available
     \[here\]( <https://github.com/claresudbery/cadogan>) to Clare only),
     so I don’t know if it applies generally to all Ember code bases
   - All the code is in the app folder:
 
 ### Config
-
   - Config folder: Main config file: environment.js:
       - Some of it is default stuff provided by ember js
       - Several environment-specific configs
 
 ### Folders and root files
-
   - Dist folder is created when you build the code
   - Public folder – static resources: images, fonts, css
   - Scripts – deployment sripts and contentful syncing scripts
@@ -122,7 +114,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         analytics
 
 ### Components:
-
   - Reusable HTML
   - Much easier to test
   - Often don’t have much in their js files
@@ -130,7 +121,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     component
 
 ### Controllers:
-
   - This is where your actions live
   - Actions are referenced in templates
   - You will automatically get a controller created for you behind the
@@ -138,12 +128,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - The file names are the same as the corresponding routes
 
 ### Helpers:
-
   - Eg price-resolver
       - See last line – registers it as a helper in ember framework
 
 ### Routes:
-
   - App/router.js refers to the routes folder – sets up all our routes
   - Routes are predefined – path is fixed – can’t be reused in different
     locations
@@ -177,7 +165,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - see routes/application.js – title is set using tokens
 
 ### Services:
-
   - Eg Offers.js
   - Uses the backend service
   - Fetches data via backend
@@ -185,14 +172,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     which is then fetched in routes/offer.js
 
 ### Styles:
-
   - We use sass, ie \*.scss, which allows us to have variables and logic
     in our css
   - Compiles down to css
   - You can see the compiled css in the dist/assets folder
 
 ### Templates:
-
   - One-to-one relationship between hbs files and js files
       - Hbs files are templates
   - Most templates are tied to routes via naming convention
@@ -207,7 +192,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
               - Used by offer route (routes/offer.js)  
 
 ## Running Tests
-
   - Run subset of tests: On the command line: **ember test -f “Unit |
     Service | offer”**
       - “Unit | Service | Offers” is the name of an individual suite of
@@ -228,13 +212,11 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     command line.
 
 ### Configuring Tests from Command Line
-
   - package.json – scripts section
       - to run any of these, syntax on command line is **npm run
         \[script name\]**
 
 ### Integration tests
-
   - (sample [code base is here](https://github.com/claresudbery/Cadogan)
     – available to Clare only)
   - These use Ember-qunit, which renders Ember components

@@ -5,11 +5,9 @@ permalink: /pages/coding/mobile/Swift-and-XCode
 ---
 
 ## iOS Development
-
 See [separate page](/pages/coding/mobile/iOS-Development) - there may be other iOS XCode stuff in there too.
 
 ## Misc utils
-
 - [hacking with swift](https://www.hackingwithswift.com/)
     - Useful tool for getting better at ios dev
     - Recommended by one of the Code First Girls graduates
@@ -19,7 +17,6 @@ See [separate page](/pages/coding/mobile/iOS-Development) - there may be other i
     - Notes on using pods in XCode are [here](/pages/coding/mobile/Cocoapods#in-xcode)
 
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 
@@ -29,7 +26,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Can't quite remember what this is, but seems to be me learning about making iOS games?
 		
 ## To rename a UI component
-
 Easiest thing is to delete the property in the view controller, then set up a new connection:  
 Open storyboard (click in project explorer)  
 Open editing assitant (interlocking circles icon, top right)  
@@ -38,11 +34,9 @@ Now delete the outlet:
 while storyboard is open, click the right-facing arrow, top right, to see connections inspector. find the original outlet and click the cross to delete it.  
 
 ## Add a border to just one side of a shape 
-
 [Details here](http://stackoverflow.com/questions/17355280/how-to-add-a-border-just-on-the-top-side-of-a-uiview)
 
 ## Converting from Swift 3.0 to Swift 5.0
-
 - I found this slightly hard but not as bad as I feared. Basically I did the following:
     - Upgraded XCode
     - Manually changed the code from Swift 3.0 to Swift 4.0 by editing `SWIFT_VERSION` in `MyProjectName.xcodeproj/project.pbxproj`
@@ -50,11 +44,8 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
 - I documented the full process vis a question in Stack Overflow [here](https://stackoverflow.com/questions/69354121/how-do-i-migrate-from-swift-3-using-xcode-12-4/69354203#69354203).
 
 ## DEPLOYMENT
-
 ### Deploying to your phone
-
 #### Subsequent times
-
 - Plug your phone in to laptop using lightning cable
 - Select your phone as deployment target
     - Product => Destination => select your phone under iOS device
@@ -69,7 +60,6 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - see other ideas in this section
 
 #### First time
-
 - Add your apple ID:
     - XCode menu => Preferences => Accounts
     - Click the + button bottom left
@@ -96,7 +86,6 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
         - including detailed instructions of what to close and what to open and in what order
 
 #### Fixing problems with developer licence / signing certificate apple ID after you reset keychain password
-
 - fix Apple account
     - XCode menu => Preferences => Accounts
     - Re-enter details
@@ -107,7 +96,6 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - there will be errors with things you can click to re-enter password - probably in two places
 
 #### Error about certificate when deploying
-
 - "Invalid Provisioning Profile Signature. The provisioning profile included in the bundle 'ClareSudbery.WordMistress' (Payload/WordMistress.app) cannot be used to submit apps to the iOS App Store until it has a valid signature from Apple. For more information, visit the iOS Developer Portal. With error code STATE_ERROR.VALIDATION_ERROR.90165 for id 0a31e412-e51d-4966-bf7f-51c61b6732ad"
 - I was deploying from XCode using automatic signing. I whad just installed an OS update (Monterey), but the error happened both before and after the update.
 - Eventually the error went away
@@ -120,11 +108,9 @@ while storyboard is open, click the right-facing arrow, top right, to see connec
     - I'd originally tried to deploy v 5.9 but it failed with same error as above (I think). At the time I thought it might be because my laptop was awaiting an OS upgrade, so I carried on working and waited for a suitable pause to install the OS update. In the interval I created v 6.0. After the upgrade I went straight to v 6.0 - missing out 5.9 - and got the same error. Ater I'd done the things above I went back and tried to deploy 5.9 - which succeeded. So maybe the problem was that aftre the upgrade I was trying to deploy them out of order?
 
 #### When it tells you to check Devices & Simulators window
-
 - Go to Windows => Devices and Simulators
 
 ### Deploying to Apple
-
 These are my notes from my [SquareFill app](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only), so might be quite specific to me.
 
 - 1)   ! The first thing you need to do is increment the version / build number:  
@@ -206,19 +192,15 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
                 - The data you enter under "what to test" doesn't get emailed to testers. But if they open the TestFlight app on their device and click on the app icon, it says "What to test" and if they click on "more" they'll see the text you entered.
 
 ## Creating icons
-
 - See [ios dev page](/pages/coding/mobile/iOS-Development#creating-icons)
 
 ## Data persistence
-
 - There are many different types of data persistence
     - [This article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) has a good description of all the different wys you can store data _locally on a device_.
     - See sections below for more detail.
 
 ### CoreData
-
 #### Quick-start to add CoreData to an existing project
-
 - Create a new file and choose DataModel as its type
     - This will open the datamodel editor
     - you can return to this any time by double clicking the data model from the list of files on the left
@@ -251,7 +233,6 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - To get a nice simple starting point, see the commits when I set this stuff up for the first time in WordMistress - see commit 1770b15.
 
 #### My original notes
-
 - I used the CoreData approach for saving game state in [SquareFill](https://github.com/claresudbery/SquareFillXCode) (accessible to Clare only).
 - ! [This useful-ish article](https://iosapptemplates.com/blog/ios-development/data-persistence-ios-swift/) helps you get started
     - It talks about creating a data model but doesn't say how. 
@@ -300,7 +281,6 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - I got this working in my GridGateway class. My code there will probably end up in GameStateGateway, but you can see an intermediate working version in [this commit](). 
 
 ### Restoring app state using built-in functionality
-
 - I tried doing this via ViewController using [this article as a guide](https://developer.apple.com/documentation/uikit/uiscenedelegate/restoring_your_app_s_state), and you can see my attempt in [this commit]() (accessible to Clare only), but it didn't work - the relevant code never got fired.
     - Actually that article's pretty hopeless - the article contradicts itself, contradicts the code base, and mixes up two different methods of doing things so it's really hard to tell which is which - both in article and in sample code base
     - and then you find the disclaimer that says in some circumstances it will get overwritten...
@@ -309,14 +289,12 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
     - ...which I seem to have got working pretty well (see notes above).
 
 ## XCode Settings
-
 - Dark mode:
     - XCode menu => Settings
         - General => Appearance => Dark
         - Themes => Classic (Dark)
 
 ## XCode Keyboard Navigation
-
 - Find references:
     - Splat + click ("Command-click") on the name of the method, and select "Callers" from the resulting menu.
 - Go to definition: Ctrl + Splat + J
@@ -335,7 +313,6 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - Run all tests: Splat + U
 
 ## XCode Debugging
-
 - More [here](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs)
 - To watch particular variables:
     - Use console, bottom right, where logging info occurs
@@ -343,7 +320,6 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 
 
 ## New classes and their targets
-
 - Each new class will have "targets" specified, which define the scope that class will be available in.
     - You get a dialog that allows you to specify this if you do right-click new file from the file organiser (in the panel on the left if you click the file icon)
     - Otherwise right-click the file in the file organiser and choose "Show file inspector" which will appear on the right.
@@ -354,13 +330,11 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
         - Then later I discovered the failure in question only happened when building / running the tests. The class in question was accessed in viewDidLoad in ViewController (but not in tests), but when I changed it to add the test project as a target, the error went away. Maybe because the ViewController was somehow accessed by test code?
         
 ## Parameterised tests / multiple test cases in Swift / XCTest
-
 - I used [this article](https://briancoyner.github.io/articles/2015-11-28-swift-parameterized-xctestcase/) in combination with the [documentation on defaultTestSuite](https://developer.apple.com/documentation/xctest/xctestcase/1496289-defaulttestsuite), which has now changed from a func to a var
     - Note that it's not made clear in the article, but all methods shown are designed to go in the same class
     - My implementation of this is visible [here](https://github.com/claresudbery/SquareFillXCode/blob/48f4235b477854ee1f8b5efc487389e95713cb48/SquareFillXCodeTests/SquareFillColourTests.swift) (accessible to Clare only) - it's easier to follow with a real example
 
 ## Questions
-
 - Why am I getting the error "Type of expression is ambiguous without more context" when I try to include the following line of code in my test?
     - In `testSquareCyclesRainbowColourWhenCelebrating`, in `SquareViewTests.swift`
     - I had this: ` Asserter.AreEqual(actual: square.Colour, expected: SquareFillColour.Orange);`
@@ -372,7 +346,6 @@ These are my notes from my [SquareFill app](https://github.com/claresudbery/Squa
 - Surely I made notes on all this stuff before? What did I do with them??
 
 ## In App Purchases
-
 I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-in-app-purchase-tutorial-getting-started), but for an app that already existed - was being deployed to Test Flight but hadn't yet been launched in app store. This is what I needed to do:
 
 - Sort out the tax / bank account stuff: [AppStore Connect](https://appstoreconnect.apple.com/) => Agreements, Tax and Banking (on the home page, BEFORE you click thrugh to an individual app) => Paid applications => Click any links you see in that row and follow instructions
@@ -441,13 +414,11 @@ I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-i
         - Scroll down in the list - In-App Purchase is quite low down - select it and double-click
 
 ## Submitting / Deploying to the App Store
-
 - Sections below help with details. 
 - Note that you'll keep clicking Save and submit and it'll keep giving you links to fill more stuff in.
 - It takes a while!
 
 ### Useful links
-
 - [A CodeWithChris tutorial](https://codewithchris.com/submit-your-app-to-the-app-store/)
 - [Guidance from Apple](https://developer.apple.com/ios/submit/)
 - [Apple product page guidance](https://developer.apple.com/app-store/product-page/)
@@ -455,44 +426,36 @@ I followed [this in-app purchases tutorial](https://www.raywenderlich.com/5456-i
 - [Screenshot sizes and guidelines from Apple](https://help.apple.com/app-store-connect/?lang=en/#/dev4e413fcb8)
 
 ### Resubmitting an app
-
 - If you've already submitted a version but it failed and you want to try again, you'll need to edit details like version number (rather than adding a new version - this confused me for a while)
 - On the App Store tab you'll see something like "iOS app 3.8"
 - As well as editing version number, you'll also need to scroll down to the Build section at the bottom, then hover over it to remove that build (a red icon will appear on far right) and then add a new build.
 - Once you've saved all the details (top right), you can click the Add for review button - also top right (or not, if you haven't given it all the data it wants)
 
 ### Troubleshooting App Review / App Store Submission
-
 - I've written some notes on this [here in Trello](https://trello.com/c/dyzFQgos/941-app-store-submission).
 
 ### Routing App Coverage File
-
 "According to apple's AppStore guidelines, If your app uses location to provide routing information, you must supply a geographic coverage file before submitting your app to App Review. 8 Dec 2020"
 
 ### Copyright
-
 Put your name or your company name. Even if you're not actually registered for copyright, this can help in the event of a claim. Include a date.
 Like this: 2022 Sudbery Software Engineering Ltd
 
 ### Privacy Policy URL
-
 You'll need a privacy policy because if you offer support via a web form that collects email addresses.
 
 En (UK): https://www.iubenda.com/privacy-policy/42682554
 En (US): https://www.iubenda.com/privacy-policy/62922505
 
 ### Description, keywords etc
-
 - !!! If you have more than one primary language (I had EN(UK) and EN(US)) then you have to enter all this stuff TWICE. I got caught out because I only edited it in UK and not in US. I suspect this was a rod I created for my own back by having two primary languages - UK and US - I probably should have just stuck with one.
 - See Wordlessly notes.md for values saved for these inputs
 - There are character limits - on Mac the quickest way I found of counting characters was to paste into VS Code and look at the column count at the bottom of the window.
 
 ### App clips
-
 An App Clip is a small part of an app that lets you do a task quickly, like rent a bike, pay for parking, or order food.
 
 ### Screenshots
-
 - You only need to do them (as of Feb 2022) for the following:
     - iPhone 11 Pro Max (6.5 inch) (1242 x 2688 pixels)
     - iPhone 8 Plus (5.5 inch) (1242 x 2208 pixels)
@@ -503,7 +466,6 @@ An App Clip is a small part of an app that lets you do a task quickly, like rent
 - also [more here](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
 
 ### App Previews
-
 - You only need to do them (as of Feb 2022) for the following devices:
     - according to the [article I read](https://appradar.com/blog/ios-app-screenshot-sizes-and-guidelines-for-the-apple-app-store)
         - iPad Pro 2nd gen (12.9 inch)
@@ -579,13 +541,11 @@ zsh completions have been installed to:
 - [More here](https://developer.apple.com/support/app-previews/)
 
 ## How to lock screen orientation / prevent autorotate
-
 - Blimey, this is NOT easy to Google!
 - This is how you do it: Add this line to your main view controller (as I've done in SquareFill and Wordlessly):  
 `override public var shouldAutorotate: Bool {return false;}`
 
 ## String interpolation
-
 Like this:
 
 ```CSharp
@@ -594,11 +554,9 @@ var str = "Your score was \(score)"
 ```
 
 ## Emoji / Emoticon Unicode icon List
-
 [Full list](https://unicode.org/emoji/charts/full-emoji-list.html)
 
 ## Build running really slowly
-
 - I got this after I changed to release build and didn't change back to debug
 - This also meant I couldn't set breakpoints!
 - To select debug build:
@@ -608,7 +566,6 @@ var str = "Your score was \(score)"
     - Check the Debug executable checkbox
 
 ## Colour contrast testing for colour blind people / WCAG guidelines / accessibility
-
 - Use [this tool](https://color-contrast-checker.deque.com/)
     - If you have a colour defined in XCode like this...
     - `red: CGFloat(139.0/255.0), green: CGFloat(0/255.0), blue: CGFloat(139.0/255.0)`
@@ -616,17 +573,14 @@ var str = "Your score was \(score)"
 - More info [here](https://www.deque.com/blog/testing-color-contrast-in-mobile-apps/#TestingMethodologies)
 
 ## Various links and notes on using shapes and textures
-
 - Currently [still in Trello](https://trello.com/c/jlUegr0O/407-add-textures-as-backgrounds-and-make-panels-a-particular-shape) - need copying over here.
 
 ## Entering in-app purchase instructions
-
 - !! It turns out there's a separate text input for in-app purchases which gets used for app review. This is why they kept complaining they couldn't fnd my in-app purchases!
     - It's at the bottom of the in-app purchases page when you configure it in App Store Connect
     - First select the app, then select In-App Purchases ob the left under Features, then scroll to Review Notes at the bottom of the page.
 
 ## Changing project settings without all the pointing and clicking
-
 - There's a file called *.pbxproj which contains a text version of all the settings you see in XCode when you select the top level of the project folder
 - In XCode this will be described as *.xcodeproj and will have sections for things like Info and Build Settings
 - In Finder, you will only see *.xcodeproj
@@ -636,7 +590,6 @@ var str = "Your score was \(score)"
     - eg in XCode the setting called "iOS Deployment Target" is in the text file as "IPHONEOS_DEPLOYMENT_TARGET"
 
 ## Testing with older simulators
-
 - To add a simulator for an older iPhone version in Xcode, you can do the following: 
 - Open Xcode 
 - Select Window > Devices and Simulators 
@@ -653,14 +606,12 @@ var str = "Your score was \(score)"
 - Click Create to create the new simulator
 
 ## Troubleshooting app crash / crashing on phone on startup
-
 - Try a full rebuild and deploy
 - Try running app on phone direct from XCode
   - After that, it's installed direct to your phone and it stays there
   - Note that if you try downloading via TestFlight again after this, it may stop working again
 
 ## Troubleshooting error re LSApplicationCategoryType key when distributing app
-
 - Error seen after creating an archive and clicking Distribute app in the Organiser window
 - "The product archive is invalid. The Info.plist must contain a LSApplicationCategoryType key, whose value is the UTI for a valid category."
 - Solution: Select a category from the dropdown in the Project settings
@@ -668,7 +619,6 @@ var str = "Your score was \(score)"
 - More here: https://forums.developer.apple.com/forums/thread/737134
 
 ## Troubleshooting uploaded archive not appearing in App Store Connect
-
 - I uploaded an archive and it didn't appear in App Store Connect
 - Also, in Organizer I kept seeing the wrong versions listed ready for deployment
 - It turned out I'd built a Mac OS archive by accident instead of an ios archive!

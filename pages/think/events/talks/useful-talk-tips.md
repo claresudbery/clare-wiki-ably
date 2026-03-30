@@ -5,23 +5,19 @@ permalink: /pages/think/events/talks/Useful-Talk-Tips
 ---
 
 ## Docs and Blog Posts and Talks
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/presenting) (Presenting category)
 - There is a video available of me doing a whole talk on this topic. 
     - Sadly I can't share it because it was an internal workshop at Made Tech and contains video footage of workshop participants whose permission I don't have for sharing.
     - (Note for Clare: It's currently in MT google drive / for sharing and also in OneDrive / for sharing)
 
 ## Effective use of different presentation tools
-
 [See separate page](/pages/think/events/talks/Presentation-Tools).
 
 ## Asking for feedback after a talk
-
 What thing did I do that was most helpful to you?
 What thing could I have done to help you more?
 
 ## Keeping track of talks submitted and delivered
-
 I have various things that I do:
 
 - I have a public-facing web page which lists upcoming and previous talks - v simple to keep updated, means that I can just share it with people who want to know more, and also means I can keep track of what I've talked about, when and where. I frequently refer to it, it's really useful: https://medium.com/a-woman-in-technology/events-28336c2586df. The page also contains links to event websites and any videos released after the event, which is also useful.
@@ -31,14 +27,12 @@ I have various things that I do:
 - What I don't have is anything indexed by talk title - my folder structure effectively indexes by event - but that's fine because I tend to tweak each talk for each event so it means I have a snapshot of what the talk looked like when I delivered it for that event. Also I can just scan / search my web page listing talks.
 
 ## Quick tips for writing and delivering a talk / public speaking
-
 - There is a video available of me doing a whole talk on this topic. It's not currently publicly available but I'm happy to share it if you contact me (you can DM or @ me on Twitter).
     - (Note for Clare: It's currently in MT google drive / for sharing and also in OneDrive / for sharing)
 
 Quick tips:
 
 ### Connecting with the audience
-
 - Tell a story - think about beginning, middle and end. Take the audience on a journey
     - Good stories have conflict, turning points and resolution
         - Start with a problem (illustrated with personal colour), then get to a solution via at least one "aha" moment 
@@ -64,7 +58,6 @@ Quick tips:
         - There are [tips here](/pages/think/events/talks/Presentation-Tools#google-slides---remote-presenting) on arranging your screen with Google Slides 
 
 ### Confidence: Things you might worry about but actually there's no need
-
 - The audience are your friends, they do not wish you harm
     - If they do, that’s their problem not yours
     - But it’s VERY VERY UNLIKELY
@@ -91,7 +84,6 @@ Quick tips:
 - THE AUDIENCE ARE YOUR FRIENDS
 
 ### Delivery
-
 - Don't write it out as a script unless you are supremely confident at your script reading / performing skills, or if you're totally terrified and it helps to calm you (see below)
     - You're much more likely to get good results if you write out simple bullet points (see below), then use them as prompts and allow the actual words to come out naturally on the day
         - This will make it sound much more relaxed and less stilted
@@ -130,7 +122,6 @@ Quick tips:
         - Also if the talk is being recorded, the question is probably not audible on the recording
 
 ### Talk structure
-
 - First 45 seconds: Frame the problem in an innovative way, to grab the attention of the audience. 
 - Have five main points, and (supposedly) don’t go beyond five... the optimum is three points! 
     - They can be broad categories though
@@ -142,7 +133,6 @@ Quick tips:
     - Reiterate the most important points
 
 ### Talk content
-
 - What are you trying to communicate? What is your message, in 10 words? 
     - This will help you to structure your talk and decide what to include and what to leave out
 - Talk about what you know

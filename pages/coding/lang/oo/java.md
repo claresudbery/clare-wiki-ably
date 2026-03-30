@@ -5,7 +5,6 @@ permalink: /pages/coding/lang/oo/Java
 ---
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [2Wheeler-Ingester-London-Summer-2018 (PRIVATE)](https://github.com/claresudbery/2Wheeler-Ingester-London-Summer-2018)
@@ -14,7 +13,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [interview-codebase-java (PRIVATE)](https://github.com/claresudbery/interview-codebase-java)
 
 ## Running a java project
-
 - You could just open your code entry point (often `Main.java`) in IntelliJ IDEA, and click the big green Play button
 - Or...
 - You could run the following from the root:

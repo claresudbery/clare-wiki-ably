@@ -5,7 +5,6 @@ permalink: /pages/coding/tools/Git
 ---
 
 ## Git Quick Start
-
 * Check status: type `git status`
  
 * To fetch code: `git pull --rebase`
@@ -46,17 +45,14 @@ git config --global user.email "youremail@yourdomain.com"
 ```
 
 ## Git Misc
-
 - [ohshitgit.com](https://ohshitgit.com/) - A lovely little site by the wonderful [Katie Sylor-Miller](https://twitter.com/ksylor), designed to get you out of those horrible git messes you might get yourself in, using simple language.
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [Git-Playground](https://github.com/claresudbery/Git-Playground)
 
 ## Rename master branch to main
-
 - "master" is problematic language because of its connotations of enslavement. Increasing numbers of people are renaming to `main` instead.
 - Like this:
 - Locally:
@@ -73,7 +69,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 
 ## Git autostash
-
   - `git autostash`
     
       - You use it to stop you having to do git stash, git pull rebase,
@@ -94,7 +89,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         docker container
 
 ## Git submodules
-
   - This command allows you to loop through all submodules: `git
     submodule foreach git pull`
     
@@ -128,7 +122,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
             sync`?) but should probably be using ssh (see below).
 
 ## Troubleshooting GitHub access
-
 - If you get an error like this: "ERROR: Permission to repo/reponame.git denied to claresudbery.
 fatal: Could not read from remote repository. Please make sure you have the correct access rights
 and the repository exists."
@@ -137,7 +130,6 @@ and the repository exists."
   - It might be that someone has added you as a collaborator but you have ***forgotten to accept the invite***. Check your email!!
 
 ## Use Personal Access Token to access repos
-
 - If you get the error "Support for password authentication was removed on August 13, 2021. Please use a personal access token instead." (possibly in an email)
   - or if you get an email saying your personal access token has expired
   - or if you get "authentication failed" when trying to push to GitHub from command line
@@ -160,7 +152,6 @@ and the repository exists."
 - [More here](https://stackoverflow.com/a/51505417).
 
 ## Use ssh to Access Repos (instead of https)
-
   - Are you sure you want ssh, and not [personal access token](<#use personal access token to access repos>)?
 
   - Ssh stuff:
@@ -240,7 +231,6 @@ and the repository exists."
             name
 
 ### Troubleshooting error: "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!"
-
 - You might get this when pushing or pulling, around March 2023.
 - [Article here explains the fix](https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/)
 - I found on Windows in GitBash that I could manually edit `known_hosts`
@@ -251,7 +241,6 @@ and the repository exists."
   - I don't know the difference between `known_hosts` and `hosts`
 
 ## GitHub "A personal access token has been added to your account"
-
 * You'll receive an email titled "A personal access token has been added to your account"
 * This happens when Git for Windows credential helper acquires a personal access token on your behalf 
 * It should have happened at the same time as you saw a popup that asked for your GitHub username and password
@@ -260,7 +249,6 @@ and the repository exists."
 * More here: https://stackoverflow.com/questions/55615542/why-did-github-add-a-personal-access-token-even-if-i-didnt-generate-a-new-one
 
 ## Andy Grant brown bag - “Git - just like subversion, right?”
-
   - These are my notes from a brown bag session Andy Grant did at
     LateRooms
   - Revisions in svn (and)
@@ -350,14 +338,11 @@ and the repository exists."
         commands
 
 ## Useful Tips / Troubleshooting
-
 ### Useful links
-
   - My blog post full of useful git links:
     <https://insimpleterms.blog/want-to-learn-git-improve-your-git-knowledge>
 
 ### Staging bits of files or individual files:
-
 - Like this: `git add –i`
   - More here:
   <https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging>
@@ -365,18 +350,15 @@ and the repository exists."
   - ... will show you each chunk of changes one at a time, so you can accept them one by one – “y” to accept, “n” to reject)
 
 ### GitHub searching
-
   - Press t while on GitHub home page for a particular repo
 
 ### Running a git command in a different folder
-
   - In gitBash (for the `git status` command):
       - `git –C /c/your/folder/frontend status`
   - In powershell (for the `git status` command):
       - `git –C c:/your/folder/frontend status`
 
 ### Setting up Git Command shortcuts (git alias)
-
   - This: `git config --global alias.cm 'commit -m'`
       - This will set up an alias so that instead of typing `git commit
         –m`, you can now just type `git cm`
@@ -389,7 +371,6 @@ and the repository exists."
         elsewhere in this doc
 
 ### Changing git text colours used at command prompt
-
   - You can change the colours git uses like this at the command prompt:
       - `git config --global color.status.changed "cyan normal bold"`
       - **More here:
@@ -413,22 +394,18 @@ and the repository exists."
     <http://sedodream.com/2012/05/05/GitCustomizingColorsForWindowsIncludingPoshgit.aspx>
 
 ### Quick cloning
-
   - Use `git clone \[path\] --depth 1`
   - **(= shallow clone)**
 
 ### Reversing a bad / unintentional merge
-
   - Like this: `git reset --merge` (that’s two hyphens, not an
     mdash)
 
 ### Undoing all commits on your local copy of a shared branch 
-
   - to bring you back in line with the master
   - Like this: `git reset --hard origin/master`
 
 ### Checkout / Branch / Merge / Pull Confusions
-
   - “Checkout” means you are changing the working copies of your files
     to match either an individual commit, or a specific branch
       - Remember that branches can either be local or remote
@@ -491,37 +468,29 @@ and the repository exists."
                     merged into master, not the other way round.
   - 
 ### Getting Help with commands
-
 - Enter ? at the command prompt
 
 ### Atlassian Git tutorial
-
 - Here: <https://www.atlassian.com/git/tutorials/>
 
 ### Another git tutorial
-
 - [Fracz tutorial](https://gitexercises.fracz.com/)
 
 ## Interactive tool to learn how to do git branching
-
 - [https://learngitbranching.js.org](https://learngitbranching.js.org)
 
 ### Case Sensitivity
-
   - Git is case sensitive
 
 ### Vim Editor when no commit message
-
   - When you do a commit command and forget to add a message in Git
     Bash, you will end up in the VIM editor:
       - See “When you get stuck in a VIM editor” in this doc
 
 ### Changesets vs snapshots
-
   - I *think* snapshots are the same things as changesets in Mercurial
 
 ### Discarding uncommitted (but staged) changes to an individual file
-
   - (This will also apply to reverting a file which you had checked out
     from a particular commit)
   - This: `git reset \<fileName\>`
@@ -541,11 +510,9 @@ and the repository exists."
         src\\cprm\\plugins\\ot\\base\\specHelpers\\viewmodels\\questions\\questionsMocks.js`
 
 ### Changing the commit message
-
   - See git commit -- amend
 
 ### Adding files to gitignore after they’ve been committed
-
   - Two possibilities:
       - You can remove the files from source control, but not from disk:
           - See `git rm` below
@@ -553,7 +520,6 @@ and the repository exists."
         whole lot and start again from scratch
 
 ### If stuff doesn’t all fit on the screen:
-
   - Space to scroll
   - Q to quit
       - But if you try other commands before you hit Q, you can get in a
@@ -564,13 +530,11 @@ and the repository exists."
         anything else
 
 ### Discard changes since the last commit that was pushed
-
   - This: git stash save –keep-index
   - This: git stash drop
   - This: git status (just to check it worked)
 
 ### Pull down a feature branch
-
   - Use Git Bash:
       - CD to root (see above for weird Git Bash cd syntax)
       - Laura said this:
@@ -586,15 +550,12 @@ and the repository exists."
           - “git merge feature/CFTP-1101” (for example)
 
 ## All Repository Commands
-
 ### Wrapping / scrolling long lines
-
   - In Git Bash, if you have a long line, it disappears off the edge of
     the console. To get it to wrap long lines, run this:
       - This: `git config core.pager 'less -r'`
 
 ### File names and paths
-
   - Generally I think when specifying file names, you have to include
     the full path, and you have to precede it with “--” followed by a
     space
@@ -604,16 +565,13 @@ and the repository exists."
           - where src is a folder in C:\\Git\\cprm
 
 ### git init
-
   - Initialises an empty repository
   - To create a new git repo from command line : `git init` and then `git add .` (including the dot)
 
 ### git status
-
   - Shows you where you’re up to
 
 ### git add \<filename\>
-
   - Places a new file into the “staging area” (not committed yet)
       - Eg “git add myFile.js”
   - \!\! This is not just for adding new files
@@ -648,14 +606,12 @@ and the repository exists."
     - More [here](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging).
 
 ### git remote add
-
   - Creates a *connection* to a remote repository
   - This: `git remote add \<repo name\> \<url\>`
   - Eg: `git remote add remoteRepo
     https://github.com/try-git/try\_git.git`
 
 ### git remote
-
   - Either …
       - Create a connection to a remote repository (see `git remote
         add`, above)
@@ -675,7 +631,6 @@ and the repository exists."
         your connectio*n* to it? I suspect the latter?
 
 ### git commit
-
   - Normally…
       - Moves a file (or a *change* in a file) from the staging area
         into the repository
@@ -720,7 +675,6 @@ and the repository exists."
           - Use the appropriate technique from above, then use `git push --force` to force the change up to the server.
 
 ### git rm
-
   - Removes a file / some files from the repo and also stages the
     removal for you
   - Like this: `git rm myFile.js`
@@ -735,7 +689,6 @@ and the repository exists."
         <http://stackoverflow.com/questions/7527982/applying-gitignore-to-committed-files>
 
 ### git log (& search)
-
   - Show history of what you’ve done so far
   - \!\! To exit, type `q`
       - **To page down, hit spacebar**
@@ -764,12 +717,10 @@ and the repository exists."
     below)
 
 ### git show
-
   - Show details of an individual commit
       - Like this: git show d232f4d2a7f7f402c322046407b59fb8a7292327
 
 ### git push
-
   - Push all local commits to a remote repository
   - First one looks like this: `git push –u \<remote repo name\>
     \<branch name\>`
@@ -780,7 +731,6 @@ and the repository exists."
   - After that you can just run `git push`
 
 ### git pull
-
   - See “Checkout / Branch / Merge / Pull Confusions” above for full
     explanation of where `pull` fits into the process
   - Pulls down any changes that anyone else has made to the remote repo
@@ -807,7 +757,6 @@ and the repository exists."
           - `git rebase --skip`
 
 ### git fetch
-
   - Imports commits from a remote repository into your local repo.
   - Fetched content is represented as a remote branch, so doesn’t affect
     your local work
@@ -830,7 +779,6 @@ and the repository exists."
         followed by `git merge`
 
 ### git diff
-
   - This: `git diff HEAD`
       - Shows you all changes in your local repo since your last commit
       - Note that it does not distinguish between staged changes and
@@ -879,7 +827,6 @@ and the repository exists."
     <https://www.kernel.org/pub/software/scm/git/docs/git-diff.html>
 
 ### git rebase
-
   - Notes on how I used rebase when editing the Reconciliate refactor-branch commits during the writing on my Martin Fowler refactoring article are [here](https://github.com/claresudbery/RefactoringExamples/blob/master/github-markdown/notes/code-changes.md) (accessible to Clare only)
   - This is where you take a branch and define it is having started at a
     different point – ie you change the point which is its base
@@ -917,7 +864,6 @@ and the repository exists."
       - `git merge \[your branch name\]`
 
 ### git revert
-
   - Undoes a particular commit, and then does a new commit which
     corresponds to the change involved in undoing the previous commit
   - Like this: `git revert \<commitId\>`
@@ -982,7 +928,6 @@ and the repository exists."
     - also references `git reflog`, `git cherry-pick`, `git diff`
 
 ### git reset
-
   - (\!\! be aware that `git reset` is dangerous if you have already
     pushed to the server - `git revert` is safer)
   - Can be used to …
@@ -1022,7 +967,6 @@ and the repository exists."
     <https://www.atlassian.com/git/tutorial/undoing-changes#!reset>
 
 ### git checkout
-
   - See “Checkout / Branch / Merge / Pull Confusions” above for full
     explanation of what checkout really means
   - Can be used to…
@@ -1095,7 +1039,6 @@ and the repository exists."
         \[other branch name\] -- \[path to file\]`
 
 ### git branch (inc renaming, creating and deleting)
-
   - See “Checkout / Branch / Merge / Pull Confusions” above for full
     explanation of where `branch` fits into the process
   - Either…
@@ -1134,7 +1077,6 @@ and the repository exists."
     <http://stackoverflow.com/questions/21609781/why-call-git-branch-unset-upstream-to-fixup>
 
 ### git merge
-
 - See also [strategies for avoiding tricky merges](<#to avoid tricky merges when merging pull requests>) below
 - See “Checkout / Branch / Merge / Pull Confusions” above for full
   explanation of where `merge` fits into the process
@@ -1163,19 +1105,15 @@ and the repository exists."
   - [Here is an example](https://github.com/claresudbery/Git-Playground/blob/master/Merging-examples.md) I manufactured when I was writing the O'Reilly trunk-based development (TBD) report
 
 ### To avoid tricky merges when merging pull requests
-
 There are three strategies you can use to make merges easier:
 
 #### 1. Small branches
-
 Keep branches small, simple and short-lived. Restrict them to single items of change, and merge them as quickly and frequently as possible. If everyone on your team does this, then all merges will be small and therefore easier. Communicate with each other if you think you might have two people impacting the same area of code. Work together to avoid merge problems.
 
 #### 2. Avoid branches altogether!
-
 "Trunk-based development" refers to a strategy where everyone keeps merging with the main branch of the code ("the trunk"), very frequently indeed (at least once a day). This is an extreme version of the first approach and takes a bit of getting used to, but is actually the safest and most efficient appriach. you can read more about it [here](https://martinfowler.com/articles/continuousIntegration.html) and in my upcoming O'Reilly report on the topic.
 
 #### 3. Merge and test locally before issuing a pull request.
-
 Merge changes locally, and fix any resulting merge issues, BEFORE issuing a pull request.
 
 When you have work ready to merge, do the following:
@@ -1188,7 +1126,6 @@ When you have work ready to merge, do the following:
 6. Now you're finally ready to issue a pull request and merge your code back into main. At this point, it should be simple and easy and nothing should get broken.
 
 ### git clone
-
   - `git clone` \<repo url\> \<destination folder\>
   - Example: `git clone
     https://claresudbery@bitbucket.org/touch4/touch4.livsmarter.git
@@ -1206,7 +1143,6 @@ When you have work ready to merge, do the following:
         ssh://git@hhs.havaslynx.com:7999/cft/cprm.git)\]
 
 ### git config
-
   - Allows you to change default settings, either on current branch
     (will then get stored in a config file in the .git folder) or
     locally (not sure where that’s stored\!)
@@ -1221,7 +1157,6 @@ When you have work ready to merge, do the following:
         <http://stackoverflow.com/questions/948354/default-behavior-of-git-push-without-a-branch-specified>
 
 ### git tag
-
   - To list tags: Just type git tag (with optional -l or --list):
   - To create an annotated tag: `git tag -a v1.4 -m "my version 1.4"`
   - To create a lightweight tag: `git tag v1.4-lw`
@@ -1231,7 +1166,6 @@ When you have work ready to merge, do the following:
     - To push all tags: `git push origin --tags`
 
 ### git stash
-
   - More here: <http://git-scm.com/book/en/Git-Tools-Stashing>
   - `git stash`
       - will save all uncommitted changes in your working directory,
@@ -1270,13 +1204,10 @@ When you have work ready to merge, do the following:
         originally saved on
 
 ### gitk
-
 * To see all changes file by file: `gitk`
 
 ## Git Playground
-
 ### These notes
-
   - …were originally written when I was at LateRooms, where I think I
     must have had another repo called Git Playground
   - There is now a repo in my Github account called Git-Playground,
@@ -1284,7 +1215,6 @@ When you have work ready to merge, do the following:
     Stuff\\Clients\\SMBC\\Workshops\\Git\\Git notes.docx
 
 ### Git flow init
-
   - Brand new repo, no commits, only has master branch
   - Run git flow init
   - Result:
@@ -1300,7 +1230,6 @@ When you have work ready to merge, do the following:
         “feature”
 
 ### Tracking branches
-
   - At first (after running git flow init), there is only one branch
     element in C:\\\_git\\git-playground\\.git\\config
       - Has a branch section: `\[branch “master”\]`
@@ -1365,7 +1294,6 @@ When you have work ready to merge, do the following:
             switch.
 
 ### Checking Out
-
   - Every time you fetch from remote, your FETCH\_HEAD file will be
     updated (C:\\\_git\\git-playground\\.git\\FETCH\_HEAD)
   - Every time you checkout, your HEAD files will be updated
@@ -1373,14 +1301,11 @@ When you have work ready to merge, do the following:
     C:\\\_git\\git-playground\\.git\\HEAD)
 
 ## Git hooks
-
 - You can use git hooks for instance to prevent you from uploading sensitive data to GitHub.
 - We did this at Samba - there's some very brief info (available to Clare only) in GitHub [here](https://github.com/claresudbery/samba), in `wiki-set-up-guide.txt` in the web-app sub-folder.
 
 ## API keys
-
 - There are some brief setup instructions (available to Clare only) in GitHub [here](https://github.com/claresudbery/samba), in `wiki-set-up-guide.txt` in the web-app sub-folder.
 
 ## git reflog
-
 [Here](https://www.w3docs.com/learn-git/git-reflog.html)

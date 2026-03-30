@@ -4,7 +4,6 @@ location: pages/coding/infra/cloud/aws/leaf
 permalink: /pages/coding/infra/cloud/aws/AWS-CLI
 ---
 ## Misc
-
   - These notes were originally written 2018
   - There might be some relevant script stuff in [cadogan/infra
     (PRIVATE)](https://github.com/claresudbery/Cadogan/tree/master/infra)
@@ -26,7 +25,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-CLI
     [<span class="underline">https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html</span>](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
 ## Commands / invocations / requests
-
 - Cmd **aws help** will give you cli commands
 - Cmd **aws s3 ls s3://\[bucket-name\]**
     - This allows you to connect straight to S3 bucket
@@ -44,7 +42,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-CLI
 
 
 ## AWS CLI Auto-scaling groups
-
   - aws ec2 update-auto-scaling-group --auto-scaling-group-name
     awseb-e-9mnmbbramu-stack-AWSEBAutoScalingGroup-1C00LH0YI7JD9
     --health-check-type ELB

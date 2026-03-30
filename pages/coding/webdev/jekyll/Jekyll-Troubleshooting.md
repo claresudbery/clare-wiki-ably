@@ -10,7 +10,6 @@ permalink: /pages/coding/webdev/jekyll/Jekyll-Troubleshooting
 * https://github.com/ably/wiki-site
 	
 ## To get up and running on a Mac:
-
 * I've now captured the installation in a Mac installation script
     * You can find it [here](https://github.com/claresudbery/Root-Scripts/blob/master/installing-new-mac)
     * Scroll down a bit to the set of commands headed "Install Ruby and Jekyll and everything needed to support the Jekyll wiki site"
@@ -69,7 +68,6 @@ curl https://cli-assets.heroku.com/install.sh | sh
 		* ```sudo chown -R claresudbery:claresudbery /home/claresudbery/.bundle```
 
 ## If you get server errors after deployment
-
 - run `heroku logs --tail --app clare-wiki` on the command line to see keroku server logs
 
 ## Deploying ruby using heroku
@@ -84,9 +82,7 @@ curl https://cli-assets.heroku.com/install.sh | sh
 * Programatically retrieve list of pages instead of hard coding navigation links: https://jekyllrb.com/tutorials/navigation/
 
 ## Ruby Version Stuff
-
 ### Clearer guidance for particular errors and problems
-
 There's now a [whole separate page for this](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems), which hopefully has clearer advice for how to fix specific versioning problems, but I'm preserving these notes for historical reasons.
 
 ### When I had problems running jekyll on command line (GitBash, Windows) after installing jekyll using gem install jekyll bundler
@@ -104,17 +100,14 @@ There's now a [whole separate page for this](/pages/coding/lang/oo/ruby/Ruby-Ver
 		* Cmd: **chruby_use /Users/clarey/.rubies/ruby-2.6.5/**
 
 ### Ruby version problems when deploying with Heroku
-
 * I got an error on heroku deploy at one point:
 * "Your Ruby version is 2.5.1, but your Gemfile specified 2.6.5"
 * It turned out this was because I had checked in Gemfile with the new Ruby version, but hadn't checked in Gemfile.lock
 
 ### Using ruby-install with a specific Ruby version
-
 * Instead of **ruby-install ruby**, you can use **ruby-install** to install the same Ruby version as specified in Gemfile, like this: **ruby-install ruby 2.6.5**
 
 ### Bundler version error
-
 - When trying to run [testing-for-beginners](https://github.com/rubymonsters/testing-for-beginners) via `rackup`: "Could not find gem 'bundler (~> 1.1)', which is required by gem 'middleman-core (= 3.3.7)', in any of the sources."
 - Solution:
 	- `gem install bundler -v 1.15`
@@ -122,7 +115,6 @@ There's now a [whole separate page for this](/pages/coding/lang/oo/ruby/Ruby-Ver
 	- `gem install middleman`
 
 ### Error on jekyll serve: "warn_for_outdated_bundler_version"
-
 Full error:
 ```
 C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.15.3/lib/bundler/lockfile_parser.rb:108:in `warn_for_outdated_bundler_version': You must use Bundler 2 or greater with this lockfile. (Bundler::LockfileError)
@@ -131,7 +123,6 @@ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/bundler-1.15.3/lib/bundler/
 I ran `bundle install` and that told me to run `gem install bundler`, which worked.
 
 ### Summary of early 2021 versioning problems
-
 - In December 2020 I was having Travis deployment problems
 - I hit everything with lots of hammers, including running `bundle update` and upgrading Ruby - which meant that everything got upgraded
 - This only partially worked
@@ -148,7 +139,6 @@ I ran `bundle install` and that told me to run `gem install bundler`, which work
 - Full details are in the two sections below.
 
 ### Bundler version problems when deploying with Travis
-
 - (see [above for summary](<#summary of early 2021 versioning problems>))
 - On or around 30/12/20, starting at around commit e4bb0ba: 
 - Getting the following error in Travis: "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'
@@ -176,7 +166,6 @@ gem update --system
 ```
 
 #### Problems related to the above
-
 - (see [above for summary](<#summary of early 2021 versioning problems>))
 - On or around 26/2/21:
 - At some point after the above I started getting deployment errors because there was no `Gemfile.lock` being pushed to source control.
@@ -222,7 +211,6 @@ gem update --system
 	- e4bb0ba Fix bad gemfile.lock - `Gemfile.lock`
 	
 ## Favicon Stuff
-
 ### Favicon showing up in Google Chrome 
 * Here: https://stackoverflow.com/questions/16375592/favicon-not-showing-up-in-google-chrome
 * Favicon generator: https://favicon.io/favicon-generator/
@@ -231,7 +219,6 @@ gem update --system
 * Here: https://github.com/mmistakes/minimal-mistakes/issues/389
 	
 ## Css/layout not the same locally as remote
-
 * Stored relevant files in C:\Users\CLARE\Downloads\images\BigIndex
 * See screenshots: Local-layout.PNG and Remote-layout.PNG
 * Html and search js are identical (see files in same folder)
@@ -245,7 +232,6 @@ gem update --system
 * Here: https://stackoverflow.com/questions/9794931/keep-file-in-a-git-repo-but-dont-track-changes
 
 ## Issue with site layout caused when you push Gemfile.lock changes
-
 - Issue: The search box appears top left instead of top right
 - Cause: Every time you run `jekyll serve` (`js`) in GitBash, extra windows stuff gets added to `Gemfile.lock` which is fine locally but doesn't work remotely.
 	- The *stuff* in question is a lot of new `mingw` versions of various gems, like this: `eventmachine (1.2.7-x64-mingw32)`. Also a new `x64-mingw32` entry is added in the `PLATFORMS` section at the bottom (mingw = MinGW = Minimal Gnu for Windows) (to see an example of a `Gemfile.lock` containing `mingw` references, see [Gemfile-with-mingw.lock](https://github.com/claresudbery/clare-wiki-ably/blob/master/Gemfile-with-mingw.lock)).
@@ -323,7 +309,6 @@ gem update --system
 * Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/coding/webdev/jekyll/Jekyll-Notes.md) (accessible to Clare only).
 
 ## Downloading individual files from GitHub
-
 * You'll find you often get told to download individual files from GitHub when using plugins etc. 
 * But GitHub doesn't easily allow that via its UI.
 * Click on the file in GitHub UI, then click Raw, then copy the url
@@ -334,11 +319,9 @@ gem update --system
 {% endhighlight %}
 
 ## OmniAuth vulnerability
-
 - Before doing any auth stuff, check whether there is still a vulnerability in OmniAuth (see [alert here](https://github.com/claresudbery/clare-wiki-ably/network/alert/Gemfile.lock/omniauth/open) or check the front page of the `clare-wiki-ably` repo in GitHub - the alerts show up there (but NOT in notifications)
 
 ## Error on jekyll serve: "invalid byte sequence in UTF-8 included in /_layouts/default.html"
-
 The full error:
 ```
 Liquid Exception: Liquid error (C:/development/clare-wiki-ably/_includes/toc.html line 35): invalid byte sequence in UTF-8 included in /_layouts/default.html
@@ -346,16 +329,13 @@ jekyll 3.7.4 | Error:  Liquid error (C:/development/clare-wiki-ably/_includes/to
 ```
 
 ### The problem
-
 It turned out this was caused by a particular line of text in a markdown file (pages\coding\infra\security\oauth.md). I found it by using the equivalent of Saff squeeze (same concept as binary search algorithm) to identify the commit that caused the problem (it was commit 77698c8 on 20/4/20, "New content from Cadogan notes"). I then used the same technique to narrow down the problematic line of text. I used "View | Show symbol | Show all characters" in Notepad++ to try and see what the problem was and there was nothing visible. 
 
 ### The fix
-
 I tried running dos2unix on that file, but it didn't work. Then again, I ran it in GitBash. Should I have run it in Linux?
 Anyway, in the end I fixed it by manually typing out the same words again, removing the original text. So it's a bit of a mystery!
 
 ## Switching from redcarpet to kramdown
-
 - I upgraded to Jekyll 4.2.0 on 1/3/21
 - This was fine in Travis - everything was building fine.
 - But I got heroku build errors (which confused me - I thought all the building happened in Travis) and deployments failed.

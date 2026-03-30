@@ -5,9 +5,7 @@ permalink: /pages/think/life/admin/Labels-And-Mail-Merges
 ---
 
 ## Printing Address Labels and doing Mail Merges
-
 ### Simplest (same label printed multiple times)
-
 - New Word document
 - Mailings => Labels
 - Click New document and save it where you want
@@ -17,7 +15,6 @@ permalink: /pages/think/life/admin/Labels-And-Mail-Merges
 - Save document
 
 ## Doing a mailout
-
 - (I have a Xmas card label example in Dropbox, in Letters folder, for 2021 GiftCrabs)
 - Get your spreadsheet ready:
     - Column names in your spreadsheet should match the field names you want to insert in your mail merge. 

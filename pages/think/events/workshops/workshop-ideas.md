@@ -1,5 +1,4 @@
 # Collaborative Drawing / Dependencies Between Groups
-
 Dave Rooney: I’m facilitating a workshop this week for our company’s product owners this week. I ran an exercise yesterday to demonstrate handling dependencies between groups, in which 4 pairs of people had to draw different aspects of an image of Spiderman. One did the outline, one did the eyes, one did the shading and the 4th drew the “web” artwork.
 In the first round, they were given their instructions and told to go off and do their work. They had 5 minutes. For the second round they could plan together for 2 minutes and then draw separately for 3 mins. For the final round they had 5 minutes to work however they wanted. Here are the results, with Round 1 on the left and Round 3 on the right.
 
@@ -21,7 +20,6 @@ Nice illustration of individual work and integration problems.
 I’ll give Esther Derby & Don Gray a chunk of the credit because I did use my PSL experience to come up with the idea and how to think through creating the problem for them to solve.
 
 # The Difficulty of Software Estimation
-
 - By @sjdayday
 - Tried this out in a small group on Thurs 28/9/23
 - Link: http://stevedoubleday.com/problem/

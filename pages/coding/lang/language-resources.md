@@ -7,14 +7,12 @@ permalink: /pages/coding/lang/Language-Resources
 ([Main Languages directory is here](/pages/coding/Languages))
 
 ## Elsewhere on this site
-
 - [Javascript](/pages/coding/webdev/js/Javascript-Resources)
 - [Markdown](/pages/coding/webdev/Markdown)
 - [All the other languages](/pages/coding/Languages)
 - [Puck.js IoT Button](/pages/coding/hardware/Puck-js-IoT-Button)
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/programming-tools-languages) (Programming Tools & Languages category)
 
 

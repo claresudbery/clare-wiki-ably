@@ -5,13 +5,10 @@ permalink: /pages/coding/infra/security/Security-in-the-Public-Sector
 ---
 
 # Security for Organisations
-
 ## Security for Organisations
-
 - From a talk by [James Stewart](https://public.digital/people/james-stewart/)
 
 ### General Orgs
-
 - Context and people
     - Throughout everything, think about human interaction, and think about context (eg users' environment)
 - What is the org's risk appetite?
@@ -47,7 +44,6 @@ permalink: /pages/coding/infra/security/Security-in-the-Public-Sector
     - Pick a technique that shows you the considerations top to bottom
 
 ### Public Sector
-
 - Some orgs will consider their biggest threats and then apply the derived restrictions across the whole org, even to depts that are much less critical
 - The [Security Policy Framework](https://www.gov.uk/government/publications/security-policy-framework) (SPF) is a standard doc owned and published by cabinet office
 - The 2014 reflected a shift from a compliance based approach to one based on actual security needs.
@@ -98,7 +94,6 @@ permalink: /pages/coding/infra/security/Security-in-the-Public-Sector
     - One suggestion is that when categorizing as "official", add handling instructions - eg "Official-Sensitive" but that has led to people viewing "Official - Sensitive" as a formal category. This can make delivering any kind of public service really hard. It's not actually a category - more on that [here](https://www.gov.uk/guidance/official-sensitive-data-and-it)
 
 ### 14 cloud security principles
-
 ![14-principles](/resources/images/14-considerations.jpg)
 - Before using cloud security principles, put it in context. Ask not "Are we secure?" but "Are we secure against what?"
 - Tons of guidance [here](https://www.cloud.service.gov.uk/cloud-security-principles)

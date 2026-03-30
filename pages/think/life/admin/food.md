@@ -5,18 +5,15 @@ permalink: /pages/think/life/admin/Food
 ---
 
 ## Low Carb
-
 - low carb pancakes - full recipe [here](https://www.wholesomeyum.com/recipes/keto-low-carb-pancakes-with-almond-flour-coconut-flour-paleo-gluten-free/) or see summarised version in Dropbox\Desktop\Current\low-carb-pancakes.docx and also in Evernote, or in kitchen recipe book, or see image in my phone dated 28/11/20
 - n'oatmeal - in box on top of kitchen cupboard, or see image in my phone dated 28/11/20
 - more recipes under the recipes tag in Evernote
 - Precise quantities of ingredients of low carb foods (pizza, quiche, lunch salad, noatmeal breakfast) are [here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/food.md) (for Clare only)
 
 ## Bicarb vs baking powder vs baking soda
-
 Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not the same but will do if that is all you have. Neither are the same as borax.
 
 ## High Fibre Foods
-
 - Beans
 - Broccoli
 - Berries
@@ -29,7 +26,6 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 - Nuts
 
 ## Xmas / Christmas recipes
-
 - [Cheesy leeks](https://www.bbc.co.uk/food/recipes/cheesy_leeks_46292)
 - [Marzipan](https://www.daringgourmet.com/how-to-make-marzipan-almond-paste/)
     - ! But that's one of those horrible web pages full of ads and requiring infinite scrolling, so I've copied the key info into this doc:
@@ -42,7 +38,6 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 - [Recipe for Pfeffernusse](<#recipe for pfeffernusse>)
 
 ### Recipe for Pfeffernusse
-
 - How much?
     - 50 Portions
     - 42 kcal per Portion
@@ -91,9 +86,7 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
     - Coat the soft peppernuts with the sugar glaze while still warm.
 
 ## Snacks
-
 ### Pork scratchings / crackling
-
 - My original faves: [The Real Pork Crackling Company](https://www.therealporkcracklingcompany.com/) 
     - I just had the bizarre experience of being able to get five for a pound [at poundshop.com](https://www.poundshop.com/the-real-pork-crackling-co-crispy-crackling-5-pack.html)! 
 - The ones I ordered in bulk for a bit (preferred their chilli flavour): [AwfullyPosh / British Snack Co.](https://www.britishsnackco.com/store/product/chilli-garlic-pork-crackling/)
@@ -101,9 +94,7 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
     - I ordered a variety pack of [Mr Trotters Great British Pork Crackling](http://mrtrotters.com/shop/index.php?route=product/product&product_id=63)
 
 ## Other recipes
-
 ### Grapefruit guacamole
-
 - [Grapefruit guacamole](https://www.thekitchn.com/recipe-grapefruit-guacamole-recipes-from-the-kitchn-202807) 
     - My notes on that recipe:
         - Mash the avocado in the bowl first before adding the rest - then just chuck all ingredients on top
@@ -124,11 +115,9 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
         - lots of fresh coriander, finely chopped
 
 ### That baked feta and tomato thing
-
 [Feta dish](https://www.delish.com/uk/cooking/recipes/a35426947/baked-feta-pasta-tiktok/)
 
 ### Ghanaian red-red
-
 * Main ingredients: 
     * Red cowpea (or black eyes peas)
     * red palm oil
@@ -140,11 +129,9 @@ Baking *soda* is same as bicarb, or bicarbonate of soda. Baking *powder* is not 
 * [Recipe here](https://honest-food.net/ghana-red-red-recipe/) 
 
 ### Cocktails
-
 * [Sugar free margarita](https://www.wholesomeyum.com/recipes/best-skinny-margarita-recipe-sugar-free-low-carb-paleo/)
 
 ### Peanut butter croissants
-
 - See video on this guy's Instagram (@georgegg - George Egg - snack hacker)
     - [Here](https://www.instagram.com/p/CzlmuXDMmUV/?hl=en-gb)
 - Take stale croissants

@@ -6,7 +6,6 @@ permalink: /pages/coding/webdev/HTML
 ---
 
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - Hack Manchester 2018:
@@ -17,6 +16,5 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [codefirst-girls-01](https://github.com/claresudbery/codefirst-girls-01)
 
 ## Misc
-
 - HTML5 ASP.NET Sample App: Dropbox\IT Training\Web Stuff\HTML5 ASP.NET Sample App
 - [HTML validator](https://validator.w3.org/nu/#textarea)

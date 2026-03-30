@@ -5,9 +5,7 @@ permalink: /pages/organising/tools/iPhone
 ---
 
 ## Add your own music files to your iphone
-
 ### Method 1: Airdrop from Macbook (much easier!)
-
 - Right-click the file in Finder
 - Select Share => Airdrop
 - Wait a minute for it to find your phone
@@ -15,7 +13,6 @@ permalink: /pages/organising/tools/iPhone
 - Select the app you want to open it with 
 
 ### Method 2: iTunes from Windows
-
 - Open iTunes on your laptop.
 - Attach your phone to your laptop using USB / lightning cable.
 - Click "Allow device" on your iphone

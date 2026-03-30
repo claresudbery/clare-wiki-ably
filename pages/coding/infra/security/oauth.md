@@ -5,11 +5,9 @@ permalink: /pages/coding/infra/security/OAuth
 ---
 
 ## Historic Notes
-
   - These notes were originally written 2018
 
 ## Spring Security for OAuth2 and Spring Boot
-
   - There might be some useful stuff in [Cadogan
     (PRIVATE)](https://github.com/claresudbery/Cadogan)
   - Documentation:
@@ -36,7 +34,6 @@ permalink: /pages/coding/infra/security/OAuth
     [<span class="underline">https://docs.spring.io/spring-security/site/docs/5.0.2.BUILD-SNAPSHOT/reference/htmlsingle/\#jc-oauth2login-client-registration</span>](https://docs.spring.io/spring-security/site/docs/5.0.2.BUILD-SNAPSHOT/reference/htmlsingle/#jc-oauth2login-client-registration)
 
 ## Sample Oauth2 Code Notes
-
   - There might be some useful stuff in [Cadogan
     (PRIVATE)](https://github.com/claresudbery/Cadogan)
   - Looking at this code base:

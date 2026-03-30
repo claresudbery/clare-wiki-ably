@@ -5,44 +5,35 @@ permalink: /pages/think/life/Things-I-Forget
 ---
 
 ## What is this page all about?
-
 There are certain questions that I often find myself asking, but someow never remember the answers. The problem I've always had whenever I rediscover those answers is... where can I make a note of this so that I'll know where to come the next time I forget? This page attempts to solve that problem.
 
 ## What's that birdsong that I hear every springtime - alternating notes in a minor third?
-
 It's a great tit. 
 - My recording [here](https://twitter.com/ClareSudbery/status/1244883811818713089?s=20)
 - [On Youtube](https://www.youtube.com/watch?v=fiH2VsH73g0)
 
 ## What's that bird I took a video of in our front garden?
-
 - It's called a goldcrest
 - It makes a call that sounds like a little baby chick - just a tiny little "peep!"
 - [More info here](http://www.garden-birds.co.uk/birds/goldcrest.html)
 - [My video here](https://vimeo.com/517474751)
 
 ## What's that funny article about javascript frameworks and libraries?
-
 It's [this one](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f) by [@jjperezaguinaga](https://twitter.com/jjperezaguinaga).
 
 ## What's that band from Dublin called?
-
 Fontaines DC
 
 ## Where is our cyberdojo?
-
 Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSalPairing Cyberdojo coderdojo
 
 ## What are all those great xkcd comics?
-
 ### Exploit of a mom / SQL Mom / Little Bobby Tables / Drop Table (xkcd comic)
-
 ![SQL Mom / Little Bobby Tables](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)  
 
 From [here](https://xkcd.com/327/)
 
 ### Is it worth the time? (xkcd comic)
-
 xkcd comic talking about the value of automating vs the time it takes
 
 ![Is it worth the time?](https://imgs.xkcd.com/comics/is_it_worth_the_time.png)
@@ -50,7 +41,6 @@ xkcd comic talking about the value of automating vs the time it takes
 From [here](https://xkcd.com/1205/)
 
 ### The lucky 10,000 (xkcd comic)
-
 You're one of today's lucky ten thousand! The diet coke and mentos thing.
 
 ![lucky ten thousand](https://imgs.xkcd.com/comics/ten_thousand.png)
@@ -58,7 +48,6 @@ You're one of today's lucky ten thousand! The diet coke and mentos thing.
 From [here](https://xkcd.com/1053/)
 
 ### The sudo !! xkcd comics
-
 - Reminder: sudo !! means "run the command I just ran, but this time with super-user privileges"
 
 ![Sudo make me a sandwich](https://imgs.xkcd.com/comics/sandwich.png)
@@ -72,7 +61,6 @@ I can't find the xkcd original for this next one, which is my favourite... so ma
 Incidentally that reddit page led me [here](https://github.com/nvbn/thefuck), which looks like fun.
 
 ## What do dock leaves look like?
-
 They sometimes have green/brown flowers that grow straight up vertically on stalks 
 
 /Dock1.jpeg
@@ -82,42 +70,32 @@ They sometimes have green/brown flowers that grow straight up vertically on stal
 /Dock3.jpeg
 
 ## What's that term that gets used in relation to TDD and which people often remark on the lack of, when interviewing candidates and pairing with them?
-
 Answer: [Sliming](https://clare-wiki.herokuapp.com/pages/think/code-princ/testing/TDD#sliming) (verb: to slime).
 
 ## What's the name of the US city famous for Mardi Gras, that was tragically affected by Hurricane Katrina?
-
 It's New Orleans.
 This won't make much sense to anyone else, but because it has a three-letter prefix to its name, I routinely get it confused with Los Angeles and Las Vegas, even though they have very little else in common.
 
 ## Who's that woman that has that website with that funny thing about appearing smart in meetings?
-
-
 Sarah Cooper: [10 tricks for appearing smart during meetings](https://thecooperreview.com/10-tricks-to-appear-smart-during-meetings/).
 
 ## What's that popular front end / end to end testing framework?
-
 - [Cypress](https://www.cypress.io/how-it-works/).
 - I now have a wiki page on that [here](/pages/coding/tools/testing/Cypress).
 
 ## When was Maisie born?
-
 24/12/20
 
 ## What's that thing that isn't endoscopy or colonoscopy?
-
 Sigmoidoscopy (like a colonoscopy but camera only looks at only the lower part of the colon.
 
 ## Where's that lost thing I can't find?
-
 Try inhere, or [finding-things.md in clare-tech](https://github.com/claresudbery/clare-tech/blob/master/organising/private/finding-things.md)
 
 ## Where did I note down all my tinyurl links?
-
 Try [here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/finding-things.md#tinyurls) or sign into tinyurl account and see stats in there.
 
 ## What's the name of that Japanese plastic instrument that works a little like a theramin?
-
 Otamatone.
 
 [Brilliant otamatone version of Africa](https://www.youtube.com/watch?v=9w5ZHMwIzvY&feature=youtu.be).
@@ -129,7 +107,6 @@ Otamatone.
 Oh dear, I'd better stop or I'll be here all day.
 
 ## What was that giant slide called?
-
 It was a very big, straight, undulating slide with several parallel lanes (so not a helmet smelter).
 
 It was at Prestatyn in the 1970s. I always think it was called the Ummagumma, which seems to be some kind of childhood confusion related to Pink Floyd's album (which my dad owned) and the word "Undulator" (although that's not what the slide was called - but it did undulate).
@@ -141,48 +118,38 @@ It's [mentioned here](https://coasterpedia.net/wiki/Astroglide_(Ffrith_Beach)) i
 ![astroglide-at-margate](/resources/images/astroglide.jpg)
 
 ## What are those really creepy American dolls called?
-
 - The ones that stand in the corner and have no faces.
 - It seems they're sometimes called time out dolls and sometimes called corner dolls. [More here](https://twitter.com/1baronjennyson/status/1304465623444058113?).s=21
 
 ## Where are all my good photos / pictures / images for talks / presentations?
-
 See TW-Stuff-Organising-Images-Workshops
 
 ## Where is the video for How I Got Over by Mahalia Jackson?
-
 - SmoothChords Video is in iphone photos (select Videos)
 - The Mahalia recording the video is based on is [this one](https://www.youtube.com/watch?v=r_xXdU4L2Qw)
 
 ## What's that thing called in my shoulder where it feels like it dislocates very briefly and then pops back in again? I keep thinking it's called velux.
-
 Joint subluxation.
 
 ## Where did I write down the story of the great slate robbery 1965?
-
 Writing-Current\Other Stuff\Diaries\Random Memories
 
 ## What are the bats at Whincop?
-
 Geoff had a bat survey done, and I *thought* he told me they were hirondelle bats, but that doesn't seem to be a thing according to Google (although there seems to be a French term "hirondelle de nuit" which translates as "night swallow" and means bat??). Maybe I misheard him or he misremembered?
 
 The owls there now (2021) are tawny owls, aka screech owls.
 
 ## What's that Douglas Adams train station biscuit story?
-
 See [here](https://theoldvillage.wordpress.com/2004/01/28/douglas-adams-shares-a-true-story/). It's very funny.
 
 ## What's the difference between "acute" and "chronic" in medical terminology?
-
 - Acute is short-lived
 - Chronic is long-term
 
 ## What are those small red spots called that look a bit like red freckles?
-
 Campbell De Morgan spots
 
 ## What are the five rules of life?
-
 - Use your goat
 - Be firm but fair
 - The way to a woman's stomach is through her stomach
@@ -190,50 +157,40 @@ Campbell De Morgan spots
 - Never fall in love with a straight woman
 
 ## What's that story about somebody stoned in an art gallery with the president of Ireland?
-
 [It's this](https://twitter.com/shockproofbeats/status/992006545473966082?s=21) (not an art gallery but I can see why my brain visualised it as such).
 
 ## what do those punctuating guitar chords in Baxter Drury's Miami remind me of?
-
 - Money, by Pink Floyd
 
 ## Who was that guy who reckoned he was some kind of secret service agent who worked with aliens?
-
 [The cult leader](https://narratively.com/hes-murderer-intergalactic-alibi-shes-love/amp/) who persuaded two teenage boys to help him murder someone by telling them he knew aliens and was planning to take over an area of California and destroy the golden gate bridge (?) in the process. His wife married him while he was in prison and is convinced that one day they will set up home somewhere and have a landing pad for all the aliens to visit in their ships...
 
 ## What's that track that's sampled by Massive Attack in Safe From Harm?
-
 Stratus by Billy Cobham.
 I love it because it has a particular kind of live energy that makes me wish I could be there on stage with them.
 
 ## What are those cute but rare animals from Australia?
-
 [Quokkas](https://twitter.com/claresudbery/status/1433502475227746310?s=21).
 
 ## What's Laura's dog called?
-
 Hartford.
 
 ## What's that hight street bank sign that always made me think of swearing?
-
 Ing Direct.
 
 ## What's that law that you says you should be cautious when using metrics and measurements?
-
 Goodhart's Law:  
 - Anything you measure and start to use as a target can be gamed
 	- "When a measure becomes a target, it ceases to be a good measure."
 - Also [as Woody Zuill quoted recently](https://twitter.com/WoodyZuill/status/1493228883147063296?s=20&t=zoFnbfK_nHcoM7MDsrhUkg), "If you try to improve the performance of a system of people, machines, and procedures by setting numerical goals for the improvement of individual parts of the system, the system will defeat your efforts and you will pay a price where you least expect it.” - Myron Tribus
 
 ## What is a "heuristic"?
-
 - A rule of thumb. 
 - A pattern. 
 - A learnt behaviour, that I can do without thinking
     - In the book Thinking Fast and Slow, heuristics are described as the things our brain does quickly without thought
 
 ## What is a "taxonomy"?
-
 - A classification
 - A categorisation
 - Often a list of categories that describe a particular thing
@@ -242,34 +199,28 @@ Goodhart's Law:
 ![/resources/images/BloomVerbs-exercise.jpg](/resources/images/BloomVerbs-exercise.jpg)
 
 ## Who are those two bands I think sound alike?
-
 I particularly noticed the similarity between:  
 
 - [Scratchcard Lanyard, by Dry Cleaning](https://open.spotify.com/track/5NtATk9xTMCKBlL46IJoXC?si=17b5600d67b349b4), and 
 - [Tennis, by Courting](https://open.spotify.com/track/3cJH8XcTtrdB1VcCYFdv82?si=54ba728da0c947c8)
 
 ## What did Danny say about uppers vs downers in Withnail and I?
-
 The Camberwell Carrot scene in [Withnail and I](https://sfy.ru/transcript/withnail_ts):
 
 Danny: "Sit down man, find your neutral space. You have done something to your brain. You have made it high. If I lay 10 mills of diazipan on you, you will do something else to your brain, you will make it low. Why trust one drug rather than the other? That's politics ain't it."
 
 ## Where is the video of toddlers falling over in a hurdles race?
-
 - [Link to original](https://twitter.com/FillWerrell/status/1358558415447093251?s=20)
 - My doctored version + talk notes are linked to from clare-tech, in `finding-things.md` (available to Clare only, but check my youTube cos I do plan to put it there at some point)
 
 ## What's that book about the danger of algorithms and data engineering?
-
 Weapons of Math Destruction, by Cathy O'Neill
 
 ## Where is our Wedding Wordpress website?
-
 - Not Whincop Wedding - [Woolpack Wedding](https://woolpackwedding.wordpress.com/).
 - We got married on 7/9/19 (ceremony) and 9/9/19 (the boring bit).
 
 ## What was that rhyme my grandad used to say?
-
 Eerie Ayrie Iggery Um.
 Filthsome Foulsome Dicksome John
 Squeamy Squirmy ~~Irishman~~*
@@ -279,7 +230,6 @@ BUCK!!
 *Not nice at all.
 
 ## What's that song with lyrics that sound exactly like two different phrases?
-
 [Think of us kissing, by Hamish Hawk](https://matchlyric.com/hamish-hawk-think-of-us-kissing/)
 
 ```
@@ -292,21 +242,17 @@ Feckless sex dreams with cowards' omissions
 I couldn't tell whether the last line was talking about "feckless extremes" or not (turns out not).
 
 ## What are those two songs that have really similar lines?
-
 1. One day like this, by Elbow - [the line "One day like this a year would see me right"](https://www.youtube.com/watch?v=pQCMM-8ZhDQ&t=202s)
 
 2. No more, by Steve Mason and Javed Bashir - [the line "All aboard I don’t see right"](https://www.youtube.com/watch?v=PpUFg8odzPw&t=141s)
 
 ## Where's that post by Geepaw on Mastodon on ChatGPT and AI?
-
 [Here](https://mastodon.social/@GeePawHill/110024701282104560).
 
 ## What's the name of that singer whose name begins with N I can never remember?
-
 Nadine Shah.
 
 ## What are those terms used by psychiatrists and psychologists about how people relate to each other?
-
 - Transference
     - Where you redirect some of your feelings or desires for another person to an entirely different person
 - Projection
@@ -315,7 +261,6 @@ Nadine Shah.
     - From [here](https://www.healthline.com/health/mental-health/transference)
 
 ## What's that song "I wrote this song cos..."
-
 Looking for you, by Nina Ferrer
 
 The lyrics I remember:
@@ -332,7 +277,6 @@ I made this song deep in my heart
 I was thinking of you
 
 ## What's that song that has lyrics that sound like my name?
-
 Billy Bragg - Sexuality
 
 Sexuality, strong and warm and wild and free
@@ -340,7 +284,6 @@ Sexuality, your laws do not apply to me
 A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 
 ## Where is Dance Your Way to Psychic Sex?
-
 (My second novel)
 
 - Main site: https://s3-eu-west-1.amazonaws.com/clare-test-001/DanceYourWay/index.html
@@ -348,29 +291,23 @@ A nuclear submarine [new Clare Sudbery!] sinks off the coast of Sweden
 - Lulu, ebook: https://www.lulu.com/shop/clare-sudbery/dance-your-way-to-psychic-sex/ebook/product-1wkz2evg.html?q=dance+your+way+to+psychic+sex&page=1&pageSize=4
 
 ## What's the name of that AI noise-reducing mic / microphone I used with OBS for better sound recording?
-
 - Krisp
 
 ## Where are the instructions for making an origami cube
-
 - On external hard disk:
 - /Volumes/WD USB 2/2014-04-01_Backup/_201105_ClaresStuff_backup/_Teaching/Resources/Shape and Space/Shapes/Paper folding/origami cube
 
 ## What are those company / place names that I think hint at swearwords like fuck?
-
 - Ing Direct makes me think of "Fucking Direct"
 - "Kinell" (place name and surname) make me think of "Fucking Hell" or "Fuckin' 'ell"
 
 ## What's that app that helps you cope with jet lag / jetlag?
-
 - Timeshifter
 
 ## Is Truman Hanks related to Tom Hanks?
-
 - Yes, he is his son and played the younger him in A Man Called Otto, but Tom Hanks was not in The Truman Show and has not shared why he called his son Truman
 
 ## What's that economics / economist's story about the cheap jewellery?
-
 - The one that illustrates why it's worth charging more.
 
 The one about the jewellery store owner who was having difficulty selling a particular range of high quality, reasonably priced turquoise items. 
@@ -382,44 +319,36 @@ When she came back, she found the entire display cabinet had sold out. So halvin
 And now that it was more expensive, it signalled high quality to people just wanting to buy a gift of a particular quality, and assuming the price told them how high quality it was.
 
 ## What's that Latin word that kind of means small speaker fee?
-
 - ...or expenses
 - honorarium
 
 ## Where are details of jazz workshops?
-
 - Search terms: singing workshops, jazz singing
 - See clare-tech: singing.md#jazz-workshops
 
 ## What's that app that Ted uses to draw on screen?
-
 - Demo Pro App.com
 
 ## What's that thing about cleaning versus washing
-
 - Clean teeth vs wash hands
 - Clean house vs wash clothes
 - Washing vs washing up
 - Washing machine vs dishwasher
 
 ## What's that tool on Windows called, that gives break periods and exercises?
-
 - It has a sheep icon
 - It's called Rave
 
 ## What are those neat symmetrical phrases?
-
 - Those that matter don't mind, and those that mind don't matter
 - It's nice to be important, but it's important to be nice
 
 ## What was that song Emily and I played during the retro at one of our tech coaching workshops?
-
 - Fun fun fun till her daddy takes her T-bird away 
 - The words “fun fun fun” were contributed by one of the participants in the retro, so I found the track on Spotify and played it while people were still filling out stickies. I think it happened again the following day and became a kind of running theme.
 - I think it was either the "Hands-on technical leadership for a healthy engineering culture" workshop with Emily Bache at NewCrafts '23, or the one at SDD Deep Dive '22.
 
 ## What's that song I got slightly obsessed by on 6Music, that wasn't available on Spotify?
-
 Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Car seat Headrest CCF
 
 - "CCF (I'm Gonna Stay With You)", by Car Seat Headrest
@@ -433,28 +362,22 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 - ...but they won't stay online forever either
 
 ## Where did I put my notes on what to do when a credit card is replaced?
-
 - Over in clare-tech, in SE Procedures
 
 ## Where are all the MyFitnessPal recipes?
-
 - See [[MyFitnessPal Meals]] and [[MyFitnessPal Recipes]] 
 
 ## Where's that blog post re cards against humanity and Ruby?
-
 - On Haskell, Ruby, and Cards Against Humanity (blog post)  
 [https://www.drmaciver.com/2015/04/on-haskell-ruby-and-cards-against-humanity/](https://www.drmaciver.com/2015/04/on-haskell-ruby-and-cards-against-humanity/ "https://www.drmaciver.com/2015/04/on-haskell-ruby-and-cards-against-humanity/")
 
 ## What are lichen?
-
 - Lichen are a symbiotic combination of algae and fungi.
 - Learnt while walking the SouthWest coast path in Cornwall, 30th June '25
 
 ## Who helped to build the Minack theatre?
-
 - Billy Rawlings was the guy who helped build the Minack. His cottage is covered in ivy and has corrugated roof
 ## What are the three things you can do to help your friend who is suffering?
-
 - "I'll give you three options"
 	- Talk about it
 	- Distraction
@@ -462,7 +385,6 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 - [The video is here](https://youtube.com/shorts/EKHpUK_RshE?si=ijZmkIMJaS93kIVv) (35 seconds long)
 - Keywords for searching: advice, hard time
 ## What kind of fluorescent tube do I need?
-
 - When replacing, TURN POWER OFF first
 	- In our cellar that means bringing a torch, doing it in daylight, and opening the door to outside
 	- The tube slots in from the side at both ends, and then you twist it until it clicks
@@ -491,13 +413,10 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 	- "835" (this means the shade of white)
 	- Warm white
 # Where's that post from the guy who doesn't like the term neurospicy?
-
 - [Here it is](https://www.linkedin.com/posts/studioarlo_i-am-neurodivergent-not-neurospicy-do-activity-7388485359141138432-psEn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAiZYLUBKE3tP8lBfqVfboHdbSUih9-OOXY) - LinkedIn post by Arlo West.
 # How do I strip cruft from online recipes?
-
 - See [[pages/think/life/health-stuff/food#Tool that will strip the cruft from online recipes|Tool that will strip the cruft from online recipes]]
 # How do I get Radio Waters (with the people from Purple Radio) to play on my Sonos speaker?
-
 - The Tunein service doesn't work in my version of the Sonos app
 - The myTuner service works for some radio stations, but for some reason not Radio Waters
 - The my Tuner service has no search function, but you can use the global Sonos search function to find stuff - but still Radio Waters doesn't seem to work

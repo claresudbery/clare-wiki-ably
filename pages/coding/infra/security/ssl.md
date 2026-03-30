@@ -4,7 +4,6 @@ location: pages/coding/infra/security/leaf
 permalink: /pages/coding/infra/security/SSL
 ---
 ## SSL Certificates
-
   - See also “Handling HTTPS requests and SSL certificates” on the Nginx
     page in this wiki.
   - SSL certificates are needed for HTTPS
@@ -60,7 +59,6 @@ permalink: /pages/coding/infra/security/SSL
           - Load Balancing: click the cog, then check SSL certificate ID
 
 ## An example of an https issue
-
 - At Samba,	iShare (just the maps part?) was hosted on an http url, not https
   -	iShare was owned by a third party
 -	It would have been possible to change it to https, but that would affect other clients

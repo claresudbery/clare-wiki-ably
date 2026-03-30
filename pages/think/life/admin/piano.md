@@ -5,12 +5,10 @@ permalink: /pages/think/life/admin/Piano-Stuff
 ---
 
 ## Nasty piano overtones / harmonics
-
 - [Piano tuners' Forum question](https://www.piano-tuners.org/piano-forums/viewtopic.php?f=3&t=14094)
 - [Recording on Youtube](https://www.youtube.com/watch?v=UzBpdipwhfY&feature=youtu.be)
 
 ## Digital pianos / electric pianos
-
 - Summarised from Forsyths' site [here](https://www.forsyths.co.uk/content/53-how-to-choose-a-digital-piano)
     - Looks like it's a little out of date though, as the actual models recommended are mostly not on the site
 - Most have 88 key weighted keyboard and sample sound of grand piano
@@ -45,7 +43,6 @@ permalink: /pages/think/life/admin/Piano-Stuff
     - Carrying case?
 
 # Embodiment
-
 - The book (about embodiment) is called "What Every Pianist Needs to Know About The Body" by Dr. Thomas Mark
 - I have a copy on my Kindle
 - This is a good unaffiliated link for the book: https://www.pianostreet.com/smf/index.php?topic=60548.0

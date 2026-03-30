@@ -7,7 +7,6 @@ permalink: /pages/organising/tools/Kinemaster
 - See also [misc-tools.md](/pages/organising/tools/misc-tools.md#video-editing-tools)
 
 ## To turn an audio file into a video file for youtube
-
 - (Alternatively, use [Descript](pages/organising/podcasts/descript.md) and just drag and drop the audio into a new video project)
 - Create new project
 - Add an image using the media section
@@ -16,11 +15,9 @@ permalink: /pages/organising/tools/Kinemaster
 - Use the export button (top right) to save as video
 
 ## To extract sound from video
-
 - Just import video into Audacity then export as audio file!
 
 ## To add your own sound
-
 - Create video
 - Select the actual video track itself (it will highlight in yellow)
 - Click the volume icon (labelled "mixer") 
@@ -35,7 +32,6 @@ permalink: /pages/organising/tools/Kinemaster
 - To delete an audio track, select it under the video and then click the bin icon on the left.
 
 ## To remove a section from the start of the main media
-
 ... when you want all the layers to shift left, which is not the default behaviour.
 
 - Or if you want to make any change that keeps layers in place.
@@ -47,7 +43,6 @@ permalink: /pages/organising/tools/Kinemaster
     - Please see [this video tutorial on using the pin tool](https://www.youtube.com/watch?v=eif5JH6HCF4&ab_channel=MasteringKinemaster)
 
 ## To add a cover image
-
 - Place the cursor at the start of the video
 - Click Media (top right)
 - Click Photo (left)

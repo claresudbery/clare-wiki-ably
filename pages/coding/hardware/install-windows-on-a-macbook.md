@@ -9,7 +9,6 @@ It's useful if you want to play games via Steam etc.
 To install Windows on a Macbook:
 
 ## 1. Bootcamp
-
 - less processor intensive, because it works via dual boot - ie you restart your mac and choose a different boot option, and only have one OS running at a time
 - cheaper, because you only have to buy Windows 10 (£99 in Feb 2021)
 - more awkward - you have to restart your laptop to change OS
@@ -18,7 +17,6 @@ To install Windows on a Macbook:
 - Harder to share files between OSes. You would basically have to download files from the cloud for each separate OS. Each partition doesn't have access to the other one.
 
 ## 2. Parallels
-
 - more processor intensive: will run a virtual machine hosted by OSX, so both OSes are running at once. But if you have 8Gb more of RAM ("memory" in About This Mac) you should be fine.
 - more expensive - you have to buy Parallels (currently £80 in Feb '21) as well as Windows 10
 - less awkward - you can easily switch between OSes

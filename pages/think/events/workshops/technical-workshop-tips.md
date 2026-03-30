@@ -4,7 +4,6 @@ location: pages/think/events/workshops/leaf
 permalink: /pages/think/events/workshops/Technical-Workshop-Tips
 ---
 ## General Lessons
-
   - Establish a culture of learning:
       - The team benefits when every member feels they can learn and
         explore technologies
@@ -24,7 +23,6 @@ permalink: /pages/think/events/workshops/Technical-Workshop-Tips
     helpful.
 
 ## Preparing for Workshops
-
   - When people are delivering workshops, they need to be given time to
     prepare
   - You can arrange group learning sessions which do not have to rely on
@@ -48,7 +46,6 @@ permalink: /pages/think/events/workshops/Technical-Workshop-Tips
         potentially interested parties
 
 ## Workshop Resources
-
   - Keep hold of resources from previous workshops so that you can do
     them again.
   - It’s a very good idea to create skeleton projects with useful
@@ -56,7 +53,6 @@ permalink: /pages/think/events/workshops/Technical-Workshop-Tips
     repository where everybody can reach them.
 
 ## Booking Rooms for Workshops
-
   - If using Outlook: When adding a meeting in Outlook, click Scheduling
     Assistant at the top
       - Then click Add Rooms, bottom left
@@ -69,7 +65,6 @@ permalink: /pages/think/events/workshops/Technical-Workshop-Tips
   - You need to choose a room that has a decent screen.
 
 ## Running Workshops
-
   - Sessions work best if they are hands on. Give people plenty of time
     to explore the concepts being introduced – ideally in pairs.
       - This has the added benefit that less preparation is required:

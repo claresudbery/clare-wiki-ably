@@ -1,5 +1,4 @@
 ## Adding timestamps to responses
-
 **To create a custom style:**
 
 1. THIS DOESN'T WORK - see Clare's Career Obsidian, under Drawbacks, "Sept '25, when Claude couldn't do timestamps"

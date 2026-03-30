@@ -5,7 +5,6 @@ permalink: /pages/coding/webdev/Markdown
 ---
 
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [RefactoringExamples (PRIVATE)](https://github.com/claresudbery/RefactoringExamples)
@@ -14,7 +13,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - The repo I created when I was experimenting with creating a vanilla Jekyll site: [clare-wiki-jekyll](https://github.com/claresudbery/clare-wiki-jekyll)
 
 ## Docs and Blog Posts and Useful Tools
-
 - The [Jekyll section](/pages/coding/webdev/Jekyll) on this site.
 - Some [useful notes about basic markdown rules and capabilities](https://github.com/claresudbery/RefactoringExamples/tree/master/github-markdown/example%20markdown).
 - [Mastering GitHub markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
@@ -27,9 +25,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - That repo also contains some [useful notes about basic markdown rules and capabilities](https://github.com/claresudbery/RefactoringExamples/tree/master/github-markdown/example%20markdown).
 
 ## New notes
-
 ### Display triple backticks in a code block
-
 To display triple backticks in a fenced code block, wrap them inside quadruple backticks.
 
 Like this:

@@ -1,10 +1,7 @@
 ## Skipping forward / back while watching videos
-
 - See [[misc-tech-tips#Skip forward or back in youtube|misc-tech-tips - Skip forward or back in youtube]]
 ## Editing YouTube Videos
-
 ### Add an end screen
-
 - ! It might not be what you think it is! 
 - I wanted to add a full screen image to the start and end of my video, and that's not what this is
     - I did it using Descript - just drag / drop an image onto the start / end of the transcript, and it will add a silent bit in - which by default is 4 seconds - and will insert dots in the transcript. Delete dots to shorten the elgnth of time it appears for. 
@@ -23,7 +20,6 @@
     - Click Save
 
 # youtube - Schedule video publish time 
-
 You can use scheduled publishing to schedule a private video to go public at a specific time.
 Schedule a video to publish later
 To schedule a video's publication time, you have to first set the video as "scheduled" or "private" on the upload page.

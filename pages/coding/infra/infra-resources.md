@@ -11,7 +11,6 @@ permalink: /pages/coding/infra/Infrastructure-Resources
 - [Various InSimpleTerms posts](https://insimpleterms.blog/category/infrastructure)
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [cadogan/infra (PRIVATE)](https://github.com/claresudbery/Cadogan/tree/master/infra)
@@ -24,16 +23,13 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - contains scripts used to fiddle with [Reconciliate](https://github.com/claresudbery/Reconciliate).
 
 ## Misc
-
 - [infrastructure tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=d3b5efea-dd5a-4d3b-94c9-77a1b3f43b35&query=tag%1FInfrastructure%1FtagGuid%3A38bcc5ac-be79-4b3a-bbb0-9d21f8d2e98d%1Eview%3AVIEW%2FALL_NOTES&)
 
 ## DORA State of DevOps 2019
-
 - See [dedicated section](/pages/think/code-princ/metrics.md#accelerate-metrics--dora-metrics)
 - See also my notes on Accelerate, [here](https://clare-wiki.herokuapp.com/pages/think/code-princ/books/Accelerate)
 
 ## The Three Ways of DevOps
-
 - From The Phoenix Project and The DevOps handbook
     - See my notes on DevOps-Handbook, [here](https://clare-wiki.herokuapp.com/pages/think/code-princ/books/DevOps-Handbook)
 - The First Way: The principles and technical practices of Flow
@@ -42,7 +38,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [More here](https://blog.sonatype.com/principle-based-devops-frameworks-three-ways#:~:text=If%20you've%20read%20either,Way%3A%20Principles%20of%20Continuous%20Learning)
 
 ## Little's Law
-
 Little’s Law provides insight into how increasing work-in-process (WIP) has a detrimental impact on cycle time. This is counterintuitive to common practice in conventional project management, where the belief is that increasing WIP will increase throughput and ‘get more things going.’
 [More here](https://projectproduction.org/journal/littles-law-a-practical-approach-to-understanding-production-system-performance/#:~:text=Little's%20Law%20provides%20insight%20into,and%20'get%20more%20things%20going.)
 

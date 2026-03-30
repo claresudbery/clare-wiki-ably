@@ -5,13 +5,11 @@ permalink: /pages/think/teach/Teaching-Resources
 ---
 
 ## Misc
-
 - High school teaching resources: External hard disk: 2014-04-01_Backup\_201105_ClaresStuff_backup\_Teaching
 - There's also a lot of useful teaching content in the [Workshops](/pages/think/events/Workshops) section of this site.
 - [Anki](apps.ankiweb.net) is a fantastic tool to help people use spaced memory repetition to remember new ideas and concepts.
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/teaching) (Teaching category)
 - [How Learning and Teaching Shape Us](https://medium.com/a-woman-in-technology/how-learning-and-teaching-shape-us-3e6333b8c7ba) (my Medium blog post)
 - [Teaching New Tricks](https://www.dotnetrocks.com/?show=1621) - my interview on the Dot Net Rocks podcast about teaching experienced developers
@@ -20,9 +18,7 @@ permalink: /pages/think/teach/Teaching-Resources
 - [Blog post](https://craigbass.uk/my-blog/maximising-involvement-in-mixed-seniority-engineering-teams) from Craig Bass (who used to run the [Made Tech academy]()), also about the benefits of having juniors on your team
 
 ## Concepts
-
 ### Bloom's taxonomy
-
 - think about how learning works, what level of learning you're trying to achieve and how you might achieve it
 - i've delivered this bit in mine and Emily's training
   - didn't have slides, just used the Miro as a slide show with the various frames
@@ -52,9 +48,7 @@ permalink: /pages/think/teach/Teaching-Resources
     - was previously known as synthesis and came before evluation, but terminology and order was revised in 1956
 
 ## Training Programmes
-
 ### Skills Matrices
-
 - Skills Matrix is a thing you can use to track engineers' existing skills. [This is an example](https://docs.google.com/spreadsheets/d/1O_eSoLiWOLeLOxOERF22UiWsjsp59thy1fd8JPhRif4/edit?usp=sharing) of a matrix that you can ask your engineers to fill in, then you can review it with them on a regular basis to track progress. 
     - There is a [presentation here](https://drive.google.com/file/d/18gqpL9ky00CQZ11gh4GWll5Pg6xxHi_g/view?usp=sharing) which is used to introduce the skills matrix and how to use it.
     - Note that the skills matrix references a powerpoint presentation, "Practices - Categories.pptx", which lists all the skills and explains what the scores represent, and is [available here](https://drive.google.com/file/d/1569G1kM5YhBfFR9qB7pLNcBo_o1niGAn/view?usp=sharing). 
@@ -69,9 +63,7 @@ permalink: /pages/think/teach/Teaching-Resources
 ![skills matrix](/resources/images/skills-matrix.png)
 
 ## Shape and space
-
 ### Origami / paper folding / cube / cubes
-
 - On external hard disk:
 - /Volumes/WD USB 2/2014-04-01_Backup/_201105_ClaresStuff_backup/_Teaching/Resources/Shape and Space/Shapes/Paper folding/origami cube
 

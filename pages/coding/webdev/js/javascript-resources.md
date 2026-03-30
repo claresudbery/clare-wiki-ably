@@ -7,13 +7,11 @@ permalink: /pages/coding/webdev/js/Javascript-Resources
 ([Main Javascript directory is here](/pages/coding/webdev/Javascript))
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
 ## General Javascript Stuff
-
 - External hard disk has stuff from previous projects in F:\2014_OldHardDisk\Git
 - msFill - HTML javascript thing?: Dropbox\IT Training\JS Stuff\canvasfill.html
 - Javascript examples from Helix: Dropbox\IT Training\JS Stuff\Javascript examples.js
@@ -28,25 +26,21 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Chris Young(@WorldOfChris)'s city-building Bezier project - [the tests behind it](https://github.com/peckhamdata/bc-map/blob/master/test/city_builder.test.js)
 
 ## Tools for practising with javascript
-
 - Use [jsfiddle code playground](https://jsfiddle.net/) to write test Javascript in the browser.
 - [Quickly create sandboxes for react/vue/angular etc](https://twitter.com/CompuIves/status/1291020566221205511) - eg Type http://react.new in the address bar of your browser, and it will open @codesandbox with a new React project.
 - Play with css animation using Javascript expressions with [tixy.land](/pages/coding/webdev/js/tixy-land)
 - [wtfjs](https://wtfjs.com/) - a place where people post examples of Javascript behaving weirdly. "JavaScript is a language we love despite it giving us so much to hate. This is a collection of those very special irregularities, inconsistencies and just plain painfully unintuitive moments for the language of the web."
 
 ## Elsewhere on this site
-
 - [MVC4](/pages/coding/dotnet/MVC4)
 
 ## Use Javascript in Chrome Bookmarks
-
 Enter Number in input: Put this js into the url field in a Chrome bookmark:
 
 ```
 (javascript:(function(){var firstInput = $('form').find('input[type=text],input[type=password],input[type=radio],input[type=checkbox],textarea,select').filter(':visible:first'); if (firstInput != null) { firstInput.val('99999');}})()))
 ```
 ## js optimisation
-
   - See \`jsoptimise.build.js\` in Samba (although when I searched for
     it, it wasn’t there…)
   - To optimise automatically:

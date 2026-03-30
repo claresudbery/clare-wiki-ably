@@ -5,19 +5,16 @@ permalink: /pages/coding/data/Data-Misc
 ---
 
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don’t ask me to share the code, because I can’t. They’re listed here purely for my reference.
 
 - [data-engineering (PRIVATE)](https://github.com/claresudbery/data-engineering.git)
     - Stuff learnt / played with during TW data engineering course.
 
 ## B-Tree
-
 - [What's a B-Tree]()
 - [Cool B-Tree Visualisation Tool](https://www.cs.usfca.edu/~galles/visualization/BTree.html) - enter data and click Insert. Keep entering data (for the simplest demo just enter single letters) and it will build a B-Tree for you.
 
 ## Data Lakes
-
 - These are the alternative to data warehouses
     - Typically a data warehouse will have a common structured schema (ie every piece of data will have the same format) – will pull data from different sources and convert to that schema
     - A data lake contains the original source data in its original formats

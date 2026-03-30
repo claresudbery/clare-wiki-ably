@@ -7,11 +7,9 @@ permalink: /pages/organising/podcasts/Rode-Mics
 
 This page is for the GO mics. For the Rode podcaster mic I bought for the Making Tech Better podcast, see [[podcast-recording#RODE mic (RODE Podcaster)|here]].
 ## Wireless GO II
-
 Manual: https://rode.com/en/user-guides/wireless-go-ii
 
 ### Use with iphone 
-
 - You either need SC15 or SC19 cable (SC19 is same but longer)
 - or connect to AI micro using 3.5mm jack cable from Go receiver 
     - Use split jack cable (one jack one end, two jacks the other end) to split the signal into two channels, one for each input on the AI micro
@@ -24,7 +22,6 @@ Manual: https://rode.com/en/user-guides/wireless-go-ii
     - because the receiver is just acting like any other microphone - it's just a hardware input into whichever recording software you choose to use
 
 ### Accessing recordings
-
 - Your best bet is to connect the receiver to recording software
     - then capture the output live and record it yourself
     - see above for how to do this with iphone
@@ -45,7 +42,6 @@ Manual: https://rode.com/en/user-guides/wireless-go-ii
     - then delete from device, via separate dialog - click settings icon top right (I think - anyway it's in a separate dialog altogether, not in same place as recordings, and you have to delete all content all at once)
 
 ### Troubleshooting
-
 - If both lights are solid blue on transmitter and you can't get it to work
     - Hold down power button for 60 seconds
 - If receiver is not picking up a transmitter
@@ -81,7 +77,6 @@ Manual: https://rode.com/en/user-guides/wireless-go-ii
     - !! This didn't actually work for me when I tried it!!
 
 ## Issues I had
-
 - Lights staying solid blue and transmitter not working
 - Lavalier mics not producing any oinput when attached to AI micro
 - Receiver not working in split mode - only outputting one channel

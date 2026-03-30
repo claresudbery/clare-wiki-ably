@@ -5,11 +5,9 @@ permalink: /pages/coding/data/Timeflux
 ---
 
 ## DevBreak '21, Timeflux workshop
-
 Building Brain-Computer Interfaces 
 
 ### Preparation before workshop
-
 - [Installation (had to install miniconda first)](https://doc.timeflux.io/en/stable/usage/getting_started.html)
 - What I did:
     - Installed Miniconda on MacBook using pkg 8fa371ae97218c3c005cd5f04b1f40156d1506a9bd1d5c078f89d563fd416816, which was the latest on 8 Sept 2021. [Here is the link for the latest one](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg).
@@ -31,7 +29,6 @@ timeflux -d test.yaml
 ```
 
 ### What timeflux is
-
 - BCI = Brain Computer Interface
     - interact with physical world using your mind only
     - eg 
@@ -85,7 +82,6 @@ timeflux -d test.yaml
 
 
 ### Other workshop notes
-
 - download timeflux : https://doc.timeflux.io/en/stable/usage/getting_started.html
 - DAG - DIRECTED ACYCLIC GRAPH - data flows in one direction only, with no loops
 - Pub/sub allows async loops using DAGs without breaking anything - because one DAG can subscribe to its own publication 
@@ -125,12 +121,10 @@ timeflux -d test.yaml
 - Alpha / beta / delta / theta - do they all exist simultaneously or are they created by combining one another?
 
 ### Conda
-
 - `conda create`
 - `conda activate` - starts up an instance of the conda environment
 - `exit` - leave the env
 
 ## Questions
-
 - What does `conda activate` do?
     - starts up an instance of the conda environment

@@ -1,5 +1,4 @@
 ## Overview
-
 - **Maven** is a **build tool** for Java projects. In the same way that you might use `npm` for JavaScript or `pip` for Python
 - If I understand correctly, it performs the same function as gradle. My notes on [[gradle|gradle are here]].
 - Maven handles things (via maven commands - see [[#Running Maven commands|separate section]]) like:
@@ -9,17 +8,14 @@
 	- **Packaging** your app into a distributable file (e.g. a `.jar`)
 - Maven projects are defined by `pom.xml` - see [[#pom.xml|separate section]].
 ## pom.xml
-
 - You can tell when a Java project is a `maven` project, if there is a file `pom.xml` in the root of your project.
 - `pom` stands for **Project Object Model**. `pom.xml` is the single file that defines a Maven project.
 ## Installing Maven
-
 - Having `pom.xml` in your project just means "this project _uses_ Maven," but you still need the Maven tool itself installed on your machine to use it.
 - If  you run `which mvn` on the command line that'll tell you if you have global Maven installed. 
 - But even if you don't have global maven, you may still have Maven bundled with (eg) IntelliJ IDEA, so might still be able to use Maven. See section in this file, [[#Running Maven commands]].
 - To install global maven, run `brew update` and then `brew install maven`
 ## Running Maven commands
-
 - You can run Maven commands using the `mvn` command on the command line
 - You can also run Maven commands from with IntelliJ by clicking on the m icon in the right-hand side bar, expanding the Lifecycle node in the tree, and double-clicking commands like `compile` or `test`
 	- IntelliJ can run Maven even when `mvn` is not available in the shell environment, because IntelliJ may be using:
@@ -44,7 +40,6 @@
 		- `./mvnw clean compile`
 		- After that, everyone can build with `./mvnw` even without a global Maven install.
 ## Folder structure with Maven
-
 - If you create a new Maven project in IntelliJ, you'll see that by default you have the following folder structure: `src/main/java/org/example/Main.java` 
 - This is the standard Maven project layout plus Java package naming.
 - `src/main/java/` is Maven’s default location for production Java source.

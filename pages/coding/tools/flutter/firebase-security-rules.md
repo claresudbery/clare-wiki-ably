@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
 ---
 
 # Firebase Security Rules
-
 ## Contents of this page:
-
 - [Overview](<#overview>)
 - [Storage rules](<#storage rules>)
 - [Getting started](<#getting started>)
@@ -44,7 +42,6 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
   - [Difference between firebase testing node modules](<#difference between firebase testing node modules>)
 
 ## Overview
-
 - [Useful reference](https://firebase.google.com/docs/reference/rules/rules)
 - Firestore has its own DSL
 - there are some good videos 
@@ -67,7 +64,6 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
     - More [here](https://www.fullstackfirebase.com/cloud-firestore/security-rules#read-rules)
 
 ## Storage rules
-
 - Note that Firebase storage is not the same thing as Firestore 
 - The security rules live in `storage.rules` instead of `firestore.rules`
 - Setup is slightly different
@@ -100,7 +96,6 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
   - But note that after I added `storage.test.js` to this example code, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), I never tested it, so I don't know if I broke it!
 
 ## Getting started
-
 - Install toba security rules syntax highlighting extension: toba.vsfire, v1.4.1: https://marketplace.visualstudio.com/items?itemName=toba.vsfire
 - Install node and npm
 - Get a recent version of Java
@@ -119,7 +114,6 @@ permalink: /pages/coding/tools/flutter/Firebase-Security-Rules
 - ...and get yourself set up to [write unit tests](<#writing  running unit tests>)
 
 ## Creating a test app
-
 - First create an empty project in Firebase console
   - The video says "enable Firebase Cloud store in production mode"
     - click through to Cloud Firestore on home page of new app
@@ -147,7 +141,6 @@ firebase init
 - Now you'll have a `firestore.rules` file
 
 ## Getting started with unit tests
-
 - First [create test app](<#creating a test app>)
 - Now, create a folder called test:
 
@@ -174,7 +167,6 @@ npm init # or npm install if this was already done
     - [How to _start_ with more up to date approach](<#how to start with more up to date approach>)
 
 ### What I originally did
-
 - Install a couple of libraries:
 
 ```bash
@@ -199,7 +191,6 @@ const MY_PROJECT_ID = "insert-your-project-id-here"; // see below
   - Copy Project ID (something like `name-of-your-app-45fs4`)
 
 ### How I converted to a more up to date approach
-
 - You can see the commits where I did all of this 
   - [here](https://github.com/claresudbery/clare-wiki-ably/commit/2331b4a0ab9e3d35e0469916056faa43e6af863d)
   - and [here](https://github.com/claresudbery/clare-wiki-ably/commit/3e554c2b8e2473de7bcb0caf3d610e6f9290238f)
@@ -327,7 +318,6 @@ const moderatorToken = {
   - ...and replace `admin.collection` with `adminDB.collection`
 
 ### How to start with more up to date approach
-
 - Install some libraries:
 
 ```bash
@@ -397,7 +387,6 @@ const moderatorToken = {
   - Copy Project ID (something like `name-of-your-app-56d4s`)
 
 ## Writing / running unit tests
-
 - Edit `test.js` to add your first test(s)
 - See [sample code](https://github.com/claresudbery/flutter-examples/blob/main/security-rules-test-app/test/firestore.test.js#L49) for example of a test
   - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
@@ -578,7 +567,6 @@ describe("Our security rules test social app", () => {
 ```
 
 ### Running individual unit tests
-
 - Running individual tests: `npm test -- --grep "users cannot delete ring avatars if storage path does not indicate they are ring creators"`
   - To only run one test file, edit `package.json` like this (where `storage.test.js` is the file you want to run):
 
@@ -589,7 +577,6 @@ describe("Our security rules test social app", () => {
 ```
 
 ### Changing things to run multiple test files instead of just one
-
 - Rename test file from `test.js` to `something-specific.test.js`
   - So you can then add `something-else-specific.test.js`
 - edit `package.json` to look for all test files, like this:
@@ -604,7 +591,6 @@ describe("Our security rules test social app", () => {
 - Note that I also changed `package.json` to have `"main": "index.js"` instead of `"main": "test.js"`, but I'm not sure that made any difference to anything.
 
 ### Working with test data
-
 - You can manually go into the emulator UI and create collections and documents
   - but obvs this not great for test data
 - You can't do things like this:
@@ -673,7 +659,6 @@ after(async() => {
 ```
 
 ## Different types of database action
-
 - There is `read` and `write` covered in examples above
 - Then there is `update`
 - See [sample code](https://github.com/claresudbery/flutter-examples/blob/main/security-rules-test-app/firestore.rules#L44) for example
@@ -710,9 +695,7 @@ service cloud.firestore {
 ```
 
 ## Testing authentication
-
 ### Custom auth claims
-
 - You can add custom fields to the auth object
 - ...but accessing anything other than `uid` on the auth object requires you to use `auth.token`, which is slightly confusing.
 - Structure of auth object looks like this (see below)...
@@ -765,7 +748,6 @@ it ("Allows a moderator to edit somebody else's post", async() => {
 ```
 
 ### Store custom auth stuff in your database
-
 - In this case you have to do an actual database fetch in the middle of the rule config
 - So you have to call `get` to fetch the field that gives you access control info
 - See [sample code](https://github.com/claresudbery/flutter-examples/blob/main/security-rules-test-app/firestore.rules#L9) for example
@@ -811,7 +793,6 @@ service cloud.firestore {
 ```
 
 ## Functions in rules
-
 - See [sample code](https://github.com/claresudbery/flutter-examples/blob/main/security-rules-test-app/firestore.rules#L5) for example
   - Note that I edited this slightly to add `storage.test.js`, in commit [6dee624](https://github.com/claresudbery/clare-wiki-ably/commit/6dee624249afdcfe0298a085e10976b8abdf58f8), but never tested it, so I don't know if I broke it
 - Quick example:
@@ -877,7 +858,6 @@ service cloud.firestore {
 - This also applies to global constants. If you want them, you have to put them in a function (ie create a function which returns the data you want in the const)
 
 ## Accessing the new data rather than the existing data
-
 - So far, we've seen `resource.data` be used to refer to data that already exists in the database
 - But sometimes we want to access new data - whether it's a new doc being inserted or new data that will be updated on an existing doc
 - We do this via `request.resource.data`
@@ -915,7 +895,6 @@ service cloud.firestore {
 ```
 
 ## Accessing / checking specific fields
-
 - If you want to look at the list of fields in a request, you can use `keys()`:
   - `request.resource.data.keys()` for the field names of the newly updated or inserted doc
   - `resource.data.keys()` for the field names of the original doc before any change
@@ -978,7 +957,6 @@ service cloud.firestore {
 ```
 
 ## Checking which fields have been changed on update
-
 - You can't look at the fields in the changed data (`request.resource.data.keys()`), because it will list all fields whether they've been changed or not
 - ...but `resource.data` is a map (ie has the structure `{foo: "bar", goo: "gar"}`)
 - ...so to compare the previous data with the new data and see what's changed, you can use [mapDiff functionality](https://firebase.google.com/docs/reference/rules/rules.MapDiff):
@@ -1031,12 +1009,10 @@ service cloud.firestore {
 ```
 
 ## Good practice
-
 - Edit `firestore.rules` locally and use `firebase deploy` to upload to server
   - instead of editing in console
 
 ## Experimenting with security rules
-
 - There is a security rules playground in Firebase console
   - select database on left
   - select Rules at top
@@ -1045,7 +1021,6 @@ service cloud.firestore {
 - ...but the best way is to write unit tests, and then you can [debug](<#debugging>) if necessary
 
 ## Debugging
-
 - [More here](https://firebase.google.com/docs/reference/rules/rules.debug)
 - If you wrap the `debug` function around the thing you want to debug, it will execute as normal but also output its value to the debug log - then you'll see it after running tests. 
 - To access the debug log, open `firestore-debug.log`, which lives in same folder as `firebase.json` (possibly one level up from your tests)
@@ -1073,9 +1048,7 @@ let affectedKeys = debug(request.resource.data.diff(resource.data)).affectedKeys
 ```
 
 ## Troubleshooting
-
 ### Error `Property auth is undefined on object`
-
 - If you get the error `Property auth is undefined on object` this could be because you accidentally wrote `if (resource.data.authorId == resource.auth.uid)`
   - it should be `request`, not `resource`
   - so it should be `if (resource.data.authorId == request.auth.uid)`
@@ -1084,7 +1057,6 @@ let affectedKeys = debug(request.resource.data.diff(resource.data)).affectedKeys
     - With this example, the error could be `Property visibility is undefined on object` because it can't find either `visibility` OR `auth`, so the first thing it errors on is `visibility`
 
 ### Error `ECONNREFUSED ::1:8080`
-
 - If you get the error `ECONNREFUSED ::1:8080` while trying to run tests
   - This started happening to me randomly when previously it hadn't been happening
   - I was running my local emulator from iTerm, it was running correctly, but when I tried to run tests I just got the error `ECONNREFUSED ::1:8080` and no other feedback
@@ -1110,19 +1082,16 @@ const firestore = {
 - See also [Running emulator on another port](<#running emulator on another port>)
 
 ### Tests failing unexpectedly
-
 - If tests start failing unexpectedly and `debug` commands won't work
   - Check `firestore-debug.log` - see [debugging](<#debugging>)
   - If you're getting the error `Detected non-HTTP/2 connection.`, see below
 
 ### Error `Detected non-HTTP/2 connection.`
-
 - If you get the error `Detected non-HTTP/2 connection.` when running tests
   - Try adding `process.env.FIRESTORE_EMULATOR_HOST = "127.0.0.1:8080";` to the top of `test.js`
   - (You might need to change IP and port according to your `firebase.json`)
 
 ### Firebase storage test timeout issues
-
 - When running tests against `storage.rules`, via `npm test`, I got the following output: 
 
 `
@@ -1163,7 +1132,6 @@ Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is
     - This fixed the problem. Timeout has disappeared. Hurrah!
 
 ## Running emulator on another port
-
 - I found myself experimenting with security rules in a separate project - with its own Firebase emulator - while also running a local version of Construct on its own emulator
   - My test emulator was running on a separate port
 - This IS possible, but it's quite difficult to get your tests to attach to the correct emulator
@@ -1177,7 +1145,6 @@ Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is
     - See [below](<#3 remove calls to clearfirestoredata>)
 
 ### 1. Edit firebase.json
-
 - Add a firestore section with host and port:
 
 ```js
@@ -1197,7 +1164,6 @@ Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is
 ```
 
 ### 2. Edit your test file
-
 - Add a call to `db.settings` to specify the port. The `ssl` part is also important:
 
 ```js
@@ -1212,7 +1178,6 @@ function getFirestore(auth){
 ```
 
 ### 3. Remove calls to clearFirestore
-
 - I tried many many things to get calls to `clearFirestore` working on an emulator on a different port
   - It was actually `clearFirestoreData`, as that was when I was working with the older version
 - None of them worked
@@ -1244,9 +1209,7 @@ function getFirestore(auth){
   - Run the tests with calls to `clearFirestoreData` in `after` only (not in `beforeEach`)
 
 ## My questions to the firebase community
-
 ### Difference between firebase testing node modules
-
 Hi
 Not sure if this is the right channel but…
 

@@ -7,21 +7,17 @@ permalink: /pages/think/events/other-talks/DevBreak21
 DevBreak 2021 - in castle / chateau in France.
 
 ## Ron Garan, The Orbital Perspective
-
 - Apollo 8, 1968
 - RonGaran.com
 
 ## Building Brain-Computer Interfaces 
-
 See [separate Timeflux page](/pages/coding/data/Timeflux).
 
 ## There and back again - a Web tale: Chris lilley
-
 - Nothing has really changed 
 - WebAssembly is same thing as java in the browser 
 
 ## Cate huston, the culture of process 
-
 - Different team members 
     - questioner, will question expectations and only meet those that fit 
     - Obliger, will meet all expectations and worry about it 

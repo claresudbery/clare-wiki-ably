@@ -5,20 +5,16 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 ---
 
 ## Editing tools
-
 - [My notes on Audacity](/pages/organising/podcasts/Audacity)
 - Other useful tools:
     - [Temi](<#create a transcript>)
     - [Descript](/pages/organising/podcasts/Audacity)
 
 ## Recording
-
 * See [here](/pages/organising/podcasts/Podcast-Recording)
 
 ## Interview editing steps
-
 ### Create a transcript
-
 - Start with a recording that has both voices on at once
     - You get this by default with a Zoom recording
     - in [Squadcast](https://app.squadcast.fm/sessions), they're separate by default, but you can get both voices in one recording like this:
@@ -29,7 +25,6 @@ permalink: /pages/organising/podcasts/Podcast-Editing
     - Create a transcript
 
 ### Create first pass of section headings
-
 - First get a feel for the broad outline
     - SKIM the transcript
     - Quickly insert headings broadly describing each section - these will have descriptive titles rather than the T001, etc you'll be using later.
@@ -41,7 +36,6 @@ permalink: /pages/organising/podcasts/Podcast-Editing
         - It's also worth suffixing headings with y, n and m for Yes, No and Maybe to indicate whether sections will be kept or not.
 
 ### Make a note of timestamps
-
 - Now start inserting timestamped labels in Audacity and Word
     - Have Audacity and the transcript open side by side
     - Do two passes:
@@ -79,7 +73,6 @@ permalink: /pages/organising/podcasts/Podcast-Editing
 - Make sure you create one last label which marks the end of the recording.
 
 ### Use timestamps to calculate rough episode length(s)
-
 - When you're done, transfer timestamps to a spreadsheet to get an idea of length:
     - In Word:
         - Click View => Outline
@@ -99,7 +92,6 @@ permalink: /pages/organising/podcasts/Podcast-Editing
             - (you'll have to format those cells as times too - Format => Number => Time)
 
 ### Audacity: Pull snippets / audiograms / teasers out into a new track
-
 In Audacity...
 
 - Use File => Import to load your wav or mp3 file into Audacity.
@@ -130,7 +122,6 @@ In Audacity...
 - File => Export => Export as mp3
 
 ## Removing background noise
-
 - Descript has its "studio sound" option
 - [Uniconverter](https://videoconverter.wondershare.net/) is another option
     - bit suspicious of this though - seems extremely spammy

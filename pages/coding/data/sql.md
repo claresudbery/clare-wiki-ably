@@ -6,7 +6,6 @@ permalink: /pages/coding/data/SQL
 
 
 ## Misc
-
 - Resources from SQL MCITP?: Dropbox\IT Training\SQL Stuff\SQL Training
 - Pdf of a teach-yourself SQL book: Dropbox\IT Training\SQL Stuff\Teach-Yourself-SQL-in-21-Days
 - [SQL query syntax notes](https://docs.google.com/document/d/1o5ecuhB5OGtzR-Un938LyWUg-SRN41w8/edit)

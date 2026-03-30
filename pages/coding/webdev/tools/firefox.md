@@ -4,11 +4,9 @@ location: pages/coding/webdev/tools/leaf
 permalink: /pages/coding/webdev/tools/Firefox
 ---
 ## Seeing loaded js
-
   - Firebug: Net tab
 
 ## Firefox Proxy Settings
-
   - If you see this error: “Firefox can't establish a connection to the
     server”
   - In Firefox, go Settings | Options | Advanced | Network

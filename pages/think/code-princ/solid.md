@@ -4,7 +4,6 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/SOLID
 ---
 ## In detail
-
   - Lots of detail: <http://www.codemag.com/article/1001061>
   - A little detail: <http://www.blackwasp.co.uk/SOLIDPrinciples.aspx>
 
@@ -18,14 +17,12 @@ stand for:
   - **D** – [DIP - Dependency Inversion Principle](<#d dip dependency inversion principle>)
 
 ## S – SRP - Single responsibility principle
-
   - a class should have only a single responsibility (i.e. only one
     potential change in the software's specification should be able to
     affect the specification of the class)
   - this keeps classes small and reduces coupling
 
 ## O – OCP - Open/closed principle
-
   - “software entities … should be open for extension, but closed for
     modification.”
   - The “class” here is really defined as its *interface.*
@@ -40,7 +37,6 @@ stand for:
     bugs) – you just add new implementations instead.
 
 ## L – LSP - Liskov substitution principle
-
   - “objects in a program should be replaceable with instances of
     their subtypes without altering the correctness of that program.”
     See also design by contract.
@@ -142,7 +138,6 @@ stand for:
     exception which was not thrown by the base class)
 
 ## I - ISP - Interface Segregation Principle
-
   - “many client-specific interfaces are better than one general-purpose
     interface.”
   - So, if you have an interface that contains lots of methods which are
@@ -151,7 +146,6 @@ stand for:
     implements several of these interfaces.
 
 ## D – DIP - Dependency Inversion Principle
-
   - One should “Depend upon Abstractions. Do not depend upon
     concretions.”
   - Dependency injection is one method of following this principle.

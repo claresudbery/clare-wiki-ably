@@ -5,21 +5,17 @@ permalink: /pages/organising/music/Logic
 ---
 
 ## Simple notes on getting started in Logic 
-
 ### Brand new song
-
 - click on Logic Pro X on desktop
 - nothing happens but you get new system bar at the top: use File | New
 
 ### Adding a new track 
-
 - Main view - click the plus button, top left, to add new track 
 - `Software instrument` is for sequencing
 - `Audio` is to record new stuff using mic
 - `Drummer` is clever drummer AI
 
 ### Sequencing notes
-
 - Track | New Software instrument track is what you want
 - Click Synthesizer bottom left to get you off sythesizer
 - Most reliable instruments are in legacy | Logic
@@ -43,11 +39,9 @@ permalink: /pages/organising/music/Logic
 - If you accidentally zoom in or out either horizontally or vertically (easily done iwth the wrong key combinations), you can fix it with the sliders top right in the piano roll.
 
 ### Playing back
-
 There's this v annoying thing where if you move the playback marker (yellow vertical line - can be placed and dragged around just under the bar numbers at the top) and hit Play, although it will start playing there, when it stops it will go back to somewhere else entirely. The "somewhere else" seems to generally be at the beginning of whatever "cycle range" you have defined. To change this, click in the bar numbers and drag the beginning and the end of the resulting yellow strip - this will define the start and end of the default playback region.
 
 ### Drum tracks without sequencing individual notes:
-
 - Create new track, select Drummer - it's an AI that will automate a drum sequence in the style you want
 - You can select a drummer in the library
 - Then in the drummer view,
@@ -58,11 +52,9 @@ There's this v annoying thing where if you move the playback marker (yellow vert
     - Use the Fills knob to add more fills
 
 ### Drum tracks where you sequence individual notes:
-
 - new track, software instrument, drum kit sounds like real drums, electronic drum kit doesn't
 
 ### Recording a new vocal
-
 - Click + to add new track, select audio, click the R button, wait for it to flash red, then click the big red button at the top of the app.
 - Click track:
     - There's a purple metronome icon at the top for a click track, and click the numbers to the left of the icon get a count in.
@@ -70,7 +62,6 @@ There's this v annoying thing where if you move the playback marker (yellow vert
 - See [separate page](/pages/organising/music/Recording#recording-vocals-guitar-using-our-pa) on how to record vocals using our PA setup
 
 ### Working with samples
-
 **Snipping / Copying / pasting:**
 
 - You can copy a chunk from the middle of a sample by holding down command then clicking and dragging. Then use Cmd+C and Cmd+V to paste elsewhere.
@@ -90,14 +81,12 @@ I really struggled at first with getting them to snap to grid, and I'm sure ther
 - When you double-click on your sample track to get your sample editor, then select "track", you can select Snap to Bar or Snap to Samples, both of which are useful in different circumstances. You can fiddle around with other Snap setitngs here too.
 
 ### Distortion / FX
-
 - You can distort a whole track by clicking in the region view to the left of the main view, then select a plugin in the Audio FX section on the left. 
     - Amps and pedals | pedal board are particularly good. 
         - Click Play before you add the effect, then you'll hear it be applied in real time.
 - Fiddle around with the velocity in the piano roll to change how things sound.
 
 ### Bass / EQ
-
 - To increase the bass, use the EQ button in the left panel. Felix uses Channel EQ - a plugin.
 - Channel EQ:
     - drag regions around in the graph to change bass
@@ -105,7 +94,6 @@ I really struggled at first with getting them to snap to grid, and I'm sure ther
     - Or you can click a dot, then it will create a region that you can expand or contract. Then drag the dot around to warp it.
 
 ## Printing / Saving a Score / Sheet Music (pdf)
-
 - Double-click on a track to get it visible in the bottom half of the screen
 - Click on Score to see the score / sheet music
 - Scroll up to the top of the score and double-click the background (black strip at top) to get all tracks on one score
@@ -116,7 +104,6 @@ I really struggled at first with getting them to snap to grid, and I'm sure ther
     - If saving as pdf, click the down arrow next to PDF (bottom left) and select Save as PDF.
 
 ## Exporting / coverting to an audio file (wav, mp3)
-
 - You can save individual tracks using File | Export | All tracks as audio files 
 - If you want to save all tracks combined as one audio file:
     - First make sure you have all the tracks you care about selected in the main window (you can omit tracks you don't want)

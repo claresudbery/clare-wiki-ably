@@ -7,7 +7,6 @@ permalink: /pages/think/agile-princ/Consulting-Principles
 See also [Agile Techniques](/pages/think/agile-princ/Agile-Techniques) and [Workshop Techniques](/pages/think/events/workshops/Workshop-Techniques).
 
 ## Platforms are Products
-
 Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020 (see also screenshots below):
 
 - if one team has no interface with user, turn them into platform as product where other teams are their users
@@ -18,7 +17,6 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 ![platforms-are-products.jpg](/resources/images/platforms-are-products.jpg)
 
 ## Think Big, Start Small
-
 Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020: 
 
 - Think big by starting small. What's the tiniest thing I could do today to make a difference?
@@ -34,9 +32,7 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 - maintain the big vision while experiencing the small victories towards that big goal.
 
 ## Effective teams
-
 ### Team Topologies - keep teams small
-
 My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightning talk at XP Manchester about the book [Team Topologies, by Matthew Skelton and Manuel Pais](https://teamtopologies.com/resources):
 
 - Talking about the problem many companies have, of having large numbers of small independent teams who then aren't coordinated or joined up enough
@@ -58,15 +54,12 @@ My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightnin
 		 - you don't have to have all the expertise within the team - some can be external to the team.
 
 ### Allow cross-pollenation between teams
-
 - ["Stirring the pot" Twitter thread on this topic](https://twitter.com/ClareSudbery/status/1404359377566511106?s=20) arising from Kevlin Henney's interview on Making Tech Better
 
 ## Shift-Left 
-
 "Shift left" means to move things from the right hand side of your kanban (or other) board to the left - ie bring them higher up in the process / do them earlier.
 
 ## Systems thinking
-
 - Jessica Kerr and Kent Beck's [Systems Thinking workshops](https://systemsthinking.dev/workshop/)
 - [Esther Derby on Systems Thinking](https://www.estherderby.com/shifting-the-pattern-a-systems-approach-to-change/)
 - John Seddon on systems thinking
@@ -76,5 +69,4 @@ My notes from [Neil Vass (@Neil_Vass)](https://twitter.com/neil_vass)'s lightnin
 	- His [twitter](https://twitter.com/vanguardmethod)
 
 ## Handling people disagreeing
-
 ["Based on that experience, is there anything you do differently or any other considerations that would have led to a different result?"](https://twitter.com/kevlinhenney/status/1404886083326943233?s=21)

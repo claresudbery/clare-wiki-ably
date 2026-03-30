@@ -4,7 +4,6 @@ location: "pages/coding/leaf"
 permalink: /pages/coding/Coding-Lists
 ---
 ## General Coding Skills
-
 - [Practising coding skills with cyber-dojo](https://cyber-dojo.org)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/coding-skills) (Coding Skills category)
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/code) (Code category)
@@ -19,16 +18,13 @@ permalink: /pages/coding/Coding-Lists
 - [Consultancy tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=e6eddff2-dc9e-45af-b649-eba0b3e53b2f&query=tag%1FConsultancy%1FtagGuid%3A1f5c3a55-6c76-4093-952d-9629968e5f16%1Eview%3AVIEW%2FALL_NOTES&) 
 
 ## Useful resources when learning how to code
-
 - [Codecademy](https://www.codecademy.com/)
 - [Free Code Camp](https://www.freecodecamp.org/)
 - [Cyber-dojo](https://cyber-dojo.org)
 - [code wars](https://www.codewars.com/)
 
 ## Choices of Technology When Building Software
-
 ### Things you can use to build stuff quickly
-
 - [Windows console apps](/pages/coding/dotnet/Windows-Console-Apps)
 - [NancyFX](/pages/coding/tools/Nancy-FX)
 - [Asp.Net Core](/pages/coding/dotnet/Asp-Net-Core)
@@ -38,13 +34,11 @@ permalink: /pages/coding/Coding-Lists
 - [Jekyll](/pages/coding/webdev/Jekyll/)
 
 ### API Stuff
-
 - [NancyFX](/pages/coding/tools/NancyFX)
 - [WebAPI](/pages/coding/dotnet/WebAPI)
 - [Public APIs](https://github.com/public-apis/public-apis)
 
 ### Back End Stuff
-
 - [ReactiveX](/pages/coding/tools/ReactiveX)
 - [Java](/pages/coding/lang/oo/Java)
 - [C#](/pages/coding/lang/oo/C-Sharp)

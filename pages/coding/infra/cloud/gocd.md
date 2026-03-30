@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cloud/GoCD
 ---
 
 ## Example Pipeline Overview
-
   - There's a spreadsheet [describing the Cadogan GoCD pipelines in detail here](https://docs.google.com/spreadsheets/d/1SBV5Pe9S03844uzPHPovMXN7q9Fx9r4SVKRf9QpoSvk/edit#gid=999853802) (only available to Clare).
   - Generally pipelines are initially copying stuff into S3 artefacts
     buckets, and then copying from there into final buckets, which are
@@ -50,13 +49,11 @@ permalink: /pages/coding/infra/cloud/GoCD
             new changes”
 
 ## Showing / Hiding Pipelines
-
   - To see hidden pipelines, use the Personalise menu in Go (top right)
   - It’s a good idea to hide old pipelines so you don’t use them by
     accident – but even better is to delete them\!
 
 ## Adding New Go Users / Removing Users
-
   - SSh into the Go server
       - See SSH Access to Go Server, below
   - Open the user file:
@@ -87,19 +84,16 @@ permalink: /pages/coding/infra/cloud/GoCD
       - Check checkboxes next to desired roles
 
 ## SSH Access to Go Server 
-
   - To ssh into the server:
   - Get yourself into the folder where your pem file lives
   - Terminal: **ssh -i "go-server.pem"
     [<span class="underline">ec2-user@54.171.48.173</span>](mailto:ec2-user@54.171.48.173)**
 
 ## Security Access to Go
-
   - See "[Security Groups -
     EC2](/pages/coding/infra/cloud/aws/AWS-Security#security-groups-ec2)"
 
 ## Go Servers and Agents
-
   - AWS (EC2) contains one server which also acts as an agent, plus one
     other agent
   - Micro instance of Go on EC2
@@ -143,7 +137,6 @@ permalink: /pages/coding/infra/cloud/GoCD
           - Go Agent 1 doesn’t have go-server, only has go-agent
 
 ## Docker image for Go Agent
-
   - Go-cd have always published their go server and agent images
   - This is the docker image that one of our colleagues created to make
     go agent: Infra/dockerfile
@@ -179,7 +172,6 @@ permalink: /pages/coding/infra/cloud/GoCD
         --name='gocd-agent' gocd-agent
 
 ## Setting up the Local Go Agent
-
   - Our notes from when we did this:
   - You need nodejs set up - I used homebrew to install this.
       - Troubleshooting: The previous team used node version 6.11.3 so
@@ -215,14 +207,12 @@ permalink: /pages/coding/infra/cloud/GoCD
         guidance: [<span class="underline">https://docs.gocd.org/current/configuration/managing\_a\_build\_cloud.html</span>](https://docs.gocd.org/current/configuration/managing_a_build_cloud.html) 
 
 ## Deployment environments
-
   - Gulpfile.js references deployEnv:
       - See GoCD for env var which then finds its way into gulpfile.js
       - Build\_and\_publish.sh (which is in infra) also takes the var
         from Go pipeline.
 
 ## Configuring jobs to run on particular Go Agents
-
   - Note: It's possible to set up individual pipeline jobs to run on
     specific Go agents.
   - You do this using resources, which are configured under Job Settings
@@ -242,7 +232,6 @@ permalink: /pages/coding/infra/cloud/GoCD
         agents (see above).
 
 ## Navigating the Go server to see where files are stored during deployments:
-
   - Click into the settings (cog icon) for the Backend-api pipeline.
   - Select the top level on the left
   - Select the Materials tab
@@ -266,7 +255,6 @@ permalink: /pages/coding/infra/cloud/GoCD
     the correct privileges
 
 ## Renaming / Top tip for checking connections between things in Go
-
   - Select Admin | Config XML
   - Search for a string (eg the name of a resource)
   - You'll find all the elements of Go config that reference that

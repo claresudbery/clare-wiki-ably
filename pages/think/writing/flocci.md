@@ -4,7 +4,6 @@ location: pages/think/writing/leaf
 permalink: /pages/think/writing/Floccinaucinihilipilification
 ---
 ## Ivor Cutler
-
   - A very funny and slightly weird man
 
   - Wrote poems on stickers and stuck in them in public library books
@@ -21,7 +20,6 @@ permalink: /pages/think/writing/Floccinaucinihilipilification
     [<span class="underline">https://open.spotify.com/album/2gBdIkbOIEcC6XPLMJiJlR</span>](https://open.spotify.com/album/2gBdIkbOIEcC6XPLMJiJlR)
 
 ## Sentient cupboard
-
   - Its door is hyper cool
 
   - Its legs look just like tusks
@@ -31,13 +29,10 @@ permalink: /pages/think/writing/Floccinaucinihilipilification
   - It dances AND it busks
 
 ## Discombobulated
-
   - Bob’s idle atom cud
 
 ## Stories
-
 ### Rave on a Roundabout
-
   - I’m 19
 
   - I want to go to one of the infamous Blackburn raves
@@ -97,7 +92,6 @@ permalink: /pages/think/writing/Floccinaucinihilipilification
   - (I never did get to one of those Blackburn raves)
 
 ## Room smells of cloves
-
 Me in 9-yr-old's room: "It smells of cloves in here."  
 
 Son: "Yes."  
@@ -115,5 +109,4 @@ Me: "Huh? Why are you wearing cloves?"
 Me again: "Oh, hang on..."  
 
 ## The late night not-poetry
-
 Subliminal mistresses eating plums with their mouths

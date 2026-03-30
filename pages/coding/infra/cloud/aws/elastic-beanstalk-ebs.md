@@ -4,7 +4,6 @@ location: pages/coding/infra/cloud/aws/leaf
 permalink: /pages/coding/infra/cloud/aws/Elastic-Beanstalk-EBS
 ---
 ## General Stuff
-
   - These notes were originally written 2018
   - To find out which instances are being spawned by a particular EBS
     config:
@@ -20,7 +19,6 @@ permalink: /pages/coding/infra/cloud/aws/Elastic-Beanstalk-EBS
     – so probably not anything to worry about
 
 ## Check Instances
-
 To see running instances and generally see how things are going:
 
 * Services => Elastic Beanstalk
@@ -38,7 +36,6 @@ To see running instances and generally see how things are going:
   * Configuration => Scaling
 
 ## Scaling Triggers
-
 - To check load: EBS – applications – \[project\] – \[env\] -
   dashboard
     - Config for this is set up in load balancer : Scaling trigger =
@@ -56,7 +53,6 @@ To see running instances and generally see how things are going:
 
 
 ## Events & Deployment
-
   - Elastic Beanstalk events: “Deploy configuration” is just what
     happens when you edit the EBS config (eg change notifications)
   - “Desired capacity” refers to CURRENT desired capacity. This changes
@@ -101,11 +97,9 @@ To see running instances and generally see how things are going:
           - environment\_bucket=elasticbeanstalk-eu-west-1-829851215903
 
 ## Health checks and unhealthy instances
-
 - See [Cloudwatch page](/pages/coding/infra/cloud/aws/Cloudwatch#health-checks-and-unhealthy-instances).
 
 ## AMIs
-
   - The AMI is the thing that AWS uses to create an operating system for
     each instance – a bit like a docker image
   - EBS: If you go to an application, then Configuration => Instances =>
@@ -115,27 +109,22 @@ To see running instances and generally see how things are going:
         right to see what’s being used, eg node.js
 
 ## CloudWatch Alarms
-
 - See [Cloudwatch page](/pages/coding/infra/cloud/aws/Cloudwatch#cloudwatch-alarms).
 
 ## Environment Events
-
 *	Understanding Environment Events – elastic beanstalk
   *	Docs – elastic beanstalk - Understanding Environment Events - http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/events.html
 
 ## ELB = Load balancer
-
 Don't confuse EBS (Elastic Beanstalk) with ELB (Elastic Load Balancer)!
 
 ## Elastic beanstalk hooks
-
 -	ELB (EBS?) has its own internal file structure which mirrors the sequence of actions which happen on spinning up a running instance
 -	You can place shell scripts in an appropriate folder to make them be executed at the appropriate time
   -	Eg hooks/restartappserver/pre
 -	See .ebextensions folder in dts-frontend ([Samba](https://github.com/claresudbery/samba))
   -	Files in here contain examples of configured shell scripts
 ## Changing deployment configs (this example is from samba)
-
   - Beanstalk.json (in [Samba](https://github.com/claresudbery/samba))
   - Example: search for rollingupdate in DTS
   - Example of “feature flagging” or setting things for individual
@@ -160,7 +149,6 @@ Don't confuse EBS (Elastic Beanstalk) with ELB (Elastic Load Balancer)!
       - Go back to the pipeline (Snap CI) and redeploy
 
 ## Finding Names of Load Balancers 
-
   - Go to the EC2 service
   - For load balancers:
       - Click on Load Balancing on the left
@@ -171,7 +159,6 @@ Don't confuse EBS (Elastic Beanstalk) with ELB (Elastic Load Balancer)!
         name”
 
 ## Logs
-
   - To see logs:
   - Go to elastic beanstalk
   - Click the desired environment.

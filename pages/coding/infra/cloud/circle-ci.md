@@ -6,5 +6,4 @@ permalink: /pages/coding/infra/cloud/CircleCI
 
 
 ## Misc
-
 - HackMcr with Laurent - One True Path: Dropbox\IT Training\Hackathons\HackManchester\2015

@@ -1,6 +1,5 @@
 ## Meals
 #### Pancake, mushroom, veg, cheese, sausage, bacon, tomato
-
 | Items In This Meal                                                                      | Calories | Carbs | Fat | Fiber | Protein | Potass |
 | --------------------------------------------------------------------------------------- | -------- | ----- | --- | ----- | ------- | ------ |
 | Asda - Extra Special - Lincolnshire Sausages, 53.9 g (equivalent to 2 grilled sausages) | 138      | 1     | 11  | 0     | 8       | 0      |
@@ -14,7 +13,6 @@
 | Cherry tomatoes, 4 cherry                                                               | 12       | 3     | 0   | 1     | 1       | 161    |
 | Total                                                                                   | 685      | 10    | 53  | 5     | 42      | 274    |
 #### Keto pancake, blueberries and cream
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Longley Farm - Double Cream, 20 ml|90|0|10|0|0|0|
@@ -22,7 +20,6 @@
 |Clare's Keto Low Carb Pancakes, 1 serving(s)|152|3|12|3|6|42|
 |Total|250|5|22|3|6|52|
 #### Pancake, cheese, bacon, tomato, spinach
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Asda - Mature British cheddar, 40 g|167|0|14|0|10|0|
@@ -33,7 +30,6 @@
 |Total|420|4|31|4|28|451|
 
 #### Pancake, tomato, mushroom, bacon, spinach
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Cherry tomatoes, 3 cherry|9|2|0|1|0|121|
@@ -44,7 +40,6 @@
 |Total|576|10|48|7|24|1474|
 
 #### Pancake, tomato, mushroom, bacon, olives
-
 | Items In This Meal                                                                                 | Calories | Carbs | Fat | Fiber | Protein | Potass |
 | -------------------------------------------------------------------------------------------------- | -------- | ----- | --- | ----- | ------- | ------ |
 | Cherry tomatoes, 3 cherry                                                                          | 9        | 2     | 0   | 1     | 0       | 121    |
@@ -54,7 +49,6 @@
 | Total                                                                                              | 457      | 7     | 38  | 6     | 18      | 1038   |
 
 #### Half porridge, half n'oatmeal
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Clare's N'oatmeal, 0.4 serving(s)|226|4|20|5|9|4|
@@ -65,7 +59,6 @@
 |Total|529|29|41|8|12|151|
 
 #### Clare's n'oatmeal, blueberries and cream
-
 | Items In This Meal                | Calories | Carbs | Fat | Fiber | Protein | Potass |
 | --------------------------------- | -------- | ----- | --- | ----- | ------- | ------ |
 | Clare's N'oatmeal, 0.7 serving(s) | 451      | 7     | 39  | 9     | 17      | 8      |
@@ -74,7 +67,6 @@
 | Total                             | 658      | 15    | 58  | 10    | 18      | 81     |
 
 #### Clare's n'oatmeal, blueberries and half cream
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Clare's N'oatmeal, 0.7 serving(s)|451|7|39|9|17|8|
@@ -84,7 +76,6 @@
 
 
 #### Lamb Patties And Tabbouleh
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Cook Well Cauliflower Tabboulehwell , 1 serving(s)|211|7|15|4|11|64|
@@ -92,7 +83,6 @@
 |Total|324|10|23|5|19|71|
 
 #### Breakfast from 3 Nov 2019
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Clare's N'oatmeal, 0.4 serving(s)|226|4|20|5|9|4|
@@ -102,13 +92,11 @@
 |Total|508|24|41|8|12|147|
 
 #### Coffee with 20ml cream
-
 | Items In This Meal         | Calories | Carbs | Fat | Fiber | Protein | Potass |
 | -------------------------- | -------- | ----- | --- | ----- | ------- | ------ |
 | Asda - Double cream, 20 ml | 90       | 1     | 10  | 0     | 0       | 0      |
 | Total                      | 90       | 1     | 10  | 0     | 0       | 0      |
 #### M&S chicken, prawns, calamari, beans, chorizo cheese
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |M&s - Marinated Chilli and Coriander King Prawns, 40 g|41|0|1|0|8|0|
@@ -119,7 +107,6 @@
 |Total|283|4|12|3|37|0|
 
 #### M&S: Edamame + prawns + calamari + ham/prosciutto rolls
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |M&S - Edamame and pea with spinach and coriander, 55/1 g|54|2|2|3|5|0|
@@ -129,7 +116,6 @@
 |Total|419|6|25|4|39|0|
 
 #### M&S egg, edamame and chicken pots
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Grilled chicken - Chicken, 1/1 oz|25|0|1|0|6|0|
@@ -138,7 +124,6 @@
 |Total|263|6|13|6|30|0|
 
 #### M&S prawn and edamame pots
-
 | Items In This Meal                                        | Calories | Carbs | Fat | Fiber | Protein | Potass |
 | --------------------------------------------------------- | -------- | ----- | --- | ----- | ------- | ------ |
 | M & S - King Prawns With A Creamy Cocktail Sauce, 110/1 g | 255      | 1     | 21  | 1     | 14      | 0      |
@@ -146,7 +131,6 @@
 | Salt - Salt, 1/2 tsp                                      | 0        | 0     | 0   | 0     | 0       | 0      |
 | Total                                                     | 363      | 5     | 25  | 7     | 25      | 0      |
 #### Eggs, mushrooms, cheese, bacon, spinach
-
 | Items In This Meal                                          | Calories | Carbs | Fat | Fiber | Protein | Potass |
 | ----------------------------------------------------------- | -------- | ----- | --- | ----- | ------- | ------ |
 | Eggs - Boiled Egg, 2 piece                                  | 140      | 2     | 10  | 0     | 12      | 140    |
@@ -157,7 +141,6 @@
 | Vegetables - Spinach, 2 tbsp(s)                             | 1        | 0     | 0   | 0     | 0       | 29     |
 | Total                                                       | 460      | 4     | 39  | 2     | 25      | 947    |
 #### 2 Boiled eggs with celery and salt
-
 |Items In This Meal|Calories|Carbs|Fat|Fiber|Protein|Potass|
 |---|---|---|---|---|---|---|
 |Celery, raw, 2/1 stalk, medium (7-1/2" - 8" long)|13|2|0|1|1|208|

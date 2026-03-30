@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Navigation-And-Routing
 ---
 
 # Navigation and Routing
-
 ## Contents of this page:
-
 - [Use Link component to embed a link](<#use link component to embed a link>)
 - [Redirect while routing](<#redirect while routing>)
 - [Testing navigation / routing](<#testing navigation  routing>)
@@ -15,7 +13,6 @@ permalink: /pages/coding/tools/flutter/Navigation-And-Routing
   - [Sample hand-cranked navigation testing code v2](<#sample hand cranked navigation testing code v2>)
 
 ## Use Link component to embed a link
-
 - You can link to another page in your app like this:
 
 ```dart
@@ -34,7 +31,6 @@ permalink: /pages/coding/tools/flutter/Navigation-And-Routing
 ```
 
 ## Redirect while routing
-
 - `GoRouter` has a redirect hook:
 
 ```dart
@@ -70,7 +66,6 @@ FutureOr<String?> myRedirect(
 ```
 
 ## Testing navigation / routing
-
 - ! I think navigation and routing are two separate things?
   - Routing is about urls, but navigation is about popping and pushing screens from the navigation stack?
 - See [here for some suggestions](https://stackoverflow.com/questions/50704647/how-to-test-navigation-via-navigator-in-flutter)
@@ -90,7 +85,6 @@ FutureOr<String?> myRedirect(
   - [A cheatsheet on routing in flutter](https://medium.com/flutter-community/flutter-navigation-cheatsheet-a-guide-to-named-routing-dc642702b98c)
 
 ### Sample hand-cranked navigation testing code v1
-
 - See [here for some sample code](https://github.com/flutter/flutter/blob/0aadb89764611741a84465bacd90ef1eecfd3efc/packages/flutter/test/widgets/navigator_test.dart#L277C5-L279C48)
 - Notes:
   - I'm testing for TWO observations because there's a push first and THEN a pop
@@ -204,7 +198,6 @@ class TestObserver extends NavigatorObserver {
 ```
 
 ### Sample hand-cranked navigation testing code v2
-
 - See [here for a tutorial using MockNavigatorObserver](https://iiro.dev/writing-widget-tests-for-navigation-events/)
 - My test code using `MockNavigatorObserver`:
 

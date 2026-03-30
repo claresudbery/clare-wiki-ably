@@ -4,7 +4,6 @@ location: pages/organising/tools/leaf
 permalink: /pages/organising/tools/Obsidian
 ---
 ## Contents of this file
-
 - [[#Getting started with Obsidian]]
 - [[#Getting started with a new vault]]
 - [[#Useful bits and bobs]]
@@ -22,6 +21,7 @@ permalink: /pages/organising/tools/Obsidian
 		- [Use QuickAdd to automate note and folder creation](<#use quickadd to automate note and folder creation>)
 		- [DON'T Use QuickAdd this way to automate folder and file creation](<#dont use quickadd this way to automate folder and file creation>)
 - [Basic operations](<#basic operations>)
+	- iOS Mobile: Specific stuff
 	- [Command palette](<#command palette>)
 	- [Settings](<#settings>)
 	- [Quick Switcher](<#quick switcher>)
@@ -73,7 +73,6 @@ permalink: /pages/organising/tools/Obsidian
 	- [Obsidian Overview](<#obsidian overview>)
 	- [Notes from Diana's presentation at Socrates UK '24](<#notes from diana's presentation at socrates uk '24>)
 # Getting started with Obsidian
-
 - Nice getting-started tutorial [here](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
 - The [[#Basic operations]] section below - browse these to help you find your way around
 - [[#Publish to a website]] is v handy functionality if you want to publish
@@ -82,7 +81,6 @@ permalink: /pages/organising/tools/Obsidian
 - You might find useful stuff in the [[#Organising content]] section
 - See [[#Troubleshooting]] if you have problems
 # Getting started with a new vault
-
 - 1. If using GitHub, [[#Creating Github Repos for your vaults|create a GitHub repo]]
 - 2. Turn the repo into an Obsidian vault:
 	- !! It might be best to start on phone! See [[#Syncing with iCloud]]. 
@@ -91,7 +89,6 @@ permalink: /pages/organising/tools/Obsidian
 	- See [[#Configuring a new vault]] 
 # Useful bits and bobs
 ## Vault management
-
 - File => Open Vault to both open and create vaults
 	- See [[#Creating a new vault on Macbook]] for vault creation
 - If you want to move a vault, just close Obsidian and move folders around (including all contents)
@@ -111,7 +108,6 @@ permalink: /pages/organising/tools/Obsidian
 	- If you want the path for Terminal, just copy / paste - then something like `iCloud Drive > Documents > GitHubTest-iCloud` will get pasted as `/Users/claresudbery/Documents/GitHubTest-iCloud` in Terminal
 
 ## Creating a new vault on Macbook
-
 - !! It's best to do it on phone! See [[#Syncing with iCloud]]. But otherwise...
 - File => Open Vault to create a vault (as well as open existing ones)
 	- You can put them anywhere on hard disk
@@ -120,10 +116,8 @@ permalink: /pages/organising/tools/Obsidian
 	- If you want to move it, just close Obsidian and move folders around (including all contents)
 		- ...but when you reopen, community plugins will have to be re-enabled (see below)
 ## Keyboard shortcuts
-
 - !! I'm now maintaining this list in Obsidian - [[Keyboard shortcuts|CareerAnalysis vault]]
 ## Publish to a website
-
 - I hoped I could link to private pages from elsewhere, like I can with clare-tech by using GitHub links...
 	- ...but it wasn't really the same. I found a way of doing this by putting my vault into a GitHub repo and sharing links to files in that repo, but Obsidian uses non-standard markdown so things like internal links and callouts didn't work nicely
 - By paying for Obsidian publish, you can publish your whole vault as a website
@@ -144,9 +138,7 @@ permalink: /pages/organising/tools/Obsidian
 	- Now you can publish via [[#Command palette]] > Publish changes
 	- [More here](https://help.obsidian.md/publish/setup)
 # Customising Obsidian
-
 ## Configuring a new vault
-
 - Start with the vault closed while you do actions in the file system:
 	- Plugins:
 		- Easiest thing is to copy `community-plugins.json` and `core-plugins.json` ***and the plugins folder*** from the `.obsidian` folder of another vault...
@@ -198,7 +190,6 @@ permalink: /pages/organising/tools/Obsidian
 	- Now you might want to do things like...
 		- 
 ## css snippets
-
 - Used for styling how things look in a note
 - In [settings](<#settings>) under Appearance, at the bottom, click the folder icon next to CSS Snippets to open the correct location
 - Create a `css` file in your vault, under `.obsidian/snippets` (Use Cmd + shift + `.` to show hidden files in MacOS file explorer)
@@ -213,7 +204,6 @@ permalink: /pages/organising/tools/Obsidian
 - To get your css to work when publishing your notes using Obsidian Publish:
 	- Copy any css snippets into one file called `publish.css` in the root of your vault. Publish this file when you publish everything else.
 ## Plugins
-
 - On desktop:
   - Obsidian (top left) => Settings => Community plugins => turn on
     - or use [command palette](<#command palette>) to reach settings
@@ -237,7 +227,6 @@ permalink: /pages/organising/tools/Obsidian
   - Also, in Settings => Community plugins (not the list of plugins but the place you go to add new plugins), you'll see it listed and you can select it to read the readme
 
 ## Variables
-
 - There are various places you can use variables
 - The places I know about are [templates](<#templates>) and [QuickAdd](<#quickadd>)[]()
 - In templates, you can use them to fill in values, like `{{date}}` in the example [below](<#templates>)
@@ -258,7 +247,6 @@ permalink: /pages/organising/tools/Obsidian
   - As far as I can work out, you _don't_ (and maybe even can't?) use the `Capture` type of QuickAdd to capture variables. Anything captured via that method will end up being pasted into a file, rather than being made available as a variable to other bits of functionality
 
 ## Modal forms
-
 - `Modal forms` is a useful plugin
 - My notes come from [this article](https://obsidian.rocks/improving-callouts-with-obsidian-modal/)
 - The modal forms plugin doesn't add any icons on the left hand side - instead it adds a bunch of commands to [command palette](<#command palette>) - just search for "modal forms"
@@ -317,14 +305,12 @@ permalink: /pages/organising/tools/Obsidian
     - This also means you can give it its own [hotkey](<#keyboard shortcuts>) if you like
 
 ## QuickAdd
-
 - You can use the `QuickAdd` [plugin](<#plugins>) to automate actions you do frequently 
 - See [Modal Forms](<#modal forms>) for an example of using it to automate the creation of [callouts](<#callouts>)
 - See [below](<#use quickadd to automate note and folder creation>) for using QuickAdd to automate the creation of a file in specific folder using a specific template
 - [Format syntax](https://quickadd.obsidian.guide/docs/FormatSyntax)
 
 ### Use QuickAdd to automate note and folder creation
-
 - Here's how to use QuickAdd to automate the creation of a file in specific folder using a specific template:
 - Create a [template](<#templates>)
 - Open the [QuickAdd settings](<#plugins>)
@@ -369,7 +355,6 @@ permalink: /pages/organising/tools/Obsidian
   - but fwiw this video MIGHT help - I just didn't have 45 mins spare to watch it: [here](https://youtu.be/xAR6N9N8e6U?si=roUI4BADRh0yY_Q4)
 
 ### DON'T Use QuickAdd this way to automate folder and file creation
-
 - (Don't do this! Use QuickAdd in a different way instead, [[#Use QuickAdd to automate note and folder creation|as described in separate section]])
 - Go to [settings](<#settings>) => QuickAdd
 - Click Manage Macros
@@ -434,26 +419,28 @@ Wait Choice: (Optional)
 Time: 1 second
 
 # Basic operations
-
+## iOS Mobile: Specific stuff
+- Scrolling to the end of a long file:
+	- Open command palette (I have this configured to appear when you pull down from top) and search for "go to last line"
+	- Or add the "Scroll to top/bottom" community plugin, which works both on Desktop and mobile by adding little arrows bottom left of the screen
+		- It's a bit awkward on mobile cos the down arrow gets obscured by other stuff, ut if you click near the bottom of the screen it becomes properly visible
+		- If you add it on desktop and then close / reopen the vault on mobile, it should appear straight away
+	- You can also add the "Remember cursor position" community plugin, which is useful when re-opening notes
 ## Command palette
-
 - Mobile: In main window, pull down from top of screen as though refreshing
 - Desktop: Cmd + P / Ctrl + P
 - Note you can use this to reach Settings: Open command palette => search for settings => "Open settings"
 
 ## Settings
-
 - Open command palette (Cmd+P) => search for settings => "Open settings"
 - Or just use Cmd/Ctrl + `,`
 
 ## Quick Switcher
-
 - Get there via Cmd/Ctrl+O
 - Used to find and go to, or create, other notes / content
 - There's also search functionlaity via magnifying glass, top right
 
 ## Navigating
-
 - Use [quick switcher](<#quick switcher>) to move between notes
 - Backlinks show you what links to your content and what it links to
 - Click the link icons with arrows, top right
@@ -463,7 +450,6 @@ Time: 1 second
 - Use the community plugin "Reveal active file" from Clare Macrae to get a little crosshairs-ish icon at the top of the file explorer that will reveal the location of the current file
 
 ## Source mode
-
 - View source as markdown instead of formatted:
   - Desktop: 
     - View => Source mode
@@ -474,7 +460,6 @@ Time: 1 second
     - View => Source mode 
 
 ## Linking to other content
-
 - Links to sub-sections via headings
   - Like this: `[[#A header|that header there]]`
   - As soon as you type `[[#` you'll be given a list of possible headings in this file
@@ -529,7 +514,6 @@ var s = 10;
 | content1 | content2 | content3 |
 
 ## Callouts
-
 - [My notes came from this article](https://obsidian.rocks/using-callouts-in-obsidian/)
 - [Official documentation here](https://help.obsidian.md/callouts)
 - You can also create yourself a little modal form to fill in to create callouts
@@ -569,7 +553,6 @@ var s = 10;
   - `warning` (orange)
 
 ## File / folder management
-
 - Add a file to a folder:
   - Desktop: Right-click the folder => Add note
   - Mobile: Long-press the file and select "New note"
@@ -584,7 +567,6 @@ var s = 10;
   - Desktop: Select folder and hit F2
 
 ## Attachments and images
-
 - You can just copy / paste an image and it will embed it for you
 - Or place the image in the Attachments folder, which you configure in Settings => Files and links => default location for new attachments
 	- then use this syntax: `![[my-image.jpg]]`
@@ -598,7 +580,6 @@ var s = 10;
 	- I documented it in Clare's Career Obsidian (currently accesible to Clare only), in `Misc small AI projects#Get low-res Macbook screenshots` and in `Keyboard shortcuts`
    
 ## Centre text on the page
-
 - Based on [instructions here](https://forum.obsidian.md/t/text-alignment-with-links-images-formatting-using-markdown-etc/33920/2) (although I didn't do the `cMenu` bit)
 - Open a separate editor (I use VS Code) (you can't edit css direct in Obsidian)
 - Add this css to both `snippets/my-styles.css` and `publish.css` (note that I only have `publish.css` in the main vault that's published, not in the other ones):
@@ -628,7 +609,6 @@ text-align: left;
 - Select the text you want to centre, and press the hotkey - it'll surround the text with the appropriate html, resulting in something like this:
 	- `<span class="center-align">Centred text</span>`
 ## Space paragraphs to make prose easier to read
-
 - (I implemented this in the Obsidian vault for my novel)
 	- NB: One time I found this stopped working, but then I opened my [[#css snippets]] file in VS Code and it started working again! After that it worked even with a restart.
 - (I got the following advice [from this link](https://forum.obsidian.md/t/need-help-with-the-distance-between-the-headers-and-text-using-minimal-theme/65920))
@@ -649,7 +629,6 @@ text-align: left;
 	- I've asked for help [getting it working in mobile here](https://forum.obsidian.md/t/how-to-use-css-to-change-para-spacing-and-inline-code-text-colour-in-reading-view-on-ios-mobile/109637).
 	- Incidentally I did find something online that suggested using `.markdown-source-view.mod-cm6` for mobile, but that made no difference to anything.
 ## Change the text colour for inline code
-
 - Use [[#css snippets]]:
 ```css
 .cm-inline-code {
@@ -659,20 +638,16 @@ text-align: left;
 - Note: This works for source mode on both desktop and iOS mobile, but not for reading view on either mobile or desktop.
 	- I've asked for help [getting it working in reading view here](https://forum.obsidian.md/t/how-to-use-css-to-change-para-spacing-and-inline-code-text-colour-in-reading-view-on-ios-mobile/109637).
 ## Find and replace with line breaks
-
 - See here: https://forum.obsidian.md/t/find-and-replace-and-linebreaks/53041
 ## Word count
-
 - Install the Core Word Count plugin, select text (or not) and look at the status bar bottom right.
 # File syncing
-
 - If syncing between MacBook and iPhone, your best option seems to be [iCloud](<#syncing with icloud>)
 - You can also place your folder somewhere like [Google Drive](<#syncing with google drive>)
   - but this seems a bit flakier than iCloud, and you have to keep manually pulling and pushing, and it's risky to have files open on both devices at once - whereas iCloud just automatically syncs across devices
 - Or you can use [GitHub](<#github sync plugin>)
 
 ## Syncing with Google Drive
-
 - First create a new vault on mobile (I did this on iphone)
   - just vault, not in iCloud
   - Install + enable the `Google Drive Sync` plugin
@@ -706,7 +681,6 @@ text-align: left;
   - I reported this as an issue [here](https://github.com/RichardX366/Obsidian-Google-Drive/issues/10)
 
 ## Syncing with iCloud
-
 - It's a bit buggy / idiosyncratic to set up, but after that seems pretty smooth
 	- ...until it totally grinds to a halt!!
 	- To fix this, you can try selecting Keep Files Downloaded on your Obsidian folder, both on MacBook (right-click in Finder) and iPhone (Files app, long-press on folder) and then wait for files to be downloaded
@@ -732,13 +706,11 @@ text-align: left;
 	- This should mean they show up on your phone
 - If any trouble, see [[#Syncing a new vault with iCloud|the workaround I had to use]] when I had trouble with this in Mar '25
 ## Creating Github Repos for your vaults
-
 - This is simple. Just make sure your root folder is also a repo
 - ...ie it has a hidden `.git` folder and `.gitignore` file at the root
 - You can do this by creating a repo in GitHub and cloning it locally
 - You can do this alongside also using [[#Syncing with iCloud|iCloud syncing]], you just need to make sure your repo is cloned into your iCloud drive folder
 ## Github Sync plugin
-
 - Note that in the end I didn't bother trying to get this working on mobile
 - Actually in the end I didn't use it at all, because even on desktop the functionality is limited - eg you can't edit commit messages - they're automatically generated - and I found it just as easy to use my normal GitHub tools (command line and GitHub Desktop, fwiw)
 	- See [[#Creating Github Repos for your vaults]]
@@ -765,7 +737,6 @@ text-align: left;
 	- Whether this is what fixed it I don't know, but I ran `git branch --unset-upstream` on the command line, then closed and reopened Github Desktop and Obsidian, and everything was working again.
 
 ## GitHub Syncing on iPhone
-
 - I also found this video but didn't watch in the end: https://www.youtube.com/watch?v=h3oK1yX3CZ8&t=190s
 - This is what I got via Google's AI, so might not be accurate:
 Here's a breakdown of the process:
@@ -809,7 +780,6 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 	- As per [here](https://stackoverflow.com/questions/5613345/how-to-shrink-the-git-folder/5613380#5613380) and [here](https://www.graphapp.ai/engineering-glossary/git/git-repack)
 - Used my new `lowres-images` script (in my scripts folder and Root Scripts repo) to shrink the size of images
 ## Saving / storing links to 3rd party content
-
 - Info here copied from [this article](https://obsidian.rocks/save-articles-to-obsidian-five-different-methods/)
 - Five methods...
 - 1. Bookmark it
@@ -833,7 +803,6 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - "If you’re interested in this functionality but don’t want to pay for it, I hear that [Omnivore](https://omnivore.app/) is a great open-source and free alternative. I haven’t tried it yet, but it looks great as well."
 
 ## Importing content from other Notes systems
-
 - https://obsidian.md/plugins?id=obsidian-importer
 - "The Obsidian team recently released a Community Plugin called Obsidian Importer (click to open in your vault). This new tool allows you to transfer notes from many other note-taking systems. At the time of writing, Obsidian Importer supports:
   - Evernote
@@ -844,7 +813,6 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 - And they’re planning on supporting many others, including Apple Notes"
 
 ## Each note should contain one idea
-
 - Notes summarised from [here](https://obsidian.rocks/five-title-ideas-for-notes/#Idea-1-Each-Note-Should-Contain-One-Idea)
 - 1. Each note contains only one idea
   - eg "Vit D can prevent kidney stones"
@@ -862,11 +830,9 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - "Additionally there are few things more frustrating than searching for a word, expecting to find a note, and discovering later that you used a different word."
 
 ## Maps of Content (MOCs)
-
 - See [this article](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
 
 ## Templates
-
 - My notes summarised from [this article](https://obsidian.rocks/getting-started-with-templates-in-obsidian/#comment-29383)
 - Create a Templates folder in your vault
 - Make sure you have the core `Templates` [plugin](<#plugins>) enabled
@@ -908,7 +874,6 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
   - Note that I found a suggestion that it might be better not to use the core Templates plugin, and use the community `Templater` plugin instead: [here](https://forum.obsidian.md/t/correct-format-for-date-time-template-variables-in-properties/68241/5)
 
 ### Insert link in current file to newly created template-based file 
-
 - The way to do it is to turn on "Append link" in your QuickAdd macro
 - See "New Samman Meetup" QuickAdd macro in `clare-tech` Obsidian for an example
 	- There are instructions on how to use it in `samman-meetup-index.md`, also in `clare-tech`
@@ -971,19 +936,16 @@ parent: "[[Home]]"
   - [Parent](<#tag properties>)
 
 ### Showing / hiding properties
-
 - You can make properties sections be hidden by default: [Settings](<#settings>) => Editor => properties in document => hidden
   - or set to "source" to allow you to see the YAML as it appears in the code snippet above
   - If they're hidden, one way to see them is to go into [source mode](<#source mode>) and then expand the section at the top via the little arrow
     - ...or enable the core "Properties view" plugin, then go to [command palette](<#command palette>) => `Properties: Show all properties` or `Properties: Show file properties`
 
 ### Bad properties
-
 - Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
 - When you have a bad property, it shows up as yellow in the property editor but won't let you edit it. The only way to edit is either in [source mode](<#source mode>) or by clicking on the icon and deleting the property, then recreating it.
 
 ### Searching for properties and other things
-
 - In the search box (Cmd/Ctrl+Shift+F), put your search term in square brackets, and it will search properties for you
 - "Use brackets and a colon ([property:value]) to return files with that property and value. For instance:
   - [aliases:MOC] returns files where the aliases property value contains MOC
@@ -994,7 +956,6 @@ parent: "[[Home]]"
 - (from [here](https://obsidian.rocks/five-pro-tips-for-obsidian-properties/))
 
 ### Tag properties
-
 - Go into properties (depending how you're [showing them](<#showing  hiding properties>))
 - If you don't have one already, you can add a `tags` property:
 ```
@@ -1005,12 +966,10 @@ tags: writing/idea
 - Then in a non-source view, when you place cursor in the tags value, it will give you a dropdown to auto-complete, which gets filtered when you start typing
 
 ### Parent properties
-
 - Note that the [article linked to above](https://obsidian.rocks/an-introduction-to-obsidian-properties/) contained bad data for `parent` - it was formatted as `[[Home]]` instead of `"[[Home]]"`
   - See [bad data](<#bad properties>) for how to fix this
 
 ## Aliases
-
 - [More here](https://help.obsidian.md/aliases)
 - Aliases allow you to reference a file using different names
 - Like this in YAML:
@@ -1025,9 +984,7 @@ aliases:
 - You can link to aliases by just typing an alias name in an internal link
 - Obsidian creates the link with the alias as its custom display text, for example `[[Artificial Intelligence|AI]]`.
 # Troubleshooting
-
 ## Syncing a new vault with iCloud
-
 - !! It might be best to create it on phone first, NOT on Macbook
 - ...and on phone, it might give an iCloud option on startup, but only for opening existing vaults, not creating new ones
 	- (although I didn't find this when I created one in Jan '26, but I don't know if that's cos I already had some vaults successfully syncing)
@@ -1044,16 +1001,13 @@ aliases:
     - But if I closed down the problematic one on Desktop and removed it from the vault list (via the three dots nest to the vault name in the vault list), then opened it up again by selecting iCloud Drive in the Finder, it found the right one, synced between desktop and mobile, and the location in the vault list was listed as `Users/claresudbery/library/Mobile Documents/iCloud~md~Obsidian/Documents`
     - At this point I could have the same vault open on both desktop and mobile, and changes in either one would sync with a second or two
 ## Updating headings so links aren't broken
-
 - There is no functionality and no plugins to react automatically to update links when headings are edited, cos it wouldn't be performant
 - ...but what you can do is right-click and choose "Rename this heading", and then it will find and update all links for you
 ## If you lose the outline or properties pane
-
 - Use [command palette](<#command palette>) to "show outline" or "show file properties"
 - They might both be in the same pane on the right, in which case the circle with an i icon will show properties, abd the horizontal lines will show outline
 
 ## If folders are not in alphabetical order in dropdowns
-
 - This happened to me when I removed the third folder down out of four (in alpha order) and then re-added it. 
 - It started appearing as the fourth item in selection dropdowns
 - I fixed it by dragging the fourth folder to a new location and then dragging it back to its original location
@@ -1061,7 +1015,6 @@ aliases:
 - ...although this does suggest that the dropdown is listing them in creation order - so the workaround wouldn't work so well with more folders involved
 
 ## If live preview adds colour to text inside single brackets
-
 - You can't have `[text]` because the text gets turned into a different colour inside the square brackets
 - See discussion [here](https://forum.obsidian.md/t/live-preview-dont-color-square-bracketed-text-as-a-link-unless-its-part-of-a-link/79896/2)
 - Fix it using [css snippets](<#css snippets>)
@@ -1080,12 +1033,10 @@ aliases:
 ```
 
 ## If you can't delete a note
-
 - If all it has a title and no content, you can't delete it. 
 - Add some text in the body and then you'll be able to delete it.
 
 ## Fixing internal links that use hyphens instead of spaces
-
 - When internal links use hyphens instead of spaces, this is called "slugifying"
 - Whatever markdown tools I was using for internal links before I imported this repo into Obsidian, they did it like this:
 	- If you had a heading that looked like this: `# My Heading`
@@ -1154,7 +1105,6 @@ process_directory(target_directory)
 ```
 
 # To do (Clare)
-
 - Check ToCs for published content
   - (I'm not sure how the `outline` core plugin will work on published content?)
 - Look into [day planning using Obsidian](https://obsidian.rocks/planning-your-day-by-timeboxing-in-obsidian/)
@@ -1165,7 +1115,6 @@ process_directory(target_directory)
   - Jackie's [DataView article](https://medium.com/os-techblog/how-to-get-started-with-obsidian-dataview-and-dataviewjs-5d6b5733d4a4)
 
 ## Questions
-
 - Tables of contents?
   - Use the `outline` core plugin?
   - For some other ideas, see [here](https://forum.obsidian.md/t/a-graphically-cool-table-of-contents/87684/5)
@@ -1173,7 +1122,6 @@ process_directory(target_directory)
   - See [formatting](<#formatting markdown>) below
 # My original Obsidian notes
 ## Obsidian Overview
-
 - For taking notes / organising knowledge
 - [Obsidian](https://obsidian.md/)
 - See [here](/pages/organising/BigIndex/Big-Index-Useful-Tools.md#other-technologies-considered-for-bigindex) for other note-taking tools
@@ -1181,7 +1129,6 @@ process_directory(target_directory)
 - See also book by Tiago Forte - building a second brain - been recommended to me by a few people
 
 ## Notes from Diana's presentation at Socrates UK '24
-
 - Personal note taking app and organising knowledge 
 - like notion, but runs on laptop or phone rather than in browser 
 - Can be published to a website (clare-wiki!)

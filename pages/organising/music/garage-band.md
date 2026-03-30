@@ -5,22 +5,18 @@ permalink: /pages/organising/music/Garage-Band
 ---
 
 ## Where files are stores
-
 - Home/Music/GarageBand
 
 ## Getting started
-
 - New empty project - it gives you a bunch of anoying options, none of which look like what you want - select drum track.
 - You'll get a "SoCal" track
 
 ## Sequencing notes - getting started
-
 - Right-click in the left part of the "track pad" which is the main bit top right where your "SoCal" track is
     - the left part is where it says SoCal and has mute and headphone buttons
 - Select "New Software Instrument Track"
 
 ## Sequencing notes - adding notes
-
 - Start with [sequencing start](<#sequencing notes   getting started>)
 - Right-click in the right hand section, where the wav form for the SoCal track is
 - Select "Create MIDI region"
@@ -34,7 +30,6 @@ permalink: /pages/organising/music/Garage-Band
 - drag edges of notes to make them shorter / longer
 
 ## Getting an instrument that sounds like a voice
-
 - Start with [getting started](<#getting started>)
 - Then [sequencing start](<#sequencing notes   getting started>)
 - Click the Library icon top left - looks a bit like a drawer in a filing cabinet
@@ -42,13 +37,11 @@ permalink: /pages/organising/music/Garage-Band
 - To change the instrument, just select the left hand end of the track, click library again, search for a new instrument and click on it / select it
 
 ## Merge tracks
-
 - Select all the tracks (easiest way is to drag the mouse across them all, or select individual regions using shift + click)
 - Cmd + J will turn them all into one track
 - If you're doing this because you want all voices on one score, you probably want to copy them all into four (or however many) new tracks first
 
 ## Print score
-
 - Double click on the track to show the piano roll at the bottom
 - Click "Score" instead of "piano roll" at the top of the section
 - If you want to print, you have to have the cursor in the score region (not piano roll) and then you can select file => Print
@@ -67,7 +60,6 @@ permalink: /pages/organising/music/Garage-Band
     - Click pdf, bottom left in the print dialog
 
 ### Convert from GarageBand to midi for converting into a scoring tool
-
 - !! None of the tools listed below do a great job of converting to midi, and Sibelius will only show you actual music score
     - you can't see the music as piano roll
     - so it's hard to tell how accurate your midi file is, if you've done a conversion
@@ -90,11 +82,9 @@ permalink: /pages/organising/music/Garage-Band
     - or whichever specialised score tool you want to use
 
 ### Special tool to create better scores
-
 - ! Sibelius ONLY shows you score view - you can't get piano roll view
 - you might first need to [convert to midi](<#convert from garageband to midi for converting into a scoring tool>)
 - [Sibelius](https://www.avid.com/sibelius)
 
 ## Export to a music file
-
 - Share => Export song to disk

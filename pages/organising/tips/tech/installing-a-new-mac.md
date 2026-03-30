@@ -11,7 +11,6 @@ Note that this was created purely for me. I'm not suggesting these are sensible 
 I've created a [brew script for some of it](<#automating the installation>) but sadly a lot of it is still manual.
 
 ## See also
-
 See also the following resources from others who have done similar but with more sophistication:
 
 - [Chezmoi](https://github.com/twpayne/chezmoi), for managing personal configuration files (dotfiles, like ~/.bashrc) across multiple machines
@@ -19,7 +18,6 @@ See also the following resources from others who have done similar but with more
 - My Made Tech colleague Will Gibson's [idempotent laptop brew script](https://github.com/WillGibson/laptop-setup)
 
 ## Stuff to do manually as soon as I open my new laptop:
-
 (I've recorded every step here and elsewhere in case I ever get this configured in something more powerful than a bash script.)
 
 * Change user password
@@ -79,7 +77,6 @@ See also the following resources from others who have done similar but with more
     * Once you're done, see [Stuff that would have to be done after script has run](<#stuff that would have to be done after script has run>) below.
 
 ## Stuff that would have to be done after script has run
-
 (I've recorded every step here and elsewhere in case I ever get this configured in something more powerful than a bash script.)
 
 * Start iTerm2
@@ -136,9 +133,7 @@ See also the following resources from others who have done similar but with more
     * Follow prompts
  
 # Automating the installation
-
 ## How to automate?
-
 I used [a brew script](<#using the script>), which will make my life easier but is till not ideal. There are still a lot of manual steps which you could probably avoid if you used a tool more fit for the purpose. One of the problems is how many times I need to enter passwords or use 2FA - both in the manual part of the process and while running the script - but any automation of this side of things opens up a million attack vectors unless you're very very careful, and I didn't have time to set it all up and test it for security.
 
 I could have used something like Ansible - but that would have required me to learn Ansible and spend even more time on a thing that was already sucking time out of my week. 
@@ -146,7 +141,6 @@ I could have used something like Ansible - but that would have required me to le
 Or I could have just copied the whole thing to a VM and stuck it in the cloud - but then everything would have quickly gone out of date, and it would have been a hell of a lot bigger to store than just a simple script.
 
 ## Using the script
-
 - The script is [here](/resources/scripts/installing-new-mac).
 - You have to install brew and cask manually first - I couldn't get it to work in a script (dunno why) - see [below](<#install brew>).
 - The script requires some user input - keep an eye on it.
@@ -157,7 +151,6 @@ Or I could have just copied the whole thing to a VM and stuck it in the cloud - 
     - Run the script: **sh installing-new-mac**
 
 ### Install brew:
-
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -172,7 +165,6 @@ brew install caskroom/cask/brew-cask
 ```
 
 ## New stuff
-
 - Here is a list of stuff which I don't think is in the current script, but which I might want to add
     - Install IntelliJ IDEA Community edition
         - Have to use the IntelliJ toolbox - instructions [here](https://www.jetbrains.com/help/idea/installation-guide.html#toolbox)

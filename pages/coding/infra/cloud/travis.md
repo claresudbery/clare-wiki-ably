@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cloud/Travis
 ---
 
 ## GitHub Repos
-
 - My version of the [tic-tac-toe Ruby kata](https://github.com/claresudbery/tic-tac-toe-kata) is built in Sinatra and deployed via Travis to Heroku [here](https://tic-tac-toe-kata.herokuapp.com/tictactoe).
     - The Travis config is visible [here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/.travis.yml).
     - I documented the Heroku / Travis deployment steps [in the readme here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/README.md#deploying-to-heroku-via-travis).
@@ -15,7 +14,6 @@ permalink: /pages/coding/infra/cloud/Travis
 - My [Ruby version of the Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby) is also deployed via Travis to Heroku.
 
 ## Jekyll and Travis
-
 - See [this article](https://ajaykarwal.com/deploying-jekyll-using-travis-ci) on deploying a Jekyll site using Travis.
 - Also see my [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) for some other Travis-related stuff.
 

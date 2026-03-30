@@ -9,25 +9,20 @@ See also [energisers](/pages/think/events/workshops/energisers-warmups.md).
 There is a proven therapeutic benefit to laughing together with other people. It's also a great way to build team relationships, and playing silly games is a great way of providing opportunities to laugh together.
 
 ## Getting to know each other
-
 See [energisers](/pages/think/events/workshops/energisers-warmups#getting-to-know-each-other).
 
 ## Daft Games
-
 ### Taskmaster
-
 Everything from Taskmaster (see book). For instance...
 - Standing on a bridge and popping up every 30 seconds for 30 seconds. When you're ducked down, somebody down below the bridge has to try and approach the bridge. Bit like What time is it Mr Wolf. Every time you pop up and bob down, blow a horn or make some kind of loud noise.
 
 ### Wibble bibble bam
-
 - The gamesmaster randomly says either "wibble", "bibble" or "bam" to randomly selected people, in turn (but in no discernible order). Every time someone gets their response wrong, they're out. Keep going until there is only one winner.
 - Responses:  
 	- Wibble: Bibble  
 	- Bibble: Bam  
 	- Bam: Wibble bibble bam
 ### Picture consequences / Telephone pictionary
-
 This is one of my favourite party games. It always makes me laugh a lot.
 
 It's similar to the Drawful game available at [Jackbox games](<#jackbox tv>). Drawful works better remotely, but Picture Consequences works better in person. Another online version of this game is [BrokenPicturePhone](http://brokenpicturephone.com), and [Gartic Phone](https://garticphone.com/) is also a good version. There's also [Skribbl](https://skribbl.io/).
@@ -54,7 +49,6 @@ It's similar to the Drawful game available at [Jackbox games](<#jackbox tv>). Dr
     - Pass the papers around so that everyone can see the hilarious drawings.
 
 ### The scoring game
-
 One person goes out of the room
 Everyone left comes up with a score out of 10
 The original person comes back and picks a category - eg "films"
@@ -62,24 +56,20 @@ Everyone takes it in turns to give examples from that category that would have t
 The original person tries to guess the score
 
 ### A rizla game variation
-
 Each person gives one-word clues to the next person’s Rizla (on their left)
 You're trying to guess your own, but will also get points if the next person along guesses correctly. You get more points for guesing your own, but you still get some points if your clues led to your neighbour's correct guess
 
 ### Got one
-
 Say “got one” then “3…2…1…” then say a random word simultaneously… 
 then try to think of a word in the middle of the two words
 Again, say “got one” then “3…2…1…”. 
 Keep going until you both say the same word.
 
 ## Fun Coding Games, eg Tixyland
-
 - Play with css animation using Javascript expressions with tixyland: [tixy.land](/pages/coding/webdev/js/tixy-land)
 - This is a lot of fun!!
 
 ## The backward recording game
-
 Use an app such as Reverse Play or [Say it Backwards](https://apps.apple.com/tm/app/say-it-backwards-app-lite/id1066924497) to...
 1. record yourself saying a phrase (eg a film title - or you could use CAH if you're sure you won't offend or upset anyone - downloadable [here](https://cards-against-humanity.en.softonic.com/#))
 2. play it backwards
@@ -89,11 +79,9 @@ Use an app such as Reverse Play or [Say it Backwards](https://apps.apple.com/tm/
 6. See if people can tell what you're saying
 
 ## Pass the parcel for adults
-
 Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-pages.net/board/index.php?/topic/40129-ideas-for-darespass-the-parcel-not-for-kids/) (accessible to Clare only)
 
 ## Games that can be done a bit at a time (eg for wooden advent calendar)
-
 - a new word each day, can be combined to form the title of a song
 - a new letter each day, can be combined to form some word or title or something
 - Can have two song titles or words being clued simultaneously - so they have to work out which words / letters belong to which answers.
@@ -111,44 +99,35 @@ Put dares between the wrappers. Ideas for dares [here](https://www.the-blue-page
     
 
 ## Wordle backwards
-
 Guess the guesses when looking at someone else's already-played [Wordle game](https://www.powerlanguage.co.uk/wordle/)
 
 ## The name game
-
 Work co-operatively to write all your names down. How can you do it more quickly?
 
 ![the name game](/resources/images/the-name-game.png)
 
 ## Remote Games
-
 ### Jackbox.tv
-
 There are many different games available [at jackbox](https://www.jackboxgames.com/how-to-play/). We particularly enjoyed: 
 - Drawful (People draw pictures and then try to guess the descriptions - see [Picture Consequences](<#picture consequences>) above, which is similar)
 - Fibbage (People are asked to invent definitions and then guess the correct ones)
 
 ### Skribbl.io
-
 [Like Pictionary](https://skribbl.io/). See also [Picture consequences](<#picture consequences  telephone pictionary>).
 
 ### Really Boring Website
-
 [Really Boring Website](https://really.boring.website/) - you have to think of things beginning with a particular letter, then you vote for each other's answers.
 
 ### QuizBreaker
-
 [QuizBreaker - Virtual Team Building Game for Remote Teams](https://www.quizbreaker.com/)
 
 ### The Wikipedia game
-
 - One person chooses a wikipedia page, eg "Harry Potter". Somebody else then chooses an entirely unrelated wikipedia page - eg "Scissors". 
 - It is then the job of the entire group to try and get from the first page to the second one ONLY by clicking links in the page content. 
 - You can't click on links anywhere else on the page, you can't use the search function, you can't use the back button, you can't even use Ctrl+F to search the words on the page itself (you have to scan with your eyes). 
 - First person to land on the second page wins, and has to choose the next page that everyone must try and reach (from the page reached in the previous round).
 
 ### The lip-reading game
-
 - Take it in turn for one person to mute themselves and say something towards the camera.
 - Other players have to lip-read and guess what the person is saying.
 - First person to guess correctly is the next person to mute and speak.
@@ -162,7 +141,6 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
     - It is acceptable for the current player (the mimer) to "pass" on any phrase and move onto the next.
 
 ### Drawing on the top of your head
-
 - (Not obviously an online game but can easily be done when people are remote)
 - Get everyone to find paper, pen and something light to lean on (eg a book)
 - They place the paper on top of their head
@@ -185,7 +163,6 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
     - Fire in fireplace: 1
 
 ### Ageimals
-
 - Find a photo of an animal whose age you can verify
 - Give everyone four possible answers as to what their age might be
 - Use a poll for the guesses
@@ -194,25 +171,21 @@ There are many different games available [at jackbox](https://www.jackboxgames.c
 - I have a (private) spreadsheet here with animal photos plus options + right answers [here](https://docs.google.com/spreadsheets/d/1oTQAMuKt2kxLbLG6Ue9qr7CZukd6wT5ovxFhHuEtaPA/edit#gid=0)
 
 ### Long words that can be divided phonetically into three
-
 - (I read about this in Hank Green's novel, [A Beautifully Foolish Endeavour](https://www.goodreads.com/book/show/49003616-a-beautifully-foolish-endeavor))
 - eg "Dictionary" = "dick, shun, airy"
 - Pick a long word that can be divided phonetically into three smaller words, and describe them like this:
     - "At first I am an idiot, then I ostracise, and finally I'm light and free." - The first person to guess the word wins.
 
 ### 20 Questions and variants
-
 - One person thinks of a thing or person
 - Everyone else asks them questions that can only have the answer Yes or No.
 - Traditionally you only got 20 questions, but we tend to just keep playing until you find out what the person / thing is.
 
 ### A party in a spreadsheet
-
 - [Have a party in a spreadsheet!](https://onezero.medium.com/party-in-a-shared-google-doc-d576c565706e)
 	- We took this idea one step further and had a party in [Miro](https://miro.com/app/dashboard/) - allowing our guests to create their own "rooms" (visible frames) and use their imaginations to find new ways to communicate and move their avatars around. We deliberately had no audio or video aailable, so people had to find new ways to interact. It was mayhem but a lot of fun.
 
 ### A remote Zoom party
-
 We had a zoom birthday party, but made it a bit unusual by having a series of calls throughout the day, with no call lasting longer than half an hour, all optional... but on each call we set our guests a Taskmaster-style challenge, and they had to present the results on the next call. They got scores for their efforts and there was a winner at the end of the day. 
 
 The 5 challenges were:  
@@ -238,7 +211,6 @@ Were only surpassed by her talk.
 The full description of the party [is here](https://github.com/claresudbery/clare-tech/blob/master/organising/events/zoom-birthday.md) (accessible to Clare only)
 
 ### Online board games
-
 ![Online board games 01](/resources/images/Online-board-games-01.jpg)
 ![Online board games 02](/resources/images/Online-board-games-02.jpg)
 ![Online board games 03](/resources/images/Online-board-games-03.jpg)

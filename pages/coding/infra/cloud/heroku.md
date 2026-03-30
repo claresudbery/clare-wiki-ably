@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cloud/Heroku
 ---
 
 ## GitHub Repos
-
 - This [tic-tac-toe Ruby kata](https://github.com/claresudbery/tic-tac-toe-kata) is built in Sinatra and deployed to Heroku via Travis [here](https://tic-tac-toe-kata.herokuapp.com/tictactoe).
     - I documented the Heroku / Travis deployment steps [in the readme here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/README.md#deploying-to-heroku-via-travis).
 - This clare-wiki site (this one!) is also deployed via Heroku.
@@ -16,9 +15,7 @@ permalink: /pages/coding/infra/cloud/Heroku
     - [dotnet-docker-clare](https://github.com/claresudbery/dotnet-docker-clare)
 
 ## Deploying to heroku
-
 ### Deploying direct to heroku (Ruby) without a CI tool
-
 For [Wordlessly](https://github.com/claresudbery/wordlessly/blob/master/README.md#deploying-to-heroku), I didn't even bother with Travis (or Circle CI). I just deployed direct to heroku, following these instructions:
 
 - Install [everything you need to deploy a ruby app to Heroku](https://devcenter.heroku.com/articles/getting-started-with-jruby)
@@ -32,23 +29,18 @@ For [Wordlessly](https://github.com/claresudbery/wordlessly/blob/master/README.m
 - Open the website: `heroku open --app your-app-name`
 
 ### Database stuff
-
 - For Ruby, PostgreSQL, Sinatra/Rails and heroku see [here](/pages/coding/data/PostgreSQL-and-PSQL#heroku)
 
 ### Deploying to heroku (Ruby) with Circle CI
-
 If I decide to switch to Circle CI in the future, I think [this page for the Circle CI side of things](https://circleci.com/docs/2.0/language-ruby/) and [this page for the Heroku end](https://circleci.com/integrations/heroku) will probably be useful.
 
 ### Deploying to heroku (Ruby) with Travis
-
 I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme here](https://github.com/claresudbery/tic-tac-toe-kata/blob/master/README.md#deploying-to-heroku-via-travis).
 
 ## My apps
-
 - See clare-tech: heroku.md
 
 ## Free dyno hours
-
 - [More here](https://devcenter.heroku.com/articles/free-dyno-hours)
 - To see hours used by one app:
     - Run `heroku login` and then `heroku ps -a [app-name]` to see how many hours have been used by that app and how many hours you have left in your account. The first two lines of output will tell you ("Free dyno hours...")
@@ -61,7 +53,6 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
     - Scroll down to bottom and click Delete App
 
 ## Upgrade to heroku-22 from heroku-18 (29/04/23)
-
 - This was my second attempt to upgrade my Wordlessly app
 - I went [here](https://devcenter.heroku.com/articles/upgrading-to-the-latest-stack#upgrading-an-app)
     - This told me to run this: `heroku stack:set heroku-22 -a wordlessly`
@@ -149,7 +140,6 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
                     - Gave up at this point! No time left to continue.
 
 ## Upgrade to heroku-22 from heroku-18 (12/10/22)
-
 - This was my first attempt, and it failed. Details below.
     - Second attempt is documented [here](<#upgrade to heroku 22 from heroku 18 290423>).
 - Find out which apps are using a particular stack (in this case `heroku-18`):
@@ -183,17 +173,14 @@ I documented the Heroku / Travis deployment steps [in the tic-tac-toe readme her
 
 
 ## Misc Heroku Stuff
-
 - There are some heroku-related notes in the [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting) on this site.
 - HackMcr with Laurent - One True Path: Dropbox\IT Training\Hackathons\HackManchester\2015
 - There are lots of heroku-related notes on [my Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting).
 
 ## Troubleshooting
-
 - "No web processes running". I got this error for ages with the [tic-tac-toe-kata](https://tic-tac-toe-kata.herokuapp.com/tictactoe) (the error was visible in the logs via `heroku logs --tail --app tic-tac-toe-kata`). The solution was to go to [the resources section in heroku](https://dashboard.heroku.com/apps/tic-tac-toe-kata/resources), then under Free Dynos, click the Edit button (pencil icon) over on the right, and turn the switch on to activate the web dyno.
 
 ## Deploying Dockerised apps
-
 - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 - See [my tic-tac-toe repo](https://github.com/claresudbery/tic-tac-toe-kata) for an example of a Dockerised Sinatra app, was deployed via Heroku [here](https://tic-tac-toe-docker.herokuapp.com/tictactoe) (but I've now deleted the app to preserve free dyno hours.).
 - See [my Docker page](/pages/coding/infra/cloud/Docker) for more Docker stuff.

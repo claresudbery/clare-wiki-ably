@@ -7,9 +7,7 @@ permalink: /pages/think/life/Walks-And-Beauty-Spots
 See also [Places to Visit](/pages/think/life/Places-To-Visit)
 
 ## Walks / Cycle Rides / Beauty Spots / Good Places to Visit
-
 ### Manchester and surrounding area
-
 - Highfield Country Park, Levenshulme
 - Reddish Vale, Reddish
     - in quick cycling distance of Levenshulme
@@ -49,7 +47,6 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 	- The copper mine is twice yearly - "Engine Vein Mine" - more info: https://www.derbyscc.org.uk/base/display.php?liref=docLEV
 
 ### Peak District
-
 - Ashbourne
 - Thorpe
 - Nine Ladies stone circle, Stanton Moor
@@ -64,13 +61,11 @@ See also [Places to Visit](/pages/think/life/Places-To-Visit)
 - Edale / Mam Tor / Castleton 
 
 ### Yorkshire
-
 - Malham Cove and Gordale Scar
 - The art trail at Hanging Stones, Northdale, Yorkshire. 
 	- [Art by Andy Goldsworthy](https://www.nytimes.com/2025/06/14/arts/design/a-decade-of-bruising-labor-a-6-mile-work-of-land-art.html?unlocked_article_code=1.Sk8.FkJx.wJCwpkjLvDKk&smid=nytcore-ios-share&referringSource=articleShare)
 
 ### Rest of the UK
-
 - [Devil's Pulpit, Stirling, Scotland](https://www.atlasobscura.com/places/devils-pulpit) - featured on BBC TV series "The Next", where it was called Calderwood Falls. Apparently it's hard to reach though!
 ![Devil's Pulpit](/resources/images/devils-pulpit-waterfall.jpg)
 - [Little Moreton Hall, Congleton](https://www.nationaltrust.org.uk/little-moreton-hall) - very twisty half-timbered building.

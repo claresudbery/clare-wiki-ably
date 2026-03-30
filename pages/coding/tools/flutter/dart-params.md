@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Dart-Params
 ---
 
 # Dart Parameters
-
 ## Contents of this page
-
 - [Intro](<#intro>)
 - [Default values](<#default values>)
 - [Named parameters](<#named parameters>)
@@ -16,7 +14,6 @@ permalink: /pages/coding/tools/flutter/Dart-Params
 - [Required parameters](<#required parameters>)
 
 ## Intro
-
 - There are lots of different types of parameter
 - It can get confusing, particularly when the compiler complains at you and tries to suggest ways of fixing things which can end up just making things worse.
 - Quick summary:
@@ -45,7 +42,6 @@ permalink: /pages/coding/tools/flutter/Dart-Params
   - To run the tests, navigate to `flutter-test-app/testing_app` and run `flutter test` from the command line
 
 ## Default values
-
 - You can't give default values to ordinary parameters 
 - You can only do it with optional parameters (named or positional)
 - Use the `=` operator
@@ -72,7 +68,6 @@ void defaultNamedParams({int param2 = 3, int param3 = 4}) {
 ```
 
 ## Named parameters
-
 - Named params are denoted using `{}`, eg `void myFunc({bool namedParam}) {...}`
 - Named params are optional by default. To make them required, add the `required` keyword (see [below](<#named parameters>))
 - When defining a function, named params must appear AFTER the normal params
@@ -105,7 +100,6 @@ void doStuff() {
 ```
 
 ## Positional parameters
-
 - Unless specified otherwise (as described below), all params are positional
 - Positional params have to be provided in the correct order when the function is called
 - Optional positional params are denoted using `[]`, eg `void myFunc([bool optionalPositionalParam]) {...}`
@@ -145,7 +139,6 @@ void doStuff() {
 ```
 
 ## Optional parameters
-
 - Unless specified otherwise (as described below), all params are required
 - Optional params do not have to be present in the arg list when the function is called
 - Named params are denoted using `{}`, eg `void myFunc({bool namedParam}) {...}`
@@ -192,7 +185,6 @@ void doStuff() {
 ```
 
 ## Required parameters
-
 - Unless specified otherwise (as described below), all params are required
 - Required params have to be present in the arg list when the function is called
 - Named params are optional by default. To make them required, add the `required` keyword

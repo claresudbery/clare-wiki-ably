@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cloud/aws/Cloudwatch
 ---
 
 ## AWS Logging using Cloudwatch
-
 To see logs:
 
 * Click Services, top left 
@@ -17,7 +16,6 @@ To see logs:
 * To change the time period, see the options top right
 
 ## Health checks and unhealthy instances
-
   - We had problems when we were not using ELB health for
     auto-scaling, we were using EC2 health instead - so although the
     instances were unhealthy, they were not terminated
@@ -83,7 +81,6 @@ To see logs:
     [<span class="underline">https://stackoverflow.com/questions/44346103/aws-beanstalk-how-to-reboot-or-terminate-automatically-an-instance-that-is-no</span>](https://stackoverflow.com/questions/44346103/aws-beanstalk-how-to-reboot-or-terminate-automatically-an-instance-that-is-no)
 
 ## CloudWatch Alarms
-
   - CloudWatch alarms can be configured to alert us in particular
     circumstances
       - Eg we had them set up for 0 healthy hosts and over a certain
@@ -116,14 +113,12 @@ To see logs:
       - AutoScaling group names are reasonably easy to parse because
         they include environment Ids - as do the alarms
 ## Useful debugging tools in Cloudwatch
-
   - Logs
   - Alarms | History
   - Metrics
   - View individual alarms (see below)
 
 ## Viewing Individual Alarms
-
   - Go here:
   - Cloudwatch
   - Alarms (LHS)
@@ -144,7 +139,6 @@ To see logs:
         about with the date range
 
 ## Billing alarms
-
 I have an alarm set up in Cloudwatch that’s triggered if the bill goes over $5, and again if it goes over $10.
 
 - Documentation [here on setting up billing alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html#turning_on_billing_metrics)

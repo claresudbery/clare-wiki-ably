@@ -5,7 +5,6 @@ permalink: /pages/coding/data/PostgreSQL-and-PSQL
 ---
 
 ## PSQL
-
 Useful links:
 
   - [Cheatsheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
@@ -40,7 +39,6 @@ You can output query results to a file by running the following command:
 `\o out.txt`. After that all query output will go to your file.
 
 ### Access local databases on macbook via psql
-
 - so far I've only used this to connect to local database
   - but I suspect if you want to connect to a remote database (eg heroku)...
   - ...you can click the + button bottom left to add a new server
@@ -52,9 +50,7 @@ You can output query results to a file by running the following command:
 - !!! These statements will have no effect unless you terminate them with a colon!
 
 ## AWS databases
-
 ### Access AWS databases via command line
-
   - Use [ssm to connect to the server](/pages/coding/data/AWS-And-SSM)
   - Once connected to the server
       - Run `sudo su postgres -c "psql -d \[database name\]"` to get a
@@ -78,7 +74,6 @@ You can output query results to a file by running the following command:
         (full docs)](https://www.postgresql.org/docs/9.2/app-psql.html)
 
 ### Access Heroku (or local) Databases using pgAdmin 4
-
 - install pgadmin
   - The installation is slightly opaque - you need to click on `pgadmin4-6.8.dmg` [on this page](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v6.8/macos/) (or get most recent installation [from here](https://www.pgadmin.org/download/pgadmin-4-macos/)) to download the installer (the `dmg` file), then double-click it after downloading, and it will prompt you to copy it into Applications folder.
 - first you need to connect to the remote server (unless you're connecting to local db, in which case skip his bit)    
@@ -110,7 +105,6 @@ You can output query results to a file by running the following command:
     - Then click the big play button at the top
 
 ### Access AWS databases using pgAdmin
-
   - First [start a session via ssm](/pages/coding/data/AWS-And-SSM
   - In pgAdmin, right-click on Servers (top left) and choose Create |
     Server
@@ -132,7 +126,6 @@ You can output query results to a file by running the following command:
   - Click Save
 
 ### Create yourself a database user 
-
   - Start a session to access the remote server
       - On command line:
           - `aws ssm start-session --target '\[EC2 instance id\]' `
@@ -152,11 +145,9 @@ You can output query results to a file by running the following command:
           - `grant "Role\_Name" to \[yourname\];`
 
 ## Databases hosted in GovPaaS
-
 See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Foundry).
 
 ### Access GovPaaS databases using pgAdmin
-
   - If this is is your first time, see [section on getting started](<#your first time>)
     .
   - Run `cf conduit database-name` - where `database-name` is the database
@@ -176,7 +167,6 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
     "Query Tool".
 
 ### Access GovPaaS databases via command line
-
   - !! Log in before doing anything else: `cf login`
       - See below if setting up for the first time
       - Your creds for cloudfoundry login are your GovPaaS creds
@@ -202,7 +192,6 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
     (full docs)](https://www.postgresql.org/docs/9.2/app-psql.html)
 
 ### Your first time
-
   - First [install CloudFoundry cli](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html)
   - Run `cf login`
       - Your creds for cloudfoundry login are your GovPaaS creds
@@ -215,9 +204,7 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
       - You'll need to install conduit: `cf install-plugin conduit`
 
 ## Backing up and Restoring Individual Tables
-
 ### Backing up an individual table locally in pgAdmin
-
   - You can just do right-click | Backup and save the \*.dmp file
     somewhere.
       - It’s a good idea to also do right-click | Count Rows and make a
@@ -258,7 +245,6 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
         to reflect this (ie make the new one the backup).
 
 ### Restoring an individual table from a local backup in pgAdmin
-
   - If you want to completely overwrite the current version of a table
     so that it's restored to its former glory:
   - Ideally you’ll just restore the rows using a backup you created
@@ -315,7 +301,6 @@ See [Gov Paas / Cloud Foundry Access](/pages/coding/data/GovPaaS-And-Cloud-Found
                   - `ON DELETE NO ACTION;`
 
 ### Restoring an individual table locally from a remote backup
-
 I found this quite tricky. This is what worked in the end:
 
   - If you want to keep a backup before overwriting with a restore:
@@ -342,7 +327,6 @@ I found this quite tricky. This is what worked in the end:
       - (for gotchas see below)
 
 #### Gotchas
-
   - `dos2unix` - useful tool for fixing line endings / Windows encoding / bad file formats
 	  - If you’re on Windows and you get an error from `line 1 syntax error at or near "ÿ\_"`, it’s caused by Unicode discrepancies. 
 		  - Another case can be if, on a Mac, Github thinks a `.cs` file is a binary file
@@ -401,9 +385,7 @@ I found this quite tricky. This is what worked in the end:
         running `sudo su`.
 
 ## Heroku
-
 ### PostGreSQL, Ruby, Sinatra/Rails and Heroku
-
 - I've got this working on my [site](https://github.com/claresudbery/wordlessly) (accessible to Clare only) - there's more useful stuff in the readme.
 
 - To get all this working on heroku, you need the addon:

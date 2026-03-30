@@ -5,7 +5,6 @@ permalink: /pages/think/events/workshops/Action-Learning
 ---
 
 ## Notes from Ludovine's Made Tech showcase
-
 From Ludivine's Made Tech showcase talk about her experiences with Action Learning (see book "You're Not Listening").
 
 - Get together in groups of 4-8

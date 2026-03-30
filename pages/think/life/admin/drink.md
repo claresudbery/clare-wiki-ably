@@ -5,5 +5,4 @@ permalink: /pages/think/life/admin/Drink
 ---
 
 ## Beer I like
-
 - Bottled Joker IPA 

@@ -7,7 +7,6 @@ permalink: /pages/coding/webdev/js/tixy-land
 ![mondrian squares](/resources/images/mondrian_squares.png)
 
 ## tixy.land creative javascript graphic coding game
-
 It's available [here](https://tixy.land/). You can write your own code by adding it to the url like this: https://tixy.land/?code=%27HAVE+FUN%21%27. To help with your memory, I've copied out all the possibilities below:
 
 The code returns the visibility for every dot. You can think of the values 0 and 1 representing true (visible) and false (invisible). The values between 0 and 1 represent more or less visible, or you can think of them as the radius of the circle (small radius = smaller circle = less visible). Negative numbers create red dots. Input is limited to 32 characters.

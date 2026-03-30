@@ -5,7 +5,6 @@ permalink: /pages/think/life/health-stuff/Hayfever
 ---
 
 ## Top tips
-
 Top tips for hayfever sufferers (courtesy of Jane / Digger):
 
 - Put a sheet over your entire bed in the morning after getting up and carefully remove it before you get into bed. Pollen settles throughout the day (but especially in the evening) so it will settle on the sheet and not the bedclothes that you sleep in / on. 

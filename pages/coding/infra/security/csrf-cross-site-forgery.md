@@ -4,7 +4,6 @@ location: pages/coding/infra/security/leaf
 permalink: /pages/coding/infra/security/CSRF-Cross-Site-Forgery
 ---
 ## CSRF Tokens - Overview
-
   - (Note that this is not the same thing as SSL certificates – they are
     a thing connected with https – see separate section)
   - CSRF tokens are held on a web page.
@@ -41,7 +40,6 @@ permalink: /pages/coding/infra/security/CSRF-Cross-Site-Forgery
     <http://stackoverflow.com/questions/14421962/asp-net-mvc3-antiforgerytoken>
 
 ## CSRF Tokens - Examples
-
   - We implemented this in a Contact Us form at
     [Samba](https://github.com/claresudbery/samba)
       - This is because it was giving POST access to the back end, and
@@ -109,7 +107,6 @@ permalink: /pages/coding/infra/security/CSRF-Cross-Site-Forgery
         asp-antiforgery=“true”\>
 
 ## CSRF Update – a DoS Attack
-
   - Below is the email I sent to everyone after we reviewed CSRF tokens
     because we had a DoS attack via a Contact-Us form: a bot was
     repeatedly (every few seconds) sending emails, for two 24-hour

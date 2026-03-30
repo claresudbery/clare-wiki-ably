@@ -5,17 +5,14 @@ permalink: /pages/think/events/workshops/Energisers-and-Warmups
 ---
 
 ## See also
-
 See also: [Fun games](/pages/think/life/fun-games/Fun-Games).
 
 ## General tips
-
 - Make it relevant if you can
 - Think about what zone / frame of mind you want people to be in
 - Gauge the room. Some groups love wacky icebreakers, some are completely turned off by them
 
 ## Creating pairs or groups
-
 When working in person, you often want to mix groups up so that people interact with people they don't know (online meeting software generally has the capacity to randomly assign people to breakout rooms). Here are some ideas for that.
 
 - Get everyone to form an ordered line around the outside of the room
@@ -32,7 +29,6 @@ When working in person, you often want to mix groups up so that people interact 
 - To rotate pairs in person, see [rotating pairs in person](<#rotating pairs in person>)
 
 ### Rotating pairs in person
-
 - Have pairs of chairs facing each other (with or without tables). 
 - Every 5 mins a timer goes off and the people on one side of the desk move round one space.
 - If an odd number of people, on each rotation a different pair of consecutive people on the fixed side of the desks get just one person opposite them. The pairs rotate in the opposite direction:
@@ -59,7 +55,6 @@ When working in person, you often want to mix groups up so that people interact 
     - 9 goes with 6
 
 ## Useful getting-to-know-you questions
-
 There are a couple of activities below that benefit from these types of questions. Take your pick or come up with your own:
 
 - What's something small/trivial you find satisfying? (eg cycling over crunchy Autumn leaves - but it's amazing how many different things people will come up with)
@@ -89,7 +84,6 @@ There are a couple of activities below that benefit from these types of question
 - If you could teach a junior developer one thing, what would it be?
 
 ## Getting to know each other
-
 (Each bullet point represents a different activity! This is not all one activity. The ones in more detail are listed below this initial section)
 
 - Lots of great ideas in the [energiser section of funretrospectives.com](https://www.funretrospectives.com/category/energizer/)
@@ -119,7 +113,6 @@ There are a couple of activities below that benefit from these types of question
 - [Pair intros](<#pair intros>)
 
 ### Pair intros
-
 - See [section above](<#creating pairs or groups>) for ideas on how to create random pairs or groups
 - Split into pairs and share the answer to a question. Then share your partner's answer with the rest of the group. 
 - For question suggestions, see [Getting-to-know-you Questions](<#useful getting to know you questions>).
@@ -130,7 +123,6 @@ There are a couple of activities below that benefit from these types of question
   - then introduce each other to the rest of the room
 
 ### Composite superheroes
-
 - In groups of 3, design a superhero. You get to choose one super power each and combine them into one hero. Draw a collaborative picture of the result.
 
 1. 1 minute: 
@@ -152,14 +144,12 @@ There are a couple of activities below that benefit from these types of question
     - Pick two numbers randomly, and focus on the results
 
 ## Simple icebreakers
-
 - If still stuck for ideas, just google "icebreakers"
 - Use https://really.boring.website/ to play a game
 - Use costumes! Or just hats. A lot easier when everyone is remote.
 - More ideas in detail below
 
 ### blind drawing
-
 - prep:
   - either write down names of simple objects, one card each
   - or print out simple pictures of objects
@@ -187,7 +177,6 @@ There are a couple of activities below that benefit from these types of question
 - the other(s) try/tries to draw the picture.
 
 ### The Counting Game
-
 - People take it in turns to say (or type in the chat) numbers
 - You can't talk over anyone
 - You can't say more than one number
@@ -195,11 +184,9 @@ There are a couple of activities below that benefit from these types of question
 - You're trying to count from one to ten
 
 ## Links to Games Elsewhere
-
 - [Play14](https://play14.org/) has a lot of games listed [here](https://play14.org/games/), and some remote-friendly games [here](trello.com/b/wAp7ZnnX/remote-friendly-games)
 
 ## The Dictionary Game
-
 - Prep: You need to find some unusual words, so you need googling skills or a big dictionary.
 - Split into groups of three.
 - Each group is given an unusual word, plus its definition.
@@ -208,7 +195,6 @@ There are a couple of activities below that benefit from these types of question
 - This will take some time so you might want to save some of the words-plus-definitions for later in the day.
 
 ## Human rock paper scissors
-
 1. Whole group agrees on physical poses to represent rock, paper and scissors
 2. Split into two teams
 3. Each team has 30 secs to agree whether they're going for rock paper or scissors
@@ -218,7 +204,6 @@ There are a couple of activities below that benefit from these types of question
 7. Or... [[#rock paper scissors championship]]
 
 ## rock paper scissors championship 
-
 - Works best with large groups
 - Everybody in the room finds a pair and plays three rounds of Rock Paper Scissors
     - Give rules! Otherwise some people do one, two, play and some do one, two, three, play
@@ -227,7 +212,6 @@ There are a couple of activities below that benefit from these types of question
 - We played this at the thoughtworks Away Day in Birmingham, and at the Agile Leadership meetup at Made Tech in London 13/1/20 - I won!
 
 ## Spirit Animals 
-
 - Everybody draw an animal or if in Miro, choose an avatar for your animal using Icon Picker (three dots at the bottom of the tool bar on the right). Write / add a post-it next to it something like "Hello, I'm Clare and my spirit animal is a hedgehog". Take it in turns to explain why you picked your animal, then pick the next person to also explain their animal
     - Potential gotchas: 
         - It's hard to work out whether everybody has gone yet. One way to fix this is for the facilitator to simply call out people one by one, for instance based on the list of attendees.
@@ -239,7 +223,6 @@ There are a couple of activities below that benefit from these types of question
 
 
 ## Balloons and Names
-
 This could be a warmup exercise... (via Amanda Nicholls on LinkedIn)
 
 "A wise teacher once brought balloons to school, told her pupils to blow them up and write their name on one. After the children tossed their balloons into the hall, the teacher moved through the hall mixing them all up.
@@ -251,11 +234,9 @@ Then the teacher told them to take the balloon closest to them and give it to th
 The teacher said to the children, “These balloons are like happiness. We won't find it when we're only searching for our own. But if we care about someone else's happiness...it will ultimately help us find our own.”"
 
 ## Drama Games
-
 - Some of these [games designed for drama classes](https://theatrenerds.com/10-theatre-games-perfect-drama-class/) can work well as energisers.
 - There are some more drama games [listed here](dramaresource.com/drama-games/) - this list is a bit more generically play-focused, rather than specifically focused on acting skills.
 ## "1,2 ... 3,1"
-
 - Everybody stand up.
 - When the leader says "One," everyone else must say "Two."
 - When the leader says "Two," everyone else must say "Three."  
@@ -301,7 +282,6 @@ The teacher said to the children, “These balloons are like happiness. We won't
       - each item should begin with next letter in alphabet
 
 ## Blind drawing answers
-
 - 01 - dog
 - 02 - house
 - 03 - tree

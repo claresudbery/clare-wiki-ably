@@ -13,7 +13,6 @@ Cancelled:
 - Danger - collaboration 
 
 ## 2/9/21, Kevlin Henney, keynote
-
 I turned this into a Twitter thread here.
 
 - Agile = move quickly and easily 
@@ -32,7 +31,6 @@ I turned this into a Twitter thread here.
 - The task of collaboration is in fact beautiful and serious.
 
 ## 2/9/21, Feminist leadership, Patti Hicks-Whaley
-
 - you have to change leadership structures 
 - Patti is from Action Aid
 - They deliberately changed their board to increase diversity (it was v white male middle aged)
@@ -56,7 +54,6 @@ I turned this into a Twitter thread here.
 - making Mondays suck less - Vu Le: https://nonprofitaf.com/about/
 
 ## 2/9/21, Systems thinking - Christian van boven
-
 - use systems thinking as a tool to visualise dynamic processes 
 - Validate whether influencing factors can easily map onto a model 
 - Learning organisations - the fifth discipline by Peter senge
@@ -91,7 +88,6 @@ I turned this into a Twitter thread here.
 - See pic of loops re software backlogs
 
 ## 2/9/21, Simon Skelton and Steve Smith - you build it you run it 
-
 - john Lewis has moved from 10 releases per year in 2017 to 5000 in 2021
 - Lockdown has resulted in online sales taking much larger proportion of overall sales (many high street shops shut
 - They had already combined delivery and ops but failed and split it back out again due to overload of operational effort
@@ -105,14 +101,12 @@ I turned this into a Twitter thread here.
 - People tend to prioritise fixing the issues they detect during chaos days 
 
 ## 2/9/21, Lightning talk - leading indicators / lagging indicators 
-
 - *wiki* in a cafe full of customers, want to know how much business will be done here in the next hour?
 - Look at the tables, because it's so busy you might think they're going to do great business - that's a lagging indicator because these people have already ordered. Maybe this is the end of lunch hour?
 - Or you could look at the queue. If it's long, that suggests they're about to do great business. That's a leading indicator because the sales haven't happened yet.
 - A good example from tesco: a button offering new functionality you would like to use. When you click on it, it says (paraphrased) "sorry, this function doesn't exist yet. We are just trying to gauge customer interest in this potential new feature." How many people click on that button will give you a leading indicator!
 
 ## 3/9/21, Keynote - Gitte Klitgaard, psychological safety
-
 Menti.com 4455 1044
 
 * Esther Derby - "being professional is sometimes code for 'suppressing personal emotions and needs' " 
@@ -124,7 +118,6 @@ Menti.com 4455 1044
 * Have psychological safety training sessions, where you ask people, what does psychological safety mean for you? What would you need?
 
 ## 3/9/21, Emily Bache - Samman technical coaching 
-
 I turned this into a Twitter thread [here](https://twitter.com/ClareSudbery/status/1434130606976339968?s=20). The actual content of the tweets is [here](<#emily bache talk   tweets>).
 
 * My tweet thread of these notes is here: https://twitter.com/ClareSudbery/status/1434130606976339968?s=20
@@ -183,7 +176,6 @@ I turned this into a Twitter thread [here](https://twitter.com/ClareSudbery/stat
 * There's currently no obvious or clear career path to becoming a technical coach. @EmilyBache wants to change this! She has written a book, Technical Agile Coaching with the Samman Method (https://leanpub.com/techagilecoach), and has a website: https://sammancoaching.org/. She aims to offer training to coaches wishing to use the Samman coaching method.
 
 ## 3/9/21, Jim barritt - software architecture 
-
 * "all models are wrong but some are useful" - George box 
     * Principles 
     * Patterns 
@@ -210,7 +202,6 @@ I turned this into a Twitter thread [here](https://twitter.com/ClareSudbery/stat
 * For things like scalability, it's crucial that you define what you mean in a measurable way. Create scalability tests to check progress / success.
 
 ## Emily Bache talk - tweets:
-
 I really enjoyed @EmilyBache’s talk about her Samman Technical Coaching technique (@CoachingSamman) yesterday at #AOTB21. Here are my notes.
 
 Samman = Swedish, means "together".

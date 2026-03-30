@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Widget-Layout
 ---
 
 # Widget Layout
-
 ## Contents of this page:
-
 - [See also...](<#see also>)
 - [Useful layout resources](<#useful layout resources>)
 - [Troubleshooting Color Hex values](<#troubleshooting color hex values>)
@@ -27,7 +25,6 @@ permalink: /pages/coding/tools/flutter/Widget-Layout
   - [When width or height is unconstrained](<#when width or height is unconstrained>)
 
 ## See also...
-
 - [Separate section in flutter.md](flutter.md#visual-styling-and-layout)
 - ...which contains...
   - [Themes](flutter.md#themes)
@@ -39,13 +36,11 @@ permalink: /pages/coding/tools/flutter/Widget-Layout
   - [Other components helpful for layout](flutter.md#other-components-helpful-for-layout)
 
 ## Useful layout resources
-
 - [Catalog of layout widgets](https://docs.flutter.dev/ui/widgets/layout)
 - [Common flutter errors](https://docs.flutter.dev/testing/common-errors)
 - [Guide to layout constraints](https://docs.flutter.dev/ui/layout/constraints)
 
 ## Troubleshooting Color Hex values
-
 - I found something on the internet recommending `Color(0xff7c94b6)` for a color value
   - But when I asked for a hex value I was told `#EFEFEF`
   - Flutter complained at `Color(0xEFEFEF)` - it wanted eight characters after `0x`
@@ -93,7 +88,6 @@ Row (
   - I didn't use the `HexColor` package as it felt unmaintained but maybe its fine?"
 
 ## Use the widget inspector / layout explorer
-
 - Tutorial for layout explorer [here](https://docs.flutter.dev/tools/devtools/inspector)
   - you can also click the "Watch tutorial" button at the bottom of the explorer
 - If you've lost it / want to know how to open it, see [below](<#find the widget inspector  layout explorer>) on how to find it
@@ -101,7 +95,6 @@ Row (
 - If there are errors in your layout, you'll get a red box and arrows you can click to find the places in the layout where the errors are
 
 ## Aligning text to the left
-
 - Wrap in a Row element, and set `mainAxisAlignment`:
 
 ```dart
@@ -117,7 +110,6 @@ Row(
 ```
 
 ## Layout constraints
-
 - [Comprehensive guide here](https://docs.flutter.dev/ui/layout/constraints)
 - It can be a bit difficult to follow / to get what you want from it though
 - Here are the key points:
@@ -125,7 +117,6 @@ Row(
 - "When you specify a width / height on a Container, you're not constraining Container. You're constraining the child of Container."
 
 ## Expanded vs flexible
-
 - More [here](https://api.flutter.dev/flutter/widgets/Flexible-class.html)
   - and [here](https://stackoverflow.com/questions/52645944/flutter-expanded-vs-flexible)
 - If you want to fill a particular area of screen, use `Expanded` or `Flexible`
@@ -168,7 +159,6 @@ Row (
 ```
 
 ## Add borders
-
 - [More here](https://api.flutter.dev/flutter/painting/BoxDecoration-class.html)
 - Use `BoxDecoration`
 - Set the `border` property
@@ -192,9 +182,7 @@ Container(
 ```
 
 ## Troubleshooting layout
-
 ### Find the widget inspector / layout explorer
-
 - If the widget tree won't refresh and is just blank, restart VS Code
 - To get it back again, after closing it:
   - Check you haven't dragged it into a separate window first! Use Cmd + backtick to see if there's another window lurking somewhere
@@ -216,24 +204,20 @@ Container(
       - Anyway this seems separate to selecting something in the widget inspector - you can select someting in the widget inspector, but it won't get highlighted in the app unless you've also turned on "Flutter: inspect widget"
 
 ### Infinite size / blank screen
-
 - If you remove a parent widget and the screen, or parts of the screen, go blank as a result, check the Debug Console
 - If you have an error about something "given an infinite size during layout", it means there is no parent in the widget tree determining the height or width of the wrapped widget.
 - The solution is to insert a `SizedBox` or `Container` or `Expanded` or `Flexible` widget somewhere up in the parent hierarchy, and get them to specify height and/or width
   - see [Expanded vs flexible](<#expanded vs flexible>)
 
 ### Alternatives to IntrinsicHeight or IntrinsicWidth
-
 - `IntrinsicHeight` and `IntrinsicWidth` will size things according to the dynamic size of the largest item in the row / column
 - But if you just want to specify an absolute height / width, use `SizedBox` or `Container`
 
 ### Persuading a widget to have a particular width or height
-
 - "When you specify a width / height on a Container, you're not constraining Container. You're constraining the child of Container."
 - See [constraints](<#layout constraints>)
 
 ### Getting a row / col to have width / height of its widest / highest widget
-
 - More [here](https://api.flutter.dev/flutter/widgets/IntrinsicHeight-class.html)
 - Use `IntrinsicWidth` or `IntrinsicHeight`
 - It's potentially slow though
@@ -258,7 +242,6 @@ IntrinsicWidth(
 ```
 
 ### Cutting too-long text short and replacing it with ellipsis
-
 - More [here](https://dev.to/rowan_ibrahim/flutter-overflow-fixes-simple-guide-to-overflow-2c09)
 - Use `overflow` within a `Text` widget
 - Like this - anything after two lines will be replaced with `...` at the end of the second line:
@@ -273,12 +256,10 @@ Text(
 ```
 
 ### Give text a background colour
-
 - Use `DecoratedBox` and populate its `color` property
 - See [here](<#troubleshooting color hex values>) for discussion of different ways of specifying colour
 
 ### When width or height is unconstrained
-
 - If there's overflow, you might get a visible yellow/black bar in the app
 - When you look in the layout explorer, you'll see it says "unconstrained" for height or width
 - You might be able to see smeting in the hierarchy which you think _ought_ to be constraining the height/width

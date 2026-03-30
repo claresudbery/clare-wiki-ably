@@ -5,15 +5,12 @@ permalink: /pages/think/events/talks/Presentation-Tools
 ---
 
 ## Projecting slides on a Mac
-
 See my [InSimpleTerms blog post](https://insimpleterms.blog/category/presenting).
 
 ## Powerpoint - remote presenting
-
 If you're using Powerpoint, you can click the Display Settings button at the top of the screen (while presenting) and select "Swap Presenter view and slide show", to make sure that your notes are on the screen that has your webcam attached - so that you can be looking straight ahead (which will make the audience feel like you're making eye contact), instead of off to one side.
 
 ## Google Slides - Remote Presenting
-
 To get a good experience while remote-presenting a talk using Google Slides:
 
 1. In the slides: View => Present (Ctrl + F5)
@@ -26,7 +23,6 @@ To get a good experience while remote-presenting a talk using Google Slides:
 *If you don't have two screens, you can hopefully just share the window that has the slides in presentation mode, but for your own purposes keep it hidden behind the browser window containing the notes. 
 
 ## Free photos / stock photos / images / no copyright
-
 - https://www.pexels.com/
 - https://pixlr.com/x/
 - Creative commons: https://www.flickr.com/photos/tags/flickrhivemind/ - filter your search by "commercial use allowed" (I'm not sure whether I meant Flickr or Google when I made this note - I suspect that Flickr link might have got there by accident)

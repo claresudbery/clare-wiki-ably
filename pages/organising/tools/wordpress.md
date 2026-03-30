@@ -1,5 +1,4 @@
 # Logging in
-
 - I had a Wordpress site hosted by Ionos, and it started doing a thing where whenever I logged in, it tried to get me to choose a new site template.
 - Solution:
     - It turned out a plugin had been added without me realising
@@ -12,7 +11,6 @@
         - (change the first part to your blog url)
 
 # Changing account settings
-
 - There's an account settings page which isn't accessible for me via the blog dashboard
 - Instead I have to go directly to wordpress.com (NOT wordpress.org, where I also seem to have an account - see [below](<#wordpressorg vs wordpresscom>) and log in there.
     - Click on the person / profile icon, top right
@@ -23,7 +21,6 @@
     - ...or click the Profile icon, top right, and select Edit profile
 
 # Wordpress.org vs wordpress.com
-
 "Your site is not hosted on WordPress.com. It’s a self-hosted WordPress.org site hosted by a different hosting company. 
 
 We do not have access to self-hosted sites, so I cannot see the setup of the backend of your account.
@@ -35,7 +32,6 @@ WordPress.com is a managed host platform that offers WordPress in a pre-customiz
 WordPress.org is a self-hosted platform, meaning you download the WordPress software and install it on a web server from a host of your choosing. You have to pay the host when you’re self-hosting, and the server, security, updates, and site optimization are all handled by you. This gives you more flexibility and control of your plugins, themes, and code but also more responsibility to ensure those things are operating correctly."
 
 # Changing email addresses
-
 - I found FOUR different places where I had different email addresses configured!
     - This might be related to the fact that I have a Wordpress account hosted by Ionos
     - It seems to be CONNECTED to my personal Wordpress account, but not quite the same thing?
@@ -64,7 +60,6 @@ WordPress.org is a self-hosted platform, meaning you download the WordPress soft
     - Change the "To" email address at the top
 
 # Preventing spam in contact forms and comments
-
 - Install BestWebSoft reCaptcha plugin
     - You'll need the pro version if you're using Contact Form 7 - costs $24 per year
     - When you upgrade to Pro, you'll get an email with a download link
@@ -83,7 +78,6 @@ WordPress.org is a self-hosted platform, meaning you download the WordPress soft
 - Turn on comment moderation
 
 ## Problems with BWS ReCaptcha
-
 "Hi 
 I have just purchased a Pro licence and have added BWS ReCaptcha to my Wordpress contact form (using Contact Form 7). I have inserted the tag using the BWS ReCaptcha button in Wordpress. The tag looks like this: [bwsgooglecaptcha bwsgooglecaptcha-643]
 But now my contact form, as well as containing ReCaptcha functionality, has an extra text field that I didn't add. When I remove the ReCaptcha tag, the text field goes away again.
@@ -102,7 +96,6 @@ NB: I MANAGED TO FIX THIS BY SWITCHING TO RECAPTCHA V3.
 ![Wordpress-rogue-BWS-reCaptcha-text-field.png](/resources/images/Wordpress-rogue-BWS-reCaptcha-text-field.png)
 
 # Problems with site excerpts
-
 Message below posted to the wordpress.org support forum (I tried wordpress.com but they said I should go to wordpress.org - see [above](<#wordpressorg vs wordpresscom>))
 
 Posted [here](https://wordpress.org/support/topic/excerpt-module-missing/#new-topic-0):

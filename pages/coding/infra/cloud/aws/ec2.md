@@ -4,11 +4,9 @@ location: pages/coding/infra/cloud/aws/leaf
 permalink: /pages/coding/infra/cloud/aws/EC2
 ---
 ## Historic Notes
-
   - These notes were originally written 2018
 
 ## Dynamic EC2 instances:
-
   - To find which instances belong to which EBS environments, go to EBS
     | Health, and find instance Id
   - These are spun up on demand by EBS load balancer
@@ -16,7 +14,6 @@ permalink: /pages/coding/infra/cloud/aws/EC2
     Events
 
 ## IP addresses
-
   - To see IP address, select Instances on the left, select an, then
     lower right see “IPv4 Public IP”
   - To find out which instances are being spawned by a particular EBS
@@ -26,7 +23,6 @@ permalink: /pages/coding/infra/cloud/aws/EC2
       - You will see an instance Id there – you can map this back to EC2
 
 ## Volumes vs Instances:
-
   - Sometimes when you look at EC2 you may see, for instance, 27
     instances but 33 volumes. Even if some instances have been
     terminated, that still won’t explain the shortfall.
@@ -35,13 +31,11 @@ permalink: /pages/coding/infra/cloud/aws/EC2
     some instances might have more than one volume
 
 ## EC2 Instance Sizes
-
   - eg t1.micro or t2.small. You might want to change an instance size,
     eg if an instance is crashing when running npm install, which could
     be caused by a lack of space to accommodate downloaded packages.
 
 ## Terminated EC2 instances
-
   - They’re terminated because they were spun up by the load balancer,
     and are no longer needed
   - Check EBS for health checks
@@ -51,5 +45,4 @@ permalink: /pages/coding/infra/cloud/aws/EC2
     but then after a while they disappear
 
 ## High availability
-
 - Separate instances are in different geographical areas.

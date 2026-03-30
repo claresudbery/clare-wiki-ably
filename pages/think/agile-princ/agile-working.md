@@ -5,7 +5,6 @@ permalink: /pages/think/agile-princ/Agile-Ways-Of-Working
 ---
 
 ## User First Ways of Working (Delivery):
-
 ### Principles:
 - Kanban board spanning Backlog => Ready => In Progress => Done => Proven (see Cadence / Rhythm below for definitions)
 - Use method of sizing to align team around approach
@@ -43,7 +42,6 @@ permalink: /pages/think/agile-princ/Agile-Ways-Of-Working
   - **Desk check** (some people call this sign-off but I don’t like the bureaucratic implications - I feel like there’s another better title than check-in, but my mind has gone blank)
 
 ### Extra:
- 
 I want to update this doc at some point to cover the following things that came up in discussion (if I've missed abything else, let me know):
 
 - Building slack into your weekly cadence, to improve flow - ie don't try to shcedule 100% of everyone's time

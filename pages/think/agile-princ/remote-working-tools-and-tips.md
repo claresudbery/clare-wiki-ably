@@ -5,7 +5,6 @@ permalink: /pages/think/agile-princ/Remote-Working-Tools-And-Tips
 ---
 
 ## Elsewhere
-
 I have other pages in this wiki that follow similar themes and also contain useful content: [Remote Workshops](/pages/think/events/workshops/Remote-Workshops), and [Remote Working](/pages/think/agile-princ/Remote-Working).
 
 ## Intro
@@ -24,9 +23,7 @@ tools you don’t have licenses for:
   - delete it when you are done
 
 ## Meetings/Workshops
-
 ### Retro/Workshop Tools
-
   - [funretro.io](https://funretro.io/)
 
   - [Ideaboardz](http://ideaboardz.com/)
@@ -59,7 +56,6 @@ tools you don’t have licenses for:
 - [Break timer](https://www.bigtimer.net/)
 
 ### Diagramming
-
   - Zoom lets you draw on shared screens for quick collaboration
 
   - Sharing Omnigraffle has worked for remote whiteboarding (it’s not
@@ -69,13 +65,10 @@ tools you don’t have licenses for:
     PlantUML, graphviz, and similar - using code-sharing tools.
 
 ## Tools
-
 See [here](/pages/think/events/workshops/Remote-Workshops#tools-others-have-recommended).
 
 ## A/V
-
 ### Accessibility
-
   - Don’t allow more than one person to talk at once
 
   - Encourage people to screen share and use diagrams, charts,
@@ -105,7 +98,6 @@ See [here](/pages/think/events/workshops/Remote-Workshops#tools-others-have-reco
   - SuperWhisper - there's a link to it in [Llewellyn Falco's talk resources](https://github.com/isidore/Talks/blob/master/AgenticAIAndProcessfiles.md "https://github.com/isidore/Talks/blob/master/AgenticAIAndProcessfiles.md") and he seemed to use it as some kind of transcription service during his talk. It was very useful when he wanted to write prompts for the AI - he would just talk and get it to transcribe for him.
 
 ### Audio
-
 Universally agreed that good headsets are a must. “I think having a boom
 mic is quite critical - no amount of smart technology can quite compare
 with just putting a small microphone quite close to your mouth”
@@ -160,7 +152,6 @@ with just putting a small microphone quite close to your mouth”
   ![Audio settings](/resources/images/audio-settings.png)
 
 ### Pairing
-
   - Slack and Zoom have good screen sharing capabilities and allow
     others to control/draw on your screen
 
@@ -177,7 +168,6 @@ with just putting a small microphone quite close to your mouth”
     shared via Slack or Zoom.
 
 #### Pair Stairs
-
   - Use Pair Stairs (in the example below we used a spreadsheet) to keep track of who has paired with who. 
   - In the below example, we were working remotely across three geographical areas, and we wanted to encourage people to pair across areas - so we used the colour coding for that (I've changed the names to protect privacy). 
   - The numbers represent the number of times each pair of people has worked together.
@@ -186,7 +176,6 @@ with just putting a small microphone quite close to your mouth”
   ![Pair Stairs](/resources/images/pair-stairs.png)
 
 ### Dealing with problems
-
   - Be aware that people will just put up with remote communication
     problems when they shouldn't, so anticipate that and be deliberate
     and proactive about addressing issues with hardware, software and
@@ -204,7 +193,6 @@ with just putting a small microphone quite close to your mouth”
     at least people with bad comms can type out questions.”
 
 ## Culture
-
   - If even one person is remote, everyone should be remote (use
     headsets, even be in separate rooms)
 
@@ -244,7 +232,6 @@ with just putting a small microphone quite close to your mouth”
     [http://services.google.com/fh/files/blogs/distributedworkplaybooks.pdf](http://services.google.com/fh/files/blogs/distributedworkplaybooks.pdf)
 
 ## Security and longevity
-
 Many of these tools are free to use, or have a free tier for limited
 usage - this is very appealing for ad-hoc tool use, but can involve
 risks as without a commercial agreement, you often have little control
@@ -277,13 +264,11 @@ for example, or even worse, use them to share security credentials.
     services.
 
 ## Remote Meeting Fatigue Breakers:
-
 This blog has a collection of cool ideas for the remote meeting fatigue
 breakers ie icebreakers, energisers.
 
 [https://blog.mural.co/online-warm-ups-energizers](https://blog.mural.co/online-warm-ups-energizers)
 
 ## Articles
-
 - [The Five Levels of Remote Work — and why you’re probably at Level 2](https://medium.com/swlh/the-five-levels-of-remote-work-and-why-youre-probably-at-level-2-ccaf05a25b9c)
 - [Why Zoom calls are exhausting](https://www.fastcompany.com/90502253/why-you-feel-exhausted-from-endless-zoom-calls)

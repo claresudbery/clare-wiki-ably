@@ -5,19 +5,15 @@ permalink: /pages/coding/data/Microsoft-Excel
 ---
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/excel) (Excel category)
 
 ## Google Sheets vs Excel
-
 - Note that most of the formulas here will also work on [Google Sheets](/pages/coding/data/Google-Sheets), and vice versa
 
 ## Misc
-
 - Various Excel resources: Dropbox\IT Training\Excel
 
 ## Merge data based on one column
-
 - Potential scenario:
     - Let's say I have one spreadsheet with a list of people, their names, their IDs and some status that denotes whether I've messaged them via DM.
     - I also have another spreadsheet containing the same people - with IDs, without the DM status but including their email addresses.
@@ -27,7 +23,6 @@ permalink: /pages/coding/data/Microsoft-Excel
     - More info [here](https://www.ablebits.com/office-addins-blog/2018/10/31/excel-merge-tables-matching-columns/).
 
 ## Format currency / accounting data with negative amounts in red with minus signs
-
 - To format negative amounts:
 - Select the cell or column
 - Select Format => Cells from the menu
@@ -44,7 +39,6 @@ permalink: /pages/coding/data/Microsoft-Excel
   - ...and all the negative amounts should be in red with minus symbols in front
 
 ## Format time elapsed to cope with times greater than 24 hours
-
 - Select the cell or column
 - Select Format => Cells from the menu
   - or right-click => Format cells
@@ -60,13 +54,11 @@ permalink: /pages/coding/data/Microsoft-Excel
   - Rather than try to calculate what this value should be, just select the cell and type the value you want directly in (without double-clicking).
 
 ## Convert time in seconds into a decimal number
-
 - If D2 contains time formatted as `56:30`...
 - In anoither cell, enter the formula `=ROUND(D2*24,2)`
 - Should give you `56.50`
 
 ## FILTER / CONTAINS SUBSTRING
-
 - Return all the cells that match the search criteria
 - The good thing about this is that you can search one col but return the contents of another col in the same row
 - For instance: `=FILTER(D2:E10,ISNUMBER(SEARCH(A1,C2:C10)),"No results")`
@@ -74,11 +66,9 @@ permalink: /pages/coding/data/Microsoft-Excel
   - ...but only for those rows where the value in col C contains the value in `A1` as a substring
 
 ## Filter, lookup, vlookup
-
 - See [Google Sheets](/pages/coding/data/Google-Sheets), seeing as most of that stuff is interchangeable.
 
 ## Conditional formatting 
-
 - To base it on a formula:
 	- Highlight the whole range you want to apply the formatting to
 	- In Click Home 

@@ -5,16 +5,13 @@ permalink: /pages/coding/mobile/Cocoapods
 ---
 
 ## Intro
-
 - Cocoapods is a package management system for ios development
 - When you run commands like `pod install` on the command line, you're using cocoapods
 
 ## Useful links
-
 - [documentation here](https://cocoapods.org/)
 
 ## Basics
-
 - To install: `sudo gem install cocoapods`
     - But I found it hung when I tried that
     - I used `brew install cocapods` instead
@@ -26,7 +23,6 @@ permalink: /pages/coding/mobile/Cocoapods
     - ...which will create a `Pods` folder containing a `Pods.xcodeproj` file and a subfolder for each pod containing `.h` and `.m` files copied from your central `Library` folder
 
 ## In XCode
-
 - If you click the file icon, top left, you should see a folder for pods
     - If it's not there yet, that's because you haven't run `pod install` yet
 - This is basically a project file: `Pods.xcodeproj`

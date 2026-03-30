@@ -7,7 +7,6 @@ permalink: /pages/think/events/other-talks/2020-01-13-agile-leadership
 ---
 
 # Agile leadership meetup, Made Tech 13/1/20
-
 ## Be a catalyst for change 
 - by doing it yourself 
 	- ask for justification then ask for the counter argument, to show that disagreement is OK

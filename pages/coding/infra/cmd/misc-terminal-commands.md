@@ -4,21 +4,17 @@ location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/Misc-Terminal-Commands
 ---
 ## Very Useful Book
-
   - Don’t forget a lot of this stuff is in the Data Science at the
     Command Line book:
     [<span class="underline">https://www.datascienceatthecommandline.com/</span>](https://www.datascienceatthecommandline.com/)
 
 ## Hosts file
-
 See [notes here](/pages/coding/infra/servers/Networking#hosts-file)
 
 ## Networking commands
-
 See [here](/pages/coding/infra/cmd/Networking-Commands)
 
 ## Pbpaste
-
   - Like alt click in text editors – if you wanted to select a column of
     text
 
@@ -30,7 +26,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
   - For more complex tasks, might use something like grep or sed
 
 ## Unix sort
-
   - Eg curl in terminal – “**curl
     logs.acmecorp.com:9200/\_cat/indices?v**” yellow status means some
     missing replicas
@@ -55,7 +50,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
   - To find out more about the sort command: **man sort**
 
 ## Htop
-
   - Cmd: **htop**
 
   - Numbers at the top are system stuff: The actual listed numbers are
@@ -84,7 +78,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - F6 to change sort order (see legend at bottom of screen)
 
 ## Rsync
-
   - used to copy data between servers
 
   - Use **rsync** to propagate terraform code from one environment to
@@ -96,7 +89,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         acme-logging-dev**
 
 ## Less
-
   - if you want to see new data coming in to a log file – like tail but
     better because you also see historic data
 
@@ -109,7 +101,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
     type of scrolling - use arrow keys or scroll wheel
 
 ## Grep
-
   - Search for a string: **grep**
     
       - To recursively search the current location for “pinkerton”:
@@ -230,7 +221,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - This: **grep "dn0...\\.pug"**
 
 ## Compressed files
-
   - To extract:
     
       - You can install unpack
@@ -254,7 +244,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
           - For .xz: **unxz**
 
 ## Installing scripts
-
   - Copy script into \~/scripts folder
   - Edit PATH env var to include scripts folder
       - Put something like this into something like \~/.bashrc or
@@ -270,7 +259,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - (see [section on bash scripts](/pages/coding/infra/cmd/Bash-Scripts#misc))
 
 ## Env vars
-
   - To look at the existing value of an env var: **echo $PATH**
 
   - To set the value of an env var (temporary):
@@ -307,7 +295,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
                 example: **export PATH=$PATH:/Users/csudbery/scripts**
 
 ## Suggested Terminal Tools
-
   - top tools
     
       - \- neovim
@@ -375,7 +362,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
             }
 
 ## Pipes, stdin and stdout
-
   - When you use the pipe symbol, you are creating a pipeline which has
     data flowing through constantly
     
@@ -408,7 +394,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         $(date +%s)" | nc graphite.acmecorp.com 2003**
 
 ## Terminal navigation
-
   - Don’t forget a lot of this stuff is in the Data Science at the
     Command Line book:
     [<span class="underline">https://www.datascienceatthecommandline.com/</span>](https://www.datascienceatthecommandline.com/)
@@ -602,7 +587,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
 
 
 ### Creating aliases in Bash
-
 - Run these commands in Git Bash:
   - **touch ~/.bashrc**
   - **vim ~/.bashrc**
@@ -626,9 +610,7 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
 
 
 ## Other Terminal / Unix commands
-
 ### Small ones
-
   - Copying things from VM to laptop: **pbcopy**
 
   - Search for a string: **grep**
@@ -804,16 +786,13 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - See also CIDR section in these notes
 
 ### awk
-
 - See [[awk|awk.md]]
 ### ag
-
   - The “silver searcher”
 
   - Like grep
 
 ### pv
-
   - **pv** shows the progress of a pipe (how long everything is taking)
     
       - Eg: **knife search -i "nonagios:true" | pv -N knifesearch**
@@ -880,12 +859,10 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         the pipe simultaneously
 
 ## Stuff from Data Science at the Command Line
-
   - Online version of the book:
     [<span class="underline">https://www.datascienceatthecommandline.com/</span>](https://www.datascienceatthecommandline.com/)
 
 ### General stuff
-
   - Cmd: **curl**
     
       - Good description of what curl is plus different options
@@ -905,7 +882,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         correct headers - see p39
 
 ### Vagrant machine management
-
   - See also notes in front of my copy of the book
 
   - On my Acme laptop:
@@ -945,7 +921,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         [<span class="underline">https://stackoverflow.com/questions/16704059/easiest-way-to-copy-a-single-file-from-host-to-vagrant-guest</span>](https://stackoverflow.com/questions/16704059/easiest-way-to-copy-a-single-file-from-host-to-vagrant-guest)
 
 ### Cmd:cut
-
   - Cmd: **cut** (see also **csvcut** below)
     
       - Cmd: **cut -c1-80**
@@ -975,7 +950,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
             the 3<sup>rd</sup> one to the last one.
 
 ### Spreadsheets / csvs
-
   - Spreadsheets / csvs:
     
       - Use **csvkit** - see p34
@@ -1004,7 +978,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         for csv data
 
 ## Jq json format check and pretty-print json formatter
-
   - To check that your json is well formatted
 
   - it's pretty powerful - has its own syntax. [Here is an example](https://github.com/claresudbery/Infra-Scripts/blob/master/observability-toolbox/jq-aggs) using `jq` to query some json.
@@ -1100,7 +1073,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
       - }
 
 ##  “Teed writes”
-
   - > The command-line utility **tee** allows you to duplicate output to
     > both screen and file (or two other outputs)
 
@@ -1130,7 +1102,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
     command\]’**
 
 ## Disk Space Issues
-
   - Check disk space: **df -h**
       - Lists disks in human readable format (with readable numbers)
       - Lets you know if any disks are full

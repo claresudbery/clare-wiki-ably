@@ -4,7 +4,6 @@ location: pages/coding/infra/cloud/leaf
 permalink: /pages/coding/infra/cloud/Terraform
 ---
 ## Misc
-
   - Avoid iron bindings
 
   - State file is used to map code to actual stuff
@@ -88,7 +87,6 @@ permalink: /pages/coding/infra/cloud/Terraform
     for some useful Terraform stuff
 
 ## Creating a new project
-
   - Install terraform and hub:
     
       - brew install terraform
@@ -96,7 +94,6 @@ permalink: /pages/coding/infra/cloud/Terraform
       - brew install hub
 
 ## Deployment in Jenkins
-
   - Terraform pipeline:
     
       - This is where you run terraform
@@ -129,7 +126,6 @@ permalink: /pages/coding/infra/cloud/Terraform
         las time the bucket was updated
 
 ## Local variables
-
   - This is a bit of a misnomer
 
   - It’s more like the difference between variable and constant
@@ -148,7 +144,6 @@ permalink: /pages/coding/infra/cloud/Terraform
     “local” is misleading.
 
 ## Connecting to hosts after provisioning
-
   - the only way would be via gcloud because chef doesn’t run on those
     machines - chef is the main way we put our standard stuff on, eg the
     thing that hooks in LDAP to authentication - so you can ssh in with
@@ -187,7 +182,6 @@ permalink: /pages/coding/infra/cloud/Terraform
       - }
 
 ## Running terraform tests
-
   - First this: bundle install --path vendor/bundle
 
   - See rakefile for tasks that have been configured.
@@ -204,7 +198,6 @@ permalink: /pages/coding/infra/cloud/Terraform
       - This: **bundle exec rake tests:spec**
 
 ## General Test thoughts
-
   - Because so much of infra is declarative, you are just asserting that
     what you declared has been declared
 
@@ -223,5 +216,4 @@ permalink: /pages/coding/infra/cloud/Terraform
     it is then it is ready.
 
 ## Recommended Project Structure
-
 - The way you structure your Terraform project can make a big difference. [Here is a discussion of this subject from Eritrea](https://docs.google.com/document/d/1MMiZdRuwGLd35OQ3hE4qFwtMWzFu_fFSVQ_wqti6hSo/edit#heading=h.gjdgxs) (available only to Clare) (note this does not contain our proposed solution - it's an initial internal discussion of the problem with some solutions).

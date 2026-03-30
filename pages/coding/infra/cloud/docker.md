@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cloud/Docker
 ---
 
 ## Links
-
 - [Made Tech Docker Guide](https://learn.madetech.com/technology/guides/11-Docker/)
 - [Docker Hub](https://hub.docker.com/) for Docker images
 - [Dockerfile Docs](https://docs.docker.com/engine/reference/builder/) 
@@ -27,7 +26,6 @@ permalink: /pages/coding/infra/cloud/Docker
 - [Deploying a Docker container to Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 
 ## Misc
-
   - Run a bash shell in your docker container: **docker exec -it
     \[container name\] /bin/bash**
 
@@ -41,7 +39,6 @@ permalink: /pages/coding/infra/cloud/Docker
         [<span class="underline">https://docs.docker.com/v17.09/engine/reference/commandline/build/\#options</span>](https://docs.docker.com/v17.09/engine/reference/commandline/build/#options)
 
 ## Docker commands
-
 - Show all containers: `docker ps`
 - Look at the config for a container: `docker inspect [container  name]`
 - Start, stop etc: `docker start`, `docker stop`
@@ -74,7 +71,6 @@ permalink: /pages/coding/infra/cloud/Docker
   -	This means you can now just go to localhost in the browser
 
 ## Docker tags
-
   - Docker tags are effectively names.
     
       - The tag is a way of identifying an image. Locally, it will have
@@ -132,14 +128,12 @@ permalink: /pages/coding/infra/cloud/Docker
     the gcloud tool should be used to obtain the required token (for the
     various gcr.io registry names)
 ## Get into a docker container from outside and run commands
-
   - To get into a docker container from outside:
       - This: **sudo docker ps**
       - Then this (fill in id): **sudo docker exec –it \[id\]
         /bin/bash**
 
 ## Run docker containers in Windows Parallel on a Mac
-
 (This may be out of date.)
 
 You may need to enable Nested Virtualization.
@@ -157,7 +151,6 @@ You only need to do this if you are running Windows Parallels on a Mac. You will
   * Now start up Windows again.
 
 ## Docker Images
-
 - Docker images are stored in registries. There is docker hub, amazon
   ecr, google gcr, quay.io or you can host your own. When you push an
   image to a repository you specify the tag you’re pushing. Docker
@@ -183,7 +176,6 @@ You only need to do this if you are running Windows Parallels on a Mac. You will
   - The result of adding `–a` after `docker images` is to give you all untagged images. All of them have image IDs, so all of them can be run.
   -	Everything else is then adding to that, and is stored as a delta from the starting point
 ## More Docker Notes
-
   - The order of things in dockerfile is important because it is
     building layers
       - It can identify commonality and share layers (aka deltas in the

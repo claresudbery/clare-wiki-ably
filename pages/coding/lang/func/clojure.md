@@ -5,7 +5,6 @@ permalink: /pages/coding/lang/func/Clojure
 ---
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [clojure-playground](https://github.com/claresudbery/clojure-playground)
@@ -18,15 +17,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/clojure) (Clojure category)
 
 ## Guides
-
 - [Clojurescript Quick Start Guide](https://clojurescript.org/guides/quick-start)
 
 ## General Useful Stuff
-
   - Clojure docs:
     [**http://clojuredocs.org/clojure.core**](http://clojuredocs.org/clojure.core)
   - See
@@ -76,7 +72,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     of things like repls and stuff.
 
 ## Binding
-
   - The words “binding” and “binding forms” are used to talk about what
     in C\# would be referred to as assignment.
   - The following statement binds the value 5 to the symbol height:
@@ -86,7 +81,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     form.
 
 ## Maps / Mapping
-
   - (this stuff now all in my clojure-playground GitHub repo, in
     [assoc\_playground.clj](https://github.com/claresudbery/clojure-playground/blob/master/src/clojure_playground/assoc_playground.clj),
     with a lot more explanation and examples)
@@ -126,7 +120,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - Result: {:a {:b {:c 25, :d {:e 30}}}}
 
 ## Figwheel
-
   - Use of Figwheel means that code changes are immediately reflected in
     the UI, whilst maintaining state – makes dev work significantly
     faster (example in one of the Samba projects – only available to
@@ -139,7 +132,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - (cljs-time.core/now)
 
 ## Midje
-
   - Midje is a [testing framework for
     Clojure](https://github.com/marick/Midje)
       - Used in one of the
@@ -152,7 +144,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         (available to Clare only)
 
 ## Leiningen and Uberjars
-
   - See one of the
     [Samba](https://github.com/claresudbery/samba)
     projects for example code (available to Clare only)
@@ -209,7 +200,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
             false\]**
 
 ## Reagent
-
   - minimalist React with Clojure
   - Reagent is a library – a Clojurescript wrapper around react js
       - define a state, eg {:name “Clare”}
@@ -235,7 +225,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     github.com/reagent-project/reagent-cookbook
 
 ## Clojure vs Clojurescript:
-
   - Commas are treated as whitespace
   - Datetime – moment.js in Clojure script, Yoda in Clojure
   - Clojure is generally server side, whereas Clojurescript is client
@@ -250,14 +239,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - Cljc = both
 
 ## Jetty
-
   - Server used in a Samba project
   - Some notes
     [here](https://github.com/claresudbery/samba/blob/master/signposts-misc-files/useful-single-view-notes.md#o-front-end-vs-back-end)
     (accessible to Clare only)
 
 ## Hiccup
-
   - Hiccup = html in sort of data format
   - A Samba front end was written in hiccup
   - Some notes

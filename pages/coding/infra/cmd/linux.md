@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cmd/Linux
 ---
 
 ## Misc
-
   - To find out which version of CentOS: **cat /etc/centos-release**
 
   - Single unified file system, with disks mounted on that file system
@@ -57,7 +56,6 @@ permalink: /pages/coding/infra/cmd/Linux
       - Each user space is completely separate therefore low overhead
 
 ## Systemctl + SystemD
-
   - Systemctl – facility for interacting with systemD – An init system
     used for CentOS 7 and most newer Linux distribs
     
@@ -139,7 +137,6 @@ permalink: /pages/coding/infra/cmd/Linux
             service again the normal way
 
 ## Syslog
-
   - Syslog is a Unix standard
 
   - Any Linux based server will be running syslog to do its host based
@@ -166,7 +163,6 @@ permalink: /pages/coding/infra/cmd/Linux
         send the data to, then stores the data on disk
 
 ## Unix
-
   - Linux is a flavour of unix
 
   - There are some commands the same
@@ -182,11 +178,9 @@ permalink: /pages/coding/infra/cmd/Linux
     up unix commands
 
 ## Windows
-
 - If you want to run Linux on Windows, you need [WSL](/pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL).
 
 ## Yum
-
   - Yum is the package manager used in CentOs Linux
 
   - Yum is locked down in CentOS, everything super secure, so doesn’t
@@ -209,7 +203,6 @@ permalink: /pages/coding/infra/cmd/Linux
       - (In those .repo files, set enabled=0 to disable a repo)
 
 ## Crons / Cron jobs
-
   - Jobs which run periodically
 
   - There’s a format which specifies how regularly they run
@@ -221,6 +214,5 @@ permalink: /pages/coding/infra/cmd/Linux
   - Cmd: **sudo** **crontab -l** – lists all cron jobs for root
 
 ## Find default .bashrc in Ubuntu
-
 It's here: `/etc/skel/.bashrc`
 

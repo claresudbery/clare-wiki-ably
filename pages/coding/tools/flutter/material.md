@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Material
 ---
 
 # Material Components
-
 ## Contents of this page:
-
 - [Material Components - Intro](<#material components   intro>)
 - [Flutter Widget for autocomplete text fields](<#flutter widget for autocomplete text fields>)
 - [Navigation rails](<#navigation rails>)
@@ -22,7 +20,6 @@ permalink: /pages/coding/tools/flutter/Material
   - [Image dimension units](<#image dimension units>)
 
 ## Material Components - Intro
-
 - [More here](https://m3.material.io/components)
 - Seems to be a similar concept to Bootstrap UI templates
 - based on Material Design
@@ -30,11 +27,9 @@ permalink: /pages/coding/tools/flutter/Material
 - Components are interactive building blocks for creating a user interface. They can be organized into categories based on their purpose: Action, containment, communication, navigation, selection, and text input.
 
 ## Flutter Widget for autocomplete text fields
-
 - [Here](https://api.flutter.dev/flutter/material/Autocomplete-class.html)
 
 ## Navigation rails
-
 - Use `NavigationRail` for a list of icons to click to reach different screens or areas of functionality
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/2bb70dbc783563ba598347c7ce9507ec701aa76f)
 - You can change the `extended: false` line in NavigationRail to `true`. This shows the labels next to the icons.
@@ -45,7 +40,6 @@ permalink: /pages/coding/tools/flutter/Material
 - The navigation rail also defines what happens when the user selects one of the destinations with `onDestinationSelected`
 
 ## The `Expanded` widget
-
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/2bb70dbc783563ba598347c7ce9507ec701aa76f)
 - Expanded widgets are extremely useful in rows and columns
 — They let you express layouts where some children take only as much space as they need (`SafeArea`, in the above case) and other widgets should take as much of the remaining room as possible (`Expanded`, in this case). 
@@ -54,19 +48,15 @@ permalink: /pages/coding/tools/flutter/Material
   - Two `Expanded` widgets split all the available horizontal space between themselves
 
 ## Placeholder
-
 - a handy widget that draws a crossed rectangle wherever you place it, marking that part of the UI as unfinished.
 
 ## Wrap
-
 - `Wrap` is a widget similar to Row or Column that automatically wraps children to the next "line" (called "run") when there isn't enough vertical or horizontal space.
 
 ## FittedBox
-
 - `FittedBox` is a widget that automatically fits its child into available space according to your specifications.
 
 ## LayoutBuilder
-
 - Helps make things more responsive
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/93f0643e0914ff0e23994a8ead696d8c53cab104) for an example
 - `LayoutBuilder` lets you change your widget tree depending on how much available space you have.
@@ -83,14 +73,11 @@ permalink: /pages/coding/tools/flutter/Material
 - Now your code can decide whether to (for instance) show a label by querying the current constraints.
 
 ## ListView
-
 - a `Column` that scrolls
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/a2c9c5cc3a84ee406b0e1694bb74a588a771a7e7) for an example
 
 ## Images and ImagePicker
-
 ### Max width and max height of images
-
 - We're using the [`ImagePicker` class](https://pub.dev/packages/image_picker) when users upload avatars
 - We've set max width and height to 400
   - This means 400 _pixels_ - see [below](<#image dimension units>)
@@ -105,7 +92,6 @@ permalink: /pages/coding/tools/flutter/Material
   - This is assumed, based on what's documented [here](https://api.flutter.dev/flutter/widgets/Image-class.html#:~:text=The%20following%20image%20formats%20are,supported%20by%20the%20underlying%20platform.)
 
 ### Image dimension units
-
 - Ah ok, you can ignore the below notes, it's documented as pixels [here](https://github.com/flutter/packages/blob/main/packages/image_picker/image_picker_platform_interface/lib/src/types/image_options.dart#L62-L70)
 - What are the image dimension units?
   - This is driving me mad. The `ImagePicker` class has a `pickImage` method that takes params maxWidth and maxHeight which we’re setting to 400… but 400 _what_? I can’t find documentation that tells me what the units are! I’m guessing pixels, but that’s not always the case?

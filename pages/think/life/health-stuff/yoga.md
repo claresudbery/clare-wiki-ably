@@ -5,7 +5,6 @@ permalink: /pages/think/life/health-stuff/Yoga
 ---
 
 ## Hip Openers
-
 I've had problems with my hips for a while, almost certainly because I spend so much time sitting at a desk. But lockdown is worse, because I'm moving around even less than normal.
 
 - [Yoga video of suggested hip openers](https://youtu.be/FhcZuQRC-mI), for people who spend all day sitting down.

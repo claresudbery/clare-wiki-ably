@@ -7,12 +7,10 @@ permalink: /pages/think/code-princ/Mobbing
 aka "Mob Programming"
 
 ## Mobbing Resources
-
 - [Woody Zuill is the mobbing expert](https://woodyzuill.com/)
 - Emmersion do a lot of mobbing, and encourage people to sign up as guest mobbers [here](https://bit.ly/emmersion-guest-mobber)
 
 ## Handling senior leadership objections
-
 - "It impacts developer productivity"
     - “Unfortunately, after decades of research ... knowing how to measure productivity or even define developer productivity has remained elusive”
         - from ["The SPACE of Developer Productivity"](https://queue.acm.org/detail.cfm?id=3454124) by Nicole Forsgren, (Github) Margaret-Anne Storey, (University of Victoria), Chandra Maddila, Thomas Zimmermann, Brian Houck, and Jenna Butler, (Microsoft Research)

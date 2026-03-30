@@ -6,7 +6,6 @@ permalink: /pages/coding/infra/servers/Nginx
   - Creating an nginx web server in K8s:
     [<span class="underline">https://canviz.com/hands-on-creating-a-simple-web-server-in-kubernetes/</span>](https://canviz.com/hands-on-creating-a-simple-web-server-in-kubernetes/)
 ## Nginx config
-
   - Note that these notes were written in 2018 and are about one
     specific nginx config that I worked with – [visible here (Clare
     only)](https://github.com/claresudbery/Cadogan/tree/master/prerender/scripts)
@@ -51,7 +50,6 @@ permalink: /pages/coding/infra/servers/Nginx
         hence the need for this
 
 ## Overview of the example I worked with
-
   - These notes were originally written 2018
   - See diagrams in this doc
   - The config for the prerender I had sight of is visible [here (Clare
@@ -80,7 +78,6 @@ permalink: /pages/coding/infra/servers/Nginx
       - [<span class="underline">http://nginx.org/en/docs/http/ngx\_http\_core\_module.html\#try\_files</span>](http://nginx.org/en/docs/http/ngx_http_core_module.html#try_files)
 
 ## Troubleshooting with Nginx commands on live running server
-
   - You can SSH into one of the frontend EC2 instances and run nginx
     commands:
       - An issue was seen with nginx on 24/12/17, which was fixed this
@@ -100,7 +97,6 @@ permalink: /pages/coding/infra/servers/Nginx
         then brought the website back online.
 
 ## Handling HTTPS requests and SSL certificates
-
   - See also SSL Certificates section in the AWS notes
   - SSL certificates are handled differently here. Three steps are
     required:
@@ -127,7 +123,6 @@ permalink: /pages/coding/infra/servers/Nginx
             configure both port 80 and 443 to send traffic to each
             instance through port 80)
 ## Nginx config
-
   - Note that these notes were written in 2018 and are about one
     specific nginx config that I worked with – [visible here (Clare
     only)](https://github.com/claresudbery/Cadogan/tree/master/prerender/scripts)
@@ -172,7 +167,6 @@ permalink: /pages/coding/infra/servers/Nginx
         hence the need for this
 
 ## Overview of the example I worked with
-
   - These notes were originally written 2018
   - See diagrams in this doc
   - The config for the prerender I had sight of is visible [here (Clare
@@ -201,7 +195,6 @@ permalink: /pages/coding/infra/servers/Nginx
       - [<span class="underline">http://nginx.org/en/docs/http/ngx\_http\_core\_module.html\#try\_files</span>](http://nginx.org/en/docs/http/ngx_http_core_module.html#try_files)
 
 ## Troubleshooting with Nginx commands on live running server
-
   - You can SSH into one of the frontend EC2 instances and run nginx
     commands:
       - An issue was seen with nginx on 24/12/17, which was fixed this
@@ -221,7 +214,6 @@ permalink: /pages/coding/infra/servers/Nginx
         then brought the website back online.
 
 ## Handling HTTPS requests and SSL certificates
-
   - See also SSL Certificates section in the AWS notes
   - SSL certificates are handled differently here. Three steps are
     required:
@@ -250,10 +242,8 @@ permalink: /pages/coding/infra/servers/Nginx
 
 
 ## Detailed Nginx Diagram
-
 - Cadogan Nginx Diagram (PRIVATE): `Nginx Diagram.JPG` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
 
 
 ## Simpler Nginx Diagram
-
 - Cadogan Nginx Diagram (simpler) (PRIVATE): `Nginx Diagram simpler.jpg` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj

@@ -7,11 +7,9 @@ permalink: /pages/coding/data/Google-Sheets
 - Google Sheets
 
 ## Google Sheets vs Excel
-
 - Note that most of the formulas here will also work on [MS Excel](/pages/coding/data/Microsoft-Excel), and vice versa
 
 ## Sorting
-
 - To sort by single column:
   - Select the column
   - Select Data => Sort sheet by column
@@ -38,7 +36,6 @@ permalink: /pages/coding/data/Google-Sheets
 | 3  | This page 2 | http://Link-page-3 |
 
 ## String manipulation
-
 The cell formula below uses the following string manipulation and other functions:
 
 - IF 
@@ -66,7 +63,6 @@ With this table info...
 More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=9054531).
 
 ## Time formatting
-
 - To get times that are summed to be potentially more than 24 hours: 
 - Format => Number => Custom date and time => click the dropdown and select elapsed hours, then type a colon, then select minutes from the dropdown.
   - If you google it, it will tell you to type "[hh]:mm" into the field, but I couldn't get this to work. I had to select from the dropdown instead, and then when I viewed it in the Format menu it would say "[hh]:mm" even though it wouldn't let me enter that manually
@@ -86,7 +82,6 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 
 
 ## Conditional formatting
-
 - If you want a column of data to change colour based on another column
   - so for instance, 
     - cell H4 only goes green if C4 is populated
@@ -103,7 +98,6 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
     - Delete the custom formula and do it again
 
 ## Getting references to work when you copy multiple sheets
-
 - If you copy multiple sheets from one spreadsheet to another, and they contain cells that reference each other...
 - The references between tabs will all appear to be broken
 - You need to trick the formulas to recalculate: 
@@ -112,7 +106,6 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - But actually a simpler way is to copy the whole spreadsheet (File => Make a copy) and then just delete the stuff you don't want
 
 ## FILTER / CONTAINS SUBSTRING
-
 - Return all the cells that match the search criteria
 - The good thing about this is that you can search one col but return the contents of another col in the same row
 	- You can also search more than one col - see [[#Using FILTER to search more than one col|below]]
@@ -127,21 +120,17 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - `=FILTER(D2:E10,ISNUMBER(SEARCH(A1,C2:C10)),"No results")`
 
 ### Using FILTER to search more than one col
-
-
 - For instance: `=FILTER(D2:E10,C2:C10=A1,E2:E10='Splat')`
   - This will return all the values in `D2:E10` (so, two cols of data)
   - ...but only for those rows where the value in col C equals the value in `A1`
 	  - ...AND the value in col E equals "Splat"
 
 ### Using FILTER to RETURN more than one col
-
 - If you want the range of values returned to come from separate non-consecutive cols, you can do it like this: 
 `=FILTER({$L$4:$L,$E$4:$E,$Q$4:$Q},$A$4:$A=$D15,$C$4:$C<>"")`
 - In this example, we're returning cols L, E and Q.
 
 ## Diff between FILTER and VLOOKUP
-
 - `FILTER` allows more complex search conditions
 - `VLOOKUP` is for just looking up one value
   - eg find all the rows where the values in one col are the same as each other
@@ -149,7 +138,6 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - Useful for finding specific information like an employee name based on their ID 
 
 ## VLOOKUP and Gotchas
-
 - If you want to find a value and then return another value from the same row
 - it looks like this: `=VLOOKUP(A1,C2:E10,3,0)`
   - You're searching for a match for `A1`
@@ -198,29 +186,24 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
     - (So above, even though col E is the fifth col on the sheet, it's the third col in the range of values we're searching ("the table"))
   - If the last arg is `1`, that means you're setting `true` for `range_lookup`, and if the data in the table isn't sorted in ascending order, that won't work
 ## Stop VLOOKUP  and LOOKUP from returning 0
-
 - If VLOOKUP finds no corresponding value, it will return 0 instead of empty string
 - Fix this by forcing it to treat the result as a string by adding `&""`:
 - `VLOOKUP(A2,A2:G1000,7,0)&""`
 ## Copy a whole col from one sheet to another
-
 - Like this: `={Categories!A:A}`
 
 ## Copy multiple cols into one col without including empty rows
-
 - Also works for merging multiple sheets into one
 - Like this: `=FILTER({Categories!A:A;Categories!C:C},LEN({Categories!A:A;Categories!C:C}))`
 - It only works on one col at a time, but you can use autofill functionality to pull the formula across into adjacent cols and get those cols filled in too
 - If you want empty rows to be included, you can just change the `LEN` part to reference a col that contains no empty rows! For Clare, see Current Historic monthly in Time FRecording spreadssheet for an example.
 - Sometimes the first row of time/date data will have the wrong format. The way to fix this is to copy formatting from the second row down to the first row (use the little paint roller icon)
 ## Fill a formula 1000s of rows down without manually dragging
-
 - 1. Click the cell containing the formula.
 2. In the **Name Box** (located to the left of the formula bar), type the range you want to fill, for example, `C1:C2000` and press **Enter**.
 3. This highlights the 2000 cells.
 4. Press **`Cmd` + `D`** to fill.
 ## Have a chart which charts hours greater than 240 without going down to -144
-
 - I asked for help with this problem [here](https://support.google.com/docs/thread/317591568?hl=en&sjid=15803700076749272558-EU)
 
 "Hi
@@ -243,7 +226,6 @@ I'm attaching a screenshot of what I see in the Customize menu for the vertical 
 Hoping you can help! Thank you."
 
 ## Have a chart whose title and data change dynamically in response to source data changing
-
 - I asked for help with this problem [here](https://support.google.com/docs/thread/317595598?hl=en&sjid=15803700076749272558-EU)
 - "How can I make my chart title and content change dynamically in response to changes in source data?"
 - Note that originally I thought I also had a problem with getting the number of columns in the line gvraph to change according to how many rows of data there are, but either I was wrong about this being a problem or at some point it just stopped being a problem!
@@ -265,7 +247,6 @@ Here is the spreadsheet: https://docs.google.com/spreadsheets/d/1IoiIcPQWQw_6yx2
 Hoping somebody can help! Thank you."
 
 ## Insert multiple rows
-
 - This is a really weird one!
 - You select the number of rows you want to insert
   - even if those rows have data
@@ -274,17 +255,14 @@ Hoping somebody can help! Thank you."
 - ...and all the data in the selected rows will get pushed down by the newly inserted rows
 
 ## Sort data via function
-
 - `=SORT(A2:B26, 1, TRUE)`
   - This sorts the range `A2:B26`, in ascending order (`TRUE`), using the data in col `1` (the first col, col A) to do the sorting.
 
 ## Create a unique list of data, removing duplicates, in order
-
 - `=SORT(UNIQUE(A1:A10), 1, TRUE)`
   - This sorts the unique set of data, in ascending order (`TRUE`), using the data in col `1` (the first col, col A) to do the sorting.
 
 ## Why is search-replace / find-replace not working?
-
 - Is it because you're searching derived data, eg data that's being populated via something like `VLOOKUP` or `FILTER` or arrays like `={Categories!A:A}`?
   - In that case, search the source data instead
 - ...or is it because you're searching for text that's come from a data range, eg `=meet` being translated into `Meeting`?
@@ -292,13 +270,11 @@ Hoping somebody can help! Thank you."
   - You need to check "Match entire cell contents" and "Also search within formulae" and then you need to search explicitly for (eg) `=meet` and replace it explicitly with (eg) `=bigmeet`
 
 ## How to autofill down hundreds of rows without manually dragging the blue square in the corner
-
 - Copy a cell that contains the formula you want to autofill
 - Select the _whole column_
 - Paste
 
 ## How to search for cells that contain errors
-
 - A quick way to discover whether a column contains any errors is to create a sorted (in descending order) unique list of all unique values in that col(s)
   - If any errors, you'll get one `#REF!` entry at the top of the list
   - Like this: `={SORT(UNIQUE('The sheet I'm interested in'!A:A),1,FALSE);SORT(UNIQUE('The sheet I'm interested in'!B:B),1,FALSE)}`
@@ -314,7 +290,6 @@ Hoping somebody can help! Thank you."
   - You can do the same for neighbouring cols if they'll help you to find the bad rows
 
 ## SUMIF to calculate all the values that relate to a condition
-
 - (If you want to AND multiple conditions, see below - [SUMIFS](<#sumifs to calculate all the values that relate to multiple conditions>))
 - Note that the values to be summed are the LAST param - which is the opposite to `SUMIFS` (see below - [SUMIFS](<#sumifs to calculate all the values that relate to multiple conditions>)))
 - Like this: `=SUMIF(C2:C300, "=y", D2:D300)`
@@ -323,13 +298,11 @@ Hoping somebody can help! Thank you."
   - This means add all the values in the D col from rows where the B col has a date less than the specified start date
 
 ## SUMIFS to calculate all the values that relate to multiple conditions
-
 - Like this: `=SUMIFS(D2:D300, C2:C300, ">="&start_date, B2:B300, ">="&start_date)`
   - This means add all the values in the D col from rows where the C col has the value "y" AND the B col has a date less than the specified start date
 - Note that the values to be summed are the FIRST param - which is the opposite to `SUMIF` (see above - [SUMIF](<#sumif to calculate all the values that relate to a condition>)))
 
 ## SUMIF or SUMIFS where one condition is that a value exists in a range
-
 - Quick answer:
   - To add all the C-col values from rows whose B col has a value that exists in range `'Values'!A2:A100`:
     - `=SUM(SUMIF(B2:B50,WRAPROWS('Values'!A2:A100,1),D2:D50,"YES"),C2:C50)`
@@ -359,26 +332,21 @@ Hoping somebody can help! Thank you."
     - Each of those results will also have the additional criteria applied to them
 
 ## Turn a column into an array
-
 - `=WRAPROWS('Values'!A2:A100,1)`
 - [More here](https://www.ablebits.com/office-addins-blog/excel-wrapcols-wraprows-functions/#wraprows)
 
 ## Stack multiple cols on top of each other to make one col
-
 - `=VSTACK(H1:H5,I1:I5)`
 - [More here](https://www.ablebits.com/office-addins-blog/combine-ranges-arrays-excel-vstack-hstack/#vstack)
 
 ## Stack multiple rows next to each other to make one row
-
 - `=HSTACK(D1:I1,D2:I2)`
 - [More here](https://www.ablebits.com/office-addins-blog/combine-ranges-arrays-excel-vstack-hstack/#hstack)
 
 ## Join a bunch of cells together with a comma separator, but only if they contain data
-
 - `JOIN(", ", FILTER(AK3:BL3,AK3:BL3<>""))`
 
 ## Find out a cell reference
-
 - `=CELL("row", A5)` returns row number `5` for cell A5
 - `=CELL("col", A5)` returns col number `1` for cell A5
 - `=CELL("address",'Sheet name'!A2)` return cell ref `'Sheet name'!$A$5`
@@ -396,25 +364,19 @@ Hoping somebody can help! Thank you."
   - The dollars are probably extraneous but they won't do any harm
 
 ## Graphs / Charts
-
 ### Having dynamic numbers of cells in source data
-
 - The trick is to make the range of source data include a bunch of empty rows - as many as you think might get filled. The resulting chart will only contain data for cells / rows that were populated.
   - My timesheet spreadsheet contains plenty of examples (accessible to Clare only).
 
 ### Having chart titles that change dynamically in response to source data
-
 - You need a script
 - See [below](<#using a script to dynamically change chart titles>)
 
 ## Google Apps Scripts
-
 ### Overview
-
 - They live under Extensions => Apps Script
 
 ### Scripts and Charts/Graphs
-
 - Overall documentation [here](https://developers.google.com/apps-script/reference/charts#classes)
   - For methods available on charts, you want to look at methods available in various places:
     - `BarChartBuilder`, [here](https://developers.google.com/apps-script/reference/charts#barchartbuilder)
@@ -426,7 +388,6 @@ Hoping somebody can help! Thank you."
   - [For pie charts](https://developers.google.com/apps-script/chart-configuration-options#pie-config-options)
 
 ### Using a script to get the name of a tab/sheet
-
 - **Open the Script Editor:** In your Google Sheet, go to "Extensions" > "Apps Script".
 - Copy and paste the following code into the script editor:
 ```vbscript
@@ -443,11 +404,7 @@ function SHEETNAME() {
 	- But it also seemed like maybe that didn't work either, and what I actually had to do was delete the cell contents, tab away, then go back and repopulate the cell... and then it was CRAZY slow to repopulate (but I don't know if that's cos it was a giant spreadsheet).
 	- But after that I could close and reopen the spreadsheet and it populated quickly.
 ### Looking up charts using their subtitle or title
-
-
-
 ### Using a script to dynamically change chart titles
-
 - See explanation [here](https://benlcollins.kit.com/posts/sheets-tip-272-dynamic-chart-heading-in-sheets) (scroll down a little)
 - For documentation of useful methods, see [above](<#scripts and chartsgraphs>)
 - My example:
@@ -516,11 +473,9 @@ Extensions > Apps Script
   - I asked for help in speeding that up, [here](https://support.google.com/docs/thread/333402052?hl=en&sjid=9344226696062890043-EU)
 
 ## Display dates in string format
-
 - If you return a date from a function, it might cme out as an integer instead of a string
 - To ensure a string, use `=TEXT(H1, "dd/mm/yy")`
 ## INDIRECT so you can refer to cell references as text
-
 - Example 1: 
 ```C
 =INDIRECT("'" // Enclose sheet name in quotes
@@ -534,9 +489,7 @@ Extensions > Apps Script
 & "$1") // Add row number
 ``` 
 ## Troubleshooting 
-
 ### Chart can't cope with hours > 240
-
 - I was finding that when my data included hours > 240, even if over a millisecond over, the chart was suddenly going down to -144, even though I had no negative data
 - A helpful person on the Google help forum worked out that the problem was more about the range of data
   - If the lower bound was raised, values > 240 stopped being a problem

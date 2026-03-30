@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cmd/Powershell
 ---
 
 ## Aliases
-
 For the equivalent of gitbash aliases - where you create short keywords that you can run on the command line to execute longer command-line statements like `cd` commands:
 
 - If you don't already have it, create the following folder: `C:\Users\[your-user-name]\Documents\WindowsPowerShell`
@@ -28,6 +27,5 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
 
 ## Environment variables
-
 - Works differently in Powershell.
 - For instance if you want to see your PATH env var, do it like this: `$Env:Path`

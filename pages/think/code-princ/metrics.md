@@ -5,13 +5,11 @@ permalink: /pages/think/code-princ/Metrics
 ---
 
 ## When metrics go wrong
-
 - “TELL ME HOW YOU WILL MEASURE ME, AND THEN I WILL TELL YOU HOW I WILL BEHAVE. IF YOU MEASURE ME IN AN ILLOGICAL WAY, DON’T COMPLAIN ABOUT ILLOGICAL BEHAVIOR.” – ELI GOLDRATT
 - Dee Hock - [the tyranny of measurement](http://www.deewhock.com/essays/community-and-the-non-monetary-exchange-of-value-1): " If we were to set out to deliberately design an efficient system for the methodical destruction of community, we could not do better than our present efforts to monetize all value, mechanize all societal organizations and reduce life to the tyranny of mathematical measurement, markets and the ever increasing centralization of power and wealth that result.  Money, mechanism, measurement and markets have their place.  They are useful tools indeed.  We should use them carefully for beneficent ends.  But useful tools are all they are.  They do not deserve the deification the apostles of unrestrained acquisition insist that we give them.  Only fools worship their tools."
 - Some things are really hard to measure - eg the impact of saying good morning to people - and yet we can still all agree that it's worth doing (this came from a conversation with [Tito Sarrionandia](https://twitter.com/rbs_tito) but I can't remember whether he was quoting anyone).
 
 ## Accelerate Metrics / DORA metrics
-
 - The four key metrics described in [the "Accelerate" book](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM) 
     - Martin Fowler's foreword describes Accelerate very clearly as the book that contains the explanation for why the State of DevOps reports (and the DORA metrics they use) are so very compelling and trustworthy
     - DORA is also relevant to [The DevOps Handbook](https://www.oreilly.com/library/view/the-devops-handbook/9781457191381/)... but not directly referenced apart from a nod in the acknowledgements
@@ -55,7 +53,6 @@ permalink: /pages/think/code-princ/Metrics
 - [Blog post about the report](https://www.previous.cloudbees.com/blog/dora-and-google-cloud-chart-pathway-elite-devops-performance?utm_source=google&utm_medium=cpc&utm_campaign=Flow_EU&utm_content=&gclid=EAIaIQobChMIh6faoY6v6AIViaztCh3JcwRkEAAYAiAAEgIVLfD_BwE)
 
 ### Useful tools for measuring the DORA metrics
-
 - LaunchDarkly
 - NewRelic
 - Honeycomb
@@ -67,7 +64,6 @@ permalink: /pages/think/code-princ/Metrics
     - less recommended
 
 ## DORA AI Reports
-
 - I have these downloaded to Google Drive/MyDrive/Research/DORA
 - Two reports:
 	- DORA: Impact of Generative AI in Software Development, 2024 (I think?)

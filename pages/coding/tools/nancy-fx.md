@@ -5,7 +5,6 @@ permalink: /pages/coding/tools/NancyFX
 ---
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [interview-codebase-stage3-csharp (PRIVATE)](https://github.com/claresudbery/interview-codebase-stage3-csharp)
@@ -14,5 +13,4 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [CurrencyAPI (PRIVATE)](https://github.com/claresudbery/CurrencyAPI)
 
 ## Misc
-
 - [Nancy Notes](https://docs.google.com/document/d/1fZOzwT-IPg_HmGydGH3Rty5bDwZUm1on/edit)

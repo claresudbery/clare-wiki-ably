@@ -7,11 +7,9 @@ permalink: /pages/coding/hardware/Music-Making
 (NB This is a page for hand-cranked music-making software / hardware rather than tools for making music - for that, see [Making music](/pages/organising/music/Making-Music))
 
 ## Misc
-
 - Music software?: Dropbox\IT Training\Music software\wavepot\bassonly.txt
 
 ## Piano Man harmonica tutorial
-
 - Piano Man: https://youtu.be/0BsiyZcWNOM?si=kviRMHo3pnEfVjJQ
 - Lip locking / single notes: https://www.youtube.com/watch?v=v4mDMJzsnoU
   - Tongue-blocking is another way to play single notes, but is advanced and is not the quickest and easiest way of doing it

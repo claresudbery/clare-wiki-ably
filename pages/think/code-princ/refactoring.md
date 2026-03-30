@@ -4,10 +4,8 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Refactoring
 ---
 ## Definition of refactoring
-
 - Martin Fowler: Refactoring is making code "easier to understand and cheaper to modify"
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [CodeRetreatLegacy2](https://github.com/claresudbery/CodeRetreatLegacy2)
@@ -20,7 +18,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
         - See the [`clare-fork-readme`](https://github.com/claresudbery/GildedRose-Refactoring-Kata/blob/clare-fork-readme/README.md) for notes on how I'm using the repo.
 
 ## Docs and Blog Posts
-
 - My [refactoring article on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
     - [Live coding video](https://www.youtube.com/watch?v=72BbIsmKrLI&t=1s) of myself doing a walkthrough on Twitch of some of the refactoring mentioned in the article.
 - [My notes from Martin Fowler's Refactoring Seminar](http://insimpleterms.blog/martin-fowler-webinar-new-refactoring-book)
@@ -33,20 +30,17 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - I have refactoring videos in my SSE GDrive
 
 ## Misc
-
 - [Refactoring tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=dbccb66e-f286-40ac-a13e-93848ca66909&query=tag%1Frefactoring%1FtagGuid%3A2a3fac9f-ae6f-43b6-b619-f20d2eca33be%1Eview%3AVIEW%2FALL_NOTES&)
 - @KevinRutherford and @JJeffries1 have a [good refactoring video](https://www.youtube.com/watch?v=fSr8LDcb0Y0) from XP Manchester which focuses on connascence. 
 - [De Morgan's Laws](/pages/think/code-princ/De-Morgans)
 
 ## Coverage
-
 - Note you can use DotCover (in both Visual Studio and Rider) to check coverage
     - Rider details [here](https://www.jetbrains.com/help/rider/Cover_Unit_Tests_(Basic_Scenario).html)
     - V similar for Visual Studio
 - NCrunch also gives you coverage indications
 
 ## Actual sample code you can use for refactoring exercises
-
 - Also see individual dedicated sections below for each code base listed here (I'm still building that list, so it may not be complete).
 - Mark Kirschtein's [ferry booking example](github.com/Kirschstein/legacy-ferry-booking-system)
 - Gilded Rose - see [below](<#gilded rose>) and [separate dedicated page](/pages/think/code-princ/Gilded-Rose)
@@ -75,7 +69,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
  - @LisaCrispin says "@janetgregoryca has a great non-code exercise for that."
 
 ### Parrot
-
 - [Here](github.com/emilybache/Parrot-Refactoring-Kata)
 - NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
 - Described by Jeremy Cook as "the most simple".
@@ -97,7 +90,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Inspired by Martin Fowler - [replace conditional with polymorphism](refactoring.com/catalog/replaceConditionalWithPolymorphism.html)
 
 ### Buzzer Dependency
-
 - [Here](github.com/MrTortoise/refactor_buzzer_dependancy)
 - NB I've started writing these notes by just glancing at the code and haven't necessarily even found time to do the exercise yet, so this is just first impressions and may be misleading.
 - There are three APIs that cannot be altered - basically just three classes with one public method each
@@ -111,18 +103,15 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - John's version is not fully functional. Is the point to write the tests or to refactor the code? Or both?
 
 ### Theatrical players
-
 - Used by Martin Fowler in his book
 - Used by Emily to help identify code smells
 - Code is [here](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata)
 
 ### Tennis
-
 - Used by Emily and me for lots of learning hours, and by me for one-day workshop (see my notes in clare-tech, and resources in SSE GDrive/SSE-Events, and Events drive for SDD conf)
 - Code is [here](https://github.com/emilybache/Tennis-Refactoring-Kata)
 
 ### Product Export
-
 - Used to demonstrate using coverage to design approval tests
     - See [coverage](<#coverage>) section
 - Code is [here](https://github.com/emilybache/Product-Export-Refactoring-Kata)
@@ -135,7 +124,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 
 ### Gilded Rose
-
 - I now also have a [[gilded-rose|separate dedicated page]] devoted to getting started with Gilded Rose.
 - Described by Mark Kirschtein as "the canonical example" and [documented at some length by Emily Bache](https://github.com/emilybache/GildedRose-Refactoring-Kata) - as well as translated into several different languages.
 - My C# attempt is [here](https://github.com/claresudbery/gilded-rose-kata).
@@ -157,7 +145,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - She uses a technique in it a bit like lift up conditional?
 
 #### Emily's Gilded Rose Demo Videos
-
 - There are three videos made by Emily detailing some really interesting Gilded Rose refactoring:
     - Part 1: [Using CombinationApproval, code coverage and mutation testing to create test coverage](https://www.youtube.com/watch?v=zyM2Ep28ED8)
         - See [coverage](<#coverage>) section
@@ -180,7 +167,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Part 3: [Replacing conditional with polymorphism](https://www.youtube.com/watch?v=NADVhSjeyJA)
 
 #### Approval testing
-
 - Text-based approval testing is based on the golden master approach (also called characterisation testing / characterization testing):
 - Before you change the code, you run it, and gather the output of the code as a plain text file.
 - You review the text, and if it correctly describes the behaviour as you understand it, you can "approve" it, and save it as a "Golden Master".
@@ -194,7 +180,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - For more examples of approval tests, see my various learning hour notes
 
 #### Gilded Rose C# Approval testing with nuget ApprovalTests package
-
 - NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[gilded-rose#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - Note that another C# approvals tool is also available - see [below](<#verify approval testing tool>). But otherwise...
 - If you're running the gilded rose code in C#, there's an approval testing tool which is being used
@@ -218,7 +203,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - After this when you run the test, it will pass and the `received` file will be deleted as soon as the test is run.
 
 #### Gilded Rose C# Approval testing with texttest tool
-    
 - NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[gilded-rose#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - Emily uses an approval testing tool from texttest.org which has been implemented in many different languages:
 - Full details are [here](https://github.com/emilybache/GildedRose-Refactoring-Kata/tree/main/texttests), but here is a summary:
@@ -246,7 +230,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Full `TextTest` installation instructions are [here](https://texttest.org/) 
     
 #### Verify Approval Testing Tool
-
 - NB: You probably don't need to do anything complicated with approval tests if you just want to get stuck straight in with refactoring. See [[gilded-rose#Gilded Rose Getting started with all tests in `C `|Getting started with all tests in `C#`]]
 - Emily showed us a new tool for Approval Testing. We'd previously been using `Approvals`, but this one is called `Verify`.
 - Details [here](https://github.com/VerifyTests/Verify).
@@ -259,7 +242,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - There's a Resharper plugin that will give you new resharper context menu items for Accept and Compare - makes it easier to work with output files.
 
 #### Combination Approvals
-
 - NB: I now have a whole learning hour for combination approvals. See my "Approvals Testing and Code Coverage" Learning Hour, which is the first part of my coverage and mutation testing LH (Clare only: see `code-coverage-add-tests.md` in `clare-tech`).
 - Demoed by Emily [here](https://www.youtube.com/watch?v=zyM2Ep28ED8&t=400s) (timestamp 6:40)
     - You can test different combinations of values

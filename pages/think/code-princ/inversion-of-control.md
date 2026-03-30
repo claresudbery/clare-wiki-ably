@@ -5,7 +5,6 @@ permalink: /pages/think/code-princ/Inversion-Of-Control
 ---
 
 #### Inversion Of Control
-
   - In traditional procedural programming, the custom-built code calls
     into the library code.
   - With IoC, it’s the other way round: the library code calls the

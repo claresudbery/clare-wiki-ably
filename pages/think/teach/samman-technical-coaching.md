@@ -9,16 +9,13 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 (See also [clare-tech page](https://github.com/claresudbery/clare-tech/tree/master/career/samman-technical-coaching.md)) (accessible to Clare only)
 
 ## Preface
-
 ### Foreword, Kent beck
-
 - Software Dev = learning, where running programs = proof of learning.
 - Learning with an experienced guide reduces fear of the unfamiliar and so speeds learning.
 - Learning should be episodic. Digest after learning.
 - Samman = small cost, low risk, high potential payoff.
 
 ### Intro
-
 - Two examples introduced - using tests to fix buggy private functions, and using tests to design new code. No solutions described yet.
 - Learning hour: starts with a warmup, then a coding activity.
 - Samman method:
@@ -53,11 +50,9 @@ permalink: /pages/think/teach/Samman-Technical-Coaching-Summary
 	- Emily started out by pair-coaching with him.
 
 ### The purpose of Samman
-
 Aim for improved dev practices:
 
 #### Dev techniques
-
 - Better unit tests
 	- Suite of automated tests to go with code
 	- demonstrate code works as intended
@@ -73,11 +68,9 @@ Aim for improved dev practices:
 	- Add regression tests without taking big risks
 
 ##### Incremental and iterative development
-
 - now moved to [here](/pages/think/code-princ/useful-terms.md#incremental-and-iterative-development)
 
 #### Levelling up whole team together
-
 - Build consensus about how this team wants to work
 - Expected outcomes
 	- First step = Insights - can be reached after 10-20 coaching days:
@@ -94,7 +87,6 @@ Aim for improved dev practices:
 		- More productive teams
 
 ##### Measuring outcomes
-
 - Attitudes
 - Simple survey
 - Enthusiasm for techniques
@@ -117,9 +109,7 @@ Aim for improved dev practices:
 	- Back numbers by qualitative measures, eg talk to people and find whether they really think things are improving
 
 ## Part 1: Ensemble Working
-
 ### Ensemble Primer
-
 - "on-som-bull"
 - Ensemble not mob
 - Typist not driver
@@ -153,7 +143,6 @@ Aim for improved dev practices:
 - !! If you have an idea, eg you see a refactoring which could aid readability, wait until tests are green before politely suggesting it.
 
 ### The Ensemble Gives you Superpowers
-
 - People from other teams can visit occasionally and use this as a way to understand what this team is doing
 - Things a coach might be able to contribute:
 	- Writing more or better unit tests
@@ -167,7 +156,6 @@ Aim for improved dev practices:
 - Sal used a technique with the Cucumber mob where they would always have a shared mindmap of their planned approach, where they would tick bits off as they went along
 
 ### Coaching behaviours in an ensemble
-
 - Split into the following behaviours:
 	- Teach
 	- Mentor
@@ -233,7 +221,6 @@ Aim for improved dev practices:
 	- Make sure you have time to rest before your next activity
 
 ### Kindness, consideration and respect
-
 - Honour the legacy coder:
 	- Woody Zuill: Treat everyone with kindness, consideration and respect
 	- Assume previous coders did their best. Resist the temptation to judge. Even if they're not present, others will worry that the same might happen to them one day.
@@ -262,7 +249,6 @@ Aim for improved dev practices:
 	- Nip it in the bud. "We don't do that here" is a good phrase. Even if they claim it's a joke: "That may be so, but we don't do that here."
 
 ### Stories Illustrating Coaching Situations
-
 - When people are stuck, keep asking questions until they get unstuck
 - When a navigator is stuck, encourage other ensemble members to provide suggestions, rather than providing them yourself
 - Sometimes you might want to suggest someone who is clear on direction take over from a navigator who is stuck
@@ -319,7 +305,6 @@ Aim for improved dev practices:
 	- If it happens a lot, speak to a manager about getting the person in question to join more permanently
 
 ### Retrospectives
-
 - Basics:
 	- Each ensemble session lasts two hours, culminating in a retro approx 15 mins long
 		- Reflect on it
@@ -362,7 +347,6 @@ Aim for improved dev practices:
 	- you want the team to maintain the skill of observing what's going on
 
 ### Remote ensembles
-
 - General tips:
 	- Arrange things so everyone can see faces as well as code
 		- You can use a separate device (eg a tablet) for faces and for code
@@ -380,15 +364,12 @@ Aim for improved dev practices:
 		- Or a simple shared doc
 
 ## Part 2: Learning Hours
-
 [Learning hours](https://www.sammancoaching.org/learning_hours/)
 
 ****** THIS IS WHERE I'M UP TO ******
 
 ## Part 3: Samman Coaching Engagements
-
 ### A Samman Career
-
 - Pair coaching
 	- A good way to learn
 	- Useful for speeding up the process with larger orgs
@@ -418,9 +399,7 @@ Aim for improved dev practices:
 	- Live coding to demonstrate
 
 ## Good Ideas
-
 ### Daily Learning Hour
-
 - One hour per day
 - Starts with a warmup (see below)
 - Then
@@ -430,7 +409,6 @@ Aim for improved dev practices:
     - Homework to try the exercise again alone
 
 ### Warmups
-
 - Golden Rule of TDD: Ask people to call out, What are the five most important things about TDD?
     - Generate some discussion and use this to tease out the golden rule, which is "don't create any production code without a failing test that requires it".
     - This is a good one to do before a paired TDD exercise (eg try to apply the golden rule), to illustrate the rule in action.

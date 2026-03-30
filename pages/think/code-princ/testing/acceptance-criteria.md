@@ -5,13 +5,11 @@ permalink: /pages/think/code-princ/testing/Acceptance-Criteria
 ---
 
 ## Intro
-
 Acceptance criteria can be a useful way of capturing in formal terms exactly what we're trying to achieve with a particaulr user story. They should ideally be able to form the basis of any tests written to prove the goals have been achieved.
 
 A common way of doing this is using the given-when-then ["gherkin" syntax](https://cucumber.io/docs/gherkin/), which can be converted directly into tests using various tools ([Cucumber](https://cucumber.io/) is a commonly-used framework - I believe Cucumber were the team that originally developed Gherkin).
 
 ## A slightly tricky example
-
 We prefixed product IDs with a letter of the alphabet to identify a broad category. Historically those Ids were prefixed with 'X' to show that we couldn't find a matching category.
 
 With updated lookup data we were able to fix a lot of the IDs and replace 'X' with something more meaningful, but there was a handful that needed further investigation.

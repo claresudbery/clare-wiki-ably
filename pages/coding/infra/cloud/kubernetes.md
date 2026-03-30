@@ -4,11 +4,9 @@ location: pages/coding/infra/cloud/leaf
 permalink: /pages/coding/infra/cloud/Kubernetes
 ---
 ## Overview
-
   - In the cloud use GKE – Google’s hosted Kubernetes thing
 
 ## Clusters and namespaces 
-
   - Each GCP project has one or more clusters. Each cluster has one or
     more namespaces.
       - Typically (for Acme, I don’t know about elsewhere) there will be
@@ -69,7 +67,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
           - [Kube config / multiple clusters](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
 
 ## Changing namespace
-
   - Naked **kubectl** commands are all in default namespace
   - You can specify namespace: **kubectl get po --namespace obsv-tools**
   - When we did the long command containing **get-credentials** (see
@@ -84,7 +81,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
     **kubectl change-ns obsv-tools**
 
 ## Deployments and pods and replica sets
-
   - At the centre of Kubernetes you have containers, they are deployed
     as pods
       - In fact one pod can contain several containers - for instance
@@ -136,7 +132,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
   - Basic compute model for long running services
 
 ## Connecting to a cluster
-
   - Go here:
     <https://console.cloud.google.com/kubernetes/list?project=xxxx>
 
@@ -149,7 +144,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
   - Now use kubectl for everything - see below
 
 ## Using **kubectl** on the command line
-
   - Kube (shorthand for Kubernetes) represents everything as a set of
     RESTful resources
 
@@ -167,7 +161,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
   - See below for commands
 
 ## K9s
-
   - Useful for looking at all pods in a namespace
 
   - To install: **brew install derailed/k9s/k9s**
@@ -182,7 +175,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
     do **kubectl describe po \[pod-name\]**
 
 ## Kubectl API commands: 
-
   - See nodes: **kubectl get nodes**
 
   - See pods: **kubectl get po**
@@ -221,7 +213,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
         **apidevicemetrics-597b79847** is the rs id
 
 ## Deleting K8s Pods
-
   - Sometimes **kubectl delete** **pod \[podname\]** or using **kill**
     from k9s isn’t enough
 
@@ -253,7 +244,6 @@ permalink: /pages/coding/infra/cloud/Kubernetes
           - Cmd: **kubectl delete replicationcontroller \[name\]**
 
 ## Krew
-
   - Krew commands:
     
       - Download and use Krew:
@@ -269,13 +259,11 @@ permalink: /pages/coding/infra/cloud/Kubernetes
           - where **change-ns** is a plugin you want to install
 
 ## Helm
-
   - Tool for templating deployments in Kubernetes – a way of writing
     Kubernetes config – in theory supposed to make it easier, might not
     do in practice?
 
 ## Cloudbuild and k8s-tools
-
   - In the k8s-tools repo
     (<https://github.com/claresudbery/Infra-Scripts/tree/master/k8s-tools>),
     all the folders (eg **ci-testing**, **grafana-backup**,

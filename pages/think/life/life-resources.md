@@ -5,7 +5,6 @@ permalink: /pages/think/life/Life-Resources
 ---
 
 ## Docs and Blog Posts
-
 - My InSimpleTerms blog:
   - [Flippant category](https://insimpleterms.blog/category/flippant)
   - [Languages category](https://insimpleterms.blog/category/languages)

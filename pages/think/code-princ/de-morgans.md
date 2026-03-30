@@ -7,7 +7,6 @@ permalink: /pages/think/code-princ/De-Morgans
 Note that everything below was copied from [this page by Mike Foster](http://ix.cs.uoregon.edu/~michaelh/111/misc/inverting-logical-exprs.html) - I only put it here so I would have offline access.
 
 ## Inverting Logical Expressions with De Morgan's Laws
-
 by Mike Foster ([cross-browser.com](https://cross-browser.com/))
 
 A Javascript expression will sometimes be more intuitive (and easier to understand) when written a certain way - but we may actually need the inverse of the expression. For example in listing 1 our code only needs to react if (x && y) is false. We need to invert the expression.

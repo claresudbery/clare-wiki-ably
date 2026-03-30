@@ -5,12 +5,10 @@ permalink: /pages/think/agile-princ/Agile-Resources
 ---
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/agile) (Agile category)
 - [Agile Created the Extrovert Star](https://medium.com/a-woman-in-technology/agile-created-the-extrovert-star-e1e256af5cd9) (my Medium blog post)
 
 ## Useful Links
-
 - [Agile 101](https://www.agilealliance.org/agile101/)
 - [Introductory Agile resources from the Agile Alliance](https://www.agilealliance.org/agile-essentials)
 - [Introductory Agile resources from Mountain Goat](https://www.mountaingoatsoftware.com/agile)

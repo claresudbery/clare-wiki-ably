@@ -5,13 +5,10 @@ permalink: /pages/think/events/workshops/Remote-Workshops
 ---
 
 # (aka Remote Inception)
-
 ## Elsewhere
-
 I have other pages in this wiki that follow similar themes and also contain useful content: [Remote Working](/pages/think/agile-princ/Remote-Working), and [Remote Working Tools and Tips](/pages/think/agile-princ/Remote-Working-Tools-And-Tips).
 
 ## Overview
-
 (See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques))
 
 In March 2020, due to a desire to restrict meetings and travel to slow the spread of [COVID-19](/pages/think/life/health-stuff/Covid) (commonly referred to as coronavirus), we at [Made Tech](https://www.madetech.com/) and [Difrent](https://difrent.co.uk) are running a totally-remote two-week inception (a series of workshops designed to spin work up with a new client), with our client [Skills for Care](https://www.skillsforcare.org.uk/).
@@ -19,9 +16,7 @@ In March 2020, due to a desire to restrict meetings and travel to slow the sprea
 Here I'm recording some notes about what we are doing.
 
 ## Do
-
 ### Remote-specific tips
-
 Here is what we sent out to participants the week before the inception started:
 
 - Please dial in individually. That is to say, don't be in the same room as any other participant. This will significantly improve the experience for everyone who is working from home.
@@ -45,13 +40,11 @@ More things to do:
 - We have started having "coffee" from 9am until we start at 9:45 or 10:00. This is an attempt to compensate for the fact that we are not having lunch together or going out for food / drinks together at the end of the day, as we would if we were gathered together physically.
 
 ### Headsets with Microphones
-
 It can make a big difference to ALL participants if every user has a headset with a microphone.
 
 The reason this is so important is that otherwise, participants are getting audio via their laptop speakers. This can feed back into their laptop microphone and cause echoes. It can also mean that all users hear notification beeps and other noises coming from participants' laptop speakers.
 
 ### General Workshop Tips
-
 - Start with an intro where you set expectations: 
 	- we are assuming everyone has best intentions.
 	- if you don't believe you can contribute value to the session, or you need to take a call or do something else, it is fine to leave politely. If you are attending, please try to be present and contributing.
@@ -68,13 +61,11 @@ The reason this is so important is that otherwise, participants are getting audi
 - Agree shared terminology. When several terms are being used for the same thing, try to agree on one common term.
 
 ## Don't
-
 - Don't assume you'll have connectivity. Remote working tools are struggling with [outages due to the surge in usage](https://www.theregister.co.uk/2020/03/12/remote_work_struggles/)
 - Don't shame people for not knowing how to do anything. Be kind, supportive and patient. 
 - As a facilitator, delegate everything you can. For instance, get participants to take ownership of creating new boards, of managing the parking lot and glossary, of adding items to the parking lot and glossary, of adding a new post-it to a board, of drawing lines between two items, of letting you know when time is up, etc.
 
 ## Troubleshooting
-
 - If people have connectivity issues:
 	- Get them to turn video off.
 	- Get them to turn off all background software and apps.
@@ -91,7 +82,6 @@ The reason this is so important is that otherwise, participants are getting audi
 	- If sound is cutting out, take the same actions listed above for connectivity issues.
 
 ## Tools others have recommended
-
 - [Wonder Me](https://www.wonder.me/) - allows you to move an avatar around in a physical space, as well as using video and audio. I have no experience of setting this up but it was used for [GovCampNorth 2020](https://govcampnorth.co.uk/) if you want to know more.
 - [Around](https://www.around.co/) - "like Google meet but better"
 - [GatherTown](https://gather.town/) is a video-calling space that lets multiple people hold separate conversations in parallel, walking in and out of those conversations just as easily as they would in real life.
@@ -106,7 +96,6 @@ The reason this is so important is that otherwise, participants are getting audi
 - [Excalidraw](excalidraw.com) - good free online diagramming / drawing tool
 
 ## Tools we are using
-
 (See below for Zoom tips and Miro tips)
 
 - [Zoom](https://zoom.us/)
@@ -132,7 +121,6 @@ This gives you a good idea of the kind of thing we have been able to create coll
 
 
 ### Miro Tips
-
 - Download the app.
 - You can have several "spaces" (aka boards), and you can navigate these either by scrolling around in the main window or by clicking the space icon bottom left (use the arrows to expand the menu first).
 - You can easily draw lines between objects. Select an object and use the blue dots that appear in the middle of each side. See above for a zoomed-out view of the kind of diagrams we have created.
@@ -142,7 +130,6 @@ This gives you a good idea of the kind of thing we have been able to create coll
 - You don't *have* to watch what everyone else is doing. If you're finding it distracting, use the arrow with two horizontal lines, top right, to toggle that functionality on and off.
 
 ### Zoom Tips
-
 - There is a thumbs-up function available - click Reactions in the meeting controls at the bottom of the screen. This means you can ask for opinions without having to have everyone unmute their mics. You can also doing this by having people raise their thumbs, but if people aren't using video then this works instead.
 - Click on the icon with a 3x3 grid of squares, top right, to see all participants in one view. Sometimes you have to resize the resulting window to see everyone.
 - If you want one participant to be centre screen - for instance if they are holding something up and you want to zoom in - click on the dots in the top right corner of their square and select the "pin" option.

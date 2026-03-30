@@ -6,5 +6,4 @@ permalink: /pages/coding/data/MongoDB
 
 
 ## Misc
-
 - MongoDB Tutorial: Dropbox\IT Training\Hackathons\HackManchester\2015\Mongodb Tutorial

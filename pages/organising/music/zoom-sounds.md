@@ -5,7 +5,6 @@ permalink: /pages/organising/music/Zoom-Sounds
 ---
 
 ## Beats
-
 - Pitch shift, then tap on mic or nearby surface
     - It also sounds good if yoou crinkle the list of Zoom presets (crinkly paper) near the mic!
     - Example was recorded in Audacity Oct 2021 and placed in OneDrive/Big files/Experiments/scratch
@@ -28,7 +27,6 @@ permalink: /pages/organising/music/Zoom-Sounds
         - Mix: Max wet
 
 ## Voices
-
 - Shift pitch to make voice higher or lower
     - Zoom settings:
         - Effect: Bank B, Pitch (3)
@@ -52,7 +50,6 @@ permalink: /pages/organising/music/Zoom-Sounds
 
 
 ## Factory Preset Effects
-
 - 51 ("Robot Sings" vocoder)
     - Zoom settings:
         - Effect: Bank B, SFX (16)

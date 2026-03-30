@@ -4,9 +4,7 @@ Asked of GPT-5:
 
 - See also  [`misc_typescript_stuff.ts`](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/src/misc_typescript_stuff.ts) and misc AI projects note in Clare's Career Obsidian (Clare only)
 # TypeScript vs C#: Key Differences and Examples
-
 ## Big Picture
-
 - **Ecosystem**
     - **TypeScript**: Superset of JavaScript. [[#Compiling vs Transpiling|Transpiles]] to JS. Runs anywhere JS runs (browser, Node.js, serverless).
     - **C#**: Compiled to IL and JITed on .NET runtime (Core/Framework). Runs on servers, desktop, mobile (Xamarin/MAUI), cloud, and with Blazor in browsers via WebAssembly.
@@ -17,7 +15,6 @@ Asked of GPT-5:
     - **TypeScript**: No runtime types by default (types removed). Uses JS semantics; single-threaded event loop.
     - **C#**: Rich runtime (GC, reflection, threading, async scheduler, value types, attributes).
 ## Compiling vs Transpiling
-
 *"What is the difference between compiling and transpiling?"*
 
 - **Compiling**    
@@ -36,7 +33,6 @@ Asked of GPT-5:
         - SASS/LESS → CSS.
 
 ### Practical differences
-
 - **Level of output**
     - Compile: bytecode/native or significantly different representation.
     - Transpile: source-to-source (human-readable, similar runtime).
@@ -48,16 +44,13 @@ Asked of GPT-5:
     - Transpile: `tsc`, `babel`, `sass`.
 
 ### Where your project fits
-
 - TypeScript [in this repo](https://github.com/claresudbery/ai-general/tree/main/slack-thread-archiver) uses `tsc`, which transpiles TS to JS in `dist/`.
 - The browser executes the resulting JavaScript, not TypeScript.
 
 ### Summary
-
 - Compiling: source → lower-level (bytecode/native).
 - Transpiling: source → source (similar level), e.g., TypeScript → JavaScript.
 ## Language and Type Features
-
 - **Typing Style**
     - **TS**: Structural ([[#Duck typing|duck typing]]) — types compatible by shape.
     - **C#**: Nominal — types are their declared identities.
@@ -102,13 +95,11 @@ Asked of GPT-5:
     - **TS**: ES modules (`import/export`).
     - **C#**: Namespaces and assemblies; `using` for imports.
 ## Duck typing
-
 - [[#Duck typing Intro|Intro]]
 - [[#Duck typing examples|Examples]]
 - [[#Duck typing Key contrasts|Key contrasts]]
 - [[#Duck typing Summary|Summary]]
 ### Duck typing: Intro
-
 - **Definition**    
     - A typing style where an object’s suitability is determined by the presence of certain methods/properties, not by its explicit type. “If it walks like a duck and quacks like a duck, it’s a duck.”
 - **Core idea**    
@@ -116,7 +107,6 @@ Asked of GPT-5:
     - Common in dynamic languages (Python, Ruby) and in structural type systems (TypeScript).
 
 ### Duck typing examples
-
 - **Python (dynamic duck typing)**
 ```python
 
@@ -160,7 +150,6 @@ Speak(new Duck());   // OK
 // Speak(new Person()); // Error: Person doesn't implement IQuacker
 ```
 ### Duck typing: Key contrasts
-
 - **Duck/structural typing**    
     - Based on shape/available members.
     - TypeScript uses this by default.
@@ -169,17 +158,14 @@ Speak(new Duck());   // OK
     - C# uses this model.
 
 ### Duck typing: Summary
-
 - Duck typing = behavior-based compatibility.
 - TypeScript’s structural types make it duck-typing-like.
 - C# requires declared compatibility (e.g., implements an interface).
 
 ## Small Side-by-Side Examples
-
 See also  [`misc_typescript_stuff.ts`](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/src/misc_typescript_stuff.ts)
 
 ### Class and Interface
-
 - Note that in modern TypeScript, the common convention is to avoid the I prefix for interfaces. Prefer descriptive names like `Person`, `User`, `Config`, etc.
 	- **Why not use I-?** It’s a legacy pattern from C#/early TS. TypeScript’s structural typing makes the distinction less important, and the prefix adds noise.
 	- **Ecosystem guidance:** TS docs and popular style guides (including Angular’s) generally discourage `I` prefixes.
@@ -238,7 +224,6 @@ public class Employee : IPerson
 }
 ```
 ### When to use generics
-
 - In the example below: Use `peopleThings2(p: Person)` when you only need `Person` properties and your return type doesn’t depend on the specific subtype. Use `peopleThings(p: T)` when you want to preserve the caller’s specific type and relate it to other type parameters or return values.
 - When a generic is worth it:
 	- **Preserve subtype information**: If you return `p` (or something derived from it), a generic keeps the precise type.
@@ -273,7 +258,6 @@ function usePeopleThings2() {
 }
 ```
 ### Generics with Constraints
-
 See also  [`misc_typescript_stuff.ts`](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/src/misc_typescript_stuff.ts)
 ```ts
 
@@ -387,7 +371,6 @@ public enum Status { Ok = 200, NotFound = 404 }
 var s = Status.Ok;
 ```
 ## Tooling and Build
-
 - **TypeScript**
     - `tsc`, `tsconfig.json`, npm ecosystem, bundlers (Vite/Webpack), Jest/Vitest.
     - Types erased; runtime is JS.
@@ -396,14 +379,12 @@ var s = Status.Ok;
     - Strong reflection/metadata, AOT options (NativeAOT), JIT optimizations.
 
 ## When to Choose Which
-
 - **TypeScript**
     - Web front-end, Node.js tooling, quick iteration, JS interop first-class.
 - **C#**
     - Backend services, desktop, game dev (Unity with C#), high-performance server code, strong runtime features, LINQ.
 
 # Summary
-
 - TypeScript is a structurally typed superset of JavaScript with erased types and JS runtime behavior.
 - C# is a nominally typed, compiled language with reified generics, rich runtime features, and broad application beyond the browser.
 - They share modern language conveniences (classes, async/await, generics), but differ in typing philosophy, runtime, and ecosystem focus.

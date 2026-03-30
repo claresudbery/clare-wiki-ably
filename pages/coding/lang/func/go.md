@@ -7,7 +7,6 @@ permalink: /pages/coding/lang/func/Go
 Notes below are from Jeremy Clark's session on "Go for C# developers" at SDDConf 2022.
 
 ## Overview
-
 - Go is compiled down to an environment-specific binary
     - so for instance, an exe for Windows
     - once you have your binary, you need nothing else
@@ -39,9 +38,7 @@ Notes below are from Jeremy Clark's session on "Go for C# developers" at SDDConf
     - use the Go extension in VS Code - from Go team at Google
 
 ## Writing, building and running
-
 ### Bootstrapping your entry point / formatting your code
-
 - Needs to look like this. Formatting is non-optional.
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
@@ -57,7 +54,6 @@ func main() {
 ```
 
 ### Building code
-
 - type `go build` on command line
     - this will create a binary specific to your context
     - eg an exe on Windows
@@ -72,12 +68,10 @@ func main() {
     - you can then type `code go.mod` to see it - there'll be very little there
 
 ### Running code
-
 - Just run the exe
 - So on command line, just `./tour-of-go.exe`
 
 ### Writing code
-
 - If you put brace on new line, it won't compile. Go extension will underline iwth red squiggly
 - Lower case start letter means private scope
     - Upper case start letter is public
@@ -96,14 +90,11 @@ func main() {
     - `Fprintf` goes to a file
 
 ### help docs
-
 - in browser just type for instance `golang fmt`
 - will probably take you to `pkg.go` domain
 
 ## Code snippets
-
 ### structs
-
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
@@ -125,7 +116,6 @@ type person struct {
     - Go will work it out
 
 ### functions
-
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
@@ -166,7 +156,6 @@ func (p person) String() string {
         - ""
 
 ### interfaces
-
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
@@ -186,7 +175,6 @@ func (p person) String() string {
     - in the example above, this will be considered to implement that interface
 
 ### loops
-
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
@@ -207,7 +195,6 @@ for _, currentId := range ids {
     - The `_` can be given a name if you want to use it, eg `index`
 
 ### async stuff / concurrency
-
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
@@ -244,7 +231,6 @@ func fetchAndDisplay(id int, *wg sync.WaitGroup) {
 
 
 ### error handling
-
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 
@@ -311,7 +297,6 @@ func getPerson(id int) person {
 
 
 ### anonymous functions
-
 - CAUTION! I was typing all this code manually so I have probably made errors!
 - Code is at https://github.com/jeremybytes/sdd-2022/ - notes in walkthrough.md
 

@@ -5,7 +5,6 @@ permalink: /pages/organising/music/Recording
 ---
 
 ## Recording vocals / guitar using our PA
-
 - turn on PA
 - use the red gismo (Behringer u-control) with two phono cables (inputs) and one USB (output)
 - plug the phono cables into the PA recording output, top right, "l+r rec o/p"
@@ -17,11 +16,9 @@ permalink: /pages/organising/music/Recording
 - If you want to record input from another laptop that has mini-jack output instead of USB, use the red gismo again but this time attach a cable that has phono on one end and stereo mini-jack on the other - with the stereo mini-jack going into the laptop and the phono ends going into the red gismo as before. I have a phono=>mini-jack cable attaching my laptop to a little black gismo that's connected up to the small laptop amp in my study.
 
 ## Recording snippets from external sources
-
 See [here](https://github.com/claresudbery/clare-tech/blob/master/writing/Music/recording.md).
 
 ## Recording on phone using Voice Record Pro
-
 - To turn gain (input volume) up / down to avoid distortion:
     - Click Record
     - Select the Advanced tab

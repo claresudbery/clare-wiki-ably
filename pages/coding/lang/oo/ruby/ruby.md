@@ -5,7 +5,6 @@ permalink: /pages/coding/lang/oo/ruby/Ruby
 ---
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [https://github.com/claresudbery/clare-wiki-ably](https://github.com/claresudbery/clare-wiki-ably)
@@ -19,7 +18,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - See [Sinatra](<#sinatra>) below for various Sinatra repos.
 
 ### Ruby katas
-
 See [below](<#quick start kata guide>) for a quick start guide if writing a kata from scratch
 
 - [Bowling kata](https://github.com/claresudbery/bowling-kata-ruby) - bowling kata implemented in Ruby
@@ -30,7 +28,6 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
 - [Mars Rover kata](https://github.com/claresudbery/mars-rover-kata-ruby)
 
 ### Quick start Ruby kata guide
-
 - Create dedicated folder
 - Create git repo
 - Check you have ruby installed - `which ruby`
@@ -49,7 +46,6 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
 - See [this commit](https://github.com/claresudbery/fizzbuzz-temp-academy/tree/1de27613bab439ab7862a0d8ed6045b0921c2353) for an example
 
 ## Tutorials and Guides
-
 - [Ruby cheatsheet](https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md)
 - [Learn Enough Ruby to be Dangerous](https://www.learnenough.com/course/ruby/hello_world?start_course=true)
 - [TDD and OOP and Ruby from Sandi Metz](https://www.sandimetz.com/99bottles/sample)
@@ -65,7 +61,6 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
   - Newer [more organised notes here]()
 
 ## Sinatra
-
 - [Your first Sinatra app](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
 - [Skeleton Sinatra app](https://github.com/claresudbery/sinatra-skeleton-app) created using [this tutorial](http://webapps-for-beginners.rubymonstas.org/sinatra/hello_world.html)
 - [This commit](https://github.com/claresudbery/tic-tac-toe-kata/tree/a83d917993009f065caba0a3f74b7a2fb6a0d254) on the tic tac toe repo is a much simpler hello world Sinatra app, with just one `/` root route and no data storage.
@@ -86,26 +81,20 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
   - [word game](https://github.com/claresudbery/wordlessly)
 
 ### Using Sinatra to build a web api
-
 - This [word game repo of mine](https://github.com/claresudbery/wordlessly) builds an API
   - Check out [the readme](https://github.com/claresudbery/wordlessly/blob/master/README.md#posting-to-the-api) for some notes
 
 
 ## Deployment with Heroku
-
 - [Deploying ruby using heroku](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#deploying-ruby-using-heroku)
 - [Ruby version problems when deploying with Heroku](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#ruby-version-problems-when-deploying-with-heroku)
 
 ## Debugging
-
 ### Debugging on command line
-
 - [Pry and various other tools described briefly here](https://stackify.com/ruby-debugger-using-visual-studio-code/) 
 
 ### Debugging in VS Code using Ruby extension and ruby-debug-ide
-
 #### Step by step guide to get started
-
 - First, on the command line:
 - `sudo gem install debase`
 - `gem install ruby-debug-ide`
@@ -122,7 +111,6 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
 - You should now hit your breakpoint.
 
 #### Once you're up and running - an example
-
 - I currently have this working in my [bowling-kata-ruby repo](https://github.com/claresudbery/bowling-kata-ruby): 
   - Checkout [this commit](https://github.com/claresudbery/bowling-kata-ruby/commit/91d4c5c7021a95c07c7247950d9f55c0f85cdf8b) 
   - Run `rdebug-ide src/bowling_cli.rb` on the command line
@@ -131,11 +119,9 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
   - Click the green run triangle next to the dropdown top left
 
 #### Debugging rspec tests
-
 - If you want to debug Rspec tests, follow the guide above, then when click the Run Debug button, select Add configuration from the dropdown and add configs for `"RSpec - active spec file only"` and `"RSpec - all"`
 
 #### More info
-
 - Original article here: [Debugging Ruby with breakpoints in VS Code](https://stackify.com/ruby-debugger-using-visual-studio-code/) (scroll down to where it talks about VS Code)
   - !! Note that when it says to add a launch.json and "open the debugging tab", you need to [follow the instructions here](/pages/coding/tools/Visual-Studio-Code#debugging) (I suspect the UI has changed a little since that article was written)
   - Then when you are told to add a configuration, you need to select Ruby and then select `Listen for rdebug-ide`. This will have the effect of adding a new entry into the `"configurations"` section of your `launch.json` that looks something like this: 
@@ -158,12 +144,10 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
   - I haven't managed to work out how to pass command line arguments to code that you're debugging.
 
 ### Debugging in VS Code using ruby-debug extension
-
 - [Article here](https://blog.rmcd.io/blog/debugging-ruby-locally)
 - I didn't get this working on Windows or Mac, but didn't spend so long on Mac.
 
 ## Gems, packaging, versioning
-
 - [My separate page on gems, versions and packaging](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems)
 - [Gem Learn Tech (Made Tech) Packaging Tutorial](https://learn.madetech.com/technology/guides/06-Gem-Packaging/)
 - [bowling kata as a Ruby gem](https://github.com/claresudbery/csud-bowl-kata) (`csud-bowl-kata`) - bowling kata designed to be released as a Ruby gem (might not actually be on RubyGems.org yet)
@@ -171,7 +155,6 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
   [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
 
 ## Testing
-
 - For Rspec [see below](<#rspec>)
 - Overview of unit testing using Test::Unit:
   [<span class="underline">https://en.wikibooks.org/wiki/Ruby\_Programming/Unit\_testing</span>](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
@@ -186,7 +169,6 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
       [<span class="underline">https://github.com/btakita/rr/issues/98</span>](https://github.com/btakita/rr/issues/98)
 
 ### Front end testing
-
 - [Helpful guide on using `Rack::Test`](http://sinatrarb.com/testing.html) to test what is returned by your routes.
   - Note that this allows you to interrogate the dom, but it doesn't automatically give you the capacity to test user interactions - eg button clicks. For that you will need something like [Capybara](http://testing-for-beginners.rubymonstas.org/headless/capybara.html) or [Cypress](/pages/coding/tools/testing/Cypress).
 - Examples of front end testing using Rack::Test with Sinatra:
@@ -209,7 +191,6 @@ gem "rspec-html-matchers"
 ```
 
 ### Rspec
-
 - To run tests: either `rspec` or `bundle exec rspec` (depending whether you did a global bundle install or a vendor one, I think (eg if you ran `bundle config set --local path 'vendor/bundle'` before you ran `bundle install`))
 - See [quick-start section](<#quick start kata guide>) for a quick start guide if writing a kata from scratch (includes getting tests set up, and running tests / how to run tests)
 - See [debugging rspec](<#debugging rspec tests>) for how to debug rspec tests
@@ -227,7 +208,6 @@ gem "rspec-html-matchers"
 - See [Front end testing](<#front end testing>) for how to do front end testing with Rspec.
 
 #### Test cases in rspec
-
 You can handle test cases in rspec in the way shown below - and there are more examples [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/23b24cf36e2e1be443f1d35bc9e40443564cf814/spec/wordwrap_spec.rb). Below we use a `hash` to map inputs ("rolls") to outputs "scores", and then use an `each` statement to loop through the list of elements in the hash.
 
 ```
@@ -253,7 +233,6 @@ expected_scores_with_a_strike_in_the_tenth_frame = {
 ```
 
 #### Testing command-line inputs and outputs (stdin, stdout, stderr)
-
 You can stub command-line inputs using standard rspec stubbing functionality and the fact that `gets` and `puts` are functions inherited from `Object` by all classes. Note that you can also mimic several repeated inputs by giving a comma-separated list. Note that in the examples below, `@communicator` and `@mars_rover_app` are classes written by me, and I am specifying their inputs and outputs.
 
 For the code below you will need the `rspec` and `rspec-html-matchers` gems in your `Gemfile` (see [example here](https://github.com/claresudbery/mars-rover-kata-ruby/blob/bf78d04adb927e80cf1cb731c166c33b3823b7c8/Gemfile)).
@@ -273,9 +252,7 @@ Note that you can use matchers such as `a_string_ending_with`, `a_string_startin
 More examples of `stdin` and `stdout` testing in [this file here](https://github.com/madetech/academy_2020_mob/blob/3fb53826252525a52550fdbdb40337da211870e2/mars-rover/spec/marsroverapp_spec.rb).
 
 ## Language Features
-
 ### Misc Language Stuff
-
 - [General Ruby docs](https://docs.ruby-lang.org/en/2.0.0/index.html) (they're pretty good, once you've searched for what you're interested in).
 - Return values in Ruby functions are the last thing that was assigned
   - the **return** statement is often not used
@@ -351,7 +328,6 @@ JSON.parse(api_response)
 ```
 
 ### Blocks / anonymous functions, and the yield keyword
-
 - **Blocks** of code, aka `anonymous` or `unnamed functions`
   - `{ |i| puts 2**i }` is equivalent to `do |i| puts 2**i end`
   - ie `do` and `end` take the place of the opening and closing braces in defining a block of code.
@@ -421,9 +397,7 @@ end
   - gcam "`<p>Lorem ipsum dolor sit amet</p>`
 
 ### Collections
-
 #### Hashes
-
 - Also known as *associative arrays*.
 - Some examples of hashes:  
 ```
@@ -444,7 +418,6 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
   - we thought about creating an example in our wordwrap academy kata, but instead we used a [nested hash as a key](https://github.com/madetech/academy_2020_mob/commit/2a4d40ea0401d01a8b88d57f202289138ff9fa63)
 
 #### Arrays
-
 - Negative indices:  
     - To get last array element, use negative index: \[-1\]  
     - The second-to-last element has index -2, and so on.
@@ -454,7 +427,6 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
   - `a << "A"`
 
 ### Strings
-
 - **gsub**: Find and replace
 - [Frozen strings](https://freelancing-gods.com/2017/07/27/an-introduction-to-frozen-string-literals.html#:~:text=The%20term%20'frozen'%20is%20Ruby's,an%20exception%20will%20be%20raised.)
 - **String interpolation**. Do it like this: **"search/\#{type}”,** where **type** is a variable
@@ -470,7 +442,6 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
 - Double and single quotes are `built-in constructors`, but you can also use the `new` keyword if you want: `s = String.new("A man, a plan, a canal—Panama!")`
 
 ### Symbols
-
 - Symbols are things that look like this **:symbol**
   
     - The closest thing in C\# is an enum
@@ -490,7 +461,6 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
   symbol is immutable, and stored in a single place in memory
 
 ### Dates and Times
-
 - `Time` is a built-in class
   - you have to use `require 'time'`
 - `now = Time.new` will give you the current time
@@ -511,20 +481,16 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
     - More on date parsing [here](https://www.rubyguides.com/2015/12/ruby-time/)
 
 ### Functions
-
 - Functions are not attached to objects
 
 ### Methods
-
 - Methods are functions attached to objects
 - This notation - `String#include?` indicates a method called `include?` which is a `String` instance method.
 
 ### Methods and functions
-
 - You don't need brackets when passing arguments to methods and functions (they're optional) - you can use spaces instead.
 
 ### Command Line Input
-
 - you can use `gets` and `puts` [like this](https://ruby-doc.org/docs/ruby-doc-bundle/Tutorial/part_02/user_input.html) (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb))
 - or you can use `$stdin` - see [article here](https://www.honeybadger.io/blog/writing-command-line-apps-in-ruby/)
 - both `gets` and `$stdin` can be used to pipe input directly from other sources (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_cli.rb)) (more [here](http://zetcode.com/lang/rubytutorial/io/#:~:text=The%20%24stdin%20is%20a%20global,read%20input%20from%20the%20console.&text=In%20the%20above%20code%2C%20we,read%20input%20from%20the%20console.&text=The%20read%20method%20reads%20data,the%20end%20of%20the%20file.))
@@ -532,11 +498,9 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
 - be aware that sometimes your input is requested before your output is output - you fix that by using `$stdout.sync = true` (example [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/7a6b3b430f82ddc1824aed66afc4a37981d5c498/src/wordwrap_interact.rb)) (more [here](https://stackoverflow.com/questions/61333685/ruby-issue-my-gets-function-executes-before-my-puts-statement).)
 
 ### Inheritance
-
 - [great article here](http://rubylearning.com/satishtalim/ruby_inheritance.html) on inheritance in Ruby - includes an explanation of why instance variables are not defined by classes and are therefore also not inherited by subclasses. 
 
 ### Division and other Maths
-
 - By default, the `/` operator does integer division - so 2/3 = 0
   - If you want floating point division, add `.0` to one of your integers: `2/3.0`
 - To get "to the power of", use `**` instead of `^`
@@ -551,11 +515,9 @@ my_hash4 = { first_name: "Pippi", last_name: "Longstocking" }
     - `Math.cos(2*Math::PI)` (answer = 1)
 
 ## Questions
-
 - If RSpec is a Gem, why is it never required in your spec files? How do they get the code they need? And what does the `--` mean in front of `require spec_helper` in the `.rspec` file?
 
 ## Monkey patching
-
 "It's simply the dynamic replacement of attributes at runtime.
 
 For instance, consider a class that has a method get_data. This method does an external lookup (on a database or web API, for example), and various other methods in the class call it. However, in a unit test, you don't want to depend on the external data source - so you dynamically replace the get_data method with a stub that returns some fixed data."
@@ -565,9 +527,7 @@ From [here](https://stackoverflow.com/questions/5626193/what-is-monkey-patching)
 Caution: "In our experience, having monkey-patched gems is usually one of the hardest things to deal with. We have to spend hours updating monkey-patched gems to make them compatible with newer Rails APIs. So please keep that in mind before monkey patching Rails core libraries or gems that depend on specific Rails versions." From [here](https://www.fastruby.io/blog/rails/upgrades/how-to-stay-up-to-date.html).
 
 ## Troubleshooting
-
 See the [Ruby Gems](/pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems) page for most Ruby Troubleshooting stuff (including getting Ruby working on a 2022 Macbook)
 
 ## Database stuff
-
 - For Ruby, PostgreSQL, Sinatra/Rails and heroku see [here](/pages/coding/data/PostgreSQL-and-PSQL#heroku)

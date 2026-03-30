@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cmd/Vim
 ---
 
 ## What to do if you get stuck in a VIM editor
-
 These instructions are based on what you see when you run `git commit` without giving a commit message.
 
 Quick Guide:
@@ -128,7 +127,6 @@ Quick Guide:
     - !! DANGER !! This is *not* the same as Save As in most contexts, because you are still at this point in your original file. Any edits you make after this will be made to the original file, not to the new copy.
 
 ## Vertical columns of text (like alt click)
-
   - Select a vertical column of text (like using Alt + click in other
     text editors):
       - **Ctrl + v** takes you into “visual block” mode, then use the up
@@ -236,7 +234,6 @@ Quick Guide:
             in Vim Adventures type **:help aw** and **:help iw**)
 
 ## Searching
-
   - Search: `/[search term - regex]`
       - Examples: 
         - `/gup` will find the string "gup" including when it's embedded in other words, eg "guppy"

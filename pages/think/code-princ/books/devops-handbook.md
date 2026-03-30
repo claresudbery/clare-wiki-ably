@@ -5,7 +5,6 @@ permalink: /pages/think/code-princ/books/DevOps-Handbook
 ---
 
 ## Overview
-
 - pub 2016
 - 2nd edition 2021
 - by 
@@ -16,7 +15,6 @@ permalink: /pages/think/code-princ/books/DevOps-Handbook
   - NICOLE FORSGREN
 
 ## Three Ways of DevOps
-
 - The core of the book outlines these three ways - summarised below
   - The First Way: The principles and technical practices of Flow
   - The Second Way: The principles and technical practices of Feedback
@@ -25,7 +23,6 @@ permalink: /pages/think/code-princ/books/DevOps-Handbook
   - "The Phoenix Project presents the Three Ways as the set of underpinning principles from which all the observed DevOps behaviors and patterns are derived"
 
 ### First Way: Flow
-
 - These principles "accelerate the delivery of work from Development to Operations to our customers"
 - "The First Way enables fast left-to-right flow of work from Development to Operations to the customer. In order to maximize flow, we need to make work visible, reduce our batch sizes and intervals of work, build in quality by preventing defects from being passed to downstream work centers, and constantly optimize for the global goals."
 - "By speeding up flow through the technology value stream, we reduce the lead time required to fulfill internal or customer requests, especially the time required to deploy code into the production environment. By doing this, we increase the quality of work as well as our throughput, and boost our ability to out-experiment the competition."
@@ -37,7 +34,6 @@ permalink: /pages/think/code-princ/books/DevOps-Handbook
   - Automating, enabling, and architecting for low-risk releases
 
 ### Second Way: Feedback
-
 - These principles "enable us to create ever safer systems of work"
 - "The Second Way enables the fast and constant flow of feedback from right to left at all stages of our value stream. It requires that we amplify feedback to prevent problems from happening again, or enable faster detection and recovery. By doing this, we create quality at the source and generate or embed knowledge where it is needed—this allows us to create ever-safer systems of work where problems are found and fixed long before a catastrophic failure occurs."
 - "By seeing problems as they occur and swarming them until effective countermeasures are in place, we continually shorten and amplify our feedback loops, a core tenet of virtually all modern process improvement methodologies. This maximizes the opportunities for our organization to learn and improve."
@@ -49,7 +45,6 @@ permalink: /pages/think/code-princ/books/DevOps-Handbook
   - Enabling feedback to increase the quality of our work through peer reviews and pair programming
 
 ### Third Way: Continuous Learning and experimentation
-
 - These principles "foster a high-trust culture and a scientific approach to organizational improvement risk-taking as part of our daily work"
 - "The Third Way enables the creation of a generative, high-trust culture that supports a dynamic, disciplined, and scientific approach to experimentation and risk-taking, facilitating the creation of organizational learning, both from our successes and failures. Furthermore, by continually shortening and amplifying our feedback loops, we create ever-safer systems of work and are better able to take risks and perform experiments that help us learn faster than our competition and win in the marketplace."
 - "As part of the Third Way, we also design our system of work so that we can multiply the effects of new knowledge, transforming local discoveries into global improvements. Regardless of where someone performs work, they do so with the cumulative and collective experience of everyone in the organization."
@@ -62,7 +57,6 @@ permalink: /pages/think/code-princ/books/DevOps-Handbook
   - Reserving time to create organizational improvements and learning
 
 ## Chapter 11: Enable and Practice Continuous Integration
-
 - Follows on from an automated testing chapter - assumes you've sorted out your testing
 - “continuous integration is one of the most critical practices that enable the fast flow of work in our value stream”
 - “continuous integration remains a controversial practice”

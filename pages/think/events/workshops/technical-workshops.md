@@ -5,11 +5,9 @@ permalink: /pages/think/events/workshops/Technical-Workshops
 ---
 
 ## Tips for running technical workshops
-
 - See [here](/pages/think/events/workshops/Technical-Workshop-Tips).
 
 ## Technical workshops (some I have run myself, some are self-led)
-
 Sorry, at the time of writing some of these resources will not be publicly available. A lot of them are though!
 
 Some of these workshops can be self led - ie just give the relevant link to individuals or pairs and let them work independently. But some of them are designed to be facilitated as a group exercise.

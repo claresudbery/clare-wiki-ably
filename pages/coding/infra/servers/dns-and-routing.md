@@ -4,11 +4,9 @@ location: pages/coding/infra/servers/leaf
 permalink: /pages/coding/infra/servers/DNS-And-Routing
 ---
 ## Diagrams
-
   - See below for links to useful diagrams from Cadogan
 
 ## DNS Records
-
   - [www.your-domain.co.uk](http://www.your-domain.co.uk) might be a
     CNAME
     of [<span class="underline">your-domain.co.uk</span>](http://iguanas.co.uk/)
@@ -35,7 +33,6 @@ permalink: /pages/coding/infra/servers/DNS-And-Routing
       - We used a forwarding server to handle this.
 
 ## DNS articles:
-
   - DNS management and DNS Record
     types: [<span class="underline">https://pressable.com/blog/2014/12/23/dns-record-types-explained/</span>](https://pressable.com/blog/2014/12/23/dns-record-types-explained/)
   - DNS records and
@@ -46,7 +43,6 @@ permalink: /pages/coding/infra/servers/DNS-And-Routing
     records: [<span class="underline">http://searchnetworking.techtarget.com/definition/time-to-live</span>](http://searchnetworking.techtarget.com/definition/time-to-live)
 
 ## CNAMEs
-
   - **CNAME** stands for Canonical Name. CNAME records can be used to
     alias one name to another.
   - For example, if you have a server where you keep all of your
@@ -60,26 +56,21 @@ permalink: /pages/coding/infra/servers/DNS-And-Routing
 
 
 ## Simple DNS Diagram
-
 - Cadogan Simple DNS Diagram (PRIVATE) `Simple DNS Diagram.jpg` [here](https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj)
 
 
 ## Detailed DNS Diagram
-
 - Cadogan DNS diagram - More Detail (PRIVATE): `More Detail.jpg` [here](https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj)
 
 
 ## F5 and DNS
-
 - More on DNS stuff under F5 load balancer: /pages/coding/infra/cloud/F5-Load-Balancer
 
 ## Node, proxies and IP addresses
-
 - See [here](/pages/coding/webdev/js/Node-JS#node-proxies-and-ip-addresses).
 
 
 ### Node, proxies, hosts file etc: An explanation of how everything hung together in one example node.js deployment (at Samba)
-
   - Type a url into the browser
   - First step is hosts file. Hosts file is effectively your local DNS
     server – will convert url into IP address
@@ -130,7 +121,6 @@ permalink: /pages/coding/infra/servers/DNS-And-Routing
     docker instances.
 
 ## Reverse Proxies
-
 - A Reverse proxy is one which proxies inbound requests, rather than outbound requests
 -	A reverse proxy is closer to the server, whereas a proxy is closer to the client. They still need to intercept both the request and the response.
 - We used a reverse proxy at Samba to change all incoming https requests into http requests.
@@ -138,7 +128,6 @@ permalink: /pages/coding/infra/servers/DNS-And-Routing
 - Reverse DNS = mapping IP address to a host name instead of vice versa
 
 ## Useful DNS commands
-
 - `ns lookup` -	Looks up a DNS entry
 - Check DNS: http://Dnscheck.pingdom.com
   -	Also try whatsmydns: https://www.whatsmydns.net/

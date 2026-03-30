@@ -7,13 +7,10 @@ permalink: /pages/think/life/health-stuff/Covid
 Aka COVID-19 / coronavirus / Sars-CoV-2
 
 ## Useful info and links
-
 ### Updated symptom list
-
 [Updated symptom advice](https://covid.joinzoe.com/post/new-top-5-covid-symptoms)
 
 ### Anti-virals / paxlovid / PANORAMIC study
-
 - Paxlovid is available on NHS in UK, but only for high risk groups
     - [This anti-Covid pill changes everything. So why won’t it be available for all?](https://amp.theguardian.com/commentisfree/2021/dec/21/paxlovid-anti-covid-pill-why-not-available)
     - [NICE guidelines, May '23 (but they're being appealed?)](https://www.england.nhs.uk/wp-content/uploads/2023/05/PRN00453-RPS-ICCP-Remdesivir-and-molnupiravir-for-non-hosp-patients-with-COVID-19-May-2023.pdf)
@@ -22,7 +19,6 @@ Aka COVID-19 / coronavirus / Sars-CoV-2
     - [Panoramic trial for those not in high risk group](https://www.panoramictrial.org/?gclid=EAIaIQobChMIz7XOjJHBgwMVFZBQBh1qawtpEAAYASAAEgISXPD_BwE)
 
 ### Vaccination
-
 - [New private covid vaccination service](https://pharmadoctor.co.uk/patient/service/covid-vaccination)
 	- (Use that link to find local paid boosters)
 - [Covid vaccination queue calculator](https://www.omnicalculator.com/health/vaccine-queue-uk)
@@ -34,7 +30,6 @@ Aka COVID-19 / coronavirus / Sars-CoV-2
   - Article saying [it's now resolved for France](https://www.schengenvisainfo.com/news/france-now-recognises-covishield-vaccine-as-proof-of-vaccination/)
 
 ### Testing
-
 - [Order LFTs (Lateral Flow Tests) for home use](https://www.gov.uk/order-coronavirus-rapid-lateral-flow-tests)
 - Book [drive-in or home-delivered PCR test](https://www.gov.uk/get-coronavirus-test)
 
@@ -87,7 +82,6 @@ Aka COVID-19 / coronavirus / Sars-CoV-2
   - [Order a Day 2 test kit](https://www.find-travel-test-provider.service.gov.uk/test-type/green) for use after arrival in England from an amber list country
 
 ### Other useful info and links
-
 - [How to look after yourself if you have covid](https://covid.joinzoe.com/post/how-do-i-look-after-myself-if-i-am-sick-with-covid-19)
 - Zoom fatigue:
   - [National Geographic article about Zoom Fatigue](https://www.nationalgeographic.com/science/2020/04/coronavirus-zoom-fatigue-is-taxing-the-brain-here-is-why-that-happens/)
@@ -116,9 +110,7 @@ NB: This collection is months old now. Do you really need to follow these links?
       * Has updates on every aspect of the virus - numbers if you want them, how to protect yourself and others, symptoms etc etc etc
 
 ## Staying sane during the COVID-19 crisis
-
 ### Nice things to do during lockdown
-
 - [Virtual live tours](https://www.virtualtrips.io/)
 - [Virtual cheese tasting](https://www.thecourtyarddairy.co.uk/shop/category/buy-cheese/virtual-cheese-tastings/)
 - [Virtual live comedy](http://www.redimpcomedy.com/)
@@ -131,22 +123,18 @@ NB: This collection is months old now. Do you really need to follow these links?
 - [Cocktail making](http://www.drinksbypost.co.uk) - these people will send you a cocktail making kit, then you can all just log on, make cocktails together and have a party
 
 ### Positive stuff
-
 - @andrewdotdobson and his colleagues at Publicis Poke have made [a webapp with a button you can press](https://pressforpositivity.publicispoke.com/) for good positive stuff to cheer you up and distract you. Announced [here on Twitter](https://twitter.com/andrewdotdobson/status/1348612537345052682?s=21).
 - [Some more nice stuff here](/pages/think/life/Nice-Stuff)
 
 ### Meg John and Justin: Podcast and Resources on Stress and Coronavirus
-
 - [The wonderful Meg-John and Justin on stress](https://megjohnandjustin.com/you/stress-and-coronavirus/)
 - [...and on love](https://megjohnandjustin.com/relationships/love-in-the-time-of-covid-19-2/)
 
 ### Resilience 
-
 - [Resilience during coronavirus](https://www.theukdomain.uk/resilience-during-coronavirus/)
 - [Some thoughts on handling negative thoughts / "chatter"](https://www.theguardian.com/science/2021/jan/16/inner-voice-self-criticism-psychologist-ethan-kross-chatter-voice-head)
 
 ### Countering burnout
-
 - [This](https://brenebrown.com/podcast/brene-with-emily-and-amelia-nagoski-on-burnout-and-how-to-complete-the-stress-cycle/) is a really interesting podcast about burnout, talking about how when you are in a position of stress you need to "complete the stress cycle" to allow your body to process the after-effects. If you don't then you get stuck in a neverending stress tunnel and that's when burnout happens. It's [Brene Brown interviewing Emily and Amelia Nagoski about their book Burnout](https://brenebrown.com/podcast/brene-with-emily-and-amelia-nagoski-on-burnout-and-how-to-complete-the-stress-cycle/).  
 - [Here is an article](https://www.penguin.co.uk/articles/2019/mar/complete-stress-cycle-emotional-exhaustion-burnout/) describing the things you can do to complete the stress cycle.
 - Here's the list of things you can do to help your body recover from stress ([more detail here](https://www.penguin.co.uk/articles/2019/mar/complete-stress-cycle-emotional-exhaustion-burnout/)):
@@ -159,7 +147,6 @@ NB: This collection is months old now. Do you really need to follow these links?
   - **Creative expression** - which can be as simple as imagining a little story where you fly over the top of a stressful thing - but doesn't have to be directly related to the source of stress.
 
 ### Unfuck your brain
-
 - [Coping with pandemic panic](https://unfuckyourbrain.com/pandemic-panic/) - free session from Kara Loewentheil ("Harvard law school grad, feminist rockstar, and master coach").
 
 I found this really helpful, but it's worth saying that Kara Loewentheil's style doesn't work for everyone. In a nutshell, she's saying that you can't control what's happening in the world, but you can control how you react to it. Death and sickness have always been present and have always been things that could affect both ourselves and our loved ones. It's never been helpful to worry and obsess over those things, but because right now everybody IS worrying and obsessing over it, there is an unstated pressure to join in. Resist that pressure. Do everything you need to do to keep yourself and your loved ones safe, but take those actions out of love instead of out of anxiety.
@@ -167,19 +154,15 @@ I found this really helpful, but it's worth saying that Kara Loewentheil's style
 If you don't find that Kara's style works for you, don't feel bad! Turn it off and try one of the things below instead. 
 
 ### Control what you can, accept what you can't
-
 ![controlling covid-19](/resources/images/covid-19-can-control.jpG)
 
 ### Don't put pressure on yourself to become super-productive
-
 - Some good points are made about this in [this article here](https://www.independent.co.uk/voices/coronavirus-confinement-covid-19-quarantine-rules-streaming-a9410166.html)
 
 ### My experience of anxiety
-
 - Some advice based on [my experience of crippling anxiety attacks](https://s3-eu-west-1.amazonaws.com/clare-test-001/BoobPencil/how-to-stop-anxiety-attacks.html)
 
 ### APPLE technique to deal with anxiety
-
 AnxietyUK suggests practising the "Apple" technique to deal with anxiety and worries.
 
 - **Acknowledge**: Notice and acknowledge the anxious thoughts as they comes to mind.
@@ -189,7 +172,6 @@ AnxietyUK suggests practising the "Apple" technique to deal with anxiety and wor
 - **Explore**: Explore the present moment, because right now, in this moment, all is well. Notice your breathing and the sensations of your breathing. Notice the ground beneath you. Look around and notice what you see, what you hear, what you can touch, what you can smell. Right now. Then shift your focus of attention to something else - on what you need to do, on what you were doing before you noticed the worry, or do something else - mindfully with your full attention.
   
 ### ODAAT - One Day at a Time
-
 This is an edited version of a description of this technique from my friend Lou:
 
 "In order to stay calm, you have to be calm one day at a time. I find it a great way to ground myself if I'm starting to live in the future (futile, not happened yet) or past (not helpful as can't change etc) That's not to say that you shouldn't plan for the future or neglect the lessons of the past but by staying in our head there, we're not present in the place where we actually have some control.
@@ -201,7 +183,6 @@ Your locus of control is now - that's where you order the paint / brushes and ot
 Try to pay attention to the positive things you have achieved each day, and give yourself some acknowledgement for those things. And be kind to yourself when circumstances make it hard to follow any kind of plan.
 
 ### Don't Worry
-
 One of my favourite poems, by [Julia Darling](https://s3-eu-west-1.amazonaws.com/clare-test-001/BoobPencil/julia-darling.html), one of my favourite poets:
 
 **Don’t Worry**
@@ -229,7 +210,6 @@ are flying South. Beneath your feet
 worms aren’t worrying.
 
 ## Older covid stuff you probably already know
-
 - It is *a* coronavirus, not *the* coronavirus. There are versions of the common cold that are also coronaviruses. 
   - This strain is called COVID-19
   - It's different to ordinary 'flu in many ways, and will have a more significant impact (see articles / links below).

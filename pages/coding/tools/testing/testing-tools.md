@@ -5,7 +5,6 @@ permalink: /pages/coding/tools/testing/Testing-Tools
 ---
 
 ## Front End Tests
-
 No opinions being expressed here, these are just tools that have been used by clients and employers that I'm noting here for the sake of my memory.
 
 - [Cypress](/pages/coding/tools/testing/Cypress)
@@ -15,7 +14,6 @@ No opinions being expressed here, these are just tools that have been used by cl
 - [SOAP UI](https://smartbear.com/ppc/ready-api/soapui)
 
 ## Unit tests
-
 - [NUnit (commonly used with .Net)](https://nunit.org/)
 - [XUnit](/pages/coding/tools/testing/XUnit)
 - [QUnit](/pages/coding/tools/testing/QUnit)

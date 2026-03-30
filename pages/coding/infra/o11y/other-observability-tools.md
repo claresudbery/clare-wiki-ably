@@ -4,12 +4,10 @@ location: pages/coding/infra/o11y/leaf
 permalink: /pages/coding/infra/o11y/Other-Observability-Tools
 ---
 ## Kafster, burrow, Clarebot, honeycomb
-
   - See
     <https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit>
 
 ## Log sampling
-
   - I *think* this is when there are so many logs being generated that
     it is impractial to store / analyse all of them. So instead, just a
     random proportion are analysed
@@ -21,14 +19,12 @@ permalink: /pages/coding/infra/o11y/Other-Observability-Tools
         [<span class="underline">https://www.rsyslog.com/doc/v8-stable/tutorials/hash\_sampling.html</span>](https://www.rsyslog.com/doc/v8-stable/tutorials/hash_sampling.html)
 
 ## Kafka
-
   - Message queue / bus
   - Pub-sub model  
   - Various data sources publish to it, consumers reading that data
   - [This doc](https://docs.google.com/document/d/1BKEKz1indvtF2TSAGN88nHbEtKtvbehYwaqhWxseVV0/edit) (private to Clare) documents how Kafka was part of the logging solution at Eritrea.
 
 ## FileBeat / Lumberjack
-
   - Run on the hosts
 
   - Reading log files from disk, then passes data to logstash or kafka
@@ -59,7 +55,6 @@ permalink: /pages/coding/infra/o11y/Other-Observability-Tools
           - Dest - where data will end up
 
 ## Logrotate
-
   - logrotate used for Linux utilities, Java stuff like ES uses log4j
 
   - Config for httpd on thingelk hosts lives in
@@ -84,12 +79,10 @@ permalink: /pages/coding/infra/o11y/Other-Observability-Tools
             stuff is in a separate file.
 
 ## StatsD
-
 See
 <https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit>
 
 ## Prometheus
-
   - More info here:
     <https://docs.google.com/document/d/1ydXrsZX_g9uyvgMoZUovT0G8L5OcrXxRQDSWzw3ULDo/edit>
 

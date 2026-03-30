@@ -5,7 +5,6 @@ permalink: /pages/organising/tools/gadgets/Cat-Tracker
 ---
 
 ## Ubeequee Cat Tracker
-
 - Bought Oct 2022 - see emails with help dept to gmail addy, Oct 22 and Mar 23
 - Optimising functionality:
     - First time I went for a walk with it, it only tracked my location once, and claimed I was in Bickerdyke Court (I was in Crowcroft Park).

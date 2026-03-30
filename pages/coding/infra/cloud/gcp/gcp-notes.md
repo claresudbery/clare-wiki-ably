@@ -4,7 +4,6 @@ location: pages/coding/infra/cloud/gcp/leaf
 permalink: /pages/coding/infra/cloud/gcp/GCP-Notes
 ---
 ## Misc
-
   - To get at GCP and see our infrastructure there:
     
       - Go to console:
@@ -50,14 +49,12 @@ permalink: /pages/coding/infra/cloud/gcp/GCP-Notes
         <https://docs.google.com/document/d/1eeEXpBgsuWIIt_teRYAIbYxY9Zf7sdQNC6BKlw9BPVg/edit#heading=h.gjdgxs>
 
 ## GCP vs GCE
-
   - GCP is like saying “AWS” whereas GCE is like saying “EC2”
 
   - GCE is not a data centre for our context, it’s just a logical place
     where we have machines
 
 ## gsutil
-
   - See here:
     [<span class="underline">https://cloud.google.com/storage/docs/gsutil</span>](https://cloud.google.com/storage/docs/gsutil)
 
@@ -67,7 +64,6 @@ permalink: /pages/coding/infra/cloud/gcp/GCP-Notes
   - Used when working on closed indices
 
 ## Finding / logging into instances
-
   - This: **gcloud compute instances list --project acme-logging-prod |
     grep logstash**
 
@@ -121,7 +117,6 @@ permalink: /pages/coding/infra/cloud/gcp/GCP-Notes
             acme-thingelk-sandbox**
 
 ## Firewalls
-
   - How they work:
     
       - You can have ingress rules (define traffic coming IN to a
@@ -161,7 +156,6 @@ permalink: /pages/coding/infra/cloud/gcp/GCP-Notes
                 tags section.
 
 ## Metadata API
-
   - You can get the project of whatever gcp instance you’re logged into
     via gcp metadata: **curl -s
     "http://metadata.google.internal/computeMetadata/v1/project/project-id"

@@ -5,9 +5,7 @@ permalink: /pages/organising/tools/iAWriter
 ---
 
 ## Creating new content
-
 ### clare-tech:
-
 - do a git pull
 - use search function, or...
 - mt:
@@ -24,7 +22,6 @@ permalink: /pages/organising/tools/iAWriter
   - Find what you're looking for
 
 ### clare-wiki:
-
 - do a git pull
 - use search function, or...
 - check leafless site map
@@ -34,29 +31,24 @@ permalink: /pages/organising/tools/iAWriter
 - use [aa-wiki-scratch.md](/pages/aanew/Wiki-Scratch), in the aascratch folder.
 
 ## Ways of Finding Files
-
 ### Search icon
-
 - Magnifying glass, top left
 - Enter any search term
 - Will search both titles and file content
 
 ### Recent files
-
 - From inside any file:
   - Click the blue Back button plus text, top left
 - From Library:
   - Click "Recents" in the Smart Folders section
 
 ### Favourite folders stored in Library (quicker)
-
 - From inside any file:
   - Click the blue Back button plus text, top left
   - Click Library (top left)
   - Favourite folders are visible here
 
 ### Favourite folders stored in Browse (slower)
-
 - From inside any file:
   - Click the blue Back button plus text, top left
   - Click Library (top left)
@@ -65,7 +57,6 @@ permalink: /pages/organising/tools/iAWriter
   - Favourite folders are visible here
 
 ### Browsing
-
 - From inside any file:
   - Click the blue Back button plus text, top left
   - Click Library (top left)

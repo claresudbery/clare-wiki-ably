@@ -5,7 +5,6 @@ permalink: /pages/think/life/To-Do-List-Advice
 ---
 
 ## To do / to-do list advice
-
 1. Does it really need to be done?
 2. What would happen if it wasn't done?
 3. Can it be delegated?
@@ -15,7 +14,6 @@ permalink: /pages/think/life/To-Do-List-Advice
 7. Can it go in a lucky dip (a list of things you'd like to do - you'll draw items from it at random, on the understanding that the vast majority will never get done)?
 
 ## There's always enough time in the end
-
 [Originally posted on Mastodon here](https://mastodon.social/@claresudbery/110187307816170782)
 
 When I get in a flap about not having enough time to do all the things I have on my to do list, I calm myself down by reminding myself that it will all be fine in the end, and I will have enough time to do whatever I do.

@@ -6,7 +6,6 @@ permalink: /pages/organising/tools/OBS
 ---
 
 # Checklist when filming
-
 - Check lighting
     - I found this worked best:
         - no glasses 
@@ -32,7 +31,6 @@ permalink: /pages/organising/tools/OBS
     - Is anything crucial disappearing off the bottom / sides of the screen because aspect ratio?
 
 # Getting started
-
 - Download and install from obsproject.com
 - First time in:
     - Click through the differrent settings
@@ -122,14 +120,12 @@ permalink: /pages/organising/tools/OBS
 - [Filter out](<#filter out background noise>) background noise, otherwise you'll prob get noise from mouse and keyboard
 
 ## Avoid echoes
-
 - Disable sound source from "MacOS screen capture"
     - do this by selecting MacOS screen capture under sources (bottom half of screen)
     - then click the microphone icon on the right hand panel under "audio mixer", to mute
     - otherwise you get echoes if using Krisp microphone (see [below](<#filter out background noise>))
     
 ## Filter out background noise
-
 - Try filters...
     - Audio Mixer section is in the middle of the bottom half of the screen
     - Click the three dots on right hand side of Mic/Aux

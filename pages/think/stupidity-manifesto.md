@@ -7,7 +7,6 @@ permalink: /pages/think/The-Stupidity-Manifesto
 This "Stupidity Manifesto" came from my talk "Let's Stop Making Each Other Feel Stupid". You can see a video of the talk [here](https://www.youtube.com/watch?v=DSn47NA0rVg&t=5s).
 
 ## LET’S STOP MAKING PEOPLE FEEL STUPID. INSTEAD, LET’S…
-
 - Have an explicit policy of curiosity towards all things
 - Encourage each other to shout out if we discourage curiosity
 - Ask what people NEED to know, not what they know

@@ -5,7 +5,6 @@ permalink: /pages/organising/tools//Sample-Notepad++-Macros
 ---
 
 ## Notepad++ Macros
-
 - All macros are stored in %AppData%\notepad++\shortcuts.xml
 - You have to restart Notepad++ after editing shortcuts.xml, then the new/edited macros will be available from Macro menu
 - You don't have to edit shortcuts.xml - you can just play and record macros and do all management via the Macro menu
@@ -14,7 +13,6 @@ permalink: /pages/organising/tools//Sample-Notepad++-Macros
     - See "all-on-one-line" in the sample macros for an example.
 
 ## Sample Notepad++ Macros
-
 There are several sample macros below, and I may have some more in Dropbox\IT Training\Misc\SampleNotepad++Macros.xml
 
 ```xml

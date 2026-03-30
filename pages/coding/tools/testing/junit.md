@@ -5,7 +5,6 @@ permalink: /pages/coding/tools/testing/JUnit
 ---
 
 # MethodSource
-
 - Used if, rather than listing the parameters for a parameterised test, you want those parameters to be provided by a reusable method
 - Example:
 

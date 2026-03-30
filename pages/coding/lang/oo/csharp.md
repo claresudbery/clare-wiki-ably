@@ -5,7 +5,6 @@ permalink: /pages/coding/lang/oo/C-Sharp
 ---
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [interview-codebase-stage3-csharp (PRIVATE)](https://github.com/claresudbery/interview-codebase-stage3-csharp)
@@ -31,6 +30,5 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - MVC version of TopGame: Dropbox\IT Training\Web Stuff\TopGameForMVC
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/c) (C# category)
 - [C# string concatenation](https://docs.google.com/document/d/1uibHxv2kiuS5kgQxJHKEY1ET9LeSK-2V/edit)

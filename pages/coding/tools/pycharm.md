@@ -1,16 +1,13 @@
 # Keyboard shortcuts
-
 - Increase font size in all editors: Ctrl + Shift + .
 - Navigating back: Cmd + `[`
 
 ## Finding actions
-
 - Eg how to navigate back
 - Shift Shift and then select the Actions tab
 - Should be able to Cmd + Shift A but this started acting weirdly for me
 
 ## Configure PyCharm as a diff reporter for approval tests
-
 - Useful when running approval tests
     - eg the lift kata: https://github.com/emilybache/Lift-Kata
 - You have 3 options. Option 1 is my favourite.
@@ -34,7 +31,6 @@
         - Note: I tried configuring VSCode as a diff reporter, using info I found here, but I couldn't get it working: https://www.roboleary.net/vscode/2020/09/15/vscode-git.html
 
 ## Convert between snake case, camel case, etc
-
 - Install [this plugin](https://plugins.jetbrains.com/plugin/10985-case-conversion)
 - Works in Rider, Pycharm, IDEA etc (all JetBrains tools)
 - Download

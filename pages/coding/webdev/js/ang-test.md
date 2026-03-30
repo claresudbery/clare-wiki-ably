@@ -5,7 +5,6 @@ permalink: /pages/coding/webdev/js/Angular-Testing
 ---
 
 ## Useful links
-
 - Good testing practices:
     - https://timdeschryver.dev/blog/good-testing-practices-with-angular-testing-library
 - Testing the router:
@@ -24,7 +23,6 @@ permalink: /pages/coding/webdev/js/Angular-Testing
     - [More on declarations, providers, and import](https://stackoverflow.com/questions/39062930/what-is-the-difference-between-declarations-providers-and-import-in-ngmodule)
 
 ## Different ways of accessing html elements
-
 - [Cheatsheet here](https://testing-library.com/docs/react-testing-library/cheatsheet) for methods like `getByText`
 - [Some examples of clicking, typing and selecting](https://timdeschryver.dev/blog/good-testing-practices-with-angular-testing-library#filling-in-input-fields)
 - Some examples of [testing input validation here](https://timdeschryver.dev/blog/good-testing-practices-with-angular-testing-library#invalid-controls)
@@ -84,7 +82,6 @@ await checkbox1.click();
 ```
 
 ## Different ways of spying on dependencies
-
 1. Take dependency direct from component
 ```js
 const component = await render(MyComponent, {
@@ -135,7 +132,6 @@ expect(spy).toHaveBeenCalled();
 ```
 
 ## Different ways of creating test fixtures
-
 1. Use `TestBed.configureTestingModule`
 
 ```js
@@ -168,7 +164,6 @@ const { fixture } = await render(ParentRequestsComponent, {
 ```
 
 ## Imports, Declarations, Providers and Component Properties
-
 ```js
 const { fixture } = await render(ParentRequestsComponent, {
       imports: [
@@ -192,17 +187,13 @@ const { fixture } = await render(ParentRequestsComponent, {
 - [More on declarations, providers, and import](https://stackoverflow.com/questions/39062930/what-is-the-difference-between-declarations-providers-and-import-in-ngmodule)
 
 ### Imports
-
 Allow your test component to access any imports it needs.
 
 ### Declarations
-
 ### Providers
-
 Inject mocks and spy on them.
 
 ### Component Properties
-
 Pass in data / objects needed as @Input properties on your component.
 Mock outputs, eg submit buttons:
 ```js

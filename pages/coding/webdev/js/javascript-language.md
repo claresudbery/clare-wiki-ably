@@ -4,17 +4,14 @@ location: pages/coding/webdev/js/leaf
 permalink: /pages/coding/webdev/js/Javascript-Language
 ---
 ## Require
-
   - Define – first param is the things being included – ie dependencies
   - Require.config – sets up the names of things which are then used in
     a define statement
 
 ## Destructuring arrays and objects
-
 - "Destructuring is the act of unpacking elements in an array or object."
 
 ### Destructuring arrays
-
 - To destructure an array in JavaScript, we use the square brackets [] to store the variable names which will have values assigned to them from the array which currently stores the associated elements."
     - `const [var1, var2] = arrayName;`
 - The following two pieces of code are equivalent:
@@ -30,7 +27,6 @@ const setCount = countStateVariable[1];
 ```
 
 ### Destructuring objects
-
 - You can do a similar thing with objects, but in the simplest version you have to use the same property names as the original object:
 
 ```js
@@ -43,7 +39,6 @@ const { frontend, backend } = freeCodeCamp;
 ```
 
 #### Nested destructuring
-
 - You can also do it in a way where you only create variables of the leaves of a treelike object structure.
   - This can be confusing, because it makes it looks as though the intermediate nodes will also end up being variable names, but this is not actually the case:
 
@@ -118,14 +113,12 @@ demoFunction(clareTest);
 - [More here](https://www.freecodecamp.org/news/destructuring-patterns-javascript-arrays-and-objects/#:~:text=To%20destructure%20an%20array%20in,the%20array%20storing%20the%20element)
 
 ## Javascript String Interpolation
-
 ```
 const name = "Clare";
 const title = "This is ${name}'s page.";
 ```
 
 ## Javascript RegEx
-
 This will do case-insensitive matching use regex:
 
 ```
@@ -136,7 +129,6 @@ if (name.match(/Clare/i)) {
 ```
 
 ## Javascript case-insensitive RegEx and string interpolation
-
 You can't do normal Javascript string interpolation in regex unless you use the RegExp object. The below is equivalent to `name.match(/Clare/i)`, but now we're using `MY_NAME` in place of the hard coded "Clare". 
 
 ```
@@ -148,12 +140,10 @@ if (name.match(new RegExp(MY_NAME, "i"))){
 ```
 
 ## The spread function / spread syntax
-
 - When you see `...` next to parameter names in function definitions, this is called `spread syntax`
 - It's to do with passing iterable objects such as arrays into functions
 - It allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.
 - [More explanation here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
 
 ## Promises
-
 - See [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)

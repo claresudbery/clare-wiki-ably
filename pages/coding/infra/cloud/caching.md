@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cloud/Caching
 ---
 
 ## Intro
-
 - This page is about caching and caches.
 - There's a lot of caching-related stuff scattered throughout this site, eg...
     - [Cloudfront](/pages/coding/infra/cloud/aws/CloudFront)

@@ -5,13 +5,10 @@ permalink: /pages/coding/data/AWS-And-SSM
 ---
 
 ## AWS: Connect via localhost using AWS CLI and SSM
-
 ### Prerequisites
-
 AWS account with an AWS access key id and and aws secret access key
 
 ### Get yourself set up with the AWS CLI and SSM
-
   - Install AWS CLI: 
       - On a Mac:`brew install awscli`
           - More info
@@ -65,7 +62,6 @@ sudo ./sessionmanager-bundle/install -i /usr/local/sessionmanagerplugin
 `setx AWS\_PROFILE \<PROFILENAME\>`
 
 ### Connect Using SSM
-
 Start a session to access the remote server.
 
   - On command line:

@@ -5,11 +5,9 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Basics
 ---
 
 ## AWS Misc
-
 -	Status.aws.amazon.com for list of statuses
 
 ## AWS Getting Started
-
 Setting yourself up on first use:
 
 * Select region (often EU (Ireland)) from top right
@@ -25,7 +23,6 @@ Setting yourself up on first use:
   * After setting this up, sign out and sign in again
 
 ## AWS Navigation
-
 General navigation:
 
 * Select region (often EU (Ireland)) from top right
@@ -34,5 +31,4 @@ General navigation:
   * Then you can select Cloudwatch, Elastic Beanstalk etc
 
 ## AWS Logging using Cloudwatch
-
 - See [Cloudwatch page](/pages/coding/infra/cloud/aws/Cloudwatch#aws-logging-using-cloudwatch).

@@ -5,11 +5,9 @@ permalink: /pages/think/events/workshops/Remote-Coding-Tools
 ---
 
 ## Intro
-
 - This page has a list of tools you can use when running remote coding workshops
 
 ## Quick List
-
 - Visual Studio Code LiveShare extension
 - Dedicated Driver 
     - LF says easy to set up but a lot of disadvantages
@@ -30,20 +28,17 @@ permalink: /pages/think/events/workshops/Remote-Coding-Tools
     - But when the individual user sees a popup on screen, it's not visible on the shared screen - bit awkward for IDE refactoring tools
 
 ## AnyDesk Plus EC2 Instance
-
 - [AnyDesk](https://anydesk.com/gb/features/screen-sharing)
 
 Quick setup guide - see headings below.
 
 ### Go to Amazon instances
-
 - Login to Amazon (root user) and go to Instances
 - [Here](https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#Instances:)
 - Or select Services (top left) => Compute => EC2
 - then click Instances under the Instances heading on the left
 
 ### Create an EC2 instance
-
 - Click big Launch Instance button
 - Give it a name
 - Select OS 
@@ -63,7 +58,6 @@ Quick setup guide - see headings below.
 - Launch instance (big button at bottom)
 
 ### Connect to the instance
-
 - If it's an existing one, right-click the instance and select Connect
 - If you've just created it, click Connect to instance
     - Initially it'll say "weren't able to connect" because it'll still be setting it up
@@ -88,7 +82,6 @@ Quick setup guide - see headings below.
         - You can use Ctrl + right/left arrow to access the desktop
 
 ### Set up the instance
-
 - While in RDP and in the Windows instance you just connected to...
 - Use [this script here](https://github.com/approvals/ApprovalTests.Net.StarterProject/blob/master/install.windows.ps1)
 - This means copying the commented out line at the top and running it in an elevated PowerShell 
@@ -99,7 +92,6 @@ Quick setup guide - see headings below.
     - but you can set up anydesk (below) as soon as it's installed, which should be early on
 
 ### Set up AnyDesk
-
 - AnyDesk is installed early on in the process
 - As soon as you see the AnyDesk icon in the system tray, click it to launch Anydesk
 - Click the burger menu, top right, and Set password to get a password your users can use
@@ -108,7 +100,6 @@ Quick setup guide - see headings below.
     - (right-click Windows icon => Power => Restart)
 
 ### Give your ID and Anydesk pw to AnyDesk users
-
 - This is how they will connect
     - Because they have the pw, you can ignore the popup that asks you to accept their connection
 - You'll need a separate machine for each set of users (eg if running a workshop with pairs, a separate machine for each pair or mob - if only one mob, only one machine needed)
@@ -119,7 +110,6 @@ Quick setup guide - see headings below.
     - they can either enter it in the "Enter remote address" field at the top of the anydesk app, or they can use the following url - `https://go.anydesk.com/abcdefghi`, where `abcdefghi` is the 9-digit ID you have given them.
 
 ### Shut down or terminate your instance to save money
-
 - If you choose shut down (NOT restart) (right-click Windows icon => Power), you will not be charged by Amazon for ongoing compute time
     - you will still be charged (not much) for some storage
     - but it will be available to restart at any time: Instances => right-click => start instance
@@ -127,14 +117,12 @@ Quick setup guide - see headings below.
 - If you terminate the instance, it's gone forever but you won't be charged anything
 
 ### Stop AnyDesk from launching on startup on MacBook / MacOS
-
 - Not enough to go to systems preferences => Users and Groups
 - You have to delete items from `Library/LaunchDaemons` and `Library/LaunchAgents`
 - [full instructions here](https://anydesk.help/en/set-up-anydesk-to-auto-start/)
     - but when it says Shift + Ctrl + G, it means Shift + Cmd + G, and I couldn't copy/paste `Library/LaunchDaemons` and `Library/LaunchAgents` from the text.
 
 ### Gotchas
-
 - The AnyDesk invite button doesn't seem to work - see above
 - AnyDesk won't work unless you're attached to the instance via RDP and you've launched AnyDesk
 - While the instance is running, you will be charged for it - see above to see how to either shut it down or terminate it

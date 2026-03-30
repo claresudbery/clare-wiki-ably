@@ -5,7 +5,6 @@ permalink: /pages/organising/tips/non-tech/Sonos
 ---
 
 ## Adding a live music stream to Sonos
-
 (eg [midtempo.net radio station](https://midtempo.net/))
 
 I did it by following the [instructions here](https://support.sonos.com/s/article/260?language=en_US).
@@ -15,7 +14,6 @@ The only thing missing from that is that first of all you might have to add Tune
 And for reference, the streaming url is https://streamingV2.shoutcast.com/midtempo.
 
 ## Improving Speaker connectivity
-
 - Sept '25 - there have always been regular dropouts on the speaker in the study, but it seemed to be getting worse
 - I always thought it was the WiFi that was dropping, but when I looked in the Sonos app, it said it couldn't connect to the individual Play:1 (Play One) speaker
 - Also that speaker kept appearing and disappearing in the Aginet router mesh app, as though that speaker was dropping off the network

@@ -5,7 +5,6 @@ permalink: /pages/coding/hardware/Build-a-Gaming-PC
 ---
 
 ## Advice
-
 - check out https://www.logicalincrements.com/ - the entry/modest tiers would give great performance on Rocket League, Fortnite, League of Legends etc. The CoD games maybe only on lower settings (Steve L)
 - you can probably do less than a 2060 ... i think a 970ti was fine for witcher3 ... i was probably in the res up from 1080p also (John N)
     - My note: These numbers all represent screen resolution
@@ -21,5 +20,4 @@ permalink: /pages/coding/hardware/Build-a-Gaming-PC
 - Monitor: You need FreeSync for an AMD graphics card (eg Radeon) and G-Sync for an Nvidia card.
 
 ## Build your own Minecraft server
-
 See [this article](Minecraft server: https://uk.godaddy.com/blog/how-to-make-a-minecraft-server/)

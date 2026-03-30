@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Flutter
 ---
 
 # Flutter
-
 ## Sub-pages
-
 - [Construct hacks](flutter-construct/construct-hacks.md)
 - [Construct debugging](flutter-construct/construct-debugging.md)
 - [Construct infra](flutter-construct/construct-infra.md)
@@ -28,7 +26,6 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Performance](performance.md)
 
 ## Contents of this page:
-
 - [What is Flutter](<#what is flutter>)
 - [Sub-pages](<#sub pages>)
 - [Useful links](<#useful links>)
@@ -59,11 +56,9 @@ permalink: /pages/coding/tools/flutter/Flutter
 - [Accessibility](<#accessibility>)
 
 ## What is Flutter
-
 Flutter is an open-source software development kit which enables smooth and easy cross-platform mobile app development. You can build high quality natively compiled apps for iOS and Android quickly, without having to write the code for the two apps separately. All you need is one codebase for both platforms.
 
 ## Useful links
-
 - Flutter is the name of the sdk. The _language_ it uses is [Dart](dart.md)
 - [Getting started](https://docs.flutter.dev/get-started/install/macos/web)
 - [Codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#2)
@@ -72,7 +67,6 @@ Flutter is an open-source software development kit which enables smooth and easy
 - [DartPad - good tool for experimenting with Dart](https://dartpad.dev/)
 
 ## Installing Flutter
-
 - [Here](https://docs.flutter.dev/get-started/install/macos/web)
 - Troubleshooting: 
     - Rosetta 2 is only needed if you have Apple Silicon. It's not needed for - and can't be installed on - a Mac with an Intel processor.
@@ -82,9 +76,7 @@ Flutter is an open-source software development kit which enables smooth and easy
         - Then run `source ~/.bashrc`
 
 ## Create / run new app
-
 ### Command line
-
 - This is from [this tutorial](https://codelabs.developers.google.com/codelabs/flutter-app-testing?hl=en#2) to create an app for the purpose of exploring the test framework
 - Run these commands:
 
@@ -96,7 +88,6 @@ flutter run
 ```
 
 ### VS Code
-
 - From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
 - Create a project/app:
     - This will create a Flutter project directory that contains a simple demo app that uses [Material Components](<#material components>)
@@ -133,7 +124,6 @@ flutter run
     - For things defined in a library imported at the top of a file, choose right-click => Peek, or Option + F12
 
 ### Flutter tutorial
-
 - Run through the codelab [here](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#0)
 - See my (clare's) [list of commits](https://github.com/claresudbery/Flutter_codelab_namer_app/commits/main/) to see how different things can be implemented
 - See [Clare's codelab repo](https://github.com/flutter/codelabs/tree/main/namer/step_08) to see sample code generated during codelab
@@ -142,7 +132,6 @@ flutter run
 - [More tutorials and docs](https://flutter.dev/learn)
 
 ### Getting started in iOS
-
 - Flutter iOS Tutorial 
     - I tried the ios one: https://firebase.google.com/codelabs/firebase-ios-swift#2
     - Do not do this! It's out of date and none of it works as stated!
@@ -152,7 +141,6 @@ flutter run
     - ...but then it started up
 
 ### IntelliJ IDEA
-
 - From instructions [here](https://docs.flutter.dev/get-started/test-drive?tab=vscode)
 - Create a project/app:
     - File => New => Project...
@@ -183,17 +171,14 @@ flutter run
     - ...but it assumes you're in VS Code
 
 ## Dependencies
-
 - Dependencies are configured in `pubspec.yaml`
 - Update dependencies: `flutter pub get`
     - but generally VS Code should do this for you, whenever it detects that pubspec.yaml has changed
 
 ## Troubleshooting
-
 - See also [Debugging](flutter-debugging.md)
 
 ## Hot reload
-
 - Some things will become visible in an already-running app if you simply make changes in a file and save that file
   - Saving that file will automatically trigger a hot reload
 - The following things will become visible in an already-running app if you simply make changes in a file and save that file:
@@ -203,7 +188,6 @@ flutter run
 - I found some things did not work for hot reload, but I'm not sure if that was because I was checking out different commits, which might have been interpreted differently than saving the contents of a file
 
 ### Troubleshoot: Hot reload toolbar missing
-
 - It's possible to drag it and move it around the screen, so you might just have moved it somewhere odd
   - If you've pulled out the Widget Inspector into a separate window on another screen, the hot reload toolbar might have ended up there
     - In fact I found out that consistently if I pulled the Widget Inspector ouot into its own separate window, it took the hot reload toolbar with it
@@ -214,7 +198,6 @@ flutter run
 - If you still can't see the hot reload floating toolbar anywhere, try restarting VS Code.
 
 ## Widgets
-
 - Widgets are the elements from which you build every Flutter app. 
 - Even the app itself is a widget 
   - Typically in `main.dart`, you'll see a call to `runApp` with a class passed in
@@ -242,7 +225,6 @@ class SillyText extends StatelessWidget {
 ```
 
 ### App state
-
 - (NB: We have started to use [blocs](bloc.md) to manage state)
 - In the tutorial, a simple example is created with an app state that extends `ChangeNotifier` 
   - (See `main.dart` in [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/3a66e0d844a787c968ea6dc7a07de47d9ec692e0))
@@ -258,7 +240,6 @@ class SillyText extends StatelessWidget {
 - See [below](<#stateless vs stateful widgets>) for a discussion of stateless vs stateful widgets
 
 ### Stateless vs Stateful widgets
-
 - In [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/3a66e0d844a787c968ea6dc7a07de47d9ec692e0), `MyAppState` is used to manage all state, and the widgets don't have any state of their own
 - If you want a widget to manage its own state, use `StatefuWidget`
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/161dbb89bcf7d0ea0e4a3ea52049cb85fcd7437b) where a `StatelessWidget` is converted to a `StatefulWidget`
@@ -269,7 +250,6 @@ class SillyText extends StatelessWidget {
   - The underscore at the start of `_MyHomePageState` in the above commit makes that class private and is enforced by the compiler.
 
 ## Refactoring in VS Code
-
 - Access refactoring menu: Highlight relevant text, then...
   - Right-click => Refactor
   - Ctrl + Shift + R
@@ -288,15 +268,12 @@ class SillyText extends StatelessWidget {
   - Convert to StatefulWidget (from StatelessWidget)
 
 ## Seeing possible arguments to a method
-
 - place cursor just inside brackets and hit Cmd + Shift + Space. 
   - Might have to close down 1Password though! (Right click => quit on top system tray)
 - eg `copyWith` on line 76 in [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/9da9c43d8ca0b512b4ce905c6feaee98042d10bb)
 
 ## Visual styling and layout
-
 ### Themes
-
 - You can use the app theme to have consistent styling across the app
 - eg in [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/18ede7853d03a217d7432c0b89ff16dfb10df7a7)
   - you see this in `MyApp` in `main.dart`, setting up the theme for the app:
@@ -326,13 +303,11 @@ class SillyText extends StatelessWidget {
 ```
 
 ### Styling
-
 - You can do a lot with styling (colours, themes etc)
 - For more, see [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/aceb3f4d3ba266490848a2019c768bb0a789ae79) and the ones immediately preceding it
   - and [this part of the associated codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#4), which explains the changes made in this series of commits
 
 ### Centring widgets on the screen
-
 - You can arrange many things vertically on the screen by placing them inside a `Column` widget
   - One simple way to do this is to start with one widget, then wrap it in a `Column`, then add more widgets to the column
     - Place your cursor on your first item, bring up refactor menu (right-click => Refactor or Ctrl + Shift + R) and choose Wrap with Column
@@ -358,23 +333,19 @@ class SillyText extends StatelessWidget {
     - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/881ec63d550c06ab85598baa6065de50ebb66006)
 
 ### Creating space between elements on the screen
-
 - Add a `SizedBox` widget between other elements - often used to create visual gaps
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/4af6787861a2ff1593f87fc4a2f485a8874f9261)
 
 ### Preventing visual clashes with OS features 
-
 - Use `SafeArea` to ensure that a widget is not obscured by a hardware notch or a status bar
 - See [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/2bb70dbc783563ba598347c7ce9507ec701aa76f)
 
 ### Giving a button an icon
-
 - Use `ElevatedButton.icon`
 - See the sample code in [this codelab](https://codelabs.developers.google.com/codelabs/flutter-codelab-first#5)
 - See also [this commit](https://github.com/claresudbery/Flutter_codelab_namer_app/commit/1c4ebf290d36aaad02058cb808f27b22015d11f7)
 
 ### Other components helpful for layout
-
 - See the following:
   - [Navigation Rails](/pages/coding/tools/flutter/material.md#navigation-rails)
   - [Expanded](/pages/coding/tools/flutter/material.md#the-expanded-widget)
@@ -385,7 +356,6 @@ class SillyText extends StatelessWidget {
   - [ListView](/pages/coding/tools/flutter/material.md#listview)
 
 ## Accessibility
-
 - Flutter makes apps accessible by default. 
   - For example, every Flutter app correctly surfaces all text and interactive elements in the app to screen readers such as TalkBack and VoiceOver.
 - But you can also use `Text`'s `semanticsLabel` property to override the visual content of the text widget with a semantic content that is more appropriate for screen readers

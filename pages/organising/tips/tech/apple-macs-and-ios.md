@@ -6,9 +6,7 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 ---
 
 ## iOS
-
 ### Turn off default live photos
-
 - To stop your iPhone from taking Live Photos by default, 
 - you need to disable the Live Photo feature in the Camera app 
 - and then ensure your phone preserves those settings. 
@@ -18,23 +16,19 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 	- disable Live Photos by tapping the Live Photos icon 
 	- (it will have a slash through it when off). 
 ### Turn burst photos into just one image
-
 - Open the photo
 - Click on the burst icon top left
 - Choose favourite
 - Click done
 - Click "Choose only one favourite"
 ### Turn live photos into still images
-
 - You can just click the Live icon top left and turn live off, but it will still retain the original live recording so it doesn't take up any less space
 - To make it smaller, you have to duplicate the image and choose "duplicate as still photo"
 ### Turn timer on in iPhone camera
-
 - There's a tiny little arrow in the middle of the screen at the top
 - Click on that or swipe up
 - New controls will appear at bottom of screen scroll to see the far right end of thsoe controls - timer is there
 ### How to create a new iPhone Siri command
-
 - In Shortcuts app, click plus button top right    
 - search for first action, eg dictate text    
 - search for second action, eg add trello card    
@@ -52,11 +46,9 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 - say the phrase three times - it's a good idea to wait for the green tick at the end of each repetition
 
 ### How do i draw a quick diagram on my phone?
-    
 - Use the ability to draw in the photos app	
 - But also, the Notes app also has some diagram drawing functionality!
 ### Convert live photos to normal ones in ios
-
 - To convert multiple Live Photos to regular still photos on your iPhone, you can use the Photos app to select and save them as still images. You can also use the Shortcuts app to automate this process.  
 - Here's how to convert multiple Live Photos to still photos using the Photos app:  
 	- Open the Photos app and navigate to Live Photos: Scroll down to the "Media types" section, then select "Live Photos".  
@@ -75,7 +67,6 @@ permalink: /pages/organising/tips/tech/Apple-Macs-and-iOS
 - Important Note: Converting Live Photos to still photos essentially creates a duplicate of the key frame (the main still image) in the Live Photo. 
 	- The original Live Photo will still remain in your library, and the new still photo will be saved separately.
 ### Text manipulation in iOS 13
-
 - Long explanation of all the things (moving cursor around, selecting and highlighting text etc): [Text manipulation in iOS 13](https://ios.gadgethacks.com/how-to/ios-13-changes-way-you-navigate-edit-text-heres-place-cursor-make-selections-perform-edits-more-0203292/) 
 
 Short summary of what worked best for me:
@@ -114,9 +105,7 @@ Longer Summary:
 
 
 ## Macs
-
 ### Ventura OS - fingerprint recognition slow or unresponsive
-
 - Remember to manually lock your laptop when testing fixes, use Cmd + Ctrl + Q
     - Using the off button on the smart bar doesn't lock it!
 - Turn keyboard off and on again
@@ -125,18 +114,15 @@ Longer Summary:
 - Turn laptop off and on again
 
 ### How do I know whether I have Intel or Silicon, or x64 vs ARM64?
-
 -	Check About this Mac (top left) => Processor
 -	An Intel processor is x64
 -	An M1 processor = Apple Silicon = ARM64
 
 ### Mission Control
-
 - For some reason my brain confuses this with Activity Monitor (the equivalent of Windows Task Manager).
 - Mission Control is what you get when you do `Ctrl | Up-arrow` - shows you all running apps and spaces.
 
 ### Finding / quitting running apps 
-
 - [Detailed stuff here](http://osxdaily.com/2013/05/17/see-all-running-apps-mac-os-x/)
 - Options:
     - Cmd + option/alt + escape
@@ -156,14 +142,12 @@ Longer Summary:
 - [See below](<#diagnosing a constantly spinning fan>) for what to do if fan keeps going off
 
 ### Diagnosing a constantly-spinning fan
-
 - Start with [Activity Monitor](<#finding  quitting running apps>)
 - Useful article with more tips [here](https://mackeeper.com/blog/fix-macbook-pro-fan-noise-loud/)
     - When it says hold down D and then select a language, it just means the d key on your keyboard, not specifically upper case D.
     - When it says select a language, after you have done that just wait. No need to click on either of the buttons below ("shut down" and "restart").
 
 ### Specify location of screenshots
-
 - This in Terminal (see above for Google Drive path):
 
 ```
@@ -184,7 +168,6 @@ killall SystemUIServer
     - See above for how to find Google drive location
 
 ### Useful Keyboard Shortcuts
-
 - Log out: Cmd + Ctrl + Q
 - Sleep / wake:
     - Short-press power button
@@ -204,7 +187,6 @@ killall SystemUIServer
 - [shortcuts tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=ba3426a1-35e2-47d5-888d-445432271c8c&query=tag%1Fshortcuts%1FtagGuid%3A830603fb-b0ba-403f-9177-3e3ae2b8a9a0%1Eview%3AVIEW%2FALL_NOTES&)
  
 ### Problems with headphones
-
 - Problem: Output goes to headphones in some contexts but built-in speakers in others.
     - Sometimes it's even going to a second screen!
     - Solution: 
@@ -212,7 +194,6 @@ killall SystemUIServer
         - Check the checkbox 
 
 ### Laggy mouse
-
 - plug-in USB trackball mouse lagging or being jerky (not responding at all then suddenly catching up)
 - I found something online suggesting you [reset the SMC](<#resetting the smc>)
 - I also found something suggesting closing down background apps
@@ -220,7 +201,6 @@ killall SystemUIServer
 - and restart laptop
 
 ### Resetting the SMC
-
 - on my machine (ex-MT Macbook Pro with Ventura OS (June '23)), which has an Intel processor (which I can tell because in the Mac about dialog it says processor instead of chip), you do it like this:
 - Turn laptop off
 - Hold down the following four keys for 10 seconds:
@@ -231,59 +211,49 @@ killall SystemUIServer
 - Restart
 
 ### System Preferences - Top Tips
-
 - Keyboard shortcuts 
     - Hack: Alt/Option + F2 to open display pane, then Cmd + L to gt back to main preferences
 - When you're in a sub-dialog, don't close it to get out of it! Use the back button (top left) instead, then you can get back to other dialogs
 - Use the search input (top right)
 
 ### Setting up a new Mac Using Brew
-
 - [Brew: Mac Bulk App Installer For a New Mac OS Install using HomeBrew](https://www.switchingtomac.com/tutorials/how-to-make-a-bulk-app-installer-for-a-new-mac-os-install-using-homebrew/)
 - I made a brew script
     - Public notes [here](/pages/organising/tips/tech/Installing-A-New-Mac)
     - Clare notes [here](https://github.com/claresudbery/clare-tech/blob/master/organising/private/reinstalling-new-mac.md)
 
 ### Customise Finder to have home folder (and other folders) in favourites
-
 * Open Finder
 * Use Cmd+Shift+h to see Home folder
 * Use Cmd+Up-arrow to go one level up from where you currently are
 * Drag Home folder into favourites
 
 ### Customise touchbar so it has a sleep key on it (or any other keys)
-
 * System Preferences
 * Keyboard
 * Customise Control Strip
 * Drag what you want into the touchbar
 
 ### Show desktop on MacBook
-
 - What I've done is go into system preferences and set up a hot key - if you click the right hand alt / option key, that'll do it. It's a toggle, so you can press again to retore things to how they were.
 - System Preferences => Mission Control => Show Desktop - select "Right Option"
 - This seems to have changed now: No keyboard option available, and not in Mission control
 	* But (on work macbook) I went to Desktop & Dock => Show Desktop and set it to "Always on Wallpaper click", which is good enough
 
 ### Maximise window on Mac without creating separate desktop / space
-
 - double-click title bar at top of window to get it to fit Mac screen
 
 ### When dock / system tray moves to another monitor
-
 - If you drag the mouse to the bottom of a screen and keep dragging, the dock will move to that screen.
 - Go to the screen you want the dock on, drag the mouse to the bottom of the screen and keep dragging. The dock will come back.
 
 ### Take screenshot and copy straight to clipboard
-
 - Cmd + Ctrl + Shift + 4
 - (Cmd + Shift + 4 is just take a screenshot)
 
 ### If your browser suddenly goes hyper-zoomed-in on Chrome on a Macbook
-
 - Cmd + 0 will fix that.
 ### Screen rotation in MacOS Tahoe (like my work laptop)
-
 - You have to hold down the option key before you open System Settings, and then keep it held down while in the Settings dialog!
 - Then go to Displays and select the display you want to rotate, and there'll be a Rotation option available.
 ### Configure macbook or iphone to auto-complete your own shorthand
@@ -300,11 +270,9 @@ killall SystemUIServer
 	- Right-click at the top to show the Size col
 	- Order by Size
 ## Do simple video editing in QuickTime on Macbook
-
 - See [here](/pages/organising/tips/tech/misc-tech-tips.md#do-simple-video-editing-in-quicktime-on-macbook)
 
 ## Change power saving settings so Macbook doesn't shut down when inactive
-
 - I needed to do this when I was having issues with Google Drive failing to upload a large file
 - The problem seems to be that this becomes a background task, and the Macbook can't detect that it's happening so it shuts down mid task, and the upload gets cancelled and restarts when you re-activate your laptop
 - Solution:
@@ -315,16 +283,13 @@ killall SystemUIServer
     - You have to do it in the right order. Do Lock screen settings first (change to 5 and 10 mins). You won't be able to change the “prevent automatic sleeping" display setting setting until you've changed the Lock screen settings to something other than "Never", and it doesn't always pick up on those changed settings straight away - sometimes you have to close and open Settings and then go back to Lock screen settings to check it's changed everything
 
 ## Both iOS and Macs
-
 ### Find lost device
-
 - If it's in the house but you don't know where, you can get it to make a sound
     - For some reason this is only available via Find my iPhone on icloud.com - it doesn't work in the Find My app
     - You can also do this for your fanily's devices, but only if they are added to your family via Settings => iCloud account => Family sharing, and they accept the invite
         - Accepting the invite can be awkward - you might have to resend the invite
 
 ### Erase device / erase laptop
-
 - Via Find my Iphone (available via icloud in the browser, as well as the app on devices), you can erase any device (including MacBook). It will get erased the next time it connects to the internet, and you'll get a notification. 
 - Note for Clare: 
     - I erased a faulty work laptop on 13/11/21 (after it had been replaced with a new one). 
@@ -332,20 +297,16 @@ killall SystemUIServer
         - I guess this means that at some random point in the future I may get a notification that one of these devices has been connected to the internet... and be confused by it. So this is a note for my future self!
 
 ## To properly quit an app
-
 - Cmd + Q - removes it from system tray
 
 ## Troubleshooting
-
 ### If external hard disk is not appearing in Finder
-
 - In Finder, select Finder > Settings from the menu bar.
 - In the General section of settings, make sure you tick the boxes next to External disks and Hard disks.
 - Go to the Sidebar and check Hard disks and External disks there as well.
 - This setting gets changed if you've followed an online instruction telling you to drag the hard disk icon into Terminal. the only icon I've ever been able to find is the one in the Sidebar in Finder. If you drag this into Terminal, Terminal doesn't respond but it does disappear from the Sidebar and turns the above setting off in Settings! Most annoying!
 
 ### If you want to access an external hard drive in Terminal
-
 - These three steps:
     - `cd /`
     - `cd Volumes`
@@ -353,7 +314,6 @@ killall SystemUIServer
     - Then if for instance it is listed as `WD USB 2`, you can do `cd "WD USB 2"`
 
 ### If you are being told your external hard dive is read only
-
 - It may be that the hard disk is NTFS, which is a Windows format and doesn't work with Mac by default
 - I downloaded / installed [Paragon NTFS For Mac](https://shop.paragon-software.com/277/?scope=checkout&cart=255539&cfg=paragon2018)
     - The install required a restart and then I had to 
@@ -371,13 +331,11 @@ killall SystemUIServer
 - It was only a 10-day trial anyway. You have to pay for full version. It's £26.
 
 ## Which thunderbolt / USB-C port to use for charging
-
 - Apparently if you charge your Mac using the left hand ports, it can cause overheating and excessive CPU usage
 - Some recommend using the right hand ports instead
 - But I don't think my current MacBook (circa 2020 to 2024) has this problem!
 
 ## If your Spotlight index is not getting rebuilt
-
 - This happened to me after OS upgrade to Sequioia on Mac - I couldn't use the Spotlight search (cmd + spacebar) to search for apps any more - it wouldn't find any of them
 - I tried manually forcing index rebuild by adding the Application folder to Spotlight privacy (DSettings => Spotlight => Privacy) and then taking it out again, but that didn't work
 - I tried leaving the laptop on overnight for several days to give it time to rebuild index in background, but that didn't work
@@ -402,7 +360,6 @@ killall SystemUIServer
     - ! In this article they get the command slightly wrong. You can't use the flags all together as `-Eia off`, you have to do `-Ea -i off` instead. Otherwise you get `Error: unexpected indexing state (a)`
 
 ### What happened when I tried to rebuild Spotlight index from command line
-
 - It seemed like no matter how I tried to direct it ot other volumes, it only ever acted on `/System/Volumes/Data`:
 
 ```bash
@@ -473,7 +430,6 @@ Spotlight directory not found at root: /Applications
 ```
 
 ## Kernel panics
-
 - Sometimes when the Mac shuts down unexpectly you get an error report that talks abhout "panic" or "kernel panic".
   - "Sleep transition timed out after 180 seconds"
     - ...or at least I think this was the error. I didn't actually save the error, only the web page I found when I searched it (see below).    
@@ -485,17 +441,14 @@ Spotlight directory not found at root: /Applications
     - Everything here is dated 2020, which might be relevant to the fact that I have a 2020 model?
 
 ### Check battery level on keyboard
-
 - System Settings => bluetooth
 
 ## Edit images in the Preview app
-
 - Sometimes you don't get any edit features and it seems like you can't edit
   - When this happens, just select View => Show Markup Toolbar (near the bottom of the menu), or click the two forward-facing arrows, top right
 - If you want to change the dimensions of an image, use Tools => Adjust Size
 
 ## Get rid of the annoying blue indicator that pops up when caps lock is on
-
 - In Terminal: `defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO`
 	- ...but you'll prob need to prefix the whole command with `sudo`
 - Restart the Mac

@@ -4,14 +4,11 @@ location: pages/coding/tools/leaf
 permalink: /pages/coding/tools/Gradle
 ---
 ## Overview
-
 - If I understand correctly, `gradle` is a Java build tool that performs the same purpose as maven. My notes on [[maven|maven are here]].
 ## Historic Notes
-
   - These notes were originally written 2018
 
 ## Debugging a Java App Using IntelliJ IDEA and Gradle
-
   - This in root backend folder: **./gradlew bootRun** (in Windows cmd,
     just **gradlew bootRun**)
       - Note you’ll get a message saying Building 80% - this means
@@ -53,7 +50,6 @@ permalink: /pages/coding/tools/Gradle
             backend
 
 ## Gradle and Spring Boot 
-
   - Sample code base at [Cadogan (PRIVATE)](https://github.com/claresudbery/Cadogan)
   - build.gradle: jar section: manifest attributes – tell it what the main class, ie entry point for the code is
   - backendapplication.java:
@@ -79,7 +75,6 @@ permalink: /pages/coding/tools/Gradle
       - Then you go straight to controllers  
 
 ## Running tests
-
   - ([Sample code base for Clare only](https://github.com/claresudbery/Cadogan))
   - There are two sets of tests in the backend: unit tests and
     integration tests.

@@ -4,7 +4,6 @@ location: pages/think/code-princ/leaf
 permalink: /pages/think/code-princ/Katas
 ---
 # Table of contents
-
 - [[#Kata definitions]]
 - [[#GitHub Repos]]
 - [[#Tools]]
@@ -14,7 +13,6 @@ permalink: /pages/think/code-princ/Katas
 		- [[#Quick start guide if you're working solo]]
 
 ## Kata definitions
-
 - [Made Tech Learn Tech katas](https://learn.madetech.com/technology/katas/)
     - (includes Bowling, Mumbling, Number to LCD, Roman numerals, Snake, Tennis, Tennis Refactoring, Turnstile, Wordwrap, Test Framework, Video Store and Mars Rover)
     - Note that the bowling kata can sometimes be a bit opaque (because if you don't play the game, the scoring is quite complex), but I've updated the [readme on the Made Tech site](https://learn.madetech.com/technology/katas/bowling/) to have a simpler explanation (in case that gets lost, I've also added it to the readme in [my repo](https://github.com/claresudbery/bowling-kata-ruby))
@@ -28,7 +26,6 @@ permalink: /pages/think/code-princ/Katas
 - There are six good refactoring katas pinned to the top of [Emily Bache’s github account](https://github.com/emilybache)
 
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - The elevator kata:
@@ -51,9 +48,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [tic-tac-toe kata in Ruby](https://github.com/claresudbery/tic-tac-toe-kata)
     - Also, [this is a nice implementation of the tic-tac-toe kata](https://github.com/Richard-Pentecost/tic_tac_toe) from our Made Tech academy engineers Richard and Claire, pairing together - note that it has a good example of using TDD to code the minimax game-playing AI algorithm
 ## Tools
-
 ### Cyber-dojo
-
 - [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
 - If you follow [this link](https://cyber-dojo.org/creator/choose_problem) you’ll see a list of katas on the left and then when you select one it describes the kata
 
@@ -62,7 +57,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [[#Quick start guide if you're working solo]]
 
 #### Quick start guide if you're working in "classroom" mode 
-
 - ...for instance several pairs working independently on the same exercise:
 - Go to home page
 - Click "create a new practice"
@@ -82,7 +76,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - https://cyber-dojo.org/dashboard/show/
 
 #### Use traffic lights to spot people who might need help
-
 - No new traffic lights:
     - If one of the pairs tries to take too big a step, and doesn’t run the tests for ages, their row won’t show any new traffic lights. Remind them not to write too much code at once, TDD is about small steps.
 - Long row of yellow traffic lights:
@@ -92,7 +85,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 
 #### Quick start guide if you're working solo
-
 - Go to [main home page](https://cyber-dojo.org/creator/home) 
 - If this is your first time: Select "Create a new practice"
     - If you've already started work: Click "enter an existing practice" and enter your saved ID

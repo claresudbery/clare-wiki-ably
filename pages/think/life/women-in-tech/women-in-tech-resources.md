@@ -5,14 +5,12 @@ permalink: /pages/think/life/women-in-tech/Women-in-Tech-Resources
 ---
 
 ## Lists
-
 - See OneDrive/TW-Stuff/Organising/Notes (only available to Clare, but all the publicly-facing info is now moved to the [public spreadsheet](https://docs.google.com/spreadsheets/d/1rUVdL8GbVa32JWuIW3UbFi2gKzQwY7TDLlaqkVzzWos/edit?usp=sharing) anyway)
 - List of non-male speakers [here](https://docs.google.com/spreadsheets/d/1rUVdL8GbVa32JWuIW3UbFi2gKzQwY7TDLlaqkVzzWos/edit?usp=sharing)
 - A bunch of really interesting non-men sharing a bunch of useful resources: https://twitter.com/thecodecleaner/status/1369046027437740033?s=20 (Twitter handles: @Kendra_Little, @SQLStephanie, @Julia_Hayward, @HobbitsWife, @sheel9, @HotCupOfTeaPls, @CeriShaw, @Labyrinthsprite, @DrPremaLatha_, @KateBrierton, @VictoriaJMS, @apaipi (Aino Vonge Corry), @CaraHanman, @Sazzle, @ZaraSheldrake, @ClaireyHannon, @ClareTunstall)
 - Clare only: See lists.md in clare-tech.
 
 ## Docs and Blog Posts
-
 - My InSimpleTerms Blog  
   - [Gender category](https://insimpleterms.blog/category/gender)
   - [Women in Tech category](https://insimpleterms.blog/category/women-in-tech)  
@@ -27,5 +25,4 @@ permalink: /pages/think/life/women-in-tech/Women-in-Tech-Resources
   - [Clever Women*, Come Join Technology](https://medium.com/a-woman-in-technology/clever-women-come-join-me-773cf7fc8dc8) (my Medium blog post)
 
 ## Misc
-
 - [Women_In_Tech tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=dbccb66e-f286-40ac-a13e-93848ca66909&query=tag%1FWomen_In_Tech%1FtagGuid%3A9144cebd-cf8c-4914-8969-595589defe15%1Eview%3AVIEW%2FALL_NOTES&)

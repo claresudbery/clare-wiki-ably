@@ -6,12 +6,10 @@ permalink: /pages/think/life/Misc-Life-Stuff
 
 
 ## Misc
-
 - [Useful tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=7ae17d68-c956-43fd-841f-a3daba3b85ef&query=tag%1FUseful%1FtagGuid%3A445d553a-0d3d-80ce-5f4e-641a12368bae%1Eview%3AVIEW%2FALL_NOTES&)
 - Life coach [Nigel Wood, aka Peppermint Giraffe](https://www.peppermintgiraffe.co.uk/about-nigel-wood-coach)
 
 ## Attaching bespoke labels and text and images to tins and mugs etc
-
 You need:
 
 - Waterslide decal transparent printing paper (our current printer - 2023 - is an inkjet so I got that kind) (fwiw the make of what I got was MDP / Mr Decal Paper)
@@ -39,7 +37,6 @@ You need:
     - It will keep sliding around for a while! Try to anchor it with one finger.
 
 ## Loosening / untightening a stuck old screw
-
 - I couldn't undo a screw in an old tap so I ended up following [this advice](https://www.familyhandyman.com/project/how-to-remove-a-stuck-screw/) 
 - I needed: 
   - some penetrating oil (I bought WD40 specialist fast release penetrant)
@@ -50,7 +47,6 @@ Cat litter
 - see clare-tech (accessible to Clare only)
 
 ## How to bleed radiators
-
 - Boiler should be off and radiators cold
 - Start furthest away from boiler and work towards boiler, apart from...
   - Do downstairs before upstairs
@@ -60,11 +56,9 @@ Cat litter
   - Increase the pressure of the system by topping it up
 
 # Cream / balm / ointment recommended by Emma / Dolly for itchy skin
-
 Delhicious High tea moisture balm
 
 # Lasting Power of Attorney (UK)
-
 - These notes were made March '25 and in some places apply specifically to choices I made. You might be different!
 - [Online info here](https://www.gov.uk/power-of-attorney)
 - The guide referred to in the form is [this one here](https://www.gov.uk/government/publications/register-a-lasting-power-of-attorney/lp13-register-your-lasting-power-of-attorney-a-guide-web-version)
@@ -117,7 +111,6 @@ They are asserting that they are happy that everyone involved knows what they're
 They can also be the witness
 
 ## How to fix velux blind with frayed cord
-
 - Search terms: "velux blinds", "broken blinds"
 - [This video is really helpful](https://www.youtube.com/watch?v=xtQFFkVeaNc)
 - ...and [here's a good knot to use (the "sheet bend")](https://youtu.be/Qfwc50zKmW0?si=cRx6uHlm3I7qVrhY)

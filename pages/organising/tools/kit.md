@@ -5,7 +5,6 @@ permalink: /pages/organising/tools/Kit
 ---
 
 ## How to avoid gotchas when posting
-
 - 1. [[#1. Don't copy/paste from previous posts without hitting Edit|Don't copy/paste from previous posts without hitting Edit]]
 - 2. You CAN edit existing posts. (see [[#Edit published content|section below]])
 - 3. [[#3. Things to add at the last step|Don't forget to add extra stuff on the last step of publishing]]
@@ -15,24 +14,20 @@ permalink: /pages/organising/tools/Kit
 - 7. Be aware that bullet lists are formatted such that there's no decent space between the end of the list and the next piece of text. The best solution is to use Shift + Enter before the next piece of text.
 - 8. It helps to refer to other people and all their good shit. Don't make it just about you!
 ### 1. Don't copy/paste from previous posts without hitting Edit
-
 What I was doing was going to the Broadcasts page, finding a previous post, clicking on it and then copy/pasting sections with links. The problem with this is you don't get proper urls - instead you get preview versions, and your new post will be published with preview links (eg https://preview.convertkit-mail2.com/click/dpheh0hzhm/aHR0cHM6Ly9xdWVlbi1vZi1xdWVzdGlvbnMua2l0LmNvbS8=, which leads to my Kit home page) instead of proper links.
 
 But what I should have done is click the Edit button on the previous post and THEN copy/paste the section with links. That way I get the proper urls and not the preview version.
 ### 3. Things to add at the last step
-
 - Add a thumbnail image
 - Add alt text for the thumbnail
 - Tick the box to feature the post at the top of my profile
 - Scroll down and expand Advanced, then add a summary of the article for social media etc
 - If you forget and need to do this after the fact, see [[#^seo-settings|section below on SEO settings]]
 ### 4. Publish to the right subscribers
-
 - Select the right subscribers in the final step
 - Add `[LLM]` or `[Tech Leads]` to the start of the title
 	- ...unless it's either, in which case don't bother, and publish to all subscribers
 ### 5. Include a link for sharing
-
 - Include a link for sharing
 - Add this text at the bottom: 
 	- "🔗 Want to share this article or save it for later? [Here's a handy link for you!](https://queen-of-questions.kit.com/posts/i-m-a-tech-lead-but-my-senior-devs-have-better-technical-skills-am-i-losing-my-edge)"
@@ -43,7 +38,6 @@ But what I should have done is click the Edit button on the previous post and TH
 		- ...unless you're me. I have a shortcut in Chrome bookmarks: `Admin/Utils`
 		- I originally used [this process file](https://github.com/claresudbery/ai-general/blob/main/misc%20tools/kit%20link%20generator/.windsurf/processes/KitLinks.process.md), and documented the tool creation in [this blog post](https://queen-of-questions.kit.com/posts/llms-how-can-i-make-a-quick-thing).
 ## Quick setup notes
-
 - I've used Kit (formerly ConvertKit) to create a newsletter
 - It was recommended to me by the Stacking the Bricks / 30x500 product development course
 - You can subscribe to my newsletter [here](https://queen-of-questions.kit.com/)
@@ -75,7 +69,6 @@ But what I should have done is click the Edit button on the previous post and TH
 
 
 ## Find pages and forms
-
 - I have subscriber forms, which also double as permanent pages, in the following places...
 - Editable/configurable via Grow => Creator Profile:
 	- Creator profile (effectively main home page): https://queen-of-questions.kit.com/
@@ -84,11 +77,9 @@ But what I should have done is click the Edit button on the previous post and TH
 	- Freelance career newsletter: https://queen-of-questions.kit.com/freelance-career-subscribe
 	- Landing page: https://queen-of-questions.kit.com/landing
 ## Create the capability for more than one "newsletter"
-
 1. [[#1. The simple way of having multiple newsletters|The simple way]]
 2. [[#2. The more complicated way of having multiple newsletters|The more complicated way]]
 ## 1. The simple way of having multiple newsletters
-
 - Grow => Subscribers
 - Scroll down until you see "Manage Subscriber Preferences" over on the right - click this
 - Create "topics of interest" as per instructions on screen
@@ -99,19 +90,16 @@ But what I should have done is click the Edit button on the previous post and TH
 	- The UI says they get it when they click "Update preferences" but it's actually "Update profile" (or it was for me, anyway).
 
 ## 2. The more complicated way of having multiple newsletters
-
 I think maybe when I wrote the notes, the simple way didn't exist yet!
 
 I did this by automatically tagging / segmenting people who signed up via different forms designed to represent the different "newsletters", using the following steps:
 ### Create forms
-
 - I created two forms (Grow => Landing pages & forms), and gave them both urls (form => edit => settings => domain name, then click Add, then click Save, then Publish back on the main page):
 	- Subscribe to Technical leadership newsletter: https://queen-of-questions.kit.com/tech-lead-subscribe 
 	- Subscribe to Freelance career newsletter: https://queen-of-questions.kit.com/freelance-career-subscribe
 - You can now add links to your creator profile ([mine is here, still a work in progress](https://queen-of-questions.kit.com/)) and landing page ([mine is here, still a work in progress](https://queen-of-questions.kit.com/landing)) that will take people to these forms.
 
 ### Set up tags and automations
-
 - ! It turns out you don't NEED to use tags for this next bit - see [adding segments](<#set up segments>) - but I decided I liked the idea of having tags
 - Then I created two tags
 	- Grow => Subscribers
@@ -123,7 +111,6 @@ I did this by automatically tagging / segmenting people who signed up via differ
 	- For each form, I set it up to add the relevant tag
 	- ! Note that you can also set up automations for the landing page and creator profile forms, so you can effectively customise these to subscribe people to a particular newsletter 
 ### Set up segments
-
 - I created two segments, one for each tag (but see below for how to do it without tags)
 	- Grow => Subscribers
 	- Scroll down on the right, find Segments => Create a Segment
@@ -146,7 +133,6 @@ I did this by automatically tagging / segmenting people who signed up via differ
 
 ## Routine actions
 ### Change which posts are featured on subscriber page
-
 When posting...
 
 - The last page when clicking Continue to publish
@@ -169,13 +155,11 @@ Change the thumbnail for posts featured on subscriber page ^seo-settings
 	* The mistake I made was to click Edit. You have to NOT click Edit. 
 
 ## Edit published content
-
 - You CAN edit broadcasts when they are web only (not emailed)
 - It's not obvious from the main screen but go to Send => Broadcasts
 - Open the broadcast by clicking on the title, NOT by three dots => Open
 - Now you'll see an edit button at the top right
 ## Get a shareable url for a published post
-
 1. Go to the Broadcasts page and click on your broadcast's title
 
 2. Click the "Open" button at the top right of the report page
@@ -183,18 +167,13 @@ Change the thumbnail for posts featured on subscriber page ^seo-settings
 3. Copy the URL from your browser's address bar - this is your shareable link
 
 ## Troubleshooting
-
 ### Bad gateway error (502)
-
 - This appeared briefly late at night and was fixed by their team - don't know what the problem was (see emails 14/10/25)
 ### Bad formatting of bullet lists
-
 - this was a css problem and was fixed by them who, "have added some CSS codes to your creator profile and here is how a public broadcast now looks like, please see the screenshot below for your reference."
 - (see emails on 1/10/25)
 ### Deleting test broadcasts
-
 - "Unfortunately, we can't delete the Broadcast email that sent out already."
 ### Removing the X/Twitter share button from your pages
-
 - They sorted it out for me: "I added a CSS code to remove the X share button."
 - See emails 8/4/25

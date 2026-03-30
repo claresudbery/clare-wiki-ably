@@ -5,11 +5,8 @@ permalink: /pages/coding/tools/flutter/Performance
 ---
 
 # Performance
-
 ## Contents of this page:
-
 ## Improving web performance
-
 - [Optimizing performance in Flutter web apps with tree shaking and deferred loading](https://medium.com/flutter/optimizing-performance-in-flutter-web-apps-with-tree-shaking-and-deferred-loading-535fbe3cd674)
   - Includes:
     - Description of tree shaking and how the `dart2js` compiler works to optimize and eliminate dead code, by excluding unused classes or functions from the compiled JavaScript bundle

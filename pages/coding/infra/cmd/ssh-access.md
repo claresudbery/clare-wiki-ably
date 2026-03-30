@@ -4,11 +4,9 @@ location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/SSH-Access
 ---
 ## Setting up ssh keys on your machine
-
 - Everything you need is [here on my Git page](/pages/coding/tools/Git#use-ssh-to-access-repos-instead-of-https).
 
 ## SSH Access to Servers (Mac and Windows)
-
   - \!\! Remember your backend code might be running in a docker
     container, so you won’t see the code directly on the instance – you
     have to look into the docker container
@@ -44,7 +42,6 @@ permalink: /pages/coding/infra/cmd/SSH-Access
           - For more on how to use PuTTY, see PuTTY section below
 
 ## Copying Files From an SSH-ed Instance
-
   - To copy files, use SCP command or PSCP on Windows with Putty
     installed (see [above](<#ssh access to servers mac and windows>))
       - SCP on a Mac:
@@ -79,18 +76,15 @@ permalink: /pages/coding/infra/cmd/SSH-Access
                 [<span class="underline">https://it.cornell.edu/managed-servers/transfer-files-using-putty</span>](https://it.cornell.edu/managed-servers/transfer-files-using-putty)
 
 ## PuTTy Tips
-
 - You can configure the user name (eg ec2-user) so you don't have to type it in every time - on the left, Connection | Data and then **Auto-login username**. Don't forget to go back to Session (left) and click Save.
 - When you make changes to a config, you have to go back to Session (top left) and click Save for those changes to stick.
 - You can use **SSH tunnel** (on the left - Connection | SSH | Tunnels) to attach a port to an SSH configuration and forward from that port to your server via SSH (you have to manually open the session first for it to work).
 
 ## Copying files between a remote AWS SSM instance and your local machine
-
 - SSM - AWS Systems Manager Session Manager.
 - [Details here](https://www.tripwire.com/state-of-security/security-data-protection/cloud/aws-session-manager-enhanced-ssh-scp-capability/)
 
 ## Using ssh to access GitLab
-
 First make sure you have a GitHub account. If you don't have one already, you can sign up (it's free): https://github.com/ 
 
 Then you will need to create an SSH key and add it to both GitHub and GitLab. The following instructions tell how to create / add an SSH key to GitHub: https://help.github.com/articles/generating-an-ssh-key/. 

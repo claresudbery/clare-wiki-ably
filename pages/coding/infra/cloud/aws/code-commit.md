@@ -4,11 +4,9 @@ location: pages/coding/infra/cloud/aws/leaf
 permalink: /pages/coding/infra/cloud/aws/AWS-CodeCommit
 ---
 ## Historic Notes
-
   - These notes were originally written 2018
 
 ## Before Accessing the Code
-
   - Visit AWS Management Console:
     [<span class="underline">https://829851215903.signin.aws.amazon.com/console</span>](https://829851215903.signin.aws.amazon.com/console)
   - If not already done, enter your credentials
@@ -19,7 +17,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-CodeCommit
   - Move onto “Accessing the Code” below.
 
 ## Accessing the Code
-
   - (first see “before accessing the code”, above)
   - Visit AWS Management Console:
     [<span class="underline">https://829851215903.signin.aws.amazon.com/console</span>](https://829851215903.signin.aws.amazon.com/console)
@@ -44,7 +41,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-CodeCommit
           - You might not have to repeat this step for every repo
 
 ## Ssh Access
-
   - In Terminal:
       - Cd .ssh (in home folder)
       - Vi \[your-git-name\]-github.pub

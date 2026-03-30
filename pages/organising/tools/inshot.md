@@ -5,7 +5,6 @@ permalink: /pages/organising/tools/Inshot
 ---
 
 ## To add your own sound
-
 - Create video
 - Select the part you care about by tapping on it at thew bottom of the screen.
 - Scroll along the toolbar just above, until you reach volume. Turn the volume all the way down. This will mute the original sound.

@@ -4,12 +4,10 @@ location: pages/coding/tools/testing/leaf
 permalink: /pages/coding/tools/testing/Karma
 ---
 ## What is karma
-
   - **Karma** is a tool which lets us spawn browsers and
     run **Jasmine** tests inside of them all from the command line.
 
 ## Running Jasmine tests using karma
-
   - Run these commands:
   - In GitBash:
       - This: **npm install**
@@ -23,7 +21,6 @@ permalink: /pages/coding/tools/testing/Karma
             --single-run**
 
 ## Troubleshooting
-
   - If any problems…
       - **npm install karma --save**
           - Puts it in node-modules and updates package.json
@@ -38,7 +35,6 @@ permalink: /pages/coding/tools/testing/Karma
             demand.
 
 ## Leaving the test runner in the background
-
   - You can just go to dts-frontend and run **make jstest**
       - This runs tests but doesn’t leave the test runner going
   - To have the test runner running constantly in the background: **make

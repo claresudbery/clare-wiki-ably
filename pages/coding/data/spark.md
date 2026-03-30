@@ -5,7 +5,6 @@ permalink: /pages/coding/data/Spark
 ---
 
 ## Useful Links
-
 - [Spark Built-In Functions](https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.functions$)
 - [Spark documentation](https://spark.apache.org/docs/latest/api/scala/index.html#package)
 - [Spark dataset functions](https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.Dataset)

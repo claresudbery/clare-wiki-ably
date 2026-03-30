@@ -4,7 +4,6 @@ location: pages/coding/infra/o11y/leaf
 permalink: /pages/coding/infra/o11y/Logstash
 ---
 ## Misc
-
   - To see how logstash works:
     
       - This: **sudo** **less /etc/logstash/logstash.conf**

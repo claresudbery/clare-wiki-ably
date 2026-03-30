@@ -7,9 +7,7 @@ permalink: /pages/think/leading/Reading-Lists
 Note that a lot of recommended reads will be scattered around in relevant topic pages and won't be listed here.
 
 ## Daily Reads (Blogs etc)
-
 ### Blogs and Sites
-
 - Internal tech channels used by your colleagues (for me at the time of writing, that's Slack) 
 - [afreshcup.com/](https://afreshcup.com/) - Aggregator of general software dev content
 - [Hacker News](https://news.ycombinator.com/) - Aggregator of industry-wide content on computer science and entrepreneurship
@@ -23,7 +21,6 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 - There are a few good documentary style videos (VueJS, Elixir, GraphQL etc) on [honeypot.io](https://cult.honeypot.io/originals)
 
 ### Podcasts
-
 - [Troubleshooting Agile](https://conversationaltransformation.com/troubleshooting-agile-podcast/) - a weekly problem-solving session hosted by Douglas and Jeffrey on software delivery and team productivity.
 - [GreaterThanCode](https://www.greaterthancode.com/) - - Jessica Kerr (@Jessitron) is one of the hosts
 - [The Making Of](https://www.thefemalelead.com/podcast-1) from [The Female Lead](https://www.thefemalelead.com/) 
@@ -93,7 +90,6 @@ Note that a lot of recommended reads will be scattered around in relevant topic 
 
 
 ## Reading List
-
 See Trello (Clare MT Trello) for more (for now).
 
 - [You're About to Make a Terrible Mistake: How Biases Distort Decision-Making and What You Can Do to Fight Them](https://www.amazon.com/Youre-About-Make-Terrible-Mistake/dp/0316494984)
@@ -101,7 +97,6 @@ See Trello (Clare MT Trello) for more (for now).
 - [Retrospectives Antipatterns, by Aino Corry](https://metadeveloper.com/retrospective-antipatterns/) - I have this on Kindle. To find it in browser, search Amazon past orders.
 
 ## See also
-
 - Clare MT Trello (Clare only)
 - Alternate Mondays Trello (Clare only)
 - Goodreads.com - I have a "Want to read" list and a "want to listen" list

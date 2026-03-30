@@ -5,18 +5,15 @@ permalink: /pages/coding/tools/Rider
 ---
 
 ## Overview
-
 Rider is an IntelliJ tool very much like Visual Studio
 
 ## Troubleshooting    
-
 - In Rider when I accidentally click in gutter and open horrid window on left
   - right click in horrid area => close annotations
 - Deleting files on left in file explorer:
 	- It's not obvious - choose Edit from the context menu and there is a whole sub-menu including a Delete option
 
 ## Useful shortcuts
-
 - Shift + Shift to search everywhere
 - When working on remote machines, might need to change keymap:
   - Shift + Shift then type `keymap`
@@ -32,7 +29,6 @@ Rider is an IntelliJ tool very much like Visual Studio
 - Comment out a block of code - Alt + Cmd + /
 
 ## Convert between snake case, camel case, etc
-
 - Install [this plugin](https://plugins.jetbrains.com/plugin/10985-case-conversion)
 - Works in Rider, Pycharm, IDEA etc (all JetBrains tools)
 - Download
@@ -44,7 +40,6 @@ Rider is an IntelliJ tool very much like Visual Studio
     - Edit => Convert case
     - Select Plugin in plugin manager for more help
 ## Continuous Testing (like nCrunch)
-
 - See [instructions here](https://www.jetbrains.com/help/rider/Work_with_Continuous_Testing.html#:~:text=Enable%20continuous%20testing%20in%20a,Continuous%20Testing%20on%20the%20left.)
 	- ...but they seem to be out of date? Or maybe my tool is out of date?
 	- They say settings are under `Build, Execution, Deployment | dotCover | Continuous Testing` 

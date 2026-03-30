@@ -4,7 +4,6 @@ location: pages/coding/infra/o11y/leaf
 permalink: /pages/coding/infra/o11y/Kibana
 ---
 ## User guide
-
   - \! Date/Times are displayed in Kibana in UTC
     
       - Headline dates in Nagios alerts are not in UTC, but if you drill
@@ -263,7 +262,6 @@ permalink: /pages/coding/infra/o11y/Kibana
         way to livelk (see above)
 
 ## Jmxtrans is a translator
-
   - ...between kafka and graphite
 
   - Kafka has its own internal mettrics which go via JVM in a
@@ -282,7 +280,6 @@ permalink: /pages/coding/infra/o11y/Kibana
     that variable (eg acme-logging-prod)
 
 ## Use json to access Kibana API
-
   - Instead of using the Kibana UI, you can query the Kibana API
     directly
 

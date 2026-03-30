@@ -75,7 +75,6 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 
 ## Specific types of workshop in more detail
 ### Value Stream Mapping
-
 - [Value Stream Mapping](https://kanbanize.com/lean-management/value-waste/value-stream-mapping/)
 - Good podcast about this [from Codurance here](https://www.codurance.com/publications/podcasts/2019-11-18-value-stram-mapping)
 - you need a lot of horizonal width but not a lot of height
@@ -110,7 +109,6 @@ See also [Workshop techniques](/pages/think/events/workshops/Workshop-Techniques
 	- At this point you can do root cause analysis / five whys to identify the cause of the bottleneck
 
 ### Hypothesis workshops
-
 Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020 (see also screenshots below):
 
 - in the context of replacing legacy - the point is that you are revisiting the things your system already does, and asking how probable is it that users will even need some of that stuff 
@@ -135,7 +133,6 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 ![hypothesis-workshops-3.png](/resources/images/hypothesis-workshops-3.jpg)
 
 ### Inverse Conway Manoeuvre 
-
 Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.madetech.com/resources/webinars/avoiding-the-legacy-trap-how-to-ensure-your-legacy-decisions-arent-holding-back-your-modernisation) August 2020 (see also screenshots below):
 
 - Your software systems / components will likely match your org structure
@@ -148,11 +145,9 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 ![inverse-conway-manoeuvre-2.png](/resources/images/inverse-conway-manoeuvre-2.jpg)
 
 ### Measures of Success
-
 ![Measures of success workshop agenda](/resources/images/MeasuresOfSuccess-Workshop-Agenda.jpg)
 
 ### Role Definition
-
 - Claire W ran one of these for me and a resident tech lead at Samba. The outcome postits are available (to Clare only) at OneDrive\TW-Stuff\Clients\[Samba]]\ClaireW-TechLeadPics-small
 - The structure included the following:
 	- **Does/Doesn't**: Use post-its to define what is and isn't part of the role
@@ -165,7 +160,6 @@ Notes from [Tito](https://twitter.com/rbs_tito)'s [Made Tech talk](https://www.m
 	- As you go, identify Actions (and as ever, use a parking lot for things you don't have time to address now)
 
 ### Writing the Minister's Speech
-
 These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) at UK GovCamp21.
 
 - Miro: https://miro.com/app/board/o9J_lXiMgRk=/
@@ -178,7 +172,6 @@ These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) 
 	- How did we set out to achieve it together - outline the principles that led to success
 
 ### Dragon Mapping
-
 These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) at UK GovCamp21.
 
 - assumptions can become opinion, which is hard to counter
@@ -203,7 +196,6 @@ These are notes from a talk by [Randy Silver](https://twitter.com/randy_silver) 
 	- or your short term roadmap might be built on killing dragons - ie proving your assumptions
 
 ### Leadership Style
-
 - This is based on the workshop run by Kylie yearsley at Agile on the Beach 2021
 - in teams (need at least two teams): 
 - start with a list of leaders from fiction, film, real world. Don't have to be "good." One leader per postit, in a vertical line. 

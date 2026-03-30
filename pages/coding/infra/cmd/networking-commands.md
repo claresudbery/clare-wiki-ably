@@ -5,16 +5,13 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
 ---
 
 ## Docs and Blog Posts
-
 - [My InSimpleTerms blog](https://insimpleterms.blog/category/networking) (Networking category)
 - [A Simple explanation of the CIDR IP address scheme](https://insimpleterms.blog/a-simple-explanation-of-the-cidr-ip-address-scheme)
 
 ## Test your internet speed
-
 * [Here](https://www.speedtest.net/)
 
 ## Misc Terminal Stuff
-
   - See also [Misc Terminal Commands](/pages/coding/infra/cmd/Misc-Terminal-Commands)
   - Hosts file - see [notes here](/pages/coding/infra/servers/Networking#hosts-file)
   - Cmd: **dig \[IP or domain name\]** - tells you what that IP / domain
@@ -83,7 +80,6 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
         -pultn**
 
 ## Tcpdump
-
   - You can use tcpdump to examine network traffic by capturing packets
 
   - See troubleshooting section for a useful tcpdump command that allows
@@ -98,9 +94,7 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
     [<span class="underline">https://www.comparitech.com/net-admin/what-is-tcpdump/</span>](https://www.comparitech.com/net-admin/what-is-tcpdump/)
 
 ## IP addresses
-
 ### Subnets
-
   - A subnet is a range of IP addresses within a network
 
   - For instance, the third number in a four-number IP address might
@@ -116,7 +110,6 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
   - See also CIDR addresses below
 
 ### CIDR
-
   - See also my blog post:
     <https://insimpleterms.blog/a-simple-explanation-of-the-cidr-ip-address-scheme>
 
@@ -179,11 +172,9 @@ permalink: /pages/coding/infra/cmd/Networking-Commands
             other topic.
 
 ## To check whether something is listening on a particular port (and make the connection)
-
 •	`telnet localhost 5000`
 •	If you get an error (in Windows), you might need to enable Telnet client – do this in “turn Windows features on or off”
 •	To exit telnet, do Ctrl+J
 
 ## DNS stuff
-
 - See [here](/pages/coding/infra/servers/DNS-And-Routing#useful-dns-commands)

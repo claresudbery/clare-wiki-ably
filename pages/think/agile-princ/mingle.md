@@ -4,11 +4,9 @@ location: pages/think/agile-princ/leaf
 permalink: /pages/think/agile-princ/Mingle
 ---
 ## Moving a card
-
   - Change status, bottom right
 
 ## Closing or starting an iteration
-
   - (NB I found these orphaned notes with no context, so I can’t swear
     they relate to Mingle, but I think they probably do)\]
   - First, add a new iteration:

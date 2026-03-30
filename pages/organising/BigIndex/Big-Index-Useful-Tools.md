@@ -6,7 +6,6 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 ---
  
 ## Other technologies considered for BigIndex
-
 - Boostnote (quite limited and not cross platform)
 - Alex's clare-bot (needed quite a lot of work and only worked in Slack)
 - [dokuwiki](<#dokuwiki>)
@@ -21,7 +20,6 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 - See also book by Tiago Forte - building a second brain - been recommended to me by a few people
 
 ### Dokuwiki
-
 - [Set up an Apache web server in AWS](https://docs.aws.amazon.com/efs/latest/ug/wt2-apache-web-server.html)
 - [Configure an Apache web server](https://opensource.com/article/18/2/how-configure-apache-web-server)
 - [Install dokuwiki](https://www.dokuwiki.org/install)
@@ -30,7 +28,6 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
 * Here: http://www.markwk.com/migrate-evernote-plaintext.html
 
 ## Suggested markdown editors 
-
 - for iOS: [iAWriter and Working Copy](https://thesweetsetup.com/apps/our-favorite-markdown-writing-app-for-the-iphone/)
     - See also notes on how to use iAWriter
 - For Mac / Windows: 
@@ -39,7 +36,6 @@ permalink: /pages/organising/bigindex/Big-Index-Useful-Tools
     - Visual Studio [MarkdownEditor Extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 ## Generating Table of Contents (TOC)
-
 I'm using [jekyll-toc](https://github.com/allejo/jekyll-toc/), but I had to make an amendment to remove strange chars at the start of every list item. See [commit 34b357f](https://github.com/claresudbery/clare-wiki-ably/commit/34b357f).
 
 I also made another amendment to add a heading to each toc: [commit ebb8600](https://github.com/claresudbery/clare-wiki-ably/commit/ebb8600).
@@ -55,7 +51,6 @@ Other possible tools:
     - `$python toc.py README.md` (Use your markdown filename instead of README.md)
 
 ### gh-md-toc Command Line Tool
-
 I didn't need this on the Jekyll site, but I did need it in my GitHub markdown site.
 
 My version of the script can be found [here](/resources/scripts/gh-md-toc).
@@ -100,7 +95,6 @@ sed -i '/^<!--ts-->/,/^<!--te-->/{/^<!--ts-->/!{/^<!--te-->/!d};}' ./notes/Scrat
 My version of the script can be found [here](/resources/scripts/gh-md-toc).
 
 ## Pandoc
-
 * [Pandoc](https://pandoc.org/)
 * [Installing Pandoc](https://pandoc.org/installing.html)
 * Issues:
@@ -117,7 +111,6 @@ pandoc -t gfm --extract-media . -o "/C/Users/CLARE/mydoc.md" "/C/Users/CLARE/myd
 Clare-specific notes available [here](https://github.com/claresudbery/clare-tech/blob/master/organising/BigIndex/Big-Index-Useful-Commands.md) (accessible to Clare only).
 
 ### Lua solution to pandoc inserting blank lines between bullet points
-
 From John Macfarlane in the pandoc-discuss Google group:
 
 You could use a `lua` filter; it would have to replace
@@ -143,7 +136,6 @@ end
 Save that as `tightenLists.lua` and use `--lua-filter tightenLists.lua` on your command line.
 
 ## Scripts for creating markdown files (and converting from Word to markdown)
-
 I've created the following scripts to help me create markdown files and folders quickly for this site.
 Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/master/organising/BigIndex/Big-Index-Useful-Commands.md).
 
@@ -154,16 +146,13 @@ Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/maste
 - [wiki-page-insert](/resources/scripts/wiki-page-insert) - Inserts wiki front matter into a pre-existing markdown file
 
 ## Issues with line endings / encoding / file formats
-
 - Typically seen when moving between Windows and Mac
 -  Use `dos2unix` (downloadable from elsewhere) - [[psql#Gotchas|more info here]]
 
 ## Scripts Used for RefactoringExamples
-
 - See [RefactoringExamples repo](https://github.com/claresudbery/RefactoringExamples/blob/master/github-markdown/notes/code-changes.md) (private only, I'm afraid).
 
 ## Copying data from a Google Drive to other storage
-
 - Put everything in one folder
 - Right-click that folder and choose Download
 - It will download a zipped copy of your folder
@@ -171,11 +160,9 @@ Private Clare notes [here](https://github.com/claresudbery/clare-tech/blob/maste
 - Then you can unzip and upload to a different google drive (or copy anywhere else)
 
 ## Converting Chrome bookmarks to markdown
-
 - I used this tool: [Bookmarker](https://github.com/lubien/bookmarker) (see instructions in next section)
 
 ### Installing Bookmarker in Ubuntu in WSL: 
-
 ```
 wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
 sudo apt-get update
@@ -186,7 +173,6 @@ export PATH=$PATH:/home/claresudbery/.mix/escripts
 ```
 
 ### Running Bookmarker 
-
 - Note that the input it expects is your current Chrome bookmarks file, which is in an entirely different format to any exported html bookmarks files.  
 - In Windows you'll find it somewhere like here: C:\Users\CLARE\AppData\Local\Google\Chrome\User Data\Default\Bookmarks.  
 - If you have separate Chrome profiles, their bookmarks will be somewhere like `C:\Users\CLARE\AppData\Local\Google\Chrome\User Data\Profile 2`.  
@@ -201,7 +187,6 @@ bookmarker -o "./resources/bookmarks.md" --file "./resources/bookmarks"
 ```
 
 ## Inserting new reference data from a spreadsheet
-
 I have a [spreadsheet]() (only available to me) which contains a list of references I want to add as content. It uses the formulas listed below to convert spreadsheet data into an insertion script, creating new pages and folders where necessary.
 
 It's a semi manual process (I have to [sort the spreadsheet appropriately](/pages/coding/data/Google-Sheets#sorting) and then copy from spreadsheet columns into scripts), but it's v useful.

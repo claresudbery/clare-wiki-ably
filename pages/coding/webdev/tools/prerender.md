@@ -4,11 +4,9 @@ location: pages/coding/webdev/tools/leaf
 permalink: /pages/coding/webdev/tools/PreRender
 ---
 ## Historic Notes
-
   - These notes were originally written 2018
 
 ## Prerender Intro
-
   - There might be some useful sample code at [Cadogan
     (PRIVATE)](https://github.com/claresudbery/Cadogan), in the infra
     sub-folder.
@@ -45,7 +43,6 @@ permalink: /pages/coding/webdev/tools/PreRender
         you only get index.html
 
 ## Prerender and Nginx
-
   - You can run prerender from within an nginx config
   - In every nginx config, you will see sections marked “server”
       - These are where nginx defines how that server will behave

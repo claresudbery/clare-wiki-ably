@@ -4,11 +4,9 @@ location: pages/coding/infra/cloud/aws/leaf
 permalink: /pages/coding/infra/cloud/aws/AWS-Security
 ---
 ## Historic Notes
-
   - These notes were originally written 2018
 
 ## **IAM Users**
-
   - If you check the IAM users section in AWS, you’ll see user accounts.
       - Click through and you’ll see access policies.
       - Click Show Policy and you’ll see what a policy looks like.
@@ -17,7 +15,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Security
       - This allows users to access the relevant S3 bucket
 
 ## Security Groups – EC2
-
   - Start in EC2
   - You can set up a server to only run on some networks
       - Might mean you can’t access it from home
@@ -60,7 +57,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Security
   - But will only work if ssh is enabled on the inbound route in
     security groups
 ## Setting yourself up on first use
-
   - Select EU (Ireland) from top right
   - First time in, set up multi factor authentication
       - Click Services, top left

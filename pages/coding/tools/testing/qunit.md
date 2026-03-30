@@ -5,12 +5,10 @@ permalink: /pages/coding/tools/testing/QUnit
 ---
 
 ## Example tests
-
 See [sample code base](https://github.com/claresudbery/Cadogan) (only
 available to Clare)
 
 ### Acceptance tests
-
   - These use qunit
   - They use the Contentful Acceptance space (which isn’t used for
     anything else - has no front end)
@@ -21,7 +19,6 @@ available to Clare)
     to select items specific to that page
 
 ### Integration tests
-
   - All about what gets rendered
   - These use Ember-qunit, which renders Ember components
   - So basically we’re testing that the correct things are rendered –

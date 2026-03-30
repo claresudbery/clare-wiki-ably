@@ -1,5 +1,4 @@
 ## Initial installation
-
 - Initial choices:
 	- Setup flow: start from scratch (add windsurf to path)
 	- Keybindings: Default (VS Code)
@@ -15,14 +14,11 @@
 	- WS: "Install the recommended Python extension from ms-python for the Python lang?"
 		- Me: Y
 ## Troubleshooting
-
 ### What if I lose the Cascade pane?
-
 - Once any folder is open, the Cascade panel should appear automatically on the right side of the editor.
 - If it is not visible, you can open it manually by pressing `Cmd/Ctrl + L` or by clicking the Cascade icon (aka "toggle side panel" - two rectangles side by side) in the top right corner of the Windsurf window.
 	- You can also click the W icon to the right of the thing top middle that looks like a browser search input
 ## Starting a new project
-
 - Create a `.windsurf` folder, with the following sub-folders: `rules` and `processes`
 - Add a file like `running-scripts.md` to the `rules` folder - [example here](https://github.com/claresudbery/ai-general/blob/main/slack-thread-archiver/.windsurf/rules/running-scripts.md)
 	- This will be automatically used by windsurf as its rules for this project

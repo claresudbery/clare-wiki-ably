@@ -5,12 +5,10 @@ permalink: /pages/coding/webdev/js/TypeScript
 ---
 
 ## Useful links
-
 - [typescript tutorial](https://www.w3schools.com/typescript/index.php)
 - [[comparing-typescript-with-csharp|Comparing Typescript With C#]] (my notes)
 
 ## Getting started with typescript in VS Code
-
 Run the following command on the comand line:
 
 ```
@@ -45,11 +43,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 !! Remember that every time you change the source code you have to recreate the javascript. So for instance every time you edit `source.ts` you have to run `tsc source.ts` again. This is why my code failed the last time I ran the tests in class. The clue is when the test failure message references the javascript version of the file (`source.js` instead of `source.ts`) ... and you think "but I already fixed that code!" (but see below on automation)
 
 ## Automate transpilation in VS Code
-
 See [this article](https://code.visualstudio.com/docs/typescript/typescript-compiling).
 
 ### Simple all-in-one instructions
-
 (See sections below for more detail)
 
 - Add / edit a `settings.json` file in your `.vscode` folder (if you don't have one, just create it)
@@ -93,7 +89,6 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
   - If you want to open up yet another terminal, just use Terminal => New Terminal again, and you'll get another one listed on the right. You can switch between all of them.
 
 ### Getting started
-
 - Add a `tsconfig.json` file to the root of your project
 - Put the following inside that file:
 
@@ -108,7 +103,6 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 ```
 
 ### To transpile all your typescript files
-
 - Terminal => Run Build Task (Ctrl + Shift + B) 
 - then select `tsc:build` from the menu 
   - you might have to scroll down to the bottom of the list of options
@@ -119,7 +113,6 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 - (See below for how to get it happening automatically)
 
 ### Automatic transpilation
-
 - To transpile all typescript files automatically every time you change them, with no manual intervention needed:
 - Terminal => Run Build Task (Ctrl + Shift + B) 
 - then select `tsc:watch` from the menu 
@@ -136,7 +129,6 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
   - If you want to open up yet another terminal, just use Terminal => New Terminal and you'll get another one listed on the right. You can switch between all of them.
 
 ### Put js and js.map files somewhere out of sight
-
 - To stop your folder getting cluttered with .js and .js.,ap files...
   - Add an `outDir` line to your `tsconfig.json` file.
   - This will mean that the extra files are created in an `out` folder
@@ -163,7 +155,6 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
 - An alternative to this method is to [make derived files invisible](<#making derived files invisible in vs code>).
 
 ## Making derived files invisible in VS Code 
-
 - Add a `settings.json` file in your `.vscode` folder (if you don't have one, just create it)
 - It should look like this:
 
@@ -181,7 +172,6 @@ See [this article](https://code.visualstudio.com/docs/typescript/typescript-comp
   - But it doesn't have the extra setting for `.map` files (see above).
 
 ### Set as default build task
-
 - To avoid having to select what you want from the menu whenever you do Ctrl + Shift + B (Terminal => Run build task):
   - Terminal => Configure Default Build Task
   - Select `tsc: watch` or `tsc: build` 

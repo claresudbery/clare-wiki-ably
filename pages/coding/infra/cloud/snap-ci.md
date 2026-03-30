@@ -4,7 +4,6 @@ location: pages/coding/infra/cloud/leaf
 permalink: /pages/coding/infra/cloud/Snap-CI
 ---
 ## Setting up Snap CI for new members:
-
   - They need an account in GitHub
   - Then in GitHub:
   - Click Invite Members

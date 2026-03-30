@@ -4,7 +4,6 @@ location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/Bash-Scripts
 ---
 ## Misc
-
 - There's a great little primer on how to run scripts [here](https://stackoverflow.com/a/733901).
 - There are lots of scripts in my [infra-scripts repo](https://github.com/claresudbery/Infra-Scripts) (only available to Clare).
   - Note that this also contains a file called `useful-aliases.txt` - if I want the most up to date versions of these functions (eg `wp`), I need to copy its contents into `~/.bashrc` and then run `source ~/.bashrc` on the command line to load the new commands.
@@ -34,9 +33,7 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 - There are more useful Bash links in my Chrome bookmarks: Useful - Coding Languages and Tech - Bash Scripts
 
 ## Troubleshooting Git Bash
-
 ### Where is the root of the git Bash terminal?
-
 - When you run Git Bash your command prompt is always at /, which is the root for Git Bash but is not the root of your machine (in windows 10)
 - The way to find out where it is is to run `explorer .` in the terminal
 - That will open a File Explorer at the location
@@ -44,7 +41,6 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 - So for instance, what's shown as `/usr/bin` in Git Bash is actually at `C:\Program Files\Git\usr\bin`
 
 ### Fails to run
-
 - If you get an error "Failed to run '/usr/bin/bash': No such file or directory"
   - Avast sometimes quarantines bash.exe
   - In Avast, go to Protection (on the left), then select Quarantine
@@ -57,7 +53,6 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
 - More [here](https://forum.avast.com/index.php?topic=219993.0)
 
 ## Bash variables
-
   - Lack of spaces is important when assigning to variables\!
     
       - Like this: **File=$1**
@@ -95,7 +90,6 @@ permalink: /pages/coding/infra/cmd/Bash-Scripts
           - I think **-n** is important but I can’t remember why
 
 ## variable expansion syntax
-
   - If you type
     
       - **clare/{big,small}/thing**

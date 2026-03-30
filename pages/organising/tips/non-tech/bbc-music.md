@@ -6,7 +6,6 @@ permalink: /pages/organising/tips/non-tech/BBC-Music
 ---
 
 ## Discovering What's Been Played Recently
-
 Some things I have learnt about this:
 
 1. If it's 6Music you're after, you don't need to do any of the stuff below. You can just [this fabulous Spotify playlist](https://open.spotify.com/playlist/6TYlHZfGmggAGHmHLSRQmY?si=Eirp6leJSjOktO7YbWWPSA) made by @ohrenweide, which is updated live from whatever's playing on 6Music.

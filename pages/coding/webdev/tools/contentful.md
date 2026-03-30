@@ -4,7 +4,6 @@ location: pages/coding/webdev/tools/leaf
 permalink: /pages/coding/webdev/tools/Contentful
 ---
 ## Intro
-
 - Contentful – headless CMS – third party – often used to serve data up to a content API
 - Note that there were originally a lot more notes than this but they
   were all specific to a particular website (Cadogan). The full
@@ -54,7 +53,6 @@ permalink: /pages/coding/webdev/tools/Contentful
     - It’s been added later but nobody’s been back to edit
 
 ## Advanced Searching
-
   - If, for instance, you want to find all the restaurants that
     reference a particular Amenity:
       - Select content type (eg Restaurant)
@@ -65,7 +63,6 @@ permalink: /pages/coding/webdev/tools/Contentful
       - Select the amenity you are interested in
 
 ## Exporting / Backing up Data
-
 - Spaces are sections in contentful – each space has its own ID
   - Space Ids look like dfghsdfglhjk
   - These count as sensitive info and would get caught by githooks in Samba
@@ -110,7 +107,6 @@ permalink: /pages/coding/webdev/tools/Contentful
       then you’ll get data too.
 
 ## Colours
-
   - You can have a Color Palette content model which is used throughout
     the content to set the color scheme used in various components
   - For instance a CollectionTile content model, give it a Title Colour
@@ -120,7 +116,6 @@ permalink: /pages/coding/webdev/tools/Contentful
         it to only accept certain hard-coded constant values.
 
 ## Article Pages
-
   - As well as having slug, they can have directory
       - This allows more ordering
       - So that each article sits within a directory

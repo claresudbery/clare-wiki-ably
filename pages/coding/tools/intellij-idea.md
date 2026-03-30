@@ -5,16 +5,13 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 ---
 
 ## General
-
 - Note that it's not obvious from their site, but the Community edition of IDEA is FREE - so you can get IDEA without having to pay.
   - See also [debugging a java app using intellij idea and gradle](/pages/coding/tools/Gradle#debugging-a-java-app-using-intellij-idea-and-gradle) (instructions from a particular (Cadogan) code base)
 - [Paredit plugin](https://github.com/editor-plugins/intellij-paredit)
 	- Paredit – bottom right – turned off – gives you automatic bracket completion, but can cause more problems than it solves if youre not used to it cos you will type your own brackets and muck everything up?
 
 ## Keyboard shortcuts
-
 ### Change / add keyboard shortcuts
-
   - Splat `,` or Splat-shift-A (in Emily's remote-hosted IDEA setup)
   - Keyboard | keymap
   - Make sure you have the correct keymap in the dropdown – will prob have an arrow next to it – currently seem to be using “copy”
@@ -22,13 +19,11 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Right-click – keyboard shortcut
 
 ### Ted's useful shortcuts cheatsheet
-
 - (pdf version is [here](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf))
 
 ![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.jpg)
 
 ### List of shortcuts
-
 - See also [IntelliJ shortcuts](<#intellij shortcuts>) below - which seem slightly different - maybe different keyboard mapping?
 - [Full list of Mac shortcuts](https://www.jetbrains.com/help/idea/reference-keymap-mac-default.html)
 - Find/show usages: Alt + Splat + F7
@@ -55,7 +50,6 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 - Open Terminal - Opt/Alt + F12 (will prob need the Fn key too - on little magic keyboards, this is the one bottom left with pic of globe)
 
 ## IntelliJ shortcuts
-
   - See also [keyboard shortcuts](<#keyboard shortcuts>) above - which seem slightly different - maybe different keyboard mapping?
   - Splat-B – go to definition (equivalent of Ctrl+B in Resharper)
   - Splat-alt-left (and right) – move back and forwards in history
@@ -85,11 +79,9 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
       - From menu, this is is Cocde | Reformat code
 
 ## Auto-running tests
-
 - Running tests automatically in IntelliJ: Click Rerun Automatically on the Run toolbar to enable the autotest-like runner.
 
 ## Convert between snake case, camel case, etc
-
 - Install [this plugin](https://plugins.jetbrains.com/plugin/10985-case-conversion)
 - Works in Rider, Pycharm, IDEA etc (all JetBrains tools)
 - Download
@@ -102,11 +94,9 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
     - Select Plugin in plugin manager for more help
 ## Git plugin
 ### Find url of repo
-
 - Git menu => GitHub => Share project on GitHub
 - ...will show you the url
 ## Configuring your setup
-
 - To make deprecated method calls be shown as strikethrough
     - Settings (Splat + ,) => Inspections => Code maturity => Deprecated API usage 
     - Select "Deprecated symbol" from the "Highlighting in editor" dropdown, bottom right
@@ -135,7 +125,6 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
     - Cmd + , => Editor => General => Code folding => Un check "one line methods"
 
 ## Getting started with a new project
-
 - Import project: for clojure, find project.clj
 - For plain Java, just open the containing folder
 - When you first open a Java project in IDEA, it will ask you to specify the SDK
@@ -155,7 +144,6 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
     - but this seems to just be history of old notifications
 
 ## Format code to indent the way I like it
-
 - ! This came about because I was looking at some Java code that was formatted the way I'm used to (the C# way)
 - ...like this:
 
@@ -189,7 +177,6 @@ lifts.forEach(lift -> {
       - 'if()' statement (further down on left)
           - Check the checkbox for `'else' on new line`
 ## Clojure repl
-
   - To have a Clojure repl available:
       - Top right, click the down arrow | Edit configuration
       - Click the + button, top left
@@ -225,5 +212,4 @@ lifts.forEach(lift -> {
             stand-alone.
 
 ### Troubleshooting the repl
-
   - If you get surprising errors in the repl: Try restarting the repl (I think I wrote this in reference to ClojureScript)

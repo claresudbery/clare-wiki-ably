@@ -5,7 +5,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 ---
 
 ## Useful links
-
 - Course is [here](https://explore.skillbuilder.aws/learn/course/134/play/62437/aws-cloud-practitioner-essentials)
   - Log in using SSE login (for Clare)
     - ...although sometimes it works with my AWS console login too? But sometimes not?
@@ -14,13 +13,10 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 
 ## Module 1 - Intro
-
 - The three cloud computing deployment models are cloud-based, on-premises, and hybrid. 
 
 ## Module 2 - Compute in the Cloud (EC2, ELB, SQS, SNS, ECS, EKS)
-
 ### Module 2 questions
-
 - Pricing questions
   - They talk about scaling and elasticity, but don't the pricing plans mitigate against that?
     - eg committing to a certain amount of usage, or asusming you know in advance whether something can be interrupted.
@@ -43,7 +39,6 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 
 ### Module 2 Terminology
-
 - "decoupled system"
 - redundancy
 - EC2 auto-scaling: dynamic vs predictive
@@ -88,16 +83,13 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
     - hosts belong to you. Most expensive
 
 ## Module 3 - Global infrastructure and reliability (regions, AZs, edge locations, EBS)
-
 ### Module 3 questions
-
 - Do you have to manually build in redundancy across multiple AZs, or can you get Amazon to autmoatically handle that for you?
   - Ah, it's answered: Regions already autmopatically operate across AZs?
   - but does that include redundancy, within scaling groups for instance?
   - "You should always deploy infrastructure across at least two Availability Zones. And some AWS services like Elastic Load Balancing, Amazon SQS, and Amazon SNS already do this for you."
 
 ### Module 3 terminology
-
 - AZs: Availability Zones
   -  allow you to run across physically separated buildings, tens of miles of separation, while keeping your application logically unified.
 - CDN: Content Delivery Network, for caching - means you can cache data in the region closest to the customers rather than have a separate instance there.
@@ -139,9 +131,7 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
     - Application health monitoring
 
 ## Module 4 - networking (VPCs, VPNs etc)
-
 ### Module 4 terminology
-
 - Amazon Virtual Private Cloud (VPCs)
   - essentially your own private network in AWS
   - provision a logically isolated section of the AWS Cloud 
@@ -184,12 +174,8 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
   - eg traffic from N. America to the Oregon Region, traffic in Ireland to Dublin 
 
 ## Module 5 - Storage and databases
-
 ### Module 5 questions
-
-
 ### Module 5 terminology
-
 - Block-level storage 
   - accessed from EC2 instances
   - a place to store files
@@ -390,12 +376,8 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 
 ## Module 6 - Security
-
 ### Module 6 questions
-
-
 ### Module 6 terminology
-
 - shared responsibility model
   - AWS controls security of the cloud and customers control security in the cloud.
   - AWS, control the data centers, security of our services, and all the layers in this section
@@ -523,13 +505,10 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
   - runs independently from your other AWS services
 
 ## Module 7 - Monitoring and Analytics
-
 ### Module 7 questions
-
 - "if an EC2 instance is being over-utilized, you can trigger a scaling event that automatically would launch another EC2 instance" - but isn't that what auto-scaling is for?
 
 ### Module 7 terminology
-
 - Amazon CloudWatch - monitoring soluton
   - collect metrics and logs from all your AWS resources applications, and services
   - tracks and monitors metrics
@@ -583,12 +562,8 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
     - You can set up email alerts
 
 ## Module 8 - Pricing and Support
-
 ### Module 8 questions
-
-
 ### Module 8 terminology
-
 - Free tier 
   - 3 options:
   - always free
@@ -700,12 +675,8 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 
 ## Module 9 - Migration and Innovation
-
 ### Module 9 questions
-
-
 ### Module 9 terminology
-
 - AWS Cloud Adoption Framework (CAF)
   - Help you manage porting a system / getting started in the cloud 
   - including working out who you need to hire
@@ -840,12 +811,8 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Cloud-Practitioner
 
 
 ## Module 10 - The Cloud Journey
-
 ### Module 10 questions
-
-
 ### Module 10 terminology
-
 - WAF = Well-Architected Framework
   - helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems
   - has six pillars:

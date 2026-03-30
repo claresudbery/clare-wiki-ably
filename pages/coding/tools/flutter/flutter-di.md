@@ -5,16 +5,13 @@ permalink: /pages/coding/tools/flutter/Flutter-DI
 ---
 
 # Flutter Dependency Injection
-
 ## Contents of this page:
-
 - [Dependency Injection with GetIt](<#dependency injection with getit>)
 - [Testing](<#testing>)
   - [Using GetIt for mocking dependencies in tests](<#using getit for mocking dependencies in tests>)
   - [Troubleshoot "repository is already registered inside GetIt"](<#troubleshoot repository is already registered inside getit>)
 
 ## Dependency Injection with GetIt
-
 - The way I've done it:
 - Create an abstract class (an interface) and an implementation of that class:
 
@@ -80,9 +77,7 @@ class MyScreenState extends State<MyScreen> {
 ```
 
 ## Testing 
-
 ### Using GetIt for mocking dependencies in tests
-
 ```dart
 class MockUsersRepository extends Mock implements IUsersRepository {}
 
@@ -106,7 +101,6 @@ void main() {
 ```
 
 ### Troubleshoot "repository is already registered inside GetIt"
-
 - If you have more than one test in your test file, and they are all using `GetIt` for dependency injection, you'll need a separate `setUp` method:
 
 ```dart

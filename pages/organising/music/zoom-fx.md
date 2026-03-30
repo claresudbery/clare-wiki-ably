@@ -5,11 +5,9 @@ permalink: /pages/organising/music/Zoom-FX
 ---
 
 ## Interesting sounds and effects I have made / found
-
 - See separate page
 
 ## When sound isn't coming through either from mic or FX
-
 - Check all settings on mixer
 - Check input and output dials on Zoom
 - Check you're in the correct mode in Zoom
@@ -28,7 +26,6 @@ permalink: /pages/organising/music/Zoom-FX
 - Check Troubleshooting section in Zoom manual (I have photos of this, in case it gets lost)
 
 ## Inputs
-
 - There's the main mic input on the front
 - But there's also two inputs round the back
     - These will get added to the main mic input, but how that works varies
@@ -40,7 +37,6 @@ permalink: /pages/organising/music/Zoom-FX
     - ... this means that if you turn Effects off, you will hear no input.
 
 ## Effects stored in memory
-
 - When you switch to memory mode (click top black button to left of digital display), you can use the up / down buttons to select a preset
     - you can speed this up via a slightly counter-intuitive process:
     - if you want to go down quickly to a lower number, click the down key and then hold down the up key: the process of going down will speed up. 

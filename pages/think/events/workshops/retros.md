@@ -5,7 +5,6 @@ permalink: /pages/think/events/workshops/Retros
 ---
 
 ## Links
-
 - [Fun Retrospectives](https://www.funretrospectives.com/)
     - Click Create retrospective, then "New Retrospective (Full Agenda)"
     - Use dropdowns to pick the components you want to use
@@ -16,9 +15,7 @@ permalink: /pages/think/events/workshops/Retros
     - and links for each different one with more detail
 
 ## Approaches
-
 ### Tito's Trello approach for remote collaboration
-
 - In a shared Trello board, which everyone accesses individually on laptops, two columns: 
     - "Top successes" 
     - "Something I wish I was getting"
@@ -37,16 +34,13 @@ permalink: /pages/think/events/workshops/Retros
     - You can set a time limit for each card if you like
 
 ## Storyboard Retro
-
 - Outcome of a "storyboard" retro format (PRIVATE): `2018-02-09_Retro-storyboard.JPG` here: https://drive.google.com/drive/folders/1Jbbb7dMx1OWGrB3cWOeTcCSKlUHV4Vnj
 - The way this worked was that people in groups drew pictures representing what their desired future would look like at the end of the next sprint, and then played them back to the wider group.
 
 ## Retrospectives Antipatterns
-
 From [Retrospectives Antipatterns, by Aino Corry](https://metadeveloper.com/retrospective-antipatterns/).
 
 ### Five Phases of a Retrospective
-
 1. Set the stage
     - Create an atmosphere of trust
     - Make sure everyone's voice is heard
@@ -66,7 +60,6 @@ From [Retrospectives Antipatterns, by Aino Corry](https://metadeveloper.com/retr
     - evaluate the retro - a retro on a retro!
 
 ### Wheel of fortune
-
 - Problem:
     - Jump to conclusions
     - Solve symptoms instead of problems
@@ -91,7 +84,6 @@ From [Retrospectives Antipatterns, by Aino Corry](https://metadeveloper.com/retr
         - Ask for the story behind the postit, to learn what led to the problem
 
 ### Dialling up the good
-
 - Don't slip over the "what went well" section of the retro!
 - Liz Keogh had some good ideas for how to "dial up the good" in [her podcast interview with Randy Silver](https://www.mindtheproduct.com/estimating-complexity-liz-keogh-on-the-product-experience/):
     - When you note things that are going well in retros, you should have actions resulting!

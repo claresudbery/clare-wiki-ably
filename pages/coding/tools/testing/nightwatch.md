@@ -4,7 +4,6 @@ location: pages/coding/tools/testing/leaf
 permalink: /pages/coding/tools/testing/Nightwatch
 ---
 ## Intro
-
   - See
     [articlepage.js](https://d.docs.live.net/resources/files/articlepage.js.md)
     for an example of setting up the stuff you need to run a test
@@ -64,7 +63,6 @@ permalink: /pages/coding/tools/testing/Nightwatch
   - See ["More notes from a different project"](<#more notes from a different project>) below
 
 ## More notes from a different project 
-
 - These are notes I made from another project also using Nightwatch - so there might be some duplication from the notes above.
 -	To run the tests locally: `node tests/nightwatch.js tests/uitests/`
 -	Make sure you have the relevant apps (potentially front end and back end) running locally (either Docker or Visual Studio) – first you might need to set `TEST_URI` to tell it where the frontend is running
@@ -84,7 +82,6 @@ permalink: /pages/coding/tools/testing/Nightwatch
   -	!! If trying to use firefox, you need to have the location of firefox.exe added to your system path. It’s probably here: C:\Program Files\Mozilla Firefox
 
 ## Creating your own makefile commands to run nightwatch tests
-
   - Running individual nightwatch tests:
   - Hard-coded test name:
       - `UI\_TEST\_HOST=[http://stockportgov.local:5555](http://stockportgov.local:5555/) make

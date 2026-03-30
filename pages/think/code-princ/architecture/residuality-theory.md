@@ -5,7 +5,6 @@
 	- ...and here is [the reposted version with images](https://www.linkedin.com/posts/clare-sudbery-she-her-35939540_what-on-earth-is-residuality-theory-time-activity-7401721070275424256-Z4ob)
 
 # Summary
-
 - Consider as many stressors as you can think of - could be 200 (not 3 like in the example in Chris's talk)
 	- Don't spend a lot of time on each one 
 	- By having a lot of stressors we don't have to get them all right 
@@ -16,7 +15,6 @@
 - **Attractors**: States that systems naturally tend toward when under stress,    
 - **Incidence Matrix**: A tool to visualise relationships between stressors and components
 # Detailed SAG Notes
-
 **Barry O'Reilly - Time, uncertainty and change in software architecture** 
 
 These are my notes from this excellent session from Barry, which I just attended at SAG.

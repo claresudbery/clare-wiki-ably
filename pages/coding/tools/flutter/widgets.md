@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Widgets
 ---
 
 # Widgets
-
 ## Contents of this page:
-
 - [Intro to widgets](<#intro to widgets>)
 - [Finding useful widgets etc](<#finding useful widgets etc>)
 - [Get a dialog to return a value](<#get a dialog to return a value>)
@@ -22,15 +20,12 @@ permalink: /pages/coding/tools/flutter/Widgets
 - [Common flutter errors](<#common flutter errors>)
 
 ## Intro to widgets
-
 - See [here](/pages/coding/tools/flutter/Flutter#widgets)
 
 ## Finding useful widgets etc
-
 - [Material components](material.md)
 
 ## Get a dialog to return a value
-
 - In the dialog code do this:
 
 ```dart
@@ -54,14 +49,11 @@ print('Dialog one returned value ---> $val');
 - From [here](https://stackoverflow.com/questions/59768792/how-to-get-a-value-from-a-dialog-in-flutter)
 
 ## Streams vs futures
-
 - a future gives you a thing from the database and that's it, you've got it, won't know if it changes
 - streams open a connection that stays open, like a web socket, with events notifying you of changes
 
 ## Keyboard Shortcuts
-
 ### Flutter Shortcuts, Actions and Intents
-
 - [High-level overview](https://docs.flutter.dev/ui/interactivity/actions-and-shortcuts#shortcuts)
 - See [below](<#the shortcuts widget>) for the `Shortcuts` widget
 - Note that there are several `Intent` classes built in to Flutter, which are mapped to `Action` classes behind the scenes, and just work.
@@ -98,7 +90,6 @@ class InsertWordAction extends Action<InsertWordIntent> {
 - The final piece of the puzzle comes when Intents are mapped to Actions, for instance in a `Shortcuts` widget - see [example below](<#the shortcuts widget>)
 
 ### The Shortcuts Widget
-
 - [Main documentation](https://docs.flutter.dev/ui/interactivity/actions-and-shortcuts#shortcuts)
 - The `Shortcuts` widget allows you to define what happens in response to keyboard shortcuts
 - It can be placed higher up in the widget tree to define what happens for its children
@@ -197,7 +188,6 @@ Widget buildShortcuts() {
     ```
 
 ### Handling Keyboard Shortcuts in the Quill Editor
-
 - Quill has a lot of keyboard events it handles by default
   - You can see some [here](https://github.com/slab/quill/blob/v1.3.7/modules/keyboard.js#L141)
   - ...and some more [here](https://github.com/singerdmx/flutter-quill/blob/6dbf0f7caf6da89db9eed08cb377a5458124bfc6/lib/src/editor/widgets/default_single_activator_actions.dart#L18)
@@ -239,7 +229,6 @@ Widget buildQuillEditor() {
     - [General quill keyboard shortcuts](https://quilljs.com/docs/modules/keyboard/#key-bindings)
 
 ### Bug in Quill Editor's Overriding of Keyboard Shortcuts
-
 - The code which makes use of `customShortcuts` is [here](https://github.com/singerdmx/flutter-quill/blob/6dbf0f7caf6da89db9eed08cb377a5458124bfc6/lib/src/editor/widgets/keyboard_service_widget.dart#L53-L54)
 - You should be able to override keyboard shortcuts by using the `customShortcuts` and `customActions` parameters to the `QuillEditorConfigurations` constructor 
 - But we found we could only define new shortcuts, we couldn't override existing ones
@@ -257,17 +246,14 @@ Widget buildQuillEditor() {
     - (Although I did notice in the process that actually the debug console was previously suggesting version `10.3.0`, but wevs)
 
 ## Quill Editor
-
 - The repo is [here](https://github.com/singerdmx/flutter-quill)
 - To look at details of different versions, see changelog [here](https://github.com/singerdmx/flutter-quill/blob/master/CHANGELOG.md)
 - For notes about overriding keyboard shortcuts, see [above](<#handling keyboard shortcuts in the quill editor>) 
 - For notes about a bug in overriding keyboard shortcuts, see [above](<#bug in quill editors overriding of keyboard shortcuts>)
 
 ## Widget layout
-
 - See [dedicated page](/pages/coding/tools/flutter/widget-layout.md)
 
 ## Common flutter errors
-
 - See [here](https://docs.flutter.dev/testing/common-errors)
 

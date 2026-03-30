@@ -6,11 +6,9 @@ permalink: /pages/organising/tips/non-tech/Television
 ---
 
 ## Finding TV to watch
-
 - A nice guide to international shows on streaming channels [here](https://www.theguardian.com/tv-and-radio/2020/feb/15/chinese-sci-fi-and-spanish-superheroes-the-best-global-tv-you-can-stream)(and it lists the platform, which is handy)
 
 ## TV you can download
-
 - BBC iPlayer
     - on phone: yes
     - on laptop: yes, but have to download / install app: https://www.bbc.co.uk/iplayer/install

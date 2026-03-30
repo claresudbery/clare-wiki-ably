@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Dart
 ---
 
 # Dart
-
 ## Contents of this page
-
 - [Useful links](<#useful links>)
 - [Intro](<#intro>)
 - [Dart Parameters](<#dart parameters>)
@@ -29,27 +27,22 @@ permalink: /pages/coding/tools/flutter/Dart
 - [dart format, etc](<#dart format etc>)
 
 ## Useful links
-
 - [Language tour](https://dart.dev/language)
 - [DartPad](https://dartpad.dev/) - useful tool for writing Dart in the browser
     - [Here is an example](https://dartpad.dev/?id=e7076b40fb17a0fa899f9f7a154a02e8) of a Flutter app written in DartPad
 
 ## Intro
-
 - Dart is an object-oriented language with classes and mixin-based inheritance
   - A [mixin](dart-classes.md#mixins) is a special kind of multiple inheritance
 - Every object is an instance of a [class](<#classes>), and all classes except `Null` descend from `Object`
 
 ## Dart Parameters
-
 - See [separate page](dart-params.md#dart-parameters)
 
 ## Dart Classes
-
 - See [separate page](dart-classes.md#dart-classes)
 
 ## The spread operator / ellipsis / three dots
-
 - More [here](https://stackoverflow.com/questions/57194452/meaning-of-triple-dots-in-flutter-syntax)
 - When you see `...` in code, it's a concise way to insert multiple elements into a collection
 - For example, you can use the spread operator (`...`) to insert all the elements of a list into another list
@@ -75,7 +68,6 @@ return ListView(
 ```
 
 ## Final and Const
-
 - A `final` variable can be set only once
 - A `const` variable is a compile-time constant. 
 - Const variables are implicitly `final`.
@@ -123,7 +115,6 @@ final ringID = const Uuid().v4();
 ```
 
 ### Static consts
-
 ```
 class CreateMatchboxWidgetKeys {
   static const Key nameLabel = Key('Name_Label');
@@ -139,7 +130,6 @@ class CreateMatchboxWidgetKeys {
 ```
 
 ### Trying to make things const that can't be const
-
 - VS Code will often prompt you to make objects `const` for efficiency
 - But this can lead you down the road of thinking they HAVE to be const, when they don't
 - In my case it was the `expect` statement in a `blocTest`:
@@ -195,7 +185,6 @@ GoRoute(
 ```
 
 ## Extension methods
-
 - Like all Dart code, extension methods are in libraries. 
 - To define an extension method:
 
@@ -222,7 +211,6 @@ print('42'.parseInt()); // Use an extension method.
 - More [here](https://dart.dev/language/extension-methods)
 
 ## The dynamic type
-
 - Use of `dynamic` is generally discouraged
 - Some operations work with any possible object. 
   - For example, a `log()` method could take any object and call toString() on it. 
@@ -238,18 +226,15 @@ print('42'.parseInt()); // Use an extension method.
 - More [here](https://dart.dev/effective-dart/design#avoid-using-dynamic-unless-you-want-to-disable-static-checking)
 
 ## Lists
-
 - Expressed using `[]`
 - eg `var favorites = [];`
     - this is an empty list
 - To specify the type of objects in the list, use [generics]
 
 ## Sets
-
 - Expressed using `{}`
 
 ## Maps
-
 - More [here](https://dart.dev/language/collections#maps)
 - Expressed using `<>` and the keyword `Map`:
 
@@ -272,14 +257,12 @@ return <String, dynamic> {
 ```
 
 ## Generics
-
 - Expressed using `<>`
 - eg `var favorites = <WordPair>[];`
     - this is an empty list of objects of type `WordPair`
     - (instances of the `WordPair` class)
 
 ## String interpolation
-
 ```
 var greeting = "Hello";
 var person = "Rohan";
@@ -288,7 +271,6 @@ print("${greeting}, ${person}!"); // prints "Hello, Rohan!"
 ```
 
 ## The double dots / double dot operator
-
 - It allows you to not repeat the same target if you want to call several methods on the same object.
 - e.g without double dots:
 
@@ -309,7 +291,6 @@ var paint = Paint()
 ```
 
 ## => notation
-
 ```dart
 ).thenAnswer((_) => Future.value());
 ```
@@ -338,7 +319,6 @@ is equivalent to
 ```
 
 ## Equality checks in Dart
-
 - Dart can't do equality checks between two instances unless you override `==` on a class:
 
 ```dart
@@ -353,7 +333,6 @@ expect(postedRhet, equals(postedRhet)); // true
   - `equals(props, other.props);`
 
 ## Dart format, etc
-
 - run the following commands before issuing a PR:
 
 ```bash

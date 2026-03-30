@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
 ---
 
 # Flutter Testing
-
 ## Contents of this page:
-
 - [Creating a simple test project](<#creating a simple test project>)
 - [Testing dependency injection](<#testing dependency injection>)
 - [Testing blocs](<#testing blocs>)
@@ -23,7 +21,6 @@ permalink: /pages/coding/tools/flutter/Flutter-Testing
 - [Testing the return value of a dialog](<#testing the return value of a dialog>)
 
 ## Creating a simple test project
-
 - I've created an app [here](https://github.com/claresudbery/flutter-test-app/tree/main/testing_app) purely for the purpose of writing / running tests
 - This is what I did to create this v simple test app
   - Use the following commands to get started:
@@ -62,15 +59,12 @@ flutter run
       - `.metadata`
 
 ## Testing dependency injection
-
 - See [here](flutter-di.md#testing)
 
 ## Testing blocs
-
 - See [here](bloc.md#testing-blocs)
 
 ## Run tests
-
 To run all tests:
 
 - In VS Code: Select the whole test folder in the explorer, right-click and choose Run tests
@@ -116,9 +110,7 @@ void main() {
 More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit/introduction).
 
 ## Testing Firebase code
-
 ### Mocking Firebase
-
 - using standard mocking - couldn't get this working 
     - [users_test.dart](fake-firebase/fake-firebase-example-1.md)
 - using FakeCloudFirestore - got this working in the end - 
@@ -132,13 +124,10 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
     - Also try this: https://blog.victoreronmosele.com/mocking-firestore-flutter
 
 ### Testing real-time Firebase queries
-
 - I've put a hacky way of doing this in [construct-hacks](flutter-construct/construct-hacks.md#testing-real-time-firebase-queries) 
 
 ## Useful mocking tips
-
 ### When and how to use When
-
 - If you don't use the return value, you don't need to use the `when()` formation - it's irrelevant
     - But if you do use the return value and the return value is `Future<void>`, either of the following formations will work:
     - `.thenAnswer((_) async {})`
@@ -150,7 +139,6 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
 - See [below](<#troubleshooting null is not a subtype of type future>) for errors caused by bad config of `when` clauses
 
 ### Troubleshooting Null is not a subtype of type Future
-
 - If the return value is passed along somewhere in the code under test, even if it's not actually used, then if you haven't set up a `when()` clause correctly, you'll get the following error: "_TypeError (type 'Null' is not a subtype of type 'Future<void>')"
 - This is because the default behaviour of the mock is to return null, if you haven't specified otherwise
 - Note that this can also happen if you do have a `when()` call, but the specified params don't match those used during the actual call - for instance if there are optional named calls that you have covered with something like `any(named: "matchboxID")` (see below)
@@ -159,7 +147,6 @@ More info on Flutter tests [here](https://docs.flutter.dev/cookbook/testing/unit
     - and [here](https://stackoverflow.com/questions/67371802/dart-type-null-is-not-a-subtype-of-type-futurestring-in-mockito)
 
 ### Named params in when clauses
-
 - If you have named params, you have to add them to the `when()` thing or your `when()` setup will be ignored
 - You can use `any()` for optional named params, but have to do it like this: 
     - `matchboxID: any(named: "matchboxID"),`
@@ -184,7 +171,6 @@ Future<void> createUserIdentity(
     - ...but if you want to know more about exactly what was passed through to a mock, see [below](<#inspecting what has been passed to a mock>)
 
 ### Inspecting what has been passed to a mock
-
 - If you want to know more about exactly what was passed through to a mock
     - You can pass `invocation` through in the `thenAnswer` clause
     - then access `invocation.namedArguments[Symbol('argName')]`
@@ -225,7 +211,6 @@ expect(postedRhet.matchboxID, equals(matchboxID));
     - more [here](Dart#equality-checks-in-dart)
 
 ## Testing the return value of a dialog
-
 - Testing what's returned as the value/result passed to `Navigator.pop`
 - I don't know if this is the best way to do it, but it works!
 - I tried doing it via checking what was passed to `Navigator.pop`, but I couldn't get that to work

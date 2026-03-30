@@ -5,7 +5,6 @@ permalink: /pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL
 ---
 
 ## Basics
-
 - Note that I have three Linux versions installed. The one that I'm actually using is Ubuntu (not Ubuntu 16.04 or Debian).
 - You can [install the Windows subsystem for linux (WSL)](https://docs.microsoft.com/en-gb/windows/wsl/install-win10)
     - !Warning!
@@ -16,7 +15,6 @@ permalink: /pages/coding/dotnet/Windows-Subsystem-for-Linux---WSL
             - If you have any problems, try closing VS Code and opening it up again from the command line (using `code .`).
 
 ### If you have a version of Windows that needs Windows Insider to install WSL2
-
 - If you're up to date with Windows 10, you can ignore this bit!
 - It's not recommended to have Windows Insider on your main machine
 - Instead, create a VM and run Windows Insider there - [follow the instructions here](https://www.windowscentral.com/how-create-virtual-machine-using-hyper-v-test-windows-10-insider-builds).

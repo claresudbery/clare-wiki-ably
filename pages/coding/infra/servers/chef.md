@@ -4,7 +4,6 @@ location: pages/coding/infra/servers/leaf
 permalink: /pages/coding/infra/servers/Chef
 ---
 ## Misc
-
   - It’s a configuration management tool
     
       - Other examples: Puppet, ansible
@@ -27,7 +26,6 @@ permalink: /pages/coding/infra/servers/Chef
     particular hosts
 
 ## Nodes
-
   - A thing configured by chef
 
   - In 99% of cases a node will be a host (cd by physical or virtual)
@@ -35,7 +33,6 @@ permalink: /pages/coding/infra/servers/Chef
   - Eg: **knife node edit**
 
 ## Cookbooks and Recipes
-
   - Chef like using metaphors, eg cookbook
     
       - Config split into different chunks/places
@@ -83,7 +80,6 @@ permalink: /pages/coding/infra/servers/Chef
         attribute files
 
 ## Syntax
-
   - Documentation:
     [<span class="underline">https://docs.chef.io/resource\_common.html</span>](https://docs.chef.io/resource_common.html)
 
@@ -97,7 +93,6 @@ permalink: /pages/coding/infra/servers/Chef
         [<span class="underline">https://docs.chef.io/resource\_common.html</span>](https://docs.chef.io/resource_common.html)
 
 ## Roles
-
   - Roles are how you map cookbooks and recipes to a host
 
   - Role
@@ -122,7 +117,6 @@ permalink: /pages/coding/infra/servers/Chef
             that might be common to all \!\!
 
 ## Role Attributes
-
   - Role attributes
     
       - Node attributes:
@@ -206,7 +200,6 @@ permalink: /pages/coding/infra/servers/Chef
                 in
 
 ## Knife search
-
   - (other knife commands are below)
 
   - Looking for an individual host? Use **knife search**
@@ -260,7 +253,6 @@ permalink: /pages/coding/infra/servers/Chef
   - Handy
 
 ## Chef Shell
-
   - To run a chef script outside of chef server:
     
       - In VM: **sudo chef-shell -z**
@@ -269,11 +261,9 @@ permalink: /pages/coding/infra/servers/Chef
         pip3 install pychef**
 
 ## Useful Scripts
-
 - There are various scripts in [my (private) infra-scripts repo](https://github.com/claresudbery/Infra-Scripts), for instance `find-changed-chef-nagios-nodes.sh` and other chef scripts, all in the [cheftools folder](https://github.com/claresudbery/Infra-Scripts/tree/master/observability-toolbox/cheftools).
 
 ## Other Knife Commands
-
   - See separate section in this doc for **knife ssh**
 
   - Useful commands:
@@ -302,11 +292,9 @@ permalink: /pages/coding/infra/servers/Chef
     [<span class="underline">https://docs.chef.io/knife.html</span>](https://docs.chef.io/knife.html)
 
 ## Testing
-
   - via Kitchen test recipes, in learn.chef.io?
 
 ## Deployment
-
   - If you push to git, your changes will automatically get deployed
     within 15 minutes
     
@@ -331,7 +319,6 @@ permalink: /pages/coding/infra/servers/Chef
     --once**
 
 ## Knife ssh
-
   - Like ssh but you give it a param of a chef search instead of a host
     name, then give it a command and it means it will ssh into all the
     servers in the list of search results, 3 at a time
@@ -376,7 +363,6 @@ permalink: /pages/coding/infra/servers/Chef
     
       - 
 ## Chef logs
-
   - Chef logs
     
       - Check on host: **less /var/log/chef/**

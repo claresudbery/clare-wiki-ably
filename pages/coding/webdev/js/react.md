@@ -5,7 +5,6 @@ permalink: /pages/coding/webdev/js/React
 ---
 
 ## GitHub Repos 
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [getting-started-with-tdd-in-react](https://github.com/claresudbery/getting-started-with-tdd-in-react)
@@ -23,32 +22,26 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 
 ## Docs and Blog Posts
-
 - [ReactiveX](/pages/coding/tools/ReactiveX)
 - [Difference between a framework and a library](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/) (spoiler: it's all about inversion of control)
 
 ## Automatically responding to code changes with Live Server
-
 - On command line: `npm install -g live-server`
 - Then: `live-server`
     - This will automatically launch the default browser. When you make a change to any file, the browser will reload the page - unless it was a CSS file in which case the changes are applied without a reload.
 - [More here](https://www.npmjs.com/package/live-server)
 
 ## Reagent
-
 - Reagent is a library – a Clojurescript wrapper around react js. See [Clojure notes](/pages/coding/lang/func/Clojure#reagent)
 
 ## create-react-app
-
 ### create-react-app - Intro
-
 - As recommended [here](/pages/coding/webdev/Different-Webapp-Stacks)
 - Create React App is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
 - [create-react-app - getting-started](https://create-react-app.dev/docs/getting-started/)
 - My [sample repo](https://github.com/claresudbery/create-react-app-playground-win)
 
 ### How to start an app created using create-react-app
-
 - On command line: `npm start` (don't forget `npm install` first)
 - If you want to use a different port:
   - You can just run `npm start` and if someting is already on port 3000, it will detect this and give you the option to use a different port (it will automatically choose an alternative port for you)
@@ -56,22 +49,18 @@ Sadly by necessity some of my repos are private. Those that are private are clea
   - Or you can edit the `start` script line in `package.json`, to look like this: `"start": "set PORT=3006 && react-scripts start"`
 
 ### create-react-app - Troubleshooting getting started
-
 #### Troubleshooting node version
-
 - I had node v 13 which didn't work (`The engine "node" is incompatible with this module. Expected version "^10 or ^12 or >=14". Got "13.10.1"`) so I upgraded node
     - On Windows, I just [used the Windows installer](https://nodejs.org/en/download/current/) but it took a bit of doing to get it right on both Windows and my Mac.
     - See [troubleshooting notes on my node page](/pages/coding/webdev/js/Node-JS#upgrading-node---troubleshooting).
 
 #### Troubleshooting getting started with a project not created on your machine
-
 - If you're getting errors about `create-script` not existing, this probably means you don't have a `node_modules` folder yet.
 - This means you haven't installed your packages yet.
 - If your project is using `yarn` (there'll be a `yarn.lock` file in the root folder), you need to run the `yarn` command.
 - If your project is using `npm` (there won't be a `yarn.lock` file in the root folder, but there will be `packages-lock.json`), you need to run the `npm install` command.
 
 #### Troubleshooting yarn vs npm
-
 - I was experimenting with developing the same [project](https://github.com/claresudbery/create-react-app-playground) on two [different](https://github.com/claresudbery/create-react-app-playground-win) machines (a Windows machine and a Macbook, as it happens, but that wasn't actually relevant to this problem) and I came up against a conflict between `npm` and `yarn`.
     - On my macbook I had `yarn` installed. This was apparently detected by `create-react-app` and the project was built to work with `yarn`. When I pulled the code onto my Windows machine - where I *didn't* have `yarn` installed - I couldn't run the code because `yarn start` didn't work (it was configured to run using `npm start` instead).
     - The solution was to install `yarn` on my Windows machine (where I was running the project in GitBash) using `npm install -g yarn`, and then migrate the project from `npm` to `yarn`. Full instructions [here](/pages/coding/webdev/js/Node-JS#migrating-from-npm-to-yarn).
@@ -79,14 +68,12 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - See [package management notes on my node page for further info on yarn and npm](/pages/coding/webdev/js/Node-JS#package-management---npm-vs-yarn).
 
 ### create-react-app - Scratchpad
-
 ```
 create-react-app-playground
 npx create-react-app create-react-app-playground --template typescript
 ```
 
 ## JSX and Babel
-
 - Stands for JavaScript eXtensible markup language. So a bit like XML.
 - Allows you to write lines of code like this: `const element = <h1>Hello, world!</h1>;`
 - Lines like the above are transpiled into Javascript `React.createElement()` calls via the `Babeljs.io` library
@@ -94,26 +81,21 @@ npx create-react-app create-react-app-playground --template typescript
 - You can embed JavaScript in JSX using `{}` like this: `const element = <h1>{name}'s React Page</h1>;`
 
 ## React Developer Tools
-
 - Chrome extension, v useful. Can be [found here](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en).
 
 ## React forms
-
 - [useful demo here](https://www.w3schools.com/react/react_forms.asp)
 - [Passing data and events between React components](https://www.freecodecamp.org/news/pass-data-between-components-in-react)
 - (Clare only) [Example forms here, in the jsx-components/bonus-greeting folder](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting). There are four different versions. You can switch between them by changing which component is referenced in `src/App.js`.
 
 ## Hooks and functional components
-
 ### useState hook
-
 - `useState` is the method used to change state in functional components
 - Typically it looks like this: `const [count, setCount] = useState(0);`
     - This example uses [array destructuring](/pages/coding/webdev/js/javascript-language.md#destructuring-arrays-and-objects) to set the variable `count` with a default of 0 and a method of `setCount` for updating the variable.
 - [This code](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting) contains an example
 
 ### useEffect hook
-
 - The `useEffect() `hook tells your component to do something after every render.
 
 ```javascript
@@ -128,9 +110,7 @@ useEffect(() => {
 - `useEffect()` takes two arguments. The first is the function to call, and the second argument is an array which can be used to define how many times the first argument should be called
 
 ## Class components
-
 ### Lifecycle
-
 - Lifecycle Methods (in order of execution):
     - Mounting (Birth)
         - constuctor()
@@ -150,7 +130,6 @@ useEffect(() => {
 - [Lifecycle cheatsheet](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ )
 
 ### State
-
 - React has another special built-in object called `state`, which allows components to create and manage their own data
 - Unlike `props`, components cannot pass data with `state`, but they can create and manage it internally
     - Components can receive data via `props` and then store it in their own internal `state` via the constructor
@@ -166,7 +145,6 @@ useEffect(() => {
         - [This form code (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting) contains an example
 
 ## Routing - react-router-dom
-
 - Can use popular standard routing library `react-router-dom`
     - `npm install react-router-dom`
 - Types of router: 
@@ -185,7 +163,6 @@ useEffect(() => {
 
 
 ## Fragments
-
 - By default, React components can only return one base DOM element
 - This will throw a syntax error: 
 
@@ -231,7 +208,6 @@ render(){
 ```
 
 ## Controlled components
-
 - These are how React handles HTML forms
     - They allow you to use React state to track values being typed into form elements
 - Here is an example from the `bonus-greeting` app in [here (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions):
@@ -269,9 +245,7 @@ function GreetingForm1() {
 ```
 
 ## React Routes
-
 ### React Routes - Adding code to all pages
-
 - If you're going to include routes, your top level element returned by the `App` component has to be a `Router`
 - As long as you include a `"/"` route, whatever lives in that element will be what's displayed to the user when they first arrive at the site.
 - If you want to add other things that get displayed by default, you can return them from the `App` component, but they have to go inside the `Router` element.
@@ -310,7 +284,6 @@ export default function App() {
 ```
 
 ### React Routes - components vs elements
-
 - Some of the sample code you'll see for routes uses `component` and some of it uses `element`
 - `element={}` is version 6 syntax and preferred over `component={}`
 
@@ -337,7 +310,6 @@ Element example (also see [here](https://www.geeksforgeeks.org/reactjs-router/) 
     - (Copied from [here](https://reactrouter.com/en/main/upgrading/v5))
 
 ## Relationship between React and Node
-
 - I'm a little bit unclear, but I think it's like this:
 - Node is used to run a server which you can use to run React locally
 - webpack is used to bundle your React js, and webpack is a node package.

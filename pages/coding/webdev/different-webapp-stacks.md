@@ -5,7 +5,6 @@ permalink: /pages/coding/webdev/Different-Webapp-Stacks
 ---
 
 ## Possible Stacks
-
 I asked Twitter [the following question](https://twitter.com/ClareSudbery/status/1403060911657701378?s=20): "If you wanted to build and deploy a very simple web app using TDD and automated unit tests as part of the deployment pipeline, an inexperienced coder, what language / platform / deployment pipeline would you use? We're looking for low friction, quick results, low learning curve."
 
 Below started out as a summary of the answers I got. I expected it will probably get added to over time.
@@ -13,9 +12,7 @@ Below started out as a summary of the answers I got. I expected it will probably
 I'm splitting them by language because that seemed a reasonable way of looking at it.
 
 ## Javascript
-
 ### Heroku / Node.js / React / Jest
-
 @worldofchris (Chris Young)
 
 - **Deployment / pipeline**: Heroku
@@ -25,7 +22,6 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: Jest
 
 ### Heroku + Git / Node.js
-
 @thinkfoo (Dave Hounslow)
 
 - **Deployment / pipeline**: Heroku + Git
@@ -35,7 +31,6 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: ?
 
 ### Github actions + Heroku / Node.js + Express / Jest / React + Create-react-app
-
 @jocrossick
 
 [create-react-app - getting-started](https://create-react-app.dev/docs/getting-started/)
@@ -47,7 +42,6 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: create-react-app
 
 ### Github actions + Netlify / React + Create-react-app
-
 @fidgetfive (Matt)
 
 - **Deployment / pipeline**: Github actions + Netlify
@@ -57,7 +51,6 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: Create-react-app
 
 ### Github actions + Netlify / React
-
 @coderbyheart (Markus Tacker)
 
 [An example app](https://github.com/coderbyheart/tdd-web-app)
@@ -71,7 +64,6 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: ?
 
 ### Docker / Node.js + Express / Static pages / Cypress
-
 @DinoRoar2 (John Nicholas)
 
 - **Deployment / pipeline**: Docker
@@ -82,7 +74,6 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Data store**: json
 
 ### Simple http server / Node.js + Express / Http / Cypress
-
 @LewisDaleUK
 
 - **Deployment / pipeline**: Simple http server
@@ -92,9 +83,7 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: Cypress
 
 ## Python 
-
 ### Python/Flask / Pytest / Ruby + Rails / rspec
-
 @worldofchris (Chris Young)
 
 - **Deployment / pipeline**: ?
@@ -104,7 +93,6 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: rspec
 
 ### Heroku / Python/Flask / Pytest
-
 @nimphal (Nevelina A)
 
 - **Deployment / pipeline**: Heroku
@@ -114,13 +102,10 @@ I'm splitting them by language because that seemed a reasonable way of looking a
 - **Front end tests**: ?
 
 ## Ruby
-
 ### Python + Ruby + Rails
-
 - See [Python/Flask / Pytest / Ruby + Rails / rspec](<#pythonflask  pytest  ruby  rails  rspec>)
 
 ### Github actions + Heroku  / Ruby / Sinatra / rspec
-
 @adomas_s (Adomas Sliužinskas)
 
 This is what I've used to create a lot of simple webapps. [Examples are listed here](/pages/coding/lang/oo/ruby/Ruby#sinatra).
@@ -132,7 +117,6 @@ This is what I've used to create a lot of simple webapps. [Examples are listed h
 - **Front end tests**: rspec
 
 ### Django + Python
-
 Django is the ruby on Rails of Python. Has great documentation (better than Rails according to the person I spoke to), and does database migrations automatically.
 
 - **Deployment / pipeline**: ?
@@ -142,18 +126,14 @@ Django is the ruby on Rails of Python. Has great documentation (better than Rail
 - **Front end tests**: ?
 
 ## Kotlin
-
 ### http4k
-
 @natpryce
 
 - "http4k. The “server-as-a-function“ model makes testing a breeze."
 - From [http4k.org](https://www.http4k.org/blog/meet_http4k): "http4k is an HTTP toolkit written in Kotlin that enables the serving and consuming of HTTP services in a functional and consistent way. ... Written in pure, functional Kotlin, with zero dependencies. http4k is simple. Like, really simple. No static API magic, no annotations, no reflection."
 
 ## Go
-
 ### Go + gin
-
 @dmlled (DLed)
 
 - "Go + gin. Fast compilation, no need to start the server to test the routes, tiny language, ok VS Code support"
@@ -165,7 +145,6 @@ Django is the ruby on Rails of Python. Has great documentation (better than Rail
     - [Cobra - Useful library for creating Go CLI applications](https://github.com/spf13/cobra)
 
 ### Go + TDD
-
 @quii (Chris James)
 
 - "Go. Simple language, testing built in. Standard library has absolutely everything you need to build production ready web servers.

@@ -5,11 +5,9 @@ permalink: /pages/think/code-princ/Code-Examples
 ---
 
 ## Please ignore
-
 If you happen to just stumble across this page, it won't make any sense. I was just after a quick location for some formatted code snippets, which are examples of various things I'm not even going to bother to try and explain here.
 
 ## Example #1
-
 ```javascript
   const firstIndex = Math.ceil(str.length / 2 - 1);
   const secondIndex = str.length / 2;
@@ -22,7 +20,6 @@ If you happen to just stumble across this page, it won't make any sense. I was j
 ```
 
 ## Example #2
-
 ```csharp
 const withdraw = amount => {
   
@@ -65,7 +62,6 @@ const withdraw = amount => {
 ```
 
 ## Example #3
-
 ```ruby
 def similar_license_plates(plate1: str, plate2: str) -> bool:
     # put the similar characters into arrays so that they can be checked for the corresponding characters in the plates
@@ -135,7 +131,6 @@ def similar_license_plates(plate1: str, plate2: str) -> bool:
 ```
 
 ## Example #4
-
 ```csharp
 const withdraw = amount => {
   let hundreds = 0
@@ -174,7 +169,6 @@ const withdraw = amount => {
 ```
 
 ## Example #5
-
 ```javascript
 
   function removeSpaces(plate){
@@ -186,7 +180,6 @@ const withdraw = amount => {
 ```
 
 ## Example #6
-
 ```python  
 # The maketrans() method returns a mapping table that can be used with the translate() 
 # method to replace specified characters. Maketrans has 3 parameter values: x, y and z. 
@@ -202,17 +195,14 @@ const withdraw = amount => {
 ```
 
 ## Example #7
-
 ```csharp
     var return_str = some_operation / 2; 
     return return_str;
 ```
 
 ## Example #8
-
 ![code example 8](/resources/images/code-example-8.png)
 
 ## Example #9
-
 ```
 ```

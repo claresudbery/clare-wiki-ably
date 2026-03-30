@@ -5,11 +5,9 @@ permalink: /pages/coding/lang/oo/ruby/Ruby-Versioning-And-Gems
 ---
 
 ## Important
-
 - Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](<#staying up to date>)
 
 ## Intro
-
 Ruby is a great language in many ways, but the one thing that mars the experience of working with Ruby is the fact that you'll often find yourself having to halt development work while you fix confusing `Gemfile` errors such as "Your Ruby version is 2.6.3, but your Gemfile specified 2.6.5" or ."Could not find gem 'bundler (~> 1.1)', which is required by gem 'middleman-core (= 3.3.7)', in any of the sources." 
 
 I can't decide whether I should be proud or ashamed of the fact that for a long time, my reaction to these errors was to google them and then blindly follow the advice I found until things were working again. Proud, because I was focused and pragmatic - I had a goal in mind and didn't want to be distracted by the rabbithole of researching exactly what was going on. Ashamed, because I was doing the equivalent of hitting it with a hammer until it worked - rather than getting a proper understanding and therefore the ability to find long term solutions and be confident that I wouldn't find myself back in the same situation at some unpredictable point in the future.
@@ -19,7 +17,6 @@ If you look at my [Jekyll troubleshooting page](/pages/coding/webdev/jekyll/Jeky
 So today I have put aside a whole day to dive in and get to grips once and for all with what the hell is going on with my `Gemfile`.
 
 ## Useful resources
-
 - [Bundler documentation]()
 - [Learn Tech guide on gem packaging](https://learn.madetech.com/technology/guides/06-Gem-Packaging/) (from Made Tech)
 - [Internal Made Tech workshop on Ruby versioning, bundling and managing gems](https://docs.google.com/presentation/d/1sYbNtN6Frbu-cucQL8hxPlgV-eaLqPwU9FMNhNE1YEc/edit#slide=id.ga070ffb2eb_0_138) (courtesy of George Schena)
@@ -27,7 +24,6 @@ So today I have put aside a whole day to dive in and get to grips once and for a
 - Article - [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
 
 ## Overview of versioning problems that can happen with Ruby projects
-
 There are two possible sources of version woes when working Ruby:  
 
 1. Problems with versions of the gems (aka packages) your Ruby project is using.  
@@ -40,7 +36,6 @@ Generally though, the two areas are handled by different means:
 2. There are [various different tools available](<#different versions of ruby>) to manage differing versions of Ruby between projects.
 
 ## What gems are / how gems work
-
 You can use the `gem` command to use the [`RubyGems` software](https://guides.rubygems.org/) to find and install gems on your system. First you have to have `RubyGems` installed, but Ruby 1.9 and newer ships with `RubyGems` built-in. Every time you install a gem using `gem install`, it will download the gem from rubygems.org and install it on your system. It will also download and install any dependencies that the original gem relies on, and so on for any dependencies of dependencies.
 
 A gem is a Ruby software package. Each gem contains a packaged Ruby application or library. More concretely, it’s a zip file containing a bunch of ruby files and/or dynamic library files that can be imported by your code, along with some metadata.
@@ -50,7 +45,6 @@ You can install gems using the `gem install` command, and there are lots of othe
 [More on gems here](https://guides.rubygems.org/rubygems-basics/)
 
 ## Staying up to date
-
 - See also [Different versions of Ruby](<#different versions of ruby>)
 - NB: You should aim to always keep your Ruby version at the most stable version (in Jan 2021 this is 3.0.0). 
     - To find the latest stable version, go [here](https://www.ruby-lang.org/en/downloads/). 
@@ -63,7 +57,6 @@ You can install gems using the `gem install` command, and there are lots of othe
     - 5. Run `bundle outdated` at regular intervals and then run `bundle update [gem-name]` one at a time on each of the outdated gems, with a separate commit for each gem (fixing any related deprecation warnings in the same commit) ([more detail here](https://thoughtbot.com/blog/keep-your-gems-up-to-date))
 
 ### Acting on security recommendations with bundle audit
-
 - Install [bundle-audit](https://github.com/rubysec/bundler-audit) (if not done already)
     - `gem install bundle-audit` (or add to `Gemfile`) 
 - Run `bundle-audit` on command line
@@ -75,7 +68,6 @@ You can install gems using the `gem install` command, and there are lots of othe
         - See commits bcdd478 and ccac302 for an example
 
 ### Updating from dependabot branches
-
 - See also [How dependabot works](<#how dependabot works>)
 - Actions you can take:
     - If dependabot branches are failing in Travis:
@@ -94,7 +86,6 @@ You can install gems using the `gem install` command, and there are lots of othe
         - DON'T FORGET: If you merged the PR at GitHub.com, you won't have the updated main branch locally until you run `git pull` (or `git pull --rebase`)
 
 ### Acting on dependabot alerts
-
 - See also [How dependabot works](<#how dependabot works>)
 - Dependabot alerts live on the main front page in GitHub
 - or visit Security | Dependabot alerts
@@ -105,7 +96,6 @@ You can install gems using the `gem install` command, and there are lots of othe
     - See commits bcdd478 and ccac302 for an example
 
 ### How dependabot works
-
 - See also [Updating from dependabot branches](<#updating from dependabot branches>)
 - Dependabot is a free service offered by GitHub - you can enable it there
 - !! It does NOT necessarily catch all critical security updates. It's worth using [bundle-audit](https://github.com/rubysec/bundler-audit) as well 
@@ -127,9 +117,7 @@ You can install gems using the `gem install` command, and there are lots of othe
     - or visit Security | Dependabot alerts
 
 ## Different versions of Ruby
-
 ### Mac (OSX) and Linux
-
 - The below notes are now probably out of date.
     - [This page](https://mac.install.guide/ruby/1.html) is more up to date (Mar 2022)
     - You can use [asdf](https://asdf-vm.com/) to manage Ruby versions - [some details here](https://mac.install.guide/ruby/5.html) 
@@ -149,13 +137,11 @@ You can install gems using the `gem install` command, and there are lots of othe
 - No matter which system you use, the file `.ruby-version` can be used to specify your Ruby version. This is then referred to in `Gemfile` like this: `ruby File.read(File.expand_path("../.ruby-version", __FILE__)).strip`
 
 ### Windows
-
 If you're coding Ruby in Windows, you'll be using RubyInstaller. [More here](stackify.com/install-ruby-on-windows-everything-you-need-to-get-going/). But that doesn't seem to allow you to switch between Ruby versions.
 
 The solution is to either use WSL or WSL2 to run a Linux subsystem on your Windows machine, or use something like [pik](https://hibbard.eu/how-to-manage-multiple-versions-of-ruby-on-windows/) or [URU](https://myrailslearnings.wordpress.com/2018/09/28/switching-between-ruby-versions-on-windows/), which are separate Ruby version managers for Windows.
 
 ## Basic package management from RubyGems
-
 - Even without `bundler` you get some package management - via `rubygems.rb`.
     - The basic `gem` command is defined by `RubyGems`
 - Your `$LOAD_PATH` Ruby environment variable (only accessible to Ruby) holds the paths that Ruby searches when looking for gems (eg when executing `load` and `require` commands).
@@ -189,7 +175,6 @@ puts $LOADED_FEATURES
 - You might have to hunt through the long list of output, but `foo.rb` will be in there somewhere (quite likely at the end, in fact).
 
 ## Bundler
-
 NB: Try to avoid versioning problems by keeping Ruby and all your gems up to date. See [Staying up to date](<#staying up to date>).
 
 - Run `bundle init` to create a brand new `Gemfile`.
@@ -230,7 +215,6 @@ require 'bundler/setup'
     - The original place I learnt about `bundler/setup` was [here](brianstorti.com/understanding-bundler-setup-process/)
 
 ### Useful Bundler commands
-
 - Update all gems: `bundle update` (exercise caution though)
     - The [documentation on bundle update](https://bundler.io/man/bundle-update.1.html) is quite good but you have to read it thoroughly and carefully!
     - `bundle update` won't update beyond `Gemfile` versions, and you can use `major` and `minor` to specify version details (see [documentation](https://bundler.io/man/bundle-update.1.html)), or you can change versions in `Gemfile` and run `bundle install`. If you don't run `bundle update` and just run `bundle install` a second time after having already run it once, you won't get newer versions of gems even if they exist - it will just use whatever is in `Gemfile.lock` and won't update anything. `bundle update` with no qualifiers will update everything, but won't go beyond the versions specified in `Gemfile`.
@@ -248,15 +232,12 @@ require 'bundler/setup'
 - Find out which gems have security vulnerabilities: Use [bundle-audit](https://github.com/rubysec/bundler-audit): `gem install bundle-audit` (or add to `Gemfile`) then run `bundle-audit`
 
 ## Errors / problems you might see
-
 ### Trouble getting Ruby working on a 2022 Macbook
-
 - (Seen by me when trying to get set up for the Made Tech Academy, Feb 2022)
 - [Getting Ruby working on a 2022 Macbook](https://betterprogramming.pub/ruby-on-apple-silicon-m1-macs-fb159849b2f5)
 - "I followed the step in this article in my laptop to check my rbconfig, and found that the system `ruby v.2.6.8` provided by Apple is indeed `"host_cpu"=>"x86_64"` , while the ruby v.2.6.9 that I installed via rbenv is `"host_cpu"=>"aarch64"`  (=arm64).  So perhaps some problem in apple's default settings maybe...?"
 
 ### "Your XXX version is a.b.c, but your Gemfile specified d.e.f"
-
 (See also [Conflicting Ruby versions](<#conflicting ruby versions>) below.)
 
 - **Example**: 
@@ -283,7 +264,6 @@ require 'bundler/setup'
     - Why does Heroku need `Gemfile.lock` as well as `Gemfile`?
 
 ### Conflicting Ruby versions
-
 - **Example**:
     - I got various errors about Ruby versions when I first set this site up.
 - **Solutions**:
@@ -303,7 +283,6 @@ require 'bundler/setup'
     - Update the Ruby version and then try to fix the formatting issue where the search box moves from right to left.
 
 ### `warn_for_outdated_bundler_version': You must use Bundler 2 or greater with this lockfile.
-
 - **Explanation**:
     - Presumably this comes from the "BUNDLED WITH" section at the bottom of `Gemfile.lock` (see questions below).
 - **Solution**:
@@ -314,7 +293,6 @@ require 'bundler/setup'
     - There's no reference to bundler in `Gemfile`, but it does say "BUNDLED WITH" and a version number at the bottom of `Gemfile.lock`. Presumably this is where the error comes from?
 
 ### "Could not find gem 'YYY (~> a.b)', which is required by gem 'ZZZ (= c.d.e)', in any of the sources."
-
 - **Example**: 
     - `Could not find gem 'bundler (~> 1.1)', which is required by gem 'middleman-core (= 3.3.7)', in any of the sources.`
 - **Explanation**: 
@@ -332,7 +310,6 @@ require 'bundler/setup'
         - What's the difference between the first and second lines?
 
 ### "can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
-
 - **Example**:
     - "/home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:308:in activate_bin_path' /home/travis/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/rubygems.rb:289:infind_spec_for_exe': can't find gem bundler (>= 0.a) with executable bundle (Gem::GemNotFoundException)"
 - **Explanation**:
@@ -342,7 +319,6 @@ require 'bundler/setup'
         - Something that confused me is that this section is not specifying the version of `rvm`, it's specifying the version of `Ruby`.
 
 ### Jekyll adds Windows-related dependencies to Gemfile
-
 - **Example**: 
     - Running `jekyll serve` on my Windows machine (for this website) results in Windows-related dependencies being added to your `Gemfile.lock` (gems like `eventmachine (1.2.7-x64-mingw32)` are added, and a new `x64-mingw32` entry is added in the `PLATFORMS` section at the bottom), which then causes Heroku to complain that your `Gemfile.lock` was created by Windows.
 - **Explanation**:
@@ -354,14 +330,12 @@ require 'bundler/setup'
     - What's actually happening here? And is there a better solution?
     
 ### "cannot load such file" 
-
 - You might need to run `bundle install`
     - If that doesn't work, it might mean that you have not added the specified gem to your `Gemfile`.
     - For instance if you get "cannot load such file -- rspec/core/rake_task", then try adding `gem 'rspec'` to your `Gemfile`.
 - If you get “command not found: bundle” then you might need to install Bundler: `sudo gem install bundler`
    - !! The password it wants is your laptop password
 ### Installing gems on Apple Silicon
-
 - I had trouble with `bundle install` in [this Debugging project](https://github.com/claresudbery/MadeTech-learn-tech/tree/master/technology/guides/03-Debugging/BuggyProject) on 19 Feb '26. Got the following error:
 ```
 
@@ -374,9 +348,7 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
 	- On M1/M2 you may need x86_64 build for old native gems. Tried this instead: `sudo arch -x86_64 gem install ffi -v '1.9.25'`
 - Then ran `bundle install` again.
 ## Things you might do to fix a problem
-
 ### gem install bundler
-
 - **Example**:
     - `gem install bundler`
     - Note that this is typically folowed by `bundle install`
@@ -389,7 +361,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - Can you manage gems using other systems, or do you *have* to have `bundler`?
 
 ### bundle install
-
 - **Example**:
     - `bundle install`
 - **Explanation**:
@@ -403,7 +374,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - What does it mean to say that gems are installed?
 
 ### bundle update
-
 - **Example**:
     - `bundle update`
 - **Explanation**:
@@ -416,7 +386,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - Why does it sometimes need running before bundle install?
 
 ### gem update
-
 - **Example**:
     - `gem update`
     - (Note that [in Linux on Windows](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#jekyll-installation-for-windows), I first had to run `sudo chown -R claresudbery /var/lib/gems/2.5.0/` to avoid permissions errors)
@@ -427,7 +396,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - I used this command [on Linux in Windows](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#jekyll-installation-for-windows). Is that relevant?
 
 ### gem install XXX
-
 - **Example**:
     - `gem install middleman`
 - **Explanation**:
@@ -436,14 +404,12 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - Presumably because you haven't specified a version, you will get the latest release?
 
 ### gem install XXX -v a.b
-
 - **Example**:
     - `gem install bundler -v 1.15`
 - **Explanation**:
     - You're installing a specific version (`1.15`) of a specific gem (`bundler`)
 
 ### gem install XXX YYY
-
 - **Example**:
     - `gem install bundler jekyll`
 - **Explanation**:
@@ -452,7 +418,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - Am I right about this? I spotted it in my [Jekyll installation instructions](/pages/coding/webdev/jekyll/Jekyll-Troubleshooting#to-get-up-and-running-on-a-mac), but I'm guessing.
 
 ### bundle _a.b_ install
-
 - **Example**:
     - `bundle _1.15_ install`
 - **Explanation**:
@@ -462,7 +427,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
         - I suspect the former, because I don't think there is a gem called `bundle` - the gem (if it even counts as a gem?) is called `bundler`. I could be wrong though.
 
 ### bundle exec xxx
-
 - **Example**:
     - `bundle exec jekyll build`
 - **Explanation**:
@@ -474,7 +438,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - Does it only work when the things you are running on the command kine are themsleves gems?- If you get the error 
 
 ### Use chruby to manage your Ruby versions
-
 - See also [Different versions of Ruby](<#different versions of ruby>) in this doc.
 
 - **Example**:
@@ -494,7 +457,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
     - How come Travis appears to rely on `rvm` (hence the section in `.travis.yml` used to specify your Ruby version) even though I'm not? Presumably this is because Travis is using `rvm` locally on its own servers?
 
 ### Use ruby-install to specify a Ruby version
-
 - See also [Different versions of Ruby](<#different versions of ruby>) in this doc.
 
 - **Example**:
@@ -514,7 +476,6 @@ Make sure that `gem install ffi -v '1.9.25' --source 'https://rubygems.org/'` su
         - I think there will be folders somewhere in your operating system that have particular versions in their names?
 
 ## To do
-
 - Answer the questions in this doc
 - Update the academy gems presentation with any extra useful stuff I've learnt and documented here
 - Update clare-wiki 

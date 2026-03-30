@@ -1,7 +1,5 @@
 ## Making low-res Macbook screenshots
-
 ### low-res Macbook screenshots - Details
-
 - [[#^how|How to use the tool]]
 - [[#^vault|How to make the tool work in other vaults]]
 	- [[#^vault-details|Overview of vault-changing]]
@@ -13,7 +11,6 @@
 	- [[#^new-vault|New vault]]
 	- [[#^new-laptop|New laptop]]
 ### low-res Macbook screenshots - Details
-
 - tl;dr - On Macbook, to turn the most recent screenshot into a small low-res file and paste it into the Career-analysis Obsidian, 3 steps are needed: ^how
 	- 1. Take the screenshot (Cmd + Shift + 4)
 	- 2. In Obsidian, use the key combination Cmd + Shift + J

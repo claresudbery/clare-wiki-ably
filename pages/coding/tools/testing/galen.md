@@ -5,7 +5,6 @@ permalink: /pages/coding/tools/testing/Galen
 ---
 
 ## Galen Tests
-
   - This was a SOAP-based acceptance-testing framework we used on
     Cadogan. Full disclosure: We actually deleted the full Galen test
     suite not long after taking over the product because it was so
@@ -16,7 +15,6 @@ permalink: /pages/coding/tools/testing/Galen
     test suite – which is not ideal.
 
 ### Galen example
-
   - ([sample code base here](https://github.com/claresudbery/Cadogan) –
     only available to Clare)
   - All the front-end code bases contain Galen folders containing Galen

@@ -4,7 +4,6 @@ location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/Command-Shells
 ---
 ## Zsh
-
   - File colours / red files
     
       - When you see file names listed in ls that are coloured red, this

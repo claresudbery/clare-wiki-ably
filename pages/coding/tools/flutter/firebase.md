@@ -5,9 +5,7 @@ permalink: /pages/coding/tools/flutter/Firebase
 ---
 
 # Firebase
-
 ## Contents of this page
-
 - [Tutorial](<#tutorial>)
 - [Editing database - gotchas](<#editing database   gotchas>)
 - [How to export / import data?](<#how to export  import data>)
@@ -19,17 +17,14 @@ permalink: /pages/coding/tools/flutter/Firebase
 - [How to verify a new user without actually having to literally click a link in an email](<#how to verify a new user without actually having to literally click a link in an email>)
 
 ## Tutorial
-
 - [Here](https://firebase.google.com/docs/guides)
 
 ## Editing database - gotchas
-
 - When you add a collection, it might seem to disappear immediately after being added
   - This happens when it appears in the existing list but there's a scrollbar and you have to scroll down to see it
   - Even more confusing, sometimes you don't even get a scrollbar, but if you use the scroll wheel in the relevant area, more collections will scroll into view
 
 ## How to export / import data? 
-
 - [Reference](https://firebase.google.com/docs/firestore/manage-data/export-import)
 - emulator can store snapshot of data
   - This can also work as a backup / back up
@@ -62,7 +57,6 @@ permalink: /pages/coding/tools/flutter/Firebase
             - Make sure the `passwordHash` referenced the fake salt
 
 ## Troubleshooting lost data from emulator
-
 - ! Sometimes the Firebase emulator gets confused and data in the browser doesn't seem to match what's in the app
   - Try closing it down / kill the process before starting it up again:
     - Ctrl + C, 
@@ -71,14 +65,12 @@ permalink: /pages/coding/tools/flutter/Firebase
   - We also had to edit emulator.sh at one point to change the `--project` flag from `default` to `--project dev`
 
 ## Troubleshooting "permission denied"
-
 - If you try to do various database actions before the user has logged in, you'll get this error
 - eg fetching user info
 - or trying to update matchboxes
 - looks like this: `cloud_firestore/permission-denied`
 
 ## Troubleshooting emulator failing on startup
-
 - I got this error: `Fatal error occurred:  Emulator UI has exited with code: 1,  stopping all running emulators`
 
 ![/resources/images/firebase-emulator-error-01.jpg](/resources/images/firebase-emulator-error-01.jpg)
@@ -121,7 +113,6 @@ npm warn EBADENGINE }
 - After that, the emulators started successfully.
 
 ## Collection Group Queries
-
 - A collection group happens when several collections have sub-collections of the same name
 - eg `collection(citiesRef, 'SF', 'landmarks')` and `collection(citiesRef, 'DC', 'landmarks')`
 - so both SF and DC have a `landmarks` sub-collection
@@ -130,7 +121,6 @@ npm warn EBADENGINE }
 - More [here](https://firebase.google.com/docs/firestore/query-data/queries#collection-group-query)
 
 ## Upload an image to local emulator storage
-
 - Use a url like this: http://127.0.0.1:4000/storage/project-id.appspot.com/avatars
 - ...where `avatars` is the name of the place where you're storing your images
 - ...and `project-id` is the project ID for your Firebase - will be set as `projectId` in firebase.json and maybe `PROJECT_ID` in various bits of config - might look something like `app-xxxxxxx-dv-123456`
@@ -138,7 +128,6 @@ npm warn EBADENGINE }
 - That url will take you to a page with an "Upload file" button
 
 ## How to verify a new user without actually having to literally click a link in an email
-
 - Go to your [local Firebase emulator suite](http://127.0.0.1:4000/)
 - Click on Authentication at the top
 - Find the relevant email address

@@ -4,7 +4,6 @@ location: pages/coding/infra/o11y/leaf
 permalink: /pages/coding/infra/o11y/Nagios
 ---
 ## Misc
-
   - Used for alerting
 
   - Set up a series of alerts based on all of our systems
@@ -26,7 +25,6 @@ permalink: /pages/coding/infra/o11y/Nagios
   - Alerts when thresholds are crossed
 
 ## onboarding session on Alerting / Nagios
-
   - Nagios asks NRPE daemon - which is installed on host - to run a
     check and then send the results back to Nagios - advantage being
     that you only need one port open
@@ -62,7 +60,6 @@ permalink: /pages/coding/infra/o11y/Nagios
         after a few minutes it triggers an LSE (Large Scale Event)
 
 ## Services / alerts
-
   - Services folder (nagios/etc/services) used to configure alerts
 
   - Services are basically alerts
@@ -125,7 +122,6 @@ permalink: /pages/coding/infra/o11y/Nagios
           - Can be set to never – see check\_aggregate
 
 ## Pynag / Find all alerts
-
   - manages the configuration of Nagios
     
       - v useful for navigating the spaghetti of Nagios config - for
@@ -157,12 +153,10 @@ permalink: /pages/coding/infra/o11y/Nagios
     grep 'Disk Space' | grep thingelk**
 
 ## Disabling notifications in Nagios
-
   - If you need to make an alert stop shouting at you, you can disable
     it via the Nagios web ui - just find it and click the disable button
 
 ## Hosts
-
   - Each alert will specify a host or a host group
 
   - Hosts:
@@ -205,7 +199,6 @@ permalink: /pages/coding/infra/o11y/Nagios
             the group.
 
 ## NRPE
-
   - A plugin that allows you to run scripts remotely
 
   - Nagios Remote Plugin Execution
@@ -219,7 +212,6 @@ permalink: /pages/coding/infra/o11y/Nagios
     is something like check\_nrpe
 
 ## NSCA
-
   - In general NSCA are passive checks that are executed not on nagios
     but on the monitored hosts
 
@@ -243,7 +235,6 @@ permalink: /pages/coding/infra/o11y/Nagios
   - that are triggered independently from Nagios (via cronjob)
 
 ## Commands
-
   - Commands folder
     
       - Shared subfolder – commands.cfg contains most of the commands
@@ -282,7 +273,6 @@ permalink: /pages/coding/infra/o11y/Nagios
             have to add **.** like this: **./check\_http**
 
 ## Nagios UI
-
   - Host name from service – you can search on this on the left
     
       - Be aware this might not be what you think
@@ -296,7 +286,6 @@ permalink: /pages/coding/infra/o11y/Nagios
         to run the check again and see if it’s still in an alert status
 
 ## SkipDeploy
-
   - If a particular host is causing problems, you can use
     nagios.skip\_deploy as a node attribute to make deploys skip the
     host entirely
@@ -304,13 +293,11 @@ permalink: /pages/coding/infra/o11y/Nagios
   - Same process as for nonagios (see below)
 
 ## Pdagent
-
   - There’s a piece of software called pdagent that interfaces between
     Nagios and PagerDuty – this is probably the thing that creates the
     acknowledgement comments at the bottom of the Nagios alert window
 
 ## Testing / deploying new alerts:
-
   - > Tool TryNagios allows you to check syntax
 
   - Just run **try-nagios** on the command line in your VM

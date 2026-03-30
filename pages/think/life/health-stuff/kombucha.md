@@ -1,11 +1,9 @@
 ## Kombucha instructions
-
 - I followed these:
 	- [First fermentation](https://www.youbrewkombucha.com/guide-to-first-fermentation)
 	- [Second fermentation](https://www.youbrewkombucha.com/guide-to-2nd-fermentation)
 	- [Flavouring](https://www.youbrewkombucha.com/flavoring)
 ## Step by step
-
 - [[#1. Get drinking water free of chlorine]]
 - [[#2. Sterilise the Kilner jar]]
 - [[#3. Make tea]]
@@ -14,7 +12,6 @@
 - [[#6. Put everything in jar]]
 - Wait 1-2 weeks... then do [[#Second fermentation]]
 ### 1. Get drinking water free of chlorine
-
 - Either use bottled water, or let it stand overnight, or boil it for half an hour
 - If boiling...
 	- Boil 4.5 litres drinking water (to fill 5 litre jar) for half an hour to get rid of chlorine
@@ -24,7 +21,6 @@
 - ...otherwise just boil one kettle's worth of chlorine-free water to make the tea with
 
 ### 2. Sterilise the Kilner jar
-
 - While drinking water's boiling, sterilise the Kilner jar:
 - Take tap off before sterilising
 - Can just sterilise in dishwasher!
@@ -42,7 +38,6 @@
 - Water in pan will prob never totally boil, but the water inside the jar will bubble and steam
 - Let it boil in pan for half an hour (ish)
 ### 3. Make tea
-
 - When water in Teflon pan has had half an hour...
 - Put 3 teabags in teapot
 - ...and nearly a full cup of demerara sugar
@@ -59,16 +54,13 @@
 		- Mix it up in large Teflon pan
 		- Check the temp of the mix - aiming for 70-90 degrees FAHRENHEIT
 ### 4. Cool sterilised jar
-
 - Take sterilised jar out of pan and let it cool a bit
 - Can put it in garden!
 - Don't put straight into cold water!
 ### 5. ADD TAP TO JAR
-
 - See diagram for correct arrangement of washers etc
 - ![[Screenshot_2026-01-17_at_21.10.33.jpg]]
 ### 6. Put everything in jar
-
 - Remember to check temp of tea + cooled water is 70-90 degrees FAHRENHEIT
 - Make sure tap is attached to jar!
 - Add scoby + starter tea (ideally 2 cups of starter tea) to jar
@@ -81,7 +73,6 @@
 - Try not to fiddle or disturb
 - It's done when it's cloudy and tastes acidic - now you can either leave it to continue to ferment slowly, or you can do [[#Second fermentation]]
 ## Second fermentation
-
 - Remove scoby and 2 cups starter tea
 - Add flavour
 	- I like apple + ginger

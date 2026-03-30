@@ -5,14 +5,12 @@ permalink: /pages/think/code-princ/testing/TDD
 ---
 
 ## Docs And Blog Posts
-
 - [Different styles of TDD and when we should use them - talk by Sandro Mancuso](https://youtu.be/KyFVA4Spcgg)
 - [The concept of self-testing code](https://martinfowler.com/bliki/SelfTestingCode.html)
 - [My refactoring article(s) on Martin Fowler's site](https://martinfowler.com/articles/class-too-large.html)
 - [My InSimpleTerms blog - TDD category](https://insimpleterms.blog/category/tdd) (TDD category)
 
 ### Recommended reads on the topic ["Why hasn't TDD taken over the world yet?"](https://cucumber.io/resources/webinars/tdd-roundtable-series/)
-
 - It's not a magic bullet. [Geepaw Hill on the damage done by dogmatic pedagogy around TDD](https://twitter.com/GeePawHill/status/1558159024520151041?s=20&t=mcDIAsahNnleWz2aGkRAbA)
     - This is also a timely reminder that TDD is not something you can teach in one course or one book, and it's not easy to learn. It requires constant practice and thought.
 - [research paper on TDD from Petr Jasek of Aalborg University, Denmark](https://t.co/lQoS3ilFA8?amp=1)
@@ -26,7 +24,6 @@ permalink: /pages/think/code-princ/testing/TDD
 - [Miro created at XP Manchester](https://miro.com/app/board/o9J_lVcMmxU=/) in an attempt to use the Five Whys technique to determine why XP isn't more widely adopted.
 
 ## What if unit tests are not tests?
-
 Frustratingly I've lost the original conversation because it happened on Google hangouts on an account I no longer have access to (my TW account).
 
 But [Dan North](https://dannorth.net/)'s view is that writing unit tests is not really "testing".
@@ -52,13 +49,10 @@ Dan North also did a lightning talk on this topic at NDC London 2019, and here a
 - Naming things is really hard 
 
 ## Mocks and Mocking 
-
 ### Mocking Terminology (Doubles, Mocks, Stubs, Fakes, Dummies and Spies)
-
 My notes here were originally taken from [this article](http://blog.8thlight.com/uncle-bob/2014/05/14/TheLittleMocker.html).
 
 #### Test Doubles
-
 - Overall term for different kinds of mocking objects, eg
     - Dummy
     - Stub
@@ -67,20 +61,17 @@ My notes here were originally taken from [this article](http://blog.8thlight.com
     - Fake
 
 #### Dummy / Dummies
-
 - You pass this into something when you don’t care how it’s used
 - Like *when you must pass an argument, but you know the argument will
 never be used.*
 - The difference between a dummy and a stub is that the stub will actually get used by the code you pass it to, whereas the dummy won't.
 
 #### Stubs
-
 - A replacement for functionality you don’t want to call and you don’t
 want to test
 - Eg an authoriser that just returns true
 
 #### Spy / Spies
-
 - An object that records when it is called and what arguments are
 passed to it
 - \! Be careful. It can make your tests fragile / brittle.
@@ -91,7 +82,6 @@ passed to it
     refactor*
 
 #### Mocks
-
 - Mocks are always spies
 - Mocks know what they are testing
 - You move the assertion from the test, into the verify method of the
@@ -105,7 +95,6 @@ makes it a lot easier to write a mocking tool*
 - [Famous paper by Martin Fowler that explains it well](http://martinfowler.com/articles/mocksArentStubs.html)
 
 #### Fakes, aka simulators
-
 - Like a stub, but contains behaviour
 - For instance, a user called Bob who is always authorised
     - He doesn’t exist really
@@ -121,7 +110,6 @@ test the fakes
 https://www.madetech.com/podcast/
 
 #### Auto-mocking
-
 - Available from RhinoMocks, StructureMap, Moq, and many others.
 - Will build instances for you, injecting mock dependencies, so when
 your class has a lot of dependencies you don’t have to manually
@@ -129,7 +117,6 @@ construct a mock for each dependency passed in
 - [Nice description here](https://lostechies.com/joshuaflanagan/2009/02/04/auto-mocking-explained/)
 
 ### Mocks and TDD
-
 - Andy Longshaw: [Reflections on brittle tests and mocking](https://blogs.blueskyline.com/2020/07/30/this-cant-possibly-be-right/)
 - "When we came up with mocks, they weren't a TDD technique. They were a way to use TDD when designing the protocols between state machines. ... We designed mock frameworks to be a brutal early warning sign that our design was going off the rails." @natpryce
 - @DeeJayGraham: "mocks should only be used in early development of code to help sketch out an interface quickly. Then code should be testable not to need them - contrary to previous popular advice to use mocks where things are “a bit hard” to test"
@@ -143,7 +130,6 @@ construct a mock for each dependency passed in
 - [My original question on Twitter that led to some of the answers above](https://twitter.com/ClareSudbery/status/1289475539191963648?s=20)
 
 ## Ideas / Approaches
-
 - Steve Freeman: "Early XP trainings used to include a week-long “pure” project to really get the flow."
 - Detroit TDD vs London TDD: https://tinnedfruit.com/list/20181004#:~:text=London-school%20TDD%20works%20'top,spies%2C%20stubs%2C%20etc
     - [More on that, re double-loop and outside-in](http://coding-is-like-cooking.info/2013/04/outside-in-development-with-double-loop-tdd/) from Emily Bache, who says London School TDD has two features that distinguish it from Classic TDD. They are: Outside-In development with Double Loop TDD, and "Tell, Don’t Ask" Object Oriented Design.
@@ -155,20 +141,16 @@ construct a mock for each dependency passed in
 - On the idea that it's hard to convince stakeholders of the benefits of TDD because they think it will slow us down: "So, we are asking permission from management to think carefully? It makes my heart sink." @keithb_b [Go slow to go fast](https://www.agilemastery.online/2020-08-01/go-slow-to-go-fast.php).
 
 ## Misc
-
 - [TDD tag in private Evernote](https://www.evernote.com/client/web?login=true#?an=true&n=65ff390c-ddb3-45f6-9de5-762606dfc826&query=tag%1FTDD%1FtagGuid%3Ad39ee366-abf9-4984-9ac7-f41d93f6460a%1Eview%3AVIEW%2FALL_NOTES&)
 - [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
 
 ## Tips and Terms and Tools
-
 ### Sliming
-
 - [Sliming](https://www.destroyallsoftware.com/screencasts/catalog/when-to-generalize-in-tdd#:~:text=When%20a%20TDDed%20test%20fails,in%20the%20%22right%22%20way.) is the technique where you make your code do something trivial and hard-coded just to make your test pass - it's unlikely this will end up being production code. [Nice description here from Denise Yu](http://deniseyu.github.io/leveling-up-tdd/) (scroll down a bit) 
 - "[http://cyber-dojo.org](http://cyber-dojo.org) is a great place to practice TDD." - @sebrose
 - "Code retreat started by @coreyhaines is another fun way to learn." @thejonanshow
 
 ### NCrunch
-
 - If all tests are running after every change:
     - Change the NCrunch config so InstrumentationMode is set to Optimised
     - This is possible via Extensions | NCrunch | Configuration within Viksual Studio, but it didn't seem to take effect until I manually edited `[solution name].v3.ncrunchsolution` to include the line `<InstrumentationMode>Optimised</InstrumentationMode>` in the settings section.
@@ -182,7 +164,6 @@ construct a mock for each dependency passed in
     - If you're using approval tests (as used by [Gilded Rose](/pages/think/code-princ/Refactoring#gilded-rose)), the first time you run the test it will create a "received" file (eg `ApprovalTest.ThirtyDays.received.txt`). Create a copy of this with the suffix `.approved.txt` instead of `.received.txt`, and the file not found error should go away.
 
 ## GitHub Repos
-
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
 - [SimpleCardGameKata](https://github.com/claresudbery/SimpleCardGameKata)
