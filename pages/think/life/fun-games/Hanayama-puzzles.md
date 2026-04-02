@@ -4,6 +4,9 @@
 	- I'm guessing they keep adding new ones, so my lists below (screenshotted March 2026) may be out of date
 # List of all puzzles
 ## Level 1 - Fun
+- Ones I've tried:
+	- [[#Cast loop]]
+
 ![[Screenshot_2026-03-20_at_12.44.34.jpg]]
 ## Level 2 - Easy
 ![[Screenshot_2026-03-20_at_12.44.57.jpg]]
@@ -12,17 +15,21 @@
 ## Level 4 - Hard
 - Ones I've tried:
 	- [[#Hanayama Cast Ring|Cast Ring]]
+
 ![[Screenshot_2026-03-20_at_12.47.42.jpg]]
 ## Level 5 - Expert
 - Ones I've tried:
 	- [[#Hanayama Cast Spiral|Cast Spiral]]
 	- [[#Hanayama Cast Ring II|Cast Ring II]]
 	- [[#Hanayama Cast Tube Puzzle|Cast Tube]]
+	- [[#The Legend of Zelda]]
 
 ![[Screenshot_2026-03-20_at_12.48.45.jpg]]
 ## Level 6 - Grand Master
 - Ones I've tried:
 	- [[#Hanayama Cast Enigma|Cast Enigma]]
+	- [[#Cast Nutcase]]
+
 ![[Screenshot_2026-03-20_at_12.49.21.jpg]]
 
 # Puzzles I've tried
@@ -54,3 +61,18 @@
 - [[#Level 6 - Grand Master]]
 - Somebody gave this to us/me as a present some time, and I don't think any of us has yet managed to solve it!
 ![[Screenshot_2026-03-20_at_13.03.38.jpg]]
+## Cast loop
+- [[#Level 1 - Fun]]
+- Andy Stone (AT) lent one of these to me.
+- I solved this one by myself!
+![[IMG_6018.jpeg]]
+## Cast Nutcase
+- [[#Level 6 - Grand Master]]
+- Andy Stone (AT) lent one of these to me.
+- I solved this one by myself!
+- For solution, see [[Hanayama Puzzle Spoilers#Cast Nutcase]]
+![[IMG_6019.jpeg]]
+## The Legend of Zelda
+- [[#Level 5 - Expert]]
+- I bought this for Oscar for his birthday 
+![[IMG_6020.jpeg]]
