@@ -177,5 +177,41 @@
       ],
       "key": "S"
     }
+  ],
+  "templater-obsidian:Templates/Code Template.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "F"
+    }
+  ],
+  "templater-obsidian:Templates/Move Text.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "templater-obsidian:Templates/Test Templater Syntax.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "templater-obsidian:Templates/Link to heading elsewhere.md": [
+    {
+      "modifiers": [
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "L"
+    }
   ]
 }

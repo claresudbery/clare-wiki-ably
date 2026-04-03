@@ -30,7 +30,11 @@
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "Templates/Center Align Text Template.md",
-    "Templates/New section.md"
+    "Templates/New section.md",
+    "Templates/Code Template.md",
+    "Templates/Move Text.md",
+    "Templates/Test Templater Syntax.md",
+    "Templates/Link to heading elsewhere.md"
   ],
   "startup_templates": [
     ""
