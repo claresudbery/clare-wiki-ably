@@ -156,6 +156,7 @@ permalink: /pages/organising/tools/Obsidian
 			- QuickAdd
 	- Templates:
 		- I currently have a template called `Center Align Text Template.md` that has an associated hotkey, so it's worth copying this and its `Left Align` and `Right Align` siblings over (along with the parent `Templates` folder)
+		- I also have many other templates - basically it's just worth checking what's in the `Templates` folder
 	- Hotkeys:
 		- Copy `hotkeys.json` from the `.obsidian` folder of another vault ^hk-json
 			- Remember that if the other vault has hotkeys that you want to keep that refer to specific things created using community plugins, you need to create those things first - eg a specific [[#QuickAdd]] macro
@@ -166,6 +167,8 @@ permalink: /pages/organising/tools/Obsidian
 		- I now have a lot of hotkeys set up to link to work with Templater. These have entries that need copying from two places: 
 			-  `hotkeys.json` (see [[#^hk-json|above]])
 			- In the file `.obsidian/plugins/templater-obsidian/data.json`, find the section headed `"enabled_templates_hotkeys"` and copy those entries over
+	- QuickAdd:
+		- If you're copying over updates, rather than configuring a new vault (in which case you'll get the whole thing from the plugins folder), you'll want to get any new macros from QuickAdd, in which case you need to check what's in `.obsidian/plugins/quickadd/data.json`, in tandem with associated files in the Templates folder.
 	- [[#css snippets]]
 		- Check the snippets sub-folder (if there is one) under `.obsidian`
 		- Copy whatever's in there into a new `snippets` sub-folder under your destination `.obsidian` folder
