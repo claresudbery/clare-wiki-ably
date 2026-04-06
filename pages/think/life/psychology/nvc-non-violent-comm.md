@@ -5,6 +5,7 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
 ---
 
 ## Intro
+- See also, clare-tech, saskia-advice-about-me - there are various sections in there about NVC stuff.
 - These notes are from 
   - Nonviolent Communication: A Language of Life: 
     - Life-Changing Tools for Healthy Relationships 
@@ -12,7 +13,6 @@ permalink: /pages/think/life/psychology/NVC-Non-Violent-Communication
   - by Rosenberg, Marshall B.; Chopra, Deepak. 
   - 3rd edition (Kindle Edition). 
 - Note that these notes are almost 100% simply copied direct from the book. 
-
 ## Table of Contents
 - [Quotes](<#quotes>)
 - Chapter 1

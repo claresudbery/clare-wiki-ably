@@ -155,6 +155,12 @@ permalink: /pages/organising/tools/Obsidian
 			- Modal forms
 			- QuickAdd
 	- Templates:
+		- Quick start - copy the following:
+			- Files in Templates folder
+			- New entries in  `hotkeys.json` from the `.obsidian` folder
+			- Templater: New entries in  `.obsidian/plugins/templater-obsidian/data.json`
+				- in the section headed `"enabled_templates_hotkeys"` 
+			- QuickAdd: New entries in  `.obsidian/plugins/quickadd/data.json`, under the "choices" section at the top
 		- I currently have a template called `Center Align Text Template.md` that has an associated hotkey, so it's worth copying this and its `Left Align` and `Right Align` siblings over (along with the parent `Templates` folder)
 		- I also have many other templates - basically it's just worth checking what's in the `Templates` folder
 	- Hotkeys:
