@@ -20,6 +20,8 @@ permalink: /pages/organising/tools/Obsidian
 	- [QuickAdd](<#quickadd>)
 		- [Use QuickAdd to automate note and folder creation](<#use quickadd to automate note and folder creation>)
 		- [DON'T Use QuickAdd this way to automate folder and file creation](<#dont use quickadd this way to automate folder and file creation>)
+	- [Templates](<#templates>)
+		- [[#Templater]]
 - [Basic operations](<#basic operations>)
 	- iOS Mobile: Specific stuff
 	- [Command palette](<#command palette>)
@@ -50,8 +52,11 @@ permalink: /pages/organising/tools/Obsidian
 	- [Maps of Content (MOCs)](<#maps of content mocs>)
 	- [Templates](<#templates>)
 		- [[#Insert link in current file to newly created template-based file]]
-		- [[#Use Templater to add a section header plus a link to that section]]
-		- [[#Set up hotkey for Templater Template]]
+		- [[#Templater]]
+			- [[#Use Templater to get user input]]
+			- [[#Use Templater to add a section header plus a link to that section]]
+			- [[#Set up hotkey for Templater Template]]
+			- [[#Troubleshoot errors during Templater execution by using console]]
 	- [Properties](<#properties>)
 		- [Showing / hiding properties](<#showing  hiding properties>)
 		- [Bad properties](<#bad properties>)
@@ -116,7 +121,7 @@ permalink: /pages/organising/tools/Obsidian
 	- If you want to move it, just close Obsidian and move folders around (including all contents)
 		- ...but when you reopen, community plugins will have to be re-enabled (see below)
 ## Keyboard shortcuts
-- !! I'm now maintaining this list in Obsidian - [[Keyboard shortcuts|CareerAnalysis vault]]
+- !! I'm now maintaining a list of `keyboard shortcuts` [in my CareerAnalysis Obsidian vault](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Obsidian/Keyboard%20shortcuts.md)
 ## Publish to a website
 - I hoped I could link to private pages from elsewhere, like I can with clare-tech by using GitHub links...
 	- ...but it wasn't really the same. I found a way of doing this by putting my vault into a GitHub repo and sharing links to files in that repo, but Obsidian uses non-standard markdown so things like internal links and callouts didn't work nicely
@@ -350,7 +355,7 @@ permalink: /pages/organising/tools/Obsidian
         - but it did SEEM to mean I could reference `{{VALUE:LessonUrl}}` in my template...
         - but then the folder-picking stopped working, so it seemed this just broke stuff
         - ...and anyway it turned to be unnecessary, as I could just add the variable to the template
-      - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
+      - If you want more sophisticated ways of getting user input for templates, you can do this [[#Use Templater to get user input|using the Templater plugin]]
     - Select `Create in folder` and select the folder you want to use
       - You can select multiple folders here
     - Select `Include subfolders` (if you want)
@@ -845,6 +850,7 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
 - See [this article](https://obsidian.rocks/getting-started-with-obsidian-a-beginners-guide/)
 
 ## Templates
+- I've created a lot of keyboard shortcuts which use templates under the hood - they're all documented in my list of `keyboard shortcuts` [in my CareerAnalysis Obsidian vault](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Obsidian/Keyboard%20shortcuts.md)
 - My notes summarised from [this article](https://obsidian.rocks/getting-started-with-templates-in-obsidian/#comment-29383)
 - Create a Templates folder in your vault
 - Make sure you have the core `Templates` [plugin](<#plugins>) enabled
@@ -860,7 +866,7 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
     - I used this feature for my [file creation macro](<#use quickadd to automate note and folder creation>)
     - I wanted to capture another variable to use ONLY in my template, so I just added `{{VALUE:LessonUrl}}` to the template, and when I ran the `QuickAdd` macro, it popped up an input asking for a value for the variable
       - See [example](<#use quickadd to automate note and folder creation>)
-      - If you want more sophisticated ways of getting user input for templates, I believe you can do this using the `Templater` plugin, but I haven't explored this
+      - If you want more sophisticated ways of getting user input for templates, you can do this [[#Use Templater to get user input|using the `Templater` plugin]]
 - To use the template: 
   - Open / create a note
   - Select the "insert template" icon on the left below the calendar icon
@@ -884,11 +890,25 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
 - Note that in the article, they suggest `{{date:YYYY-MM-DD}}T{{time:HH:mm}}` for the date, but that results in an "invalid properties" error and prevents you from editing the properties in the properties editor.
   - But if you use `"{{date:YYYY-MM-DD}}T{{time:HH:mm}}"` instead of `{{date:YYYY-MM-DD}}T{{time:HH:mm}}` (ie, encase the value in quotes) then it works a bit better. You might still get a warning but you can now edit the properties in the properties panel without getting the "invalid properties" error.
   - Note that I found a suggestion that it might be better not to use the core Templates plugin, and use the community `Templater` plugin instead: [here](https://forum.obsidian.md/t/correct-format-for-date-time-template-variables-in-properties/68241/5)
-
+	  - See [[#Templater|my section on Templater]]
 ### Insert link in current file to newly created template-based file 
 - The way to do it is to turn on "Append link" in your QuickAdd macro
 - See "New Samman Meetup" QuickAdd macro in `clare-tech` Obsidian for an example
 	- There are instructions on how to use it in `samman-meetup-index.md`, also in `clare-tech`
+### Templater
+- I've created a lot of keyboard shortcuts which use Templater under the hood - they're all documented in my list of `keyboard shortcuts` [in my CareerAnalysis Obsidian vault](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Obsidian/Keyboard%20shortcuts.md)
+- See the following sections for more on using Templater:
+- [[#Use Templater to get user input]]
+- [[#Use Templater to add a section header plus a link to that section]]
+- [[#Set up hotkey for Templater Template]]
+- [[#Troubleshoot errors during Templater execution by using console]]
+### Use Templater to get user input
+- My `Move Text` and `Link to Heading Elsewhere` templates are good examples of this
+- Here's a snippet of it in action (using the Templater language, which is Javascript):
+```js
+// Get the preferred link text
+displayText = await tp.system.prompt('Edit the link text as required', displayText)
+```
 ### Use Templater to add a section header plus a link to that section
 - It's not perfect cos it means sections get added in reverse order, but it'll do for now
 - Put this in a "New section" template:
@@ -906,6 +926,14 @@ date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}"
 - (Note you have to first install the Templater plugin)
 - I did this by going into Templater (Settings, then bottom left) then scrolling down to Template Hotkeys, Add new hotkey for template, add the template in there
 	- Then you have to go to Settings => Hotkeys (top left), search for the template, and set up the hotkey in there
+### Troubleshoot errors during Templater execution by using console
+- If errors happen, it'll tell you to look at the console
+- Go to View => Toggle Developer Tools (Alt + Cmd + `i`)
+- Then select Console at the top
+- If you want to output debug strings to the console, you can insert lines like this in your Template file (which is just Javascript):
+```js
+console.log(`Built block text: ${text}`)
+```
 ## Properties
 - Properties are note metadata - or notes about your notes
 - More [here](https://obsidian.rocks/an-introduction-to-obsidian-properties/)

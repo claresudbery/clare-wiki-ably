@@ -18,8 +18,8 @@
 - You can't change it in things like Powerpoint online, so really you have no choice but to change the Chrome shortcut
 - This replaces the existing shortcut (Cmd + D) with your new shortcut
 - You do this in Macbook settings:
-- Keyboard shortcuts => App shortcuts
+- Keyboard shortcuts => App shortcuts (might be on the left)
 - Click + button
 - Select Google Chrome
-- Enter exact text "Bookmark This Tab..."
+- Enter exact text (with capitals and ellipsis) `Bookmark This Tab...`
 - Press Cmd + Shift + S
