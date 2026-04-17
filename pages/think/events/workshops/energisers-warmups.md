@@ -81,6 +81,7 @@ There are a couple of activities below that benefit from these types of question
 - What's your favourite holiday destination?
 - [if all software developers] What was your first computer language?
 - What's the oldest piece of tech you still own?
+- What's the oldest object you own?
 - If you could teach a junior developer one thing, what would it be?
 
 ## Getting to know each other

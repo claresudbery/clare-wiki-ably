@@ -23,7 +23,7 @@ permalink: /pages/organising/tools/Obsidian
 	- [Templates](<#templates>)
 		- [[#Templater]]
 - [Basic operations](<#basic operations>)
-	- iOS Mobile: Specific stuff
+	- [[#iOS Mobile-Specific stuff]]
 	- [Command palette](<#command palette>)
 	- [Settings](<#settings>)
 	- [Quick Switcher](<#quick switcher>)
@@ -48,6 +48,11 @@ permalink: /pages/organising/tools/Obsidian
 	- [[#Shrinking the size of your vault]]
 	- [Saving / storing links to 3rd party content](<#saving  storing links to 3rd party content>)
 	- [Importing content from other Notes systems](<#importing content from other notes systems>)
+	- [[#Convert notes to slides]]
+		- [[#Export slides to other formats using pandoc]]
+		- [[#Get pandoc working with images]]
+		- [[#Troubleshooting pandoc and file paths, via yaml config]]
+		- [[#Troubleshooting pandoc slide conversion and images]]
 	- [Each note should contain one idea](<#each note should contain one idea>)
 	- [Maps of Content (MOCs)](<#maps of content mocs>)
 	- [Templates](<#templates>)
@@ -436,7 +441,7 @@ Wait Choice: (Optional)
 Time: 1 second
 
 # Basic operations
-## iOS Mobile: Specific stuff
+## iOS Mobile-Specific stuff
 - Scrolling to the end of a long file:
 	- Open command palette (I have this configured to appear when you pull down from top) and search for "go to last line"
 	- Or add the "Scroll to top/bottom" community plugin, which works both on Desktop and mobile by adding little arrows bottom left of the screen
@@ -828,7 +833,94 @@ Consider using a tool like a-shell or iSH: These tools can help manage Git opera
   - Bear
   - Google Keep
 - And they’re planning on supporting many others, including Apple Notes"
-
+## Convert notes to slides
+- If you enable the Core Slides plugin, you can...
+	- Turn one note into a slideshow by using `---` in the note to separate slides (with either a blank line or a header before `---`)
+	- Select Slides - Start Presentation from the command palette to present the slides
+- You can [[#Export slides to other formats (notes here)]]
+### Export slides to other formats using pandoc
+- You can install the Pandoc community plugin, which will allow you to export slides to other formats:
+	- Once set up, you can access various Pandoc export instructions from the command palette
+		- If you get errors, you can see them in detail via View => Developer Tools and then go to the console
+	- It takes a few steps to set up: 
+		- 1. Install the [Pandoc command line tool](https://pandoc.org/installing.html) on your laptop
+		- 2. Install the Pandoc community plugin in Obsidian
+		- 3. Go to the Pandoc settings page on the bottom left in [[#Settings]], and check whether there is an error message saying `Pandoc is not installed or accessible on your PATH. This plugin's functionality will be limited.`
+			- This is a common problem. The fix:
+			- On the command line, run `which pandoc` and copy the resulting path (eg `/opt/homebrew/bin/pandoc`)
+			- Paste the path into tha pandoc path section
+			- Close and reopen the vault
+		- 4. Get attachments working with pandoc ^pandoc-images
+			- See [[#Get pandoc working with images]]
+### Get pandoc working with images
+- This is one of the steps needed when setting up pandoc - see [[#^pandoc-images]]
+- There were a few steps involved in getting this working:
+- 1. Make sure all your image file names do not contain spaces ^pandoc-spaces
+	- I created a script that would remove all spaces from image names, and from all references to those images: `~/scripts/remove_spaces_from_attachments_and_links.py`
+	- I also updated my screenshot compression script (`~/scripts/lowres-screenshot` and all scripts prefixed `lowres-screenshot-script-`) to remove spaces from screenshot file names (although actually it looks like I'd already done this)
+- 2. If your images don't live in the root of your project, qualify any file names with paths
+	- eg replace `![[` with `![[Attachments/`
+- 3. Make sure the file you're trying to convert to Powerpoint uses the standard markdown syntax for embedded images
+	- This means this: `![](image-file-name.jpg)` ...instead of this: `![[image-file-name.jpg]]`
+		- You do need `![]` (ie empty brackets) to ensure no alt text, unless you want the alt text to be printed under the image as a caption, in which case fill your boots (or your square brackets)
+	- You can achieve this by replacing (Cmd+Alt+F) `![[` with `![image](` and `]]` with `)`
+	- You don't need to worry about the fact that the file names do not include path info - the previous step will handle that
+- 4. Make sure you remove any image sizes from the Obsidian markdown image format
+	- They prevent images from rendering
+	- So, like this... `![](image.jpg)` not this: `![](image.jpg|700)`
+- 5. Make sure text won't prevent image rendering
+	- Make sure slides containing images either have no text before the image...
+	- ...or have one blank line between any text and the images... 
+	- or just have a header before images, in which case no blank line needed
+	- Also be aware that header 1 will render as a slide header above the image, but header 2 or any other kind of text will render in a separate panel to the left of the image
+		- Sadly you can either have a header on top or you can have a panel to the left
+		- If you try to have both, the header at the top will get smaller and to the left, and will be hard to distinguish from the left panel text
+	- Also no text after the image, or be aware that any text after the image will probably end up on a separate slide
+	- See [this commit](https://github.com/claresudbery/career-analysis-obsidian/commit/9d60745376f30cd4cbe8a5473984793bf81b7538) for where I experimented with this
+		- and [this](f677ff028eb4628a729570ad022cf4777e9a9b1a), [this](36567dcfd3999937d38821f21a7e3f7eb78bd80a), [this](0b70ccc1e9419cc4a1dc3af0ed89bd2d3bd183c7)
+	- ...and [v14](https://docs.google.com/presentation/d/1d38qs5yznIhk7QIZRZqR5WjJ4oR9dc2S/edit?usp=drive_link&ouid=117794872566978197093&rtpof=true&sd=true), [v15](https://docs.google.com/presentation/d/1alKm1JV9PhabJlXpEzw80fV7YVjUaP_8/edit?usp=drive_link&ouid=117794872566978197093&rtpof=true&sd=true) of the resulting Powerpoint, to see the difference it made to add / change the text before the images
+		- There were other versions with other smaller changes, but you can recreate them if necessary. The important learnings are documented here.
+- 6. Troubleshooting: If your Attachments folder is in a path that contains spaces (which it will be if using iCloud):
+	- I was getting a "withBinaryFile: does not exist" error, and I thought this was partially because of the path containing spaces and partially because of images not being in the root folder, so I tried using a yaml file ([[#Troubleshooting pandoc and file paths, via yaml config|see notes below]]), but actually (a) it didn't fix the files-not-in-root problem, and (b) it turned out the path containing spaces wasn't an issue
+- 7. Troubleshoot, if everything above is not working
+	- See [[#Troubleshooting pandoc slide conversion and images]]
+### Troubleshooting pandoc and file paths, via yaml config
+- I was getting a "withBinaryFile: does not exist" error, and I thought this was partially because of the path containing spaces and partially because of images not being in the root folder, so I tried using a yaml file, but actually (a) it didn't fix the files-not-in-root problem, and (b) it turned out the path containing spaces wasn't an issue
+- But anyway, this is what I did...
+- Set up image paths, otherwise you'll get a "withBinaryFile: does not exist" error when exporting files with images in a sub-folder like `Attachments`:
+	- Like this:
+	- Create a yaml file in your home folder or somewhere so its path and file name will contain no spaces. The yaml file should contain the path to your attachments folder, like this:
+	- `resource-path: ["/Users/clare.sudbery/Library/Mobile Documents/iCloud~md~obsidian/Documents/CareerAnalysis/Attachments"]`
+		- I haven't tested this, but I hope the fact that the path is surrounded by square brackets means this is an array, and you could also include the path for your Attachments folders in any other Obsidian vaults you have
+	- Go to the Pandoc settings page on the bottom left in [[#Settings]]
+	- Enter the path to your yaml file under "Extra pandoc arguments": `--defaults=/Users/clare.sudbery/.pandoc-obsidian.yaml`
+### Troubleshooting pandoc slide conversion and images
+- See also [[#Get pandoc working with images]]
+- I did all the above but was getting weird errors
+	- Summary: Some images worked, but most didn't
+	- I was getting errors saying file not found
+- It was all quite confusing, so I [added a tab to my Scratch spreadsheet](https://docs.google.com/spreadsheets/d/1reBBO4X7jTYagn9wdpWdeAt_dhLozSOZ_s3u-EjymyQ/edit?gid=1574254857#gid=1574254857) to track which actions I took made which kind of difference
+	- ...and [another tab](https://docs.google.com/spreadsheets/d/1reBBO4X7jTYagn9wdpWdeAt_dhLozSOZ_s3u-EjymyQ/edit?gid=836206915#gid=836206915) to record all the images and how they all behaved
+- Things to investigate:
+	- ~~51 images, 33 errors~~
+	- ~~Same 7 images erroring this time as last time?~~
+	- ~~Order of images in folder?~~
+	- ~~Duplicate images?~~
+	- ~~**5. Number of images in file? (Fewer works better? Would also make experimentation easier?)~~
+	- ~~**3. Why image path preceded by obsidian.md in error msg?~~
+	- ~~**2. What about the embedded note error?~~
+	- ~~What about different image md syntax?~~
+	- ~~**1.What about not having the yaml file configured?~~
+	- ~~**4. What about only having the 7 successful files - would I still get file access errors?~~
+	- ~~**1a. Try removing the |700 (etc) qualifiers~~
+	- ~~**1b. Try giving |700 (etc) qualifiers to all images~~
+	- ~~File attributes - size, dimensions etc~~
+	- ~~Text on image slides...~~
+		- ~~Whether it has to be a heading~~
+		- ~~Whether text can go after images~~
+		- ~~1. Other image markdown formats and whether I can get rid of the file name text~~
+		- ~~3. What's the difference between "special 7" vs "special 17"~~
+		- ~~2. Whether I can affect behaviour by changing pandoc config~~
 ## Each note should contain one idea
 - Notes summarised from [here](https://obsidian.rocks/five-title-ideas-for-notes/#Idea-1-Each-Note-Should-Contain-One-Idea)
 - 1. Each note contains only one idea

@@ -12,6 +12,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - [codefirstgirls-bootstrap-exercise](https://github.com/claresudbery/codefirstgirls-bootstrap-exercise)
 
 ## General Javascript Stuff
+- See also `coding-black-females.md` in clare-tech (ACCESSIBLE TO CLARE ONLY)
 - External hard disk has stuff from previous projects in F:\2014_OldHardDisk\Git
 - msFill - HTML javascript thing?: Dropbox\IT Training\JS Stuff\canvasfill.html
 - Javascript examples from Helix: Dropbox\IT Training\JS Stuff\Javascript examples.js

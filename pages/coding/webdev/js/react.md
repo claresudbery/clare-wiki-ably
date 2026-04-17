@@ -3,12 +3,30 @@ layout: page
 location: "pages/coding/webdev/js/leaf"
 permalink: /pages/coding/webdev/js/React
 ---
-
+## Table of Contents
+- [[#Resources]]
+- [[#GitHub Repos]]
+- [[#Docs and Blog Posts]]
+- [[#Automatically responding to code changes with Live Server|Live Server]]
+- [[#Reagent]]
+- [[#create-react-app]]
+- [[#JSX and Babel]]
+- [[#React Developer Tools]]
+- [[#React forms]]
+- [[#Hooks and functional components]]
+- [[#Class components]]
+- [[#Fragments]]
+- [[#Controlled components]]
+- [[#React Routes]]
+- [[#Relationship between React and Node]]
+## Resources
+- See also [[react-native]]
+- See also `coding-black-females.md` in clare-tech (ACCESSIBLE TO CLARE ONLY)
 ## GitHub Repos 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
-
 - [getting-started-with-tdd-in-react](https://github.com/claresudbery/getting-started-with-tdd-in-react)
 - [MenopauseTracker-javascript](https://github.com/claresudbery/MenopauseTracker-javascript)
+	- This was put together in 48 hours at a hackathon a long time ago, so tbh it's not likely to be very useful to anyone!
 - [react-big-calendar](http://intljusticemission.github.io/react-big-calendar/examples/index.html)
     - I found this on my hard disk after I cloned it from elsewhere. When I tried to create a new repo for it I just got a ton of security warnings because all the dependencies were out of date, so I got rid of my copy. This version is the source version, at intljusticemission.
     - It was used by another project - MenopauseTracker, I think.
@@ -144,23 +162,6 @@ useEffect(() => {
     - `useState` is the method used to change state in functional 
         - [This form code (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting) contains an example
 
-## Routing - react-router-dom
-- Can use popular standard routing library `react-router-dom`
-    - `npm install react-router-dom`
-- Types of router: 
-    - HashRouter
-        - Uses hash portion of url (the window.location.hash) to keep UI in sync with url
-        - eg `<a href="#/bookcase/first">` 
-    - MemoryRouter
-        - keeps history of url in memory - doesn't read or write to address bar
-    - BrowserRouter
-        - Uses the HTML5 history API (`pushState`, `replaceState` and the `popstate` event) to keep your UI in sync with the URL
-        - Example [here in bookcase app (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions)
-- The `Link` element:
-    - The <Link/> component is used to navigate to the different parts of an application by way of hyperlinks. 
-    - It's similar to HTML’s anchor element (`<a href="/">link</a>`) but the main difference is that using the Link component does not reload the page, it renders the elements based on the matching Router
-    - Link syntax: `<Link to="/items">Items</Link>`
-
 
 ## Fragments
 - By default, React components can only return one base DOM element
@@ -245,6 +246,23 @@ function GreetingForm1() {
 ```
 
 ## React Routes
+
+### Routing - react-router-dom
+- Can use popular standard routing library `react-router-dom`
+    - `npm install react-router-dom`
+- Types of router: 
+    - HashRouter
+        - Uses hash portion of url (the window.location.hash) to keep UI in sync with url
+        - eg `<a href="#/bookcase/first">` 
+    - MemoryRouter
+        - keeps history of url in memory - doesn't read or write to address bar
+    - BrowserRouter
+        - Uses the HTML5 history API (`pushState`, `replaceState` and the `popstate` event) to keep your UI in sync with the URL
+        - Example [here in bookcase app (available to Clare only)](https://github.com/claresudbery/cbf-sample-solutions/tree/master/software%20engineering/C_react/2022-10-sample-solutions)
+- The `Link` element:
+    - The <Link/> component is used to navigate to the different parts of an application by way of hyperlinks. 
+    - It's similar to HTML’s anchor element (`<a href="/">link</a>`) but the main difference is that using the Link component does not reload the page, it renders the elements based on the matching Router
+    - Link syntax: `<Link to="/items">Items</Link>`
 ### React Routes - Adding code to all pages
 - If you're going to include routes, your top level element returned by the `App` component has to be a `Router`
 - As long as you include a `"/"` route, whatever lives in that element will be what's displayed to the user when they first arrive at the site.

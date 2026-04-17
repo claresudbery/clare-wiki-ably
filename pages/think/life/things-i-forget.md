@@ -25,8 +25,8 @@ It's [this one](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-
 Fontaines DC
 
 ## Where is our cyberdojo?
-Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSalPairing Cyberdojo coderdojo
-
+- Cyber-Dojo Clare Sal pairing Python Fizzbuzz: UDR21P, See Dropbox\Events\ClareSalPairing Cyberdojo coderdojo 
+	- [[katas#Cyber-dojo|My notes on cyber-dojo]]
 ## What are all those great xkcd comics?
 ### Exploit of a mom / SQL Mom / Little Bobby Tables / Drop Table (xkcd comic)
 ![SQL Mom / Little Bobby Tables](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)  

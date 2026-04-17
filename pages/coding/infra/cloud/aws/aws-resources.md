@@ -15,6 +15,7 @@ permalink: /pages/coding/infra/cloud/aws/AWS-Resources
 - Useful Notes Doc: AWS section
 
 ## Useful Links
+- See also Devops & Cloud section in `coding-black-females.md` in clare-tech (ACCESSIBLE TO CLARE ONLY)
 - [AWS Management Console](https://eu-west-1.console.aws.amazon.com/console/home?region=eu-west-1#)
 - [Amazon EMR – Amazon Web Services](https://aws.amazon.com/emr/)
 - [S3 overview](https://aws.amazon.com/s3/)

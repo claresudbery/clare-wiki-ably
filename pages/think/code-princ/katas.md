@@ -11,7 +11,7 @@ permalink: /pages/think/code-princ/Katas
 		- [[#Quick start guide if you're working in "classroom" mode]]
 		- [[#Use traffic lights to spot people who might need help]]
 		- [[#Quick start guide if you're working solo]]
-
+		- [[#An example cyber-dojo classroom exercise]]
 ## Kata definitions
 - [Made Tech Learn Tech katas](https://learn.madetech.com/technology/katas/)
     - (includes Bowling, Mumbling, Number to LCD, Roman numerals, Snake, Tennis, Tennis Refactoring, Turnstile, Wordwrap, Test Framework, Video Store and Mars Rover)
@@ -51,10 +51,10 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### Cyber-dojo
 - [Cyber-dojo](https://cyber-dojo.org/) is a fantastic tool for getting straight into a kata in any language without setting up an IDE or dev environment. Really useful for workshopping in groups. Note that if you are not using it in a not-for-profit context, you should buy a (very cheap) licence. Details [here](https://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html).
 - If you follow [this link](https://cyber-dojo.org/creator/choose_problem) you’ll see a list of katas on the left and then when you select one it describes the kata
-
-- [[#Quick start guide if you're working in "classroom" mode]]
-- [[#Use traffic lights to spot people who might need help]]
-- [[#Quick start guide if you're working solo]]
+	- [[#Quick start guide if you're working in "classroom" mode]]
+	- [[#Use traffic lights to spot people who might need help]]
+	- [[#Quick start guide if you're working solo]]
+	- [[#An example cyber-dojo classroom exercise]]
 
 #### Quick start guide if you're working in "classroom" mode 
 - ...for instance several pairs working independently on the same exercise:
@@ -64,17 +64,16 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Click Classroom
 - Note the ID 
     - or note the url after you click OK 
-    - or just add your ID to this url: https://cyber-dojo.org/kata/edit/
+    - or just add your ID to this url: `https://cyber-dojo.org/creator/enter?id=`
 - Now for each pair: 
-    - They'll visit that url, or click "enter an existing practice" and enter the ID
+    - They'll visit that url, or go to home page, click "enter an existing practice" and enter the ID
     - one will have to click "enter group practice as new avatar"
         - make a note of their avatar
     - the other will have to click "join group practice as existing avatar" 
         - selecting the avatar created by the first
-- The facilitator can watch the progress of the pairs by clicking "dashboard"
+- The facilitator can watch the progress of the pairs by visiting that url and clicking "open group dashboard"
     - or by using the following link (add ID to the end):
     - https://cyber-dojo.org/dashboard/show/
-
 #### Use traffic lights to spot people who might need help
 - No new traffic lights:
     - If one of the pairs tries to take too big a step, and doesn’t run the tests for ages, their row won’t show any new traffic lights. Remind them not to write too much code at once, TDD is about small steps.
@@ -82,8 +81,6 @@ Sadly by necessity some of my repos are private. Those that are private are clea
     - Another problem you can spot easily is if a pair has a syntax error they don’t know how to fix - a long row of yellow traffic lights. You might be able to help them spot the problem, or just advise them to revert to the latest green. 
 - Long row of red traffic lights:
     - Similarly if one pair has a long row of red traffic lights - that indicates they tried to take too big a step and wrote a test that was too hard to make pass in one step. Go and talk to them, share your concerns, suggest they revert.
-
-
 #### Quick start guide if you're working solo
 - Go to [main home page](https://cyber-dojo.org/creator/home) 
 - If this is your first time: Select "Create a new practice"
@@ -101,3 +98,9 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 - Your first job is to write a test and see it fail. Then make it pass. Your next job is to write more failing tests, one at a time, and make them pass to gradually build a solution. Use tiny steps! The smaller the better.
 - Keep clicking test after every code change, to run the tests
 - Every time you run tests, you get a red, amber or green blob appear at the top. You can click on previous blobs to see the code at previous states.
+#### An example cyber-dojo classroom exercise
+- On Thurs 9th Apr I led XP Manchester in aa classroom exercise of the Tiny Maze kata 
+- I did a dry run beforehand with Isaac at AT, using Java and JUnit
+- [Visit this url](https://cyber-dojo.org/creator/enter?id=tgLUpT) and click "join group practice as existing avatar" to check various attempts at the kata during and after my session with Isaac
+	- I wrote these notes before the XP Manchester session, so I don't know yet whether more avatars will be added to this session, or we'll end up using a differentlanguage / testing framework
+- [Visit this url](https://cyber-dojo.org/dashboard/show/tgLUpT) to see the classroom dashboard

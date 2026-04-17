@@ -207,7 +207,7 @@ Or trick them by being euphoric.
 
 Above your head a flock of geese  
 are flying South. Beneath your feet  
-worms aren’t worrying.
+worms aren't worrying.
 
 ## Older covid stuff you probably already know
 - It is *a* coronavirus, not *the* coronavirus. There are versions of the common cold that are also coronaviruses. 
