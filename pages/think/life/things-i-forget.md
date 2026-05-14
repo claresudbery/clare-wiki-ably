@@ -425,3 +425,8 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 	- Get RadioWaters.co.uk up in Safari on phone, and play from there
 # Where are my notes on shrinking the size of Obsidian vaults?
 - [[obsidian#Shrinking the size of your vault|obsidian.md - Shrinking the size of your vault]]
+# What size bin bags do we need for our kitchen food waste bin?
+- 5L
+- From Amazon
+- "The Caddy Company Compostable Bin Liners 5 Litre"
+- or "Caddy Bags Kitchen Worktop Compost Food Waste Bin Liners"

@@ -3,12 +3,39 @@ layout: page
 location: pages/coding/infra/cmd/leaf
 permalink: /pages/coding/infra/cmd/Vim
 ---
-
-## What to do if you get stuck in a VIM editor
+# Table of contents
+- [[#Useful links]]
+- [[#What to do if you get stuck in a VIM or VI editor]]
+- [[#Vertical columns of text (like alt click)]]
+- [[#Navigating files, lines, blocks]]
+	- [[#^lines|Navigate lines]]
+	- [[#^file|Navigate file]]
+	- [[#^percent|The difference between % and [{]]
+	- [[#^blocks|Navigate blocks delineated by {}, (), \[\], \<\> or “”]]
+- [[#Searching]]
+- [[#Less + Vim]]
+- [[#Misc commands]]
+	- [[#^vimrc|vimrc]]
+	- [[#^copy-paste|Copy / paste]]
+	- [[#^append|Append, Substitute and Change]]
+	- [[#^text-objects|Text Objects]]
+	- [[#^line-numbers|Line Numbers]]
+	- [[#^insert-mode|Insert Mode]]
+	- [[#^functions|Functions]]
+	- [[#^undo|Undo and redo]]
+	- [[#^tabbing|Tabbing]]
+	- [[#^spaces|Spaces vs tabs]]
+	- [[#^multiples|Multiples]]
+	- [[#^deleting|Deleting]]
+	- [[#^joining|Joining text]]
+	- [[#^register|Replace current word with contents of register]]
+	- [[#^save-as|Save As]]
+# Useful links
+  - [Vim cheat sheet](http://hamwaves.com/vim.tutorial/images/vim.en.png)
+  - Great [online “Vim Adventures” game](https://vim-adventures.com/) you can use to learn Vim
+# What to do if you get stuck in a VIM or VI editor
 These instructions are based on what you see when you run `git commit` without giving a commit message.
-
 Quick Guide:
-
 - Type `i` to get into insert mode	(no need for colon)
   - (if it’s worked, you’ll see “-- INSERT --” at bottom of screen
 - Type your commit message
@@ -18,10 +45,9 @@ Quick Guide:
   - (`w` means write, and `q` means quit)
 - Hit Enter
 
-## Misc
-  - [Vim cheat sheet](http://hamwaves.com/vim.tutorial/images/vim.en.png)
-  - Great [online “Vim Adventures” game](https://vim-adventures.com/) you can use to learn Vim:
-  - If you make changes to \~/.vimrc and want to reload:
+You can also [[git#Change your default commit message editor|change your default commit message editor]].
+# Misc commands
+  - If you make changes to \~/.vimrc and want to reload: ^vimrc
       - Type **:so $MYVIMRC**
       - ...but actually you can just type **$MY** and then tab to
         autocomplete.
@@ -29,7 +55,7 @@ Quick Guide:
       - See [separate section below](<#searching>)
   - Navigating files, lines, blocks
       - See [separate section below](<#navigating files lines blocks>)
-  - Copy / paste:
+  - Copy / paste: ^copy-paste
       - Copy current line (“yank”): **yy** - which is the same as **Y**
       - Paste current clipboard contents below the line you are on (“put”): **p**
       - To replace one line with another: **Y** to yank a line, then go
@@ -37,7 +63,7 @@ Quick Guide:
           - **V** puts the whole line into visual mode, and then **p**
             pastes the register into the visual selection (the whole
             line).
-  - Append, Substitute and Change
+  - Append, Substitute and Change ^append
       - Append is **a** to append after current character or **A** to
         append at end of line
           - (puts you into insert mode)
@@ -51,42 +77,45 @@ Quick Guide:
           - See also separate section below on navigating blocks
   - Select a vertical column of text (like alt click)
       - See [separate section below](<#vertical columns of text like alt click>)
-  - Text objects:
+  - Text objects: ^text-objects
       - **aw** is a word
       - **iw** is an inner word
       - **daw** means delete a word
       - More here:
         <https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/>
       - In Vim adventures, try **:help aw**
-  - To see line numbers: **:set number**
+  - To see line numbers: **:set number** ^line-numbers
       - To make that change (or any other change) permanent:
           - Cmd: **vim \~/.vimrc**
           - Type the line **:set number** into the file
           - It will take effect immediately
       - To turn line numbers off temporarily (for copy/pasting): **:se
         nonu** (then **:se number** to turn them back on again)
-  - Do one command while in Insert mode, then return to Insert mode:
-    **Ctrl + o**
-      - This takes you to normal mode for one command
-  - Most commands in vim take a function and then an argument
+  - Inserting ^insert-mode
+	  - Do one command while in Insert mode, then return to Insert mode:
+	    **Ctrl + o**
+	      - This takes you to normal mode for one command
+	  - **o** – insert new line below (**O** = above)
+	      - Note this will also put you in insert mode
+	  - See also [[#^insert2|Inserting while navigating]]
+  - Most commands in vim take a function and then an argument ^functions
       - Eg **j** is a movement argument – so **dj** is the delete command with a
         “down” argument
       - Commonly repeat the function if there is no argument – so **dd**
         means just delete
-  - **u** - undo
-  - **Ctrl + r** - Redo
-  - **o** – insert new line below (**O** = above)
-      - Note this will also put you in insert mode
-  - Tab (indent) left or right: **\<** and **\>** - eg **\<\<** to just tab left
+	  - Select an entire function definition:
+	      - I used **a{** and **i{** but I never got quite what I wanted
+	      - I think the answer might lie here but I didn’t have the patience
+	        to read through all the suggested solutions:
+	        <https://stackoverflow.com/questions/11723169/selecting-entire-function-definition-in-vim/11723259>
+  - Undo and redo: ^undo
+	  - **u** - undo
+	  - **Ctrl + r** - Redo
+  - Tab (indent) left or right: **\<** and **\>** - eg **\<\<** to just tab left ^tabbing
       - To indent a whole block: Use **v** to go into visual mode, then
         up and down keys to select lines, then **\<** and **\>** to
         indent in or out
-  - Select an entire function definition
-      - I used **a{** and **i{** but I never got quite what I wanted
-      - I think the answer might lie here but I didn’t have the patience
-        to read through all the suggested solutions:
-        <https://stackoverflow.com/questions/11723169/selecting-entire-function-definition-in-vim/11723259>
-  - Set to use spaces instead of tabs
+  - Set to use spaces instead of tabs ^spaces
       - Cmd: **:set expandtab ts=2 sw=2**
       - Ts = tabstop
           - Note this means that you can use the tab command and it will
@@ -96,20 +125,21 @@ Quick Guide:
       - Sw = Shiftwidth
           - Something to do with what happens when you press enter, -
             automatic indentations?
-  - Multiples
+  - Multiples ^multiples
       - Add number at start
       - Eg **2f\_** - find the second instance of underscore on this
         line
-  - Delete characters – **x**
-  - **d** – delete line
-      - **dd** – delete current line
-      - **4dd** – delete 4 lines
-      - **dG** - Delete all lines from current line to end of file
-      - **Shift+d** – delete to end of line
-      - **Shift+c** – delete to end of line and go into insert mode
-      - **dw** – delete a word
+  - Deleting: ^deleting
+	  - Delete characters – **x**
+	  - **d** – delete line
+	      - **dd** – delete current line
+	      - **4dd** – delete 4 lines
+	      - **dG** - Delete all lines from current line to end of file
+	      - **Shift+d** – delete to end of line
+	      - **Shift+c** – delete to end of line and go into insert mode
+	      - **dw** – delete a word
   - Vim: **J** to join text that’s split across lines to turn it into one
-    long string
+    long string ^joining
       - Eg This...
           - Hey
               - Hello
@@ -118,15 +148,15 @@ Quick Guide:
           - Goodbye
       - ... becomes this:
           - Hey Hello You And also Goodbye
-  - Replace current word with contents of register: **v i w p**
+  - Replace current word with contents of register: **v i w p** ^register
       - **v** is visual mode
       - **iw** is inner word
       - **p** is put
-  - Equivalent of "save as":
+  - Equivalent of "save as": ^save-as
     - `:w filename` will save the file contents into `filename`
     - !! DANGER !! This is *not* the same as Save As in most contexts, because you are still at this point in your original file. Any edits you make after this will be made to the original file, not to the new copy.
 
-## Vertical columns of text (like alt click)
+# Vertical columns of text (like alt click)
   - Select a vertical column of text (like using Alt + click in other
     text editors):
       - **Ctrl + v** takes you into “visual block” mode, then use the up
@@ -157,24 +187,23 @@ Quick Guide:
           - Use **p** to paste your original column selection
           - There is an explanation here for why you can’t do it without
             typing the extra space:
-            [<span class="underline">https://stackoverflow.com/questions/31893732/vim-how-do-i-paste-a-column-of-text-from-clipboard-after-a-different-column-o</span>](https://stackoverflow.com/questions/31893732/vim-how-do-i-paste-a-column-of-text-from-clipboard-after-a-different-column-o)
-
-      
-## Navigating files, lines, blocks
-  - Navigate lines:
-      - Go to end of line: **$** or **A** (which also puts you in insert mode)
+            [<span class="underline">https://stackoverflow.com/questions/31893732/vim-how-do-i-paste-a-column-of-text-from-clipboard-after-a-different-column-o</span>](https://stackoverflow.com/questions/31893732/vim-how-do-i-paste-a-column-of-text-from-clipboard-after-a-different-column-o)  
+# Navigating files, lines, blocks
+  - Navigate lines: ^lines
+      - Go to end of line: **$** or **A** (which also puts you in insert mode) ^insert2
+	      - NB: pressing the lower-case `a` key in Normal mode puts you in insert mode but keeps you at the current cursor position
+	      - See also [[#^insert-mode|Insert Mode]]
       - Go to start of line: **0** (zero)
       - [Remap Ctrl+a and Ctrl+e to take you to start / end of line while
         in Insert mode](https://coderwall.com/p/fd_bea/vim-jump-to-end-of-line-while-in-insert-mode) using the `inoremap` command.
-  - Navigate file:
+  - Navigate file: ^file
       - Go to top of file: **gg**
       - Go to end of file: **shift + g**
       - Go to line number: **line-number + shift + g**
       - Navigation within chars / lines: **j** = down, **k** = up, **h** = left, **l** =
         right
-  - Navigate blocks delineated by {}, (), \[\], \<\> or “”
-  - The diff between **%** and **\[{** always confuses me cos it’s not
-    explained well in Vim Adventures:
+  - The difference between **%** and **\[{** always confuses me cos it’s not
+    explained well in Vim Adventures: ^percent
       - **%** will take you to the matching bracket if you are already
         ON a bracket. It only works on {}, () and \[\] (not \<\>)
       - **\[{** will search backwards for the enclosing { if you are
@@ -197,8 +226,8 @@ Quick Guide:
                   - }
               - }
           - In Vim Adventures type **:help \[{**
-  - If you want to navigate inside a block delineated by \[\], \<\> or
-    “”
+  - Navigate blocks delineated by {}, (), \[\], \<\> or “” ^blocks
+	  - If you want to navigate inside a block delineated by \[\], \<\> or “”
       - You can use **%** to find the matching brace if you are on \[ or \]
         but not \< or \>
       - You can use visual mode to select the contents of {}, \[\], (),
@@ -233,7 +262,7 @@ Quick Guide:
           - (There are others too, like **caw** and **ciw** for words -
             in Vim Adventures type **:help aw** and **:help iw**)
 
-## Searching
+# Searching
   - Search: `/[search term - regex]`
       - Examples: 
         - `/gup` will find the string "gup" including when it's embedded in other words, eg "guppy"
@@ -277,7 +306,7 @@ Quick Guide:
       - To use it, hit `v` to get in visual mode, highlight the yext
         you want to search for, then hit `\*`
 
-## Less + Vim
+# Less + Vim
   - **G** – end of file
   - **gg** – top of file
   - up and down arrows – scroll

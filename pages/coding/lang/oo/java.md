@@ -31,6 +31,8 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 		  - 1. Starts the JVM.
 		  - 2. Uses out as the classpath (`-cp out`) so it can find compiled classes.
 		  - 3. Runs the class `org.example.Main` (its main method).
+			  - This is actually going to look for a method called `main()` inside the file called `Main.java` in the folder `org/example`
+			  - You can specify a different class to run instead of `Main`, eg `java -cp out org.example.exercises.Exercise01`
 	  - So the flow is:
 		  - 1. Compile (`javac`)
 		  - 2. Run (`java`)

@@ -155,11 +155,13 @@ See [below](<#quick start kata guide>) for a quick start guide if writing a kata
   [Understanding ruby load, require, gems, bundler and rails autoloading from the bottom up](https://medium.com/@connorstack/understanding-ruby-load-require-gems-bundler-and-rails-autoloading-from-the-bottom-up-3b422902ca0)
 
 ## Testing
+### Test overview
+- To run tests (with rspec): either `rspec` or `bundle exec rspec` - see [[#^run-tests]]
 - For Rspec [see below](<#rspec>)
 - Overview of unit testing using Test::Unit:
   [<span class="underline">https://en.wikibooks.org/wiki/Ruby\_Programming/Unit\_testing</span>](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
 - Running a single test in Rails:
-  [<span class="underline">https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221</span>](https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221)  
+  [<span class="underline">https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221</span>](https://stackoverflow.com/questions/1506780/how-to-run-a-single-test-from-a-rails-test-suite/38079221)   ^dc13b4
     - I didn’t manage to get this working, but that was probably
       something to do with how my ruby gems were installed -
       something to do with bundles and vendor and stuff
@@ -191,7 +193,7 @@ gem "rspec-html-matchers"
 ```
 
 ### Rspec
-- To run tests: either `rspec` or `bundle exec rspec` (depending whether you did a global bundle install or a vendor one, I think (eg if you ran `bundle config set --local path 'vendor/bundle'` before you ran `bundle install`))
+- To run tests: either `rspec` or `bundle exec rspec` (depending whether you did a global bundle install or a vendor one, I think (eg if you ran `bundle config set --local path 'vendor/bundle'` before you ran `bundle install`)) ^run-tests
 - See [quick-start section](<#quick start kata guide>) for a quick start guide if writing a kata from scratch (includes getting tests set up, and running tests / how to run tests)
 - See [debugging rspec](<#debugging rspec tests>) for how to debug rspec tests
 - See [here](https://manny.codes/7-ways-to-selectively-run-rspec-tests) for running individual tests or subsets of tests
@@ -208,6 +210,7 @@ gem "rspec-html-matchers"
 - See [Front end testing](<#front end testing>) for how to do front end testing with Rspec.
 
 #### Test cases in rspec
+To run tests: either `rspec` or `bundle exec rspec` - see [[#^run-tests]]
 You can handle test cases in rspec in the way shown below - and there are more examples [here](https://github.com/claresudbery/wordwrap-kata-ruby/blob/23b24cf36e2e1be443f1d35bc9e40443564cf814/spec/wordwrap_spec.rb). Below we use a `hash` to map inputs ("rolls") to outputs "scores", and then use an `each` statement to loop through the list of elements in the hash.
 
 ```
