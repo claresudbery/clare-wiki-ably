@@ -127,6 +127,8 @@ permalink: /pages/organising/tools/Obsidian
 		- ...but when you reopen, community plugins will have to be re-enabled (see below)
 ## Keyboard shortcuts
 - !! I'm now maintaining a list of `keyboard shortcuts` [in my CareerAnalysis Obsidian vault](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Obsidian/Keyboard%20shortcuts.md)
+## Print out a note
+- Use the "Print" community plugin by Marijn Bent, then use Cmd + P => "Print: Current note"
 ## Publish to a website
 - I hoped I could link to private pages from elsewhere, like I can with clare-tech by using GitHub links...
 	- ...but it wasn't really the same. I found a way of doing this by putting my vault into a GitHub repo and sharing links to files in that repo, but Obsidian uses non-standard markdown so things like internal links and callouts didn't work nicely
@@ -1298,29 +1300,4 @@ process_directory(target_directory)
     - Could highlight words she wanted in a glossary, and then use a plugin to generate the glossary for her 
     - It created a graph for her of the conceptual relationships between the different parts of her book 
     - It has a [[#Publish to a website|publish feature]] which will allow you to turn your notes into a website!!! Clare-wiki!!
-
-# Useful override data
-- More detail is available [in this Google sheet](https://docs.google.com/spreadsheets/d/1U1z0EYH4THeuIrwf4CYk0nYOjdJpmg8gC3Pqk6-V8FE/edit?gid=0#gid=0)
-
-| **vin**           | **registration** | **type**     |
-| ----------------- | ---------------- | ------------ |
-| SAL1A2AU7PA125931 | 65TK             | VIN          |
-|                   | A13ARU           | REGISTRATION |
-| VF3V1ZKXZNZ070851 | AF72CXZ          | VIN          |
-| VF3V1ZKXZNZ070851 | AF72CXZ          | VIN          |
-| VF3V1ZKXZNZ061791 | AF72CZJ          | VIN          |
-| VF3V1ZKXZNZ061791 | AF72CZJ          | VIN          |
-|                   | BC14XUB          | REGISTRATION |
-|                   | BDD9B            | REGISTRATION |
-| 101168            | DNP419N          | VIN          |
-|                   | DU65TVE          | REGISTRATION |
-| 5Y4AM87C0N0503518 | EU72BYT          | VIN          |
-| WMWSR32070T343526 | EY13MUE          | VIN          |
-| WMWSR32070T343526 | EY13MUE          | VIN          |
-| SJNFEAJ11UZ000456 | EY17MDE          | VIN          |
-| SALLDVA576A728790 | FIB193           | VIN          |
-| LCELVYZ84J6004377 | FV68LUJ          | VIN          |
-| WV2ZZZ2KZKX089012 | GD19TUW          | VIN          |
-| SALRA2AK9K2404950 | GM19FLJ          | VIN          |
-| 15451             | GUB940T          | VIN          |
-| 23923             | GVM9E            | VIN          |
+    - 
