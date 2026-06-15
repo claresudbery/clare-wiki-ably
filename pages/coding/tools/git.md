@@ -479,7 +479,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 
 ### git reset
   - (\!\! be aware that `git reset` is dangerous if you have already
-    pushed to the server - `git revert` is safer)
+    pushed to the server - [[#git revert]] is safer)
   - A note on flags
 	  - `reset --hard` removes all staged changes
 	  - `reset` leaves changes behind but unstages them

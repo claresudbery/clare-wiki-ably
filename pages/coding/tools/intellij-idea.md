@@ -11,18 +11,6 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 	- Paredit – bottom right – turned off – gives you automatic bracket completion, but can cause more problems than it solves if youre not used to it cos you will type your own brackets and muck everything up?
 
 ## Keyboard shortcuts
-### Change / add keyboard shortcuts
-  - Splat `,` or Splat-shift-A (in Emily's remote-hosted IDEA setup)
-  - Keyboard | keymap
-  - Make sure you have the correct keymap in the dropdown – will prob have an arrow next to it – currently seem to be using “copy”
-  - Clojure keybindings | Search for “repl”
-  - Right-click – keyboard shortcut
-
-### Ted's useful shortcuts cheatsheet
-- (pdf version is [here](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf))
-
-![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.jpg)
-
 ### List of shortcuts
 - See also [IntelliJ shortcuts](<#intellij shortcuts>) below - which seem slightly different - maybe different keyboard mapping?
 - [Full list of Mac shortcuts](https://www.jetbrains.com/help/idea/reference-keymap-mac-default.html)
@@ -48,9 +36,12 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Find next occurrence: Cmd + G
   - Find prev occurrence: Shift + Cmd + G
 - Open Terminal - Opt/Alt + F12 (will prob need the Fn key too - on little magic keyboards, this is the one bottom left with pic of globe)
-
 ## IntelliJ shortcuts
   - See also [keyboard shortcuts](<#keyboard shortcuts>) above - which seem slightly different - maybe different keyboard mapping?
+  - NB: The function key is often bottom left, and looks like a little globe ^fn
+  - Go to top / bottom of file
+	  - Cmd + [[#^fn|Fn]] + Left (top)
+	  - Cmd + [[#^fn|Fn]] + Right (bottom)
   - Splat-B – go to definition (equivalent of Ctrl+B in Resharper)
   - Splat-alt-left (and right) – move back and forwards in history
   - Splat-shift-A – Action (v useful)
@@ -77,7 +68,19 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Cmd + D: Duplicate a line of code.
   - Alt + Splat + L: Pretty print: Xml formatting – and other formatting
       - From menu, this is is Cocde | Reformat code
+  - Splat + Shift + T - Open associated tests for current file
+	  - ...or vice versa (open the class that's being tested)
+### Change / add keyboard shortcuts
+  - Splat `,` or Splat-shift-A (in Emily's remote-hosted IDEA setup)
+  - Keyboard | keymap
+  - Make sure you have the correct keymap in the dropdown – will prob have an arrow next to it – currently seem to be using “copy”
+  - Clojure keybindings | Search for “repl”
+  - Right-click – keyboard shortcut
 
+### Ted's useful shortcuts cheatsheet
+- (pdf version is [here](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf))
+
+![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.jpg)
 ## Auto-running tests
 - Running tests automatically in IntelliJ: Click Rerun Automatically on the Run toolbar to enable the autotest-like runner.
 

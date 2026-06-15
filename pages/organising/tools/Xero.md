@@ -8,10 +8,10 @@
 - Dashboard = front page
 - Monzo - reconcile items - Emma does this once a month
 - Emma has set up rules to match
-	- The more times Emma does the same hting, it just recognises it
-	- There isn't a place you can go to see rules
+	- The more times Emma does the same thing, it just recognises it
+	- There is a place you can go to see rules - Accounting - Bank Rules
 - Already reconciled - look at "Bank statements" and they are marked on the right either reconciled or unreconciled
-	- Looks like "account transactipns is everything that's been reconciled"
+	- Looks like "account transactions" is everything that's been reconciled
 	- on the "Reconcile" tab you can see "balance in Xero" £2014.41 which means there are £2014.41 worth of unreconciled transactions
 ## Accessing Settings
 - Click business name, top left
@@ -90,5 +90,5 @@
 ### <span style="color:rgb(255, 0, 0)">Swiss francs</span>
 - Have told Emma about this
 ## <span style="color:rgb(255, 0, 0)">Bills owed</span>
-- It says I owe £2129.03 - this is actually the opening bank balance from when we moved from Xero to QB
+- It says I owe £2129.03 - this is actually the opening bank balance from when we moved to Xero from QB
 - Make a note 

@@ -294,3 +294,21 @@ The teacher said to the children, “These balloons are like happiness. We won't
 - 09 - teapot
 - 10 - car
 - 11 - bottle
+# Treasure Hunt (remote)
+- This is a game that probably works best when people are working remotely from their own homes
+- Put people randomly into pairs (Miro has spinners you can use - see [this template here](https://miro.com/app/board/uXjVGh85dro=/?moveToWidget=3458764675263811757&cot=14))
+	- Pairs are created one pair at a time, and they do the activity one pair at a time too
+	- So, spin to create one pair, then that pair is asked to do the activity while everyone else spectates
+- Each pair is given a randomly chosen category (again, you can use [a spinner](https://miro.com/app/board/uXjVGh85dro=/?moveToWidget=3458764675263811757&cot=14)), and asked to go and fetch a thing from that category
+	- *Suggested categories:*
+		- Something weird
+		- Something that represents a win
+		- Something useless
+		- Something red
+		- Something green
+		- Something that frustrates you
+		- Something you NEED to survive
+- Then everyone else votes on which person has brought back the best thing representing that category
+- 10 points for the person who was fastest to return to their chair
+- 10 points for the person who got the most votes
+- Keep going until everyone has had a turn

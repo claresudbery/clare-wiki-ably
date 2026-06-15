@@ -4,6 +4,8 @@ location: pages/coding/lang/oo/leaf
 permalink: /pages/coding/lang/oo/Java
 ---
 
+# IntelliJ Keyboard Shortcuts
+- See [[intellij-idea#Keyboard shortcuts|intellij-idea - Keyboard shortcuts]]
 ## GitHub Repos 
 Sadly by necessity some of my repos are private. Those that are private are clearly marked. For those that are, please don't ask me to share the code, because I can't. They're listed here purely for my reference.
 
@@ -81,3 +83,4 @@ private String generateContent(int quantity) {
 - "src/main/java/manchester/digital/Main.java:8: error: cannot find symbol"
 	- Could be you haven't compiled all code - eg if you compiled `Main.java` but didn't compile a file it depended on
 	- Try running something like `javac -d out $(find src/main/java -name '*.java')` instead of something like `javac -d out src/main/java/org/example/Main.java`
+
