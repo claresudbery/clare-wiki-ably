@@ -413,7 +413,51 @@ re, sorry!)
 - to animate screenshots...
     - could have two screenshots, one highlighted and one not
     - or could have a transparent-filled rectangle which appears on screen in animated fashion and encloses the bit of code you want to highlight
-
+## Github Slides / Github Pages
+- [This repo](https://github.atcloud.io/Clare-Sudbery/Debugging-exercises) has an example in its `docs` folder that was configured by AI using Jekyll (see readme for instructions)
+- [This repo](https://github.atcloud.io/Autotrader/pairing-workshop) has a folder called `docs`, containing a markdown file called `0000-01-01-welcome.md` that is split into slides using `---`. When I go to the repo's home page on github.com, I see a link top right in the About section that takes me to a `/pages` url on the same repo which shows me `0000-01-01-welcome.md` rendered as a slide deck. 
+	- I asked AI, "How do I configure another repo to have a slide deck in its About section at a `pages` url, and how do I configure the original repo to point at a different file for its slide deck instead of `0000-01-01-welcome.md`?"
+	- It was confusing because the master branch didn't have a hidden `.github` folder or a branch called `gh-pages`, or any `jekyll` or config files. There was just the standard hidden `.git` folder, which didn't contain a `workflows` sub-folder.
+	- It turned out that it was set up using Github Pages:
+		- Where to see it in GitHub Settings:
+		- If you have admin or write access to that repository, you can verify how it's hosted by going to: **Settings (the gear tab at the top) ➡️ Pages (in the left sidebar under "Code and automation")**
+		- Under **Build and deployment**, you will see exactly which branch GitHub Pages is watching. In your case, it will be configured like this:
+		- **Source:** `Deploy from a branch`
+		- **Branch:** `slide-updates`
+		- **Folder:** `/docs`
+		- Every time someone pushes a change to the `slide-updates` branch, GitHub triggers a built-in background process that automatically reads the `/docs` folder, grabs that Markdown file, wraps it in GitHub's default theme (which uses Jekyll natively behind the scenes), and renders it at the `/pages` URL.
+	- I couldn't see this because I didn't have admin access so couldn't go into the repo settings
+	- But I could guess at what was going on, because I could see a branch called `slide-updates` that had a bunch of extra files, including (crucially) `_config.yml`, that had a lot of `jekyll` references.
+		- It turned out I was slightly wrong about this - the original branch also had those files, but I didn't see them because (a) they don't get shown in Obsidian, and (b) they were hiding in the `docs` folder, wich I didn't open when looking in Finder
+	- If I wanted to change the slides, I had to do this:
+		- Switch your Git branch to `slide-updates` (either locally or using the branch dropdown on GitHub.com).
+		- Go into the `docs` folder.
+		- Either edit `0000-01-01-welcome.md` , or delete it and add a new Markdown file.
+			- Name the new file using the same chronological convention (e.g., `0000-01-01-my-slides.md`).
+		- Commit and push the changes to the `slide-updates` branch. GitHub Pages will automatically rebuild the site with your new file.
+	- If you want to have two different versions of the slides and switch between them at will:
+	- 1. File renaming
+		- 1. Keep both files in your `docs/` folder, named based on their role:
+		    - `deck-sales.md`
+		    - `deck-technical.md`
+		2. When you want the **Sales** deck to be live, rename it to start with the priority prefix:
+		    - **`0000-01-01-deck-sales.md`** (This becomes the live deck)
+		    - `deck-technical.md` (This is ignored or pushed to a secondary page)
+		3. When you want to switch to the **Technical** deck, just swap the prefixes:
+		    - `deck-sales.md`
+		    - **`0000-01-01-deck-technical.md`** (This now becomes the live deck)
+		    - As soon as you commit and push the filename change, GitHub Pages will rebuild and swap the presentation in about 30 seconds.
+	- 2. The Branch Swap (Cleanest for File Management)
+		- If you don't want to keep renaming files, you can use Git branches to hold your different versions. You can keep your files named cleanly as `0000-01-01-welcome.md` on both branches, but the _content_ inside them will be completely different.
+		- **Create your two branches:**
+	    - Leave your `slide-updates` branch as version A.
+	    - Create a brand new branch from it called `slide-updates-version-b`.
+	    - **Modify Version B:** Switch to the `slide-updates-version-b` branch, open the markdown file, change the slides to your second version, and push it to GitHub.
+	    - **Switch between them in Settings:**
+	    - Go to **Settings** ➡️ **Pages**.
+	    - Under **Build and deployment**, look at the Branch dropdown.
+	    - Simply flip the dropdown from `slide-updates` to `slide-updates-version-b` (or vice versa) and click **Save**.
+	    - GitHub will immediately rebuild the site using the files from your newly selected branch, swapping your presentation version without you having to delete or rename any code!
 ## Demo Pro
 - DemoPro
 - For drawing on screen during presentations

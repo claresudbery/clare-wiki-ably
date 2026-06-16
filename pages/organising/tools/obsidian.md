@@ -154,6 +154,7 @@ permalink: /pages/organising/tools/Obsidian
 - Start with the vault closed while you do actions in the file system:
 	- Plugins:
 		- Easiest thing is to copy `community-plugins.json` and `core-plugins.json` ***and the plugins folder*** from the `.obsidian` folder of another vault...
+			- Note: For lightweight settings that are pretty universal, my Autotrader vault is a good one to copy from.
 			- (and make sure the plugins folder is copied to INSIDE the `.obsidian` folder)
 			- ...but be aware that you'll also be copying over vault-related config info
 			- ...so, for instance, I ended up with a Git config file having its remote source being overwritten with the url of a different repo, because I'd copied over the [[#Github Sync plugin|Github Sync community plugin]] from another vault
@@ -180,7 +181,7 @@ permalink: /pages/organising/tools/Obsidian
 			- Remember that if the other vault has hotkeys that you want to keep that refer to specific things created using community plugins, you need to create those things first - eg a specific [[#QuickAdd]] macro
 		- If you're using GitHub, commit before the next step so you can see what changes you make
 		- Open up your new copy of `hotkeys.json` in a text editor and remove any that you don't want to keep
-			- For me, most likely these will be the ones that are headed with strings that start `quickadd:choice:`
+			- For me, most likely these will be the ones that are headed with strings that start `quickadd:choice:` (but not `quickadd:runQuickAdd`)
 				- The way for me identify them is to open up any documentation I've created - for me that's most likely [this file](https://github.com/claresudbery/career-analysis-obsidian/blob/main/Obsidian/Keyboard%20shortcuts.md).
 		- I now have a lot of hotkeys set up to link to work with Templater. These have entries that need copying from two places: 
 			-  `hotkeys.json` (see [[#^hk-json|above]])
@@ -210,7 +211,7 @@ permalink: /pages/organising/tools/Obsidian
 - Get mobile working how you want it
 	- Do this as soon as possible, so there's not too much indexing needed
 	- The first time you open on mobile, it'll sync and you'll be asked to enable plugins - click "Trust author and enable plugins"
-	- You'll also have ti wait for indexing to happen
+	- You'll also have to wait for indexing to happen
 	- Now you might want to do things like...
 		- 
 ## css snippets
