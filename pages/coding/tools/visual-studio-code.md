@@ -17,6 +17,7 @@ permalink: /pages/coding/tools/Visual-Studio-Code
 
   - Cmd + o - open a file (but it has to be recently opened or already
     open?)
+  - Cmd + p (Quick Open) to quickly search and open a file by its name.
 
   - Cmd + shift + o - search for a symbol
 

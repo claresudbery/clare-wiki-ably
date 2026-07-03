@@ -414,6 +414,8 @@ re, sorry!)
     - could have two screenshots, one highlighted and one not
     - or could have a transparent-filled rectangle which appears on screen in animated fashion and encloses the bit of code you want to highlight
 ## Github Slides / Github Pages
+- [Here](https://github.atcloud.io/Clare-Sudbery/clare-ai-stuff/blob/master/tickets/16869/showcase-notes.md#the-finished-slide-deck) is an explanation / example of how to use `marp` (instead of `Jekyll`) to create slides in the browser (not publicly available, an Autotrader repo, but I may copy the non-AT stuff to a separate repo at some point)
+- [This repo created by Mark Crossfield](https://github.atcloud.io/Autotrader/slides-as-code) can be used as a starting point for a new jekyll-based slide deck
 - [This repo](https://github.atcloud.io/Clare-Sudbery/Debugging-exercises) has an example in its `docs` folder that was configured by AI using Jekyll (see readme for instructions)
 - [This repo](https://github.atcloud.io/Autotrader/pairing-workshop) has a folder called `docs`, containing a markdown file called `0000-01-01-welcome.md` that is split into slides using `---`. When I go to the repo's home page on github.com, I see a link top right in the About section that takes me to a `/pages` url on the same repo which shows me `0000-01-01-welcome.md` rendered as a slide deck. 
 	- I asked AI, "How do I configure another repo to have a slide deck in its About section at a `pages` url, and how do I configure the original repo to point at a different file for its slide deck instead of `0000-01-01-welcome.md`?"

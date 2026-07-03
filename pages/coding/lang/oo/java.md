@@ -3,7 +3,10 @@ layout: page
 location: pages/coding/lang/oo/leaf
 permalink: /pages/coding/lang/oo/Java
 ---
-
+## Useful links
+- [JDoodle](https://www.jdoodle.com/online-java-compiler) - write Java in the browser (I have an account with saved code) ^jdoodle
+	- NB: When importing libraries, click the "external libraries" icon above the right hand pane - looks like a file icon with a downward-pointing arrow
+		- ...Don't use the links they provide to find libraries, they're not terribly useful - just use Google or Gemini
 # IntelliJ Keyboard Shortcuts
 - See [[intellij-idea#Keyboard shortcuts|intellij-idea - Keyboard shortcuts]]
 ## GitHub Repos 

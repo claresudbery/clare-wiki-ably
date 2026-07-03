@@ -504,3 +504,19 @@ Extensions > Apps Script
 - A sample spreadsheet containing a demo of the problem is [here](https://docs.google.com/spreadsheets/d/15JekJRilFscgtecvxids5Bvn4UC-W1RQF6R6zqpgJc8/edit?gid=475101449#gid=475101449)
 - Note that when this problem occurs, it also leads to the error "Those columns are out of bounds" when I try to edit the chart title via a script
 
+# Two-tone cells
+- You can't give a cell two background colours
+- But you can create a two-tone image and insert it in the cell
+	- Resize the canvas to be really small and to match your cell size / proportions
+	- Insert two triangle shapes with colours to match your spreadsheet
+		- Top tip: 
+			- Use exact same colours as spreadsheet, and change cell background colour to match the left side of your image.
+			- Then if you resize the cell, the image will blend into the background and it won't matter too much if proportions don't quite match up
+	- Rotate and resize to get what you want
+	- Give them transparent borders
+	- Add text with size, colour, weight and font to match your spreadsheet
+- You have to use a separate drawing tool - [Google drawings](https://docs.google.com/drawings) is good
+- (You can use the built-in Google sheets drawing tool (Insert => Drawing), but the default canvas size is v large and unchangeable, which means you can't get text large enough to look proportionately right within the cell)
+- I created a [two-tone Excel cell drawing here](https://docs.google.com/drawings/d/1cyV2e7-68zruQ8emryZdjUi1Ho7l44HzBbNlLIiFRvM/edit) 
+- You have to insert text manually, which is annoying - you can't put image in background of cell and you can't pull text from cell into image
+- Then download the image and upload into your cell via Insert => Image => Insert an image in the cell.

@@ -36,6 +36,8 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
   - Find next occurrence: Cmd + G
   - Find prev occurrence: Shift + Cmd + G
 - Open Terminal - Opt/Alt + F12 (will prob need the Fn key too - on little magic keyboards, this is the one bottom left with pic of globe)
+- Remove / manage all breakpoints: Cmd + Shift + F8
+	- See [[#Breakpoints]] for more
 ## IntelliJ shortcuts
   - See also [keyboard shortcuts](<#keyboard shortcuts>) above - which seem slightly different - maybe different keyboard mapping?
   - NB: The function key is often bottom left, and looks like a little globe ^fn
@@ -81,6 +83,25 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 - (pdf version is [here](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.pdf))
 
 ![cheatsheet](/resources/images/Ted-IntelliJ-IDEA-Shortcuts-cheat-sheet-v1.1.jpg)
+## Breakpoints
+- Breakpoint screen is available via Run => View breakpoints or Cmd + Shift + F8
+- To manage multiple, select checkpoint in tree on left (Cmd + A for all)...
+- Uncheck to disable
+- Use delete key or click the - button at the top to delete
+## Diagrams
+- Right-click a package => Diagrams => Show Diagram
+- A little popup will appear below the package - easy to miss! Select classes or modules or whatever
+- Initially it'll look not terribly impressive and a bit pointless:
+- ![[Screenshot_2026-07-02_at_16.43.43.jpg|200]]
+- But if you click the icons top left for things like dependencies, properties and methods...
+- ![[Screenshot_2026-07-02_at_16.44.38.jpg]]
+- ...you'll end up with something much more useful:
+- ![[Screenshot_2026-07-02_at_16.48.22.jpg|674]]
+- You can rearrange everything in the diagram to make it easier to read / a more sensible arrangement. Saving your rearranged view for future use is NOT obvious, but you can do it via the export icon at the top and saving as IDEA .uml, like this: 
+- ![[Screenshot_2026-07-02_at_17.03.47.jpg|400]]
+- Then, when you reopen it, you might find half the diagram disappears off the edge of the screen and can't be scrolled into view! Don't panic - click the "Fit Content" icon at the top:
+- ![[Screenshot_2026-07-02_at_17.08.44.jpg]]
+
 ## Auto-running tests
 - Running tests automatically in IntelliJ: Click Rerun Automatically on the Run toolbar to enable the autotest-like runner.
 

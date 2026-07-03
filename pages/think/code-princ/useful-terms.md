@@ -22,6 +22,8 @@ permalink: /pages/think/code-princ/Useful-Terms
     system will respond to a particular circumstance.
 
 ## Idempotence
+- Consistently repeatable behaviour. 
+- See...
 - [Idempotence: What it is and what it isn’t (What is an idempotent function?)](https://insimpleterms.blog/idempotence-what-it-is-and-what-it-isnt) (My InSimpleTerms blog post)
 - [Idempotence - Wikipedia](https://en.wikipedia.org/wiki/Idempotence)
 - [What is Idempotency?](https://www.restapitutorial.com/lessons/idempotency.html)

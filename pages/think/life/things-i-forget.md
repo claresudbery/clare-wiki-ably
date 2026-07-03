@@ -430,3 +430,10 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 - From Amazon
 - "The Caddy Company Compostable Bin Liners 5 Litre"
 - or "Caddy Bags Kitchen Worktop Compost Food Waste Bin Liners"
+# How do I bypass the display screen lock Timeout on my iphone?
+- turn on guided access by triple-clicking the side button and pressing start
+- or by saying "hey siri, turn on guided access"
+- Or by opening the display settings with the "screen Timeout" shortcut 
+	- Or by saying "hey siri, run screen Timeout"
+## What's that tool for writing Java in the browser?
+- JDoodle. See my notes [[java#^jdoodle|here]].

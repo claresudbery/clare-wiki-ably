@@ -38,3 +38,5 @@ permalink: /pages/organising/tips/tech/Misc-Terminology
 ## Event storming
 - See [[architecture-principles#Event Storming]]
 
+## Idempotence
+- Consistently repeatable behaviour. See [[useful-terms#Idempotence]]
