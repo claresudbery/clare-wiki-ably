@@ -18,3 +18,15 @@
 # Cast Twist
 - See [[Hanayama-puzzles#Hanayama Cast Twist|main page here]]
 - Once I'd worked out how to do this, I wrote out some diagrammatic instructions (see spoiler page) in a way that made sense to me, so I could assemble and disassemble it repeatedly, just because I find it so satisfying. It makes a good fidget toy!
+- The instructions probably won't make much sense unless you also watch [the video](https://youtu.be/1c0z2INLEvw?si=qk5z2_0n6SOfgEG2).
+- The ellipses represent the silver ring, which stays still while the gold ring rotates clockwise or anticlockwise. 
+- There are two ellipses for each step, for before and after the move. 
+- The little three-sided rectangles (a bit like horseshoes) indicate where the gap in the gold ring should be in relation to the silver ring. 
+- The arrows represent clockwise or anticlockwise rotations of the gold ring around the silver ring, or sometimes the gold ring just rotates in place to change the position of the gap in the ring.
+- The smaller numbers refer back to the other instructions, so you can go back and forth between taking it apart / putting it back together.
+- Taking it apart:
+![[Screenshot_2026-07-07_at_22.53.05.jpg]]
+
+- Putting it back together:
+![[Screenshot_2026-07-07_at_22.51.42.jpg]]
+
