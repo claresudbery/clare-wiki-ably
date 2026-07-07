@@ -14,6 +14,10 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
 ### List of shortcuts
 - See also [IntelliJ shortcuts](<#intellij shortcuts>) below - which seem slightly different - maybe different keyboard mapping?
 - [Full list of Mac shortcuts](https://www.jetbrains.com/help/idea/reference-keymap-mac-default.html)
+- NB: The function key is often bottom left, and looks like a little globe ^fn
+- Go to top / bottom of file
+	- Cmd + [[#^fn|Fn]] + Left (top)
+	- Cmd + [[#^fn|Fn]] + Right (bottom)
 - Find/show usages: Alt + Splat + F7
   - or just Alt + F7
 - Go back: Cmd + [

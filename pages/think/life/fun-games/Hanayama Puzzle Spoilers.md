@@ -1,4 +1,5 @@
 # Cast Nutcase
+- See [[Hanayama-puzzles#Cast Nutcase|main page here]]
 - The large bolt in the middle splits lengthways into two, each half getting its own end piece
 - If you look carefully, you'll see the shaft of the large bolt is kind of hexagonal, with six vertical sections 
 - The two halves of the split bolt get three vertical sections each, but with two sections fused together and the third one separate (see pic below)
@@ -13,3 +14,7 @@
 ![[IMG_6026.jpeg]]
 
 ![[IMG_6023.jpeg]]
+
+# Cast Twist
+- See [[Hanayama-puzzles#Hanayama Cast Twist|main page here]]
+- Once I'd worked out how to do this, I wrote out some diagrammatic instructions (see spoiler page) in a way that made sense to me, so I could assemble and disassemble it repeatedly, just because I find it so satisfying. It makes a good fidget toy!
