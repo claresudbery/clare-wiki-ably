@@ -153,6 +153,7 @@ permalink: /pages/coding/tools/IntelliJ-IDEA
     - Cmd + , => Editor => General => Code folding => Un check "one line methods"
 
 ## Getting started with a new project
+- See also: [[java#Run configurations|java - Run configurations]]
 - Import project: for clojure, find project.clj
 - For plain Java, just open the containing folder
 - When you first open a Java project in IDEA, it will ask you to specify the SDK
@@ -206,7 +207,7 @@ lifts.forEach(lift -> {
           - Check the checkbox for `'else' on new line`
 ## Clojure repl
   - To have a Clojure repl available:
-      - Top right, click the down arrow | Edit configuration
+      - Top right, click the down arrow | Edit configuration to access run configurations (see also [[java#Run configurations|java - Run configurations]])
       - Click the + button, top left
       - Select Clojure REPL -\> Local from the list
       - Give it a name
@@ -241,3 +242,5 @@ lifts.forEach(lift -> {
 
 ### Troubleshooting the repl
   - If you get surprising errors in the repl: Try restarting the repl (I think I wrote this in reference to ClojureScript)
+# Auto-fill commit messages (or not)
+- Settings > Version Control > Commit > Clear initial commit message

@@ -30,3 +30,6 @@
 - Putting it back together:
 ![[Screenshot_2026-07-07_at_22.51.42.jpg]]
 
+- A verbal description of the moves needed to take the puzzle apart:
+![[Screenshot_2026-07-08_at_07.29.47.jpg]]
+

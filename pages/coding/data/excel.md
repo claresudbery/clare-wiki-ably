@@ -89,3 +89,40 @@ permalink: /pages/coding/data/Microsoft-Excel
 		- You can change the range under "applies to" at the bottom
 			- Don't use left and right arrow keys in this field, it makes weird things happen!
 		- Use plus and minus buttons bottom left to add and remove rules
+# Power Query and Tables
+- I've used this to transform data from one worksheet and pull it into another
+- My notes on how I did this are in clare-tech: finance-rationalisation.md.
+- Starting a Power Query isn't currently possible in Excel for the web. You can, however, Start a Power Query in the Excel desktop app:
+	- To open the desktop app, at the top of the ribbon, select **Editing** (top right) > **Open in Desktop App**.
+	- You might also need to [[#Power Query - Internal Database Connection|change the database connection]]
+## Power Query - Internal Database Connection
+- The default is for the database connection to be hard-wired to access a file on your local file system
+- This breaks if you try to access a spreadsheet on a different machine
+- To fix this:
+- Instead of pulling data from an external Excel file (which forces a file path), you want to tell Power Query to look natively inside itself.
+- Open your workbook in the desktop app. Go to the **Data** tab and open your query in the **Power Query Editor**.
+- In the Power Query ribbon, go to the **Home** tab and click **Advanced Editor** (in the middle at the top). This opens the M code behind your query.
+- Look at the very first line of code (usually labeled `Source = ...`).
+	- It probably looks something like this right now:
+	- `Source = Excel.Workbook(File.Contents("C:\Users\HomeLaptop\OneDrive\Spreadsheet.xlsx"), null, true),`
+	- Replace that entire Source line with this exact text: `Source = Excel.CurrentWorkbook(),`
+- Because `Excel.CurrentWorkbook()` immediately lists all the tables and named ranges _inside_ your current file, the next line in your code (the navigation step) needs to point directly to your specific table.
+	- Change your second line from this (replace `YourTableName` with the actual name of your Excel Excel table)...
+	- `#"Navigation 1" = Source{[Item = "YourTableName", Kind = "Table"]}[Data],`
+	- ...to this:
+	- `#"Navigation 1" = Source{[Name = "YourTableName"]}[Content],`
+	- Old way (`Excel.Workbook`): It looks for column names called `Item`, `Kind`, and `Data`.
+	- New way (`Excel.CurrentWorkbook`): It looks for column names called `Name` and `Content`.
+## Troubleshooting
+### After Google Sheets download, cell borders disappear
+- "I'm looking at a tab in an Excel spreadsheet that was originally downloaded from a Google sheet. I have the formatting set so that negative financial amounts are shown in red text. But in all of those cells the default faint grey borders have disappeared. How do I get those faint grey borders back?"
+- This is a classic glitch that happens when exporting from Google Sheets to Excel.
+- When negative formatting is set up in Google Sheets using **Conditional Formatting** or standard styling with a **white fill color**, Google Sheets explicitly converts that background to a solid `#FFFFFF` (White) fill in the Excel `.xlsx` file. In Excel, a solid white background paints _over_ the default light-grey gridlines, making them completely disappear behind those cells.
+- Fix: Clear Fill in Conditional Formatting Rules
+- Select the affected range or press `Ctrl` + `A`.
+- On the **Home** tab, click **Conditional Formatting** → **Manage Rules...**
+- In the dropdown at the top of the manager, select **This Worksheet**.
+- Double-click the rule that makes negative numbers red.
+- At the bottom, where it says "Format with...", double-click the formatting rule to open the formatting dialogue.
+- Switch to the **Fill** tab and set background colour to **No Colour** (instead of White).
+- Click **OK** on all open windows to apply.

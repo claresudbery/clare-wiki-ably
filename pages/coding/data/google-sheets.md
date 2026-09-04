@@ -104,8 +104,8 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - Edit => Find and Replace => Replace `=` with `=` => Replace all
   - Make sure you check the "Also search within formulae" box
 - But actually a simpler way is to copy the whole spreadsheet (File => Make a copy) and then just delete the stuff you don't want
-
-## FILTER / CONTAINS SUBSTRING
+## FILTER
+### FILTER / CONTAINS SUBSTRING
 - Return all the cells that match the search criteria
 - The good thing about this is that you can search one col but return the contents of another col in the same row
 	- You can also search more than one col - see [[#Using FILTER to search more than one col|below]]
@@ -129,15 +129,70 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
 - If you want the range of values returned to come from separate non-consecutive cols, you can do it like this: 
 `=FILTER({$L$4:$L,$E$4:$E,$Q$4:$Q},$A$4:$A=$D15,$C$4:$C<>"")`
 - In this example, we're returning cols L, E and Q.
+### Using FILTER with multiple conditions
+- If you want to say "fetch cols if this is true AND this is true AND this is true"...
+- In the below example we're fetching rows where col E contains a val equal to `D2` AND the date col contains dates` >=E1` AND `<=F1`
+- !!Watch out! Each condition has to have brackets around it, in a way you wouldn't need to do if there was only one condition.
+- This example is from my new personal accounting spreadsheet (July '26)
 
-## Diff between FILTER and VLOOKUP
+```
+FILTER(
+	'all processed 26-27'!A12:J2973,
+	('all processed 26-27'!E12:E2973=D2)
+	*
+	('all processed 26-27'!B12:B2973>=$E$1)
+	*
+	('all processed 26-27'!B12:B2973<=$F$1)
+)
+```
+### Get FILTER to search for a range of values using MATCH
+- To get an Excel filter to search for a range of values instead of just one... 
+- Say you have this formula: `=IFERROR(FILTER(A12:J2973, E12:E2973=D2), "")`
+- ... but instead of matching against `D2`, you want it to match a range of values fetched from elsewhere - something like `=IFERROR(FILTER(A12:J2973, E12:E2973 IN VLOOKUP(D2,Lists!A3:B21,2,0)), "")`...
+- Excel doesn't have an `IN` operator, but you can create "IN" behaviour by wrapping the `MATCH` function inside `ISNUMBER`.
+- Instead of asking Excel _"Does this column equal X?"_, you ask it: _"If I look up this column's value in my allowed list, does `MATCH` find a position number?"_
+- Here is a formula that will accomplish this:
+
+```
+=FILTER(
+	'all processed 26-27'!A12:J2973,
+	ISNUMBER(
+		MATCH(
+			'all processed 26-27'!E12:E2973,
+			VLOOKUP(D2, Lists!$A$3:$B$21, 2, 0),
+			0
+		)
+	)
+)
+```
+
+- ...and here is the formula I created (in my personal accounting spreadsheet, July '26) to accomplish this using [[#Choose a different column each time, dependent on some criteria or other|CHOOSECOLS]] to do a different lookup each time, based on other criteria (in my case based on which broad category I wanted to use).
+	- Note that in the end though, I stopped doing this. Instead of searching for a range of values, I just added a new column to the source data that had the broad category in it
+
+```
+=FILTER(
+	'all processed 26-27'!A12:J2973,
+	ISNUMBER(
+		MATCH(
+			'all processed 26-27'!E12:E2973,
+			FILTER(
+				CHOOSECOLS(Lists!$A$4:$AB$101,$L$1),
+				CHOOSECOLS(Lists!$A$4:$AB$101,$K$1)=D2
+			),
+			0
+		)
+	)
+)
+```
+## VLOOKUP and XLOOKUP
+### Diff between FILTER and VLOOKUP
 - `FILTER` allows more complex search conditions
 - `VLOOKUP` is for just looking up one value
   - eg find all the rows where the values in one col are the same as each other
   - then return the values from a different col in those rows
   - Useful for finding specific information like an employee name based on their ID 
 
-## VLOOKUP and Gotchas
+### VLOOKUP and Gotchas
 - If you want to find a value and then return another value from the same row
 - it looks like this: `=VLOOKUP(A1,C2:E10,3,0)`
   - You're searching for a match for `A1`
@@ -185,10 +240,59 @@ More info [here](https://support.google.com/docs/table/25273?hl=en&ref_topic=905
   - When counting cols, start from the first col of the TABLE
     - (So above, even though col E is the fifth col on the sheet, it's the third col in the range of values we're searching ("the table"))
   - If the last arg is `1`, that means you're setting `true` for `range_lookup`, and if the data in the table isn't sorted in ascending order, that won't work
-## Stop VLOOKUP  and LOOKUP from returning 0
+### XLOOKUP for fuzzy searches
+- I've used this in my `2026_AllPersonalTransactions-Processed` spreadsheet
+- `=XLOOKUP(TRUE, LEFT(A2, LEN(Categories!$A$2:$A$20)) = Categories!$A$2:$A$20, Categories!$B$2:$B$20, "Uncategorized")`
+- ### How it Works Step-by-Step
+
+1. **`LEN(Categories!$A$2:$A$20)`**
+    
+    Measures the character length of every keyword in your category list. For instance, if row 2 has `"Asda Stores"`, its length is **11**.
+    
+2. **`LEFT(A2, LEN(...))`**
+    
+    Takes the first $N$ characters from your cell `A2`. For row 2, it looks at the first 11 characters of `"Asda Stores 21-02-26"`, which evaluates to `"Asda Stores"`.
+    
+3. **`LEFT(...) = Categories!$A$2:$A$20`**
+    
+    Compares that extracted string to the keyword itself. If they match, it returns **`TRUE`**.
+    
+4. **`XLOOKUP(TRUE, ...)`**
+    
+    Finds the row where the match evaluates to `TRUE` and returns the adjacent category from Column B.
+    
+
+#### ⚠️ Two Important Rules for This Formula
+
+- **Keep the Range Exact:** Do **not** use whole columns (like `A:A`) or include empty cells in `Categories!$A$2:$A$20`. An empty cell has a length of `0`, causing `LEFT(A2, 0)` to return `""`, which falsely matches everything.
+    
+- **Order Specificity:** If you have overlapping prefixes (e.g., `"Asda Petrol"` and `"Asda"`), put the longer, more specific prefix (`"Asda Petrol"`) **higher up in your table** so Excel tests it first.
+    
+
+This [XLOOKUP Wildcard Match Explanation](https://www.youtube.com/watch?v=oQngdyQus5M) breaks down how `XLOOKUP` evaluates partial text matches and array comparisons when mapping data against lookup tables.
+### Stop VLOOKUP  and LOOKUP from returning 0
 - If VLOOKUP finds no corresponding value, it will return 0 instead of empty string
 - Fix this by forcing it to treat the result as a string by adding `&""`:
 - `VLOOKUP(A2,A2:G1000,7,0)&""`
+## Choose a different column each time, dependent on some criteria or other
+- This example is from my new accounting spreadsheet, July '26
+- I'm fetching data from a source sheet where I want to fetch all rows where the val in the Category column matches my search string
+- But sometimes I want to fetch rows where the val in the *Description* col matches, or maybe the val in the *Source* col.
+- So I use `CHOOSECOLS`, which says (eg) "Out of all the cols between A and J, please choose the fifth col"
+	- Note that you don't have to start at A. You could start at (eg) F, in which case the 5th col would be col J.
+- Finding the column number:
+	- The number `5` (to indicate 5th col) is stored in cell `K2`.
+	- Rather than the user having to know the numbers of the cols, I have a lookup table on another tab that has the col numbers next to strings defining the col headers.
+	- So on this tab I have a field where you can type "Category", then a lookup list where Category is translated to `5`, and I use `VLOOKUP` to fetch that value and place it in cell `K2`
+	- Note that in my lookup list, I use `COLUMN('all processed 26-27'!E5)` to get the value `5`
+		- This means that if the cols on the source tab get rearranged and the answer is no longer `5`, I'll still get the correct number.
+
+```
+FILTER(
+	'all processed 26-27'!A12:J2973,
+	(CHOOSECOLS('all processed 26-27'!A12:J2973, K2)=D2)
+)
+```
 ## Copy a whole col from one sheet to another
 - Like this: `={Categories!A:A}`
 

@@ -149,7 +149,7 @@ with just putting a small microphone quite close to your mouth”
 
   - Push-to-talk in Zoom
 
-  ![Audio settings](/resources/images/audio-settings.png)
+  ![[/resources/images/audio-settings.png]]
 
 ### Pairing
   - Slack and Zoom have good screen sharing capabilities and allow
@@ -172,8 +172,9 @@ with just putting a small microphone quite close to your mouth”
   - In the below example, we were working remotely across three geographical areas, and we wanted to encourage people to pair across areas - so we used the colour coding for that (I've changed the names to protect privacy). 
   - The numbers represent the number of times each pair of people has worked together.
   - The aim is to have each person work with every other possibility an even number of times, to get maximum cross-pollenation.
+  - [Here is an example](https://docs.google.com/spreadsheets/d/1xOj_8izLMCDnaOXxlbx4iyH1i856Icc3h8wkidBdEXU/edit?usp=sharing).
 
-  ![Pair Stairs](/resources/images/pair-stairs.png)
+  ![[/resources/images/pair-stairs.png]]
 
 ### Dealing with problems
   - Be aware that people will just put up with remote communication
@@ -223,7 +224,7 @@ with just putting a small microphone quite close to your mouth”
     coffee and cake\! You can set up a spreadsheet in the same way as
     [Pair Stairs](<#pair stairs>):
     
-      - ![Pair stairs](/resources/images/pair-stairs-cake.png) 
+      - ![[/resources/images/pair-stairs-cake.png]]
 
   - 18f's remote-first principles:
     [https://18f.gsa.gov/2015/10/15/best-practices-for-distributed-teams/](https://18f.gsa.gov/2015/10/15/best-practices-for-distributed-teams/)

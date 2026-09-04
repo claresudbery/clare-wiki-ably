@@ -112,6 +112,7 @@ npx create-react-app create-react-app-playground --template typescript
 - Typically it looks like this: `const [count, setCount] = useState(0);`
     - This example uses [array destructuring](/pages/coding/webdev/js/javascript-language.md#destructuring-arrays-and-objects) to set the variable `count` with a default of 0 and a method of `setCount` for updating the variable.
 - [This code](https://github.com/claresudbery/cbf-sample-solutions/tree/57d26b435fddbd7ee56fdf4eeac1569c5effb555/software%20engineering/C_react/2022-10-sample-solutions/jsx-components/bonus-greeting) contains an example
+- When you call the `set` method 
 
 ### useEffect hook
 - The `useEffect() `hook tells your component to do something after every render.

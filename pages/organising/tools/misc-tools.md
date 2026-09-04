@@ -417,6 +417,17 @@ re, sorry!)
 - [Here](https://github.atcloud.io/Clare-Sudbery/clare-ai-stuff/blob/master/tickets/16869/showcase-notes.md#the-finished-slide-deck) is an explanation / example of how to use `marp` (instead of `Jekyll`) to create slides in the browser (not publicly available, an Autotrader repo, but I may copy the non-AT stuff to a separate repo at some point)
 - [This repo created by Mark Crossfield](https://github.atcloud.io/Autotrader/slides-as-code) can be used as a starting point for a new jekyll-based slide deck
 - [This repo](https://github.atcloud.io/Clare-Sudbery/Debugging-exercises) has an example in its `docs` folder that was configured by AI using Jekyll (see readme for instructions)
+- [This repo](https://github.atcloud.io/Clare-Sudbery/front-end-testing) uses GitHub Pages too. Here are the instructions used there to publish pages:
+	- Build static slides: `npm run slides:build`  
+		- Note had to edit slides.md to use `routerMode: hash` in frontmatter to get this to work
+		- See [this commit](https://github.atcloud.io/Clare-Sudbery/front-end-testing/commit/a3d3ae034cae7e024fbfc88303809de7354ca647#diff-343046d4e383c51496bcb138156c023e8f95b951f181b9d35ffbd6f9b1fa49c2) (scroll to bottom to see changes to slides.md)
+	- In GitHub, go to **Settings -> Pages**.  
+	- Set Branch to `master`; and folder to `/docs`.  
+		- Note had to edit package.json to get slides published to docs folder in root - in scripts section had to add the following: `"slides:build": "slidev build workshop/slides.md --base /pages/Clare-Sudbery/front-end-testing/ --out ../docs",`
+	- Commit and push the generated `docs/` folder.  
+		- Wait for updated site to publish.
+	- Open the link on Settings -> Pages (in this case `https://github.atcloud.io/pages/Clare-Sudbery/front-end-testing/`) (slides should route with `#/...`).
+	- In GitHub, click the Settings icon where you would normally see link (on right), and set website to be the link in Settings -> Pages.
 - [This repo](https://github.atcloud.io/Autotrader/pairing-workshop) has a folder called `docs`, containing a markdown file called `0000-01-01-welcome.md` that is split into slides using `---`. When I go to the repo's home page on github.com, I see a link top right in the About section that takes me to a `/pages` url on the same repo which shows me `0000-01-01-welcome.md` rendered as a slide deck. 
 	- I asked AI, "How do I configure another repo to have a slide deck in its About section at a `pages` url, and how do I configure the original repo to point at a different file for its slide deck instead of `0000-01-01-welcome.md`?"
 	- It was confusing because the master branch didn't have a hidden `.github` folder or a branch called `gh-pages`, or any `jekyll` or config files. There was just the standard hidden `.git` folder, which didn't contain a `workflows` sub-folder.

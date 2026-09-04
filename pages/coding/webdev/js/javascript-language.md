@@ -139,10 +139,81 @@ if (name.match(new RegExp(MY_NAME, "i"))){
 }
 ```
 
-## The spread function / spread syntax
+## The spread function / spread syntax / spread operator
 - When you see `...` next to parameter names in function definitions, this is called `spread syntax`
 - It's to do with passing iterable objects such as arrays into functions
 - It allows an iterable, such as an array or string, to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected.
+- So basically you can pass a collection of things into a function
+	- Then if you prefix the collection with `...`, the collection will be pulled apart into its component parts when it gets passed through to the function
+	- eg if it's an object that contains name, title, description and is passed through to a function that expects an object with title, name, description (ie order is different), then the spread operator allows it to deconstruct those elements and rearrange them in the order the function expects
+	- I came across an example at Autotrader that allowed me to make a bit more sense of both [[#Destructuring arrays and objects|destructuring]] and spread operators
+		- See [this commit](https://github.atcloud.io/Clare-Sudbery/react-exercises/commit/dc5cc8d79e65651b748e889b2f121abe3daaab23) and [this commit](https://github.atcloud.io/Clare-Sudbery/react-exercises/commit/ea0b3f54838231ab38182fd86b2536a25db93a77) (where I use the spread operator)
+		- And [this commit](https://github.atcloud.io/Clare-Sudbery/react-exercises/commit/225a3fd7229a7d555e9487229dc045d01dec1fdd) (where I switch from spread operator to [[#Destructuring arrays and objects|destructuring]])
+		- ...but they won't be accessible to anyone outside Autotrader!
+- Here is a definition for a `Recipe` interface, a `RecipeCardProps` interface and a `RecipeCard` component that expects them to be passed through in props. Note that it uses destructuring to extract the recipe object from the props, and that gives it access to the `vegetarian` property: 
+```
+interface Recipe {  
+    title: string;  
+    favourite: boolean; 
+}  
+  
+interface RecipeCardProps {  
+    recipe: Recipe  
+}  
+  
+function RecipeCard({recipe}: RecipeCardProps) {
+	const [favouriteState, setFavouriteState] = useState(recipe.favourite);
+```
+- Here is the calling code, that passes an object that has the same fields on it, but in a different order:
+```
+const initialRecipes = [  
+  {  
+    favourite: true,  
+    title: 'Tomato Pasta',  
+  }
+];
+
+function App() {  
+  return (  
+      <main className="app">  
+          <AppHeader />          
+          <RecipeCard recipe={initialRecipes[0]}></RecipeCard>
+```
+- This code uses the same `Recipe` interface as above, but doesn't bother with the `RecipeCardProps` interface, or the destructuring in the component signature:
+```
+interface Recipe {  
+    title: string;  
+    favourite: boolean; 
+}   
+  
+function RecipeCard(recipe: Recipe) {
+	const [favouriteState, setFavouriteState] = useState(recipe.favourite);
+```
+- Here is the calling code, that passes an object that has the same fields on it, but in a different order. To get this to work without destructuring in the component signature, we use the spread operator in the calling code:
+```
+const initialRecipes = [  
+  {  
+    favourite: true,  
+    title: 'Tomato Pasta',  
+  }
+];
+
+function App() {  
+  return (  
+      <main className="app">  
+          <AppHeader />          
+          <RecipeCard {...initialRecipes[0]}/>
+```
+
+- You can also do stuff like this (but I lost track of what this actually does! Something like creating a deep copy of the original object, but with the new name value?) (note that `setProfile` is a React function that will update an underlying `profile` state):
+```
+const profileData = {
+	name: "Harry Styles",
+	location: "Manchester"
+};
+
+setProfile({...profile, name: "Zane Malik"});
+```
 - [More explanation here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
 
 ## Promises
