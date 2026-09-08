@@ -33,6 +33,7 @@
 - Ones I've tried:
 	- [[#Hanayama Cast Enigma|Cast Enigma]]
 	- [[#Cast Nutcase]]
+	- [[#Cast Chain]]
 
 ![[Screenshot_2026-03-20_at_12.49.21.jpg]]
 
@@ -90,15 +91,22 @@
 
 ![[Screenshot_2026-07-07_at_11.08.46.jpg]]
 
-# Cast Rattle
+## Cast Rattle
 - [[#Level 5 - Expert]]
 - This one was lent to me by Andy Stone at AT. I didn't solve it by myself - I used [this video](https://youtu.be/7vepPpDKVSE?si=Wc0j7vQzxeGYHMC6). Satisfying!
 ![[Screenshot_2026-07-07_at_11.07.57.jpg]]
-# Cast Cyclone
+## Cast Cyclone
 - [[#Level 5 - Expert]]
 - This one was lent to me by Andy Stone at AT. I didn't solve it by myself - I used [this video](https://youtu.be/l-GZNm5NnCA?si=j1UATPb8fGou0f5F). 
 - And even then, I didn't actually manage to put the solution into action. Too fiddly!
 ![[Screenshot_2026-07-07_at_11.08.24.jpg]]
+## Cast Chain
+- [[#Level 6 - Grand Master]]
+- Lent to me by Andy Stone at AT
+- Figured it out for myself - see [[Hanayama Puzzle Spoilers#Cast Chain|spoilers]]
+
+![[Screenshot_2026-09-08_at_18.43.46.jpg|200]]
+
 # Haven't tried yet but would like to!
 - Cast coil, cast donuts, cast cylinder:
 ![[Screenshot_2026-07-07_at_11.19.06.jpg]]

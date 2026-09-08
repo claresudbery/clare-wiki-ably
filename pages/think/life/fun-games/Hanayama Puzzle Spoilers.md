@@ -33,3 +33,15 @@
 - A verbal description of the moves needed to take the puzzle apart:
 ![[Screenshot_2026-07-08_at_07.29.47.jpg]]
 
+# Cast Chain
+- See [[Hanayama-puzzles#Cast Chain|main page here]]
+- Preamble: At some point I think I did another lining up like in step 2, and sort of twisted / folded the pieces around each other. Not sure when that happened.
+- 1. Line up / slot together these bits.
+![[Screenshot_2026-09-08_at_18.47.45.jpg]]
+- 2. Then the other two can be lined up like this and pulled apart.
+![[Screenshot_2026-09-08_at_18.52.07.jpg]]
+- 3. Then the final two can be lined up and pulled apart in the same way.
+- I can't remember why I took the next pic! Maybe to show the assembled puzzle?
+![[Screenshot_2026-09-08_at_18.52.57.jpg]]
+- To put it back together, reverse the above but remember at some point there may be an extra folding step.
+	- Also, in order for it to be correctly assembled, the piece with 2 dots has to be in the middle, between the other two.

@@ -609,7 +609,7 @@ Extensions > Apps Script
 - Note that when this problem occurs, it also leads to the error "Those columns are out of bounds" when I try to edit the chart title via a script
 
 # Two-tone cells
-- You can't give a cell two background colours
+- You can't give a cell two background colours, or have half and half colour fill
 - But you can create a two-tone image and insert it in the cell
 	- Resize the canvas to be really small and to match your cell size / proportions
 	- Insert two triangle shapes with colours to match your spreadsheet
@@ -622,5 +622,14 @@ Extensions > Apps Script
 - You have to use a separate drawing tool - [Google drawings](https://docs.google.com/drawings) is good
 - (You can use the built-in Google sheets drawing tool (Insert => Drawing), but the default canvas size is v large and unchangeable, which means you can't get text large enough to look proportionately right within the cell)
 - I created a [two-tone Excel cell drawing here](https://docs.google.com/drawings/d/1cyV2e7-68zruQ8emryZdjUi1Ho7l44HzBbNlLIiFRvM/edit) 
-- You have to insert text manually, which is annoying - you can't put image in background of cell and you can't pull text from cell into image
-- Then download the image and upload into your cell via Insert => Image => Insert an image in the cell.
+	- (Note that I've already made some copies with different colours, which should be in the same location)
+	- You have to insert text manually, which is annoying - you can't put image in background of cell and you can't pull text from cell into image
+	- To edit the text, click on the text area (on the right) and you should see the outline highlighted
+	- To edit the colours of the triangles, click on the relevant triangle (on the left, to avoid the text area) and you'll see the highlight.
+		- The highlighting is confusing cos each triangle both has the same rectangular outline. But you can tell which is which based on... 
+			- ...whether the rotate icon appears on the left or the right (which is confusingly the opposite to what you'd expect)
+			- ...which fill colour is selected at the top
+- Then download the image (File => Download) and upload into your cell via Insert => Image => Insert an image in the cell.
+	- If you get strips of colour appearing on the left / right of the image...
+	- ...rather than change the dimensions of the image, it's easier to change the background colour of the cell
+	- ...and then you might want to left- or right-justify the image, which you can just do with the left/right-justify icon. It normally applies to text, but it also works for images.
