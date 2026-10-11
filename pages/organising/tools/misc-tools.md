@@ -414,6 +414,7 @@ re, sorry!)
     - could have two screenshots, one highlighted and one not
     - or could have a transparent-filled rectangle which appears on screen in animated fashion and encloses the bit of code you want to highlight
 ## Github Slides / Github Pages
+- See [[#Slide formatting|below]] for handling formatting on slides
 - [Here](https://github.atcloud.io/Clare-Sudbery/clare-ai-stuff/blob/master/tickets/16869/showcase-notes.md#the-finished-slide-deck) is an explanation / example of how to use `marp` (instead of `Jekyll`) to create slides in the browser (not publicly available, an Autotrader repo, but I may copy the non-AT stuff to a separate repo at some point)
 - [This repo created by Mark Crossfield](https://github.atcloud.io/Autotrader/slides-as-code) can be used as a starting point for a new jekyll-based slide deck
 - [This repo](https://github.atcloud.io/Clare-Sudbery/Debugging-exercises) has an example in its `docs` folder that was configured by AI using Jekyll (see readme for instructions)
@@ -471,6 +472,77 @@ re, sorry!)
 	    - Under **Build and deployment**, look at the Branch dropdown.
 	    - Simply flip the dropdown from `slide-updates` to `slide-updates-version-b` (or vice versa) and click **Save**.
 	    - GitHub will immediately rebuild the site using the files from your newly selected branch, swapping your presentation version without you having to delete or rename any code!
+## Slide formatting
+- [[#Slide formatting - fixed code snippet widths|Fixed code snippet widths]]
+### Slide formatting - fixed code snippet widths
+- From this [introduction-to-java repo](https://github.atcloud.io/Autotrader/introduction-to-java) (Autotrader):
+- "I've had to add a hack to this slide deck where I have the string "(next slide now)" be revealed as a transition in 2023-11-17-operators.md. The reason for this is that it forces the previous code snippets to be an appropriate width. Otherwise they are all slightly too narrow, and an annoying scroll bar appears at the bottom of the code snippet on screen. Is there a better solution to this problem?"
+- The slide markdown looked like this:
+````
+---
+
+What is the output of this code?
+```
+int result = 2 + 11;
+System.out.println("result = " + result);
+```
++  
+```  
+result = 13  
+```  
++  
+```  
+(next slide now)  
+```
+````
+- The solution:
+- Add this line immediately after `---` at the beginning of the slide: `<!-- .slide: class="operator-increment-slide" -->`
+- So it becomes:
+````
+---
+
+<!-- .slide: class="operator-increment-slide" -->
+What is the output of this code?
+```
+int result = 2 + 11;
+System.out.println("result = " + result);
+```
++  
+```  
+result = 13  
+```  
++  
+```  
+(next slide now)  
+```
+````
+- Then in the `extra.css` file in the same folder as the slide markdown, add:
+```css
+.reveal .slides section.operator-increment-slide pre {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.reveal .slides section.operator-increment-slide pre code {
+    overflow-x: auto;
+}
+```
+- After that, remove the "(next slide now)" fragment block from that slide.
+- Or, if you just want to apply the new css to the whole slide deck rather than to individual slides:
+- In `extra.css`, use:
+```css
+.reveal .slides section pre {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.reveal .slides section pre code {
+    overflow-x: auto;
+}
+```
+- Then you don’t need per-slide classes at all.
 ## Demo Pro
 - DemoPro
 - For drawing on screen during presentations

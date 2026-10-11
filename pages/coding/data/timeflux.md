@@ -6,7 +6,9 @@ permalink: /pages/coding/data/Timeflux
 
 ## DevBreak '21, Timeflux workshop
 Building Brain-Computer Interfaces 
-
+Search term: "brain interface"
+- [[#What a BCI is (Brain Computer Interface)]]
+- [[#What timeflux is]]
 ### Preparation before workshop
 - [Installation (had to install miniconda first)](https://doc.timeflux.io/en/stable/usage/getting_started.html)
 - What I did:
@@ -28,7 +30,8 @@ conda activate timeflux
 timeflux -d test.yaml
 ```
 
-### What timeflux is
+### What a BCI is (Brain Computer Interface)
+- [[#What timeflux is]]
 - BCI = Brain Computer Interface
     - interact with physical world using your mind only
     - eg 
@@ -38,6 +41,48 @@ timeflux -d test.yaml
         - detect vigilance level (eg too tired to drive), do relaxation
         - have fun, eg fly a drone with your mind
     - better signal by planting electrodes into skull
+- [Timeflux](https://timeflux.io/) is an open-source Python framework that processes brainwaves and other biosignals in real time to build brain-computer interfaces (BCIs) and biofeedback.
+	- **Data Acquisition:** It connects to EEG headsets and biosignal hardware either directly or through standard streaming tools like the Lab Streaming Layer (LSL).
+	- **Execution Graphs (YAML):** You define your data pipeline, monitor streams, and set up processing steps using simple configuration files written in YAML syntax.
+	- **Processing Nodes:** Under the hood, it routes data through modular Python nodes powered by data science libraries like `SciPy`, `Pandas`, `Xarray`, and `Scikit-learn` to filter noise and analyze patterns.
+	- **Real-Time Communication:** It uses Publish/Subscribe messaging (`ZeroMQ`) and web APIs to stream processed brain states instantly to user interfaces or external devices.
+- The level of control you can exert over a computer with your mind depends heavily on the **type of hardware** you use (invasive vs. non-invasive) and the **software framework** (like Timeflux) processing the signals.
+	- Currently, mind control over computers falls into three main categories of capability:
+	- 1. Basic & Binary Control (Consumer Non-Invasive EEG)
+		- If you are using a standard, off-the-shelf EEG headset (like an Emotiv, Muse, or OpenBCI) paired with software like Timeflux, your control is **slow, deliberate, and limited to a few commands**:
+			- **Mental Commands:** You can train the system to recognize 2 to 4 distinct mental states (e.g., imagining moving your left hand to move a cursor left, or visualizing a cube spinning to trigger a click).
+			- **Spelling & Typing:** Using a **P300 Speller** (which flashes letters on a screen and detects your brain's "aha!" reaction when the letter you want flashes), you can type words. However, this is slow—usually only **5 to 15 characters per minute**.
+			- **State Triggers:** You can control games or applications by changing your overall cognitive state, such as increasing your focus to make a character fly or relaxing to open a menu.
+	- 2. Complex & High-Speed Control (Invasive BCI)
+		- If you look at medical or cutting-edge laboratory settings using surgically implanted microelectrode arrays (like Neuralink or Blackrock Neurotech), the control is **fast, precise, and highly intuitive**:
+			- **Fluid Cursor Movement:** Users can move a computer mouse smoothly in 2D or 3D space just by thinking about moving their actual hand.
+			- **Rapid Typing:** Recent clinical trials have allowed paralyzed individuals to type up to **60 to 90 characters per minute** simply by imagining the physical act of handwriting the letters.
+			- **Robotic & Digital Autonomy:** Users can seamlessly navigate operating systems, browse the web, play video games, and operate robotic arms with minimal lag.
+	- 3. Passive Control (Neurofeedback & Implicit BCI)
+		- Sometimes "control" isn't about giving direct commands, but letting the computer adapt to you.
+		- **Adaptive Interfaces:** The computer monitors your workload or fatigue levels in the background. If Timeflux detects your brainwaves showing high cognitive stress, the computer can automatically dim notifications, simplify the UI, or change the difficulty of a training simulator.
+### What timeflux is
+- [[#What a BCI is (Brain Computer Interface)]]
+- [Timeflux](https://timeflux.io/) is an open-source Python framework that processes brainwaves and other biosignals in real time to build brain-computer interfaces (BCIs) and biofeedback.
+	- **Data Acquisition:** It connects to EEG headsets and biosignal hardware either directly or through standard streaming tools like the Lab Streaming Layer (LSL).
+	- **Execution Graphs (YAML):** You define your data pipeline, monitor streams, and set up processing steps using simple configuration files written in YAML syntax.
+	- **Processing Nodes:** Under the hood, it routes data through modular Python nodes powered by data science libraries like `SciPy`, `Pandas`, `Xarray`, and `Scikit-learn` to filter noise and analyze patterns.
+	- **Real-Time Communication:** It uses Publish/Subscribe messaging (`ZeroMQ`) and web APIs to stream processed brain states instantly to user interfaces or external devices.
+- The level of control you can exert over a computer with your mind depends heavily on the **type of hardware** you use (invasive vs. non-invasive) and the **software framework** (like Timeflux) processing the signals.
+	- Currently, mind control over computers falls into three main categories of capability:
+	- 1. Basic & Binary Control (Consumer Non-Invasive EEG)
+		- If you are using a standard, off-the-shelf EEG headset (like an Emotiv, Muse, or OpenBCI) paired with software like Timeflux, your control is **slow, deliberate, and limited to a few commands**:
+			- **Mental Commands:** You can train the system to recognize 2 to 4 distinct mental states (e.g., imagining moving your left hand to move a cursor left, or visualizing a cube spinning to trigger a click).
+			- **Spelling & Typing:** Using a **P300 Speller** (which flashes letters on a screen and detects your brain's "aha!" reaction when the letter you want flashes), you can type words. However, this is slow—usually only **5 to 15 characters per minute**.
+			- **State Triggers:** You can control games or applications by changing your overall cognitive state, such as increasing your focus to make a character fly or relaxing to open a menu.
+	- 2. Complex & High-Speed Control (Invasive BCI)
+		- If you look at medical or cutting-edge laboratory settings using surgically implanted microelectrode arrays (like Neuralink or Blackrock Neurotech), the control is **fast, precise, and highly intuitive**:
+			- **Fluid Cursor Movement:** Users can move a computer mouse smoothly in 2D or 3D space just by thinking about moving their actual hand.
+			- **Rapid Typing:** Recent clinical trials have allowed paralyzed individuals to type up to **60 to 90 characters per minute** simply by imagining the physical act of handwriting the letters.
+			- **Robotic & Digital Autonomy:** Users can seamlessly navigate operating systems, browse the web, play video games, and operate robotic arms with minimal lag.
+	- 3. Passive Control (Neurofeedback & Implicit BCI)
+		- Sometimes "control" isn't about giving direct commands, but letting the computer adapt to you.
+		- **Adaptive Interfaces:** The computer monitors your workload or fatigue levels in the background. If Timeflux detects your brainwaves showing high cognitive stress, the computer can automatically dim notifications, simplify the UI, or change the difficulty of a training simulator.
 - Pierre Clisson
 - Timeflux 
     - open-source Python framework for building BCIs

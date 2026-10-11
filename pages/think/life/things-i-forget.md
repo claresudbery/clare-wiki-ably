@@ -437,3 +437,6 @@ Make a note: Craig Charles, Fri 9/5/25, pm 15:35:30 (1:35:30 in the prog) for Ca
 	- Or by saying "hey siri, run screen Timeout"
 ## What's that tool for writing Java in the browser?
 - JDoodle. See my notes [[java#^jdoodle|here]].
+## What's that brain computer interface thing?
+- It's called Timeflux, and I found out about it at DevBreak '21, in a castle! See [[timeflux|notes on separate page]].
+- Search terms: BCI, brain interface
