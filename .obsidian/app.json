@@ -23,5 +23,6 @@
     "editor:toggle-blockquote",
     "editor:toggle-checklist-status",
     "editor:configure-toolbar"
-  ]
+  ],
+  "promptDelete": false
 }

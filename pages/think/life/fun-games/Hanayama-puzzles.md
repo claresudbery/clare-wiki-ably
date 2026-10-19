@@ -12,6 +12,9 @@
 ## Level 2 - Easy
 ![[Screenshot_2026-03-20_at_12.44.57.jpg]]
 ## Level 3 - Normal
+- Ones I've tried:
+	- [[#Hanayama Cast S&S|Cast S&S]]
+
 ![[Screenshot_2026-03-20_at_12.47.11.jpg]]
 ## Level 4 - Hard
 - Ones I've tried:
@@ -34,10 +37,15 @@
 	- [[#Hanayama Cast Enigma|Cast Enigma]]
 	- [[#Cast Nutcase]]
 	- [[#Cast Chain]]
+	- [[#Cast NEWS]]
 
 ![[Screenshot_2026-03-20_at_12.49.21.jpg]]
 
 # Puzzles I've tried
+## Hanayama Cast S&S
+- [[#Level 3 - Normal]]
+- I solved this one by myself, but it was very frustrating because it took me a long while to work out how I did it, and even then it took me ages to be able to replicate the solution consistently!
+- See [[Hanayama Puzzle Spoilers#Cast S&S|spoilers page for how I solved it]]
 ## Hanayama Cast Tube Puzzle
 - [[#Level 5 - Expert]]
 - I solved this one by myself.
@@ -106,10 +114,14 @@
 - Figured it out for myself - see [[Hanayama Puzzle Spoilers#Cast Chain|spoilers]]
 
 ![[Screenshot_2026-09-08_at_18.43.46.jpg|200]]
-
+## Cast NEWS
+- [[#Level 6 - Grand Master]]
+- Lent to me by Andy Stone at AT
+- Had to look up the solution  - [see this video, 'youtube solution to north-east-south-west metal puzzle'](https://share.google/DGjALfhr09HR607DM)
 # Haven't tried yet but would like to!
 - Cast coil, cast donuts, cast cylinder:
 ![[Screenshot_2026-07-07_at_11.19.06.jpg]]
 - cast hexagon, cast cake, cast UFO, cast marble:
 |![[Screenshot_2026-07-07_at_11.21.06.jpg\|150]]|![[Screenshot_2026-07-07_at_11.24.06.jpg\|150]]|![[Screenshot_2026-07-07_at_11.24.52.jpg\|150]]|![[Screenshot_2026-07-07_at_11.25.42.jpg\|150]]|
+
 

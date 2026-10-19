@@ -45,3 +45,35 @@
 ![[Screenshot_2026-09-08_at_18.52.57.jpg]]
 - To put it back together, reverse the above but remember at some point there may be an extra folding step.
 	- Also, in order for it to be correctly assembled, the piece with 2 dots has to be in the middle, between the other two.
+# Cast S&S
+- This is what it should look like to start:
+![[Screenshot_2026-10-19_at_21.54.49.jpg]]
+- If it doesn't, follow [[#Cast S&S - preliminary steps|preliminary steps]]
+- Once you've got it into the correct starting position, you can do the [[#Cast S&S - final steps|final steps]]
+- If you're trying to put the puzzle back together, follow [[#Cast S&S - final steps|final steps]], but backwards!
+## Cast S&S - preliminary steps
+- Notes: 
+	- Pay attention to where the text is - this makes a difference
+	- The little sticky out bars are NOT symmetrical - they are rounded at one end and flat at the other. Pay attention to which way round they are in the images.
+![[Screenshot_2026-10-19_at_21.55.44.jpg]]
+![[Screenshot_2026-10-19_at_21.56.09.jpg]]
+![[Screenshot_2026-10-19_at_21.56.24.jpg]]
+![[Screenshot_2026-10-19_at_21.56.41.jpg]]
+![[Screenshot_2026-10-19_at_21.56.59.jpg]]
+![[Screenshot_2026-10-19_at_21.57.16.jpg]]
+![[Screenshot_2026-10-19_at_21.57.37.jpg]]
+![[Screenshot_2026-10-19_at_21.57.54.jpg]]
+![[Screenshot_2026-10-19_at_21.58.08.jpg]]
+![[Screenshot_2026-10-19_at_21.58.24.jpg]]
+![[Screenshot_2026-10-19_at_21.58.58.jpg]]
+## Cast S&S - final steps
+- Notes: 
+	- Pay attention to where the text is - this makes a difference
+	- The little sticky out bars are NOT symmetrical - they are rounded at one end and flat at the other. Pay attention to which way round they are in the images.
+	- If you're trying to put the puzzle back together, just start at the bottom and work your way backwards
+![[Screenshot_2026-10-19_at_21.54.49.jpg]]
+![[Screenshot_2026-10-19_at_22.01.46.jpg]]
+![[Screenshot_2026-10-19_at_22.02.07.jpg]]
+![[Screenshot_2026-10-19_at_22.02.25.jpg]]
+![[Screenshot_2026-10-19_at_22.02.45.jpg]]
+![[Screenshot_2026-10-19_at_22.03.05.jpg]]
