@@ -91,17 +91,39 @@ permalink: /pages/coding/data/Microsoft-Excel
 		- Use plus and minus buttons bottom left to add and remove rules
 # Power Query and Tables
 - I've used this to transform data from one worksheet and pull it into another
-- My notes on how I did this are in clare-tech: finance-rationalisation.md.
+- My notes on how I did this are in clare-tech: finance-rationalisation.md#Power Query and tables.
 - Starting a Power Query isn't currently possible in Excel for the web. You can, however, Start a Power Query in the Excel desktop app:
 	- To open the desktop app, at the top of the ribbon, select **Editing** (top right) > **Open in Desktop App**.
 	- You might also need to [[#Power Query - Internal Database Connection|change the database connection]]
+## Creating a new table
+- Highlight the relevant data
+- Hit Ctrl (Cmd?) + T (or Insert => Table)
+- Select my data has headers (if it does)
+- Hit OK
+## Renaming a table
+- To rename a table, click anywhere inside the table
+- (Mac Desktop) Click the Table tab on the far right end of the ribbon at the top
+- Edit the table name, top left
+## Change the cols included in the table
+- Click anywhere in the table
+- (Mac Desktop) Click the Table tab on the far right end of the ribbon at the top
+- Click Convert to Range
+	- It won't be a table any more, but the formatting will stay so it will still look like one
+- Add your new cols
+- Select all data you want in the table
+- Follow instructions in [[#Creating a new table]]
 ## Power Query - Internal Database Connection
 - The default is for the database connection to be hard-wired to access a file on your local file system
 - This breaks if you try to access a spreadsheet on a different machine
 - To fix this:
 - Instead of pulling data from an external Excel file (which forces a file path), you want to tell Power Query to look natively inside itself.
 - Open your workbook in the desktop app. Go to the **Data** tab and open your query in the **Power Query Editor**.
+	- Data => Get data (power query) => Launch Power Query Editor
+- Select your table on the left
+	- !!Make sure you select the table and not the worksheet!
+	- The way you can tell is if the M code (see below) says "Sheet" instead of "Table"
 - In the Power Query ribbon, go to the **Home** tab and click **Advanced Editor** (in the middle at the top). This opens the M code behind your query.
+- @@@@ M CODE @@@@
 - Look at the very first line of code (usually labeled `Source = ...`).
 	- It probably looks something like this right now:
 	- `Source = Excel.Workbook(File.Contents("C:\Users\HomeLaptop\OneDrive\Spreadsheet.xlsx"), null, true),`
@@ -109,10 +131,13 @@ permalink: /pages/coding/data/Microsoft-Excel
 - Because `Excel.CurrentWorkbook()` immediately lists all the tables and named ranges _inside_ your current file, the next line in your code (the navigation step) needs to point directly to your specific table.
 	- Change your second line from this (replace `YourTableName` with the actual name of your Excel Excel table)...
 	- `#"Navigation 1" = Source{[Item = "YourTableName", Kind = "Table"]}[Data],`
+		- !!Make sure you selected the table and not the worksheet!
+		- The way you can tell is if this says `Kind = "Table"` and not `Kind = "Sheet"`
 	- ...to this:
 	- `#"Navigation 1" = Source{[Name = "YourTableName"]}[Content],`
 	- Old way (`Excel.Workbook`): It looks for column names called `Item`, `Kind`, and `Data`.
 	- New way (`Excel.CurrentWorkbook`): It looks for column names called `Name` and `Content`.
+- Click OK to save
 ## Troubleshooting
 ### After Google Sheets download, cell borders disappear
 - "I'm looking at a tab in an Excel spreadsheet that was originally downloaded from a Google sheet. I have the formatting set so that negative financial amounts are shown in red text. But in all of those cells the default faint grey borders have disappeared. How do I get those faint grey borders back?"

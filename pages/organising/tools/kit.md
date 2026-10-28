@@ -130,7 +130,17 @@ I did this by automatically tagging / segmenting people who signed up via differ
 	- See [this page](https://help.kit.com/en/articles/2577659-how-to-create-a-segment) for more on creating segments
 - Then when you publish...
 	- Add filter => Within segment => select your segment(s)
-
+## Subscriber preferences
+"I have multiple tags set up (approx 5 - visible from the subscribers page), but when subscribers click "Update my profile", they only see two possible checkboxes for things they can subscribe to. How do I add more tags into this list of things my readers can subscribe to?"
+*AI response:*
+Those checkboxes are not created automatically from every tag. They appear only for tags you connect to **topics of interest** in Subscriber Preferences.
+1. Open **Subscribers**.
+2. In the right sidebar, select **Subscriber Preferences**, then **Manage Subscriber Preferences**.
+3. Create a topic of interest for each option you want readers to see. Give it a title and select the tag it should control, then save.
+4. Repeat for the other tags.
+Readers will then see those topics as checkboxes on **Update your profile**. Checking a box adds the linked tag; unchecking it removes the tag. This is included on the Kit Free Plan, so no upgrade is needed. If **Subscriber Preferences** is missing, the account needs at least one subscriber first.
+More details: [https://help.kit.com/en/articles/6082488-managing-subscriber-preferences-in-kit](https://help.kit.com/en/articles/6082488-managing-subscriber-preferences-in-kit)
+If you have any other questions, please let me know.
 ## Routine actions
 ### Change which posts are featured on subscriber page
 When posting...
