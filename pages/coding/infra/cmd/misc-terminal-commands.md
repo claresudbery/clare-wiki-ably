@@ -414,7 +414,22 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
         on hard disk but is created temporarily so that it can be passed
         as an argument to a function that requires a file as an input.
 
-  - \!\! will insert previous command
+  - Use the bang to access previous commands    
+      - Type `!!` to substitute your previous command        
+          - So for instance `sudo!!` is the previous command with
+            sudo in front    
+      - Also you can access other previous commands        
+          - For instance `!cat` will repeat your most recent cat
+            command        
+          - And `!cat:p` will display the most recent cat command
+            without running it        
+          - After that, you have now replaced what’s in `!!` with
+            whatever you got for `!cat:p`, so you can just type
+            `!!` to execute that `cat` command.    
+      - Also `!$` is your previous arguments
+          - So after `mkdir new/folder`, you can just type `cd !$``
+		  - and you can follow `vim ~/.bashrc` with `source !$`
+			  - The shell expands this to: `source ~/.bashrc`
 
   - **ls -lah** - list everything in current folder
     
@@ -477,8 +492,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
     **fg** (shell command, takes you back again, is also a shell
     command) to go back to Vim again - allows you to switch between Vim
     and command line
-
-  - sudo\!\! Repeat the previous command but with sudo in front
 
   - **hostname** - When you don’t know which machine you are on (eg
     local vs VM)
@@ -560,29 +573,6 @@ See [here](/pages/coding/infra/cmd/Networking-Commands)
     
       - For instance, **jq .\[\].target | sort** would become **jq
         ".\[\].target" | sort**
-
-  - Use the bang to access previous commands
-    
-      - Type **\!\!** to substitute your previous command
-        
-          - So for instance **sudo \!\!** is the previous command with
-            sudo in front
-    
-      - Also you can access other previous commands
-        
-          - For instance **\!cat** will repeat your most recent cat
-            command
-        
-          - And **\!cat:p** will display the most recent cat command
-            without running it
-        
-          - After that, you have now replaced what’s in **\!\!** with
-            whatever you got for **\!cat:p**, so you can just type
-            **\!\!** to execute that **cat** command.
-    
-      - Also **\!$** is your previous arguments
-        
-          - So after **mkdir new/folder**, you can just type **cd \!$**
 
 
 

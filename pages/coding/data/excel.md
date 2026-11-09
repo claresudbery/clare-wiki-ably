@@ -89,6 +89,8 @@ permalink: /pages/coding/data/Microsoft-Excel
 		- You can change the range under "applies to" at the bottom
 			- Don't use left and right arrow keys in this field, it makes weird things happen!
 		- Use plus and minus buttons bottom left to add and remove rules
+# Hide / unhide worksheets
+- Right-click on any worksheet tab, and choose Unhide. It will give you a list of candidates to unhide.
 # Power Query and Tables
 - I've used this to transform data from one worksheet and pull it into another
 - My notes on how I did this are in clare-tech: finance-rationalisation.md#Power Query and tables.
