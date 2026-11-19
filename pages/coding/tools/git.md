@@ -424,7 +424,7 @@ Sadly by necessity some of my repos are private. Those that are private are clea
       - This only reverts one commit at a time. To safely revert
         multiple commits, do them one at a time, starting with the most
         recent… but that doesn’t have to result in several commits. You can use
-        `git revert –no-commit \<commitId\>` for all the reverted
+        `git revert –-no-commit \<commitId\>` for all the reverted
         commits, one at a time, then finally do `git commit –m “commit message”` to
         commit them all in one go. More here:
         <http://stackoverflow.com/questions/1463340/revert-multiple-git-commits>
@@ -774,9 +774,32 @@ Sadly by necessity some of my repos are private. Those that are private are clea
 ### gitk
 * To see all changes file by file: `gitk`
 
+## git switch
+- `git switch my-branch` is equivalent to `git checkout my-branch`
+- `git switch -c my-branch` is equivalent to `git checkout -b my-new-branch`
+	- ...where `-c` stands for *create*.
+- The reason it was created is simply because it used to be that `git checkout` can be used to do two unrelated jobs:
+	- `git checkout my-branch` - switches to the specified branch
+	- `git checkout my-file` - restores the specified file
+	- So now, you can use `git switch` and `git restore` to do the same jobs
+- Introduced in Git 2.23, it was carved out of the overloaded [git checkout](https://www.w3docs.com/learn-git/git-checkout) command to do one job clearly: move `HEAD` to another [branch](https://www.w3docs.com/learn-git/git-branch) and update your working tree to match. Anything to do with restoring files now lives in [git restore](https://www.w3docs.com/learn-git/git-restore), so `switch` stays focused on branches alone.
+- [More info here](https://www.w3docs.com/learn-git/git-switch)
+
+## git restore
+- Created at the same time as [[#git switch]], to replace `git checkout` for files
+- `git restore my-file` is equivalent to `git checkout my-file`
+- It restores the specified file
+- [More info here](https://www.w3docs.com/learn-git/git-restore)
+
 ## git reflog
 - [Tutorial Here](https://www.w3docs.com/learn-git/git-reflog.html)
 - See also [this example](https://github.com/claresudbery/Git-Playground/blob/master/Merging-examples.md) I manufactured when I was writing the O'Reilly trunk-based development (TBD) report
+
+## git cherry-pick
+- The `git cherry-pick` command takes the change introduced by one or more existing commits and reapplies it on your current branch as a **new commit**. Where [git merge](https://www.w3docs.com/learn-git/git-merge) and [git rebase](https://www.w3docs.com/learn-git/git-rebase) move whole lines of history at once, cherry-pick lets you grab a single commit and drop it exactly where you need it.
+- A commit is a snapshot, but cherry-pick treats it as a _patch_: it computes the diff between the commit and its parent, then applies that diff to the tip of your current branch and records a new commit. The new commit keeps the **original message, author, and date**, but gets a **new hash** and a **new parent** because it now lives in a different place in history.
+- Syntax: `git cherry-pick a1b2c3d
+- [More here](https://www.w3docs.com/learn-git/git-cherry-pick)
 
 # Useful Tips / Troubleshooting
 
@@ -1394,5 +1417,5 @@ When you have work ready to merge, do the following:
           - There are ways of recovering them, but they will disappear
             at the next garbage collection
           - Is there config to set when / how this happens?
-      - You can reproduce the process with a series of git cherry-pick
+      - You can reproduce the process with a series of `git cherry-pick`
         commands
